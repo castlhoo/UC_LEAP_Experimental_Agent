@@ -1,0 +1,157 @@
+1. Dataset Overview
+- Format: Excel spreadsheets (`.xlsx`), replot-ready extracted figure data
+- Number of runs / experiments: 5 files corresponding to Figures 1, 2, 3, 4, and 5; multiple subpanels within each file
+- Approximate data volume: Small-to-moderate tabular dataset; roughly a few hundred rows per file, with one multi-trace sheet containing 204×47 entries
+- Time range: Not available in the provided metadata
+
+2. Instrumentation Setup
+- STM/STS (scanning tunneling microscope / spectroscopy)
+  - Primary instrument inferred from repeated `dI/dV` vs bias spectra and spatial line scans
+  - Used for topography, local density of states, and impurity-bound-state spectroscopy
+- Spin-polarized STM tip / spin-sensitive STM mode
+  - Inferred from paper context and spin-polarized imaging of antiferromagnetic structure
+  - Likely used to detect magnetic contrast between surface sites/layers
+- Magnetic field source / superconducting magnet
+  - Inferred from `B (T)` dependence in Figure 5 and field-tunable bound states
+  - Used to apply out-of-plane magnetic field
+- Sample with layered FeSn kagome antiferromagnet
+  - The measured object rather than an instrument, but central to the experiment
+  - Provides layered magnetic and electronic structure probed by STM/STS
+
+3. Information of each run / experiment
+
+- Figure 1(e,f,i).xlsx
+  a. Measured Parameters
+  - Independent variables:
+    - `Bias` (mV)
+    - `Distance` (nm) in sheet `i`
+  - Dependent variables:
+    - `dI/dV` (a.u.)
+    - `Height` (pm) in sheet `i`
+  - Naming conventions:
+    - `Bias`, `dI/dV`, `Distance`, `Height`
+
+  b. Experimental Context (Inference)
+  - Likely STM topography and STS line/spectral data on FeSn surface
+  - Possible phenomena:
+    - Local electronic structure / density of states
+    - Surface corrugation or step-edge profile
+  - Reasoning:
+    - Bias-dependent `dI/dV` indicates tunneling spectroscopy
+    - Distance-height profile suggests a topographic line scan
+
+  c. Notes for Analysis
+  - Sheet `e` and `f` are both 1D spectra with different sampling densities
+  - Sheet `i` is a spatial profile, likely a line cut across a surface feature
+  - Units are explicit and consistent, but no acquisition metadata (temperature, setpoint, field) is included
+
+- Figure 2(b,c,d,e).xlsx
+  a. Measured Parameters
+  - Independent variables:
+    - `Disntance`/`Distance` (nm) in sheet `b`
+    - `Bias` (mV) in sheets `c` and `d`
+    - `Distance (nm)` as multiple spatial positions in sheet `c`
+  - Dependent variables:
+    - `Height` (Angstrom) in sheet `b`
+    - `dI/dV` (a.u.) in sheets `c` and `d`
+  - Naming conventions:
+    - Note typo: `Disntance`
+    - `Higher step`, `Lower step` in sheet `d`
+    - Multiple `dI/dV` columns correspond to different positions
+
+  b. Experimental Context (Inference)
+  - Likely STM topography across a step edge plus spatially resolved STS
+  - Possible phenomena:
+    - Step-edge electronic variation
+    - Spatial evolution of local density of states
+  - Reasoning:
+    - Sheet `b` is a height profile
+    - Sheet `c` contains many spectra at different distances, suggesting a line-scan spectroscopy map
+    - Sheet `d` compares spectra on two sides of a step
+
+  c. Notes for Analysis
+  - Sheet `c` has many repeated `dI/dV` columns indexed by distance; careful reshaping will be needed
+  - Sheet `d` likely summarizes two representative spectra from different step regions
+  - Potential ambiguity: whether the distance axis in `c` is lateral position or layer index is not explicit from the sheet alone
+
+- Figure 3(b,c,d,e).xlsx
+  a. Measured Parameters
+  - Independent variables:
+    - `Distance` (nm) in sheet `b`
+    - `Bias` (mV) in sheet `c`
+    - `Layer #` / `Layer` labels in sheets `c` and `d`
+  - Dependent variables:
+    - `Height` (nm) in sheet `b`
+    - `dI/dV` (a.u.) in sheets `c` and `d`
+  - Naming conventions:
+    - `Layer #` values include `1L`, `2L`, `3L`, `4L`, `6L`, `7L`
+    - `Layer` index in sheet `d`
+
+  b. Experimental Context (Inference)
+  - Likely layer-dependent STM/STS on FeSn terraces
+  - Possible phenomena:
+    - Thickness dependence of electronic structure
+    - Layer-resolved surface states or magnetic contrast
+  - Reasoning:
+    - Spectra are grouped by layer number
+    - Height profile suggests a terrace/step morphology
+    - Comparison across multiple layers indicates systematic layer dependence
+
+  c. Notes for Analysis
+  - Sheet `c` is a multi-spectrum dataset organized by layer; column parsing is important
+  - Sheet `d` appears to be a reduced summary metric versus layer
+  - The presence of only selected layers (`1L`, `2L`, `3L`, `4L`, `6L`, `7L`) suggests missing or omitted intermediate layers
+
+- Figure 4(b,c,d).xlsx
+  a. Measured Parameters
+  - Independent variables:
+    - `Distance` (nm) in sheet `b`
+    - `Bias` (mV) in sheets `c` and `d`
+    - `Layer` labels: `Sn1`, `Sn2`, `Kagome1`, `Kagome2`
+  - Dependent variables:
+    - `Height` (Angstrom) in sheet `b`
+    - `dI/dV` (a.u.) in sheets `c` and `d`
+  - Naming conventions:
+    - `Sn1`, `Sn2` likely two inequivalent Sn sites
+    - `Kagome1`, `Kagome2` likely two inequivalent kagome-site spectra
+
+  b. Experimental Context (Inference)
+  - Likely site-resolved STS comparing inequivalent atomic sites on the FeSn surface
+  - Possible phenomena:
+    - Sublattice/site-dependent electronic structure
+    - Spin-polarized contrast between inequivalent sites
+  - Reasoning:
+    - Separate spectra are labeled by atomic site type
+    - This is consistent with imaging of antiferromagnetic or sublattice-resolved electronic structure
+
+  c. Notes for Analysis
+  - Sheet `c` and `d` are paired site-resolved spectra; likely useful for direct comparison or asymmetry analysis
+  - The topography in `b` may define the atomic registry used to assign site labels
+  - No explicit spin channel labels are present, so spin polarization is inferred from context rather than directly encoded
+
+- Figure 5(e,f).xlsx
+  a. Measured Parameters
+  - Independent variables:
+    - `Bias` (mV)
+    - `B (T)` magnetic field in sheet `e` and `f`
+  - Dependent variables:
+    - `dI/dV` (a.u.)
+    - `Peak Position` (a.u. as labeled, though physically likely energy/bias position)
+    - `Error` (a.u.)
+  - Naming conventions:
+    - Field values: `-6, -4, -2, 0, 2, 4, 6, 8`
+    - Sheet `f` includes `Peak Postion` typo
+
+  b. Experimental Context (Inference)
+  - Likely field-dependent STS of impurity-bound states
+  - Possible phenomena:
+    - Magnetic-field tuning of localized electronic states
+    - Zeeman-like peak shifts or effective magnetic moment extraction
+  - Reasoning:
+    - Multiple spectra at different magnetic fields
+    - Summary table of peak position vs `B` indicates quantitative tracking of a resonance
+
+  c. Notes for Analysis
+  - Sheet `e` is a field series of spectra; ideal for plotting peak evolution with field
+  - Sheet `f` likely contains fitted peak positions and uncertainties
+  - Important ambiguity: the `Peak Postion` values are labeled with `a.u.` despite representing a spectral position; unit handling should be checked carefully

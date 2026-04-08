@@ -1,0 +1,30 @@
+Task PAPER_08_TASK_02 Analysis
+Step 0: Open workbook and inspect sheet structure.
+Dataset file: C:\UCLEAP\UC_LEAP\step4\organized\Type1\008_Extremely_anisotropic_van_der_Waals\type1_data\41586_2021_3867_MOESM2_ESM_8.xlsx
+Workbook sheets: ['Fig. 3a', 'Fig. 3b']
+Loaded sheet 'Fig. 3a' with shape (1602, 5).
+Loaded sheet 'Fig. 3b' with shape (1002, 26).
+Step 1: Identify sheet containing thermal resistance versus layer number.
+Selected sheet for analysis: Fig. 3b
+Detected/assumed header row for inset table: 1
+Inset block extracted with shape (1001, 4).
+Inset table preview after cleaning:
+  N=2.0, Conductance=0.33409 uW/K, uncertainty=0.06014 uW/K
+  N=3.0, Conductance=0.53045 uW/K, uncertainty=0.09548 uW/K
+  N=4.0, Conductance=0.61818 uW/K, uncertainty=0.11127 uW/K
+  N=5.0, Conductance=0.74863 uW/K, uncertainty=0.13475 uW/K
+  N=4.0, Conductance=0.68 uW/K, uncertainty=0.1224 uW/K
+Step 2: Convert conductance to thermal resistance equivalent where possible.
+Derived reciprocal resistance-like quantity computed as 1/Conductance (K/uW).
+Note: Absolute R_TDTR in m^2 K/GW cannot be computed from the workbook alone because the area normalization is not provided in the extracted table.
+Step 3: Separate r-MoS2 and r-WS2 series and inspect fit information.
+No explicit r-WS2 thermal resistance/conductance table was identifiable from the workbook preview or sheet scan.
+Only the r-MoS2 inset conductance-vs-N data are directly supported by the extracted sheet content.
+Linear fit for r-MoS2 conductance vs N: slope=0.137412 uW/K per layer, intercept=0.0875885 uW/K.
+Step 4: Create publication-quality plot using directly supported data.
+Figure saved to: C:\UCLEAP\UC_LEAP\step5\output\Type1\008_Extremely_anisotropic_van_der_Waals\results\PAPER_08_TASK_02_figure.png
+Limitations:
+- The workbook sheet 'Fig. 3b' clearly contains an inset table for D = 1 um r-MoS2 with layer number N, conductance, and uncertainty.
+- The provided preview does not expose a directly readable r-WS2 thermal resistance table; therefore, a true two-material comparison plot cannot be reconstructed without additional identifiable data.
+- The sheet does contain fit columns for Δω in the main table, but those are Raman shift fits, not thermal resistance fits, and were not used for the requested transport plot.
+- Absolute R_TDTR (m^2 K/GW) was not computed because the necessary area normalization is not present in the extracted thermal table. A reciprocal conductance trend was plotted as the directly supported equivalent quantity.

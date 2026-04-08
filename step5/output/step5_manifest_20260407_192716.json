@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "step": 5,
+    "description": "Dataset Summary, Task Generation & Reproducibility",
+    "generated_at": "2026-04-07T19:27:16.546133",
+    "total_papers": 10,
+    "total_tasks": 41
+  },
+  "papers": [
+    {
+      "paper_index": 1,
+      "title": "Fractional Chern insulators in magic-angle twisted bilayer graphene",
+      "doi": "10.1038/s41586-021-04002-3",
+      "directory": "Both/001_Fractional_Chern_insulators_in_magicangle",
+      "num_tasks": 1,
+      "task_titles": [
+        "Replot the cleaned compressibility map and summary panels from the replot-ready workbook"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Both/001_Fractional_Chern_insulators_in_magicangle",
+      "execution": [
+        {
+          "task_id": "PAPER_01_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 2,
+      "title": "Cascade of correlated electron states in the kagome superconductor CsV3Sb5",
+      "doi": "10.1038/s41586-021-03946-w",
+      "directory": "Type1/002_Cascade_of_correlated_electron_states",
+      "num_tasks": 2,
+      "task_titles": [
+        "Replot the Sb-terminated dI/dV spectrum",
+        "Replot the inset dI/dV spectrum"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/002_Cascade_of_correlated_electron_states",
+      "execution": [
+        {
+          "task_id": "PAPER_02_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_02_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 3,
+      "title": "Observation of hybrid higher-order skin-topological effect in non-Hermitian topolectrical circuits",
+      "doi": "10.1038/s41467-021-26414-5",
+      "directory": "Type1/003_Observation_of_hybrid_higherorder_skintopological",
+      "num_tasks": 1,
+      "task_titles": [
+        "Replot the figure encoded in the replot-ready Excel dataset for the 2D non-Hermitian topolectrical circuit"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/003_Observation_of_hybrid_higherorder_skintopological",
+      "execution": [
+        {
+          "task_id": "PAPER_03_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 4,
+      "title": "Josephson diode effect from Cooper pair momentum in a topological semimetal",
+      "doi": "10.1038/s41567-022-01699-5",
+      "directory": "Type1/004_Josephson_diode_effect_from_Cooper",
+      "num_tasks": 2,
+      "task_titles": [
+        "Replot temperature-dependent Josephson transport and device-spacing inset",
+        "Replot critical-current nonreciprocity versus in-plane magnetic-field angle"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/004_Josephson_diode_effect_from_Cooper",
+      "execution": [
+        {
+          "task_id": "PAPER_04_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_04_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 5,
+      "title": "Proximity-induced chiral quantum light generation in strain-engineered WSe2/NiPS3 heterostructures",
+      "doi": "10.1038/s41563-023-01645-7",
+      "directory": "Type1/005_Proximityinduced_chiral_quantum_light_generation",
+      "num_tasks": 13,
+      "task_titles": [
+        "Replot the optical setup schematic for polarization-resolved PL and HBT measurements",
+        "Replot control PL spectra and polarization analysis for unstrained and unindented samples",
+        "Replot control nanoindentation and excitation-polarization invariance spectra",
+        "Replot the spectral image and spatial analysis of localized peaks at a nanoindentation",
+        "Replot the optical image of the WSe2/NiPS3 heterostructure sample layout",
+        "Replot the wide-field PL image showing quenched overlap emission and bright nanoindentation spots",
+        "Replot the AFM topography and indentation cross-section",
+        "Replot representative polarization-resolved PL spectra from individual nanoindentations",
+        "Replot circular-polarization-resolved PL spectra under σ+ and σ− excitation",
+        "Replot the PL intensity time trace for a selected quantum emitter",
+        "Replot the time-resolved PL decay curve and fit",
+        "Replot the second-order photon correlation g(2)(τ) trace",
+        "Replot field-dependent polarization-resolved PL spectra and DCP trends"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/005_Proximityinduced_chiral_quantum_light_generation",
+      "execution": [
+        {
+          "task_id": "PAPER_05_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_03",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_04",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_05",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_06",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_07",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_08",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_09",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_10",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_11",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_12",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_05_TASK_13",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 6,
+      "title": "Superconductivity and nematic order in a new titanium-based kagome metal CsTi3Bi5 without charge density wave order",
+      "doi": "10.1038/s41467-024-53870-6",
+      "directory": "Type1/006_Superconductivity_and_nematic_order_in",
+      "num_tasks": 5,
+      "task_titles": [
+        "Replot the X-ray diffraction pattern for the CsTi3Bi5 single crystal",
+        "Replot zero-field-cooled magnetization versus temperature under multiple fields",
+        "Replot ultra-low-field magnetization versus temperature",
+        "Replot resistance versus temperature under two current biases",
+        "Inspect and visualize the matrix-style numerical dataset"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/006_Superconductivity_and_nematic_order_in",
+      "execution": [
+        {
+          "task_id": "PAPER_06_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_06_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_06_TASK_03",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_06_TASK_04",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_06_TASK_05",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 7,
+      "title": "Inverse design of chiral functional films by a robotic AI-guided system",
+      "doi": "10.1038/s41467-023-41951-x",
+      "directory": "Type1/007_Inverse_design_of_chiral_functional",
+      "num_tasks": 9,
+      "task_titles": [
+        "Replot the multi-panel spectral workbook from the figure-supplement Excel file",
+        "Plot the dissymmetry-factor summary from the gabs output table",
+        "Replot the inverse-design result for target absorption at 440 nm",
+        "Replot the inverse-design result for target property at 440 nm",
+        "Replot the final inverse-design results for the 440 nm target",
+        "Replot the absorption-target inverse-design results at 467 nm for the first candidate set",
+        "Replot the absorption-target inverse-design results at 467 nm for the second candidate set",
+        "Replot the property-target inverse-design results at 467 nm",
+        "Replot the final screened inverse-design results for the 467 nm target"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/007_Inverse_design_of_chiral_functional",
+      "execution": [
+        {
+          "task_id": "PAPER_07_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_03",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_04",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_05",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_06",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_07",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_08",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_07_TASK_09",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 8,
+      "title": "Extremely anisotropic van der Waals thermal conductors",
+      "doi": "10.1038/s41586-021-03867-8",
+      "directory": "Type1/008_Extremely_anisotropic_van_der_Waals",
+      "num_tasks": 3,
+      "task_titles": [
+        "Replot TDTR cooling curves for r-MoS2 layer-number series",
+        "Replot thermal resistance versus layer number for r-MoS2 and r-WS2",
+        "Replot temperature-dependent thermal conductivity from experiment and MD"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/008_Extremely_anisotropic_van_der_Waals",
+      "execution": [
+        {
+          "task_id": "PAPER_08_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_08_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_08_TASK_03",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 9,
+      "title": "Spin-polarized imaging of the antiferromagnetic structure and field-tunable bound states in kagome magnet FeSn",
+      "doi": "10.1038/s41598-022-18678-8",
+      "directory": "Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic",
+      "num_tasks": 5,
+      "task_titles": [
+        "Replot Fig. 1e, 1f, and 1i from STM/STS spectra and line profile data",
+        "Replot Fig. 2b, 2c, 2d, and 2e from step-edge topography and spatial STS",
+        "Replot Fig. 3b, 3c, 3d, and 3e from layer-dependent STM/STS data",
+        "Replot Fig. 4b, 4c, and 4d from site-resolved STM/STS on inequivalent atomic sites",
+        "Replot Fig. 5e and 5f from magnetic-field-dependent bound-state spectroscopy"
+      ],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic",
+      "execution": [
+        {
+          "task_id": "PAPER_09_TASK_01",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_09_TASK_02",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_09_TASK_03",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_09_TASK_04",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        },
+        {
+          "task_id": "PAPER_09_TASK_05",
+          "status": "success",
+          "has_figure": true,
+          "has_analysis": true
+        }
+      ]
+    },
+    {
+      "paper_index": 10,
+      "title": "Intercell moiré exciton complexes in electron lattices",
+      "doi": "10.1038/s41563-023-01496-2",
+      "directory": "Type2/010_Intercell_moiré_exciton_complexes_in",
+      "num_tasks": 0,
+      "task_titles": [],
+      "output_dir": "C:\\UCLEAP\\UC_LEAP\\step5/output\\Type2/010_Intercell_moiré_exciton_complexes_in",
+      "execution": []
+    }
+  ]
+}

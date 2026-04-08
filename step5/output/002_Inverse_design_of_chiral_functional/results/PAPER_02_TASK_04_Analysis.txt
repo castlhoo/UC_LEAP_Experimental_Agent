@@ -1,0 +1,44 @@
+Task: PAPER_02_TASK_04
+Title: Compare GAN-generated and predictor-generated candidate solutions for target gabs design
+
+Step_0: Load the ABS and PROP CGAN result files for the same target wavelength or condition.
+- Loaded ABS dataset from: C:/UCLEAP/UC_LEAP/step4/organized/002_Inverse_design_of_chiral_functional/type2_data/cgan_test_result_ABS_440.csv
+- ABS rows: 69, columns: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+- Loaded PROP dataset from: C:/UCLEAP/UC_LEAP/step4/organized/002_Inverse_design_of_chiral_functional/type2_data/cgan_test_result_PROP_440.csv
+- PROP rows: 6381, columns: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+
+Step_1: Extract the design variables and the columns corresponding to G_GAN, G_Predict, and dG.
+- Design variables identified directly from the CSV header: Color, Thick, Strain, Gray.
+- Output variables identified directly from the CSV header: G_GAN, G_Predict, dG.
+- The dataset preview shows numeric rows with these columns populated, so the file structure is valid for quantitative comparison.
+
+Step_2: Compute summary statistics comparing GAN output to predictor output for each file.
+- For ABS, dG is used as the provided difference metric between predictor and GAN outputs.
+- ABS mean signed error (mean dG): -0.184077
+- ABS mean absolute error (mean |dG|): 0.332822
+- ABS fraction within |dG| <= 0.05: 0.000
+- ABS fraction within |dG| <= 0.10: 0.000
+- ABS Pearson correlation between G_GAN and G_Predict: 0.099868
+- ABS maximum absolute difference: 0.653124
+- ABS consistency check between provided dG and (G_Predict - G_GAN): MAE = 1.487483e-01
+- PROP mean signed error (mean dG): -0.103139
+- PROP mean absolute error (mean |dG|): 0.103175
+- PROP fraction within |dG| <= 0.05: 0.199
+- PROP fraction within |dG| <= 0.10: 0.551
+- PROP Pearson correlation between G_GAN and G_Predict: 0.803407
+- PROP maximum absolute difference: 0.479471
+- PROP consistency check between provided dG and (G_Predict - G_GAN): MAE = 3.277645e-06
+
+Step_3: Generate parity plots or grouped bar charts for the two target classes.
+- A side-by-side parity plot is generated for ABS and PROP when both files are available.
+- If PROP is unavailable, the figure contains only the ABS parity plot and explicitly notes the limitation.
+
+Step_4: Compare the ABS and PROP cases and report which target class shows tighter agreement.
+- Tighter agreement is indicated by the smaller mean absolute error: PROP.
+- This conclusion is based on the directly computed |dG| values and the parity relationship between G_GAN and G_Predict.
+
+Data interpretation notes:
+- The CSV contains candidate design descriptors and two gabs-related outputs for each candidate.
+- No peak finding or spectral interpretation is required for this task.
+- All reported quantities are directly supported by the loaded tabular data.
+- No missing values were introduced or imputed during analysis.

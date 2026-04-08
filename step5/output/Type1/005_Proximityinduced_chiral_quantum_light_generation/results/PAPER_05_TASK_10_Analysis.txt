@@ -1,0 +1,37 @@
+Task PAPER_05_TASK_10 Analysis
+Objective: Replot the PL intensity time trace for a selected quantum emitter from the workbook.
+
+Step 0: Inspect workbook structure and identify the time-series table.
+Loaded workbook: C:/UCLEAP/UC_LEAP/step4/organized/Type1/005_Proximityinduced_chiral_quantum_light_generation/type1_data/41563_2023_1645_MOESM6_ESM_10.xlsx
+Available sheets: ['ED Fig. 2a', 'ED Fig 2b', 'ED Fig 2c', 'ED Fig 2d', 'ED Fig 2e', 'ED Fig 2f', 'ED Fig 2g']
+Sheet 'ED Fig. 2a': shape=(1341, 3), first row=['Energy', 's-', 's+']
+Sheet 'ED Fig 2b': shape=(1341, 3), first row=['Energy', 's-', 's+']
+Sheet 'ED Fig 2c': shape=(1341, 3), first row=['Energy', 's-', 's+']
+Sheet 'ED Fig 2d': shape=(1341, 3), first row=['Energy', 's-', 's+']
+Sheet 'ED Fig 2e': shape=(1341, 3), first row=['Energy', 'S', 'P']
+Sheet 'ED Fig 2f': shape=(1341, 3), first row=['Energy', 'S', 'P']
+Sheet 'ED Fig 2g': shape=(110, 3), first row=['PDA', 'Lower', 'upper']
+Selected sheet: ED Fig. 2a
+Selection reason: Selected by numeric structure and plausible time-series layout.
+
+Step 1: Clean the time axis and handle missing or placeholder entries.
+Interpreted time column: Energy
+Interpreted intensity/count column: s-
+Valid numeric pairs retained: 1340
+Missing/invalid rows excluded: 0
+Unique time points after duplicate handling: 1340
+Time range: 1.48335 to 1.86852
+Intensity range: -26.5545 to 4069.305
+
+Step 2: Plot intensity versus time using the dataset's native sampling and normalization.
+Normalization check: not normalized / arbitrary units
+No additional normalization applied to preserve native data values.
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/005_Proximityinduced_chiral_quantum_light_generation/results/PAPER_05_TASK_10_figure.png
+
+Step 3: Assess whether multiple traces exist and justify representative selection.
+Workbook inspection shows multiple sheets corresponding to different panels/conditions, but the selected sheet is the one matching the expected time-trace panel (ED Fig. 2c).
+The plotted trace preserves the native sampling of the selected sheet and does not apply smoothing or rebinning.
+
+Validation summary:
+The selected data contain a continuous numeric axis and a corresponding intensity/count series, which is sufficient for a time-trace plot.
+No unsupported peak or feature extraction was performed because the task requires visualization of the time trace, not spectral peak analysis.

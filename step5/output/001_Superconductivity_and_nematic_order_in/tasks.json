@@ -1,0 +1,318 @@
+{
+  "research_tasks": [
+    {
+      "task_id": "PAPER_01_TASK_01",
+      "task_title": "Replot the CsTi3Bi5 XRD pattern with indexed reflections",
+      "task_description": "Using the provided Excel file, reproduce the diffraction plot associated with the crystal-structure characterization figure. Read the 2θ scan and intensity data, identify the main diffraction peaks, and generate a publication-style XRD plot with intensity versus 2θ. If the file contains any annotations or peak labels, preserve them; otherwise, add peak markers only if they can be determined directly from the data. The goal is to recreate the figure panel as faithfully as possible from the spreadsheet alone, including axis labels, units, and any visible indexing information present in the file.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the spreadsheet and inspect the sheet structure, headers, and any embedded labels or metadata.",
+        "Step_1: Extract the 2θ and intensity columns, handling any merged cells or mixed text/numeric rows.",
+        "Step_2: Plot intensity versus 2θ using a clean line plot, matching the figure-style formatting as closely as possible.",
+        "Step_3: Detect prominent peaks and annotate them if the spreadsheet contains indexing information or if peak positions are unambiguous from the data.",
+        "Step_4: Export the replot as a figure panel suitable for comparison with the paper."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig1b.xlsx",
+        "relevant_variables": [
+          "2θ",
+          "Intensity(arb. units)"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A re-created XRD diffraction pattern showing intensity as a function of 2θ, with the main reflections visible and any available indexing preserved.",
+        "expected_figure": "Fig1b"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_02",
+      "task_title": "Replot field-dependent magnetic susceptibility versus temperature",
+      "task_description": "Using the provided spreadsheet, reproduce the zero-field-cooled magnetic susceptibility curves measured under multiple applied magnetic fields. Extract the temperature axis and all magnetization/susceptibility traces, then generate a multi-curve plot with temperature on the x-axis and M on the y-axis. The plot should clearly distinguish the different field conditions listed in the file and preserve the overall figure layout used for a superconducting transition plot. If the spreadsheet includes paired columns or repeated headers, parse them carefully so each field trace is plotted correctly.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook structure and identify how the field-dependent traces are arranged across columns or rows.",
+        "Step_1: Parse the temperature values and the corresponding M values for each field condition.",
+        "Step_2: Plot all susceptibility traces on a single set of axes with a legend or labels for each magnetic field.",
+        "Step_3: Match the visual style of a superconducting transition figure, including axis labels, units, and consistent line styling.",
+        "Step_4: Save the resulting multi-trace plot for figure comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2a.xlsx",
+        "relevant_variables": [
+          "Temperature (K)",
+          "M",
+          "50 Oe",
+          "100 Oe",
+          "200 Oe",
+          "300 Oe",
+          "400 Oe",
+          "500 Oe",
+          "1000 Oe",
+          "2000 Oe"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A multi-curve susceptibility-versus-temperature plot showing the superconducting transition under several applied magnetic fields.",
+        "expected_figure": "Fig2a"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_03",
+      "task_title": "Replot ultra-low-field magnetic susceptibility traces",
+      "task_description": "Using the spreadsheet, reproduce the low-field magnetic susceptibility plot containing multiple ultra-small applied fields. Extract the temperature axis and all M traces, then generate a multi-curve plot that shows how the superconducting shielding response evolves as the field is reduced. Preserve the field labels exactly as provided in the file and ensure the plot is formatted as a clean publication-style temperature sweep.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the spreadsheet to determine how the low-field traces are organized and labeled.",
+        "Step_1: Extract the temperature values and the corresponding magnetization/susceptibility values for each field.",
+        "Step_2: Plot all traces on the same axes, using a legend or direct labels for 0.01 Oe through 3 Oe.",
+        "Step_3: Format the axes and line styles to match a superconducting susceptibility figure.",
+        "Step_4: Export the final plot for figure reproduction."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2b.xlsx",
+        "relevant_variables": [
+          "T (K)",
+          "M",
+          "0.01 Oe",
+          "0.03 Oe",
+          "0.05 Oe",
+          "0.1 Oe",
+          "0.3 Oe",
+          "0.5 Oe",
+          "1 Oe",
+          "3 Oe"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A temperature-dependent susceptibility plot with multiple ultra-low-field traces, showing the field dependence of the superconducting response.",
+        "expected_figure": "Fig2b"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_04",
+      "task_title": "Replot resistivity versus temperature for two excitation currents",
+      "task_description": "Using the transport spreadsheet, reproduce the in-plane resistance versus temperature figure. Extract the temperature axis and the resistance traces corresponding to the two current settings listed in the file, then plot R versus temperature with clear labels for each current. The resulting figure should show the metallic temperature dependence and the superconducting transition region, formatted as a standard transport measurement plot.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook and identify how the two current-dependent traces are encoded.",
+        "Step_1: Parse the temperature and resistance data for each current setting.",
+        "Step_2: Plot resistance versus temperature for both currents on the same axes or in the layout used by the source figure.",
+        "Step_3: Label the current conditions exactly as shown in the spreadsheet and format the axes with units.",
+        "Step_4: Save the replot for comparison with the paper figure."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2c.xlsx",
+        "relevant_variables": [
+          "Temperature(K)",
+          "R",
+          "500 μA",
+          "1000 μA"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A resistance-versus-temperature plot with two current-dependent traces and a visible superconducting transition.",
+        "expected_figure": "Fig2c"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_05",
+      "task_title": "Visualize the 2D grid data for the first spectroscopic map",
+      "task_description": "Using the provided spreadsheet containing a structured numeric grid, reconstruct the corresponding 2D map as an image-style plot. Determine the row and column ordering, convert the values into a matrix, and display the result using an appropriate color scale. If the file includes implicit axes or index columns, preserve them in the visualization. The objective is to reproduce the figure panel as a 2D intensity or spectroscopic map rather than a line plot.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the sheet to determine the grid dimensions, index columns, and any embedded axis labels.",
+        "Step_1: Convert the numeric table into a 2D array with the correct orientation.",
+        "Step_2: Render the array as an image/heatmap with a suitable colormap and colorbar.",
+        "Step_3: Add axis labels or tick labels if they can be inferred directly from the spreadsheet structure.",
+        "Step_4: Export the heatmap for figure comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2d.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A 2D heatmap or image-style visualization reconstructed from the numeric grid data.",
+        "expected_figure": "Fig2d"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_06",
+      "task_title": "Visualize the 2D grid data for the second spectroscopic map",
+      "task_description": "Using the provided spreadsheet containing a structured numeric grid, reconstruct the corresponding 2D map as an image-style plot. Determine the matrix layout from the file, convert the values into a 2D array, and render the map with a color scale suitable for spectroscopic or spatial data. Preserve any implicit indexing or axis ordering present in the spreadsheet.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook to identify the grid structure and any axis/index information.",
+        "Step_1: Parse the numeric values into a 2D matrix with correct orientation.",
+        "Step_2: Plot the matrix as a heatmap or image with a colorbar.",
+        "Step_3: Add labels or annotations only if they are directly inferable from the file.",
+        "Step_4: Save the reconstructed figure panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2e.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A reconstructed 2D map displayed as a heatmap or image panel.",
+        "expected_figure": "Fig2e"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_07",
+      "task_title": "Visualize the 2D grid data for the third spectroscopic map",
+      "task_description": "Using the spreadsheet containing a numeric grid, reconstruct the corresponding 2D visualization. Parse the table into a matrix, determine the correct orientation, and plot it as a heatmap or image panel. The task is to reproduce the figure-style map from the spreadsheet without relying on external information.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the spreadsheet layout and identify the numeric grid boundaries.",
+        "Step_1: Convert the table into a 2D array and verify row/column ordering.",
+        "Step_2: Render the array as an image with a colorbar and figure-style formatting.",
+        "Step_3: Include axis labels if they are explicitly present in the file.",
+        "Step_4: Export the visualization for comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2g.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A 2D heatmap or image-style plot reconstructed from the spreadsheet grid.",
+        "expected_figure": "Fig2g"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_08",
+      "task_title": "Visualize the 2D grid data for the fourth spectroscopic map",
+      "task_description": "Using the spreadsheet containing a structured numeric grid, reconstruct the corresponding 2D map as a figure panel. Convert the table into a matrix, determine the correct orientation, and display the values as an image or heatmap. The output should match the style of a spectroscopic or spatial map used in the paper.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook to determine the grid dimensions and any embedded indices.",
+        "Step_1: Parse the numeric values into a 2D matrix.",
+        "Step_2: Plot the matrix as a heatmap/image with an appropriate colormap.",
+        "Step_3: Add labels or ticks only if they are explicitly available in the file.",
+        "Step_4: Save the figure for reproduction."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2h.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A reconstructed 2D map shown as a heatmap or image panel.",
+        "expected_figure": "Fig2h"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_09",
+      "task_title": "Visualize the 2D grid data for the fifth spectroscopic map",
+      "task_description": "Using the spreadsheet containing a structured numeric grid, reconstruct the corresponding 2D map as an image-style plot. Parse the values into a matrix, determine the correct orientation, and render the result with a color scale. The goal is to reproduce the figure panel directly from the spreadsheet data.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the sheet structure and identify the grid boundaries and any index columns.",
+        "Step_1: Convert the numeric table into a 2D array with correct orientation.",
+        "Step_2: Plot the array as a heatmap or image with a colorbar.",
+        "Step_3: Preserve any directly available axis labels or annotations.",
+        "Step_4: Export the reconstructed panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2i.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A 2D heatmap or image-style visualization reconstructed from the spreadsheet grid.",
+        "expected_figure": "Fig2i"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_10",
+      "task_title": "Visualize the 2D grid data for the sixth spectroscopic map",
+      "task_description": "Using the spreadsheet containing a structured numeric grid, reconstruct the corresponding 2D map as a figure panel. Convert the table into a matrix, determine the correct orientation, and display it as a heatmap or image. The output should be formatted as a clean publication-style visualization of the underlying 2D data.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook and identify the numeric grid and any index columns.",
+        "Step_1: Parse the values into a 2D matrix with the correct row/column ordering.",
+        "Step_2: Render the matrix as a heatmap or image with a colorbar.",
+        "Step_3: Add labels only if they are explicitly present in the spreadsheet.",
+        "Step_4: Save the resulting figure panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2k.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A reconstructed 2D map displayed as a heatmap or image panel.",
+        "expected_figure": "Fig2k"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_11",
+      "task_title": "Visualize the 2D grid data for the first additional map figure",
+      "task_description": "Using the provided spreadsheet, reconstruct the 2D numeric map associated with the additional figure panel. Parse the table into a matrix, determine the correct orientation, and render it as a heatmap or image. If the file contains implicit axes or index labels, preserve them in the final visualization. The task is to reproduce the figure panel directly from the spreadsheet content.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook structure and identify the grid-like data region.",
+        "Step_1: Convert the table into a 2D array and verify orientation.",
+        "Step_2: Plot the array as a heatmap/image with a suitable colormap and colorbar.",
+        "Step_3: Include axis labels if they are explicitly encoded in the file.",
+        "Step_4: Export the reconstructed figure for comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig3c.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A 2D heatmap or image-style plot reconstructed from the spreadsheet grid.",
+        "expected_figure": "Fig3c"
+      }
+    },
+    {
+      "task_id": "PAPER_01_TASK_12",
+      "task_title": "Visualize the 2D grid data for the second additional map figure",
+      "task_description": "Using the provided spreadsheet, reconstruct the 2D numeric map associated with the additional figure panel. Parse the data into a matrix, determine the correct orientation, and render it as a heatmap or image-style plot. The output should be a clean replot of the spreadsheet data suitable for figure comparison.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the workbook and locate the numeric grid region and any index information.",
+        "Step_1: Convert the values into a 2D matrix with correct row/column ordering.",
+        "Step_2: Plot the matrix as a heatmap or image with a colorbar.",
+        "Step_3: Preserve any directly available labels or annotations from the file.",
+        "Step_4: Save the final visualization."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig3h.xlsx",
+        "relevant_variables": [
+          "row indices",
+          "column indices",
+          "grid values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A reconstructed 2D heatmap or image-style visualization from the spreadsheet grid.",
+        "expected_figure": "Fig3h"
+      }
+    }
+  ]
+}

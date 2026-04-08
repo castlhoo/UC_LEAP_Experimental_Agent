@@ -1,0 +1,51 @@
+Task PAPER_09_TASK_05 Analysis
+Step 0: Open workbook and identify sheets.
+Loaded workbook: C:\UCLEAP\UC_LEAP\step4\organized\Type1\009_Spinpolarized_imaging_of_the_antiferromagnetic\type1_data\Figure 5(e,f).xlsx
+Sheets found: ['e', 'f']
+Sheet 'e' raw shape: (63, 9)
+Observed structure in sheet 'e':
+  Row 0: ['Bias', 'dI/dV', 'dI/dV', 'dI/dV', 'dI/dV', 'dI/dV', 'dI/dV', 'dI/dV', 'dI/dV']
+  Row 1: ['mV', 'a.u.', 'a.u.', 'a.u.', 'a.u.', 'a.u.', 'a.u.', 'a.u.', 'a.u.']
+  Row 2: ['B (T)', -6, -4, -2, 0, 2, 4, 6, 8]
+  Row 3: [-29, 5.139826619, 5.035773981, 4.988984666, 4.967830451, 5.051280093, 5.014729063, 5.11972371, 5.15196329]
+  Row 4: [-28, 5.041892546, 4.975703839, 4.916732719, 4.846605061, 4.942512316, 4.914422467, 4.98998156, 5.05214091]
+  Row 5: [-27, 4.991497667, 4.876914494, 4.834433365, 4.756286875, 4.842294941, 4.79519891, 4.891409838, 4.944877761]
+  Row 6: [-26, 4.885963258, 4.779883242, 4.714493716, 4.653219264, 4.730052935, 4.692438131, 4.8071478, 4.905342385]
+  Row 7: [-25, 4.820483352, 4.7007819, 4.605759491, 4.563932588, 4.660693065, 4.594212663, 4.71989896, 4.804672551]
+Step 1: Parse Bias axis and dI/dV traces.
+Bias range: -29 to 30 mV
+Field labels preserved exactly as workbook entries: ['-6', '-4', '-2', '0', '2', '4', '6', '8']
+Sheet 'f' raw shape: (11, 3)
+Observed structure in sheet 'f':
+  Row 0: [nan, 'Peak Postion', 'Error']
+  Row 1: ['B', 'dI/dV', 'dI/dV']
+  Row 2: ['T', 'a.u.', 'a.u.']
+  Row 3: [-6, -2.25424, 0.232237]
+  Row 4: [-4, -1.59574, 0.22151]
+  Row 5: [-2, -0.949158, 0.172221]
+  Row 6: [0, 0.266861, 0.156005]
+  Row 7: [2, 2.69943, 0.271414]
+Step 3: Extract peak position and uncertainty values from summary sheet.
+Number of valid peak-tracking points: 8
+  B = -6 T, peak position = -2.25424 a.u., error = 0.232237 a.u.
+  B = -4 T, peak position = -1.59574 a.u., error = 0.22151 a.u.
+  B = -2 T, peak position = -0.949158 a.u., error = 0.172221 a.u.
+  B = 0 T, peak position = 0.266861 a.u., error = 0.156005 a.u.
+  B = 2 T, peak position = 2.69943 a.u., error = 0.271414 a.u.
+  B = 4 T, peak position = 1.8898 a.u., error = 0.21288 a.u.
+  B = 6 T, peak position = 3.6825 a.u., error = 0.367773 a.u.
+  B = 8 T, peak position = 4.46759 a.u., error = 0.259643 a.u.
+Validation of sheet 'e' spectra:
+  Field -6: 60 finite points, min=4.02662, max=5.5598
+  Field -4: 60 finite points, min=4.02564, max=5.59145
+  Field -2: 60 finite points, min=4.02913, max=5.61708
+  Field 0: 60 finite points, min=3.93271, max=5.56561
+  Field 2: 60 finite points, min=3.88541, max=5.19867
+  Field 4: 60 finite points, min=3.88567, max=5.35602
+  Field 6: 60 finite points, min=3.99325, max=5.11972
+  Field 8: 60 finite points, min=3.97286, max=5.15196
+Step 4: Verify field labels and axis units.
+Panel e legend labels used: ['B = -6 T', 'B = -4 T', 'B = -2 T', 'B = 0 T', 'B = 2 T', 'B = 4 T', 'B = 6 T', 'B = 8 T']
+Axis labels used: Bias (mV), dI/dV (a.u.), B (T), Peak Position (a.u.)
+Step 5: Assemble publication-style figure and export result.
+Figure saved to: C:\UCLEAP\UC_LEAP\step5\output\Type1\009_Spinpolarized_imaging_of_the_antiferromagnetic\results\PAPER_09_TASK_05_figure.png

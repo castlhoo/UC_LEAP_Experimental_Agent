@@ -1,0 +1,72 @@
+Task PAPER_06_TASK_02 Analysis
+Objective: Replot zero-field-cooled magnetization versus temperature under multiple applied fields.
+
+Step_0: Load the spreadsheet and determine how repeated temperature/magnetization pairs are arranged.
+Loaded Excel file successfully: C:/UCLEAP/UC_LEAP/step4/organized/Type1/006_Superconductivity_and_nematic_order_in/type1_data/Fig2a.xlsx
+Available sheets: ['Sheet1']
+Read sheet 'Sheet1' with shape 88 rows x 32 columns.
+
+Step_1: Identify the field labels associated with each trace and map them to the corresponding columns.
+Identified 16 temperature/magnetization pairs from the header structure.
+  Pair 1: Temperature column 0, M column 1, field label '50 Oe'
+  Pair 2: Temperature column 2, M column 3, field label '50 Oe'
+  Pair 3: Temperature column 4, M column 5, field label '100 Oe'
+  Pair 4: Temperature column 6, M column 7, field label '100 Oe'
+  Pair 5: Temperature column 8, M column 9, field label '200 Oe'
+  Pair 6: Temperature column 10, M column 11, field label '200 Oe'
+  Pair 7: Temperature column 12, M column 13, field label '300 Oe'
+  Pair 8: Temperature column 14, M column 15, field label '300 Oe'
+  Pair 9: Temperature column 16, M column 17, field label '400 Oe'
+  Pair 10: Temperature column 18, M column 19, field label '400 Oe'
+  Pair 11: Temperature column 20, M column 21, field label '500 Oe'
+  Pair 12: Temperature column 22, M column 23, field label '500 Oe'
+  Pair 13: Temperature column 24, M column 25, field label '1000 Oe'
+  Pair 14: Temperature column 26, M column 27, field label '1000 Oe'
+  Pair 15: Temperature column 28, M column 29, field label '2000 Oe'
+  Pair 16: Temperature column 30, M column 31, field label '2000 Oe'
+
+Step_2: Clean the data by removing blank rows, duplicated headers, or metadata rows if present.
+  Trace 1 ('50 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 2 ('50 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 3 ('100 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 4 ('100 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 5 ('200 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 6 ('200 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 7 ('300 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 8 ('300 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 9 ('400 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 10 ('400 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 11 ('500 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 12 ('500 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 13 ('1000 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 14 ('1000 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 15 ('2000 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+  Trace 16 ('2000 Oe'): kept 43 rows after cleaning from 86 raw rows; removed 43 non-numeric/blank rows.
+
+Step_3: Plot magnetization versus temperature for all field values on the same axes.
+  Trace '50 Oe': temperature range 1.79886 K to 6.0005 K; M range -0.0728462 to 3.49583e-05.
+  Trace '50 Oe': temperature range 1.79489 K to 5.99085 K; M range -0.0691771 to 3.42311e-05.
+  Trace '100 Oe': temperature range 1.79869 K to 5.99752 K; M range -0.0687013 to 3.52271e-05.
+  Trace '100 Oe': temperature range 1.79711 K to 6.00292 K; M range -0.0653677 to 3.53919e-05.
+  Trace '200 Oe': temperature range 1.79859 K to 6.00135 K; M range -0.0428336 to 3.53881e-05.
+  Trace '200 Oe': temperature range 1.79691 K to 6.00292 K; M range -0.0361491 to 3.46076e-05.
+  Trace '300 Oe': temperature range 1.79912 K to 5.99851 K; M range -0.0109983 to 3.31458e-05.
+  Trace '300 Oe': temperature range 1.79692 K to 5.98647 K; M range -0.0105403 to 3.34876e-05.
+  Trace '400 Oe': temperature range 1.79912 K to 5.98265 K; M range -0.00412085 to 2.86929e-05.
+  Trace '400 Oe': temperature range 1.7973 K to 5.99865 K; M range -0.00349397 to 2.84496e-05.
+  Trace '500 Oe': temperature range 1.79919 K to 6.0005 K; M range -0.000954369 to 3.15957e-05.
+  Trace '500 Oe': temperature range 1.79716 K to 5.98322 K; M range -0.000943859 to 3.16374e-05.
+  Trace '1000 Oe': temperature range 1.7991 K to 6.00121 K; M range -8.92144e-05 to 2.84552e-05.
+  Trace '1000 Oe': temperature range 1.79664 K to 6.00093 K; M range -8.73579e-05 to 2.84089e-05.
+  Trace '2000 Oe': temperature range 1.79872 K to 6.00022 K; M range 1.55053e-05 to 2.43582e-05.
+  Trace '2000 Oe': temperature range 1.79678 K to 6.00591 K; M range 1.56219e-05 to 2.44473e-05.
+
+Step_4: Add legend/annotations and format the plot for publication-quality comparison.
+Saved figure to: C:/UCLEAP/UC_LEAP/step5/output/Type1/006_Superconductivity_and_nematic_order_in/results/PAPER_06_TASK_02_figure.png
+
+Validation and interpretation notes:
+  - The sheet structure contains repeated Temperature (K)/M column pairs with field labels in the second header row.
+  - No additional metadata rows were needed beyond the first two header rows.
+  - The data were suitable for direct plotting after numeric coercion and removal of blank/non-numeric entries.
+  - The resulting figure preserves the field ordering as encountered in the spreadsheet and distinguishes each curve with a legend.
+  - No peak-finding or derived quantitative analysis was required for this task; only direct visualization of the measured traces was performed.

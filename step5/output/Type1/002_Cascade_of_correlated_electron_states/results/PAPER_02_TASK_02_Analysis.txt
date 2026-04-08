@@ -1,0 +1,28 @@
+Task PAPER_02_TASK_02 Analysis
+
+Workbook loaded: C:/UCLEAP/UC_LEAP/step4/organized/Type1/002_Cascade_of_correlated_electron_states/type1_data/41586_2021_3946_MOESM4_ESM_10.xlsx
+Available sheets: ['Fig 3e', 'Fig 3f']
+
+Step_0: Open the Excel workbook and locate the sheet corresponding to the inset spectrum.
+Inspection of the workbook shows only two sheets: 'Fig 3e' and 'Fig 3f'.
+These sheets contain q/fraction of Qbragg axes and intensity traces, not bias voltage or dI/dV data.
+Conclusion: the workbook does not contain an identifiable inset tunneling spectrum sheet.
+
+Step_1: Determine which columns contain bias and dI/dV values, accounting for any multi-row headers or embedded labels.
+Sheet 'Fig 3e' has a multi-row header with q and multiple intensity columns labeled by temperature (4.5K to 58.7K).
+Sheet 'Fig 3f' has q and intensity columns labeled qa, qb, and qc.
+No column or embedded label indicates bias voltage or dI/dV.
+
+Step_2: Extract the intended inset-range data and remove any non-data rows.
+Because no bias/dI/dV data are present, no inset-range extraction can be performed.
+The available rows are q-dependent intensity data, which are not suitable for the requested tunneling spectrum inset.
+
+Step_3: Plot dI/dV versus bias using a line plot with clear axis labels and a zoomed-in view if indicated by the data.
+This step cannot be completed faithfully because the required variables (Bias and dI/dV) are absent.
+No unsupported substitution was made using q/intensity data.
+
+Step_4: Confirm that the output matches the inset-style presentation implied by the digitized dataset.
+The dataset does not support an inset-style tunneling spectrum reconstruction.
+Therefore, no figure was generated to avoid fabricating an incorrect panel.
+
+Final assessment: task cannot be completed from the provided workbook because the necessary bias-voltage and dI/dV data are missing.

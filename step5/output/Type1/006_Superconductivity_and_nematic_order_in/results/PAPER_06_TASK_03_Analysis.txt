@@ -1,0 +1,63 @@
+Task PAPER_06_TASK_03: Replot ultra-low-field magnetization versus temperature
+Dataset file: C:\UCLEAP\UC_LEAP\step4\organized\Type1\006_Superconductivity_and_nematic_order_in\type1_data\Fig2b.xlsx
+Workbook sheets: ['Sheet1']
+Loaded sheet 'Sheet1' with shape (194, 32)
+Row 0 preview: ['T (K)', 'M', 'T (K)', 'M', 'T (K)', 'M', 'T (K)', 'M', 'T (K)', 'M', 'T (K)', 'M'] ...
+Row 1 preview: [nan, '0.01 Oe', nan, '0.01 Oe', nan, '0.03 Oe', nan, '0.03 Oe', nan, '0.05 Oe', nan, '0.05 Oe'] ...
+Row 2 preview: [1.797443, -0.61501818624768, 7.999402, 0.00694002545035877, 1.796994, -0.583189341568723, 7.999129, 0.0105877433737264, 1.795877, -0.579827312265495, 8.000084, 0.000504163518186196] ...
+Row 3 preview: [1.856464, -0.611369740798186, 7.841966, 0.0143068732738665, 1.854156, -0.584916444938343, 7.855209, 0.000969115538068985, 1.855555, -0.580087500819237, 7.866056, 0.0117331318861355] ...
+Row 4 preview: [1.905375, -0.60986816357682, 7.766319, 0.0331229934244378, 1.906451, -0.584044913946438, 7.755272, -0.00626415105192005, 1.90519, -0.577960732129241, 7.765555, -0.000370543373838294] ...
+Row 5 preview: [1.954945, -0.607259961709063, 7.66602, 0.01269061060347, 1.958185, -0.582050481938818, 7.639979, 0.00507091995700035, 1.955886, -0.575506235482962, 7.668113, 0.0102767322351733] ...
+Row 6 preview: [2.007968, -0.604013652368134, 7.566431, -0.00967302291440632, 2.008898, -0.5828944237019, 7.55462, 0.0014240219176692, 2.006772, -0.572016119816327, 7.558741, -0.00108495349087812] ...
+Row 7 preview: [2.057697, -0.603904582897202, 7.478685, 0.0318535009042598, 2.055902, -0.579272796847257, 7.479619, 0.00400972811950133, 2.058933, -0.569621882098548, 7.477875, -0.000890318064207769] ...
+Detected column pairs and labels:
+  Pair 1: cols (0,1) headers=(T (K),M), field label='0.01 Oe'
+  Pair 2: cols (2,3) headers=(T (K),M), field label='0.01 Oe'
+  Pair 3: cols (4,5) headers=(T (K),M), field label='0.03 Oe'
+  Pair 4: cols (6,7) headers=(T (K),M), field label='0.03 Oe'
+  Pair 5: cols (8,9) headers=(T (K),M), field label='0.05 Oe'
+  Pair 6: cols (10,11) headers=(T (K),M), field label='0.05 Oe'
+  Pair 7: cols (12,13) headers=(T (K),M), field label='0.1 Oe'
+  Pair 8: cols (14,15) headers=(T (K),M), field label='0.1 Oe'
+  Pair 9: cols (16,17) headers=(T (K),M), field label='0.3 Oe'
+  Pair 10: cols (18,19) headers=(T (K),M), field label='0.3 Oe'
+  Pair 11: cols (20,21) headers=(T (K),M), field label='0.5 Oe'
+  Pair 12: cols (22,23) headers=(T (K),M), field label='0.5 Oe'
+  Pair 13: cols (24,25) headers=(T (K),M), field label='1 Oe'
+  Pair 14: cols (26,27) headers=(T (K),M), field label='1 Oe'
+  Pair 15: cols (28,29) headers=(T (K),M), field label='3 Oe'
+  Pair 16: cols (30,31) headers=(T (K),M), field label='3 Oe'
+  Extracted pair 1: field='0.01 Oe', points=95, T range=(1.79744, 8.00158), M range=(-0.615018, 0.0416246)
+  Extracted pair 2: field='0.01 Oe', points=96, T range=(1.79321, 7.9994), M range=(-0.196378, 0.049542)
+  Extracted pair 3: field='0.03 Oe', points=96, T range=(1.79699, 7.99831), M range=(-0.584916, 0.020342)
+  Extracted pair 4: field='0.03 Oe', points=96, T range=(1.79316, 7.99913), M range=(-0.0984047, 0.0209617)
+  Extracted pair 5: field='0.05 Oe', points=96, T range=(1.79588, 8.00022), M range=(-0.580088, 0.0133549)
+  Extracted pair 6: field='0.05 Oe', points=96, T range=(1.79332, 8.00008), M range=(-0.0772639, 0.0117331)
+  Extracted pair 7: field='0.1 Oe', points=96, T range=(1.79641, 8.00076), M range=(-0.55589, 0.00505831)
+  Extracted pair 8: field='0.1 Oe', points=96, T range=(1.79421, 7.99886), M range=(-0.0660419, 0.00595951)
+  Extracted pair 9: field='0.3 Oe', points=96, T range=(1.79671, 8.00063), M range=(-0.469803, 0.00201199)
+  Extracted pair 10: field='0.3 Oe', points=96, T range=(1.79417, 7.99817), M range=(-0.0548223, 0.00153027)
+  Extracted pair 11: field='0.5 Oe', points=96, T range=(1.79694, 8.00077), M range=(-0.402076, 0.000940715)
+  Extracted pair 12: field='0.5 Oe', points=96, T range=(1.79419, 7.99927), M range=(-0.0526297, 0.00131849)
+  Extracted pair 13: field='1 Oe', points=96, T range=(1.79664, 8.00022), M range=(-0.27301, 0.000473751)
+  Extracted pair 14: field='1 Oe', points=96, T range=(1.79402, 7.99954), M range=(-0.050703, 0.000495966)
+  Extracted pair 15: field='3 Oe', points=96, T range=(1.79702, 8.0024), M range=(-0.116491, 0.000107795)
+  Extracted pair 16: field='3 Oe', points=96, T range=(1.79404, 8.00036), M range=(-0.0497116, 0.000158293)
+Field ordering preserved as in the source sheet:
+  Pair 1: label='0.01 Oe', parsed_field=0.01
+  Pair 2: label='0.01 Oe', parsed_field=0.01
+  Pair 3: label='0.03 Oe', parsed_field=0.03
+  Pair 4: label='0.03 Oe', parsed_field=0.03
+  Pair 5: label='0.05 Oe', parsed_field=0.05
+  Pair 6: label='0.05 Oe', parsed_field=0.05
+  Pair 7: label='0.1 Oe', parsed_field=0.1
+  Pair 8: label='0.1 Oe', parsed_field=0.1
+  Pair 9: label='0.3 Oe', parsed_field=0.3
+  Pair 10: label='0.3 Oe', parsed_field=0.3
+  Pair 11: label='0.5 Oe', parsed_field=0.5
+  Pair 12: label='0.5 Oe', parsed_field=0.5
+  Pair 13: label='1 Oe', parsed_field=1.0
+  Pair 14: label='1 Oe', parsed_field=1.0
+  Pair 15: label='3 Oe', parsed_field=3.0
+  Pair 16: label='3 Oe', parsed_field=3.0
+Figure saved to: C:\UCLEAP\UC_LEAP\step5\output\Type1\006_Superconductivity_and_nematic_order_in\results\PAPER_06_TASK_03_figure.png

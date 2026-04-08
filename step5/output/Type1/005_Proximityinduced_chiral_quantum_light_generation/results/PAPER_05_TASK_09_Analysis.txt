@@ -1,0 +1,38 @@
+Task PAPER_05_TASK_09 Analysis
+Dataset file: C:\UCLEAP\UC_LEAP\step4\organized\Type1\005_Proximityinduced_chiral_quantum_light_generation\type1_data\41563_2023_1645_MOESM5_ESM_10.xlsx
+Available sheets: ['Fig 4a', 'Fig 4b', 'Fig 4c', 'Fig 4d', 'Fig 4e']
+
+Step_0: Locate the sheets for σ+ and σ− excitation conditions and identify the emitted channels.
+Selected sheet for σ+ excitation: Fig 4a
+Selected sheet for σ− excitation: Fig 4c
+Reasoning: The workbook preview shows Fig 4a contains columns labeled with sigma- and sigma+ emission channels under a common energy axis, and Fig 4c contains analogous spectra with s- and s+ channels. These are the only sheets in the preview that contain full spectral traces suitable for replotting excitation-dependent PL spectra.
+Emitted channels identified from the sheet headers:
+ - Fig 4a: sigma- 6T, sigma+ 6T, sigma- 3T, sigma+ 3T, sigma- 0T, sigma+ 0T, sigma- -3T, sigma+ -3T, sigma- -6T, sigma+ -6T
+ - Fig 4c: s- 0TB, s+ 0TB, s- 6TA, s+ 6TA, s- 3TA, s+ 3TA, s- 0TA, s+ 0TA
+Limitation: The workbook preview does not explicitly label which sheet corresponds to σ+ excitation versus σ− excitation in the sheet name. The selection below is based on the dataset organization and the task request to compare excitation polarizations using the available circular-polarization-resolved spectra.
+
+Step_1: Extract the energy axis and plot the spectra for each excitation condition on shared axes.
+Loaded Fig 4a: shape=(1340, 11)
+Loaded Fig 4c: shape=(1340, 9)
+Detected energy column in Fig 4a: Ener5gy
+Detected energy column in Fig 4c: energy
+Detected channel columns in Fig 4a: ['sigma-  6T', 'sigma+ 6T', 'sigma-  3T', 'sigma+ 3T', 'sigma-  0T', 'sigma+ 0T', 'sigma-  -3T', 'sigma+ -3T', 'sigma-  -6T', 'sigma+ -6T']
+Detected channel columns in Fig 4c: ['s- 0TB', 's+ 0TB', 's- 6TA', 's+ 6TA', 's- 3TA', 's+ 3TA', 's- 0TA', 's+ 0TA']
+Spectrum validity for Fig 4a: True
+Spectrum validity for Fig 4c: True
+Step_2: Normalize or scale traces consistently if the workbook indicates that the data are replot-ready normalized spectra.
+Observation: The spectral columns contain small integer-like values and appear to be preprocessed/replot-ready data rather than raw detector counts. To preserve the workbook's normalization, the traces are plotted directly without additional normalization.
+Reasoning: Applying extra normalization would alter the relative intensity structure already encoded in the workbook. Therefore, the figure uses the provided values as-is.
+
+Step_3: Add legends and annotations to emphasize the comparison between excitation polarizations.
+Figure saved to: C:\UCLEAP\UC_LEAP\step5\output\Type1\005_Proximityinduced_chiral_quantum_light_generation\results\PAPER_05_TASK_09_figure.png
+Reasoning: The final plot overlays all available circular-polarization-resolved channels from the two selected sheets on common axes, with solid versus dashed styling and explicit legend labels to distinguish σ+ and σ− excitation.
+
+Quantitative note:
+ - No peak fitting or peak assignment was performed because the task is a figure reproduction/replotting task and the workbook preview does not provide explicit peak labels for these spectra.
+ - The plotted traces are directly taken from the workbook values; no unsupported recalibration or background subtraction was introduced.
+
+Exclusions and limitations:
+ - The workbook preview does not explicitly state which sheet is σ+ excitation and which is σ− excitation in the sheet names. The mapping used here is based on the available sheet organization and the task context.
+ - If the original publication figure uses a different sheet-to-excitation mapping, that cannot be verified from the preview alone.
+ - No additional normalization was applied because the data appear already prepared for plotting.

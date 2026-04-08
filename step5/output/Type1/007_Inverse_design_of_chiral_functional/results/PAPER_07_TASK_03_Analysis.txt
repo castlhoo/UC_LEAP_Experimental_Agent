@@ -1,0 +1,45 @@
+Task PAPER_07_TASK_03 Analysis
+
+Step_0: Load the CSV and inspect the schema to identify output, prediction, and error columns.
+Loaded dataset successfully from: C:/UCLEAP/UC_LEAP/step4/organized/Type1/007_Inverse_design_of_chiral_functional/type1_data/cgan_test_result_ABS_440.csv
+Shape: 69 rows x 7 columns
+Columns: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+
+Observed schema indicates a tabular candidate-solution dataset rather than a wavelength-resolved spectrum.
+The filename includes ABS_440, which supports interpretation as a target absorption condition at 440 nm.
+Relevant columns identified directly from the file: G_GAN, G_Predict, and dG.
+Additional columns present: Color, Thick, Strain, Gray, which appear to be design/input descriptors rather than output metrics.
+
+Step_1: Determine whether the table is organized by candidate design, wavelength, or property target, and isolate the 440 nm target entries.
+The file is already specific to ABS_440, so all rows are treated as candidate designs for the 440 nm target.
+No explicit wavelength column is present in the table; therefore, no further wavelength filtering is possible or needed.
+The dataset appears organized by candidate design rows, each containing design descriptors and corresponding generated/predicted values.
+
+Step_2: Clean and standardize the numeric columns, ensuring the generated and predicted values are directly comparable.
+Rows retained after numeric coercion and required-column filtering: 69
+
+Step_3: Create the appropriate replot based on table structure.
+Because the table contains paired generated and predicted values for each candidate design, a parity-style comparison is the most appropriate visualization.
+A parity plot directly shows agreement between G_GAN and G_Predict across candidate rows.
+To make the 440 nm target condition explicit, the figure title and annotations will reference ABS target 440 nm.
+If dG is present, it will be included as a text annotation and optionally used to color points if available.
+
+Step_4: Annotate the figure with the 440 nm target condition and include any reported error metric such as dG if present.
+dG is present in the dataset and is interpreted strictly as a reported difference metric between generated and predicted values, as provided by the file.
+No additional physical calibration is assumed.
+
+Step_5: Export the plot in a publication-ready format matching the style of inverse-design result panels.
+The plot will be saved as a high-resolution PNG with labeled axes, equal aspect parity reference, and a legend.
+
+Quantitative checks performed on the cleaned data:
+Number of candidate rows used: 69
+Mean absolute error between G_GAN and G_Predict: 0.332822
+Root-mean-square error between G_GAN and G_Predict: 0.368041
+Mean signed difference (G_GAN - G_Predict): 0.332822
+These quantities are computed directly from the available columns and do not require unsupported assumptions.
+
+Validation and exclusions:
+No peak identification was required because this is not a spectral dataset.
+No rows were excluded beyond standard numeric coercion and removal of rows missing G_GAN or G_Predict.
+No missing wavelength column was inferred; the 440 nm target is taken from the filename and task context.
+The resulting figure is a parity-style comparison suitable for a model-evaluation panel.

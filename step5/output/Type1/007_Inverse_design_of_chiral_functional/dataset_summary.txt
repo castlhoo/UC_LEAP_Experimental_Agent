@@ -1,0 +1,82 @@
+1. Dataset Overview
+- Format:
+  - Mixed collection of CSV, Excel, and Python scripts
+  - No single database schema; appears to be replot-ready result tables plus model code
+- Number of runs / experiments:
+  - Multiple runs/experiments across many figure sheets and result files
+  - At least 40+ figure/data sheets in the Excel workbook, plus several CSV result tables
+- Approximate data volume:
+  - Excel workbook: 9.8 MB, with many sheets and thousands of rows per sheet
+  - Largest listed CSV: 130.5 KB
+  - Several smaller prediction/result CSVs from tens to thousands of rows
+- Time range:
+  - Not explicitly available from the provided metadata
+  - Script timestamps suggest development around 2022; dataset likely associated with the 2023 paper
+
+2. Instrumentation Setup
+- Inferred instruments / software components:
+  - Spectroscopy/optical characterization system
+    - Likely used to measure wavelength-dependent CD/gabs spectra
+  - Robotic AI-guided synthesis/optimization pipeline
+    - Suggested by the paper context and the presence of forward/reverse model scripts
+  - Machine-learning models (PyTorch-based)
+    - Forward network and cGAN-style scripts for predicting/designing film properties
+  - Spectrum-processing utilities
+    - `spectrum as sp` appears in multiple scripts, likely for spectral preprocessing/representation
+- Notes:
+  - No explicit hardware list is present in the files provided
+  - Instrumentation is inferred mainly from the variables and the paper context, not directly observed in metadata
+
+3. Information of each run / experiment
+
+a. Measured Parameters
+- Observed independent variables:
+  - Wavelength(nm)
+    - Present in Excel sheets such as `Figure 1c`, `Figure2a`, `Figure2b`
+    - Ranges shown include ~300 to 800 nm
+  - Design / sample descriptors in CSVs:
+    - `Color`, `thickness` / `Thick`, `stretch` / `Strain`, `gray`
+- Observed dependent variables:
+  - `gabs`
+    - Multiple columns in several sheets, likely different samples/conditions
+  - `Normalized CD`
+    - In `Figure2b`
+  - `G_GAN`, `G_Predict`, `dG`
+    - Model output vs prediction and their difference in result CSVs
+- Naming conventions:
+  - Excel sheets use figure-based labels (`Figure 1c`, `Figure2a`, etc.)
+  - CSVs use property-targeted names such as:
+    - `cgan_test_result_ABS_440.csv`
+    - `cgan_test_result_PROP_467.csv`
+    - `final_result_PROP_440.csv`
+
+b. Experimental Context (Inference)
+- Likely experiment type:
+  - Optical spectroscopy / chiroptical characterization of chiral functional films
+  - Model-assisted inverse design of film structures with target optical response
+- Possible physical phenomena:
+  - Circular dichroism / dissymmetry factor (`gabs`)
+  - Possibly circularly polarized optical response in stacked or twisted bilayer films
+  - Property prediction/optimization via generative adversarial or forward neural networks
+- Reasoning:
+  - The paper context explicitly concerns chiral stacked films, CD, and CPL
+  - Wavelength-resolved `gabs` and `Normalized CD` strongly indicate chiroptical spectroscopy
+  - `Color`, `Thickness`, `Strain`, `Gray` look like design parameters or encoded film descriptors used for ML-guided inverse design
+  - `G_GAN` and `G_Predict` suggest generated vs predicted target property values from a cGAN/forward model workflow
+
+c. Notes for Analysis
+- Important patterns in structure:
+  - The Excel workbook is organized by figure panels, suggesting each sheet corresponds to a plotted result in the paper
+  - Many sheets contain wavelength-resolved spectra with multiple sample columns
+  - CSV result files are compact summary tables for model evaluation or candidate screening
+- Potential challenges / ambiguities:
+  - Some headers are duplicated (`gabs`, `Normalized CD`) without unique sample labels
+  - The meaning of `Color`, `Thick`, `Strain`, and `Gray` is not defined in the provided metadata
+  - `gabs` may represent dissymmetry factor or a related normalized chiroptical metric, but exact definition should be confirmed from the paper
+  - No direct mapping from sheet names to experimental conditions is provided
+- Suggestions for analysis:
+  - Treat Excel sheets as spectral datasets and align by wavelength for plotting/comparison
+  - Use CSVs as model input/output tables for regression or inverse-design validation
+  - Compare `G_GAN` vs `G_Predict` and inspect `dG` to assess model error
+  - For spectral sheets, summarize peak positions, sign changes, and wavelength-dependent trends rather than raw rows
+  - If downstream tasks require labeling, infer sample identity from sheet context or figure captions rather than column names alone

@@ -1,0 +1,1469 @@
+{
+  "paper_id": "step1_0017",
+  "title": "Inverse design of chiral functional films by a robotic AI-guided system",
+  "doi": "10.1038/s41467-023-41951-x",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://doi.org/10.1038/s41467-023-41951-x",
+  "priority_score": 8.3,
+  "dataset_status": "verified",
+  "files_downloaded": 6,
+  "files_extracted": 44,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-41951-x",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "archive",
+    "numpy",
+    "binary",
+    "excel",
+    "script"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The clearly figure/source-data style files are the structured Excel and CSV tables with explicit physical variables and model outputs, including wavelength-resolved gabs/CD tables and inverse-design result tables.",
+  "type2_summary": "No file in the inspected set is unambiguously raw instrument output; the provided files are mostly cleaned source data, model outputs, or documentation.",
+  "type1_files": [
+    "41467_2023_41951_MOESM7_ESM_8.xlsx",
+    "20_gabs_outfile.csv",
+    "cgan_test_result_ABS_440.csv",
+    "cgan_test_result_PROP_440.csv",
+    "final_result_PROP_440.csv",
+    "cgan_test_result_ABS_467_1.72.csv",
+    "cgan_test_result_ABS_467_1.78.csv",
+    "cgan_test_result_PROP_467.csv",
+    "final_result_PROP_467.csv"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly describes raw measurements in the narrative, but the inspected files shown here are predominantly cleaned source-data tables and ML result tables rather than raw instrument outputs. Several unlabeled CSVs appear to be intermediate or auxiliary solution files and were conservatively not promoted to Type 1.",
+  "file_classifications": [
+    {
+      "filename": "41467_2023_41951_MOESM7_ESM_8.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data include processed spectra and figure-specific datasets for CD/gabs and related chiroptical measurements used in figures.",
+      "file_evidence": "Excel source-data workbook with 48 sheets named by figure panels (e.g., Figure 1c, Figure2a, Figure5b). Contains structured numeric columns such as Wavelength(nm), gabs, Normalized CD, and CD(mdeg), directly suitable for plotting.",
+      "reasoning": "This is organized figure/source data with physical variables and panel-specific sheets, matching cleaned replot-ready data rather than raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Wavelength(nm), gabs, Normalized CD, CD(mdeg)"
+    },
+    {
+      "filename": "train_idx.npy",
+      "type": "other",
+      "paper_evidence": "The paper discusses machine-learning forward/reverse models and dataset splitting, but does not identify this as a figure or measurement dataset.",
+      "file_evidence": "Small NumPy index array of shape [1194], likely training indices for model development rather than experimental data.",
+      "reasoning": "This is auxiliary ML metadata used for training/validation partitioning, not a plot-ready scientific dataset and not raw measurement data.",
+      "ambiguity": "Low-level ambiguity because it supports the ML workflow, but it is clearly not a figure/source-data table.",
+      "key_columns_or_structure": "1D integer index array"
+    },
+    {
+      "filename": "20_gabs_outfile.csv",
+      "type": "type1",
+      "paper_evidence": "The paper reports processed CD/gabs spectra sampled across wavelength for inverse-design and figure generation.",
+      "file_evidence": "Tabular CSV with wavelength columns from 200 to 800 nm and rows labeled by feature combinations like Color-thickness-stretch-gray. Directly plottable spectral data.",
+      "reasoning": "This is a cleaned spectral table with explicit physical axes and outputs, consistent with replot-ready source data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "feature：Color - thickness - stretch - gray; 200-800 nm spectral values"
+    },
+    {
+      "filename": "model evaluation.txt",
+      "type": "documentation",
+      "paper_evidence": "The paper mentions model performance evaluation, but this file is not a scientific measurement dataset.",
+      "file_evidence": "Tiny text file containing R2 values for train evaluation; no experimental variables or figure data structure.",
+      "reasoning": "This is model-performance documentation/summary rather than data to plot as a scientific figure.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Single text column 'train' with R2 entries"
+    },
+    {
+      "filename": "random_20gabs.csv",
+      "type": "other",
+      "paper_evidence": "The paper describes prescreening and clustering of candidate films, but does not identify this file as a figure/source-data table.",
+      "file_evidence": "Small headerless numeric CSV with four integer columns and no physical variable names; appears to be an index/parameter list or intermediate selection file.",
+      "reasoning": "Lacks clear labeling and is not directly replot-ready as a scientific figure without additional context.",
+      "ambiguity": "Moderate: could be an intermediate selection table, but insufficient metadata to classify as Type 1.",
+      "key_columns_or_structure": "Unlabeled 4-column integer table"
+    },
+    {
+      "filename": "445nm+520nm.csv",
+      "type": "other",
+      "paper_evidence": "The paper includes inverse-design solution sets for target wavelengths, but this specific file is not explicitly identified as figure/source data.",
+      "file_evidence": "Very small headerless numeric CSV with 4 columns and 12 rows; likely an intermediate solution/result table rather than a directly interpretable plot dataset.",
+      "reasoning": "Insufficient labeling and context for direct plotting; conservative classification is not Type 1.",
+      "ambiguity": "Moderate",
+      "key_columns_or_structure": "Unlabeled 4-column numeric table"
+    },
+    {
+      "filename": "445nm+634nm.csv",
+      "type": "other",
+      "paper_evidence": "The paper discusses wavelength-targeted inverse-design solution spaces, but not this file specifically.",
+      "file_evidence": "Large headerless numeric CSV with 18,220 rows and 4 columns; appears to be a dense candidate/solution list rather than a figure-ready table with named variables.",
+      "reasoning": "Although numeric and sizable, the lack of headers and explicit physical variable names makes it unsuitable as cleaned replot-ready data without extra processing.",
+      "ambiguity": "Moderate",
+      "key_columns_or_structure": "Unlabeled 4-column numeric table"
+    },
+    {
+      "filename": "520nm+634nm.csv",
+      "type": "other",
+      "paper_evidence": "The paper includes wavelength-specific inverse-design maps, but this file is not explicitly described as source data.",
+      "file_evidence": "Headerless numeric CSV with 999 rows and 4 columns; likely an intermediate solution set.",
+      "reasoning": "Not clearly figure-ready and lacks metadata needed for direct plotting.",
+      "ambiguity": "Moderate",
+      "key_columns_or_structure": "Unlabeled 4-column numeric table"
+    },
+    {
+      "filename": "cgan_test_result_ABS_440.csv",
+      "type": "type1",
+      "paper_evidence": "The paper reports model-predicted vs measured chiroptical properties and inverse-design outputs for target gabs values.",
+      "file_evidence": "Structured CSV with headers Color, Thick, Strain, Gray, G_GAN, G_Predict, dG. These are directly interpretable model evaluation/inference results and can be plotted immediately.",
+      "reasoning": "This is a cleaned results table with explicit variables and model outputs, suitable for direct plotting and comparison.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+    },
+    {
+      "filename": "cgan_test_result_PROP_440.csv",
+      "type": "type1",
+      "paper_evidence": "The paper includes inverse-design solution maps and predicted vs measured comparisons for target gabs values.",
+      "file_evidence": "Large structured CSV with the same explicit columns as above and thousands of rows, suitable for plotting solution distributions and prediction comparisons.",
+      "reasoning": "Clean tabular results with physical parameters and model outputs; directly replot-ready.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+    },
+    {
+      "filename": "final_result_PROP_440.csv",
+      "type": "type1",
+      "paper_evidence": "The paper presents final inverse-design recommendations for target chiroptical properties.",
+      "file_evidence": "Small structured CSV with headers Color, Thick, Strain, Gray, G_Predict; directly usable as a final recommendation table.",
+      "reasoning": "This is a cleaned final-result table, clearly figure/source-data style.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_Predict"
+    },
+    {
+      "filename": "cgan_test_result_ABS_467_1.72.csv",
+      "type": "type1",
+      "paper_evidence": "The paper reports target-specific inverse-design results at selected wavelengths and gabs values.",
+      "file_evidence": "Structured CSV with explicit columns for design variables and GAN/predicted gabs outputs; large enough for analysis and plotting.",
+      "reasoning": "Directly replot-ready model result table.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+    },
+    {
+      "filename": "cgan_test_result_ABS_467_1.78.csv",
+      "type": "type1",
+      "paper_evidence": "Same inverse-design context as other target-specific result files in the paper.",
+      "file_evidence": "Structured CSV with the same explicit columns and many rows; suitable for plotting model performance and solution distributions.",
+      "reasoning": "Clean tabular source/result data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+    },
+    {
+      "filename": "cgan_test_result_PROP_467.csv",
+      "type": "type1",
+      "paper_evidence": "The paper includes property-targeted inverse-design solution sets.",
+      "file_evidence": "Structured CSV with explicit headers and numeric values for design variables and outputs.",
+      "reasoning": "Replot-ready cleaned results table.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+    },
+    {
+      "filename": "final_result_PROP_467.csv",
+      "type": "type1",
+      "paper_evidence": "The paper reports final recommended parameters for inverse-designed targets.",
+      "file_evidence": "Small structured CSV with final recommended parameters and predicted gabs.",
+      "reasoning": "Clearly cleaned, figure-ready final result data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Color, Thick, Strain, Gray, G_Predict"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM1_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF source-data documentation/figure supplement, but not directly inspectable here as a dataset table.",
+      "file_evidence": "Large PDF source-data/supplementary document; not a tabular dataset file.",
+      "reasoning": "This is supporting documentation or supplementary material rather than a directly replot-ready dataset file.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM2_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF source-data/documentation.",
+      "file_evidence": "Large PDF document, not a structured data table.",
+      "reasoning": "Documentation/supplementary material.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM3_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF source-data/documentation.",
+      "file_evidence": "Very small PDF document, likely a supplement or note rather than dataset.",
+      "reasoning": "Documentation.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM6_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF source-data/documentation.",
+      "file_evidence": "PDF document, not a data table.",
+      "reasoning": "Documentation/supplementary material.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip",
+      "type": "other",
+      "paper_evidence": "The paper is associated with a Zenodo archive containing the dataset bundle.",
+      "file_evidence": "Archive container holding many files; not itself a dataset table or figure-ready file.",
+      "reasoning": "Container/archive rather than a direct data file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "ZIP archive"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper presents an AI-guided robotic chemistry platform that inverse-designs chiral stacked films with targeted circular dichroism (CD) and circularly polarized luminescence (CPL) across the visible spectrum. The system combines automated film preparation/characterization with machine-learning forward and reverse models, enabling discovery of heterostructured twisted bilayers with very large dissymmetry factors (gabs up to ~1.9) and demonstration in CP-selective color filters and switchable CPL films.",
+    "measurement_types": [
+      "UV–vis absorption spectroscopy",
+      "Linear dichroism (LD) spectroscopy",
+      "Circular dichroism (CD) spectroscopy",
+      "Circularly polarized photoluminescence (CPPL/CPL) spectroscopy",
+      "Transmission electron microscopy (TEM)",
+      "X-ray powder diffraction (XRD)",
+      "Scanning electron microscopy (SEM)",
+      "Optical imaging / color analysis",
+      "Chromaticity (CIE1931) analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Overall workflow of the AI-Chemist: robotic preparation/characterization of twisted bilayer chiral films, machine-learning forward model, and inverse design for targeted chiroptical properties and applications.",
+        "data_type": "schematic / workflow diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Comparison of homo- vs heterostructured bilayer films and how CD peak position, bandwidth, and intensity depend on thickness, strain, dye absorption, and absorbance.",
+        "data_type": "schematic + spectra",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Map of the robotic work area and photographs of the AI-chemist performing material selection, dyeing, stretching, stacking, and chiroptical characterization.",
+        "data_type": "image / workflow photo",
+        "likely_source": "raw image"
+      },
+      {
+        "figure_id": "Fig. 4",
+        "description": "Two-round clustering and prescreening of film parameters using LD and transmittance to reduce the design space.",
+        "data_type": "histogram / clustering plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 5",
+        "description": "Reverse-model inverse design examples, including predicted vs measured CD spectra and parameter sets for target gabs values at selected wavelengths.",
+        "data_type": "spectrum / model prediction plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 6",
+        "description": "Maps of available inverse-design solutions for target gabs values at different wavelengths and dyes, plus wavelength dependence of maximum achievable gabs.",
+        "data_type": "heatmap / parameter-space plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 7",
+        "description": "Inverse-designed CP-selective color filters for multiplex laser display, including predicted vs measured CD spectra, optical images under RCP/LCP, and CIE1931 gamut coverage.",
+        "data_type": "spectrum + optical image + chromaticity plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 8",
+        "description": "Inverse design of chiral films for CPL from perovskite quantum dot emission, including target-function definition, recommended parameters, experimental CPPL, and off-resonance tuning of CPL spectra.",
+        "data_type": "spectrum + schematic + optical image",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements collected by the robotic platform and instruments, including UV–vis spectra for transmittance/absorption, LD spectra, CD spectra, CPPL spectra, TEM images of PQDs, XRD patterns of PQD/PVA films, and SEM confirmation of film thickness uniformity. The robot also performs optical imaging of color-filter outputs under RCP/LCP illumination.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Many figures plot processed or derived quantities: LD and T0 histograms used for clustering, CD/gabs spectra sampled every 5 nm from 200–800 nm, model-predicted vs measured spectra, parameter-space maps of inverse-design solutions, CIE1931 chromaticity regions, and CPPL spectra derived from combining CD response with emission-weighted target functions.",
+    "dataset_characterization": {
+      "data_availability_statement": "The provided text does not include a dedicated data availability statement. It does state that the AI-Chemist fabricated 1493 films for the forward model, and that additional validation experiments were performed for inverse design, but it does not specify repository links, file formats, or whether raw/source data and code are deposited.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data in the paper are experimental instrument outputs: UV–vis spectra, LD spectra, CD spectra, CPPL spectra, TEM micrographs, XRD patterns, SEM images, and optical photographs. The text does not specify file formats, folder structure, or whether raw files are publicly provided.",
+      "processed_data_description": "Processed data include spectral embedded descriptors built from absorption values every 5 nm from 200 to 800 nm plus structural/process parameters (twist angle, thickness, strain, greyscale), clustered LD/T0 statistics for prescreening, and target-function outputs for inverse design. The paper also reports model metrics (MAE, RMSE, R2) and derived gabs/glum spectra.",
+      "figure_data_description": "Figure-specific data are clearly implied: predicted vs measured spectra, histograms, clustering results, parameter maps, chromaticity coordinates, and CPPL outputs. However, the text does not explicitly say that per-figure source data files are deposited, only that the figures are based on experimental and model-generated datasets.",
+      "scripts_description": "The text mentions machine-learning models and training details, but no explicit analysis scripts, notebooks, or code repository are described in the provided excerpt.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides enough methodological detail to understand how plots were generated, but the excerpt does not specify access to raw data tables, source-data files, or scripts. Therefore the data are not confirmed to be directly replot-ready from the paper text alone.",
+      "notes": "The dataset is semantically hybrid: it contains raw experimental spectra/images, processed descriptors for ML, and derived figure data for model validation and inverse-design maps. The core training dataset consists of 1493 experimentally fabricated films with measured CD spectra and associated structure/process parameters. The reverse-design examples are generated by the model and then experimentally verified, but the excerpt does not distinguish any public raw-vs-source-data packaging."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_41951_MOESM1_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 13504387,
+      "size_human": "12.9 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM2_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 8357986,
+      "size_human": "8.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM3_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 79793,
+      "size_human": "77.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM6_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3830687,
+      "size_human": "3.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2023_41951_MOESM7_ESM_8.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10327331,
+      "size_human": "9.8 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 1c",
+        "Figure2a",
+        "Figure2b",
+        "Fugure2c",
+        "Figure2d",
+        "Figure2e",
+        "Figure4b",
+        "Figure5b",
+        "Figure5c",
+        "Figure5d",
+        "Figure5e",
+        "Figure6",
+        "Figure7a",
+        "Figure7b",
+        "Figure8c",
+        "Figure8d",
+        "Figure8e",
+        "Figure8f",
+        "FigureS1",
+        "FigureS2",
+        "FigureS3a",
+        "FigureS3b",
+        "FigureS3c",
+        "FigureS4a",
+        "FigureS4b",
+        "FigureS5a",
+        "FigureS5c",
+        "Figures6",
+        "FigureS7",
+        "FigureS8",
+        "FigureS9b",
+        "FigureS9c",
+        "FigureS10",
+        "FigureS21",
+        "FigureS22",
+        "FigureS23a",
+        "FigureS23b",
+        "FigureS23c",
+        "FigureS23d",
+        "FigureS25",
+        "FigureS27",
+        "FigureS28",
+        "FigureS29",
+        "FigureS30",
+        "FigureS31",
+        "TableS7",
+        "FigureS34",
+        "FigureS35"
+      ],
+      "sheet_count": 48,
+      "sheets": [
+        {
+          "sheet_name": "Figure 1c",
+          "columns": [
+            "Wavelength(nm)",
+            "gabs",
+            "gabs.1",
+            "gabs.2",
+            "gabs.3",
+            "gabs.4"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "gabs",
+            "gabs.1",
+            "gabs.2",
+            "gabs.3",
+            "gabs.4"
+          ],
+          "column_count": 6,
+          "row_count": 2501,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "gabs": "float64",
+            "gabs.1": "float64",
+            "gabs.2": "float64",
+            "gabs.3": "float64",
+            "gabs.4": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure2a",
+          "columns": [
+            "Wavelength(nm)",
+            "gabs",
+            "gabs.1",
+            "gabs.2",
+            "gabs.3"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "gabs",
+            "gabs.1",
+            "gabs.2",
+            "gabs.3"
+          ],
+          "column_count": 5,
+          "row_count": 1001,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "gabs": "float64",
+            "gabs.1": "float64",
+            "gabs.2": "float64",
+            "gabs.3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure2b",
+          "columns": [
+            "Wavelength(nm)",
+            "Normalized CD",
+            "Normalized CD.1"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "Normalized CD",
+            "Normalized CD.1"
+          ],
+          "column_count": 3,
+          "row_count": 2501,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "Normalized CD": "float64",
+            "Normalized CD.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fugure2c",
+          "columns": [
+            "Wavelength(nm)",
+            "CD(mdeg)",
+            "CD(mdeg).1",
+            "CD(mdeg).2",
+            "CD(mdeg).3",
+            "CD(mdeg).4"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "CD(mdeg)",
+            "CD(mdeg).1",
+            "CD(mdeg).2",
+            "CD(mdeg).3",
+            "CD(mdeg).4"
+          ],
+          "column_count": 6,
+          "row_count": 1751,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "CD(mdeg)": "float64",
+            "CD(mdeg).1": "float64",
+            "CD(mdeg).2": "float64",
+            "CD(mdeg).3": "float64",
+            "CD(mdeg).4": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure2d",
+          "columns": [
+            "Wavelength(nm)",
+            "Normalized CD",
+            "Normalized CD.1",
+            "Normalized CD.2"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "Normalized CD",
+            "Normalized CD.1",
+            "Normalized CD.2"
+          ],
+          "column_count": 4,
+          "row_count": 1751,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "Normalized CD": "float64",
+            "Normalized CD.1": "float64",
+            "Normalized CD.2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure2e",
+          "columns": [
+            "Wavelength(nm)",
+            "CD(mdeg)",
+            "CD(mdeg).1",
+            "CD(mdeg).2",
+            "CD(mdeg).3",
+            "CD(mdeg).4",
+            "CD(mdeg).5"
+          ],
+          "named_columns": [
+            "Wavelength(nm)",
+            "CD(mdeg)",
+            "CD(mdeg).1",
+            "CD(mdeg).2",
+            "CD(mdeg).3",
+            "CD(mdeg).4",
+            "CD(mdeg).5"
+          ],
+          "column_count": 7,
+          "row_count": 3001,
+          "dtypes": {
+            "Wavelength(nm)": "float64",
+            "CD(mdeg)": "float64",
+            "CD(mdeg).1": "float64",
+            "CD(mdeg).2": "float64",
+            "CD(mdeg).3": "float64",
+            "CD(mdeg).4": "float64",
+            "CD(mdeg).5": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure4b",
+          "columns": [
+            "panel b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "panel b"
+          ],
+          "column_count": 5,
+          "row_count": 52,
+          "dtypes": {
+            "panel b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure5b",
+          "columns": [
+            "Fig.5b inner",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Fig.5b outer",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Fig.5b inner",
+            "Fig.5b outer"
+          ],
+          "column_count": 7,
+          "row_count": 6051,
+          "dtypes": {
+            "Fig.5b inner": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Fig.5b outer": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure5c",
+          "columns": [
+            "Fig.5c",
+            "Thickness",
+            "Strain",
+            "Grayscale"
+          ],
+          "named_columns": [
+            "Fig.5c",
+            "Thickness",
+            "Strain",
+            "Grayscale"
+          ],
+          "column_count": 4,
+          "row_count": 28,
+          "dtypes": {
+            "Fig.5c": "object",
+            "Thickness": "int64",
+            "Strain": "int64",
+            "Grayscale": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure5d",
+          "columns": [
+            "Prediction",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Experiment",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "Prediction",
+            "Experiment"
+          ],
+          "column_count": 13,
+          "row_count": 2502,
+          "dtypes": {
+            "Prediction": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Experiment": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip",
+      "extension": ".zip",
+      "size_bytes": 55977924,
+      "size_human": "53.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo"
+    },
+    {
+      "filename": "dye_ABS.msgz",
+      "extension": ".msgz",
+      "size_bytes": 91072,
+      "size_human": "88.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .msgz",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/dye_ABS.msgz",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "dye_prop.msgz",
+      "extension": ".msgz",
+      "size_bytes": 322678,
+      "size_human": "315.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .msgz",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/dye_prop.msgz",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "sdb.msgz",
+      "extension": ".msgz",
+      "size_bytes": 45940887,
+      "size_human": "43.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .msgz",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/sdb.msgz",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "train_idx.npy",
+      "extension": ".npy",
+      "size_bytes": 4904,
+      "size_human": "4.8 KB",
+      "file_type": "numpy",
+      "shape": [
+        1194
+      ],
+      "dtype": "int32",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/train_idx.npy",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "uvdb.msgz",
+      "extension": ".msgz",
+      "size_bytes": 353439,
+      "size_human": "345.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .msgz",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/uvdb.msgz",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "uvdb_trn.msgz",
+      "extension": ".msgz",
+      "size_bytes": 53707,
+      "size_human": "52.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .msgz",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Data/uvdb_trn.msgz",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "20_gabs_outfile.csv",
+      "extension": ".csv",
+      "size_bytes": 133664,
+      "size_human": "130.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "feature：Color - thickness - stretch - gray",
+        "200",
+        "205",
+        "210",
+        "215",
+        "220",
+        "225",
+        "230",
+        "235",
+        "240",
+        "245",
+        "250",
+        "255",
+        "260",
+        "265",
+        "270",
+        "275",
+        "280",
+        "285",
+        "290",
+        "295",
+        "300",
+        "305",
+        "310",
+        "315",
+        "320",
+        "325",
+        "330",
+        "335",
+        "340"
+      ],
+      "column_count": 122,
+      "row_count": 95,
+      "dtypes": {
+        "feature：Color - thickness - stretch - gray": "object",
+        "200": "float64",
+        "205": "float64",
+        "210": "float64",
+        "215": "float64",
+        "220": "float64",
+        "225": "float64",
+        "230": "float64",
+        "235": "float64",
+        "240": "float64",
+        "245": "float64",
+        "250": "float64",
+        "255": "float64",
+        "260": "float64",
+        "265": "float64",
+        "270": "float64",
+        "275": "float64",
+        "280": "float64",
+        "285": "float64",
+        "290": "float64",
+        "295": "float64",
+        "300": "float64",
+        "305": "float64",
+        "310": "float64",
+        "315": "float64",
+        "320": "float64",
+        "325": "float64",
+        "330": "float64",
+        "335": "float64",
+        "340": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/20_gabs_outfile.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "Forward_network.py",
+      "extension": ".py",
+      "size_bytes": 6472,
+      "size_human": "6.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/Forward_network.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "forward_predicting_network.py",
+      "extension": ".py",
+      "size_bytes": 9562,
+      "size_human": "9.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/forward_predicting_network.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "model evaluation.txt",
+      "extension": ".txt",
+      "size_bytes": 205,
+      "size_human": "205.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "train"
+      ],
+      "column_count": 1,
+      "row_count": 9,
+      "dtypes": {
+        "train": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/model evaluation.txt",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "net_predict_ABS_all_121_dye_test_250.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1132982,
+      "size_human": "1.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/net_predict_ABS_all_121_dye_test_250.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "new_spectrum.py",
+      "extension": ".py",
+      "size_bytes": 10960,
+      "size_human": "10.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/new_spectrum.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "paras.py",
+      "extension": ".py",
+      "size_bytes": 550,
+      "size_human": "550.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/paras.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "random_20gabs.csv",
+      "extension": ".csv",
+      "size_bytes": 1009,
+      "size_human": "1009.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "1",
+        "17",
+        "20",
+        "1.1"
+      ],
+      "column_count": 4,
+      "row_count": 94,
+      "dtypes": {
+        "1": "int64",
+        "17": "int64",
+        "20": "int64",
+        "1.1": "int64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/random_20gabs.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "read_write_msgz.py",
+      "extension": ".py",
+      "size_bytes": 374,
+      "size_human": "374.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/read_write_msgz.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "spectrum.py",
+      "extension": ".py",
+      "size_bytes": 10406,
+      "size_human": "10.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Forward_Prediction/spectrum.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "445nm+520nm.csv",
+      "extension": ".csv",
+      "size_bytes": 334,
+      "size_human": "334.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "8",
+        "76.1306",
+        "168.075",
+        "7.44232"
+      ],
+      "column_count": 4,
+      "row_count": 12,
+      "dtypes": {
+        "8": "int64",
+        "76.1306": "float64",
+        "168.075": "float64",
+        "7.44232": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/445+520/445nm+520nm.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_all_445+520.pkl",
+      "extension": ".pkl",
+      "size_bytes": 31264,
+      "size_human": "30.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/445+520/netG_all_445+520.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_all_445+520_0.pkl",
+      "extension": ".pkl",
+      "size_bytes": 31264,
+      "size_human": "30.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/445+520/netG_all_445+520_0.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "445nm+634nm.csv",
+      "extension": ".csv",
+      "size_bytes": 467773,
+      "size_human": "456.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "7",
+        "55.4107",
+        "189.918",
+        "6.79991"
+      ],
+      "column_count": 4,
+      "row_count": 18220,
+      "dtypes": {
+        "7": "int64",
+        "55.4107": "float64",
+        "189.918": "float64",
+        "6.79991": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/445+634/445nm+634nm.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_all_445+634_g3.28_20_bx.pkl",
+      "extension": ".pkl",
+      "size_bytes": 33824,
+      "size_human": "33.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/445+634/netG_all_445+634_g3.28_20_bx.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "520nm+634nm.csv",
+      "extension": ".csv",
+      "size_bytes": 25655,
+      "size_human": "25.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "7",
+        "78.4962",
+        "99.3495",
+        "6.72822"
+      ],
+      "column_count": 4,
+      "row_count": 999,
+      "dtypes": {
+        "7": "int64",
+        "78.4962": "float64",
+        "99.3495": "float64",
+        "6.72822": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/520+634/520nm+634nm.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_all_520+634_g3.06_5_4g.pkl",
+      "extension": ".pkl",
+      "size_bytes": 31264,
+      "size_human": "30.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/520+634/netG_all_520+634_g3.06_5_4g.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan-all-445+520+634.py",
+      "extension": ".py",
+      "size_bytes": 15634,
+      "size_human": "15.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/cgan-all-445+520+634.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "net_newall_445+520+634_200_5.27.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1037814,
+      "size_human": "1013.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/net_newall_445+520+634_200_5.27.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "new_simple_net_Full_3p.py",
+      "extension": ".py",
+      "size_bytes": 8587,
+      "size_human": "8.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/new_simple_net_Full_3p.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "spectrum.py",
+      "extension": ".py",
+      "size_bytes": 10406,
+      "size_human": "10.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_1_Laser/spectrum.py",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "3D_G_PROP_1.8_440.png",
+      "extension": ".png",
+      "size_bytes": 338573,
+      "size_human": "330.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/3D_G_PROP_1.8_440.png",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "G_PROP_1.8_440.png",
+      "extension": ".png",
+      "size_bytes": 139812,
+      "size_human": "136.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/G_PROP_1.8_440.png",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan_test_result_ABS_440.csv",
+      "extension": ".csv",
+      "size_bytes": 3978,
+      "size_human": "3.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_GAN",
+        "G_Predict",
+        "dG"
+      ],
+      "column_count": 7,
+      "row_count": 69,
+      "dtypes": {
+        "Color": "float64",
+        "Thick": "float64",
+        "Strain": "float64",
+        "Gray": "float64",
+        "G_GAN": "float64",
+        "G_Predict": "float64",
+        "dG": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/cgan_test_result_ABS_440.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan_test_result_PROP_440.csv",
+      "extension": ".csv",
+      "size_bytes": 331646,
+      "size_human": "323.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_GAN",
+        "G_Predict",
+        "dG"
+      ],
+      "column_count": 7,
+      "row_count": 6381,
+      "dtypes": {
+        "Color": "float64",
+        "Thick": "float64",
+        "Strain": "float64",
+        "Gray": "float64",
+        "G_GAN": "float64",
+        "G_Predict": "float64",
+        "dG": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/cgan_test_result_PROP_440.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "final_result_PROP_440.csv",
+      "extension": ".csv",
+      "size_bytes": 1710,
+      "size_human": "1.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_Predict"
+      ],
+      "column_count": 5,
+      "row_count": 81,
+      "dtypes": {
+        "Color": "int64",
+        "Thick": "int64",
+        "Strain": "int64",
+        "Gray": "float64",
+        "G_Predict": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/final_result_PROP_440.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_ABS_440_1.8.pkl",
+      "extension": ".pkl",
+      "size_bytes": 33888,
+      "size_human": "33.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/netG_ABS_440_1.8.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_PROP_440_1.8.pkl",
+      "extension": ".pkl",
+      "size_bytes": 33888,
+      "size_human": "33.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/netG_PROP_440_1.8.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "net_predict_ABS_440.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1036214,
+      "size_human": "1011.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/net_predict_ABS_440.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "net_predict_PROP_440.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1036214,
+      "size_human": "1011.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/440/net_predict_PROP_440.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "G_PROP_1.75_467.png",
+      "extension": ".png",
+      "size_bytes": 130966,
+      "size_human": "127.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/G_PROP_1.75_467.png",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "G_PROP_1.7_467.png",
+      "extension": ".png",
+      "size_bytes": 137192,
+      "size_human": "134.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/G_PROP_1.7_467.png",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan_test_result_ABS_467_1.72.csv",
+      "extension": ".csv",
+      "size_bytes": 263729,
+      "size_human": "257.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_GAN",
+        "G_Predict",
+        "dG"
+      ],
+      "column_count": 7,
+      "row_count": 4513,
+      "dtypes": {
+        "Color": "float64",
+        "Thick": "float64",
+        "Strain": "float64",
+        "Gray": "float64",
+        "G_GAN": "float64",
+        "G_Predict": "float64",
+        "dG": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/cgan_test_result_ABS_467_1.72.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan_test_result_ABS_467_1.78.csv",
+      "extension": ".csv",
+      "size_bytes": 19068,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_GAN",
+        "G_Predict",
+        "dG"
+      ],
+      "column_count": 7,
+      "row_count": 328,
+      "dtypes": {
+        "Color": "float64",
+        "Thick": "float64",
+        "Strain": "float64",
+        "Gray": "float64",
+        "G_GAN": "float64",
+        "G_Predict": "float64",
+        "dG": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/cgan_test_result_ABS_467_1.78.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "cgan_test_result_PROP_467.csv",
+      "extension": ".csv",
+      "size_bytes": 2391,
+      "size_human": "2.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_GAN",
+        "G_Predict",
+        "dG"
+      ],
+      "column_count": 7,
+      "row_count": 41,
+      "dtypes": {
+        "Color": "float64",
+        "Thick": "float64",
+        "Strain": "float64",
+        "Gray": "float64",
+        "G_GAN": "float64",
+        "G_Predict": "float64",
+        "dG": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/cgan_test_result_PROP_467.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "final_result_PROP_467.csv",
+      "extension": ".csv",
+      "size_bytes": 425,
+      "size_human": "425.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Color",
+        "Thick",
+        "Strain",
+        "Gray",
+        "G_Predict"
+      ],
+      "column_count": 5,
+      "row_count": 19,
+      "dtypes": {
+        "Color": "int64",
+        "Thick": "int64",
+        "Strain": "int64",
+        "Gray": "float64",
+        "G_Predict": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/final_result_PROP_467.csv",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_ABS_467_1.72.pkl",
+      "extension": ".pkl",
+      "size_bytes": 33888,
+      "size_human": "33.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/netG_ABS_467_1.72.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    },
+    {
+      "filename": "netG_PROP_467_1.7.pkl",
+      "extension": ".pkl",
+      "size_bytes": 33888,
+      "size_human": "33.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "sfeng18-chiral_films_inverse_design-3ed3d47/Inverse_Design_2_Fluorescence/467/netG_PROP_467_1.7.pkl",
+      "from_zip": "sfeng18_chiral_films_inverse_design-v1.0.0_10.zip"
+    }
+  ]
+}

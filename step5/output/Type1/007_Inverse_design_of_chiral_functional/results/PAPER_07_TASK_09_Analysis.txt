@@ -1,0 +1,58 @@
+Task PAPER_07_TASK_09 Analysis
+========================================
+Dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/007_Inverse_design_of_chiral_functional/type1_data/final_result_PROP_467.csv
+Loaded CSV successfully.
+Row count: 19
+Columns: ['Color', 'Thick', 'Strain', 'Gray', 'G_Predict']
+Preview of first rows:
+ Color  Thick  Strain  Gray  G_Predict
+     1     48     138  5.75    1.67186
+     1     48     146  6.00    1.68502
+     1     48     136  6.00    1.71971
+     1     48     134  6.00    1.72076
+     3     30      40  4.25    1.35322
+     3     30      40  4.75    1.35484
+     3     30      40  4.50    1.35753
+     3     30      38  4.75    1.36136
+     3     48     170  5.00    1.53085
+     3     48     150  5.00    1.57284
+
+Column interpretation:
+Design parameter columns inferred: ['Color', 'Thick', 'Strain', 'Gray']
+Property column selected: G_Predict
+
+Target isolation:
+The file name indicates the 467 nm target case (PROP_467).
+No explicit target annotation column was present, so all rows are treated as 467 nm target candidates.
+Rows after dropping missing G_Predict: 19
+
+Ranking by property value:
+ Color  Thick  Strain  Gray  G_Predict  Rank
+     1     48     134  6.00    1.72076     1
+     1     48     136  6.00    1.71971     2
+     1     48     146  6.00    1.68502     3
+     1     48     138  5.75    1.67186     4
+     3     48     140  4.75    1.62527     5
+     3     48     142  4.75    1.62418     6
+     3     48     150  4.75    1.61441     7
+     3     48     140  4.50    1.61372     8
+     3     48     156  4.75    1.60468     9
+     3     48     158  4.75    1.60039    10
+
+Best-performing candidate:
+Color          1.00000
+Thick         48.00000
+Strain       134.00000
+Gray           6.00000
+G_Predict      1.72076
+Rank           1.00000
+Number of tied best candidates: 1
+
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/007_Inverse_design_of_chiral_functional/results/PAPER_07_TASK_09_figure.png
+Figure design:
+- Bar chart of top 15 ranked candidates by G_Predict.
+- Best-performing candidate highlighted in red.
+- 467 nm target condition labeled explicitly.
+Limitations:
+- No explicit G_GAN or dG columns were present in the provided file preview.
+- The dataset appears to contain only final screened candidate rows for PROP_467, so the plot summarizes the final validation/screening outcome rather than a full training distribution.

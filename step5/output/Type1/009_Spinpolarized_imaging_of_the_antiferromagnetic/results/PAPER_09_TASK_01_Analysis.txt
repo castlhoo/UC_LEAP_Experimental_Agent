@@ -1,0 +1,31 @@
+Task PAPER_09_TASK_01 Analysis
+
+Step 0: Open workbook and identify sheets
+Loaded workbook: C:/UCLEAP/UC_LEAP/step4/organized/Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic/type1_data/Figure 1(e,f,i).xlsx
+Detected sheets: ['e', 'f', 'i']
+Sheet 'e' and sheet 'f' contain Bias and dI/dV columns, indicating spectral panels.
+Sheet 'i' contains Distance and Height columns, indicating the spatial line profile.
+
+Step 1: Parse annotated columns and units
+Sheet 'e' header rows indicate Bias in mV and dI/dV in a.u.
+Sheet 'f' header rows indicate Bias in mV and dI/dV in a.u.
+Sheet 'i' header rows indicate Distance in nm and Height in pm.
+The workbook structure uses the first row for variable names and the second row for units.
+
+Step 2: Inspect spectral sheets and line profile
+Sheet 'e' data points: 41
+Sheet 'f' data points: 101
+Sheet 'i' data points: 143
+Sheet 'e' and 'f' each contain a single numeric trace; there is no evidence of multiple repeated traces in the sheet structure.
+Therefore, the spectra are plotted directly rather than averaged.
+The bias values in both spectral sheets are sampled over a descending-to-ascending range, so the data are sorted by bias before plotting to produce a continuous curve.
+The line profile is plotted directly from the provided distance-height pairs.
+
+Step 3: Validate features and plotting choices
+The spectral curves are smooth numeric sequences with no need for peak extraction in this task.
+No unsupported quantitative interpretation is made beyond reproducing the plotted traces.
+Axis labels and units are preserved from the workbook annotations.
+
+Step 4: Export figure
+Saved figure to: C:/UCLEAP/UC_LEAP/step5/output/Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic/results/PAPER_09_TASK_01_figure.png
+The final layout contains two dI/dV vs Bias panels and one Height vs Distance panel in a publication-style arrangement.

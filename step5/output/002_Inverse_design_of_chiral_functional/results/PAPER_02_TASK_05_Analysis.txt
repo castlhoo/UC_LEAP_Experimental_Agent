@@ -1,0 +1,38 @@
+Task PAPER_02_TASK_05 Analysis
+Objective: Map target-wavelength design solutions across ABS and PROP regimes.
+
+Step 0: Load the target-design CSV file.
+Loaded file: C:/UCLEAP/UC_LEAP/step4/organized/002_Inverse_design_of_chiral_functional/type2_data/cgan_test_result_PROP_467.csv
+Detected columns: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+Data shape: 41 rows x 7 columns
+
+Step 1: Standardize the column names.
+The file already contains the expected descriptor and output metric columns, so no renaming was required beyond validation.
+Validated descriptor columns: Color, Thick, Strain, Gray
+Validated output metric columns: G_GAN, G_Predict, dG
+
+Step 2: Label each row by target type and wavelength.
+Inferred target type from filename: PROP
+Inferred wavelength from filename: 467 nm
+Because only one curated CSV was provided, the comparison to ABS and 440 nm cases cannot be reconstructed directly from the dataset file alone.
+Therefore, the analysis below is limited to the available PROP 467 nm candidate table, and cross-regime comparison is reported as unavailable due to missing files.
+
+Step 3: Validate data quality before quantitative analysis.
+Rows with complete numeric data: 41 / 41
+Numeric data are present and suitable for summary statistics and visualization.
+
+Step 4: Summarize descriptor and output metric ranges for the available target regime.
+Color: min=1.00011, max=7.24922, mean=3.55792, std=1.91644
+Thick: min=27.8496, max=50.3724, mean=35.648, std=8.65791
+Strain: min=37.3298, max=169.577, mean=77.5824, std=51.566
+Gray: min=4.19728, max=7.41959, mean=5.30198, std=1.12341
+G_GAN: min=1.60766, max=2.03892, mean=1.76531, std=0.0779645
+G_Predict: min=1.36311, max=1.72848, mean=1.49945, std=0.136906
+dG: min=-0.543996, max=0.00617433, mean=-0.265857, std=0.155588
+
+Step 5: Interpret the feasible solution space.
+The available PROP 467 nm candidates show a narrow spread in Gray and G_Predict, with broader variation in G_GAN and moderate variation in Thick and Strain.
+This indicates a compact feasible design region for the provided target regime.
+No peak-finding or spectral interpretation is applicable because the dataset is tabular design-output data rather than a spectrum.
+
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/002_Inverse_design_of_chiral_functional/results/PAPER_02_TASK_05_figure.png

@@ -1,0 +1,60 @@
+{
+  "research_tasks": [
+    {
+      "task_id": "PAPER_04_TASK_01",
+      "task_title": "Replot temperature-dependent Josephson transport and device-spacing inset",
+      "task_description": "Using the Excel file provided, reproduce the figure panel that shows the temperature dependence of the junction response and the inset that compares characteristic temperatures versus junction spacing. First inspect the workbook and identify the sheet(s) containing temperature-dependent voltage or resistance data and the inset data with spacing and transition temperatures. Then generate a publication-style plot of voltage (or resistance/transport signal, as labeled in the file) versus temperature for the main panel, preserving the original axis labels, units, and any annotations for the superconducting transition temperature and the Josephson transport transition temperature. For the inset, plot the characteristic temperatures against junction spacing d in nanometers, using the exact series provided. If the sheet contains multiple traces or columns, keep them distinct and label them according to the file headers. The final output should visually match the corresponding paper figure as closely as possible, including line styles, markers, legends, and axis ranges inferred from the dataset.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Open the workbook and identify the sheet corresponding to the temperature-dependent transport curve and the inset sheet containing d, T_J, and T_SC.",
+        "Step_1: Clean the data by removing any non-numeric header rows or unit rows, and confirm the column names and units.",
+        "Step_2: Plot the main temperature-dependent curve using the provided temperature axis and voltage/transport response axis, preserving the original labeling and any multiple traces if present.",
+        "Step_3: Plot the inset as characteristic temperatures versus junction spacing d, using separate series for T_J and T_SC if both are present.",
+        "Step_4: Format the figure for replotting: include axis labels with units, legends, and any annotations that help identify the transition temperatures.",
+        "Step_5: Export the figure in a publication-ready format and verify that the visual structure matches the intended paper panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "41567_2022_1699_MOESM2_ESM_10.xlsx",
+        "relevant_variables": [
+          "Temperature (K)",
+          "Voltage (uV)",
+          "d (nm)",
+          "T_J (K)",
+          "T_SC (K)"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A replot of the temperature-dependent transport curve with an inset showing characteristic temperatures versus junction spacing.",
+        "expected_figure": "Fig1d"
+      }
+    },
+    {
+      "task_id": "PAPER_04_TASK_02",
+      "task_title": "Replot critical-current nonreciprocity versus in-plane magnetic-field angle",
+      "task_description": "Using the Excel file provided, reproduce the figure panel that shows the nonreciprocal critical-current difference as a function of in-plane magnetic-field angle for several field magnitudes. Inspect the workbook and locate the sheet containing angle-dependent ΔIc data. Clean any header or unit rows, then plot ΔIc versus θ for each field value listed in the file. Preserve the original sign convention, field labels, and angular units. If the sheet includes multiple field conditions side-by-side, keep each trace separate and include a legend identifying the field magnitude in mT. The goal is to recreate the paper’s angle-scan figure as a publication-quality multi-curve plot with the same qualitative structure, axis labeling, and ordering of traces.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Open the workbook and identify the sheet containing angle-dependent ΔIc data and the field values associated with each trace.",
+        "Step_1: Remove any non-data rows, confirm the angle variable and ΔIc units, and map each column pair or series to its corresponding magnetic-field magnitude.",
+        "Step_2: Plot ΔIc versus θ for all available field values on the same axes, using distinct colors or markers for each trace.",
+        "Step_3: Add a legend indicating the field magnitude for each curve, and ensure the angular axis is labeled in degrees.",
+        "Step_4: Match the publication-style formatting as closely as possible, including axis limits, tick spacing, and sign convention.",
+        "Step_5: Export the final figure and verify that the plotted curves reproduce the expected angle dependence from the dataset."
+      ],
+      "required_inputs": {
+        "dataset_file": "41567_2022_1699_MOESM3_ESM_10.xlsx",
+        "relevant_variables": [
+          "Theta",
+          "Del Ic",
+          "2 mT",
+          "10 mT",
+          "24 mT"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A multi-curve plot of critical-current nonreciprocity versus in-plane field angle for several magnetic-field magnitudes.",
+        "expected_figure": "Fig2b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+Task PAPER_09_TASK_03 analysis
+Loaded workbook: C:/UCLEAP/UC_LEAP/step4/organized/Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic/type1_data/Figure 3(b,c,d,e).xlsx
+Detected sheets: ['b', 'c', 'd', 'e']
+Sheet 'b' raw shape: (310, 2)
+Sheet 'b' first rows:
+  Distance    Height
+        nm        nm
+     68.75  2.724131
+ 68.526786  2.723067
+ 68.303571  2.727024
+ 68.080357  2.726231
+Sheet 'b' parsed rows: 308
+Distance range: 0.223214 to 68.75
+Height range: 0.118544 to 2.72981
+Sheet 'c' raw shape: (204, 7)
+Sheet 'c' first rows:
+   Bias      dI/dV      dI/dV      dI/dV      dI/dV      dI/dV      dI/dV
+     mV       a.u.       a.u.       a.u.       a.u.       a.u.       a.u.
+Layer #         1L         2L         3L         4L         6L         7L
+    200  13.243125   13.25844   13.23374  13.246065  13.254044  13.276524
+    198  13.112225  13.134242  13.092166  13.107376  13.119488  13.124209
+    196  12.938718  12.960155  12.951636  12.963154  12.921717  12.928415
+    194  12.790306   12.79398  12.780036  12.785411   12.76155  12.776734
+    192  12.636908  12.616458   12.62385  12.628453  12.637173  12.648676
+Layer 1L: 201 points, Bias range -200 to 200, dI/dV range 5.24221 to 13.2431
+Layer 2L: 201 points, Bias range -200 to 200, dI/dV range 5.1931 to 13.2584
+Layer 3L: 201 points, Bias range -200 to 200, dI/dV range 5.22863 to 13.2337
+Layer 4L: 201 points, Bias range -200 to 200, dI/dV range 5.20125 to 13.2461
+Layer 6L: 201 points, Bias range -200 to 200, dI/dV range 5.20737 to 13.254
+Layer 7L: 201 points, Bias range -200 to 200, dI/dV range 5.23854 to 13.2765
+Sheet 'd' raw shape: (8, 2)
+Sheet 'd' first rows:
+Layer      dI/dV
+    #       a.u.
+    1  10.740271
+    2  10.391732
+    3    10.7672
+    4  10.414533
+    6  10.388557
+    7  10.739143
+Sheet 'd' parsed rows: 6
+Trend layers: [1, 2, 3, 4, 6, 7]
+Trend dI/dV range: 10.3886 to 10.7672
+Figure saved successfully.
+Output figure: C:/UCLEAP/UC_LEAP/step5/output/Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic/results/PAPER_09_TASK_03_figure.png
+Notes:
+- Sheet 'b' contains a valid height profile with Distance and Height columns after skipping the first two header rows.
+- Sheet 'c' contains layer-resolved spectra with layer labels in row 2 and Bias values in the first column from row 3 onward.
+- Sheet 'd' contains a summary trend of dI/dV versus Layer #.
+- No peak-finding was performed because the task is a replot task and the provided summary values were plotted directly.
+- The workbook does not explicitly separate Fig. 3d and Fig. 3e into distinct sheets; the available summary sheet was plotted as the quantitative trend panel.

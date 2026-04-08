@@ -1,0 +1,80 @@
+1. Dataset Overview
+- Format: Excel spreadsheets
+  - Replot-ready files: `41586_2021_4002_MOESM4_ESM_8.xlsx`
+  - Raw data files: `41586_2021_4002_MOESM2_ESM_8.xlsx`, `41586_2021_4002_MOESM3_ESM_8.xlsx`, `41586_2021_4002_MOESM5_ESM_8.xlsx`
+- Number of runs / experiments:
+  - Multiple figure panels / datasets across 5 sheets total
+  - Sheets correspond to figures: Fig. 1a, Fig. 2a, Fig. 3a, Fig. 3d, Fig. 3e, Fig. 3f, Fig. 3g, Fig. 4a–4d
+- Approximate data volume:
+  - Large tabular datasets with very wide matrices
+  - Sizes range from 3.3 MB to 21.2 MB
+  - Typical dimensions: ~94–244 rows by ~900–7900 columns
+- Time range:
+  - Not available in the provided metadata
+  - No explicit timestamps observed
+
+2. Instrumentation Setup
+- Inferred instruments:
+  - Local compressibility measurement setup
+    - Measures `dμ/dn` or related compressibility signal as a function of filling and magnetic field
+  - Magnetic field source / superconducting magnet
+    - Variable `B (T)` appears throughout; used to tune field-dependent states
+  - Sample gating / density control
+    - Variable `𝜈` (filling factor) and likely carrier density `n` are used as the horizontal axis
+  - No explicit lock-in, temperature controller, or transport amplifier names are present in the metadata
+- Roles:
+  - Magnet: tunes low-field and zero-field correlated phases
+  - Gate/density control: scans filling factor across integer and fractional states
+  - Compressibility readout: detects incompressible states via `dμ/dn`
+
+3. Information of each run / experiment
+
+a. Measured Parameters
+- Common independent variables:
+  - `𝜈` (filling factor)
+  - `B (T)` magnetic field
+  - In Fig. 3e: `w0/w1` model parameter
+- Common dependent variables:
+  - `dμ/dn (mV cm2)` in the raw 2D maps
+  - `∆μ (meV)` in extracted peak-gap summaries
+  - `𝜎(F)` in Fig. 3e
+  - `errorbar` columns for uncertainty estimates
+- Naming conventions observed:
+  - Raw maps use `dμ/dn (mV cm2)` as the measured quantity
+  - Axes are encoded in the first rows/columns with labels like `𝜈` and `B (T)`
+  - Summary tables use paired columns such as:
+    - `B (T)`, `∆μ (meV) (1/3, 11/3)`, `errorbar`
+    - `B (T)`, `∆μ (meV) (2/3, 10/3)`, `errorbar`
+    - `B (T)`, `∆μ (meV) (0, 7/2)`, `errorbar`
+    - `B (T)`, `∆μ (meV) (0, 11/3)`, `errorbar`
+
+b. Experimental Context (Inference)
+- Likely experiment type:
+  - Local compressibility / chemical-potential-derivative mapping in magic-angle twisted bilayer graphene
+- Possible physical phenomena:
+  - Fractional Chern insulators
+  - Correlated insulating states at fractional fillings
+  - Magnetic-field-tuned gap evolution
+  - Competing zero-field correlated phases such as CDWs or SBCIs
+- Reasoning:
+  - The paper context explicitly concerns MATBG aligned with hBN and local compressibility
+  - The data are organized as `dμ/dn` vs `𝜈` and `B`, which is consistent with identifying incompressible correlated states
+  - Extracted `∆μ` values at specific fractional fillings indicate gap measurements for candidate FCI states
+  - The `w0/w1` dependence suggests comparison to a theoretical model parameter controlling band geometry / interaction effects
+
+c. Notes for Analysis
+- Important patterns in structure:
+  - Raw data are 2D grids with very wide columns, likely representing dense sweeps in filling factor for multiple magnetic fields
+  - Summary sheets condense these maps into gap values versus field or model parameter
+  - Some sheets contain multiple side-by-side datasets in one table
+- Potential challenges / ambiguities:
+  - The first row/column structure is nonstandard and may require careful parsing
+  - Many header cells are blank, so axis reconstruction must rely on the first few rows
+  - Units are mixed across sheets (`mV cm2`, `meV`, dimensionless `w0/w1`)
+  - No explicit sample temperature, device ID, or acquisition timestamps are provided
+- Suggestions for analysis:
+  - Reconstruct each 2D map as `dμ/dn(𝜈, B)` and identify incompressible ridges/minima
+  - Track gap evolution `∆μ(B)` for the listed fractional fillings
+  - Compare raw maps with summary tables to validate peak extraction
+  - For Fig. 3e, analyze `𝜎(F)` versus `w0/w1` as a model-sensitivity or fit-quality metric
+  - If needed, digitize or interpolate the wide matrices into contour/heatmap representations

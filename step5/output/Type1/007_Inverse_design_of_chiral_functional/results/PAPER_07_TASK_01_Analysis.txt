@@ -1,0 +1,347 @@
+Loaded dataset: C:/UCLEAP/UC_LEAP/step4/organized/Type1/007_Inverse_design_of_chiral_functional/type1_data/41467_2023_41951_MOESM7_ESM_8.xlsx
+Workbook contains 48 sheets.
+Sheet names:
+  - Figure 1c
+  - Figure2a
+  - Figure2b
+  - Fugure2c
+  - Figure2d
+  - Figure2e
+  - Figure4b
+  - Figure5b
+  - Figure5c
+  - Figure5d
+  - Figure5e
+  - Figure6
+  - Figure7a
+  - Figure7b
+  - Figure8c
+  - Figure8d
+  - Figure8e
+  - Figure8f
+  - FigureS1
+  - FigureS2
+  - FigureS3a
+  - FigureS3b
+  - FigureS3c
+  - FigureS4a
+  - FigureS4b
+  - FigureS5a
+  - FigureS5c
+  - Figures6
+  - FigureS7
+  - FigureS8
+  - FigureS9b
+  - FigureS9c
+  - FigureS10
+  - FigureS21
+  - FigureS22
+  - FigureS23a
+  - FigureS23b
+  - FigureS23c
+  - FigureS23d
+  - FigureS25
+  - FigureS27
+  - FigureS28
+  - FigureS29
+  - FigureS30
+  - FigureS31
+  - TableS7
+  - FigureS34
+  - FigureS35
+
+Inspecting sheet 'Figure 1c': raw shape (2501, 6)
+  Raw columns: ['Wavelength(nm)', 'gabs', 'gabs.1', 'gabs.2', 'gabs.3', 'gabs.4']
+  Cleaned shape: (2501, 6)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['gabs', 'gabs.1', 'gabs.2', 'gabs.3', 'gabs.4']
+
+Inspecting sheet 'Figure2a': raw shape (1001, 5)
+  Raw columns: ['Wavelength(nm)', 'gabs', 'gabs.1', 'gabs.2', 'gabs.3']
+  Cleaned shape: (1001, 5)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['gabs', 'gabs.1', 'gabs.2', 'gabs.3']
+
+Inspecting sheet 'Figure2b': raw shape (2501, 3)
+  Raw columns: ['Wavelength(nm)', 'Normalized CD', 'Normalized CD.1']
+  Cleaned shape: (2501, 3)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['Normalized CD', 'Normalized CD.1']
+
+Inspecting sheet 'Fugure2c': raw shape (1751, 6)
+  Raw columns: ['Wavelength(nm)', 'CD(mdeg)', 'CD(mdeg).1', 'CD(mdeg).2', 'CD(mdeg).3', 'CD(mdeg).4']
+  Cleaned shape: (1751, 6)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['CD(mdeg)', 'CD(mdeg).1', 'CD(mdeg).2', 'CD(mdeg).3', 'CD(mdeg).4']
+
+Inspecting sheet 'Figure2d': raw shape (1751, 4)
+  Raw columns: ['Wavelength(nm)', 'Normalized CD', 'Normalized CD.1', 'Normalized CD.2']
+  Cleaned shape: (1751, 4)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['Normalized CD', 'Normalized CD.1', 'Normalized CD.2']
+
+Inspecting sheet 'Figure2e': raw shape (3001, 7)
+  Raw columns: ['Wavelength(nm)', 'CD(mdeg)', 'CD(mdeg).1', 'CD(mdeg).2', 'CD(mdeg).3', 'CD(mdeg).4', 'CD(mdeg).5']
+  Cleaned shape: (3001, 7)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['CD(mdeg)', 'CD(mdeg).1', 'CD(mdeg).2', 'CD(mdeg).3', 'CD(mdeg).4', 'CD(mdeg).5']
+
+Inspecting sheet 'Figure4b': raw shape (52, 5)
+  Raw columns: ['panel b', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+  Cleaned shape: (50, 4)
+  Inferred x-axis column: panel b
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 3', 'Unnamed: 4']
+
+Inspecting sheet 'Figure5b': raw shape (6051, 7)
+  Raw columns: ['Fig.5b inner', 'Unnamed: 1', 'Unnamed: 2', 'Fig.5b outer', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+  Cleaned shape: (6050, 6)
+  Inferred x-axis column: Fig.5b inner
+  Inferred y-axis columns: ['Unnamed: 1', 'Fig.5b outer', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+
+Inspecting sheet 'Figure5c': raw shape (28, 4)
+  Raw columns: ['Fig.5c', 'Thickness', 'Strain', 'Grayscale']
+  Cleaned shape: (28, 4)
+  Inferred x-axis column: Fig.5c
+  Inferred y-axis columns: ['Thickness', 'Strain', 'Grayscale']
+
+Inspecting sheet 'Figure5d': raw shape (2502, 13)
+  Raw columns: ['Prediction', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Experiment', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (2501, 12)
+  Inferred x-axis column: Prediction
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Experiment', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'Figure5e': raw shape (1001, 5)
+  Raw columns: ['Wavelength(nm)', 'gabs', 'gabs.1', 'gabs.2', 'gabs.3']
+  Cleaned shape: (1001, 5)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['gabs', 'gabs.1', 'gabs.2', 'gabs.3']
+
+Inspecting sheet 'Figure6': raw shape (2501, 10)
+  Raw columns: ['Wavelength(nm)', 'Available gmax', 'Available gmax.1', 'Available gmax.2', 'Unnamed: 4', 'Unnamed: 5', 'Wavelength(nm).1', 'Absorption', 'Absorption.1', 'Absorption.2']
+  Cleaned shape: (2501, 8)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['Available gmax', 'Available gmax.1', 'Available gmax.2', 'Wavelength(nm).1', 'Absorption', 'Absorption.1', 'Absorption.2']
+
+Inspecting sheet 'Figure7a': raw shape (2002, 9)
+  Raw columns: ['Predication', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Experiment', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+  Cleaned shape: (2001, 8)
+  Inferred x-axis column: Predication
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Experiment', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+
+Inspecting sheet 'Figure7b': raw shape (2, 4)
+  Raw columns: ['G-R', 79.1313, 100.513, 6.79337]
+  Cleaned shape: (2, 3)
+  Inferred x-axis column: 79.1313
+  Inferred y-axis columns: ['100.513', '6.79337']
+
+Inspecting sheet 'Figure8c': raw shape (9, 5)
+  Raw columns: ['Fig.4c', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+  Cleaned shape: (8, 4)
+  Inferred x-axis column: Unnamed: 1
+  Inferred y-axis columns: ['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+
+Inspecting sheet 'Figure8d': raw shape (802, 31)
+  Raw columns: ['Fig.8d(440 nm)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', '467 nm', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', '506 nm', 'Unnamed: 9']
+  Cleaned shape: (801, 24)
+  Inferred x-axis column: Fig.8d(440 nm)
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', '467 nm', 'Unnamed: 5', 'Unnamed: 6', '506 nm', 'Unnamed: 9', 'Unnamed: 10', '531 nm', 'Unnamed: 13'] ...
+
+Inspecting sheet 'Figure8e': raw shape (401, 21)
+  Raw columns: ['Wavelength(nm)', 'CPL(deg)', 'CPL(deg).1', 'CPL(deg).2', 'CPL(deg).3', 'CPL(deg).4', 'CPL(deg).5', 'CPL(deg).6', 'CPL(deg).7', 'CPL(deg).8']
+  Cleaned shape: (401, 20)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['CPL(deg)', 'CPL(deg).1', 'CPL(deg).2', 'CPL(deg).3', 'CPL(deg).4', 'CPL(deg).5', 'CPL(deg).6', 'CPL(deg).7', 'CPL(deg).8', 'Wavelength(nm).1'] ...
+
+Inspecting sheet 'Figure8f': raw shape (1502, 31)
+  Raw columns: ['Fig.8f left', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Fig.4f middle', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (1501, 27)
+  Inferred x-axis column: Fig.8f left
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Fig.4f middle', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS1': raw shape (37, 10)
+  Raw columns: ['Angle', 'Intensity', 'Intensity.1', 'Unnamed: 3', 'Angle.1', 'Intensity.2', 'Intensity.3', 'Unnamed: 7', 'tl/ts', 'g-value']
+  Cleaned shape: (37, 8)
+  Inferred x-axis column: Angle
+  Inferred y-axis columns: ['Intensity', 'Intensity.1', 'Angle.1', 'Intensity.2', 'Intensity.3', 'tl/ts', 'g-value']
+
+Inspecting sheet 'FigureS2': raw shape (1001, 21)
+  Raw columns: ['Wavelength(nm)', 'Absorption', 'Absorption.1', 'Absorption.2', 'Absorption.3', 'Absorption.4', 'Absorption.5', 'Absorption.6', 'Absorption.7', 'Absorption.8']
+  Cleaned shape: (1001, 21)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['Absorption', 'Absorption.1', 'Absorption.2', 'Absorption.3', 'Absorption.4', 'Absorption.5', 'Absorption.6', 'Absorption.7', 'Absorption.8', 'Absorption.9'] ...
+
+Inspecting sheet 'FigureS3a': raw shape (1201, 12)
+  Raw columns: ['Wavelength(nm)', 'LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Unnamed: 9']
+  Cleaned shape: (1201, 11)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Angle', 'LD intensity']
+
+Inspecting sheet 'FigureS3b': raw shape (1201, 12)
+  Raw columns: ['Wavelength(nm)', 'LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Unnamed: 9']
+  Cleaned shape: (1201, 11)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Angle', 'LD intensity']
+
+Inspecting sheet 'FigureS3c': raw shape (1201, 12)
+  Raw columns: ['Wavelength(nm)', 'LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Unnamed: 9']
+  Cleaned shape: (1201, 11)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['LD(0)', 'LD(45)', 'LD(90)', 'LD(135)', 'LD(180)', 'LD(225)', 'LD(270)', 'LD(315)', 'Angle', 'LD intensity']
+
+Inspecting sheet 'FigureS4a': raw shape (21, 15)
+  Raw columns: ['Panel a', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (20, 11)
+  Inferred x-axis column: Unnamed: 1
+  Inferred y-axis columns: ['Unnamed: 2', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14']
+
+Inspecting sheet 'FigureS4b': raw shape (13, 7)
+  Raw columns: ['Panel b', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+  Cleaned shape: (12, 6)
+  Inferred x-axis column: Panel b
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6']
+
+Inspecting sheet 'FigureS5a': raw shape (52, 5)
+  Raw columns: ['panel a', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4']
+  Cleaned shape: (50, 4)
+  Inferred x-axis column: panel a
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 3', 'Unnamed: 4']
+
+Inspecting sheet 'FigureS5c': raw shape (12, 23)
+  Raw columns: ['panel c', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (10, 16)
+  Inferred x-axis column: Unnamed: 1
+  Inferred y-axis columns: ['Unnamed: 2', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 16'] ...
+
+Inspecting sheet 'Figures6': raw shape (3002, 79)
+  Raw columns: ['dye1', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'dye2', 'Unnamed: 9']
+  Cleaned shape: (3001, 70)
+  Inferred x-axis column: dye1
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'dye2', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS7': raw shape (3002, 69)
+  Raw columns: ['dye1', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'dye2', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (3001, 60)
+  Inferred x-axis column: dye1
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'dye2', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS8': raw shape (3002, 89)
+  Raw columns: ['dye1', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'dye2']
+  Cleaned shape: (3001, 80)
+  Inferred x-axis column: dye1
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'dye2', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS9b': raw shape (121, 3)
+  Raw columns: ['Wavelength(nm)', 'g_exp', 'g_pred']
+  Cleaned shape: (121, 3)
+  Inferred x-axis column: Wavelength(nm)
+  Inferred y-axis columns: ['g_exp', 'g_pred']
+
+Inspecting sheet 'FigureS9c': raw shape (18150, 2)
+  Raw columns: ['# y_true', 'y_pred']
+  Cleaned shape: (18150, 2)
+  Inferred x-axis column: # y_true
+  Inferred y-axis columns: ['y_pred']
+
+Inspecting sheet 'FigureS10': raw shape (3002, 43)
+  Raw columns: ['Prediction', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (3001, 42)
+  Inferred x-axis column: Prediction
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'] ...
+
+Inspecting sheet 'FigureS21': raw shape (1202, 68)
+  Raw columns: ['dye1', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'dye2', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (1201, 49)
+  Inferred x-axis column: dye1
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 4', 'Unnamed: 5', 'dye2', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 11', 'Unnamed: 12', 'dye3'] ...
+
+Inspecting sheet 'FigureS22': raw shape (62, 3)
+  Raw columns: ['All dyes', 'Unnamed: 1', 'Unnamed: 2']
+  Cleaned shape: (61, 3)
+  Inferred x-axis column: All dyes
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2']
+
+Inspecting sheet 'FigureS23a': raw shape (2502, 9)
+  Raw columns: ['Prediction(400nm)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Experiment', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+  Cleaned shape: (2501, 8)
+  Inferred x-axis column: Prediction(400nm)
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Experiment', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8']
+
+Inspecting sheet 'FigureS23b': raw shape (2502, 13)
+  Raw columns: ['Prediction(500nm)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Experiment', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (2501, 12)
+  Inferred x-axis column: Prediction(500nm)
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Experiment', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS23c': raw shape (2502, 15)
+  Raw columns: ['Prediction(600nm)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Experiment', 'Unnamed: 9']
+  Cleaned shape: (2501, 14)
+  Inferred x-axis column: Prediction(600nm)
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Experiment', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+
+Inspecting sheet 'FigureS23d': raw shape (2502, 12)
+  Raw columns: ['Prediction(700nm)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Experiment', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (2501, 11)
+  Inferred x-axis column: Prediction(700nm)
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Experiment', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11']
+
+Inspecting sheet 'FigureS25': raw shape (5729, 5)
+  Raw columns: ['300nm', '400nm', '500nm', '600nm', '700nm']
+  Cleaned shape: (5729, 5)
+  Inferred x-axis column: 300nm
+  Inferred y-axis columns: ['400nm', '500nm', '600nm', '700nm']
+
+Inspecting sheet 'FigureS27': raw shape (1335, 5)
+  Raw columns: ['2θ', 'Intensity', 'Unnamed: 2', '2θ.1', 'Intensity.1']
+  Cleaned shape: (1335, 4)
+  Inferred x-axis column: 2θ
+  Inferred y-axis columns: ['Intensity', '2θ.1', 'Intensity.1']
+
+Inspecting sheet 'FigureS28': raw shape (303, 23)
+  Raw columns: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (301, 16)
+  Inferred x-axis column: Unnamed: 0
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 15'] ...
+
+Inspecting sheet 'FigureS29': raw shape (1002, 4)
+  Raw columns: ['Unnamed: 0', '467nm', '532nm', '628nm']
+  Cleaned shape: (1001, 4)
+  Inferred x-axis column: 467nm
+  Inferred y-axis columns: ['Unnamed: 0', '532nm', '628nm']
+
+Inspecting sheet 'FigureS30': raw shape (4002, 34)
+  Raw columns: ['Prediction', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (4001, 32)
+  Inferred x-axis column: Prediction
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10'] ...
+
+Inspecting sheet 'FigureS31': raw shape (802, 19)
+  Raw columns: ['Unnamed: 0', '440nm', '467nm', '506nm', '531nm', '564nm', '606nm', '628nm', '666nm', 'Unnamed: 9']
+  Cleaned shape: (801, 18)
+  Inferred x-axis column: 440nm
+  Inferred y-axis columns: ['Unnamed: 0', '467nm', '506nm', '531nm', '564nm', '606nm', '628nm', '666nm', 'Unnamed: 10', '440nm.1'] ...
+
+Inspecting sheet 'TableS7': raw shape (44, 6)
+  Raw columns: ['Supplementary Table7.Figure of merit(FOM)comparison of the CPL materials', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+  Cleaned shape: (20, 4)
+  Inferred x-axis column: Unnamed: 2
+  Inferred y-axis columns: ['Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+
+Inspecting sheet 'FigureS34': raw shape (1202, 10)
+  Raw columns: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+  Cleaned shape: (1202, 10)
+  Inferred x-axis column: Unnamed: 0
+  Inferred y-axis columns: ['Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9']
+
+Inspecting sheet 'FigureS35': raw shape (6002, 11)
+  Raw columns: ['0days', 'Unnamed: 1', 'Unnamed: 2', '2days', 'Unnamed: 4', 'Unnamed: 5', '8days', 'Unnamed: 7', 'Unnamed: 8', '20days']
+  Cleaned shape: (6001, 8)
+  Inferred x-axis column: 0days
+  Inferred y-axis columns: ['Unnamed: 1', '2days', 'Unnamed: 4', '8days', 'Unnamed: 7', '20days', 'Unnamed: 10']
+
+Saved figure to: C:/UCLEAP/UC_LEAP/step5/output/Type1/007_Inverse_design_of_chiral_functional/results/PAPER_07_TASK_01_figure.png
+Analysis summary:
+  - Workbook structure inspected and all sheet names listed.
+  - Each sheet was cleaned by coercing numeric strings to numbers and removing empty rows/columns.
+  - X-axis inferred primarily from wavelength-like columns; y-axis traces plotted for all remaining numeric columns.
+  - Multi-trace sheets were overlaid in a single panel with legends when feasible.
+  - Figure saved as a multi-panel layout mirroring workbook organization.

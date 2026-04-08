@@ -1,0 +1,32 @@
+Task PAPER_07_TASK_02 Analysis
+Step_0: Load the CSV and inspect its columns, row count, and any metadata fields.
+Loaded file: 20_gabs_outfile.csv
+Total raw lines read: 96
+Header preview: feature：Color - thickness - stretch - gray,200,205,210,215,220,225,230,235,240,245,250,255,260,265,270,275,280,285,290,295,300,305,310,315,320,325,330,335,340,345,350,355,360,365,370,375,380,385,390,3
+Parsed header columns: 122
+Number of data rows detected: 95
+Maximum row length detected: 122
+Step_1: Identify the main response variable(s), especially gabs, and any associated wavelength or sample-condition columns.
+First column name: feature：Color - thickness - stretch - gray
+Number of wavelength-like columns detected from header: 121
+Metadata fields inferred from first column: ['feature', 'Color', 'thickness', 'stretch']
+Rows with at least one numeric value: 95 / 95
+Rows with at least 5 numeric values: 95 / 95
+Step_2: Clean the table by handling missing values, converting numeric fields, and standardizing labels.
+Rows retained for plotting after requiring at least 5 numeric points: 95
+Wavelength range inferred from header: 200.0 to 800.0 nm
+Number of usable wavelength columns: 121
+Number of plotted series: 95
+Step_3: Create a plot that summarizes the gabs results, such as a line plot versus wavelength, a bar chart of candidate values, or a scatter plot if multiple conditions are present.
+Step_4: Add axis labels, units, and a legend or annotations so the plot is publication-ready.
+Figure includes wavelength in nm, gabs on the y-axis, gridlines, and either a legend or ranked summary panel.
+Step_5: Verify that the visualization faithfully represents the CSV contents and is suitable for direct comparison with the paper’s corresponding result panel.
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/007_Inverse_design_of_chiral_functional/results/PAPER_07_TASK_02_figure.png
+Verification notes:
+- The CSV contains a metadata-like first column with sample descriptors and many numeric wavelength columns.
+- The numeric table is consistent with a gabs summary table across wavelengths/conditions.
+- The plot uses only numeric values parsed directly from the CSV; missing values are ignored rather than imputed.
+- No peak fitting or model-based inference was performed.
+Limitations:
+- The file does not explicitly label a separate 'gabs' column; gabs is inferred from the file name and the numeric response table.
+- If the intended paper panel used a different aggregation, that cannot be reconstructed without additional metadata.

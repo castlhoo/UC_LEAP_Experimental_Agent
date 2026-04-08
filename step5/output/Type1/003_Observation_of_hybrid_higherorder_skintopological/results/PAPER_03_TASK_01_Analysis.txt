@@ -1,0 +1,97 @@
+Task PAPER_03_TASK_01 Analysis
+Step_0: Loading dataset from: C:/UCLEAP/UC_LEAP/step4/organized/Type1/003_Observation_of_hybrid_higherorder_skintopological/type1_data/41467_2021_26414_MOESM2_ESM_8.xls
+Loaded workbook successfully. Number of sheets: 8
+Step_1: Sheet 'Fig. 4(a)' shape=(146, 14)
+  Columns: ['The experimentally measured spectra for ST effect', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+The experimentally measured spectra for ST effect                                 Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5                          Unnamed: 6                                 Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11                            Unnamed: 12                               Unnamed: 13
+                                              NaN                                        NaN         NaN         NaN         NaN         NaN                                 NaN                                        NaN         NaN         NaN          NaN          NaN                                    NaN                                       NaN
+                  Double open boundary conditions                                        NaN         NaN         NaN         NaN         NaN Double periodic boundary conditions                                        NaN         NaN         NaN          NaN          NaN x-periodic, y-open boundary conditions                                       NaN
+                                              NaN -0.0700013066062936 + 0.00632133446713350i         NaN         NaN         NaN         NaN                                 NaN -0.0692051808038156 + 0.00116270825799423i         NaN         NaN          NaN          NaN                                    NaN 0.0183963785266080 + 0.00348931467928308i
+                                              NaN -0.0700013066062936 - 0.00632133446713350i         NaN         NaN         NaN         NaN                                 NaN -0.0692051808038156 - 0.00116270825799423i         NaN         NaN          NaN          NaN                                    NaN 0.0183963785266080 - 0.00348931467928308i
+                                              NaN -0.0680658171398042 + 0.00858210467507594i         NaN         NaN         NaN         NaN                                 NaN  0.0692051808037350 + 0.00116270825868003i         NaN         NaN          NaN          NaN                                    NaN  0.0322436814165048 + 0.0138573297328601i
+Step_1: Sheet 'Fig. 4(b)' shape=(146, 14)
+  Columns: ['The experimentally measured spectra for SS effect', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+The experimentally measured spectra for SS effect                                Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5                          Unnamed: 6                                 Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11                            Unnamed: 12                            Unnamed: 13
+                                              NaN                                       NaN         NaN         NaN         NaN         NaN                                 NaN                                        NaN         NaN         NaN          NaN          NaN                                    NaN                                    NaN
+                  Double open boundary conditions                                       NaN         NaN         NaN         NaN         NaN Double periodic boundary conditions                                        NaN         NaN         NaN          NaN          NaN x-periodic, y-open boundary conditions                                    NaN
+                                              NaN -7.19371891331159e-05 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN 0.0736871145167930 + 0.000166921297114245i         NaN         NaN          NaN          NaN                                    NaN 0.0146989790947606 + 0.00000000000000i
+                                              NaN -4.90933583885604e-06 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN 0.0736871145167930 - 0.000166921297114245i         NaN         NaN          NaN          NaN                                    NaN 0.0140014241598741 + 0.00000000000000i
+                                              NaN  4.91435612597146e-06 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN   0.0665299361551099 + 0.0132709165307457i         NaN         NaN          NaN          NaN                                    NaN 0.0707023010607404 + 0.00000000000000i
+Step_1: Sheet 'Fig. 2(a)' shape=(146, 14)
+  Columns: ['The theoretical measured spectra for ST effect', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+The theoretical measured spectra for ST effect                                Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5                          Unnamed: 6                             Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11                            Unnamed: 12                             Unnamed: 13
+                                           NaN                                       NaN         NaN         NaN         NaN         NaN                                 NaN                                    NaN         NaN         NaN          NaN          NaN                                    NaN                                     NaN
+               Double open boundary conditions                                       NaN         NaN         NaN         NaN         NaN Double periodic boundary conditions                                    NaN         NaN         NaN          NaN          NaN x-periodic, y-open boundary conditions                                     NaN
+                                           NaN     4.28483491592840 + 0.378689744685083i         NaN         NaN         NaN         NaN                                 NaN -4.44554865017764 + 0.287928465241036i         NaN         NaN          NaN          NaN                                    NaN  -4.37521122466960 + 0.313194210668036i
+                                           NaN     4.28483491592840 - 0.378689744685083i         NaN         NaN         NaN         NaN                                 NaN -4.44554865017764 - 0.287928465241036i         NaN         NaN          NaN          NaN                                    NaN  -4.37521122466960 - 0.313194210668036i
+                                           NaN -0.0201756767154391 + 0.0144056596082010i         NaN         NaN         NaN         NaN                                 NaN -1.47831853301720 + 0.324693216840311i         NaN         NaN          NaN          NaN                                    NaN -0.942878412817492 + 0.133121790301434i
+Step_1: Sheet 'Fig. 2(b)' shape=(146, 14)
+  Columns: ['The theoretical measured spectra for SS effect', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+The theoretical measured spectra for SS effect                               Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5                          Unnamed: 6                             Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11                            Unnamed: 12                            Unnamed: 13
+                                           NaN                                      NaN         NaN         NaN         NaN         NaN                                 NaN                                    NaN         NaN         NaN          NaN          NaN                                    NaN                                    NaN
+               Double open boundary conditions                                      NaN         NaN         NaN         NaN         NaN Double periodic boundary conditions                                    NaN         NaN         NaN          NaN          NaN x-periodic, y-open boundary conditions                                    NaN
+                                           NaN  0.00954282069312928 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN  -4.43621460256379 + 0.00000000000000i         NaN         NaN          NaN          NaN                                    NaN   4.33821571074766 + 0.00000000000000i
+                                           NaN -0.00954282069312602 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN -4.19665470701826 + 0.363195167834896i         NaN         NaN          NaN          NaN                                    NaN -0.894477704158866 + 0.00000000000000i
+                                           NaN    -4.09016486319044 + 0.00000000000000i         NaN         NaN         NaN         NaN                                 NaN -4.19665470701826 - 0.363195167834896i         NaN         NaN          NaN          NaN                                    NaN  0.894477704158865 + 0.00000000000000i
+Step_1: Sheet 'Fig. 2(c)-(d), Fig. 3(c)-(d)' shape=(57, 14)
+  Columns: ['Theoretical voltage distribution for ST effect(mV)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+Theoretical voltage distribution for ST effect(mV)  Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12  Unnamed: 13
+                                               NaN         NaN        13.5         0.1         8.8         0.1         5.8         0.1         4.7         0.3          2.7          0.5          1.2          0.8
+                                               NaN         NaN         0.1         0.3         0.2         0.4         0.2         0.3         0.1         0.3          0.1          0.3          0.0          0.5
+                                               NaN         NaN        11.2         0.2         7.4         0.1         5.1         0.1         4.4         0.2          2.4          0.4          2.0          0.7
+                                               NaN         NaN         0.2         0.6         0.3         0.9         0.4         0.5         0.3         0.4          0.2          0.6          0.1          1.8
+                                               NaN         NaN         9.2         0.3         6.1         0.4         4.5         0.1         3.9         0.3          2.3          0.4          1.4          0.6
+Step_1: Sheet 'Fig. 4(c)-(d)' shape=(102, 16)
+  Columns: ['The voltages (corner, edge and bulk) with the frequency for the hybrid second-order  SS effects(mV).', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+The voltages (corner, edge and bulk) with the frequency for the hybrid second-order  SS effects(mV). Unnamed: 1 Unnamed: 2 Unnamed: 3  Unnamed: 4  Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11 The voltages (corner, edge and bulk) with the frequency for the hybrid second-order ST effects(mV).  Unnamed: 13 Unnamed: 14 Unnamed: 15
+                                                                                                 NaN        NaN        NaN        NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN                                                                                                  NaN         NaN         NaN         NaN
+                                                                                      Frequency (Hz)     corner       edge       bulk         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN                                                                                       Frequency (Hz)      corner        edge        bulk
+                                                                                             1000000   0.000945   0.000945   0.002858         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN                                                                                              1000000    0.000187    0.000187    0.035429
+                                                                                             1040400   0.000888   0.000888   0.008413         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN                                                                                              1040400    0.000836    0.000836    0.132995
+                                                                                             1080810   0.000595   0.000595   0.040325         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN                                                                                              1080810    0.000836    0.000836     0.52066
+Step_1: Sheet 'Fig. 6(d)' shape=(89, 14)
+  Columns: ['Experimental voltage distribution for STT effect(mV)', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+ Experimental voltage distribution for STT effect(mV)   Unnamed: 1  Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12  Unnamed: 13
+                                                  NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN
+                                                  NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN
+                                                  NaN layer 1(top)        7.02        8.93        3.48        7.97        3.32        8.29        3.60       11.07         3.29         8.90         3.52        18.22
+                                                  NaN          NaN        8.86        3.33        6.19        3.32        6.24        3.23        6.11        3.29         6.09         3.24         7.91         3.80
+                                                  NaN          NaN        3.58        6.03        3.39        6.29        3.23        6.31        3.28        6.23         3.30         6.26         3.44         8.93
+Step_1: Sheet 'Fig. 6(e)' shape=(88, 15)
+  Columns: ['Unnamed: 0', 'Experimental voltage distribution for SSS effect(mV)', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11'] ...
+  Sample rows:
+ Unnamed: 0  Experimental voltage distribution for SSS effect(mV)   Unnamed: 2  Unnamed: 3  Unnamed: 4  Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12  Unnamed: 13  Unnamed: 14
+        NaN                                                   NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN
+        1.3                                                   NaN          NaN         NaN         NaN         NaN         NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN
+        0.0                                                   NaN layer 1(top)        1.30        1.35        1.19        1.22        1.13        1.44        1.20         1.43         1.19         1.32         1.50         1.45
+        0.0                                                   NaN          NaN        1.16        1.45        1.30        1.36        1.28        1.42        1.12         1.30         1.39         1.27         1.31         1.18
+        0.0                                                   NaN          NaN        1.19        1.40        1.27        1.45        1.13        1.28        1.47         1.13         1.42         1.25         1.47         1.43
+Step_2: Heuristic assessment of sheet types based on numeric content:
+  Sheet 'Fig. 6(e)': numeric_columns=13, rows=88, cols=15
+  Sheet 'Fig. 6(d)': numeric_columns=12, rows=89, cols=14
+  Sheet 'Fig. 2(c)-(d), Fig. 3(c)-(d)': numeric_columns=12, rows=57, cols=14
+  Sheet 'Fig. 4(c)-(d)': numeric_columns=8, rows=102, cols=16
+  Sheet 'Fig. 4(a)': numeric_columns=0, rows=146, cols=14
+  Sheet 'Fig. 4(b)': numeric_columns=0, rows=146, cols=14
+  Sheet 'Fig. 2(a)': numeric_columns=0, rows=146, cols=14
+  Sheet 'Fig. 2(b)': numeric_columns=0, rows=146, cols=14
+Selected sheet for plotting: 'Fig. 2(c)-(d), Fig. 3(c)-(d)'
+Inferred plot mode: heatmap_or_multi
+Numeric-like columns detected: ['Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13']
+Plotted heatmap from numeric matrix with shape (48, 12).
+Step_3: Data cleaning and reshaping were limited to numeric coercion and header normalization.
+Step_4: Figure recreated using publication-style formatting where supported by the detected data structure.
+Step_5: Saving outputs.
+
+Interpretation note:
+The workbook structure was inspected directly. The figure type was inferred from the available sheet layout and numeric content.
+If the file contains a more specific panel organization than detected here, that organization could not be confirmed without clearer headers or explicit labels in the data.
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/003_Observation_of_hybrid_higherorder_skintopological/results/PAPER_03_TASK_01_figure.png
+Analysis saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/003_Observation_of_hybrid_higherorder_skintopological/results/PAPER_03_TASK_01_Analysis.txt

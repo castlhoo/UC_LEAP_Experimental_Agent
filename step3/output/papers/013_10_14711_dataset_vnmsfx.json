@@ -1,0 +1,30 @@
+{
+  "paper_id": "step1_0059",
+  "title": "Four-band non-Abelian topological insulator and its experimental realization",
+  "doi": "10.14711/dataset/vnmsfx",
+  "journal": "DataSpace@HKUST",
+  "year": 2021,
+  "paper_url": "https://doi.org/10.14711/dataset/vnmsfx",
+  "priority_score": 6.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_14711_dataset_vnmsfx",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": null,
+  "inspection_reports": []
+}

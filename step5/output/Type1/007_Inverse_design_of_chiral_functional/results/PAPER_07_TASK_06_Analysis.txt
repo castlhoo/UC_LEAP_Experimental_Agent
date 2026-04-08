@@ -1,0 +1,41 @@
+Task PAPER_07_TASK_06 Analysis
+Objective: Replot the absorption-target inverse-design results at 467 nm for the first candidate set.
+
+Step_0: Load the CSV and inspect the schema, focusing on the 467 nm absorption-target entries.
+Loaded dataset successfully from: C:/UCLEAP/UC_LEAP/step4/organized/Type1/007_Inverse_design_of_chiral_functional/type1_data/cgan_test_result_ABS_467_1.72.csv
+Dataset shape: 4513 rows x 7 columns
+Columns detected: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+
+Step_1: Identify the columns corresponding to generated output, predicted output, and error or deviation.
+Identified columns:
+  G_GAN: generated output from cGAN
+  G_Predict: predicted output
+  dG: deviation/error term
+No explicit wavelength column found in the table; target wavelength is inferred from the filename and task description (467 nm).
+
+Step_2: Clean the data and standardize numeric values and labels.
+Converted required columns to numeric and dropped rows with missing required values.
+Rows before cleaning: 4513, after cleaning: 4513, removed: 0
+
+Step_3: Create a comparison plot that makes the agreement between generated and predicted absorption-related values visually obvious.
+Computed comparison metrics from the cleaned data:
+  Mean absolute difference |G_GAN - G_Predict| = 0.022066
+  RMSE(G_GAN, G_Predict) = 0.026749
+  Mean absolute dG = 0.022066
+  Max absolute dG = 0.116653
+
+Step_4: Annotate the figure with the 467 nm target and any relevant performance metric.
+The figure will include:
+  - Scatter/line comparison of G_GAN and G_Predict across candidate designs
+  - A 1:1 reference line in a parity inset to show agreement
+  - Annotation of the 467 nm target and summary error metrics
+  - A secondary panel for dG to show deviation magnitude
+
+Step_5: Export the plot in a style consistent with the paper’s inverse-design result panels.
+Figure saved successfully to: C:/UCLEAP/UC_LEAP/step5/output/Type1/007_Inverse_design_of_chiral_functional/results/PAPER_07_TASK_06_figure.png
+
+Validation and exclusions:
+  - The dataset contains the required generated, predicted, and deviation columns.
+  - No explicit wavelength column was present in the previewed schema; the 467 nm target is therefore taken from the filename and task context.
+  - The plot uses all valid rows after numeric cleaning; no rows were excluded beyond missing/invalid required values.
+  - No peak identification or spectral interpretation was needed because this task concerns inverse-design tabular results, not a spectrum.

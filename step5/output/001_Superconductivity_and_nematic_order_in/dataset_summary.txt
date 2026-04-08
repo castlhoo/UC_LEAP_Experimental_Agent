@@ -1,0 +1,87 @@
+1. Dataset Overview
+- Format:
+  - Mostly Excel spreadsheets (`.xlsx`) for replot-ready data
+  - Several binary scanning probe files (`.sxm`) for raw microscopy/spectroscopy data
+- Number of runs / experiments:
+  - At least 13 figure-linked datasets/files
+  - Multiple distinct measurements within some spreadsheets (e.g., many field/temperature traces in one file)
+- Approximate data volume:
+  - Replot-ready tables: small to moderate (from a few KB to ~150 KB each)
+  - Raw `.sxm` files: ~12–14 MB each
+- Time range:
+  - Not provided in the dataset metadata
+
+2. Instrumentation Setup
+- X-ray diffractometer / powder XRD
+  - Inferred from `2θ` vs `Intensity(arb. units)` in `Fig1b.xlsx`
+  - Used to measure diffraction pattern / structural characterization
+- Magnetization measurement system
+  - Inferred from `Temperature (K)` vs `M` in `Fig2a.xlsx` and `Fig2b.xlsx`
+  - Likely a SQUID/VSM-type setup for magnetic susceptibility vs temperature and field
+- Electrical transport setup
+  - Inferred from `Temperature(K)` vs `R` and current labels in `Fig2c.xlsx`
+  - Used for resistance vs temperature, likely four-probe transport
+- Scanning tunneling microscope / spectroscopic imaging system
+  - Inferred from `.sxm` files (`Fig2f`, `Fig2j`, `Fig4a`, `Fig4e1`, `Fig4e2`)
+  - Used for topography, spectroscopy, and quasiparticle interference mapping
+- No explicit metadata for temperature controller, magnet, or SMU is included, but these are likely part of the transport/STM setups
+
+3. Information of each run / experiment
+
+a. Measured Parameters
+- Fig1b.xlsx
+  - Independent variable: `2θ`
+  - Dependent variable: `Intensity(arb. units)`
+- Fig2a.xlsx
+  - Independent variable: `Temperature (K)`
+  - Dependent variable: `M`
+  - Multiple field conditions embedded as paired columns, labeled in the data rows: `50 Oe`, `100 Oe`, `200 Oe`, `300 Oe`, `400 Oe`, `500 Oe`, `1000 Oe`, `2000 Oe`
+- Fig2b.xlsx
+  - Independent variable: `T (K)`
+  - Dependent variable: `M`
+  - Multiple low-field traces embedded as paired columns, labeled: `0.01 Oe`, `0.03 Oe`, `0.05 Oe`, `0.1 Oe`, `0.3 Oe`, `0.5 Oe`, `1 Oe`, `3 Oe`
+- Fig2c.xlsx
+  - Independent variable: `Temperature(K)`
+  - Dependent variable: `R`
+  - Current labels appear in the first row: `500 μA`, `1000 μA`
+- Fig2d.xlsx, Fig2e.xlsx, Fig2g.xlsx, Fig2h.xlsx, Fig2i.xlsx, Fig2k.xlsx, Fig3c.xlsx, Fig3h.xlsx
+  - Structured numeric grids with row/column indices and values
+  - Likely 2D maps or image-derived arrays
+  - Axes are not explicitly named in the metadata, but the grids suggest spatial or momentum-space maps
+- Raw `.sxm` files (`Fig2f`, `Fig2j`, `Fig4a`, `Fig4e1`, `Fig4e2`)
+  - Likely contain STM topography/spectroscopy maps
+  - Exact channel names are not available from the provided metadata
+
+b. Experimental Context (Inference)
+- Fig1b.xlsx
+  - Likely powder X-ray diffraction / structural phase characterization
+  - Supports crystal structure verification for CsTi3Bi5
+- Fig2a.xlsx and Fig2b.xlsx
+  - Likely magnetization vs temperature under different applied fields
+  - Consistent with superconducting transition characterization and field dependence
+- Fig2c.xlsx
+  - Likely resistivity vs temperature under different excitation currents
+  - Consistent with transport evidence for superconductivity
+- Fig2d/e/g/h/i/k and Fig3c/h
+  - Likely STM/STS-derived spatial or spectroscopic maps
+  - Possible phenomena: superconducting gap anisotropy, quasiparticle interference, nematicity
+  - Reasoning: the paper context emphasizes STM/STS, two-gap superconductivity, and C2 symmetry breaking
+- `.sxm` files
+  - Likely raw STM data supporting topography, spectroscopy, and QPI analysis
+  - Fig4-related files likely correspond to nematic/symmetry-breaking analysis in the superconducting or normal state
+
+c. Notes for Analysis
+- Structure patterns
+  - Several Excel files store multiple traces side-by-side in alternating columns, with repeated axis/value headers
+  - Some sheets contain only numeric grids with implicit axes, suggesting image-like data rather than simple line plots
+  - The `.sxm` files are raw instrument outputs and likely require specialized parsing
+- Potential challenges / ambiguities
+  - Exact physical meaning of the grid axes in `Fig2d/e/g/h/i/k`, `Fig3c/h` is not explicit from metadata alone
+  - The `.sxm` channel names, scan sizes, bias voltages, and temperatures are not provided
+  - Some spreadsheets mix labels and data in the same rows, so careful parsing is needed
+- Suggestions for analysis
+  - For XRD: identify peak positions, compare with expected lattice structure, and assess phase purity
+  - For magnetization/transport: extract superconducting onset, transition width, and field dependence
+  - For grid/map data: treat as 2D arrays for image analysis, symmetry analysis, Fourier transforms, or line cuts
+  - For `.sxm`: inspect metadata headers first, then analyze topography, dI/dV maps, and QPI anisotropy
+  - Given the paper context, prioritize analyses related to superconducting gap structure and nematic symmetry breaking

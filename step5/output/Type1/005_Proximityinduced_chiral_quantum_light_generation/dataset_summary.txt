@@ -1,0 +1,108 @@
+1. Dataset Overview
+- Format:
+  - Multiple Excel workbooks (`.xlsx`), apparently supplementary figure data for a paper.
+  - Data are “replot-ready” tables rather than raw instrument files.
+- Number of runs / experiments:
+  - Not explicitly labeled as runs; best interpreted as multiple figure-specific datasets across ~10 workbooks and many sheets.
+  - At least ~30 distinct data tables/sheets are present.
+- Approximate data volume:
+  - Moderate-sized tabular dataset.
+  - Largest tables are ~102k rows; many others are ~1.3k rows.
+  - Overall volume is on the order of a few hundred thousand rows across all sheets.
+- Time range:
+  - Only a few time-series-like tables include time axes; no absolute timestamps or acquisition dates are provided.
+  - No global time range available.
+
+2. Instrumentation Setup
+- Inferred instruments / measurement modalities:
+  - Spectrometer / PL setup
+    - Used for energy-resolved photoluminescence or emission spectra (`Energy` vs `s+`, `s-`, `sigma+`, `sigma-`, `DCP`, etc.).
+  - Polarization-resolved detection optics
+    - Measures circular/linear polarization channels and derived quantities like DCP.
+  - Time-correlated photon counting / lifetime or blinking measurement setup
+    - Suggested by `Time` vs `count` tables and `Time delay` vs `normalized counts`.
+  - Scanning probe / imaging system
+    - Suggested by image-like matrices (`HeightImage`, `MagneticFieldImage`, `RTHeightImage`, `RTMagneticFieldImage`, XY position grids).
+  - Magnetic-field control / magneto-optical measurement setup
+    - Suggested by multiple sheets indexed by field values (`0T`, `1T`, `6T`, `-6T`, etc.).
+  - Likely cryogenic optical microscope
+    - Inferred from low-temperature field-dependent PL-style datasets, though temperature values are not directly present in the tables.
+  - Possible NV magnetometry / magnetic imaging modality
+    - Inferred from “MagneticFieldImage” sheets, but the exact sensor is not stated in the data.
+
+3. Information of each run / experiment
+
+- Since individual run metadata are not available, the datasets are summarized collectively by sheet/figure group.
+
+a. Measured Parameters
+- Independent variables:
+  - `Energy`, `energy`
+    - Spectral axis for emission/PL data.
+  - `Time`
+    - Time axis for intensity/count traces.
+  - `Time delay`
+    - Delay axis for correlation/autocorrelation-like data.
+  - Magnetic field labels / values:
+    - `0T`, `1T`, `2T`, `3T`, `4T`, `5T`, `6T`, `-1T`, `-2T`, `-3T`, `-4T`, `-5T`, `-6T`
+    - Also explicit `B` in one table.
+  - Polarization / channel labels:
+    - `s+`, `s-`, `sigma+`, `sigma-`, `DCP`
+    - Also combinations like `S+-`, `S++`, `S--`, `S-+`, and angle labels such as `E45`, `E135`, `E165`.
+  - Spatial/image coordinates:
+    - `Pix`, `Pak1`, `P1`–`P5`, `FitPix`, and grid positions in `RTXYPositions`.
+- Dependent variables:
+  - Emission/count intensities:
+    - `count`, `Count`, `normalized counts`
+    - Spectral intensities in polarization channels (`s+`, `s-`, `sigma+`, `sigma-`, etc.)
+  - Derived polarization metrics:
+    - `DCP`
+  - Image pixel values:
+    - `HeightImage`, `MagneticFieldImage`, `RTHeightImage`, `RTMagneticFieldImage`
+  - Fit/summary parameters:
+    - `2DX`, `LX`, linewidth values, and fitted peak positions/amplitudes in `ED Fig 4c`
+
+b. Experimental Context (Inference)
+- Likely experiment type:
+  - Magneto-photoluminescence / polarization-resolved spectroscopy of quantum emitters in WSe2/NiPS3 heterostructures.
+  - Additional imaging/field-mapping experiments, likely used to characterize strain-induced emitters and local magnetic structure.
+  - Time-resolved or photon-counting measurements for emitter dynamics and/or photon statistics.
+- Possible physical phenomena:
+  - Chiral/circularly polarized emission
+  - Magneto-PL splitting or polarization asymmetry
+  - Strain-localized quantum emitters
+  - Magnetic proximity effects
+  - Field-dependent polarization behavior
+  - Possibly single-photon emission / emitter blinking or antibunching-related measurements, though the exact observable is not explicit in the tables
+- Reasoning:
+  - Repeated spectral tables with `sigma+`/`sigma-` and field-indexed columns strongly indicate polarization-resolved PL under magnetic field.
+  - `DCP` suggests degree of circular polarization analysis.
+  - Image matrices labeled `HeightImage` and `MagneticFieldImage` suggest spatial maps, consistent with scanning probe or magnetic imaging.
+  - Time/count and time-delay/count tables suggest photon counting or correlation measurements.
+
+c. Notes for Analysis
+- Important patterns in structure:
+  - Many sheets are organized as figure panels from the paper/supplement, with one independent axis and multiple measurement channels.
+  - Several tables are duplicated or near-duplicated across different field/polarization conditions.
+  - Some headers contain typos or inconsistent naming:
+    - `Ener5gy`, `energy`, `Energy `
+    - `sigma +` repeated twice in one sheet
+    - `Pak1` likely a misspelling or shorthand
+  - Some sheets contain blank cells or placeholder strings like `--`.
+- Potential challenges / ambiguities:
+  - No explicit run IDs, sample IDs, or acquisition metadata.
+  - Units are mostly absent; energy is likely in eV, time in seconds or milliseconds, but this is not stated in the files.
+  - Image tables are stored as numeric matrices with separate coordinate tables, so reconstruction requires matching grid axes.
+  - Some tables appear to be processed/averaged values rather than raw counts.
+- Suggestions for analysis:
+  - Treat each sheet as a separate figure-level dataset.
+  - For spectral sheets:
+    - Compare polarization channels vs energy.
+    - Compute peak positions, peak splittings, asymmetries, and DCP if not already provided.
+  - For field-dependent sheets:
+    - Analyze trends versus magnetic field and compare positive/negative field symmetry.
+  - For time/count and time-delay data:
+    - Determine whether they are blinking traces, lifetime decays, or correlation functions based on axis units and normalization.
+  - For image matrices:
+    - Reconstruct 2D maps using the accompanying XY-position sheets.
+    - Apply spatial filtering or contour visualization to identify localized features.
+  - Handle missing/placeholder values carefully and standardize inconsistent column names before downstream processing.

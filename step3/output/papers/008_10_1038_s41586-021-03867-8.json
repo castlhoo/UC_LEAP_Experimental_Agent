@@ -1,0 +1,696 @@
+{
+  "paper_id": "step1_0009",
+  "title": "Extremely anisotropic van der Waals thermal conductors",
+  "doi": "10.1038/s41586-021-03867-8",
+  "journal": "Nature",
+  "year": 2021,
+  "paper_url": "https://doi.org/10.1038/s41586-021-03867-8",
+  "priority_score": 8.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-021-03867-8",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All three files are Nature source-data Excel workbooks organized by figure panels with physical-variable headers and direct plotting structure. They are cleaned, replot-ready datasets rather than raw instrument outputs.",
+  "type2_summary": "No Type 2 files were identified. None of the provided files are raw microscopy images, proprietary instrument exports, or unprocessed acquisition files.",
+  "type1_files": [
+    "41586_2021_3867_MOESM1_ESM_8.xlsx",
+    "41586_2021_3867_MOESM2_ESM_8.xlsx",
+    "41586_2021_3867_MOESM3_ESM_8.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly mentions raw measurements for TEM/STEM, optical images, TDTR traces, Raman spectra, SEM images, and I-V curves, but the provided files are not raw acquisition files; they are organized source-data spreadsheets deposited by figure. This is a classic Type 1 case.",
+  "file_classifications": [
+    {
+      "filename": "41586_2021_3867_MOESM1_ESM_8.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper describes Fig. 2a–2e as processed/derived plots: TDTR cooling curves, thermal resistance vs layer number, temperature-dependent thermal conductivity, and phonon dispersion/lifetimes. The source-data workbook is organized by figure panels, which is consistent with figure-ready source data rather than raw instrument output.",
+      "file_evidence": "Excel workbook with 6 figure-specific sheets ('Fig. 2a' to 'Fig. 2e'), small-to-moderate size (1.5 MB), and explicit physical-variable headers such as 'Time delay (ps)', '-V_in/V_out', 'N', 'R_TDTR', and phonon frequency vs k_z. The structure is tabular and directly plottable with minimal processing.",
+      "reasoning": "Although some panels include model fits and simulation outputs, the workbook is clearly organized as source data for specific figures and contains cleaned tabular variables suitable for replotting. This matches Type 1 (cleaned, replot-ready) rather than raw instrument output.",
+      "ambiguity": "Low ambiguity: Fig. 2d/2e include derived simulation data, but the file is still figure-organized source data.",
+      "key_columns_or_structure": "Fig. 2a: Time delay (ps), -V_in/V_out; Fig. 2b: N, R_TDTR; Fig. 2c: thermal conductivity values from MD/experiment; Fig. 2d(i)/(ii): k_z (nm^-1), phonon frequency (THz)"
+    },
+    {
+      "filename": "41586_2021_3867_MOESM2_ESM_8.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that Fig. 3b shows Raman spectra and Fig. 3c uses Raman peak shifts versus absorbed laser power to extract thermal conductance. These are processed/figure data rather than raw microscope or spectrometer files.",
+      "file_evidence": "Excel workbook with 2 figure-specific sheets ('Fig. 3a', 'Fig. 3b'), moderate size (222.7 KB), and tabular spectral data with headers like 'ω (cm^-1)' and 'Raman intensity (arbitrary units)'. The second sheet contains multiple layer-number series and inset datasets, indicating curated plotting data.",
+      "reasoning": "The file contains cleaned Raman spectra and associated series arranged for direct plotting. It is not a proprietary spectrometer export or raw binary measurement file, so it fits Type 1.",
+      "ambiguity": "Low ambiguity: the spectra are measurement-derived but already organized as source data for figures.",
+      "key_columns_or_structure": "Fig. 3a: ω (cm^-1), Raman intensity (arbitrary units); Fig. 3b: multiple series for N = 2, 3, 4, 5 and inset datasets for different domain sizes"
+    },
+    {
+      "filename": "41586_2021_3867_MOESM3_ESM_8.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper describes Fig. 4 as processed electrical/thermal analysis: COMSOL temperature maps, lateral temperature profiles, I-V curves, and critical current histograms. These are figure-ready outputs rather than raw instrument files.",
+      "file_evidence": "Excel workbook with a single figure-specific sheet ('Fig. 4'), small size (33.1 KB), and tabular data for Fig. 4c, Fig. 4d, and Fig. 4e. The structure is compact and organized for plotting, not raw acquisition.",
+      "reasoning": "The workbook is clearly a curated source-data file for the figure panels, containing processed simulation and electrical test results in tabular form. This is directly replot-ready and therefore Type 1.",
+      "ambiguity": "Low ambiguity: despite containing simulation-derived values, the file is a figure source-data table.",
+      "key_columns_or_structure": "Fig. 4c, Fig. 4d, Fig. 4e tabulated data; likely temperature profiles, I-V curves, and critical current distributions"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper demonstrates that large-area van der Waals transition-metal dichalcogenide films with random interlayer rotations can exhibit extremely high thermal conductivity anisotropy. By combining TDTR, Raman thermometry, TEM/STEM, and molecular dynamics, the authors show that interlayer rotation suppresses through-plane heat transport in MoS2 and WS2 to ultralow values while preserving near-bulk in-plane thermal conductivity, enabling effective heat spreading and thermal insulation in device geometries.",
+    "measurement_types": [
+      "time-domain thermoreflectance (TDTR)",
+      "Raman thermometry",
+      "transmission electron microscopy (TEM) diffraction",
+      "darkfield TEM imaging",
+      "cross-sectional HAADF-STEM",
+      "grazing-incidence wide-angle X-ray scattering (GIWAXS)",
+      "molecular dynamics simulation (HNEMD)",
+      "finite-element thermal simulation (COMSOL)",
+      "electrical I-V / electromigration testing"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "Conceptual strategy for creating anisotropic thermal conductors using random interlayer rotation in layered vdW materials.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Schematic of an r-MoS2 film with random crystalline orientation between layers.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "TEM electron diffraction patterns from a monolayer and an N=10 r-MoS2 film, showing random in-plane domain orientation and ring-like diffraction from stacked layers; inset darkfield TEM image of monolayer domains.",
+        "data_type": "diffraction pattern / TEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1d",
+        "description": "Cross-sectional HAADF-STEM image of an N=10 r-MoS2 film showing clean interfaces and interlayer spacing.",
+        "data_type": "STEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1e",
+        "description": "Optical images of large-area MoS2 films transferred to 1-inch substrates.",
+        "data_type": "optical image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "TDTR cooling curves for N=1, 2, and 10 r-MoS2 films with model fits.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Thermal resistance across r-MoS2 and r-WS2 versus layer number, with linear fits used to extract through-plane thermal conductivity.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "Temperature dependence of thermal conductivity from experiment and MD for bulk MoS2 and r-MoS2, including both in-plane and through-plane components.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2d",
+        "description": "Calculated phonon dispersion curves along the through-plane direction for bulk and r-MoS2, highlighting softening of TA modes.",
+        "data_type": "phonon dispersion plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2e",
+        "description": "Phonon lifetimes for LA and TA modes in bulk and r-MoS2, compared with the LA vibration period.",
+        "data_type": "lifetime plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "SEM image of a suspended r-MoS2 film on a TEM grid for Raman thermometry.",
+        "data_type": "SEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Raman spectra of N=2 r-MoS2 at different absorbed laser powers.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "A1g Raman peak shift versus absorbed laser power for several layer numbers, with inset thermal conductance versus N for two domain sizes.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3d",
+        "description": "Comparison plot of thermal anisotropy ratio versus slow-axis conductivity for r-MoS2 and prior anisotropic thermal conductors.",
+        "data_type": "comparison plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Schematic of r-MoS2 draped over a nanoscale Au electrode on SiO2/Si.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "COMSOL finite-element simulation of temperature distribution in bare and r-MoS2-covered Au electrodes under Joule heating.",
+        "data_type": "simulation map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Lateral temperature profiles on the Au/SiO2 surface and r-MoS2 top surface from the thermal simulation.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Representative I-V curves of bare and r-MoS2-covered Au electrodes, showing increased current tolerance with the heat spreader.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4e",
+        "description": "Histogram of critical current values for bare and r-MoS2-covered Au electrodes.",
+        "data_type": "histogram",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include TEM electron diffraction patterns, darkfield TEM images, cross-sectional HAADF-STEM images, optical microscopy images of transferred films, TDTR pump-probe thermoreflectance traces, Raman spectra and Raman peak shifts under varying laser power and temperature, SEM images of suspended films, and I-V curves from Au electromigration tests. The paper also reports GIWAXS measurements used to determine interlayer spacing.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include TDTR-derived thermal resistance versus layer number, extracted thermal conductivity versus temperature, Raman-derived thermal conductance and thermal conductivity versus layer number, comparison plots of anisotropy ratio against conductivity, and histograms of critical current. Several plots combine experimental data with model fits or simulation outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available online at the DOI link. No detailed file-level data repository description is given in the provided text.",
+      "data_provided_types": [
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described at the instrument level rather than as a named repository or file format: TDTR traces from a mode-locked Ti:sapphire pump-probe setup, Raman spectra from a Horiba spectrometer, TEM/STEM images and diffraction patterns from electron microscopy, GIWAXS for interlayer spacing, and electrical I-V measurements from fabricated Au nanoelectrodes. The text does not specify raw file formats or a public raw-data archive.",
+      "processed_data_description": "Processed data include fitted thermal resistances, extracted through-plane and in-plane thermal conductivities, temperature-dependent conductivity curves, phonon dispersion and lifetime results from MD, thermal conductance values from Raman thermometry, and critical current histograms. These are derived from fitting or modeling raw measurements.",
+      "figure_data_description": "The paper explicitly mentions 'source data' as being available online, but the provided text does not enumerate figure-by-figure source-data files. Based on the article structure, the source data likely correspond to the plotted values underlying the main and extended data figures, not the raw instrument outputs.",
+      "scripts_description": "No analysis scripts, notebooks, or code files are described in the provided text. The paper mentions 'data and code availability' online, but the actual code content is not specified here.",
+      "data_organization": "unknown",
+      "replot_ready_data_present": true,
+      "replot_reason": "The article states that source data are available online, and the main figures are based on extracted values and fitted curves that are typically replot-ready. However, the provided text does not specify exact file names, formats, or folder structure, so full replotting readiness cannot be confirmed from the text alone.",
+      "notes": "The dataset is a mix of raw microscopy/spectroscopy/transport measurements and derived thermal-property datasets. A key semantic distinction is that TDTR and Raman measurements are converted into thermal conductivities through explicit models and fits, so the plotted thermal conductivity values are processed/derived rather than raw observables. The paper also includes simulation-derived datasets from MD and COMSOL, which are not experimental raw data but computed results. Extended Data figures are referenced, and the methods mention additional figures and tables, but their specific datasets are not included in the provided text."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2021_3867_MOESM1_ESM_8.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 1555219,
+      "size_human": "1.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 2a",
+        "Fig. 2b",
+        "Fig. 2c",
+        "Fig. 2d (i)",
+        "Fig. 2d (ii)",
+        "Fig. 2e"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 2a",
+          "columns": [
+            "X: Time delay (ps)",
+            "Y: -V_in/V_out",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "X: Time delay (ps).1",
+            "Y: -V_in/V_out.1",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "X: Time delay (ps)",
+            "Y: -V_in/V_out",
+            "X: Time delay (ps).1",
+            "Y: -V_in/V_out.1"
+          ],
+          "column_count": 8,
+          "row_count": 147,
+          "dtypes": {
+            "X: Time delay (ps)": "float64",
+            "Y: -V_in/V_out": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "X: Time delay (ps).1": "float64",
+            "Y: -V_in/V_out.1": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2b",
+          "columns": [
+            "X: N",
+            "r-MoS2",
+            "Unnamed: 2",
+            "X: N.1",
+            "r-WS2",
+            "Unnamed: 5",
+            "X: N.2",
+            "Y: R_TDTR; model fitting for N>1 r-MoS2 (m2 K /GW)",
+            "X: N.3",
+            "Y: R_TDTR; model fitting for N>1 r-WS2 (m2 K /GW)"
+          ],
+          "named_columns": [
+            "X: N",
+            "r-MoS2",
+            "X: N.1",
+            "r-WS2",
+            "X: N.2",
+            "Y: R_TDTR; model fitting for N>1 r-MoS2 (m2 K /GW)",
+            "X: N.3",
+            "Y: R_TDTR; model fitting for N>1 r-WS2 (m2 K /GW)"
+          ],
+          "column_count": 10,
+          "row_count": 1000,
+          "dtypes": {
+            "X: N": "float64",
+            "r-MoS2": "object",
+            "Unnamed: 2": "object",
+            "X: N.1": "float64",
+            "r-WS2": "object",
+            "Unnamed: 5": "object",
+            "X: N.2": "float64",
+            "Y: R_TDTR; model fitting for N>1 r-MoS2 (m2 K /GW)": "float64",
+            "X: N.3": "float64",
+            "Y: R_TDTR; model fitting for N>1 r-WS2 (m2 K /GW)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2c",
+          "columns": [
+            "Unnamed: 0",
+            "MoS2 (MD simulations)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "r-MoS2 (MD simulations)",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "r-MoS2 (experimental)",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14"
+          ],
+          "named_columns": [
+            "MoS2 (MD simulations)",
+            "r-MoS2 (MD simulations)",
+            "r-MoS2 (experimental)"
+          ],
+          "column_count": 15,
+          "row_count": 8,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "MoS2 (MD simulations)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "r-MoS2 (MD simulations)": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "r-MoS2 (experimental)": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 2d (i)",
+          "columns": [
+            "k_z (nm^-1)",
+            "Frequency, longitudinal acoustic mode of r-MoS2 (THz)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "k_z (nm^-1)",
+            "Frequency, longitudinal acoustic mode of r-MoS2 (THz)"
+          ],
+          "column_count": 42,
+          "row_count": 2003,
+          "dtypes": {
+            "k_z (nm^-1)": "object",
+            "Frequency, longitudinal acoustic mode of r-MoS2 (THz)": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "float64",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2d (ii)",
+          "columns": [
+            "X: k_z (nm^-1)",
+            "Heat map: Frequency, transverse acoustic mode of r-MoS2 (THz)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "X: k_z (nm^-1)",
+            "Heat map: Frequency, transverse acoustic mode of r-MoS2 (THz)"
+          ],
+          "column_count": 42,
+          "row_count": 2002,
+          "dtypes": {
+            "X: k_z (nm^-1)": "object",
+            "Heat map: Frequency, transverse acoustic mode of r-MoS2 (THz)": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "float64",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2e",
+          "columns": [
+            "Unnamed: 0",
+            "r-MoS2 (MD simulations)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "MoS2 (MD simulations)",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "r-MoS2 (MD simulations)",
+            "MoS2 (MD simulations)"
+          ],
+          "column_count": 7,
+          "row_count": 23,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "r-MoS2 (MD simulations)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "MoS2 (MD simulations)": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41586_2021_3867_MOESM2_ESM_8.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 227996,
+      "size_human": "222.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 3a",
+        "Fig. 3b"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 3a",
+          "columns": [
+            "X:  ω (cm^-1)",
+            "Y: Raman intensity (arbitrary units)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "X:  ω (cm^-1)",
+            "Y: Raman intensity (arbitrary units)"
+          ],
+          "column_count": 5,
+          "row_count": 1601,
+          "dtypes": {
+            "X:  ω (cm^-1)": "float64",
+            "Y: Raman intensity (arbitrary units)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3b",
+          "columns": [
+            "N = 2",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "N = 3",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "N = 4",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "N = 5",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "INSET",
+            "D = 1 um r-MoS2",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "INSET.1",
+            "D = 400 nm r-MoS2",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25"
+          ],
+          "named_columns": [
+            "N = 2",
+            "N = 3",
+            "N = 4",
+            "N = 5",
+            "INSET",
+            "D = 1 um r-MoS2",
+            "INSET.1",
+            "D = 400 nm r-MoS2"
+          ],
+          "column_count": 26,
+          "row_count": 1001,
+          "dtypes": {
+            "N = 2": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "N = 3": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "N = 4": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "N = 5": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "INSET": "object",
+            "D = 1 um r-MoS2": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "INSET.1": "object",
+            "D = 400 nm r-MoS2": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41586_2021_3867_MOESM3_ESM_8.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 33850,
+      "size_human": "33.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 4"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 4",
+          "columns": [
+            "Fig. 4c",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Fig. 4d",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Fig. 4e",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Fig. 4c",
+            "Fig. 4d",
+            "Fig. 4e"
+          ],
+          "column_count": 12,
+          "row_count": 103,
+          "dtypes": {
+            "Fig. 4c": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Fig. 4d": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Fig. 4e": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data"
+    }
+  ]
+}

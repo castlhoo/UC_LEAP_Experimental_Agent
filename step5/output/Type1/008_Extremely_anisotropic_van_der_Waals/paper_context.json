@@ -1,0 +1,197 @@
+{
+  "title": "Extremely anisotropic van der Waals thermal conductors",
+  "doi": "10.1038/s41586-021-03867-8",
+  "journal": "Nature",
+  "year": 2021,
+  "type1_summary": "All three files are Nature source-data Excel workbooks organized by figure panels with physical-variable headers and direct plotting structure. They are cleaned, replot-ready datasets rather than raw instrument outputs.",
+  "type2_summary": "No Type 2 files were identified. None of the provided files are raw microscopy images, proprietary instrument exports, or unprocessed acquisition files.",
+  "files": {
+    "type1_data": [
+      {
+        "renamed": "41586_2021_3867_MOESM1_ESM_8.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Although some panels include model fits and simulation outputs, the workbook is clearly organized as source data for specific figures and contains cleaned tabular variables suitable for replotting. This matches Type 1 (cleaned, replot-ready) rather than raw instrument output.",
+          "paper_evidence": "The paper describes Fig. 2a–2e as processed/derived plots: TDTR cooling curves, thermal resistance vs layer number, temperature-dependent thermal conductivity, and phonon dispersion/lifetimes. The source-data workbook is organized by figure panels, which is consistent with figure-ready source data rather than raw instrument output.",
+          "file_evidence": "Excel workbook with 6 figure-specific sheets ('Fig. 2a' to 'Fig. 2e'), small-to-moderate size (1.5 MB), and explicit physical-variable headers such as 'Time delay (ps)', '-V_in/V_out', 'N', 'R_TDTR', and phonon frequency vs k_z. The structure is tabular and directly plottable with minimal processing.",
+          "ambiguity": "Low ambiguity: Fig. 2d/2e include derived simulation data, but the file is still figure-organized source data.",
+          "key_columns": "Fig. 2a: Time delay (ps), -V_in/V_out; Fig. 2b: N, R_TDTR; Fig. 2c: thermal conductivity values from MD/experiment; Fig. 2d(i)/(ii): k_z (nm^-1), phonon frequency (THz)"
+        }
+      },
+      {
+        "renamed": "41586_2021_3867_MOESM2_ESM_8.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file contains cleaned Raman spectra and associated series arranged for direct plotting. It is not a proprietary spectrometer export or raw binary measurement file, so it fits Type 1.",
+          "paper_evidence": "The paper states that Fig. 3b shows Raman spectra and Fig. 3c uses Raman peak shifts versus absorbed laser power to extract thermal conductance. These are processed/figure data rather than raw microscope or spectrometer files.",
+          "file_evidence": "Excel workbook with 2 figure-specific sheets ('Fig. 3a', 'Fig. 3b'), moderate size (222.7 KB), and tabular spectral data with headers like 'ω (cm^-1)' and 'Raman intensity (arbitrary units)'. The second sheet contains multiple layer-number series and inset datasets, indicating curated plotting data.",
+          "ambiguity": "Low ambiguity: the spectra are measurement-derived but already organized as source data for figures.",
+          "key_columns": "Fig. 3a: ω (cm^-1), Raman intensity (arbitrary units); Fig. 3b: multiple series for N = 2, 3, 4, 5 and inset datasets for different domain sizes"
+        }
+      },
+      {
+        "renamed": "41586_2021_3867_MOESM3_ESM_8.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The workbook is clearly a curated source-data file for the figure panels, containing processed simulation and electrical test results in tabular form. This is directly replot-ready and therefore Type 1.",
+          "paper_evidence": "The paper describes Fig. 4 as processed electrical/thermal analysis: COMSOL temperature maps, lateral temperature profiles, I-V curves, and critical current histograms. These are figure-ready outputs rather than raw instrument files.",
+          "file_evidence": "Excel workbook with a single figure-specific sheet ('Fig. 4'), small size (33.1 KB), and tabular data for Fig. 4c, Fig. 4d, and Fig. 4e. The structure is compact and organized for plotting, not raw acquisition.",
+          "ambiguity": "Low ambiguity: despite containing simulation-derived values, the file is a figure source-data table.",
+          "key_columns": "Fig. 4c, Fig. 4d, Fig. 4e tabulated data; likely temperature profiles, I-V curves, and critical current distributions"
+        }
+      }
+    ],
+    "type2_data": [],
+    "annotations": [],
+    "scripts": []
+  },
+  "paper_analysis": {
+    "summary": "This paper demonstrates that large-area van der Waals transition-metal dichalcogenide films with random interlayer rotations can exhibit extremely high thermal conductivity anisotropy. By combining TDTR, Raman thermometry, TEM/STEM, and molecular dynamics, the authors show that interlayer rotation suppresses through-plane heat transport in MoS2 and WS2 to ultralow values while preserving near-bulk in-plane thermal conductivity, enabling effective heat spreading and thermal insulation in device geometries.",
+    "measurement_types": [
+      "time-domain thermoreflectance (TDTR)",
+      "Raman thermometry",
+      "transmission electron microscopy (TEM) diffraction",
+      "darkfield TEM imaging",
+      "cross-sectional HAADF-STEM",
+      "grazing-incidence wide-angle X-ray scattering (GIWAXS)",
+      "molecular dynamics simulation (HNEMD)",
+      "finite-element thermal simulation (COMSOL)",
+      "electrical I-V / electromigration testing"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "Conceptual strategy for creating anisotropic thermal conductors using random interlayer rotation in layered vdW materials.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Schematic of an r-MoS2 film with random crystalline orientation between layers.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "TEM electron diffraction patterns from a monolayer and an N=10 r-MoS2 film, showing random in-plane domain orientation and ring-like diffraction from stacked layers; inset darkfield TEM image of monolayer domains.",
+        "data_type": "diffraction pattern / TEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1d",
+        "description": "Cross-sectional HAADF-STEM image of an N=10 r-MoS2 film showing clean interfaces and interlayer spacing.",
+        "data_type": "STEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1e",
+        "description": "Optical images of large-area MoS2 films transferred to 1-inch substrates.",
+        "data_type": "optical image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "TDTR cooling curves for N=1, 2, and 10 r-MoS2 films with model fits.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Thermal resistance across r-MoS2 and r-WS2 versus layer number, with linear fits used to extract through-plane thermal conductivity.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "Temperature dependence of thermal conductivity from experiment and MD for bulk MoS2 and r-MoS2, including both in-plane and through-plane components.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2d",
+        "description": "Calculated phonon dispersion curves along the through-plane direction for bulk and r-MoS2, highlighting softening of TA modes.",
+        "data_type": "phonon dispersion plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2e",
+        "description": "Phonon lifetimes for LA and TA modes in bulk and r-MoS2, compared with the LA vibration period.",
+        "data_type": "lifetime plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "SEM image of a suspended r-MoS2 film on a TEM grid for Raman thermometry.",
+        "data_type": "SEM image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Raman spectra of N=2 r-MoS2 at different absorbed laser powers.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "A1g Raman peak shift versus absorbed laser power for several layer numbers, with inset thermal conductance versus N for two domain sizes.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3d",
+        "description": "Comparison plot of thermal anisotropy ratio versus slow-axis conductivity for r-MoS2 and prior anisotropic thermal conductors.",
+        "data_type": "comparison plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Schematic of r-MoS2 draped over a nanoscale Au electrode on SiO2/Si.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "COMSOL finite-element simulation of temperature distribution in bare and r-MoS2-covered Au electrodes under Joule heating.",
+        "data_type": "simulation map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Lateral temperature profiles on the Au/SiO2 surface and r-MoS2 top surface from the thermal simulation.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Representative I-V curves of bare and r-MoS2-covered Au electrodes, showing increased current tolerance with the heat spreader.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4e",
+        "description": "Histogram of critical current values for bare and r-MoS2-covered Au electrodes.",
+        "data_type": "histogram",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include TEM electron diffraction patterns, darkfield TEM images, cross-sectional HAADF-STEM images, optical microscopy images of transferred films, TDTR pump-probe thermoreflectance traces, Raman spectra and Raman peak shifts under varying laser power and temperature, SEM images of suspended films, and I-V curves from Au electromigration tests. The paper also reports GIWAXS measurements used to determine interlayer spacing.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include TDTR-derived thermal resistance versus layer number, extracted thermal conductivity versus temperature, Raman-derived thermal conductance and thermal conductivity versus layer number, comparison plots of anisotropy ratio against conductivity, and histograms of critical current. Several plots combine experimental data with model fits or simulation outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available online at the DOI link. No detailed file-level data repository description is given in the provided text.",
+      "data_provided_types": [
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described at the instrument level rather than as a named repository or file format: TDTR traces from a mode-locked Ti:sapphire pump-probe setup, Raman spectra from a Horiba spectrometer, TEM/STEM images and diffraction patterns from electron microscopy, GIWAXS for interlayer spacing, and electrical I-V measurements from fabricated Au nanoelectrodes. The text does not specify raw file formats or a public raw-data archive.",
+      "processed_data_description": "Processed data include fitted thermal resistances, extracted through-plane and in-plane thermal conductivities, temperature-dependent conductivity curves, phonon dispersion and lifetime results from MD, thermal conductance values from Raman thermometry, and critical current histograms. These are derived from fitting or modeling raw measurements.",
+      "figure_data_description": "The paper explicitly mentions 'source data' as being available online, but the provided text does not enumerate figure-by-figure source-data files. Based on the article structure, the source data likely correspond to the plotted values underlying the main and extended data figures, not the raw instrument outputs.",
+      "scripts_description": "No analysis scripts, notebooks, or code files are described in the provided text. The paper mentions 'data and code availability' online, but the actual code content is not specified here.",
+      "data_organization": "unknown",
+      "replot_ready_data_present": true,
+      "replot_reason": "The article states that source data are available online, and the main figures are based on extracted values and fitted curves that are typically replot-ready. However, the provided text does not specify exact file names, formats, or folder structure, so full replotting readiness cannot be confirmed from the text alone.",
+      "notes": "The dataset is a mix of raw microscopy/spectroscopy/transport measurements and derived thermal-property datasets. A key semantic distinction is that TDTR and Raman measurements are converted into thermal conductivities through explicit models and fits, so the plotted thermal conductivity values are processed/derived rather than raw observables. The paper also includes simulation-derived datasets from MD and COMSOL, which are not experimental raw data but computed results. Extended Data figures are referenced, and the methods mention additional figures and tables, but their specific datasets are not included in the provided text."
+    }
+  }
+}

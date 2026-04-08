@@ -1,0 +1,35 @@
+Task PAPER_05_TASK_12 Analysis
+Objective: Replot the second-order photon correlation g(2)(τ) trace from the workbook.
+
+Step 0: Inspect workbook structure and identify the correlation sheet.
+Loaded dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/005_Proximityinduced_chiral_quantum_light_generation/type1_data/41563_2023_1645_MOESM8_ESM_10.xlsx
+Workbook sheets found: ['ED Fig 4a', 'ED Fig 4c']
+Sheet 'ED Fig 4a' shape: 1341 rows x 2 cols
+  Row 0: ['Energy', 'DCP']
+  Row 1: [1.78743, 0.06377]
+  Row 2: [1.78709, -0.04282]
+  Row 3: [1.78676, -0.1154]
+  Row 4: [1.78643, -0.02299]
+Sheet 'ED Fig 4c' shape: 201 rows x 13 cols
+  Row 0: ['Pix', 'Pak1', 'P2', 'P3', 'P4', 'P5', nan, 'FitPix', 'P1fit', 'P2fit', 'P3fit', 'p4fit', 'p5fit']
+  Row 1: [1, 632.98, 632, 612, 620, 602.5, nan, 30.06, 836.24374, 1125.95331, 1003.13302, 870.42416, 751.99375]
+  Row 2: [2, 628.41, 626, 635, 606, 597, nan, 30.12, 838.34994, 1129.3751, 1006.10064, 871.60437, 752.48801]
+  Row 3: [3, 630.62, 580, 636, 627, 595, nan, 30.18, 840.56598, 1133.09603, 1009.33866, 872.9044, 753.02881]
+  Row 4: [4, 630.04, 613, 616, 605, 601.5, nan, 30.24, 842.89619, 1137.13737, 1012.8672, 874.33476, 753.61986]
+
+Interpretation:
+The sheet 'ED Fig 4c' contains columns labeled 'Pix', 'Pak1', 'P2', 'P3', 'P4', 'P5', 'FitPix', and fitted peak columns.
+This structure is consistent with a multi-peak spectral calibration table, not a time-delay correlation trace.
+The sheet 'ED Fig 4a' contains only two columns: 'Energy' and 'DCP', which is a polarization-related dataset, not a g(2)(τ) correlation trace.
+No sheet in the workbook previewed here contains explicit time-delay, coincidence, normalized counts, or g(2)(τ) labels.
+
+Step 0 conclusion:
+No correlation sheet with time-delay or coincidence data could be identified from the workbook structure.
+Because the required g(2)(τ) variables are absent, a defensible replot of the second-order correlation trace cannot be produced from this file.
+
+Step 1: Plotting was not performed because no valid delay/count dataset was available.
+Step 2: No normalization or background correction could be applied because no correlation trace exists in the workbook.
+Step 3: No antibunching dip or fit annotation could be added because the required data are missing.
+
+Final conclusion:
+The workbook does not contain the data needed to reconstruct the second-order photon correlation g(2)(τ) trace.

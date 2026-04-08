@@ -1,0 +1,296 @@
+{
+  "title": "Spin-polarized imaging of the antiferromagnetic structure and field-tunable bound states in kagome magnet FeSn",
+  "doi": "10.1038/s41598-022-18678-8",
+  "journal": "Scientific Reports",
+  "year": 2022,
+  "type1_summary": "All XLSX files are figure-organized source data with headers and tabular variables suitable for direct replotting; they correspond to processed spectra, line profiles, and fitted summaries from the paper.",
+  "type2_summary": "No standalone raw/unprocessed instrument files were provided. The paper discusses raw STM/STS measurements, but the deposited files here are cleaned figure data rather than raw microscope output.",
+  "files": {
+    "type1_data": [
+      {
+        "renamed": "Figure 1(e,f,i).xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The workbook is figure-specific source data with clean columns and modest size, matching Type 1. Although the underlying measurements are raw STM/STS, this file contains the processed data used to generate the plotted panels.",
+          "paper_evidence": "The paper describes Fig. 1e, 1f, and 1i as averaged dI/dV spectra and a linecut/line profile derived from STM/STS measurements, i.e. processed figure data rather than raw instrument output.",
+          "file_evidence": "Excel workbook organized by figure panels ('e', 'f', 'i') with clear headers and small tabular datasets: Bias vs dI/dV for e/f, and Distance vs Height for i. This is directly replot-ready.",
+          "ambiguity": "none",
+          "key_columns": "Sheet e: Bias, dI/dV; Sheet f: Bias, dI/dV; Sheet i: Distance, Height"
+        }
+      },
+      {
+        "renamed": "Figure 2(b,c,d,e).xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is clean, figure-specific source data that can be plotted with minimal processing. The multi-column spectra sheet is still structured and ready for replotting.",
+          "paper_evidence": "Fig. 2b–e are topographic profile and averaged/waterfall dI/dV spectra across terraces, explicitly described as processed/aggregated representations derived from STM/STS measurements.",
+          "file_evidence": "Workbook is organized by figure panels with headers and tabular numeric data. Sheet c contains many dI/dV columns versus Bias, consistent with a waterfall spectrum plot; sheets d/e contain averaged spectra; sheet b is Distance vs Height.",
+          "ambiguity": "none",
+          "key_columns": "Sheet b: Disntance, Height; Sheet c: Bias, multiple dI/dV columns; Sheet d: Bias, dI/dV, dI/dV.1; Sheet e: energies, dI/dV, dI/dV.1, dI/dV.2"
+        }
+      },
+      {
+        "renamed": "Figure 3(b,c,d,e).xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file is clearly source data for the plotted figure panels and is directly replot-ready. The derived summary plots do not make it raw; they remain cleaned tabular data.",
+          "paper_evidence": "Fig. 3b–e are topographic line profile, averaged spectra, and derived plots of peak height versus layer number and magnetic field, all processed from STM/STS data.",
+          "file_evidence": "Figure-organized workbook with headers and compact numeric tables. Sheets include Distance vs Height, Bias vs multiple dI/dV traces, Layer vs dI/dV, and B vs dI/dV values.",
+          "ambiguity": "none",
+          "key_columns": "Sheet b: Distance, Height; Sheet c: Bias, multiple dI/dV columns; Sheet d: Layer, dI/dV; Sheet e: B, dI/dV, dI/dV.1"
+        }
+      },
+      {
+        "renamed": "Figure 4(b,c,d).xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is cleaned source data for the published plots, not raw microscope output.",
+          "paper_evidence": "Fig. 4b–d are topographic profile and averaged dI/dV spectra on inequivalent terminations, which are processed figure data derived from STM/STS measurements.",
+          "file_evidence": "Workbook is figure-specific and tabular, with Distance vs Height and Bias vs dI/dV columns for the spectra. Small size and clear headers indicate replot-ready source data.",
+          "ambiguity": "none",
+          "key_columns": "Sheet b: Distance, Height; Sheet c: Bias, dI/dV, dI/dV.1; Sheet d: Bias, dI/dV, dI/dV.1"
+        }
+      },
+      {
+        "renamed": "Figure 5(e,f).xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file is organized as figure source data and can be directly plotted with minimal processing. The fitted summary table is derived, but still Type 1 because it is cleaned figure data.",
+          "paper_evidence": "Fig. 5e is field-dependent dI/dV spectra and Fig. 5f is fitted peak position versus magnetic field, both explicitly processed from STM/STS measurements.",
+          "file_evidence": "Workbook contains a multi-trace spectrum table (Bias with multiple dI/dV columns) and a small summary table with Peak Postion and Error, matching plotted source data.",
+          "ambiguity": "none",
+          "key_columns": "Sheet e: Bias, dI/dV through dI/dV.7; Sheet f: Peak Postion, Error"
+        }
+      }
+    ],
+    "type2_data": [],
+    "annotations": [],
+    "scripts": []
+  },
+  "paper_analysis": {
+    "summary": "This paper studies the kagome antiferromagnet FeSn using spin-averaged and spin-polarized STM/STS at 4.5 K. The authors directly image the layered antiferromagnetic order at the surface, find that the low-energy electronic structure is largely insensitive to moderate out-of-plane magnetic field, and identify impurity-bound states on specific Fe-site defects that shift with field and carry a large effective moment.",
+    "measurement_types": [
+      "STM topography",
+      "STS dI/dV spectroscopy",
+      "spin-polarized STM/STS",
+      "magnetic-field-dependent STM/STS",
+      "line profiles / linecuts across terraces and impurities",
+      "thin-film STM/STS (mentioned in Supplementary Fig. 1)",
+      "spin-polarized tip calibration on FeTe (mentioned in Supplementary Fig. 2)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "3D schematic of FeSn atomic structure.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "In-plane schematic of the two possible surface terminations: kagome Fe3Sn and hexagonal Sn.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "STM topograph of the Sn surface termination with honeycomb atomic arrangement.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "STM topograph of the Fe3Sn surface termination with kagome atomic arrangement.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Average dI/dV spectrum on the Sn termination showing a peak near -50 meV.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Average dI/dV spectrum on the Fe3Sn termination without the -50 meV peak.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "STM topograph showing Sn islands on top of the Fe3Sn surface.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "3D model of layered antiferromagnetic spin structure in FeSn.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "Linecut across a small Sn island showing apparent step height.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "STM topograph across a step between two Sn terraces.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Schematic of the step geometry and topographic profile.",
+        "data_type": "schematic/line profile",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Waterfall plot of dI/dV spectra along a line across the step, showing uniform spectra on both terraces.",
+        "data_type": "spectrum map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Average dI/dV spectra on the two Sn terraces, nearly identical.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Average dI/dV spectra on the higher terrace under 0 T and ±4 T magnetic field, showing no field dependence.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "STM topograph of a region containing seven unit-cell step heights using a spin-polarized tip.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Topographic line profile across the seven steps with spin labels.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Average dI/dV spectra on even and odd terraces under -8 T, showing alternating spectral weight.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Spectral peak height near -50 meV versus layer number.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Spectral peak height versus magnetic field for two terraces, showing reversal with field.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "3D model of the spin-polarized tip relative to sample spins.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "dI/dV map across the seven steps and corresponding spectrum linecut.",
+        "data_type": "image/spectrum map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "STM topograph showing consecutive Sn-Fe3Sn-Sn-Fe3Sn terraces.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Topographic profile across the terraces in Fig. 4a.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Average dI/dV spectra on inequivalent Sn terminations.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Average dI/dV spectra on inequivalent Fe3Sn terminations.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "STM topograph of the Sn surface containing several impurity types labeled A-E.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Zoom-ins on individual impurities with lattice overlay and site assignment.",
+        "data_type": "image/annotation",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Linecut across impurity A along its symmetry axis.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Topograph of impurity A.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "dI/dV spectra on impurity A under magnetic fields from -6 to 8 T, showing field-tunable bound states.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Fitted peak positions from Fig. 5e versus magnetic field, with linear slope corresponding to an effective moment.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5g",
+        "description": "dI/dV map at 0 mV of impurity A.",
+        "data_type": "image/map",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include STM topographs, dI/dV spectroscopy, dI/dV line profiles, and dI/dV maps acquired on cleaved FeSn single crystals at 4.5 K in UHV, with and without external out-of-plane magnetic field. The paper also mentions thin-film STM measurements in Supplementary Fig. 1 and spin-polarized tip verification on FeTe in Supplementary Fig. 2.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots averaged dI/dV spectra, waterfall spectra along lines, dI/dV maps, line profiles, peak-height versus layer-number plots, peak-height versus magnetic-field plots, and fitted peak-position versus field plots. These are processed/aggregated representations derived from the raw STM/STS measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "The datasets generated and/or analyzed during the current study are available in the Zenodo repository (https://doi.org/10.5281/zenodo.6456564). All other data supporting the findings are available from the corresponding author upon reasonable request.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "The paper states that datasets were generated and/or analyzed, but it does not specify file formats, folder structure, or exact raw-data contents. Based on the experiments, the raw data are STM topographs and spectroscopy maps/curves collected with spin-averaged and spin-polarized tips.",
+      "processed_data_description": "Processed data include averaged spectra, linecuts, waterfall plots, dI/dV maps, extracted peak heights, and fitted peak positions versus magnetic field. The paper does not specify whether these are provided as tables or figure-source files.",
+      "figure_data_description": "The paper does not explicitly state that figure-specific source data are provided, but the Zenodo deposit likely contains datasets used to generate the figures. Whether source-data files are organized per figure is unknown from the text.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned in the paper text.",
+      "data_organization": "unknown",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper explicitly points to a Zenodo repository containing the datasets generated and/or analyzed in the study, which suggests replotting is possible for at least some figures. However, the text does not specify file formats, completeness, or whether raw versus processed figure-source data are included.",
+      "notes": "The paper clearly distinguishes raw STM/STS measurements from derived quantities such as averaged spectra and fitted peak positions, but it does not describe the repository contents in detail. Supplementary data are referenced for thin films and tip calibration, but not described in the main text."
+    }
+  }
+}

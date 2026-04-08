@@ -1,0 +1,38 @@
+# Step 2: Dataset Presence and Inventory Check Configuration
+# ===========================================================
+
+# GPT settings (reuse from step1 pattern)
+gpt:
+  enabled: true
+  model: "gpt-5.4-mini"
+
+# HTTP request settings
+http:
+  timeout: 30            # seconds per request
+  max_retries: 2
+  user_agent: "UC_LEAP_Step2/1.0 (mailto:ucleap.research@gmail.com)"
+  rate_limit_delay: 1.0  # seconds between requests
+
+# Repository API settings
+repositories:
+  zenodo:
+    api_base: "https://zenodo.org/api/records"
+    enabled: true
+  figshare:
+    api_base: "https://api.figshare.com/v2/articles"
+    enabled: true
+  github:
+    api_base: "https://api.github.com/repos"
+    enabled: true
+  dryad:
+    api_base: "https://datadryad.org/api/v2/datasets"
+    enabled: true
+
+# Input/output paths (relative to project root)
+input_file: "step1/output/step1_candidates_latest.json"
+output_dir: "step2/output"
+
+# Which candidates to process
+include_decisions:
+  - "keep"
+  - "maybe"

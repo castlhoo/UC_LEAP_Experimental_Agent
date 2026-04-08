@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+step1/output/*.json
+step1/output/*.log
+step2/output/*.json
+step2/output/*.log
+step3/output/*.json
+step3/output/*.log
+step3/downloads/

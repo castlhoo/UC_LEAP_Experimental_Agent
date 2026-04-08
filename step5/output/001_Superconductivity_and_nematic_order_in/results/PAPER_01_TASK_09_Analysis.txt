@@ -1,0 +1,29 @@
+Task PAPER_01_TASK_09 Analysis
+Objective: Reconstruct the 2D spectroscopic map from the spreadsheet and render it as an image-style heatmap.
+Dataset file: C:\UCLEAP\UC_LEAP\step4\organized\001_Superconductivity_and_nematic_order_in\type1_data\Fig2i.xlsx
+Step_0: Inspecting workbook structure.
+Workbook sheets: ['page_1']
+Loaded sheet 'page_1' with shape 7 rows x 202 cols.
+Observed structure from raw sheet:
+  Row 0: [nan, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0, 13.0, 14.0, 15.0, 16.0, 17.0, 18.0]
+  Row 1: [0.0, -2.0000002, -1.9800001, -1.9600001, -1.9400001, -1.92, -1.9, -1.8800001, -1.86, -1.8400002, -1.8200001, -1.8000001, -1.78, -1.76, -1.7400001, -1.7200001, -1.7, -1.6800001, -1.6600001, -1.64]
+  Row 2: [1.0, 1.231565e-12, 1.232175e-12, 1.232557e-12, 1.234823e-12, 1.230029e-12, 1.2314e-12, 1.225554e-12, 1.220905e-12, 1.224403e-12, 1.223295e-12, 1.229373e-12, 1.230135e-12, 1.230541e-12, 1.239524e-12, 1.239623e-12, 1.246069e-12, 1.256378e-12, 1.249644e-12, 1.253811e-12]
+  Row 3: [2.0, 1.2959809e-11, 1.3019401e-11, 1.2988107e-11, 1.2928244e-11, 1.2935217e-11, 1.292173e-11, 1.2947616e-11, 1.2913138e-11, 1.287218e-11, 1.2906406e-11, 1.2862272e-11, 1.289409e-11, 1.2978013e-11, 1.2933868e-11, 1.2940802e-11, 1.2980817e-11, 1.302416e-11, 1.3064485e-11, 1.3106382e-11]
+  Row 4: [3.0, 2.323532e-11, 2.3240892e-11, 2.3203937e-11, 2.3160361e-11, 2.3092948e-11, 2.3087693e-11, 2.2983556e-11, 2.297504e-11, 2.3008432e-11, 2.2922941e-11, 2.2743724e-11, 2.293468e-11, 2.2826432e-11, 2.2812868e-11, 2.2828637e-11, 2.2825472e-11, 2.2946431e-11, 2.2933105e-11, 2.2976326e-11]
+  Row 5: [4.0, 4.1262386e-11, 4.1723014e-11, 4.1708845e-11, 4.1664342e-11, 4.2005687e-11, 4.2014718e-11, 4.2030643e-11, 4.2368234e-11, 4.2087486e-11, 4.2526913e-11, 4.2516629e-11, 4.2325126e-11, 4.2875425e-11, 4.2754682e-11, 4.2957426e-11, 4.3275699e-11, 4.3159021e-11, 4.3221877e-11, 4.3344713e-11]
+  Row 6: [5.0, 6.3078681e-11, 6.3061577e-11, 6.3275642e-11, 6.3036742e-11, 6.3312112e-11, 6.3314937e-11, 6.3443667e-11, 6.3916497e-11, 6.363992e-11, 6.3897984e-11, 6.4006876e-11, 6.3862339e-11, 6.4254692e-11, 6.3707498e-11, 6.4379363e-11, 6.4254352e-11, 6.3955979e-11, 6.4283814e-11, 6.4348193e-11]
+Step_1: Parsing numeric grid and identifying boundaries.
+Parsed column labels: 201 entries, finite count = 201
+Parsed row labels: 6 entries, finite count = 6
+Parsed data matrix shape: (6, 201), finite fraction = 1.0000
+Step_2: Rendering heatmap with color scale.
+Step_3: Preserving available axis labels from spreadsheet indices.
+Step_4: Exporting figure.
+Figure saved to: C:\UCLEAP\UC_LEAP\step5\output\001_Superconductivity_and_nematic_order_in\results\PAPER_01_TASK_09_figure.png
+Validation summary:
+  Data matrix used for plotting: shape = (6, 201)
+  Row labels range: 0 to 5
+  Column labels range: 0 to 200
+  Orientation decision: data interpreted as rows x columns directly from the spreadsheet, with row indices in the first column and column indices in the first row.
+  No peak analysis was required for this visualization task.
+  No data were fabricated or inferred beyond the explicit spreadsheet structure.

@@ -1,0 +1,55 @@
+Task PAPER_01_TASK_11 Analysis
+Objective: Reconstruct the 2D numeric map from the spreadsheet and render it as a heatmap/image.
+
+Step_0: Inspect workbook structure and identify grid-like data region.
+Loaded workbook: C:/UCLEAP/UC_LEAP/step4/organized/001_Superconductivity_and_nematic_order_in/type1_data/Fig3c.xlsx
+Detected sheets: ['page_1']
+Loaded sheet 'page_1' with shape 25 rows x 202 columns.
+Initial data preview (top-left corner):
+Row 0: [nan, 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0]
+Row 1: [0.0, -2.0000002, -1.9800001, -1.9600001, -1.9400001, -1.92, -1.9, -1.8800001, -1.86, -1.8400002]
+Row 2: [1.0, 1.3285048e-11, 1.315429e-11, 1.3634877e-11, 1.3324584e-11, 1.3663442e-11, 1.3438828e-11, 1.3708691e-11, 1.3585598e-11, 1.3461053e-11]
+Row 3: [2.0, -2.0000002, -1.9800001, -1.9600001, -1.9400001, -1.92, -1.9, -1.8800001, -1.86, -1.8400002]
+Row 4: [3.0, 1.2649705e-11, 1.2519014e-11, 1.2472653e-11, 1.2618814e-11, 1.2620781e-11, 1.2743555e-11, 1.2621475e-11, 1.2847886e-11, 1.2814816e-11]
+Row 5: [4.0, -2.0000002, -1.9800001, -1.9600001, -1.9400001, -1.92, -1.9, -1.8800001, -1.86, -1.8400002]
+Row 6: [5.0, 1.2755485e-11, 1.2714729e-11, 1.2923739e-11, 1.2833496e-11, 1.2816931e-11, 1.2790873e-11, 1.2788708e-11, 1.2928637e-11, 1.2944082e-11]
+Row 7: [6.0, -2.0000002, -1.9800001, -1.9600001, -1.9400001, -1.92, -1.9, -1.8800001, -1.86, -1.8400002]
+
+Step_1: Convert the table into a 2D array and verify orientation.
+Inspection shows alternating rows: rows with a leading integer index followed by numeric values, and rows containing repeated x-axis values.
+This suggests the spreadsheet stores a grid where:
+- Column 0 of data rows contains row indices.
+- The first numeric row after each index row contains x-axis coordinates.
+- The following row contains the corresponding y-values for that row index.
+I will parse rows in pairs: coordinate row + value row.
+Row pair starting at spreadsheet row 4: x-axis consistency max difference = 2.775e-12
+Row pair starting at spreadsheet row 6: x-axis consistency max difference = 4.045e-12
+Row pair starting at spreadsheet row 8: x-axis consistency max difference = 2.203e-12
+Row pair starting at spreadsheet row 10: x-axis consistency max difference = 8.365e-13
+Row pair starting at spreadsheet row 12: x-axis consistency max difference = 8.697e-13
+Row pair starting at spreadsheet row 14: x-axis consistency max difference = 1.223e-12
+Row pair starting at spreadsheet row 16: x-axis consistency max difference = 4.139e-12
+Row pair starting at spreadsheet row 18: x-axis consistency max difference = 1.174e-12
+Row pair starting at spreadsheet row 20: x-axis consistency max difference = 1.671e-12
+Row pair starting at spreadsheet row 22: x-axis consistency max difference = 2.119e-12
+Parsed grid dimensions: 11 rows x 201 columns.
+X-axis range: 3.89653e-12 to 1.603e-11
+Y-axis labels range: 1 to 21
+
+Orientation verification:
+The parsed matrix uses the row labels from the first column as the vertical axis and the repeated numeric header rows as the horizontal axis.
+This orientation is supported by the alternating row pattern and consistent x-axis values across multiple row pairs.
+No transposition is applied because the table structure already maps naturally to [y, x] ordering.
+Finite data fraction: 1.0000
+
+Step_2: Plot the array as a heatmap/image with a suitable colormap and colorbar.
+
+Step_3: Include axis labels if they are explicitly encoded in the file.
+The spreadsheet explicitly encodes both axes as numeric values, so the plot uses those values as axis coordinates.
+
+Step_4: Export the reconstructed figure for comparison.
+Saved figure to: C:/UCLEAP/UC_LEAP/step5/output/001_Superconductivity_and_nematic_order_in/results/PAPER_01_TASK_11_figure.png
+
+Summary:
+A 2D heatmap was reconstructed directly from the spreadsheet grid using the encoded row and column values.
+The data layout was sufficiently regular to parse without assumptions beyond the observed alternating row structure.

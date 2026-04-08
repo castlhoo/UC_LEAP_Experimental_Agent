@@ -1,0 +1,54 @@
+SystemName      WSe2_WS2_0
+SystemLabel     bl_0
+NumberOfSpecies	        4
+NumberOfAtoms           3903
+%block ChemicalSpeciesLabel
+  1  74 W1
+  2  34 Se
+  3  74  W2
+  4  16  S
+%endblock ChemicalSpeciesLabel
+
+LatticeConstant      82.523837710500004050  Ang
+%block LatticeVectors
+  1.00 0.0 0.0
+  -0.5   0.8660254037844386 0.0
+0.0 0.0 0.2544719269318233
+%endblock LatticeVectors
+
+PAO.BasisSize   SZ
+Mesh.Cutoff   100.0 Ry
+SCF.FreeE.Tolerance 1e-5 eV
+XC.functional          GGA
+XC.authors             PBE
+MaxSCFIterations   200
+SCF.MustConverge   .false.
+
+NumberOfEigenStates  16913
+Diag.Algorithm   MRRR
+
+DM.UseSaveDM .true.
+
+MD.TypeOfRun     CG
+MD.VariableCell    .false.
+MD.NumCGsteps      500
+MD.MaxForceTol     0.03 eV/Ang
+#MD.UseSaveXV       .true. 
+
+
+%include grimme.fdf
+Slab.DipoleCorrection .true. 
+%block Slab.DipoleCorrection.Origin
+ 20.630959427625  35.73386993753862 10.5   Ang
+%endblock
+ 
+#WriteDenchar   .true.
+
+AtomicCoordinatesFormat          ScaledByLatticeVectors
+%include pos_bl_0.fdf
+
+%block kgrid_Monkhorst_Pack
+   1  0  0  0.0
+   0  1  0  0.0
+   0  0  1  0.0
+%endblock kgrid_Monkhorst_Pack

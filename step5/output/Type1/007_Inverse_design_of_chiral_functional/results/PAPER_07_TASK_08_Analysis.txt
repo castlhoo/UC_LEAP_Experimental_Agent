@@ -1,0 +1,35 @@
+Task PAPER_07_TASK_08 Analysis
+Replot the property-target inverse-design results at 467 nm
+
+Step 0: Load the CSV and inspect the schema.
+Loaded file successfully: cgan_test_result_PROP_467.csv
+Data shape: 41 rows x 7 columns
+Columns found: ['Color', 'Thick', 'Strain', 'Gray', 'G_GAN', 'G_Predict', 'dG']
+
+Step 1: Determine how the 467 nm target is encoded and isolate relevant rows.
+The filename 'cgan_test_result_PROP_467.csv' indicates the 467 nm target condition is encoded in the file name rather than as a separate column.
+No explicit target-wavelength column is present in the previewed schema, so all rows in this file are treated as candidate solutions for the 467 nm case.
+
+Step 2: Clean the data and standardize numeric fields for plotting.
+Rows before numeric cleaning: 41
+Rows after dropping rows with invalid G_GAN/G_Predict/dG values: 41
+Numeric conversion was applied to all relevant columns to ensure consistent plotting.
+
+Step 3: Create a comparison plot.
+A generated-vs-predicted scatter plot is appropriate because the file contains paired model outputs (G_GAN and G_Predict) for each candidate solution.
+To make deviations easy to interpret, the plot includes a 1:1 reference line and point labels by candidate index.
+Mean absolute deviation |G_GAN - G_Predict|: 0.266159
+RMSE between G_GAN and G_Predict: 0.307079
+Mean absolute dG: 0.266158
+These summary values are directly computed from the cleaned data and are used only as descriptive support for the figure.
+
+Step 4: Add labels, units, and a title indicating the 467 nm property-target case.
+The plot title explicitly states the 467 nm target condition.
+Axis labels use the variable names from the dataset because no physical unit metadata is provided in the file.
+
+Step 5: Ensure the output is publication-ready and aligned with the paper’s inverse-design result style.
+The figure uses a clean white background, readable fonts, a 1:1 reference line, and a colorbar for dG to communicate deviation magnitude.
+Because the file contains multiple candidate solutions, each point is shown as a ranked candidate to make target matching and deviations easy to interpret.
+
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/007_Inverse_design_of_chiral_functional/results/PAPER_07_TASK_08_figure.png
+No unsupported assumptions were made beyond using the filename-encoded 467 nm target condition and the explicitly available columns.

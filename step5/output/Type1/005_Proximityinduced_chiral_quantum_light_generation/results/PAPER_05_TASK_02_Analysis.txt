@@ -1,0 +1,32 @@
+Task PAPER_05_TASK_02 Analysis
+Objective: Replot control PL spectra and polarization analysis for unstrained and unindented samples.
+Dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/005_Proximityinduced_chiral_quantum_light_generation/type1_data/41563_2023_1645_MOESM11_ESM_10.xlsx
+Step 0: Inspect workbook structure and identify sheets relevant to control spectra and polarization analysis.
+Workbook sheets found: ['RTHeightImage', 'RTMagneticFieldImage', 'RTXYPositions']
+Loaded sheet 'RTHeightImage' with shape (102, 86).
+Loaded sheet 'RTMagneticFieldImage' with shape (102, 86).
+Loaded sheet 'RTXYPositions' with shape (86, 3).
+Sheet 'RTHeightImage' preview (top-left 5x5): [['Column1', 'Column2', 'Column3', 'Column4', 'Column5'], ['nan', '1.8002878e-08', '2.1607255e-08', '2.3541524e-08', '2.5198896e-08'], ['nan', '3.0475707e-08', '2.9276374e-08', '2.8307925e-08', '2.7570934e-08'], ['nan', '2.5136093e-08', '2.6485699e-08', '2.9105582e-08', '3.0138956e-08'], ['nan', '2.8876023e-08', '2.9926019e-08', '2.9150005e-08', '2.8588236e-08']]
+Sheet 'RTMagneticFieldImage' preview (top-left 5x5): [['Column1', 'Column2', 'Column3', 'Column4', 'Column5'], ['nan', '-1.3948738e-05', '-2.0692195e-05', '-4.5219818e-05', '3.8436432e-06'], ['nan', '3.5642919e-05', '-1.3703157e-05', '2.5440077e-05', '-2.149523e-05'], ['nan', '5.3029648e-06', '1.8064718e-05', '-1.1892719e-05', '-2.6614116e-05'], ['nan', '-4.193204e-06', '5.7876284e-06', '-4.9768785e-06', '2.5606369e-05']]
+Sheet 'RTXYPositions' preview (top-left 5x5): [['Column1', 'Column2', 'Column3'], ['nan', '2e-08', '2e-08'], ['nan', '4.3809524e-08', '4.3809524e-08'], ['nan', '6.7619048e-08', '6.7619048e-08'], ['nan', '9.1428571e-08', '9.1428571e-08']]
+Interpretation of sheet organization:
+ - RTHeightImage and RTMagneticFieldImage are 2D matrices with one header row and one header column, consistent with image/intensity maps.
+ - RTXYPositions contains coordinate values for the image grid.
+ - No sheet names or visible headers indicate explicit PL spectra, sigma+/sigma-, DCP, DLP, or angle-resolved polarization tables.
+Therefore, the workbook appears to contain spatial image data rather than the requested control PL spectra/polarization spectra.
+Parsed RTXYPositions: 85 x-values and 85 y-values.
+X range: 2.000e-08 to 2.020e-06
+Y range: 2.000e-08 to 2.020e-06
+Step 1: Standardize axis labels and channel names, then plot the available data.
+Because the workbook does not contain explicit PL spectra, the figure will present the available control-related image channels with clear labels and note the limitation.
+Using pixel index for y-axis because coordinate vector length did not match image height.
+Step 2: Check for linear polarization data or derived polarization metrics.
+No explicit polarization-resolved spectra or derived metrics were detected in sheet names or visible headers.
+Therefore, no defensible DCP/DLP or angle-dependent anisotropy calculation can be performed from this workbook.
+Step 3: Assemble publication-style figure.
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/005_Proximityinduced_chiral_quantum_light_generation/results/PAPER_05_TASK_02_figure.png
+Because the required PL spectra and polarization tables are absent, the figure is a best-effort visualization of the available workbook content rather than the target Extended Data Fig. 2 reproduction.
+Exclusions:
+ - No spectral peak identification was attempted because no wavelength/energy axis or PL intensity spectra were present.
+ - No polarization anisotropy metrics were computed because no sigma+/sigma-, DCP, DLP, or angle-resolved data were present.
+ - No assumptions were made about missing control spectra.

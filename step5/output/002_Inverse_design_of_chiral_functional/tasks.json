@@ -1,0 +1,60 @@
+{
+  "research_tasks": [
+    {
+      "task_id": "PAPER_02_TASK_01",
+      "task_title": "Replot the supplementary spectral workbook as figure-specific wavelength-dependent curves",
+      "task_description": "Use the Excel workbook to recreate the paper's replot-ready supplementary spectral figures. Inspect every sheet in the workbook, identify which sheets contain wavelength-resolved spectra or figure-panel data, and generate publication-style plots that reproduce the original curves as closely as possible. For each relevant sheet, determine the x-axis variable (typically wavelength in nm) and the plotted response variables (such as gabs and normalized CD), then replot the spectra with clear legends, axis labels, and consistent styling. If multiple sheets correspond to different figure panels or experimental conditions, organize the output as a multi-panel figure set matching the workbook structure. Where the sheet title or content suggests a specific figure reference, annotate the plot accordingly. If a sheet contains tabulated values for multiple traces, overlay them in the same panel with distinct colors and line styles. The goal is to reconstruct the figure-ready spectral visualizations from the workbook without performing any additional model fitting or raw-data preprocessing beyond basic cleaning of headers and numeric conversion.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Open the workbook and enumerate all sheets; record sheet names, dimensions, and column headers.",
+        "Step_1: For each sheet, identify wavelength-resolved tables and determine which columns correspond to wavelength and spectral response variables.",
+        "Step_2: Clean headers and convert all numeric columns to usable arrays, handling merged cells, blank rows, and repeated header rows if present.",
+        "Step_3: Replot each spectral trace as a line plot with wavelength on the x-axis and the reported response on the y-axis, preserving the original ordering and grouping of traces within each sheet.",
+        "Step_4: Assemble the plots into a multi-panel figure layout that mirrors the workbook's figure-panel organization, and export the result as a publication-style figure set."
+      ],
+      "required_inputs": {
+        "dataset_file": "41467_2023_41951_MOESM7_ESM_5.xlsx",
+        "relevant_variables": [
+          "Wavelength(nm)",
+          "gabs",
+          "Normalized CD",
+          "sheet names / panel labels",
+          "any trace identifiers or condition labels present in each sheet"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A set of replot-ready spectral panels reconstructed from the workbook, showing wavelength-dependent chiroptical responses with correct axes, legends, and panel organization.",
+        "expected_figure": "Supplementary spectral figure set from the workbook (figure-panel-specific supplementary plots)"
+      }
+    },
+    {
+      "task_id": "PAPER_02_TASK_02",
+      "task_title": "Recreate the inverse-design evaluation table and compare predicted versus GAN-derived gabs",
+      "task_description": "Use the CSV file to reproduce the paper's inverse-design result table and associated comparison plot for the 20 designed samples. The file contains design parameters and model outputs for candidate chiral-film solutions. Load the table, verify the meaning of each column, and compute any needed comparison metrics such as the difference between predicted and GAN-derived gabs values. Then generate a clean figure that shows the design cases in tabular or scatter/paired-comparison form, highlighting the relationship among Color, Thick, Strain, Gray, G_GAN, G_Predict, and dG. If the file includes multiple target conditions or sample groups, separate them into subpanels or grouped rows. The final output should be a publication-style visualization that can serve as the replot of the paper's inverse-design result summary for the 20 gabs cases.",
+      "task_type": "Quantitative Analysis",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect all columns, row count, and any embedded target labels or sample identifiers.",
+        "Step_1: Standardize the numeric fields and verify the sign convention for dG by checking whether it matches G_Predict - G_GAN or another difference definition.",
+        "Step_2: Create a comparison visualization that shows G_GAN versus G_Predict for each design case, and optionally include a residual plot or annotated table of dG values.",
+        "Step_3: If the file contains target wavelength or objective labels, group the cases by target and present them in separate panels or color-coded categories.",
+        "Step_4: Export the result as a clean figure or table-figure hybrid suitable for direct comparison with the paper's inverse-design results."
+      ],
+      "required_inputs": {
+        "dataset_file": "20_gabs_outfile.csv",
+        "relevant_variables": [
+          "Color",
+          "Thick",
+          "Strain",
+          "Gray",
+          "G_GAN",
+          "G_Predict",
+          "dG"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style comparison of the 20 inverse-designed cases, showing the design parameters and the agreement or discrepancy between GAN-derived and predicted gabs values.",
+        "expected_figure": "Supplementary inverse-design result table/plot for the 20 gabs cases"
+      }
+    }
+  ]
+}

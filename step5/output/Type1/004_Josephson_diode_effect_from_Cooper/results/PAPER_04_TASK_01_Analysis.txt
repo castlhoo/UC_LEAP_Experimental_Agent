@@ -1,0 +1,25 @@
+Task PAPER_04_TASK_01 Analysis
+Step 0: Workbook inspection
+Loaded dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/004_Josephson_diode_effect_from_Cooper/type1_data/41567_2022_1699_MOESM2_ESM_10.xlsx
+Workbook sheets found: ['Fig_1d', 'Fig_1d_inset', 'Fig_1e', 'Fig_1f']
+Identified main temperature-dependent sheet: Fig_1d
+Identified inset sheet: Fig_1d_inset
+Step 1: Data cleaning and column interpretation for main panel
+Main sheet raw shape: (15196, 2)
+Main sheet columns: ['Temperature (K)', 'Voltage (uV)']
+Main sheet numeric rows retained: 15196
+Main sheet temperature range: 0.0083 K to 26.6803 K
+Main sheet voltage range: 0.1928 uV to 60.6446 uV
+Step 1: Data cleaning and column interpretation for inset
+Inset sheet raw shape: (3, 3)
+Inset sheet columns: ['d (nm)', 'T_J (K)', 'T_SC (K)']
+Inset numeric rows retained: 3
+Inset spacing values: [120, 350, 580]
+Inset T_J values: [3.5, 2.5, 0.2]
+Inset T_SC values: [5.25, 5.2, 5.3]
+Step 2: Plotting main temperature-dependent transport curve
+Added annotation using inset values from first row: T_J=3.5, T_SC=5.25
+Step 3: Plotting inset characteristic temperatures versus junction spacing
+Step 4: Applying publication-style formatting
+Step 5: Exporting figure
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/004_Josephson_diode_effect_from_Cooper/results/PAPER_04_TASK_01_figure.png

@@ -1,0 +1,326 @@
+{
+  "title": "Proximity-induced chiral quantum light generation in strain-engineered WSe2/NiPS3 heterostructures",
+  "doi": "10.1038/s41563-023-01645-7",
+  "journal": "Nature Materials",
+  "year": 2023,
+  "type1_summary": "All provided files are Nature source-data spreadsheets organized by figure panels and containing cleaned, replot-ready tabular data or image-matrix exports. They correspond to processed spectra, fits, maps, and analysis curves rather than raw proprietary instrument files.",
+  "type2_summary": "No files were classified as raw/unprocessed Type 2 based on the available evidence.",
+  "files": {
+    "type1_data": [
+      {
+        "renamed": "41563_2023_1645_MOESM10_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Despite the larger size, the file is still a structured source-data deposit with directly plottable columns and no raw proprietary format.",
+          "paper_evidence": "Extended Data Fig. 6 is described as another chiral quantum emitter dataset with processed spectra, time traces, decay, and correlation data.",
+          "file_evidence": "Large but still tabular XLSX with figure-specific sheets ('ED Fig 6a'...'ED Fig 6d') containing spectra, time counts, decay, and coincidence counts. Source-data style organization.",
+          "ambiguity": "low: larger file size could suggest raw-like volume, but the sheet structure and figure-specific tabular organization indicate processed source data.",
+          "key_columns": "Energy, s-, s+; Time, count; Time delay, normalized counts; Delay, Coin Count"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM11_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file is a structured matrix representation of maps suitable for replotting, not a raw instrument binary file.",
+          "paper_evidence": "Paper discusses room-temperature NV magnetometry maps as measurement-derived figures; these are presented as analyzed maps rather than raw scan files.",
+          "file_evidence": "Tabular matrix sheets ('RTHeightImage', 'RTMagneticFieldImage', 'RTXYPositions') with image-like arrays and coordinate positions. XLSX source-data export.",
+          "ambiguity": "moderate: image matrices are closer to raw measurement data than simple line plots, but the deposited format is still cleaned source data.",
+          "key_columns": "RTHeightImage matrix, RTMagneticFieldImage matrix, RTXYPositions"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM12_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Clear figure-specific source data with extracted spectra at multiple fields.",
+          "paper_evidence": "Extended Data Fig. 8 is a processed polarization-resolved spectrum versus magnetic field dataset.",
+          "file_evidence": "Single sheet 'ED 8' with energy and multiple field-resolved sigma+/sigma- columns. Directly plottable source data.",
+          "ambiguity": "none",
+          "key_columns": "Energy, 6T sig+, 6T sig-, 5T sig+, 5T sig-, ... , 0T sig+, 0T sig-"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM13_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is replot-ready source data for extended-data panels, not raw acquisition output.",
+          "paper_evidence": "Extended Data Fig. 9 contains processed field-dependent polarization spectra used to analyze chirality and hysteresis.",
+          "file_evidence": "Multiple figure sheets with energy and field-resolved sigma+/sigma- columns, all in tabular form and figure-organized.",
+          "ambiguity": "none",
+          "key_columns": "Energy / energy, 0T sig-/sig+, 6T sig-/sig+, 5T sig-/sig+, ... , n6T sig-/sig+"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM14_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Directly plottable figure source data; no indication of raw instrument output.",
+          "paper_evidence": "Extended Data Fig. 10 is a processed spectral dataset with sigma+/sigma- channels.",
+          "file_evidence": "Two figure sheets with 1340-row spectra and columns 'Energy', 'sig+', 'sig-'. Clean tabular source data.",
+          "ambiguity": "none",
+          "key_columns": "Energy, sig+, sig-"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM2_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is organized source data for figure panels, not instrument output. The spectra are already separated by polarization and ready for replotting with minimal processing.",
+          "paper_evidence": "Paper states Fig. 1d-f are representative polarization-resolved PL spectra from individual nanoindentations and are processed/analysis products.",
+          "file_evidence": "Excel source-data file with figure-specific sheets ('Fig. 1D', 'Fig. 1e', 'Fig. 1f') and physical columns ('Energy', 'sigma +'). Small, tabular, directly plottable.",
+          "ambiguity": "none",
+          "key_columns": "Energy, sigma +"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM3_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file contains cleaned, figure-ready datasets corresponding to multiple panels, including processed traces and spectra. No indication of raw instrument streams.",
+          "paper_evidence": "Paper says Fig. 2a-b, 2c, 2d, and 2e are processed spectra/time traces/correlation traces used to demonstrate chiral emission and single-photon behavior.",
+          "file_evidence": "Figure-specific sheets ('Fig 2a'...'Fig 2e') with tabular columns for spectra, time trace, decay, and g(2)(tau). Directly plottable source data.",
+          "ambiguity": "none",
+          "key_columns": "Energy, sigma-, sigma+; Time, Count; delaytime, normalized count; Delay, coincience count"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM4_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Although the content originates from scanning NV measurements, the deposited file is a tabular/image-matrix source-data export that can be replotted. It is not a raw instrument file format.",
+          "paper_evidence": "Paper states Fig. 3c-d are scanning NV-center topography and magnetic-field maps, and Fig. 3e is NV lock-in spectra; these are raw/measurement-derived figures.",
+          "file_evidence": "Contains image/map-like sheets ('HeightImage', 'MagneticFieldImage', 'ImageXYPositions') plus a figure sheet ('Fig 3e') with magnetic field and fit columns. Structured source data rather than proprietary raw scan files.",
+          "ambiguity": "moderate: measurement-derived maps are closer to raw than typical line plots, but the XLSX source-data format and figure organization support Type 1.",
+          "key_columns": "HeightImage matrix, MagneticFieldImage matrix, Fig 3e: Magnetic field (MT), off indent, on indent, off ind fit, on fit"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM5_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is classic source-data deposition for publication figures: cleaned spectra, fit outputs, and summary curves. Minimal processing needed.",
+          "paper_evidence": "Paper describes Fig. 4a-e as processed polarization-resolved spectra and extracted field-dependence curves for splitting and DCP.",
+          "file_evidence": "Figure-specific sheets with tabular spectra and summary curves ('Fig 4a'...'Fig 4e'), including extracted B-dependent values and DCP. Directly plottable.",
+          "ambiguity": "none",
+          "key_columns": "Ener5gy, sigma-/sigma+ at multiple fields; B, 2DX, LX; DCP columns"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM6_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file is organized as replot-ready source data for extended-data panels, not raw acquisition output.",
+          "paper_evidence": "Extended Data Fig. 2 contains control PL spectra and polarization analysis, explicitly described as processed control data.",
+          "file_evidence": "Seven figure-specific sheets with spectra and polarization columns ('Energy', 's-', 's+', 'S', 'P'). Small tabular source data.",
+          "ambiguity": "none",
+          "key_columns": "Energy, s-, s+; Energy, S, P"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM7_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file contains cleaned spectra for several conditions and is clearly source data for the published extended-data figure.",
+          "paper_evidence": "Extended Data Fig. 3 includes polarization-resolved spectra versus temperature/magnetic field and excitation polarization dependence, all presented as processed analysis figures.",
+          "file_evidence": "Figure-specific sheets with multiple polarization channels and conditions ('ED Fig 3a', 'ED Fig 3bT/M/B', 'ED Fig 3c'). Tabular, directly plottable.",
+          "ambiguity": "none",
+          "key_columns": "Energy, S+-, S++, S--, S-+; energy, s-L0, s+L0, s-L30, s+L30, s-L60, s+L60"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM8_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is analysis-ready data extracted for plotting and fitting, not raw instrument output.",
+          "paper_evidence": "Extended Data Fig. 4 and related analysis are processed figure data (DCP and spectral image analysis).",
+          "file_evidence": "Contains a DCP spectrum sheet and a tabular fit/peak-analysis sheet ('ED Fig 4c') with pixel and fit columns. Figure-oriented source data.",
+          "ambiguity": "none",
+          "key_columns": "Energy, DCP; Pix, Pak1, P2, P3, P4, P5, FitPix, P1fit, P2fit, P3fit, p4fit, p5fit"
+        }
+      },
+      {
+        "renamed": "41563_2023_1645_MOESM9_ESM_10.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "The file is a standard source-data package for extended-data plots and can be directly replotted.",
+          "paper_evidence": "Extended Data Fig. 5 includes linear polarization analysis, linewidth histogram, and pump-power dependence, all processed outputs.",
+          "file_evidence": "Multiple figure sheets with spectra, polarization-angle dependence, histogram data, and pump-power sweep summary ('Pump Power', 'DCP A', 'DCP B', 'FWHM A', 'FWHM B').",
+          "ambiguity": "none",
+          "key_columns": "Energy, s-, s+, S E45, P E45, S E135, P E135, S E165, P E165; Deg, NiPS3 off indent, NiPS3 on indent; Linewidth of the QEs"
+        }
+      }
+    ],
+    "type2_data": [],
+    "annotations": [],
+    "scripts": []
+  },
+  "paper_analysis": {
+    "summary": "This paper demonstrates that nanoindentation-induced strain in monolayer WSe2/NiPS3 heterostructures creates localized quantum emitters that produce circularly polarized single photons at zero external magnetic field. The authors attribute the chiral emission to magnetic proximity coupling between localized WSe2 excitons and strain-induced out-of-plane ferromagnetic moments in NiPS3 defects, supported by scanning NV magnetometry and temperature-/field-dependent magneto-PL.",
+    "measurement_types": [
+      "optical microscopy / wide-field PL imaging",
+      "polarization-resolved photoluminescence spectroscopy",
+      "nanoindentation / AFM topography",
+      "Hanbury Brown–Twiss photon correlation",
+      "time-resolved PL decay",
+      "scanning diamond NV-center magnetometry",
+      "temperature-dependent magneto-PL spectroscopy",
+      "field-dependent magneto-PL spectroscopy",
+      "linear polarization analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Optical image of the WSe2/NiPS3 heterostructure showing overlapping regions and the sample layout.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Wide-field PL image at 4 K showing quenched PL in the overlap region and restored bright emission at nanoindentations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic of the heterostructure plus AFM topography and cross-section of a representative nanoindentation.",
+        "data_type": "image / topography",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d-f",
+        "description": "Representative polarization-resolved PL spectra from individual nanoindentations showing sharp localized peaks with strong spontaneous circular polarization.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a-b",
+        "description": "Circular-polarization-resolved PL spectra under σ+ and σ− excitation for an indented region.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "PL intensity versus time trace for a selected quantum emitter.",
+        "data_type": "time trace",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Time-resolved PL decay curve fitted to extract lifetime.",
+        "data_type": "decay curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Second-order photon correlation g(2)(τ) trace demonstrating single-photon emission.",
+        "data_type": "correlation curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of zig-zag antiferromagnetic order in NiPS3 overlaid on the atomic structure.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Schematic cross-section of strain-induced exciton capture centers near local magnetic moments.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c-d",
+        "description": "Scanning NV-center topography and magnetic-field maps of a nanoindentation in bare NiPS3.",
+        "data_type": "image / magnetic map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "NV lock-in spectra taken on and off the indent, showing a magnetic-field shift.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Polarization-resolved PL spectra versus external magnetic field for a localized emitter.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Magnetic-field dependence of energy splitting and DCP for a localized exciton and a delocalized WSe2 exciton.",
+        "data_type": "curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c-d",
+        "description": "Temperature- and field-history-dependent polarization-resolved PL spectra showing hysteresis/restoration of chirality.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "DCP versus magnetic field for the temperature/field cycling experiment.",
+        "data_type": "curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 1",
+        "description": "Optical setup schematic for polarization-resolved PL and HBT measurements.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Extended Data Fig. 2",
+        "description": "Control PL spectra showing no DCP in unstrained WSe2 and unindented WSe2/NiPS3, plus linear polarization analysis of control and NiPS3 exciton peaks.",
+        "data_type": "spectra / polarization curves",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 3",
+        "description": "Control nanoindentation on WSe2/hBN/PMMA and excitation-polarization invariance of chiral PL in WSe2/NiPS3.",
+        "data_type": "spectra",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 4",
+        "description": "Spectral image of a nanoindentation and spatial analysis of multiple localized peaks.",
+        "data_type": "spectral image / map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 5",
+        "description": "Linear polarization analysis, linewidth histogram of chiral emitters, and pump-power dependence of DCP/linewidth.",
+        "data_type": "polarization curves / histogram / parameter sweep",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 6",
+        "description": "Another chiral quantum emitter dataset with high single-photon purity and strong circular polarization.",
+        "data_type": "spectrum / correlation data",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include optical images, wide-field and polarization-resolved PL spectra, AFM topography after nanoindentation, time-tagged photon detection streams for HBT measurements, NV-center ESR/lock-in spectra and magnetic-field maps, and temperature-/field-dependent magneto-PL spectra. The paper specifies the instruments and acquisition conditions, such as a cryogenic PL microscope, AFM nanoindentation, a diamond NV scanning probe, and a magneto-optical cryostat.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The plotted data include extracted PL spectra with σ+/σ− decomposition, DCP and DLP values, Gaussian-fit peak positions and splittings, PL decay fits, g(2)(τ) correlation traces, NV-derived magnetic-field values, linewidth histograms, and DCP versus magnetic-field/temperature histories. These are analysis products derived from the raw optical and magnetometry measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement is included in the provided text. The manuscript notes that the article is an accepted manuscript and refers to figures, extended data, and methods, but does not describe a repository, DOI for data, or code archive in the excerpt.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental acquisition: PL images/spectra collected at 4 K, time-tagged photon counts from a Hanbury Brown–Twiss setup, AFM topography from nanoindentation, NV-center ESR/lock-in measurements, and magneto-PL spectra under variable magnetic field and temperature. File formats are not specified.",
+      "processed_data_description": "Processed data include polarization-resolved spectra, DCP/DLP calculations, Gaussian-fit peak energies and splittings, lifetime fits, g(2)(τ) curves, magnetic-field estimates from NV lock-in spectra, linewidth histograms, and field-dependent DCP plots. The text indicates these are extracted from recorded photon streams or spectra, but does not mention tabulated numerical files.",
+      "figure_data_description": "Figure-specific data are clearly presented in the manuscript as plotted spectra, curves, maps, and histograms for each main and extended figure. However, the excerpt does not state whether separate source-data files are provided as supplementary files.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "figure-based / mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides figure descriptions and analysis outcomes, but the excerpt does not specify downloadable source-data files, raw data files, or scripts. Without explicit file availability, the data are not confirmed to be directly replot-ready.",
+      "notes": "The manuscript carefully distinguishes raw measurements from derived quantities: DCP is computed from σ+/σ− spectra, DLP from polarization-angle scans, lifetimes from exponential fits, and magnetic fields from NV ESR lock-in spectra. Extended Data Fig. 4 explicitly uses spectral-image analysis to localize multiple emitters, and Extended Data Fig. 5 reports statistical distributions and pump-power sweeps. The text also emphasizes that the σ+/σ− spectra were collected simultaneously on separate CCD regions to reduce artifacts from intensity fluctuations and spectral wandering."
+    }
+  }
+}

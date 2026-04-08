@@ -1,0 +1,409 @@
+sheet,curve_name,peak_abs_gabs,peak_wavelength_nm,gabs_at_peak
+Figure 1c,Figure 1c curve 1,1.55535,527.4,1.55535
+Figure 1c,Figure 1c - gabs.1,1.86275,597.2,1.86275
+Figure 1c,Figure 1c - gabs.2,1.90828,659.4,1.90828
+Figure 1c,Figure 1c - gabs.3,1.76173,673.6,1.76173
+Figure 1c,Figure 1c - gabs.4,2.00231,556.2,-2.00231
+Figure2a,Figure2a curve 1,0.52821,403.5,0.52821
+Figure2a,Figure2a - gabs.1,0.52471,403.5,-0.52471
+Figure2a,Figure2a - gabs.2,1.70914,504.0,-1.70914
+Figure2a,Figure2a - gabs.3,1.66275,507.0,1.66275
+Figure2b,Figure2b curve 1,1.0,452.0,-1.0
+Figure2b,Figure2b - Normalized CD.1,1.0,501.2,-1.0
+Fugure2c,Fugure2c - CD(mdeg),20015.9,612.0,20015.9
+Fugure2c,Fugure2c - CD(mdeg).1,16232.1,627.2,16232.1
+Fugure2c,Fugure2c - CD(mdeg).2,11146.0,539.8,-11146.0
+Fugure2c,Fugure2c - CD(mdeg).3,16239.6,568.2,-16239.6
+Fugure2c,Fugure2c - CD(mdeg).4,19330.2,578.6,-19330.2
+Figure2d,Figure2d curve 1,1.0,437.0,-1.0
+Figure2d,Figure2d - Normalized CD.1,1.0,540.0,-1.0
+Figure2d,Figure2d - Normalized CD.2,1.00002,587.4,-1.00002
+Figure2e,Figure2e - CD(mdeg),1313.74,623.2,1313.74
+Figure2e,Figure2e - CD(mdeg).1,2813.89,622.8,2813.89
+Figure2e,Figure2e - CD(mdeg).2,5265.54,623.2,5265.54
+Figure2e,Figure2e - CD(mdeg).3,10464.6,624.6,10464.6
+Figure2e,Figure2e - CD(mdeg).4,16232.1,627.2,16232.1
+Figure2e,Figure2e - CD(mdeg).5,18801.6,627.8,18801.6
+Figure4b,Figure4b - Unnamed: 1,10.0,0.79,10.0
+Figure4b,Figure4b - Unnamed: 3,86.85,2.51,86.85
+Figure4b,Figure4b - Unnamed: 4,7.0,2.11,7.0
+Figure5c,Figure5c - Thickness,80.0,1.0,80.0
+Figure5c,Figure5c - Strain,250.0,6.0,250.0
+Figure5c,Figure5c - Grayscale,7.8,8.0,7.8
+Figure5e,Figure5e curve 1,1.821,403.5,1.821
+Figure5e,Figure5e - gabs.1,1.90595,495.5,1.90595
+Figure5e,Figure5e - gabs.2,1.98738,612.5,1.98738
+Figure5e,Figure5e - gabs.3,1.91177,507.5,-1.91177
+Figure8d,Figure8d - Unnamed: 1,1.48846,432.5,-1.48846
+Figure8d,Figure8d - Unnamed: 2,9.72254,447.0,-9.72254
+Figure8d,Figure8d - 467 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 5,1.96132,472.5,-1.96132
+Figure8d,Figure8d - Unnamed: 6,14.4573,474.5,-14.4573
+Figure8d,Figure8d - 506 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 9,1.83085,520.5,-1.83085
+Figure8d,Figure8d - Unnamed: 10,42.3699,400.0,42.3699
+Figure8d,Figure8d - 531 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 13,1.99326,537.0,-1.99326
+Figure8d,Figure8d - Unnamed: 14,14.2174,535.5,-14.2174
+Figure8d,Figure8d - 564 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 17,1.95159,558.0,-1.95159
+Figure8d,Figure8d - Unnamed: 18,13.6529,562.5,-13.6529
+Figure8d,Figure8d - 606 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 21,1.79309,620.5,-1.79309
+Figure8d,Figure8d - Unnamed: 22,13.2362,607.5,-13.2362
+Figure8d,Figure8d - 628 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 25,1.94961,628.5,-1.94961
+Figure8d,Figure8d - Unnamed: 26,13.49,635.0,-13.49
+Figure8d,Figure8d - 666 nm,800.0,800.0,800.0
+Figure8d,Figure8d - Unnamed: 29,1.50918,671.5,-1.50918
+Figure8d,Figure8d - Unnamed: 30,10.5001,673.5,-10.5001
+Figure8e,Figure8e - CPL(deg),15.0246,538.5,15.0246
+Figure8e,Figure8e - CPL(deg).1,11.9156,538.0,11.9156
+Figure8e,Figure8e - CPL(deg).2,8.54864,539.5,8.54864
+Figure8e,Figure8e - CPL(deg).3,2.40512,538.5,2.40512
+Figure8e,Figure8e - CPL(deg).4,0.05975,541.5,0.05975
+Figure8e,Figure8e - CPL(deg).5,2.69013,539.0,-2.69013
+Figure8e,Figure8e - CPL(deg).6,8.66178,540.5,-8.66178
+Figure8e,Figure8e - CPL(deg).7,11.067,538.0,-11.067
+Figure8e,Figure8e - CPL(deg).8,14.5877,539.0,-14.5877
+Figure8e,Figure8e - Wavelength(nm).1,650.0,650.0,650.0
+Figure8e,Figure8e - glum,2.01034,543.5,2.01034
+Figure8e,Figure8e - glum.1,1.68787,557.5,1.68787
+Figure8e,Figure8e - glum.2,1.66081,571.0,1.66081
+Figure8e,Figure8e - glum.3,0.38252,562.0,0.38252
+Figure8e,Figure8e - glum.4,0.0446,584.5,0.0446
+Figure8e,Figure8e - glum.5,0.42961,558.0,-0.42961
+Figure8e,Figure8e - glum.6,1.60166,572.5,-1.60166
+Figure8e,Figure8e - glum.7,1.63576,558.0,-1.63576
+Figure8e,Figure8e - glum.8,2.01495,546.0,-2.01495
+FigureS1,FigureS1 - Intensity,50.09852,230.0,50.09852
+FigureS1,FigureS1 - Intensity.1,48.09303,150.0,48.09303
+FigureS1,FigureS1 - Angle.1,360.0,360.0,360.0
+FigureS1,FigureS1 - Intensity.2,34.5661,260.0,34.5661
+FigureS1,FigureS1 - Intensity.3,40.35457,110.0,40.35457
+FigureS1,FigureS1 - tl/ts,10000.0,80.0,10000.0
+FigureS1,FigureS1 - g-value,2.0,0.0,2.0
+FigureS2,FigureS2 - Absorption,1.0,526.0,1.0
+FigureS2,FigureS2 - Absorption.1,1.0,567.5,1.0
+FigureS2,FigureS2 - Absorption.2,0.999,581.0,0.999
+FigureS2,FigureS2 - Absorption.3,1.0,579.0,1.0
+FigureS2,FigureS2 - Absorption.4,1.0,401.0,1.0
+FigureS2,FigureS2 - Absorption.5,1.0,534.5,1.0
+FigureS2,FigureS2 - Absorption.6,1.34154,300.0,1.34154
+FigureS2,FigureS2 - Absorption.7,1.0,396.5,1.0
+FigureS2,FigureS2 - Absorption.8,1.0,620.5,1.0
+FigureS2,FigureS2 - Absorption.9,1.7556,300.0,1.7556
+FigureS2,FigureS2 - Absorption.10,1.0,617.0,1.0
+FigureS2,FigureS2 - Absorption.11,0.845,463.0,0.845
+FigureS2,FigureS2 - Absorption.12,1.0,546.5,1.0
+FigureS2,FigureS2 - Absorption.13,1.0,632.5,1.0
+FigureS2,FigureS2 - Absorption.14,1.0,511.0,1.0
+FigureS2,FigureS2 - Absorption.15,1.0,516.0,1.0
+FigureS2,FigureS2 - Absorption.16,1.0,588.0,1.0
+FigureS2,FigureS2 - Absorption.17,1.0,505.5,1.0
+FigureS2,FigureS2 - Absorption.18,1.0,505.5,1.0
+FigureS2,FigureS2 - Absorption.19,1.0,628.5,1.0
+FigureS3a,FigureS3a - LD(0),0.76437,577.5,0.76437
+FigureS3a,FigureS3a - LD(45),0.09358,208.0,0.09358
+FigureS3a,FigureS3a - LD(90),1.03055,618.5,-1.03055
+FigureS3a,FigureS3a - LD(135),0.07426,200.0,-0.07426
+FigureS3a,FigureS3a - LD(180),0.75236,619.5,0.75236
+FigureS3a,FigureS3a - LD(225),0.0982,619.0,0.0982
+FigureS3a,FigureS3a - LD(270),1.06742,618.5,-1.06742
+FigureS3a,FigureS3a - LD(315),0.19533,200.0,-0.19533
+FigureS3a,FigureS3a - Angle,315.0,203.5,315.0
+FigureS3a,FigureS3a - LD intensity,0.99029,203.0,-0.99029
+FigureS3b,FigureS3b - LD(0),1.43232,629.5,1.43232
+FigureS3b,FigureS3b - LD(45),0.10222,200.0,0.10222
+FigureS3b,FigureS3b - LD(90),1.43109,624.0,-1.43109
+FigureS3b,FigureS3b - LD(135),0.05657,203.0,-0.05657
+FigureS3b,FigureS3b - LD(180),1.36576,632.5,1.36576
+FigureS3b,FigureS3b - LD(225),0.12463,201.5,0.12463
+FigureS3b,FigureS3b - LD(270),1.46024,623.0,-1.46024
+FigureS3b,FigureS3b - LD(315),0.06209,200.0,-0.06209
+FigureS3b,FigureS3b - Angle,315.0,203.5,315.0
+FigureS3b,FigureS3b - LD intensity,1.45421,203.0,-1.45421
+FigureS3c,FigureS3c - LD(0),1.52137,630.0,1.52137
+FigureS3c,FigureS3c - LD(45),0.29173,200.0,-0.29173
+FigureS3c,FigureS3c - LD(90),1.82034,622.5,-1.82034
+FigureS3c,FigureS3c - LD(135),0.04883,756.5,0.04883
+FigureS3c,FigureS3c - LD(180),1.55211,629.0,1.55211
+FigureS3c,FigureS3c - LD(225),0.15039,202.0,0.15039
+FigureS3c,FigureS3c - LD(270),1.90424,622.5,-1.90424
+FigureS3c,FigureS3c - LD(315),0.07496,205.5,0.07496
+FigureS3c,FigureS3c - Angle,315.0,203.5,315.0
+FigureS3c,FigureS3c - LD intensity,1.88565,203.0,-1.88565
+FigureS4b,FigureS4b - Unnamed: 1,0.13,10.0,0.13
+FigureS4b,FigureS4b - Unnamed: 2,1.0,300.0,1.0
+FigureS4b,FigureS4b - Unnamed: 4,500.0,45.0,500.0
+FigureS4b,FigureS4b - Unnamed: 5,0.5,10.0,0.5
+FigureS4b,FigureS4b - Unnamed: 6,1.0,300.0,1.0
+FigureS5a,FigureS5a - Unnamed: 1,4.0,0.01,4.0
+FigureS5a,FigureS5a - Unnamed: 3,86.64,0.61,86.64
+FigureS5a,FigureS5a - Unnamed: 4,3.0,0.01,3.0
+Figures6,Figures6 - Unnamed: 1,1.69296,480.8,1.69296
+Figures6,Figures6 - Unnamed: 2,1.36104,453.0,-1.36104
+Figures6,Figures6 - Unnamed: 3,1.86536,479.2,-1.86536
+Figures6,Figures6 - Unnamed: 4,1.35962,489.2,-1.35962
+Figures6,Figures6 - Unnamed: 5,1.56376,446.0,1.56376
+Figures6,Figures6 - Unnamed: 6,1.23671,520.6,-1.23671
+Figures6,Figures6 - dye2,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 9,1.62028,495.2,1.62028
+Figures6,Figures6 - Unnamed: 10,1.30473,439.0,-1.30473
+Figures6,Figures6 - Unnamed: 11,1.46648,490.0,-1.46648
+Figures6,Figures6 - Unnamed: 12,1.48214,408.0,1.48214
+Figures6,Figures6 - Unnamed: 13,1.51897,436.0,1.51897
+Figures6,Figures6 - Unnamed: 14,1.52206,449.0,1.52206
+Figures6,Figures6 - dye3,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 17,1.47473,503.8,1.47473
+Figures6,Figures6 - Unnamed: 18,1.77335,566.2,1.77335
+Figures6,Figures6 - Unnamed: 19,1.9123,492.6,-1.9123
+Figures6,Figures6 - Unnamed: 20,1.94227,514.8,-1.94227
+Figures6,Figures6 - Unnamed: 21,1.9989,554.2,-1.9989
+Figures6,Figures6 - Unnamed: 22,1.91158,562.0,-1.91158
+Figures6,Figures6 - dye4,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 25,1.84426,511.2,1.84426
+Figures6,Figures6 - Unnamed: 26,1.74897,573.4,1.74897
+Figures6,Figures6 - Unnamed: 27,1.92939,494.2,-1.92939
+Figures6,Figures6 - Unnamed: 28,1.88843,516.8,-1.88843
+Figures6,Figures6 - Unnamed: 29,1.79749,554.0,-1.79749
+Figures6,Figures6 - Unnamed: 30,2.0214,563.2,-2.0214
+Figures6,Figures6 - dye5,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 33,1.34029,521.0,1.34029
+Figures6,Figures6 - Unnamed: 34,1.36728,603.0,1.36728
+Figures6,Figures6 - Unnamed: 35,1.10812,611.6,1.10812
+Figures6,Figures6 - Unnamed: 36,1.30021,526.0,-1.30021
+Figures6,Figures6 - Unnamed: 37,1.92188,561.0,-1.92188
+Figures6,Figures6 - Unnamed: 38,1.63835,566.4,-1.63835
+Figures6,Figures6 - dye6,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 41,1.2336,538.0,1.2336
+Figures6,Figures6 - Unnamed: 42,1.77714,594.6,1.77714
+Figures6,Figures6 - Unnamed: 43,1.80371,648.6,1.80371
+Figures6,Figures6 - Unnamed: 44,1.62549,659.8,1.62549
+Figures6,Figures6 - Unnamed: 45,1.76484,561.2,-1.76484
+Figures6,Figures6 - Unnamed: 46,1.91467,580.2,-1.91467
+Figures6,Figures6 - dye7,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 49,1.0739,530.8,1.0739
+Figures6,Figures6 - Unnamed: 50,1.80906,606.4,1.80906
+Figures6,Figures6 - Unnamed: 51,1.4908,633.6,1.4908
+Figures6,Figures6 - Unnamed: 52,1.25402,526.0,-1.25402
+Figures6,Figures6 - Unnamed: 53,1.5929,566.2,-1.5929
+Figures6,Figures6 - Unnamed: 54,1.68701,577.4,-1.68701
+Figures6,Figures6 - dye8,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 57,1.58521,516.4,1.58521
+Figures6,Figures6 - Unnamed: 58,1.94591,600.6,1.94591
+Figures6,Figures6 - Unnamed: 59,1.9423,652.0,1.9423
+Figures6,Figures6 - Unnamed: 60,1.67878,518.4,-1.67878
+Figures6,Figures6 - Unnamed: 61,1.88867,557.4,-1.88867
+Figures6,Figures6 - Unnamed: 62,1.33304,557.4,-1.33304
+Figures6,Figures6 - dye9,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 65,1.55535,527.4,1.55535
+Figures6,Figures6 - Unnamed: 66,1.86275,597.2,1.86275
+Figures6,Figures6 - Unnamed: 67,1.90828,659.4,1.90828
+Figures6,Figures6 - Unnamed: 68,1.76173,673.6,1.76173
+Figures6,Figures6 - Unnamed: 69,2.00231,556.2,-2.00231
+Figures6,Figures6 - Unnamed: 70,1.99764,568.0,-1.99764
+Figures6,Figures6 - dye10,800.0,800.0,800.0
+Figures6,Figures6 - Unnamed: 73,1.25021,527.0,1.25021
+Figures6,Figures6 - Unnamed: 74,1.90962,597.8,1.90962
+Figures6,Figures6 - Unnamed: 75,1.78268,666.6,1.78268
+Figures6,Figures6 - Unnamed: 76,1.66221,675.0,1.66221
+Figures6,Figures6 - Unnamed: 77,1.7004,558.4,-1.7004
+Figures6,Figures6 - Unnamed: 78,1.31639,576.6,-1.31639
+FigureS7,FigureS7 - Unnamed: 1,0.49181,360.8,-0.49181
+FigureS7,FigureS7 - Unnamed: 2,1.5047,386.0,-1.5047
+FigureS7,FigureS7 - Unnamed: 3,1.01754,446.8,-1.01754
+FigureS7,FigureS7 - Unnamed: 4,1.39063,435.8,1.39063
+FigureS7,FigureS7 - Unnamed: 5,1.31331,380.2,-1.31331
+FigureS7,FigureS7 - dye2,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 8,0.72002,294.2,-0.72002
+FigureS7,FigureS7 - Unnamed: 9,1.12139,397.0,-1.12139
+FigureS7,FigureS7 - Unnamed: 10,1.48044,493.8,-1.48044
+FigureS7,FigureS7 - Unnamed: 11,1.41877,453.2,1.41877
+FigureS7,FigureS7 - Unnamed: 12,1.62028,495.2,1.62028
+FigureS7,FigureS7 - dye3,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 15,1.41824,558.2,1.41824
+FigureS7,FigureS7 - Unnamed: 16,1.4987,374.2,-1.4987
+FigureS7,FigureS7 - Unnamed: 17,1.63416,572.6,-1.63416
+FigureS7,FigureS7 - Unnamed: 18,1.61251,469.6,1.61251
+FigureS7,FigureS7 - Unnamed: 19,1.47473,503.8,1.47473
+FigureS7,FigureS7 - dye4,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 22,1.4494,573.2,1.4494
+FigureS7,FigureS7 - Unnamed: 23,1.01602,367.6,-1.01602
+FigureS7,FigureS7 - Unnamed: 24,1.99109,549.0,-1.99109
+FigureS7,FigureS7 - Unnamed: 25,1.41194,480.2,1.41194
+FigureS7,FigureS7 - Unnamed: 26,1.84426,511.2,1.84426
+FigureS7,FigureS7 - dye5,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 29,1.1655,604.0,1.1655
+FigureS7,FigureS7 - Unnamed: 30,0.85465,608.4,0.85465
+FigureS7,FigureS7 - Unnamed: 31,1.53469,558.4,-1.53469
+FigureS7,FigureS7 - Unnamed: 32,0.72363,501.0,0.72363
+FigureS7,FigureS7 - Unnamed: 33,1.34029,521.0,1.34029
+FigureS7,FigureS7 - dye6,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 36,1.55624,623.0,1.55624
+FigureS7,FigureS7 - Unnamed: 37,1.1744,628.0,1.1744
+FigureS7,FigureS7 - Unnamed: 38,1.51987,568.8,-1.51987
+FigureS7,FigureS7 - Unnamed: 39,1.01368,629.4,-1.01368
+FigureS7,FigureS7 - Unnamed: 40,1.0739,530.8,1.0739
+FigureS7,FigureS7 - dye7,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 43,1.70862,652.0,1.70862
+FigureS7,FigureS7 - Unnamed: 44,1.5077,652.4,1.5077
+FigureS7,FigureS7 - Unnamed: 45,1.61697,572.8,-1.61697
+FigureS7,FigureS7 - Unnamed: 46,1.46727,656.6,-1.46727
+FigureS7,FigureS7 - Unnamed: 47,1.2336,538.0,1.2336
+FigureS7,FigureS7 - dye8,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 50,1.80144,649.2,1.80144
+FigureS7,FigureS7 - Unnamed: 51,1.48895,652.2,1.48895
+FigureS7,FigureS7 - Unnamed: 52,1.64925,542.6,-1.64925
+FigureS7,FigureS7 - Unnamed: 53,1.41003,653.8,-1.41003
+FigureS7,FigureS7 - Unnamed: 54,1.58521,516.4,1.58521
+FigureS7,FigureS7 - dye9,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 57,1.60238,650.6,1.60238
+FigureS7,FigureS7 - Unnamed: 58,1.46382,663.8,1.46382
+FigureS7,FigureS7 - Unnamed: 59,1.89478,555.6,-1.89478
+FigureS7,FigureS7 - Unnamed: 60,1.53353,664.2,-1.53353
+FigureS7,FigureS7 - Unnamed: 61,1.55535,527.4,1.55535
+FigureS7,FigureS7 - dye10,800.0,800.0,800.0
+FigureS7,FigureS7 - Unnamed: 64,1.59512,663.0,1.59512
+FigureS7,FigureS7 - Unnamed: 65,1.44382,667.8,1.44382
+FigureS7,FigureS7 - Unnamed: 66,1.60696,579.6,-1.60696
+FigureS7,FigureS7 - Unnamed: 67,1.58129,673.8,-1.58129
+FigureS7,FigureS7 - Unnamed: 68,1.25021,527.0,1.25021
+FigureS8,FigureS8 - Unnamed: 1,0.36154,409.2,0.36154
+FigureS8,FigureS8 - Unnamed: 2,0.88847,407.2,0.88847
+FigureS8,FigureS8 - Unnamed: 3,1.01508,409.4,1.01508
+FigureS8,FigureS8 - Unnamed: 4,1.42594,405.6,1.42594
+FigureS8,FigureS8 - Unnamed: 5,1.84519,405.8,1.84519
+FigureS8,FigureS8 - Unnamed: 6,1.24199,295.8,-1.24199
+FigureS8,FigureS8 - Unnamed: 7,0.54218,525.6,-0.54218
+FigureS8,FigureS8 - dye2,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 10,0.14369,430.4,0.14369
+FigureS8,FigureS8 - Unnamed: 11,0.64496,424.2,0.64496
+FigureS8,FigureS8 - Unnamed: 12,0.80926,423.4,0.80926
+FigureS8,FigureS8 - Unnamed: 13,1.3862,411.8,1.3862
+FigureS8,FigureS8 - Unnamed: 14,1.56103,409.6,1.56103
+FigureS8,FigureS8 - Unnamed: 15,1.60721,395.0,1.60721
+FigureS8,FigureS8 - dye3,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 18,0.36757,543.2,-0.36757
+FigureS8,FigureS8 - Unnamed: 19,0.55809,549.6,-0.55809
+FigureS8,FigureS8 - Unnamed: 20,0.902,552.6,-0.902
+FigureS8,FigureS8 - Unnamed: 21,1.59139,388.4,1.59139
+FigureS8,FigureS8 - Unnamed: 22,1.6889,576.2,-1.6889
+FigureS8,FigureS8 - Unnamed: 23,1.75824,587.0,-1.75824
+FigureS8,FigureS8 - Unnamed: 24,1.76345,593.4,-1.76345
+FigureS8,FigureS8 - dye4,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 27,0.24127,563.4,-0.24127
+FigureS8,FigureS8 - Unnamed: 28,0.59021,561.4,-0.59021
+FigureS8,FigureS8 - Unnamed: 29,0.93784,563.4,-0.93784
+FigureS8,FigureS8 - Unnamed: 30,1.29793,563.4,-1.29793
+FigureS8,FigureS8 - Unnamed: 31,1.64935,575.4,-1.64935
+FigureS8,FigureS8 - Unnamed: 32,1.75954,580.0,-1.75954
+FigureS8,FigureS8 - Unnamed: 33,1.65076,610.8,-1.65076
+FigureS8,FigureS8 - dye5,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 36,0.40585,602.2,-0.40585
+FigureS8,FigureS8 - Unnamed: 37,0.75464,607.8,-0.75464
+FigureS8,FigureS8 - Unnamed: 38,1.06979,607.2,-1.06979
+FigureS8,FigureS8 - Unnamed: 39,1.37234,609.4,-1.37234
+FigureS8,FigureS8 - Unnamed: 40,1.49504,603.8,-1.49504
+FigureS8,FigureS8 - Unnamed: 41,1.99707,612.2,-1.99707
+FigureS8,FigureS8 - Unnamed: 42,1.98736,631.4,-1.98736
+FigureS8,FigureS8 - Unnamed: 43,1.88555,641.2,-1.88555
+FigureS8,FigureS8 - dye6,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 46,1.05709,644.0,-1.05709
+FigureS8,FigureS8 - Unnamed: 47,1.51357,642.8,-1.51357
+FigureS8,FigureS8 - Unnamed: 48,1.75633,643.0,-1.75633
+FigureS8,FigureS8 - Unnamed: 49,2.00686,643.2,-2.00686
+FigureS8,FigureS8 - Unnamed: 50,1.95402,645.8,-1.95402
+FigureS8,FigureS8 - Unnamed: 51,2.16885,672.8,-2.16885
+FigureS8,FigureS8 - Unnamed: 52,1.85254,682.4,-1.85254
+FigureS8,FigureS8 - Unnamed: 53,2.01907,684.0,-2.01907
+FigureS8,FigureS8 - dye7,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 56,0.54166,618.2,-0.54166
+FigureS8,FigureS8 - Unnamed: 57,0.92351,612.6,-0.92351
+FigureS8,FigureS8 - Unnamed: 58,1.21257,618.0,-1.21257
+FigureS8,FigureS8 - Unnamed: 59,1.612,620.8,-1.612
+FigureS8,FigureS8 - Unnamed: 60,1.74858,620.8,-1.74858
+FigureS8,FigureS8 - Unnamed: 61,1.8917,621.8,-1.8917
+FigureS8,FigureS8 - Unnamed: 62,1.98792,644.2,-1.98792
+FigureS8,FigureS8 - Unnamed: 63,1.97697,656.8,-1.97697
+FigureS8,FigureS8 - dye8,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 66,0.84723,625.2,-0.84723
+FigureS8,FigureS8 - Unnamed: 67,1.87541,635.2,-1.87541
+FigureS8,FigureS8 - Unnamed: 68,1.92538,635.2,-1.92538
+FigureS8,FigureS8 - Unnamed: 69,1.95929,649.2,-1.95929
+FigureS8,FigureS8 - Unnamed: 70,1.82559,654.2,-1.82559
+FigureS8,FigureS8 - dye9,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 73,0.72881,632.6,-0.72881
+FigureS8,FigureS8 - Unnamed: 74,0.87534,641.2,-0.87534
+FigureS8,FigureS8 - Unnamed: 75,1.75325,632.8,-1.75325
+FigureS8,FigureS8 - Unnamed: 76,1.92067,643.6,-1.92067
+FigureS8,FigureS8 - Unnamed: 77,1.93194,644.2,-1.93194
+FigureS8,FigureS8 - Unnamed: 78,1.84134,682.4,-1.84134
+FigureS8,FigureS8 - dye10,800.0,800.0,800.0
+FigureS8,FigureS8 - Unnamed: 81,0.47181,644.4,-0.47181
+FigureS8,FigureS8 - Unnamed: 82,1.38011,647.2,-1.38011
+FigureS8,FigureS8 - Unnamed: 83,1.4581,654.2,-1.4581
+FigureS8,FigureS8 - Unnamed: 84,1.65029,646.0,-1.65029
+FigureS8,FigureS8 - Unnamed: 85,1.843,644.2,-1.843
+FigureS8,FigureS8 - Unnamed: 86,1.56528,686.6,-1.56528
+FigureS8,FigureS8 - Unnamed: 87,1.60861,696.0,-1.60861
+FigureS8,FigureS8 - Unnamed: 88,1.41461,712.0,-1.41461
+FigureS9b,FigureS9b - g_exp,1.53859,385.0,1.53859
+FigureS9b,FigureS9b - g_pred,1.52494,500.0,-1.52494
+FigureS9c,FigureS9c - y_pred,2.13242721557617,1.85830999999999,2.13242721557617
+FigureS22,FigureS22 - Unnamed: 1,2.0,540.0,2.0
+FigureS22,FigureS22 - Unnamed: 2,2.0,540.0,-2.0
+FigureS27,FigureS27 - Intensity,441.0,21.5,441.0
+FigureS27,FigureS27 - 2θ.1,50.0,50.0,50.0
+FigureS27,FigureS27 - Intensity.1,582.0,21.44,582.0
+FigureS28,FigureS28 - Unnamed: 1,1.0,441.0,1.0
+FigureS28,FigureS28 - Unnamed: 3,700.0,700.0,700.0
+FigureS28,FigureS28 - Unnamed: 4,1.0,464.0,1.0
+FigureS28,FigureS28 - Unnamed: 6,700.0,700.0,700.0
+FigureS28,FigureS28 - Unnamed: 7,1.0,502.0,1.0
+FigureS28,FigureS28 - Unnamed: 9,700.0,700.0,700.0
+FigureS28,FigureS28 - Unnamed: 10,1.0,531.0,1.0
+FigureS28,FigureS28 - Unnamed: 12,700.0,700.0,700.0
+FigureS28,FigureS28 - Unnamed: 13,1.0,564.0,1.0
+FigureS28,FigureS28 - Unnamed: 15,700.0,550.0,700.0
+FigureS28,FigureS28 - Unnamed: 16,1.0,458.0,1.0
+FigureS28,FigureS28 - Unnamed: 18,700.0,540.0,700.0
+FigureS28,FigureS28 - Unnamed: 19,1.0,466.0,1.0
+FigureS28,FigureS28 - Unnamed: 21,700.0,600.0,700.0
+FigureS28,FigureS28 - Unnamed: 22,1.0,566.0,1.0
+FigureS29,FigureS29 - 467nm,0.7481,783.5,0.7481
+FigureS29,FigureS29 - 532nm,1.09159,797.0,1.09159
+FigureS29,FigureS29 - 628nm,2.341,799.0,2.341
+FigureS31,FigureS31 - 440nm,8.62687,446.0,8.62687
+FigureS31,FigureS31 - 467nm,13.7509,472.5,13.7509
+FigureS31,FigureS31 - 506nm,44.7106,400.0,-44.7106
+FigureS31,FigureS31 - 531nm,15.0246,538.5,15.0246
+FigureS31,FigureS31 - 564nm,13.2419,564.0,13.2419
+FigureS31,FigureS31 - 606nm,12.8721,607.5,12.8721
+FigureS31,FigureS31 - 628nm,12.8721,607.5,12.8721
+FigureS31,FigureS31 - 666nm,10.1448,673.0,10.1448
+FigureS31,FigureS31 - Unnamed: 10,800.0,800.0,800.0
+FigureS31,FigureS31 - 440nm.1,1.44157,429.5,1.44157
+FigureS31,FigureS31 - 467nm.1,1.9554,471.0,1.9554
+FigureS31,FigureS31 - 506nm.1,1.81057,519.0,1.81057
+FigureS31,FigureS31 - 531nm.1,2.01034,543.5,2.01034
+FigureS31,FigureS31 - 564nm.1,1.92267,559.0,1.92267
+FigureS31,FigureS31 - 606nm.1,1.69398,621.5,1.69398
+FigureS31,FigureS31 - 628nm.1,1.96375,630.5,1.96375
+FigureS31,FigureS31 - 666nm.1,1.52624,669.5,1.52624
+FigureS34,FigureS34 - Unnamed: 1,14852.1,486.0,14852.1
+FigureS34,FigureS34 - Unnamed: 2,12707.3,496.0,12707.3
+FigureS34,FigureS34 - Unnamed: 3,16319.2,486.5,16319.2
+FigureS34,FigureS34 - Unnamed: 4,17865.5,484.5,17865.5
+FigureS34,FigureS34 - Unnamed: 5,16494.2,494.5,16494.2
+FigureS34,FigureS34 - Unnamed: 6,13519.2,495.5,13519.2
+FigureS34,FigureS34 - Unnamed: 7,16741.3,486.0,16741.3
+FigureS34,FigureS34 - Unnamed: 8,17507.6,485.5,17507.6
+FigureS34,FigureS34 - Unnamed: 9,15649.0625,487.0,15649.0625
+FigureS35,FigureS35 - Unnamed: 1,1.77537,497.0,-1.77537
+FigureS35,FigureS35 - 2days,800.0,800.0,800.0
+FigureS35,FigureS35 - Unnamed: 4,1.68182,495.0,-1.68182
+FigureS35,FigureS35 - 8days,800.0,800.0,800.0
+FigureS35,FigureS35 - Unnamed: 7,1.71271,495.7,-1.71271
+FigureS35,FigureS35 - 20days,800.0,320.0,800.0
+FigureS35,FigureS35 - Unnamed: 10,1.75975,259.1,-1.75975

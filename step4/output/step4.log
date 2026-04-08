@@ -1,0 +1,142 @@
+2026-04-07 18:41:50,620 [INFO] __main__: ============================================================
+2026-04-07 18:41:50,620 [INFO] __main__: Starting Step 4: Local Storage & Organization
+2026-04-07 18:41:50,620 [INFO] __main__: ============================================================
+2026-04-07 18:41:50,622 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:41:50,623 [INFO] step4.pipeline: Phase 1: Loading Step 3 classification results...
+2026-04-07 18:41:50,628 [INFO] step4.pipeline:   Total papers: 13
+2026-04-07 18:41:50,628 [INFO] step4.pipeline:   Both Type 1+2: 1
+2026-04-07 18:41:50,629 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:41:50,629 [INFO] step4.pipeline: Phase 2: Selecting papers to organize...
+2026-04-07 18:41:50,630 [INFO] step4.pipeline:   Selected 10 papers (mode=has_any)
+2026-04-07 18:41:50,630 [INFO] step4.pipeline:     [ 10.0] Fractional Chern insulators in magic-angle twisted bila
+2026-04-07 18:41:50,630 [INFO] step4.pipeline:     [ 10.0] Cascade of correlated electron states in the kagome sup
+2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [ 10.0] Observation of hybrid higher-order skin-topological eff
+2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [ 10.0] Josephson diode effect from Cooper pair momentum in a t
+2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  9.3] Proximity-induced chiral quantum light generation in st
+2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  9.0] Superconductivity and nematic order in a new titanium-b
+2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  8.3] Inverse design of chiral functional films by a robotic 
+2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  8.0] Extremely anisotropic van der Waals thermal conductors
+2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  7.0] Spin-polarized imaging of the antiferromagnetic structu
+2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  6.0] Intercell moiré exciton complexes in electron lattices
+2026-04-07 18:41:50,634 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:41:50,634 [INFO] step4.pipeline: Paper 1/10: Fractional Chern insulators in magic-angle twisted bila
+2026-04-07 18:41:50,635 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-04002-3
+2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Type: Both
+2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Dir: Both/001_Fractional_Chern_insulators_in_magicangle
+2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:41:53,423 [INFO] step4.pdf_downloader:     PDF downloaded (4567KB) via publisher
+2026-04-07 18:41:53,423 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:41:53,457 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-07 18:41:53,457 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-07 18:41:53,458 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:41:53,459 [INFO] step4.pipeline: Paper 2/10: Cascade of correlated electron states in the kagome sup
+2026-04-07 18:41:53,459 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-03946-w
+2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Dir: Type1/002_Cascade_of_correlated_electron_states
+2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:41:58,569 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-07 18:41:58,569 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:41:58,574 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-07 18:41:58,575 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:41:58,575 [INFO] step4.pipeline: Paper 3/10: Observation of hybrid higher-order skin-topological eff
+2026-04-07 18:41:58,575 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-26414-5
+2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Dir: Type1/003_Observation_of_hybrid_higherorder_skintopological
+2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:01,121 [INFO] step4.pdf_downloader:     PDF downloaded (3682KB) via publisher
+2026-04-07 18:42:01,121 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:01,125 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-07 18:42:01,126 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:01,126 [INFO] step4.pipeline: Paper 4/10: Josephson diode effect from Cooper pair momentum in a t
+2026-04-07 18:42:01,126 [INFO] step4.pipeline:   DOI: 10.1038/s41567-022-01699-5
+2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Dir: Type1/004_Josephson_diode_effect_from_Cooper
+2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:05,193 [INFO] step4.pdf_downloader:     PDF downloaded (2046KB) via publisher
+2026-04-07 18:42:05,194 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:05,201 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-07 18:42:05,201 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:05,201 [INFO] step4.pipeline: Paper 5/10: Proximity-induced chiral quantum light generation in st
+2026-04-07 18:42:05,201 [INFO] step4.pipeline:   DOI: 10.1038/s41563-023-01645-7
+2026-04-07 18:42:05,201 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:05,201 [INFO] step4.pipeline:   Dir: Type1/005_Proximityinduced_chiral_quantum_light_generation
+2026-04-07 18:42:05,203 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:10,536 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-07 18:42:10,537 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:10,564 [INFO] step4.file_organizer:     type1_data: 13 files
+2026-04-07 18:42:10,564 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:10,565 [INFO] step4.pipeline: Paper 6/10: Superconductivity and nematic order in a new titanium-b
+2026-04-07 18:42:10,565 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-53870-6
+2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Dir: Type1/006_Superconductivity_and_nematic_order_in
+2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:13,149 [INFO] step4.pdf_downloader:     PDF downloaded (2181KB) via publisher
+2026-04-07 18:42:13,150 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:13,161 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-07 18:42:13,162 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:13,163 [INFO] step4.pipeline: Paper 7/10: Inverse design of chiral functional films by a robotic 
+2026-04-07 18:42:13,163 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-41951-x
+2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Dir: Type1/007_Inverse_design_of_chiral_functional
+2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:15,578 [INFO] step4.pdf_downloader:     PDF downloaded (4844KB) via publisher
+2026-04-07 18:42:15,579 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:15,632 [INFO] step4.file_organizer:     type1_data: 9 files
+2026-04-07 18:42:15,633 [INFO] step4.file_organizer:     annotations: 5 files
+2026-04-07 18:42:15,633 [INFO] step4.file_organizer:     scripts: 9 files
+2026-04-07 18:42:15,633 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:15,634 [INFO] step4.pipeline: Paper 8/10: Extremely anisotropic van der Waals thermal conductors
+2026-04-07 18:42:15,634 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-03867-8
+2026-04-07 18:42:15,634 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:15,635 [INFO] step4.pipeline:   Dir: Type1/008_Extremely_anisotropic_van_der_Waals
+2026-04-07 18:42:15,635 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:18,240 [INFO] step4.pdf_downloader:     PDF downloaded (4641KB) via publisher
+2026-04-07 18:42:18,240 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:18,249 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-07 18:42:18,249 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:18,250 [INFO] step4.pipeline: Paper 9/10: Spin-polarized imaging of the antiferromagnetic structu
+2026-04-07 18:42:18,250 [INFO] step4.pipeline:   DOI: 10.1038/s41598-022-18678-8
+2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Type: Type1
+2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Dir: Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic
+2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:22,058 [INFO] step4.pdf_downloader:     PDF downloaded (2085KB) via publisher
+2026-04-07 18:42:22,059 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:22,071 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-07 18:42:22,071 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:22,072 [INFO] step4.pipeline: Paper 10/10: Intercell moiré exciton complexes in electron lattices
+2026-04-07 18:42:22,072 [INFO] step4.pipeline:   DOI: 10.1038/s41563-023-01496-2
+2026-04-07 18:42:22,072 [INFO] step4.pipeline:   Type: Type2
+2026-04-07 18:42:22,072 [INFO] step4.pipeline:   Dir: Type2/010_Intercell_moiré_exciton_complexes_in
+2026-04-07 18:42:22,073 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-07 18:42:27,202 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-07 18:42:27,203 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-07 18:42:27,264 [INFO] step4.file_organizer:     type2_data: 33 files
+2026-04-07 18:42:27,264 [INFO] step4.file_organizer:     scripts: 8 files
+2026-04-07 18:42:27,264 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:27,264 [INFO] step4.pipeline: Phase 5: Saving manifest...
+2026-04-07 18:42:27,270 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:27,270 [INFO] step4.pipeline: STEP 4 RESULTS SUMMARY
+2026-04-07 18:42:27,270 [INFO] step4.pipeline: ============================================================
+2026-04-07 18:42:27,270 [INFO] step4.pipeline: Papers organized:      10
+2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Both (T1+T2):        1
+2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Type 1 only:         8
+2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Type 2 only:         1
+2026-04-07 18:42:27,270 [INFO] step4.pipeline: PDFs downloaded:        7
+2026-04-07 18:42:27,271 [INFO] step4.pipeline: Type 1 data files:     41
+2026-04-07 18:42:27,271 [INFO] step4.pipeline: Type 2 data files:     36
+2026-04-07 18:42:27,271 [INFO] step4.pipeline: Annotation files:      5
+2026-04-07 18:42:27,271 [INFO] step4.pipeline: Script files:          17
+2026-04-07 18:42:27,272 [INFO] step4.pipeline: ------------------------------------------------------------
+2026-04-07 18:42:27,272 [INFO] step4.pipeline:     1. [ Both] [PDF:✓] T1: 1 T2: 3 | Fractional Chern insulators in magic-angle tw
+2026-04-07 18:42:27,272 [INFO] step4.pipeline:     2. [Type1] [PDF:✗] T1: 2 T2: 0 | Cascade of correlated electron states in the 
+2026-04-07 18:42:27,272 [INFO] step4.pipeline:     3. [Type1] [PDF:✓] T1: 1 T2: 0 | Observation of hybrid higher-order skin-topol
+2026-04-07 18:42:27,272 [INFO] step4.pipeline:     4. [Type1] [PDF:✓] T1: 2 T2: 0 | Josephson diode effect from Cooper pair momen
+2026-04-07 18:42:27,272 [INFO] step4.pipeline:     5. [Type1] [PDF:✗] T1:13 T2: 0 | Proximity-induced chiral quantum light genera
+2026-04-07 18:42:27,273 [INFO] step4.pipeline:     6. [Type1] [PDF:✓] T1: 5 T2: 0 | Superconductivity and nematic order in a new 
+2026-04-07 18:42:27,273 [INFO] step4.pipeline:     7. [Type1] [PDF:✓] T1: 9 T2: 0 | Inverse design of chiral functional films by 
+2026-04-07 18:42:27,273 [INFO] step4.pipeline:     8. [Type1] [PDF:✓] T1: 3 T2: 0 | Extremely anisotropic van der Waals thermal c
+2026-04-07 18:42:27,273 [INFO] step4.pipeline:     9. [Type1] [PDF:✓] T1: 5 T2: 0 | Spin-polarized imaging of the antiferromagnet
+2026-04-07 18:42:27,273 [INFO] step4.pipeline:    10. [Type2] [PDF:✗] T1: 0 T2:33 | Intercell moiré exciton complexes in electron
+2026-04-07 18:42:27,273 [INFO] step4.pipeline: Manifest saved to C:\UCLEAP\UC_LEAP\step4/organized\manifest_latest.json
+2026-04-07 18:42:27,274 [INFO] __main__: ============================================================
+2026-04-07 18:42:27,274 [INFO] __main__: Step 4 complete in 37s. 10 papers organized.

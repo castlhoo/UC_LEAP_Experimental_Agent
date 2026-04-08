@@ -1,0 +1,214 @@
+{
+  "title": "Inverse design of chiral functional films by a robotic AI-guided system",
+  "doi": "10.1038/s41467-023-41951-x",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "type1_summary": "The clearly figure/source-data style files are the structured Excel and CSV tables with explicit physical variables and model outputs, including wavelength-resolved gabs/CD tables and inverse-design result tables.",
+  "type2_summary": "No file in the inspected set is unambiguously raw instrument output; the provided files are mostly cleaned source data, model outputs, or documentation.",
+  "files": {
+    "type1_data": [
+      {
+        "renamed": "41467_2023_41951_MOESM7_ESM_8.xlsx",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is organized figure/source data with physical variables and panel-specific sheets, matching cleaned replot-ready data rather than raw instrument output.",
+          "paper_evidence": "The paper states that source data include processed spectra and figure-specific datasets for CD/gabs and related chiroptical measurements used in figures.",
+          "file_evidence": "Excel source-data workbook with 48 sheets named by figure panels (e.g., Figure 1c, Figure2a, Figure5b). Contains structured numeric columns such as Wavelength(nm), gabs, Normalized CD, and CD(mdeg), directly suitable for plotting.",
+          "ambiguity": "none",
+          "key_columns": "Wavelength(nm), gabs, Normalized CD, CD(mdeg)"
+        }
+      },
+      {
+        "renamed": "20_gabs_outfile.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is a cleaned spectral table with explicit physical axes and outputs, consistent with replot-ready source data.",
+          "paper_evidence": "The paper reports processed CD/gabs spectra sampled across wavelength for inverse-design and figure generation.",
+          "file_evidence": "Tabular CSV with wavelength columns from 200 to 800 nm and rows labeled by feature combinations like Color-thickness-stretch-gray. Directly plottable spectral data.",
+          "ambiguity": "none",
+          "key_columns": "feature：Color - thickness - stretch - gray; 200-800 nm spectral values"
+        }
+      },
+      {
+        "renamed": "cgan_test_result_ABS_440.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is a cleaned results table with explicit variables and model outputs, suitable for direct plotting and comparison.",
+          "paper_evidence": "The paper reports model-predicted vs measured chiroptical properties and inverse-design outputs for target gabs values.",
+          "file_evidence": "Structured CSV with headers Color, Thick, Strain, Gray, G_GAN, G_Predict, dG. These are directly interpretable model evaluation/inference results and can be plotted immediately.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+        }
+      },
+      {
+        "renamed": "cgan_test_result_PROP_440.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Clean tabular results with physical parameters and model outputs; directly replot-ready.",
+          "paper_evidence": "The paper includes inverse-design solution maps and predicted vs measured comparisons for target gabs values.",
+          "file_evidence": "Large structured CSV with the same explicit columns as above and thousands of rows, suitable for plotting solution distributions and prediction comparisons.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+        }
+      },
+      {
+        "renamed": "final_result_PROP_440.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "This is a cleaned final-result table, clearly figure/source-data style.",
+          "paper_evidence": "The paper presents final inverse-design recommendations for target chiroptical properties.",
+          "file_evidence": "Small structured CSV with headers Color, Thick, Strain, Gray, G_Predict; directly usable as a final recommendation table.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_Predict"
+        }
+      },
+      {
+        "renamed": "cgan_test_result_ABS_467_1.72.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Directly replot-ready model result table.",
+          "paper_evidence": "The paper reports target-specific inverse-design results at selected wavelengths and gabs values.",
+          "file_evidence": "Structured CSV with explicit columns for design variables and GAN/predicted gabs outputs; large enough for analysis and plotting.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+        }
+      },
+      {
+        "renamed": "cgan_test_result_ABS_467_1.78.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Clean tabular source/result data.",
+          "paper_evidence": "Same inverse-design context as other target-specific result files in the paper.",
+          "file_evidence": "Structured CSV with the same explicit columns and many rows; suitable for plotting model performance and solution distributions.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+        }
+      },
+      {
+        "renamed": "cgan_test_result_PROP_467.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Replot-ready cleaned results table.",
+          "paper_evidence": "The paper includes property-targeted inverse-design solution sets.",
+          "file_evidence": "Structured CSV with explicit headers and numeric values for design variables and outputs.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_GAN, G_Predict, dG"
+        }
+      },
+      {
+        "renamed": "final_result_PROP_467.csv",
+        "classification": {
+          "type": "type1",
+          "reasoning": "Clearly cleaned, figure-ready final result data.",
+          "paper_evidence": "The paper reports final recommended parameters for inverse-designed targets.",
+          "file_evidence": "Small structured CSV with final recommended parameters and predicted gabs.",
+          "ambiguity": "none",
+          "key_columns": "Color, Thick, Strain, Gray, G_Predict"
+        }
+      }
+    ],
+    "type2_data": [],
+    "annotations": [
+      "41467_2023_41951_MOESM1_ESM_8.pdf",
+      "41467_2023_41951_MOESM2_ESM_8.pdf",
+      "41467_2023_41951_MOESM3_ESM_8.pdf",
+      "41467_2023_41951_MOESM6_ESM_8.pdf",
+      "model evaluation.txt"
+    ],
+    "scripts": [
+      "Forward_network.py",
+      "forward_predicting_network.py",
+      "new_spectrum.py",
+      "paras.py",
+      "read_write_msgz.py",
+      "spectrum.py",
+      "cgan-all-445+520+634.py",
+      "new_simple_net_Full_3p.py",
+      "spectrum_2.py"
+    ]
+  },
+  "paper_analysis": {
+    "summary": "This paper presents an AI-guided robotic chemistry platform that inverse-designs chiral stacked films with targeted circular dichroism (CD) and circularly polarized luminescence (CPL) across the visible spectrum. The system combines automated film preparation/characterization with machine-learning forward and reverse models, enabling discovery of heterostructured twisted bilayers with very large dissymmetry factors (gabs up to ~1.9) and demonstration in CP-selective color filters and switchable CPL films.",
+    "measurement_types": [
+      "UV–vis absorption spectroscopy",
+      "Linear dichroism (LD) spectroscopy",
+      "Circular dichroism (CD) spectroscopy",
+      "Circularly polarized photoluminescence (CPPL/CPL) spectroscopy",
+      "Transmission electron microscopy (TEM)",
+      "X-ray powder diffraction (XRD)",
+      "Scanning electron microscopy (SEM)",
+      "Optical imaging / color analysis",
+      "Chromaticity (CIE1931) analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Overall workflow of the AI-Chemist: robotic preparation/characterization of twisted bilayer chiral films, machine-learning forward model, and inverse design for targeted chiroptical properties and applications.",
+        "data_type": "schematic / workflow diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Comparison of homo- vs heterostructured bilayer films and how CD peak position, bandwidth, and intensity depend on thickness, strain, dye absorption, and absorbance.",
+        "data_type": "schematic + spectra",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Map of the robotic work area and photographs of the AI-chemist performing material selection, dyeing, stretching, stacking, and chiroptical characterization.",
+        "data_type": "image / workflow photo",
+        "likely_source": "raw image"
+      },
+      {
+        "figure_id": "Fig. 4",
+        "description": "Two-round clustering and prescreening of film parameters using LD and transmittance to reduce the design space.",
+        "data_type": "histogram / clustering plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 5",
+        "description": "Reverse-model inverse design examples, including predicted vs measured CD spectra and parameter sets for target gabs values at selected wavelengths.",
+        "data_type": "spectrum / model prediction plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 6",
+        "description": "Maps of available inverse-design solutions for target gabs values at different wavelengths and dyes, plus wavelength dependence of maximum achievable gabs.",
+        "data_type": "heatmap / parameter-space plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 7",
+        "description": "Inverse-designed CP-selective color filters for multiplex laser display, including predicted vs measured CD spectra, optical images under RCP/LCP, and CIE1931 gamut coverage.",
+        "data_type": "spectrum + optical image + chromaticity plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 8",
+        "description": "Inverse design of chiral films for CPL from perovskite quantum dot emission, including target-function definition, recommended parameters, experimental CPPL, and off-resonance tuning of CPL spectra.",
+        "data_type": "spectrum + schematic + optical image",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements collected by the robotic platform and instruments, including UV–vis spectra for transmittance/absorption, LD spectra, CD spectra, CPPL spectra, TEM images of PQDs, XRD patterns of PQD/PVA films, and SEM confirmation of film thickness uniformity. The robot also performs optical imaging of color-filter outputs under RCP/LCP illumination.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Many figures plot processed or derived quantities: LD and T0 histograms used for clustering, CD/gabs spectra sampled every 5 nm from 200–800 nm, model-predicted vs measured spectra, parameter-space maps of inverse-design solutions, CIE1931 chromaticity regions, and CPPL spectra derived from combining CD response with emission-weighted target functions.",
+    "dataset_characterization": {
+      "data_availability_statement": "The provided text does not include a dedicated data availability statement. It does state that the AI-Chemist fabricated 1493 films for the forward model, and that additional validation experiments were performed for inverse design, but it does not specify repository links, file formats, or whether raw/source data and code are deposited.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data in the paper are experimental instrument outputs: UV–vis spectra, LD spectra, CD spectra, CPPL spectra, TEM micrographs, XRD patterns, SEM images, and optical photographs. The text does not specify file formats, folder structure, or whether raw files are publicly provided.",
+      "processed_data_description": "Processed data include spectral embedded descriptors built from absorption values every 5 nm from 200 to 800 nm plus structural/process parameters (twist angle, thickness, strain, greyscale), clustered LD/T0 statistics for prescreening, and target-function outputs for inverse design. The paper also reports model metrics (MAE, RMSE, R2) and derived gabs/glum spectra.",
+      "figure_data_description": "Figure-specific data are clearly implied: predicted vs measured spectra, histograms, clustering results, parameter maps, chromaticity coordinates, and CPPL outputs. However, the text does not explicitly say that per-figure source data files are deposited, only that the figures are based on experimental and model-generated datasets.",
+      "scripts_description": "The text mentions machine-learning models and training details, but no explicit analysis scripts, notebooks, or code repository are described in the provided excerpt.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides enough methodological detail to understand how plots were generated, but the excerpt does not specify access to raw data tables, source-data files, or scripts. Therefore the data are not confirmed to be directly replot-ready from the paper text alone.",
+      "notes": "The dataset is semantically hybrid: it contains raw experimental spectra/images, processed descriptors for ML, and derived figure data for model validation and inverse-design maps. The core training dataset consists of 1493 experimentally fabricated films with measured CD spectra and associated structure/process parameters. The reverse-design examples are generated by the model and then experimentally verified, but the excerpt does not distinguish any public raw-vs-source-data packaging."
+    }
+  }
+}

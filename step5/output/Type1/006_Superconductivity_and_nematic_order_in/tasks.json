@@ -1,0 +1,128 @@
+{
+  "research_tasks": [
+    {
+      "task_id": "PAPER_06_TASK_01",
+      "task_title": "Replot the X-ray diffraction pattern for the CsTi3Bi5 single crystal",
+      "task_description": "Using the provided Excel file, reproduce the X-ray diffraction figure for a CsTi3Bi5 single crystal. The dataset contains a high-resolution 2θ scan with intensity values and is intended to be plotted as a standard diffraction pattern. Your goal is to generate a publication-style line plot of intensity versus 2θ, preserving the original peak positions and relative intensities as closely as possible. Inspect the file for axis labels, units, and any header rows or metadata that may need to be skipped. If the dataset includes multiple scans or annotations, isolate the main diffraction trace used for the figure. The final output should match the style of a crystallographic XRD plot and be suitable for direct comparison with the paper’s diffraction figure.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the Excel file and inspect the sheet structure, header rows, and column names.",
+        "Step_1: Extract the 2θ and intensity columns, handling any non-data rows or formatting artifacts.",
+        "Step_2: Plot intensity versus 2θ as a continuous line graph with appropriate axis labels and units.",
+        "Step_3: Format the figure to resemble a standard XRD pattern, preserving peak sharpness and relative amplitudes.",
+        "Step_4: Save the replot and verify that the main diffraction features are clearly visible."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig1b.xlsx",
+        "relevant_variables": [
+          "2θ",
+          "Intensity(arb. units)"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A replot of the single-crystal XRD pattern showing intensity as a function of 2θ, with the dominant diffraction peaks reproduced in the correct positions and relative heights.",
+        "expected_figure": "Fig1b"
+      }
+    },
+    {
+      "task_id": "PAPER_06_TASK_02",
+      "task_title": "Replot zero-field-cooled magnetization versus temperature under multiple fields",
+      "task_description": "Using the provided Excel file, reproduce the temperature-dependent magnetization figure measured under several applied magnetic fields. The dataset is arranged as repeated temperature–magnetization column pairs, with each pair corresponding to a different field value. Your task is to parse the sheet carefully, identify each field-labeled trace, and generate a multi-curve plot of magnetization versus temperature. Preserve the field ordering and ensure that each curve is clearly distinguished with a legend or annotations. The resulting figure should show the field-dependent magnetic response across the full temperature range and be formatted as a publication-quality magnetization plot.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the spreadsheet and determine how the repeated temperature/magnetization pairs are arranged.",
+        "Step_1: Identify the field labels associated with each trace and map them to the corresponding columns.",
+        "Step_2: Clean the data by removing blank rows, duplicated headers, or metadata rows if present.",
+        "Step_3: Plot magnetization versus temperature for all field values on the same axes.",
+        "Step_4: Add a legend or annotations indicating the applied field for each curve and format the plot for publication-quality comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2a.xlsx",
+        "relevant_variables": [
+          "Temperature (K)",
+          "M",
+          "applied magnetic field labels"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A multi-curve magnetization-versus-temperature plot showing the field-dependent diamagnetic transition behavior across the measured temperature range.",
+        "expected_figure": "Fig2a"
+      }
+    },
+    {
+      "task_id": "PAPER_06_TASK_03",
+      "task_title": "Replot ultra-low-field magnetization versus temperature",
+      "task_description": "Using the provided Excel file, reproduce the low-field magnetization or susceptibility figure measured at very small applied fields. The sheet contains multiple temperature–magnetization traces, each associated with a distinct ultra-low field value. Your task is to extract the traces, preserve the field ordering, and create a multi-curve plot of magnetization versus temperature. Because the fields are extremely small, pay close attention to the column structure and any embedded labels. The final figure should clearly show how the magnetic response changes across the low-field series and should be formatted to match a standard superconductivity magnetization plot.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Inspect the Excel file to identify the repeated data blocks and the field labels for each trace.",
+        "Step_1: Extract the temperature and magnetization columns for all low-field datasets.",
+        "Step_2: Remove any non-numeric rows, duplicated headers, or spacing artifacts introduced during export.",
+        "Step_3: Plot all magnetization curves versus temperature on a shared set of axes.",
+        "Step_4: Annotate the applied field values clearly and format the plot for direct visual comparison."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2b.xlsx",
+        "relevant_variables": [
+          "T (K)",
+          "M",
+          "applied low-field labels"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A replot of magnetization versus temperature for multiple ultra-low magnetic fields, showing the field-sensitive transition behavior in the low-field regime.",
+        "expected_figure": "Fig2b"
+      }
+    },
+    {
+      "task_id": "PAPER_06_TASK_04",
+      "task_title": "Replot resistance versus temperature under two current biases",
+      "task_description": "Using the provided Excel file, reproduce the resistance-versus-temperature figure measured under two different current biases. The dataset is arranged as side-by-side traces, each corresponding to a separate excitation current. Your task is to extract the temperature and resistance values for both current settings, identify the current labels, and plot the two curves on the same axes. The resulting figure should show the superconducting transition in transport and allow direct comparison of the current dependence. Use a clean publication-style line plot with clear labeling of the current values and temperature axis.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the spreadsheet and inspect how the two current-bias datasets are arranged.",
+        "Step_1: Extract the temperature and resistance columns for each current value.",
+        "Step_2: Clean the table by removing any header duplication or non-data entries.",
+        "Step_3: Plot resistance versus temperature for both current biases on the same graph.",
+        "Step_4: Add a legend identifying the current values and format the axes for a low-temperature transport figure."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2c.xlsx",
+        "relevant_variables": [
+          "Temperature(K)",
+          "R",
+          "current bias values"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A two-curve resistance-versus-temperature plot showing the superconducting transition under 500 μA and 1000 μA current bias conditions.",
+        "expected_figure": "Fig2c"
+      }
+    },
+    {
+      "task_id": "PAPER_06_TASK_05",
+      "task_title": "Inspect and visualize the matrix-style numerical dataset",
+      "task_description": "Using the provided Excel file, reconstruct the matrix-style numerical figure from the dataset. The file contains a tabulated array with one axis spanning approximately from -2.0 to +2.0 in small increments and another axis indexed by integers starting at 0. The values are very small, on the order of 10^-11, and the structure suggests a derived quantity, simulation output, or processed map rather than a direct instrument trace. Your task is to infer the table orientation, reconstruct the two-dimensional grid, and visualize the data in a way that makes the underlying structure interpretable. Depending on the sheet layout, this may require transposing the matrix, assigning axis values, and rendering either a heatmap, image plot, or line-slice visualization. The goal is to produce a faithful and readable replot of the tabulated numerical figure.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the spreadsheet and inspect the row/column structure to determine which axis corresponds to rows and which to columns.",
+        "Step_1: Identify the numeric axis values, including the approximately -2.0 to +2.0 coordinate and the integer-indexed coordinate.",
+        "Step_2: Reconstruct the matrix into a 2D numerical array, transposing if necessary.",
+        "Step_3: Visualize the data using an appropriate representation such as a heatmap, pseudocolor map, or matrix plot.",
+        "Step_4: Label both axes with the reconstructed coordinates and ensure the color scale reflects the very small magnitude of the values."
+      ],
+      "required_inputs": {
+        "dataset_file": "Fig2d.xlsx",
+        "relevant_variables": [
+          "row/column indices",
+          "numeric matrix values",
+          "axis values spanning approximately -2.0 to +2.0"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A reconstructed visualization of the matrix-style dataset, with the underlying grid orientation and small-magnitude values displayed in a readable form.",
+        "expected_figure": "Fig2d"
+      }
+    }
+  ]
+}

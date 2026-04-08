@@ -1,0 +1,38 @@
+# Step 5: Dataset Summary, Task Generation & Reproducibility
+# ============================================================
+
+# Input: Step 4 manifest + Step 3 classification (for paper analysis)
+step4_manifest: "step4/organized/manifest_latest.json"
+step3_results: "step3/output/step3_classification_latest.json"
+
+# Output directory
+output_dir: "step5/output"
+
+# GPT settings
+gpt:
+  enabled: true
+  model: "gpt-5.4-mini"
+  summary_max_tokens: 4000
+  task_gen_max_tokens: 8000
+
+# Dataset summary settings
+summary:
+  # Max files to include in summary prompt
+  max_files: 30
+  # Max rows to preview per file
+  preview_rows: 10
+  # Max columns to show
+  max_columns: 30
+
+# Task generation settings
+task_generation:
+  # Number of tasks to generate per paper
+  min_tasks: 3
+  max_tasks: 5
+  # Focus on type1 data (replot-ready) for task generation
+  focus_type1: true
+
+# HTTP settings (for paper PDF if needed)
+http:
+  timeout: 60
+  user_agent: "UC_LEAP_Step5/1.0 (task-generation)"

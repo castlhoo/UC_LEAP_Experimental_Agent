@@ -1,0 +1,150 @@
+{
+  "title": "Superconductivity and nematic order in a new titanium-based kagome metal CsTi3Bi5 without charge density wave order",
+  "doi": "10.1038/s41467-024-53870-6",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "type1_summary": "Figure-organized source data spreadsheets for diffraction, magnetization, transport, STS/Josephson spectroscopy, and related processed line-scan data, all labeled by figure and replot-ready.",
+  "type2_summary": "Raw STM/scanning probe instrument files in .sxm format, representing unprocessed measurement output that requires specialized analysis before figure reproduction.",
+  "files": {
+    "type1_data": [
+      "Fig1b.xlsx",
+      "Fig2a.xlsx",
+      "Fig2b.xlsx",
+      "Fig2c.xlsx",
+      "Fig2d.xlsx",
+      "Fig2e.xlsx",
+      "Fig2g.xlsx",
+      "Fig2h.xlsx",
+      "Fig2i.xlsx",
+      "Fig2k.xlsx",
+      "Fig3c.xlsx",
+      "Fig3h.xlsx"
+    ],
+    "type2_data": [
+      "Fig2f (2).sxm",
+      "Fig2f.sxm",
+      "Fig2j (2).sxm",
+      "Fig2j.sxm",
+      "Fig4a.sxm",
+      "Fig4e1.sxm",
+      "Fig4e2.sxm"
+    ],
+    "annotations": [],
+    "scripts": []
+  },
+  "paper_analysis": {
+    "summary": "This paper studies the new titanium-based kagome metal CsTi3Bi5, which is isostructural to AV3Sb5 but notably does not show charge density wave order. Using transport, magnetic susceptibility, X-ray diffraction, Laue diffraction, STEM/EDS/EELS, STM/STS, and Josephson STM, the authors show that CsTi3Bi5 is a bulk superconductor with an onset Tc of about 4.8 K and that its superconducting state hosts two distinct gaps. They further find rotational-symmetry breaking to C2 in both the superconducting gaps and the normal-state quasiparticle interference, identifying nematic order without CDW order.",
+    "measurement_types": [
+      "single-crystal X-ray diffraction (XRD)",
+      "Laue diffraction",
+      "HAADF-STEM imaging",
+      "EDS spectrum imaging",
+      "EELS spectrum imaging",
+      "magnetic susceptibility / magnetization",
+      "electrical resistivity transport",
+      "STM topography",
+      "STS dI/dV spectroscopy",
+      "Josephson STM / Josephson spectroscopy",
+      "quasiparticle interference (QPI) mapping",
+      "Fourier-transform STM analysis",
+      "temperature-dependent measurements",
+      "field-dependent measurements"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic crystal structure of CsTi3Bi5, showing the layered hexagonal P6/mmm structure with Ti kagome layers, Bi1 atoms in the kagome hexagon centers, Bi2 honeycomb layers, and Cs spacer layers.",
+        "data_type": "schematic / structural model",
+        "likely_source": "crystallographic model"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Powder/single-crystal XRD pattern of an as-grown CsTi3Bi5 crystal, indexed to (00l) reflections, with an inset photograph of a large hexagonal crystal.",
+        "data_type": "diffraction pattern + optical photograph",
+        "likely_source": "X-ray diffraction measurement and crystal photograph"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Laue diffraction pattern along the [001] direction, demonstrating excellent single-crystal quality and orientation.",
+        "data_type": "diffraction image",
+        "likely_source": "Laue backscattering measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Atomic-resolution HAADF-STEM Z-contrast image viewed along the [210] projection, overlaid with the atomic model of CsTi3Bi5.",
+        "data_type": "real-space atomic-resolution image",
+        "likely_source": "HAADF-STEM"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Zero-field-cooled magnetic susceptibility versus temperature under various magnetic fields for H || c, showing the superconducting diamagnetic transition and its suppression with field.",
+        "data_type": "magnetization/susceptibility curve",
+        "likely_source": "magnetometry"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Magnetic susceptibility under ultra-low magnetic fields, showing the rapid increase of superconducting shielding fraction as the field is reduced and indicating an onset Tc around 4.8 K.",
+        "data_type": "magnetization/susceptibility curve",
+        "likely_source": "ultra-low-field magnetometry"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Temperature-dependent in-plane resistivity showing metallic behavior and a superconducting transition with onset near 4.8 K and zero resistance near 3.6 K.",
+        "data_type": "transport curve",
+        "likely_source": "four-probe resistivity measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Low-temperature STS dI/dV spectrum showing a superconducting gap labeled Δ1 (~0.7 meV) on the sample surface.",
+        "data_type": "tunneling spectroscopy spectrum",
+        "likely_source": "STM/STS"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Josephson tunneling spectra of the Δ1 region measured with a superconducting tip, showing a zero-bias Josephson peak that confirms superconducting phase coherence.",
+        "data_type": "Josephson spectroscopy spectrum",
+        "likely_source": "Josephson STM"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "STM topography of a Bi-terminated surface region where the large-gap superconducting state is observed; the lower panel is a zoom showing the honeycomb Bi surface lattice.",
+        "data_type": "STM topography image",
+        "likely_source": "STM imaging"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Spatial line cut of dI/dV spectra across the large-gap surface region, showing that Δ1 is spatially uniform over the domain.",
+        "data_type": "spectroscopic line scan / spatial map",
+        "likely_source": "STS line spectroscopy"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Low-temperature STS dI/dV spectrum showing a second superconducting gap labeled Δ2 (~0.3 meV).",
+        "data_type": "tunneling spectroscopy spectrum",
+        "likely_source": "STM/STS"
+      },
+      {
+        "figure_id": "Fig2i",
+        "description": "Josephson tunneling spectra of the Δ2 region measured with a superconducting tip, again showing a zero-bias Josephson peak confirming superconductivity.",
+        "data_type": "Josephson spectroscopy spectrum",
+        "likely_source": "Josephson STM"
+      },
+      {
+        "figure_id": "Fig2j",
+        "description": "Spatial line cut of dI/dV spectra across the small-gap surface region, showing that Δ2 is spatially uniform within that domain.",
+        "data_type": "spectroscopic line scan / spatial map",
+        "likely_source": "STS line spectroscopy"
+      },
+      {
+        "figure_id": "Fig2k",
+        "description": "STM topography of a surface region associated with the small-gap superconducting state; the lower panel shows the honeycomb Bi surface lattice.",
+        "data_type": "STM topography image",
+        "likely_source": "STM imaging"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements including XRD and Laue diffraction patterns, HAADF-STEM images, EDS/EELS elemental maps, magnetic susceptibility curves, resistivity vs temperature, STM topography, STS dI/dV spectra, Josephson STM spectra, and QPI/FT-STM data.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper also presents processed or interpreted plots such as indexed diffraction patterns, superconducting transition curves, extracted superconducting gap values, spatial line cuts of gap magnitude, and symmetry analysis of QPI patterns revealing C2 nematicity."
+  }
+}

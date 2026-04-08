@@ -1,0 +1,78 @@
+# Step 3: Dataset Download, Inspection & Type Classification
+# ===========================================================
+
+# Input: Step 2 output
+input_file: "step2/output/step2_inventory_latest.json"
+
+# Output directory
+output_dir: "step3/output"
+
+# Download directory (actual files stored here)
+download_dir: "step3/downloads"
+
+# Which dataset_status values to process (from Step 2)
+include_statuses:
+  - "verified"
+  - "source_data_found"
+
+# GPT settings
+gpt:
+  enabled: true
+  model: "gpt-5.4-mini"
+
+# HTTP settings
+http:
+  timeout: 60
+  user_agent: "UC_LEAP_Step3/1.0 (dataset-inspection)"
+  rate_limit_delay: 1.0
+
+# Download limits
+download:
+  max_file_size_mb: 500        # Skip files larger than this
+  max_files_per_paper: 50      # Max files to download per paper
+  allowed_extensions:           # Only download these types
+    - ".csv"
+    - ".xlsx"
+    - ".xls"
+    - ".txt"
+    - ".dat"
+    - ".tsv"
+    - ".h5"
+    - ".hdf5"
+    - ".nxs"
+    - ".zip"
+    - ".tar.gz"
+    - ".gz"
+    - ".json"
+    - ".xml"
+    - ".npz"
+    - ".npy"
+    - ".mat"
+    - ".spe"
+    - ".pdf"
+    - ".tif"
+    - ".tiff"
+    - ".sxm"
+    - ".ibw"
+    - ".py"
+  skip_extensions:              # Never download these
+    - ".mp4"
+    - ".avi"
+    - ".mov"
+    - ".png"
+    - ".jpg"
+    - ".jpeg"
+    - ".gif"
+    - ".svg"
+
+# File inspection settings
+inspection:
+  csv_preview_rows: 10          # Number of rows to preview for CSV/XLSX
+  max_columns_display: 30       # Max columns to show in report
+  h5_max_datasets: 50           # Max HDF5 datasets to list
+  zip_max_entries: 100          # Max ZIP entries to list
+
+# Final selection
+selection:
+  require_both_types: true      # Only select papers with BOTH Type 1 and Type 2
+  target_count: 30              # Target number of final papers

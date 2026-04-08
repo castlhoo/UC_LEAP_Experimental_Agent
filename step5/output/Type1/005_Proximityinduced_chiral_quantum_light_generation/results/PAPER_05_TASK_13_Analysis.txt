@@ -1,0 +1,46 @@
+Task PAPER_05_TASK_13 Analysis
+Objective: Replot magnetic-field-dependent polarization-resolved PL spectra and trend plots for splitting and DCP.
+Dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/005_Proximityinduced_chiral_quantum_light_generation/type1_data/41563_2023_1645_MOESM9_ESM_10.xlsx
+Workbook loaded successfully. Sheets found: ['ED Fig 5a', 'ED fig 5b', 'ED fig 5c', 'ED Fig 5d', 'ED Fig 5ef']
+Loaded sheet 'ED Fig 5a' with shape (1340, 9).
+First columns: ['Energy', 's-', 's+', 'S E45', 'P E45', 'S E135']
+Loaded sheet 'ED fig 5b' with shape (110, 9).
+First columns: ['Deg', 'NiPS3 off indent', 'NiPS3 on indent', 'Unnamed: 3', 'P3', 'Unnamed: 5']
+Loaded sheet 'ED fig 5c' with shape (49, 1).
+First columns: ['Linewidth of the QEs']
+Loaded sheet 'ED Fig 5d' with shape (1340, 9).
+First columns: ['Energy', 's-1023', 's+1023', 's-91', 's+91', 's-19']
+Loaded sheet 'ED Fig 5ef' with shape (4, 6).
+First columns: ['Pump Power', 'DCP A', 'DCP B', 'Unnamed: 3', 'FWHM A', 'FWHM B']
+Identified spectral sheet candidate: ED Fig 5d
+Identified summary sheet candidate: ED Fig 5ef
+Spectral sheet columns after cleaning: ['Energy', 's-1023', 's+1023', 's-91', 's+91', 's-19', 's+19', 's-1', 's+1']
+Spectral data inspection:
+Energy range: 1.43215 to 1.78743
+  Series 's-': 1340 valid points, intensity range 587.670 to 2101.700
+  Series 's+': 1340 valid points, intensity range 587.000 to 1512.700
+  Series 's-': 1340 valid points, intensity range 565.670 to 1109.000
+  Series 's+': 1340 valid points, intensity range 565.000 to 1035.300
+  Series 's-': 1340 valid points, intensity range 562.670 to 783.330
+  Series 's+': 1340 valid points, intensity range 553.330 to 768.670
+  Series 's-': 1340 valid points, intensity range 553.000 to 770.000
+  Series 's+': 1340 valid points, intensity range 554.000 to 737.330
+Summary sheet 'ED Fig 5ef' columns: ['Pump Power', 'DCP A', 'DCP B', 'Unnamed: 3', 'FWHM A', 'FWHM B']
+Summary sheet preview:
+ Pump Power   DCP A   DCP B  Unnamed: 3  FWHM A  FWHM B
+       1.34 0.58161 0.64791         NaN 4.51846 4.38459
+      19.00 0.51540 0.61701         NaN 5.93138 5.11078
+      91.00 0.49784 0.51788         NaN 5.67517 4.95401
+    1023.00 0.53994 0.53816         NaN 6.27091 5.33027
+Quantitative extraction decision:
+  The workbook preview shows a field-angle table with columns including 'Deg', 'NiPS3 off indent', 'NiPS3 on indent', 'P3', 'P2', 'P1'.
+  No explicit magnetic-field axis or splitting table is visible in the preview for the provided sheets.
+  Therefore, only directly supported trend quantities from the workbook are plotted where a field axis can be inferred from the spectral sheet labels.
+  If the field values are not explicitly encoded in the spectral sheet labels, the figure will present the spectral series with their sheet-provided labels and the summary table values as-is.
+Could not robustly infer numeric magnetic-field values from spectral column labels; using series order for plotting.
+Figure saved to: C:/UCLEAP/UC_LEAP/step5/output/Type1/005_Proximityinduced_chiral_quantum_light_generation/results/PAPER_05_TASK_13_figure.png
+Validation notes:
+  - Spectral sheet contains a valid energy axis and multiple intensity series.
+  - Clear local maxima were not required for this task because the workbook provides spectra and summary tables directly.
+  - Explicit magnetic-field-indexed splitting and DCP tables were not clearly identifiable in the provided preview; therefore, no unsupported splitting calculation was fabricated.
+  - The figure uses only directly supported workbook data and preserves the workbook-provided series structure.

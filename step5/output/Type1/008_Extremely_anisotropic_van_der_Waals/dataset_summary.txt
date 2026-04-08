@@ -1,0 +1,92 @@
+1. Dataset Overview
+- Format: Excel spreadsheets (.xlsx), replot-ready extracted data tables
+- Number of runs / experiments: Multiple figures across 4 files, with several sub-datasets per figure
+- Approximate data volume:
+  - 4 Excel files total
+  - ~3,253 rows across all sheets combined (dominated by spectral/curve data)
+- Time range: Not explicitly provided in the dataset
+
+2. Instrumentation Setup
+- TDTR (time-domain thermoreflectance)
+  - Used to measure thermal transport via pump-probe reflectance dynamics
+- Raman spectroscopy / Raman thermometry
+  - Used to track temperature-dependent Raman peak shifts under laser heating
+- Molecular dynamics (MD) simulations
+  - Used to compute in-plane and out-of-plane thermal conductivity and compare with experiment
+- Electrical transport / device characterization setup
+  - Used for current-voltage and critical current measurements in the device context
+- Likely microfabricated heater/electrode structures
+  - Used for local thermal/electrical measurements on bare vs r-MoS2-covered devices
+
+3. Information of each run / experiment
+
+a. Measured Parameters
+- Fig. 2a: TDTR time trace
+  - Independent variable: Time delay (ps)
+  - Dependent variable: `-V_in/V_out`
+  - Multiple datasets labeled by layer number `N = 1, 2, 10`
+  - Includes both experimental traces and model fitting curves
+- Fig. 2b: TDTR-derived thermal boundary resistance vs layer number
+  - Independent variable: `N`
+  - Dependent variable: `R_TDTR (m2 K /GW)` and fitting results for `N > 1`
+  - Separate series for `r-MoS2` and `r-WS2`
+- Fig. 2c: Thermal conductivity vs temperature
+  - Independent variable: `T (K)`
+  - Dependent variables:
+    - `k_in-plane (W/m/K)`
+    - `k_out-of-plane (W/m/K)`
+  - Contains MD simulation results for `MoS2` and `r-MoS2`
+  - Also includes experimental `r-MoS2` out-of-plane values
+- Fig. 3a: Raman spectra under different absorbed powers
+  - Independent variable: Raman shift `ω (cm^-1)`
+  - Dependent variable: Raman intensity (arbitrary units)
+  - Series labeled by absorbed power `P_abs = 4.5, 13, 22, 37 uW`
+- Fig. 3b: Raman peak shift vs absorbed power and conductance vs thickness/size
+  - Main panels:
+    - Independent variable: `P_abs {expt} (uW)` / `P_abs {fit} (uW)`
+    - Dependent variable: `Δω {expt} (cm^-1)` / `Δω {fit} (cm^-1)`
+    - Series for `N = 2, 3, 4, 5`
+  - Insets:
+    - Independent variable: `N`
+    - Dependent variable: `Conductance (uW/K)` with uncertainties and linear fits
+    - Separate insets for `D = 1 um r-MoS2` and `D = 400 nm r-MoS2`
+- Fig. 4: Thermal/electrical device response
+  - Fig. 4c:
+    - Independent variable: `x (nm)`
+    - Dependent variable: `ΔT_Au surface (K)` for `{Bare electrode}` and `{with r-MoS2}`
+    - Also `ΔT_MoS2 surface (K) {with r-MoS2}`
+  - Fig. 4d:
+    - Independent variable: `V (V)`
+    - Dependent variable: `I (mA)` for `{Bare electrode}` and `{With r-MoS2}`
+  - Fig. 4e:
+    - Reported critical current `Ic (mA)` for bare electrode and with r-MoS2
+    - Appears as summary values rather than a full curve
+
+b. Experimental Context (Inference)
+- Likely a thermal transport study of van der Waals materials with strong anisotropy
+- Main phenomena inferred:
+  - Through-plane thermal resistance / thermal boundary resistance
+  - In-plane vs out-of-plane thermal conductivity anisotropy
+  - Laser-heating-induced Raman peak shifts for thermometry
+  - Device-level heat spreading and thermal insulation behavior
+  - Electrical robustness / current-carrying behavior in the presence of r-MoS2
+- Reasoning:
+  - TDTR traces and `R_TDTR` strongly indicate thermal boundary/transport measurements
+  - MD simulation columns for `k_in-plane` and `k_out-of-plane` indicate atomistic thermal conductivity modeling
+  - Raman spectra vs absorbed power and peak shift fits are characteristic of Raman thermometry
+  - Temperature maps and I-V curves suggest device thermal management and electrical characterization
+
+c. Notes for Analysis
+- The dataset is organized by figure panels rather than by run IDs or experimental metadata
+- Many sheets contain paired experimental and fitted/model columns, which is useful for validation but requires careful column grouping
+- Some sheets mix multiple subplots/insets in one table, especially Fig. 3b and Fig. 4
+- Potential ambiguities:
+  - `N` likely denotes layer number, but this is not explicitly defined in the tables
+  - `r-MoS2` and `r-WS2` are inferred material labels; the exact meaning of `r` is not stated in the tables themselves
+  - Units are embedded in headers and should be parsed carefully
+- Suggested analysis approaches:
+  - TDTR: fit time-domain traces to extract thermal parameters and compare across `N`
+  - Thermal anisotropy: compare in-plane vs out-of-plane conductivity trends vs temperature
+  - Raman thermometry: fit peak shift vs absorbed power to estimate local thermal conductance
+  - Device thermal maps: compare bare vs r-MoS2-covered structures for heat spreading effects
+  - Electrical curves: compare I-V behavior and critical current changes between conditions

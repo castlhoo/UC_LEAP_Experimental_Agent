@@ -1,0 +1,247 @@
+{
+  "research_tasks": [
+    {
+      "task_id": "PAPER_07_TASK_01",
+      "task_title": "Replot the multi-panel spectral workbook from the figure-supplement Excel file",
+      "task_description": "Using the Excel workbook, reproduce the figure panels encoded in the sheet names by extracting each sheet’s tabular data and recreating the corresponding wavelength-resolved plots. The workbook appears to contain multiple replot-ready datasets for several figure panels, including spectra such as gabs and normalized CD versus wavelength. Your job is to inspect the workbook sheet structure, identify the plotted variables in each sheet, and generate publication-style line plots that match the original figure panels as closely as possible. Preserve the figure-panel organization implied by the sheet names, use wavelength on the x-axis, and plot all available traces in each sheet with clear legends if sample labels are present.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Open the Excel workbook and list all sheet names, noting which sheets correspond to figure panels.",
+        "Step_1: For each sheet, inspect the header row(s) and determine the x-axis variable, y-axis variable(s), and any sample identifiers or conditions.",
+        "Step_2: Clean the data by removing empty rows/columns, converting numeric strings to numbers, and aligning all traces to wavelength if needed.",
+        "Step_3: Recreate each sheet as a publication-style plot using the appropriate axis labels, line colors, and legends; if a sheet contains multiple traces, overlay them in one panel.",
+        "Step_4: Save the plots in a figure-by-figure layout that mirrors the workbook organization and annotate each panel with the sheet name or figure label.",
+        "Step_5: Compare the recreated plots against the expected figure-panel structure and adjust formatting for readability and consistency."
+      ],
+      "required_inputs": {
+        "dataset_file": "41467_2023_41951_MOESM7_ESM_8.xlsx",
+        "relevant_variables": [
+          "Wavelength(nm)",
+          "gabs",
+          "Normalized CD",
+          "sample-specific trace columns",
+          "figure-panel sheet names"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A set of re-created spectral plots from the Excel workbook, organized by sheet/figure panel, showing wavelength-dependent chiroptical responses with the original multi-trace structure preserved.",
+        "expected_figure": "Fig. 2 (multiple panels from the workbook, especially Fig2a/Fig2b-style spectra)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_02",
+      "task_title": "Plot the dissymmetry-factor summary from the gabs output table",
+      "task_description": "Using the CSV table of gabs outputs, recreate the summary plot that reports the wavelength-dependent or sample-wise dissymmetry-factor results. Inspect the table structure, identify the target variable(s), and generate a clean visualization that shows how gabs varies across the listed entries. If the file contains multiple candidate rows or conditions, plot them in a way that makes the distribution or ranking of gabs values easy to compare. The goal is to reproduce the figure-style summary associated with the gabs output file, not to perform model training.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect its columns, row count, and any metadata fields.",
+        "Step_1: Identify the main response variable(s), especially gabs, and any associated wavelength or sample-condition columns.",
+        "Step_2: Clean the table by handling missing values, converting numeric fields, and standardizing labels.",
+        "Step_3: Create a plot that summarizes the gabs results, such as a line plot versus wavelength, a bar chart of candidate values, or a scatter plot if multiple conditions are present.",
+        "Step_4: Add axis labels, units, and a legend or annotations so the plot is publication-ready.",
+        "Step_5: Verify that the visualization faithfully represents the CSV contents and is suitable for direct comparison with the paper’s corresponding result panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "20_gabs_outfile.csv",
+        "relevant_variables": [
+          "gabs",
+          "Wavelength(nm)",
+          "sample identifier or condition columns if present"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style summary plot of gabs results from the CSV file, suitable for direct comparison with the paper’s gabs-related figure panel.",
+        "expected_figure": "Fig. 5 or Fig. 6-style gabs summary panel"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_03",
+      "task_title": "Replot the inverse-design result for target absorption at 440 nm",
+      "task_description": "Using the cGAN test-result CSV for target ABS at 440 nm, recreate the model-evaluation figure that compares generated or predicted outputs against the target property. Inspect the file to identify the columns corresponding to generated values, predicted values, and any error term, then produce a comparison plot that makes the model performance visually clear. If the file contains multiple candidate solutions, show them in a way that highlights agreement between the cGAN output and the target absorption condition at 440 nm.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the schema to identify output, prediction, and error columns.",
+        "Step_1: Determine whether the table is organized by candidate design, wavelength, or property target, and isolate the 440 nm target entries.",
+        "Step_2: Clean and standardize the numeric columns, ensuring the generated and predicted values are directly comparable.",
+        "Step_3: Create the appropriate replot: a parity-style comparison, a line plot, or a candidate ranking plot depending on the table structure.",
+        "Step_4: Annotate the figure with the 440 nm target condition and include any reported error metric such as dG if present.",
+        "Step_5: Export the plot in a publication-ready format matching the style of the paper’s inverse-design result panels."
+      ],
+      "required_inputs": {
+        "dataset_file": "cgan_test_result_ABS_440.csv",
+        "relevant_variables": [
+          "G_GAN",
+          "G_Predict",
+          "dG",
+          "target wavelength or ABS-related columns"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A comparison plot showing the cGAN-generated absorption-related results at 440 nm versus the model prediction, including any error term if available.",
+        "expected_figure": "Fig. 5 (inverse-design result panel for 440 nm absorption target)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_04",
+      "task_title": "Replot the inverse-design result for target property at 440 nm",
+      "task_description": "Using the cGAN test-result CSV for PROP at 440 nm, recreate the corresponding model-evaluation figure. The task is to inspect the table, identify the property target and the model outputs, and generate a clear visualization of generated versus predicted performance at the 440 nm condition. The plot should emphasize how well the inverse-design model matches the target property and should be formatted as a publication-quality comparison figure.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the column names and data types.",
+        "Step_1: Identify the property-related target columns and the generated/predicted outputs for the 440 nm case.",
+        "Step_2: Clean the data and isolate the rows relevant to the 440 nm target condition.",
+        "Step_3: Produce a comparison plot that shows the relationship between generated and predicted property values, or the distribution of candidate solutions if that is how the file is structured.",
+        "Step_4: Add labels, units, and a title indicating the 440 nm property-target condition.",
+        "Step_5: Check that the figure is directly usable as a replot of the paper’s property-target inverse-design panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "cgan_test_result_PROP_440.csv",
+        "relevant_variables": [
+          "G_GAN",
+          "G_Predict",
+          "dG",
+          "property target columns"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style plot comparing cGAN-generated and predicted property values for the 440 nm target case.",
+        "expected_figure": "Fig. 5 (inverse-design result panel for 440 nm property target)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_05",
+      "task_title": "Replot the final inverse-design results for the 440 nm target",
+      "task_description": "Using the final_result_PROP_440 CSV, recreate the final screening or validation figure for the 440 nm property target. This file likely contains the selected best candidates after model screening, so the task is to visualize the final recommended design(s) and their associated performance values. Inspect the table structure, identify the key columns, and generate a concise figure that communicates the final result set clearly.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the available columns and row count.",
+        "Step_1: Identify which columns represent the final selected design parameters and which represent the achieved or predicted property values.",
+        "Step_2: Clean the data and isolate the 440 nm target entries.",
+        "Step_3: Create a final-result visualization such as a ranked bar chart, scatter plot, or table-annotated plot depending on the file structure.",
+        "Step_4: Highlight the best-performing candidate(s) and include the 440 nm target in the title or annotation.",
+        "Step_5: Format the output as a publication-ready figure suitable for direct comparison with the paper’s final-design panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "final_result_PROP_440.csv",
+        "relevant_variables": [
+          "design parameter columns",
+          "G_GAN or final property value columns",
+          "G_Predict if present",
+          "dG if present"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A final-design result plot showing the selected 440 nm property-target candidates and their achieved values.",
+        "expected_figure": "Fig. 5 or Fig. 6 final validation panel for 440 nm"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_06",
+      "task_title": "Replot the absorption-target inverse-design results at 467 nm for the first candidate set",
+      "task_description": "Using the cGAN test-result CSV for ABS at 467 nm, recreate the inverse-design evaluation figure for the first 467 nm absorption-target case. The file should be inspected for generated values, predicted values, and any error metric, then plotted in a way that shows how the model performs at the 467 nm target. If the table contains multiple candidate designs, visualize them as a comparison against the target condition.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the schema, focusing on the 467 nm absorption-target entries.",
+        "Step_1: Identify the columns corresponding to generated output, predicted output, and error or deviation.",
+        "Step_2: Clean the data and standardize numeric values and labels.",
+        "Step_3: Create a comparison plot that makes the agreement between generated and predicted absorption-related values visually obvious.",
+        "Step_4: Annotate the figure with the 467 nm target and any relevant performance metric.",
+        "Step_5: Export the plot in a style consistent with the paper’s inverse-design result panels."
+      ],
+      "required_inputs": {
+        "dataset_file": "cgan_test_result_ABS_467_1.72.csv",
+        "relevant_variables": [
+          "G_GAN",
+          "G_Predict",
+          "dG",
+          "target wavelength or ABS-related columns"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style comparison plot for the 467 nm absorption-target case, showing generated versus predicted values and any error term.",
+        "expected_figure": "Fig. 6 (467 nm absorption-target result panel, first set)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_07",
+      "task_title": "Replot the absorption-target inverse-design results at 467 nm for the second candidate set",
+      "task_description": "Using the cGAN test-result CSV for ABS at 467 nm with the alternate parameter set, recreate the corresponding inverse-design evaluation figure. This task is similar to the first 467 nm absorption-target file but should be plotted separately because it represents a distinct candidate set or target value. Inspect the file, identify the relevant output and prediction columns, and generate a clean comparison plot that highlights the model’s performance for this 467 nm case.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect its columns, row count, and any target annotations.",
+        "Step_1: Identify the generated and predicted absorption-related outputs and any error metric.",
+        "Step_2: Clean the data and isolate the 467 nm target entries for this specific candidate set.",
+        "Step_3: Create a publication-style comparison plot showing generated versus predicted values or candidate ranking.",
+        "Step_4: Label the plot clearly to distinguish it from the other 467 nm ABS file and include the target value in the annotation.",
+        "Step_5: Save the figure in a format suitable for direct comparison with the paper’s second 467 nm absorption-target panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "cgan_test_result_ABS_467_1.78.csv",
+        "relevant_variables": [
+          "G_GAN",
+          "G_Predict",
+          "dG",
+          "target wavelength or ABS-related columns"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style comparison plot for the alternate 467 nm absorption-target case, showing the model’s generated and predicted values.",
+        "expected_figure": "Fig. 6 (467 nm absorption-target result panel, second set)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_08",
+      "task_title": "Replot the property-target inverse-design results at 467 nm",
+      "task_description": "Using the cGAN test-result CSV for PROP at 467 nm, recreate the model-evaluation figure that compares generated and predicted property values for the 467 nm target condition. Inspect the file structure, identify the relevant columns, and produce a clean comparison plot that communicates the inverse-design performance. If the file contains multiple candidate solutions, show them in a way that makes the target matching and any deviations easy to interpret.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the schema to identify property-target columns and model outputs.",
+        "Step_1: Determine how the 467 nm target is encoded and isolate the relevant rows.",
+        "Step_2: Clean the data and standardize the numeric fields for plotting.",
+        "Step_3: Create a comparison plot such as generated-vs-predicted scatter, line comparison, or ranked candidate plot depending on the file layout.",
+        "Step_4: Add labels, units, and a title indicating the 467 nm property-target case.",
+        "Step_5: Ensure the output is publication-ready and aligned with the paper’s inverse-design result style."
+      ],
+      "required_inputs": {
+        "dataset_file": "cgan_test_result_PROP_467.csv",
+        "relevant_variables": [
+          "G_GAN",
+          "G_Predict",
+          "dG",
+          "property target columns"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A publication-style plot comparing cGAN-generated and predicted property values for the 467 nm target case.",
+        "expected_figure": "Fig. 6 (467 nm property-target result panel)"
+      }
+    },
+    {
+      "task_id": "PAPER_07_TASK_09",
+      "task_title": "Replot the final screened inverse-design results for the 467 nm target",
+      "task_description": "Using the final_result_PROP_467 CSV, recreate the final validation or screening figure for the 467 nm property-target case. This file likely contains the best candidate designs selected after model screening, so the task is to visualize the final recommended parameter sets and their resulting property values. Inspect the table, identify the key columns, and produce a concise publication-quality figure that summarizes the final 467 nm design outcome.",
+      "task_type": "Data Processing & Visualization",
+      "execution_steps": [
+        "Step_0: Load the CSV and inspect the available columns, row count, and any target annotations.",
+        "Step_1: Identify the final design parameters and the corresponding achieved or predicted property values.",
+        "Step_2: Clean the data and isolate the 467 nm target entries.",
+        "Step_3: Create a final-result visualization such as a ranked bar chart, scatter plot, or annotated summary table depending on the file structure.",
+        "Step_4: Highlight the best-performing candidate(s) and clearly label the 467 nm target condition.",
+        "Step_5: Format the figure for direct comparison with the paper’s final inverse-design validation panel."
+      ],
+      "required_inputs": {
+        "dataset_file": "final_result_PROP_467.csv",
+        "relevant_variables": [
+          "design parameter columns",
+          "G_GAN or final property value columns",
+          "G_Predict if present",
+          "dG if present"
+        ]
+      },
+      "ground_truth_outcome": {
+        "description": "A final-screening plot showing the selected 467 nm property-target candidates and their achieved values.",
+        "expected_figure": "Fig. 6 final validation panel for 467 nm"
+      }
+    }
+  ]
+}

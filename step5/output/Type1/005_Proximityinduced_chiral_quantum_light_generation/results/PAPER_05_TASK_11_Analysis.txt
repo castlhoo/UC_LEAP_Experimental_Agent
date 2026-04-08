@@ -1,0 +1,26 @@
+Task PAPER_05_TASK_11: Replot the time-resolved PL decay curve and fit
+Dataset file: C:/UCLEAP/UC_LEAP/step4/organized/Type1/005_Proximityinduced_chiral_quantum_light_generation/type1_data/41563_2023_1645_MOESM7_ESM_10.xlsx
+Step 0: Inspect workbook structure to locate the decay-curve sheet.
+Workbook sheets found: ['ED Fig 3a', 'ED Fig 3bT', 'ED Fig 3bM', 'ED Fig 3bB', 'ED Fig 3c']
+Sheet 'ED Fig 3a': 1341 rows x 5 cols; first row = ['Energy', 'S+-', 'S++', 'S--', 'S-+']
+Sheet 'ED Fig 3bT': 1341 rows x 5 cols; first row = ['Energy', 's+-', 's++', 's--', 's-+']
+Sheet 'ED Fig 3bM': 1341 rows x 5 cols; first row = ['Energy', 's+-', 's++', 's--', 's-+']
+Sheet 'ED Fig 3bB': 1341 rows x 5 cols; first row = ['Energy', 's+-', 's++', 's--', 's-+']
+Sheet 'ED Fig 3c': 2017 rows x 7 cols; first row = ['energy', 's-L0', 's+L0', 's-L30', 's+L30', 's-L60', 's+L60']
+Identified candidate decay sheet: 'ED Fig 3a'
+Reason: Selected by monotonic numeric first column and multiple numeric columns.
+Loaded sheet 'ED Fig 3a' with shape (1341, 5)
+Using row 0 as header row based on keyword inspection.
+Parsed dataframe columns: ['Energy', 'S+-', 'S++', 'S--', 'S-+']
+Selected x column: Energy
+Selected y column: S+-
+Selected fit column: S++
+Valid measured points after cleaning: 1340
+Positive fraction of measured counts: 0.906
+Semilog scale selected: True
+A fit-like column was found and will be overlaid as provided data.
+Provided fit curve did not yield a stable exponential lifetime estimate.
+Saved figure to C:/UCLEAP/UC_LEAP/step5/output/Type1/005_Proximityinduced_chiral_quantum_light_generation/results/PAPER_05_TASK_11_figure.png
+Fit source used: provided fit column
+No defensible lifetime could be extracted from the available data/fit information.
+Limitation: the workbook did not provide a clearly labeled fit parameter or a stable exponential decay suitable for robust lifetime extraction.

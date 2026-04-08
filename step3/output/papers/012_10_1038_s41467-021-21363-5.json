@@ -1,0 +1,1006 @@
+{
+  "paper_id": "step1_0014",
+  "title": "Direct imaging and electronic structure modulation of moiré superlattices at the 2D/3D interface",
+  "doi": "10.1038/s41467-021-21363-5",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://doi.org/10.1038/s41467-021-21363-5",
+  "priority_score": 7.4,
+  "dataset_status": "verified",
+  "files_downloaded": 4,
+  "files_extracted": 46,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-21363-5",
+  "files_inspected": 50,
+  "file_types_found": [
+    "binary",
+    "json",
+    "pdf",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear Type 1 cleaned, replot-ready scientific data files were identified in the inspected subset. The archive contents are dominated by software/app metadata and resources.",
+  "type2_summary": "No clear Type 2 raw scientific measurement files were identified in the inspected subset. The only scientific-looking items are supplementary PDFs, which are documentation rather than raw instrument data.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The inspected files appear to be a 4DSTEM Explorer application bundle plus supplementary PDFs, not the actual raw or cleaned dataset tables/images from the paper. The paper itself clearly contains raw 4D STEM and microscopy data, but those specific files were not present in the inspected subset. Because only the first 20 of 50 files were shown and no machine-readable scientific data files were visible, classification is conservative.",
+  "file_classifications": [
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "The paper discusses 4D STEM Explorer source materials and source-data-style outputs, but does not specifically identify this JSON as a figure dataset.",
+      "file_evidence": "JSON metadata file inside the 4DSTEM Explorer app archive; structure is an object with keys like images/info, indicating configuration or manifest data rather than measurement values.",
+      "reasoning": "This is app/package metadata, not a plot-ready dataset and not an instrument output. It supports the software used to inspect 4D STEM data rather than representing data itself.",
+      "ambiguity": "Low ambiguity; clearly non-data metadata.",
+      "key_columns_or_structure": "JSON object with keys such as images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct paper evidence that this specific JSON is a figure/source-data file.",
+      "file_evidence": "Very small JSON metadata file with only an info key; consistent with asset catalog metadata in an app bundle.",
+      "reasoning": "This is documentation/metadata for the software package, not scientific data.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with key: info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "The paper includes 4D STEM-derived reconstructions, but this file is not identified as source data in the publication.",
+      "file_evidence": "JSON metadata file with images and info keys; likely a manifest for app resources.",
+      "reasoning": "Metadata only; not directly plottable scientific data.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct evidence linking this file to a figure dataset.",
+      "file_evidence": "JSON metadata file with images and info keys; app resource description.",
+      "reasoning": "This is package documentation/metadata, not raw or cleaned data.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct paper evidence for this file.",
+      "file_evidence": "JSON metadata file with images and info keys; likely asset catalog metadata.",
+      "reasoning": "Not a scientific dataset file.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct paper evidence for this file.",
+      "file_evidence": "JSON metadata file with images and info keys; likely asset catalog metadata.",
+      "reasoning": "Not a scientific dataset file.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct paper evidence for this file.",
+      "file_evidence": "JSON metadata file with images and info keys; likely asset catalog metadata.",
+      "reasoning": "Not a scientific dataset file.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "Contents.json",
+      "type": "documentation",
+      "paper_evidence": "No direct paper evidence for this file.",
+      "file_evidence": "JSON metadata file with images and info keys; likely asset catalog metadata.",
+      "reasoning": "Not a scientific dataset file.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "JSON object with keys: images, info"
+    },
+    {
+      "filename": "41467_2021_21363_MOESM1_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature Communications supplementary PDFs are typically source-data or supplementary information; the paper includes processed figures and source data deposits, but this PDF is not itself a raw measurement file.",
+      "file_evidence": "Large PDF (12.1 MB), consistent with supplementary information or source-data compilation rather than raw instrument output.",
+      "reasoning": "PDF is documentation/supplementary material, not directly replot-ready data.",
+      "ambiguity": "Moderate: could contain source data figures, but as a PDF it is not a machine-readable dataset.",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "41467_2021_21363_MOESM2_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF associated with the paper; not identified as raw measurement data.",
+      "file_evidence": "Small PDF document, likely supplementary note/figure.",
+      "reasoning": "Documentation rather than dataset.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "41467_2021_21363_MOESM3_ESM_8.pdf",
+      "type": "documentation",
+      "paper_evidence": "Supplementary PDF associated with the paper; not identified as raw measurement data.",
+      "file_evidence": "Small PDF document, likely supplementary note/figure.",
+      "reasoning": "Documentation rather than dataset.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PDF document"
+    },
+    {
+      "filename": "subangstrom_4DSTEMExplorer-0.8_10.zip",
+      "type": "other",
+      "paper_evidence": "The paper uses 4D STEM/CBED data and virtual ADF reconstructions, but this archive is a software package rather than a dataset deposit.",
+      "file_evidence": "ZIP archive containing an app/project structure (Swift files, Xcode project, icons, entitlements, workspace metadata), indicating software source code/resources.",
+      "reasoning": "This is not a data file; it is an application archive used to explore 4D STEM data.",
+      "ambiguity": "Low ambiguity.",
+      "key_columns_or_structure": "Archive containing project files and app resources"
+    },
+    {
+      "filename": "project.pbxproj",
+      "type": "other",
+      "paper_evidence": "No paper evidence; this is unrelated to scientific measurements.",
+      "file_evidence": "Xcode project configuration file.",
+      "reasoning": "Software project metadata, not data or script for analysis.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Xcode project configuration"
+    },
+    {
+      "filename": "contents.xcworkspacedata",
+      "type": "other",
+      "paper_evidence": "No paper evidence.",
+      "file_evidence": "Xcode workspace metadata file.",
+      "reasoning": "Development environment metadata, not dataset.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Xcode workspace metadata"
+    },
+    {
+      "filename": "4DSTEM Explorer.entitlements",
+      "type": "other",
+      "paper_evidence": "No paper evidence.",
+      "file_evidence": "App entitlements/configuration file.",
+      "reasoning": "Software configuration, not scientific data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Entitlements/configuration plist-like file"
+    },
+    {
+      "filename": "AppDelegate.swift",
+      "type": "script",
+      "paper_evidence": "The paper’s 4D STEM analysis involved software-assisted reconstruction, but this file is application code rather than a dataset.",
+      "file_evidence": "Swift source code file.",
+      "reasoning": "This is executable source code for the app, not data. It may be used to load or visualize 4D STEM data, but it is not itself a dataset.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Swift source code"
+    },
+    {
+      "filename": "4DSTEM Explorer-1024.png",
+      "type": "other",
+      "paper_evidence": "No direct paper evidence linking this icon/resource to a figure dataset.",
+      "file_evidence": "PNG image resource, likely an app icon or UI asset based on naming and archive context.",
+      "reasoning": "This is a software asset, not a scientific measurement or figure data file.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PNG raster image resource"
+    },
+    {
+      "filename": "4DSTEM Explorer-128.png",
+      "type": "other",
+      "paper_evidence": "No direct paper evidence.",
+      "file_evidence": "PNG image resource, likely an app icon or UI asset.",
+      "reasoning": "Software asset, not dataset.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PNG raster image resource"
+    },
+    {
+      "filename": "4DSTEM Explorer-16.png",
+      "type": "other",
+      "paper_evidence": "No direct paper evidence.",
+      "file_evidence": "PNG image resource, likely an app icon or UI asset.",
+      "reasoning": "Software asset, not dataset.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PNG raster image resource"
+    },
+    {
+      "filename": "4DSTEM Explorer-256.png",
+      "type": "other",
+      "paper_evidence": "No direct paper evidence.",
+      "file_evidence": "PNG image resource, likely an app icon or UI asset.",
+      "reasoning": "Software asset, not dataset.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "PNG raster image resource"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies epitaxially grown MoS2/Au{111} and hBN/Au{111} 2D/3D interfaces, showing that conventional TEM can make the moiré appear to have an 18 Å period while the true crystallographic moiré is 32 Å once the 3D stacking of Au is accounted for. By combining HRTEM, iDPC STEM, 4D STEM, geometric convolution analysis, and DFT, the authors directly image the moiré superlattice and show that the interfacial charge density modulation follows the 32 Å periodicity.",
+    "measurement_types": [
+      "Selected-area electron diffraction (SAED)",
+      "High-resolution TEM (HRTEM)",
+      "HAADF STEM",
+      "iDPC STEM",
+      "4D STEM / CBED dataset",
+      "Virtual ADF reconstruction from 4D STEM",
+      "Fast Fourier transform (FFT) of TEM images",
+      "Atomic force microscopy (AFM)",
+      "Multislice STEM image simulation",
+      "Density functional theory (DFT) electronic structure calculation",
+      "Band unfolding / density of states calculation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of epitaxially aligned Au nanoislands grown on suspended MoS2 on a SiNx TEM grid.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Reciprocal-space model and experimental SAED pattern showing Au{111} aligned with MoS2{0001}, including weak 1/3{422} Au spots.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "HRTEM image of an Au nanoisland on MoS2 showing an apparent 18 Å moiré pattern.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "HAADF STEM image of the same interface, showing moiré contrast and coalescence boundaries.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Atomic model of the 32 Å moiré viewed along [100], highlighting inequivalent Au stacking sites.",
+        "data_type": "model/schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Plan-view atomic model of the 32 Å moiré with three inequivalent sites boxed.",
+        "data_type": "model/schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Close-up plan-view atomic models of the three inequivalent moiré sites.",
+        "data_type": "model/schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Radial distribution functions for the three inequivalent 32 Å moiré sites.",
+        "data_type": "derived plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "HAADF STEM image showing the apparent 18 Å and true 32 Å moiré cells.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "iDPC STEM image showing contrast differences that resolve the 32 Å moiré periodicity.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Relative intensity distributions/statistics for inequivalent sites in the HAADF image.",
+        "data_type": "histogram/statistical plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Relative intensity distributions/statistics for inequivalent sites in the iDPC image.",
+        "data_type": "histogram/statistical plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of the geometric convolution construction for generating moiré frequencies from two lattices.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Calculated moiré period versus rotation angle for the four largest MoS2/Au{111} moiré supercells, including strain bounds.",
+        "data_type": "calculated curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "FFT of the HRTEM image showing moiré satellite peaks around the central beam.",
+        "data_type": "diffraction/FFT pattern",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Simulated FFT/diffraction pattern from the geometric convolution model, matching the experimental FFT.",
+        "data_type": "simulated diffraction pattern",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Schematic of 4D STEM acquisition with rastered probe and diffraction pattern recorded at each position.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Averaged CBED pattern from the 4D STEM scan area.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Virtual ADF annulus selecting diffraction spots used to reconstruct the 18 Å moiré image.",
+        "data_type": "analysis mask",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Virtual ADF annulus selecting weaker diffraction spots used to reconstruct the 32 Å moiré image.",
+        "data_type": "analysis mask",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Virtual ADF STEM image revealing the 18 Å moiré periodicity.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "Virtual ADF STEM image revealing the 32 Å moiré periodicity.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "DFT charge-density-difference isosurface for the MoS2/Au{111} commensurate moiré viewed in cross section.",
+        "data_type": "calculated isosurface",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Calculated charge-density difference map showing modulation with the 32 Å moiré periodicity.",
+        "data_type": "calculated 2D map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Unfolded band structure and density of states for MoS2/Au{111}.",
+        "data_type": "band structure / DOS",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include SAED, HRTEM images, HAADF STEM images, iDPC STEM images, and 4D STEM datasets (a CBED pattern at each probe position). The paper also mentions AFM measurements of island thickness. Experimental imaging was performed on TEM/STEM instruments at specified voltages and detector settings.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed outputs include FFTs of HRTEM images, statistical intensity histograms and site partitioning for inequivalent moiré sites, virtual ADF reconstructions from 4D STEM, geometric-convolution-predicted moiré-period curves and simulated diffraction patterns, multislice simulations, and DFT-derived charge-density-difference maps plus unfolded band structures/DOS.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that the main data supporting the findings are available within the article and its Supplementary Information files. Code is available upon request from the authors.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described as microscopy measurements acquired on TEM/STEM instruments: SAED, HRTEM, HAADF STEM, iDPC STEM, and 4D STEM CBED datasets. The paper gives acquisition conditions and some processing steps, but does not state that raw image stacks or raw 4D datasets are deposited as separate files.",
+      "processed_data_description": "Processed data include FFTs of HRTEM images, virtual ADF images reconstructed from 4D STEM, intensity distributions and statistical tests for inequivalent moiré sites, simulated FFTs/diffraction patterns from geometric convolution, multislice simulated STEM images, and DFT-derived charge-density and band-structure results. The paper also mentions that figures and Supplementary Information contain the main supporting data.",
+      "figure_data_description": "Figure-specific data are implied to be present in the article and Supplementary Information, but the paper does not explicitly say that per-figure source-data files are deposited. The statement 'main data supporting the findings ... are available within the article and its Supplementary Information files' suggests figure-level supporting data are embedded in the publication package rather than in a separate repository.",
+      "scripts_description": "A geometric convolution code was implemented in Wolfram Mathematica 12.0, and custom Python-based STEM image simulation software was used. The paper says code is available upon request, but does not provide a public repository or notebook link.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "Some figure-level results are shown in the paper and Supplementary Information, but the paper does not indicate a public repository with raw microscopy datasets or complete source-data tables. Code is only available upon request, so full replotting from deposited files is not clearly supported.",
+      "notes": "The paper clearly distinguishes raw microscopy acquisition from derived analyses: HRTEM images are Fourier transformed to obtain moiré peaks; 4D STEM raw diffraction patterns are post-processed into virtual ADF images; iDPC and HAADF intensities are statistically analyzed after peak detection and watershed segmentation; and DFT outputs are derived from first-principles calculations. The dataset is therefore a mix of experimental raw images/diffraction data and multiple layers of processed/derived outputs, but the public data packaging is limited to article + Supplementary Information, with code only on request."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2021_21363_MOESM1_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 12709491,
+      "size_human": "12.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2021_21363_MOESM2_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 98788,
+      "size_human": "96.5 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41467_2021_21363_MOESM3_ESM_8.pdf",
+      "extension": ".pdf",
+      "size_bytes": 48264,
+      "size_human": "47.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "subangstrom_4DSTEMExplorer-0.8_10.zip",
+      "extension": ".zip",
+      "size_bytes": 703191,
+      "size_human": "686.7 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo"
+    },
+    {
+      "filename": "project.pbxproj",
+      "extension": ".pbxproj",
+      "size_bytes": 20010,
+      "size_human": "19.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pbxproj",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer.xcodeproj/project.pbxproj",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "contents.xcworkspacedata",
+      "extension": ".xcworkspacedata",
+      "size_bytes": 160,
+      "size_human": "160.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .xcworkspacedata",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer.xcodeproj/project.xcworkspace/contents.xcworkspacedata",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer.entitlements",
+      "extension": ".entitlements",
+      "size_bytes": 311,
+      "size_human": "311.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .entitlements",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/4DSTEM Explorer.entitlements",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "AppDelegate.swift",
+      "extension": ".swift",
+      "size_bytes": 1970,
+      "size_human": "1.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/AppDelegate.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-1024.png",
+      "extension": ".png",
+      "size_bytes": 303683,
+      "size_human": "296.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-1024.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-128.png",
+      "extension": ".png",
+      "size_bytes": 15466,
+      "size_human": "15.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-128.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-16.png",
+      "extension": ".png",
+      "size_bytes": 1837,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-16.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-256.png",
+      "extension": ".png",
+      "size_bytes": 35568,
+      "size_human": "34.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-256.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-32.png",
+      "extension": ".png",
+      "size_bytes": 3170,
+      "size_human": "3.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-32.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-512.png",
+      "extension": ".png",
+      "size_bytes": 96752,
+      "size_human": "94.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-512.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "4DSTEM Explorer-64.png",
+      "extension": ".png",
+      "size_bytes": 6755,
+      "size_human": "6.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/4DSTEM Explorer-64.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 1360,
+      "size_human": "1.3 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'size': '16x16', 'idiom': 'mac', 'filename': '4DSTEM Explorer-16.png', 'scale': '1x'}, {'size': '1",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/AppIcon.appiconset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 62,
+      "size_human": "62.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "info"
+      ],
+      "sample": {
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 394,
+      "size_human": "394.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'Magnification.png', 'scale': '1x'}, {'idiom': 'universal', 'fil",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/Cursor.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Magnification-1.png",
+      "extension": ".png",
+      "size_bytes": 15782,
+      "size_human": "15.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/Cursor.imageset/Magnification-1.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Magnification-2.png",
+      "extension": ".png",
+      "size_bytes": 15782,
+      "size_human": "15.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/Cursor.imageset/Magnification-2.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Magnification.png",
+      "extension": ".png",
+      "size_bytes": 15782,
+      "size_human": "15.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/Cursor.imageset/Magnification.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 376,
+      "size_human": "376.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'marquee.png', 'scale': '1x'}, {'idiom': 'universal', 'filename'",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/MarqueeSelection.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "marquee-1.png",
+      "extension": ".png",
+      "size_bytes": 6678,
+      "size_human": "6.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/MarqueeSelection.imageset/marquee-1.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "marquee-2.png",
+      "extension": ".png",
+      "size_bytes": 6678,
+      "size_human": "6.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/MarqueeSelection.imageset/marquee-2.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "marquee.png",
+      "extension": ".png",
+      "size_bytes": 6678,
+      "size_human": "6.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/MarqueeSelection.imageset/marquee.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 370,
+      "size_human": "370.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'point.png', 'scale': '1x'}, {'idiom': 'universal', 'filename': ",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/PointSelection.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "point-1.png",
+      "extension": ".png",
+      "size_bytes": 6223,
+      "size_human": "6.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/PointSelection.imageset/point-1.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "point-2.png",
+      "extension": ".png",
+      "size_bytes": 6223,
+      "size_human": "6.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/PointSelection.imageset/point-2.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "point.png",
+      "extension": ".png",
+      "size_bytes": 6223,
+      "size_human": "6.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/PointSelection.imageset/point.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 375,
+      "size_human": "375.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'zoomin-1.png', 'scale': '1x'}, {'idiom': 'universal', 'filename",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomIn.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "zoomin-1.png",
+      "extension": ".png",
+      "size_bytes": 26713,
+      "size_human": "26.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomIn.imageset/zoomin-1.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "zoomin-2.png",
+      "extension": ".png",
+      "size_bytes": 26713,
+      "size_human": "26.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomIn.imageset/zoomin-2.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "zoomin-3.png",
+      "extension": ".png",
+      "size_bytes": 26713,
+      "size_human": "26.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomIn.imageset/zoomin-3.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 304,
+      "size_human": "304.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'zoomout.png', 'scale': '1x'}, {'idiom': 'universal', 'scale': '",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomOut.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "zoomout.png",
+      "extension": ".png",
+      "size_bytes": 26592,
+      "size_human": "26.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomOut.imageset/zoomout.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Contents.json",
+      "extension": ".json",
+      "size_bytes": 306,
+      "size_human": "306.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "images",
+        "info"
+      ],
+      "sample": {
+        "images": "[{'idiom': 'universal', 'filename': 'zoomtofit.png', 'scale': '1x'}, {'idiom': 'universal', 'scale':",
+        "info": "{'version': 1, 'author': 'xcode'}"
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomToFit.imageset/Contents.json",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "zoomtofit.png",
+      "extension": ".png",
+      "size_bytes": 13045,
+      "size_human": "12.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Assets.xcassets/ZoomToFit.imageset/zoomtofit.png",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Main.storyboard",
+      "extension": ".storyboard",
+      "size_bytes": 61657,
+      "size_human": "60.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .storyboard",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Base.lproj/Main.storyboard",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Functions.swift",
+      "extension": ".swift",
+      "size_bytes": 472,
+      "size_human": "472.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Functions.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 2021,
+      "size_human": "2.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Info.plist",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "DPCKernals.metal",
+      "extension": ".metal",
+      "size_bytes": 951,
+      "size_human": "951.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .metal",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/New Group/DPCKernals.metal",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "ApertureFactory.swift",
+      "extension": ".swift",
+      "size_bytes": 3236,
+      "size_human": "3.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Objects/ApertureFactory.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Complex.swift",
+      "extension": ".swift",
+      "size_bytes": 1700,
+      "size_human": "1.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Objects/Complex.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Constants.swift",
+      "extension": ".swift",
+      "size_bytes": 6775,
+      "size_human": "6.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Objects/Constants.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Detector.swift",
+      "extension": ".swift",
+      "size_bytes": 1912,
+      "size_human": "1.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Objects/Detector.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "Matrix.swift",
+      "extension": ".swift",
+      "size_bytes": 26684,
+      "size_human": "26.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/Objects/Matrix.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "STEMDataController.swift",
+      "extension": ".swift",
+      "size_bytes": 18400,
+      "size_human": "18.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/STEMDataController.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "ImageViewerController.swift",
+      "extension": ".swift",
+      "size_bytes": 1209,
+      "size_human": "1.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/View Controllers/ImageViewerController.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "ProbeSelectViewController.swift",
+      "extension": ".swift",
+      "size_bytes": 7850,
+      "size_human": "7.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/View Controllers/ProbeSelectViewController.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    },
+    {
+      "filename": "ViewController.swift",
+      "extension": ".swift",
+      "size_bytes": 23936,
+      "size_human": "23.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .swift",
+      "download_source": "zip_extracted",
+      "archive_path": "subangstrom-4DSTEMExplorer-8d7fee6/4DSTEM Explorer/View Controllers/ViewController.swift",
+      "from_zip": "subangstrom_4DSTEMExplorer-0.8_10.zip"
+    }
+  ]
+}

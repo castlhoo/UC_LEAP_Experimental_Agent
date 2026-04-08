@@ -1,0 +1,862 @@
+{
+  "paper_id": "step1_0044",
+  "title": "Spin-polarized imaging of the antiferromagnetic structure and field-tunable bound states in kagome magnet FeSn",
+  "doi": "10.1038/s41598-022-18678-8",
+  "journal": "Scientific Reports",
+  "year": 2022,
+  "paper_url": "https://doi.org/10.1038/s41598-022-18678-8",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 5,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41598-022-18678-8",
+  "files_inspected": 6,
+  "file_types_found": [
+    "excel",
+    "archive"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All XLSX files are figure-organized source data with headers and tabular variables suitable for direct replotting; they correspond to processed spectra, line profiles, and fitted summaries from the paper.",
+  "type2_summary": "No standalone raw/unprocessed instrument files were provided. The paper discusses raw STM/STS measurements, but the deposited files here are cleaned figure data rather than raw microscope output.",
+  "type1_files": [
+    "Figure 1(e,f,i).xlsx",
+    "Figure 2(b,c,d,e).xlsx",
+    "Figure 3(b,c,d,e).xlsx",
+    "Figure 4(b,c,d).xlsx",
+    "Figure 5(e,f).xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The dataset deposit is a classic source-data package: figure-specific spreadsheets with labeled physical variables. Despite the paper's raw STM/STS measurements, none of the provided files appear to be raw instrument exports; the ZIP is only a container for Type 1 spreadsheets.",
+  "file_classifications": [
+    {
+      "filename": "Figure 1(e,f,i).xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper describes Fig. 1e, 1f, and 1i as averaged dI/dV spectra and a linecut/line profile derived from STM/STS measurements, i.e. processed figure data rather than raw instrument output.",
+      "file_evidence": "Excel workbook organized by figure panels ('e', 'f', 'i') with clear headers and small tabular datasets: Bias vs dI/dV for e/f, and Distance vs Height for i. This is directly replot-ready.",
+      "reasoning": "The workbook is figure-specific source data with clean columns and modest size, matching Type 1. Although the underlying measurements are raw STM/STS, this file contains the processed data used to generate the plotted panels.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Sheet e: Bias, dI/dV; Sheet f: Bias, dI/dV; Sheet i: Distance, Height"
+    },
+    {
+      "filename": "Figure 2(b,c,d,e).xlsx",
+      "type": "type1",
+      "paper_evidence": "Fig. 2b–e are topographic profile and averaged/waterfall dI/dV spectra across terraces, explicitly described as processed/aggregated representations derived from STM/STS measurements.",
+      "file_evidence": "Workbook is organized by figure panels with headers and tabular numeric data. Sheet c contains many dI/dV columns versus Bias, consistent with a waterfall spectrum plot; sheets d/e contain averaged spectra; sheet b is Distance vs Height.",
+      "reasoning": "This is clean, figure-specific source data that can be plotted with minimal processing. The multi-column spectra sheet is still structured and ready for replotting.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Sheet b: Disntance, Height; Sheet c: Bias, multiple dI/dV columns; Sheet d: Bias, dI/dV, dI/dV.1; Sheet e: energies, dI/dV, dI/dV.1, dI/dV.2"
+    },
+    {
+      "filename": "Figure 3(b,c,d,e).xlsx",
+      "type": "type1",
+      "paper_evidence": "Fig. 3b–e are topographic line profile, averaged spectra, and derived plots of peak height versus layer number and magnetic field, all processed from STM/STS data.",
+      "file_evidence": "Figure-organized workbook with headers and compact numeric tables. Sheets include Distance vs Height, Bias vs multiple dI/dV traces, Layer vs dI/dV, and B vs dI/dV values.",
+      "reasoning": "The file is clearly source data for the plotted figure panels and is directly replot-ready. The derived summary plots do not make it raw; they remain cleaned tabular data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Sheet b: Distance, Height; Sheet c: Bias, multiple dI/dV columns; Sheet d: Layer, dI/dV; Sheet e: B, dI/dV, dI/dV.1"
+    },
+    {
+      "filename": "Figure 4(b,c,d).xlsx",
+      "type": "type1",
+      "paper_evidence": "Fig. 4b–d are topographic profile and averaged dI/dV spectra on inequivalent terminations, which are processed figure data derived from STM/STS measurements.",
+      "file_evidence": "Workbook is figure-specific and tabular, with Distance vs Height and Bias vs dI/dV columns for the spectra. Small size and clear headers indicate replot-ready source data.",
+      "reasoning": "This is cleaned source data for the published plots, not raw microscope output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Sheet b: Distance, Height; Sheet c: Bias, dI/dV, dI/dV.1; Sheet d: Bias, dI/dV, dI/dV.1"
+    },
+    {
+      "filename": "Figure 5(e,f).xlsx",
+      "type": "type1",
+      "paper_evidence": "Fig. 5e is field-dependent dI/dV spectra and Fig. 5f is fitted peak position versus magnetic field, both explicitly processed from STM/STS measurements.",
+      "file_evidence": "Workbook contains a multi-trace spectrum table (Bias with multiple dI/dV columns) and a small summary table with Peak Postion and Error, matching plotted source data.",
+      "reasoning": "The file is organized as figure source data and can be directly plotted with minimal processing. The fitted summary table is derived, but still Type 1 because it is cleaned figure data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Sheet e: Bias, dI/dV through dI/dV.7; Sheet f: Peak Postion, Error"
+    },
+    {
+      "filename": "Hong_Li_et_al_10.zip",
+      "type": "other",
+      "paper_evidence": "The paper mentions raw STM/STS measurements and processed figure/source data, but this archive itself is only a container and not directly described as a specific data type in the paper.",
+      "file_evidence": "ZIP archive containing the figure-specific XLSX source data files. It is a packaging container rather than a dataset table or raw instrument file.",
+      "reasoning": "Because the archive is not itself a data table or raw measurement file, it is best classified as other. Its contents are Type 1 source data files.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Archive containing Figure 1(e,f,i).xlsx, Figure 2(b,c,d,e).xlsx, Figure 3(b,c,d,e).xlsx, Figure 4(b,c,d).xlsx, Figure 5(e,f).xlsx"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the kagome antiferromagnet FeSn using spin-averaged and spin-polarized STM/STS at 4.5 K. The authors directly image the layered antiferromagnetic order at the surface, find that the low-energy electronic structure is largely insensitive to moderate out-of-plane magnetic field, and identify impurity-bound states on specific Fe-site defects that shift with field and carry a large effective moment.",
+    "measurement_types": [
+      "STM topography",
+      "STS dI/dV spectroscopy",
+      "spin-polarized STM/STS",
+      "magnetic-field-dependent STM/STS",
+      "line profiles / linecuts across terraces and impurities",
+      "thin-film STM/STS (mentioned in Supplementary Fig. 1)",
+      "spin-polarized tip calibration on FeTe (mentioned in Supplementary Fig. 2)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "3D schematic of FeSn atomic structure.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "In-plane schematic of the two possible surface terminations: kagome Fe3Sn and hexagonal Sn.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "STM topograph of the Sn surface termination with honeycomb atomic arrangement.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "STM topograph of the Fe3Sn surface termination with kagome atomic arrangement.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Average dI/dV spectrum on the Sn termination showing a peak near -50 meV.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Average dI/dV spectrum on the Fe3Sn termination without the -50 meV peak.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "STM topograph showing Sn islands on top of the Fe3Sn surface.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "3D model of layered antiferromagnetic spin structure in FeSn.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "Linecut across a small Sn island showing apparent step height.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "STM topograph across a step between two Sn terraces.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Schematic of the step geometry and topographic profile.",
+        "data_type": "schematic/line profile",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Waterfall plot of dI/dV spectra along a line across the step, showing uniform spectra on both terraces.",
+        "data_type": "spectrum map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Average dI/dV spectra on the two Sn terraces, nearly identical.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Average dI/dV spectra on the higher terrace under 0 T and ±4 T magnetic field, showing no field dependence.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "STM topograph of a region containing seven unit-cell step heights using a spin-polarized tip.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Topographic line profile across the seven steps with spin labels.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Average dI/dV spectra on even and odd terraces under -8 T, showing alternating spectral weight.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Spectral peak height near -50 meV versus layer number.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Spectral peak height versus magnetic field for two terraces, showing reversal with field.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "3D model of the spin-polarized tip relative to sample spins.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "dI/dV map across the seven steps and corresponding spectrum linecut.",
+        "data_type": "image/spectrum map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "STM topograph showing consecutive Sn-Fe3Sn-Sn-Fe3Sn terraces.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Topographic profile across the terraces in Fig. 4a.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Average dI/dV spectra on inequivalent Sn terminations.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Average dI/dV spectra on inequivalent Fe3Sn terminations.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "STM topograph of the Sn surface containing several impurity types labeled A-E.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Zoom-ins on individual impurities with lattice overlay and site assignment.",
+        "data_type": "image/annotation",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Linecut across impurity A along its symmetry axis.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Topograph of impurity A.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "dI/dV spectra on impurity A under magnetic fields from -6 to 8 T, showing field-tunable bound states.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Fitted peak positions from Fig. 5e versus magnetic field, with linear slope corresponding to an effective moment.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5g",
+        "description": "dI/dV map at 0 mV of impurity A.",
+        "data_type": "image/map",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include STM topographs, dI/dV spectroscopy, dI/dV line profiles, and dI/dV maps acquired on cleaved FeSn single crystals at 4.5 K in UHV, with and without external out-of-plane magnetic field. The paper also mentions thin-film STM measurements in Supplementary Fig. 1 and spin-polarized tip verification on FeTe in Supplementary Fig. 2.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots averaged dI/dV spectra, waterfall spectra along lines, dI/dV maps, line profiles, peak-height versus layer-number plots, peak-height versus magnetic-field plots, and fitted peak-position versus field plots. These are processed/aggregated representations derived from the raw STM/STS measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "The datasets generated and/or analyzed during the current study are available in the Zenodo repository (https://doi.org/10.5281/zenodo.6456564). All other data supporting the findings are available from the corresponding author upon reasonable request.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "The paper states that datasets were generated and/or analyzed, but it does not specify file formats, folder structure, or exact raw-data contents. Based on the experiments, the raw data are STM topographs and spectroscopy maps/curves collected with spin-averaged and spin-polarized tips.",
+      "processed_data_description": "Processed data include averaged spectra, linecuts, waterfall plots, dI/dV maps, extracted peak heights, and fitted peak positions versus magnetic field. The paper does not specify whether these are provided as tables or figure-source files.",
+      "figure_data_description": "The paper does not explicitly state that figure-specific source data are provided, but the Zenodo deposit likely contains datasets used to generate the figures. Whether source-data files are organized per figure is unknown from the text.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned in the paper text.",
+      "data_organization": "unknown",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper explicitly points to a Zenodo repository containing the datasets generated and/or analyzed in the study, which suggests replotting is possible for at least some figures. However, the text does not specify file formats, completeness, or whether raw versus processed figure-source data are included.",
+      "notes": "The paper clearly distinguishes raw STM/STS measurements from derived quantities such as averaged spectra and fitted peak positions, but it does not describe the repository contents in detail. Supplementary data are referenced for thin films and tip calibration, but not described in the main text."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "Hong_Li_et_al_10.zip",
+      "extension": ".zip",
+      "size_bytes": 196697,
+      "size_human": "192.1 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo"
+    },
+    {
+      "filename": "Figure 1(e,f,i).xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 21902,
+      "size_human": "21.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "e",
+        "f",
+        "i"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "e",
+          "columns": [
+            "Bias",
+            "dI/dV"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV"
+          ],
+          "column_count": 2,
+          "row_count": 42,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "f",
+          "columns": [
+            "Bias",
+            "dI/dV"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV"
+          ],
+          "column_count": 2,
+          "row_count": 102,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "i",
+          "columns": [
+            "Distance",
+            "Height"
+          ],
+          "named_columns": [
+            "Distance",
+            "Height"
+          ],
+          "column_count": 2,
+          "row_count": 144,
+          "dtypes": {
+            "Distance": "object",
+            "Height": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 1(e,f,i).xlsx",
+      "from_zip": "Hong_Li_et_al_10.zip"
+    },
+    {
+      "filename": "Figure 2(b,c,d,e).xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 112508,
+      "size_human": "109.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "b",
+          "columns": [
+            "Disntance",
+            "Height"
+          ],
+          "named_columns": [
+            "Disntance",
+            "Height"
+          ],
+          "column_count": 2,
+          "row_count": 131,
+          "dtypes": {
+            "Disntance": "object",
+            "Height": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "c",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5",
+            "dI/dV.6",
+            "dI/dV.7",
+            "dI/dV.8",
+            "dI/dV.9",
+            "dI/dV.10",
+            "dI/dV.11",
+            "dI/dV.12",
+            "dI/dV.13",
+            "dI/dV.14",
+            "dI/dV.15",
+            "dI/dV.16",
+            "dI/dV.17",
+            "dI/dV.18",
+            "dI/dV.19",
+            "dI/dV.20",
+            "dI/dV.21",
+            "dI/dV.22",
+            "dI/dV.23",
+            "dI/dV.24",
+            "dI/dV.25",
+            "dI/dV.26",
+            "dI/dV.27",
+            "dI/dV.28"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5",
+            "dI/dV.6",
+            "dI/dV.7",
+            "dI/dV.8",
+            "dI/dV.9",
+            "dI/dV.10",
+            "dI/dV.11",
+            "dI/dV.12",
+            "dI/dV.13",
+            "dI/dV.14",
+            "dI/dV.15",
+            "dI/dV.16",
+            "dI/dV.17",
+            "dI/dV.18",
+            "dI/dV.19",
+            "dI/dV.20",
+            "dI/dV.21",
+            "dI/dV.22",
+            "dI/dV.23",
+            "dI/dV.24",
+            "dI/dV.25",
+            "dI/dV.26",
+            "dI/dV.27",
+            "dI/dV.28"
+          ],
+          "column_count": 47,
+          "row_count": 203,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object",
+            "dI/dV.2": "object",
+            "dI/dV.3": "object",
+            "dI/dV.4": "object",
+            "dI/dV.5": "object",
+            "dI/dV.6": "object",
+            "dI/dV.7": "object",
+            "dI/dV.8": "object",
+            "dI/dV.9": "object",
+            "dI/dV.10": "object",
+            "dI/dV.11": "object",
+            "dI/dV.12": "object",
+            "dI/dV.13": "object",
+            "dI/dV.14": "object",
+            "dI/dV.15": "object",
+            "dI/dV.16": "object",
+            "dI/dV.17": "object",
+            "dI/dV.18": "object",
+            "dI/dV.19": "object",
+            "dI/dV.20": "object",
+            "dI/dV.21": "object",
+            "dI/dV.22": "object",
+            "dI/dV.23": "object",
+            "dI/dV.24": "object",
+            "dI/dV.25": "object",
+            "dI/dV.26": "object",
+            "dI/dV.27": "object",
+            "dI/dV.28": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "d",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "column_count": 3,
+          "row_count": 203,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "e",
+          "columns": [
+            "energies",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2"
+          ],
+          "named_columns": [
+            "energies",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2"
+          ],
+          "column_count": 4,
+          "row_count": 203,
+          "dtypes": {
+            "energies": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object",
+            "dI/dV.2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2(b,c,d,e).xlsx",
+      "from_zip": "Hong_Li_et_al_10.zip"
+    },
+    {
+      "filename": "Figure 3(b,c,d,e).xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 39430,
+      "size_human": "38.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "b",
+          "columns": [
+            "Distance",
+            "Height"
+          ],
+          "named_columns": [
+            "Distance",
+            "Height"
+          ],
+          "column_count": 2,
+          "row_count": 309,
+          "dtypes": {
+            "Distance": "object",
+            "Height": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "c",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5"
+          ],
+          "column_count": 7,
+          "row_count": 203,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object",
+            "dI/dV.2": "object",
+            "dI/dV.3": "object",
+            "dI/dV.4": "object",
+            "dI/dV.5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "d",
+          "columns": [
+            "Layer",
+            "dI/dV"
+          ],
+          "named_columns": [
+            "Layer",
+            "dI/dV"
+          ],
+          "column_count": 2,
+          "row_count": 7,
+          "dtypes": {
+            "Layer": "object",
+            "dI/dV": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "e",
+          "columns": [
+            "B",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "named_columns": [
+            "B",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "column_count": 3,
+          "row_count": 9,
+          "dtypes": {
+            "B": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3(b,c,d,e).xlsx",
+      "from_zip": "Hong_Li_et_al_10.zip"
+    },
+    {
+      "filename": "Figure 4(b,c,d).xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 24637,
+      "size_human": "24.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "b",
+        "c",
+        "d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "b",
+          "columns": [
+            "Distance",
+            "Height"
+          ],
+          "named_columns": [
+            "Distance",
+            "Height"
+          ],
+          "column_count": 2,
+          "row_count": 131,
+          "dtypes": {
+            "Distance": "object",
+            "Height": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "c",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "column_count": 3,
+          "row_count": 83,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "d",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1"
+          ],
+          "column_count": 3,
+          "row_count": 83,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 4(b,c,d).xlsx",
+      "from_zip": "Hong_Li_et_al_10.zip"
+    },
+    {
+      "filename": "Figure 5(e,f).xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 21692,
+      "size_human": "21.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "e",
+        "f"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "e",
+          "columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5",
+            "dI/dV.6",
+            "dI/dV.7"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV",
+            "dI/dV.1",
+            "dI/dV.2",
+            "dI/dV.3",
+            "dI/dV.4",
+            "dI/dV.5",
+            "dI/dV.6",
+            "dI/dV.7"
+          ],
+          "column_count": 9,
+          "row_count": 62,
+          "dtypes": {
+            "Bias": "object",
+            "dI/dV": "object",
+            "dI/dV.1": "object",
+            "dI/dV.2": "object",
+            "dI/dV.3": "object",
+            "dI/dV.4": "object",
+            "dI/dV.5": "object",
+            "dI/dV.6": "object",
+            "dI/dV.7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "f",
+          "columns": [
+            "Unnamed: 0",
+            "Peak Postion",
+            "Error"
+          ],
+          "named_columns": [
+            "Peak Postion",
+            "Error"
+          ],
+          "column_count": 3,
+          "row_count": 10,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Peak Postion": "object",
+            "Error": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 5(e,f).xlsx",
+      "from_zip": "Hong_Li_et_al_10.zip"
+    }
+  ]
+}

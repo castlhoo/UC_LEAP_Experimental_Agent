@@ -1,0 +1,68 @@
+1. Dataset Overview
+- Format: Excel `.xls` (old Excel format; preview failed with `openpyxl`)
+- Number of runs / experiments: Not explicitly available from the file listing alone
+- Approximate data volume: 181.5 KB
+- Time range: Not available from the provided metadata
+
+2. Instrumentation Setup
+- Inferred instruments from paper context:
+  - Topolectrical circuit lattice: primary experimental platform for realizing non-Hermitian higher-order skin-topological states
+  - LC circuit elements: used to build resonant lattice sites and couplings
+  - INIC-based non-Hermitian elements: likely used to introduce non-reciprocity / gain-loss-like effective behavior
+  - Voltage measurement system / impedance or admittance measurement setup: used to obtain voltage maps and admittance spectra
+- Notes:
+  - These are inferred from the paper context, not directly confirmed by the file preview
+  - No explicit instrument list was available in the dataset metadata provided
+
+3. Information of each run / experiment
+- Individual run/experiment information is not available from the provided file listing, so the summary applies to the dataset as a whole
+
+a. Measured Parameters
+- Independent variables:
+  - Likely frequency or excitation frequency (based on “admittance spectra near resonance” in the paper context)
+  - Possibly lattice position / node index for voltage mapping
+  - Possibly boundary condition or circuit configuration index
+- Dependent variables:
+  - Voltage amplitude and/or phase at circuit nodes
+  - Admittance / impedance response
+  - Possibly resonance peak positions or spectral intensity
+- Naming conventions:
+  - Not available from the file preview
+  - Likely circuit-node labels, frequency axes, and mode/state labels if the file contains replot-ready figures or tabulated spectra
+
+b. Experimental Context (Inference)
+- Likely experiment type:
+  - Topolectrical circuit experiment measuring spectral and spatial response of engineered non-Hermitian lattices
+- Possible physical phenomena:
+  - Higher-order skin effect
+  - Topological boundary localization
+  - Hybrid skin-topological boundary states
+  - Resonant admittance features of non-Hermitian circuit modes
+- Reasoning:
+  - The paper title and summary explicitly indicate 2D/3D LC/INIC topolectrical circuits
+  - “Replot-ready” data and the paper context suggest the file likely contains data used to generate voltage maps, spectra, or figure panels
+  - Admittance spectra near resonance are characteristic of circuit-based topological mode identification
+
+c. Notes for Analysis
+- Important patterns / structure:
+  - The file is likely figure-supporting data rather than raw time-series acquisition
+  - Data may be organized by circuit configuration, frequency sweep, and node-resolved voltages
+- Potential challenges / ambiguities:
+  - No sheet names, column headers, or sample values were provided, so exact variables cannot be confirmed
+  - `.xls` format may require legacy parsing tools (`xlrd`) or conversion to `.xlsx`
+  - “Replot-ready” files often contain processed data, not raw measurements, which limits inference about acquisition details
+- Suggestions for analysis:
+  - Inspect sheet structure for:
+    - frequency axis
+    - node labels / lattice coordinates
+    - voltage magnitude/phase
+    - configuration identifiers
+  - If multiple sheets exist, map each to a figure panel or experimental condition
+  - Look for localization signatures:
+    - boundary-enhanced amplitudes
+    - mode confinement to corners/edges
+    - resonance peaks corresponding to topological or skin modes
+  - Compare spectra across configurations to distinguish:
+    - ordinary boundary modes
+    - skin modes
+    - hybrid skin-topological modes

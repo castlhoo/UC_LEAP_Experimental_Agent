@@ -1,0 +1,256 @@
+{
+  "title": "Inverse design of chiral functional films by a robotic AI-guided system",
+  "doi": "10.1038/s41467-023-41951-x",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "type1_summary": "Figure-organized, replot-ready source data such as the Nature source-data XLSX workbook and the wavelength-resolved gabs table in 20_gabs_outfile.csv.",
+  "type2_summary": "Model/intermediate inverse-design outputs and evaluation tables, including CGAN test-result CSVs, final solution CSVs, train_idx.npy, and headerless candidate tables with wavelength-target filenames.",
+  "files": {
+    "type1_data": [
+      "41467_2023_41951_MOESM7_ESM_5.xlsx",
+      "20_gabs_outfile.csv"
+    ],
+    "type2_data": [
+      "train_idx.npy",
+      "random_20gabs.csv",
+      "445nm+520nm.csv",
+      "445nm+634nm.csv",
+      "520nm+634nm.csv",
+      "cgan_test_result_ABS_440.csv",
+      "cgan_test_result_PROP_440.csv",
+      "final_result_PROP_440.csv",
+      "cgan_test_result_ABS_467_1.72.csv",
+      "cgan_test_result_ABS_467_1.78.csv",
+      "cgan_test_result_PROP_467.csv",
+      "final_result_PROP_467.csv"
+    ],
+    "annotations": [],
+    "scripts": [
+      "Forward_network.py",
+      "forward_predicting_network.py",
+      "new_spectrum.py",
+      "paras.py",
+      "read_write_msgz.py",
+      "spectrum.py",
+      "cgan-all-445+520+634.py",
+      "new_simple_net_Full_3p.py",
+      "spectrum_2.py"
+    ]
+  },
+  "paper_analysis": {
+    "summary": "This paper studies AI-guided inverse design of chiral functional films made by twisting-stacked heterobilayers of anisotropic polymer films, typically PVA-based transparent layers combined with dyed/absorbing layers. The authors combine robotic fabrication/characterization with machine learning models trained on absorption and chiroptical spectra to predict and then inverse-design target circular dichroism (CD) / dissymmetry factor (gabs) across the visible range. Key findings are that the system can rapidly search a design space exceeding 10^8 combinations, achieve very strong chiroptical responses up to gabs ~ 1.9, and realize practical devices including circular-polarization-selective color filters for multiplex laser display and switchable circularly polarized luminescence.",
+    "measurement_types": [
+      "UV-vis absorption spectroscopy",
+      "Linear dichroism (LD) spectroscopy",
+      "Circular dichroism (CD) spectroscopy",
+      "Optical imaging / color photography under different polarization states",
+      "Chromaticity analysis (CIE 1931)",
+      "Robot-assisted film fabrication and characterization",
+      "Machine-learning model outputs (predicted spectra and inverse-design parameters)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Overall workflow of the AI-Chemist platform for inverse design of chiral films: robotic film preparation and characterization, machine-learning-based parameter screening and reverse design, and demonstration of on-demand fabrication of films with target gabs at chosen wavelengths. Panel a schematically shows the experimental workflow and variable parameters; panel b shows the computational pipeline (clustering, QSSAR, GAN-based inverse design); panel c shows application concepts such as CP-selective color filters and CP luminescence.",
+        "data_type": "schematic / workflow diagram",
+        "likely_source": "processed conceptual illustration and model workflow, not raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Comparison of homostructured versus heterostructured twisted bilayer chiral films and how chiroptical response depends on structural parameters. Panel a is a schematic of the bilayer architecture; panels b–e show how CD bandwidth, CD peak position, and CD intensity vary with thickness, strain, dye absorption wavelength, and absorption strength.",
+        "data_type": "schematic plus spectra/parameter-dependence plots",
+        "likely_source": "processed CD spectra and derived trends from experiments"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Map of the robotic work area and photographs of the AI-Chemist performing key steps: selecting materials, dispersing dye, stretching films, measuring LD, stacking twisted layers, and measuring gabs/CD of the final heterostructure. Also includes the setup for the two application demonstrations.",
+        "data_type": "photographs / lab setup images",
+        "likely_source": "instrument/lab images and robot operation photos"
+      },
+      {
+        "figure_id": "Fig. 4",
+        "description": "Two-round clustering and prescreening of film candidates based on linear dichroism and transmittance. Panel a shows the screening logic; panel b shows histograms of LD and T0 with high- and low-performance thresholds; panel c shows clustering of dyed films into performance groups.",
+        "data_type": "histograms / clustering visualization",
+        "likely_source": "processed experimental screening data"
+      },
+      {
+        "figure_id": "Fig. 5",
+        "description": "Reverse-design model for chiroptical films. Panel a schematizes the inverse-design loop; panel b compares predicted and experimentally measured CD spectra and shows error statistics; panels c–e show example inverse-designed films meeting target gabs values at specified wavelengths, including near-theoretical-limit targets.",
+        "data_type": "schematic plus spectra and parameter tables/plots",
+        "likely_source": "machine-learning predictions combined with experimental validation spectra"
+      },
+      {
+        "figure_id": "Fig. 6",
+        "description": "Mapping of achievable gabs values as a function of wavelength and dye choice. Panel a shows tables/heatmaps of available parameter solutions for target gabs values at 400, 500, 600, and 700 nm for several dyes; panel b compares the wavelength dependence of maximum achievable gabs with the dye absorption spectra.",
+        "data_type": "heatmaps / parameter-space maps / spectra",
+        "likely_source": "processed inverse-design outputs and absorption spectra"
+      },
+      {
+        "figure_id": "Fig. 7",
+        "description": "Inverse-designed films for circular polarization-switchable multiplex laser display. Panel a shows designed CD spectra and optical images for three color-switching cases (G-R, G-B, B-R) under RCP and LCP illumination; panel b shows the corresponding 3D parameter-space solutions; panel c shows the accessible color gamut in CIE1931 space.",
+        "data_type": "spectra, optical images, 3D parameter-space plot, chromaticity diagram",
+        "likely_source": "predicted/validated CD spectra, camera images, and processed color analysis"
+      },
+      {
+        "figure_id": "Supplementary Fig. 1",
+        "description": "Design principle of the heterostructured bilayer and why it can produce ultrastrong chiroptical response.",
+        "data_type": "schematic",
+        "likely_source": "conceptual illustration"
+      },
+      {
+        "figure_id": "Supplementary Fig. 2",
+        "description": "Absorption characteristics of the dye molecules used in the films.",
+        "data_type": "absorption spectra",
+        "likely_source": "UV-vis spectroscopy"
+      },
+      {
+        "figure_id": "Supplementary Fig. 3",
+        "description": "Relationship between linear dichroism signal and strain increase in dyed films.",
+        "data_type": "spectra / trend plot",
+        "likely_source": "LD spectroscopy"
+      },
+      {
+        "figure_id": "Supplementary Fig. 4",
+        "description": "Details of the cluster-screening process used to reduce the parameter space.",
+        "data_type": "analysis plot / workflow",
+        "likely_source": "processed screening analysis"
+      },
+      {
+        "figure_id": "Supplementary Fig. 5",
+        "description": "Additional details of the prescreening and parameter reduction procedure.",
+        "data_type": "analysis plot / workflow",
+        "likely_source": "processed screening analysis"
+      },
+      {
+        "figure_id": "Supplementary Fig. 6",
+        "description": "Dataset construction and/or model input-output representation for the forward prediction network.",
+        "data_type": "model schematic / data summary",
+        "likely_source": "processed dataset/model illustration"
+      },
+      {
+        "figure_id": "Supplementary Fig. 7",
+        "description": "Additional details of the forward-model training or validation.",
+        "data_type": "model performance plot",
+        "likely_source": "machine-learning validation results"
+      },
+      {
+        "figure_id": "Supplementary Fig. 8",
+        "description": "Additional details of the forward-model architecture or training procedure.",
+        "data_type": "model schematic / performance plot",
+        "likely_source": "machine-learning analysis"
+      },
+      {
+        "figure_id": "Supplementary Fig. 9",
+        "description": "Five-fold 80:20 splitting and validation details for the forward prediction model.",
+        "data_type": "model validation plot",
+        "likely_source": "machine-learning validation"
+      },
+      {
+        "figure_id": "Supplementary Fig. 10",
+        "description": "Comparison of experimentally measured CD spectra with forward-model predictions for 20 newly generated samples.",
+        "data_type": "spectra comparison",
+        "likely_source": "experimental CD spectra and model predictions"
+      },
+      {
+        "figure_id": "Supplementary Fig. 11",
+        "description": "Predicted versus observed trends of gabs with strain.",
+        "data_type": "trend plot",
+        "likely_source": "experimental data and model predictions"
+      },
+      {
+        "figure_id": "Supplementary Fig. 12",
+        "description": "Predicted versus observed trends of gabs with thickness.",
+        "data_type": "trend plot",
+        "likely_source": "experimental data and model predictions"
+      },
+      {
+        "figure_id": "Supplementary Fig. 13",
+        "description": "Predicted versus observed trends of gabs with greyscale / dye concentration.",
+        "data_type": "trend plot",
+        "likely_source": "experimental data and model predictions"
+      },
+      {
+        "figure_id": "Supplementary Fig. 14",
+        "description": "Architecture of the reverse-design generative model, including generator and discriminator.",
+        "data_type": "model schematic",
+        "likely_source": "machine-learning workflow illustration"
+      },
+      {
+        "figure_id": "Supplementary Fig. 15",
+        "description": "Additional details of the inverse-design model architecture and/or training.",
+        "data_type": "model schematic / performance plot",
+        "likely_source": "machine-learning analysis"
+      },
+      {
+        "figure_id": "Supplementary Fig. 16",
+        "description": "Inverse-design solution maps for target gabs values at 400 nm for different dyes and parameter combinations.",
+        "data_type": "parameter-space heatmaps / solution tables",
+        "likely_source": "inverse-design model outputs"
+      },
+      {
+        "figure_id": "Supplementary Fig. 17",
+        "description": "Inverse-design solution maps for target gabs values at 500 nm for different dyes and parameter combinations.",
+        "data_type": "parameter-space heatmaps / solution tables",
+        "likely_source": "inverse-design model outputs"
+      },
+      {
+        "figure_id": "Supplementary Fig. 18",
+        "description": "Inverse-design solution maps for target gabs values at 600 nm for different dyes and parameter combinations.",
+        "data_type": "parameter-space heatmaps / solution tables",
+        "likely_source": "inverse-design model outputs"
+      },
+      {
+        "figure_id": "Supplementary Fig. 19",
+        "description": "Inverse-design solution maps for target gabs values at 700 nm for different dyes and parameter combinations.",
+        "data_type": "parameter-space heatmaps / solution tables",
+        "likely_source": "inverse-design model outputs"
+      },
+      {
+        "figure_id": "Supplementary Fig. 20",
+        "description": "Additional inverse-design results showing the limits of achieving extreme gabs targets at the spectral edges of the visible range.",
+        "data_type": "parameter-space maps / solution tables",
+        "likely_source": "inverse-design model outputs"
+      },
+      {
+        "figure_id": "Supplementary Fig. 21",
+        "description": "Additional examples relating dye absorption spectra to the wavelength region where high gabs can be achieved.",
+        "data_type": "spectra / correlation plot",
+        "likely_source": "UV-vis spectra and inverse-design results"
+      },
+      {
+        "figure_id": "Supplementary Fig. 22",
+        "description": "Additional examples of dye-dependent wavelength selectivity in inverse design.",
+        "data_type": "spectra / correlation plot",
+        "likely_source": "UV-vis spectra and inverse-design results"
+      },
+      {
+        "figure_id": "Supplementary Fig. 23",
+        "description": "Additional experimentally realized inverse-designed films achieving target gabs values.",
+        "data_type": "spectra / validation plots",
+        "likely_source": "experimental CD spectra"
+      },
+      {
+        "figure_id": "Supplementary Fig. 24",
+        "description": "Cases where the reverse model cannot fully meet extreme target gabs values and the target is gradually relaxed.",
+        "data_type": "model-output / validation plots",
+        "likely_source": "inverse-design outputs and experimental validation"
+      },
+      {
+        "figure_id": "Supplementary Fig. 25",
+        "description": "Error analysis of the reverse model at UV wavelengths compared with the visible-range center.",
+        "data_type": "error plot",
+        "likely_source": "model prediction errors"
+      },
+      {
+        "figure_id": "Supplementary Fig. 26",
+        "description": "Optical setup and color-switching demonstration for CP-selective laser transmission under RCP/LCP and unpolarized illumination.",
+        "data_type": "optical schematic / images",
+        "likely_source": "experimental imaging and optical setup"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The study collected UV-vis absorption spectra, linear dichroism spectra, and circular dichroism spectra from robot-fabricated twisted bilayer films; it also recorded optical images of films and laser-color switching under different circular polarization states. These raw measurements were used to build a dataset of 1493 experimentally fabricated samples for machine-learning training and validation.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper contains many processed outputs: clustering/histograms for prescreening, machine-learning prediction-versus-experiment plots, inverse-design solution maps, parameter-space visualizations, CD spectra comparisons, and CIE1931 chromaticity diagrams for device demonstrations."
+  }
+}

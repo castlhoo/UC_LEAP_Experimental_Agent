@@ -1,0 +1,2452 @@
+{
+  "paper_id": "step1_0016",
+  "title": "Proximity-induced chiral quantum light generation in strain-engineered WSe2/NiPS3 heterostructures",
+  "doi": "10.1038/s41563-023-01645-7",
+  "journal": "Nature Materials",
+  "year": 2023,
+  "paper_url": "https://doi.org/10.1038/s41563-023-01645-7",
+  "priority_score": 9.3,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 13,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41563-023-01645-7",
+  "files_inspected": 13,
+  "file_types_found": [
+    "excel"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All provided files are Nature source-data spreadsheets organized by figure panels and containing cleaned, replot-ready tabular data or image-matrix exports. They correspond to processed spectra, fits, maps, and analysis curves rather than raw proprietary instrument files.",
+  "type2_summary": "No files were classified as raw/unprocessed Type 2 based on the available evidence.",
+  "type1_files": [
+    "41563_2023_1645_MOESM2_ESM_10.xlsx",
+    "41563_2023_1645_MOESM3_ESM_10.xlsx",
+    "41563_2023_1645_MOESM4_ESM_10.xlsx",
+    "41563_2023_1645_MOESM5_ESM_10.xlsx",
+    "41563_2023_1645_MOESM6_ESM_10.xlsx",
+    "41563_2023_1645_MOESM7_ESM_10.xlsx",
+    "41563_2023_1645_MOESM8_ESM_10.xlsx",
+    "41563_2023_1645_MOESM9_ESM_10.xlsx",
+    "41563_2023_1645_MOESM10_ESM_10.xlsx",
+    "41563_2023_1645_MOESM11_ESM_10.xlsx",
+    "41563_2023_1645_MOESM12_ESM_10.xlsx",
+    "41563_2023_1645_MOESM13_ESM_10.xlsx",
+    "41563_2023_1645_MOESM14_ESM_10.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The decisive evidence is that every file is a Nature source-data XLSX organized by figure/extended-data panel with physical-variable headers. Even the image-like NV maps are exported as tabular matrices in a replot-ready format. No proprietary raw instrument files, scripts, or documentation-only files are present.",
+  "file_classifications": [
+    {
+      "filename": "41563_2023_1645_MOESM2_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper states Fig. 1d-f are representative polarization-resolved PL spectra from individual nanoindentations and are processed/analysis products.",
+      "file_evidence": "Excel source-data file with figure-specific sheets ('Fig. 1D', 'Fig. 1e', 'Fig. 1f') and physical columns ('Energy', 'sigma +'). Small, tabular, directly plottable.",
+      "reasoning": "This is organized source data for figure panels, not instrument output. The spectra are already separated by polarization and ready for replotting with minimal processing.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, sigma +"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM3_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper says Fig. 2a-b, 2c, 2d, and 2e are processed spectra/time traces/correlation traces used to demonstrate chiral emission and single-photon behavior.",
+      "file_evidence": "Figure-specific sheets ('Fig 2a'...'Fig 2e') with tabular columns for spectra, time trace, decay, and g(2)(tau). Directly plottable source data.",
+      "reasoning": "The file contains cleaned, figure-ready datasets corresponding to multiple panels, including processed traces and spectra. No indication of raw instrument streams.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, sigma-, sigma+; Time, Count; delaytime, normalized count; Delay, coincience count"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM4_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper states Fig. 3c-d are scanning NV-center topography and magnetic-field maps, and Fig. 3e is NV lock-in spectra; these are raw/measurement-derived figures.",
+      "file_evidence": "Contains image/map-like sheets ('HeightImage', 'MagneticFieldImage', 'ImageXYPositions') plus a figure sheet ('Fig 3e') with magnetic field and fit columns. Structured source data rather than proprietary raw scan files.",
+      "reasoning": "Although the content originates from scanning NV measurements, the deposited file is a tabular/image-matrix source-data export that can be replotted. It is not a raw instrument file format.",
+      "ambiguity": "moderate: measurement-derived maps are closer to raw than typical line plots, but the XLSX source-data format and figure organization support Type 1.",
+      "key_columns_or_structure": "HeightImage matrix, MagneticFieldImage matrix, Fig 3e: Magnetic field (MT), off indent, on indent, off ind fit, on fit"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM5_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper describes Fig. 4a-e as processed polarization-resolved spectra and extracted field-dependence curves for splitting and DCP.",
+      "file_evidence": "Figure-specific sheets with tabular spectra and summary curves ('Fig 4a'...'Fig 4e'), including extracted B-dependent values and DCP. Directly plottable.",
+      "reasoning": "This is classic source-data deposition for publication figures: cleaned spectra, fit outputs, and summary curves. Minimal processing needed.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Ener5gy, sigma-/sigma+ at multiple fields; B, 2DX, LX; DCP columns"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM6_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 2 contains control PL spectra and polarization analysis, explicitly described as processed control data.",
+      "file_evidence": "Seven figure-specific sheets with spectra and polarization columns ('Energy', 's-', 's+', 'S', 'P'). Small tabular source data.",
+      "reasoning": "The file is organized as replot-ready source data for extended-data panels, not raw acquisition output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, s-, s+; Energy, S, P"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM7_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 3 includes polarization-resolved spectra versus temperature/magnetic field and excitation polarization dependence, all presented as processed analysis figures.",
+      "file_evidence": "Figure-specific sheets with multiple polarization channels and conditions ('ED Fig 3a', 'ED Fig 3bT/M/B', 'ED Fig 3c'). Tabular, directly plottable.",
+      "reasoning": "The file contains cleaned spectra for several conditions and is clearly source data for the published extended-data figure.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, S+-, S++, S--, S-+; energy, s-L0, s+L0, s-L30, s+L30, s-L60, s+L60"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM8_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 4 and related analysis are processed figure data (DCP and spectral image analysis).",
+      "file_evidence": "Contains a DCP spectrum sheet and a tabular fit/peak-analysis sheet ('ED Fig 4c') with pixel and fit columns. Figure-oriented source data.",
+      "reasoning": "This is analysis-ready data extracted for plotting and fitting, not raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, DCP; Pix, Pak1, P2, P3, P4, P5, FitPix, P1fit, P2fit, P3fit, p4fit, p5fit"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM9_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 5 includes linear polarization analysis, linewidth histogram, and pump-power dependence, all processed outputs.",
+      "file_evidence": "Multiple figure sheets with spectra, polarization-angle dependence, histogram data, and pump-power sweep summary ('Pump Power', 'DCP A', 'DCP B', 'FWHM A', 'FWHM B').",
+      "reasoning": "The file is a standard source-data package for extended-data plots and can be directly replotted.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, s-, s+, S E45, P E45, S E135, P E135, S E165, P E165; Deg, NiPS3 off indent, NiPS3 on indent; Linewidth of the QEs"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM10_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 6 is described as another chiral quantum emitter dataset with processed spectra, time traces, decay, and correlation data.",
+      "file_evidence": "Large but still tabular XLSX with figure-specific sheets ('ED Fig 6a'...'ED Fig 6d') containing spectra, time counts, decay, and coincidence counts. Source-data style organization.",
+      "reasoning": "Despite the larger size, the file is still a structured source-data deposit with directly plottable columns and no raw proprietary format.",
+      "ambiguity": "low: larger file size could suggest raw-like volume, but the sheet structure and figure-specific tabular organization indicate processed source data.",
+      "key_columns_or_structure": "Energy, s-, s+; Time, count; Time delay, normalized counts; Delay, Coin Count"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM11_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper discusses room-temperature NV magnetometry maps as measurement-derived figures; these are presented as analyzed maps rather than raw scan files.",
+      "file_evidence": "Tabular matrix sheets ('RTHeightImage', 'RTMagneticFieldImage', 'RTXYPositions') with image-like arrays and coordinate positions. XLSX source-data export.",
+      "reasoning": "The file is a structured matrix representation of maps suitable for replotting, not a raw instrument binary file.",
+      "ambiguity": "moderate: image matrices are closer to raw measurement data than simple line plots, but the deposited format is still cleaned source data.",
+      "key_columns_or_structure": "RTHeightImage matrix, RTMagneticFieldImage matrix, RTXYPositions"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM12_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 8 is a processed polarization-resolved spectrum versus magnetic field dataset.",
+      "file_evidence": "Single sheet 'ED 8' with energy and multiple field-resolved sigma+/sigma- columns. Directly plottable source data.",
+      "reasoning": "Clear figure-specific source data with extracted spectra at multiple fields.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, 6T sig+, 6T sig-, 5T sig+, 5T sig-, ... , 0T sig+, 0T sig-"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM13_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 9 contains processed field-dependent polarization spectra used to analyze chirality and hysteresis.",
+      "file_evidence": "Multiple figure sheets with energy and field-resolved sigma+/sigma- columns, all in tabular form and figure-organized.",
+      "reasoning": "This is replot-ready source data for extended-data panels, not raw acquisition output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy / energy, 0T sig-/sig+, 6T sig-/sig+, 5T sig-/sig+, ... , n6T sig-/sig+"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM14_ESM_10.xlsx",
+      "type": "type1",
+      "paper_evidence": "Extended Data Fig. 10 is a processed spectral dataset with sigma+/sigma- channels.",
+      "file_evidence": "Two figure sheets with 1340-row spectra and columns 'Energy', 'sig+', 'sig-'. Clean tabular source data.",
+      "reasoning": "Directly plottable figure source data; no indication of raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Energy, sig+, sig-"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper demonstrates that nanoindentation-induced strain in monolayer WSe2/NiPS3 heterostructures creates localized quantum emitters that produce circularly polarized single photons at zero external magnetic field. The authors attribute the chiral emission to magnetic proximity coupling between localized WSe2 excitons and strain-induced out-of-plane ferromagnetic moments in NiPS3 defects, supported by scanning NV magnetometry and temperature-/field-dependent magneto-PL.",
+    "measurement_types": [
+      "optical microscopy / wide-field PL imaging",
+      "polarization-resolved photoluminescence spectroscopy",
+      "nanoindentation / AFM topography",
+      "Hanbury Brown–Twiss photon correlation",
+      "time-resolved PL decay",
+      "scanning diamond NV-center magnetometry",
+      "temperature-dependent magneto-PL spectroscopy",
+      "field-dependent magneto-PL spectroscopy",
+      "linear polarization analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Optical image of the WSe2/NiPS3 heterostructure showing overlapping regions and the sample layout.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Wide-field PL image at 4 K showing quenched PL in the overlap region and restored bright emission at nanoindentations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic of the heterostructure plus AFM topography and cross-section of a representative nanoindentation.",
+        "data_type": "image / topography",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d-f",
+        "description": "Representative polarization-resolved PL spectra from individual nanoindentations showing sharp localized peaks with strong spontaneous circular polarization.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a-b",
+        "description": "Circular-polarization-resolved PL spectra under σ+ and σ− excitation for an indented region.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "PL intensity versus time trace for a selected quantum emitter.",
+        "data_type": "time trace",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Time-resolved PL decay curve fitted to extract lifetime.",
+        "data_type": "decay curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Second-order photon correlation g(2)(τ) trace demonstrating single-photon emission.",
+        "data_type": "correlation curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of zig-zag antiferromagnetic order in NiPS3 overlaid on the atomic structure.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Schematic cross-section of strain-induced exciton capture centers near local magnetic moments.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c-d",
+        "description": "Scanning NV-center topography and magnetic-field maps of a nanoindentation in bare NiPS3.",
+        "data_type": "image / magnetic map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "NV lock-in spectra taken on and off the indent, showing a magnetic-field shift.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Polarization-resolved PL spectra versus external magnetic field for a localized emitter.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Magnetic-field dependence of energy splitting and DCP for a localized exciton and a delocalized WSe2 exciton.",
+        "data_type": "curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c-d",
+        "description": "Temperature- and field-history-dependent polarization-resolved PL spectra showing hysteresis/restoration of chirality.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "DCP versus magnetic field for the temperature/field cycling experiment.",
+        "data_type": "curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 1",
+        "description": "Optical setup schematic for polarization-resolved PL and HBT measurements.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Extended Data Fig. 2",
+        "description": "Control PL spectra showing no DCP in unstrained WSe2 and unindented WSe2/NiPS3, plus linear polarization analysis of control and NiPS3 exciton peaks.",
+        "data_type": "spectra / polarization curves",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 3",
+        "description": "Control nanoindentation on WSe2/hBN/PMMA and excitation-polarization invariance of chiral PL in WSe2/NiPS3.",
+        "data_type": "spectra",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 4",
+        "description": "Spectral image of a nanoindentation and spatial analysis of multiple localized peaks.",
+        "data_type": "spectral image / map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 5",
+        "description": "Linear polarization analysis, linewidth histogram of chiral emitters, and pump-power dependence of DCP/linewidth.",
+        "data_type": "polarization curves / histogram / parameter sweep",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 6",
+        "description": "Another chiral quantum emitter dataset with high single-photon purity and strong circular polarization.",
+        "data_type": "spectrum / correlation data",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include optical images, wide-field and polarization-resolved PL spectra, AFM topography after nanoindentation, time-tagged photon detection streams for HBT measurements, NV-center ESR/lock-in spectra and magnetic-field maps, and temperature-/field-dependent magneto-PL spectra. The paper specifies the instruments and acquisition conditions, such as a cryogenic PL microscope, AFM nanoindentation, a diamond NV scanning probe, and a magneto-optical cryostat.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The plotted data include extracted PL spectra with σ+/σ− decomposition, DCP and DLP values, Gaussian-fit peak positions and splittings, PL decay fits, g(2)(τ) correlation traces, NV-derived magnetic-field values, linewidth histograms, and DCP versus magnetic-field/temperature histories. These are analysis products derived from the raw optical and magnetometry measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement is included in the provided text. The manuscript notes that the article is an accepted manuscript and refers to figures, extended data, and methods, but does not describe a repository, DOI for data, or code archive in the excerpt.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental acquisition: PL images/spectra collected at 4 K, time-tagged photon counts from a Hanbury Brown–Twiss setup, AFM topography from nanoindentation, NV-center ESR/lock-in measurements, and magneto-PL spectra under variable magnetic field and temperature. File formats are not specified.",
+      "processed_data_description": "Processed data include polarization-resolved spectra, DCP/DLP calculations, Gaussian-fit peak energies and splittings, lifetime fits, g(2)(τ) curves, magnetic-field estimates from NV lock-in spectra, linewidth histograms, and field-dependent DCP plots. The text indicates these are extracted from recorded photon streams or spectra, but does not mention tabulated numerical files.",
+      "figure_data_description": "Figure-specific data are clearly presented in the manuscript as plotted spectra, curves, maps, and histograms for each main and extended figure. However, the excerpt does not state whether separate source-data files are provided as supplementary files.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "figure-based / mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides figure descriptions and analysis outcomes, but the excerpt does not specify downloadable source-data files, raw data files, or scripts. Without explicit file availability, the data are not confirmed to be directly replot-ready.",
+      "notes": "The manuscript carefully distinguishes raw measurements from derived quantities: DCP is computed from σ+/σ− spectra, DLP from polarization-angle scans, lifetimes from exponential fits, and magnetic fields from NV ESR lock-in spectra. Extended Data Fig. 4 explicitly uses spectral-image analysis to localize multiple emitters, and Extended Data Fig. 5 reports statistical distributions and pump-power sweeps. The text also emphasizes that the σ+/σ− spectra were collected simultaneously on separate CCD regions to reduce artifacts from intensity fluctuations and spectral wandering."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41563_2023_1645_MOESM2_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 96106,
+      "size_human": "93.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 1D",
+        "Fig. 1e",
+        "Fig. 1f"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 1D",
+          "columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "named_columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sigma +": "float64",
+            "sigma +.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1e",
+          "columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "named_columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "column_count": 3,
+          "row_count": 1148,
+          "dtypes": {
+            "Energy": "float64",
+            "sigma +": "float64",
+            "sigma +.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1f",
+          "columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "named_columns": [
+            "Energy",
+            "sigma +",
+            "sigma +.1"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sigma +": "float64",
+            "sigma +.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM3_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 193295,
+      "size_human": "188.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig 2a",
+        "Fig 2b",
+        "Fig 2c",
+        "Fig2d",
+        "Fig 2e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig 2a",
+          "columns": [
+            "Energy",
+            "sigma-",
+            "sigma+"
+          ],
+          "named_columns": [
+            "Energy",
+            "sigma-",
+            "sigma+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sigma-": "float64",
+            "sigma+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 2b",
+          "columns": [
+            "Energy",
+            "sigma-",
+            "sigma+"
+          ],
+          "named_columns": [
+            "Energy",
+            "sigma-",
+            "sigma+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sigma-": "float64",
+            "sigma+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 2c",
+          "columns": [
+            "Time",
+            "Count"
+          ],
+          "named_columns": [
+            "Time",
+            "Count"
+          ],
+          "column_count": 2,
+          "row_count": 8120,
+          "dtypes": {
+            "Time": "float64",
+            "Count": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig2d",
+          "columns": [
+            "delaytime",
+            "normalized count"
+          ],
+          "named_columns": [
+            "delaytime",
+            "normalized count"
+          ],
+          "column_count": 2,
+          "row_count": 452,
+          "dtypes": {
+            "delaytime": "float64",
+            "normalized count": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 2e",
+          "columns": [
+            "Delay",
+            "coincience count"
+          ],
+          "named_columns": [
+            "Delay",
+            "coincience count"
+          ],
+          "column_count": 2,
+          "row_count": 105,
+          "dtypes": {
+            "Delay": "float64",
+            "coincience count": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM4_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 281040,
+      "size_human": "274.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "HeightImage",
+        "ImageXYPositions",
+        "MagneticFieldImage",
+        "Fig 3e"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "HeightImage",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "column_count": 102,
+          "row_count": 101,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64",
+            "Column4": "float64",
+            "Column5": "float64",
+            "Column6": "float64",
+            "Column7": "float64",
+            "Column8": "float64",
+            "Column9": "float64",
+            "Column10": "float64",
+            "Column11": "float64",
+            "Column12": "float64",
+            "Column13": "float64",
+            "Column14": "float64",
+            "Column15": "float64",
+            "Column16": "float64",
+            "Column17": "float64",
+            "Column18": "float64",
+            "Column19": "float64",
+            "Column20": "float64",
+            "Column21": "float64",
+            "Column22": "float64",
+            "Column23": "float64",
+            "Column24": "float64",
+            "Column25": "float64",
+            "Column26": "float64",
+            "Column27": "float64",
+            "Column28": "float64",
+            "Column29": "float64",
+            "Column30": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ImageXYPositions",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "column_count": 102,
+          "row_count": 2,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64",
+            "Column4": "float64",
+            "Column5": "float64",
+            "Column6": "float64",
+            "Column7": "float64",
+            "Column8": "float64",
+            "Column9": "float64",
+            "Column10": "float64",
+            "Column11": "float64",
+            "Column12": "float64",
+            "Column13": "float64",
+            "Column14": "float64",
+            "Column15": "float64",
+            "Column16": "float64",
+            "Column17": "float64",
+            "Column18": "float64",
+            "Column19": "float64",
+            "Column20": "float64",
+            "Column21": "float64",
+            "Column22": "float64",
+            "Column23": "float64",
+            "Column24": "float64",
+            "Column25": "float64",
+            "Column26": "float64",
+            "Column27": "float64",
+            "Column28": "float64",
+            "Column29": "float64",
+            "Column30": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "MagneticFieldImage",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "column_count": 102,
+          "row_count": 101,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64",
+            "Column4": "float64",
+            "Column5": "float64",
+            "Column6": "float64",
+            "Column7": "float64",
+            "Column8": "float64",
+            "Column9": "float64",
+            "Column10": "float64",
+            "Column11": "float64",
+            "Column12": "float64",
+            "Column13": "float64",
+            "Column14": "float64",
+            "Column15": "float64",
+            "Column16": "float64",
+            "Column17": "float64",
+            "Column18": "float64",
+            "Column19": "float64",
+            "Column20": "float64",
+            "Column21": "float64",
+            "Column22": "float64",
+            "Column23": "float64",
+            "Column24": "float64",
+            "Column25": "float64",
+            "Column26": "float64",
+            "Column27": "float64",
+            "Column28": "float64",
+            "Column29": "float64",
+            "Column30": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 3e",
+          "columns": [
+            "Magnetic field (MT)",
+            "off indent",
+            "on indent",
+            "off ind fit",
+            "on fit"
+          ],
+          "named_columns": [
+            "Magnetic field (MT)",
+            "off indent",
+            "on indent",
+            "off ind fit",
+            "on fit"
+          ],
+          "column_count": 5,
+          "row_count": 101,
+          "dtypes": {
+            "Magnetic field (MT)": "float64",
+            "off indent": "float64",
+            "on indent": "float64",
+            "off ind fit": "float64",
+            "on fit": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM5_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 207404,
+      "size_human": "202.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig 4a",
+        "Fig 4b",
+        "Fig 4c",
+        "Fig 4d",
+        "Fig 4e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig 4a",
+          "columns": [
+            "Ener5gy",
+            "sigma-  6T",
+            "sigma+ 6T",
+            "sigma-  3T",
+            "sigma+ 3T",
+            "sigma-  0T",
+            "sigma+ 0T",
+            "sigma-  -3T",
+            "sigma+ -3T",
+            "sigma-  -6T",
+            "sigma+ -6T"
+          ],
+          "named_columns": [
+            "Ener5gy",
+            "sigma-  6T",
+            "sigma+ 6T",
+            "sigma-  3T",
+            "sigma+ 3T",
+            "sigma-  0T",
+            "sigma+ 0T",
+            "sigma-  -3T",
+            "sigma+ -3T",
+            "sigma-  -6T",
+            "sigma+ -6T"
+          ],
+          "column_count": 11,
+          "row_count": 1340,
+          "dtypes": {
+            "Ener5gy": "float64",
+            "sigma-  6T": "int64",
+            "sigma+ 6T": "int64",
+            "sigma-  3T": "int64",
+            "sigma+ 3T": "int64",
+            "sigma-  0T": "int64",
+            "sigma+ 0T": "int64",
+            "sigma-  -3T": "int64",
+            "sigma+ -3T": "int64",
+            "sigma-  -6T": "int64",
+            "sigma+ -6T": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4b",
+          "columns": [
+            "B",
+            "2DX",
+            "2DX err",
+            "LX",
+            "LX err"
+          ],
+          "named_columns": [
+            "B",
+            "2DX",
+            "2DX err",
+            "LX",
+            "LX err"
+          ],
+          "column_count": 5,
+          "row_count": 28,
+          "dtypes": {
+            "B": "object",
+            "2DX": "object",
+            "2DX err": "float64",
+            "LX": "float64",
+            "LX err": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4c",
+          "columns": [
+            "energy",
+            "s- 0TB",
+            "s+ 0TB",
+            "s- 6TA",
+            "s+ 6TA",
+            "s- 3TA",
+            "s+ 3TA",
+            "s- 0TA",
+            "s+ 0TA"
+          ],
+          "named_columns": [
+            "energy",
+            "s- 0TB",
+            "s+ 0TB",
+            "s- 6TA",
+            "s+ 6TA",
+            "s- 3TA",
+            "s+ 3TA",
+            "s- 0TA",
+            "s+ 0TA"
+          ],
+          "column_count": 9,
+          "row_count": 1340,
+          "dtypes": {
+            "energy": "float64",
+            "s- 0TB": "int64",
+            "s+ 0TB": "int64",
+            "s- 6TA": "int64",
+            "s+ 6TA": "int64",
+            "s- 3TA": "int64",
+            "s+ 3TA": "int64",
+            "s- 0TA": "int64",
+            "s+ 0TA": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4d",
+          "columns": [
+            "Energy",
+            "s- 0TB",
+            "s- 0TB.1",
+            "s- -6TA",
+            "s- -6TA.1",
+            "s- -3TA",
+            "s- -3TA.1",
+            "s- 0TA",
+            "s- 0TA.1"
+          ],
+          "named_columns": [
+            "Energy",
+            "s- 0TB",
+            "s- 0TB.1",
+            "s- -6TA",
+            "s- -6TA.1",
+            "s- -3TA",
+            "s- -3TA.1",
+            "s- 0TA",
+            "s- 0TA.1"
+          ],
+          "column_count": 9,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s- 0TB": "int64",
+            "s- 0TB.1": "int64",
+            "s- -6TA": "int64",
+            "s- -6TA.1": "int64",
+            "s- -3TA": "int64",
+            "s- -3TA.1": "int64",
+            "s- 0TA": "int64",
+            "s- 0TA.1": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4e",
+          "columns": [
+            "B",
+            "DCp 6 T",
+            "B.1",
+            "DCP -6 T"
+          ],
+          "named_columns": [
+            "B",
+            "DCp 6 T",
+            "B.1",
+            "DCP -6 T"
+          ],
+          "column_count": 4,
+          "row_count": 8,
+          "dtypes": {
+            "B": "int64",
+            "DCp 6 T": "float64",
+            "B.1": "int64",
+            "DCP -6 T": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM6_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 203969,
+      "size_human": "199.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED Fig. 2a",
+        "ED Fig 2b",
+        "ED Fig 2c",
+        "ED Fig 2d",
+        "ED Fig 2e",
+        "ED Fig 2f",
+        "ED Fig 2g"
+      ],
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet_name": "ED Fig. 2a",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "float64",
+            "s+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2b",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "int64",
+            "s+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2c",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "float64",
+            "s+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2d",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "float64",
+            "s+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2e",
+          "columns": [
+            "Energy",
+            "S",
+            "P"
+          ],
+          "named_columns": [
+            "Energy",
+            "S",
+            "P"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "S": "float64",
+            "P": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2f",
+          "columns": [
+            "Energy",
+            "S",
+            "P"
+          ],
+          "named_columns": [
+            "Energy",
+            "S",
+            "P"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "S": "float64",
+            "P": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 2g",
+          "columns": [
+            "PDA",
+            "Lower",
+            "upper"
+          ],
+          "named_columns": [
+            "PDA",
+            "Lower",
+            "upper"
+          ],
+          "column_count": 3,
+          "row_count": 109,
+          "dtypes": {
+            "PDA": "object",
+            "Lower": "object",
+            "upper": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM7_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 293339,
+      "size_human": "286.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED Fig 3a",
+        "ED Fig 3bT",
+        "ED Fig 3bM",
+        "ED Fig 3bB",
+        "ED Fig 3c"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "ED Fig 3a",
+          "columns": [
+            "Energy",
+            "S+-",
+            "S++",
+            "S--",
+            "S-+"
+          ],
+          "named_columns": [
+            "Energy",
+            "S+-",
+            "S++",
+            "S--",
+            "S-+"
+          ],
+          "column_count": 5,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "S+-": "float64",
+            "S++": "float64",
+            "S--": "float64",
+            "S-+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 3bT",
+          "columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "column_count": 5,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s+-": "float64",
+            "s++": "float64",
+            "s--": "float64",
+            "s-+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 3bM",
+          "columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "column_count": 5,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s+-": "object",
+            "s++": "object",
+            "s--": "object",
+            "s-+": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 3bB",
+          "columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s+-",
+            "s++",
+            "s--",
+            "s-+"
+          ],
+          "column_count": 5,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s+-": "float64",
+            "s++": "float64",
+            "s--": "float64",
+            "s-+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 3c",
+          "columns": [
+            "energy",
+            "s-L0",
+            "s+L0",
+            "s-L30",
+            "s+L30",
+            "s-L60",
+            "s+L60"
+          ],
+          "named_columns": [
+            "energy",
+            "s-L0",
+            "s+L0",
+            "s-L30",
+            "s+L30",
+            "s-L60",
+            "s+L60"
+          ],
+          "column_count": 7,
+          "row_count": 2016,
+          "dtypes": {
+            "energy": "float64",
+            "s-L0": "float64",
+            "s+L0": "float64",
+            "s-L30": "float64",
+            "s+L30": "float64",
+            "s-L60": "float64",
+            "s+L60": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM8_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 53129,
+      "size_human": "51.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED Fig 4a",
+        "ED Fig 4c"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "ED Fig 4a",
+          "columns": [
+            "Energy",
+            "DCP"
+          ],
+          "named_columns": [
+            "Energy",
+            "DCP"
+          ],
+          "column_count": 2,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "DCP": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 4c",
+          "columns": [
+            "Pix",
+            "Pak1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "Unnamed: 6",
+            "FitPix",
+            "P1fit",
+            "P2fit",
+            "P3fit",
+            "p4fit",
+            "p5fit"
+          ],
+          "named_columns": [
+            "Pix",
+            "Pak1",
+            "P2",
+            "P3",
+            "P4",
+            "P5",
+            "FitPix",
+            "P1fit",
+            "P2fit",
+            "P3fit",
+            "p4fit",
+            "p5fit"
+          ],
+          "column_count": 13,
+          "row_count": 200,
+          "dtypes": {
+            "Pix": "int64",
+            "Pak1": "float64",
+            "P2": "int64",
+            "P3": "int64",
+            "P4": "int64",
+            "P5": "float64",
+            "Unnamed: 6": "float64",
+            "FitPix": "float64",
+            "P1fit": "float64",
+            "P2fit": "float64",
+            "P3fit": "float64",
+            "p4fit": "float64",
+            "p5fit": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM9_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 173159,
+      "size_human": "169.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED Fig 5a",
+        "ED fig 5b",
+        "ED fig 5c",
+        "ED Fig 5d",
+        "ED Fig 5ef"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "ED Fig 5a",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+",
+            "S E45",
+            "P E45",
+            "S E135",
+            "P E135",
+            "S E165",
+            "P E165"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+",
+            "S E45",
+            "P E45",
+            "S E135",
+            "P E135",
+            "S E165",
+            "P E165"
+          ],
+          "column_count": 9,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "float64",
+            "s+": "float64",
+            "S E45": "float64",
+            "P E45": "float64",
+            "S E135": "float64",
+            "P E135": "float64",
+            "S E165": "float64",
+            "P E165": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED fig 5b",
+          "columns": [
+            "Deg",
+            "NiPS3 off indent",
+            "NiPS3 on indent",
+            "Unnamed: 3",
+            "P3",
+            "Unnamed: 5",
+            "P2",
+            "Unnamed: 7",
+            "P1"
+          ],
+          "named_columns": [
+            "Deg",
+            "NiPS3 off indent",
+            "NiPS3 on indent",
+            "P3",
+            "P2",
+            "P1"
+          ],
+          "column_count": 9,
+          "row_count": 110,
+          "dtypes": {
+            "Deg": "object",
+            "NiPS3 off indent": "object",
+            "NiPS3 on indent": "object",
+            "Unnamed: 3": "float64",
+            "P3": "object",
+            "Unnamed: 5": "float64",
+            "P2": "object",
+            "Unnamed: 7": "float64",
+            "P1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED fig 5c",
+          "columns": [
+            "Linewidth of the QEs"
+          ],
+          "named_columns": [
+            "Linewidth of the QEs"
+          ],
+          "column_count": 1,
+          "row_count": 49,
+          "dtypes": {
+            "Linewidth of the QEs": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 5d",
+          "columns": [
+            "Energy",
+            "s-1023",
+            "s+1023",
+            "s-91",
+            "s+91",
+            "s-19",
+            "s+19",
+            "s-1",
+            "s+1"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-1023",
+            "s+1023",
+            "s-91",
+            "s+91",
+            "s-19",
+            "s+19",
+            "s-1",
+            "s+1"
+          ],
+          "column_count": 9,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-1023": "float64",
+            "s+1023": "float64",
+            "s-91": "float64",
+            "s+91": "float64",
+            "s-19": "float64",
+            "s+19": "float64",
+            "s-1": "float64",
+            "s+1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 5ef",
+          "columns": [
+            "Pump Power",
+            "DCP A",
+            "DCP B",
+            "Unnamed: 3",
+            "FWHM A",
+            "FWHM B"
+          ],
+          "named_columns": [
+            "Pump Power",
+            "DCP A",
+            "DCP B",
+            "FWHM A",
+            "FWHM B"
+          ],
+          "column_count": 6,
+          "row_count": 4,
+          "dtypes": {
+            "Pump Power": "float64",
+            "DCP A": "float64",
+            "DCP B": "float64",
+            "Unnamed: 3": "float64",
+            "FWHM A": "float64",
+            "FWHM B": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM10_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 1961191,
+      "size_human": "1.9 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED Fig 6a",
+        "ED Fig 6b",
+        "ED Fig 6c",
+        "ED Fig 6d"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "ED Fig 6a",
+          "columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "named_columns": [
+            "Energy",
+            "s-",
+            "s+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "s-": "float64",
+            "s+": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 6b",
+          "columns": [
+            "Time",
+            "count"
+          ],
+          "named_columns": [
+            "Time",
+            "count"
+          ],
+          "column_count": 2,
+          "row_count": 102341,
+          "dtypes": {
+            "Time": "float64",
+            "count": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 6c",
+          "columns": [
+            "Time delay",
+            "normalized counts"
+          ],
+          "named_columns": [
+            "Time delay",
+            "normalized counts"
+          ],
+          "column_count": 2,
+          "row_count": 32768,
+          "dtypes": {
+            "Time delay": "float64",
+            "normalized counts": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED Fig 6d",
+          "columns": [
+            "Delay",
+            "Coin Count"
+          ],
+          "named_columns": [
+            "Delay",
+            "Coin Count"
+          ],
+          "column_count": 2,
+          "row_count": 94,
+          "dtypes": {
+            "Delay": "float64",
+            "Coin Count": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM11_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 232619,
+      "size_human": "227.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "RTHeightImage",
+        "RTMagneticFieldImage",
+        "RTXYPositions"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "RTHeightImage",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "column_count": 86,
+          "row_count": 101,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64",
+            "Column4": "float64",
+            "Column5": "float64",
+            "Column6": "float64",
+            "Column7": "float64",
+            "Column8": "float64",
+            "Column9": "float64",
+            "Column10": "float64",
+            "Column11": "float64",
+            "Column12": "float64",
+            "Column13": "float64",
+            "Column14": "float64",
+            "Column15": "float64",
+            "Column16": "float64",
+            "Column17": "float64",
+            "Column18": "float64",
+            "Column19": "float64",
+            "Column20": "float64",
+            "Column21": "float64",
+            "Column22": "float64",
+            "Column23": "float64",
+            "Column24": "float64",
+            "Column25": "float64",
+            "Column26": "float64",
+            "Column27": "float64",
+            "Column28": "float64",
+            "Column29": "float64",
+            "Column30": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "RTMagneticFieldImage",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3",
+            "Column4",
+            "Column5",
+            "Column6",
+            "Column7",
+            "Column8",
+            "Column9",
+            "Column10",
+            "Column11",
+            "Column12",
+            "Column13",
+            "Column14",
+            "Column15",
+            "Column16",
+            "Column17",
+            "Column18",
+            "Column19",
+            "Column20",
+            "Column21",
+            "Column22",
+            "Column23",
+            "Column24",
+            "Column25",
+            "Column26",
+            "Column27",
+            "Column28",
+            "Column29",
+            "Column30"
+          ],
+          "column_count": 86,
+          "row_count": 101,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64",
+            "Column4": "float64",
+            "Column5": "float64",
+            "Column6": "float64",
+            "Column7": "float64",
+            "Column8": "float64",
+            "Column9": "float64",
+            "Column10": "float64",
+            "Column11": "float64",
+            "Column12": "float64",
+            "Column13": "float64",
+            "Column14": "float64",
+            "Column15": "float64",
+            "Column16": "float64",
+            "Column17": "float64",
+            "Column18": "float64",
+            "Column19": "float64",
+            "Column20": "float64",
+            "Column21": "float64",
+            "Column22": "float64",
+            "Column23": "float64",
+            "Column24": "float64",
+            "Column25": "float64",
+            "Column26": "float64",
+            "Column27": "float64",
+            "Column28": "float64",
+            "Column29": "float64",
+            "Column30": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "RTXYPositions",
+          "columns": [
+            "Column1",
+            "Column2",
+            "Column3"
+          ],
+          "named_columns": [
+            "Column1",
+            "Column2",
+            "Column3"
+          ],
+          "column_count": 3,
+          "row_count": 85,
+          "dtypes": {
+            "Column1": "float64",
+            "Column2": "float64",
+            "Column3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM12_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 160329,
+      "size_human": "156.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED 8"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "ED 8",
+          "columns": [
+            "Energy",
+            "6T sig+",
+            "6T sig-",
+            "5T sig+",
+            "5T sig-",
+            "4T sig+",
+            "4T sig-",
+            "3T sig+",
+            "3T sig-",
+            "2T sig+",
+            "2T sig-",
+            "1T sig+",
+            "1T sig-",
+            "0T sig+",
+            "0T sig-",
+            "n1T sig+",
+            "n1T sig-",
+            "n2T sig+",
+            "n2T sig-",
+            "n3T sig+",
+            "n3T sig-",
+            "n4T sig+",
+            "n4T sig-",
+            "n5T sig+",
+            "n5T sig-",
+            "n6T sig+",
+            "n6T sig-"
+          ],
+          "named_columns": [
+            "Energy",
+            "6T sig+",
+            "6T sig-",
+            "5T sig+",
+            "5T sig-",
+            "4T sig+",
+            "4T sig-",
+            "3T sig+",
+            "3T sig-",
+            "2T sig+",
+            "2T sig-",
+            "1T sig+",
+            "1T sig-",
+            "0T sig+",
+            "0T sig-",
+            "n1T sig+",
+            "n1T sig-",
+            "n2T sig+",
+            "n2T sig-",
+            "n3T sig+",
+            "n3T sig-",
+            "n4T sig+",
+            "n4T sig-",
+            "n5T sig+",
+            "n5T sig-",
+            "n6T sig+",
+            "n6T sig-"
+          ],
+          "column_count": 27,
+          "row_count": 1351,
+          "dtypes": {
+            "Energy": "float64",
+            "6T sig+": "int64",
+            "6T sig-": "int64",
+            "5T sig+": "int64",
+            "5T sig-": "int64",
+            "4T sig+": "int64",
+            "4T sig-": "int64",
+            "3T sig+": "int64",
+            "3T sig-": "int64",
+            "2T sig+": "int64",
+            "2T sig-": "int64",
+            "1T sig+": "int64",
+            "1T sig-": "int64",
+            "0T sig+": "int64",
+            "0T sig-": "int64",
+            "n1T sig+": "int64",
+            "n1T sig-": "int64",
+            "n2T sig+": "int64",
+            "n2T sig-": "int64",
+            "n3T sig+": "int64",
+            "n3T sig-": "int64",
+            "n4T sig+": "int64",
+            "n4T sig-": "int64",
+            "n5T sig+": "int64",
+            "n5T sig-": "int64",
+            "n6T sig+": "int64",
+            "n6T sig-": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM13_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 380998,
+      "size_human": "372.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED 9a",
+        "ED 9b",
+        "ED 9c",
+        "ED 9d",
+        "ED 9e",
+        "ED 9f"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "ED 9a",
+          "columns": [
+            "energy",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "named_columns": [
+            "energy",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "energy": "float64",
+            "0T sig-": "int64",
+            "0T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 9b",
+          "columns": [
+            "Energy ",
+            "6T sig-",
+            "6T sig+",
+            "5T sig-",
+            "5T sig+",
+            "4T sig-",
+            "4T sig+",
+            "3T sig+",
+            "3T sig-",
+            "2T sig-",
+            "2T sig+",
+            "1T sig-",
+            "1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "named_columns": [
+            "Energy ",
+            "6T sig-",
+            "6T sig+",
+            "5T sig-",
+            "5T sig+",
+            "4T sig-",
+            "4T sig+",
+            "3T sig+",
+            "3T sig-",
+            "2T sig-",
+            "2T sig+",
+            "1T sig-",
+            "1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "column_count": 15,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy ": "float64",
+            "6T sig-": "int64",
+            "6T sig+": "int64",
+            "5T sig-": "int64",
+            "5T sig+": "int64",
+            "4T sig-": "int64",
+            "4T sig+": "int64",
+            "3T sig+": "int64",
+            "3T sig-": "int64",
+            "2T sig-": "int64",
+            "2T sig+": "int64",
+            "1T sig-": "int64",
+            "1T sig+": "int64",
+            "0T sig-": "int64",
+            "0T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 9c",
+          "columns": [
+            "Energy ",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "named_columns": [
+            "Energy ",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy ": "float64",
+            "0T sig-": "int64",
+            "0T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 9d",
+          "columns": [
+            "Energy",
+            "n6T sig-",
+            "n6T sig+",
+            "n5T sig-",
+            "n5T sig+",
+            "n4T sig-",
+            "n4T sig+",
+            "n3T sig-",
+            "n3T sig+",
+            "n2T sig-",
+            "n2T sig+",
+            "n1T sig-",
+            "n1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "named_columns": [
+            "Energy",
+            "n6T sig-",
+            "n6T sig+",
+            "n5T sig-",
+            "n5T sig+",
+            "n4T sig-",
+            "n4T sig+",
+            "n3T sig-",
+            "n3T sig+",
+            "n2T sig-",
+            "n2T sig+",
+            "n1T sig-",
+            "n1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "column_count": 15,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "n6T sig-": "int64",
+            "n6T sig+": "int64",
+            "n5T sig-": "int64",
+            "n5T sig+": "int64",
+            "n4T sig-": "int64",
+            "n4T sig+": "int64",
+            "n3T sig-": "int64",
+            "n3T sig+": "int64",
+            "n2T sig-": "int64",
+            "n2T sig+": "int64",
+            "n1T sig-": "int64",
+            "n1T sig+": "int64",
+            "0T sig-": "int64",
+            "0T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 9e",
+          "columns": [
+            "Energy",
+            "6T sig-",
+            "6T sig+"
+          ],
+          "named_columns": [
+            "Energy",
+            "6T sig-",
+            "6T sig+"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "6T sig-": "int64",
+            "6T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 9f",
+          "columns": [
+            "Energy ",
+            "6T sig-",
+            "6T sig+",
+            "5T sig-",
+            "5T sig+",
+            "4T sig-",
+            "4T sig+",
+            "3T sig-",
+            "3T sig+",
+            "2T sig-",
+            "2T sig+",
+            "1T sig-",
+            "1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "named_columns": [
+            "Energy ",
+            "6T sig-",
+            "6T sig+",
+            "5T sig-",
+            "5T sig+",
+            "4T sig-",
+            "4T sig+",
+            "3T sig-",
+            "3T sig+",
+            "2T sig-",
+            "2T sig+",
+            "1T sig-",
+            "1T sig+",
+            "0T sig-",
+            "0T sig+"
+          ],
+          "column_count": 15,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy ": "float64",
+            "6T sig-": "int64",
+            "6T sig+": "int64",
+            "5T sig-": "int64",
+            "5T sig+": "int64",
+            "4T sig-": "int64",
+            "4T sig+": "int64",
+            "3T sig-": "int64",
+            "3T sig+": "int64",
+            "2T sig-": "int64",
+            "2T sig+": "int64",
+            "1T sig-": "int64",
+            "1T sig+": "int64",
+            "0T sig-": "int64",
+            "0T sig+": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    },
+    {
+      "filename": "41563_2023_1645_MOESM14_ESM_10.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 69130,
+      "size_human": "67.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "ED 10 fig c",
+        "ED 10 fig d"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "ED 10 fig c",
+          "columns": [
+            "Energy",
+            "sig+",
+            "sig-"
+          ],
+          "named_columns": [
+            "Energy",
+            "sig+",
+            "sig-"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sig+": "float64",
+            "sig-": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "ED 10 fig d",
+          "columns": [
+            "Energy",
+            "sig+",
+            "sig-"
+          ],
+          "named_columns": [
+            "Energy",
+            "sig+",
+            "sig-"
+          ],
+          "column_count": 3,
+          "row_count": 1340,
+          "dtypes": {
+            "Energy": "float64",
+            "sig+": "float64",
+            "sig-": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data"
+    }
+  ]
+}

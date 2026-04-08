@@ -1,0 +1,37 @@
+Task PAPER_01_TASK_06 Analysis
+
+Step_0: Inspect the workbook to identify the grid structure and any axis/index information.
+Loaded workbook: C:/UCLEAP/UC_LEAP/step4/organized/001_Superconductivity_and_nematic_order_in/type1_data/Fig2e.xlsx
+Workbook sheets: ['page_1']
+Raw sheet shape: 7 rows x 202 columns
+
+Observed structure from preview and loaded sheet:
+The first row contains column index labels as strings/numbers.
+The first column contains row index labels.
+The remaining cells contain numeric grid values.
+This indicates a structured matrix with one header row and one header column.
+
+Step_1: Parse the numeric values into a 2D matrix with correct orientation.
+Parsed row labels count: 6
+Parsed column labels count: 201
+Parsed matrix shape: 6 x 201
+Orientation decision: use the matrix as stored in the sheet, with rows mapped to the y-axis and columns mapped to the x-axis.
+This is supported by the explicit row/column index headers in the first column and first row.
+
+Validation of data quality:
+All matrix entries finite: True
+Row labels finite: True
+Column labels finite: True
+Matrix value range: min=-2.000000e+00, max=2.000000e+00
+No peak identification is required for this task; the goal is direct 2D visualization of the grid.
+
+Step_2: Plot the matrix as a heatmap or image with a colorbar.
+Used imshow with origin='lower' to preserve the natural increasing order of the provided indices.
+Used extent derived from the explicit row and column labels so the axes reflect the spreadsheet indexing.
+
+Step_3: Add labels or annotations only if directly inferable from the file.
+Axis labels were added generically as 'Column index' and 'Row index' because the file provides only numeric indices, not physical units.
+No additional annotations were added because no further metadata is present in the spreadsheet.
+
+Step_4: Save the reconstructed figure panel.
+Saved figure to: C:/UCLEAP/UC_LEAP/step5/output/001_Superconductivity_and_nematic_order_in/results/PAPER_01_TASK_06_figure.png
