@@ -55,9 +55,6 @@ def save_with_latest(data, output_dir: str, prefix: str, ext: str = ".json",
 
     os.makedirs(output_dir, exist_ok=True)
 
-    # Remove old timestamped versions first
-    cleanup_old_versions(output_dir, prefix)
-
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     ts_path = os.path.join(output_dir, f"{prefix}_{timestamp}{ext}")
     latest_path = os.path.join(output_dir, f"{prefix}_latest{ext}")
@@ -69,5 +66,8 @@ def save_with_latest(data, output_dir: str, prefix: str, ext: str = ".json",
         for path in [ts_path, latest_path]:
             with open(path, "w", encoding="utf-8") as f:
                 json.dump(data, f, indent=2, ensure_ascii=False, default=str)
+
+    # Only remove old timestamped outputs after the new files were written.
+    cleanup_old_versions(output_dir, prefix)
 
     return latest_path

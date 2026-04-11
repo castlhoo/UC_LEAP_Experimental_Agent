@@ -149,6 +149,18 @@ Return JSON:
     "replot_reason": "why the data is or is not directly usable for replotting",
 
     "notes": "any important observations about how data is structured or described"
+  }},
+
+  "classification_prior": {{
+    "raw_data_expected": true/false,
+    "source_data_expected": true/false,
+    "both_expected": true/false,
+    "raw_data_evidence": "brief evidence from the paper",
+    "source_data_evidence": "brief evidence from the paper",
+    "both_evidence": "brief evidence if both are implied, else 'none'",
+    "data_availability_section_relevant": "important phrases from data availability / methods / figure captions",
+    "priority_modalities": ["measurement or file modalities likely to appear in dataset"],
+    "review_notes": "anything the classifier should be careful about"
   }}
 }}
 
@@ -238,6 +250,29 @@ def _empty_paper_analysis(reason: str) -> Dict[str, Any]:
         "raw_measurement_details": "",
         "has_processed_plots": False,
         "processed_plot_details": "",
+        "dataset_characterization": {
+            "data_availability_statement": "",
+            "data_provided_types": [],
+            "raw_data_description": "",
+            "processed_data_description": "",
+            "figure_data_description": "",
+            "scripts_description": "",
+            "data_organization": "",
+            "replot_ready_data_present": False,
+            "replot_reason": "",
+            "notes": reason,
+        },
+        "classification_prior": {
+            "raw_data_expected": False,
+            "source_data_expected": False,
+            "both_expected": False,
+            "raw_data_evidence": "",
+            "source_data_evidence": "",
+            "both_evidence": "none",
+            "data_availability_section_relevant": "",
+            "priority_modalities": [],
+            "review_notes": reason,
+        },
         "notes": reason,
     }
 
@@ -258,6 +293,9 @@ Paper abstract: {abstract}
 
 === PAPER ANALYSIS (from reading the full publication) ===
 {paper_analysis}
+
+=== RULE-BASED PRIOR ===
+{rule_prior}
 
 === FILE INSPECTION REPORTS ===
 {file_reports}
@@ -328,6 +366,7 @@ Return JSON:
 {{
   "file_classifications": [
     {{
+      "relative_path": "...",
       "filename": "...",
       "type": "type1" | "type2" | "script" | "documentation" | "other",
       "paper_evidence": "brief paper-based evidence",
@@ -342,6 +381,7 @@ Return JSON:
   "has_both": true/false,
   "type1_summary": "...",
   "type2_summary": "...",
+  "rule_based_alignment": "whether the final decision agrees with the rule-based prior, and why",
   "type1_files": ["..."],
   "type2_files": ["..."],
   "confidence": "high" | "medium" | "low",
@@ -372,18 +412,16 @@ def classify_dataset_types(
     if not file_reports:
         return _empty_classification("No files to classify")
 
-    # Prioritize informative files: excel/tabular first, then others
-    priority_types = {"excel", "tabular_text", "hdf5", "numpy", "matlab", "json"}
-    sorted_reports = sorted(
-        file_reports,
-        key=lambda r: (0 if r.get("file_type") in priority_types else 1),
-    )
+    rule_prior = _compute_rule_based_prior(file_reports, paper_analysis)
+    selected_reports = _select_balanced_reports(file_reports, rule_prior)
+    rule_prior_str = _format_rule_prior(rule_prior)
 
     # Try with up to 20 files first, then retry with fewer on token overflow
     for max_files in [20, 10, 5]:
-        reports_str = _format_file_reports(sorted_reports[:max_files])
-        if len(sorted_reports) > max_files:
-            reports_str += f"\n\n(Showing {max_files} of {len(sorted_reports)} files)"
+        truncated_reports = selected_reports[:max_files]
+        reports_str = _format_file_reports(truncated_reports)
+        if len(selected_reports) > max_files:
+            reports_str += f"\n\n(Showing {max_files} of {len(selected_reports)} selected files; {len(file_reports)} total inspected)"
 
         # Format paper analysis section
         analysis_str = _format_paper_analysis(paper_analysis)
@@ -393,6 +431,7 @@ def classify_dataset_types(
             journal=paper.get("journal", ""),
             abstract=paper.get("abstract_summary", ""),
             paper_analysis=analysis_str,
+            rule_prior=rule_prior_str,
             file_reports=reports_str,
         )
 
@@ -404,6 +443,12 @@ def classify_dataset_types(
                 temperature=0.2,
                 max_tokens=3000,
             )
+            for fc in result.get("file_classifications", []):
+                if "relative_path" not in fc:
+                    fc["relative_path"] = ""
+            result.setdefault("rule_based_alignment", "")
+            result.setdefault("rule_prior", rule_prior)
+            result = _reconcile_rule_and_gpt(result, rule_prior)
             return result
         except ValueError as e:
             # Empty response — retry with fewer files
@@ -441,6 +486,30 @@ def _format_paper_analysis(analysis: Optional[Dict[str, Any]]) -> str:
     if analysis.get("has_processed_plots"):
         lines.append(f"Processed plots: {analysis.get('processed_plot_details', '')}")
 
+    dataset_char = analysis.get("dataset_characterization", {}) or {}
+    if dataset_char.get("data_availability_statement"):
+        lines.append(f"Data availability: {dataset_char.get('data_availability_statement', '')}")
+    provided_types = dataset_char.get("data_provided_types", [])
+    if provided_types:
+        lines.append(f"Data provided types: {', '.join(provided_types)}")
+    if dataset_char.get("data_organization"):
+        lines.append(f"Data organization: {dataset_char.get('data_organization', '')}")
+
+    prior = analysis.get("classification_prior", {}) or {}
+    if prior:
+        lines.append("Classification prior:")
+        lines.append(f"  raw_data_expected: {prior.get('raw_data_expected', False)}")
+        lines.append(f"  source_data_expected: {prior.get('source_data_expected', False)}")
+        lines.append(f"  both_expected: {prior.get('both_expected', False)}")
+        if prior.get("raw_data_evidence"):
+            lines.append(f"  raw_data_evidence: {prior.get('raw_data_evidence', '')}")
+        if prior.get("source_data_evidence"):
+            lines.append(f"  source_data_evidence: {prior.get('source_data_evidence', '')}")
+        if prior.get("both_evidence"):
+            lines.append(f"  both_evidence: {prior.get('both_evidence', '')}")
+        if prior.get("priority_modalities"):
+            lines.append(f"  priority_modalities: {', '.join(prior.get('priority_modalities', []))}")
+
     figures = analysis.get("figures", [])
     if figures:
         lines.append(f"\nFigures ({len(figures)}):")
@@ -454,11 +523,166 @@ def _format_paper_analysis(analysis: Optional[Dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
+def _compute_rule_based_prior(
+    file_reports: List[Dict[str, Any]],
+    paper_analysis: Optional[Dict[str, Any]] = None,
+) -> Dict[str, Any]:
+    type1_score = 0
+    type2_score = 0
+    type1_signals: List[str] = []
+    type2_signals: List[str] = []
+
+    for report in file_reports:
+        ext = (report.get("extension") or "").lower()
+        file_type = report.get("file_type", "")
+        rel = (report.get("relative_path") or report.get("filename") or "").lower()
+
+        if ext in {".csv", ".tsv", ".xlsx", ".xls"}:
+            type1_score += 2
+            type1_signals.append(f"{rel}: tabular extension")
+        if file_type in {"tabular_text", "excel"}:
+            type1_score += 2
+            type1_signals.append(f"{rel}: structured tabular file")
+        if any(token in rel for token in ("fig", "figure", "source", "plot")):
+            type1_score += 2
+            type1_signals.append(f"{rel}: figure/source-like naming")
+        if report.get("has_header") or any(sheet.get("has_header") for sheet in report.get("sheets", [])):
+            type1_score += 1
+            type1_signals.append(f"{rel}: header-like structure")
+
+        if ext in {".h5", ".hdf5", ".nxs", ".mat", ".sxm", ".ibw", ".spe"}:
+            type2_score += 3
+            type2_signals.append(f"{rel}: raw/instrument extension")
+        if file_type in {"instrument_raw", "microscopy_image", "hdf5"}:
+            type2_score += 3
+            type2_signals.append(f"{rel}: raw/instrument file type")
+        if ext in {".zip", ".tar.gz", ".gz"}:
+            type2_score += 1
+            type2_signals.append(f"{rel}: archive may contain raw data")
+        if (report.get("size_bytes") or 0) > 10_000_000:
+            type2_score += 1
+            type2_signals.append(f"{rel}: large file size")
+
+    prior = (paper_analysis or {}).get("classification_prior", {}) or {}
+    if prior.get("raw_data_expected"):
+        type2_score += 2
+        type2_signals.append(f"paper prior: {prior.get('raw_data_evidence', 'raw data expected')}")
+    if prior.get("source_data_expected"):
+        type1_score += 2
+        type1_signals.append(f"paper prior: {prior.get('source_data_evidence', 'source/processed data expected')}")
+    if prior.get("both_expected"):
+        type1_score += 1
+        type2_score += 1
+        type1_signals.append(f"paper prior both: {prior.get('both_evidence', 'both expected')}")
+        type2_signals.append(f"paper prior both: {prior.get('both_evidence', 'both expected')}")
+
+    both_candidate = type1_score >= 4 and type2_score >= 4
+    return {
+        "type1_score": type1_score,
+        "type2_score": type2_score,
+        "both_candidate": both_candidate,
+        "type1_signals": type1_signals[:12],
+        "type2_signals": type2_signals[:12],
+    }
+
+
+def _bucket_report(report: Dict[str, Any]) -> str:
+    ext = (report.get("extension") or "").lower()
+    file_type = report.get("file_type", "")
+    rel = (report.get("relative_path") or report.get("filename") or "").lower()
+
+    if file_type in {"tabular_text", "excel"} or ext in {".csv", ".tsv", ".xlsx", ".xls"}:
+        return "type1"
+    if any(token in rel for token in ("fig", "figure", "source", "plot")):
+        return "type1"
+    if file_type in {"instrument_raw", "microscopy_image", "hdf5"} or ext in {".h5", ".hdf5", ".nxs", ".mat", ".sxm", ".ibw", ".spe", ".tif", ".tiff"}:
+        return "type2"
+    if file_type in {"script", "pdf"} or ext in {".py", ".ipynb", ".m", ".r", ".jl", ".sh", ".pdf"}:
+        return "support"
+    return "unclear"
+
+
+def _select_balanced_reports(
+    file_reports: List[Dict[str, Any]],
+    rule_prior: Dict[str, Any],
+) -> List[Dict[str, Any]]:
+    buckets = {"type1": [], "type2": [], "support": [], "unclear": []}
+    for report in file_reports:
+        buckets[_bucket_report(report)].append(report)
+
+    selected: List[Dict[str, Any]] = []
+    selected.extend(buckets["type1"][:6])
+    selected.extend(buckets["type2"][:6])
+    selected.extend(buckets["support"][:2])
+    selected.extend(buckets["unclear"][:4])
+
+    if rule_prior.get("both_candidate"):
+        selected.extend(buckets["type1"][6:8])
+        selected.extend(buckets["type2"][6:8])
+
+    # Preserve original order for readability while deduplicating.
+    seen = set()
+    ordered = []
+    selected_keys = {
+        (r.get("relative_path") or r.get("filename") or "")
+        for r in selected
+    }
+    for report in file_reports:
+        key = report.get("relative_path") or report.get("filename") or ""
+        if key in selected_keys and key not in seen:
+            seen.add(key)
+            ordered.append(report)
+    return ordered
+
+
+def _format_rule_prior(rule_prior: Dict[str, Any]) -> str:
+    lines = [
+        f"type1_score: {rule_prior.get('type1_score', 0)}",
+        f"type2_score: {rule_prior.get('type2_score', 0)}",
+        f"both_candidate: {rule_prior.get('both_candidate', False)}",
+    ]
+    t1 = rule_prior.get("type1_signals", [])
+    t2 = rule_prior.get("type2_signals", [])
+    if t1:
+        lines.append("type1_signals:")
+        lines.extend(f"  - {signal}" for signal in t1[:8])
+    if t2:
+        lines.append("type2_signals:")
+        lines.extend(f"  - {signal}" for signal in t2[:8])
+    return "\n".join(lines)
+
+
+def _reconcile_rule_and_gpt(
+    result: Dict[str, Any],
+    rule_prior: Dict[str, Any],
+) -> Dict[str, Any]:
+    has_t1 = result.get("has_type1", False)
+    has_t2 = result.get("has_type2", False)
+    both = result.get("has_both", False)
+
+    if rule_prior.get("both_candidate") and has_t1 and not has_t2:
+        result["notes"] = f"{result.get('notes', '')} Rule-based prior suggests hidden Type 2 evidence; review recommended.".strip()
+        result["confidence"] = "medium" if result.get("confidence") == "high" else result.get("confidence", "medium")
+    if rule_prior.get("both_candidate") and has_t2 and not has_t1:
+        result["notes"] = f"{result.get('notes', '')} Rule-based prior suggests hidden Type 1 evidence; review recommended.".strip()
+        result["confidence"] = "medium" if result.get("confidence") == "high" else result.get("confidence", "medium")
+    if rule_prior.get("both_candidate") and both:
+        result["rule_based_alignment"] = "Rule-based prior and GPT both indicate both-type data."
+    elif rule_prior.get("both_candidate") and not both:
+        result["rule_based_alignment"] = "Rule-based prior indicates both-type evidence, but GPT did not fully confirm both."
+    else:
+        result["rule_based_alignment"] = "Rule-based prior is broadly consistent with GPT output."
+    return result
+
+
 def _format_file_reports(reports: List[Dict[str, Any]]) -> str:
     """Format file inspection reports into a readable string for GPT."""
     parts = []
     for i, r in enumerate(reports[:30]):  # Limit to 30 files
-        lines = [f"--- File {i+1}: {r.get('filename', '?')} ---"]
+        display_name = r.get("relative_path") or r.get("filename", "?")
+        lines = [f"--- File {i+1}: {display_name} ---"]
+        if r.get("relative_path"):
+            lines.append(f"  Relative path: {r['relative_path']}")
         lines.append(f"  Type: {r.get('file_type', '?')}")
         lines.append(f"  Size: {r.get('size_human', '?')}")
         lines.append(f"  Source: {r.get('download_source', '?')}")
@@ -539,6 +763,8 @@ def _empty_classification(reason: str) -> Dict[str, Any]:
         "has_both": False,
         "type1_summary": "none",
         "type2_summary": "none",
+        "rule_based_alignment": "",
+        "rule_prior": {},
         "type1_files": [],
         "type2_files": [],
         "confidence": "low",

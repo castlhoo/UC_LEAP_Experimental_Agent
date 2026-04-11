@@ -77,6 +77,15 @@ def inspect_all_files(
 ) -> List[Dict[str, Any]]:
     """Inspect all downloaded files for a paper."""
     reports = []
+    base_dir = download_result.get("download_dir", "")
+
+    def _relative_to_base(path: str) -> str:
+        if base_dir and path:
+            try:
+                return os.path.relpath(path, base_dir).replace("\\", "/")
+            except ValueError:
+                pass
+        return os.path.basename(path)
 
     # Inspect directly downloaded files
     for f in download_result.get("files", []):
@@ -84,6 +93,7 @@ def inspect_all_files(
         if path and os.path.isfile(path):
             report = inspect_file(path, config)
             report["download_source"] = f.get("source", "unknown")
+            report["relative_path"] = _relative_to_base(path)
             reports.append(report)
 
     # Inspect extracted ZIP contents
@@ -94,6 +104,7 @@ def inspect_all_files(
             report["download_source"] = "zip_extracted"
             report["archive_path"] = f.get("archive_path", "")
             report["from_zip"] = f.get("from_zip", "")
+            report["relative_path"] = _relative_to_base(path)
             reports.append(report)
 
     return reports

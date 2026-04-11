@@ -54,8 +54,8 @@ The practical inputs are:
 |---|---|---|
 | Search keywords and query templates | Materials-science topics, experiment terms, and dataset-related keywords | `step1/query_generator.py` |
 | Academic metadata APIs | Semantic Scholar, OpenAlex, CrossRef, and arXiv | `step1/paper_searcher.py` |
-| Dataset links discovered from papers | Repository URLs, DOI links, source-data references, and data availability statements | `step2/dataset_link_resolver.py` |
-| Repository inventories and downloadable files | Zenodo/Figshare/GitHub/Dryad inventories, publisher source data, PDFs, archives, spreadsheets, raw measurement files | `step2`-`step4` |
+| Dataset links discovered from papers | Repository URLs, DOI links, source-data references, generic downloadable links, and data availability statements | `step2/dataset_link_resolver.py` |
+| Repository inventories and downloadable files | Zenodo/Figshare/GitHub/Dryad plus Materials Cloud, OSF, Dataverse, and Mendeley Data inventories; publisher source data; PDFs; archives; spreadsheets; raw measurement files | `step2`-`step4` |
 | OpenAI model calls | Used for query generation, inventory assessment, paper understanding, and Type 1/Type 2 classification | `step1/gpt_client.py`, `step2/gpt_client.py`, `step3/gpt_client.py` |
 
 ### The fundamental distinction between Type 1 and Type 2 data
@@ -115,6 +115,7 @@ It then searches multiple metadata APIs, deduplicates results, scores papers by 
 
 Key components:
 
+- `step1/pipeline.py`
 - `step1/query_generator.py`
 - `step1/paper_searcher.py`
 - `step1/deduplicator.py`
@@ -162,12 +163,17 @@ The default repositories supported in config are:
 - Figshare
 - GitHub
 - Dryad
+- Materials Cloud
+- OSF
+- Dataverse
+- Mendeley Data
 
 Key components:
 
 - `step2/pipeline.py`
 - `step2/dataset_link_resolver.py`
 - `step2/repository_classifier.py`
+- `step2/inventory_collector.py`
 - `step2/candidate_loader.py`
 - `step2/gpt_client.py`
 - `step2/config/step2_config.yaml`
@@ -180,10 +186,17 @@ Key components:
 Each paper is assigned a `dataset_status`, such as:
 
 - `verified`
+- `link_found`
 - `source_data_found`
 - `upon_request`
 - `unclassified_link`
 - `no_dataset_found`
+
+Step 2 also now records verification metadata such as:
+
+- `verification_score`
+- `verification_reasons`
+- `needs_human_review`
 
 **Rationale:** This stage narrows the broad Step 1 pool into papers with actual evidence of data availability, which is a stronger requirement than promising metadata alone.
 
@@ -234,6 +247,12 @@ Key components:
 - downloaded files under `step3/downloads/`
 - logs in `step3/output/step3.log`
 
+Step 3 now combines three kinds of evidence during Type 1 / Type 2 classification:
+
+1. paper/PDF analysis,
+2. rule-based priors derived from inspected files and paper context,
+3. balanced file sampling so Type 1-like and Type 2-like files are both shown to GPT.
+
 **Rationale:** This is the first stage where the repository reasons about the actual file contents rather than just repository metadata.
 
 **Current snapshot result:** The latest saved Step 3 output processed **13 papers**, with **1 paper containing both Type 1 and Type 2**, **8 Type 1 only**, **1 Type 2 only**, and **3 neither**. Across those papers, **39 files were downloaded** and **204 files were inspected**.
@@ -257,7 +276,7 @@ Step 4 performs five phases:
 1. load Step 3 classification results,
 2. select papers to organize,
 3. download PDFs when possible,
-4. copy and rename files into a stable local structure,
+4. copy and rename files into a stable local structure using `relative_path`-aware file matching,
 5. generate a manifest for human and programmatic use.
 
 The default output grouping is:
@@ -265,6 +284,7 @@ The default output grouping is:
 - `Both/`
 - `Type1/`
 - `Type2/`
+- `Neither/` when `all`-style organization is requested
 
 Within each paper folder, the organizer separates:
 
@@ -305,7 +325,8 @@ UC_LEAP/
 ├── step4/
 ├── requirements.txt
 ├── utils.py
-└── .env
+├── .env
+└── .env.example
 ```
 
 Pipeline artifact conventions:
@@ -349,6 +370,7 @@ pip install -r requirements.txt
 ```
 
 2. Set `OPENAI_API_KEY` in `.env`.
+   A safe starting point is to copy `.env.example` and fill in the real key locally.
 
 3. Run each step from the repository root:
 
@@ -385,12 +407,6 @@ python -m step4.run_step4
 2. Review `step4/organized/manifest_latest.json`.
 3. Use the organized folders as the curated starting point for downstream benchmark construction.
 
-### Important note about the current snapshot
-
-`step1/run_step1.py` imports `step1.pipeline`, but that module is not present in the current repository snapshot. The saved Step 1 outputs are present, so the project state is still well documented, but Step 1 may need restoration or refactoring before a fresh rerun succeeds.
-
----
-
 ## 6. Key design decisions and rationale
 
 ### D1. Multi-API search for recall
@@ -425,9 +441,21 @@ python -m step4.run_step4
 
 ### D6. Organize final outputs by dataset availability
 
-**Decision:** Step 4 groups papers under `Both`, `Type1`, and `Type2`.
+**Decision:** Step 4 groups papers under `Both`, `Type1`, `Type2`, and explicitly handles `Neither` when needed.
 
 **Rationale:** Downstream consumers often need to prioritize papers with both processed and raw data, but it is still useful to retain one-sided cases for future work.
+
+### D7. Prefer path-aware file matching over filename-only matching
+
+**Decision:** Step 4 matches files primarily by relative path rather than filename alone.
+
+**Rationale:** Repository and supplementary archives often contain repeated filenames such as `README.md` or `data.csv`. Relative-path matching reduces classification collisions and preserves Step 3 intent more faithfully.
+
+### D8. Preserve outputs safely before cleaning older artifacts
+
+**Decision:** New pipeline artifacts are written before older timestamped outputs are cleaned up.
+
+**Rationale:** Long-running download and classification stages should not lose the last good snapshot if a run fails midway.
 
 ---
 
@@ -440,15 +468,21 @@ As of the current saved outputs in this repository:
 - Step 3 has completed download and classification outputs for 13 papers.
 - Step 4 has organized 10 papers into the local corpus.
 
-This means the repository already contains a meaningful curated dataset snapshot, even if some earlier steps may still need code cleanup for perfectly reproducible reruns.
+The codebase has also been updated so that:
+
+- Step 1 is runnable again through `step1/pipeline.py`.
+- Step 2 includes broader repository coverage and richer verification metadata.
+- Step 3 uses balanced sampling plus rule-based priors to reduce missed `Both` cases.
+- Step 4 uses safer path-aware file organization and explicit `Neither` handling.
+- shared artifact saving is safer for interrupted runs.
 
 ---
 
 ## 8. Open questions and future work
 
 1. Restore or reimplement the missing Step 1 pipeline module so the full pipeline can be rerun cleanly from scratch.
-2. Expand repository support beyond the currently configured sources when papers host data in less common locations.
-3. Improve the Type 1 / Type 2 classifier with more transparent rule-based checks in addition to GPT judgments.
+2. Continue expanding repository support and publisher-source parsing for less common hosting patterns.
+3. Add stronger corpus-side review reports and manifests for ambiguous or human-review-needed files.
 4. Add a downstream stage that converts the organized corpus into benchmark-ready paper packages.
 5. Add aggregation scripts and quality-control reports across the full corpus.
 
@@ -468,4 +502,4 @@ This means the repository already contains a meaningful curated dataset snapshot
 
 ---
 
-*Document version: 1.0 - UC LEAP step1-step4 repository documentation*
+*Document version: 1.1 - UC LEAP step1-step4 repository documentation*

@@ -58,11 +58,22 @@ def organize_paper_files(
     # Get file classifications from GPT (full dicts with reasoning)
     classifications = {}
     classification_details = {}
+    filename_counts = {}
     for fc in paper.get("file_classifications", []):
         fname = fc.get("filename", "")
+        rel_path = (fc.get("relative_path", "") or "").replace("\\", "/")
         ftype = fc.get("type", "other")
-        classifications[fname] = ftype
-        classification_details[fname] = fc
+        if rel_path:
+            classifications[rel_path] = ftype
+            classification_details[rel_path] = fc
+        if fname:
+            filename_counts[fname] = filename_counts.get(fname, 0) + 1
+            if filename_counts[fname] == 1:
+                classifications[fname] = ftype
+                classification_details[fname] = fc
+            else:
+                classifications.pop(fname, None)
+                classification_details.pop(fname, None)
 
     # Get source download directory
     download_dir = paper.get("download_dir", "")
@@ -85,10 +96,11 @@ def organize_paper_files(
     for root, dirs, files in os.walk(download_dir):
         for filename in files:
             src_path = os.path.join(root, filename)
+            rel_path = os.path.relpath(src_path, download_dir).replace("\\", "/")
 
             # Determine category
             category = _categorize_file(
-                filename, classifications,
+                filename, rel_path, classifications,
                 ann_filenames, ann_extensions, script_extensions,
             )
 
@@ -121,9 +133,10 @@ def organize_paper_files(
                     "source": src_path,
                 }
                 # Attach GPT reasoning if available
-                detail = classification_details.get(filename, {})
+                detail = classification_details.get(rel_path) or classification_details.get(filename, {})
                 if detail:
                     file_entry["classification"] = {
+                        "relative_path": detail.get("relative_path", rel_path),
                         "type": detail.get("type", ""),
                         "paper_evidence": detail.get("paper_evidence", ""),
                         "file_evidence": detail.get("file_evidence", ""),
@@ -146,6 +159,7 @@ def organize_paper_files(
 
 def _categorize_file(
     filename: str,
+    relative_path: str,
     classifications: Dict[str, str],
     ann_filenames: set,
     ann_extensions: set,
@@ -157,7 +171,7 @@ def _categorize_file(
     Returns one of: type1_data, type2_data, annotations, scripts, skip
     """
     # Check GPT classification first
-    gpt_type = classifications.get(filename, "")
+    gpt_type = classifications.get(relative_path, "") or classifications.get(filename, "")
 
     if gpt_type == "type1":
         return "type1_data"

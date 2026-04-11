@@ -316,31 +316,16 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
                 "assessment": assess if assess else None,
             })
 
-        # Determine overall dataset status
-        # Also consider source_data_files and GPT analysis
+        # Determine overall dataset status using a rules-based verification score.
         link_res = entry["link_resolution"]
-        has_source_files = len(link_res.get("source_data_files", [])) > 0
-        da_upon_request = link_res.get("da_upon_request", False)
         gpt_analysis = link_res.get("gpt_analysis", {})
-        gpt_location = gpt_analysis.get("dataset_location", "")
-
-        if has_inventory:
-            dataset_status = "verified"
-        elif has_repo:
-            dataset_status = "link_found"
-        elif da_upon_request and not has_source_files:
-            # DA explicitly says "upon request" and no real data files found
-            dataset_status = "upon_request"
-        elif has_source_files:
-            dataset_status = "source_data_found"
-        elif gpt_location in ("publisher_source_data", "supplementary", "repository"):
-            dataset_status = "source_data_found"
-        elif gpt_location == "upon_request" or da_upon_request:
-            dataset_status = "upon_request"
-        elif link_res.get("has_dataset_link"):
-            dataset_status = "unclassified_link"
-        else:
-            dataset_status = "no_dataset_found"
+        verification = _score_verification(
+            repos=repos,
+            inventories=successful_inventories,
+            assessments=assessments,
+            link_res=link_res,
+        )
+        dataset_status = verification["status"]
 
         # Determine dataset_type from assessments
         dataset_type = "unknown"
@@ -366,6 +351,9 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
             "screening_decision": paper.get("screening_decision", ""),
             "abstract_summary": paper.get("abstract_summary", ""),
             "dataset_status": dataset_status,
+            "verification_score": verification["score"],
+            "verification_reasons": verification["reasons"],
+            "needs_human_review": verification["needs_human_review"],
             "dataset_type": dataset_type,
             "type1_evidence": type1_evidence,
             "type2_evidence": type2_evidence,
@@ -465,3 +453,89 @@ def _print_summary(output: Dict[str, Any]):
         logger.info(f"PAPERS WITH DATA UPON REQUEST: {len(upon_req)}")
         for p in upon_req[:5]:
             logger.info(f"  [{p['priority_score']:5.1f}] {p['title'][:60]}")
+
+
+def _score_verification(
+    repos: List[Dict[str, Any]],
+    inventories: List[Dict[str, Any]],
+    assessments: List[Dict[str, Any]],
+    link_res: Dict[str, Any],
+) -> Dict[str, Any]:
+    score = 0
+    reasons: List[str] = []
+    needs_human_review = False
+
+    if repos:
+        score += 1
+        reasons.append(f"{len(repos)} repository link(s) classified")
+
+    if inventories:
+        score += 3
+        reasons.append(f"{len(inventories)} inventory lookup(s) succeeded")
+
+    data_like_exts = {
+        ".csv", ".tsv", ".txt", ".dat", ".xlsx", ".xls", ".h5", ".hdf5", ".nxs",
+        ".json", ".xml", ".npy", ".npz", ".mat", ".sxm", ".ibw", ".spe", ".zip",
+    }
+    for inv in inventories:
+        files = inv.get("files", [])
+        if any((f.get("extension", "") or "").lower() in data_like_exts for f in files):
+            score += 2
+            reasons.append(f"Data-like files found in {inv.get('repo_type', 'repository')} inventory")
+            break
+
+    source_files = link_res.get("source_data_files", [])
+    if source_files:
+        score += 2
+        reasons.append(f"{len(source_files)} publisher/source-data file(s) found")
+
+    gpt_analysis = link_res.get("gpt_analysis", {}) or {}
+    if gpt_analysis.get("has_downloadable_data"):
+        score += 1
+        reasons.append(f"GPT DA analysis says downloadable data is available ({gpt_analysis.get('confidence', 'unknown')})")
+
+    gpt_location = gpt_analysis.get("dataset_location", "")
+    if gpt_location in ("repository", "publisher_source_data", "supplementary"):
+        score += 1
+        reasons.append(f"GPT located data in {gpt_location}")
+
+    assessment_confidences = [a.get("confidence", "low") for a in assessments if isinstance(a, dict)]
+    if "high" in assessment_confidences:
+        score += 2
+        reasons.append("At least one inventory assessment has high confidence")
+    elif "medium" in assessment_confidences:
+        score += 1
+        reasons.append("At least one inventory assessment has medium confidence")
+
+    if any(a.get("needs_human_review") for a in assessments if isinstance(a, dict)):
+        needs_human_review = True
+        reasons.append("Inventory assessment requested human review")
+
+    if link_res.get("da_upon_request") and not source_files and not inventories:
+        return {
+            "status": "upon_request",
+            "score": score,
+            "reasons": reasons + ["Data availability says upon request only"],
+            "needs_human_review": needs_human_review,
+        }
+
+    if score >= 6 and inventories:
+        status = "verified"
+    elif score >= 4 and (source_files or inventories):
+        status = "source_data_found"
+    elif score >= 2 and repos:
+        status = "link_found"
+    elif repos or link_res.get("has_dataset_link"):
+        status = "unclassified_link"
+    else:
+        status = "no_dataset_found"
+
+    if status in ("unclassified_link", "source_data_found") and gpt_location == "unclear":
+        needs_human_review = True
+
+    return {
+        "status": status,
+        "score": score,
+        "reasons": reasons,
+        "needs_human_review": needs_human_review,
+    }

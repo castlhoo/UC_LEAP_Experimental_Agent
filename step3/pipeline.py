@@ -98,8 +98,49 @@ def run_step3() -> Dict[str, Any]:
                 analysis = analyze_paper_text(paper, paper_text, model=gpt_model)
                 paper_analyses[doi] = analysis
             else:
-                logger.info("    No PDF text available, will classify without paper context")
-                paper_analyses[doi] = None
+                logger.info("    No PDF text available, building fallback paper prior from Step 2 metadata")
+                da_text = paper.get("data_availability_text", "") or ""
+                gpt_da = paper.get("gpt_data_analysis", {}) or {}
+                source_files = paper.get("source_data_files", []) or []
+                paper_analyses[doi] = {
+                    "summary": paper.get("abstract_summary", ""),
+                    "measurement_types": [],
+                    "figures": [],
+                    "has_raw_measurements": gpt_da.get("dataset_location") == "repository",
+                    "raw_measurement_details": gpt_da.get("data_description", "") if gpt_da.get("dataset_location") == "repository" else "",
+                    "has_processed_plots": bool(source_files) or gpt_da.get("dataset_location") in ("publisher_source_data", "supplementary"),
+                    "processed_plot_details": gpt_da.get("data_description", ""),
+                    "dataset_characterization": {
+                        "data_availability_statement": da_text,
+                        "data_provided_types": [
+                            dtype for dtype, enabled in (
+                                ("raw", gpt_da.get("dataset_location") == "repository"),
+                                ("source_data", bool(source_files)),
+                                ("processed", gpt_da.get("dataset_location") in ("publisher_source_data", "supplementary")),
+                            ) if enabled
+                        ],
+                        "raw_data_description": gpt_da.get("data_description", "") if gpt_da.get("dataset_location") == "repository" else "",
+                        "processed_data_description": gpt_da.get("data_description", "") if gpt_da.get("dataset_location") in ("publisher_source_data", "supplementary") else "",
+                        "figure_data_description": ", ".join(f.get("filename", "") for f in source_files[:5]),
+                        "scripts_description": "",
+                        "data_organization": gpt_da.get("location_detail", ""),
+                        "replot_ready_data_present": bool(source_files),
+                        "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+                        "notes": "Built without PDF text",
+                    },
+                    "classification_prior": {
+                        "raw_data_expected": gpt_da.get("dataset_location") == "repository",
+                        "source_data_expected": bool(source_files) or gpt_da.get("dataset_location") in ("publisher_source_data", "supplementary"),
+                        "both_expected": (gpt_da.get("dataset_location") == "repository" and bool(source_files)),
+                        "raw_data_evidence": gpt_da.get("location_detail", "") if gpt_da.get("dataset_location") == "repository" else "",
+                        "source_data_evidence": ", ".join(f.get("filename", "") for f in source_files[:5]) or gpt_da.get("location_detail", ""),
+                        "both_evidence": "Step 2 found both repository-style data and publisher source files" if (gpt_da.get("dataset_location") == "repository" and bool(source_files)) else "none",
+                        "data_availability_section_relevant": da_text[:500],
+                        "priority_modalities": [],
+                        "review_notes": "Fallback prior derived from Step 2 only",
+                    },
+                    "notes": "Fallback paper prior derived from Step 2 metadata",
+                }
 
             time.sleep(rate_limit_delay)
     else:
@@ -201,17 +242,18 @@ def run_step3() -> Dict[str, Any]:
     # Save per-paper individual JSONs
     papers_dir = os.path.join(output_dir, "papers")
     os.makedirs(papers_dir, exist_ok=True)
-    # Clean old per-paper JSONs
-    for old in os.listdir(papers_dir):
-        if old.endswith(".json"):
-            os.remove(os.path.join(papers_dir, old))
-
+    expected_files = set()
     for i, paper_data in enumerate(output_clean.get("all_papers", [])):
         doi_slug = paper_data.get("doi", "").replace("/", "_").replace(".", "_")
         paper_filename = f"{i+1:03d}_{doi_slug}.json"
         paper_path = os.path.join(papers_dir, paper_filename)
+        expected_files.add(paper_filename)
         with open(paper_path, "w", encoding="utf-8") as f:
             json.dump(paper_data, f, indent=2, ensure_ascii=False, default=str)
+
+    for old in os.listdir(papers_dir):
+        if old.endswith(".json") and old not in expected_files:
+            os.remove(os.path.join(papers_dir, old))
 
     logger.info(f"  Saved {len(output_clean.get('all_papers', []))} individual paper JSONs to {papers_dir}")
 

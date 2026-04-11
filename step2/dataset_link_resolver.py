@@ -21,10 +21,10 @@ logger = logging.getLogger(__name__)
 DATASET_DOMAINS = [
     "zenodo.org", "figshare.com", "github.com", "datadryad.org",
     "data.mendeley.com", "materialscloud.org", "nomad-lab.eu",
-    "osf.io", "dataverse", "pangaea.de",
+    "archive.materialscloud.org", "osf.io", "dataverse", "pangaea.de",
 ]
 
-DATASET_DOI_PREFIXES = ["10.5281", "10.6084", "10.5061", "10.17632", "10.24435"]
+DATASET_DOI_PREFIXES = ["10.5281", "10.6084", "10.5061", "10.17632", "10.24435", "10.7910"]
 
 
 # ===================================================================
@@ -171,6 +171,13 @@ def resolve_from_publisher(
     elif publisher == "aps":
         _extract_aps(html, final_url, doi, result)
 
+    # ---- Generic download extraction fallback ----
+    for file_info in _extract_generic_downloads(html, final_url):
+        if file_info["url"] not in result["urls"]:
+            result["urls"].append(file_info["url"])
+        if not any(existing.get("url") == file_info["url"] for existing in result["source_data_files"]):
+            result["source_data_files"].append(file_info)
+
     return result
 
 
@@ -240,6 +247,34 @@ def _extract_repo_urls(html: str) -> List[str]:
                 seen.add(url)
                 found.append(url)
 
+    return found
+
+
+def _extract_generic_downloads(html: str, base_url: str) -> List[Dict[str, Any]]:
+    """Extract likely downloadable dataset/source files from generic publisher pages."""
+    found = []
+    seen = set()
+    pattern = r'href="([^"]*\.(?:xlsx?|csv|tsv|txt|dat|zip|tar\.gz|gz|h5|hdf5|nxs|json|xml|np[yz]|mat|sxm|ibw|spe|pdf)[^"]*)"'
+    for match in re.findall(pattern, html[:250000], re.IGNORECASE):
+        if match.startswith("http"):
+            url = match
+        elif match.startswith("/"):
+            domain_match = re.match(r"https?://[^/]+", base_url)
+            if not domain_match:
+                continue
+            url = f"{domain_match.group(0)}{match}"
+        else:
+            continue
+        if any(token in url.lower() for token in ("track", "click", "redirect", "#")):
+            continue
+        if url in seen:
+            continue
+        seen.add(url)
+        found.append({
+            "url": url,
+            "filename": url.rsplit("/", 1)[-1].split("?")[0],
+            "source": "generic_download",
+        })
     return found
 
 

@@ -30,9 +30,14 @@ REPO_PATTERNS: List[Tuple[str, str, int]] = [
     # Mendeley Data: https://data.mendeley.com/datasets/xxx
     ("mendeley", r"data\.mendeley\.com/datasets/(\w+)", 1),
     # Materials Cloud: https://archive.materialscloud.org/record/2024.xxx
-    ("materials_cloud", r"materialscloud\.org/record/([\d.]+)", 1),
+    ("materials_cloud", r"(?:archive\.)?materialscloud\.org/record/([\w.-]+)", 1),
     # NOMAD: https://nomad-lab.eu/prod/v1/gui/dataset/id/xxx
     ("nomad", r"nomad-lab\.eu/.*?/dataset/id/([a-zA-Z0-9_-]+)", 1),
+    # OSF project/node: https://osf.io/abc12/
+    ("osf", r"osf\.io/([a-z0-9]{5,})/?", 1),
+    # Dataverse DOI or persistent identifier links
+    ("dataverse", r"(10\.7910/dvn/[a-z0-9]+)", 1),
+    ("dataverse", r"dataverse[^\s]*persistentid=(10\.\d+/[^\s&]+)", 1),
     # Supplementary (generic publisher links)
     ("supplementary", r"(nature\.com|science\.org|aps\.org|wiley\.com|springer\.com).*suppl", 0),
 ]
@@ -44,6 +49,7 @@ DATASET_DOI_PREFIXES = {
     "10.5061": "dryad",
     "10.17632": "mendeley",
     "10.24435": "materials_cloud",
+    "10.7910": "dataverse",
 }
 
 

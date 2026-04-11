@@ -80,7 +80,7 @@ def run_step4() -> Dict[str, Any]:
     os.makedirs(output_dir, exist_ok=True)
 
     # Create Type-based subdirectories
-    for type_dir in ["Both", "Type1", "Type2"]:
+    for type_dir in ["Both", "Type1", "Type2", "Neither"]:
         os.makedirs(os.path.join(output_dir, type_dir), exist_ok=True)
 
     rename_config = config.get("rename", {})
@@ -95,8 +95,10 @@ def run_step4() -> Dict[str, Any]:
             type_group = "Both"
         elif has_t1:
             type_group = "Type1"
-        else:
+        elif has_t2:
             type_group = "Type2"
+        else:
+            type_group = "Neither"
 
         dirname = make_paper_dirname(i + 1, paper["title"], max_title_words)
         paper_dir = os.path.join(output_dir, type_group, dirname)
@@ -169,6 +171,7 @@ def run_step4() -> Dict[str, Any]:
             "both_count": sum(1 for m in manifests if m["type_group"] == "Both"),
             "type1_only_count": sum(1 for m in manifests if m["type_group"] == "Type1"),
             "type2_only_count": sum(1 for m in manifests if m["type_group"] == "Type2"),
+            "neither_count": sum(1 for m in manifests if m["type_group"] == "Neither"),
             "pdfs_downloaded": sum(1 for m in manifests if m["has_pdf"]),
             "total_type1_files": sum(m["counts"]["type1"] for m in manifests),
             "total_type2_files": sum(m["counts"]["type2"] for m in manifests),
@@ -220,6 +223,7 @@ def _print_summary(output: Dict[str, Any]):
     logger.info(f"  Both (T1+T2):        {s['both_count']}")
     logger.info(f"  Type 1 only:         {s['type1_only_count']}")
     logger.info(f"  Type 2 only:         {s['type2_only_count']}")
+    logger.info(f"  Neither:             {s['neither_count']}")
     logger.info(f"PDFs downloaded:        {s['pdfs_downloaded']}")
     logger.info(f"Type 1 data files:     {s['total_type1_files']}")
     logger.info(f"Type 2 data files:     {s['total_type2_files']}")

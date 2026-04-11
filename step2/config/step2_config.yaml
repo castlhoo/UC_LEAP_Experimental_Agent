@@ -27,6 +27,18 @@ repositories:
   dryad:
     api_base: "https://datadryad.org/api/v2/datasets"
     enabled: true
+  materials_cloud:
+    api_base: "https://archive.materialscloud.org/api/v1/records"
+    enabled: true
+  osf:
+    api_base: "https://api.osf.io/v2/nodes"
+    enabled: true
+  dataverse:
+    api_base: "https://dataverse.harvard.edu/api/datasets/:persistentId/"
+    enabled: true
+  mendeley:
+    api_base: "https://api.datacite.org/dois"
+    enabled: true
 
 # Input/output paths (relative to project root)
 input_file: "step1/output/step1_candidates_latest.json"
