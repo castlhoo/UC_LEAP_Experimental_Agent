@@ -1,0 +1,36 @@
+Title: Unveiling Weyl-related optical responses in semiconducting tellurium by mid-infrared circular photogalvanic effect
+DOI: 10.1038/s41467-022-33190-3
+Journal: Nature Communications
+Year: 2022
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The Excel workbook is a figure-organized source-data deposit with labeled numeric tables and is directly replot-ready, so it is Type 1.
+- Type2 summary: No file is clearly raw/unprocessed instrument output based on the provided inspection. The PDF is documentation/supplementary material rather than a raw dataset.
+
+Type1 files
+- Source_data.xlsx
+  original path: Source_data.xlsx
+  classified as: type1
+  reasoning: The workbook is clearly organized as figure/source data and can be directly plotted with minimal processing. Although some sheets may contain processed quantities, Type 1 explicitly includes cleaned, replot-ready source data deposits organized by figure. The paper evidence and file structure align strongly with Type 1.
+  paper evidence: The paper explicitly says all data supporting the plots are available via figshare, which strongly supports a figure/source-data deposit. The workbook is organized by figure sheets, matching source-data conventions.
+  file evidence: Excel workbook with 72 sheets, figure-named tabs such as fig.1b, fig.1d, fig.2c, fig.2f, etc. Sheets contain labeled columns like k-points, E(eV), B(T), R_xy(Ω), MR_out of plane(%), and other figure-specific numeric tables. This is structured, replot-ready tabular data.
+  structure: Figure-based sheets; examples include k-points, E(eV), B(T), R_xy(Ω), MR_out of plane(%), MR_in plane(%), and dense image-like numeric grids for scanning maps
+  ambiguity: Low: some sheets lack headers or may contain dense numeric grids, but the overall workbook is still a structured source-data deposit rather than raw instrument output.
+
+Type2 files
+- none
+
+Annotation files
+- 41467_2022_33190_MOESM1_ESM.pdf
+  original path: 41467_2022_33190_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This file is best treated as supplementary documentation/source-data PDF, not as a replot-ready dataset. It may contain figure panels or embedded data references, but the available file evidence does not support classifying it as Type 1 or Type 2 data.
+  paper evidence: The paper states that all data supporting the plots are available via figshare, and Nature supplementary PDFs commonly serve as documentation or embedded source-data supplements rather than standalone replot-ready tables.
+  file evidence: PDF format, 1.4 MB, from nature_source_data. No tabular structure, sheet organization, or directly loadable numeric columns are reported. This is consistent with a supplementary/source-data document rather than a dataset table.
+  structure: PDF document; no tabular columns reported
+  ambiguity: Moderate: without page-level inspection, the PDF could contain source-data figures or explanatory material, but it is not a structured data file.
+
+Script files
+- none

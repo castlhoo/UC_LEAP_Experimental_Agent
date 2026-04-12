@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0207",
+  "title": "Metabolic reprogramming of the retinal pigment epithelium by cytokines associated with age-related macular degeneration",
+  "doi": "10.1042/bsr20231904",
+  "journal": "Bioscience Reports",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4393858804",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1042_bsr20231904",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file can be confidently identified as cleaned, replot-ready tabular data based on the available evidence.",
+  "type2_summary": "No file can be confidently identified as raw/unprocessed experimental data based on the available evidence.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Both files are PDFs from Zenodo, but the inspection report does not provide internal content details such as tables, headers, or embedded raw outputs. Given the paper evidence and lack of dataset structure, conservative classification is documentation rather than Type 1 or Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "JOVR-06-0030..pdf",
+      "filename": "JOVR-06-0030..pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement and no explicit indication that this PDF is a data deposit or source-data file.",
+      "file_evidence": "PDF format, 381.8 KB, Zenodo source. The filename resembles a paper/article identifier rather than a dataset table or instrument output. No internal structure was provided to indicate tabular data or raw measurements.",
+      "reasoning": "This appears to be a document rather than a dataset file. There is insufficient evidence that it contains figure-ready data or raw experimental data, and the filename/size are more consistent with a manuscript or supplementary document than a data file.",
+      "ambiguity": "Moderate: without opening the PDF, it is not possible to exclude embedded tables or supplementary material, but no evidence supports classifying it as Type 1 or Type 2.",
+      "key_columns_or_structure": "Not available from inspection"
+    },
+    {
+      "relative_path": "i2164-2591-13-9-11_1725528505.02356__1_.pdf",
+      "filename": "i2164-2591-13-9-11_1725528505.02356__1_.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement and no explicit indication that this PDF is a data deposit or source-data file.",
+      "file_evidence": "PDF format, 9.3 MB, Zenodo source. The large size suggests a document with many pages, figures, or embedded content, but no table structure or machine-readable dataset structure is available from the inspection report.",
+      "reasoning": "This is most conservatively treated as documentation rather than a dataset. Although the file is large, there is no evidence that it is a raw data archive or a cleaned, replot-ready table. A PDF alone is not sufficient to classify as Type 1 or Type 2 without content evidence.",
+      "ambiguity": "High: the file could contain supplementary figures, tables, or embedded data, but the available inspection does not reveal a dataset structure.",
+      "key_columns_or_structure": "Not available from inspection"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The study experimentally examines how AMD-associated cytokines alter retinal pigment epithelium metabolism, affecting glycolysis, mitochondrial function, and ATP production in cell and ex vivo models.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to generate experimental data on retinal pigment epithelium metabolism under AMD-associated cytokine treatment, including glycolysis, mitochondrial function, and ATP production measurements in cell and ex vivo models, but no accessible data files were identified.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided. It is not possible to determine whether the underlying experimental data are available in a repository, supplementary files, or upon request from the available information.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided. It is not possible to determine whether the underlying experimental data are available in a repository, supplementary files, or upon request from the available information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "JOVR-06-0030..pdf",
+      "extension": ".pdf",
+      "size_bytes": 390957,
+      "size_human": "381.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "JOVR-06-0030..pdf"
+    },
+    {
+      "filename": "i2164-2591-13-9-11_1725528505.02356__1_.pdf",
+      "extension": ".pdf",
+      "size_bytes": 9741272,
+      "size_human": "9.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "i2164-2591-13-9-11_1725528505.02356__1_.pdf"
+    }
+  ]
+}

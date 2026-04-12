@@ -1,0 +1,1016 @@
+{
+  "paper_id": "step1_0204",
+  "title": "Observation of kagome-like bands in two-dimensional semiconducting Cr8Se12",
+  "doi": "10.1038/s41467-024-53314-1",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4403464243",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 6,
+  "files_extracted": 30,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-53314-1",
+  "files_inspected": 36,
+  "file_types_found": [
+    "excel",
+    "binary",
+    "archive",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The Type 1 files are figure-specific, structured, replot-ready datasets, mainly Excel tables for calculated band structures and processed line profiles, plus the figure 4 archive of derived theoretical outputs.",
+  "type2_summary": "The Type 2 files are raw or raw-like measurement outputs, especially the microscopy scan file and the large figure 3 archive associated with ARPES/STS/raw spectroscopy content; the figure 2 archive also contains a raw scan file and is conservatively treated as Type 2.",
+  "type1_files": [
+    "Dataset_for_Figure_1.zip",
+    "Dataset_for_Figure_4.zip",
+    "zip_contents/Fig 1d.xlsx",
+    "zip_contents/Fig 1e.xlsx",
+    "zip_contents/Figure 2a inset.xlsx"
+  ],
+  "type2_files": [
+    "Dataset_for_Figure_2.zip",
+    "Dataset_for_Figure_3.zip",
+    "zip_contents/Figure 2a.stp"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The two MOESM PDF files are supporting source-data documents but were not classifiable as Type 1 or Type 2 from the available inspection metadata alone. The archives show mixed content in places, so classification was done conservatively based on the dominant file type and paper context.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2024_53314_MOESM1_ESM.pdf",
+      "filename": "41467_2024_53314_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature Communications source-data PDFs typically provide figure source data or supporting documentation; the paper states data and code were deposited in FigShare and includes many figure-supporting datasets.",
+      "file_evidence": "PDF format, 2.4 MB, from nature_source_data. No tabular structure is reported in the inspection output, so it is not directly replot-ready as a dataset file.",
+      "reasoning": "This is best treated as supporting documentation/source-data container rather than a raw measurement file or a clean replot-ready table. Without extracted tabular content, it cannot be confidently classified as Type 1 or Type 2.",
+      "ambiguity": "High: the file may contain source-data figures or tables, but the inspection report does not expose its internal structure.",
+      "key_columns_or_structure": "Not available from inspection"
+    },
+    {
+      "relative_path": "41467_2024_53314_MOESM2_ESM.pdf",
+      "filename": "41467_2024_53314_MOESM2_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper explicitly says data and code were deposited in FigShare; this PDF is part of the Nature source-data package and likely contains supporting material for figures or methods.",
+      "file_evidence": "PDF format, 14.2 MB, from nature_source_data. Large size suggests substantial supporting content, but no machine-readable table structure is provided in the inspection report.",
+      "reasoning": "Because the internal content is not exposed and the file is a PDF rather than a direct data table or raw instrument output, it is safest to classify it as documentation/supporting material.",
+      "ambiguity": "High: could embed source data or supplementary figures, but not enough evidence to call it Type 1 or Type 2.",
+      "key_columns_or_structure": "Not available from inspection"
+    },
+    {
+      "relative_path": "Dataset_for_Figure_1.zip",
+      "filename": "Dataset_for_Figure_1.zip",
+      "type": "type1",
+      "paper_evidence": "The paper states that data generated in the study were deposited in FigShare, and figure-specific deposits are consistent with source/processed data intended for replotting.",
+      "file_evidence": "Archive is small (54.2 KB) and contains Excel files named Fig 1d.xlsx and Fig 1e.xlsx with headers and numeric tables. This is strongly figure-oriented and replot-ready.",
+      "reasoning": "The contents are clean, structured, figure-specific tabular data with headers, matching Type 1. The files appear to be processed/model data for plotting band structures rather than raw instrument output.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Fig 1d.xlsx: 10 columns x 302 rows; Fig 1e.xlsx: 7 columns x 302 rows; headers include parameter sets such as t1 = t1' = 0.1, t2 = 0.05"
+    },
+    {
+      "relative_path": "Dataset_for_Figure_2.zip",
+      "filename": "Dataset_for_Figure_2.zip",
+      "type": "type2",
+      "paper_evidence": "Figure 2 contains raw STM, nc-AFM, and LEED measurements, and the paper states the deposited data include raw experimental data.",
+      "file_evidence": "Archive is 5.9 MB and contains Figure 2a inset.xlsx plus Figure 2a.stp. The .stp file is a binary/proprietary instrument-like format, and the presence of a scan file strongly indicates raw measurement data.",
+      "reasoning": "Although one Excel file is replot-ready, the archive also contains a binary scan file associated with microscopy data. Given the paper's raw-measurement context and the instrument-output file, this archive is conservatively classified as Type 2.",
+      "ambiguity": "Medium: the archive mixes a clean table with a raw scan file, so it contains both processed and raw elements.",
+      "key_columns_or_structure": "Figure 2a inset.xlsx: 2 columns x 93 rows; columns are Lateral distance (nm), Height (nm)"
+    },
+    {
+      "relative_path": "Dataset_for_Figure_3.zip",
+      "filename": "Dataset_for_Figure_3.zip",
+      "type": "type2",
+      "paper_evidence": "Figure 3 includes raw ARPES spectra, Fermi-surface maps, STS spectra/maps, and DFT-derived overlays; the paper explicitly includes direct measurements in this figure set.",
+      "file_evidence": "Archive is very large (186.9 MB), which is consistent with raw imaging/spectroscopy data. The rule-based prior also flags large .itx map files inside the archive as raw-like.",
+      "reasoning": "The size and figure context strongly suggest raw or minimally processed spectroscopy/mapping data rather than a clean source-data table. Even if some derived overlays are present, the archive is dominated by raw-measurement content.",
+      "ambiguity": "Medium: the archive may contain a mix of raw and processed files, but the dominant evidence points to raw data.",
+      "key_columns_or_structure": "Not available from inspection; archive likely contains spectroscopy/map files"
+    },
+    {
+      "relative_path": "Dataset_for_Figure_4.zip",
+      "filename": "Dataset_for_Figure_4.zip",
+      "type": "type1",
+      "paper_evidence": "Figure 4 is primarily DFT and tight-binding modeling output, which the paper describes as derived/processed rather than raw measurement.",
+      "file_evidence": "Archive is 7.0 MB and is figure-specific. The rule-based prior indicates a structured figure/source-like dataset, and Figure 4 content is model-derived band structures and charge-density maps.",
+      "reasoning": "This archive is best interpreted as processed, replot-ready figure data for theoretical results. It is not raw instrument output and is consistent with Type 1 source data.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Not available from inspection; likely model output tables/plots for band structures and charge-density maps"
+    },
+    {
+      "relative_path": "zip_contents/Fig 1d.xlsx",
+      "filename": "Fig 1d.xlsx",
+      "type": "type1",
+      "paper_evidence": "Figure 1d is a calculated band-structure plot for the CT lattice, i.e., derived model data intended for plotting.",
+      "file_evidence": "Excel file with 10 columns x 302 rows, explicit headers naming parameter sets (e.g., t1 = t1' = 0.1, t2 = 0.05). This is structured numeric data ready for plotting.",
+      "reasoning": "Clear figure-specific tabular data with labeled columns and no signs of raw instrument output. Directly replot-ready, so Type 1.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "10 columns x 302 rows; headers include t1 = t1' = 0.1, t2 = 0.05; t1 = t1' = 0.1, t2 = 0; t1 = t1' = 0.1, t2 = 0.2"
+    },
+    {
+      "relative_path": "zip_contents/Fig 1e.xlsx",
+      "filename": "Fig 1e.xlsx",
+      "type": "type1",
+      "paper_evidence": "Figure 1e is a calculated comparison of CT-lattice band structures under different hopping parameters, i.e., derived model output.",
+      "file_evidence": "Excel file with 7 columns x 302 rows and explicit parameter headers. Structured numeric table suitable for direct plotting.",
+      "reasoning": "This is clean, figure-specific, processed data and therefore Type 1.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "7 columns x 302 rows; headers include t1 = t1' = 0.1, t2 = 0 and t1 = 0.11, t1' = 0.09, t2 = 0"
+    },
+    {
+      "relative_path": "zip_contents/Figure 2a inset.xlsx",
+      "filename": "Figure 2a inset.xlsx",
+      "type": "type1",
+      "paper_evidence": "Figure 2a inset is a line profile derived from STM topography, used as a figure-supporting plot rather than raw instrument output.",
+      "file_evidence": "Excel file with 2 columns x 93 rows and headers 'Lateral distance (nm)' and 'Height (nm)'. This is a clean, replot-ready table.",
+      "reasoning": "The file is a simple processed profile extracted from a measurement image, directly plottable with minimal processing. Type 1.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Lateral distance (nm), Height (nm); 2 columns x 93 rows"
+    },
+    {
+      "relative_path": "zip_contents/Figure 2a.stp",
+      "filename": "Figure 2a.stp",
+      "type": "type2",
+      "paper_evidence": "Figure 2a is a raw STM topography image, and the paper emphasizes direct experimental measurements for this figure.",
+      "file_evidence": "Binary .stp file, 522.4 KB, extracted from the Figure 2 archive. This is characteristic of instrument output/raw scan data and is not directly replot-ready without specialized software.",
+      "reasoning": "The file is raw microscopy output requiring processing to generate the published image. Type 2.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Binary scan file; no tabular columns"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the MBE growth and atomic-scale characterization of a 7-atomic-layer semiconducting chromium selenide phase, identified as 2D Cr8Se12, on graphite. Using STM/nc-AFM, STS, ARPES, STEM, DFT, and tight-binding modeling, the authors show that the surface forms a coloring-triangle (CT) lattice with kagome-like bands near the valence band maximum, arising mainly from topmost Se pz orbitals modulated by the underlying Cr honeycomb network.",
+    "measurement_types": [
+      "STM topography",
+      "nc-AFM imaging",
+      "STS (dI/dV spectra and maps)",
+      "ARPES",
+      "LEED",
+      "cross-sectional STEM",
+      "DFT calculations",
+      "tight-binding modeling",
+      "XMCD characterization"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the ideal kagome lattice.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic of the distorted kagome lattice and its relation to the kagome geometry.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic of the coloring-triangle (CT) lattice formed by rotating corner-sharing triangles.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Calculated evolution of CT-lattice band structures as hopping t2 is tuned from 0 to 2t1.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Calculated CT-lattice band structures comparing mirror-symmetric (t1=t1') and mirror-broken (t1≠t1') cases.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Large-area STM topography of the chromium selenide sample showing 5-atomic-layer and 7-atomic-layer terraces with a line profile.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "LEED pattern from the sample containing both phases, showing diffraction spots from graphite, Cr2Se3, and Cr8Se12.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "STM image of the interface region between 5-layer Cr2Se3 and 7-layer Cr8Se12.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "nc-AFM image of the same interface region, used to resolve surface lattice positions more precisely.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Atomic-resolution constant-height STM image of 2D Cr8Se12 showing a (√3×√3)R30° reconstruction and kagome-like morphology.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Atomic-resolution nc-AFM image of 2D Cr8Se12 showing three distinct nearest-neighbor distances in the reconstructed unit cell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Histogram/statistical analysis of measured nearest-neighbor interatomic distances with Gaussian fits.",
+        "data_type": "processed distribution plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Proposed crystal structure of 2D Cr8Se12 with a 2/3-occupied Cr adlayer beneath the topmost Se layer.",
+        "data_type": "structural schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Brillouin-zone relation between 2D Cr8Se12, 2D Cr2Se3, and graphite.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "ARPES valence-band dispersion with overlaid DFT bands for Cr2Se3 and unfolded Cr8Se12.",
+        "data_type": "band dispersion plot",
+        "likely_source": "raw measurement plus derived overlay"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Fermi-surface map showing only graphite π bands at the Fermi level.",
+        "data_type": "momentum-space map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Schematic of the topmost two atomic adlayers used to interpret dI/dV maps.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "STS dI/dV spectrum of 2D Cr8Se12 showing a ~0.8 eV bandgap and a valence peak near -1.10 V.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Constant-height dI/dV map at the conduction band minimum energy.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "Constant-height dI/dV map at the valence band maximum energy.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "Constant-height dI/dV map at the van Hove singularity energy showing kagome-like localization.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3i",
+        "description": "DFT-simulated charge density at the conduction band minimum energy.",
+        "data_type": "calculated charge-density map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3j",
+        "description": "DFT-simulated charge density at the valence band maximum energy.",
+        "data_type": "calculated charge-density map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3k",
+        "description": "DFT-simulated charge density at the van Hove singularity energy.",
+        "data_type": "calculated charge-density map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Spin-polarized DFT band structure projected onto top-layer Se pz orbitals.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Tight-binding model of the CT lattice with hopping parameters t1, t1', and t2.",
+        "data_type": "model schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Tight-binding simulated band structure compared with DFT.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Side-view charge density distribution at the van Hove singularity energy, showing tilted Se pz orbitals.",
+        "data_type": "calculated charge-density map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Top-view arrangement of the upper lobes of Se pz orbitals illustrating the CT distortion.",
+        "data_type": "calculated structural/electronic map",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental data include STM topography scans, nc-AFM images, STS dI/dV spectra and constant-height dI/dV maps, ARPES spectra and Fermi-surface maps, LEED diffraction patterns, and cross-sectional STEM characterization. The paper also mentions XMCD characterization in the author contributions, but no figure/text details are provided in the excerpt.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed/derived plots include Gaussian-fitted histograms of interatomic distances, ARPES band overlays with DFT/unfolded bands, DFT charge-density maps at selected energies, projected DFT band structures, and tight-binding simulated band structures. Several schematics and structural models are also derived rather than directly measured.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that data generated in this study have been deposited in FigShare under accession code https://doi.org/10.6084/m9.figshare.26964691, and that code supporting the findings has also been deposited there under the same accession code.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "source_data",
+        "scripts"
+      ],
+      "raw_data_description": "The paper indicates experimental data were generated from STM/nc-AFM, STS, ARPES, LEED, and STEM measurements, but it does not specify file formats, folder structure, or whether the deposited FigShare content contains the original instrument files. Raw data are implied by the statement that data generated in this study were deposited.",
+      "processed_data_description": "Processed data include fitted lattice-constant statistics, extracted band dispersions, dI/dV spectra/maps used for comparison with DFT, unfolded/projection band structures, and simulated charge-density distributions. The paper does not provide tabulated values in the text, but figure panels clearly rely on processed/extracted quantities.",
+      "figure_data_description": "Figure-specific data are implied by the deposition statement and by the presence of many measurement-derived panels. The paper does not explicitly say 'source data' files per figure in the text, but the FigShare deposit likely contains data supporting the figures and code.",
+      "scripts_description": "Yes. The paper explicitly states that code supporting the findings has been deposited in FigShare. No notebook language or specific script names are given.",
+      "data_organization": "not specified; likely mixed figure-supporting files plus code in FigShare",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper states that data and code are deposited, which suggests replotting is possible in principle. However, the text does not specify exact file formats, naming conventions, or whether all raw instrument files are included, so direct usability cannot be fully confirmed from the paper alone.",
+      "notes": "The paper mixes direct measurements with derived analyses and theoretical simulations. Important distinction: STM/nc-AFM/STS/ARPES/LEED are raw measurement modalities, while DFT charge densities, unfolded bands, tight-binding bands, and Gaussian-fit histograms are processed/derived. The data availability statement is unusually broad and does not separate raw data from source data in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper says data generated in this study have been deposited in FigShare, and the study contains many direct measurements (STM, nc-AFM, STS, ARPES, LEED, STEM).",
+      "source_data_evidence": "The paper explicitly says code supporting the findings has been deposited in FigShare, and the figures include many processed/derived panels that would typically be accompanied by figure source data.",
+      "both_evidence": "The combination of direct experimental measurements and derived figure panels implies both raw data and source/processed data are likely present, though the text does not explicitly separate them.",
+      "data_availability_section_relevant": "“data generated in this study have been deposited in the FigShare database under accession code ...” and “code supporting the findings of this study have been deposited in the FigShare database under accession code ...”",
+      "priority_modalities": [
+        "STM topography",
+        "nc-AFM",
+        "STS dI/dV spectra",
+        "STS dI/dV maps",
+        "ARPES spectra",
+        "LEED patterns",
+        "STEM images",
+        "DFT outputs",
+        "tight-binding model outputs"
+      ],
+      "review_notes": "Do not assume the FigShare deposit contains only raw data or only source data; the paper only states that data and code are deposited. The safest classification is that both raw measurements and processed/figure-supporting data are expected, but exact organization is unknown."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2024_53314_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2558915,
+      "size_human": "2.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_53314_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_53314_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 14865145,
+      "size_human": "14.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_53314_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "Dataset_for_Figure_1.zip",
+      "extension": ".zip",
+      "size_bytes": 55526,
+      "size_human": "54.2 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "Dataset_for_Figure_1.zip"
+    },
+    {
+      "filename": "Dataset_for_Figure_2.zip",
+      "extension": ".zip",
+      "size_bytes": 6197173,
+      "size_human": "5.9 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "Dataset_for_Figure_2.zip"
+    },
+    {
+      "filename": "Dataset_for_Figure_3.zip",
+      "extension": ".zip",
+      "size_bytes": 196022339,
+      "size_human": "186.9 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "Dataset_for_Figure_3.zip"
+    },
+    {
+      "filename": "Dataset_for_Figure_4.zip",
+      "extension": ".zip",
+      "size_bytes": 7319314,
+      "size_human": "7.0 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "Dataset_for_Figure_4.zip"
+    },
+    {
+      "filename": "E_band.m",
+      "extension": ".m",
+      "size_bytes": 1525,
+      "size_human": "1.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .m",
+      "download_source": "zip_extracted",
+      "archive_path": "Code/E_band.m",
+      "from_zip": "Dataset_for_Figure_1.zip",
+      "relative_path": "zip_contents/Code/E_band.m"
+    },
+    {
+      "filename": "HamiltonianR.m",
+      "extension": ".m",
+      "size_bytes": 396,
+      "size_human": "396.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .m",
+      "download_source": "zip_extracted",
+      "archive_path": "Code/HamiltonianR.m",
+      "from_zip": "Dataset_for_Figure_1.zip",
+      "relative_path": "zip_contents/Code/HamiltonianR.m"
+    },
+    {
+      "filename": "parameter.m",
+      "extension": ".m",
+      "size_bytes": 74,
+      "size_human": "74.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .m",
+      "download_source": "zip_extracted",
+      "archive_path": "Code/parameter.m",
+      "from_zip": "Dataset_for_Figure_1.zip",
+      "relative_path": "zip_contents/Code/parameter.m"
+    },
+    {
+      "filename": "Fig 1d.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 33743,
+      "size_human": "33.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "t1 = t1' = 0.1, t2 = 0.05",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "t1 = t1' = 0.1, t2 = 0",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "t1 = t1' = 0.1, t2 = 0.2",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "t1 = t1' = 0.1, t2 = 0.05",
+            "t1 = t1' = 0.1, t2 = 0",
+            "t1 = t1' = 0.1, t2 = 0.2"
+          ],
+          "column_count": 10,
+          "row_count": 302,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "t1 = t1' = 0.1, t2 = 0.05": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "t1 = t1' = 0.1, t2 = 0": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "t1 = t1' = 0.1, t2 = 0.2": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig 1d.xlsx",
+      "from_zip": "Dataset_for_Figure_1.zip",
+      "relative_path": "zip_contents/Fig 1d.xlsx"
+    },
+    {
+      "filename": "Fig 1e.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 24975,
+      "size_human": "24.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "t1 = t1' = 0.1, t2 = 0",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "t1 = 0.11, t1' = 0.09, t2 = 0",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "t1 = t1' = 0.1, t2 = 0",
+            "t1 = 0.11, t1' = 0.09, t2 = 0"
+          ],
+          "column_count": 7,
+          "row_count": 302,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "t1 = t1' = 0.1, t2 = 0": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "t1 = 0.11, t1' = 0.09, t2 = 0": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig 1e.xlsx",
+      "from_zip": "Dataset_for_Figure_1.zip",
+      "relative_path": "zip_contents/Fig 1e.xlsx"
+    },
+    {
+      "filename": "Figure 2a inset.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10414,
+      "size_human": "10.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Lateral distance (nm)",
+            "Height (nm)"
+          ],
+          "named_columns": [
+            "Lateral distance (nm)",
+            "Height (nm)"
+          ],
+          "column_count": 2,
+          "row_count": 93,
+          "dtypes": {
+            "Lateral distance (nm)": "float64",
+            "Height (nm)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2a inset.xlsx",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2a inset.xlsx"
+    },
+    {
+      "filename": "Figure 2a.stp",
+      "extension": ".stp",
+      "size_bytes": 534905,
+      "size_human": "522.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2a.stp",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2a.stp"
+    },
+    {
+      "filename": "Figure 2b.png",
+      "extension": ".png",
+      "size_bytes": 1039285,
+      "size_human": "1014.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2b.png",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2b.png"
+    },
+    {
+      "filename": "Figure 2c.stp",
+      "extension": ".stp",
+      "size_bytes": 534716,
+      "size_human": "522.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2c.stp",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2c.stp"
+    },
+    {
+      "filename": "Figure 2d.stp",
+      "extension": ".stp",
+      "size_bytes": 533877,
+      "size_human": "521.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2d.stp",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2d.stp"
+    },
+    {
+      "filename": "Figure 2e.stp",
+      "extension": ".stp",
+      "size_bytes": 2108263,
+      "size_human": "2.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2e.stp",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2e.stp"
+    },
+    {
+      "filename": "Figure 2f.stp",
+      "extension": ".stp",
+      "size_bytes": 2107336,
+      "size_human": "2.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2f.stp",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2f.stp"
+    },
+    {
+      "filename": "Figure 2g.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10028,
+      "size_human": "9.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "a1",
+            "a1'",
+            "a2"
+          ],
+          "named_columns": [
+            "a1",
+            "a1'",
+            "a2"
+          ],
+          "column_count": 3,
+          "row_count": 97,
+          "dtypes": {
+            "a1": "float64",
+            "a1'": "float64",
+            "a2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 2g.xlsx",
+      "from_zip": "Dataset_for_Figure_2.zip",
+      "relative_path": "zip_contents/Figure 2g.xlsx"
+    },
+    {
+      "filename": "GK1 cut1.itx",
+      "extension": ".itx",
+      "size_bytes": 6284810,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3b/GK1 cut1.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3b/GK1 cut1.itx"
+    },
+    {
+      "filename": "GK1 cut2.itx",
+      "extension": ".itx",
+      "size_bytes": 6284105,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3b/GK1 cut2.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3b/GK1 cut2.itx"
+    },
+    {
+      "filename": "GK2 cut1.itx",
+      "extension": ".itx",
+      "size_bytes": 6286467,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3b/GK2 cut1.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3b/GK2 cut1.itx"
+    },
+    {
+      "filename": "GK2 cut2.itx",
+      "extension": ".itx",
+      "size_bytes": 6284893,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3b/GK2 cut2.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3b/GK2 cut2.itx"
+    },
+    {
+      "filename": "map1.itx",
+      "extension": ".itx",
+      "size_bytes": 123074948,
+      "size_human": "117.4 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3c/map1.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3c/map1.itx"
+    },
+    {
+      "filename": "map2.itx",
+      "extension": ".itx",
+      "size_bytes": 124830360,
+      "size_human": "119.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3c/map2.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3c/map2.itx"
+    },
+    {
+      "filename": "map3.itx",
+      "extension": ".itx",
+      "size_bytes": 126291858,
+      "size_human": "120.4 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .itx",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3c/map3.itx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3c/map3.itx"
+    },
+    {
+      "filename": "Figure 3e.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 15498,
+      "size_human": "15.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Bias",
+            "dI/dV intensity"
+          ],
+          "named_columns": [
+            "Bias",
+            "dI/dV intensity"
+          ],
+          "column_count": 2,
+          "row_count": 331,
+          "dtypes": {
+            "Bias": "float64",
+            "dI/dV intensity": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3e.xlsx",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3e.xlsx"
+    },
+    {
+      "filename": "Figure 3f.stp",
+      "extension": ".stp",
+      "size_bytes": 534929,
+      "size_human": "522.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3f.stp",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3f.stp"
+    },
+    {
+      "filename": "Figure 3g.stp",
+      "extension": ".stp",
+      "size_bytes": 534855,
+      "size_human": "522.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3g.stp",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3g.stp"
+    },
+    {
+      "filename": "Figure 3h.stp",
+      "extension": ".stp",
+      "size_bytes": 534845,
+      "size_human": "522.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .stp",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3h.stp",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3h.stp"
+    },
+    {
+      "filename": "PARCHG",
+      "extension": "",
+      "size_bytes": 27321681,
+      "size_human": "26.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3i/PARCHG",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3i/PARCHG"
+    },
+    {
+      "filename": "PARCHG",
+      "extension": "",
+      "size_bytes": 27321681,
+      "size_human": "26.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3j/PARCHG",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3j/PARCHG"
+    },
+    {
+      "filename": "PARCHG",
+      "extension": "",
+      "size_bytes": 27321681,
+      "size_human": "26.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 3k/PARCHG",
+      "from_zip": "Dataset_for_Figure_3.zip",
+      "relative_path": "zip_contents/Figure 3k/PARCHG"
+    },
+    {
+      "filename": "Figure 4a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 655203,
+      "size_human": "639.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "#K-Path",
+            "Energy",
+            "pz",
+            "#K-Path.1",
+            "Energy.1",
+            "pz.1"
+          ],
+          "named_columns": [
+            "#K-Path",
+            "Energy",
+            "pz",
+            "#K-Path.1",
+            "Energy.1",
+            "pz.1"
+          ],
+          "column_count": 6,
+          "row_count": 15808,
+          "dtypes": {
+            "#K-Path": "object",
+            "Energy": "object",
+            "pz": "float64",
+            "#K-Path.1": "object",
+            "Energy.1": "object",
+            "pz.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 4a.xlsx",
+      "from_zip": "Dataset_for_Figure_4.zip",
+      "relative_path": "zip_contents/Figure 4a.xlsx"
+    },
+    {
+      "filename": "Figure 4b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27925,
+      "size_human": "27.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "spin down",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "spin up",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "spin down",
+            "spin up"
+          ],
+          "column_count": 7,
+          "row_count": 302,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "spin down": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "spin up": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 4b.xlsx",
+      "from_zip": "Dataset_for_Figure_4.zip",
+      "relative_path": "zip_contents/Figure 4b.xlsx"
+    },
+    {
+      "filename": "PARCHG",
+      "extension": "",
+      "size_bytes": 27321681,
+      "size_human": "26.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Figure 4d and 4e/PARCHG",
+      "from_zip": "Dataset_for_Figure_4.zip",
+      "relative_path": "zip_contents/Figure 4d and 4e/PARCHG"
+    }
+  ]
+}

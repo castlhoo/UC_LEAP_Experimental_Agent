@@ -1,0 +1,216 @@
+{
+  "paper_id": "step1_0211",
+  "title": "Dirac cone, flat band and saddle point in kagome magnet YMn6Sn6",
+  "doi": "10.1038/s41467-021-23536-8",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3164577602",
+  "priority_score": 8.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-23536-8",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies the kagome magnet YMn6Sn6 using ARPES combined with DFT+DMFT calculations and transport/magnetization measurements. The key result is the experimental observation of the full kagome electronic motif near the Fermi level in a magnetic system: a Dirac cone, a flat band, and a saddle point, with orbital-selective and quasi-2D character; the Dirac-derived states are argued to contribute to anomalous Hall physics and Berry-curvature effects.",
+    "measurement_types": [
+      "Angle-resolved photoemission spectroscopy (ARPES)",
+      "Magnetization vs temperature",
+      "Electrical transport resistivity (longitudinal ρxx and ρzz)",
+      "Density functional theory plus dynamical mean-field theory (DFT+DMFT) calculations",
+      "Tight-binding band-structure illustration"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of destructive interference in a kagome lattice leading to electron confinement/flat-band formation.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Tight-binding kagome band structure showing Dirac cone at K, saddle point at M, and flat band across the Brillouin zone.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Crystal structure of YMn6Sn6, showing layered stacking and kagome Mn layers.",
+        "data_type": "structure diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Three-dimensional and projected Brillouin zones with high-symmetry points labeled.",
+        "data_type": "BZ diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "ARPES Fermi-surface intensity map at kz ~ 0 measured with 138 eV photons, showing pockets around K.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Magnetization versus temperature and zero-field/field-cooled longitudinal resistivity curves.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "ARPES band dispersion along Γ–M–K–Γ in the kz ~ 0 plane.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Second-derivative version of Fig. 2a with guide lines highlighting dispersions.",
+        "data_type": "processed spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "DFT+DMFT calculated ARPES band structure in the ferromagnetic state with SOC, shifted by 76 meV to match experiment.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Energy distribution curves along K–M.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Energy distribution curves along M–Γ–M.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Momentum distribution curves along the K-centered cut.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Energy distribution curves along the K-centered cut.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Constant-energy ARPES maps showing evolution of pockets and touching points with binding energy.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Photon-energy-dependent ARPES dispersions along Γ(A)–K(H), demonstrating weak kz dependence and the flat band at ~0.4 eV below EF.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "k∥-kz intensity map at EF from variable photon energies, showing quasi-2D band structure.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Representative ARPES energy-momentum dispersion at hν = 92 eV.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Measured and DFT+DMFT-calculated dispersions along Γ–A.",
+        "data_type": "spectrum + calculated band structure",
+        "likely_source": "mixed"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "DFT+DMFT calculated ARPES along Γ–K–H–A–Γ with SOC, showing orbital-resolved kagome features.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Second-BZ ARPES dispersions and second derivatives along Γ–M–K–Γ, highlighting a flat band near EF that is weak in the first BZ.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "DFT+DMFT calculated ARPES for the second-BZ path corresponding to Fig. 4a.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "EDC plots across multiple Brillouin zones along a high-symmetry line, used to compare band visibility between zones.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Additional EDC plots across multiple Brillouin zones, confirming flat bands and parabolic band features.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include ARPES intensity maps and dispersions collected on cleaved YMn6Sn6 single crystals at SSRF and BESSY, magnetization-vs-temperature curves, and longitudinal resistivity measurements ρxx and ρzz. The paper also references crystal growth by Sn flux, but the growth process itself is not a dataset measurement.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include second-derivative ARPES images, energy distribution curves (EDCs), momentum distribution curves (MDCs), constant-energy maps, and DFT+DMFT calculated band structures/ARPES spectra. Some figures overlay guide lines or blue-highlighted regions and include a chemical-potential shift of 76 meV to align theory with experiment.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that the main data supporting the findings are available within the paper and its Supplementary Information files, and that extra data are available from the corresponding authors upon request.",
+      "data_provided_types": [
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "The paper does not specify raw file formats or provide a raw-data repository. It only states that main data are in the paper/Supplementary Information and extra data are available on request. Raw ARPES, magnetization, and transport measurements were collected experimentally, but their file-level organization is not described.",
+      "processed_data_description": "Processed data include ARPES second-derivative plots, EDCs, MDCs, constant-energy maps, and theory-calibrated DFT+DMFT band structures. The paper also describes a 76 meV chemical-potential shift applied in the calculations to match experiment.",
+      "figure_data_description": "Figure-specific source data are not explicitly mentioned. The paper does not say that a source-data archive accompanies each figure, only that main data are in the paper and Supplementary Information.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "Some figure-level data are shown in the paper, but the paper does not provide explicit source-data files, raw measurement files, or scripts. Therefore the dataset is not clearly replot-ready from the text alone.",
+      "notes": "The paper mixes experimental raw spectra with processed derivative plots and theory outputs. Supplementary information is referenced for additional data, including orbital-resolved calculations and kz-dependent FB2 evolution, but the text does not specify whether those are raw or processed. The safest classification is that processed figure data are present, while raw and source-data availability is unclear."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The study reports experimental ARPES, magnetization, and resistivity measurements, which imply raw measurement data were collected.",
+      "source_data_evidence": "The paper explicitly says the main data are available within the paper and Supplementary Information files, but it does not mention separate source-data files.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "“The authors declare that the main data supporting the findings of this study are available within the paper and its Supplementary Information files. Extra data are available from the corresponding authors upon request.”",
+      "priority_modalities": [
+        "ARPES spectra",
+        "ARPES intensity maps",
+        "EDC/MDC curves",
+        "magnetization curves",
+        "resistivity curves",
+        "DFT+DMFT calculated band structures"
+      ],
+      "review_notes": "Do not infer a public raw-data repository or code release. The paper clearly contains processed figure data and theoretical outputs, but source-data packaging is not stated. Supplementary figures likely contain additional processed spectra and orbital-resolved calculations, not necessarily raw files."
+    }
+  },
+  "inspection_reports": []
+}

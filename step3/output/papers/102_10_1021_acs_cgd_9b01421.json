@@ -1,0 +1,320 @@
+{
+  "paper_id": "step1_0291",
+  "title": "Growth and Strain Relaxation Mechanisms of InAs/InP/GaAsSb Core-Dual-Shell Nanowires",
+  "doi": "10.1021/acs.cgd.9b01421",
+  "journal": "arXiv preprint",
+  "year": 2021,
+  "paper_url": "https://arxiv.org/abs/2102.01978v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acs_cgd_9b01421",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file can be confidently identified as cleaned, replot-ready source data for the target paper.",
+  "type2_summary": "No file can be confidently identified as raw/unprocessed measurement data for the target paper.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The inspection report appears mismatched to the target paper. Since the only file is a PDF titled for a different SrMnO3 study, it is safest to classify it as 'other' and avoid inferring dataset type from the paper context alone.",
+  "file_classifications": [
+    {
+      "relative_path": "Relaxation_Mechanisms_and_Strain-Controlled_Oxygen_Vacancies_in_Epitaxial_SrMnO3_Films.pdf",
+      "filename": "Relaxation_Mechanisms_and_Strain-Controlled_Oxygen_Vacancies_in_Epitaxial_SrMnO3_Films.pdf",
+      "type": "other",
+      "paper_evidence": "The provided paper is about InAs/InP/GaAsSb core-dual-shell nanowires, but this file name refers to a different SrMnO3 films paper. No evidence links this PDF to the nanowire paper's dataset or supporting information.",
+      "file_evidence": "Single PDF file, 4.2 MB, from Zenodo. No internal structure or tabular data is provided here, and the filename indicates it is likely a paper/document rather than a dataset table or raw measurement file.",
+      "reasoning": "Because the file content/filename is unrelated to the target paper, it cannot be reliably classified as Type 1 or Type 2 for this paper. The conservative choice is 'other' rather than guessing based on file format alone.",
+      "ambiguity": "High: the file appears to belong to a different publication, so its relationship to the target paper is unclear.",
+      "key_columns_or_structure": "Not available from the inspection report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies catalyst-free CBE growth of InAs/InP/GaAsSb core-dual-shell nanowires on Si(111), focusing on how growth temperature and shell thickness affect morphology, composition, and strain relaxation. Using SEM, TEM/STEM, EDX, STEM-Moiré, and GPA, the authors find that InP grows smoothly only above ~1 nm nominal thickness, that GaAsSb incorporates significant As to form GaAs0.4Sb0.6, and that coherent strain is maintained up to about 4 nm InP but begins to relax with dislocations and roughening at 8 nm.",
+    "measurement_types": [
+      "SEM top-view and tilted-view imaging",
+      "HR-TEM imaging",
+      "STEM-HAADF imaging",
+      "EDX compositional mapping",
+      "EDX line scans / line profiles",
+      "STEM-Moiré imaging",
+      "Geometric phase analysis (GPA) strain mapping",
+      "FIB cross-sectional lamella preparation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "SEM images of the bare InAs core nanowires in top view and 45° tilted view, showing hexagonal cross-section, uniform diameter, and no tapering.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "SEM images of InAs/InP core-shell nanowires grown at 360 °C, showing rough sidewalls and irregular top facet.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "SEM images of InAs/InP core-shell nanowires grown at 370 °C, showing smoother sidewalls and regular hexagonal cross-section.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "SEM images of InAs/InP core-shell nanowires grown at 380 °C, showing smooth sidewalls but increased axial InP growth and a visible top segment.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "EDX elemental map of the upper portion of an InAs/InP nanowire, used to visualize shell/core distribution.",
+        "data_type": "elemental map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Plot of InP radial and axial growth versus shell growth temperature, derived from EDX line scans on 10 nanowires per temperature.",
+        "data_type": "scatter/line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "HR-TEM image of an InAs/InP core-shell nanowire showing stacking faults/twins and the InAs/InP interface.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "STEM-HAADF image of the same InAs/InP nanowire confirming a smooth, uniform ~4 nm InP shell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "STEM-HAADF image of an InAs/GaAsSb core-shell nanowire after GaSb growth, showing a uniform outer shell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "EDX compositional map of the same InAs/GaAsSb nanowire, showing a ~17 nm shell.",
+        "data_type": "elemental map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Cross-sectional EDX line profiles for In, Ga, As, and Sb across the InAs/GaAsSb nanowire, showing As incorporation in the shell.",
+        "data_type": "spectrum/line profile",
+        "likely_source": "processed"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "STEM-HAADF image of a representative InAs/InP/GaAsSb core-dual-shell nanowire in cross section.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "EDX compositional map of the same CDS nanowire, showing InAs core, InP inner shell, and GaAsSb outer shell.",
+        "data_type": "elemental map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "STEM-Moiré image of the full cross-sectional lamella for the sample with nominal 1 nm InP shell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "STEM-Moiré image of the full cross-sectional lamella for the sample with nominal 4 nm InP shell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "STEM-Moiré image of the full cross-sectional lamella for the sample with nominal 8 nm InP shell.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "STEM-Moiré close-up at {112} sidewalls for the 1 nm InP sample, showing corner dislocations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "STEM-Moiré close-up at {112} sidewalls for the 4 nm InP sample, showing no defects at corners.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "STEM-Moiré close-up at {112} sidewalls for the 8 nm InP sample, showing dislocations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5g",
+        "description": "STEM-Moiré close-up at {110} sidewalls for the 1 nm InP sample, showing no dislocations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5h",
+        "description": "STEM-Moiré close-up at {110} sidewalls for the 4 nm InP sample, showing no dislocations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5i",
+        "description": "STEM-Moiré close-up at {110} sidewalls for the 8 nm InP sample, showing dislocations and lattice distortion.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Table1",
+        "description": "Measured shell thicknesses in <110> and <112> directions for samples with nominal InP thicknesses of 1, 4, and 8 nm.",
+        "data_type": "table",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "HR-STEM image of the interface region for the 1 nm InP sample.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "GPA strain map of εxx for the 1 nm InP sample.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "GPA strain map of εyy for the 1 nm InP sample, with line profile inset across interfaces.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6d",
+        "description": "HR-STEM image of the interface region for the 4 nm InP sample.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "GPA strain map of εxx for the 4 nm InP sample.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6f",
+        "description": "GPA strain map of εyy for the 4 nm InP sample, with line profile inset across interfaces.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6g",
+        "description": "HR-STEM image of the interface region for the 8 nm InP sample.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig6h",
+        "description": "GPA strain map of εxx for the 8 nm InP sample.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6i",
+        "description": "GPA strain map of εyy for the 8 nm InP sample, with line profile inset across interfaces.",
+        "data_type": "strain map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "FigS1",
+        "description": "Supplementary HAADF intensity profiles in cross section for InAs/InP and InAs/InP/GaAsSb nanowires, showing facet evolution from six {110} facets to twelve facets including {112}.",
+        "data_type": "line profile",
+        "likely_source": "processed"
+      },
+      {
+        "figure_id": "FigS2",
+        "description": "Supplementary HR-STEM images of CDS nanowires with 1, 4, and 8 nm nominal InP thickness at {112} and {110} sidewalls, used to assess interface flatness and roughness.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "FigS3",
+        "description": "Supplementary STEM-Moiré and HR-STEM images highlighting defects at the InAs/InP interface in the 8 nm InP sample.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "FigS4",
+        "description": "Supplementary cross-sectional STEM image and EDX line profiles showing that the outer shell is GaAs0.4Sb0.6 rather than pure GaSb.",
+        "data_type": "image + line profile",
+        "likely_source": "processed"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include SEM images of nanowire morphology, HR-TEM and HR-STEM images of interfaces and defects, STEM-HAADF images, EDX compositional maps and line scans, STEM-Moiré images of cross-sectional lamellae, and GPA input images acquired from aberration-corrected STEM. Cross-sectional lamellae were prepared by FIB for strain analysis.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed/derived outputs include the radial and axial InP growth plot versus temperature (from EDX line scans), thickness measurements summarized in Table 1, HAADF intensity profiles, EDX line profiles used for composition quantification, and GPA strain maps with line-profile insets. These are analysis products derived from raw microscopy data rather than independent measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement is given in the provided text. The paper only states that supporting information contains HAADF intensity profiles, high resolution TEM analysis, X-ray energy dispersive analysis, and tetragonal distortion calculation.",
+      "data_provided_types": [
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only by instrument and modality: SEM (Zeiss Merlin), TEM/EDX (JEOL JEM-2200FS), aberration-corrected STEM (FEI Titan Themis), and FIB-prepared cross-sectional lamellae. No file formats, repositories, or raw data archives are mentioned.",
+      "processed_data_description": "Processed data include measured shell thicknesses, radial/axial growth rates, EDX-derived composition maps and line profiles, HAADF intensity profiles, STEM-Moiré defect identification, and GPA strain maps. Table 1 reports extracted thickness values in two crystallographic directions.",
+      "figure_data_description": "Figure-specific source data are implied by the plotted/derived quantities in Fig. 1f, Table 1, Fig. 6, and the supplementary figures, but no explicit source-data files are mentioned. The paper does not state that figure data are deposited separately.",
+      "scripts_description": "No analysis scripts or notebooks are mentioned. GPA was performed using STEM_Cell software, but this is described as analysis software rather than provided scripts.",
+      "data_organization": "Mixed and figure-based in the manuscript/supporting information; no explicit repository or folder structure is specified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides figures, tables, and derived values in the text, but no explicit source-data files, raw datasets, or machine-readable exports are described. Replotting would require digitizing figures or reprocessing microscopy data from unavailable raw files.",
+      "notes": "The dataset is microscopy-heavy and multi-modal. The main semantic distinction is between raw imaging/spectroscopy (SEM, TEM, STEM, EDX, Moiré) and derived analysis products (thicknesses, growth rates, composition quantification, strain maps). The supporting information contains additional processed images and line profiles, but no explicit raw-data archive or scripts."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The methods describe acquisition of SEM, TEM, STEM, EDX, and STEM-Moiré data on specific microscopes, indicating substantial raw measurement data were collected.",
+      "source_data_evidence": "The paper reports derived plots, thickness tables, EDX line profiles, and GPA strain maps, and the supporting information explicitly contains HAADF intensity profiles and tetragonal distortion calculations, which are processed figure-level outputs.",
+      "both_evidence": "Raw microscopy data and processed figure data are both clearly implied by the methods, results, and supporting information.",
+      "data_availability_section_relevant": "Supporting information contains HAADF intensity profiles, high resolution TEM analysis, X-ray energy dispersive analysis, and tetragonal distortion calculation; GPA was performed with STEM_Cell software.",
+      "priority_modalities": [
+        "SEM images",
+        "HR-TEM images",
+        "STEM-HAADF images",
+        "EDX maps and line scans",
+        "STEM-Moiré images",
+        "GPA strain maps",
+        "thickness tables"
+      ],
+      "review_notes": "Do not confuse microscopy images with processed source data: many figures are raw images, while plots, line profiles, thickness values, and strain maps are derived. The paper does not mention any public dataset, raw-data repository, or code release."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "Relaxation_Mechanisms_and_Strain-Controlled_Oxygen_Vacancies_in_Epitaxial_SrMnO3_Films.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4364902,
+      "size_human": "4.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Relaxation_Mechanisms_and_Strain-Controlled_Oxygen_Vacancies_in_Epitaxial_SrMnO3_Films.pdf"
+    }
+  ]
+}

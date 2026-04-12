@@ -381,6 +381,13 @@ python -m step3.run_step3
 python -m step4.run_step4
 ```
 
+To compare Step 1 query strategies, you can point Step 1 at different config files:
+
+```bash
+$env:STEP1_CONFIG_FILE="step1_config.yaml"; python -m step1.run_step1
+$env:STEP1_CONFIG_FILE="step1_config_gpt_queries.yaml"; python -m step1.run_step1
+```
+
 ### Step-by-step recipe
 
 #### Step 1

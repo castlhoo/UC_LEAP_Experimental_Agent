@@ -1,0 +1,44 @@
+Title: Order-disorder charge density wave instability in the kagome metal (Cs,Rb)V3Sb5
+DOI: 10.1038/s41467-023-36668-w
+Journal: Nature Communications
+Year: 2023
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The workbook Source_Data.xlsx is figure-organized, tabular, and directly replot-ready, so it is Type 1 source/cleaned data.
+- Type2 summary: No file in the provided set is clearly raw/unprocessed instrument output based on the available inspection.
+
+Type1 files
+- Source_Data.xlsx
+  original path: Source_Data.xlsx
+  classified as: type1
+  reasoning: This is a classic cleaned source-data workbook: figure-organized, tabular, and suitable for direct plotting with minimal processing. Although the paper includes raw measurements elsewhere, this file itself is processed/source data, not raw instrument output.
+  paper evidence: The paper explicitly says the data needed to evaluate the conclusions are included and that DS and IXS data were deposited in Figshare. The sheet names are organized by figure, matching source/figure data rather than raw instrument output.
+  file evidence: Excel workbook with 6 figure-specific sheets, clear headers, and physically meaningful columns such as temperatures, k (rlu), intensity, and wavevector labels. The size is small and the structure is directly plot-ready.
+  structure: Sheets: Figure 1(e), Figure 3(d), Figure 3(e), Figure 4(a), Figure 4(b), Figure 4(d); columns include temperatures (80 K to 120 K), k (rlu), Intensity, and wavevector labels such as 3.1 0.0 0.5
+  ambiguity: Low ambiguity. The only caveat is that some sheets may be derived from raw IXS or diffuse-scattering measurements, but the file format and organization clearly indicate Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- 41467_2023_36668_MOESM1_ESM.pdf
+  original path: 41467_2023_36668_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This file is best treated as supplementary documentation because there is no evidence it contains directly replot-ready tabular data or raw instrument output. The inspection does not show dataset structure, so it should not be classified as Type 1 or Type 2.
+  paper evidence: The paper states that all data needed to evaluate the conclusions are included in the paper and Supplementary Information, so this PDF is likely supplementary documentation rather than a standalone dataset file.
+  file evidence: PDF format, moderate size, and Nature source-data naming indicate a supplementary document. No tabular structure or machine-readable data content is reported in the inspection.
+  structure: Not reported; PDF supplementary document
+  ambiguity: The PDF may contain figures, captions, or embedded source data, but the available inspection does not provide enough evidence to classify it as a dataset file.
+- 41467_2023_36668_MOESM2_ESM.pdf
+  original path: 41467_2023_36668_MOESM2_ESM.pdf
+  classified as: documentation
+  reasoning: Without evidence of machine-readable figure data or raw measurements, this file is conservatively classified as documentation.
+  paper evidence: The publication indicates supporting information is included with the paper, consistent with a supplementary PDF rather than a raw or cleaned data table.
+  file evidence: PDF format, large size, and Nature source-data naming suggest a supplementary information document. No structured table or raw-data format is indicated in the inspection.
+  structure: Not reported; PDF supplementary document
+  ambiguity: It could contain embedded source data or extended methods, but the inspection does not confirm dataset content.
+
+Script files
+- none

@@ -1,0 +1,92 @@
+Title: Tailoring Dirac fermions by in-situ tunable high-order moire pattern in graphene-monolayer xenon heterostructure
+DOI: 10.1103/PhysRevLett.129.176402
+Journal: arXiv preprint
+Year: 2022
+Final label: Both
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: Most extracted TXT files are clean, figure-ready tabular datasets with headers and small row counts, directly suitable for plotting ARPES-derived curves or 2D maps.
+- Type2 summary: The top-level ZIP archive is a packaged container rather than a directly plottable dataset; the paper itself also supports the presence of raw experimental measurements, though no individual extracted file here is clearly raw instrument output.
+
+Type1 files
+- moirePatternDensityCorrelation_rotated.txt
+  original path: zip_contents/fig1_data/moirePatternDensityCorrelation_rotated.txt
+  classified as: type1
+  reasoning: This is clean, figure-ready tabular data with physical variables and no signs of instrument-specific raw output. It can be replotted directly with minimal processing.
+  paper evidence: The paper discusses figure-based moiré geometry and derived quantities, but does not explicitly label this file; however, no evidence suggests it is raw instrument output.
+  file evidence: Structured tabular TXT with headers x, y, correlation; 441 rows; small size; directly plottable as a 2D correlation map.
+  structure: x, y, correlation
+  ambiguity: Low.
+- RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt
+  original path: zip_contents/fig1_data/RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt
+  classified as: type1
+  reasoning: The file is a regular grid of numeric values suitable for direct plotting and appears to be a processed/normalized figure dataset, not raw instrument output.
+  paper evidence: The paper includes derived moiré-pattern figures and theoretical/processed visualizations, consistent with figure-source tables rather than raw measurements.
+  file evidence: Tabular TXT with headers x, y, potential; 10,201 rows; normalized intensity/potential grid; directly plottable as a 2D map.
+  structure: x, y, potential
+  ambiguity: Low.
+- RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt
+  original path: zip_contents/fig1_data/RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt
+  classified as: type1
+  reasoning: This is a clean, structured table that can be plotted directly and shows no raw-instrument characteristics.
+  paper evidence: No explicit paper statement ties this file to raw acquisition; the paper’s figure-based presentation is consistent with processed simulation/figure data.
+  file evidence: Tabular TXT with headers x, y, potential; 10,201 rows; normalized grid data directly suitable for plotting.
+  structure: x, y, potential
+  ambiguity: Low.
+- RotatedtriLatticeIntensity_100sampleVertical_normalized.txt
+  original path: zip_contents/fig1_data/RotatedtriLatticeIntensity_100sampleVertical_normalized.txt
+  classified as: type1
+  reasoning: The file is a clean numeric table with a regular grid and normalized values, matching Type 1 figure/source data.
+  paper evidence: The paper contains derived moiré/geometry figures; no evidence indicates this is raw measurement output.
+  file evidence: Tabular TXT with headers x, y, potential; 10,201 rows; normalized grid data, directly replot-ready.
+  structure: x, y, potential
+  ambiguity: Low.
+- imbalanceTimeDecay04V.txt
+  original path: zip_contents/fig2_data/imbalanceTimeDecay04V.txt
+  classified as: type1
+  reasoning: This is a compact, figure-ready dataset for a curve plot and requires minimal processing.
+  paper evidence: The paper discusses extracted ARPES-derived quantities and processed curves, but does not identify this file as raw instrument output.
+  file evidence: Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable decay curve with uncertainties.
+  structure: time, imbalance, error
+  ambiguity: Low.
+- imbalanceTimeDecay1V.txt
+  original path: zip_contents/fig2_data/imbalanceTimeDecay1V.txt
+  classified as: type1
+  reasoning: The file is a clean source-data table for a decay plot, not an instrument dump.
+  paper evidence: No explicit raw-data statement applies; the paper’s processed figure style is consistent with extracted curve data.
+  file evidence: Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable.
+  structure: time, imbalance, error
+  ambiguity: Low.
+- imbalanceTimeDecay22V.txt
+  original path: zip_contents/fig2_data/imbalanceTimeDecay22V.txt
+  classified as: type1
+  reasoning: This is figure-source style data with clear axes and uncertainty column.
+  paper evidence: The paper presents processed ARPES-derived curves and extracted quantities, consistent with this kind of table.
+  file evidence: Small tabular TXT with headers time, imbalance, error; 18 rows; directly replot-ready.
+  structure: time, imbalance, error
+  ambiguity: Low.
+- imbalanceTimeDecay34V.txt
+  original path: zip_contents/fig2_data/imbalanceTimeDecay34V.txt
+  classified as: type1
+  reasoning: This is a clean, replot-ready table and fits Type 1.
+  paper evidence: No explicit raw-data indication; the paper’s processed figure data are the closest match.
+  file evidence: Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable.
+  structure: time, imbalance, error
+  ambiguity: Low.
+
+Type2 files
+- data.zip
+  original path: data.zip
+  classified as: type2
+  reasoning: Because the archive itself is the container for the extracted files and is not directly replot-ready, and because the paper does not explicitly identify it as cleaned source data, it is safest to treat the archive as raw/unprocessed packaging.
+  paper evidence: The paper reports raw experimental ARPES/LEED/STM measurements, but gives no explicit statement that this archive is cleaned figure data or a source-data deposit.
+  file evidence: 8.3 MB ZIP archive from Zenodo containing multiple figure-named text files; archive packaging and mixed contents are consistent with a deposited raw/working dataset rather than a single replot-ready table.
+  structure: ZIP archive containing fig1_data and fig2_data text tables
+  ambiguity: Moderate: the archive contains several tabular files that are individually Type 1, but the archive as a whole is not a figure-ready dataset.
+
+Annotation files
+- none
+
+Script files
+- none

@@ -1,0 +1,123 @@
+Title: Coulomb screening of superconductivity in magic-angle twisted bilayer graphene
+DOI: N/A
+Journal: arXiv preprint
+Year: 2024
+Final label: Both
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The CSV files named by figure panels (Fig2/Fig3/Fig4) are small, structured, numeric, and directly replot-ready, so they are Type 1 cleaned/source data.
+- Type2 summary: The binary experiment files (.sxm, .pxp, .mat) inside the ZIP are raw or intermediate scientific outputs that require specialized processing, so they are Type 2.
+
+Type1 files
+- Fig2CBands.csv
+  original path: Fig2CBands.csv
+  classified as: type1
+  reasoning: This is organized tabular data suitable for direct plotting or figure reconstruction, so it fits Type 1.
+  paper evidence: No explicit paper statement, but the figure-specific naming indicates source/figure data rather than raw instrument output.
+  file evidence: CSV, 7.4 KB, structured numeric table with 7 rows and many columns. Figure-specific naming ('Fig2') and tabular organization support replot-ready data.
+  structure: Figure 2 band data; numeric tabular columns
+  ambiguity: low-level ambiguity because the headers are numeric-looking, but the file remains structured and figure-specific.
+- Fig3Dbands.csv
+  original path: Fig3Dbands.csv
+  classified as: type1
+  reasoning: This is a small, organized figure dataset that can be replotted with minimal processing. Despite odd header formatting, its structure matches cleaned source/figure data rather than raw measurements.
+  paper evidence: The paper analysis does not explicitly label this as source data, but the file naming is figure-specific and consistent with replot-ready deposited data.
+  file evidence: CSV tabular file, 3.7 KB, with numeric values and figure-specific naming ('Fig3'). It is structured and directly loadable for plotting.
+  structure: Figure 3 band data; numeric tabular columns
+  ambiguity: low-level ambiguity because the header row is numeric-looking, but the file is still clearly tabular and figure-specific.
+- Fig3Exaxis.csv
+  original path: Fig3Exaxis.csv
+  classified as: type1
+  reasoning: This is clearly cleaned, figure-specific data intended for plotting or reconstruction of a figure panel.
+  paper evidence: No explicit paper statement, but the filename indicates figure-specific axis data consistent with source/figure data.
+  file evidence: CSV, 6.0 KB, 242 rows, numeric single-column tabular data. Directly plottable as an axis array.
+  structure: single numeric axis column
+- Fig3Fxaxis.csv
+  original path: Fig3Fxaxis.csv
+  classified as: type1
+  reasoning: This is a cleaned axis dataset for a figure panel and is replot-ready.
+  paper evidence: No explicit paper statement, but the figure-specific naming indicates source/figure data.
+  file evidence: CSV, 6.0 KB, 242 rows, single numeric column. Directly plottable.
+  structure: single numeric axis column
+- Fig3Fyaxis.csv
+  original path: Fig3Fyaxis.csv
+  classified as: type1
+  reasoning: This is a cleaned axis dataset for a figure panel and is replot-ready.
+  paper evidence: No explicit paper statement, but the figure-specific naming indicates source/figure data.
+  file evidence: CSV, 6.0 KB, 242 rows, single numeric column. Directly plottable.
+  structure: single numeric axis column
+- Fig3Gxaxis.csv
+  original path: Fig3Gxaxis.csv
+  classified as: type1
+  reasoning: This is a cleaned axis dataset for a figure panel and is replot-ready.
+  paper evidence: No explicit paper statement, but the figure-specific naming indicates source/figure data.
+  file evidence: CSV, 6.0 KB, 242 rows, single numeric column. Directly plottable.
+  structure: single numeric axis column
+- Fig4Axaxis.csv
+  original path: Fig4Axaxis.csv
+  classified as: type1
+  reasoning: This is a cleaned figure axis dataset with minimal processing needs, consistent with Type 1.
+  paper evidence: No explicit paper statement, but the figure-specific naming indicates source/figure data.
+  file evidence: CSV, 500 B, 19 rows, single numeric column. Directly plottable.
+  structure: single numeric axis column
+- Fig4AyaxisB2.csv
+  original path: Fig4AyaxisB2.csv
+  classified as: type1
+  reasoning: This is a compact figure-specific dataset with minimal preprocessing needs, consistent with Type 1.
+  paper evidence: No explicit paper statement, but the figure-based naming suggests source/figure data.
+  file evidence: Small CSV (500 B), 19 rows, numeric single-column data. Directly usable for plotting.
+  structure: single numeric axis/value column
+
+Type2 files
+- Experiment_angledistribution.pxp
+  original path: zip_contents/zenodo_TBG/Experiment_angledistribution.pxp
+  classified as: type2
+  reasoning: This is a proprietary binary experiment file requiring software-specific processing, so it is Type 2.
+  paper evidence: No explicit paper statement, but the experiment-named binary file is consistent with raw or intermediate measurement output.
+  file evidence: Binary .pxp file, 80.2 KB, experiment-named. Not directly readable as a plotting table.
+  structure: binary proprietary file
+  ambiguity: moderate
+- Experiment_correected_doping.pxp
+  original path: zip_contents/zenodo_TBG/Experiment_correected_doping.pxp
+  classified as: type2
+  reasoning: This is not directly plottable and likely contains unprocessed experimental data. It fits Type 2.
+  paper evidence: The paper analysis does not explicitly mention raw files, but the archive contents include experiment-named binary files consistent with raw measurement outputs.
+  file evidence: Binary .pxp file, 1.1 MB, experiment-named. Proprietary/binary format suggests instrument or analysis software output requiring specialized processing.
+  structure: binary proprietary file
+  ambiguity: moderate, because .pxp can sometimes be processed project data, but the binary format and experiment naming favor raw/unprocessed.
+- TBG001.sxm
+  original path: zip_contents/zenodo_TBG/TBG001.sxm
+  classified as: type2
+  reasoning: This is clearly raw measurement data requiring specialized software or preprocessing before plotting, so it is Type 2.
+  paper evidence: The paper analysis does not explicitly say raw, but the file is a named scan file inside the archive, matching raw instrument output.
+  file evidence: Instrument raw file (.sxm), 9.0 MB. This is a scanning probe microscopy format and is explicitly identified as raw instrument data.
+  structure: raw scanning probe microscopy file
+- corelations_angle_CPD.mat
+  original path: zip_contents/zenodo_TBG/correlation_angle/corelations_angle_CPD.mat
+  classified as: type2
+  reasoning: Given the binary scientific format and association with correlation analysis, this is better treated as Type 2 or at least non-figure-ready raw/intermediate data.
+  paper evidence: No explicit paper statement, but the file appears to be a processed correlation dataset associated with experiment output.
+  file evidence: MATLAB .mat file, 653 B. Although small, .mat files often store intermediate or processed arrays rather than publication-ready tables.
+  structure: MATLAB binary data structure
+  ambiguity: moderate, because .mat can contain processed arrays; however, it is not directly human-readable or obviously figure-ready.
+- Experiment_angle.pxp
+  original path: zip_contents/zenodo_TBG/correlation_angle/Experiment_angle.pxp
+  classified as: type2
+  reasoning: This is a proprietary binary file likely requiring specialized processing, so it is Type 2.
+  paper evidence: No explicit paper statement, but the file naming and binary format are consistent with raw experiment output.
+  file evidence: Binary .pxp file, 49.2 KB, experiment-named, not directly plottable.
+  structure: binary proprietary file
+  ambiguity: moderate
+
+Annotation files
+- PereaCovarrubias_Universal-Scaling-Magic-Angle-3D-6D_Permanent-Lattice.pdf
+  original path: PereaCovarrubias_Universal-Scaling-Magic-Angle-3D-6D_Permanent-Lattice.pdf
+  classified as: documentation
+  reasoning: This is not a data table or instrument output. It is documentation associated with the deposit, so it is excluded from Type 1/Type 2 data classification.
+  paper evidence: The provided paper analysis says no data availability statement or downloadable data links were identified; this PDF appears to be a paper/document rather than a data file.
+  file evidence: PDF format, 76.9 KB, consistent with a manuscript or supplementary document rather than a dataset.
+  structure: n/a
+
+Script files
+- none

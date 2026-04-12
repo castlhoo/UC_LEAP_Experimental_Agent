@@ -1,0 +1,599 @@
+{
+  "paper_id": "step1_0191",
+  "title": "Order-disorder charge density wave instability in the kagome metal (Cs,Rb)V3Sb5",
+  "doi": "10.1038/s41467-023-36668-w",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4321598435",
+  "priority_score": 9.3,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [
+    "DS_CsV3Sb5_Source data.zip: Too large: 15341.7MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-36668-w",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The workbook Source_Data.xlsx is figure-organized, tabular, and directly replot-ready, so it is Type 1 source/cleaned data.",
+  "type2_summary": "No file in the provided set is clearly raw/unprocessed instrument output based on the available inspection.",
+  "type1_files": [
+    "Source_Data.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The file set appears to contain source-data workbook plus supplementary PDFs, but no clearly identifiable raw detector/spectra file. The paper itself reports raw DS/IXS measurements, yet those raw files are not evident in this directory listing.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2023_36668_MOESM1_ESM.pdf",
+      "filename": "41467_2023_36668_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that all data needed to evaluate the conclusions are included in the paper and Supplementary Information, so this PDF is likely supplementary documentation rather than a standalone dataset file.",
+      "file_evidence": "PDF format, moderate size, and Nature source-data naming indicate a supplementary document. No tabular structure or machine-readable data content is reported in the inspection.",
+      "reasoning": "This file is best treated as supplementary documentation because there is no evidence it contains directly replot-ready tabular data or raw instrument output. The inspection does not show dataset structure, so it should not be classified as Type 1 or Type 2.",
+      "ambiguity": "The PDF may contain figures, captions, or embedded source data, but the available inspection does not provide enough evidence to classify it as a dataset file.",
+      "key_columns_or_structure": "Not reported; PDF supplementary document"
+    },
+    {
+      "relative_path": "41467_2023_36668_MOESM2_ESM.pdf",
+      "filename": "41467_2023_36668_MOESM2_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The publication indicates supporting information is included with the paper, consistent with a supplementary PDF rather than a raw or cleaned data table.",
+      "file_evidence": "PDF format, large size, and Nature source-data naming suggest a supplementary information document. No structured table or raw-data format is indicated in the inspection.",
+      "reasoning": "Without evidence of machine-readable figure data or raw measurements, this file is conservatively classified as documentation.",
+      "ambiguity": "It could contain embedded source data or extended methods, but the inspection does not confirm dataset content.",
+      "key_columns_or_structure": "Not reported; PDF supplementary document"
+    },
+    {
+      "relative_path": "Source_Data.xlsx",
+      "filename": "Source_Data.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly says the data needed to evaluate the conclusions are included and that DS and IXS data were deposited in Figshare. The sheet names are organized by figure, matching source/figure data rather than raw instrument output.",
+      "file_evidence": "Excel workbook with 6 figure-specific sheets, clear headers, and physically meaningful columns such as temperatures, k (rlu), intensity, and wavevector labels. The size is small and the structure is directly plot-ready.",
+      "reasoning": "This is a classic cleaned source-data workbook: figure-organized, tabular, and suitable for direct plotting with minimal processing. Although the paper includes raw measurements elsewhere, this file itself is processed/source data, not raw instrument output.",
+      "ambiguity": "Low ambiguity. The only caveat is that some sheets may be derived from raw IXS or diffuse-scattering measurements, but the file format and organization clearly indicate Type 1.",
+      "key_columns_or_structure": "Sheets: Figure 1(e), Figure 3(d), Figure 3(e), Figure 4(a), Figure 4(b), Figure 4(d); columns include temperatures (80 K to 120 K), k (rlu), Intensity, and wavevector labels such as 3.1 0.0 0.5"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the charge-density-wave (CDW) instability in kagome metals CsV3Sb5 and RbV3Sb5 using diffuse x-ray scattering and inelastic x-ray scattering, supported by density-functional perturbation theory. The key finding is that the leading CDW precursor is a 3D L-point instability that develops through an order-disorder transition with strong quasi-elastic central-peak scattering and no clear phonon softening, implying strong electron-phonon coupling and fluctuating quasi-static domains rather than a simple weak-coupling Peierls mechanism.",
+    "measurement_types": [
+      "diffuse x-ray scattering (DS)",
+      "inelastic x-ray scattering (IXS)",
+      "hard x-ray diffraction / Bragg scattering",
+      "density functional perturbation theory (DFPT) phonon calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Chemical structure of AV3Sb5 showing the A-site, V kagome network, and Sb sublattices.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Top view of the kagome lattice structure with V atoms and Sb coordination.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Calculated phonon dispersion of relaxed CsV3Sb5 showing soft modes at M and L.",
+        "data_type": "spectrum / dispersion plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Brillouin zone sketch with high-symmetry points and directions.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Temperature dependence of the CDW Bragg reflection intensity at the L-point-related wavevector, showing a sharp onset near 95 K.",
+        "data_type": "transport curve / intensity-vs-temperature curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Reconstructed diffuse scattering maps in the (h k 0.5) plane at 90 K and 100 K, showing CDW reflections and precursor streaks.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Diffuse scattering map in the (h k 0) plane showing no precursor above TCDW.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Diffuse scattering map in the (h 0 l) plane showing no precursor above TCDW.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Reconstructed diffuse scattering around the (3 0 0.5) cut at 90 K.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Reconstructed diffuse scattering around the (3 0 0.5) cut at 100 K.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Reconstructed diffuse scattering around the (3 0 0.5) cut at 150 K.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Line profile of the diffuse precursor at 120 K fitted with Bragg plus Lorentzian components.",
+        "data_type": "spectrum / line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Temperature-dependent IXS spectra at the (2.5 0.5 0.5) wavevector showing the elastic central peak and low-energy phonon.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Temperature dependence of diffuse scattering intensity, IXS central peak intensity, and phonon intensity, plus generalized susceptibility inset.",
+        "data_type": "intensity-vs-temperature curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Color map of low-energy phonon spectra along (3-h h 0.5) showing three weakly dispersive modes.",
+        "data_type": "spectral map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "IXS spectra and identified phonon branches along the (2+h 1-h 0.5) direction.",
+        "data_type": "spectrum / dispersion plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Phonon dispersion extracted from damped harmonic oscillator fits.",
+        "data_type": "dispersion plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "High-resolution temperature-dependent IXS spectra at (3.5 2.5 0.5), resolving the ω branch into two modes.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Temperature dependence of the linewidth of the ω1 phonon mode.",
+        "data_type": "intensity/linewidth-vs-temperature curve",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw diffuse scattering images/maps collected with a PILATUS3 1M X detector at ESRF ID28 using Ei = 17.8 keV, and raw IXS spectra collected at ESRF ID28 and APS HERIX (Ei = 17.8 keV and 23.72 keV, with energy resolutions of 3 meV and 1.5 meV). These include reciprocal-space detector images, reciprocal-space reconstructions, and energy-loss spectra around CDW-related wavevectors.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots processed reciprocal-space reconstructions of diffuse scattering, line cuts fitted with Bragg plus Lorentzian profiles, temperature-dependent integrated intensities, generalized susceptibility extracted from the scattering, and phonon energies/linewidths obtained from damped harmonic oscillator fits convoluted with instrumental resolution.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that all data needed to evaluate the conclusions are included in the paper and Supplementary Information, and that the DS and IXS data generated in this study have been deposited in Figshare (https://doi.org/10.6084/m9.figshare.21990461).",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw DS and IXS measurements were collected at synchrotron beamlines (ESRF ID28 and APS HERIX). The paper does not specify file formats, folder structure, or whether the deposited Figshare archive contains the unprocessed detector images/spectra versus only reduced data.",
+      "processed_data_description": "Processed data include reconstructed diffuse scattering maps, fitted line profiles, integrated intensities versus temperature, extracted central-peak and phonon intensities, generalized susceptibility, phonon dispersions, and linewidths. These are the quantities directly plotted in the main figures.",
+      "figure_data_description": "Figure-specific data are clearly implied by the plotted reconstructions, line cuts, temperature series, and fit-derived quantities. The paper does not explicitly say 'source data' are provided per figure, but the Figshare deposit likely contains the DS and IXS datasets used to generate the figures.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned. Data processing is described qualitatively as using CrysAlis, an in-house code for final DS images, and DFPT calculations in Quantum ESPRESSO.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper explicitly provides a Figshare DOI for the DS and IXS data and states that all data needed to evaluate the conclusions are included in the paper and Supplementary Information. However, the exact organization and whether raw detector-level files or only reduced/source data are deposited is not specified.",
+      "notes": "The dataset is primarily experimental scattering data plus derived fit outputs. The paper distinguishes between raw measurements (detector images and spectra), processed reciprocal-space maps and fitted curves, and theoretical DFPT phonon calculations. The supplementary information is referenced for additional DS maps and fitting details, but no scripts are described."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The Methods section states that diffuse scattering measurements were performed with a PILATUS detector and IXS measurements were carried out at ESRF and APS, implying raw detector/spectra data were collected.",
+      "source_data_evidence": "The paper says all data needed are included in the paper and Supplementary Information and that DS and IXS data were deposited in Figshare, which strongly suggests figure/source data are available.",
+      "both_evidence": "Raw synchrotron measurements were collected and then processed into reciprocal-space maps, fitted intensities, and phonon parameters used in the figures.",
+      "data_availability_section_relevant": "“All data needed to evaluate the conclusions in the paper are included in the paper and in the Supplementary Information. The DS and IXS data generated in this study have been deposited in the Figshare database …”",
+      "priority_modalities": [
+        "diffuse scattering detector images",
+        "reciprocal-space maps",
+        "inelastic x-ray scattering spectra",
+        "temperature-dependent intensity curves",
+        "phonon dispersion fits",
+        "DFPT phonon calculations"
+      ],
+      "review_notes": "Be careful not to equate the deposited Figshare data with raw-only data; the paper does not specify the exact contents. The main figures are mostly processed/derived from raw scattering data. DFPT calculations are not experimental raw data but computational outputs. No scripts or notebooks are mentioned."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_36668_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 480552,
+      "size_human": "469.3 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_36668_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2023_36668_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3452748,
+      "size_human": "3.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_36668_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "Source_Data.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 62575,
+      "size_human": "61.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 1(e)",
+        "Figure 3(d)",
+        "Figure 3(e)",
+        "Figure 4(a)",
+        "Figure 4(b)",
+        "Figure 4(d)"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "Figure 1(e)",
+          "columns": [
+            "80 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "85 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "90 K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "92 K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "93 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "94 K",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "95 K",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "96 K",
+            "Unnamed: 22"
+          ],
+          "named_columns": [
+            "80 K",
+            "85 K",
+            "90 K",
+            "92 K",
+            "93 K",
+            "94 K",
+            "95 K",
+            "96 K"
+          ],
+          "column_count": 23,
+          "row_count": 52,
+          "dtypes": {
+            "80 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "85 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "90 K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "92 K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "93 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "94 K": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "float64",
+            "95 K": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "float64",
+            "96 K": "object",
+            "Unnamed: 22": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(d)",
+          "columns": [
+            "k (rlu)",
+            "Intensity"
+          ],
+          "named_columns": [
+            "k (rlu)",
+            "Intensity"
+          ],
+          "column_count": 2,
+          "row_count": 1126,
+          "dtypes": {
+            "k (rlu)": "float64",
+            "Intensity": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(e)",
+          "columns": [
+            "96 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "97 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "99 K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "102 K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "105 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "107 K",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "109 K",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "112 K",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "115 K",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "120 K",
+            "Unnamed: 28"
+          ],
+          "named_columns": [
+            "96 K",
+            "97 K",
+            "99 K",
+            "102 K",
+            "105 K",
+            "107 K",
+            "109 K",
+            "112 K",
+            "115 K",
+            "120 K"
+          ],
+          "column_count": 29,
+          "row_count": 46,
+          "dtypes": {
+            "96 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "97 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "99 K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "102 K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "105 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "107 K": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "float64",
+            "109 K": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "float64",
+            "112 K": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "float64",
+            "115 K": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "float64",
+            "120 K": "object",
+            "Unnamed: 28": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4(a)",
+          "columns": [
+            "3.1 0.0 0.5",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "2.9 0.1 0.5",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "2.8 0.2 0.5",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "2.7 0.3 0.5",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "2.6 0.4 0.5 ",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "2.5 0.5 0.5",
+            "Unnamed: 21",
+            "Unnamed: 22"
+          ],
+          "named_columns": [
+            "3.1 0.0 0.5",
+            "2.9 0.1 0.5",
+            "2.8 0.2 0.5",
+            "2.7 0.3 0.5",
+            "2.6 0.4 0.5 ",
+            "2.5 0.5 0.5"
+          ],
+          "column_count": 23,
+          "row_count": 46,
+          "dtypes": {
+            "3.1 0.0 0.5": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "2.9 0.1 0.5": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "2.8 0.2 0.5": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "2.7 0.3 0.5": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "float64",
+            "2.6 0.4 0.5 ": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "float64",
+            "2.5 0.5 0.5": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4(b)",
+          "columns": [
+            "2.1 0.9 0.5",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "2.3 0.7 0.5",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "2.5 0.5 0.5",
+            "Unnamed: 9",
+            "Unnamed: 10"
+          ],
+          "named_columns": [
+            "2.1 0.9 0.5",
+            "2.3 0.7 0.5",
+            "2.5 0.5 0.5"
+          ],
+          "column_count": 11,
+          "row_count": 46,
+          "dtypes": {
+            "2.1 0.9 0.5": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "2.3 0.7 0.5": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "2.5 0.5 0.5": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4(d)",
+          "columns": [
+            "150 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "135 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "120 K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "115 K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "110 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "105 K",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "96 K",
+            "Unnamed: 19"
+          ],
+          "named_columns": [
+            "150 K",
+            "135 K",
+            "120 K",
+            "115 K",
+            "110 K",
+            "105 K",
+            "96 K"
+          ],
+          "column_count": 20,
+          "row_count": 82,
+          "dtypes": {
+            "150 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "135 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "120 K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "115 K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "110 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "105 K": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "float64",
+            "96 K": "object",
+            "Unnamed: 19": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "Source_Data.xlsx"
+    }
+  ]
+}

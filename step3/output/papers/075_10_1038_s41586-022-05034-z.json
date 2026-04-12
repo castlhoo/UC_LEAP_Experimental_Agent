@@ -1,0 +1,309 @@
+{
+  "paper_id": "step1_0215",
+  "title": "Discovery of charge density wave in a kagome lattice antiferromagnet",
+  "doi": "10.1038/s41586-022-05034-z",
+  "journal": "Nature",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4295762999",
+  "priority_score": 10.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-022-05034-z",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports the discovery of a short-range charge density wave (CDW) in the kagome-lattice antiferromagnet FeGe, appearing below ~100 K inside an already magnetically ordered phase. Using transport, magnetization, neutron scattering, STM, ARPES, X-ray diffraction, and heat-capacity measurements, the authors show that the CDW is coupled to the collinear A-type AFM order, enhances the ordered moment, and is accompanied by an anomalous Hall effect and van Hove singularities near the Fermi level.",
+    "measurement_types": [
+      "magnetic susceptibility",
+      "magnetization vs field",
+      "electrical resistivity",
+      "Hall resistivity / magnetotransport",
+      "heat capacity",
+      "single-crystal neutron diffraction / neutron scattering",
+      "X-ray Laue diffraction",
+      "single-crystal X-ray diffraction",
+      "energy-dispersive X-ray spectroscopy (EDX)",
+      "scanning tunneling microscopy (STM) topography",
+      "STM differential conductance (dI/dV) spectroscopy / conductance mapping",
+      "angle-resolved photoemission spectroscopy (ARPES)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of kagome lattice geometry and context for correlated kagome metals.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Collinear A-type antiferromagnetic structure of FeGe with ferromagnetic kagome planes stacked antiferromagnetically along c.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Illustration of CDW-enhanced magnetic moment / coupling between CDW and AFM order.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Proposed chiral flux phase / circulating-current picture associated with CDW and anomalous Hall effect.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Temperature-field phase diagram of FeGe showing AFM, canted AFM, and CDW-related regimes.",
+        "data_type": "phase diagram",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Temperature-dependent magnetic susceptibilities for different field orientations, showing a feature near 100 K.",
+        "data_type": "transport / magnetization curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "In-plane resistivity and its temperature derivative highlighting a kink near the CDW transition.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "Hall resistivity / Hall coefficient behavior versus temperature and field.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "Magnetic susceptibility or magnetization behavior across the spin-flop transition and CDW regime.",
+        "data_type": "magnetization curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1j",
+        "description": "Weak-field Hall coefficient extracted from Hall resistivity divided by field, showing a drop near 100 K.",
+        "data_type": "transport curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1k",
+        "description": "Field-dependent Hall resistivity showing spin-flop transition and extraction of anomalous Hall resistivity.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1l",
+        "description": "Schematic explanation of how CDW and field-induced spin-flop may generate anomalous Hall effect.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Three-dimensional reciprocal-space representation of FeGe.",
+        "data_type": "reciprocal-space schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Two-dimensional in-plane reciprocal-space representation of FeGe.",
+        "data_type": "reciprocal-space schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Refined canted AFM magnetic structure below the canting transition.",
+        "data_type": "structure schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Raw neutron scattering data at 440 K showing only nuclear Bragg peaks.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Neutron scattering data at 140 K showing magnetic Bragg peaks of collinear A-type AFM order.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Neutron scattering data at 70 K showing additional nonmagnetic superlattice peaks attributed to CDW.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Expanded view of the AFM Bragg peak region used to examine splitting below the canting transition.",
+        "data_type": "diffraction pattern",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Line cut showing splitting of a magnetic peak into three peaks along L below the canting transition.",
+        "data_type": "diffraction profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2i",
+        "description": "Schematic or indexing of nuclear Bragg peaks in the normal state.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2j",
+        "description": "Indexing/assignment of magnetic Bragg peaks in the AFM state.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2k",
+        "description": "Indexing/assignment of CDW-related superlattice peaks in reciprocal space.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2l",
+        "description": "Schematic of magnetic modulation along c-axis in the canted AFM state.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2m",
+        "description": "Schematic or model of the canted AFM structure / modulation.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Temperature dependence of the (2.5,0,2) CDW peak intensity across the ~100 K transition.",
+        "data_type": "diffraction intensity vs temperature",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Temperature dependence of the (3.5,0,1.5) CDW peak intensity across the ~100 K transition.",
+        "data_type": "diffraction intensity vs temperature",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Q-scan along [2.5,0,L] showing a broad CDW peak and extracted correlation length.",
+        "data_type": "diffraction profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Q-scan along [H,0,2] showing a broad CDW peak and extracted correlation length.",
+        "data_type": "diffraction profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Temperature dependence of the squared ordered magnetic moment from neutron diffraction normalization.",
+        "data_type": "order-parameter curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Comparison of magnetic peak intensity and CDW intensity across the CDW and canting transitions.",
+        "data_type": "order-parameter curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "STM topography and differential conductance spectrum showing suppression near EF.",
+        "data_type": "image + spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "STM conductance map showing 2x2 charge modulation and its Fourier-space wavevectors.",
+        "data_type": "image / Fourier map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "ARPES Fermi surface maps at photon energies probing Γ and A kz planes.",
+        "data_type": "spectral image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "ARPES band dispersions / cuts showing kagome-derived bands and Fermi-surface geometry.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "ARPES dispersions near the M point identifying two van Hove singularities.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "ARPES dispersion near the L point identifying a van Hove singularity.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw neutron scattering data (including reciprocal-space maps and peak profiles), raw STM topography and differential conductance maps/spectra, raw ARPES spectra and Fermi-surface maps, raw X-ray Laue diffraction patterns, raw single-crystal X-ray diffraction intensities, EDX elemental measurements, and raw transport/magnetization/heat-capacity measurements collected on PPMS and related instruments.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper also presents processed/derived plots including temperature-dependent susceptibilities, resistivity derivatives, Hall coefficients, anomalous Hall resistivity extracted by linear fits, phase diagrams, normalized magnetic order parameters, fitted Lorentzian peak profiles, correlation lengths from Fourier transforms, and refined crystal/magnetic structures.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement is included in the provided text. The Methods section describes how measurements were performed and how some quantities were extracted, but does not specify repository links, file formats, or whether source data/scripts are deposited.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of instrument and measurement type: PPMS magnetization/transport/heat capacity, CORELLI neutron scattering, STM, ARPES, X-ray Laue diffraction, and single-crystal X-ray diffraction. No file formats, folder structure, or repository location are given in the text.",
+      "processed_data_description": "Processed data include symmetrized/anti-symmetrized Hall resistivity, Hall coefficient and mobility estimated with a single-band model, anomalous Hall resistivity extracted from linear fits above the spin-flop field, integrated neutron peak intensities normalized to ordered moment squared, Lorentzian fits to CDW peaks, and correlation lengths obtained from Fourier transforms of peak widths. Structural refinements are reported in tables.",
+      "figure_data_description": "Figure-specific data are clearly implied for many main figures, especially neutron, transport, STM, and ARPES panels, but the text does not explicitly state that source-data files are provided. Tables 1-3 provide crystallographic source values, and Extended Data figures are referenced as supporting data, but their underlying files are not described.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "mixed / figure-based in the manuscript narrative, but not explicitly organized in the text",
+      "replot_ready_data_present": true,
+      "replot_reason": "Many plotted quantities are numerically defined in the Methods or directly extracted from measurements, and tables provide crystallographic parameters. However, the text does not confirm downloadable source-data files or scripts, so replotting from the paper alone would be partial rather than complete.",
+      "notes": "Important semantic distinction: neutron scattering and STM/ARPES are presented as raw measurement images/spectra, while many transport and magnetic quantities are derived from those raw measurements. The CDW peak intensities, Hall coefficients, and ordered moment curves are processed quantities, not raw detector outputs. The paper also includes refined crystal-structure tables, which are processed crystallographic outputs rather than raw diffraction frames."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The Methods explicitly describe collection of raw neutron scattering data, STM measurements, ARPES spectra, X-ray diffraction, EDX, transport, susceptibility, and heat capacity data.",
+      "source_data_evidence": "The provided text does not explicitly mention source-data files or a source-data repository.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "Key phrases include: 'raw neutron scattering data', 'temperature dependent susceptibilities', 'Hall resistivity was symmetrized and anti-symmetrized', 'integrated intensity', 'Lorentzian fit', 'Fourier transform', 'refinement results', and 'Extended Data Figures'.",
+      "priority_modalities": [
+        "neutron diffraction maps",
+        "transport curves",
+        "magnetization/susceptibility curves",
+        "STM topography and dI/dV maps",
+        "ARPES spectra and Fermi-surface maps",
+        "X-ray diffraction patterns",
+        "crystallographic refinement tables"
+      ],
+      "review_notes": "Do not infer that source data or scripts are deposited just because the paper has many figures and methods. The text supports raw measurements and processed outputs, but not explicit source-data packaging. Also distinguish the CDW superlattice peaks (nonmagnetic lattice distortion) from magnetic Bragg peaks; both appear in neutron data but have different physical origins and processing."
+    }
+  },
+  "inspection_reports": []
+}

@@ -1,0 +1,51 @@
+Title: Enhanced Phonon-Assisted Tunneling in Metal -- Twisted Bilayer Graphene Junctions
+DOI: 10.1021/acsnano.5c06662
+Journal: arXiv preprint
+Year: 2025
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The Zenodo deposit contains two figure/source-data style tabular files: a large numeric Wannier-band table and a figure-organized Excel workbook with labeled physical variables. Both are replot-ready processed/derived data.
+- Type2 summary: No file is clearly raw/unprocessed instrument output. The deposit instead appears to contain processed figure data plus code/documentation.
+
+Type1 files
+- Data_TMBGgap.xlsx
+  original path: Data_TMBGgap.xlsx
+  classified as: type1
+  reasoning: This is clearly organized as figure/source data rather than raw measurements: figure-specific sheet names, physical headers, and replot-ready tabular organization. It matches Type 1 by definition.
+  paper evidence: The paper presents figure-ready transport maps, line cuts, and derived analysis plots. The dataset prior explicitly expects source/processed data, and the paper does not indicate this file is raw instrument output.
+  file evidence: Excel workbook with 21 sheets named by figures (e.g. Fig_1e, Fig_1f, Fig_1g, Fig_1h, Fig_2a, Fig_2b, Fig_2c). Sheets contain labeled physical variables such as Raman shift, D (V/nm), gap (meV), n_tot, and DOS, with headers and moderate row counts suitable for direct plotting.
+  structure: Sheets: Fig_1e, Fig_1f, Fig_1g, Fig_1h, Fig_2a, Fig_2b, Fig_2c, etc.; columns include Raman shift (cm-1), D (V/nm), gap w/ and w/o proximity (meV), n_tot (1e12 cm-2), DOS (arb. un.)
+  ambiguity: Low: the workbook structure is strongly figure-oriented and directly usable for plotting.
+- Wannier-bands-a1.08-wr0.7.dat
+  original path: Wannier-bands-a1.08-wr0.7.dat
+  classified as: type1
+  reasoning: Although the file lacks a descriptive header, its tabular numeric structure and size are consistent with processed computational data used for figures. It is not instrument raw data. Given the paper's emphasis on calculated band/DOS plots and the file's replot-ready format, Type 1 is the conservative classification.
+  paper evidence: The paper includes calculated phonon band structures and DOS, i.e. figure-ready derived data rather than raw instrument output. The dataset prior also indicates processed/source data are expected.
+  file evidence: Large structured tabular text file (11407 rows, 6 numeric columns, no header). The content is numeric and directly plottable as band-structure-like data, consistent with replot-ready simulation output.
+  structure: 6 numeric columns; no header; 11407 rows; tabular text
+  ambiguity: Moderate: the filename suggests Wannier-band data and the file has no header, so exact variable meaning is not explicit. However, the structure strongly supports processed computational data rather than raw measurements.
+
+Type2 files
+- none
+
+Annotation files
+- code_description.txt
+  original path: code_description.txt
+  classified as: documentation
+  reasoning: This file is documentation, not raw or cleaned data. It supports analysis but is not itself a dataset file in the Type 1/Type 2 sense.
+  paper evidence: The paper mentions supporting information and theory/analysis, but this file is not a data table or measurement record; it is documentation for simulation code.
+  file evidence: Text file containing documentation for numerical simulations of a tBLG network model. It is not a dataset for direct plotting and does not contain structured measurement data.
+  structure: Documentation text; 41 rows; no numeric dataset structure
+  ambiguity: None.
+
+Script files
+- conductance_oscillations_mode_sum_annotated.py
+  original path: conductance_oscillations_mode_sum_annotated.py
+  classified as: script
+  reasoning: This is clearly a script, so it falls outside Type 1/Type 2 dataset classification.
+  paper evidence: The paper includes theoretical/analysis components, but this file is a code script rather than data.
+  file evidence: Python script used for analysis or plotting. Not a data table or measurement file.
+  structure: Python source code
+  ambiguity: None.

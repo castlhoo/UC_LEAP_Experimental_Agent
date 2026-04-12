@@ -29,17 +29,21 @@ from step1.scorer import compute_score, decide
 logger = logging.getLogger(__name__)
 
 
-def _load_config(config_dir: str) -> Dict[str, Any]:
-    config_path = os.path.join(config_dir, "step1_config.yaml")
+def _load_config(config_dir: str, config_name: str = "step1_config.yaml") -> Dict[str, Any]:
+    config_path = os.path.join(config_dir, config_name)
     with open(config_path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
-def run_step1(config_dir: str, output_dir: str) -> List[Dict[str, Any]]:
+def run_step1(
+    config_dir: str,
+    output_dir: str,
+    config_name: str = "step1_config.yaml",
+) -> List[Dict[str, Any]]:
     """
     Execute the full Step 1 pipeline and return candidate records.
     """
-    config = _load_config(config_dir)
+    config = _load_config(config_dir, config_name=config_name)
     os.makedirs(output_dir, exist_ok=True)
 
     start_time = time.time()

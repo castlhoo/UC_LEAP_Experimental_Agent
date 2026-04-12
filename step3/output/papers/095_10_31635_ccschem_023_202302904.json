@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0123",
+  "title": "Multicolor Circularly Polarized Luminescence of a Single-Component System Revealing Multiple Information Encryption",
+  "doi": "10.31635/ccschem.023.202302904",
+  "journal": "CCS Chemistry",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4381837254",
+  "priority_score": 6.4,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_31635_ccschem_023_202302904",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file can be confidently identified as cleaned, replot-ready figure/source data.",
+  "type2_summary": "No file can be confidently identified as raw or unprocessed measurement data.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The available inspection reports only provide filenames, sizes, and source, not internal file contents. Both files are PDFs and lack evidence of being dataset files. Given the paper analysis, there is no basis to infer that these are supporting data for the target article.",
+  "file_classifications": [
+    {
+      "relative_path": "Enantiopure_distorted_ribbon-shaped_nanographene_c.pdf",
+      "filename": "Enantiopure_distorted_ribbon-shaped_nanographene_c.pdf",
+      "type": "other",
+      "paper_evidence": "The paper analysis provided no data availability statement and no indication that this PDF is supplementary source data or raw data for the target paper.",
+      "file_evidence": "This is a PDF file from Zenodo with a large size (4.8 MB). The filename suggests it is a standalone article or document rather than a tabular dataset. No evidence of figure-specific tables, headers, or replot-ready structure is available from the inspection report.",
+      "reasoning": "Because the file is a PDF and the inspection report does not show tabular structure, sheet names, or figure-specific data, it cannot be classified as cleaned replot-ready data (Type 1). It also does not clearly appear to be raw instrument output or unprocessed measurement data (Type 2). Conservatively, it is classified as other.",
+      "ambiguity": "High ambiguity: without opening the PDF contents, it is unclear whether it contains embedded source data, a paper copy, or supplementary material.",
+      "key_columns_or_structure": "Not available from inspection; PDF structure not exposed."
+    },
+    {
+      "relative_path": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium.pdf",
+      "filename": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium.pdf",
+      "type": "other",
+      "paper_evidence": "The provided paper analysis for the target CCS Chemistry article gives no evidence that this PDF is associated source data, raw data, or supplementary material for that paper.",
+      "file_evidence": "This is a PDF file from Zenodo, 1.2 MB in size. The filename indicates it is likely a published article or document, not a dataset file. No tabular headers, figure labels, or machine-readable data structure are reported.",
+      "reasoning": "The file does not meet the criteria for Type 1 because there is no evidence of organized tabular data or figure-specific source data. It also does not meet the criteria for Type 2 because there is no indication of raw instrument output or unprocessed experimental files. Therefore, it is conservatively classified as other.",
+      "ambiguity": "High ambiguity: the file may contain article text or supplementary information, but the inspection report does not provide enough detail to identify dataset content.",
+      "key_columns_or_structure": "Not available from inspection; PDF structure not exposed."
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports a single-component metal-free luminescent system that produces multicolor circularly polarized luminescence for information encryption applications.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data description is available from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher files or dataset URLs were provided. It is not possible to determine whether supporting data are in supplementary materials, a repository, or available upon request.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher files or dataset URLs were provided. It is not possible to determine whether supporting data are in supplementary materials, a repository, or available upon request.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Enantiopure_distorted_ribbon-shaped_nanographene_c.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4982815,
+      "size_human": "4.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Enantiopure_distorted_ribbon-shaped_nanographene_c.pdf"
+    },
+    {
+      "filename": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1246242,
+      "size_human": "1.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium.pdf"
+    }
+  ]
+}

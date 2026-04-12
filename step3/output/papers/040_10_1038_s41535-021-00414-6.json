@@ -1,0 +1,244 @@
+{
+  "paper_id": "step1_0221",
+  "title": "Native point defects and their implications for the Dirac point gap at MnBi2Te4(0001)",
+  "doi": "10.1038/s41535-021-00414-6",
+  "journal": "npj Quantum Materials",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W3196355430",
+  "priority_score": 6.6,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41535-021-00414-6",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The available file is a supplementary source-data PDF from the Nature deposit, which is most consistent with figure/source data rather than raw instrument output.",
+  "type2_summary": "No clearly raw/unprocessed instrument file is present in the provided dataset listing.",
+  "type1_files": [
+    "41535_2021_414_MOESM1_ESM.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper itself contains both raw measurements and processed/source data, but file-level evidence only shows one supplementary PDF from the source-data deposit. No explicit raw measurement file was provided in the file inspection report.",
+  "file_classifications": [
+    {
+      "relative_path": "41535_2021_414_MOESM1_ESM.pdf",
+      "filename": "41535_2021_414_MOESM1_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that data supporting the findings are available within the paper and supplementary information, and the publication contains many processed/source-data-style figures (fits, averaged STS, second-derivative ARPES, DFT-derived plots). This supplementary PDF is from the nature_source_data deposit, which strongly indicates figure/source data rather than raw instrument output.",
+      "file_evidence": "PDF file, 14.3 MB, from nature_source_data. No indication of proprietary raw instrument format or scan-level output. The size is consistent with a compiled source-data supplement containing figure-ready datasets and/or supporting plots rather than a single raw measurement file.",
+      "reasoning": "The paper clearly supports the existence of processed/source data, and the file provenance points to a supplementary source-data PDF. Although the file is not a tabular CSV/XLSX, the deposit context and the paper's emphasis on processed figure data make Type 1 the most conservative fit. It is not identifiable as raw instrument output, and it is more likely a compiled source-data supplement than unprocessed measurement data.",
+      "ambiguity": "Moderate: the PDF format prevents direct inspection of internal tables/figures here, so classification relies on provenance and paper context. However, the source-data deposit context outweighs the lack of visible tabular structure.",
+      "key_columns_or_structure": "Not inspectable from metadata alone; likely supplementary source-data figures/tables embedded in PDF"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the (0001) surface of antiferromagnetic topological insulator MnBi2Te4 using STM/STS, micro-laser ARPES, XRD, transport, and DFT. The main finding is that native Mn-Bi cation intermixing creates BiTe and MnBi point defects, and the MnBi defects can strongly reduce the Dirac point gap of the topological surface state, explaining why different samples and cleavages show different gap sizes.",
+    "measurement_types": [
+      "STM topography",
+      "STS / dI/dV spectroscopy",
+      "micro-laser ARPES",
+      "X-ray diffraction (XRD)",
+      "resistivity / transport",
+      "DFT electronic structure calculations",
+      "STM/LDOS simulations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "Bulk crystal structure of MnBi2Te4 with antiferromagnetic ordering between septuple layers.",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Top view of the surface crystal structure of MnBi2Te4(0001).",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "Side view of the surface crystal structure of MnBi2Te4(0001).",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1d",
+        "description": "Atomically resolved STM image of the cleaved surface showing dark triangular depressions and a bright circular protrusion.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "Large-scale STM topography showing atomically flat terraces and step edges on MnBi2Te4(0001).",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Line profile across a terrace step showing step height consistent with one septuple layer.",
+        "data_type": "line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "STM topograph of a terrace showing the surface defect density; inset zoom of a triangular defect.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "Atomic-resolution STM topograph at negative bias showing two defect types in occupied states.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Atomic-resolution STM topograph at positive bias showing the same defects in unoccupied states.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "dI/dV map at negative bias showing contrast of type A and type B defects in occupied states.",
+        "data_type": "spectral map / image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3d",
+        "description": "dI/dV map at positive bias showing contrast reversal of the defects in unoccupied states.",
+        "data_type": "spectral map / image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "ARPES dispersion for a sample with a larger Dirac point gap.",
+        "data_type": "spectrum / band map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Γ-point energy distribution curve and fit showing a ~55 meV Dirac point gap.",
+        "data_type": "spectrum / fitted curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "ARPES dispersion for a sample with a smaller Dirac point gap.",
+        "data_type": "spectrum / band map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Γ-point energy distribution curve and fit showing a ~20 meV Dirac point gap.",
+        "data_type": "spectrum / fitted curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4e",
+        "description": "Second-derivative representation of the larger-gap ARPES data.",
+        "data_type": "processed spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4f",
+        "description": "Spatially averaged STS spectrum showing a dip near the gapped Dirac point for the larger-gap sample.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4g",
+        "description": "Second-derivative representation of the smaller-gap ARPES data.",
+        "data_type": "processed spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4h",
+        "description": "Spatially averaged STS spectrum showing a peak near the gapped Dirac point for the smaller-gap sample.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 5a",
+        "description": "Real-space distribution of the topological surface state weight across the septuple layer, illustrating localization near Bi layers.",
+        "data_type": "calculated wavefunction density / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5b",
+        "description": "DFT surface band structure for ideal MnBi2Te4 showing a 90 meV Dirac point gap.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5c",
+        "description": "DFT surface band structure with MnBi defect in the second layer showing reduced gap (~37 meV).",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5d",
+        "description": "DFT surface band structure with MnBi defect in the sixth layer showing nearly closed gap (~3.5 meV).",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental measurements include low-temperature STM topographs, STS dI/dV spectra/maps, micro-laser ARPES spectra, XRD diffraction patterns, and resistivity measurements. The paper also reports first-principles DFT calculations and STM/LDOS simulations, which are not raw measurements but computed data.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include ARPES band dispersions, Γ-point EDC fits, second-derivative ARPES representations, spatially averaged STS spectra, dI/dV maps, STM line profiles, defect-density estimates, and DFT band structures/wavefunction-density plots. Several figures are explicitly fit, averaged, differentiated, or simulated rather than direct raw outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that the data supporting the findings are available within the paper and its supplementary information files. They also state that the codes used to perform data analysis are available on request from the authors.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "The paper does not describe a public raw-data repository or file formats. Raw data are described only at the level of instrument outputs: STM images, dI/dV spectra/maps, ARPES dispersions, XRD patterns, and resistivity traces collected with specific instruments and conditions.",
+      "processed_data_description": "Processed data include fitted EDCs, second-derivative ARPES plots, spatially averaged STS spectra, STM line profiles, defect concentration estimates, XRD structure refinement results, and DFT-calculated band structures and LDOS simulations. The paper does not indicate a separate processed-data archive, but these results are presented in the main text and supplementary information.",
+      "figure_data_description": "Figure-specific data are clearly present in the sense that the main figures and supplementary figures contain the plotted experimental and calculated results. However, the paper does not explicitly state that per-figure source-data files are deposited separately.",
+      "scripts_description": "No analysis scripts or notebooks are provided in the paper text. The only statement is that codes used for data analysis are available on request from the authors.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides plotted results and supplementary figures, but it does not explicitly state that underlying numerical source data or raw files are deposited in a machine-readable repository. Replotting from the paper alone would require digitization or access by request.",
+      "notes": "The paper strongly distinguishes between raw experimental observables and derived quantities: STM topographs and ARPES/STS spectra are raw measurements, while defect assignments, concentrations, fitted gaps, second-derivative maps, and DFT band structures are processed or derived. Supplementary information is important for structure refinement, bias-dependent defect evolution, and additional STM/STS maps, but the text does not specify a formal dataset package."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper reports direct STM/S, ARPES, XRD, and transport measurements, which are raw experimental outputs.",
+      "source_data_evidence": "The paper includes fitted EDCs, second-derivative ARPES plots, averaged STS spectra, line profiles, defect counts, and DFT simulations, all of which are processed figure data.",
+      "both_evidence": "Both raw measurements and processed/source data are implied by the combination of direct instrument outputs and fitted/derived plots in the figures and supplementary information.",
+      "data_availability_section_relevant": "\"The authors declare that the data supporting the ﬁndings of this study are available within the paper and its supplementary information ﬁles.\"; \"The codes used to perform data analysis are available on request from the authors.\"",
+      "priority_modalities": [
+        "STM topography",
+        "STS dI/dV spectra and maps",
+        "micro-laser ARPES",
+        "XRD diffraction patterns",
+        "transport resistivity curves",
+        "DFT band structures",
+        "DFT wavefunction density / LDOS simulations"
+      ],
+      "review_notes": "Do not confuse the DFT results and fitted spectra with raw measurements. The paper does not claim an external raw-data repository or explicit source-data files; availability is limited to the paper, supplementary information, and code on request."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41535_2021_414_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 15006576,
+      "size_human": "14.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41535_2021_414_MOESM1_ESM.pdf"
+    }
+  ]
+}

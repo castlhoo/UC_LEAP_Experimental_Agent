@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0141",
+  "title": "Quantifying anisotropic thermal transport in two-dimensional perovskite <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mo>(</mml:mo><mml:mrow><mml:msub><mml:mi>PEA</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi>PbI</mml:mi><mml:mn>4</mml:mn></mml:msub></mml:mrow><mml:mo>)</mml:mo></mml:mrow></mml:math> through cross-sectional scanning thermal microscopy",
+  "doi": "10.1103/physrevmaterials.7.023801",
+  "journal": "Physical Review Materials",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4319078318",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevmaterials_7_023801",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear cleaned, replot-ready tabular dataset was identified from the provided file inspection.",
+  "type2_summary": "No clear raw/unprocessed measurement file was identified from the provided file inspection.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "Only one file was provided, and the inspection report did not include extracted PDF contents. Because the paper gives no data-availability evidence and the file is not demonstrably a dataset, the safest classification is documentation/other rather than forcing type1 or type2.",
+  "file_classifications": [
+    {
+      "relative_path": "Thermal_diffusivity_microscope_Zooming_in_on_anisotropic_heat_transport.pdf",
+      "filename": "Thermal_diffusivity_microscope_Zooming_in_on_anisotropic_heat_transport.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper metadata provided does not mention any downloadable dataset or source-data deposit, and no statement indicates this PDF is a data file.",
+      "file_evidence": "The file is a PDF from Zenodo with a large size (637 KB). No tabular structure, headers, or sheet-like organization is available from the inspection report, so it cannot be identified as replot-ready data. It is more consistent with a document than a dataset file.",
+      "reasoning": "Based on the available evidence, this file is not identifiable as raw measurement data or cleaned figure data. Since the inspection only confirms a PDF document and not structured data content, the conservative classification is documentation rather than type1 or type2.",
+      "ambiguity": "High ambiguity: the PDF could potentially be a paper, supplementary document, or a data-containing PDF, but no internal structure or extracted content was provided to support a data classification.",
+      "key_columns_or_structure": "No tabular structure identified"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports an experimental method using cross-sectional scanning thermal microscopy to measure anisotropic in-plane and cross-plane thermal conductivity in a 2D perovskite (PEA2PbI4) nanolayer.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to be an experimental condensed matter/materials study on anisotropic thermal transport in 2D perovskite (PEA2PbI4), but based on the available information there is no confirmed accessible dataset, source data, or supplementary data file.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no downloadable files or external dataset URLs were found on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no downloadable files or external dataset URLs were found on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Thermal_diffusivity_microscope_Zooming_in_on_anisotropic_heat_transport.pdf",
+      "extension": ".pdf",
+      "size_bytes": 652280,
+      "size_human": "637.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Thermal_diffusivity_microscope_Zooming_in_on_anisotropic_heat_transport.pdf"
+    }
+  ]
+}

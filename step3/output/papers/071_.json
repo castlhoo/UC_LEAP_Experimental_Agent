@@ -1,0 +1,937 @@
+{
+  "paper_id": "step1_0304",
+  "title": "Twisted Angle-Dependent Work Functions in CVD-Grown Twisted Bilayer Graphene by Kelvin Probe Force Microscopy",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2203.10485v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0304",
+  "files_inspected": 50,
+  "file_types_found": [
+    "numpy",
+    "script",
+    "pdf",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No clear Type 1 replot-ready source-data files were identified. The archive is dominated by code, figures, and a binary NumPy array without tabular headers or figure-specific source-data organization.",
+  "type2_summary": "The archive contains a large mixed project bundle and at least one binary numerical array in a nested data path, plus analysis notebooks and figure-generation code. These are more consistent with raw/intermediate or processing-oriented materials than cleaned source data.",
+  "type1_files": [],
+  "type2_files": [
+    "tbg_twist_angle_disorder.zip",
+    "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/energies.npy"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The provided paper-analysis summary appears internally inconsistent with the paper title and file contents, but the file-level evidence is clear enough to classify conservatively. Most extracted items are scripts, documentation, or final figures rather than dataset files. The only numerical data file is a binary .npy array lacking metadata, so it is classified as Type 2. Rule-based prior suggests hidden Type 1 evidence; review recommended.",
+  "file_classifications": [
+    {
+      "relative_path": "tbg_twist_angle_disorder.zip",
+      "filename": "tbg_twist_angle_disorder.zip",
+      "type": "type2",
+      "paper_evidence": "The provided paper analysis says no data availability statement or downloadable repository/URLs were identified, so there is no paper evidence that this archive is cleaned source data.",
+      "file_evidence": "41.3 MB Zenodo archive; contains notebooks, scripts, figures, and a data tree with .npy arrays. Archive packaging and size suggest a bundled project/data deposit rather than a small replot-ready table.",
+      "reasoning": "As the top-level archive, it is not directly replot-ready itself and likely contains mixed content. The presence of binary arrays and large notebooks indicates substantial processing content. Conservatively classify the archive as raw/unprocessed container material rather than Type 1 source data.",
+      "ambiguity": "The archive contains both processed figure assets and at least one numerical array, so it is a mixed container. Final classification is based on the archive as a whole.",
+      "key_columns_or_structure": "Archive containing Code/, Figures/, Data/; includes .ipynb, .py, .png, .pdf, and .npy files"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Readme.md",
+      "filename": "Readme.md",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence specifically addresses this README file.",
+      "file_evidence": "Markdown documentation file in the extracted ZIP; size 2.8 KB.",
+      "reasoning": "This is explanatory documentation, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "README text"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Code/generate_disorder_domains.ipynb",
+      "filename": "generate_disorder_domains.ipynb",
+      "type": "script",
+      "paper_evidence": "No paper evidence specifically identifies this notebook as source data; the paper analysis indicates no explicit data availability statement.",
+      "file_evidence": "Jupyter notebook in a Code directory; likely used to generate disorder domains rather than store figure-ready data.",
+      "reasoning": "Notebook is analysis/generation code, not a dataset file. It supports processing rather than direct plotting.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Notebook structure with code cells"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Code/figure_maker.ipynb",
+      "filename": "figure_maker.ipynb",
+      "type": "script",
+      "paper_evidence": "No paper evidence specifically identifies this notebook as source data; the paper analysis indicates no explicit data availability statement.",
+      "file_evidence": "Large Jupyter notebook (28.5 MB) in a Code directory, strongly indicating figure-generation/analysis code.",
+      "reasoning": "This is a plotting/analysis notebook, not a data table. It requires execution and likely reads other files to generate figures.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Notebook structure with code cells"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Code/create_sample.py",
+      "filename": "create_sample.py",
+      "type": "script",
+      "paper_evidence": "No paper evidence specifically identifies this script as source data.",
+      "file_evidence": "Python script in Code directory; 19.6 KB.",
+      "reasoning": "This is code, not data. It likely generates or processes samples for the figures.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Python source code"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Code/__pycache__/constants.cpython-38.pyc",
+      "filename": "constants.cpython-38.pyc",
+      "type": "other",
+      "paper_evidence": "No paper evidence.",
+      "file_evidence": "Compiled Python bytecode cache file.",
+      "reasoning": "This is an execution artifact, not data or analysis code intended for reuse.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Compiled Python bytecode"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/equivalence.png",
+      "filename": "equivalence.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 170.1 KB.",
+      "reasoning": "This is a final visualization output, not a dataset file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_twist_angle_disorder.png",
+      "filename": "conductance_twist_angle_disorder.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 238.3 KB.",
+      "reasoning": "Final plot image, not replot-ready data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_onsite_energy_disorder.png",
+      "filename": "conductance_onsite_energy_disorder.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 94.3 KB.",
+      "reasoning": "Final plot image, not a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/dos_disorder.png",
+      "filename": "dos_disorder.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 63.6 KB.",
+      "reasoning": "Final plot image, not a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/domains.png",
+      "filename": "domains.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 127.5 KB.",
+      "reasoning": "Final plot image, not a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_finite_temperature.png",
+      "filename": "conductance_finite_temperature.png",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Rendered figure image in Figures directory; 204.4 KB.",
+      "reasoning": "Final plot image, not a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PNG image"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Figures/setup.pdf",
+      "filename": "setup.pdf",
+      "type": "other",
+      "paper_evidence": "No paper evidence specifically identifies this as source data.",
+      "file_evidence": "Large PDF figure/document in Figures directory; 13.5 MB.",
+      "reasoning": "This is a rendered document/figure asset, not a directly plottable dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PDF document/figure"
+    },
+    {
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/energies.npy",
+      "filename": "energies.npy",
+      "type": "type2",
+      "paper_evidence": "The paper analysis provides no explicit statement that this is cleaned source data; no data availability statement was found.",
+      "file_evidence": "Binary NumPy array in a nested Data/Conductance/Site energy disorder path; shape [50], dtype float64. The nested parameterized directory structure and binary format indicate simulation/measurement output rather than a simple replot-ready table.",
+      "reasoning": "Although numerical, this is not a tabular source-data file with headers or figure-specific organization. It appears to be an intermediate/raw simulation array requiring context and processing before plotting.",
+      "ambiguity": "Moderate: the array is small and numerical, but the lack of metadata/headers and the nested parameterized structure make it safer to treat as raw/unprocessed.",
+      "key_columns_or_structure": "1D NumPy array, length 50, float64"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the fabrication and characterization of twisted PbS moiré superlattices with strong interlayer chemical bonding, revealing twist-angle-dependent structural reconstruction and emergent flat-band electronic states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data location or accessible dataset could be determined from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "tbg_twist_angle_disorder.zip",
+      "extension": ".zip",
+      "size_bytes": 43336819,
+      "size_human": "41.3 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "tbg_twist_angle_disorder.zip"
+    },
+    {
+      "filename": "Readme.md",
+      "extension": ".md",
+      "size_bytes": 2870,
+      "size_human": "2.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .md",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Readme.md",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Readme.md"
+    },
+    {
+      "filename": "generate_disorder_domains.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 941352,
+      "size_human": "919.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/generate_disorder_domains.ipynb",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/generate_disorder_domains.ipynb"
+    },
+    {
+      "filename": "figure_maker.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 29840131,
+      "size_human": "28.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/figure_maker.ipynb",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/figure_maker.ipynb"
+    },
+    {
+      "filename": "create_sample.py",
+      "extension": ".py",
+      "size_bytes": 20032,
+      "size_human": "19.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/create_sample.py",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/create_sample.py"
+    },
+    {
+      "filename": "constants.py",
+      "extension": ".py",
+      "size_bytes": 694,
+      "size_human": "694.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/constants.py",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/constants.py"
+    },
+    {
+      "filename": "patch.py",
+      "extension": ".py",
+      "size_bytes": 2874,
+      "size_human": "2.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/Descartes fix/patch.py",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/Descartes fix/patch.py"
+    },
+    {
+      "filename": "referee_reply.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 788675,
+      "size_human": "770.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/referee_reply.ipynb",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/referee_reply.ipynb"
+    },
+    {
+      "filename": "constants.cpython-38.pyc",
+      "extension": ".pyc",
+      "size_bytes": 454,
+      "size_human": "454.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pyc",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Code/__pycache__/constants.cpython-38.pyc",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Code/__pycache__/constants.cpython-38.pyc"
+    },
+    {
+      "filename": "equivalence.png",
+      "extension": ".png",
+      "size_bytes": 174174,
+      "size_human": "170.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/equivalence.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/equivalence.png"
+    },
+    {
+      "filename": "conductance_twist_angle_disorder.png",
+      "extension": ".png",
+      "size_bytes": 244068,
+      "size_human": "238.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/conductance_twist_angle_disorder.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_twist_angle_disorder.png"
+    },
+    {
+      "filename": "conductance_onsite_energy_disorder.png",
+      "extension": ".png",
+      "size_bytes": 96590,
+      "size_human": "94.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/conductance_onsite_energy_disorder.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_onsite_energy_disorder.png"
+    },
+    {
+      "filename": "dos_disorder.png",
+      "extension": ".png",
+      "size_bytes": 65129,
+      "size_human": "63.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/dos_disorder.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/dos_disorder.png"
+    },
+    {
+      "filename": "domains.png",
+      "extension": ".png",
+      "size_bytes": 130583,
+      "size_human": "127.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/domains.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/domains.png"
+    },
+    {
+      "filename": "conductance_finite_temperature.png",
+      "extension": ".png",
+      "size_bytes": 209333,
+      "size_human": "204.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/conductance_finite_temperature.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_finite_temperature.png"
+    },
+    {
+      "filename": "setup.pdf",
+      "extension": ".pdf",
+      "size_bytes": 14206304,
+      "size_human": "13.5 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/setup.pdf",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/setup.pdf"
+    },
+    {
+      "filename": "conductance_hartree_interactions.png",
+      "extension": ".png",
+      "size_bytes": 98816,
+      "size_human": "96.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/conductance_hartree_interactions.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_hartree_interactions.png"
+    },
+    {
+      "filename": "conductance_corrugation.png",
+      "extension": ".png",
+      "size_bytes": 129081,
+      "size_human": "126.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Figures/conductance_corrugation.png",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Figures/conductance_corrugation.png"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=8/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=19/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=19/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=19/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=19/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=3/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=3/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=3/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=3/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=16/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=16/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=16/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=16/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=13/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=13/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=13/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=13/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=5/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=5/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=5/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=5/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=15/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=15/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=15/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=15/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=2/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=2/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=2/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=2/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=9/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=9/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=9/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=9/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=4/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=4/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=4/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=4/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=1/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=1/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=1/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=1/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=10/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=10/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=10/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=10/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=0/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=0/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=0/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=0/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=6/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=6/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=6/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=6/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=12/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=12/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=12/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=12/conductance_matrices.npy"
+    },
+    {
+      "filename": "energies.npy",
+      "extension": ".npy",
+      "size_bytes": 528,
+      "size_human": "528.0 B",
+      "file_type": "numpy",
+      "shape": [
+        50
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=11/energies.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=11/energies.npy"
+    },
+    {
+      "filename": "conductance_matrices.npy",
+      "extension": ".npy",
+      "size_bytes": 6528,
+      "size_human": "6.4 KB",
+      "file_type": "numpy",
+      "shape": [
+        50,
+        4,
+        4
+      ],
+      "dtype": "float64",
+      "download_source": "zip_extracted",
+      "archive_path": "Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=11/conductance_matrices.npy",
+      "from_zip": "tbg_twist_angle_disorder.zip",
+      "relative_path": "zip_contents/Twist angle disorder/Data/Conductance/Site energy disorder/disstr=0.017/index=11/conductance_matrices.npy"
+    }
+  ]
+}

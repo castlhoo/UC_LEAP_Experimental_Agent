@@ -1,0 +1,107 @@
+Title: Switchable Chern insulator, isospin competitions and charge density waves in rhombohedral graphene moire superlattices
+DOI: N/A
+Journal: arXiv preprint
+Year: 2024
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No clear cleaned, replot-ready figure data files were identified among the inspected files.
+- Type2 summary: Raw_Data.zip is the strongest Type 2 candidate because it is a large archive explicitly labeled as raw data; the software archive also contains code that likely processes data, but the code itself is not Type 2.
+
+Type1 files
+- none
+
+Type2 files
+- Raw_Data.zip
+  original path: Raw_Data.zip
+  classified as: type2
+  reasoning: The archive name and size are consistent with raw/unprocessed data. Even without explicit paper confirmation, the file evidence strongly supports Type 2.
+  paper evidence: Paper analysis does not explicitly state raw data, but the dataset organization and file naming strongly suggest raw measurement content is included.
+  file evidence: Large archive (77.6 MB) named Raw_Data.zip, which is a strong indicator of unprocessed measurement data.
+  structure: Archive likely contains instrument or scan files
+  ambiguity: Moderate: archive contents were not individually listed here, but the naming and size are strongly indicative.
+
+Annotation files
+- Metadata.txt
+  original path: Metadata.txt
+  classified as: documentation
+  reasoning: Although tabular, this is metadata/documentation rather than replot-ready scientific data. It does not provide physical variables for direct plotting.
+  paper evidence: No paper evidence indicates this is figure-ready source data; the paper-level evidence only says no explicit data availability statement was found.
+  file evidence: Tabular text file with 101 rows and a header-like structure, but the parsed columns are malformed and resemble README metadata rather than physical variables. Sample row begins with 'GENERAL INFORMATION'.
+  structure: README-style metadata; no clear physical variable columns
+  ambiguity: Some tabular structure exists, but content is clearly descriptive metadata.
+- Data_Vault_Path.txt
+  original path: zip_contents/Software/Generic Data Manipulation/Data_Vault_Path.txt
+  classified as: documentation
+  reasoning: This is configuration/documentation, not scientific data.
+  paper evidence: No paper evidence indicates this is source data.
+  file evidence: Text file containing a Windows path and folder references; zero rows of data. Appears to be a path/configuration note.
+  structure: Filesystem path text
+- README.md
+- documentation.txt
+  original path: zip_contents/Software/Generic Data Manipulation/Canned Algorithms/Tuning Fork Fitting/documentation.txt
+  classified as: documentation
+  reasoning: This file documents an algorithm/workflow and is not directly plottable data.
+  paper evidence: No paper evidence indicates figure-ready data; this is within a software archive.
+  file evidence: Tabular text with instructions for tuning fork fitting and error handling; content is documentation rather than scientific measurements.
+  structure: Instructional text; no physical variables
+- documentation_2.txt
+  original path: zip_contents/Software/Generic Data Manipulation/Generic 2D Data Manipulation/Directional Integration/Matrix Rotation Integration/documentation.txt
+  classified as: documentation
+  reasoning: This is algorithm documentation, not directly plottable data.
+  paper evidence: No paper evidence indicates figure-ready data; this is within a software archive.
+  file evidence: Tabular text with instructions for directional integration; content is documentation rather than measurements.
+  structure: Instructional text; no physical variables
+
+Script files
+- AddFolderToPath.m
+  original path: zip_contents/Software/Generic Data Manipulation/AddFolderToPath.m
+  classified as: script
+  reasoning: This is clearly code, not data. It is neither Type 1 nor Type 2.
+  paper evidence: No paper evidence indicates this is data; it is part of a software archive.
+  file evidence: MATLAB script file used for path setup or utility functions.
+  structure: MATLAB utility script
+- OpenDataVaultFile.m
+- lanczos.py
+  original path: zip_contents/Software/Generic Data Manipulation/Canned Algorithms/Tuning Fork Fitting/lanczos.py
+  classified as: script
+  reasoning: This is code, not data.
+  paper evidence: No paper evidence indicates data; it is software.
+  file evidence: Python script, likely analysis or plotting code.
+  structure: Python analysis script
+- TuningForkError.py
+- SimulateTFData.m
+- TestMagReversal.m
+- TestTFConvolution.m
+- InterpIntegrate.m
+- Integrate.m
+- InterpolateIntegrate.m
+- DirectionalIntegral.m
+- MatrixIntegrate.m
+- HighPassFilter.m
+- LowPassFilter.m
+- convolveTFSig.m
+- InterpFourierComponent.m
+- InterpDataLine.m
+- GaussianPadding.m
+- ConvertBtoMoment.m
+- ConvertMomenttoB.m
+- Plot_nSOT_Mag.m
+- customcolormap.m
+  original path: zip_contents/Software/Generic Data Manipulation/Plotting Functions/Colormaps/customcolormap.m
+  classified as: script
+  reasoning: This is plotting code, not data.
+  paper evidence: No paper evidence indicates data; it is part of plotting utilities.
+  file evidence: MATLAB code for custom colormap generation.
+  structure: MATLAB plotting utility
+- redblue.m
+- Fig1a.m
+- Fig1cdefghi.m
+- FastHystOneFile.m
+- figure_2_ab.m
+- figure_2_bc.m
+- Domain1Isolated.m
+- Domain2Isolated.m
+- plot_transport_hysteresis.m
+- Transport.m

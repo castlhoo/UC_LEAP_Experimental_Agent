@@ -1,0 +1,413 @@
+{
+  "paper_id": "step1_0247",
+  "title": "Intrinsic spin Hall torque in a moire Chern magnet",
+  "doi": "10.1038/s41567-023-01979-8",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2205.02823v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 4,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41567-023-01979-8",
+  "files_inspected": 4,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The publisher source-data spreadsheets MOESM3 and MOESM4 are clean, figure-specific tabular datasets with headers and physical variables, suitable for direct plotting.",
+  "type2_summary": "MOESM1 is a large PDF support file without visible tabular structure, and MOESM5 is a very large scan-style workbook with 880k-row sheets, consistent with raw or minimally processed data.",
+  "type1_files": [
+    "41567_2023_1979_MOESM3_ESM.xlsx",
+    "41567_2023_1979_MOESM4_ESM.xlsx"
+  ],
+  "type2_files": [
+    "41567_2023_1979_MOESM1_ESM.pdf",
+    "41567_2023_1979_MOESM5_ESM.xlsx"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly distinguishes source data for one-dimensional plots from other supporting data in Dryad/Zenodo. The Excel source-data files with figure-linked sheet names are Type 1. The very large scan-like workbook is treated as Type 2 despite being tabular because its scale and structure suggest raw measurement output. The PDF file is conservatively classified as Type 2 because no direct replot-ready table structure is evident from the inspection report.",
+  "file_classifications": [
+    {
+      "relative_path": "41567_2023_1979_MOESM1_ESM.pdf",
+      "filename": "41567_2023_1979_MOESM1_ESM.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper says the one-dimensional plot source data are available as Source Data files, while all other data are in Dryad/Zenodo. This PDF is a large supplementary/source-data-style file, but the paper does not identify it as a cleaned figure table.",
+      "file_evidence": "PDF, 11.2 MB, source: nature_source_data. Large size and PDF format suggest a document or embedded raw/figure-support material rather than a directly replot-ready table.",
+      "reasoning": "Although it is from the publisher source-data package, the file format and large size do not indicate a simple tabular, replot-ready dataset. Given the paper's distinction between source data and all other data, and the lack of evidence that this PDF is a clean figure table, it is safest to treat it as raw/supporting material rather than Type 1.",
+      "ambiguity": "Moderate: PDF source-data files can sometimes contain figure-ready plots or tables, but no tabular structure is visible from the inspection report.",
+      "key_columns_or_structure": "PDF document; no tabular columns reported"
+    },
+    {
+      "relative_path": "41567_2023_1979_MOESM3_ESM.xlsx",
+      "filename": "41567_2023_1979_MOESM3_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly states that raw data for one-dimensional plots are provided as Source Data files. This file is a publisher source-data spreadsheet with figure-specific sheets, matching that description.",
+      "file_evidence": "Excel workbook, 256.2 KB, with 3 sheets named '1b', '1c', '1d'. Each sheet has headers, physical variables, and moderate row counts (500, 4000, 3000), indicating organized figure-ready data.",
+      "reasoning": "This is clearly structured tabular data with labeled physical variables and figure-linked sheet names. It can be directly plotted with minimal processing, so it fits Type 1.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "1b: measurement index, B (Tesla), Voltage (Volts), Current (Amps), Resistance (Ohms), Conductance (S); 1c: Trace/retrace, DC bias index, DC bias value (V), Current AC/DC; 1d: Up/Down/Static, DC bias index, Time, DC bias value (V), Current AC/DC"
+    },
+    {
+      "relative_path": "41567_2023_1979_MOESM4_ESM.xlsx",
+      "filename": "41567_2023_1979_MOESM4_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that one-dimensional plot source data are available as Source Data files. This workbook is a figure-specific source-data file from the publisher package.",
+      "file_evidence": "Excel workbook, 121.3 KB, with 3 sheets ('3i_1', '3i_2', '3i_3'), each containing headers and 1000 rows of tabular measurements.",
+      "reasoning": "The file is organized as clean tabular data with explicit physical variables and figure-linked sheet names. It is directly replot-ready and therefore Type 1.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "DC bias index, DC bias value (V), SQUID 1wx (V), SQUID 1wy (V)"
+    },
+    {
+      "relative_path": "41567_2023_1979_MOESM5_ESM.xlsx",
+      "filename": "41567_2023_1979_MOESM5_ESM.xlsx",
+      "type": "type2",
+      "paper_evidence": "The paper says all data beyond the one-dimensional plot source data are available from Dryad/Zenodo, implying this file may belong to the broader supporting/raw dataset rather than the clean source-data tables.",
+      "file_evidence": "Excel workbook, 94.4 MB, with 2 sheets ('4f_1', '4f_2') each containing 880,000 rows and scan-like coordinates (x index, y index, piezo voltages, SQUID channels). The very large size and scan-grid structure indicate dense measurement data.",
+      "reasoning": "Despite being in XLSX format, the file is extremely large and contains scan-style data with hundreds of thousands of points per sheet. This is more consistent with raw or minimally processed experimental output than with a compact replot-ready figure table.",
+      "ambiguity": "Moderate: the workbook is tabular and has headers, but the scale and scan-like structure strongly suggest raw/unprocessed data.",
+      "key_columns_or_structure": "Trace/retrace, x index, y index, voltage on x piezo, voltage on y piezo, SQUID 1wX, SQUID 1wY, SQUID 2wR"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports current-driven magnetic switching in AB-stacked MoTe2/WSe2 moiré Chern magnet, linking the observed spin-orbit torque to intrinsic Berry-curvature-driven spin/valley Hall effects.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw data for one-dimensional plots are provided as Nature Source Data files on the publisher site; additional supporting data are deposited in an external repository (Dryad, with a Zenodo DOI link found).",
+    "has_processed_plots": true,
+    "processed_plot_details": "Raw data for one-dimensional plots are provided as Nature Source Data files on the publisher site; additional supporting data are deposited in an external repository (Dryad, with a Zenodo DOI link found).",
+    "dataset_characterization": {
+      "data_availability_statement": "The raw data that support the one-dimensional plots are available as Source Data files. All other data are available from Dryad 46 .",
+      "data_provided_types": [
+        "raw",
+        "source_data"
+      ],
+      "raw_data_description": "Raw data for one-dimensional plots are provided as Nature Source Data files on the publisher site; additional supporting data are deposited in an external repository (Dryad, with a Zenodo DOI link found).",
+      "processed_data_description": "",
+      "figure_data_description": "41567_2023_1979_MOESM1_ESM.pdf, 41567_2023_1979_MOESM3_ESM.xlsx, 41567_2023_1979_MOESM4_ESM.xlsx, 41567_2023_1979_MOESM5_ESM.xlsx, opensearch.xml",
+      "scripts_description": "",
+      "data_organization": "The paper states that all data beyond the one-dimensional plot source data are available from Dryad, and a DOI link to Zenodo (10.5281/zenodo.7504768) is also present among the found URLs.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper states that all data beyond the one-dimensional plot source data are available from Dryad, and a DOI link to Zenodo (10.5281/zenodo.7504768) is also present among the found URLs.",
+      "source_data_evidence": "41567_2023_1979_MOESM1_ESM.pdf, 41567_2023_1979_MOESM3_ESM.xlsx, 41567_2023_1979_MOESM4_ESM.xlsx, 41567_2023_1979_MOESM5_ESM.xlsx, opensearch.xml",
+      "both_evidence": "Step 2 found both repository-style data and publisher source files",
+      "data_availability_section_relevant": "The raw data that support the one-dimensional plots are available as Source Data files. All other data are available from Dryad 46 .",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "41567_2023_1979_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 11726240,
+      "size_human": "11.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2023_1979_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41567_2023_1979_MOESM3_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 262363,
+      "size_human": "256.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "1b",
+        "1c",
+        "1d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "1b",
+          "columns": [
+            "measurement index",
+            "B (Tesla)",
+            "Voltage (Volts)",
+            "Current (Amps)",
+            "Resistance (Ohms) ",
+            "Conductance (S)"
+          ],
+          "named_columns": [
+            "measurement index",
+            "B (Tesla)",
+            "Voltage (Volts)",
+            "Current (Amps)",
+            "Resistance (Ohms) ",
+            "Conductance (S)"
+          ],
+          "column_count": 6,
+          "row_count": 500,
+          "dtypes": {
+            "measurement index": "int64",
+            "B (Tesla)": "float64",
+            "Voltage (Volts)": "float64",
+            "Current (Amps)": "float64",
+            "Resistance (Ohms) ": "int64",
+            "Conductance (S)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "1c",
+          "columns": [
+            "Trace (0)/retrace (1)",
+            "DC bias index",
+            "DC bias value (V)",
+            "Current AC (Amps)",
+            "Current DC (Amps)"
+          ],
+          "named_columns": [
+            "Trace (0)/retrace (1)",
+            "DC bias index",
+            "DC bias value (V)",
+            "Current AC (Amps)",
+            "Current DC (Amps)"
+          ],
+          "column_count": 5,
+          "row_count": 4000,
+          "dtypes": {
+            "Trace (0)/retrace (1)": "int64",
+            "DC bias index": "int64",
+            "DC bias value (V)": "float64",
+            "Current AC (Amps)": "float64",
+            "Current DC (Amps)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "1d",
+          "columns": [
+            "Up (0)/ Down (1) / Static (2)",
+            "DC bias index",
+            "Time (A.U.)",
+            "DC bais value (V)",
+            "Current AC (Amps)",
+            "Current DC (Amps)"
+          ],
+          "named_columns": [
+            "Up (0)/ Down (1) / Static (2)",
+            "DC bias index",
+            "Time (A.U.)",
+            "DC bais value (V)",
+            "Current AC (Amps)",
+            "Current DC (Amps)"
+          ],
+          "column_count": 6,
+          "row_count": 3000,
+          "dtypes": {
+            "Up (0)/ Down (1) / Static (2)": "int64",
+            "DC bias index": "int64",
+            "Time (A.U.)": "int64",
+            "DC bais value (V)": "float64",
+            "Current AC (Amps)": "float64",
+            "Current DC (Amps)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2023_1979_MOESM3_ESM.xlsx"
+    },
+    {
+      "filename": "41567_2023_1979_MOESM4_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 124198,
+      "size_human": "121.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "3i_1",
+        "3i_2",
+        "3i_3"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "3i_1",
+          "columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "named_columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "column_count": 4,
+          "row_count": 1000,
+          "dtypes": {
+            "DC bias index": "int64",
+            "DC bias value (V)": "float64",
+            "SQUID 1wx (V)": "float64",
+            "SQUID 1wy (V)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "3i_2",
+          "columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "named_columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "column_count": 4,
+          "row_count": 1000,
+          "dtypes": {
+            "DC bias index": "int64",
+            "DC bias value (V)": "float64",
+            "SQUID 1wx (V)": "float64",
+            "SQUID 1wy (V)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "3i_3",
+          "columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "named_columns": [
+            "DC bias index",
+            "DC bias value (V)",
+            "SQUID 1wx (V)",
+            "SQUID 1wy (V)"
+          ],
+          "column_count": 4,
+          "row_count": 1000,
+          "dtypes": {
+            "DC bias index": "int64",
+            "DC bias value (V)": "float64",
+            "SQUID 1wx (V)": "float64",
+            "SQUID 1wy (V)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2023_1979_MOESM4_ESM.xlsx"
+    },
+    {
+      "filename": "41567_2023_1979_MOESM5_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 98973432,
+      "size_human": "94.4 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "4f_1",
+        "4f_2"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "4f_1",
+          "columns": [
+            "Trace (0)/retrace (1)",
+            "x index",
+            "y index",
+            "voltage on x piezo",
+            "voltage on y piezo",
+            "SQUID 1wX",
+            "SQUID 1wY",
+            "SQUID 2wR"
+          ],
+          "named_columns": [
+            "Trace (0)/retrace (1)",
+            "x index",
+            "y index",
+            "voltage on x piezo",
+            "voltage on y piezo",
+            "SQUID 1wX",
+            "SQUID 1wY",
+            "SQUID 2wR"
+          ],
+          "column_count": 8,
+          "row_count": 880000,
+          "dtypes": {
+            "Trace (0)/retrace (1)": "int64",
+            "x index": "int64",
+            "y index": "int64",
+            "voltage on x piezo": "float64",
+            "voltage on y piezo": "float64",
+            "SQUID 1wX": "float64",
+            "SQUID 1wY": "float64",
+            "SQUID 2wR": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "4f_2",
+          "columns": [
+            "Trace (0)/retrace (1)",
+            "x index",
+            "y index",
+            "voltage on x piezo",
+            "voltage on y piezo",
+            "SQUID 1wX",
+            "SQUID 1wY",
+            "SQUID 2wR"
+          ],
+          "named_columns": [
+            "Trace (0)/retrace (1)",
+            "x index",
+            "y index",
+            "voltage on x piezo",
+            "voltage on y piezo",
+            "SQUID 1wX",
+            "SQUID 1wY",
+            "SQUID 2wR"
+          ],
+          "column_count": 8,
+          "row_count": 880000,
+          "dtypes": {
+            "Trace (0)/retrace (1)": "int64",
+            "x index": "int64",
+            "y index": "int64",
+            "voltage on x piezo": "float64",
+            "voltage on y piezo": "float64",
+            "SQUID 1wX": "float64",
+            "SQUID 1wY": "float64",
+            "SQUID 2wR": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2023_1979_MOESM5_ESM.xlsx"
+    }
+  ]
+}

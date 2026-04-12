@@ -1,0 +1,749 @@
+{
+  "paper_id": "step1_0212",
+  "title": "Mitophagy curtails cytosolic mtDNA-dependent activation of cGAS/STING inflammation during aging",
+  "doi": "10.1038/s41467-024-45044-1",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4391275517",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 4,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-45044-1",
+  "files_inspected": 4,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel source-data workbook is figure-organized, tabular, and replot-ready, so it is Type 1.",
+  "type2_summary": "No file is convincingly raw/unprocessed Type 2 based on the available file evidence.",
+  "type1_files": [
+    "41467_2024_45044_MOESM4_ESM.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly contains raw experimental modalities, but the provided file set does not include obvious raw instrument files. The XLSX workbook is the only dataset-like file and is best classified as cleaned source data (Type 1). The PDFs are supplementary documents rather than data tables. Rule-based prior suggests hidden Type 2 evidence; review recommended.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2024_45044_MOESM1_ESM.pdf",
+      "filename": "41467_2024_45044_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that source data are provided as a Source Data file, but no evidence indicates this PDF is a raw or figure-ready data table.",
+      "file_evidence": "PDF format, 10.0 MB, likely a supplementary document rather than a tabular dataset; no sheet/column structure available.",
+      "reasoning": "This file appears to be a supplementary PDF document, not a dataset that can be directly re-plotted. It is therefore best classified as documentation rather than Type 1 or Type 2 data.",
+      "ambiguity": "Moderate: without opening the PDF, it could contain supplementary figures or methods, but the file evidence does not support a data-table classification.",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "41467_2024_45044_MOESM2_ESM.pdf",
+      "filename": "41467_2024_45044_MOESM2_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper indicates source data are provided, but there is no specific evidence that this PDF contains raw measurements or figure-ready tables.",
+      "file_evidence": "PDF format, 1.7 MB, consistent with a supplementary document rather than structured data.",
+      "reasoning": "Like the first PDF, this is most conservatively treated as documentation. There is insufficient evidence to classify it as Type 1 or Type 2 data.",
+      "ambiguity": "Moderate: content unknown, but file format and lack of tabular structure argue against dataset classification.",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "41467_2024_45044_MOESM4_ESM.xlsx",
+      "filename": "41467_2024_45044_MOESM4_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper repeatedly states that source data are provided as a Source Data file, including detailed DEG/pathway lists. This matches figure-level source data rather than raw instrument output.",
+      "file_evidence": "Excel workbook with 20 sheets named by figures (e.g., 'Figure 1', 'Figure 2', 'Figure 2a', 'Figure 2b', 'Figure 3'), headers present, and key columns tied to specific figures. This is organized, tabular, and replot-ready.",
+      "reasoning": "The workbook is clearly structured as figure-specific source data with headers and organized sheets. It can likely be loaded and plotted with minimal processing, which fits Type 1. Although the file is large, the organization and paper evidence strongly indicate cleaned source data rather than raw instrument output.",
+      "ambiguity": "Low: large size could suggest complexity, but the figure-based sheet structure and source-data context resolve it toward Type 1.",
+      "key_columns_or_structure": "Figure-based sheets; examples include 'Fig 1b', 'Fig 2e', 'KEGG gene sets enriched in Old', 'HALLMARK gene sets enriched in Old', 'Fig 3e'"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies how mitophagy changes during physiological aging in mice and human fibroblasts, using the mito-QC reporter, immunostaining, qPCR, western blotting, transcriptomics, and functional assays. The main finding is that mitophagy is stable or increased in several aged tissues, and this increase appears to limit cytosolic mtDNA release and cGAS/STING-driven type I interferon inflammation; pharmacological induction of mitophagy with urolithin A reduces this inflammatory signaling and improves neurological/visual function in old mice.",
+    "measurement_types": [
+      "confocal fluorescence microscopy",
+      "mitophagy reporter imaging (mito-QC)",
+      "immunofluorescence / immunohistochemistry",
+      "western blot",
+      "qPCR",
+      "bulk RNA-seq / transcriptomics",
+      "electron microscopy",
+      "subcellular fractionation",
+      "mass spectrometry (UPLC-ESI-QTOF-MS)",
+      "behavioral assays",
+      "electroretinography (ERG)",
+      "optical coherence tomography (OCT)",
+      "senescence-associated beta-galactosidase assay"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the mito-QC reporter mouse and how mitophagy is read out by mCherry+GFP- mitolysosomes.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Confocal images and quantification of mitolysosome number across multiple organs in young vs old mito-QC mice.",
+        "data_type": "image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Representative whole-eye cryosection images immunostained for phospho-UbiquitinSer65.",
+        "data_type": "fluorescence image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Quantification of phospho-UbiquitinSer65-positive area across organs in young vs old mice.",
+        "data_type": "bar/point plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Bulk RNA-seq pathway enrichment showing top KEGG pathways upregulated in old retinas.",
+        "data_type": "enrichment plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Hallmark enrichment for IFNalpha, IFNgamma, and TNFalpha signaling in old retinas.",
+        "data_type": "enrichment plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Interferome analysis of upregulated DEGs in old retinas, showing ISG fraction and classification.",
+        "data_type": "heatmap / categorical summary",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Anti-DNA immunostaining of whole-eye cryosections showing cytosolic DNA in old retinas.",
+        "data_type": "fluorescence image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "qPCR quantification of cytosolic mtDNA (mt-Nd2, mt-Co1, mt-Cytb) normalized to mitochondrial fraction mtDNA.",
+        "data_type": "bar/point plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Western blot of cGAS/STING pathway proteins and phospho-IRF3 in young vs old retinas.",
+        "data_type": "western blot image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "RNA-seq-derived expression of IRF3 downstream target genes in young vs old retinas.",
+        "data_type": "bar/heatmap-like expression plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Age-group stratification of human dermal fibroblast RNA-seq dataset GSE113957.",
+        "data_type": "study design schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Heatmap of cGAS/STING pathway modulators across human age groups.",
+        "data_type": "heatmap",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Hallmark enrichment in geriatric fibroblasts for IFNalpha, IFNgamma, and TNFalpha signaling.",
+        "data_type": "enrichment plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Interferome analysis of upregulated DEGs in geriatric fibroblasts, including ISG fraction and classification.",
+        "data_type": "categorical summary",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Correlation of IRF3 target gene expression with age in human fibroblasts.",
+        "data_type": "scatter plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Experimental design for young and old primary NHDF cultures and downstream assays.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "Senescence-associated beta-galactosidase activity in young vs old NHDFs.",
+        "data_type": "cell assay quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "Phospho-UbiquitinSer65 immunostaining in young vs old NHDFs with quantification.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig3i",
+        "description": "DNA and TOMM20 immunostaining in NHDFs showing cytosolic DNA foci with quantification.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Experimental design for urolithin A treatment in young and old mito-QC mice and mass spectrometry detection of UA in brain/plasma.",
+        "data_type": "schematic + mass spectrometry quantification",
+        "likely_source": "derived + raw/processed analytical data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Mitophagy in whole-eye cryosections after vehicle or UA treatment.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Mitophagy in RPE flatmounts after vehicle or UA treatment.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Hindlimb clasping score after vehicle or UA treatment.",
+        "data_type": "behavioral score plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Novel object recognition discrimination index after vehicle or UA treatment.",
+        "data_type": "behavioral plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "Scotopic ERG traces in treated mice.",
+        "data_type": "electrophysiology trace",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "Quantification of ERG b-wave amplitude.",
+        "data_type": "bar/point plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4h",
+        "description": "Synaptic integrity in retina using CtBP2 and mGluR6 immunostaining with quantification.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig4i",
+        "description": "4-HNE immunostaining showing lipid peroxidation aggregates with quantification.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig4j",
+        "description": "OCT retinal morphometry images.",
+        "data_type": "imaging",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Cytosolic DNA and DNA-bound cGAS in retinas after UA treatment.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Hallmark enrichment showing reduced IFNalpha, IFNgamma, and TNFalpha signaling after UA treatment.",
+        "data_type": "enrichment plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Transcript levels of cGAS/STING mediators and downstream genes after UA treatment.",
+        "data_type": "expression plot",
+        "likely_source": "processed/derived"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "GFAP astrogliosis after UA treatment.",
+        "data_type": "immunofluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Iba1 microglial infiltration after UA treatment.",
+        "data_type": "immunofluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Cytoplasmic mitochondrial mass in retina after UA treatment.",
+        "data_type": "fluorescence image + quantification",
+        "likely_source": "raw measurement + processed"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from confocal fluorescence microscopy of mito-QC tissues, immunostaining images (DNA, phospho-UbiquitinSer65, GFAP, Iba1, CtBP2, mGluR6, 4-HNE), western blot bands, qPCR Ct-derived measurements for cytosolic mtDNA, bulk RNA-seq readouts, electron microscopy of mitochondria, UPLC-ESI-QTOF-MS measurements of urolithin A in brain and plasma, behavioral scores, ERG traces, and OCT images. The text does not specify file formats or whether raw image files are deposited.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper contains many processed summaries: mitolysosome counts per area, phospho-UbiquitinSer65-positive area, normalized protein abundance from western blots, normalized mtDNA levels, RNA-seq pathway enrichment (KEGG and Hallmark), Interferome-based ISG classification, correlation plots versus age, behavioral discrimination indices, ERG amplitude quantification, and counts of cytosolic DNA foci or synaptic defects. These are derived from primary measurements and plotted as group statistics.",
+    "dataset_characterization": {
+      "data_availability_statement": "The text repeatedly states that 'Source data are provided as a Source Data file.' It also notes that detailed pathway lists from transcriptomic analysis are included in Source Data. No explicit raw-data repository, accession for newly generated sequencing data, or script repository is mentioned in the provided text.",
+      "data_provided_types": [
+        "source_data",
+        "processed",
+        "raw",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are implied for microscopy images, western blots, ERG traces, OCT images, mass spectrometry readouts, and RNA-seq experiments, but the paper text does not describe raw file formats, directory structure, or deposition of original files. Public transcriptomic datasets are reused from GSE141252 and GSE113957.",
+      "processed_data_description": "Processed data include quantified mitolysosome counts, normalized protein levels, qPCR-normalized mtDNA abundance, enrichment scores and FDR values from transcriptomics, cell counts and area fractions from immunostaining, behavioral scores, and ERG amplitude summaries. These are the values plotted in the figures.",
+      "figure_data_description": "Yes. The paper explicitly says source data are provided as a Source Data file, which likely contains the numerical values underlying the main and supplementary figures. The text also references detailed lists of differentially expressed genes and pathway results being included in Source Data.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text.",
+      "data_organization": "figure-based source data plus reused public transcriptomic datasets; raw data organization is not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper indicates that source data are provided, and the figures are mostly quantitative plots with underlying numerical values likely available in the Source Data file. However, the text does not confirm availability of all raw images or sequencing reads, so replotting is likely for the plotted figures but not necessarily for full raw-data reanalysis.",
+      "notes": "Important distinction: the paper uses both newly generated experiments and public datasets (GSE141252, GSE113957). The strongest dataset-semantic evidence is for figure-level source data rather than a raw-data archive. Transcriptomic analyses are partly based on public data and partly on in-house bulk RNA-seq of retina. The paper emphasizes processed quantifications and enrichment analyses, while raw measurement files are not described in detail."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The study includes primary measurements from microscopy, western blots, qPCR, RNA-seq, EM, mass spectrometry, ERG, OCT, and behavioral assays, all of which generate raw experimental data.",
+      "source_data_evidence": "Multiple figure captions state 'Source data are provided as a Source Data file,' and the text says detailed DEG/pathway lists are included in Source Data.",
+      "both_evidence": "The paper clearly implies both raw experimental data generation and figure-level source data for plotted results.",
+      "data_availability_section_relevant": "Repeated phrase: 'Source data are provided as a Source Data file.' Also: 'detailed list included in Source Data' for transcriptomic pathways/DEGs.",
+      "priority_modalities": [
+        "confocal microscopy images",
+        "immunofluorescence images",
+        "western blot images",
+        "qPCR tables",
+        "bulk RNA-seq count/expression tables",
+        "pathway enrichment tables",
+        "mass spectrometry quantification",
+        "ERG traces",
+        "OCT images",
+        "behavioral score tables"
+      ],
+      "review_notes": "Do not confuse source data with raw data: the paper explicitly supports source-data availability but does not specify a raw-data repository in the provided text. Public GEO datasets are reused for some analyses, so not all transcriptomic results are newly generated. Figure captions often combine raw images with quantified plots; the plotted values are processed/derived even when the underlying image is raw."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2024_45044_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 10492153,
+      "size_human": "10.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45044_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_45044_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1794391,
+      "size_human": "1.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45044_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_45044_MOESM3_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3463531,
+      "size_human": "3.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45044_MOESM3_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_45044_MOESM4_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 33798659,
+      "size_human": "32.2 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 1",
+        "Figure 2",
+        "Figure 2a",
+        "Figure 2b",
+        "Figure 3",
+        "Figure 3c",
+        "Figure 4",
+        "Figure 5",
+        "Figure 6",
+        "Figure 7",
+        "Supplementary Fig. 1",
+        "Supplementary Fig. 2",
+        "Supplementary Fig. 3",
+        "Supplementary Fig. 4",
+        "Supplementary Fig. 5",
+        "Supplementary Fig. 6",
+        "Supplementary Fig. 8",
+        "Supplementary Fig. 8g",
+        "Supplementary Fig. 10",
+        "Hoja1"
+      ],
+      "sheet_count": 20,
+      "sheets": [
+        {
+          "sheet_name": "Figure 1",
+          "columns": [
+            "Fig 1b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21"
+          ],
+          "named_columns": [
+            "Fig 1b"
+          ],
+          "column_count": 22,
+          "row_count": 42,
+          "dtypes": {
+            "Fig 1b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 2",
+          "columns": [
+            "Fig 2e",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Fig 2e"
+          ],
+          "column_count": 6,
+          "row_count": 51,
+          "dtypes": {
+            "Fig 2e": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 2a",
+          "columns": [
+            "KEGG gene sets enriched in Old",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "KEGG gene sets enriched in Old"
+          ],
+          "column_count": 9,
+          "row_count": 129,
+          "dtypes": {
+            "KEGG gene sets enriched in Old": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 2b",
+          "columns": [
+            "HALLMARK gene sets enriched in Old",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "HALLMARK gene sets enriched in Old"
+          ],
+          "column_count": 9,
+          "row_count": 39,
+          "dtypes": {
+            "HALLMARK gene sets enriched in Old": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 3",
+          "columns": [
+            "Fig 3e",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "Fig 3e"
+          ],
+          "column_count": 4,
+          "row_count": 82,
+          "dtypes": {
+            "Fig 3e": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 3c",
+          "columns": [
+            "HALLMARK gene sets enriched in Geriatric",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "HALLMARK gene sets enriched in Geriatric"
+          ],
+          "column_count": 9,
+          "row_count": 28,
+          "dtypes": {
+            "HALLMARK gene sets enriched in Geriatric": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 4",
+          "columns": [
+            "Fig 4b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "Fig 4b"
+          ],
+          "column_count": 4,
+          "row_count": 127,
+          "dtypes": {
+            "Fig 4b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Figure 5",
+          "columns": [
+            "Fig 5a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "Fig 5a"
+          ],
+          "column_count": 9,
+          "row_count": 65,
+          "dtypes": {
+            "Fig 5a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 6",
+          "columns": [
+            "Fig 6a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Fig 6a"
+          ],
+          "column_count": 12,
+          "row_count": 135,
+          "dtypes": {
+            "Fig 6a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 7",
+          "columns": [
+            "Fig 7b",
+            "PP = PINK1;PARK2 siRNA",
+            "Unnamed: 2",
+            "Chlor = Chloramphenicol",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "Fig 7b",
+            "PP = PINK1;PARK2 siRNA",
+            "Chlor = Chloramphenicol"
+          ],
+          "column_count": 16,
+          "row_count": 63,
+          "dtypes": {
+            "Fig 7b": "object",
+            "PP = PINK1;PARK2 siRNA": "object",
+            "Unnamed: 2": "object",
+            "Chlor = Chloramphenicol": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45044_MOESM4_ESM.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "paper_id": "step1_0161",
+  "title": "Observation of Spin-Dependent Dual Ferromagnetism in Perovskite Ruthenates",
+  "doi": "10.1103/physrevlett.127.256401",
+  "journal": "Physical Review Letters",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3212996509",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevlett_127_256401",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clearly identifiable cleaned, replot-ready source data file was provided in the inspection report.",
+  "type2_summary": "No clearly identifiable raw/unprocessed measurement file was provided in the inspection report.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "Only one file was provided, and the inspection report does not reveal its internal contents. Because classification must be based on both paper evidence and file evidence, the conservative choice is documentation/other rather than forcing a type1/type2 label.",
+  "file_classifications": [
+    {
+      "relative_path": "39.pdf",
+      "filename": "39.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper mentions only Supplemental Material for methods and additional DFT+DMFT results, but no explicit statement that this PDF is raw data or source data.",
+      "file_evidence": "The file is a PDF from Zenodo, 725.7 KB. No tabular structure, headers, or figure-specific data organization is available from the inspection report. As a PDF, it is more consistent with documentation or a paper/supplement rather than directly replot-ready data.",
+      "reasoning": "There is insufficient evidence that this file contains either cleaned source data or raw measurements. The available file inspection only confirms a PDF document of moderate size, which is more likely supplemental documentation than a dataset file. Conservatively, it should not be classified as type1 or type2.",
+      "ambiguity": "High ambiguity: the PDF could contain supplemental methods, figures, or embedded data, but the inspection report does not expose its contents.",
+      "key_columns_or_structure": "Not available from inspection; PDF document structure not exposed"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies epitaxial SrRuO3 thin films using in-situ ARPES and spin-resolved ARPES, combined with DFT+DMFT calculations and SQUID magnetometry. The main finding is clear spin-split band structures with momentum- and temperature-dependent spin polarization, supporting a picture of spin-dependent dual ferromagnetism in which majority-spin electrons are more localized/incoherent and minority-spin electrons are more itinerant.",
+    "measurement_types": [
+      "in-situ angle-resolved photoemission spectroscopy (ARPES)",
+      "spin-resolved ARPES (SARPES)",
+      "SQUID magnetometry",
+      "DFT+DMFT electronic structure calculation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic Fermi-surface topology of SrRuO3 showing t2g bands and their spin splitting into majority and minority bands in the ferromagnetic state.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "ARPES constant-energy maps at EF and EF - 40 meV showing spin-split alpha', beta, and gamma-related features in momentum space.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "High-symmetry cut along Gamma-M with band dispersions extracted from ARPES; Lorentzian fits mark MDC peak positions.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "High-symmetry cut along Gamma-X with band dispersions extracted from ARPES; Lorentzian fits mark MDC peak positions.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Spin-integrated and spin-resolved constant-energy maps at EF and EF - 450 meV from SARPES, showing momentum-dependent spin polarization.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Momentum-dependent spin polarization along Gamma-X and Gamma-M at EF and EF - 450 meV.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Experimental spin-resolved energy distribution curves and spin polarization at Gamma and at an off-center momentum point.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Theoretical spin-resolved energy distribution curves and spin polarization from DMFT calculation at the same momenta as Fig. 2c.",
+        "data_type": "spectrum",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Temperature-dependent ARPES Gamma-X cuts below and above the Curie temperature, showing reduced spin splitting and increased incoherence with temperature.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "DMFT-calculated ARPES spectra for ferromagnetic and paramagnetic states along Gamma-X.",
+        "data_type": "spectrum",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Temperature-dependent MDCs at EF along Gamma-M, with Lorentzian peak fits tracking band splitting.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Temperature dependence of the FWHM of the beta_min peak at EF - 20 meV extracted from Lorentzian fits.",
+        "data_type": "transport curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Comparison of temperature-dependent magnetic moment, alpha' band splitting, and spin polarization at Gamma in the high-binding-energy region.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Cartoon schematic of temperature-dependent spin-resolved band evolution from ferromagnetic to paramagnetic regimes.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Schematic of electron motion in real space for majority and minority spins in the ferromagnetic phase, emphasizing localization versus itinerancy.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Schematic of electron motion in real space in the paramagnetic phase, showing spin-degenerate localized behavior.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from in-situ ARPES and SARPES on 15-unit-cell SrRuO3 thin films, including constant-energy maps, energy distribution curves, and momentum distribution curves collected at multiple temperatures. It also includes SQUID magnetization measurements versus temperature. The text does not specify file formats or whether raw detector images/spectra are deposited.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The plotted data are processed ARPES/SARPES maps and line cuts, including denoised cuts, Lorentzian-fitted MDC peak positions, extracted spin polarization curves, temperature-dependent FWHM values, and band-splitting energies. DMFT-calculated spectra and spin polarizations are also plotted as theory-derived processed results.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'See Supplemental Material at [url] for experimental and calculation methods, details of band analysis, and additional information on DFT+DMFT results.' No explicit public data repository or raw-data availability statement is given in the provided text.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of measurements: ARPES and SARPES spectra/maps acquired in situ on epitaxial SrRuO3 thin films, plus SQUID magnetization data. The paper does not describe raw file names, formats, or a repository for raw detector outputs.",
+      "processed_data_description": "Processed data include denoised ARPES cuts, constant-energy maps integrated over energy windows, MDC peak positions obtained by Lorentzian fitting, spin polarization computed as (Imaj - Imin)/(Imaj + Imin), FWHM extracted from Lorentzian fits, and temperature-dependent band-splitting energies and magnetic moments plotted together.",
+      "figure_data_description": "Figure-specific data are clearly present in the sense of extracted/processed values used to make each figure, especially for band dispersions, spin polarization, FWHM, and temperature trends. However, the paper does not explicitly say that source-data files are deposited separately.",
+      "scripts_description": "No analysis scripts or notebooks are mentioned in the provided text. A deep learning-based statistical denoising method is cited, but no script availability is stated.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides enough methodological detail to understand how plots were generated, but it does not explicitly state that source-data files, raw data files, or scripts are available. Therefore direct replotting from an accompanying dataset cannot be confirmed from the text alone.",
+      "notes": "The main dataset is figure-centric and consists of experimental spectra/maps plus extracted quantities. Theoretical DMFT spectra are also part of the plotted dataset. The supplemental material is important for methods and additional DMFT details, but its contents are not fully visible here."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper reports in-situ ARPES/SARPES measurements, temperature-dependent cuts, constant-energy maps, and SQUID magnetization measurements, all of which are raw experimental observations before fitting/extraction.",
+      "source_data_evidence": "Figures use Lorentzian-fitted MDC peak positions, extracted spin polarization, FWHM, and band-splitting energies, indicating processed figure/source data.",
+      "both_evidence": "The paper clearly contains both raw experimental measurements and processed/extracted data used for figures, but no explicit repository statement is given.",
+      "data_availability_section_relevant": "See Supplemental Material at [url] for experimental and calculation methods, details of band analysis, and additional information on DFT+DMFT results.",
+      "priority_modalities": [
+        "ARPES spectra",
+        "SARPES spectra",
+        "constant-energy maps",
+        "momentum distribution curves",
+        "energy distribution curves",
+        "SQUID magnetization curves",
+        "DFT+DMFT calculated spectra"
+      ],
+      "review_notes": "Be careful not to classify the denoised cuts, Lorentzian peak positions, spin polarization curves, or FWHM plots as raw data; they are processed/extracted. The paper does not explicitly mention source-data files or scripts, so those should remain 'unknown' unless supplemental materials provide them."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "39.pdf",
+      "extension": ".pdf",
+      "size_bytes": 743129,
+      "size_human": "725.7 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "39.pdf"
+    }
+  ]
+}

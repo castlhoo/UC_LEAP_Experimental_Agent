@@ -1,0 +1,1216 @@
+{
+  "paper_id": "step1_0153",
+  "title": "Subconfluent ARPE-19 Cells Display Mesenchymal Cell-State Characteristics and Behave Like Fibroblasts, Rather than Epithelial Cells, in Experimental HCMV Infection Studies",
+  "doi": "10.1101/2023.10.27.564463",
+  "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4388001688",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 50,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1101_2023_10_27_564463",
+  "files_inspected": 50,
+  "file_types_found": [
+    "json",
+    "tabular_text",
+    "archive",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "Type 1 files are the small, figure-specific tabular source-data tables and the normalized expression matrix intended for direct downstream plotting and analysis.",
+  "type2_summary": "Type 2 files are the Kallisto abundance outputs derived from raw RNA-seq reads, which are pipeline outputs rather than cleaned figure-ready tables.",
+  "type1_files": [
+    "2-limmaGene_GeTMM_GeTMM_allData_TMM_expValues_cpm.tab.gz",
+    "4-jitterplots_Figure2_6A_EMT_MET_A19_paper.txt",
+    "4-jitterplots_Figure2_6A_HCMV_receptors.txt"
+  ],
+  "type2_files": [
+    "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_abundance.tsv.gz",
+    "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_abundance.tsv.gz"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The PDF files are figure renderings and were classified as documentation rather than data. The run_info JSON is also documentation. The abundance.tsv.gz files are the only ambiguous case because they are processed outputs, but they are not cleaned source-data tables; conservative classification as Type 2 is appropriate.",
+  "file_classifications": [
+    {
+      "relative_path": "2-limmaGene_GeTMM_GeTMM_allData_TMM_expValues_cpm.tab.gz",
+      "filename": "2-limmaGene_GeTMM_GeTMM_allData_TMM_expValues_cpm.tab.gz",
+      "type": "type1",
+      "paper_evidence": "The paper states that pre-normalized and normalized count matrices and Kallisto pseudo counts are provided in the GitHub repository for transcriptomic analyses.",
+      "file_evidence": "Archive file of moderate size (12.6 MB) with a processed-data style name referencing GeTMM/TMM/CPM expression values; this is consistent with a normalized expression matrix rather than raw reads.",
+      "reasoning": "This file is a processed transcriptomics matrix intended for downstream analysis and plotting. It is not raw sequencing output and should be directly usable with minimal processing for figure generation.",
+      "ambiguity": "Moderate: the archive could contain multiple tables, but the filename and paper data availability strongly indicate processed expression data.",
+      "key_columns_or_structure": "Likely gene/transcript expression values normalized by GeTMM/TMM/CPM"
+    },
+    {
+      "relative_path": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper.txt",
+      "filename": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper.txt",
+      "type": "type1",
+      "paper_evidence": "The paper includes figure-ready qRT-PCR/gene-expression summaries and the repository is described as containing processed/source data for figures.",
+      "file_evidence": "Small tabular text file (18 rows) with a header and a single named column ('C1orf116'); sample entries are gene symbols such as CDH1, indicating a curated list for a specific figure panel.",
+      "reasoning": "This is a small, figure-specific tabular dataset that can be directly plotted or used to generate a jitter plot with minimal processing.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Single column: C1orf116; rows contain gene symbols"
+    },
+    {
+      "relative_path": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper_jitterPlot.pdf",
+      "filename": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper_jitterPlot.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper discusses figure panels and processed plots, but a PDF itself is not a data table.",
+      "file_evidence": "PDF figure output (28.8 KB) named as a jitter plot for Figure 2/6A; this is a rendered visualization rather than a dataset.",
+      "reasoning": "This file is a plot artifact or figure export, not a dataset to classify as raw or cleaned data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Rendered PDF figure; no tabular structure"
+    },
+    {
+      "relative_path": "4-jitterplots_Figure2_6A_HCMV_receptors.txt",
+      "filename": "4-jitterplots_Figure2_6A_HCMV_receptors.txt",
+      "type": "type1",
+      "paper_evidence": "The paper reports a figure-specific analysis of HCMV receptor-related expression, and the repository contains processed/source data for such plots.",
+      "file_evidence": "Small tabular text file (12 rows) with a header and a single named column ('PDGFRA'); sample entries are gene symbols such as OR14I1, consistent with a curated figure input list.",
+      "reasoning": "This is a compact, figure-specific table that is directly replot-ready and fits Type 1 source/processed data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Single column: PDGFRA; rows contain gene symbols"
+    },
+    {
+      "relative_path": "4-jitterplots_Figure2_6A_HCMV_receptors_jitterPlot.pdf",
+      "filename": "4-jitterplots_Figure2_6A_HCMV_receptors_jitterPlot.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper contains figure outputs, but this file is a rendered plot rather than underlying data.",
+      "file_evidence": "PDF figure output (17.0 KB) named as a jitter plot; no tabular data structure.",
+      "reasoning": "This is a visualization artifact, not a dataset file.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Rendered PDF figure; no tabular structure"
+    },
+    {
+      "relative_path": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_abundance.tsv.gz",
+      "filename": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_abundance.tsv.gz",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly states that public RNA-seq FASTQ files were downloaded and pseudo-aligned; the raw sequencing inputs are part of the analysis pipeline.",
+      "file_evidence": "Large gzipped abundance file named by GEO accession and SRR run IDs, consistent with Kallisto output derived from raw reads; archive format and size (6.8 MB) indicate a substantial processed-from-raw transcript quantification file.",
+      "reasoning": "Although this is not the raw FASTQ itself, it is a primary output of pseudoalignment from raw sequencing reads and requires substantial processing before figure-ready use. Conservatively, it is treated as raw/unprocessed relative to the paper's figure data classification.",
+      "ambiguity": "Moderate: it is technically processed quantification, but it is closer to raw pipeline output than to cleaned figure-ready tables.",
+      "key_columns_or_structure": "Likely transcript abundance table from Kallisto (e.g., target_id, length, eff_length, est_counts, tpm)"
+    },
+    {
+      "relative_path": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_run_info.json",
+      "filename": "GSE100839_SRR5807527___SRR5807528___SRR5807530_run_info.json",
+      "type": "documentation",
+      "paper_evidence": "The paper mentions public RNA-seq downloads and pseudoalignment, but this JSON is metadata about the processing run rather than a figure dataset.",
+      "file_evidence": "Small JSON object with keys such as n_targets, n_bootstraps, n_processed, n_pseudoaligned, p_unique, kallisto_version, and call; this is run metadata.",
+      "reasoning": "This file documents the Kallisto run and does not contain analyzable measurements for plotting.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "JSON keys: n_targets, n_bootstraps, n_processed, n_pseudoaligned, p_pseudoaligned, p_unique, kallisto_version, index_version, start_time, call"
+    },
+    {
+      "relative_path": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_abundance.tsv.gz",
+      "filename": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_abundance.tsv.gz",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly states that public RNA-seq FASTQ files were downloaded and pseudo-aligned, implying the abundance files are outputs from processing raw sequencing data.",
+      "file_evidence": "Large gzipped abundance file named by GEO accession and SRR run IDs, consistent with Kallisto transcript abundance output; archive size (6.6 MB) suggests substantial pipeline output.",
+      "reasoning": "This is a transcript quantification output derived from raw RNA-seq reads, not a cleaned figure-ready table. It requires additional processing/aggregation before direct plotting in the paper's analyses.",
+      "ambiguity": "Moderate: processed quantification, but still closer to raw pipeline output than source-data tables.",
+      "key_columns_or_structure": "Likely transcript abundance table from Kallisto (e.g., target_id, length, eff_length, est_counts, tpm)"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies ARPE-19 retinal pigment epithelial cells and shows that, under the subconfluent culture conditions commonly used for HCMV infection studies, they behave more like mesenchymal fibroblasts than epithelial cells. Using immunoblotting, qRT-PCR, public RNA-seq reanalysis, inducible EMT/MET transcription factors, and HCMV infectious progeny assays, the authors conclude that mesenchymal cell-state features correlate positively with HCMV permissivity, while epithelial features correlate negatively.",
+    "measurement_types": [
+      "Western blot / immunoblot",
+      "qRT-PCR gene expression",
+      "RNA-seq reanalysis / transcriptomics",
+      "Hierarchical clustering",
+      "Supervised machine-learning classification",
+      "Phase-contrast microscopy",
+      "HCMV infectious unit assay / viral titer assay"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1A",
+        "description": "Western blot comparison of epithelial markers (E-cadherin, EpCAM) and mesenchymal marker (Vimentin) across ARPE-19, epithelial controls (MCF10A, RWPE-1), and fibroblast control (MRC-5).",
+        "data_type": "image / immunoblot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1B",
+        "description": "qRT-PCR comparison of epithelial and mesenchymal marker gene expression across the same cell lines, showing ARPE-19 resembles MRC-5 more than epithelial controls.",
+        "data_type": "bar plot / gene expression",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 1C",
+        "description": "Hierarchical clustering of 109 public RNA-seq samples from MCF10A, RWPE-1, ARPE-19, and MRC-5, separating epithelial and mesenchymal clades and placing ARPE-19 with MRC-5.",
+        "data_type": "heatmap / clustering dendrogram",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Transcript-level comparison of individual epithelial and mesenchymal markers across public RNA-seq datasets, showing ARPE-19 expression patterns align with MRC-5 and oppose epithelial controls.",
+        "data_type": "gene expression plot / heatmap-like summary",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3A",
+        "description": "Schematic of doxycycline-inducible Snail and OVOL2 stable cell line construction in ARPE-19 and MCF10A cells.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3B",
+        "description": "Phase-contrast morphology images showing ARPE-19 is spindle-like and mesenchymal-like, while MCF10A is cobblestone epithelial-like; Snail and OVOL2 induction shifts morphology accordingly.",
+        "data_type": "microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 4A",
+        "description": "qRT-PCR changes in MCF10A-iSnail cells after doxycycline induction, showing loss of epithelial markers and gain of mesenchymal markers.",
+        "data_type": "bar plot / gene expression",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4B",
+        "description": "qRT-PCR changes in MCF10A-iOVOL2 cells after doxycycline induction, showing increased epithelial markers and reduced mesenchymal markers.",
+        "data_type": "bar plot / gene expression",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4C",
+        "description": "qRT-PCR changes in ARPE-19-iSnail cells after doxycycline induction, showing little or no significant change.",
+        "data_type": "bar plot / gene expression",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4D",
+        "description": "qRT-PCR changes in ARPE-19-iOVOL2 cells after doxycycline induction, showing strong epithelialization and reduced mesenchymal markers.",
+        "data_type": "bar plot / gene expression",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4E-F",
+        "description": "Western blot validation of epithelial and mesenchymal marker changes after Snail or OVOL2 induction in MCF10A and ARPE-19 cells.",
+        "data_type": "immunoblot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 5A-B",
+        "description": "Time-course qRT-PCR showing that prolonged high-confluency culture induces epithelial, visual-cycle, and RPE-specific genes in ARPE-19, while some mesenchymal genes also increase.",
+        "data_type": "time-course gene expression plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 6A",
+        "description": "qRT-PCR or expression analysis showing ARPE-19 lacks detectable PDGFRα mRNA.",
+        "data_type": "gene expression plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 6B",
+        "description": "HCMV infectious progeny assay comparing ARPE-19, MRC-5, RWPE-1, and MCF10A after infection with epithelial-tropic TB40/E; mesenchymal cells produce far more infectious progeny than epithelial cells.",
+        "data_type": "viral titer / infectious progeny curve or bar plot",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental measurements include western blot images, phase-contrast microscopy images, and HCMV infectious unit assay readouts from infected cell supernatants. The paper also states that public RNA-seq FASTQ files were downloaded and pseudo-aligned, so the original raw sequencing reads exist as input data for the reanalysis, although they are not generated by the authors.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include qRT-PCR ΔΔCT expression summaries, normalized RNA-seq expression matrices, hierarchical clustering heatmaps/dendrograms, machine-learning classification outputs for ARPE-19 samples, and summarized infectious progeny titers (IU/mL).",
+    "dataset_characterization": {
+      "data_availability_statement": "Kallisto pseudo counts, pre-normalized and normalized count matrices, and code used to perform unsupervised and supervised analyses are available in a public GitHub repository. Supplementary Tables S1-S3 provide RNA-seq metadata, qRT-PCR primers, and antibodies.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "scripts"
+      ],
+      "raw_data_description": "The paper describes raw RNA-seq FASTQ files as downloaded from GEO and pseudo-aligned with Kallisto, but does not state that the raw FASTQ files are deposited by the authors. For experimental work, raw measurements are western blots, microscopy images, and infectious unit assay counts, but no explicit raw image repository is described.",
+      "processed_data_description": "Processed data include Kallisto pseudo-counts, GeTMM-normalized count matrices, qRT-PCR ΔΔCT-derived expression values, and infectious progeny titers calculated from IE1-positive nuclei counts and dilution factors. The paper also describes a top-5000-variable-gene matrix used for machine-learning classification.",
+      "figure_data_description": "Figure-specific source data are implied for the analyses and plots, but the paper does not explicitly say that per-figure source data files are separately deposited. The GitHub repository is said to contain pseudo counts, pre-normalized and normalized matrices, and code, which likely support replotting of the transcriptomic figures.",
+      "scripts_description": "Yes. The paper explicitly states that code used for unsupervised and supervised analyses is available in the GitHub repository. Methods also specify software and parameters for clustering and machine learning.",
+      "data_organization": "mixed / repository-based, with public GEO inputs plus a GitHub repository containing processed matrices and analysis code; supplementary tables are separate",
+      "replot_ready_data_present": true,
+      "replot_reason": "The repository contains pseudo counts, normalized matrices, and code for clustering/classification, which should allow replotting of the transcriptomic figures. However, the paper does not explicitly confirm availability of raw microscopy, western blot, or infectious assay source images in the repository.",
+      "notes": "This is primarily a biology paper with transcriptomic reanalysis plus wet-lab validation. The strongest dataset semantics are for RNA-seq: raw public FASTQ inputs from GEO, author-processed pseudo-counts and GeTMM-normalized matrices, and analysis scripts in GitHub. For the experimental figures, the paper describes measurements and plotting but does not clearly state a separate source-data archive for images or blots."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The methods explicitly mention downloading raw RNA-seq FASTQ files from GEO and collecting raw experimental measurements such as western blots, microscopy images, and infectious progeny counts.",
+      "source_data_evidence": "The data availability statement explicitly provides Kallisto pseudo counts, pre-normalized and normalized count matrices, and code, which are processed/source data for the transcriptomic analyses.",
+      "both_evidence": "Raw public sequencing inputs plus processed matrices and scripts are both present for the RNA-seq component; experimental figure source data are not explicitly deposited.",
+      "data_availability_section_relevant": "“Kallisto pseudo counts, pre-normalized and normalized count matrices, and code used to perform unsupervised and supervised analyses is available at the following public github repository” and “Raw reads from RNA-sequencing fastq files were pseudo-aligned...”",
+      "priority_modalities": [
+        "RNA-seq FASTQ",
+        "Kallisto pseudo-counts",
+        "GeTMM-normalized count matrices",
+        "qRT-PCR Ct values / ΔΔCT outputs",
+        "western blot images",
+        "phase-contrast microscopy images",
+        "infectious unit assay counts"
+      ],
+      "review_notes": "The paper mixes public-data reanalysis with new wet-lab experiments. For downstream classification, treat the RNA-seq component as having clear raw input data and processed matrices/scripts, while the blot/microscopy/infection figures are described as experimental measurements but not explicitly as deposited source-data files."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "2-limmaGene_GeTMM_GeTMM_allData_TMM_expValues_cpm.tab.gz",
+      "extension": ".gz",
+      "size_bytes": 13238957,
+      "size_human": "12.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "2-limmaGene_GeTMM_GeTMM_allData_TMM_expValues_cpm.tab.gz"
+    },
+    {
+      "filename": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper.txt",
+      "extension": ".txt",
+      "size_bytes": 102,
+      "size_human": "102.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "C1orf116"
+      ],
+      "column_count": 1,
+      "row_count": 18,
+      "dtypes": {
+        "C1orf116": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper.txt"
+    },
+    {
+      "filename": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper_jitterPlot.pdf",
+      "extension": ".pdf",
+      "size_bytes": 29474,
+      "size_human": "28.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "github",
+      "relative_path": "4-jitterplots_Figure2_6A_EMT_MET_A19_paper_jitterPlot.pdf"
+    },
+    {
+      "filename": "4-jitterplots_Figure2_6A_HCMV_receptors.txt",
+      "extension": ".txt",
+      "size_bytes": 71,
+      "size_human": "71.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "PDGFRA"
+      ],
+      "column_count": 1,
+      "row_count": 12,
+      "dtypes": {
+        "PDGFRA": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "4-jitterplots_Figure2_6A_HCMV_receptors.txt"
+    },
+    {
+      "filename": "4-jitterplots_Figure2_6A_HCMV_receptors_jitterPlot.pdf",
+      "extension": ".pdf",
+      "size_bytes": 17373,
+      "size_human": "17.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "github",
+      "relative_path": "4-jitterplots_Figure2_6A_HCMV_receptors_jitterPlot.pdf"
+    },
+    {
+      "filename": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7078778,
+      "size_human": "6.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_run_info.json",
+      "extension": ".json",
+      "size_bytes": 655,
+      "size_human": "655.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "51120136",
+        "n_pseudoaligned": "28646067",
+        "n_unique": "6317937"
+      },
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807527___SRR5807528___SRR5807529___SRR5807530_run_info.json"
+    },
+    {
+      "filename": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6966008,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_run_info.json",
+      "extension": ".json",
+      "size_bytes": 655,
+      "size_human": "655.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "39709224",
+        "n_pseudoaligned": "17445568",
+        "n_unique": "4783577"
+      },
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807531___SRR5807532___SRR5807533___SRR5807534_run_info.json"
+    },
+    {
+      "filename": "GSE100839_SRR5807535___SRR5807536___SRR5807537___SRR5807538_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7020804,
+      "size_human": "6.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807535___SRR5807536___SRR5807537___SRR5807538_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE100839_SRR5807535___SRR5807536___SRR5807537___SRR5807538_run_info.json",
+      "extension": ".json",
+      "size_bytes": 655,
+      "size_human": "655.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "46587457",
+        "n_pseudoaligned": "19286837",
+        "n_unique": "5365335"
+      },
+      "download_source": "github",
+      "relative_path": "GSE100839_SRR5807535___SRR5807536___SRR5807537___SRR5807538_run_info.json"
+    },
+    {
+      "filename": "GSE112007_SRR6856295_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7122359,
+      "size_human": "6.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856295_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE112007_SRR6856295_run_info.json",
+      "extension": ".json",
+      "size_bytes": 489,
+      "size_human": "489.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "42975646",
+        "n_pseudoaligned": "37446242",
+        "n_unique": "10799477"
+      },
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856295_run_info.json"
+    },
+    {
+      "filename": "GSE112007_SRR6856296_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7037795,
+      "size_human": "6.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856296_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE112007_SRR6856296_run_info.json",
+      "extension": ".json",
+      "size_bytes": 488,
+      "size_human": "488.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "24589234",
+        "n_pseudoaligned": "21029557",
+        "n_unique": "6284659"
+      },
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856296_run_info.json"
+    },
+    {
+      "filename": "GSE112007_SRR6856297_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7021390,
+      "size_human": "6.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856297_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE112007_SRR6856297_run_info.json",
+      "extension": ".json",
+      "size_bytes": 488,
+      "size_human": "488.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "28143299",
+        "n_pseudoaligned": "24323495",
+        "n_unique": "7179287"
+      },
+      "download_source": "github",
+      "relative_path": "GSE112007_SRR6856297_run_info.json"
+    },
+    {
+      "filename": "GSE118629_SRR8446409_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6730459,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446409_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE118629_SRR8446409_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "28013041",
+        "n_pseudoaligned": "22268947",
+        "n_unique": "4987525"
+      },
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446409_run_info.json"
+    },
+    {
+      "filename": "GSE118629_SRR8446410_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6746053,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446410_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE118629_SRR8446410_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "31131904",
+        "n_pseudoaligned": "24382793",
+        "n_unique": "5774813"
+      },
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446410_run_info.json"
+    },
+    {
+      "filename": "GSE118629_SRR8446411_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6733214,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446411_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE118629_SRR8446411_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "28991497",
+        "n_pseudoaligned": "22995177",
+        "n_unique": "5477571"
+      },
+      "download_source": "github",
+      "relative_path": "GSE118629_SRR8446411_run_info.json"
+    },
+    {
+      "filename": "GSE120890_SRR7969290_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6916031,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969290_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE120890_SRR7969290_run_info.json",
+      "extension": ".json",
+      "size_bytes": 503,
+      "size_human": "503.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "23011983",
+        "n_pseudoaligned": "19620974",
+        "n_unique": "10860587"
+      },
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969290_run_info.json"
+    },
+    {
+      "filename": "GSE120890_SRR7969291_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6904097,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969291_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE120890_SRR7969291_run_info.json",
+      "extension": ".json",
+      "size_bytes": 503,
+      "size_human": "503.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "24377027",
+        "n_pseudoaligned": "20820458",
+        "n_unique": "11341468"
+      },
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969291_run_info.json"
+    },
+    {
+      "filename": "GSE120890_SRR7969292_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6890587,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969292_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE120890_SRR7969292_run_info.json",
+      "extension": ".json",
+      "size_bytes": 503,
+      "size_human": "503.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "26143815",
+        "n_pseudoaligned": "22254705",
+        "n_unique": "12374172"
+      },
+      "download_source": "github",
+      "relative_path": "GSE120890_SRR7969292_run_info.json"
+    },
+    {
+      "filename": "GSE121022_SRR7988022_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6038352,
+      "size_human": "5.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988022_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121022_SRR7988022_run_info.json",
+      "extension": ".json",
+      "size_bytes": 504,
+      "size_human": "504.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "1228613",
+        "n_pseudoaligned": "1054772",
+        "n_unique": "220611"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988022_run_info.json"
+    },
+    {
+      "filename": "GSE121022_SRR7988024_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6712931,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988024_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121022_SRR7988024_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "43783623",
+        "n_pseudoaligned": "37737675",
+        "n_unique": "9342889"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988024_run_info.json"
+    },
+    {
+      "filename": "GSE121022_SRR7988026_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6875164,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988026_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121022_SRR7988026_run_info.json",
+      "extension": ".json",
+      "size_bytes": 510,
+      "size_human": "510.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "117596563",
+        "n_pseudoaligned": "100259394",
+        "n_unique": "24567035"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121022_SRR7988026_run_info.json"
+    },
+    {
+      "filename": "GSE121137_SRR8032314_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 7020279,
+      "size_human": "6.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032314_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121137_SRR8032314_run_info.json",
+      "extension": ".json",
+      "size_bytes": 502,
+      "size_human": "502.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "40010852",
+        "n_pseudoaligned": "30472348",
+        "n_unique": "7379257"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032314_run_info.json"
+    },
+    {
+      "filename": "GSE121137_SRR8032315_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6918612,
+      "size_human": "6.6 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032315_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121137_SRR8032315_run_info.json",
+      "extension": ".json",
+      "size_bytes": 502,
+      "size_human": "502.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "36640725",
+        "n_pseudoaligned": "25628058",
+        "n_unique": "5939585"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032315_run_info.json"
+    },
+    {
+      "filename": "GSE121137_SRR8032316_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6754556,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032316_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121137_SRR8032316_run_info.json",
+      "extension": ".json",
+      "size_bytes": 501,
+      "size_human": "501.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "38637325",
+        "n_pseudoaligned": "16909230",
+        "n_unique": "3683401"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032316_run_info.json"
+    },
+    {
+      "filename": "GSE121137_SRR8032316___SRR8032317_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6801938,
+      "size_human": "6.5 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032316___SRR8032317_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121137_SRR8032316___SRR8032317_run_info.json",
+      "extension": ".json",
+      "size_bytes": 552,
+      "size_human": "552.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "52104935",
+        "n_pseudoaligned": "22177173",
+        "n_unique": "4837677"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032316___SRR8032317_run_info.json"
+    },
+    {
+      "filename": "GSE121137_SRR8032317_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6563879,
+      "size_human": "6.3 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032317_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE121137_SRR8032317_run_info.json",
+      "extension": ".json",
+      "size_bytes": 500,
+      "size_human": "500.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "13467610",
+        "n_pseudoaligned": "5267943",
+        "n_unique": "1154276"
+      },
+      "download_source": "github",
+      "relative_path": "GSE121137_SRR8032317_run_info.json"
+    },
+    {
+      "filename": "GSE124118_SRR8354418_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6675941,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE124118_SRR8354418_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE124118_SRR8354418_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "41198955",
+        "n_pseudoaligned": "22659925",
+        "n_unique": "4896720"
+      },
+      "download_source": "github",
+      "relative_path": "GSE124118_SRR8354418_run_info.json"
+    },
+    {
+      "filename": "GSE124118_SRR8354419_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6768365,
+      "size_human": "6.5 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE124118_SRR8354419_abundance.tsv.gz"
+    },
+    {
+      "filename": "GSE124118_SRR8354419_run_info.json",
+      "extension": ".json",
+      "size_bytes": 507,
+      "size_human": "507.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "n_targets",
+        "n_bootstraps",
+        "n_processed",
+        "n_pseudoaligned",
+        "n_unique",
+        "p_pseudoaligned",
+        "p_unique",
+        "kallisto_version",
+        "index_version",
+        "start_time",
+        "call"
+      ],
+      "sample": {
+        "n_targets": "228629",
+        "n_bootstraps": "30",
+        "n_processed": "51854711",
+        "n_pseudoaligned": "39913263",
+        "n_unique": "8526078"
+      },
+      "download_source": "github",
+      "relative_path": "GSE124118_SRR8354419_run_info.json"
+    },
+    {
+      "filename": "GSE124118_SRR8354420_abundance.tsv.gz",
+      "extension": ".gz",
+      "size_bytes": 6671083,
+      "size_human": "6.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "GSE124118_SRR8354420_abundance.tsv.gz"
+    }
+  ]
+}

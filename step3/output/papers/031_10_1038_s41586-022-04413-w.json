@@ -1,0 +1,1525 @@
+{
+  "paper_id": "step1_0223",
+  "title": "Boron clusters as broadband membrane carriers",
+  "doi": "10.1038/s41586-022-04413-w",
+  "journal": "Nature",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4220659987",
+  "priority_score": 7.8,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 11,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-022-04413-w",
+  "files_inspected": 11,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel workbooks are figure-organized source-data deposits with headers and numeric tables for transport, leakage, ITC, uptake, and viability assays. They are replot-ready and best classified as Type 1.",
+  "type2_summary": "No file in the provided set is clearly a raw proprietary instrument output or otherwise requires substantial preprocessing beyond the structured source-data workbooks.",
+  "type1_files": [
+    "41586_2022_4413_MOESM3_ESM.xlsx",
+    "41586_2022_4413_MOESM4_ESM.xlsx",
+    "41586_2022_4413_MOESM5_ESM.xlsx",
+    "41586_2022_4413_MOESM6_ESM.xlsx",
+    "41586_2022_4413_MOESM7_ESM.xlsx",
+    "41586_2022_4413_MOESM8_ESM.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper clearly supports the existence of source data, and the inspected Excel files are organized by figure with explicit headers and numeric values. Although some sheets contain near-raw assay traces, they are still curated source-data deposits rather than raw instrument files. The PDFs are supplementary documents, not classifiable as Type 1 or Type 2 data from the available evidence.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2022_4413_MOESM1_ESM.pdf",
+      "filename": "41586_2022_4413_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that supplementary information and reporting summaries are available online; no evidence here indicates this PDF is a raw or figure-data file.",
+      "file_evidence": "PDF format, 762 KB, likely supplementary document rather than tabular source data. No structural evidence of replot-ready numeric tables was provided.",
+      "reasoning": "This appears to be supporting supplementary documentation, not a dataset file intended for direct plotting.",
+      "ambiguity": "Moderate: without page content, the PDF could contain methods or figures, but file-level evidence does not support classifying it as type1 or type2 data.",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM2_ESM.pdf",
+      "filename": "41586_2022_4413_MOESM2_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper indicates online supplementary materials are available, but does not identify this PDF as raw data.",
+      "file_evidence": "PDF format, 2.0 MB, consistent with supplementary document or extended methods/figures rather than a structured dataset.",
+      "reasoning": "No evidence of tabular, figure-ready data structure; best treated as documentation.",
+      "ambiguity": "Moderate: content not inspected, so exact role is uncertain.",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM3_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM3_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper includes source data for figure-based transport assays; the sheets correspond to Fig. 2 panels and contain processed/figure-ready measurements.",
+      "file_evidence": "Excel workbook with 7 sheets named Fig.2 b through Fig.2 h, each with headers and numeric columns such as Time (s), cluster concentrations, and Y values. This is organized as replot-ready source data.",
+      "reasoning": "The file is clearly a figure-specific source-data workbook with structured tables that can be directly plotted with minimal processing.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Time (s), B12H12, B12Cl12, B12Br12, Pyrenebutyrate; [B12H12] (M), Y; Analyte, Et"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM4_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM4_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper reports source data for membrane leakage, DLS, and transport controls in Extended Data Fig. 1.",
+      "file_evidence": "Excel workbook with sheets labeled Extended Data Fig. 1b, 1c, 1e, 1f, 1g; structured numeric tables with headers like Time (s), Intensity (%), and concentration-response variables.",
+      "reasoning": "This is organized source data for specific extended-data panels and is directly replot-ready.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Time (s), no cluster (only liposomes), B12H12, B12Cl12, B12Br12, B12I12; Intensity (%); [Heptaarginine] (M), Y"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM5_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM5_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper includes source data for U-tube transport and ITC binding experiments in Extended Data Fig. 2.",
+      "file_evidence": "Excel workbook with sheets Extended Data Fig.2b, 2c, 2d. Contains time-series transport data and calorimetry traces with headers such as Time (h), Cp (mcal/sec), XMt, and Fit.",
+      "reasoning": "Although the underlying experiments are raw measurements, the workbook is a curated source-data deposit organized by figure and suitable for direct plotting, so it is Type 1 rather than Type 2.",
+      "ambiguity": "Low: ITC traces are close to raw instrument output, but the file is still a structured source-data workbook rather than a proprietary raw instrument file.",
+      "key_columns_or_structure": "Time (h), 40 mM B12Br12 + 20 mM WR7 + 20 mM DPX, Cp (mcal/sec), XMt, Fit (kcal/mole of injectant)"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM6_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM6_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper provides source data for Extended Data Fig. 3 dose-response and cargo-scope transport plots.",
+      "file_evidence": "Excel workbook with sheets Extended Data Fig.3a and 3b, containing concentration-response tables with headers like [B12H12] (M), Y, [WR7] (M), and multiple analyte columns.",
+      "reasoning": "This is figure-specific, structured, and directly replot-ready source data.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "[B12H12] (M), Y; [WR7] (M), Y; multiple cargo concentration-response columns"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM7_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM7_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper includes source data for the reverse/conventional addition-order controls in Extended Data Fig. 4.",
+      "file_evidence": "Excel workbook with sheets Extended Data Fig. 4a-4d, containing time traces and dose-response tables with headers such as Time (s), pyrenebutyrate, B12Br12, and Y Conventional/Reverse.",
+      "reasoning": "This is organized source data for figure panels and can be directly plotted.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Time (s), 120 mM pyrenebutyrate 'Conventional', 120 mM pyrenebutyrate 'Reverse', [pyrenebutyrate] (M), Y Conventional, Y Reverse"
+    },
+    {
+      "relative_path": "41586_2022_4413_MOESM8_ESM.xlsx",
+      "filename": "41586_2022_4413_MOESM8_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper includes source data for cellular uptake, fractionation/HPLC, ICP-MS, MTT, and related cellular assays in Extended Data Fig. 5.",
+      "file_evidence": "Excel workbook with sheets Extended Data Fig.5a, 5d, 5e, 5f, 5g. Structured tables include cluster/peptide summary statistics, absorbance time series, nmoles per million cells, and viability percentages.",
+      "reasoning": "This is a structured source-data workbook with figure-linked quantitative tables, suitable for direct plotting.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "cluster, peptide, median, mean_of_medians, sd_of_medians; condition, time (min), absorbance; sample, nmoles_per_million_cells; condition, cluster (mM), viability (%)"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports that globular dodecaborate boron cluster anions, especially B12Br12^2−, act as non-lytic, superchaotropic membrane carriers that can transport a broad range of hydrophilic cargos across lipid bilayers. Using vesicle leakage/transport assays, ITC, U-tube experiments, confocal microscopy, flow cytometry, HPLC, ICP-MS and cell viability assays, the authors show efficient delivery of cationic, zwitterionic and neutral molecules in model membranes and living cells, including peptides, phalloidin, a PROTAC, an antineoplastic drug and an antibiotic.",
+    "measurement_types": [
+      "HPTS/DPX vesicle transport fluorescence assay",
+      "carboxyfluorescein vesicle leakage assay",
+      "U-tube transport assay",
+      "isothermal titration calorimetry (ITC)",
+      "dynamic light scattering (DLS)",
+      "confocal fluorescence microscopy",
+      "flow cytometry",
+      "digitonin fractionation + HPLC",
+      "ICP-MS",
+      "MTT cell viability assay",
+      "NanoBRET intracellular target engagement assay",
+      "antibacterial viability assay"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Classical amphiphilic membrane carriers/activators (pyrenebutyrate and cationic lipid) contrasted with the new boron-cluster carrier concept.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Chemical structures and space-filling models of B12X12^2− clusters (H, Cl, Br, I) with increasing size.",
+        "data_type": "chemical structure / molecular model",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Mechanistic cartoon showing direct membrane translocation by superchaotropic clusters: cargo binding, membrane partitioning, and release.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of the HPTS/DPX vesicle assay used to report cargo transport via fluorescence dequenching.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Time-resolved HPTS fluorescence traces showing peptide transport activation by different clusters and controls after sequential addition of carrier, cargo, and Triton X-100.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Dose-response curves and Hill fits for WR7 transport versus cluster concentration, comparing B12Br12^2−, B12Cl12^2−, B12H12^2− and pyrenebutyrate.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Transport efficiency values for a panel of cargos of different charge and size transported by B12Br12^2−.",
+        "data_type": "bar/summary plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Comparison of WR7 and WK7 transport by B12Br12^2− versus pyrenebutyrate, showing the boron cluster transports both peptides.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Transport traces for multiple impermeable analytes showing successful transport by B12Br12^2− and failure for pyrenebutyrate.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Comparison of conventional versus reverse addition order, showing transport efficiency is largely insensitive to addition sequence.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Transport efficiency in anionic vesicles as a function of B12Br12^2− or pyrenebutyrate concentration.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3",
+        "description": "Confocal micrographs of HeLa cells showing TAMRA-R8 uptake in the absence or presence of different boron clusters, including cytosolic/nuclear delivery by B12Br12^2− and membrane damage by B12I12^2−.",
+        "data_type": "fluorescence microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Confocal micrographs of living HeLa cells showing B12Br12^2−-assisted phalloidin-TRITC delivery at different cargo and carrier concentrations.",
+        "data_type": "fluorescence microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "ExtendedDataFig1",
+        "description": "Membrane disruption/leakage controls for clusters, including B12I12^2− disruption, DLS, and carboxyfluorescein leakage assays.",
+        "data_type": "leakage curve / DLS / transport control",
+        "likely_source": "raw measurement and processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig2",
+        "description": "U-tube transport confirmation and ITC binding data for B12Br12^2− with peptide cargos.",
+        "data_type": "transport curve / calorimetry trace",
+        "likely_source": "raw measurement and processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig3",
+        "description": "Additional dose-response and cargo-scope transport data supporting the main HPTS/DPX results.",
+        "data_type": "transport curve / summary plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig4",
+        "description": "Control showing reduced efficacy for amphiphilic activators when cargo is added before carrier.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig5",
+        "description": "Flow cytometry, digitonin fractionation/HPLC, ICP-MS, and MTT toxicity data for cellular uptake and cluster accumulation.",
+        "data_type": "histogram / chromatogram / mass spectrometry / viability plot",
+        "likely_source": "raw measurement and processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig6",
+        "description": "Controls for TAMRA-D-R8 cellular delivery and comparison with other clusters.",
+        "data_type": "fluorescence microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "ExtendedDataFig7",
+        "description": "Phalloidin delivery across multiple cell lines and toxicity comparison with AcR8.",
+        "data_type": "fluorescence microscopy image / viability plot",
+        "likely_source": "raw measurement and processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig8",
+        "description": "Functional delivery assays for dBET1 (NanoBRET), MMAF (cell viability), and kanamycin A (bacterial viability).",
+        "data_type": "assay readout / viability plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "ExtendedDataFig9",
+        "description": "Evidence that transport is insensitive to the chemical nature of cargo functional groups.",
+        "data_type": "transport summary",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental readouts from fluorescence time traces in vesicle assays (HPTS/DPX and CF leakage), U-tube fluorescence sampling, ITC heat-injection traces, DLS particle-size measurements, confocal fluorescence micrographs of cells, flow cytometry signals, HPLC chromatograms after digitonin fractionation, ICP-MS measurements of cellular boron uptake, MTT absorbance/viability readouts, NanoBRET assay signals, and bacterial viability measurements.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper also presents processed/derived plots such as normalized fractional fluorescence versus time, dose-response curves fitted with Hill equations, extracted Ymax/EC50/Ea/Et values, transport-efficiency summaries across cargo classes, and comparative cellular uptake/viability metrics. These are figure-level summaries derived from the raw assay outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The article states that methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available online at the DOI link. No explicit file-level dataset inventory is given in the main text.",
+      "data_provided_types": [
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental measurements and instruments in the Methods: fluorescence traces from cuvettes, ITC injections on a VP-ITC MicroCalorimeter, DLS on a Malvern ZetaSizer, confocal images on a spinning-disc microscope, flow cytometry, HPLC, ICP-MS, MTT plate reader assays, and NanoBRET/bacterial viability assays. The paper does not specify raw file formats or a raw-data repository in the provided text.",
+      "processed_data_description": "Processed data include normalized fluorescence intensities, Hill-fit dose-response parameters, transport efficiency metrics (Ea and Et), IC50 changes, viability percentages, and qualitative image-based conclusions. The Methods explicitly define the normalization and fitting equations used to derive these values.",
+      "figure_data_description": "The paper explicitly mentions 'source data' availability in the online materials, but the provided text does not enumerate per-figure source-data files. Based on the article structure, figure-level data are likely provided for the main and extended data figures, but the exact contents are unknown from the text alone.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned in the provided text.",
+      "data_organization": "figure-based / online supplementary materials, but not specified in detail",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper provides enough methodological detail to understand how plots were generated, and it states that source data are available online. However, the main text does not specify exact file names, formats, or repository structure, so direct replotting from the paper text alone is not possible.",
+      "notes": "This is primarily an experimental chemistry/biophysics paper with many assay readouts rather than a single instrument dataset. The most important semantic distinction is that the main figures are largely derived summaries of transport/viability assays, while the underlying raw measurements are time-resolved fluorescence, calorimetry, microscopy, and analytical readouts. The paper emphasizes normalization and Hill fitting, so many plotted values are processed rather than raw."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "Methods describe direct experimental measurements from fluorescence assays, ITC, DLS, microscopy, flow cytometry, HPLC, ICP-MS, and viability assays.",
+      "source_data_evidence": "The online content statement explicitly says source data are available, and the article includes many figure-based quantitative plots that would typically be backed by source data.",
+      "both_evidence": "The paper clearly implies both raw measurements and processed figure/source data, but only the existence of source data is explicitly stated in the provided text.",
+      "data_availability_section_relevant": "“Any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information... and statements of data and code availability are available at https://doi.org/10.1038/s41586-022-04413-w.”",
+      "priority_modalities": [
+        "fluorescence time traces",
+        "confocal microscopy images",
+        "ITC thermograms",
+        "DLS size distributions",
+        "flow cytometry",
+        "HPLC chromatograms",
+        "ICP-MS",
+        "viability assays",
+        "NanoBRET"
+      ],
+      "review_notes": "Do not conflate the schematic/cartoon figures with data. Many main-panel plots are processed outputs from assays, not raw measurements. The paper does not provide explicit raw-data file organization in the text; only online source-data availability is stated."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2022_4413_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 780327,
+      "size_human": "762.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2103798,
+      "size_human": "2.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM3_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 123678,
+      "size_human": "120.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig.2 b",
+        "Fig.2 c",
+        "Fig.2 d",
+        "Fig.2 e",
+        "Fig.2 f",
+        "Fig.2 g",
+        "Fig.2 h"
+      ],
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet_name": "Fig.2 b",
+          "columns": [
+            "Time (s)",
+            "B12H12 ",
+            "B12Cl12",
+            "B12Br12",
+            "Pyrenebutyrate"
+          ],
+          "named_columns": [
+            "Time (s)",
+            "B12H12 ",
+            "B12Cl12",
+            "B12Br12",
+            "Pyrenebutyrate"
+          ],
+          "column_count": 5,
+          "row_count": 369,
+          "dtypes": {
+            "Time (s)": "int64",
+            "B12H12 ": "float64",
+            "B12Cl12": "float64",
+            "B12Br12": "float64",
+            "Pyrenebutyrate": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2 c",
+          "columns": [
+            "[B12H12] (M)",
+            "Y",
+            "[B12Cl12] (M)",
+            "Y.1",
+            "[B12Br12] (M)",
+            "Y.2",
+            "[pyrenebutyrate] (M)",
+            "Y.3"
+          ],
+          "named_columns": [
+            "[B12H12] (M)",
+            "Y",
+            "[B12Cl12] (M)",
+            "Y.1",
+            "[B12Br12] (M)",
+            "Y.2",
+            "[pyrenebutyrate] (M)",
+            "Y.3"
+          ],
+          "column_count": 8,
+          "row_count": 12,
+          "dtypes": {
+            "[B12H12] (M)": "float64",
+            "Y": "float64",
+            "[B12Cl12] (M)": "float64",
+            "Y.1": "float64",
+            "[B12Br12] (M)": "float64",
+            "Y.2": "float64",
+            "[pyrenebutyrate] (M)": "object",
+            "Y.3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2 d",
+          "columns": [
+            "Analyte ",
+            "Et"
+          ],
+          "named_columns": [
+            "Analyte ",
+            "Et"
+          ],
+          "column_count": 2,
+          "row_count": 15,
+          "dtypes": {
+            "Analyte ": "object",
+            "Et": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.2 e",
+          "columns": [
+            "B12Br12",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Pyrenebutyrate",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "B12Br12",
+            "Pyrenebutyrate"
+          ],
+          "column_count": 8,
+          "row_count": 12,
+          "dtypes": {
+            "B12Br12": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Pyrenebutyrate": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.2 f",
+          "columns": [
+            "Acetylcholine ",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Tryptophan",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Ampicillin",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Vecuronium ",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Phalloidin",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Kanamycin A",
+            "Unnamed: 16",
+            "Unnamed: 17"
+          ],
+          "named_columns": [
+            "Acetylcholine ",
+            "Tryptophan",
+            "Ampicillin",
+            "Vecuronium ",
+            "Phalloidin",
+            "Kanamycin A"
+          ],
+          "column_count": 18,
+          "row_count": 1359,
+          "dtypes": {
+            "Acetylcholine ": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Tryptophan": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Ampicillin": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Vecuronium ": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Phalloidin": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Kanamycin A": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.2 g",
+          "columns": [
+            "time (s)",
+            "ACh \"Conventional\"",
+            "ACh \"Reverse \"",
+            "Pancuronium \"Conventional\"",
+            "Pancuronium \"Reverse \""
+          ],
+          "named_columns": [
+            "time (s)",
+            "ACh \"Conventional\"",
+            "ACh \"Reverse \"",
+            "Pancuronium \"Conventional\"",
+            "Pancuronium \"Reverse \""
+          ],
+          "column_count": 5,
+          "row_count": 350,
+          "dtypes": {
+            "time (s)": "int64",
+            "ACh \"Conventional\"": "float64",
+            "ACh \"Reverse \"": "float64",
+            "Pancuronium \"Conventional\"": "float64",
+            "Pancuronium \"Reverse \"": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2 h",
+          "columns": [
+            "[B12Br12] (M)",
+            "Y",
+            "[pyrenebutyrate] (M)",
+            "Y.1"
+          ],
+          "named_columns": [
+            "[B12Br12] (M)",
+            "Y",
+            "[pyrenebutyrate] (M)",
+            "Y.1"
+          ],
+          "column_count": 4,
+          "row_count": 8,
+          "dtypes": {
+            "[B12Br12] (M)": "float64",
+            "Y": "float64",
+            "[pyrenebutyrate] (M)": "float64",
+            "Y.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM3_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM4_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 54780,
+      "size_human": "53.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig. 1b",
+        "Extended Data Fig. 1c",
+        "Extended Data Fig. 1e",
+        "Extended Data Fig. 1f",
+        "Extended Data Fig. 1g"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig. 1b",
+          "columns": [
+            "Time (s)",
+            "no cluster (only liposomes) ",
+            "B12H12",
+            "B12Cl12",
+            "B12Br12",
+            "B12I12"
+          ],
+          "named_columns": [
+            "Time (s)",
+            "no cluster (only liposomes) ",
+            "B12H12",
+            "B12Cl12",
+            "B12Br12",
+            "B12I12"
+          ],
+          "column_count": 6,
+          "row_count": 362,
+          "dtypes": {
+            "Time (s)": "int64",
+            "no cluster (only liposomes) ": "float64",
+            "B12H12": "float64",
+            "B12Cl12": "float64",
+            "B12Br12": "float64",
+            "B12I12": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 1c",
+          "columns": [
+            "Intensity (%)",
+            "Liposomes ",
+            "B12H12",
+            "B12Cl12",
+            "B12Br12",
+            "B12I12"
+          ],
+          "named_columns": [
+            "Intensity (%)",
+            "Liposomes ",
+            "B12H12",
+            "B12Cl12",
+            "B12Br12",
+            "B12I12"
+          ],
+          "column_count": 6,
+          "row_count": 69,
+          "dtypes": {
+            "Intensity (%)": "float64",
+            "Liposomes ": "int64",
+            "B12H12": "int64",
+            "B12Cl12": "int64",
+            "B12Br12": "int64",
+            "B12I12": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 1e",
+          "columns": [
+            "time (s) ",
+            "B12H12 + WR7",
+            "B12Cl12 + WR7",
+            "B12Br12 + WR7",
+            "B12I12 "
+          ],
+          "named_columns": [
+            "time (s) ",
+            "B12H12 + WR7",
+            "B12Cl12 + WR7",
+            "B12Br12 + WR7",
+            "B12I12 "
+          ],
+          "column_count": 5,
+          "row_count": 368,
+          "dtypes": {
+            "time (s) ": "int64",
+            "B12H12 + WR7": "float64",
+            "B12Cl12 + WR7": "float64",
+            "B12Br12 + WR7": "float64",
+            "B12I12 ": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 1f",
+          "columns": [
+            "Time (s)",
+            "B12Br12 ",
+            "WR7"
+          ],
+          "named_columns": [
+            "Time (s)",
+            "B12Br12 ",
+            "WR7"
+          ],
+          "column_count": 3,
+          "row_count": 399,
+          "dtypes": {
+            "Time (s)": "int64",
+            "B12Br12 ": "float64",
+            "WR7": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 1g",
+          "columns": [
+            "[Heptaarginine] (M)",
+            "Y",
+            "[B12Br12] (M)",
+            "Y.1",
+            "[pyrene ] (M)",
+            "Y.2"
+          ],
+          "named_columns": [
+            "[Heptaarginine] (M)",
+            "Y",
+            "[B12Br12] (M)",
+            "Y.1",
+            "[pyrene ] (M)",
+            "Y.2"
+          ],
+          "column_count": 6,
+          "row_count": 12,
+          "dtypes": {
+            "[Heptaarginine] (M)": "float64",
+            "Y": "float64",
+            "[B12Br12] (M)": "float64",
+            "Y.1": "float64",
+            "[pyrene ] (M)": "float64",
+            "Y.2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM4_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM5_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 170275,
+      "size_human": "166.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.2b",
+        "Extended Data Fig.2c",
+        "Extended Data Fig.2d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.2b",
+          "columns": [
+            "Time (h) ",
+            "40 mM B12Br12 + 20 mM WR7 + 20 mM DPX",
+            "40 mM B12Br12 + 20 mM DPX",
+            " 20 mM WR7 ",
+            "20 mM WR7 + 20 mM DPX",
+            "20 mM DPX",
+            "40 mM B12H12 + 20 mM WR7 + 20 mM DPX"
+          ],
+          "named_columns": [
+            "Time (h) ",
+            "40 mM B12Br12 + 20 mM WR7 + 20 mM DPX",
+            "40 mM B12Br12 + 20 mM DPX",
+            " 20 mM WR7 ",
+            "20 mM WR7 + 20 mM DPX",
+            "20 mM DPX",
+            "40 mM B12H12 + 20 mM WR7 + 20 mM DPX"
+          ],
+          "column_count": 7,
+          "row_count": 9,
+          "dtypes": {
+            "Time (h) ": "float64",
+            "40 mM B12Br12 + 20 mM WR7 + 20 mM DPX": "float64",
+            "40 mM B12Br12 + 20 mM DPX": "float64",
+            " 20 mM WR7 ": "float64",
+            "20 mM WR7 + 20 mM DPX": "float64",
+            "20 mM DPX": "float64",
+            "40 mM B12H12 + 20 mM WR7 + 20 mM DPX": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.2c",
+          "columns": [
+            "Time (min)",
+            "Cp (mcal/sec)",
+            "XMt",
+            "Fit (kcal/mole of injectant)"
+          ],
+          "named_columns": [
+            "Time (min)",
+            "Cp (mcal/sec)",
+            "XMt",
+            "Fit (kcal/mole of injectant)"
+          ],
+          "column_count": 4,
+          "row_count": 3531,
+          "dtypes": {
+            "Time (min)": "int64",
+            "Cp (mcal/sec)": "float64",
+            "XMt": "float64",
+            "Fit (kcal/mole of injectant)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.2d",
+          "columns": [
+            "Time (min)",
+            "Cp (mcal/sec)",
+            "XMt",
+            "Fit (kcal/mole of injectant)"
+          ],
+          "named_columns": [
+            "Time (min)",
+            "Cp (mcal/sec)",
+            "XMt",
+            "Fit (kcal/mole of injectant)"
+          ],
+          "column_count": 4,
+          "row_count": 4757,
+          "dtypes": {
+            "Time (min)": "int64",
+            "Cp (mcal/sec)": "float64",
+            "XMt": "float64",
+            "Fit (kcal/mole of injectant)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM5_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM6_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 12821,
+      "size_human": "12.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.3a ",
+        "Extended Data Fig.3b"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.3a ",
+          "columns": [
+            "[B12H12] (M)",
+            "Y",
+            "[B12Cl12] (M)",
+            "Y.1",
+            "[B12Br12] (M)",
+            "Y.2"
+          ],
+          "named_columns": [
+            "[B12H12] (M)",
+            "Y",
+            "[B12Cl12] (M)",
+            "Y.1",
+            "[B12Br12] (M)",
+            "Y.2"
+          ],
+          "column_count": 6,
+          "row_count": 12,
+          "dtypes": {
+            "[B12H12] (M)": "float64",
+            "Y": "float64",
+            "[B12Cl12] (M)": "float64",
+            "Y.1": "float64",
+            "[B12Br12] (M)": "float64",
+            "Y.2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.3b",
+          "columns": [
+            "[WR7] (M)",
+            "Y",
+            "[WK7] (M)",
+            "Y.1",
+            "[Acetylcholine] (M)",
+            "Y.2",
+            "[Tryptophan] (M)",
+            "Y.3",
+            "[Phenylalanine] (M)",
+            "Y.4",
+            "[Glutamic acid] (M)",
+            "Y.5",
+            "[Vitamin B1] (M)",
+            "Y.6",
+            "[Ampicillin] (M)",
+            "Y.7",
+            "[Ranitidine] (M)",
+            "Y.8",
+            "[Pancuronium] (M)",
+            "Y.9",
+            "[Vecuronium] (M)",
+            "Y.10",
+            "[Protamine] (M)",
+            "Y.11",
+            "[Bovine Albumin] (M)",
+            "Y.12",
+            "[Phalloidin] (M)",
+            "Y.13",
+            "[Kanamycin A] (M)",
+            "Y.14"
+          ],
+          "named_columns": [
+            "[WR7] (M)",
+            "Y",
+            "[WK7] (M)",
+            "Y.1",
+            "[Acetylcholine] (M)",
+            "Y.2",
+            "[Tryptophan] (M)",
+            "Y.3",
+            "[Phenylalanine] (M)",
+            "Y.4",
+            "[Glutamic acid] (M)",
+            "Y.5",
+            "[Vitamin B1] (M)",
+            "Y.6",
+            "[Ampicillin] (M)",
+            "Y.7",
+            "[Ranitidine] (M)",
+            "Y.8",
+            "[Pancuronium] (M)",
+            "Y.9",
+            "[Vecuronium] (M)",
+            "Y.10",
+            "[Protamine] (M)",
+            "Y.11",
+            "[Bovine Albumin] (M)",
+            "Y.12",
+            "[Phalloidin] (M)",
+            "Y.13",
+            "[Kanamycin A] (M)",
+            "Y.14"
+          ],
+          "column_count": 30,
+          "row_count": 12,
+          "dtypes": {
+            "[WR7] (M)": "float64",
+            "Y": "float64",
+            "[WK7] (M)": "float64",
+            "Y.1": "float64",
+            "[Acetylcholine] (M)": "float64",
+            "Y.2": "float64",
+            "[Tryptophan] (M)": "float64",
+            "Y.3": "float64",
+            "[Phenylalanine] (M)": "float64",
+            "Y.4": "float64",
+            "[Glutamic acid] (M)": "float64",
+            "Y.5": "float64",
+            "[Vitamin B1] (M)": "float64",
+            "Y.6": "float64",
+            "[Ampicillin] (M)": "float64",
+            "Y.7": "float64",
+            "[Ranitidine] (M)": "float64",
+            "Y.8": "float64",
+            "[Pancuronium] (M)": "float64",
+            "Y.9": "float64",
+            "[Vecuronium] (M)": "float64",
+            "Y.10": "float64",
+            "[Protamine] (M)": "float64",
+            "Y.11": "float64",
+            "[Bovine Albumin] (M)": "float64",
+            "Y.12": "float64",
+            "[Phalloidin] (M)": "float64",
+            "Y.13": "float64",
+            "[Kanamycin A] (M)": "float64",
+            "Y.14": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM6_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM7_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 85948,
+      "size_human": "83.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig. 4a",
+        "Extended Data Fig. 4b",
+        "Extended Data Fig. 4c",
+        "Extended Data Fig. 4d"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig. 4a",
+          "columns": [
+            "Time (s) ",
+            "120 mM pyrenebutyrate \"Conventional\"",
+            "time (s)",
+            "120 mM pyrenebutyrate  \"Reverse\""
+          ],
+          "named_columns": [
+            "Time (s) ",
+            "120 mM pyrenebutyrate \"Conventional\"",
+            "time (s)",
+            "120 mM pyrenebutyrate  \"Reverse\""
+          ],
+          "column_count": 4,
+          "row_count": 3270,
+          "dtypes": {
+            "Time (s) ": "int64",
+            "120 mM pyrenebutyrate \"Conventional\"": "float64",
+            "time (s)": "float64",
+            "120 mM pyrenebutyrate  \"Reverse\"": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 4b",
+          "columns": [
+            "[pyrenebutyrate] (M)",
+            "Y Conventional ",
+            "Y Reverse "
+          ],
+          "named_columns": [
+            "[pyrenebutyrate] (M)",
+            "Y Conventional ",
+            "Y Reverse "
+          ],
+          "column_count": 3,
+          "row_count": 10,
+          "dtypes": {
+            "[pyrenebutyrate] (M)": "float64",
+            "Y Conventional ": "float64",
+            "Y Reverse ": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 4c",
+          "columns": [
+            "Time (s) ",
+            "130 mM B12Br12 \"Conventional\"",
+            "130 mM B12Br12 \"Reverse\""
+          ],
+          "named_columns": [
+            "Time (s) ",
+            "130 mM B12Br12 \"Conventional\"",
+            "130 mM B12Br12 \"Reverse\""
+          ],
+          "column_count": 3,
+          "row_count": 349,
+          "dtypes": {
+            "Time (s) ": "int64",
+            "130 mM B12Br12 \"Conventional\"": "float64",
+            "130 mM B12Br12 \"Reverse\"": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig. 4d",
+          "columns": [
+            "[B12Br12] (M)",
+            "Y Conventional ",
+            "Y Reverse "
+          ],
+          "named_columns": [
+            "[B12Br12] (M)",
+            "Y Conventional ",
+            "Y Reverse "
+          ],
+          "column_count": 3,
+          "row_count": 12,
+          "dtypes": {
+            "[B12Br12] (M)": "float64",
+            "Y Conventional ": "float64",
+            "Y Reverse ": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM7_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM8_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 122418,
+      "size_human": "119.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.5a",
+        "Extended Data Fig.5d",
+        "Extended Data Fig.5e",
+        "Extended Data Fig.5f",
+        "Extended Data Fig.5g"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.5a",
+          "columns": [
+            "cluster",
+            "peptide",
+            "median",
+            "mean_of_medians",
+            "sd_of_medians"
+          ],
+          "named_columns": [
+            "cluster",
+            "peptide",
+            "median",
+            "mean_of_medians",
+            "sd_of_medians"
+          ],
+          "column_count": 5,
+          "row_count": 54,
+          "dtypes": {
+            "cluster": "object",
+            "peptide": "object",
+            "median": "float64",
+            "mean_of_medians": "float64",
+            "sd_of_medians": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.5d",
+          "columns": [
+            "experiment",
+            "sample",
+            "concentration_uM",
+            "mean",
+            "sd"
+          ],
+          "named_columns": [
+            "experiment",
+            "sample",
+            "concentration_uM",
+            "mean",
+            "sd"
+          ],
+          "column_count": 5,
+          "row_count": 8,
+          "dtypes": {
+            "experiment": "int64",
+            "sample": "object",
+            "concentration_uM": "float64",
+            "mean": "float64",
+            "sd": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.5e",
+          "columns": [
+            "condition",
+            "time (min)",
+            "absorbance"
+          ],
+          "named_columns": [
+            "condition",
+            "time (min)",
+            "absorbance"
+          ],
+          "column_count": 3,
+          "row_count": 3600,
+          "dtypes": {
+            "condition": "object",
+            "time (min)": "float64",
+            "absorbance": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.5f",
+          "columns": [
+            "sample",
+            "nmoles_per_million_cells"
+          ],
+          "named_columns": [
+            "sample",
+            "nmoles_per_million_cells"
+          ],
+          "column_count": 2,
+          "row_count": 5,
+          "dtypes": {
+            "sample": "object",
+            "nmoles_per_million_cells": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.5g",
+          "columns": [
+            "condition",
+            "cluster (mM)",
+            "viability (%)",
+            "mean_viability",
+            "sd_viability"
+          ],
+          "named_columns": [
+            "condition",
+            "cluster (mM)",
+            "viability (%)",
+            "mean_viability",
+            "sd_viability"
+          ],
+          "column_count": 5,
+          "row_count": 78,
+          "dtypes": {
+            "condition": "object",
+            "cluster (mM)": "object",
+            "viability (%)": "float64",
+            "mean_viability": "float64",
+            "sd_viability": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM8_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM9_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 73575,
+      "size_human": "71.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.6b",
+        "Extended Data Fig.6c"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.6b",
+          "columns": [
+            "time (min)",
+            "abs (222)"
+          ],
+          "named_columns": [
+            "time (min)",
+            "abs (222)"
+          ],
+          "column_count": 2,
+          "row_count": 1800,
+          "dtypes": {
+            "time (min)": "float64",
+            "abs (222)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.6c",
+          "columns": [
+            "m/z",
+            "intensity"
+          ],
+          "named_columns": [
+            "m/z",
+            "intensity"
+          ],
+          "column_count": 2,
+          "row_count": 758,
+          "dtypes": {
+            "m/z": "float64",
+            "intensity": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM9_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM10_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 18778,
+      "size_human": "18.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.7e"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.7e",
+          "columns": [
+            "cell",
+            "compound",
+            "concentration (mM)",
+            "viability (%)",
+            "mean_viability",
+            "sd_viability"
+          ],
+          "named_columns": [
+            "cell",
+            "compound",
+            "concentration (mM)",
+            "viability (%)",
+            "mean_viability",
+            "sd_viability"
+          ],
+          "column_count": 6,
+          "row_count": 200,
+          "dtypes": {
+            "cell": "object",
+            "compound": "object",
+            "concentration (mM)": "int64",
+            "viability (%)": "float64",
+            "mean_viability": "float64",
+            "sd_viability": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM10_ESM.xlsx"
+    },
+    {
+      "filename": "41586_2022_4413_MOESM11_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 203235,
+      "size_human": "198.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Extended Data Fig.8a",
+        "Extended Data Fig.8b",
+        "Extended Data Fig.8c",
+        "Extended Data Fig.8d",
+        "Extended Data Fig.8e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Extended Data Fig.8a",
+          "columns": [
+            "Individual points ",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Curve data ",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "Individual points ",
+            "Curve data "
+          ],
+          "column_count": 13,
+          "row_count": 1876,
+          "dtypes": {
+            "Individual points ": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "Curve data ": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.8b",
+          "columns": [
+            "experiment",
+            "B12Br12 (mM)",
+            "IC50 (mM)",
+            "mean_ic50",
+            "sd_ic50"
+          ],
+          "named_columns": [
+            "experiment",
+            "B12Br12 (mM)",
+            "IC50 (mM)",
+            "mean_ic50",
+            "sd_ic50"
+          ],
+          "column_count": 5,
+          "row_count": 9,
+          "dtypes": {
+            "experiment": "object",
+            "B12Br12 (mM)": "int64",
+            "IC50 (mM)": "float64",
+            "mean_ic50": "float64",
+            "sd_ic50": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.8c",
+          "columns": [
+            "Individual points ",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Curve data ",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "Individual points ",
+            "Curve data "
+          ],
+          "column_count": 13,
+          "row_count": 1996,
+          "dtypes": {
+            "Individual points ": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "Curve data ": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.8d",
+          "columns": [
+            "experiment",
+            "cluster (mM)",
+            "IC50 (nM)",
+            "mean_IC50",
+            "sd_IC50"
+          ],
+          "named_columns": [
+            "experiment",
+            "cluster (mM)",
+            "IC50 (nM)",
+            "mean_IC50",
+            "sd_IC50"
+          ],
+          "column_count": 5,
+          "row_count": 12,
+          "dtypes": {
+            "experiment": "object",
+            "cluster (mM)": "int64",
+            "IC50 (nM)": "float64",
+            "mean_IC50": "float64",
+            "sd_IC50": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig.8e",
+          "columns": [
+            "B12Br12 (mM)",
+            "Kanamycin  (mg/mL)",
+            "normalized_OD570",
+            "mean_norm_OD570",
+            "sd_norm_OD570"
+          ],
+          "named_columns": [
+            "B12Br12 (mM)",
+            "Kanamycin  (mg/mL)",
+            "normalized_OD570",
+            "mean_norm_OD570",
+            "sd_norm_OD570"
+          ],
+          "column_count": 5,
+          "row_count": 48,
+          "dtypes": {
+            "B12Br12 (mM)": "int64",
+            "Kanamycin  (mg/mL)": "float64",
+            "normalized_OD570": "float64",
+            "mean_norm_OD570": "float64",
+            "sd_norm_OD570": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_4413_MOESM11_ESM.xlsx"
+    }
+  ]
+}

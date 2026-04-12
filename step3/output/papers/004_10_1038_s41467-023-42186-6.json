@@ -1,0 +1,770 @@
+{
+  "paper_id": "step1_0190",
+  "title": "Softening of a flat phonon mode in the kagome ScV6Sn6",
+  "doi": "10.1038/s41467-023-42186-6",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4387814832",
+  "priority_score": 7.4,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [
+    "DS ScV6SSn6.zip: Too large: 18236.0MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-42186-6",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The Excel workbook is figure-organized source data with headers and small size, suitable for direct plotting and clearly Type 1.",
+  "type2_summary": "The two PDF supplements are not shown to be structured replot-ready tables and are more consistent with supplementary raw/compiled material, so they are classified conservatively as Type 2.",
+  "type1_files": [
+    "Source_Data_ScV6Sn6.xlsx"
+  ],
+  "type2_files": [
+    "41467_2023_42186_MOESM1_ESM.pdf",
+    "41467_2023_42186_MOESM2_ESM.pdf"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The dataset clearly contains both Type 1 and Type 2 materials. The Excel file is unambiguously source-data/figure-ready. The PDFs are less certain because Nature supplementary PDFs can contain mixed content; however, absent explicit tabular structure, conservative classification as Type 2 is appropriate.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2023_42186_MOESM1_ESM.pdf",
+      "filename": "41467_2023_42186_MOESM1_ESM.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper states that scattering, ARPES, diffuse scattering, and IXS data generated in the study are available in Figshare, and the publication also provides source data. This PDF is a Nature source-data supplement, but the paper evidence does not indicate it is a cleaned figure-data table.",
+      "file_evidence": "Large PDF (26.7 MB), consistent with a supplementary source-data or raw-data document rather than a small replot-ready table. No tabular headers or figure-specific spreadsheet structure are visible from the inspection report.",
+      "reasoning": "Given the file type and large size, this is more consistent with a raw/compiled supplementary data PDF than a directly replot-ready cleaned dataset. The paper supports availability of raw experimental data, and the file evidence does not show a structured figure-table format. Conservatively classify as raw/unprocessed support material.",
+      "ambiguity": "Moderate: Nature source-data PDFs can sometimes contain figure-linked source data, but the size and lack of tabular structure in the inspection report make Type 2 the safer choice.",
+      "key_columns_or_structure": "Not reported; PDF supplement, 26.7 MB"
+    },
+    {
+      "relative_path": "41467_2023_42186_MOESM2_ESM.pdf",
+      "filename": "41467_2023_42186_MOESM2_ESM.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly says source data are provided, and the study includes raw scattering/ARPES/IXS measurements deposited in Figshare. This PDF is part of the supplementary material, but no evidence indicates it is a cleaned tabular source-data file.",
+      "file_evidence": "PDF supplement, 3.3 MB. No structured sheet/column information is available, and the file is not presented as a figure-specific spreadsheet. The size is still more consistent with a document or compiled supplement than a small replot-ready table.",
+      "reasoning": "Without evidence of tabular, figure-specific organization, this is best treated as supplementary raw/compiled material rather than Type 1 cleaned data. The conservative choice is Type 2.",
+      "ambiguity": "Moderate: could contain source-data figures or tables, but the inspection report does not show replot-ready structure.",
+      "key_columns_or_structure": "Not reported; PDF supplement, 3.3 MB"
+    },
+    {
+      "relative_path": "Source_Data_ScV6Sn6.xlsx",
+      "filename": "Source_Data_ScV6Sn6.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly states 'Source data are provided with this paper.' The workbook is organized by figure panels, matching the paper's source-data deposit convention.",
+      "file_evidence": "Excel workbook with 13 sheets named by figure panels (e.g., Figure 1(H), Figure 2(D), Figure 3(A)). Sheets have headers, physical-variable columns, and moderate size (90 KB), indicating structured, figure-ready data.",
+      "reasoning": "This is a classic cleaned/source-data spreadsheet: figure-specific sheets, labeled columns, and direct replot potential with minimal processing. It matches Type 1 by definition.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Figure-specific sheets; examples include 1H (XAS), 1H (CDW), 1I (Intensity), 1I (FWHM), 2C 97K, 2D cp, 2D DS, 2D phonon, 2E raw, 2E fitting"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the kagome metal ScV6Sn6 using ARPES, diffuse x-ray scattering, resonant diffraction, high-resolution x-ray diffraction, inelastic x-ray scattering, and DFT. The key result is the observation of a soft, nearly flat low-energy phonon branch in the kz = π plane that collapses at q = (1/3, 1/3, 1/2) near 98 K, while the long-range CDW appears at a different wavevector q = (1/3, 1/3, 1/3), indicating strong momentum-dependent electron-phonon coupling and a phonon-driven instability distinct from the charge-order wavevector.",
+    "measurement_types": [
+      "ARPES",
+      "diffuse x-ray scattering",
+      "inelastic x-ray scattering (IXS)",
+      "resonant hard x-ray scattering",
+      "high-resolution x-ray diffraction",
+      "resistivity (referenced from prior work)",
+      "DFT / ab initio phonon calculations",
+      "Wannier-based electronic structure calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1A",
+        "description": "Side view of the ScV6Sn6 crystal structure showing Sc, V kagome net, trigonal Sn, and hexagonal Sn positions.",
+        "data_type": "structure schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1B",
+        "description": "Top view of the kagome net highlighting V and trigonal Sn atoms and the unit cell.",
+        "data_type": "structure schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1C",
+        "description": "Brillouin zone of P6/mmm with symmetry directions.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1D",
+        "description": "ARPES Fermi surface map at 7 K and 90 eV probing kz ≈ 0.4.",
+        "data_type": "image / momentum-space intensity map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1E",
+        "description": "ARPES band dispersion along M-K-Γ-M with horizontal polarization and V3Sn termination.",
+        "data_type": "spectrum / band map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1F",
+        "description": "ARPES band dispersion along M-K-Γ-M with vertical polarization and ScSn2 termination.",
+        "data_type": "spectrum / band map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1G",
+        "description": "DFT band structure including pristine, unfolded CDW, and surface bands compared with ARPES.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1H",
+        "description": "Resonant hard x-ray scattering energy dependence of the CDW peak at the V K-edge.",
+        "data_type": "diffraction spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1I",
+        "description": "Temperature dependence of CDW peak intensity and linewidth at the V K-edge.",
+        "data_type": "temperature-dependent diffraction plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2A",
+        "description": "Diffuse scattering maps in the hk6.5 plane at 300 K and 100 K showing precursor intensity at l = 1/2.",
+        "data_type": "reciprocal-space intensity map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2B",
+        "description": "Reconstructed hhl diffuse scattering maps at several temperatures showing absence of l = 1/3 precursor at high T and emergence of CDW satellites at low T.",
+        "data_type": "reciprocal-space intensity map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2C",
+        "description": "Temperature dependence of diffuse scattering line cuts fitted to Lorentzian profiles.",
+        "data_type": "line cuts / fitted curves",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2D",
+        "description": "Temperature dependence of diffuse intensity, IXS central peak, and low-energy phonon at q = (1/3,1/3,1/2), with susceptibility inset.",
+        "data_type": "multi-curve plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2E",
+        "description": "Inverse correlation length versus temperature with mean-field fit.",
+        "data_type": "temperature-dependent fit plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3A",
+        "description": "Temperature-dependent IXS spectra at q = (1/3,1/3,1/2) with two energy resolutions shown.",
+        "data_type": "energy-loss spectra",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3B",
+        "description": "Momentum dependence of the phonon frequency at selected temperatures near q = (1/3,1/3,1/2).",
+        "data_type": "dispersion plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3C",
+        "description": "Temperature dependence of the soft mode frequency with power-law fit and inset of squared frequency versus reduced temperature.",
+        "data_type": "fit plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3D",
+        "description": "Temperature and momentum dependence of the damping ratio Γ/ω̃q.",
+        "data_type": "derived parameter plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3E",
+        "description": "Temperature-dependent IXS spectra at q = (1/3,1/3,1/3).",
+        "data_type": "energy-loss spectra",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3F",
+        "description": "Momentum dependence of the phonon frequency at q = (1/3,1/3,1/3) as a function of temperature.",
+        "data_type": "dispersion plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3G",
+        "description": "Temperature dependence of the (0,0,6.5) and (0.5,0,6.5) phonon modes.",
+        "data_type": "phonon frequency plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 3H",
+        "description": "Momentum dependence of the damping ratio at selected temperatures.",
+        "data_type": "derived parameter plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4A",
+        "description": "Schematic of weakly coupled 1D chains representing the flat phonon mode and the SnT vibration pattern.",
+        "data_type": "theory schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4B",
+        "description": "Band structure of the pristine phase with Sn pz orbital weight indicated.",
+        "data_type": "calculated band structure",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4C",
+        "description": "High-temperature DFT phonon spectrum with weights of SnT z-direction vibrations.",
+        "data_type": "calculated phonon dispersion",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4D",
+        "description": "Fermi surfaces at two kz values showing weak nesting near H = (1/3,1/3,1/2).",
+        "data_type": "calculated Fermi surface plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4E",
+        "description": "Fermi surfaces at two kz values showing weak nesting with vector K = (1/3,1/3,1/3).",
+        "data_type": "calculated Fermi surface plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4F",
+        "description": "Static charge susceptibility of the mirror-even electron operator showing peaks near H and K.",
+        "data_type": "theoretical susceptibility plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4G",
+        "description": "Comparison of DFT zero-temperature phonon spectrum and perturbation-theory-derived phonon spectrum showing an imaginary mode at kz = 1/2.",
+        "data_type": "calculated phonon dispersion",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include ARPES spectra and Fermi surface maps, diffuse scattering reciprocal-space maps, resonant hard x-ray scattering energy scans and temperature scans, high-resolution x-ray diffraction, and inelastic x-ray scattering energy-loss spectra collected at ESRF, APS, and NSLS-II. The paper also references resistivity and prior neutron/STM/optical data from earlier work, but those are not newly generated here.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots processed quantities extracted from raw data, including fitted CDW peak intensity and linewidth, Lorentzian-fit diffuse scattering line cuts, correlation lengths, generalized susceptibility, phonon frequencies, damping ratios, and temperature-dependent power-law fits. It also shows reconstructed reciprocal-space maps and DFT/Wannier-derived band structures and phonon dispersions.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'Source data are provided with this paper. The scattering, ARPES, DS and IXS data generated in this study is available in the Figshare database: https://doi.org/10.6084/m9.figshare.24155937.'",
+      "data_provided_types": [
+        "source_data",
+        "raw",
+        "processed"
+      ],
+      "raw_data_description": "Raw experimental data were collected using ARPES, diffuse scattering, IXS, resonant hard x-ray scattering, and high-resolution x-ray diffraction. The methods specify instruments and settings (e.g. PILATUS3 1M X detector for diffuse scattering, ESRF ID28 and APS HERIX for IXS, Scienta DA30 analyzer for ARPES), but the paper does not describe file formats or a raw-data directory structure.",
+      "processed_data_description": "Processed data include reconstructed reciprocal-space maps, fitted Lorentzian line cuts, extracted correlation lengths, fitted phonon frequencies and damping ratios, and temperature-dependent peak intensities/linewidths. DFT and Wannier post-processing produce calculated band structures, unfolded CDW bands, surface states, phonon spectra, Fermi surfaces, and susceptibility curves.",
+      "figure_data_description": "The paper explicitly says source data are provided with the paper, implying figure-specific source data are available. The text does not enumerate per-figure files, but the availability statement and the mention of source data support figure-level data provision.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text. Only software packages used for analysis and simulation are named (CrysAlis, VASP, Wannier90, WannierTools).",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper provides source data and a Figshare dataset for scattering, ARPES, diffuse scattering, and IXS, which should allow replotting of many figures. However, the exact file organization, naming, and whether all intermediate processing steps are included are not specified.",
+      "notes": "The dataset appears to combine raw experimental measurements with processed/source data used for figures. The paper clearly distinguishes measured spectra/maps from fitted or reconstructed quantities, but it does not provide a detailed data schema. Theoretical outputs are derived from DFT/Wannier calculations rather than experimental raw data."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper says the scattering, ARPES, DS and IXS data generated in this study is available in Figshare, and the methods describe direct measurements from multiple instruments.",
+      "source_data_evidence": "The paper explicitly states 'Source data are provided with this paper.'",
+      "both_evidence": "Both raw experimental data and source data are implied by the combination of the Figshare data statement and the explicit source-data statement.",
+      "data_availability_section_relevant": "Source data are provided with this paper. The scattering, ARPES, DS and IXS data generated in this study is available in the Figshare database.",
+      "priority_modalities": [
+        "ARPES spectra",
+        "diffuse scattering reciprocal-space maps",
+        "inelastic x-ray scattering spectra",
+        "resonant x-ray diffraction scans",
+        "high-resolution x-ray diffraction",
+        "DFT band structures",
+        "DFT phonon dispersions"
+      ],
+      "review_notes": "Be careful not to classify all provided figure data as raw: many plots are fitted or reconstructed quantities. The paper does not mention scripts or notebooks, so script availability should not be assumed. Theoretical figures are derived outputs, not measurements."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_42186_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 27998417,
+      "size_human": "26.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_42186_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2023_42186_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3417900,
+      "size_human": "3.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_42186_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "Source_Data_ScV6Sn6.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 92147,
+      "size_human": "90.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 1(H)",
+        "Figure 1(I)",
+        "Figure 2(C)",
+        "Figure 2(D)",
+        "Figure 2(E)",
+        "Figure 3(A)",
+        "Figure 3(B)",
+        "Figure 3(C)",
+        "Figure 3(D)",
+        "Figure 3(E)",
+        "Figure 3(F)",
+        "Figure 3(G)",
+        "Figure 3(H)"
+      ],
+      "sheet_count": 13,
+      "sheets": [
+        {
+          "sheet_name": "Figure 1(H)",
+          "columns": [
+            "1H (XAS)",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "1H (CDW)",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "1H (XAS)",
+            "1H (CDW)"
+          ],
+          "column_count": 5,
+          "row_count": 82,
+          "dtypes": {
+            "1H (XAS)": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "1H (CDW)": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 1(I)",
+          "columns": [
+            "1I (Intensity)",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "1I (FWHM)",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "1I (Intensity)",
+            "1I (FWHM)"
+          ],
+          "column_count": 5,
+          "row_count": 10,
+          "dtypes": {
+            "1I (Intensity)": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "1I (FWHM)": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2(C)",
+          "columns": [
+            "2C 97K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "2C 130K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "2C 150K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "2C 200K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "2C 250K",
+            "Unnamed: 13"
+          ],
+          "named_columns": [
+            "2C 97K",
+            "2C 130K",
+            "2C 150K",
+            "2C 200K",
+            "2C 250K"
+          ],
+          "column_count": 14,
+          "row_count": 71,
+          "dtypes": {
+            "2C 97K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "2C 130K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "2C 150K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "2C 200K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "2C 250K": "object",
+            "Unnamed: 13": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2(D)",
+          "columns": [
+            "2D cp",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "2D  DS",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "2D phonon",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "2D cp inset",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "2D DS inset",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "2D phonon inset",
+            "Unnamed: 18"
+          ],
+          "named_columns": [
+            "2D cp",
+            "2D  DS",
+            "2D phonon",
+            "2D cp inset",
+            "2D DS inset",
+            "2D phonon inset"
+          ],
+          "column_count": 19,
+          "row_count": 47,
+          "dtypes": {
+            "2D cp": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "2D  DS": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "2D phonon": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "float64",
+            "2D cp inset": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "float64",
+            "2D DS inset": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "float64",
+            "2D phonon inset": "object",
+            "Unnamed: 18": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2(E)",
+          "columns": [
+            "2E raw",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "2E fitting",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "2E raw",
+            "2E fitting"
+          ],
+          "column_count": 6,
+          "row_count": 1001,
+          "dtypes": {
+            "2E raw": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "2E fitting": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(A)",
+          "columns": [
+            "3A 98K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "3A 100K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "3A 120K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "3A 140K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "3A 160K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "3A 180K",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "3A 200K",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "3A 220K",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "3A 240K",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "3A 260K",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "3A 98K",
+            "3A 100K",
+            "3A 120K",
+            "3A 140K",
+            "3A 160K",
+            "3A 180K",
+            "3A 200K",
+            "3A 220K",
+            "3A 240K",
+            "3A 260K"
+          ],
+          "column_count": 32,
+          "row_count": 62,
+          "dtypes": {
+            "3A 98K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "3A 100K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "3A 120K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "3A 140K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "3A 160K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "3A 180K": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "float64",
+            "3A 200K": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "float64",
+            "3A 220K": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "float64",
+            "3A 240K": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "float64",
+            "3A 260K": "object",
+            "Unnamed: 28": "object",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(B)",
+          "columns": [
+            "95 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "150 K",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "200K",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "300 K",
+            "Unnamed: 13",
+            "Unnamed: 14"
+          ],
+          "named_columns": [
+            "95 K",
+            "150 K",
+            "200K",
+            "300 K"
+          ],
+          "column_count": 15,
+          "row_count": 13,
+          "dtypes": {
+            "95 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "150 K": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "200K": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "300 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(C)",
+          "columns": [
+            "Raw",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Fitting",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Raw Inset",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Fitting Inset",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Raw",
+            "Fitting",
+            "Raw Inset",
+            "Fitting Inset"
+          ],
+          "column_count": 12,
+          "row_count": 1001,
+          "dtypes": {
+            "Raw": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Fitting": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Raw Inset": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "Fitting Inset": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(D)",
+          "columns": [
+            "1/3 1/3 6,5 Black Curve",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "150K Red Curve",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "1/3 1/3 6,5 Black Curve",
+            "150K Red Curve"
+          ],
+          "column_count": 7,
+          "row_count": 21,
+          "dtypes": {
+            "1/3 1/3 6,5 Black Curve": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "150K Red Curve": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3(E)",
+          "columns": [
+            "98 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "100 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "150 K",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "200 K",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "250 K",
+            "Unnamed: 13"
+          ],
+          "named_columns": [
+            "98 K",
+            "100 K",
+            "150 K",
+            "200 K",
+            "250 K"
+          ],
+          "column_count": 14,
+          "row_count": 62,
+          "dtypes": {
+            "98 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "100 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "150 K": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "200 K": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "250 K": "object",
+            "Unnamed: 13": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "Source_Data_ScV6Sn6.xlsx"
+    }
+  ]
+}

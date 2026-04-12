@@ -1,0 +1,69 @@
+Title: Halogen‐Bonded Organic Framework (XOF) Based on Iodonium‐Bridged N⋅⋅⋅I<sup>+</sup>⋅⋅⋅N Interactions: A Type of Diphase Periodic Organic Network
+DOI: 10.1002/ange.202102448
+Journal: Angewandte Chemie
+Year: 2021
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All six files are structured, figure-specific tabular TXT datasets with headers and two-column plot-ready organization. They appear to be supplemental/source-style data for figures, not raw instrument outputs.
+- Type2 summary: No files show characteristics of raw/unprocessed data such as proprietary instrument formats, large binary outputs, microscopy images, or files requiring substantial preprocessing.
+
+Type1 files
+- FigureS30_MUV21_simulated.txt
+  original path: FigureS30_MUV21_simulated.txt
+  classified as: type1
+  reasoning: The file is clearly a processed, figure-ready dataset for a simulated pattern. It is structured for plotting and not raw measurement output, so Type 1.
+  paper evidence: No evidence of raw data deposition; the paper context supports figure-oriented supplemental data rather than raw instrument output.
+  file evidence: Tabular TXT, 2 columns, figure-specific naming ('FigureS30', 'simulated'), and headers indicating plotted variables ('MUV-21 simulated', '2 q(deg.)', 'Intenisty (a. u.)'). Directly replot-ready.
+  structure: 2 columns; 2θ (deg.) vs intensity (a.u.)
+  ambiguity: Low; 'simulated' indicates processed/derived data, which still aligns with Type 1 source/figure data.
+- FigureS31_MUV-20a_asynthesised.txt
+  original path: FigureS31_MUV-20a_asynthesised.txt
+  classified as: type1
+  reasoning: This is a cleaned, figure-oriented dataset intended for plotting. It is not a raw instrument file and requires minimal processing, so Type 1.
+  paper evidence: No explicit raw-data statement in the paper; available evidence points to supplemental figure/source data rather than raw files.
+  file evidence: Figure-specific TXT file with 2-column tabular structure and headers indicating a plotted pattern ('MUV-20a as-synthesised', '2 q(deg.)', 'Intenisty (a. u.)'). Directly replot-ready.
+  structure: 2 columns; 2θ (deg.) vs intensity (a.u.)
+  ambiguity: Low.
+- FigureS32_CH2Cl2.txt
+  original path: FigureS32_CH2Cl2.txt
+  classified as: type1
+  reasoning: Despite the slightly inconsistent filename/header chemistry label, the file is still a structured figure dataset suitable for direct plotting. It is not raw instrument output, so Type 1.
+  paper evidence: No paper evidence suggests raw data; the publication context is consistent with supplemental figure data.
+  file evidence: Tabular TXT with figure-style naming ('FigureS32') and two-column plot structure. The header 'CH3Cl' appears to label a condition/sample, with intensity data in the second column. Small, organized, and plot-ready.
+  structure: 2 columns; condition/sample label and intensity vs 2θ-style data
+  ambiguity: Moderate; the filename says CH2Cl2 while the header says CH3Cl. This looks like a labeling inconsistency, but it does not change the file's role as figure-ready tabular data.
+- FigureS32_EtOH.txt
+  original path: FigureS32_EtOH.txt
+  classified as: type1
+  reasoning: This is organized figure data for a solvent condition and can be plotted with minimal processing. Type 1.
+  paper evidence: No evidence of raw data in the paper; the file is consistent with supplemental figure/source data.
+  file evidence: Tabular TXT, figure-specific naming ('FigureS32'), 2-column plot structure, and condition label 'EtOH'. Directly replot-ready.
+  structure: 2 columns; condition label and intensity vs 2θ-style data
+  ambiguity: Low.
+- FigureS32_hexane.txt
+  original path: FigureS32_hexane.txt
+  classified as: type1
+  reasoning: This is a cleaned, figure-ready dataset for a solvent condition. It is not raw instrument output, so Type 1.
+  paper evidence: No paper evidence of raw data; the file fits the pattern of supplemental figure/source data.
+  file evidence: Tabular TXT with figure-specific naming ('FigureS32'), 2-column structure, and condition label 'Hexane'. Small, organized, and plot-ready.
+  structure: 2 columns; condition label and intensity vs 2θ-style data
+  ambiguity: Low.
+- FigureS34_asynthesised.txt
+  original path: FigureS34_asynthesised.txt
+  classified as: type1
+  reasoning: This is organized, figure-specific tabular data that can be plotted with minimal processing. It is not an instrument output or unprocessed raw file. Therefore it fits Type 1.
+  paper evidence: The paper does not provide a data availability statement or indicate raw instrument files; the available evidence is consistent with figure/source-style deposited data rather than raw data.
+  file evidence: Tabular TXT with 2 columns, figure-specific naming ('FigureS34'), and headers consistent with plotted XRD-style data ('MUV-21 as-synthesised', '2 q(deg.)', 'Intenisty (a. u.)'). Small/moderate size and directly replot-ready.
+  structure: 2 columns; X-axis likely 2θ (deg.), Y-axis intensity (a.u.)
+  ambiguity: Low; the only minor uncertainty is that the content appears to be digitized/cleaned plot data rather than a formal source-data CSV, but that still falls under Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

@@ -1,0 +1,107 @@
+{
+  "paper_id": "step1_0177",
+  "title": "Multidimensional XUV Photoemission Spectroscopy of 1T-TiTe2 for different crystal orientations",
+  "doi": "10.5281/zenodo.5541489",
+  "journal": "arXiv (Cornell University)",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3211464917",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_5281_zenodo_5541489",
+  "files_inspected": 2,
+  "file_types_found": [
+    "hdf5"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No evidence of cleaned, figure-ready source data files was found.",
+  "type2_summary": "Both files are Nexus/HDF5 measurement files with scan/orientation naming, consistent with raw or minimally processed experimental data.",
+  "type1_files": [],
+  "type2_files": [
+    "TiTe2_60deg.nxs",
+    "TiTe2_0deg.nxs"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The paper context lacks any source-data deposit or figure-specific tabular files. The .nxs extension and orientation-based filenames strongly support raw experimental data classification.",
+  "file_classifications": [
+    {
+      "relative_path": "TiTe2_60deg.nxs",
+      "filename": "TiTe2_60deg.nxs",
+      "type": "type2",
+      "paper_evidence": "The paper describes multidimensional XUV angle-resolved photoemission measurements on 1T-TiTe2 and provides no evidence of a cleaned, figure-ready source-data deposit or data availability statement. The available paper context does not indicate these are processed plotting tables.",
+      "file_evidence": "HDF5/Nexus-style file (.nxs), 8.0 MB, with a scan-like name tied to a measurement orientation (60deg). This is consistent with instrument output or raw experimental data rather than a replot-ready table. No tabular headers or figure-oriented structure were reported.",
+      "reasoning": "Paper evidence does not support Type 1 source data, while file format and naming strongly suggest experimental measurement output. The file is not directly replot-ready from the available inspection and likely requires domain-specific processing.",
+      "ambiguity": "Moderate: h5py was not installed, so internal datasets could not be inspected. However, the Nexus/HDF5 format and scan-oriented filename make Type 2 the conservative choice.",
+      "key_columns_or_structure": "HDF5/Nexus structure not inspectable from report; likely scan/measurement datasets"
+    },
+    {
+      "relative_path": "TiTe2_0deg.nxs",
+      "filename": "TiTe2_0deg.nxs",
+      "type": "type2",
+      "paper_evidence": "The paper context provides no indication of figure-specific source data or processed tables; no data availability statement or hosted source-data files were identified.",
+      "file_evidence": "HDF5/Nexus-style file (.nxs), 8.0 MB, with a scan-like name tied to a measurement orientation (0deg). This is characteristic of raw or minimally processed instrument data rather than cleaned plotting data.",
+      "reasoning": "Given the lack of paper evidence for processed source data and the raw/instrument-like file characteristics, this file is best classified as Type 2.",
+      "ambiguity": "Moderate: internal structure could not be inspected due to missing h5py, but available evidence still favors raw/unprocessed data.",
+      "key_columns_or_structure": "HDF5/Nexus structure not inspectable from report; likely scan/measurement datasets"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports multidimensional XUV angle-resolved photoemission measurements on 1T-TiTe2 and shows that orbital texture causes strong intrinsic linear dichroism in the photoelectron angular distributions.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports multidimensional XUV angle-resolved photoemission spectroscopy measurements on 1T-TiTe2, but no accessible dataset or supporting data files were identified.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or URLs were identified from the provided information.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or URLs were identified from the provided information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "TiTe2_60deg.nxs",
+      "extension": ".nxs",
+      "size_bytes": 8421960,
+      "size_human": "8.0 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zenodo",
+      "relative_path": "TiTe2_60deg.nxs"
+    },
+    {
+      "filename": "TiTe2_0deg.nxs",
+      "extension": ".nxs",
+      "size_bytes": 8421960,
+      "size_human": "8.0 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zenodo",
+      "relative_path": "TiTe2_0deg.nxs"
+    }
+  ]
+}

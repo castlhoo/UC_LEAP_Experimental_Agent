@@ -1,0 +1,2415 @@
+{
+  "paper_id": "step1_0276",
+  "title": "Moire synaptic transistor for homogeneous-architecture reservoir computing",
+  "doi": "10.1088/0256-307X/40/11/117201",
+  "journal": "arXiv preprint",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2310.11743v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 50,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1088_0256-307X_40_11_117201",
+  "files_inspected": 50,
+  "file_types_found": [
+    "excel",
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The dataset contains several figure-specific, tabular, replot-ready source-data files for Mackey-Glass forecasting/training, reservoir-output evolution, conductance changes, and experimental outputs. These are cleaned figure data rather than raw instrument dumps.",
+  "type2_summary": "No clear raw/unprocessed dataset files were identified. The PDFs are documentation, not data files.",
+  "type1_files": [
+    "Figure_5f_Mackey_Glass_training.txt",
+    "Figure_3d_Simulated_evolution_of_reservoir_outputs.txt",
+    "Figure_5g_Mackey_Glass_forecasting.txt",
+    "Figure_4e-h_Experimental_outputs_after_stimulation.txt",
+    "Figure_2c_Conductance_weigth_changes_under_pulse_stimulation.txt",
+    "Figure_3c_Experimental_evolution_of_reservoir_outputs.txt"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper appears to deposit figure/source data rather than raw experimental files. The PDFs should be treated as documentation. No evidence supports a Type 2 raw-data classification for any listed file.",
+  "file_classifications": [
+    {
+      "relative_path": "2408.01469v1.pdf",
+      "filename": "2408.01469v1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper metadata indicates no explicit data availability statement and no publisher-hosted supplemental files or external URLs were listed.",
+      "file_evidence": "PDF manuscript, 10.4 MB, source zenodo. This is the paper itself, not a dataset file.",
+      "reasoning": "This file is the publication PDF and does not contain dataset content to classify as raw or cleaned data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "2026_Nonlinear_spatiotemporal_dynamics_inmagnetic_dipole_systems_for_physical_reservoir_computing_Liangshu-NLD.pdf",
+      "filename": "2026_Nonlinear_spatiotemporal_dynamics_inmagnetic_dipole_systems_for_physical_reservoir_computing_Liangshu-NLD.pdf",
+      "type": "documentation",
+      "paper_evidence": "No explicit data availability statement or external data link was found in the paper metadata provided.",
+      "file_evidence": "PDF manuscript, 1.8 MB, source zenodo. This is another paper/documentation file rather than a dataset.",
+      "reasoning": "This is a PDF document and not a data file; it should not be assigned Type 1 or Type 2.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "Figure_5f_Mackey_Glass_training.txt",
+      "filename": "Figure_5f_Mackey_Glass_training.txt",
+      "type": "type1",
+      "paper_evidence": "The paper discusses figure-based reservoir-computing results; no raw-data statement is present, and the file naming matches figure/source data organization.",
+      "file_evidence": "Tabular text file with headers and numeric columns: Time step, Amplitude - target, Amplitude - trained data; 899 rows; directly loadable and plot-ready.",
+      "reasoning": "This is clearly figure-specific, cleaned output data for a training comparison plot. It is structured, small, and directly replot-ready, which matches Type 1.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Time step; Amplitude - target; Amplitude - trained data"
+    },
+    {
+      "relative_path": "Figure_3d_Simulated_evolution_of_reservoir_outputs.txt",
+      "filename": "Figure_3d_Simulated_evolution_of_reservoir_outputs.txt",
+      "type": "type1",
+      "paper_evidence": "The paper presents reservoir-output evolution figures; no indication that this file is raw instrument output.",
+      "file_evidence": "Small tabular text file with figure-oriented naming and headers for timeframe and outputs; appears to be organized source data for a figure.",
+      "reasoning": "Despite some header artifacts, the file is structured as figure data and is directly usable for plotting after minimal cleanup. This fits Type 1.",
+      "ambiguity": "low: the file contains some nonnumeric header-like rows, but the overall structure is still figure/source data.",
+      "key_columns_or_structure": "timeframe; output 1; output 2; output 3"
+    },
+    {
+      "relative_path": "Figure_5g_Mackey_Glass_forecasting.txt",
+      "filename": "Figure_5g_Mackey_Glass_forecasting.txt",
+      "type": "type1",
+      "paper_evidence": "The paper uses Mackey-Glass forecasting as a benchmark figure/result; no raw-data claim is present.",
+      "file_evidence": "Tabular text file with headers and numeric columns: Time step, Amplitude - ground truth, Amplitude - prediction; 1500 rows; directly plot-ready.",
+      "reasoning": "This is classic cleaned source data for a figure comparing prediction vs ground truth. It is replot-ready and therefore Type 1.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Time step; Amplitude - ground truth; Amplitude - prediction"
+    },
+    {
+      "relative_path": "Figure_4e-h_Experimental_outputs_after_stimulation.txt",
+      "filename": "Figure_4e-h_Experimental_outputs_after_stimulation.txt",
+      "type": "type1",
+      "paper_evidence": "The paper reports experimental output traces after stimulation as figure results; no explicit raw-data statement is given.",
+      "file_evidence": "Small tabular text file with figure-oriented naming and output-voltage columns; appears to be organized source data for plotting experimental traces.",
+      "reasoning": "The file is structured, figure-specific, and small enough to be cleaned/source data rather than raw instrument output. Type 1 is the conservative fit.",
+      "ambiguity": "low: some rows contain labels/units rather than pure numeric data, but the file is still figure-ready source data.",
+      "key_columns_or_structure": "Reservoir output; Output voltage; Output voltage.1"
+    },
+    {
+      "relative_path": "Figure_2c_Conductance_weigth_changes_under_pulse_stimulation.txt",
+      "filename": "Figure_2c_Conductance_weigth_changes_under_pulse_stimulation.txt",
+      "type": "type1",
+      "paper_evidence": "The paper includes conductance/weight-change results under pulse stimulation as a figure-level analysis; no raw-data indication is present.",
+      "file_evidence": "Very small tabular text file with figure-specific naming and percentage delta_W columns; structured as source data for a plot.",
+      "reasoning": "This is clearly cleaned figure data, not raw measurement output. It is directly replot-ready after trivial parsing, so Type 1.",
+      "ambiguity": "low: the file has header-like rows and units, but the content is still organized figure data.",
+      "key_columns_or_structure": "delta_W; delta_W.1; delta_W.2"
+    },
+    {
+      "relative_path": "Figure_3c_Experimental_evolution_of_reservoir_outputs.txt",
+      "filename": "Figure_3c_Experimental_evolution_of_reservoir_outputs.txt",
+      "type": "type1",
+      "paper_evidence": "The paper presents experimental reservoir-output evolution as a figure result; no explicit raw-data statement is present.",
+      "file_evidence": "Small tabular text file with figure-oriented naming and output-voltage columns; structured as source data for a figure.",
+      "reasoning": "This is figure-specific, organized data that can be plotted with minimal processing. It fits Type 1.",
+      "ambiguity": "low: some cells are header/unit placeholders rather than numeric values, but the file is still source-data style.",
+      "key_columns_or_structure": "timeframe; Output voltage; Output voltage.1"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper demonstrates a moiré-based synaptic transistor in an h-BN/bilayer graphene/h-BN heterostructure and uses its tunable short- and long-term memory dynamics to implement homogeneous-architecture reservoir computing.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The available information does not identify any downloadable dataset, source data, or supplementary files. The paper likely contains experimental and reservoir-computing results, but no accessible data location is specified in the provided materials.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were listed.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were listed.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "2408.01469v1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 10904284,
+      "size_human": "10.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "2408.01469v1.pdf"
+    },
+    {
+      "filename": "2026_Nonlinear_spatiotemporal_dynamics_inmagnetic_dipole_systems_for_physical_reservoir_computing_Liangshu-NLD.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1861448,
+      "size_human": "1.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "2026_Nonlinear_spatiotemporal_dynamics_inmagnetic_dipole_systems_for_physical_reservoir_computing_Liangshu-NLD.pdf"
+    },
+    {
+      "filename": "Figure_5f_Mackey_Glass_training.txt",
+      "extension": ".txt",
+      "size_bytes": 35781,
+      "size_human": "34.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time step",
+        "Amplitude - target",
+        "Amplitude - trained data"
+      ],
+      "column_count": 3,
+      "row_count": 899,
+      "dtypes": {
+        "Time step": "int64",
+        "Amplitude - target": "float64",
+        "Amplitude - trained data": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_5f_Mackey_Glass_training.txt"
+    },
+    {
+      "filename": "Figure_3d_Simulated_evolution_of_reservoir_outputs.txt",
+      "extension": ".txt",
+      "size_bytes": 362,
+      "size_human": "362.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "timeframe",
+        "output 1",
+        "output 2",
+        "output 3"
+      ],
+      "column_count": 4,
+      "row_count": 6,
+      "dtypes": {
+        "timeframe": "float64",
+        "output 1": "object",
+        "output 2": "object",
+        "output 3": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_3d_Simulated_evolution_of_reservoir_outputs.txt"
+    },
+    {
+      "filename": "Figure_5g_Mackey_Glass_forecasting.txt",
+      "extension": ".txt",
+      "size_bytes": 60784,
+      "size_human": "59.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time step",
+        "Amplitude - ground truth",
+        "Amplitude - prediction"
+      ],
+      "column_count": 3,
+      "row_count": 1500,
+      "dtypes": {
+        "Time step": "int64",
+        "Amplitude - ground truth": "float64",
+        "Amplitude - prediction": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_5g_Mackey_Glass_forecasting.txt"
+    },
+    {
+      "filename": "Figure_4e-h_Experimental_outputs_after_stimulation.txt",
+      "extension": ".txt",
+      "size_bytes": 732,
+      "size_human": "732.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "Reservoir output",
+        "Output voltage",
+        "Output voltage.1"
+      ],
+      "column_count": 4,
+      "row_count": 21,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "Reservoir output": "object",
+        "Output voltage": "object",
+        "Output voltage.1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4e-h_Experimental_outputs_after_stimulation.txt"
+    },
+    {
+      "filename": "Figure_2c_Conductance_weigth_changes_under_pulse_stimulation.txt",
+      "extension": ".txt",
+      "size_bytes": 642,
+      "size_human": "642.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "delta_W",
+        "delta_W.1",
+        "delta_W.2"
+      ],
+      "column_count": 4,
+      "row_count": 16,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "delta_W": "object",
+        "delta_W.1": "object",
+        "delta_W.2": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_2c_Conductance_weigth_changes_under_pulse_stimulation.txt"
+    },
+    {
+      "filename": "Figure_3c_Experimental_evolution_of_reservoir_outputs.txt",
+      "extension": ".txt",
+      "size_bytes": 896,
+      "size_human": "896.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "timeframe",
+        "Output voltage",
+        "Output voltage.1"
+      ],
+      "column_count": 4,
+      "row_count": 27,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "timeframe": "object",
+        "Output voltage": "object",
+        "Output voltage.1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_3c_Experimental_evolution_of_reservoir_outputs.txt"
+    },
+    {
+      "filename": "Figure_4i-h_Simulated_outputs_after_stimulation.txt",
+      "extension": ".txt",
+      "size_bytes": 389,
+      "size_human": "389.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Reservoir output",
+        "Output voltage",
+        "Output voltage.1",
+        "Output voltage.2",
+        "Output voltage.3"
+      ],
+      "column_count": 5,
+      "row_count": 5,
+      "dtypes": {
+        "Reservoir output": "object",
+        "Output voltage": "object",
+        "Output voltage.1": "object",
+        "Output voltage.2": "object",
+        "Output voltage.3": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4i-h_Simulated_outputs_after_stimulation.txt"
+    },
+    {
+      "filename": "Figure_4q_Experimental_synaptic_weights.txt",
+      "extension": ".txt",
+      "size_bytes": 162,
+      "size_human": "162.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "--",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "column_count": 5,
+      "row_count": 4,
+      "dtypes": {
+        "--": "int64",
+        "1": "float64",
+        "2": "float64",
+        "3": "float64",
+        "4": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4q_Experimental_synaptic_weights.txt"
+    },
+    {
+      "filename": "Figure_4r_Programmed_and_target_weigths_comparison.txt",
+      "extension": ".txt",
+      "size_bytes": 779,
+      "size_human": "779.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "W_target_pos",
+        "W_programmed"
+      ],
+      "column_count": 2,
+      "row_count": 33,
+      "dtypes": {
+        "W_target_pos": "object",
+        "W_programmed": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4r_Programmed_and_target_weigths_comparison.txt"
+    },
+    {
+      "filename": "Figure_2d_Paired_pulse_facilitation.txt",
+      "extension": ".txt",
+      "size_bytes": 1024,
+      "size_human": "1.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Pulse number",
+        "Conductance",
+        "Conductance.1",
+        "Unnamed: 3",
+        "Unnamed: 4",
+        "Unnamed: 5",
+        "Unnamed: 6"
+      ],
+      "column_count": 7,
+      "row_count": 22,
+      "dtypes": {
+        "Pulse number": "float64",
+        "Conductance": "object",
+        "Conductance.1": "object",
+        "Unnamed: 3": "float64",
+        "Unnamed: 4": "float64",
+        "Unnamed: 5": "float64",
+        "Unnamed: 6": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_2d_Paired_pulse_facilitation.txt"
+    },
+    {
+      "filename": "Figure_4s_Experimental_and_simulated_currents_comparison.txt",
+      "extension": ".txt",
+      "size_bytes": 3372,
+      "size_human": "3.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "I_simulated",
+        "I_measured"
+      ],
+      "column_count": 2,
+      "row_count": 81,
+      "dtypes": {
+        "I_simulated": "object",
+        "I_measured": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4s_Experimental_and_simulated_currents_comparison.txt"
+    },
+    {
+      "filename": "Figure_2a_Experimental_and_simulated_potentiation_and_spontaneous_relaxation.txt",
+      "extension": ".txt",
+      "size_bytes": 217316,
+      "size_human": "212.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "time_exp",
+        "V_exp",
+        "G_exp",
+        "time_model",
+        "V_model",
+        "G_model",
+        "Unnamed: 6"
+      ],
+      "column_count": 7,
+      "row_count": 3048,
+      "dtypes": {
+        "time_exp": "object",
+        "V_exp": "object",
+        "G_exp": "object",
+        "time_model": "object",
+        "V_model": "object",
+        "G_model": "object",
+        "Unnamed: 6": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure_2a_Experimental_and_simulated_potentiation_and_spontaneous_relaxation.txt"
+    },
+    {
+      "filename": "Figure_4t_Experimental_confusion_matrix.txt",
+      "extension": ".txt",
+      "size_bytes": 138,
+      "size_human": "138.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "--",
+        "P1 - diag 1",
+        "P2 - diag 2",
+        "P3 - horiz",
+        "P4 - vert"
+      ],
+      "column_count": 5,
+      "row_count": 4,
+      "dtypes": {
+        "--": "object",
+        "P1 - diag 1": "float64",
+        "P2 - diag 2": "float64",
+        "P3 - horiz": "int64",
+        "P4 - vert": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_4t_Experimental_confusion_matrix.txt"
+    },
+    {
+      "filename": "Figure_5d_MNIST_Example_of_reservoir_outputs.txt",
+      "extension": ".txt",
+      "size_bytes": 4786,
+      "size_human": "4.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Reservoir output #",
+        "Output voltage"
+      ],
+      "column_count": 2,
+      "row_count": 196,
+      "dtypes": {
+        "Reservoir output #": "float64",
+        "Output voltage": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_5d_MNIST_Example_of_reservoir_outputs.txt"
+    },
+    {
+      "filename": "Figure_5e_MNIST_Confusion_matrix.txt",
+      "extension": ".txt",
+      "size_bytes": 1899,
+      "size_human": "1.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "column_count": 11,
+      "row_count": 10,
+      "dtypes": {
+        "Unnamed: 0": "int64",
+        "0": "float64",
+        "1": "float64",
+        "2": "float64",
+        "3": "float64",
+        "4": "float64",
+        "5": "float64",
+        "6": "float64",
+        "7": "float64",
+        "8": "float64",
+        "9": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Figure_5e_MNIST_Confusion_matrix.txt"
+    },
+    {
+      "filename": "Fig._S4-device14.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 16791,
+      "size_human": "16.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "CollectorV(1)",
+            "EmitterI(1)",
+            "CollectorI(1)",
+            "CollectorV(2)",
+            "EmitterI(2)",
+            "CollectorI(2)",
+            "CollectorV(3)",
+            "EmitterI(3)",
+            "CollectorI(3)",
+            "CollectorV(4)",
+            "EmitterI(4)",
+            "CollectorI(4)",
+            "CollectorV(5)",
+            "EmitterI(5)",
+            "CollectorI(5)",
+            "CollectorV(6)",
+            "EmitterI(6)",
+            "CollectorI(6)",
+            "CollectorV(7)",
+            "EmitterI(7)",
+            "CollectorI(7)",
+            "CollectorV(8)",
+            "EmitterI(8)",
+            "CollectorI(8)",
+            "CollectorV(9)",
+            "EmitterI(9)",
+            "CollectorI(9)",
+            "CollectorV(10)",
+            "EmitterI(10)",
+            "CollectorI(10)"
+          ],
+          "named_columns": [
+            "CollectorV(1)",
+            "EmitterI(1)",
+            "CollectorI(1)",
+            "CollectorV(2)",
+            "EmitterI(2)",
+            "CollectorI(2)",
+            "CollectorV(3)",
+            "EmitterI(3)",
+            "CollectorI(3)",
+            "CollectorV(4)",
+            "EmitterI(4)",
+            "CollectorI(4)",
+            "CollectorV(5)",
+            "EmitterI(5)",
+            "CollectorI(5)",
+            "CollectorV(6)",
+            "EmitterI(6)",
+            "CollectorI(6)",
+            "CollectorV(7)",
+            "EmitterI(7)",
+            "CollectorI(7)",
+            "CollectorV(8)",
+            "EmitterI(8)",
+            "CollectorI(8)",
+            "CollectorV(9)",
+            "EmitterI(9)",
+            "CollectorI(9)",
+            "CollectorV(10)",
+            "EmitterI(10)",
+            "CollectorI(10)"
+          ],
+          "column_count": 33,
+          "row_count": 31,
+          "dtypes": {
+            "CollectorV(1)": "float64",
+            "EmitterI(1)": "int64",
+            "CollectorI(1)": "float64",
+            "CollectorV(2)": "float64",
+            "EmitterI(2)": "float64",
+            "CollectorI(2)": "float64",
+            "CollectorV(3)": "float64",
+            "EmitterI(3)": "float64",
+            "CollectorI(3)": "float64",
+            "CollectorV(4)": "float64",
+            "EmitterI(4)": "float64",
+            "CollectorI(4)": "float64",
+            "CollectorV(5)": "float64",
+            "EmitterI(5)": "float64",
+            "CollectorI(5)": "float64",
+            "CollectorV(6)": "float64",
+            "EmitterI(6)": "float64",
+            "CollectorI(6)": "float64",
+            "CollectorV(7)": "float64",
+            "EmitterI(7)": "float64",
+            "CollectorI(7)": "float64",
+            "CollectorV(8)": "float64",
+            "EmitterI(8)": "float64",
+            "CollectorI(8)": "float64",
+            "CollectorV(9)": "float64",
+            "EmitterI(9)": "float64",
+            "CollectorI(9)": "float64",
+            "CollectorV(10)": "float64",
+            "EmitterI(10)": "float64",
+            "CollectorI(10)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S4-device14.xlsx"
+    },
+    {
+      "filename": "Fig._S1H.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 25672,
+      "size_human": "25.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            100.0,
+            1041.985
+          ],
+          "named_columns": [
+            100.0,
+            1041.985
+          ],
+          "column_count": 2,
+          "row_count": 790,
+          "dtypes": {
+            "100.0": "float64",
+            "1041.985": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1H.xlsx"
+    },
+    {
+      "filename": "Fig._S1G.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 26428,
+      "size_human": "25.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            100.0,
+            927.29962962963
+          ],
+          "named_columns": [
+            100.0,
+            927.29962962963
+          ],
+          "column_count": 2,
+          "row_count": 790,
+          "dtypes": {
+            "100.0": "float64",
+            "927.29962962963": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1G.xlsx"
+    },
+    {
+      "filename": "Fig._S1C-inset.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 14498,
+      "size_human": "14.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Location",
+            "KPFM potential"
+          ],
+          "named_columns": [
+            "Location",
+            "KPFM potential"
+          ],
+          "column_count": 2,
+          "row_count": 255,
+          "dtypes": {
+            "Location": "float64",
+            "KPFM potential": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1C-inset.xlsx"
+    },
+    {
+      "filename": "Fig._S1B-inset.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11758,
+      "size_human": "11.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Location",
+            "Phase"
+          ],
+          "named_columns": [
+            "Location",
+            "Phase"
+          ],
+          "column_count": 2,
+          "row_count": 128,
+          "dtypes": {
+            "Location": "float64",
+            "Phase": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1B-inset.xlsx"
+    },
+    {
+      "filename": "Fig._S1I.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 226396,
+      "size_human": "221.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Undoped",
+            "Unnamed: 1",
+            "Pu",
+            "Unnamed: 3",
+            "Pd",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Undoped",
+            "Pu",
+            "Pd"
+          ],
+          "column_count": 6,
+          "row_count": 3926,
+          "dtypes": {
+            "Undoped": "object",
+            "Unnamed: 1": "object",
+            "Pu": "object",
+            "Unnamed: 3": "object",
+            "Pd": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1I.xlsx"
+    },
+    {
+      "filename": "Fig._S1J-S1K.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 31351,
+      "size_human": "30.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            300.0,
+            0.4314
+          ],
+          "named_columns": [
+            300.0,
+            0.4314
+          ],
+          "column_count": 2,
+          "row_count": 1199,
+          "dtypes": {
+            "300.0": "int64",
+            "0.4314": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1J-S1K.xlsx"
+    },
+    {
+      "filename": "Fig._S12.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 14665,
+      "size_human": "14.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "DrainV",
+            "DrainI",
+            "Unnamed: 2",
+            "DrainV.1",
+            "DrainI.1"
+          ],
+          "named_columns": [
+            "DrainV",
+            "DrainI",
+            "DrainV.1",
+            "DrainI.1"
+          ],
+          "column_count": 5,
+          "row_count": 101,
+          "dtypes": {
+            "DrainV": "float64",
+            "DrainI": "float64",
+            "Unnamed: 2": "float64",
+            "DrainV.1": "float64",
+            "DrainI.1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S12.xlsx"
+    },
+    {
+      "filename": "Fig._S11K-S11L.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 13141,
+      "size_human": "12.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Time",
+            "InputV1",
+            "InputV2",
+            "OutputV"
+          ],
+          "named_columns": [
+            "Time",
+            "InputV1",
+            "InputV2",
+            "OutputV"
+          ],
+          "column_count": 4,
+          "row_count": 200,
+          "dtypes": {
+            "Time": "float64",
+            "InputV1": "int64",
+            "InputV2": "int64",
+            "OutputV": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S11K-S11L.xlsx"
+    },
+    {
+      "filename": "Fig._S11G-S11H.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 13222,
+      "size_human": "12.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Time",
+            "InputV1",
+            "InputV2",
+            "OutputV"
+          ],
+          "named_columns": [
+            "Time",
+            "InputV1",
+            "InputV2",
+            "OutputV"
+          ],
+          "column_count": 4,
+          "row_count": 200,
+          "dtypes": {
+            "Time": "float64",
+            "InputV1": "int64",
+            "InputV2": "int64",
+            "OutputV": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S11G-S11H.xlsx"
+    },
+    {
+      "filename": "Fig._S1L.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 24786,
+      "size_human": "24.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Undoped",
+            "Unnamed: 1",
+            "Pu",
+            "Unnamed: 3",
+            "Pd",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Undoped",
+            "Pu",
+            "Pd"
+          ],
+          "column_count": 6,
+          "row_count": 302,
+          "dtypes": {
+            "Undoped": "object",
+            "Unnamed: 1": "object",
+            "Pu": "object",
+            "Unnamed: 3": "object",
+            "Pd": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S1L.xlsx"
+    },
+    {
+      "filename": "Fig._S11C-S11D.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 12099,
+      "size_human": "11.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Time",
+            "InputV",
+            "OutputV"
+          ],
+          "named_columns": [
+            "Time",
+            "InputV",
+            "OutputV"
+          ],
+          "column_count": 3,
+          "row_count": 200,
+          "dtypes": {
+            "Time": "float64",
+            "InputV": "int64",
+            "OutputV": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S11C-S11D.xlsx"
+    },
+    {
+      "filename": "Fig._S10B.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11878,
+      "size_human": "11.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "LRS",
+            "Unnamed: 1",
+            "HRS",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "LRS",
+            "HRS"
+          ],
+          "column_count": 4,
+          "row_count": 52,
+          "dtypes": {
+            "LRS": "object",
+            "Unnamed: 1": "object",
+            "HRS": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S10B.xlsx"
+    },
+    {
+      "filename": "Fig._S10A.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11891,
+      "size_human": "11.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "LRS",
+            "Unnamed: 1",
+            "HRS",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "LRS",
+            "HRS"
+          ],
+          "column_count": 4,
+          "row_count": 52,
+          "dtypes": {
+            "LRS": "object",
+            "Unnamed: 1": "object",
+            "HRS": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S10A.xlsx"
+    },
+    {
+      "filename": "Fig._4I.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 12396,
+      "size_human": "12.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "EmitterV",
+            "EmitterI",
+            "Matched conductance",
+            "EmitterV.1",
+            "EmitterI.1",
+            "Mismatched conductance"
+          ],
+          "named_columns": [
+            "EmitterV",
+            "EmitterI",
+            "Matched conductance",
+            "EmitterV.1",
+            "EmitterI.1",
+            "Mismatched conductance"
+          ],
+          "column_count": 6,
+          "row_count": 51,
+          "dtypes": {
+            "EmitterV": "int64",
+            "EmitterI": "float64",
+            "Matched conductance": "float64",
+            "EmitterV.1": "int64",
+            "EmitterI.1": "float64",
+            "Mismatched conductance": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._4I.xlsx"
+    },
+    {
+      "filename": "Fig._4H.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 12381,
+      "size_human": "12.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "EmitterV",
+            "EmitterI",
+            "Matched conductance",
+            "EmitterV.1",
+            "EmitterI.1",
+            "Mismatched conductance"
+          ],
+          "named_columns": [
+            "EmitterV",
+            "EmitterI",
+            "Matched conductance",
+            "EmitterV.1",
+            "EmitterI.1",
+            "Mismatched conductance"
+          ],
+          "column_count": 6,
+          "row_count": 51,
+          "dtypes": {
+            "EmitterV": "int64",
+            "EmitterI": "float64",
+            "Matched conductance": "float64",
+            "EmitterV.1": "int64",
+            "EmitterI.1": "float64",
+            "Mismatched conductance": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._4H.xlsx"
+    },
+    {
+      "filename": "Fig._S2D.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11747,
+      "size_human": "11.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "PN junction",
+            "Unnamed: 1",
+            "NP junction",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "PN junction",
+            "NP junction"
+          ],
+          "column_count": 4,
+          "row_count": 102,
+          "dtypes": {
+            "PN junction": "object",
+            "Unnamed: 1": "object",
+            "NP junction": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2D.xlsx"
+    },
+    {
+      "filename": "Fig._S2E.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 28468,
+      "size_human": "27.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Device 1",
+            "Unnamed: 1",
+            "Device 2",
+            "Unnamed: 3",
+            "Device 3",
+            "Unnamed: 5",
+            "Device 4",
+            "Unnamed: 7",
+            "Device 5",
+            "Unnamed: 9",
+            "Device 6",
+            "Unnamed: 11",
+            "Device 7",
+            "Unnamed: 13",
+            "Device 8",
+            "Unnamed: 15",
+            "Device 9",
+            "Unnamed: 17",
+            "Device 10",
+            "Unnamed: 19",
+            "Device 11",
+            "Unnamed: 21",
+            "Device 12",
+            "Unnamed: 23",
+            "Device 13",
+            "Unnamed: 25",
+            "Device 14",
+            "Unnamed: 27",
+            "Device 15",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Device 1",
+            "Device 2",
+            "Device 3",
+            "Device 4",
+            "Device 5",
+            "Device 6",
+            "Device 7",
+            "Device 8",
+            "Device 9",
+            "Device 10",
+            "Device 11",
+            "Device 12",
+            "Device 13",
+            "Device 14",
+            "Device 15"
+          ],
+          "column_count": 40,
+          "row_count": 102,
+          "dtypes": {
+            "Device 1": "object",
+            "Unnamed: 1": "object",
+            "Device 2": "object",
+            "Unnamed: 3": "object",
+            "Device 3": "object",
+            "Unnamed: 5": "object",
+            "Device 4": "object",
+            "Unnamed: 7": "object",
+            "Device 5": "object",
+            "Unnamed: 9": "object",
+            "Device 6": "object",
+            "Unnamed: 11": "object",
+            "Device 7": "object",
+            "Unnamed: 13": "object",
+            "Device 8": "object",
+            "Unnamed: 15": "object",
+            "Device 9": "object",
+            "Unnamed: 17": "object",
+            "Device 10": "object",
+            "Unnamed: 19": "object",
+            "Device 11": "object",
+            "Unnamed: 21": "object",
+            "Device 12": "object",
+            "Unnamed: 23": "object",
+            "Device 13": "object",
+            "Unnamed: 25": "object",
+            "Device 14": "object",
+            "Unnamed: 27": "object",
+            "Device 15": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2E.xlsx"
+    },
+    {
+      "filename": "Fig._S2F.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 25705,
+      "size_human": "25.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Device 1",
+            "Unnamed: 1",
+            "Device 2",
+            "Unnamed: 3",
+            "Device 3",
+            "Unnamed: 5",
+            "Device 4",
+            "Unnamed: 7",
+            "Device 5",
+            "Unnamed: 9",
+            "Device 6",
+            "Unnamed: 11",
+            "Device 7",
+            "Unnamed: 13",
+            "Device 8",
+            "Unnamed: 15",
+            "Device 9",
+            "Unnamed: 17",
+            "Device 10",
+            "Unnamed: 19",
+            "Device 11",
+            "Unnamed: 21",
+            "Device 12",
+            "Unnamed: 23",
+            "Device 13",
+            "Unnamed: 25",
+            "Device 14",
+            "Unnamed: 27",
+            "Device 15",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Device 1",
+            "Device 2",
+            "Device 3",
+            "Device 4",
+            "Device 5",
+            "Device 6",
+            "Device 7",
+            "Device 8",
+            "Device 9",
+            "Device 10",
+            "Device 11",
+            "Device 12",
+            "Device 13",
+            "Device 14",
+            "Device 15"
+          ],
+          "column_count": 40,
+          "row_count": 52,
+          "dtypes": {
+            "Device 1": "object",
+            "Unnamed: 1": "object",
+            "Device 2": "object",
+            "Unnamed: 3": "object",
+            "Device 3": "object",
+            "Unnamed: 5": "object",
+            "Device 4": "object",
+            "Unnamed: 7": "object",
+            "Device 5": "object",
+            "Unnamed: 9": "object",
+            "Device 6": "object",
+            "Unnamed: 11": "object",
+            "Device 7": "object",
+            "Unnamed: 13": "object",
+            "Device 8": "object",
+            "Unnamed: 15": "object",
+            "Device 9": "object",
+            "Unnamed: 17": "object",
+            "Device 10": "object",
+            "Unnamed: 19": "object",
+            "Device 11": "object",
+            "Unnamed: 21": "object",
+            "Device 12": "object",
+            "Unnamed: 23": "object",
+            "Device 13": "object",
+            "Unnamed: 25": "object",
+            "Device 14": "object",
+            "Unnamed: 27": "object",
+            "Device 15": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2F.xlsx"
+    },
+    {
+      "filename": "Fig._S2G.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 26723,
+      "size_human": "26.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Device 1",
+            "Unnamed: 1",
+            "Device 2",
+            "Unnamed: 3",
+            "Device 3",
+            "Unnamed: 5",
+            "Device 4",
+            "Unnamed: 7",
+            "Device 5",
+            "Unnamed: 9",
+            "Device 6",
+            "Unnamed: 11",
+            "Device 7",
+            "Unnamed: 13",
+            "Device 8",
+            "Unnamed: 15",
+            "Device 9",
+            "Unnamed: 17",
+            "Device 10",
+            "Unnamed: 19",
+            "Device 11",
+            "Unnamed: 21",
+            "Device 12",
+            "Unnamed: 23",
+            "Device 13",
+            "Unnamed: 25",
+            "Device 14",
+            "Unnamed: 27",
+            "Device 15",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Device 1",
+            "Device 2",
+            "Device 3",
+            "Device 4",
+            "Device 5",
+            "Device 6",
+            "Device 7",
+            "Device 8",
+            "Device 9",
+            "Device 10",
+            "Device 11",
+            "Device 12",
+            "Device 13",
+            "Device 14",
+            "Device 15"
+          ],
+          "column_count": 40,
+          "row_count": 52,
+          "dtypes": {
+            "Device 1": "object",
+            "Unnamed: 1": "object",
+            "Device 2": "object",
+            "Unnamed: 3": "object",
+            "Device 3": "object",
+            "Unnamed: 5": "object",
+            "Device 4": "object",
+            "Unnamed: 7": "object",
+            "Device 5": "object",
+            "Unnamed: 9": "object",
+            "Device 6": "object",
+            "Unnamed: 11": "object",
+            "Device 7": "object",
+            "Unnamed: 13": "object",
+            "Device 8": "object",
+            "Unnamed: 15": "object",
+            "Device 9": "object",
+            "Unnamed: 17": "object",
+            "Device 10": "object",
+            "Unnamed: 19": "object",
+            "Device 11": "object",
+            "Unnamed: 21": "object",
+            "Device 12": "object",
+            "Unnamed: 23": "object",
+            "Device 13": "object",
+            "Unnamed: 25": "object",
+            "Device 14": "object",
+            "Unnamed: 27": "object",
+            "Device 15": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2G.xlsx"
+    },
+    {
+      "filename": "Fig._S2H.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27060,
+      "size_human": "26.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Device 1",
+            "Unnamed: 1",
+            "Device 2",
+            "Unnamed: 3",
+            "Device 3",
+            "Unnamed: 5",
+            "Device 4",
+            "Unnamed: 7",
+            "Device 5",
+            "Unnamed: 9",
+            "Device 6",
+            "Unnamed: 11",
+            "Device 7",
+            "Unnamed: 13",
+            "Device 8",
+            "Unnamed: 15",
+            "Device 9",
+            "Unnamed: 17",
+            "Device 10",
+            "Unnamed: 19",
+            "Device 11",
+            "Unnamed: 21",
+            "Device 12",
+            "Unnamed: 23",
+            "Device 13",
+            "Unnamed: 25",
+            "Device 14",
+            "Unnamed: 27",
+            "Device 15",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Device 1",
+            "Device 2",
+            "Device 3",
+            "Device 4",
+            "Device 5",
+            "Device 6",
+            "Device 7",
+            "Device 8",
+            "Device 9",
+            "Device 10",
+            "Device 11",
+            "Device 12",
+            "Device 13",
+            "Device 14",
+            "Device 15"
+          ],
+          "column_count": 40,
+          "row_count": 52,
+          "dtypes": {
+            "Device 1": "object",
+            "Unnamed: 1": "object",
+            "Device 2": "object",
+            "Unnamed: 3": "object",
+            "Device 3": "object",
+            "Unnamed: 5": "object",
+            "Device 4": "object",
+            "Unnamed: 7": "object",
+            "Device 5": "object",
+            "Unnamed: 9": "object",
+            "Device 6": "object",
+            "Unnamed: 11": "object",
+            "Device 7": "object",
+            "Unnamed: 13": "object",
+            "Device 8": "object",
+            "Unnamed: 15": "object",
+            "Device 9": "object",
+            "Unnamed: 17": "object",
+            "Device 10": "object",
+            "Unnamed: 19": "object",
+            "Device 11": "object",
+            "Unnamed: 21": "object",
+            "Device 12": "object",
+            "Unnamed: 23": "object",
+            "Device 13": "object",
+            "Unnamed: 25": "object",
+            "Device 14": "object",
+            "Unnamed: 27": "object",
+            "Device 15": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2H.xlsx"
+    },
+    {
+      "filename": "Fig._S2K.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 12251,
+      "size_human": "12.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "DrainV",
+            "DrainI"
+          ],
+          "named_columns": [
+            "DrainV",
+            "DrainI"
+          ],
+          "column_count": 2,
+          "row_count": 141,
+          "dtypes": {
+            "DrainV": "float64",
+            "DrainI": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2K.xlsx"
+    },
+    {
+      "filename": "Fig._S2L.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 192835,
+      "size_human": "188.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "Signal1",
+            "Unnamed: 2",
+            "Signal2",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Signal1",
+            "Signal2"
+          ],
+          "column_count": 5,
+          "row_count": 3002,
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Signal1": "object",
+            "Unnamed: 2": "object",
+            "Signal2": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2L.xlsx"
+    },
+    {
+      "filename": "Fig._S2M.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 190116,
+      "size_human": "185.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "Signal1",
+            "Unnamed: 2",
+            "Signal2",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Signal1",
+            "Signal2"
+          ],
+          "column_count": 5,
+          "row_count": 3002,
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Signal1": "object",
+            "Unnamed: 2": "object",
+            "Signal2": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2M.xlsx"
+    },
+    {
+      "filename": "Fig._S2N.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 113602,
+      "size_human": "110.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Unnamed: 0",
+            "DrainV",
+            "DrainI"
+          ],
+          "named_columns": [
+            "DrainV",
+            "DrainI"
+          ],
+          "column_count": 3,
+          "row_count": 3001,
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "DrainV": "float64",
+            "DrainI": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2N.xlsx"
+    },
+    {
+      "filename": "Fig._3I-3J.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10247,
+      "size_human": "10.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Epoch",
+            "Simulation",
+            "Unnamed: 2",
+            "Experiment",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Epoch",
+            "Simulation",
+            "Experiment"
+          ],
+          "column_count": 5,
+          "row_count": 31,
+          "dtypes": {
+            "Epoch": "float64",
+            "Simulation": "object",
+            "Unnamed: 2": "object",
+            "Experiment": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3I-3J.xlsx"
+    },
+    {
+      "filename": "Fig._3H.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10674,
+      "size_human": "10.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Epoch",
+            "Simulation",
+            "Unnamed: 2",
+            "Experiment",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Epoch",
+            "Simulation",
+            "Experiment"
+          ],
+          "column_count": 5,
+          "row_count": 31,
+          "dtypes": {
+            "Epoch": "float64",
+            "Simulation": "object",
+            "Unnamed: 2": "object",
+            "Experiment": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3H.xlsx"
+    },
+    {
+      "filename": "Fig._3G.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10728,
+      "size_human": "10.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            1,
+            0,
+            "1.1",
+            "0.1",
+            "1.2",
+            "0.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.6",
+            "1.7",
+            "1.8",
+            "0.3",
+            "1.9",
+            "1.10",
+            "1.11",
+            "1.12",
+            "0.4",
+            "1.13",
+            "0.5",
+            "1.14",
+            "1.15",
+            "0.6",
+            "1.16",
+            "1.17",
+            "1.18",
+            "1.19",
+            "1.20",
+            "1.21",
+            "1.22"
+          ],
+          "named_columns": [
+            1,
+            0,
+            "1.1",
+            "0.1",
+            "1.2",
+            "0.2",
+            "1.3",
+            "1.4",
+            "1.5",
+            "1.6",
+            "1.7",
+            "1.8",
+            "0.3",
+            "1.9",
+            "1.10",
+            "1.11",
+            "1.12",
+            "0.4",
+            "1.13",
+            "0.5",
+            "1.14",
+            "1.15",
+            "0.6",
+            "1.16",
+            "1.17",
+            "1.18",
+            "1.19",
+            "1.20",
+            "1.21",
+            "1.22"
+          ],
+          "column_count": 30,
+          "row_count": 29,
+          "dtypes": {
+            "1": "int64",
+            "0": "int64",
+            "1.1": "int64",
+            "0.1": "int64",
+            "1.2": "int64",
+            "0.2": "int64",
+            "1.3": "int64",
+            "1.4": "int64",
+            "1.5": "int64",
+            "1.6": "int64",
+            "1.7": "int64",
+            "1.8": "int64",
+            "0.3": "int64",
+            "1.9": "int64",
+            "1.10": "int64",
+            "1.11": "int64",
+            "1.12": "int64",
+            "0.4": "int64",
+            "1.13": "int64",
+            "0.5": "int64",
+            "1.14": "int64",
+            "1.15": "int64",
+            "0.6": "int64",
+            "1.16": "int64",
+            "1.17": "int64",
+            "1.18": "int64",
+            "1.19": "int64",
+            "1.20": "int64",
+            "1.21": "int64",
+            "1.22": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3G.xlsx"
+    },
+    {
+      "filename": "Fig._3F.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10703,
+      "size_human": "10.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            1,
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            0,
+            "1.5",
+            "1.6",
+            "1.7",
+            "1.8",
+            "1.9",
+            "1.10",
+            "0.1",
+            "1.11",
+            "1.12",
+            "1.13",
+            "1.14",
+            "1.15",
+            "1.16",
+            "0.2",
+            "1.17",
+            "1.18",
+            "0.3",
+            "1.19",
+            "1.20",
+            "1.21",
+            "1.22",
+            "1.23",
+            "1.24",
+            "1.25"
+          ],
+          "named_columns": [
+            1,
+            "1.1",
+            "1.2",
+            "1.3",
+            "1.4",
+            0,
+            "1.5",
+            "1.6",
+            "1.7",
+            "1.8",
+            "1.9",
+            "1.10",
+            "0.1",
+            "1.11",
+            "1.12",
+            "1.13",
+            "1.14",
+            "1.15",
+            "1.16",
+            "0.2",
+            "1.17",
+            "1.18",
+            "0.3",
+            "1.19",
+            "1.20",
+            "1.21",
+            "1.22",
+            "1.23",
+            "1.24",
+            "1.25"
+          ],
+          "column_count": 30,
+          "row_count": 29,
+          "dtypes": {
+            "1": "int64",
+            "1.1": "int64",
+            "1.2": "int64",
+            "1.3": "int64",
+            "1.4": "int64",
+            "0": "int64",
+            "1.5": "int64",
+            "1.6": "int64",
+            "1.7": "int64",
+            "1.8": "int64",
+            "1.9": "int64",
+            "1.10": "int64",
+            "0.1": "int64",
+            "1.11": "int64",
+            "1.12": "int64",
+            "1.13": "int64",
+            "1.14": "int64",
+            "1.15": "int64",
+            "1.16": "int64",
+            "0.2": "int64",
+            "1.17": "int64",
+            "1.18": "int64",
+            "0.3": "int64",
+            "1.19": "int64",
+            "1.20": "int64",
+            "1.21": "int64",
+            "1.22": "int64",
+            "1.23": "int64",
+            "1.24": "int64",
+            "1.25": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3F.xlsx"
+    },
+    {
+      "filename": "Fig._3E.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10715,
+      "size_human": "10.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            1,
+            "1.1",
+            "1.2",
+            0,
+            "1.3",
+            "1.4",
+            "0.1",
+            "0.2",
+            "0.3",
+            "0.4",
+            "0.5",
+            "1.5",
+            "0.6",
+            "1.6",
+            "0.7",
+            "1.7",
+            "1.8",
+            "1.9",
+            "0.8",
+            "0.9",
+            "0.10",
+            "0.11",
+            "0.12",
+            "0.13",
+            "1.10",
+            "1.11",
+            "0.14",
+            "1.12",
+            "0.15",
+            "0.16"
+          ],
+          "named_columns": [
+            1,
+            "1.1",
+            "1.2",
+            0,
+            "1.3",
+            "1.4",
+            "0.1",
+            "0.2",
+            "0.3",
+            "0.4",
+            "0.5",
+            "1.5",
+            "0.6",
+            "1.6",
+            "0.7",
+            "1.7",
+            "1.8",
+            "1.9",
+            "0.8",
+            "0.9",
+            "0.10",
+            "0.11",
+            "0.12",
+            "0.13",
+            "1.10",
+            "1.11",
+            "0.14",
+            "1.12",
+            "0.15",
+            "0.16"
+          ],
+          "column_count": 30,
+          "row_count": 29,
+          "dtypes": {
+            "1": "int64",
+            "1.1": "int64",
+            "1.2": "int64",
+            "0": "int64",
+            "1.3": "int64",
+            "1.4": "int64",
+            "0.1": "int64",
+            "0.2": "int64",
+            "0.3": "int64",
+            "0.4": "int64",
+            "0.5": "int64",
+            "1.5": "int64",
+            "0.6": "int64",
+            "1.6": "int64",
+            "0.7": "int64",
+            "1.7": "int64",
+            "1.8": "int64",
+            "1.9": "int64",
+            "0.8": "int64",
+            "0.9": "int64",
+            "0.10": "int64",
+            "0.11": "int64",
+            "0.12": "int64",
+            "0.13": "int64",
+            "1.10": "int64",
+            "1.11": "int64",
+            "0.14": "int64",
+            "1.12": "int64",
+            "0.15": "int64",
+            "0.16": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3E.xlsx"
+    },
+    {
+      "filename": "Fig._S2Q.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 114914,
+      "size_human": "112.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Time",
+            "DrainV",
+            "DrainI"
+          ],
+          "named_columns": [
+            "Time",
+            "DrainV",
+            "DrainI"
+          ],
+          "column_count": 3,
+          "row_count": 3001,
+          "dtypes": {
+            "Time": "float64",
+            "DrainV": "float64",
+            "DrainI": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S2Q.xlsx"
+    },
+    {
+      "filename": "Fig._3D.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9884,
+      "size_human": "9.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "InputV",
+            "OutputV"
+          ],
+          "named_columns": [
+            "InputV",
+            "OutputV"
+          ],
+          "column_count": 2,
+          "row_count": 61,
+          "dtypes": {
+            "InputV": "float64",
+            "OutputV": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._3D.xlsx"
+    },
+    {
+      "filename": "Fig._S3I-S3J.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 21048,
+      "size_human": "20.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "Time",
+            "BaseV",
+            "BaseI",
+            "CollectorV",
+            "CollectorI"
+          ],
+          "named_columns": [
+            "Time",
+            "BaseV",
+            "BaseI",
+            "CollectorV",
+            "CollectorI"
+          ],
+          "column_count": 5,
+          "row_count": 201,
+          "dtypes": {
+            "Time": "float64",
+            "BaseV": "float64",
+            "BaseI": "float64",
+            "CollectorV": "float64",
+            "CollectorI": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig._S3I-S3J.xlsx"
+    }
+  ]
+}

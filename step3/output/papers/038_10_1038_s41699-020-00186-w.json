@@ -1,0 +1,249 @@
+{
+  "paper_id": "step1_0069",
+  "title": "Multiple machine learning approach to characterize two-dimensional nanoelectronic devices via featurization of charge fluctuation",
+  "doi": "10.1038/s41699-020-00186-w",
+  "journal": "npj 2D Materials and Applications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3122625063",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41699-020-00186-w",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The only provided file is a Nature source-data PDF, which is most consistent with curated, figure-linked source data rather than raw instrument output.",
+  "type2_summary": "No clearly raw/unprocessed instrument file is present in the provided file list.",
+  "type1_files": [
+    "41699_2020_186_MOESM1_ESM.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Only one file was provided. The paper itself contains both raw and processed data, but file-level evidence here points to a source-data PDF deposit rather than raw measurement data.",
+  "file_classifications": [
+    {
+      "relative_path": "41699_2020_186_MOESM1_ESM.pdf",
+      "filename": "41699_2020_186_MOESM1_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that LF noise data are available on GitHub and that figures are based on processed MFCCs, spectra, fitted parameters, and other source data for plots. Nature source-data PDFs are typically figure-linked, replot-ready deposits rather than raw instrument exports.",
+      "file_evidence": "The file is a Nature source-data PDF (MOESM1_ESM) and is small/moderate in size for a figure-supporting document. As a PDF in the source_data deposit, it is consistent with curated source data or figure-ready supplemental material rather than raw measurement output.",
+      "reasoning": "Paper evidence favors figure/source data availability, and the file format/placement strongly suggests curated source data. A PDF source-data deposit is not raw instrument output and is generally directly inspectable for figure reproduction. Therefore it is classified as Type 1.",
+      "ambiguity": "Moderate: without opening the PDF, the exact contents are unknown. However, the Nature source-data context and paper description make Type 1 the conservative choice.",
+      "key_columns_or_structure": "Not inspectable from filename alone; likely figure-linked source data or supporting documentation in PDF form."
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper uses low-frequency (1/f) noise measurements from 2D layered FETs and converts time-domain current fluctuations into MFCC-like features for machine learning classification. The approach classifies channel material, gate dielectric, contact metal, and doping/irradiation conditions, while also relating the learned features to interface trap density and Coulomb scattering parameters. The main finding is that HMM-based featurization, especially combined with a neural network, improves device-condition classification over direct ML on raw/less-processed representations.",
+    "measurement_types": [
+      "electrical transport (transfer/output characteristics)",
+      "low-frequency noise spectroscopy / 1/f noise",
+      "time-resolved drain current fluctuation measurement",
+      "temperature-dependent transport/noise measurement",
+      "electron-beam irradiation in-situ electrical measurement"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Analogy between speech signal processing and current-signal processing: audio waveform is converted to MFCCs via framing, FFT, Mel filtering, and DCT.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Current-signal featurization workflow for 2D FET low-frequency noise data, showing time-domain current fluctuations converted to MFCC-like features.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Inference workflow comparing speech recognition and device/material classification using ML.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Device-structure examples and condition space: channel materials, gate dielectrics, contact metals, passivation, temperature, chemical doping, and e-beam irradiation.",
+        "data_type": "schematic / device illustration",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of a 2D layered FET measured at fixed gate and drain bias under various conditions.",
+        "data_type": "device schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Low-noise current-to-voltage amplification of the measured noise signal.",
+        "data_type": "instrument schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Preprocessing and featurization pipeline: normalization, framing, FFT, Mel filtering, DCT, and storage as current MFCC arrays.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "HMM-based classification using current MFCC arrays to produce class scores.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Neural-network re-learning of HMM score vectors for improved classification.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Final inference of device conditions from the ML pipeline.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Transfer characteristics (ID-VG) of 2D layered FETs under various conditions.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement / lightly processed"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Time-domain drain-current fluctuation ΔID(t) measured at fixed bias and divided into frames.",
+        "data_type": "time-series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Power spectral density of each frame after FFT in the frequency domain.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Current MFCC 2D array formed by concatenating MFCC vectors from each frame.",
+        "data_type": "feature matrix",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Schematic of carrier behavior in a 2D layered FET, including trapping/detrapping at interface traps.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Representative SI(f) spectra at fixed drain bias for several gate voltages, with spectral envelopes.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "Distributions of interface trap density Nit and Coulomb scattering parameter alphaSC extracted from the CNF-CMF model.",
+        "data_type": "derived parameter plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "Engineered current MFCC 2D array showing frequency-sequence features.",
+        "data_type": "feature matrix image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Low-frequency portions of current MFCCs for several representative device classes at similar drain current.",
+        "data_type": "feature matrix / heatmap",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Histogram of normalized low-frequency MFCC elements for selected classes.",
+        "data_type": "histogram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Classification accuracy and processing time versus number of data points for HMM, HMM+NN, and CNN/logistic regression comparisons.",
+        "data_type": "performance plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Per-class classification accuracy with confusion matrix inset.",
+        "data_type": "bar plot / confusion matrix",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Normalized drain-current spectral density versus current for ReS2 and MoS2 on h-BN at 10 Hz, fitted with CNF and CNF-CMF models.",
+        "data_type": "transport/noise plot",
+        "likely_source": "processed data / derived fit"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include time-resolved drain-current fluctuation data ΔID(t) from 2D FETs measured at fixed VG and VD in a shielded low-noise setup, along with standard electrical transport measurements (ID-VG, output characteristics) and low-frequency noise spectra. Devices were measured in a high-vacuum probe station; noise was acquired using a home-made noise measurement system with a low-noise current-to-voltage preamplifier and DAQ. E-beam irradiation experiments were performed in situ in an SEM chamber.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed plots include FFT-derived power spectral densities, Mel-filtered spectra, MFCC feature matrices, HMM score vectors, NN classification outputs, histograms of MFCC elements, CNF/CNF-CMF model fits, and performance metrics such as accuracy, f1-score, AUC, confusion matrices, and processing time.",
+    "dataset_characterization": {
+      "data_availability_statement": "Some LF noise data are available on GitHub in a repository, with test LF noise data uploaded in a subfolder named Test data_noise under each label name. All LF noise data are available from the corresponding author upon reasonable request. Code used for training, evaluation, and calculations is also available on GitHub as a Python file.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "source_data",
+        "scripts"
+      ],
+      "raw_data_description": "The paper states that LF noise data are available on GitHub and that test LF noise data are organized in label-named subfolders. The raw measurements are time-domain current fluctuation signals ΔID(t) collected from 2D FETs under fixed bias conditions, plus transport/noise measurements from the experimental setup. File formats are not specified.",
+      "processed_data_description": "Processed data include normalized and pre-emphasized current signals, framed time windows, FFT-derived spectra, Mel-filtered spectra, DCT-transformed MFCC vectors, 2D MFCC arrays, HMM score vectors, and extracted CNF-CMF fit parameters such as Nit and alphaSC. The paper also reports performance metrics and confusion matrices.",
+      "figure_data_description": "Figure-specific source data are implied by the availability of test LF noise data in label-based folders, but the paper does not explicitly state that all figure source data are deposited separately. Some plotted results are clearly derived from the processed LF noise datasets and model fits.",
+      "scripts_description": "Yes. The paper explicitly provides a GitHub repository and names a Python script, LFnoise_ML_Classification_SJ_KJ.py, used to train, evaluate, and calculate results. It also mentions use of python_speech_features, hmmlearn, TensorFlow Keras, and scikit-learn.",
+      "data_organization": "Mixed; GitHub repository with test data organized in label-named subfolders (Test data_noise), plus code in a Python file. Exact full folder structure is not fully specified.",
+      "replot_ready_data_present": true,
+      "replot_reason": "The repository contains LF noise data and code, and the paper describes the full preprocessing pipeline. However, the exact completeness of the deposited raw data and the exact file formats are not specified in the text, so replotting is likely possible for provided subsets but not guaranteed for all figures.",
+      "notes": "The dataset is not a conventional image/spectra dataset; it is a time-series electrical-noise dataset transformed into MFCC-like feature matrices. The paper distinguishes raw ΔID(t) signals from derived MFCC arrays and model outputs. The GitHub repository appears to contain at least test data and code, but the paper does not clearly state that every figure has dedicated source-data files."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The Methods and Results describe direct acquisition of ΔID(t) low-frequency noise time traces, transport curves, and noise spectra from fabricated devices.",
+      "source_data_evidence": "The paper provides GitHub availability of LF noise data and a Python script for training/evaluation; figures are based on processed MFCCs, spectra, and fitted parameters that are likely the source data for plots.",
+      "both_evidence": "The text implies both raw time-domain noise data and processed/figure-ready data are present, with code for reproducing the analysis.",
+      "data_availability_section_relevant": [
+        "Some of LF noise data that support the findings of this study are available from Github",
+        "the test LF noise data are uploaded in the subfolder with each label name in the folder (Test data_noise)",
+        "All LF noise data are available from the corresponding author(s) upon reasonable request",
+        "All the codes used to train, evaluate, calculate the presented results in this study are available from Github",
+        "using the available Python file (LFnoise_ML_Classification_SJ_KJ.py)"
+      ],
+      "priority_modalities": [
+        "time-series current noise (ΔID(t))",
+        "low-frequency noise spectra / power spectral density",
+        "MFCC feature matrices",
+        "HMM score vectors",
+        "transport curves (ID-VG)",
+        "model-fit parameter tables/arrays",
+        "classification metrics"
+      ],
+      "review_notes": "Be careful not to treat MFCC arrays as raw measurements; they are engineered features derived from current noise time series. The paper’s 'data availability' wording suggests partial public release rather than a fully complete open dataset. Figure plots are mostly derived from processed data and model fits, not direct instrument outputs."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41699_2020_186_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1876146,
+      "size_human": "1.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41699_2020_186_MOESM1_ESM.pdf"
+    }
+  ]
+}

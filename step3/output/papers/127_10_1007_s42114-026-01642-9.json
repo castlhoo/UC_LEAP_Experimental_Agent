@@ -1,0 +1,64 @@
+{
+  "paper_id": "step1_0333",
+  "title": "Tailoring triply periodic minimal surface architectures with Ti₃C₂Tₓ MXene for high-performance absorptive EMI shielding",
+  "doi": "10.1007/s42114-026-01642-9",
+  "journal": "Advanced Composites and Hybrid Materials",
+  "year": 2026,
+  "paper_url": "https://doi.org/10.1007/s42114-026-01642-9",
+  "priority_score": 5.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1007_s42114-026-01642-9",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports a Ti3C2Tx MXene-based triply periodic minimal surface composite architecture designed to enhance absorptive electromagnetic interference shielding performance.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": true,
+    "processed_plot_details": "No datasets are reported as available; only the main PDF is present on the publisher page.",
+    "dataset_characterization": {
+      "data_availability_statement": "No datasets were generated or analysed during the current study.",
+      "data_provided_types": [
+        "source_data"
+      ],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "s42114-026-01642-9.pdf",
+      "scripts_description": "",
+      "data_organization": "The paper explicitly states: \"No datasets were generated or analysed during the current study.\" No repository, supplementary data, or source data files were identified on the publisher page.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": true,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "s42114-026-01642-9.pdf",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "No datasets were generated or analysed during the current study.",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": []
+}

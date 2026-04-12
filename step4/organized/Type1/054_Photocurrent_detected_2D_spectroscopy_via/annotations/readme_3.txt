@@ -1,0 +1,3 @@
+This folder contains the data used for Figure 5a, provided in .txt-Format. 
+
+The file "fd_data_dazpwr_0,0005.txt" contains the spectral interferogram shown in Figure 5a for an RF power of 0.0005. The first column lists the frequency values in units of inverse centimeters whereas the second column lists the intensities. The other files "fd_data_dazpwr_....txt" contain data for all other RF power values, where the RF power is indicated by the numeric value at the end of each filename. Note that each interferogram has been normalized to its highest absolute value.

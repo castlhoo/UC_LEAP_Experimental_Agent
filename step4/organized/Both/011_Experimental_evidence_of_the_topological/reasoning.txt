@@ -1,0 +1,92 @@
+Title: Experimental evidence of the topological obstruction in twisted bilayer graphene
+DOI: 10.1038/s41467-025-66257-y
+Journal: arXiv preprint
+Year: 2025
+Final label: Both
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The two PDF files are Nature source-data supplements and are best classified as cleaned, figure-supporting Type 1 files.
+- Type2 summary: The Zenodo STM archive and all extracted .sxm files are raw instrument measurements, clearly Type 2.
+
+Type1 files
+- 41467_2025_66257_MOESM1_ESM.pdf
+  original path: 41467_2025_66257_MOESM1_ESM.pdf
+  classified as: type1
+  reasoning: This file is best interpreted as cleaned, figure-supporting source data. The paper emphasizes processed outputs and the file source is Nature source data, which strongly favors Type 1 over raw data.
+  paper evidence: The paper states that processed/source-data-style outputs are included, such as FFT-QPI maps, extracted dispersion points, and comparison plots to tight-binding calculations. A Nature source-data PDF is consistent with figure-ready supporting data.
+  file evidence: PDF from nature_source_data, moderate size (7.7 MB), likely organized as supplementary source data rather than raw instrument output. PDF format is suitable for figure-linked plots/tables and not raw STM acquisition data.
+  structure: Not inspected; likely figure-linked source-data pages/plots
+  ambiguity: The PDF contents were not directly inspected, so exact internal structure is unknown; classification relies on source and paper context.
+- 41467_2025_66257_MOESM2_ESM.pdf
+  original path: 41467_2025_66257_MOESM2_ESM.pdf
+  classified as: type1
+  reasoning: As a Nature source-data PDF, this is most consistent with cleaned, replot-ready supporting material. There is no evidence it is raw instrument output.
+  paper evidence: The manuscript contains processed figure products and source-data-style outputs, and the supplementary source data PDFs are consistent with those materials.
+  file evidence: PDF from nature_source_data, 1.2 MB, indicating a curated supplementary/source-data document rather than raw STM acquisition files.
+  structure: Not inspected; likely figure-linked source-data pages/plots
+  ambiguity: Internal contents not inspected; classification is based on publication context and file provenance.
+
+Type2 files
+- STM_images.zip
+  original path: STM_images.zip
+  classified as: type2
+  reasoning: This is a raw data archive containing unprocessed STM measurements. The size, repository source, and extracted contents all indicate raw/unprocessed data requiring processing before plotting.
+  paper evidence: The paper explicitly says the STM data measured in the study were deposited in Zenodo, and the main results are based on raw STM topographs, LDOS maps, and dI/dV spectroscopy.
+  file evidence: Large archive (226.1 MB) from Zenodo, consistent with a raw data deposit. The archive contains instrument-format files (.sxm) associated with scanning probe microscopy.
+  structure: Archive containing raw STM scan files
+  ambiguity: None significant.
+- SiCCAO#C012_300mV.sxm
+  original path: zip_contents/STM_images/SiCCAO#C012_300mV.sxm
+  classified as: type2
+  reasoning: This is clearly raw scanning probe instrument output and cannot be directly treated as figure-ready data without preprocessing.
+  paper evidence: The paper reports raw STM topography and LDOS/dI/dV measurements deposited in Zenodo, matching raw scan files.
+  file evidence: Instrument raw file (.sxm), 23.3 MB, extracted from the STM_images.zip archive. Filename resembles a scan/run identifier and bias setting, typical of raw STM acquisition.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+- SiCCAO#C013_500mV.sxm
+  original path: zip_contents/STM_images/SiCCAO#C013_500mV.sxm
+  classified as: type2
+  reasoning: Raw instrument output; requires processing to generate LDOS/QPI figures.
+  paper evidence: The paper explicitly includes raw STM measurements in the deposited Zenodo dataset.
+  file evidence: Instrument raw .sxm file, 23.3 MB, from the raw STM archive. The naming and format are characteristic of unprocessed scan data.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+- SiCCAO#C014_350mV.sxm
+  original path: zip_contents/STM_images/SiCCAO#C014_350mV.sxm
+  classified as: type2
+  reasoning: Raw measurement file; not directly replot-ready.
+  paper evidence: The study’s Zenodo deposit is described as containing measured STM data, i.e., raw experimental scans.
+  file evidence: Instrument raw .sxm file, 23.3 MB, indicating a scanning probe microscopy acquisition rather than processed source data.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+- SiCCAO#C015_425mV.sxm
+  original path: zip_contents/STM_images/SiCCAO#C015_425mV.sxm
+  classified as: type2
+  reasoning: This is raw STM data requiring preprocessing for analysis and plotting.
+  paper evidence: The paper’s data deposit includes raw STM/STS measurements used to generate the published QPI and LDOS analyses.
+  file evidence: Instrument raw .sxm file, 23.3 MB, from the raw STM archive.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+- SiCCAO#C016_325.sxm
+  original path: zip_contents/STM_images/SiCCAO#C016_325.sxm
+  classified as: type2
+  reasoning: Raw instrument output; not figure-ready without significant processing.
+  paper evidence: The manuscript states the measured STM data were deposited, consistent with raw scan files.
+  file evidence: Instrument raw .sxm file, 23.3 MB, extracted from the STM_images.zip archive.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+- SiCCAO#C017_400mV.sxm
+  original path: zip_contents/STM_images/SiCCAO#C017_400mV.sxm
+  classified as: type2
+  reasoning: This is raw scanning probe data and belongs in Type 2.
+  paper evidence: The paper’s Zenodo deposit is described as containing the STM data measured in the study.
+  file evidence: Instrument raw .sxm file, 23.3 MB, from the raw STM archive.
+  structure: Raw STM scan file; internal structure not inspected
+  ambiguity: None.
+
+Annotation files
+- none
+
+Script files
+- none

@@ -1,0 +1,69 @@
+Title: Extended Quantum Anomalous Hall States in Graphene/hBN Moiré Superlattices
+DOI: N/A
+Journal: arXiv preprint
+Year: 2024
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All files are small, figure-specific CSV tables or header companions consistent with cleaned, replot-ready source data for Fig. S10 conditions. They are structured tabular files with physical-variable schemas and no signs of raw instrument formats.
+- Type2 summary: No file shows clear raw/unprocessed characteristics such as proprietary formats, large acquisition dumps, microscopy images, or other instrument outputs.
+
+Type1 files
+- FigS10_R_CNP_11.8K_ColumnNames.csv
+  original path: FigS10_R_CNP_11.8K_ColumnNames.csv
+  classified as: type1
+  reasoning: Because it only defines column names and is organized around physical variables for a specific figure/condition, it is documentation-like source-data support. In the dataset taxonomy provided, figure/source-data deposits are Type 1.
+  paper evidence: No paper evidence indicates raw instrument output; the figure-specific naming is consistent with source-data organization by panel/condition.
+  file evidence: Tiny CSV containing only a header row with column names: Gate Voltage index, Gate Voltage, Voltage, Current, Resistance, Conductance. This is clearly a schema/metadata companion for figure data, not raw measurement output.
+  structure: Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance
+  ambiguity: Moderate: it is not directly plottable by itself, but it is clearly part of a cleaned source-data package rather than raw data.
+- FigS10_R_CNP_11K.csv
+  original path: FigS10_R_CNP_11K.csv
+  classified as: type1
+  reasoning: The file is compact, structured, and figure-associated. It appears to be replot-ready data rather than raw acquisition output, so Type 1 is appropriate.
+  paper evidence: No evidence in the paper suggests this is raw instrument output; the figure-specific naming is consistent with source data for a plotted panel.
+  file evidence: Small CSV (573 B) with 10 rows and numeric values. The structure is tabular and directly plottable, matching cleaned figure data.
+  structure: Unnamed numeric columns; 10 rows; likely gate-voltage sweep data with voltage/current/resistance/conductance values
+  ambiguity: Low.
+- FigS10_R_CNP_11K_ColumnNames.csv
+  original path: FigS10_R_CNP_11K_ColumnNames.csv
+  classified as: type1
+  reasoning: This file functions as a column-definition companion to cleaned source data. It is not raw and is consistent with Type 1 source-data deposits.
+  paper evidence: No explicit raw-data statement in the paper; figure-specific naming supports source-data organization.
+  file evidence: Header-only CSV with the same physical-variable schema as the other column-names file. This is metadata for a figure-ready dataset, not raw instrument output.
+  structure: Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance
+  ambiguity: Moderate, because it is metadata rather than a plottable dataset, but it belongs to a figure/source-data package.
+- FigS10_R_CNP_12K.csv
+  original path: FigS10_R_CNP_12K.csv
+  classified as: type1
+  reasoning: This is a compact, figure-associated tabular dataset suitable for direct plotting, so it is Type 1.
+  paper evidence: No paper evidence indicates raw instrument output; the figure-specific filename is consistent with source data for a plotted figure panel.
+  file evidence: Small CSV (577 B) with 10 rows and numeric columns. It is structured and directly plottable, with values consistent with a processed measurement table.
+  structure: Unnamed numeric columns; 10 rows; likely gate-voltage sweep data with voltage/current/resistance/conductance values
+  ambiguity: Low.
+- FigS10_R_CNP_12K_ColumnNames.csv
+  original path: FigS10_R_CNP_12K_ColumnNames.csv
+  classified as: type1
+  reasoning: This is documentation/metadata for a cleaned source-data table, not raw data. Under the provided definitions, figure/source-data deposits are Type 1.
+  paper evidence: No explicit raw-data indication from the paper; figure-specific naming suggests source-data organization.
+  file evidence: Header-only CSV listing physical-variable columns: Gate Voltage index, Gate Voltage, Voltage, Current, Resistance, Conductance. This is schema metadata for a figure dataset.
+  structure: Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance
+  ambiguity: Moderate, because it is not itself a data table, but it is clearly part of a figure-data package.
+- FigS10_R_Full_5.2K.csv
+  original path: FigS10_R_Full_5.2K.csv
+  classified as: type1
+  reasoning: This is a compact, figure-associated tabular dataset with numeric values and no signs of proprietary/raw instrument format. It is directly usable for plotting with minimal processing, so it fits Type 1.
+  paper evidence: The paper is described as having no explicit raw-data availability statement or repository links; the available evidence does not indicate these are raw instrument outputs. The filename is figure-specific (FigS10) and temperature-tagged, consistent with source data for a plotted panel.
+  file evidence: Small CSV (570 B) with 10 rows and numeric columns; structured tabular content that can be directly plotted. The figure-specific naming and presence of physical quantities in the data values support cleaned, replot-ready source data rather than raw output.
+  structure: Unnamed numeric columns; 10 rows; likely gate/voltage/current/resistance/conductance-like measurements
+  ambiguity: Low ambiguity: the file is small and structured, and nothing suggests unprocessed raw data.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

@@ -1,0 +1,64 @@
+{
+  "paper_id": "step1_0181",
+  "title": "Repurposing of tamoxifen ameliorates CLN3 and CLN7 disease phenotype",
+  "doi": "10.15252/emmm.202013742",
+  "journal": "EMBO Molecular Medicine",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3195262205",
+  "priority_score": 4.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_15252_emmm_202013742",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The study repurposes tamoxifen to reduce Gb3 accumulation and improve lysosomal and neurological phenotypes in CLN3/CLN7 Batten disease models via TFEB activation.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": true,
+    "processed_plot_details": "No externally deposited dataset is reported. The paper appears to rely on in-article experimental results without a downloadable data package.",
+    "dataset_characterization": {
+      "data_availability_statement": "This study includes no data deposited in external repositories.",
+      "data_provided_types": [
+        "source_data"
+      ],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "emmm.202013742.pdf",
+      "scripts_description": "",
+      "data_organization": "The data availability statement explicitly says: \"This study includes no data deposited in external repositories.\" No repository, source data, or supplementary data links were identified from the publisher page.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": true,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "emmm.202013742.pdf",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "This study includes no data deposited in external repositories.",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": []
+}

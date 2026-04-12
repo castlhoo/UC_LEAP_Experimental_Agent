@@ -1,0 +1,802 @@
+{
+  "paper_id": "step1_0192",
+  "title": "Unveiling Weyl-related optical responses in semiconducting tellurium by mid-infrared circular photogalvanic effect",
+  "doi": "10.1038/s41467-022-33190-3",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4295924167",
+  "priority_score": 9.3,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-33190-3",
+  "files_inspected": 2,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel workbook is a figure-organized source-data deposit with labeled numeric tables and is directly replot-ready, so it is Type 1.",
+  "type2_summary": "No file is clearly raw/unprocessed instrument output based on the provided inspection. The PDF is documentation/supplementary material rather than a raw dataset.",
+  "type1_files": [
+    "Source_data.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The dataset package appears to contain figure/source data rather than raw instrument files. The workbook includes both conventional tabular sheets and dense numeric grids for scanned maps, but the organization and naming indicate a curated source-data deposit. The supplementary PDF is not classified as data.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2022_33190_MOESM1_ESM.pdf",
+      "filename": "41467_2022_33190_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that all data supporting the plots are available via figshare, and Nature supplementary PDFs commonly serve as documentation or embedded source-data supplements rather than standalone replot-ready tables.",
+      "file_evidence": "PDF format, 1.4 MB, from nature_source_data. No tabular structure, sheet organization, or directly loadable numeric columns are reported. This is consistent with a supplementary/source-data document rather than a dataset table.",
+      "reasoning": "This file is best treated as supplementary documentation/source-data PDF, not as a replot-ready dataset. It may contain figure panels or embedded data references, but the available file evidence does not support classifying it as Type 1 or Type 2 data.",
+      "ambiguity": "Moderate: without page-level inspection, the PDF could contain source-data figures or explanatory material, but it is not a structured data file.",
+      "key_columns_or_structure": "PDF document; no tabular columns reported"
+    },
+    {
+      "relative_path": "Source_data.xlsx",
+      "filename": "Source_data.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly says all data supporting the plots are available via figshare, which strongly supports a figure/source-data deposit. The workbook is organized by figure sheets, matching source-data conventions.",
+      "file_evidence": "Excel workbook with 72 sheets, figure-named tabs such as fig.1b, fig.1d, fig.2c, fig.2f, etc. Sheets contain labeled columns like k-points, E(eV), B(T), R_xy(Ω), MR_out of plane(%), and other figure-specific numeric tables. This is structured, replot-ready tabular data.",
+      "reasoning": "The workbook is clearly organized as figure/source data and can be directly plotted with minimal processing. Although some sheets may contain processed quantities, Type 1 explicitly includes cleaned, replot-ready source data deposits organized by figure. The paper evidence and file structure align strongly with Type 1.",
+      "ambiguity": "Low: some sheets lack headers or may contain dense numeric grids, but the overall workbook is still a structured source-data deposit rather than raw instrument output.",
+      "key_columns_or_structure": "Figure-based sheets; examples include k-points, E(eV), B(T), R_xy(Ω), MR_out of plane(%), MR_in plane(%), and dense image-like numeric grids for scanning maps"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies semiconducting trigonal tellurium (Te), a narrow-gap chiral material hosting Weyl cones in both valence and conduction bands, using mid-infrared circular-polarization-dependent photocurrent measurements. The key finding is a wavelength-dependent sign reversal of the circular photogalvanic effect (CPGE) at 10.6 μm and 4.0 μm, attributed to different Weyl-related optical transitions, with additional power-, spatial-, and temperature-dependent measurements supporting an intrinsic second-order nonlinear origin.",
+    "measurement_types": [
+      "optical microscopy / device imaging",
+      "Hall transport",
+      "magnetoresistance",
+      "scanning photocurrent mapping",
+      "scanning reflection imaging",
+      "polarization-dependent photocurrent (CPGE)",
+      "power-dependent photocurrent",
+      "temperature-dependent photocurrent",
+      "back-gate-dependent photocurrent",
+      "theoretical band-structure / optical-matrix-element calculation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of trigonal tellurium with helical atomic chains along the c axis.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Electronic band dispersion of Te with the Brillouin zone inset, showing the semiconducting gap and Weyl cones.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Optical microscopy image of a Hall-bar Te device with crystallographic axes marked.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Hall measurement used to extract carrier density and mobility.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Magnetoresistance versus magnetic field, including negative longitudinal MR behavior.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of chirality-dependent optical selection rules near a pair of Weyl nodes.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Calculated band diagram near the H point showing Weyl nodes W1, W2, W3 and the optical transitions relevant to 10.6 μm, 4.0 μm, and 4.5 μm excitation.",
+        "data_type": "band structure plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Scanning photocurrent map under 10.6 μm excitation.",
+        "data_type": "image / spatial map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Scanning photocurrent map under 4.0 μm excitation.",
+        "data_type": "image / spatial map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Scanning reflection image of the device with marked positions for polarization-dependent measurements.",
+        "data_type": "image / spatial map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Photocurrent responsivity versus quarter-wave-plate angle at 10.6 μm, showing CPGE and anisotropic components.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Photocurrent responsivity versus quarter-wave-plate angle at 4.0 μm, showing opposite CPGE sign relative to 10.6 μm.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Photocurrent responsivity versus quarter-wave-plate angle at 4.5 μm, showing no CPGE component but finite anisotropic response.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Power dependence of extracted CPGE at 10.6 μm for positions with maximal positive and negative response.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Power dependence of extracted CPGE at 4.0 μm for positions with maximal positive and negative response.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Quarter-wave-plate-angle dependence at 10.6 μm measured at two contacts with opposite built-in field directions.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Quarter-wave-plate-angle dependence at 4.0 μm measured at two contacts with opposite built-in field directions.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Spatially resolved CPGE map under 10.6 μm excitation obtained by subtracting LCP and RCP photocurrent maps.",
+        "data_type": "image / spatial map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Spatially resolved CPGE map under 4.0 μm excitation obtained by subtracting LCP and RCP photocurrent maps.",
+        "data_type": "image / spatial map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Temperature-dependent quarter-wave-plate-angle photocurrent at 4.0 μm.",
+        "data_type": "transport curve / polarization dependence",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Extracted CPGE amplitude versus temperature during cooling and heating cycles.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements including optical microscopy images of fabricated Te Hall-bar devices, Hall and magnetoresistance transport traces, scanning photocurrent maps, scanning reflection images, polarization-dependent photocurrent traces versus quarter-wave-plate angle, power-dependent photocurrent, and temperature-dependent photocurrent. The optical measurements were performed with continuous-wave quantum cascade lasers at 10.6 μm, 4.0 μm, and 4.5 μm, with zero-bias photocurrent collection.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Several plots are explicitly processed from raw measurements: CPGE amplitude is extracted by subtracting LCP and RCP photocurrent responses; spatially resolved CPGE maps are obtained by subtracting LCP and RCP scanning photocurrent images; Fourier components are referenced for the quarter-wave-plate-angle dependence; carrier density and mobility are extracted from Hall data. The band diagrams and optical selection-rule illustrations are also derived/calculated rather than directly measured.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'All data that support the plots within this paper are available via the figshare repository [https://doi.org/10.6084/m9.figshare.20961091.v1].'",
+      "data_provided_types": [
+        "source_data",
+        "processed"
+      ],
+      "raw_data_description": "The paper does not describe raw files, file formats, or a raw-data folder structure. It only states that all data supporting the plots are available in a figshare repository. Raw measurements were collected using optical microscopy, transport setups, scanning photocurrent/reflection imaging, and mid-infrared laser-based photocurrent measurements.",
+      "processed_data_description": "Processed quantities include CPGE amplitudes, responsivity versus quarter-wave-plate angle, spatially resolved CPGE maps, extracted carrier density and mobility, and temperature-dependent CPGE amplitudes. The paper also mentions numerical calculations of band structures, optical matrix elements, and injection-current tensor elements.",
+      "figure_data_description": "Yes, the data availability statement implies figure-supporting data are provided. The wording 'all data that support the plots within this paper' suggests figure/source data are available, but the paper does not explicitly enumerate per-figure source-data files in the text provided.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "figure-based or repository-based, but not specified in detail",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper explicitly says all data supporting the plots are available in figshare, which implies replotting is possible for the published figures. However, the text does not specify whether the repository contains raw data, only processed/source data supporting plots.",
+      "notes": "The paper clearly distinguishes measured photocurrent/transport data from derived CPGE amplitudes and calculated band-structure/optical-selection-rule results. The strongest dataset evidence is for figure-supporting data rather than fully raw instrument outputs. Supplementary figures are referenced extensively (e.g., Fourier transforms, additional devices, power dependence, bandgap checks, gate dependence), but their exact files are not described in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper reports multiple direct measurements: transport curves, scanning photocurrent/reflection images, polarization-dependent photocurrent traces, power dependence, and temperature dependence.",
+      "source_data_evidence": "The data availability statement says all data supporting the plots are available on figshare, which strongly suggests figure/source data are provided.",
+      "both_evidence": "The paper implies both direct measurement data and processed figure-supporting data, but does not explicitly separate them in the text.",
+      "data_availability_section_relevant": "All data that support the plots within this paper are available via the figshare repository [https://doi.org/10.6084/m9.figshare.20961091.v1].",
+      "priority_modalities": [
+        "photocurrent traces",
+        "scanning photocurrent maps",
+        "reflection images",
+        "Hall transport curves",
+        "magnetoresistance curves",
+        "polarization-angle sweeps",
+        "temperature sweeps",
+        "power sweeps",
+        "calculated band structures"
+      ],
+      "review_notes": "Be careful not to label calculated band diagrams or selection-rule tensors as raw measurements. The paper’s main experimental dataset is photocurrent-based, with several derived CPGE extractions. The text does not confirm whether the figshare repository contains raw instrument outputs, processed CSVs, or only figure source data."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_33190_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1455169,
+      "size_human": "1.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_33190_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "Source_data.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 2981147,
+      "size_human": "2.8 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "fig.1b",
+        "fig.1d",
+        "fig.1e",
+        "fig.2b",
+        "fig.2c",
+        "fig.2d",
+        "fig.2e",
+        "fig.2f",
+        "fig.2g",
+        "fig.2h",
+        "fig.3a",
+        "fig.3b",
+        "fig.3c",
+        "fig.3d",
+        "fig.3e",
+        "fig.3f",
+        "fig.4a",
+        "fig.4b",
+        "Fig For SI",
+        "Sfig.2a",
+        "Sfig.2b",
+        "Sfig.2c",
+        "Sfig.4a",
+        "Sfig.4b",
+        "Sfig.4c",
+        "Sfig.4d",
+        "Sfig.5a",
+        "Sfig.5b",
+        "Sfig.5c",
+        "Sfig.5d",
+        "Sfig.5e",
+        "Sfig.5f",
+        "Sfig.6a",
+        "Sfig.6b",
+        "Sfig.6c",
+        "Sfig.6d",
+        "Sfig.6e",
+        "Sfig.6f",
+        "Sfig.7a",
+        "Sfig.7b",
+        "Sfig.7c",
+        "Sfig.7d",
+        "Sfig.7e",
+        "Sfig.7f",
+        "Sfig.8a",
+        "Sfig.8b",
+        "Sfig.8c",
+        "Sfig.8d",
+        "Sfig.8e",
+        "Sfig.8f",
+        "Sfig.9a",
+        "Sfig.9b",
+        "Sfig.10a",
+        "Sfig.10b",
+        "Sfig.10c",
+        "Sfig.10d",
+        "Sfig.11a",
+        "Sfig.11b",
+        "Sfig.11c",
+        "Sfig.11d",
+        "Sfig.12",
+        "Sfig.13",
+        "Sfig.14a",
+        "Sfig.14b",
+        "Sfig.14c",
+        "Sfig.14d",
+        "Sfig.14e",
+        "Sfig.14f",
+        "Sfig.15a",
+        "Sfig.15b",
+        "Sfig.15c",
+        "Sfig.15d"
+      ],
+      "sheet_count": 72,
+      "sheets": [
+        {
+          "sheet_name": "fig.1b",
+          "columns": [
+            "k-points",
+            "E(eV)"
+          ],
+          "named_columns": [
+            "k-points",
+            "E(eV)"
+          ],
+          "column_count": 2,
+          "row_count": 16379,
+          "dtypes": {
+            "k-points": "float64",
+            "E(eV)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.1d",
+          "columns": [
+            "B(T)",
+            "R_xy(Ω)",
+            "linear fitting",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "B(T)",
+            "R_xy(Ω)",
+            "linear fitting"
+          ],
+          "column_count": 4,
+          "row_count": 1000,
+          "dtypes": {
+            "B(T)": "float64",
+            "R_xy(Ω)": "float64",
+            "linear fitting": "float64",
+            "Unnamed: 3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.1e",
+          "columns": [
+            "B(T)",
+            "MR_out of plane(%)",
+            "MR_in plane(%)"
+          ],
+          "named_columns": [
+            "B(T)",
+            "MR_out of plane(%)",
+            "MR_in plane(%)"
+          ],
+          "column_count": 3,
+          "row_count": 1801,
+          "dtypes": {
+            "B(T)": "float64",
+            "MR_out of plane(%)": "float64",
+            "MR_in plane(%)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.2b",
+          "columns": [
+            "k-points",
+            4,
+            3,
+            2,
+            1,
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "k-points",
+            4,
+            3,
+            2,
+            1
+          ],
+          "column_count": 7,
+          "row_count": 100,
+          "dtypes": {
+            "k-points": "float64",
+            "4": "float64",
+            "3": "float64",
+            "2": "float64",
+            "1": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.2c",
+          "columns": [
+            0.0360658,
+            0.0811542,
+            0.0875954,
+            0.1198012,
+            0.1584484,
+            0.0296246,
+            0.0940364,
+            "0.0875954.1",
+            0.0231834,
+            -0.1829344,
+            "0.0296246.1",
+            0.1004776,
+            -0.0347872,
+            "0.0875954.2",
+            "0.1004776.1",
+            -0.0219048,
+            -0.0154636,
+            -0.0025812,
+            0.0038598,
+            "0.0875954.3",
+            "0.1198012.1",
+            "0.0296246.2",
+            0.0489482,
+            0.0618306,
+            "-0.0154636.1",
+            0.11336,
+            -0.479229,
+            -0.0669932,
+            "0.0296246.3",
+            "0.0875954.4"
+          ],
+          "named_columns": [
+            0.0360658,
+            0.0811542,
+            0.0875954,
+            0.1198012,
+            0.1584484,
+            0.0296246,
+            0.0940364,
+            "0.0875954.1",
+            0.0231834,
+            -0.1829344,
+            "0.0296246.1",
+            0.1004776,
+            -0.0347872,
+            "0.0875954.2",
+            "0.1004776.1",
+            -0.0219048,
+            -0.0154636,
+            -0.0025812,
+            0.0038598,
+            "0.0875954.3",
+            "0.1198012.1",
+            "0.0296246.2",
+            0.0489482,
+            0.0618306,
+            "-0.0154636.1",
+            0.11336,
+            -0.479229,
+            -0.0669932,
+            "0.0296246.3",
+            "0.0875954.4"
+          ],
+          "column_count": 100,
+          "row_count": 99,
+          "dtypes": {
+            "0.0360658": "float64",
+            "0.0811542": "float64",
+            "0.0875954": "float64",
+            "0.1198012": "float64",
+            "0.1584484": "float64",
+            "0.0296246": "float64",
+            "0.0940364": "float64",
+            "0.0875954.1": "float64",
+            "0.0231834": "float64",
+            "-0.1829344": "float64",
+            "0.0296246.1": "float64",
+            "0.1004776": "float64",
+            "-0.0347872": "float64",
+            "0.0875954.2": "float64",
+            "0.1004776.1": "float64",
+            "-0.0219048": "float64",
+            "-0.0154636": "float64",
+            "-0.0025812": "float64",
+            "0.0038598": "float64",
+            "0.0875954.3": "float64",
+            "0.1198012.1": "float64",
+            "0.0296246.2": "float64",
+            "0.0489482": "float64",
+            "0.0618306": "float64",
+            "-0.0154636.1": "float64",
+            "0.11336": "float64",
+            "-0.479229": "float64",
+            "-0.0669932": "float64",
+            "0.0296246.3": "float64",
+            "0.0875954.4": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.2d",
+          "columns": [
+            0.074713,
+            0.0296246,
+            0.0682718,
+            0.0618306,
+            0.1004776,
+            -0.0090224,
+            0.0553894,
+            0.1069188,
+            "0.074713.1",
+            0.0489482,
+            -0.0219048,
+            0.010301,
+            "0.074713.2",
+            0.0360658,
+            0.0231834,
+            0.11336,
+            "0.0231834.1",
+            "0.0489482.1",
+            "0.010301.1",
+            "0.0553894.1",
+            "0.0553894.2",
+            "0.0489482.2",
+            "0.0618306.1",
+            "0.074713.3",
+            "0.0489482.3",
+            "0.0489482.4",
+            0.0038598,
+            "0.010301.2",
+            "0.0360658.1",
+            "0.0231834.2"
+          ],
+          "named_columns": [
+            0.074713,
+            0.0296246,
+            0.0682718,
+            0.0618306,
+            0.1004776,
+            -0.0090224,
+            0.0553894,
+            0.1069188,
+            "0.074713.1",
+            0.0489482,
+            -0.0219048,
+            0.010301,
+            "0.074713.2",
+            0.0360658,
+            0.0231834,
+            0.11336,
+            "0.0231834.1",
+            "0.0489482.1",
+            "0.010301.1",
+            "0.0553894.1",
+            "0.0553894.2",
+            "0.0489482.2",
+            "0.0618306.1",
+            "0.074713.3",
+            "0.0489482.3",
+            "0.0489482.4",
+            0.0038598,
+            "0.010301.2",
+            "0.0360658.1",
+            "0.0231834.2"
+          ],
+          "column_count": 100,
+          "row_count": 99,
+          "dtypes": {
+            "0.074713": "float64",
+            "0.0296246": "float64",
+            "0.0682718": "float64",
+            "0.0618306": "float64",
+            "0.1004776": "float64",
+            "-0.0090224": "float64",
+            "0.0553894": "float64",
+            "0.1069188": "float64",
+            "0.074713.1": "float64",
+            "0.0489482": "float64",
+            "-0.0219048": "float64",
+            "0.010301": "float64",
+            "0.074713.2": "float64",
+            "0.0360658": "float64",
+            "0.0231834": "float64",
+            "0.11336": "float64",
+            "0.0231834.1": "float64",
+            "0.0489482.1": "float64",
+            "0.010301.1": "float64",
+            "0.0553894.1": "float64",
+            "0.0553894.2": "float64",
+            "0.0489482.2": "float64",
+            "0.0618306.1": "float64",
+            "0.074713.3": "float64",
+            "0.0489482.3": "float64",
+            "0.0489482.4": "float64",
+            "0.0038598": "float64",
+            "0.010301.2": "float64",
+            "0.0360658.1": "float64",
+            "0.0231834.2": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.2e",
+          "columns": [
+            1.61306688,
+            1.61242276,
+            1.60211685,
+            "1.60211685.1",
+            1.57635206,
+            "1.61306688.1",
+            1.63561107,
+            1.61628748,
+            1.60018449,
+            1.63432283,
+            1.62305074,
+            1.63142429,
+            1.61113452,
+            1.64591698,
+            1.65235818,
+            1.66717294,
+            "1.65235818.1",
+            1.6642744,
+            1.66846117,
+            1.66652882,
+            1.6530023,
+            1.69325978,
+            1.71548192,
+            1.70388776,
+            1.71515986,
+            1.72385547,
+            1.72836431,
+            1.6971245,
+            1.72095694,
+            1.7196687
+          ],
+          "named_columns": [
+            1.61306688,
+            1.61242276,
+            1.60211685,
+            "1.60211685.1",
+            1.57635206,
+            "1.61306688.1",
+            1.63561107,
+            1.61628748,
+            1.60018449,
+            1.63432283,
+            1.62305074,
+            1.63142429,
+            1.61113452,
+            1.64591698,
+            1.65235818,
+            1.66717294,
+            "1.65235818.1",
+            1.6642744,
+            1.66846117,
+            1.66652882,
+            1.6530023,
+            1.69325978,
+            1.71548192,
+            1.70388776,
+            1.71515986,
+            1.72385547,
+            1.72836431,
+            1.6971245,
+            1.72095694,
+            1.7196687
+          ],
+          "column_count": 100,
+          "row_count": 99,
+          "dtypes": {
+            "1.61306688": "float64",
+            "1.61242276": "float64",
+            "1.60211685": "float64",
+            "1.60211685.1": "float64",
+            "1.57635206": "float64",
+            "1.61306688.1": "float64",
+            "1.63561107": "float64",
+            "1.61628748": "float64",
+            "1.60018449": "float64",
+            "1.63432283": "float64",
+            "1.62305074": "float64",
+            "1.63142429": "float64",
+            "1.61113452": "float64",
+            "1.64591698": "float64",
+            "1.65235818": "float64",
+            "1.66717294": "float64",
+            "1.65235818.1": "float64",
+            "1.6642744": "float64",
+            "1.66846117": "float64",
+            "1.66652882": "float64",
+            "1.6530023": "float64",
+            "1.69325978": "float64",
+            "1.71548192": "float64",
+            "1.70388776": "float64",
+            "1.71515986": "float64",
+            "1.72385547": "float64",
+            "1.72836431": "float64",
+            "1.6971245": "float64",
+            "1.72095694": "float64",
+            "1.7196687": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "fig.2f",
+          "columns": [
+            "angle",
+            "responsivity",
+            "Unnamed: 2"
+          ],
+          "named_columns": [
+            "angle",
+            "responsivity"
+          ],
+          "column_count": 3,
+          "row_count": 74,
+          "dtypes": {
+            "angle": "object",
+            "responsivity": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "fig.2g",
+          "columns": [
+            "angle",
+            "responsivity",
+            "Unnamed: 2"
+          ],
+          "named_columns": [
+            "angle",
+            "responsivity"
+          ],
+          "column_count": 3,
+          "row_count": 74,
+          "dtypes": {
+            "angle": "object",
+            "responsivity": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "fig.2h",
+          "columns": [
+            "angle",
+            "responsivity",
+            "Unnamed: 2"
+          ],
+          "named_columns": [
+            "angle",
+            "responsivity"
+          ],
+          "column_count": 3,
+          "row_count": 74,
+          "dtypes": {
+            "angle": "object",
+            "responsivity": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "Source_data.xlsx"
+    }
+  ]
+}

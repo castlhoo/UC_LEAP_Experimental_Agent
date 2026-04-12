@@ -1,0 +1,197 @@
+{
+  "paper_id": "step1_0301",
+  "title": "Parallel transport and layer-resolved thermodynamic measurements in twisted bilayer graphene",
+  "doi": "10.1103/PhysRevB.104.L241410",
+  "journal": "arXiv preprint",
+  "year": 2021,
+  "paper_url": "https://arxiv.org/abs/2109.06812v2",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_PhysRevB_104_L241410",
+  "files_inspected": 3,
+  "file_types_found": [
+    "tabular_text"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All three files are structured CSV tables with headers and numeric columns, suitable for direct loading and plotting. They appear to be processed or analysis-ready tabular data rather than raw instrument outputs.",
+  "type2_summary": "No files show characteristics of raw/unprocessed data such as proprietary binary formats, microscopy images, or instrument dumps.",
+  "type1_files": [
+    "original-cats-dtds-pblh-daytime-nighttime-sgp.csv",
+    "daytime-denoised-dtds-pblh-sgp.csv",
+    "original-cats-dtds-pblh-daytime-nighttime-ena.csv"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "There is a major provenance mismatch: the paper is about twisted bilayer graphene, while the files appear to be atmospheric/remote-sensing CSV data (e.g., cloud base/top height, latitude/longitude). Because the paper does not mention these files, classification is based on file structure and not on paper-specific dataset provenance. No Type 2 evidence is present.",
+  "file_classifications": [
+    {
+      "relative_path": "original-cats-dtds-pblh-daytime-nighttime-sgp.csv",
+      "filename": "original-cats-dtds-pblh-daytime-nighttime-sgp.csv",
+      "type": "type1",
+      "paper_evidence": "The paper does not report any raw-data repository or explicit raw instrument files; no evidence suggests this CSV is raw experimental output from the publication.",
+      "file_evidence": "CSV tabular file with headers and numeric columns; structured, moderate size (2.3 MB), 23,285 rows; contains variables like cats-dtds-pblh, quality-control, surface-elevation, cbh, cth, latitude, longitude, and a timestamp-like first column. This is directly loadable and plottable with minimal processing.",
+      "reasoning": "Although the paper itself does not mention these files, the file is clearly a cleaned/organized tabular dataset rather than an instrument dump. Its column structure and numeric content indicate replot-ready data. In the absence of any raw-data statement, the conservative classification is Type 1 because it behaves like processed figure/source data rather than raw unprocessed output.",
+      "ambiguity": "The paper context is unrelated to the file contents, so provenance is uncertain; classification is based on file structure only, with no evidence of raw instrument format.",
+      "key_columns_or_structure": "Timestamp-like index; cats-dtds-pblh; quality-control; surface-elevation; cbh; cth; latitude; longitude"
+    },
+    {
+      "relative_path": "daytime-denoised-dtds-pblh-sgp.csv",
+      "filename": "daytime-denoised-dtds-pblh-sgp.csv",
+      "type": "type1",
+      "paper_evidence": "No paper evidence indicates this is raw data; no raw-data repository or instrument-file description is present.",
+      "file_evidence": "Structured CSV with 8 columns and 11,955 rows; numeric tabular data with headers, including quality-control and geophysical variables. The filename suggests denoised/processed data, and the file is directly plottable.",
+      "reasoning": "The presence of 'denoised' strongly suggests preprocessing has already been applied. Combined with the clean tabular structure, this is best treated as processed, replot-ready data rather than raw data.",
+      "ambiguity": "The paper does not discuss this dataset, so the classification relies on file semantics and structure.",
+      "key_columns_or_structure": "Timestamp-like index; cats-dtds-pblh; quality-control; surface-elevation; cbh; cth; latitude; longitude"
+    },
+    {
+      "relative_path": "original-cats-dtds-pblh-daytime-nighttime-ena.csv",
+      "filename": "original-cats-dtds-pblh-daytime-nighttime-ena.csv",
+      "type": "type1",
+      "paper_evidence": "No explicit paper evidence identifies this as raw experimental output; no raw-data statement or instrument-file description is available.",
+      "file_evidence": "CSV with headers and numeric columns; 7,124 rows; moderate size (674 KB); structured tabular data with the same variables as the other files. It is directly loadable and suitable for plotting with minimal processing.",
+      "reasoning": "Despite the word 'original' in the filename, the file is still a clean, analysis-ready CSV rather than a raw proprietary format or unprocessed instrument output. Without paper evidence of raw provenance, the conservative choice is Type 1.",
+      "ambiguity": "The filename contains 'original', which could imply less processed data, but the actual file structure is still clean and figure-ready; no evidence of raw instrument output exists.",
+      "key_columns_or_structure": "Timestamp-like index; cats-dtds-pblh; quality-control; surface-elevation; cbh; cth; latitude; longitude"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports experimental transport and thermodynamic measurements in 30°-twisted bilayer graphene, showing parallel conduction between two graphene layers and enabling layer-resolved chemical potential measurements.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental transport and thermodynamic measurements, but no accessible dataset or source data location is indicated in the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files, supplementary materials, or external repository links were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files, supplementary materials, or external repository links were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "original-cats-dtds-pblh-daytime-nighttime-sgp.csv",
+      "extension": ".csv",
+      "size_bytes": 2365258,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "cats-dtds-pblh",
+        "quality-control",
+        "surface-elevation",
+        "cbh",
+        "cth",
+        "latitude",
+        "longitude"
+      ],
+      "column_count": 8,
+      "row_count": 23285,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "cats-dtds-pblh": "float64",
+        "quality-control": "float64",
+        "surface-elevation": "float64",
+        "cbh": "float64",
+        "cth": "float64",
+        "latitude": "float64",
+        "longitude": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "original-cats-dtds-pblh-daytime-nighttime-sgp.csv"
+    },
+    {
+      "filename": "daytime-denoised-dtds-pblh-sgp.csv",
+      "extension": ".csv",
+      "size_bytes": 1279142,
+      "size_human": "1.2 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "cats-dtds-pblh",
+        "quality-control",
+        "surface-elevation",
+        "cbh",
+        "cth",
+        "latitude",
+        "longitude"
+      ],
+      "column_count": 8,
+      "row_count": 11955,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "cats-dtds-pblh": "float64",
+        "quality-control": "float64",
+        "surface-elevation": "float64",
+        "cbh": "float64",
+        "cth": "float64",
+        "latitude": "float64",
+        "longitude": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "daytime-denoised-dtds-pblh-sgp.csv"
+    },
+    {
+      "filename": "original-cats-dtds-pblh-daytime-nighttime-ena.csv",
+      "extension": ".csv",
+      "size_bytes": 690193,
+      "size_human": "674.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "cats-dtds-pblh",
+        "quality-control",
+        "surface-elevation",
+        "cbh",
+        "cth",
+        "latitude",
+        "longitude"
+      ],
+      "column_count": 8,
+      "row_count": 7124,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "cats-dtds-pblh": "float64",
+        "quality-control": "float64",
+        "surface-elevation": "float64",
+        "cbh": "float64",
+        "cth": "float64",
+        "latitude": "float64",
+        "longitude": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "original-cats-dtds-pblh-daytime-nighttime-ena.csv"
+    }
+  ]
+}

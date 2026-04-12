@@ -1,0 +1,201 @@
+{
+  "paper_id": "step1_0270",
+  "title": "Unconventional Nonlocal Relaxation Dynamics in a Twisted Graphene Moire Superlattice",
+  "doi": "10.1038/s41467-022-35213-5",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2208.10399v2",
+  "priority_score": 6.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-35213-5",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The only provided file is a Nature source-data PDF, which is most consistent with cleaned, figure-linked, replot-ready material rather than raw instrument output.",
+  "type2_summary": "No clear raw/unprocessed instrument file is present in the provided file list.",
+  "type1_files": [
+    "41467_2022_35213_MOESM1_ESM.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Only one file was provided, and its contents were not directly inspected. The classification relies on the file being a Nature source-data PDF and the paper’s mixed raw/derived data context. If the PDF contains only documentation, it could be 'documentation' instead, but the most likely dataset role is Type 1 source data.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2022_35213_MOESM1_ESM.pdf",
+      "filename": "41467_2022_35213_MOESM1_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper contains both raw measurements and derived/source-data-style figure content. Nature source-data PDFs are typically figure-linked, cleaned, replot-ready deposits rather than raw instrument exports.",
+      "file_evidence": "PDF source-data file from nature_source_data, likely organized as figure-supporting material rather than instrument output. No indication of proprietary raw microscopy or spectroscopy format; PDF is consistent with curated figure data or documentation.",
+      "reasoning": "Given the deposit source and the paper context, this file is more consistent with a source-data/figure-supporting PDF than with raw instrument data. It is not a raw measurement container, and PDFs in Nature source-data packages usually provide extracted plots, tables, or figure panels that can be inspected or re-plotted with minimal processing. Therefore Type 1 is the conservative classification.",
+      "ambiguity": "Moderate: the file is a PDF, so without opening it we cannot verify whether it contains tables, figure panels, or documentation. However, the deposit source strongly suggests source-data rather than raw instrument output.",
+      "key_columns_or_structure": "Not inspectable from metadata alone; likely figure-linked source data or supporting documentation in PDF form"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies twisted double trilayer graphene (TDTG) using mid-infrared near-field optical microscopy and STM/STS, and finds an unexpected asymmetry between moiré domains that should be symmetry-related in a rigid stacking picture. The authors attribute the contrast to a non-local lattice relaxation process in which a global layer slide stabilizes an otherwise unfavorable stacking (ABABAB/BCBACA) by coupling it to a lower-energy Bernal domain elsewhere in the moiré pattern.",
+    "measurement_types": [
+      "mid-infrared scattering-type scanning near-field optical microscopy (s-SNOM) amplitude",
+      "mid-infrared s-SNOM phase",
+      "scanning tunneling microscopy (STM) topography/imagery",
+      "scanning tunneling spectroscopy (STS) differential conductance (dI/dV)",
+      "density functional theory (DFT) generalized stacking fault energy (GSFE)",
+      "DFT density of states (DOS)",
+      "atomic relaxation / continuum-model energy minimization"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Rigid TDTG stacking scenario showing two moiré domain stackings (ABABCB and BCBABA) expected if both trilayers remain Bernal stacked.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Alternative layer-slide scenario where the middle layer shifts, producing ABABAB and BCBACA domains.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Mid-IR near-field amplitude image over a ~10 μm region of the TDTG device, showing bright and dark triangular domains.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Mid-IR near-field phase image over the same region, showing convex/concave triangular domains and domain-wall features.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2a-d",
+        "description": "Higher-resolution mid-IR near-field images at multiple tapping harmonics (2nd to 5th), showing domain contrast, curved domain walls, and bright features at walls/intersections.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Amplitude and phase contrast between the two domains as a function of demodulation harmonic.",
+        "data_type": "line plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "STS differential conductance map near the Fermi level showing spatial contrast between domains.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Tunneling spectra from each domain, showing a low-energy peak only in the convex domain and step-like features in the concave domain.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Tunneling spectrum on an untwisted trilayer region used to confirm the source crystal is Bernal trilayer graphene.",
+        "data_type": "spectrum",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3a-d",
+        "description": "Enumeration of candidate TDTG stacking configurations grouped by symmetry, with vertex color indicating low-energy spectral weight and size indicating stacking energy density.",
+        "data_type": "diagram / summary plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e-h",
+        "description": "Atomic relaxation results showing stacking-energy-density distributions for selected moiré pairs at twist angle 0.04°.",
+        "data_type": "simulation image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3i-l",
+        "description": "DFT-calculated density of states for different moiré pairs, used to match experiment and identify ABABAB/BCBACA as the realized stacking.",
+        "data_type": "spectrum",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Stacking energy landscape between two graphene sheets, including 1D cuts and a 2D configuration-space map.",
+        "data_type": "theory plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Schematic of phase generation during stacking/pick-up of the TDTG device.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Total energy density versus moiré wavelength for different relaxed moiré superlattices, referenced to the rigid configuration.",
+        "data_type": "line plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Energy minimization trajectories versus optimization step, showing the inversion of stability from ABABCB/BCBABA to ABABAB/BCBACA during relaxation.",
+        "data_type": "line plot / simulation trajectory",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from phase-resolved mid-IR s-SNOM scans (amplitude and phase images at 983 and 1000 cm^-1, multiple tapping harmonics), STM imaging, and STS differential conductance spectra acquired at 7 K under UHV. These are direct instrument measurements on the TDTG device and an untwisted trilayer region.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper also presents processed/derived plots including harmonic-contrast trends, DFT-calculated DOS, stacking-energy landscapes, atomic-relaxation simulation outputs, and energy-vs-moiré-period/optimization-step curves. These are not direct measurements but computed or extracted quantities used to interpret the raw data.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data used in this study are available in the Harvard Dataverse database [https://doi.org/10.7910/DVN/VDKZMA].'",
+      "data_provided_types": [
+        "raw",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described as experimental SNOM scans, STM images, and STS spectra collected on the TDTG sample; the paper does not specify file formats, folder structure, or whether the deposited dataset contains the unprocessed instrument outputs.",
+      "processed_data_description": "Processed data include extracted near-field amplitude/phase contrasts, STS spectra used for comparison to theory, DFT DOS curves, stacking-energy-density calculations, and atomic-relaxation energy curves. The paper describes these as results of analysis, DFT, or continuum-model calculations rather than as tabulated experimental values.",
+      "figure_data_description": "Figure-specific data are implied by the availability statement, but the paper does not explicitly say 'source data' files are provided per figure. It only states that the data used in the study are available in Harvard Dataverse.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text. The paper mentions custom atomic relaxation code and DFT/continuum calculations, but not whether scripts are deposited.",
+      "data_organization": "not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper indicates that the data used in the study are deposited in Harvard Dataverse, which suggests replotting is possible, but the text does not specify whether the deposit contains raw instrument files, processed figure data, or both. Replot readiness is therefore likely but not fully verifiable from the text alone.",
+      "notes": "The paper clearly separates experimental measurements from theory/simulation outputs. It explicitly mentions Supplementary Information sections for ruling out alternative symmetry-breaking mechanisms and for additional stacking-conﬁguration analysis, but no separate supplementary dataset structure is described in the text. The safest interpretation is that the repository contains study data, while the exact mix of raw versus processed/source data remains unknown."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The Methods section describes direct acquisition of s-SNOM scans and STM/STS measurements, and the Data availability statement says the data used in the study are available in Harvard Dataverse.",
+      "source_data_evidence": "Multiple figures are based on processed contrasts, extracted spectra, DFT DOS, and simulation outputs; these are figure-level derived data rather than raw instrument outputs.",
+      "both_evidence": "The paper contains both direct measurements and derived/processed figure data, so both raw and source data are plausible in the deposited dataset, though not explicitly itemized.",
+      "data_availability_section_relevant": "\"The data used in this study are available in the Harvard Dataverse database [https://doi.org/10.7910/DVN/VDKZMA].\"",
+      "priority_modalities": [
+        "s-SNOM amplitude/phase images",
+        "STM images",
+        "STS dI/dV spectra",
+        "DFT DOS curves",
+        "stacking-energy calculations",
+        "atomic relaxation simulation outputs"
+      ],
+      "review_notes": "Do not assume the Dataverse deposit contains scripts or fully raw instrument files; the paper does not specify this. Treat DFT/continuum outputs as derived data, not raw measurements. Figure captions and Methods strongly indicate a mix of experimental raw data and computed/processed data, but the exact packaging is unknown."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_35213_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2090192,
+      "size_human": "2.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_35213_MOESM1_ESM.pdf"
+    }
+  ]
+}

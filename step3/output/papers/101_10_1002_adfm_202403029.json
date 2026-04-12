@@ -1,0 +1,114 @@
+{
+  "paper_id": "step1_0016",
+  "title": "Fully 2D Materials‐Based Resistive Switching Circuits for Advanced Data Encryption",
+  "doi": "10.1002/adfm.202403029",
+  "journal": "Advanced Functional Materials",
+  "year": 2024,
+  "paper_url": "https://www.semanticscholar.org/paper/531c015a63854d2d6eeb4c4365562c65a143622f",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1002_adfm_202403029",
+  "files_inspected": 3,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No files show evidence of cleaned, replot-ready tabular source data.",
+  "type2_summary": "No files show evidence of raw/unprocessed experimental data or instrument output.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "Both files are PDFs with filenames and sizes consistent with documentation rather than dataset deposits. Because the inspection reports do not expose internal structure, the classification is conservative and based on the strongest available evidence.",
+  "file_classifications": [
+    {
+      "relative_path": "Nonvolatile_Resistive_Switching_in_Nanocrystalline_Molybdenum_Disulfide_with_Ion-Based_Plasticity.pdf",
+      "filename": "Nonvolatile_Resistive_Switching_in_Nanocrystalline_Molybdenum_Disulfide_with_Ion-Based_Plasticity.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement and no explicit indication that this PDF is source data or raw data for figures.",
+      "file_evidence": "PDF document, 1.2 MB, from Zenodo. The filename matches a standalone article/paper rather than a tabular dataset or instrument output.",
+      "reasoning": "This appears to be a publication or supporting document, not a dataset file. There is no evidence of figure-specific tables, headers, or machine-readable data structure that would support Type 1, and no indication of raw experimental output that would support Type 2.",
+      "ambiguity": "Moderate: without opening the PDF content, it could theoretically contain supplementary data, but the available evidence strongly suggests a document rather than a dataset.",
+      "key_columns_or_structure": "Not applicable; PDF document with no visible tabular structure in the inspection report."
+    },
+    {
+      "relative_path": "Kalem_Oxides_based_resistive_switching_memories_2021.pdf",
+      "filename": "Kalem_Oxides_based_resistive_switching_memories_2021.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement and no explicit indication that this PDF is source data or raw data for figures.",
+      "file_evidence": "PDF document, 1.3 MB, from Zenodo. The filename suggests a paper or report about oxide-based resistive switching memories, not a structured dataset.",
+      "reasoning": "This file is best interpreted as documentation or a standalone article rather than a dataset. There is no evidence of tabular, figure-ready data (Type 1) or raw instrument output (Type 2).",
+      "ambiguity": "Moderate: the PDF could contain embedded tables or supplementary material, but the inspection report does not provide evidence of dataset structure.",
+      "key_columns_or_structure": "Not applicable; PDF document with no visible tabular structure in the inspection report."
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports flexible, transparent resistive-switching circuits made entirely from synthetic 2D materials and uses their stochastic switching behavior for true random number generation and data encryption.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit dataset, source data, or supplementary data files were identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Nonvolatile_Resistive_Switching_in_Nanocrystalline_Molybdenum_Disulfide_with_Ion-Based_Plasticity.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1307392,
+      "size_human": "1.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Nonvolatile_Resistive_Switching_in_Nanocrystalline_Molybdenum_Disulfide_with_Ion-Based_Plasticity.pdf"
+    },
+    {
+      "filename": "Kalem_Oxides_based_resistive_switching_memories_2021.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1400535,
+      "size_human": "1.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Kalem_Oxides_based_resistive_switching_memories_2021.pdf"
+    },
+    {
+      "filename": "2022_03_13_DRC_Braun.pdf",
+      "extension": ".pdf",
+      "size_bytes": 857370,
+      "size_human": "837.3 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "2022_03_13_DRC_Braun.pdf"
+    }
+  ]
+}

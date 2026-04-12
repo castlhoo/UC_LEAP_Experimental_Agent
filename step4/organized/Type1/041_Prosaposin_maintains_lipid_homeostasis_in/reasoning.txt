@@ -1,0 +1,73 @@
+Title: Prosaposin maintains lipid homeostasis in dopamine neurons and counteracts experimental parkinsonism in rodents
+DOI: 10.1038/s41467-023-41539-5
+Journal: Nature Communications
+Year: 2023
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: All inspected files are structured Excel source-data workbooks organized by figure or region, with tabular quantitative outputs suitable for direct replotting.
+- Type2 summary: No file shows clear raw instrument output, proprietary binary format, microscopy image stacks, or other unprocessed primary data.
+
+Type1 files
+- 41467_2023_41539_MOESM11_ESM.xlsx
+  original path: 41467_2023_41539_MOESM11_ESM.xlsx
+  classified as: type1
+  reasoning: Although large, the workbook is still a structured source-data deposit organized by figure. The presence of explicit variable headers and figure-based sheets indicates cleaned, replot-ready data rather than raw instrument files.
+  paper evidence: The paper explicitly includes source-data style figure outputs for multiple main and supplementary figures, including processed microscopy, behavioral, and lipidomics quantifications.
+  file evidence: Large Excel workbook (9.7 MB) with figure-organized sheets (Fig.1, Fig.2, Fig.3, Fig.4, Fig.5, Fig.6, SF.1- SF.4). The content is tabular, and at least one sheet (Fig.3) has explicit lipid variable headers such as LPA(16:0), LPE(18:1), CerP(36:1), PA(32:0), etc.
+  structure: Fig.1-Fig.6 and SF.1-SF.4 sheets; Fig.3 includes lipid species headers such as LPA(16:0), LPE(18:1), CerP(36:1), PA(32:0)
+  ambiguity: moderate: the file is large, but its spreadsheet structure and figure organization outweigh the size signal for raw data.
+- 41467_2023_41539_MOESM4_ESM.xlsx
+  original path: 41467_2023_41539_MOESM4_ESM.xlsx
+  classified as: type1
+  reasoning: This is a clean, figure-oriented spreadsheet with named brain-region sheets and tabular measurements. It matches source-data style rather than raw instrument output, and can be plotted with minimal processing.
+  paper evidence: The paper includes figure-level quantified lipid/lipidomics source data organized by brain region, consistent with source-data tables for plotted results.
+  file evidence: Excel workbook with 5 region-specific sheets (16m CPu, Ctx, CC, Hipp, SN+VTA), each with headers and 12 columns x 182 rows. Structured tabular data is directly replot-ready.
+  structure: Region-specific sheets; tabular measurements for 16m CPu, Ctx, CC, Hipp, SN+VTA
+- 41467_2023_41539_MOESM5_ESM.xlsx
+  original path: 41467_2023_41539_MOESM5_ESM.xlsx
+  classified as: type1
+  reasoning: The file contains processed statistical summaries rather than raw spectra or images. It is organized as analysis-ready tabular data and is directly replot-ready.
+  paper evidence: The paper presents processed lipid statistics and comparisons derived from MALDI-MSI, which are typical source-data outputs for figure panels.
+  file evidence: Excel workbook with structured sheets such as 'Cerebellum lipid statistics' and 'Lipid comparison of str and cb', including columns like Lipids, P value, Mean of KO, Mean of WT, Difference, q value, and -log10(q value).
+  structure: Lipids, Discovery?, P value, Mean of KO, Mean of WT, Difference, SE of difference, t ratio, df, q value, -log10(q value)
+- 41467_2023_41539_MOESM6_ESM.xlsx
+  original path: 41467_2023_41539_MOESM6_ESM.xlsx
+  classified as: type1
+  reasoning: Despite some headerless sheets, the workbook is clearly a structured quantitative dataset intended for figure support. It is not raw instrument data and can be used for plotting after minor cleanup.
+  paper evidence: The paper reports figure-level lipidomics summaries across regions, which are consistent with source-data tables rather than raw MALDI output.
+  file evidence: Excel workbook with region sheets (Hipp, CPu, CC, Ctx, DRN, DRN without correction) and tabular rows/columns. Although some sheets lack explicit headers, the structure is still spreadsheet-style quantitative data, not instrument raw files.
+  structure: Region sheets for Hipp, CPu, CC, Ctx, DRN; quantitative tabular layout
+  ambiguity: minor: some sheets lack explicit headers, but overall structure remains tabular and figure-oriented.
+- 41467_2023_41539_MOESM7_ESM.xlsx
+  original path: 41467_2023_41539_MOESM7_ESM.xlsx
+  classified as: type1
+  reasoning: This is clearly processed, figure-ready data rather than raw measurements. It can be directly plotted or summarized with minimal processing.
+  paper evidence: The paper includes processed regional lipid comparison statistics for multiple brain areas, matching source-data style outputs.
+  file evidence: Excel workbook with sheets DRN, Hipp, Ctx, Str and columns such as P value, Mean of WT, Mean of KO, Difference, SE of difference, t ratio, df. This is a compact statistical summary table.
+  structure: P value, Mean of WT, Mean of KO, Difference, SE of difference, t ratio, df
+- 41467_2023_41539_MOESM8_ESM.xlsx
+  original path: 41467_2023_41539_MOESM8_ESM.xlsx
+  classified as: type1
+  reasoning: The organization by main/supplementary figures strongly indicates cleaned source data intended for replotting. No evidence of raw instrument output is present.
+  paper evidence: The paper contains figure-based source data for main and supplementary figures, consistent with a source-data workbook.
+  file evidence: Excel workbook with sheets 'Main figures' and 'Supplementary figures', each containing tabular data (9 columns, hundreds of rows). This is organized as figure-linked source data.
+  structure: Main figures; Supplementary figures; tabular figure-linked data
+- 41467_2023_41539_MOESM9_ESM.xlsx
+  original path: 41467_2023_41539_MOESM9_ESM.xlsx
+  classified as: type1
+  reasoning: The file is a modest-sized spreadsheet suitable for direct plotting. While the sheet name is generic, the structure is still that of cleaned quantitative data rather than raw output.
+  paper evidence: The paper provides processed figure data for experimental results, consistent with a source-data spreadsheet.
+  file evidence: Single-sheet Excel workbook with 6 columns x 149 rows, tabular structure, and no indication of proprietary raw instrument format.
+  structure: Single-sheet tabular dataset; 6 columns x 149 rows
+  ambiguity: moderate: the sheet is generic ('Sheet1') and lacks descriptive headers in the inspection report, but the file still appears to be structured tabular data.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

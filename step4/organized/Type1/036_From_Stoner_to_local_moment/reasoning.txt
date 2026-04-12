@@ -1,0 +1,37 @@
+Title: From Stoner to local moment magnetism in atomically thin Cr2Te3
+DOI: 10.1038/s41467-023-40997-1
+Journal: Nature Communications
+Year: 2023
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: Both files are Nature source-data PDFs of moderate size and are most consistent with curated, figure-linked source data rather than raw instrument outputs.
+- Type2 summary: No file shows clear evidence of raw/unprocessed instrument output such as proprietary microscopy files, HDF5, scan dumps, or large binary datasets.
+
+Type1 files
+- 41467_2023_40997_MOESM1_ESM.pdf
+  original path: 41467_2023_40997_MOESM1_ESM.pdf
+  classified as: type1
+  reasoning: Given the repository source and the paper’s strong evidence for figure-specific source data, this file is more consistent with cleaned, replot-ready source data than with raw instrument output. The file size is moderate and compatible with a source-data PDF. Conservatively, it is classified as Type 1 because Nature source-data PDFs are usually organized for direct figure reproduction with minimal processing.
+  paper evidence: The paper’s data availability statement points to a Nature source-data repository, and the paper contains many figure-level processed outputs (e.g., XMCD/XAS ratios, extracted ARPES shifts, second-derivative images, DOS comparisons) consistent with source-data deposits.
+  file evidence: PDF source-data file from nature_source_data, 4.2 MB. The file is likely a figure-linked source-data PDF rather than a raw instrument dump; PDFs in this context typically contain organized, plot-ready data tables or figure panels.
+  structure: Not inspectable from metadata alone; likely figure-linked source data / embedded tables or panels
+  ambiguity: Moderate: the file is a PDF, so exact internal structure is not visible here. However, repository context and paper evidence favor source-data rather than raw data.
+- 41467_2023_40997_MOESM2_ESM.pdf
+  original path: 41467_2023_40997_MOESM2_ESM.pdf
+  classified as: type1
+  reasoning: In the absence of evidence that this PDF contains raw instrument output, the conservative classification is Type 1 because Nature source-data PDFs are typically curated to support figure reproduction and are not raw acquisition files. The size and provenance fit source-data deposits.
+  paper evidence: The publication explicitly includes processed and extracted datasets alongside raw measurements, and the repository deposit is described as source data. This supports the presence of figure-ready supplemental data.
+  file evidence: PDF source-data file from nature_source_data, 4.1 MB. As with the first file, the format and repository source are consistent with organized supplemental source data rather than raw instrument files.
+  structure: Not inspectable from metadata alone; likely figure-linked source data / embedded tables or panels
+  ambiguity: Moderate: internal contents are not directly inspected, so there is some uncertainty. Still, the repository context strongly supports Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

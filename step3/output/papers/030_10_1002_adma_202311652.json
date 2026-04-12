@@ -1,0 +1,118 @@
+{
+  "paper_id": "step1_0010",
+  "title": "Ultrafast Non‐Volatile Floating‐Gate Memory Based on All‐2D Materials",
+  "doi": "10.1002/adma.202311652",
+  "journal": "Advanced Materials",
+  "year": 2024,
+  "paper_url": "https://www.semanticscholar.org/paper/251760999cb4b355d3b7ad973a5d289220cac4f1",
+  "priority_score": 8.3,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1002_adma_202311652",
+  "files_inspected": 2,
+  "file_types_found": [
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "One small structured CSV is present and is replot-ready in the sense of being clean tabular data, though it appears to be ancillary market-summary content rather than experimental figure data.",
+  "type2_summary": "No raw/unprocessed instrument output, microscopy files, HDF5, or other clear Type 2 dataset files were identified.",
+  "type1_files": [
+    "Global_Non-Volatile_Memory_Market.csv"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The available files do not look like a standard experimental data package for the cited memory-device paper. The CSV is structured but appears unrelated to raw scientific measurements. The PDF is the article/documentation itself.",
+  "file_classifications": [
+    {
+      "relative_path": "4213vlsics06.pdf",
+      "filename": "4213vlsics06.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement and no identified publisher-hosted source data or external URLs. This PDF is therefore best treated as the publication itself, not a dataset deposit.",
+      "file_evidence": "PDF document, 250.9 KB, from Zenodo. No structural evidence of tabular figure data or raw instrument output was provided.",
+      "reasoning": "This file is a paper/documentation file rather than a dataset file. It does not represent figure-ready data or raw measurement data, so it is excluded from Type 1/Type 2 classification.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "not applicable"
+    },
+    {
+      "relative_path": "Global_Non-Volatile_Memory_Market.csv",
+      "filename": "Global_Non-Volatile_Memory_Market.csv",
+      "type": "type1",
+      "paper_evidence": "The paper analysis provides no evidence that this CSV is raw experimental data or source data from the publication. The file therefore must be judged from its own structure and content.",
+      "file_evidence": "Small CSV (610 B) with 2 columns and 10 rows, header-based tabular structure. Columns are 'Feature of the Report' and 'Details'; sample content includes 'Market Size in 2024' and 'USD 89.23 Billion'. This is structured, human-readable summary data rather than instrument output.",
+      "reasoning": "The file is directly loadable as a table and is cleanly structured, but its content is market-report metadata rather than physical measurement data. Under the provided definitions, it is still a cleaned tabular file and not raw/unprocessed data. It is therefore classified as Type 1 rather than Type 2, while noting that it is not figure-specific scientific source data.",
+      "ambiguity": "moderate: the file is tabular and replot-ready, but its subject matter is not clearly tied to the paper's experimental figures; it appears to be ancillary/non-experimental data.",
+      "key_columns_or_structure": "Feature of the Report, Details"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports an all-2D-material floating-gate memory device with ultrafast non-volatile switching, high on/off extinction, multi-bit storage, and long retention.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The available information does not identify any downloadable dataset, source data, repository deposit, or supplementary data files. The paper likely contains experimental device measurements and characterization results, but no accessible data location is provided here.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "4213vlsics06.pdf",
+      "extension": ".pdf",
+      "size_bytes": 256901,
+      "size_human": "250.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "4213vlsics06.pdf"
+    },
+    {
+      "filename": "Global_Non-Volatile_Memory_Market.csv",
+      "extension": ".csv",
+      "size_bytes": 610,
+      "size_human": "610.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Feature of the Report",
+        "Details"
+      ],
+      "column_count": 2,
+      "row_count": 10,
+      "dtypes": {
+        "Feature of the Report": "object",
+        "Details": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Global_Non-Volatile_Memory_Market.csv"
+    }
+  ]
+}

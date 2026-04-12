@@ -1,0 +1,37 @@
+Title: Three-dimensional mapping of the altermagnetic spin splitting in CrSb
+DOI: 10.1038/s41467-025-56647-7
+Journal: Nature Communications
+Year: 2025
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: Both files are Nature Communications source-data PDFs deposited with the manuscript. The paper explicitly says all source data are available in Figshare, and the file evidence is consistent with figure-linked, replot-ready source data rather than raw instrument exports.
+- Type2 summary: No file shows clear evidence of raw/unprocessed instrument output such as proprietary scan files, HDF5, microscopy images, or run-specific exports.
+
+Type1 files
+- 41467_2025_56647_MOESM1_ESM.pdf
+  original path: 41467_2025_56647_MOESM1_ESM.pdf
+  classified as: type1
+  reasoning: Although the file is large, the strongest paper-level evidence is that this is deposited source data for the manuscript. In Nature Communications, MOESM source-data PDFs are typically figure-linked, cleaned, and replot-ready rather than raw instrument outputs. The file size alone is not sufficient to override the explicit source-data context. Therefore it is classified as Type 1.
+  paper evidence: The paper explicitly states that all source data accompanying the manuscript were deposited in Figshare, and the figures include many processed/source-data plots intended for direct reuse.
+  file evidence: PDF source-data file, very large (17.1 MB), consistent with a figure-based source data package containing many plotted datasets and/or embedded tables rather than a single raw instrument export.
+  structure: Not directly inspectable from metadata; likely figure-linked source data pages/tables for manuscript figures.
+  ambiguity: Moderate: the PDF format and large size could indicate embedded plots or multiple figure datasets, but there is no evidence of proprietary raw instrument output.
+- 41467_2025_56647_MOESM2_ESM.pdf
+  original path: 41467_2025_56647_MOESM2_ESM.pdf
+  classified as: type1
+  reasoning: This file matches the expected Nature Communications source-data supplement style. Its modest size and PDF source-data designation support a cleaned, figure-ready dataset rather than raw measurement output. With no evidence of proprietary raw formats or instrument-run structure, Type 1 is the conservative classification.
+  paper evidence: The paper states that all source data accompanying the manuscript were deposited in Figshare, indicating figure/source-data supplements rather than raw-only archives.
+  file evidence: PDF source-data file, 462.4 KB, which is small-to-moderate and consistent with a cleaned, figure-specific source-data document that can usually be re-plotted with minimal processing.
+  structure: Not directly inspectable from metadata; likely figure-linked source data pages/tables for manuscript figures.
+  ambiguity: Low to moderate: the exact internal structure is not visible from the inspection report, but the source-data PDF context strongly favors Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

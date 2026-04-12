@@ -1,0 +1,137 @@
+Title: Entangled Moire Chern Insulator in Rhombohedral Graphene
+DOI: N/A
+Journal: arXiv preprint
+Year: 2025
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The tabular TXT files are cleaned, structured, and directly plottable figure/source-style data. They look like processed numerical arrays rather than raw instrument outputs.
+- Type2 summary: No clear raw/unprocessed dataset files are present. The ZIP archive contains software and scripts, but these are not classified as Type 2 dataset files.
+
+Type1 files
+- band__down_-_.txt
+  original path: band__down_-_.txt
+  classified as: type1
+  reasoning: The file is structured, compact, and figure-ready. It fits Type 1 cleaned/source data.
+  paper evidence: No explicit raw-data statement in the paper analysis; no repository or raw-data indication.
+  file evidence: Small tabular TXT file with 15 rows and 20 numeric columns, header-like structure, directly loadable and plot-ready.
+  structure: 20 numeric columns; 15 rows
+  ambiguity: Low
+- band__down___.txt
+  original path: band__down___.txt
+  classified as: type1
+  reasoning: The file is organized as cleaned numerical data suitable for direct plotting.
+  paper evidence: No explicit raw-data statement in the paper analysis; no evidence of raw instrument output.
+  file evidence: Small tabular TXT file with 15 rows and 20 numeric columns, header-like structure, directly loadable and plot-ready.
+  structure: 20 numeric columns; 15 rows
+  ambiguity: Low
+- band__up_-_.txt
+  original path: band__up_-_.txt
+  classified as: type1
+  reasoning: This is figure-ready numerical data rather than raw output.
+  paper evidence: No explicit raw-data statement in the paper analysis; no evidence of raw instrument data.
+  file evidence: Small tabular TXT file with 15 rows and 20 numeric columns, header-like structure, directly plottable.
+  structure: 20 numeric columns; 15 rows
+  ambiguity: Low
+- band__up___.txt
+  original path: band__up___.txt
+  classified as: type1
+  reasoning: The file is structured numerical data consistent with cleaned figure/source data. It can be directly plotted with minimal processing, which matches Type 1.
+  paper evidence: No explicit raw-data statement in the paper analysis; no repository or raw instrument data indication.
+  file evidence: Small tabular TXT file with 15 rows and 20 numeric columns, header-like structure, directly loadable and plot-ready.
+  structure: 20 numeric columns; header-like row; 15 rows
+  ambiguity: Low
+- density__7B_-_.txt
+  original path: density__7B_-_.txt
+  classified as: type1
+  reasoning: Despite its size, the file is organized as a dense numerical table suitable for replotting. The structure strongly indicates processed/source data rather than raw measurements.
+  paper evidence: No explicit raw-data statement in the paper analysis; no evidence that this is instrument output.
+  file evidence: Large but still structured tabular TXT file with 239 rows and 240 numeric columns, header-like structure, directly loadable for plotting.
+  structure: 240 numeric columns; 239 rows; tabular numeric grid
+  ambiguity: Low
+- density__7B___.txt
+  original path: density__7B___.txt
+  classified as: type1
+  reasoning: This is clearly cleaned numerical data organized for plotting or analysis, not raw instrument output.
+  paper evidence: No explicit raw-data statement in the paper analysis; no evidence of unprocessed instrument output.
+  file evidence: Structured tabular TXT file with 239 rows and 240 numeric columns, header-like structure, directly plottable.
+  structure: 240 numeric columns; 239 rows; tabular numeric grid
+  ambiguity: Low
+- x.txt
+  original path: x.txt
+  classified as: type1
+  reasoning: Although the filename is generic, the file structure is highly organized and directly usable for plotting or reconstruction of a figure.
+  paper evidence: No explicit raw-data statement in the paper analysis; no indication this is raw measurement data.
+  file evidence: Large structured numeric table with 239 rows and 240 columns, consistent with coordinate/grid data for plotting.
+  structure: 240 numeric columns; 239 rows; coordinate-like grid
+  ambiguity: Moderate: generic filename, but structure is clearly processed/tabulated.
+- y.txt
+  original path: y.txt
+  classified as: type1
+  reasoning: The file appears to be part of a processed grid or mesh used for plotting, not raw data.
+  paper evidence: No explicit raw-data statement in the paper analysis; no evidence of raw instrument output.
+  file evidence: Large structured numeric table with 239 rows and 240 columns, consistent with coordinate/grid data for plotting.
+  structure: 240 numeric columns; 239 rows; coordinate-like grid
+  ambiguity: Moderate: generic filename, but structure is clearly processed/tabulated.
+
+Type2 files
+- none
+
+Annotation files
+- README.md
+  original path: zip_contents/Software/Generic Data Manipulation/README.md
+  classified as: documentation
+  reasoning: This is documentation, not dataset content.
+  paper evidence: No paper evidence that this is data; it is documentation inside the software archive.
+  file evidence: Markdown README file.
+  structure: README documentation
+  ambiguity: None
+
+Script files
+- AddFolderToPath.m
+  original path: zip_contents/Software/Generic Data Manipulation/AddFolderToPath.m
+  classified as: script
+  reasoning: This is analysis/support code, not a dataset file.
+  paper evidence: The paper analysis does not identify a data repository or raw-data statement; this is not described as dataset content.
+  file evidence: MATLAB script file, clearly code rather than data.
+  structure: MATLAB script
+  ambiguity: None
+- OpenDataVaultFile.m
+- lanczos.py
+  original path: zip_contents/Software/Generic Data Manipulation/Canned Algorithms/Tuning Fork Fitting/lanczos.py
+  classified as: script
+  reasoning: This is code, not data.
+  paper evidence: No paper evidence that this is data; it is software bundled in the archive.
+  file evidence: Python script used for analysis or plotting.
+  structure: Python script
+  ambiguity: None
+- TuningForkError.py
+- SimulateTFData.m
+- TestMagReversal.m
+- TestTFConvolution.m
+- InterpIntegrate.m
+- Integrate.m
+- InterpolateIntegrate.m
+- DirectionalIntegral.m
+- MatrixIntegrate.m
+- HighPassFilter.m
+- LowPassFilter.m
+- convolveTFSig.m
+- InterpFourierComponent.m
+- InterpDataLine.m
+- GaussianPadding.m
+- ConvertBtoMoment.m
+- ConvertMomenttoB.m
+- Plot_nSOT_Mag.m
+- customcolormap.m
+- redblue.m
+- Fig1a.m
+- Fig1cdefghi.m
+- FastHystOneFile.m
+- figure_2_ab.m
+- figure_2_bc.m
+- Domain1Isolated.m
+- Domain2Isolated.m
+- plot_transport_hysteresis.m
+- Transport.m

@@ -1,0 +1,114 @@
+{
+  "paper_id": "step1_0387",
+  "title": "MDC_cut: A Python-based GUI software for comprehensive ARPES data analysis",
+  "doi": "10.2139/ssrn.6339964",
+  "journal": "",
+  "year": 2026,
+  "paper_url": "https://doi.org/10.2139/ssrn.6339964",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_2139_ssrn_6339964",
+  "files_inspected": 3,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file shows evidence of cleaned, replot-ready tabular data.",
+  "type2_summary": "No file shows evidence of raw/unprocessed measurement data or instrument output.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Both files are PDFs and appear to be documentation rather than dataset files. Because no file contents were provided, the classification is conservative and based on metadata plus paper context.",
+  "file_classifications": [
+    {
+      "relative_path": "MifoBio-2025-FLUTE-p.pdf",
+      "filename": "MifoBio-2025-FLUTE-p.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is about MDC_cut software for ARPES analysis and does not indicate this PDF is a data deposit or source/raw dataset.",
+      "file_evidence": "PDF document, 7.3 MB, from Zenodo. No structural evidence of tabular data or instrument output was provided; likely a paper or documentation file rather than a dataset.",
+      "reasoning": "This file is best interpreted as documentation/publication material, not a data file. There is no evidence it contains figure-ready tables or raw measurement output.",
+      "ambiguity": "Moderate: without opening the PDF, its exact content cannot be verified, but available evidence strongly favors documentation.",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "Session_2_2_GUI_toolkits.pdf",
+      "filename": "Session_2_2_GUI_toolkits.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper provides no indication of a data repository or source/raw dataset associated with this file.",
+      "file_evidence": "PDF document, 1.5 MB, from Zenodo. The filename suggests lecture/session material or documentation, not a dataset file.",
+      "reasoning": "This is most consistent with documentation or presentation material rather than Type 1 or Type 2 data. No evidence supports classification as cleaned data or raw data.",
+      "ambiguity": "Moderate: the PDF content was not inspected directly, so classification is based on metadata and context only.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper presents MDC_cut, a GUI-based Python software package for analyzing ARPES datasets, with native support for PREVAC EA15 electron analyzer data formats.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper describes a Python GUI software package for ARPES data analysis (MDC_cut) and mentions native support for PREVAC EA15 electron analyzer data formats, but no actual dataset or source data location is provided in the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external repository links were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external repository links were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "MifoBio-2025-FLUTE-p.pdf",
+      "extension": ".pdf",
+      "size_bytes": 7634590,
+      "size_human": "7.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "MifoBio-2025-FLUTE-p.pdf"
+    },
+    {
+      "filename": "Session_2_2_GUI_toolkits.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1582919,
+      "size_human": "1.5 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Session_2_2_GUI_toolkits.pdf"
+    },
+    {
+      "filename": "2024-GerBI_FLUTE-software.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4459706,
+      "size_human": "4.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "2024-GerBI_FLUTE-software.pdf"
+    }
+  ]
+}

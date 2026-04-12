@@ -1,0 +1,100 @@
+Title: Intrinsic TGF-β signaling attenuates proximal tubule mitochondrial injury and inflammation in chronic kidney disease
+DOI: 10.1038/s41467-023-39050-y
+Journal: Nature Communications
+Year: 2023
+Final label: Both
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The Excel workbook is figure-organized source data with tabular, replot-ready measurements for multiple figures, matching the paper’s source-data statements.
+- Type2 summary: The PDF source-data files and the large two-column TXT files appear to be raw or near-raw supporting data requiring substantial preprocessing before plotting.
+
+Type1 files
+- 41467_2023_39050_MOESM4_ESM.xlsx
+  original path: 41467_2023_39050_MOESM4_ESM.xlsx
+  classified as: type1
+  reasoning: Despite being source data, the workbook is clearly cleaned and organized for figure reproduction. The figure-based sheet names and tabular structure indicate replot-ready data rather than raw instrument output.
+  paper evidence: The paper repeatedly states that source data are provided for figures, and this workbook contains figure-labeled sheets matching those figures.
+  file evidence: Excel workbook with 50 sheets named by figure panels (e.g., 'Fig. 1d', 'Fig. 1f', 'Fig. 2b and c'), with tabular numeric content and headers in several sheets. This is organized, figure-specific source data suitable for direct plotting.
+  structure: Figure-labeled sheets; examples include 'Well Type', 'Target', 'Replicate', 'Cq (∆Rn)', and numeric summary tables
+  ambiguity: Low: the sheet organization strongly indicates figure-level source data.
+
+Type2 files
+- 41467_2023_39050_MOESM1_ESM.pdf
+  original path: 41467_2023_39050_MOESM1_ESM.pdf
+  classified as: type2
+  reasoning: Although it is a source-data deposit, the file is not a clean replot-ready table. Its size and PDF format suggest it contains raw or minimally processed figure evidence rather than directly plottable tabular values. Conservatively classify as raw/unprocessed.
+  paper evidence: The paper states that raw experimental measurements and source data are provided, and this file is a large Nature source-data PDF likely containing raw figure panels or unprocessed image-based source material.
+  file evidence: PDF format, very large size (166.7 MB), and source_data provenance indicate a compiled source-data document rather than a clean tabular figure-ready dataset. Large PDF source-data files in Nature often contain raw images or multi-panel supporting material.
+  structure: PDF document; no tabular structure exposed
+  ambiguity: Moderate: without page-level inspection, the exact contents are unknown, but the size and format strongly favor raw/source material over cleaned tabular data.
+- 41467_2023_39050_MOESM2_ESM.pdf
+  original path: 41467_2023_39050_MOESM2_ESM.pdf
+  classified as: type2
+  reasoning: This is not directly replot-ready tabular data. As a PDF source-data file, it is more consistent with raw or semi-raw supporting material than with cleaned figure data.
+  paper evidence: The publication includes raw microscopy, histology, and other experimental measurements as source material; this PDF is part of the Nature source-data package.
+  file evidence: PDF format with moderate size (4.1 MB), consistent with a source-data document or figure supplement rather than a clean spreadsheet. No tabular headers or figure-specific columns are visible from the inspection report.
+  structure: PDF document; no tabular structure exposed
+  ambiguity: Moderate: could contain embedded figure source panels or tables, but the available evidence does not show a clean tabular structure.
+- PTcre-_PM3.txt
+  original path: PTcre-_PM3.txt
+  classified as: type2
+  reasoning: The file appears to be a raw count/matching table requiring preprocessing, not a direct plotting dataset.
+  paper evidence: The paper includes multiple raw experimental modalities; this file is consistent with underlying measurement output rather than source-data summary tables.
+  file evidence: Large two-column tabular text file with 106,332 rows ('Identifier', 'matchCounts'), lacking figure labels or summary statistics.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate.
+- PTcre-_PTM1.txt
+  original path: PTcre-_PTM1.txt
+  classified as: type2
+  reasoning: Not figure-ready; requires aggregation and analysis before plotting. Type 2.
+  paper evidence: The publication’s transcriptomic and spatial analyses depend on underlying raw count data.
+  file evidence: Two-column tabular text file with 106,332 rows and minimal schema ('Identifier', 'matchCounts'), consistent with raw measurement output.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate.
+- PTcre-_PTM2.txt
+  original path: PTcre-_PTM2.txt
+  classified as: type2
+  reasoning: This is raw or near-raw data rather than a cleaned, replot-ready table.
+  paper evidence: The study uses raw transcriptomic/spatial measurement inputs as part of its analyses.
+  file evidence: Large tabular text file with 106,332 rows and two columns ('Identifier', 'matchCounts'); no figure-specific organization.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate.
+- PTcre-_SFM1.txt
+  original path: PTcre-_SFM1.txt
+  classified as: type2
+  reasoning: Although tabular, the structure is not a cleaned plotting table; it is a large per-identifier count file requiring substantial preprocessing to become a figure dataset. Conservatively classify as raw/unprocessed.
+  paper evidence: The paper uses spatial transcriptomics and related expression analyses, which typically originate from raw count matrices before downstream processing.
+  file evidence: Tabular text with 106,332 rows and only two columns: 'Identifier' and 'matchCounts'. This looks like a raw or near-raw count/matching table rather than a figure-ready summary. The file name is experiment-like rather than figure-specific.
+  structure: Identifier, matchCounts
+  ambiguity: Moderate: the file is tabular, but its scale and minimal schema suggest raw counts rather than replot-ready data.
+- PTcrex2_PTM1.txt
+  original path: PTcrex2_PTM1.txt
+  classified as: type2
+  reasoning: Not directly plottable without preprocessing; classify as raw/unprocessed.
+  paper evidence: The paper’s transcriptomic analyses are based on underlying measurement files of this kind.
+  file evidence: Two-column tabular text file with 106,332 rows ('Identifier', 'matchCounts'), indicating raw count-like data.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate.
+- PTcrex2_PTM2.txt
+  original path: PTcrex2_PTM2.txt
+  classified as: type2
+  reasoning: This is not a cleaned figure table and would need substantial processing before plotting. Classified as raw/unprocessed.
+  paper evidence: The paper’s transcriptomic analyses rely on underlying count data and spatial transcriptomics inputs, consistent with raw measurement files.
+  file evidence: Tabular text with 106,332 rows and two columns ('Identifier', 'matchCounts'); experiment/run-style filename and minimal schema indicate raw or near-raw data.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate.
+- PTcrex2_SFM1.txt
+  original path: PTcrex2_SFM1.txt
+  classified as: type2
+  reasoning: The file is not organized by figure and does not contain summarized variables for direct plotting. It likely requires preprocessing and aggregation, so it is Type 2.
+  paper evidence: The study includes transcriptomic and spatial transcriptomic raw measurements; this file appears to be one of those underlying count tables.
+  file evidence: Large tabular text file with 106,332 rows and two columns ('Identifier', 'matchCounts'), matching a raw count/matching matrix style rather than a figure-ready table.
+  structure: Identifier, matchCounts
+  ambiguity: Low to moderate: structure strongly suggests raw counts.
+
+Annotation files
+- none
+
+Script files
+- none

@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0249",
+  "title": "Electric-field-tuned consecutive topological phase transitions between distinct correlated insulators in moire MoTe2/WSe2 heterobilayer",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2026,
+  "paper_url": "https://arxiv.org/abs/2602.15466v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0249",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear figure-ready cleaned dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed experimental data files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The paper-analysis summary appears internally inconsistent with the paper title (it mentions twisted PbS moiré superlattices rather than MoTe2/WSe2), so the evidence should be treated cautiously. Only one PDF file was provided, and without content inspection it cannot be classified as dataset Type 1 or Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "Identifing_Topological_Phase_Transitions_in_Experiments_Using_Manifold_Learning.pdf",
+      "filename": "Identifing_Topological_Phase_Transitions_in_Experiments_Using_Manifold_Learning.pdf",
+      "type": "documentation",
+      "paper_evidence": "The provided paper-analysis summary says no data availability statement, no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "file_evidence": "Single PDF file from Zenodo; based on the filename it appears to be a paper or report document rather than a data table or instrument output. No tabular structure, headers, or figure-specific dataset organization is available from the inspection report.",
+      "reasoning": "There is no evidence that this PDF is a cleaned dataset or raw measurement file. It is most conservatively classified as documentation because it is a PDF article/report-like file and the available metadata does not indicate embedded replot-ready data or raw experimental output.",
+      "ambiguity": "High ambiguity: the file content was not inspected, so it could potentially contain supplementary material, but there is no evidence for that from the provided report.",
+      "key_columns_or_structure": "Not available from inspection"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the fabrication and characterization of twisted PbS moiré superlattices with strong interlayer chemical bonding, revealing twist-angle-dependent structural reconstruction and emergent flat-band electronic states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data location or accessible dataset could be determined from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Identifing_Topological_Phase_Transitions_in_Experiments_Using_Manifold_Learning.pdf",
+      "extension": ".pdf",
+      "size_bytes": 808736,
+      "size_human": "789.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Identifing_Topological_Phase_Transitions_in_Experiments_Using_Manifold_Learning.pdf"
+    }
+  ]
+}

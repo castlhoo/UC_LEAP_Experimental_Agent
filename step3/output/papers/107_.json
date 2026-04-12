@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0269",
+  "title": "Spectral signature of periodic modulation and sliding of pseudogap state in moire system",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2503.04083v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0269",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No evidence of cleaned, figure-ready tabular data was found.",
+  "type2_summary": "No evidence of raw/unprocessed measurement data was found.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The provided paper analysis and the file metadata are inconsistent: the paper concerns moire pseudogap STM data, while the file title refers to a power electronics rectifier. With no content preview, the safest classification is documentation/other rather than guessing a dataset type.",
+  "file_classifications": [
+    {
+      "relative_path": "Sliding_mode_approach_for_control_and_observation_of_a_three_phase_AC-DC_pulse-width_modulation_rectifier.pdf",
+      "filename": "Sliding_mode_approach_for_control_and_observation_of_a_three_phase_AC-DC_pulse-width_modulation_rectifier.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis provided no data availability statement, no repository links, and no indication that this PDF is a dataset file from the publication.",
+      "file_evidence": "Single PDF file from Zenodo, 690 KB, with a title unrelated to the stated paper topic. No tabular structure, headers, or figure-data organization is available from the inspection report.",
+      "reasoning": "This file does not match the paper topic and there is no evidence it contains replot-ready data or raw instrument output. As a PDF, it is most plausibly a document rather than a dataset file. Because the task is to classify dataset files, this should not be forced into type1 or type2.",
+      "ambiguity": "High ambiguity because the file appears unrelated to the paper and only limited inspection metadata is available.",
+      "key_columns_or_structure": "Not applicable; no dataset structure identified"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the fabrication and characterization of twisted PbS moiré superlattices with strong interlayer chemical bonding, revealing twist-angle-dependent structural reconstruction and emergent flat-band electronic states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data location or accessible dataset could be determined from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Sliding_mode_approach_for_control_and_observation_of_a_three_phase_AC-DC_pulse-width_modulation_rectifier.pdf",
+      "extension": ".pdf",
+      "size_bytes": 706603,
+      "size_human": "690.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Sliding_mode_approach_for_control_and_observation_of_a_three_phase_AC-DC_pulse-width_modulation_rectifier.pdf"
+    }
+  ]
+}

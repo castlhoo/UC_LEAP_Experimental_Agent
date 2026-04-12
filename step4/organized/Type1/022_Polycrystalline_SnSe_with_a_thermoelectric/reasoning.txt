@@ -1,0 +1,57 @@
+Title: Polycrystalline SnSe with a thermoelectric figure of merit greater than the single crystal
+DOI: 10.1038/s41563-021-01064-6
+Journal: Nature Materials
+Year: 2021
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All provided files are figure-specific Excel source-data workbooks with labeled physical variables and direct plotting structure. They are cleaned/replot-ready rather than raw instrument exports.
+- Type2 summary: No Type 2 raw/unprocessed files were provided in this set.
+
+Type1 files
+- 41563_2021_1064_MOESM2_ESM.xlsx
+  original path: 41563_2021_1064_MOESM2_ESM.xlsx
+  classified as: type1
+  reasoning: This is a structured, figure-specific spreadsheet with labeled physical variables and no signs of instrument output or unprocessed raw data. It can be directly replotted with minimal processing, matching Type 1 source data.
+  paper evidence: The paper provides source data online for figure-level transport plots; Fig. 4e and related thermal conductivity/ZT curves are derived from measured Cp and transport data and are presented as replot-ready figure data.
+  file evidence: Excel workbook with one sheet ('Figure 1') containing headers and numeric columns for Temperature, Thermal conductivity, and ZT for purified and untreated samples; small tabular dataset (6 cols x 12 rows) suitable for direct plotting.
+  structure: Temperature (K), Thermal conductivity (x = 0.03, purified, W m-1 K-1), ZT (x = 0.03, purified), Temperature (K).1, Thermal conductivity (x = 0.03, untreated, W m-1 K-1), ZT (x = 0.03,untreated)
+- 41563_2021_1064_MOESM3_ESM.xlsx
+  original path: 41563_2021_1064_MOESM3_ESM.xlsx
+  classified as: type1
+  reasoning: Although the underlying experiment is raw TOF-SIMS imaging, the deposited file is a cleaned, figure-specific line-profile dataset. Its structure is consistent with replot-ready source data, not raw instrument output.
+  paper evidence: The paper states that source data are available online and Fig. 2c-d are line profiles derived from TOF-SIMS maps; these are figure-ready quantitative profiles rather than raw instrument exports.
+  file evidence: Excel workbook with two sheets ('Figure 2c', 'Figure 2d'), each a simple 2-column table (Distance, Counts) with headers and moderate row counts, directly plottable as line profiles.
+  structure: Distance, Counts
+- 41563_2021_1064_MOESM4_ESM.xlsx
+  original path: 41563_2021_1064_MOESM4_ESM.xlsx
+  classified as: type1
+  reasoning: The file is not a raw proprietary microscopy export; it is a structured workbook organized by figure panels and contains processed profiles/spectra suitable for direct plotting. The large row count in Figure 3m reflects a spectrum table, but the format remains source-data style.
+  paper evidence: The paper indicates source data availability for figures based on APT/STEM analyses; the deposited sheets correspond to figure panels with compositional profiles and spectra used in the publication.
+  file evidence: Excel workbook with figure-labeled sheets ('Figure 3g', 'Figure 3h', 'Figure 3i', 'Figure 3m') containing tabular distance/composition profiles and a mass-spectrum table. Despite one large sheet, the content is organized as figure source data with headers and numeric columns.
+  structure: Distance (nm), Sn %, Sn % Sigma, Se %, Se % Sigma, O %, O % Sigma; Mass-to-Charge-State Ratio (Da), Count, Oxygen position in x axis
+  ambiguity: moderate: Figure 3m is large and spectrum-like, but still presented as a structured table rather than raw instrument binary output.
+- 41563_2021_1064_MOESM5_ESM.xlsx
+  original path: 41563_2021_1064_MOESM5_ESM.xlsx
+  classified as: type1
+  reasoning: This is classic source-data organization: figure-specific, tabular, and ready for replotting. It is not raw instrument output, even though some values originate from DSC and transport measurements.
+  paper evidence: The paper explicitly discusses DSC heat-capacity data and derived thermal conductivity curves, and states that source data are available online. These figure panels are based on measured and processed values deposited as source data.
+  file evidence: Excel workbook with five figure-specific sheets ('Figure 4b' to 'Figure 4f') containing labeled temperature-dependent columns for Cp, thermal conductivity, and reproducibility datasets. The tables are compact, headered, and directly plottable.
+  structure: Temperature (K), 5K min-1, 7.5K min-1, 10K min-1, average temperature (K), heat capacity averaged by linear extrapolation, Poly-untreated SnSe (W m-1 K-1), Poly-H2 treated SnSe (W m-1 K-1), Poly-purified SnSe (W m-1 K-1), Cp from reference, Cp by DSC
+- 41563_2021_1064_MOESM6_ESM.xlsx
+  original path: 41563_2021_1064_MOESM6_ESM.xlsx
+  classified as: type1
+  reasoning: The workbook is clearly replot-ready source data rather than raw measurement output. It contains processed transport curves organized by figure panel and sample composition.
+  paper evidence: The paper states that source data are available online, and Fig. 5a-d are transport-property plots (electrical conductivity, Seebeck coefficient, power factor, ZT) that are typically deposited as figure source data.
+  file evidence: Excel workbook with four figure-specific sheets ('Figure 5a' to 'Figure 5d') containing temperature-dependent tabular data with headers for conductivity, Seebeck coefficient, power factor, and ZT across multiple compositions. The data are compact and directly plottable.
+  structure: Temperature (K), Electrical conductivity (x=0.01, purified, s cm-1), Seebeck coefficient (x=0.03, purified), PF (x=0.03, untreated), ZT (x = 0.03, purified)
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

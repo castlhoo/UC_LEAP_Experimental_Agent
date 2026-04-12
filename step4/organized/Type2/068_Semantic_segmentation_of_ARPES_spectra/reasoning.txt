@@ -1,0 +1,29 @@
+Title: Semantic segmentation of ARPES spectra for electronic dispersion visualization
+DOI: 10.1063/10.0042266
+Journal: Low Temperature Physics
+Year: 2026
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No evidence of cleaned, figure-ready source data files was found.
+- Type2 summary: The only file is a large HDF5 binary file, which is not directly replot-ready and is most consistent with raw/intermediate/model data.
+
+Type1 files
+- none
+
+Type2 files
+- link_model_2.h5
+  original path: link_model_2.h5
+  classified as: type2
+  reasoning: Paper evidence does not support a cleaned source-data interpretation. File evidence strongly suggests a non-tabular, large binary dataset that would not be directly plotted with minimal processing. Conservatively classify as raw/unprocessed or otherwise non-replot-ready.
+  paper evidence: The paper describes deep-learning segmentation of ARPES spectra and provides no data availability statement, repository link, or indication that this file is figure-ready source data.
+  file evidence: HDF5 binary file, 132.6 MB, from Zenodo. No readable datasets were exposed in inspection (h5py unavailable), and the large size plus HDF5 format are consistent with model/raw or intermediate data rather than replot-ready tabular source data.
+  structure: HDF5 container; internal datasets not inspectable in report
+  ambiguity: Moderate: the exact internal contents could not be inspected because h5py was not installed, so the file might contain model weights or processed arrays. However, it is still not evidence of Type 1 figure data.
+
+Annotation files
+- none
+
+Script files
+- none

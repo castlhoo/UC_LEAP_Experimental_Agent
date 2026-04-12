@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0085",
+  "title": "Experimental Realization and Computational Investigations of B<sub>2</sub>S<sub>2</sub> as a New 2D Material with Potential Applications",
+  "doi": "10.1021/acsami.2c03762",
+  "journal": "ACS Applied Materials & Interfaces",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4284683202",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acsami_2c03762",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear cleaned, replot-ready dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed dataset files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The only provided file appears unrelated to the paper topic and is a PDF, so there is insufficient evidence to classify it as dataset Type 1 or Type 2. A direct file-content inspection would be needed for a stronger determination.",
+  "file_classifications": [
+    {
+      "relative_path": "367_Experimental_Investigations_and_Computational_Analysis_on_Subsonic_Wind_Tunnel.pdf",
+      "filename": "367_Experimental_Investigations_and_Computational_Analysis_on_Subsonic_Wind_Tunnel.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper on B2S2 reports experimental synthesis and computational investigations, but the provided paper analysis found no data availability statement and no repository-linked data files.",
+      "file_evidence": "The file is a PDF with a title unrelated to the B2S2 paper ('Subsonic Wind Tunnel'), suggesting it is likely a paper/document rather than a dataset file. No tabular structure, headers, or figure-specific data structure can be inferred from the filename alone.",
+      "reasoning": "This file does not match the expected dataset type for the B2S2 paper and appears to be a document/PDF rather than a data file. Because there is no evidence of figure-ready tables or raw instrument output, it should not be classified as Type 1 or Type 2.",
+      "ambiguity": "High ambiguity because the file content was not inspected directly and the filename appears unrelated to the target paper.",
+      "key_columns_or_structure": "Not identifiable from the available file report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the first experimental synthesis of free-standing 2D B2S2 nanosheets and combines it with first-principles calculations to study structure, band gap, vibrational signatures, lithium adsorption, and photoluminescence properties.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper likely relies on experimental characterization data and first-principles computational results, but no explicit dataset, source data, or supplementary data location was provided in the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external repository links were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external repository links were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "367_Experimental_Investigations_and_Computational_Analysis_on_Subsonic_Wind_Tunnel.pdf",
+      "extension": ".pdf",
+      "size_bytes": 692339,
+      "size_human": "676.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "367_Experimental_Investigations_and_Computational_Analysis_on_Subsonic_Wind_Tunnel.pdf"
+    }
+  ]
+}

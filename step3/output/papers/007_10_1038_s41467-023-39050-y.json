@@ -1,0 +1,1290 @@
+{
+  "paper_id": "step1_0179",
+  "title": "Intrinsic TGF-β signaling attenuates proximal tubule mitochondrial injury and inflammation in chronic kidney disease",
+  "doi": "10.1038/s41467-023-39050-y",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4379260351",
+  "priority_score": 6.3,
+  "dataset_status": "verified",
+  "files_downloaded": 16,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-39050-y",
+  "files_inspected": 16,
+  "file_types_found": [
+    "excel",
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The Excel workbook is figure-organized source data with tabular, replot-ready measurements for multiple figures, matching the paper’s source-data statements.",
+  "type2_summary": "The PDF source-data files and the large two-column TXT files appear to be raw or near-raw supporting data requiring substantial preprocessing before plotting.",
+  "type1_files": [
+    "41467_2023_39050_MOESM4_ESM.xlsx"
+  ],
+  "type2_files": [
+    "41467_2023_39050_MOESM1_ESM.pdf",
+    "41467_2023_39050_MOESM2_ESM.pdf",
+    "PTcre-_SFM1.txt",
+    "PTcrex2_SFM1.txt",
+    "PTcrex2_PTM2.txt",
+    "PTcre-_PM3.txt",
+    "PTcre-_PTM1.txt",
+    "PTcre-_PTM2.txt",
+    "PTcrex2_PTM1.txt"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The key distinction is that 'source data' in Nature can still be Type 1 if it is figure-organized and tabular, as with the XLSX workbook. The PDF files are treated conservatively as Type 2 because they are not directly replot-ready and likely contain raw or semi-raw supporting material. The TXT files are large identifier-to-count tables and are also conservatively Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2023_39050_MOESM1_ESM.pdf",
+      "filename": "41467_2023_39050_MOESM1_ESM.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper states that raw experimental measurements and source data are provided, and this file is a large Nature source-data PDF likely containing raw figure panels or unprocessed image-based source material.",
+      "file_evidence": "PDF format, very large size (166.7 MB), and source_data provenance indicate a compiled source-data document rather than a clean tabular figure-ready dataset. Large PDF source-data files in Nature often contain raw images or multi-panel supporting material.",
+      "reasoning": "Although it is a source-data deposit, the file is not a clean replot-ready table. Its size and PDF format suggest it contains raw or minimally processed figure evidence rather than directly plottable tabular values. Conservatively classify as raw/unprocessed.",
+      "ambiguity": "Moderate: without page-level inspection, the exact contents are unknown, but the size and format strongly favor raw/source material over cleaned tabular data.",
+      "key_columns_or_structure": "PDF document; no tabular structure exposed"
+    },
+    {
+      "relative_path": "41467_2023_39050_MOESM2_ESM.pdf",
+      "filename": "41467_2023_39050_MOESM2_ESM.pdf",
+      "type": "type2",
+      "paper_evidence": "The publication includes raw microscopy, histology, and other experimental measurements as source material; this PDF is part of the Nature source-data package.",
+      "file_evidence": "PDF format with moderate size (4.1 MB), consistent with a source-data document or figure supplement rather than a clean spreadsheet. No tabular headers or figure-specific columns are visible from the inspection report.",
+      "reasoning": "This is not directly replot-ready tabular data. As a PDF source-data file, it is more consistent with raw or semi-raw supporting material than with cleaned figure data.",
+      "ambiguity": "Moderate: could contain embedded figure source panels or tables, but the available evidence does not show a clean tabular structure.",
+      "key_columns_or_structure": "PDF document; no tabular structure exposed"
+    },
+    {
+      "relative_path": "41467_2023_39050_MOESM4_ESM.xlsx",
+      "filename": "41467_2023_39050_MOESM4_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper repeatedly states that source data are provided for figures, and this workbook contains figure-labeled sheets matching those figures.",
+      "file_evidence": "Excel workbook with 50 sheets named by figure panels (e.g., 'Fig. 1d', 'Fig. 1f', 'Fig. 2b and c'), with tabular numeric content and headers in several sheets. This is organized, figure-specific source data suitable for direct plotting.",
+      "reasoning": "Despite being source data, the workbook is clearly cleaned and organized for figure reproduction. The figure-based sheet names and tabular structure indicate replot-ready data rather than raw instrument output.",
+      "ambiguity": "Low: the sheet organization strongly indicates figure-level source data.",
+      "key_columns_or_structure": "Figure-labeled sheets; examples include 'Well Type', 'Target', 'Replicate', 'Cq (∆Rn)', and numeric summary tables"
+    },
+    {
+      "relative_path": "PTcre-_SFM1.txt",
+      "filename": "PTcre-_SFM1.txt",
+      "type": "type2",
+      "paper_evidence": "The paper uses spatial transcriptomics and related expression analyses, which typically originate from raw count matrices before downstream processing.",
+      "file_evidence": "Tabular text with 106,332 rows and only two columns: 'Identifier' and 'matchCounts'. This looks like a raw or near-raw count/matching table rather than a figure-ready summary. The file name is experiment-like rather than figure-specific.",
+      "reasoning": "Although tabular, the structure is not a cleaned plotting table; it is a large per-identifier count file requiring substantial preprocessing to become a figure dataset. Conservatively classify as raw/unprocessed.",
+      "ambiguity": "Moderate: the file is tabular, but its scale and minimal schema suggest raw counts rather than replot-ready data.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcrex2_SFM1.txt",
+      "filename": "PTcrex2_SFM1.txt",
+      "type": "type2",
+      "paper_evidence": "The study includes transcriptomic and spatial transcriptomic raw measurements; this file appears to be one of those underlying count tables.",
+      "file_evidence": "Large tabular text file with 106,332 rows and two columns ('Identifier', 'matchCounts'), matching a raw count/matching matrix style rather than a figure-ready table.",
+      "reasoning": "The file is not organized by figure and does not contain summarized variables for direct plotting. It likely requires preprocessing and aggregation, so it is Type 2.",
+      "ambiguity": "Low to moderate: structure strongly suggests raw counts.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcrex2_PTM2.txt",
+      "filename": "PTcrex2_PTM2.txt",
+      "type": "type2",
+      "paper_evidence": "The paper’s transcriptomic analyses rely on underlying count data and spatial transcriptomics inputs, consistent with raw measurement files.",
+      "file_evidence": "Tabular text with 106,332 rows and two columns ('Identifier', 'matchCounts'); experiment/run-style filename and minimal schema indicate raw or near-raw data.",
+      "reasoning": "This is not a cleaned figure table and would need substantial processing before plotting. Classified as raw/unprocessed.",
+      "ambiguity": "Low to moderate.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcre-_PM3.txt",
+      "filename": "PTcre-_PM3.txt",
+      "type": "type2",
+      "paper_evidence": "The paper includes multiple raw experimental modalities; this file is consistent with underlying measurement output rather than source-data summary tables.",
+      "file_evidence": "Large two-column tabular text file with 106,332 rows ('Identifier', 'matchCounts'), lacking figure labels or summary statistics.",
+      "reasoning": "The file appears to be a raw count/matching table requiring preprocessing, not a direct plotting dataset.",
+      "ambiguity": "Low to moderate.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcre-_PTM1.txt",
+      "filename": "PTcre-_PTM1.txt",
+      "type": "type2",
+      "paper_evidence": "The publication’s transcriptomic and spatial analyses depend on underlying raw count data.",
+      "file_evidence": "Two-column tabular text file with 106,332 rows and minimal schema ('Identifier', 'matchCounts'), consistent with raw measurement output.",
+      "reasoning": "Not figure-ready; requires aggregation and analysis before plotting. Type 2.",
+      "ambiguity": "Low to moderate.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcre-_PTM2.txt",
+      "filename": "PTcre-_PTM2.txt",
+      "type": "type2",
+      "paper_evidence": "The study uses raw transcriptomic/spatial measurement inputs as part of its analyses.",
+      "file_evidence": "Large tabular text file with 106,332 rows and two columns ('Identifier', 'matchCounts'); no figure-specific organization.",
+      "reasoning": "This is raw or near-raw data rather than a cleaned, replot-ready table.",
+      "ambiguity": "Low to moderate.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    },
+    {
+      "relative_path": "PTcrex2_PTM1.txt",
+      "filename": "PTcrex2_PTM1.txt",
+      "type": "type2",
+      "paper_evidence": "The paper’s transcriptomic analyses are based on underlying measurement files of this kind.",
+      "file_evidence": "Two-column tabular text file with 106,332 rows ('Identifier', 'matchCounts'), indicating raw count-like data.",
+      "reasoning": "Not directly plottable without preprocessing; classify as raw/unprocessed.",
+      "ambiguity": "Low to moderate.",
+      "key_columns_or_structure": "Identifier, matchCounts"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies how intrinsic TGF-β signaling in proximal tubule (PT) cells affects chronic kidney disease progression using a mouse aristolochic acid (AA) injury model, spatial transcriptomics, bulk RNA-seq, microscopy, and biochemical assays. The main finding is that PT-specific deletion of Tgfbr2 worsens mitochondrial injury, impairs complex I/mitochondrial quality control, shifts metabolism toward aerobic glycolysis, and amplifies macrophage/dendritic-cell-driven Th1 inflammation and fibrosis; human CKD snRNA-seq data show decreased TGF-β receptor expression and impaired PT metabolism, supporting a protective role for intact PT TGF-β signaling.",
+    "measurement_types": [
+      "Spatial transcriptomics (Visium)",
+      "Bulk RNA-seq",
+      "Single-nucleus RNA-seq database analysis",
+      "Transmission electron microscopy",
+      "Multiphoton live microscopy / TMRM imaging",
+      "Immunohistochemistry / immunofluorescence",
+      "Western blot / immunoblot",
+      "Flow cytometry (FACS)",
+      "RT-qPCR",
+      "Bioluminescence assays (ATP, lactate, NAD+/NADH)",
+      "Seahorse OCR/ECAR metabolic flux",
+      "Histology (H&E, Sirius red, Oil Red O)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Workflow for AA injury, Visium integration/annotation, and identification of major renal cell types in kidney slices.",
+        "data_type": "schematic / UMAP / spatial transcriptomics",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Spatial plots showing impaired cortico-medullary organization in injured kidneys compared with uninjured kidneys.",
+        "data_type": "image / spatial transcriptomics map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Cell-type proportion analysis across conditions, showing remodeling and altered proportions of PT and interstitial/immune cells.",
+        "data_type": "bar/ratio plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Spatial transcriptomics browser images showing PT injury and fibrosis markers (Havcr1, Vcam1, Col1a1) at baseline and 3 weeks after AA.",
+        "data_type": "spatial gene-expression image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "H&E images of kidneys from uninjured and 6-week AA-injured mice showing tubular injury and infiltrate.",
+        "data_type": "histology image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "RT-qPCR quantification of Kim-1 mRNA in renal cortex after AA injury.",
+        "data_type": "expression bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "FACS quantification of CD45+ leukocyte infiltration in injured kidneys.",
+        "data_type": "flow cytometry plot / bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "Sirius red staining showing cortical collagen accumulation/fibrosis.",
+        "data_type": "histology image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "Quantification of Sirius red-positive fibrotic area.",
+        "data_type": "bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1j",
+        "description": "Blood urea nitrogen (BUN) levels after AA injury.",
+        "data_type": "bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "TEM images of proximal tubule mitochondria showing injury features in γGT-Cre;Tgfbr2fl/fl mice.",
+        "data_type": "electron micrograph",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b-c",
+        "description": "Quantification of mitochondrial length and mitochondrial injury score from TEM images.",
+        "data_type": "quantified image-derived plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2d-f",
+        "description": "Multiphoton live microscopy/TMRM images and quantification of mitochondrial membrane potential in PTs.",
+        "data_type": "fluorescence image / quantified plot",
+        "likely_source": "raw measurement for images; derived for quantification"
+      },
+      {
+        "figure_id": "Fig2g-h",
+        "description": "Oil Red O staining and quantification of cortical lipid deposition.",
+        "data_type": "histology image / bar plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Metacore pathway analysis of PT DEGs highlighting ubiquinone metabolism and complex I-related changes.",
+        "data_type": "pathway enrichment plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Immunoblot of OXPHOS proteins showing reduced NDUFB8 in renal cortex.",
+        "data_type": "western blot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Cell fractionation immunoblot and quantification showing reduced mitochondrial NDUFB8 in TβRII−/− PT cells.",
+        "data_type": "western blot / quantified plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "NAD+/NADH ratio measurement in PT cells.",
+        "data_type": "bioluminescence-derived bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "DCF-based ROS measurement by FACS in PT cells.",
+        "data_type": "flow cytometry plot / bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3f-h",
+        "description": "Effects of NAD+ treatment on ROS, ATP, and lactate production in PT cells.",
+        "data_type": "bar plots",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "RT-qPCR of Pgc1α mRNA in renal cortex under uninjured and AA conditions.",
+        "data_type": "expression bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4b-c",
+        "description": "Pgc1α immunohistochemistry and quantification of positive nuclei.",
+        "data_type": "histology image / quantified plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig4d-e",
+        "description": "mito-QC reporter fluorescence images and quantification of mitolysosome/mitophagic flux.",
+        "data_type": "fluorescence image / quantified plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig4f-h",
+        "description": "LC3A immunoblot and quantification in renal cortex.",
+        "data_type": "western blot / bar plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Metacore pathway analysis of injured PT DEGs showing innate immunity/complement/IFNγ pathways.",
+        "data_type": "pathway enrichment plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5b-d",
+        "description": "FACS quantification of CD4+ and CD8+ T cells in kidneys after AA injury.",
+        "data_type": "flow cytometry bar plots",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5e-h",
+        "description": "FACS quantification of IFNγ+ and TNFα+ CD4/CD8 T cells.",
+        "data_type": "flow cytometry bar plots",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5i-k",
+        "description": "Cgas and Sting immunoblotting and quantification in renal cortex.",
+        "data_type": "western blot / bar plot",
+        "likely_source": "raw measurement and derived"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "UMAP clustering of human kidney PT snRNA-seq data.",
+        "data_type": "UMAP / single-cell plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Proportion of PT cells per cluster in healthy vs CKD biopsies.",
+        "data_type": "bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "Feature plots showing TGFBR1/2/3 expression in healthy and CKD PT cells.",
+        "data_type": "single-cell feature plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6d",
+        "description": "Differential expression showing decreased TGFBR1/2/3 and TGFBRAP1 in CKD PT cells.",
+        "data_type": "expression comparison plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "Pathway activity analysis showing impaired mitochondrial biogenesis, complex I activity, and metabolism in CKD PT.",
+        "data_type": "pathway score plot",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from kidney tissue and PT cells, including histology images (H&E, Sirius red, Oil Red O), transmission electron microscopy images of mitochondria, multiphoton/TMRM live imaging, immunofluorescence/IHC images, western blots, flow cytometry events, RT-qPCR Ct-based measurements, Seahorse OCR/ECAR metabolic flux measurements, and bioluminescence assay readouts for ATP, lactate, and NAD+/NADH. It also uses spatial transcriptomics capture data and human snRNA-seq database data, but the paper text does not specify file formats or repository structure.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper contains many processed/derived plots: spatial transcriptomics cluster maps and cell-type proportions, gene-expression overlays, pathway enrichment analyses (Metacore/EnrichR/REACTOME), quantified histology areas, quantified immunoblot densitometry, quantified FACS counts, and statistical summaries (bar plots with mean ± SEM). These are downstream analyses derived from raw images, sequencing counts, or cytometry measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "The text repeatedly states 'Source data are provided as a Source data file' for figures, indicating figure-level source data availability. It also mentions that Visium dataset integration used the GSE151658 database and that snRNAseq analyses used a kidney biopsy database of healthy and CKD patients, but the excerpt does not include a formal data availability section or repository links for all datasets.",
+      "data_provided_types": [
+        "source_data",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental modalities and instruments: kidney histology sections, TEM micrographs, multiphoton/TMRM images, flow cytometry measurements, immunoblots, RT-qPCR, Seahorse metabolic assays, spatial transcriptomics, and human snRNA-seq database analyses. The excerpt does not specify raw file formats, accession numbers for all datasets, or whether raw sequencing/cytometry/image files are deposited.",
+      "processed_data_description": "Processed data include integrated Visium cluster annotations, spatial gene-expression maps, cell-type proportions, differential expression results, pathway enrichment outputs, quantified staining areas, densitometry of blots, and normalized counts/ratios from qPCR, FACS, and bioluminescence assays. Human snRNA-seq data are analyzed as normalized expression and pathway scores.",
+      "figure_data_description": "Yes. The paper explicitly says 'Source data are provided as a Source data file' for multiple figures, implying figure-specific processed data tables underlying the plots. The source data appear to support replotting of the main quantitative figures, but not necessarily the raw images or raw sequencing reads.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "Figure-based source data plus mixed experimental datasets; exact folder structure is not specified.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Quantitative figure values are explicitly said to be provided as source data files, which should allow replotting of many bar plots and summary figures. However, the excerpt does not confirm availability of all raw images, raw sequencing matrices, or analysis scripts, so full end-to-end reproduction is not guaranteed from the text alone.",
+      "notes": "The paper mixes several data layers: raw microscopy/cytometry/sequencing measurements, processed spatial transcriptomics and single-cell analyses, and figure-level source data. The strongest evidence for dataset semantics is the repeated statement that source data are provided for figures, while raw-data deposition details are largely absent from the excerpt. The human snRNA-seq analysis is database-based rather than newly generated in this study."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The study generates and analyzes raw experimental measurements including microscopy images, TEM, flow cytometry, western blots, RT-qPCR, metabolic assays, and spatial transcriptomics.",
+      "source_data_evidence": "Multiple figure captions explicitly state 'Source data are provided as a Source data file.'",
+      "both_evidence": "The paper clearly contains both raw experimental measurements and figure-level source data for quantitative plots.",
+      "data_availability_section_relevant": "Key phrases include 'Source data are provided as a Source data file,' 'Visium dataset integration and cluster annotation using the GSE151658 database,' and 'snRNAseq database analyses confirm...'.",
+      "priority_modalities": [
+        "spatial transcriptomics",
+        "bulk RNA-seq",
+        "single-nucleus RNA-seq",
+        "TEM images",
+        "multiphoton/TMRM fluorescence images",
+        "flow cytometry",
+        "western blots",
+        "RT-qPCR",
+        "bioluminescence assays",
+        "Seahorse metabolic flux",
+        "histology"
+      ],
+      "review_notes": "Do not confuse figure source data with raw data. The paper clearly provides processed figure data, but the excerpt does not establish deposition of raw sequencing matrices or image files. Human CKD snRNA-seq is an external database analysis, not newly generated raw data in this study."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_39050_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 174817991,
+      "size_human": "166.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_39050_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2023_39050_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4347861,
+      "size_human": "4.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_39050_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "41467_2023_39050_MOESM3_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 5011631,
+      "size_human": "4.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_39050_MOESM3_ESM.pdf"
+    },
+    {
+      "filename": "41467_2023_39050_MOESM4_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 22917369,
+      "size_human": "21.9 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 1d",
+        "Fig. 1f",
+        "Fig. 1g",
+        "Fig. 1i",
+        "Fig. 1j",
+        "Fig. 2b and c",
+        "Fig. 2f",
+        "Fig. 2h",
+        "Fig. 3b",
+        "Fig. 3c",
+        "Fig. 3d",
+        "Fig. 3e",
+        "Fig. 3f",
+        "Fig. 3g",
+        "Fig. 3h",
+        "Fig. 4a",
+        "Fig. 4c",
+        "Fig. 4e",
+        "Fig. 4g and h",
+        "Fig. 5c",
+        "Fig. 5d",
+        "Fig. 5e-h",
+        "Fig. 5j-k",
+        "Suppl. Fig. 3b",
+        "Suppl. Fig. 3c",
+        "Suppl. Fig. 4f",
+        "Suppl. Fig. 5b-e",
+        "Suppl. Fig. 5f-l",
+        "Suppl. Fig. 5o",
+        "Suppl. Fig. 5p",
+        "Sup. Fig.6 a-e",
+        "Sup. Fig. 7a-e",
+        "Sup. Fig. 8a-e",
+        "Suppl. Fig. 9a-e",
+        "Suppl. Fig. 11a and b",
+        "Suppl. Fig. 12a",
+        "Suppl. Fig. 12b",
+        "Suppl. Fig. 12d",
+        "Suppl. Fig. 12e",
+        "Suppl. Fig. 12f",
+        "Suppl. Fig. 12g",
+        "Suppl. Fig. 12h",
+        "Suppl. Fig. 13c",
+        "Suppl. Fig. 13d",
+        "Suppl. Fig. 15b",
+        "Sup. Fig. 16",
+        "Sup. Fig. 18a-c",
+        "Suppl. Fig. 19a",
+        "Suppl. Fig. 19b",
+        "Suppl. Fig. 19c"
+      ],
+      "sheet_count": 50,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 1d",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [],
+          "column_count": 39,
+          "row_count": 67,
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1f",
+          "columns": [
+            "Well Type",
+            "Target",
+            "Replicate",
+            "Cq (∆Rn)",
+            "Tm Product 1 (-Rn'(T))",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            6.313333333333333,
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Well",
+            "Well Type.1",
+            "Target.1",
+            "Replicate.1",
+            "Cq (∆Rn).1",
+            "Tm Product 1 (-Rn'(T)).1",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Well Type",
+            "Target",
+            "Replicate",
+            "Cq (∆Rn)",
+            "Tm Product 1 (-Rn'(T))",
+            6.313333333333333,
+            "Well",
+            "Well Type.1",
+            "Target.1",
+            "Replicate.1",
+            "Cq (∆Rn).1",
+            "Tm Product 1 (-Rn'(T)).1"
+          ],
+          "column_count": 31,
+          "row_count": 58,
+          "dtypes": {
+            "Well Type": "object",
+            "Target": "object",
+            "Replicate": "object",
+            "Cq (∆Rn)": "float64",
+            "Tm Product 1 (-Rn'(T))": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "6.313333333333333": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Well": "object",
+            "Well Type.1": "object",
+            "Target.1": "object",
+            "Replicate.1": "object",
+            "Cq (∆Rn).1": "float64",
+            "Tm Product 1 (-Rn'(T)).1": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1g",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [],
+          "column_count": 10,
+          "row_count": 58,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1i",
+          "columns": [
+            "WT (Tgfbr2fl/fl)",
+            "Unnamed: 1",
+            "Mean",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22"
+          ],
+          "named_columns": [
+            "WT (Tgfbr2fl/fl)",
+            "Mean"
+          ],
+          "column_count": 23,
+          "row_count": 33,
+          "dtypes": {
+            "WT (Tgfbr2fl/fl)": "object",
+            "Unnamed: 1": "object",
+            "Mean": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 1j",
+          "columns": [
+            " ",
+            "Unnamed: 1",
+            "Unnamed: 2"
+          ],
+          "named_columns": [
+            " "
+          ],
+          "column_count": 3,
+          "row_count": 40,
+          "dtypes": {
+            " ": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 2b and c",
+          "columns": [
+            "WT",
+            "Unnamed: 1",
+            "label",
+            "Mean",
+            "StdDev",
+            "Min",
+            "Max",
+            "Angle",
+            "Length",
+            "Injury score",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "KO",
+            "Unnamed: 19",
+            "label.1",
+            "Mean.1",
+            "StdDev.1",
+            "Min.1",
+            "Max.1",
+            "Angle.1",
+            "Length.1",
+            "Injury score.1",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "WT",
+            "label",
+            "Mean",
+            "StdDev",
+            "Min",
+            "Max",
+            "Angle",
+            "Length",
+            "Injury score",
+            "KO",
+            "label.1",
+            "Mean.1",
+            "StdDev.1",
+            "Min.1",
+            "Max.1",
+            "Angle.1",
+            "Length.1",
+            "Injury score.1"
+          ],
+          "column_count": 35,
+          "row_count": 148,
+          "dtypes": {
+            "WT": "object",
+            "Unnamed: 1": "float64",
+            "label": "object",
+            "Mean": "float64",
+            "StdDev": "float64",
+            "Min": "float64",
+            "Max": "float64",
+            "Angle": "float64",
+            "Length": "float64",
+            "Injury score": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "KO": "object",
+            "Unnamed: 19": "float64",
+            "label.1": "object",
+            "Mean.1": "float64",
+            "StdDev.1": "float64",
+            "Min.1": "float64",
+            "Max.1": "float64",
+            "Angle.1": "float64",
+            "Length.1": "float64",
+            "Injury score.1": "object",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2f",
+          "columns": [
+            "Tgfbr2fl/fl",
+            "γGT-Cre;\nTgfbr2fl/fl",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26"
+          ],
+          "named_columns": [
+            "Tgfbr2fl/fl",
+            "γGT-Cre;\nTgfbr2fl/fl"
+          ],
+          "column_count": 27,
+          "row_count": 105,
+          "dtypes": {
+            "Tgfbr2fl/fl": "float64",
+            "γGT-Cre;\nTgfbr2fl/fl": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2h",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10"
+          ],
+          "named_columns": [],
+          "column_count": 11,
+          "row_count": 37,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3b",
+          "columns": [
+            "Unnamed: 0",
+            "CI",
+            "Actin",
+            "r (CI/Actin)",
+            "r/0.646628",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "CI.1",
+            "E-cad",
+            "r (CI/E-cad)",
+            "r/1.16973508"
+          ],
+          "named_columns": [
+            "CI",
+            "Actin",
+            "r (CI/Actin)",
+            "r/0.646628",
+            "CI.1",
+            "E-cad",
+            "r (CI/E-cad)",
+            "r/1.16973508"
+          ],
+          "column_count": 13,
+          "row_count": 10,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "CI": "float64",
+            "Actin": "float64",
+            "r (CI/Actin)": "float64",
+            "r/0.646628": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "CI.1": "float64",
+            "E-cad": "float64",
+            "r (CI/E-cad)": "float64",
+            "r/1.16973508": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3c",
+          "columns": [
+            "Exp1",
+            "Area",
+            "TOM20",
+            "r(CI/TOM20)",
+            "r/0.177464865"
+          ],
+          "named_columns": [
+            "Exp1",
+            "Area",
+            "TOM20",
+            "r(CI/TOM20)",
+            "r/0.177464865"
+          ],
+          "column_count": 5,
+          "row_count": 11,
+          "dtypes": {
+            "Exp1": "object",
+            "Area": "float64",
+            "TOM20": "float64",
+            "r(CI/TOM20)": "float64",
+            "r/0.177464865": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_39050_MOESM4_ESM.xlsx"
+    },
+    {
+      "filename": "PTcre-_SFM1.txt",
+      "extension": ".txt",
+      "size_bytes": 2366971,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_SFM1.txt"
+    },
+    {
+      "filename": "PTcrex2_SFM1.txt",
+      "extension": ".txt",
+      "size_bytes": 2370885,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_SFM1.txt"
+    },
+    {
+      "filename": "PTcrex2_PTM2.txt",
+      "extension": ".txt",
+      "size_bytes": 2368547,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_PTM2.txt"
+    },
+    {
+      "filename": "PTcre-_PM3.txt",
+      "extension": ".txt",
+      "size_bytes": 2364473,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_PM3.txt"
+    },
+    {
+      "filename": "PTcre-_PTM1.txt",
+      "extension": ".txt",
+      "size_bytes": 2365445,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_PTM1.txt"
+    },
+    {
+      "filename": "PTcre-_PTM2.txt",
+      "extension": ".txt",
+      "size_bytes": 2362970,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_PTM2.txt"
+    },
+    {
+      "filename": "PTcrex2_PTM1.txt",
+      "extension": ".txt",
+      "size_bytes": 2366889,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_PTM1.txt"
+    },
+    {
+      "filename": "PTcrex2_SFM2.txt",
+      "extension": ".txt",
+      "size_bytes": 2376871,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_SFM2.txt"
+    },
+    {
+      "filename": "PTcrex2_SFM3.txt",
+      "extension": ".txt",
+      "size_bytes": 2368859,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_SFM3.txt"
+    },
+    {
+      "filename": "PTcrex2_PTM3.txt",
+      "extension": ".txt",
+      "size_bytes": 2369340,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcrex2_PTM3.txt"
+    },
+    {
+      "filename": "PTcre-_SFM3.txt",
+      "extension": ".txt",
+      "size_bytes": 2362874,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_SFM3.txt"
+    },
+    {
+      "filename": "PTcre-_SFM2.txt",
+      "extension": ".txt",
+      "size_bytes": 2366611,
+      "size_human": "2.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Identifier",
+        "matchCounts"
+      ],
+      "column_count": 2,
+      "row_count": 106332,
+      "dtypes": {
+        "Identifier": "object",
+        "matchCounts": "int64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "PTcre-_SFM2.txt"
+    }
+  ]
+}

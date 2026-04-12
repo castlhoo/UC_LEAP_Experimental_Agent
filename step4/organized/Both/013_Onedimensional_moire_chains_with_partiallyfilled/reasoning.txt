@@ -1,0 +1,82 @@
+Title: One-dimensional moire chains with partially-filled flat bands in two-dimensional twisted bilayer WSe2
+DOI: N/A
+Journal: arXiv preprint
+Year: 2023
+Final label: Both
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The archive contains several figure/source-style tabular exports in XLSX and TXT form that are replot-ready or nearly replot-ready, with headers and figure-specific organization.
+- Type2 summary: The archive also contains raw scanning-probe .sxm instrument files that are unprocessed measurement outputs and require specialized conversion before plotting.
+
+Type1 files
+- doping dependent sts Fig01 E.xlsx
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/doping dependent sts Fig01 E.xlsx
+  classified as: type1
+  reasoning: This is clearly cleaned, figure-ready tabular data with physical-variable headers and multiple condition-specific sheets. It can be plotted directly with minimal processing.
+  paper evidence: The provided paper analysis does not match this archive's paper title, but the file itself is organized as figure/source data, which is the relevant evidence for classification.
+  file evidence: Excel workbook with 8 sheets named by doping/filling conditions ('0% full sts', '0.05 full sts', ... '0.24 full sts'). Each sheet has 4 columns and 701 rows with headers: Bias calc (V), Current [AVG] (A), LI Demod 1 X [AVG] (A), LI Demod 1 Y [AVG] (A).
+  structure: Bias calc (V), Current [AVG] (A), LI Demod 1 X [AVG] (A), LI Demod 1 Y [AVG] (A); 8 sheets
+  ambiguity: Moderate: paper-context mismatch exists, but the file structure is unambiguously source/figure data.
+- Fig 01 F Image [P1]_fwd_Z (m).txt
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 F Image [P1]_fwd_Z (m).txt
+  classified as: type1
+  reasoning: Despite the unusual filename, the file behaves like replot-ready exported data: structured rows, headers, and a figure-specific naming convention. It is more consistent with Type 1 than raw data.
+  paper evidence: No direct paper evidence for this specific file in the provided WSe2 paper context; however, the file is organized as figure/source data rather than raw instrument output.
+  file evidence: TXT ASCII export with 4 columns and 20,739 rows; header-like structure present. The content is a structured text export rather than proprietary raw binary.
+  structure: WSxM, file, copyright, UAM
+  ambiguity: Moderate: the sample row suggests a generic WSxM ASCII export, but the structured tabular form supports direct plotting.
+- Fig 01 G Image [P2]_fwd_dI_OVER_dV X (m).txt
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 G Image [P2]_fwd_dI_OVER_dV X (m).txt
+  classified as: type1
+  reasoning: The file appears to be an exported text dataset associated with a figure panel. Because it is text-based and likely derived from instrument data, it is closer to cleaned/source data than raw data.
+  paper evidence: No direct paper evidence for this specific file in the provided WSe2 paper context; file structure is the main basis.
+  file evidence: TXT tabular export, 271.5 KB, with a detected header-like line. Although parsing is imperfect, it is still an ASCII/text export rather than raw binary instrument output.
+  structure: header-like text; exact columns not reliably parsed
+  ambiguity: Moderate: column parsing is poor and the file may need some cleanup, but it is still not a proprietary raw file.
+- Fig 01 H.txt
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 H.txt
+  classified as: type1
+  reasoning: This is a structured text export that can be loaded and plotted with minimal processing. It is not raw proprietary instrument output.
+  paper evidence: No direct paper evidence for this specific file in the provided WSe2 paper context; the file is an ASCII export associated with a figure panel.
+  file evidence: TXT tabular export, 2.0 MB, 65,539 rows, 4 columns, header present. Columns detected as WSxM, file, copyright, UAM.
+  structure: WSxM, file, copyright, UAM
+  ambiguity: Moderate: the detected columns are generic metadata-like fields, but the file is still a structured ASCII dataset.
+
+Type2 files
+- Fig 01 F&G.sxm
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 F&G.sxm
+  classified as: type2
+  reasoning: This is instrument output requiring specialized parsing/processing before plotting. It is not directly replot-ready.
+  paper evidence: The paper analysis does not match this archive's source paper, but the file is a raw scanning-probe instrument file, which is the decisive evidence here.
+  file evidence: Raw instrument file with .sxm extension, 2.4 MB. Identified as scanning probe raw output.
+  structure: raw instrument file
+  ambiguity: Low
+- Fig 01 H.sxm
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 H.sxm
+  classified as: type2
+  reasoning: This is unprocessed instrument data and requires specialized software or scripts to convert into figure-ready images or spectra.
+  paper evidence: No direct paper evidence for this specific file in the provided WSe2 paper context; raw instrument format is decisive.
+  file evidence: Raw instrument file with .sxm extension, 2.5 MB. Scanning probe raw output.
+  structure: raw instrument file
+  ambiguity: Low
+- Fig 01 I.sxm
+  original path: zip_contents/SOURSE DATA OF Nematic order and orbital selective Mott state in a partially filled kagome flat band/Figure 01/Fig 01 I.sxm
+  classified as: type2
+  reasoning: This is raw measurement data requiring processing before plotting.
+  paper evidence: No direct paper evidence for this specific file in the provided WSe2 paper context; raw instrument format is decisive.
+  file evidence: Raw instrument file with .sxm extension, 2.5 MB. Scanning probe raw output.
+  structure: raw instrument file
+  ambiguity: Low
+
+Annotation files
+- paper_term.pdf
+  original path: paper_term.pdf
+  classified as: documentation
+  reasoning: This is publication documentation rather than data. It does not function as raw or replot-ready dataset material.
+  paper evidence: The paper analysis indicates no data availability statement and no downloadable data links were identified; this PDF is the paper itself, not a dataset file.
+  file evidence: PDF document, 540.9 KB, source zenodo. No tabular structure or instrument data content reported.
+  structure: none
+
+Script files
+- none

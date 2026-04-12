@@ -1,0 +1,41 @@
+Title: Halogen-Functionalized Hole Transport Materials with Strong Passivation Effects for Stable and Highly Efficient Quasi-2D Perovskite Solar Cells.
+DOI: 10.1021/acsnano.4c08018
+Journal: ACS nano
+Year: 2024
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: One figure-organized Excel workbook (Open_data.xlsx) appears to be cleaned, replot-ready source data with headers and figure-specific sheets.
+- Type2 summary: No raw/unprocessed dataset files were identified.
+
+Type1 files
+- Open_data.xlsx
+  original path: Open_data.xlsx
+  classified as: type1
+  reasoning: This is strongly consistent with Type 1 because the workbook is structured by figure, has headers, and appears directly usable for plotting with minimal processing. There is no evidence of raw instrument output or unprocessed measurements.
+  paper evidence: The paper analysis found no explicit raw-data statement and no evidence of downloadable raw files; the available deposit is consistent with organized figure/source data rather than raw instrument output.
+  file evidence: Excel workbook with 6 sheets named Fig1–Fig6, each containing tabular data with headers and figure-specific organization. Sheet sizes are moderate (e.g., 16 cols x 1277 rows, 9 cols x 2051 rows), which is consistent with cleaned, replot-ready datasets.
+  structure: Figure-organized sheets (Fig1–Fig6); header-like columns such as '1h', '1i', '2a', '2d', '3a', '4b', '5a'
+
+Type2 files
+- none
+
+Annotation files
+- 2018-02-19_Main-Paper_Essig-MoOx.pdf
+  original path: 2018-02-19_Main-Paper_Essig-MoOx.pdf
+  classified as: documentation
+  reasoning: This is documentation rather than a dataset. It does not fit Type 1 or Type 2 because it is not data at all.
+  paper evidence: No paper evidence indicates this is a data file; the publication analysis did not identify downloadable data files or raw-data statements.
+  file evidence: PDF document, likely a paper or manuscript, with no indication of tabular dataset structure or instrument output.
+  structure: none
+- 36-43_Performance_of_perovskite_solar_cell_coated_with_graphene_oxide_as_hole_transport_layer.pdf
+  original path: 36-43_Performance_of_perovskite_solar_cell_coated_with_graphene_oxide_as_hole_transport_layer.pdf
+  classified as: documentation
+  reasoning: This is not a dataset file in the sense of Type 1 or Type 2. It is documentation/literature rather than data, so it should not be classified as raw or cleaned data.
+  paper evidence: No paper evidence indicates this is a data file; the publication analysis did not identify downloadable data files or raw-data statements.
+  file evidence: PDF document, likely a paper or related article, not a dataset table or instrument output. No structured data content is indicated from the file inspection report.
+  structure: none
+
+Script files
+- none

@@ -1,0 +1,17 @@
+						Instructions for Directional Integration
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| DirectionalIntegral.m
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Matlab script
+------------------------|-------------------------------------------------------------------------------------------------------
+Package Required: 	|
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| IntegrateFromDataVault integrates TF measurement data files from Data Vault. The script performs
+			| phase rotation and integrate the data along a specified angle with specified amplitude. The script will
+			| request user input for tuning fork angle, amplitude, etc.
+------------------------|-------------------------------------------------------------------------------------------------------
+Syntax:			| [OutputX, OutputY, Output] = DirectionalIntegral(file_number)
+------------------------|-------------------------------------------------------------------------------------------------------
+Input Arguments:	| file_numbe -- file NO. in datavault , for example, 09648
+------------------------|-------------------------------------------------------------------------------------------------------
+Outputs:		| Integrated data along with X and Y coordinates

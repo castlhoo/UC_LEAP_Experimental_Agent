@@ -9,8 +9,8 @@ output_dir: "step4/organized"
 
 # Which papers to organize
 selection:
-  mode: "has_any"             # "both_types" = T1+T2 only, "has_any" = T1 or T2 or both, "all" = all papers
-  max_papers: 30
+  mode: "has_any"             # "both_types" = T1+T2 only, "has_any" = balanced mix of T1/T2/both, "all" = all papers
+  max_papers: null            # null/0 = organize all selected papers
 
 # PDF download settings
 pdf:

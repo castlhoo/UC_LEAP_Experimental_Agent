@@ -1,0 +1,69 @@
+Title: Moire Engineering of Cooper-Pair Density Modulation States
+DOI: N/A
+Journal: arXiv preprint
+Year: 2026
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: All inspected files are organized as extended-data figure spreadsheets and are most consistent with cleaned, replot-ready source data rather than raw instrument output.
+- Type2 summary: No file shows clear raw/instrument-output characteristics such as proprietary microscopy formats, binary measurement files, or unprocessed scan outputs.
+
+Type1 files
+- Extended_Data_Figures.zip
+  original path: Extended_Data_Figures.zip
+  classified as: type1
+  reasoning: Although the archive is large, its contents are organized by extended figure and contain spreadsheet files that look like processed, plot-ready datasets. This supports Type 1 more strongly than Type 2.
+  paper evidence: The paper analysis provided no explicit raw-data statement and no evidence of instrument-output deposits; the available context points to organized extended data figures rather than raw measurements.
+  file evidence: 60.4 MB ZIP archive from Zenodo containing figure-organized Excel files under 'Extended Data Figures/Extended Data Fig1'. Archive structure is consistent with source/figure data rather than instrument raw output.
+  structure: Archive containing Extended Data Fig1 spreadsheets
+  ambiguity: Moderate: archive size is large enough to raise a raw-data possibility, but the internal organization and file formats favor cleaned/source data.
+- ExtendedDataFig1a.xlsx
+  original path: zip_contents/Extended Data Figures/Extended Data Fig1/ExtendedDataFig1a.xlsx
+  classified as: type1
+  reasoning: The file is figure-specific and spreadsheet-based, and its structure is compatible with direct plotting after minimal interpretation. Despite the large size, the organization and format align better with cleaned source data than raw data.
+  paper evidence: No explicit raw-data statement is available; the deposit is organized as extended data figures, which is typical of source/figure data.
+  file evidence: Excel file, 9.2 MB, single sheet, 1024 columns x 1023 rows, no header. The dense matrix-like structure suggests processed image/intensity data or a figure-ready grid rather than instrument raw output.
+  structure: Sheet1; 1024 cols x 1023 rows; no header
+  ambiguity: Moderate: lack of headers makes the exact variables unclear, but the figure-specific naming and spreadsheet structure still favor Type 1.
+- ExtendedDataFig1b.xlsx
+  original path: zip_contents/Extended Data Figures/Extended Data Fig1/ExtendedDataFig1b.xlsx
+  classified as: type1
+  reasoning: Same rationale as Fig1a: figure-specific spreadsheet data with a regular matrix layout is more consistent with replot-ready source data than raw instrument output.
+  paper evidence: No explicit raw-data statement is available; the deposit is organized as extended data figures.
+  file evidence: Excel file, 9.2 MB, single sheet, 1024 columns x 1023 rows, no header. Dense numeric grid is consistent with processed figure/source data.
+  structure: Sheet1; 1024 cols x 1023 rows; no header
+  ambiguity: Moderate: no headers or metadata, but the file organization strongly suggests figure data.
+- ExtendedDataFig1c.xlsx
+  original path: zip_contents/Extended Data Figures/Extended Data Fig1/ExtendedDataFig1c.xlsx
+  classified as: type1
+  reasoning: The file appears to be a processed dataset prepared for a specific extended figure panel. It is not obviously raw instrument output and can likely be plotted with minimal processing.
+  paper evidence: No explicit raw-data statement is available; the deposit is organized as extended data figures.
+  file evidence: Excel file, 9.4 MB, single sheet, 1024 columns x 1023 rows, no header. Dense matrix-like tabular content is consistent with figure/source data.
+  structure: Sheet1; 1024 cols x 1023 rows; no header
+  ambiguity: Moderate: no headers or units are visible, but the figure-specific organization is persuasive.
+- ExtendedDataFig1d.xlsx
+  original path: zip_contents/Extended Data Figures/Extended Data Fig1/ExtendedDataFig1d.xlsx
+  classified as: type1
+  reasoning: This is a compact two-column spreadsheet, which is highly consistent with cleaned figure data that can be directly plotted after assigning axes/labels.
+  paper evidence: No explicit raw-data statement is available; the deposit is organized as extended data figures.
+  file evidence: Excel file, 17.5 KB, single sheet, 2 cols x 500 rows, no header. Small tabular dataset is typical of plot-ready source data.
+  structure: Sheet1; 2 cols x 500 rows; no header
+  ambiguity: Low: despite missing headers, the structure is strongly indicative of replot-ready data.
+- ExtendedDataFig1e.xlsx
+  original path: zip_contents/Extended Data Figures/Extended Data Fig1/ExtendedDataFig1e.xlsx
+  classified as: type1
+  reasoning: This file is structurally similar to Fig1d and is best interpreted as cleaned source data for a figure panel rather than raw data.
+  paper evidence: No explicit raw-data statement is available; the deposit is organized as extended data figures.
+  file evidence: Excel file, 17.5 KB, single sheet, 2 cols x 500 rows, no header. Small tabular dataset is typical of plot-ready source data.
+  structure: Sheet1; 2 cols x 500 rows; no header
+  ambiguity: Low: the compact two-column format strongly supports Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

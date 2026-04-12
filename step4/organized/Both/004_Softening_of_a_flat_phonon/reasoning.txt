@@ -1,0 +1,43 @@
+Title: Softening of a flat phonon mode in the kagome ScV6Sn6
+DOI: 10.1038/s41467-023-42186-6
+Journal: Nature Communications
+Year: 2023
+Final label: Both
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The Excel workbook is figure-organized source data with headers and small size, suitable for direct plotting and clearly Type 1.
+- Type2 summary: The two PDF supplements are not shown to be structured replot-ready tables and are more consistent with supplementary raw/compiled material, so they are classified conservatively as Type 2.
+
+Type1 files
+- Source_Data_ScV6Sn6.xlsx
+  original path: Source_Data_ScV6Sn6.xlsx
+  classified as: type1
+  reasoning: This is a classic cleaned/source-data spreadsheet: figure-specific sheets, labeled columns, and direct replot potential with minimal processing. It matches Type 1 by definition.
+  paper evidence: The paper explicitly states 'Source data are provided with this paper.' The workbook is organized by figure panels, matching the paper's source-data deposit convention.
+  file evidence: Excel workbook with 13 sheets named by figure panels (e.g., Figure 1(H), Figure 2(D), Figure 3(A)). Sheets have headers, physical-variable columns, and moderate size (90 KB), indicating structured, figure-ready data.
+  structure: Figure-specific sheets; examples include 1H (XAS), 1H (CDW), 1I (Intensity), 1I (FWHM), 2C 97K, 2D cp, 2D DS, 2D phonon, 2E raw, 2E fitting
+
+Type2 files
+- 41467_2023_42186_MOESM1_ESM.pdf
+  original path: 41467_2023_42186_MOESM1_ESM.pdf
+  classified as: type2
+  reasoning: Given the file type and large size, this is more consistent with a raw/compiled supplementary data PDF than a directly replot-ready cleaned dataset. The paper supports availability of raw experimental data, and the file evidence does not show a structured figure-table format. Conservatively classify as raw/unprocessed support material.
+  paper evidence: The paper states that scattering, ARPES, diffuse scattering, and IXS data generated in the study are available in Figshare, and the publication also provides source data. This PDF is a Nature source-data supplement, but the paper evidence does not indicate it is a cleaned figure-data table.
+  file evidence: Large PDF (26.7 MB), consistent with a supplementary source-data or raw-data document rather than a small replot-ready table. No tabular headers or figure-specific spreadsheet structure are visible from the inspection report.
+  structure: Not reported; PDF supplement, 26.7 MB
+  ambiguity: Moderate: Nature source-data PDFs can sometimes contain figure-linked source data, but the size and lack of tabular structure in the inspection report make Type 2 the safer choice.
+- 41467_2023_42186_MOESM2_ESM.pdf
+  original path: 41467_2023_42186_MOESM2_ESM.pdf
+  classified as: type2
+  reasoning: Without evidence of tabular, figure-specific organization, this is best treated as supplementary raw/compiled material rather than Type 1 cleaned data. The conservative choice is Type 2.
+  paper evidence: The paper explicitly says source data are provided, and the study includes raw scattering/ARPES/IXS measurements deposited in Figshare. This PDF is part of the supplementary material, but no evidence indicates it is a cleaned tabular source-data file.
+  file evidence: PDF supplement, 3.3 MB. No structured sheet/column information is available, and the file is not presented as a figure-specific spreadsheet. The size is still more consistent with a document or compiled supplement than a small replot-ready table.
+  structure: Not reported; PDF supplement, 3.3 MB
+  ambiguity: Moderate: could contain source-data figures or tables, but the inspection report does not show replot-ready structure.
+
+Annotation files
+- none
+
+Script files
+- none

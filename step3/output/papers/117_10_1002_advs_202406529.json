@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0157",
+  "title": "Observation of Spin Splitting in Room‐Temperature Metallic Antiferromagnet CrSb",
+  "doi": "10.1002/advs.202406529",
+  "journal": "Advanced Science",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4402683978",
+  "priority_score": 5.4,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1002_advs_202406529",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file can be confidently identified as cleaned, replot-ready source data from the available evidence.",
+  "type2_summary": "No file can be confidently identified as raw/unprocessed measurement data from the available evidence.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "Only one PDF file was provided, and the inspection report lacks content-level details. Given the absence of paper evidence and insufficient file evidence, a conservative 'other' classification is appropriate.",
+  "file_classifications": [
+    {
+      "relative_path": "6.pdf",
+      "filename": "6.pdf",
+      "type": "other",
+      "paper_evidence": "The paper does not provide a data availability statement and no downloadable data files or URLs were identified on the publisher page, so there is no paper-level evidence that this PDF is source data or raw data.",
+      "file_evidence": "The file is a single PDF (478.6 KB) from Zenodo. Without page-level inspection or embedded text extraction, its internal structure cannot be verified from the report alone; it is not obviously a tabular CSV/XLSX source-data file, and the size/format are more consistent with a document or figure PDF than a directly replot-ready dataset.",
+      "reasoning": "Because the paper gives no explicit indication of raw or source data, classification must rely on file evidence. The available inspection report is insufficient to confirm tabular, figure-specific data or raw instrument output. Conservatively, this is not classifiable as Type 1 or Type 2 from the provided evidence, so it is labeled 'other'.",
+      "ambiguity": "High ambiguity: the PDF may contain figures, documentation, or embedded data, but the inspection report does not expose its contents.",
+      "key_columns_or_structure": "Not determinable from the provided inspection report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports ARPES and DFT evidence for large k-dependent spin splitting in the room-temperature metallic antiferromagnet CrSb, highlighting its potential for antiferromagnetic spintronics.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit dataset, source data, or supplementary data was located from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "6.pdf",
+      "extension": ".pdf",
+      "size_bytes": 490131,
+      "size_human": "478.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "6.pdf"
+    }
+  ]
+}

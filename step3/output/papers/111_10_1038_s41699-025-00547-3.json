@@ -1,0 +1,211 @@
+{
+  "paper_id": "step1_0334",
+  "title": "Analytical modeling and experimental characterization of drift in electrolyte-gated graphene field-effect transistors",
+  "doi": "10.1038/s41699-025-00547-3",
+  "journal": "npj 2D Materials and Applications",
+  "year": 2025,
+  "paper_url": "https://doi.org/10.1038/s41699-025-00547-3",
+  "priority_score": 6.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41699-025-00547-3",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies drift and hysteresis in electrolyte-gated graphene field-effect transistors (EG-gFETs) and attributes the effect primarily to charge trapping/de-trapping in silicon oxide defects beneath the graphene channel. The authors combine systematic transport measurements under varied gate-sweep, resting-time, temperature, electrolyte, and conditioning conditions with an analytical non-radiative multiphonon trapping model that reproduces the observed Dirac-point drift. The main conclusion is that oxide-trap dynamics, not the electrolyte itself, dominate the time-dependent response and must be accounted for in sensing and neuromorphic applications.",
+    "measurement_types": [
+      "electrolyte-gated graphene transistor transfer curves (transport)",
+      "DC gate-bias conditioning measurements",
+      "time-dependent Dirac point tracking",
+      "temperature-dependent transport measurements",
+      "rest-time-dependent transport measurements",
+      "random telegraph noise (RTN) transport measurements at cryogenic temperature",
+      "Raman spectroscopy (G peak shift during resting, mentioned in Supplementary Note 11)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "Schematic of the EG-gFET device: graphene channel on SiOx substrate with electrolyte gate and electrical double layer gating.",
+        "data_type": "schematic / image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Twenty consecutive transfer-curve acquisitions showing progressive drift of the transfer curve with repeated VGS sweeps.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "Example VDirac trajectories showing drift dependence on gate-voltage window position/width and measurement history.",
+        "data_type": "time series / derived transport metric",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "Drift observed for different electrolyte media, used to show drift is not electrolyte-specific.",
+        "data_type": "transport curve / comparison plot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Drift under different graphene cleaning/functionalization conditions in phosphate buffer.",
+        "data_type": "transport curve / comparison plot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "Drift under different silicon oxide surface charge polarities controlled by electrolyte pH.",
+        "data_type": "transport curve / comparison plot",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "Calculated carrier concentration in graphene as a function of gate voltage from the electrostatic model.",
+        "data_type": "model curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Calculated quantum and geometrical capacitances and voltage drops versus gate voltage.",
+        "data_type": "model curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "Calculated graphene Fermi level versus gate voltage overlaid with SiOx defect bands and relevant electron transitions.",
+        "data_type": "energy diagram / model curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Configuration-coordinate diagram illustrating non-radiative electron transitions between graphene and oxide defect bands.",
+        "data_type": "schematic / energy diagram",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Calculated energy barriers for capture/emission transitions as a function of gate voltage.",
+        "data_type": "model curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Calculated capture and emission rates versus gate voltage for acceptor and donor defect bands.",
+        "data_type": "model curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5a",
+        "description": "Experimental VDirac drift during repeated sweeps and recovery after applying a negative DC gate bias; compared with model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 5b",
+        "description": "Experimental alternation of positive and negative DC gate biases showing reversible shifts in VDirac; compared with model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 5c",
+        "description": "Effect of strong positive DC gate bias on VDirac when oxide is near saturation; compared with model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 6a",
+        "description": "VDirac drift for repeated sweeps using a gate-voltage window centered at a negative value.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 6b",
+        "description": "VDirac drift for repeated sweeps using a different gate-voltage window center, including model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 6c",
+        "description": "VDirac drift for repeated sweeps with another gate-voltage window center, including model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 6d",
+        "description": "VDirac drift for repeated sweeps with a more positive gate-voltage window center, including model fit.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 6e",
+        "description": "VDirac drift for repeated sweeps with the most positive gate-voltage window center; includes two trajectories with different initial oxide charge states.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 7a",
+        "description": "Effect of different resting intervals between repeated transfer-curve sets on VDirac drift at room temperature.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 7b",
+        "description": "Effect of resting temperature on VDirac drift between repeated transfer-curve sets.",
+        "data_type": "transport time series",
+        "likely_source": "raw measurement"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw electrical measurements from in-house fabricated EG-gFET chips: sequential transfer curves acquired by sweeping gate voltage VGS at constant VDS = 10 mV with the source grounded, repeated under different electrolyte media, pH, gate-bias conditioning, sweep windows, resting times, and temperatures. It also mentions a cryogenic RTN measurement on a 1-µm channel gFET at 6 K with floating gate and constant VDS = 10 mV, plus Raman G-peak monitoring during rest in Supplementary Note 11.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots processed quantities derived from the raw transport data, especially VDirac trajectories over repeated measurements, and compares them to analytical-model outputs. It also shows calculated carrier density, capacitances, Fermi level, energy barriers, and capture/emission rates as functions of VGS, which are model-derived rather than directly measured.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support the findings of this work are available from the corresponding authors upon reasonable request.' No explicit repository, file list, or public source-data archive is mentioned in the provided text.",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the measurement level: transfer curves and time-dependent transport traces acquired on a custom electronic board using a GUI, with 50 µL electrolyte droplet on the chip, VGS staircase waveform, VDS = 10 mV, 0.5 ms per gate step, and 1.0 s rest between sweeps. The paper does not specify file formats, folder structure, or whether raw traces are deposited.",
+      "processed_data_description": "Processed data include extracted Dirac-point voltages (VDirac) versus time or sweep number, and fitted trajectories from the analytical model. Table 2 lists fit parameters for each figure panel, including VGS window, tau parameters, electron-phonon coupling strengths, initial VDirac, discharge rate, initial trap density, and total trap density.",
+      "figure_data_description": "Figure-specific data are clearly present in the manuscript as plotted experimental traces and model fits, but the paper does not state that separate source-data files are provided. The figures appear to be based on extracted transport curves and derived VDirac values.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text.",
+      "data_organization": "Not specified; likely figure-based experimental datasets plus fitted-model outputs, but no explicit directory or file organization is described.",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper does not provide a public source-data package, raw files, or scripts in the text shown. Although the figures are based on transport measurements and fitted curves, the exact numerical data and plotting code are not available from the paper text alone.",
+      "notes": "Important semantic distinction: the model curves in Figs. 3–4 are derived calculations, while Figs. 1–2 and 5–7 are experimental transport data with overlaid fits. Supplementary Notes are heavily referenced for additional experiments (RTN, electrolyte dependence, cleaning/functionalization, pH, Raman, temperature, rest-time, and conditioning), but their actual data files are not described. The paper emphasizes that drift is independent of electrolyte type, graphene cleaning, gate passivation, and VDS, supporting the oxide-trap interpretation."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The manuscript describes direct experimental acquisition of transfer curves, repeated VDirac measurements, RTN traces, and Raman monitoring, but does not mention a raw-data repository or file package.",
+      "source_data_evidence": "The text does not mention figure source-data files, supplementary data tables, or a public source-data archive.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "‘The data that support the findings of this work are available from the corresponding authors upon reasonable request.’",
+      "priority_modalities": [
+        "electrical transport traces",
+        "transfer curves",
+        "VDirac time series",
+        "temperature-dependent transport",
+        "RTN current traces",
+        "Raman spectra"
+      ],
+      "review_notes": "Do not infer deposited datasets or code from the existence of fitted curves. The paper contains both raw experimental measurements and derived/model-generated plots, but only a generic request-based data availability statement is given. Supplementary Notes likely contain additional figure-level data, but their exact contents are not fully visible in the provided text."
+    }
+  },
+  "inspection_reports": []
+}

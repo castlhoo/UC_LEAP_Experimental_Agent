@@ -1,0 +1,65 @@
+{
+  "paper_id": "step1_0278",
+  "title": "Unveiling the origin of unconventional moire ferroelectricity",
+  "doi": "10.1038/s41565-024-01846-4",
+  "journal": "arXiv preprint",
+  "year": 2024,
+  "paper_url": "https://arxiv.org/abs/2403.17326v1",
+  "priority_score": 4.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41565-024-01846-4",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper argues that unconventional moiré ferroelectricity in graphene/BN-like heterostructures originates from interfacial sliding ferroelectricity rather than graphene moiré bands, enabling robust conductive ferroelectric behavior with anomalous screening.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": true,
+    "processed_plot_details": "Figures, results, and supporting information are provided in the article and Supplementary Information. No external repository is mentioned; additional relevant data are only available from the corresponding authors upon reasonable request.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data that support the findings of this study are available within the article and its Supplementary Information. Any other relevant data are available from the corresponding authors upon reasonable request.",
+      "data_provided_types": [
+        "source_data",
+        "processed"
+      ],
+      "raw_data_description": "",
+      "processed_data_description": "Figures, results, and supporting information are provided in the article and Supplementary Information. No external repository is mentioned; additional relevant data are only available from the corresponding authors upon reasonable request.",
+      "figure_data_description": "opensearch.xml",
+      "scripts_description": "",
+      "data_organization": "The paper states that supporting data are available within the article and its Supplementary Information; a supplementary PDF is available on the publisher site.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": true,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "opensearch.xml",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "The data that support the findings of this study are available within the article and its Supplementary Information. Any other relevant data are available from the corresponding authors upon reasonable request.",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": []
+}

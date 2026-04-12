@@ -1,0 +1,1664 @@
+{
+  "paper_id": "step1_0198",
+  "title": "PAM-flexible Engineered FnCas9 variants for robust and ultra-precise genome editing and diagnostics",
+  "doi": "10.1038/s41467-024-49233-w",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4400126439",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 19,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-49233-w",
+  "files_inspected": 19,
+  "file_types_found": [
+    "excel",
+    "tabular_text",
+    "microscopy_image",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "Most spreadsheet and CSV files are figure-level source data or processed analysis tables: PAM frequency summaries, ChIP-seq peak tables, oligo/gRNA design tables, figure-specific source-data workbooks, and PAM-discovery matrices.",
+  "type2_summary": "The TIFF files are raw image/instrument outputs and require processing before figure generation; the small PDF files are documentation rather than analyzable datasets.",
+  "type1_files": [
+    "41467_2024_49233_MOESM2_ESM.xlsx",
+    "41467_2024_49233_MOESM3_ESM.xlsx",
+    "41467_2024_49233_MOESM4_ESM.xlsx",
+    "41467_2024_49233_MOESM9_ESM.xlsx",
+    "PAM_discovery_en1.csv",
+    "PAM_discovery_en15.csv",
+    "PAM_discovery_en31.csv"
+  ],
+  "type2_files": [
+    "7N28625I_SP_Edited_Cl_1.tif",
+    "9U65782_I_SP.tif"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The dataset is mixed: it contains both processed/source-data tables and raw image files. The PDF files are best treated as documentation because no evidence indicates they contain measurements. The large MOESM9 workbook is large but still Type 1 because it is figure-organized and tabular, not raw instrument output.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2024_49233_MOESM1_ESM.pdf",
+      "filename": "41467_2024_49233_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature Communications source-data packages commonly include a PDF legend/readme; the paper explicitly mentions source data files but does not indicate this PDF is a data table or raw measurement.",
+      "file_evidence": "PDF, very small (4.6 MB) and likely a supplementary legend or documentation file rather than a dataset; no tabular structure reported.",
+      "reasoning": "This is not a replot-ready data file and does not appear to contain measurements. It is best treated as documentation accompanying the source data package.",
+      "ambiguity": "Moderate: without opening the PDF, exact contents are not visible, but the size and format strongly suggest documentation.",
+      "key_columns_or_structure": "No tabular structure reported"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM2_ESM.xlsx",
+      "filename": "41467_2024_49233_MOESM2_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper discusses PAM discovery and human-genome PAM availability as processed source-data outputs for figure-level analysis.",
+      "file_evidence": "Structured Excel sheet 'PAM_frequency' with 4 columns and 176 rows; headers are descriptive and figure-ready: Used PAM for analysis, Nuclease name, Consensus PAM, Freqency in Human genome (GRCh38.p13).",
+      "reasoning": "This is a clean tabular summary that can be directly plotted with minimal processing. It matches a figure/source-data table rather than raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Used PAM for analysis; Nuclease name; Consensus PAM; Freqency in Human genome (GRCh38.p13)"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM3_ESM.xlsx",
+      "filename": "41467_2024_49233_MOESM3_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper includes ChIP-seq / peak-based analyses and processed off-target or enrichment summaries; these are typically deposited as source-data tables.",
+      "file_evidence": "Excel workbook with multiple peak tables and genomic coordinates; sheets contain columns like chromosome, start, end, PAM, score, fold_enrichment, p/q-values, pileup, status.",
+      "reasoning": "This is processed peak-call / enrichment output, not raw sequencing reads. It is directly replot-ready as a structured table.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "chromosome, start, end, start_crRNA, end_crRNA, strand, Mismatch, crRNA sequence, PAM, score, fold_enrichment, -log10(qvalue), pileup, status"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM4_ESM.xlsx",
+      "filename": "41467_2024_49233_MOESM4_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper uses many oligonucleotide and gRNA design tables in source data / methods support; these are not raw measurements but organized experimental design data.",
+      "file_evidence": "Excel workbook with multiple sheets listing oligos, sequences, lengths, and purposes for plasmid construction, IVT templates, MST, mismatch walking, gRNAs, NGS, HDR, and CRISPRDx.",
+      "reasoning": "This is structured, human-readable design metadata that can be directly inspected and reused, but it is not raw instrument output. It fits cleaned source-data/documentation tables and is replot-ready only in a broad sense.",
+      "ambiguity": "Low: it is clearly structured, but functionally closer to methods/supporting tables than a plotted dataset.",
+      "key_columns_or_structure": "Oligos; Sequences (5' to 3'); Length (nt); Purpose of use; gRNAs; Sequence of the amplicon"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM5_ESM.xlsx",
+      "filename": "41467_2024_49233_MOESM5_ESM.xlsx",
+      "type": "documentation",
+      "paper_evidence": "Antibody lists are typically supplementary methods documentation rather than experimental data.",
+      "file_evidence": "Single-sheet Excel table with antibody names, company, catalogue number, and dilutions.",
+      "reasoning": "This is a methods reagent list, not a dataset to plot or analyze as measurements.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Antibody; Company; Catalogue No.; Dilutions"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM6_ESM.pdf",
+      "filename": "41467_2024_49233_MOESM6_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "No evidence in the paper suggests this PDF is raw data; source-data packages often include brief supplementary notes or legends.",
+      "file_evidence": "Very small PDF (3.1 KB), which strongly suggests a short note/legend rather than data.",
+      "reasoning": "Not a dataset file; most likely documentation.",
+      "ambiguity": "Moderate: contents not visible, but size is strongly indicative.",
+      "key_columns_or_structure": "No tabular structure reported"
+    },
+    {
+      "relative_path": "41467_2024_49233_MOESM9_ESM.xlsx",
+      "filename": "41467_2024_49233_MOESM9_ESM.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly states that source data are provided for multiple figures, including processed summaries of cleavage, detection, binding, editing, and base-editing assays.",
+      "file_evidence": "Large but structured Excel workbook with figure-specific sheets such as Fig. 1b, Fig. 2b, Fig. 2c-e, Fig. 2f, Fig. 3b, etc.; contains numeric tables and summary columns suitable for plotting.",
+      "reasoning": "Despite the large size, the workbook is organized as figure-level source data with headers and numeric values. It is processed/replot-ready rather than raw instrument output.",
+      "ambiguity": "Low: size is large, but the figure-specific tabular organization strongly supports Type 1.",
+      "key_columns_or_structure": "Figure-specific sheets; examples include Cas_system, Targetable1, Total_SNPs, Targetable %, Not_Targetable %, and numeric tables for Fig. 2f / Fig. 3b"
+    },
+    {
+      "relative_path": "PAM_discovery_en1.csv",
+      "filename": "PAM_discovery_en1.csv",
+      "type": "type1",
+      "paper_evidence": "The paper reports PAM discovery / deep sequencing outputs used to generate PAM logos and enrichment plots.",
+      "file_evidence": "CSV with 65,535 rows and numeric values; appears to encode PAM sequence counts/enrichment in a tabular form that can be plotted directly.",
+      "reasoning": "This is processed PAM-discovery output, not raw sequencing reads. It is suitable for replotting enrichment analyses with minimal processing.",
+      "ambiguity": "Low: the file is large, but the content is already tabulated and analysis-ready.",
+      "key_columns_or_structure": "Sequence-like columns plus numeric enrichment/value column; 7 columns total, 65,535 rows"
+    },
+    {
+      "relative_path": "PAM_discovery_en15.csv",
+      "filename": "PAM_discovery_en15.csv",
+      "type": "type1",
+      "paper_evidence": "Same PAM discovery analysis as above, for en15.",
+      "file_evidence": "CSV with 65,535 rows and numeric values; tabular analysis output.",
+      "reasoning": "Processed PAM-discovery table, directly usable for plotting.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Sequence-like columns plus numeric enrichment/value column; 7 columns total, 65,535 rows"
+    },
+    {
+      "relative_path": "PAM_discovery_en31.csv",
+      "filename": "PAM_discovery_en31.csv",
+      "type": "type1",
+      "paper_evidence": "Same PAM discovery analysis as above, for en31.",
+      "file_evidence": "CSV with 65,535 rows and numeric values; tabular analysis output.",
+      "reasoning": "Processed PAM-discovery table, directly usable for plotting.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Sequence-like columns plus numeric enrichment/value column; 7 columns total, 65,535 rows"
+    },
+    {
+      "relative_path": "7N28625I_SP_Edited_Cl_1.tif",
+      "filename": "7N28625I_SP_Edited_Cl_1.tif",
+      "type": "type2",
+      "paper_evidence": "The paper includes microscopy/imaging modalities, and the prior explicitly flags TIFF microscopy/instrument files as raw data.",
+      "file_evidence": "TIFF image file, likely raw microscopy/instrument output; filename resembles an experiment/run identifier rather than a figure table.",
+      "reasoning": "This is raw image data requiring interpretation or processing before figure generation.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Binary image file; no tabular structure"
+    },
+    {
+      "relative_path": "9U65782_I_SP.tif",
+      "filename": "9U65782_I_SP.tif",
+      "type": "type2",
+      "paper_evidence": "The paper includes microscopy/imaging modalities, and the prior explicitly flags TIFF microscopy/instrument files as raw data.",
+      "file_evidence": "TIFF image file, likely raw microscopy/instrument output; filename resembles an experiment/run identifier rather than a figure table.",
+      "reasoning": "This is raw image data requiring interpretation or processing before figure generation.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Binary image file; no tabular structure"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper engineers Francisella novicida Cas9 (FnCas9) into PAM-flexible enhanced variants (enFnCas9; especially en1, en15, en31) by mutating the WED-PI domain and phosphate-lock loop to increase cleavage kinetics while preserving FnCas9’s intrinsic mismatch discrimination. The variants broaden PAM compatibility to NRG/NGR, improve genome editing, HDR knock-in, and CRISPR diagnostics, and enable precise adenine base editing with extended gRNAs; en31-ABEmax8.17d was used to correct an RPE65 pathogenic mutation in patient-derived iPSCs and restore RPE65 protein expression in retinal cells.",
+    "measurement_types": [
+      "in vitro DNA cleavage assay",
+      "PAM discovery assay / deep sequencing of PAM library",
+      "Chromatin immunoprecipitation sequencing (ChIP-seq)",
+      "Lateral flow CRISPR diagnostics (FELUDA/RAY)",
+      "Microscale thermophoresis (MST)",
+      "Cellular indel quantification by amplicon sequencing",
+      "HDR knock-in assay by sequencing",
+      "Genome-wide off-target profiling by Digenome-seq",
+      "Base editing amplicon sequencing",
+      "Immunocytochemistry / immunolabeling",
+      "Western blotting",
+      "RT-qPCR / transcript analysis",
+      "Cell imaging / morphology microscopy",
+      "Karyotyping"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "FnCas9 crystal structure with the WED-PI domain highlighted and engineered residue positions marked.",
+        "data_type": "structure image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Time-course in vitro cleavage activity of WT FnCas9 and selected enFnCas9 variants on a 5'-GGG-3' PAM substrate.",
+        "data_type": "transport curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "PAM discovery results shown as PAM wheels and sequence logos for FnCas9 and en1.",
+        "data_type": "sequence logo / enrichment plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Comparison of human-genome PAM availability for different Cas effectors, highlighting FnCas9 and enFnCas9 PAMs.",
+        "data_type": "bar plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of SNV detection by FELUDA and RAY using FnCas9 binding and lateral-flow readout.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Fraction of targetable versus non-targetable SNVs for FnCas9 and enFnCas9 variants.",
+        "data_type": "pie/bar summary",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Representative lateral flow assay image for sickle-cell mutation detection using FnCas9 and en31.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Quantification of sickle-cell mutation discrimination by en31 and FnCas9.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "In vitro cleavage-based detection of SARS-CoV-2 N501Y by en31.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "MST binding curves comparing FnCas9 and en15 DNA binding affinity.",
+        "data_type": "binding curve",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "All-in-one plasmid architecture expressing Cas9-T2A-EGFP and gRNA.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Indel efficiencies at multiple loci and off-targets in HEK293T cells for FnCas9, en1, SpCas9-HF1, and eSpCas9.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Indel efficiencies at HBB with g20 versus g21 for en1, en15, and en31.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Editing efficiencies at non-canonical PAM sites (FANCF1, RUNX1, ZNF629) by en31 with g20/g21.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Schematic of HDR donor design for DCX knock-in.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "HDR knock-in performance comparison across Cas9 variants at DCX.",
+        "data_type": "box plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "On-target and single-mismatch off-target editing at FANCF site 2 in HEK293T cells for multiple Cas9 variants and gRNA lengths.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "On-target indel efficiencies at FASN in HEK293T cells for en variants versus SpCas9.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "On-target indel efficiencies at PAX6 in iPSCs.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "PAX6 knockout in ARPE-19 cells confirmed by immunocytochemistry.",
+        "data_type": "microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Comparison of on-target editing at HBB among en1, SpCas9, SpCas9-NG, and SpRY.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "Comparison of on-target editing at EMX1 among en1, SpCas9, SpCas9-NG, and SpRY.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Genome-wide off-target profiling by Digenome-seq at HBB comparing en variants, SpCas9, and SpRY.",
+        "data_type": "genome-wide off-target plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Genome-wide off-target profiling by Digenome-seq at EMX1 comparing en variants, SpCas9, and SpRY.",
+        "data_type": "genome-wide off-target plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Overlap of off-target sites between nucleases at HBB.",
+        "data_type": "Venn/overlap plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Targeted amplicon sequencing validation of Digenome-seq off-targets.",
+        "data_type": "sequencing summary plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Schematic of FnCas9/en31 ABEmax8.17d design.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Comparison of ABE configurations and gRNA-independent editing concept.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "Target loci used for base editing tests (HBG1/2 promoters and EMX1).",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6d",
+        "description": "A-to-G editing efficiencies at HBG1/2 promoter and EMX1 sites for en31-ABEmax8.17d, SpNG-ABEmax8.17d, and FnCas9-ABEmax8.17d.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "A-to-G editing efficiencies at multiple HBG1/2 promoter sites by en31-ABEmax8.17d.",
+        "data_type": "bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6f-i",
+        "description": "Editing-window mapping for en31-ABEmax8.17d across target positions relative to PAM.",
+        "data_type": "heatmap/position plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6j-k",
+        "description": "Tuning of base-editing window using variable-length gRNAs at EMX1 and SERPINI1.",
+        "data_type": "bar/position plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig7a",
+        "description": "Patient mutation schematic for RPE65 c.992G>A (p.Trp331Ter) in LCA2.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig7b",
+        "description": "Clinical imaging of the patient retina by fundoscopy and OCT.",
+        "data_type": "medical image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig7c",
+        "description": "Amplicon sequencing of base editing outcomes at the RPE65 mutation site using different PAM contexts.",
+        "data_type": "sequencing bar plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig7d",
+        "description": "Clonal analysis showing 100% correction and lack of bystander edits in edited iPSC clones.",
+        "data_type": "sequence plot/table",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig7e",
+        "description": "Differentiation and pigmentation progression of RPE cells from control, patient, and corrected iPSC lines.",
+        "data_type": "cell culture image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig7f",
+        "description": "Phalloidin staining and immunolabeling for MITF and RPE65 in differentiated RPE cells.",
+        "data_type": "fluorescence microscopy image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig7g",
+        "description": "Western blot showing restoration of full-length RPE65 protein in corrected cells.",
+        "data_type": "western blot",
+        "likely_source": "raw measurement"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports multiple primary measurements: in vitro cleavage reactions over time, lateral-flow strip readouts, MST binding curves, microscopy/immunofluorescence images, western blots, OCT/fundoscopy clinical images, and sequencing-based assays (ChIP-seq, PAM-library deep sequencing, amplicon sequencing, Digenome-seq). These are experimental measurements collected from purified protein-DNA systems and from human cells (HEK293T, iPSCs, ARPE-19, patient-derived RPE).",
+    "has_processed_plots": true,
+    "processed_plot_details": "Many figures are quantitative summaries derived from sequencing or assay readouts: cleavage percentages, PAM enrichment logos/wheels, genome accessibility estimates, SNV discrimination fold-enrichment, indel percentages, HDR knock-in fold changes, off-target counts/overlaps, and base-editing percentages across positions. These are processed/aggregated values rather than raw traces or images.",
+    "dataset_characterization": {
+      "data_availability_statement": "The text explicitly says 'The Source Data are provided in the source data file' for at least some figures, and later 'Source data are provided as a Source Data file.' No explicit raw-data repository, accession numbers, or code repository are mentioned in the provided text.",
+      "data_provided_types": [
+        "source_data",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental modalities (e.g., sequencing reads, microscopy images, western blots, lateral-flow images, MST curves, ChIP-seq, Digenome-seq), but the excerpt does not specify file formats, repositories, or whether raw reads/images are deposited.",
+      "processed_data_description": "Processed data include quantified cleavage percentages, indel frequencies, HDR knock-in rates, PAM logos/wheels from depletion/enrichment analysis, off-target site lists and overlaps, binding affinities (Kd), and base-editing percentages at specific positions. These are the values plotted in the main and supplementary figures.",
+      "figure_data_description": "Yes. The paper repeatedly states that source data are provided for figures, implying figure-specific underlying numerical data are available in a source data file. This is likely processed figure data rather than raw measurements.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "data_organization": "figure-based source data plus supplementary data files; raw-data organization is not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper indicates source data files are provided for figures, which should allow replotting of the quantitative plots. However, the excerpt does not confirm access to raw sequencing reads or image files, so only figure-level replotting is clearly supported.",
+      "notes": "Important distinction: the paper provides strong evidence for processed/source data accompanying figures, but not explicit raw-data deposition. Sequencing-based assays likely have underlying raw reads, yet this is not stated in the excerpt. Supplementary Data 1 and 2 are mentioned for PAM availability and off-target sites, indicating additional processed tables."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The study uses many primary experimental modalities that inherently generate raw data: ChIP-seq, deep sequencing, Digenome-seq, MST, microscopy, western blots, and lateral-flow images.",
+      "source_data_evidence": "Multiple figure captions explicitly state that 'Source Data are provided in the source data file' / 'Source data are provided as a Source Data file.'",
+      "both_evidence": "The paper clearly implies both raw experimental measurements and processed figure-level source data, but only source data are explicitly mentioned as provided.",
+      "data_availability_section_relevant": "Key phrases: 'The Source Data are provided in the source data file.'; 'Source data are provided as a Source Data file.'; references to Supplementary Data 1 and 2 for PAM availability and off-target sites.",
+      "priority_modalities": [
+        "sequencing reads (ChIP-seq, amplicon sequencing, Digenome-seq, PAM-library deep sequencing)",
+        "lateral-flow assay images",
+        "microscopy / immunofluorescence images",
+        "western blot images",
+        "MST binding curves",
+        "clinical OCT/fundoscopy images"
+      ],
+      "review_notes": "Do not conflate source data with raw data. The excerpt supports figure-level processed data strongly, but raw data deposition is not explicitly documented. Supplementary Data files appear to contain tabulated processed results rather than raw measurements."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2024_49233_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4793980,
+      "size_human": "4.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM2_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 19312,
+      "size_human": "18.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "PAM_frequency"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "PAM_frequency",
+          "columns": [
+            "Used PAM for analysis",
+            "Nuclease name",
+            "Consensus PAM",
+            "Freqency in Human genome (GRCh38.p13)"
+          ],
+          "named_columns": [
+            "Used PAM for analysis",
+            "Nuclease name",
+            "Consensus PAM",
+            "Freqency in Human genome (GRCh38.p13)"
+          ],
+          "column_count": 4,
+          "row_count": 176,
+          "dtypes": {
+            "Used PAM for analysis": "object",
+            "Nuclease name": "object",
+            "Consensus PAM": "object",
+            "Freqency in Human genome (GRCh38.p13)": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM2_ESM.xlsx"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM3_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 19725,
+      "size_human": "19.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "dFn_myc_peaks_redundant",
+        "dFn_myc_peaks_unique_NGG",
+        "dSp_myc_peaks_redundant",
+        "dSp_myc_peaks_uniq_NGG"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "dFn_myc_peaks_redundant",
+          "columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "named_columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "column_count": 15,
+          "row_count": 20,
+          "dtypes": {
+            "chromosome": "object",
+            "start": "int64",
+            "end": "int64",
+            "start_crRNA": "int64",
+            "end_crRNA": "int64",
+            "strand": "object",
+            "Mismatch": "int64",
+            "crRNA sequence": "object",
+            "PAM": "object",
+            "score": "int64",
+            "fold_enrichment": "float64",
+            "f-log10(pvalue)": "float64",
+            "-log10(qvalue)": "float64",
+            "pileup": "int64",
+            "status": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "dFn_myc_peaks_unique_NGG",
+          "columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "named_columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "column_count": 15,
+          "row_count": 3,
+          "dtypes": {
+            "chromosome": "object",
+            "start": "int64",
+            "end": "int64",
+            "start_crRNA": "int64",
+            "end_crRNA": "int64",
+            "strand": "object",
+            "Mismatch": "int64",
+            "crRNA sequence": "object",
+            "PAM": "object",
+            "score": "int64",
+            "fold_enrichment": "float64",
+            "f-log10(pvalue)": "float64",
+            "-log10(qvalue)": "float64",
+            "pileup": "int64",
+            "status": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "dSp_myc_peaks_redundant",
+          "columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "named_columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "column_count": 15,
+          "row_count": 42,
+          "dtypes": {
+            "chromosome": "object",
+            "start": "int64",
+            "end": "int64",
+            "start_crRNA": "int64",
+            "end_crRNA": "int64",
+            "strand": "object",
+            "Mismatch": "int64",
+            "crRNA sequence": "object",
+            "PAM": "object",
+            "score": "int64",
+            "fold_enrichment": "float64",
+            "f-log10(pvalue)": "float64",
+            "-log10(qvalue)": "float64",
+            "pileup": "int64",
+            "status": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "dSp_myc_peaks_uniq_NGG",
+          "columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "named_columns": [
+            "chromosome",
+            "start",
+            "end",
+            "start_crRNA",
+            "end_crRNA",
+            "strand",
+            "Mismatch",
+            "crRNA sequence",
+            "PAM",
+            "score",
+            "fold_enrichment",
+            "f-log10(pvalue)",
+            "-log10(qvalue)",
+            "pileup",
+            "status"
+          ],
+          "column_count": 15,
+          "row_count": 9,
+          "dtypes": {
+            "chromosome": "object",
+            "start": "int64",
+            "end": "int64",
+            "start_crRNA": "int64",
+            "end_crRNA": "int64",
+            "strand": "object",
+            "Mismatch": "int64",
+            "crRNA sequence": "object",
+            "PAM": "object",
+            "score": "int64",
+            "fold_enrichment": "float64",
+            "f-log10(pvalue)": "float64",
+            "-log10(qvalue)": "float64",
+            "pileup": "int64",
+            "status": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM3_ESM.xlsx"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM4_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 38449,
+      "size_human": "37.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "1. Oligos for plasmid construct",
+        "2. T7 Oligos for IVT DNA templa",
+        "3. Oligos for MST",
+        "4. Oligos for Mismatch walking ",
+        "5. gRNA sequences for nuclease-",
+        "6. gRNA sequences for base edit",
+        "7. Oligos for NGS ",
+        "8. Oligos used for NGS analysis",
+        "9. Oligos for HDR assay",
+        "10. Oligos for CRISPRDx",
+        "11. Oligos for Digenome-seq val",
+        "12. Oligos for iPSC validation"
+      ],
+      "sheet_count": 12,
+      "sheets": [
+        {
+          "sheet_name": "1. Oligos for plasmid construct",
+          "columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "named_columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "column_count": 4,
+          "row_count": 77,
+          "dtypes": {
+            "Oligos": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose of use": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "2. T7 Oligos for IVT DNA templa",
+          "columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "named_columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "column_count": 4,
+          "row_count": 19,
+          "dtypes": {
+            "Oligos": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose of use": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "3. Oligos for MST",
+          "columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "named_columns": [
+            "Oligos",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose of use"
+          ],
+          "column_count": 4,
+          "row_count": 2,
+          "dtypes": {
+            "Oligos": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose of use": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "4. Oligos for Mismatch walking ",
+          "columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose",
+            "Sequence of the amplicon"
+          ],
+          "named_columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose",
+            "Sequence of the amplicon"
+          ],
+          "column_count": 5,
+          "row_count": 23,
+          "dtypes": {
+            "List": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose": "object",
+            "Sequence of the amplicon": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "5. gRNA sequences for nuclease-",
+          "columns": [
+            "gRNAs",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "named_columns": [
+            "gRNAs",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "column_count": 3,
+          "row_count": 18,
+          "dtypes": {
+            "gRNAs": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "6. gRNA sequences for base edit",
+          "columns": [
+            "gRNAs",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Note"
+          ],
+          "named_columns": [
+            "gRNAs",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Note"
+          ],
+          "column_count": 4,
+          "row_count": 27,
+          "dtypes": {
+            "gRNAs": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Note": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "7. Oligos for NGS ",
+          "columns": [
+            "Target sites",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "named_columns": [
+            "Target sites",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "column_count": 3,
+          "row_count": 52,
+          "dtypes": {
+            "Target sites": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "8. Oligos used for NGS analysis",
+          "columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "named_columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)"
+          ],
+          "column_count": 3,
+          "row_count": 2,
+          "dtypes": {
+            "List": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "9. Oligos for HDR assay",
+          "columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose"
+          ],
+          "named_columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose"
+          ],
+          "column_count": 4,
+          "row_count": 3,
+          "dtypes": {
+            "List": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "10. Oligos for CRISPRDx",
+          "columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose"
+          ],
+          "named_columns": [
+            "List",
+            "Sequences (5' to 3')",
+            "Length (nt)",
+            "Purpose"
+          ],
+          "column_count": 4,
+          "row_count": 6,
+          "dtypes": {
+            "List": "object",
+            "Sequences (5' to 3')": "object",
+            "Length (nt)": "int64",
+            "Purpose": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM4_ESM.xlsx"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM5_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9118,
+      "size_human": "8.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Antibody details"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Antibody details",
+          "columns": [
+            "Antibody ",
+            "Company",
+            "Catalogue No. ",
+            "Dilutions"
+          ],
+          "named_columns": [
+            "Antibody ",
+            "Company",
+            "Catalogue No. ",
+            "Dilutions"
+          ],
+          "column_count": 4,
+          "row_count": 21,
+          "dtypes": {
+            "Antibody ": "object",
+            "Company": "object",
+            "Catalogue No. ": "object",
+            "Dilutions": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM5_ESM.xlsx"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM6_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3205,
+      "size_human": "3.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM6_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM7_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3420567,
+      "size_human": "3.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM7_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM8_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 360539,
+      "size_human": "352.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM8_ESM.pdf"
+    },
+    {
+      "filename": "41467_2024_49233_MOESM9_ESM.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 24735656,
+      "size_human": "23.6 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 1b",
+        "Fig. 2b",
+        "Fig. 2c-e",
+        "Fig. 2f",
+        "Fig. 3b",
+        "Fig. 3c",
+        "Fig. 3d",
+        "Fig. 3f",
+        "Fig. 4a",
+        "Fig. 4b",
+        "Fig. 4c",
+        "Fig. 4e, f",
+        "Fig. 5a-d",
+        "Fig. 6d",
+        "Fig. 6e",
+        "Fig. 6f, g",
+        "Fig. 6j",
+        "Fig. 7a",
+        "Fig. 7c",
+        "Fig. 7d",
+        "Fig. 7g",
+        "Supplementary Fig. 2a",
+        "Supplementary Fig. 3a-c",
+        "Supplementary Fig. 4a-c, e",
+        "Supplementary Fig. 6a-e",
+        "Supplementary Fig. 7a-c",
+        "Supplementary Fig. 8a",
+        "Supplementary Fig. 8b",
+        "Supplementary Fig. 8c",
+        "Supplementary Fig. 8d",
+        "Supplementary Fig. 8e",
+        "Supplementary Fig. 8f",
+        "Supplementary Fig. 9",
+        "Supplementary Fig. 11c, d, f"
+      ],
+      "sheet_count": 34,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 1b",
+          "columns": [
+            "Fig. 1b"
+          ],
+          "named_columns": [
+            "Fig. 1b"
+          ],
+          "column_count": 1,
+          "row_count": 76,
+          "dtypes": {
+            "Fig. 1b": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 2b",
+          "columns": [
+            "Cas_system",
+            "Targetable1",
+            "Total_SNPs",
+            "Targetable %",
+            "Not_Targetable %"
+          ],
+          "named_columns": [
+            "Cas_system",
+            "Targetable1",
+            "Total_SNPs",
+            "Targetable %",
+            "Not_Targetable %"
+          ],
+          "column_count": 5,
+          "row_count": 2,
+          "dtypes": {
+            "Cas_system": "object",
+            "Targetable1": "int64",
+            "Total_SNPs": "int64",
+            "Targetable %": "float64",
+            "Not_Targetable %": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2c-e",
+          "columns": [
+            "Fig. 2c, d"
+          ],
+          "named_columns": [
+            "Fig. 2c, d"
+          ],
+          "column_count": 1,
+          "row_count": 69,
+          "dtypes": {
+            "Fig. 2c, d": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 2f",
+          "columns": [
+            "Fig. 2f",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23"
+          ],
+          "named_columns": [
+            "Fig. 2f"
+          ],
+          "column_count": 24,
+          "row_count": 154,
+          "dtypes": {
+            "Fig. 2f": "float64",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3b",
+          "columns": [
+            "Fig. 3b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "Fig. 3b"
+          ],
+          "column_count": 8,
+          "row_count": 32,
+          "dtypes": {
+            "Fig. 3b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 3c",
+          "columns": [
+            "Fig. 3c",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Fig. 3c"
+          ],
+          "column_count": 7,
+          "row_count": 17,
+          "dtypes": {
+            "Fig. 3c": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 3d",
+          "columns": [
+            "Fig. 3d",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Fig. 3d"
+          ],
+          "column_count": 5,
+          "row_count": 42,
+          "dtypes": {
+            "Fig. 3d": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 3f",
+          "columns": [
+            "Fig. 3f",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "Fig. 3f"
+          ],
+          "column_count": 4,
+          "row_count": 23,
+          "dtypes": {
+            "Fig. 3f": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 4a",
+          "columns": [
+            "Fig. 4a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "Fig. 4a"
+          ],
+          "column_count": 9,
+          "row_count": 21,
+          "dtypes": {
+            "Fig. 4a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 4b",
+          "columns": [
+            "Fig. 4b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Fig. 4b"
+          ],
+          "column_count": 7,
+          "row_count": 9,
+          "dtypes": {
+            "Fig. 4b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_49233_MOESM9_ESM.xlsx"
+    },
+    {
+      "filename": "PAM_discovery_en1.csv",
+      "extension": ".csv",
+      "size_bytes": 3175787,
+      "size_human": "3.0 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-0.847997",
+        "FnCas9-e1",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-0.847997": "float64",
+        "FnCas9-e1": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_en1.csv"
+    },
+    {
+      "filename": "PAM_discovery_en15.csv",
+      "extension": ".csv",
+      "size_bytes": 3240488,
+      "size_human": "3.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-1.169925",
+        "FnCas9-e15",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-1.169925": "float64",
+        "FnCas9-e15": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_en15.csv"
+    },
+    {
+      "filename": "PAM_discovery_en31.csv",
+      "extension": ".csv",
+      "size_bytes": 3241936,
+      "size_human": "3.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-1.169925",
+        "FnCas9-e31",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-1.169925": "float64",
+        "FnCas9-e31": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_en31.csv"
+    },
+    {
+      "filename": "PAM_discovery_en34.csv",
+      "extension": ".csv",
+      "size_bytes": 3241555,
+      "size_human": "3.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-0.362570",
+        "FnCas9-e34",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-0.362570": "float64",
+        "FnCas9-e34": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_en34.csv"
+    },
+    {
+      "filename": "PAM_discovery_en40.csv",
+      "extension": ".csv",
+      "size_bytes": 3240341,
+      "size_human": "3.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-0.584963",
+        "FnCas9-e40",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-0.584963": "float64",
+        "FnCas9-e40": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_en40.csv"
+    },
+    {
+      "filename": "PAM_discovery_FnCas9.csv",
+      "extension": ".csv",
+      "size_bytes": 3174392,
+      "size_human": "3.0 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "AATTTTTT",
+        "AATTNNNN",
+        "AA",
+        "TT",
+        "-1.584963",
+        "FnCas9-WT",
+        "5min"
+      ],
+      "column_count": 7,
+      "row_count": 65535,
+      "dtypes": {
+        "AATTTTTT": "object",
+        "AATTNNNN": "object",
+        "AA": "object",
+        "TT": "object",
+        "-1.584963": "float64",
+        "FnCas9-WT": "object",
+        "5min": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "figshare",
+      "relative_path": "PAM_discovery_FnCas9.csv"
+    },
+    {
+      "filename": "LC2-2_SP_9U65782.pdf",
+      "extension": ".pdf",
+      "size_bytes": 204388,
+      "size_human": "199.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "figshare",
+      "relative_path": "LC2-2_SP_9U65782.pdf"
+    },
+    {
+      "filename": "LC2-2-BE1_SP_Edited_7N28625.pdf",
+      "extension": ".pdf",
+      "size_bytes": 201091,
+      "size_human": "196.4 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "figshare",
+      "relative_path": "LC2-2-BE1_SP_Edited_7N28625.pdf"
+    },
+    {
+      "filename": "7N28625I_SP_Edited_Cl_1.tif",
+      "extension": ".tif",
+      "size_bytes": 138438,
+      "size_human": "135.2 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (135.2 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "figshare",
+      "relative_path": "7N28625I_SP_Edited_Cl_1.tif"
+    },
+    {
+      "filename": "9U65782_I_SP.tif",
+      "extension": ".tif",
+      "size_bytes": 153024,
+      "size_human": "149.4 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (149.4 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "figshare",
+      "relative_path": "9U65782_I_SP.tif"
+    }
+  ]
+}

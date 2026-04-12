@@ -1,0 +1,264 @@
+{
+  "paper_id": "step1_0164",
+  "title": "Time-resolved ARPES on cuprates: Tracking the low-energy electrodynamics in the time domain",
+  "doi": "10.1016/j.elspec.2021.147091",
+  "journal": "Journal of Electron Spectroscopy and Related Phenomena",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3174575642",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "WSe2.zip: Too large: 5869.3MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1016_j_elspec_2021_147091",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reviews and analyzes time-resolved ARPES (TR-ARPES) on Bi-based cuprate superconductors, focusing on how low-energy electronic dynamics evolve after near-IR pumping. The main findings are that nodal coherent spectral weight suppression is well described by Fermi-liquid temperature broadening, while near-nodal superconducting-gap filling is non-thermal and linked to pair-breaking bosons that transiently enhance the pair-breaking scattering rate.",
+    "measurement_types": [
+      "time-resolved ARPES (TR-ARPES)",
+      "equilibrium ARPES",
+      "momentum-integrated energy distribution curves (EDCs)",
+      "Fermi surface mapping / iso-energy contour mapping",
+      "tomographic density of states (TDOS)",
+      "temperature-dependent spectral-function analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1",
+        "description": "Log-scale schematic/plot of transient electronic temperature versus pump-probe delay, illustrating two relaxation regimes after optical excitation and a cartoon of energy flow from hot electrons to phonons.",
+        "data_type": "plot / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Nodal equilibrium and transient EDCs plus their difference, showing transient spectral-weight loss and gain near the Fermi level.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Transient evolution of the near-nodal superconducting gap for two pump fluences, with symmetrized EDCs and phenomenological fits.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Nonequilibrium antinodal EDCs at different delays after pump excitation, highlighting excess states beyond simple heating and transient in-gap spectral weight.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Time dependence of photoemission intensity at an O-2p band binding energy for two pump energies, compared with antinodal in-gap-state growth and peak broadening.",
+        "data_type": "time trace / spectrum-derived curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Schematic of electron-electron versus electron-boson scattering contributions and a plot of fast decay time versus pump fluence above the Fermi level.",
+        "data_type": "schematic + decay curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Diagram of the contributions to TR-ARPES intensity: spectral function, matrix elements, Fermi-Dirac distribution, and scattering/relaxation terms.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Schematic density of states for doped cuprates showing lower/upper Hubbard bands, charge-transfer gap, and near-IR excitation pathways.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Equilibrium Fermi-surface map of optimally doped Bi2212 before pumping.",
+        "data_type": "image / intensity map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Differential iso-energy contour map 0.5 ps after pumping, showing intensity redistribution above the Fermi level.",
+        "data_type": "image / intensity map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Momentum-integrated nodal EDCs before and after pumping for Bi2201-OD24 with Fermi-Dirac fits.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Transient electronic temperature extracted from Fermi-edge fits for two pump fluences.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "Nodal EDCs at kF for Bi2212-OP91 and Bi2201-OD24 at low and high electronic temperature, comparing TR-ARPES and equilibrium ARPES.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig6d",
+        "description": "Relative variation of nodal coherent spectral weight versus electronic temperature for multiple Bi-based compounds, compared with Fermi-liquid simulations.",
+        "data_type": "scatter/curve plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "Temperature dependence of the spectral function at ω=0 and kF, compared with Fermi-liquid and marginal-Fermi-liquid fits.",
+        "data_type": "scatter/curve plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig7a1",
+        "description": "Experimental differential momentum-integrated nodal EDC map versus delay for Bi2201-OD24.",
+        "data_type": "heatmap / spectrum map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig7a2",
+        "description": "Simulated differential nodal EDC map generated from the Fermi-liquid model using the measured electronic temperature.",
+        "data_type": "heatmap / spectrum map",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig7b",
+        "description": "Transient electronic temperature versus delay with double-exponential fit.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig7c",
+        "description": "Population and depletion dynamics extracted from the differential nodal maps, with fits.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig8a",
+        "description": "Off-nodal TR-ARPES spectra of Bi2212-OP91 before and after pumping, showing superconducting-gap filling.",
+        "data_type": "spectrum / intensity map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig8b",
+        "description": "Transient tomographic density of states at selected delays, showing transfer of spectral weight into the gap region.",
+        "data_type": "curve / spectrum-derived plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig8c",
+        "description": "Symmetrized EDCs at kF for selected delays with fits to the phenomenological self-energy model.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig8d",
+        "description": "Time dependence of gap amplitude, single-particle scattering rate, pair-breaking scattering rate, and electronic temperature.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig9a1",
+        "description": "Symmetrized off-nodal EDCs for Bi2212-OP91 with fits using the extended self-energy model.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig9b1",
+        "description": "Transient evolution of gap and pair-breaking scattering rate for Bi2212-OP91, with electronic temperature and a BCS-like thermal-gap reference.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig9a2",
+        "description": "Same as Fig9a1 but for overdoped Bi2212-OD60.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig9b2",
+        "description": "Same as Fig9b1 but for Bi2212-OD60.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig9a3",
+        "description": "Same as Fig9a1 but for Bi2201-OD24.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig9b3",
+        "description": "Same as Fig9b1 but for Bi2201-OD24.",
+        "data_type": "time trace",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports TR-ARPES measurements on Bi-based cuprate single crystals, including equilibrium ARPES and pump-probe ARPES maps, EDCs, Fermi-surface maps, and off-nodal spectra. It also mentions pump fluences, probe photon energies, pump photon energies, and temperature-dependent measurements on Bi2212 and Bi2201 samples.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Many plotted results are processed or derived from the raw ARPES spectra: symmetrized EDCs, momentum-integrated EDCs, Fermi-edge fits to extract electronic temperature, differential maps (pump-on minus pump-off), TDOS, coherent spectral-weight integrals, self-energy fits, and simulated curves/maps from Fermi-liquid or phenomenological models.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, or file-format description is present in the provided text. The paper mainly describes the measurements and analysis methods, and notes that some figures are adapted from prior references and that new experimental data are presented.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of experimental observables: TR-ARPES spectra, EDCs, momentum-resolved intensity maps, Fermi-surface maps, and equilibrium ARPES spectra collected on Bi2212 and Bi2201 under various pump-probe delays and temperatures. No file format, directory structure, or instrument data format is given in the text.",
+      "processed_data_description": "Processed data include symmetrized EDCs, momentum-integrated EDCs, differential intensity maps, extracted electronic temperatures, coherent spectral-weight integrals, TDOS curves, and fitted parameters such as gap amplitude, single-particle scattering rate, and pair-breaking scattering rate. The paper also presents model-generated simulations based on Fermi-liquid and phenomenological self-energy equations.",
+      "figure_data_description": "Figure-specific data are clearly implied: each main figure is built from extracted spectra, integrated intensities, or fitted parameters. However, the text does not state that separate source-data files are provided for figures, nor does it mention supplementary source-data archives.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text. The analysis is described mathematically through equations and fitting procedures, but implementation details are not provided.",
+      "data_organization": "not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper provides enough methodological detail to understand how plots were generated, but it does not provide explicit source-data files, raw data files, or scripts in the text. Therefore the dataset is not directly replot-ready from the paper alone.",
+      "notes": "The paper mixes raw TR-ARPES measurements with extensive derived quantities and model fits. Several figures are explicitly described as adapted from prior references, so not all plotted data are newly generated in this paper. The most important semantic distinction is that many central results are not raw spectra but processed quantities extracted from spectra via symmetrization, integration, deconvolution, and fitting."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": true,
+      "raw_data_evidence": "The paper discusses direct TR-ARPES measurements, equilibrium ARPES spectra, Fermi-surface maps, and delay-dependent spectra on Bi-based cuprates.",
+      "source_data_evidence": "The paper presents many extracted and fitted quantities such as symmetrized EDCs, differential maps, TDOS, coherent spectral weight, and fitted self-energy parameters, which are figure-level processed data.",
+      "both_evidence": "The text implies both direct measurements and processed figure data, but does not explicitly mention a source-data archive.",
+      "data_availability_section_relevant": [
+        "TR-ARPES spectra",
+        "momentum-integrated energy distribution curves",
+        "symmetrized EDCs",
+        "differential maps",
+        "tomographic density of states",
+        "fits obtained by using Eq. 4",
+        "simulated map has been generated via Eq. 2",
+        "no explicit data availability statement in provided text"
+      ],
+      "priority_modalities": [
+        "TR-ARPES spectra",
+        "equilibrium ARPES spectra",
+        "EDCs",
+        "momentum-resolved intensity maps",
+        "Fermi-surface maps",
+        "time-delay traces",
+        "fit-parameter tables/curves"
+      ],
+      "review_notes": "Be careful not to classify all plotted curves as raw data: many are derived from ARPES spectra through symmetrization, integration, subtraction, deconvolution, or model fitting. Also note that some figures are adapted from earlier publications, so the paper is partly a review and partly a presentation of new data."
+    }
+  },
+  "inspection_reports": []
+}

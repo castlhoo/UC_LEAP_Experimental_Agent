@@ -1,0 +1,37 @@
+Title: Directed light emission from monolayers on 2D materials via optical interferences.
+DOI: 10.1063/5.0279864
+Journal: The Journal of chemical physics
+Year: 2025
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No files can be confidently classified as cleaned, replot-ready figure/source data based on the available evidence.
+- Type2 summary: Both files are large HDF5 datasets consistent with raw or simulation output, and neither has evidence of being directly replot-ready.
+
+Type1 files
+- none
+
+Type2 files
+- angle_resolved_spectroscopy.hdf5
+  original path: angle_resolved_spectroscopy.hdf5
+  classified as: type2
+  reasoning: Given the lack of paper evidence for processed/source data and the file evidence pointing to a large HDF5 dataset, the conservative classification is raw/unprocessed data. It is not directly replot-ready from the available evidence.
+  paper evidence: The paper discusses angle-dependent reflectivity and photoluminescence measurements, but the publication provides no data availability statement and no indication that this file is cleaned, figure-ready source data.
+  file evidence: HDF5 binary file, 17.3 MB, sourced from Zenodo. No readable tabular structure could be inspected because h5py was unavailable, and the filename suggests an experimental spectroscopy dataset rather than a replot-ready table.
+  structure: Unknown; HDF5 structure not inspectable in this environment
+  ambiguity: Moderate: internal HDF5 structure could not be inspected, so the exact level of processing is unknown. However, the format and size strongly favor Type 2.
+- simulations_angle_resolved_reflectivity.hdf5
+  original path: simulations_angle_resolved_reflectivity.hdf5
+  classified as: type2
+  reasoning: This is most consistent with simulation output or intermediate data rather than a simple replot-ready table. In the absence of explicit paper evidence for source-data organization, the conservative choice is Type 2.
+  paper evidence: The paper focuses on optical interference effects in angle-dependent reflectivity and emission, but does not provide evidence that this file is a cleaned source-data table or figure-ready dataset.
+  file evidence: HDF5 binary file, 14.3 MB, sourced from Zenodo. The filename indicates simulation output related to angle-resolved reflectivity, and no internal structure could be inspected because h5py was unavailable.
+  structure: Unknown; HDF5 structure not inspectable in this environment
+  ambiguity: Moderate: the file may contain processed simulation results, but the HDF5 format and lack of inspectable tabular structure prevent classifying it as Type 1.
+
+Annotation files
+- none
+
+Script files
+- none

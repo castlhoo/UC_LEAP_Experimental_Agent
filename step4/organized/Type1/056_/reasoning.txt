@@ -1,0 +1,37 @@
+Title: 
+DOI: 10.1038/s41467-021-25780-4
+Journal: arXiv (Cornell University)
+Year: 2021
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: Both files are Nature supplementary/source-data PDFs associated with the paper's deposited supporting data and are most consistent with figure-supporting, replot-ready material rather than raw instrument output.
+- Type2 summary: No file shows clear evidence of raw STM acquisition data, proprietary microscopy output, or other unprocessed instrument-level data.
+
+Type1 files
+- 41467_2021_25780_MOESM1_ESM.pdf
+  original path: 41467_2021_25780_MOESM1_ESM.pdf
+  classified as: type1
+  reasoning: The paper explicitly contains both raw STM measurements and processed figure data, but the file context strongly indicates a Nature source-data supplement. Given the classification definitions, source-data deposits organized by figure are Type 1 if they are replot-ready or figure-supporting. No evidence suggests this PDF is a raw microscopy export or proprietary instrument file. Conservatively, this is classified as Type 1.
+  paper evidence: The paper states that supporting data are deposited in Yareta and includes processed/source-data-style outputs such as extracted phase/amplitude curves, histograms, and calculated DOS plots. Nature MOESM files are typically source-data supplements organized to support figures.
+  file evidence: PDF supplement from nature_source_data, 6.1 MB. As a source-data PDF, it is likely figure-supporting material rather than raw instrument output. The size is consistent with compiled source data/figure panels, not a single raw STM scan archive.
+  structure: Not directly inspectable from metadata; likely figure-linked source data / compiled supplement
+  ambiguity: Moderate: the PDF content was not directly inspected here, so the classification relies on the repository/source-data context and paper evidence rather than internal table structure.
+- 41467_2021_25780_MOESM2_ESM.pdf
+  original path: 41467_2021_25780_MOESM2_ESM.pdf
+  classified as: type1
+  reasoning: As with MOESM1, the file appears to be a supplementary source-data PDF associated with the paper. In the absence of evidence that it contains raw STM scan files, and given the paper's emphasis on processed figure data, the conservative classification is Type 1.
+  paper evidence: The publication uses processed/derived datasets for its main results, including Fourier-filtered STM images, dephasing maps, and bias-dependent phase/amplitude curves, and states that supporting data are deposited in Yareta.
+  file evidence: PDF supplement from nature_source_data, 3.7 MB. This is consistent with a source-data or supplementary figure-data PDF rather than raw STM acquisition output. No indication of proprietary raw scan format or instrument binary structure.
+  structure: Not directly inspectable from metadata; likely figure-linked source data / compiled supplement
+  ambiguity: Moderate: internal PDF contents were not directly parsed, so exact figure/table organization is unknown.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

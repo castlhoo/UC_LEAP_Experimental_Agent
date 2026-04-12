@@ -1,0 +1,1597 @@
+{
+  "paper_id": "step1_0251",
+  "title": "Extended Quantum Anomalous Hall States in Graphene/hBN Moiré Superlattices",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2024,
+  "paper_url": "https://arxiv.org/abs/2408.10203v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 50,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0251",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All files are small, figure-specific CSV tables or header companions consistent with cleaned, replot-ready source data for Fig. S10 conditions. They are structured tabular files with physical-variable schemas and no signs of raw instrument formats.",
+  "type2_summary": "No file shows clear raw/unprocessed characteristics such as proprietary formats, large acquisition dumps, microscopy images, or other instrument outputs.",
+  "type1_files": [
+    "FigS10_R_Full_5.2K.csv",
+    "FigS10_R_CNP_11.8K_ColumnNames.csv",
+    "FigS10_R_CNP_11K_ColumnNames.csv",
+    "FigS10_R_CNP_11K.csv",
+    "FigS10_R_CNP_12K_ColumnNames.csv",
+    "FigS10_R_CNP_12K.csv"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "There is a mismatch between the provided paper title/abstract and the paper-analysis summary, but the file-level evidence is internally consistent and strongly indicates figure/source-data CSVs. The column-names files are metadata companions rather than standalone plottable data, yet they still belong to the Type 1 source-data category under the given definitions.",
+  "file_classifications": [
+    {
+      "relative_path": "FigS10_R_Full_5.2K.csv",
+      "filename": "FigS10_R_Full_5.2K.csv",
+      "type": "type1",
+      "paper_evidence": "The paper is described as having no explicit raw-data availability statement or repository links; the available evidence does not indicate these are raw instrument outputs. The filename is figure-specific (FigS10) and temperature-tagged, consistent with source data for a plotted panel.",
+      "file_evidence": "Small CSV (570 B) with 10 rows and numeric columns; structured tabular content that can be directly plotted. The figure-specific naming and presence of physical quantities in the data values support cleaned, replot-ready source data rather than raw output.",
+      "reasoning": "This is a compact, figure-associated tabular dataset with numeric values and no signs of proprietary/raw instrument format. It is directly usable for plotting with minimal processing, so it fits Type 1.",
+      "ambiguity": "Low ambiguity: the file is small and structured, and nothing suggests unprocessed raw data.",
+      "key_columns_or_structure": "Unnamed numeric columns; 10 rows; likely gate/voltage/current/resistance/conductance-like measurements"
+    },
+    {
+      "relative_path": "FigS10_R_CNP_11.8K_ColumnNames.csv",
+      "filename": "FigS10_R_CNP_11.8K_ColumnNames.csv",
+      "type": "type1",
+      "paper_evidence": "No paper evidence indicates raw instrument output; the figure-specific naming is consistent with source-data organization by panel/condition.",
+      "file_evidence": "Tiny CSV containing only a header row with column names: Gate Voltage index, Gate Voltage, Voltage, Current, Resistance, Conductance. This is clearly a schema/metadata companion for figure data, not raw measurement output.",
+      "reasoning": "Because it only defines column names and is organized around physical variables for a specific figure/condition, it is documentation-like source-data support. In the dataset taxonomy provided, figure/source-data deposits are Type 1.",
+      "ambiguity": "Moderate: it is not directly plottable by itself, but it is clearly part of a cleaned source-data package rather than raw data.",
+      "key_columns_or_structure": "Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance"
+    },
+    {
+      "relative_path": "FigS10_R_CNP_11K_ColumnNames.csv",
+      "filename": "FigS10_R_CNP_11K_ColumnNames.csv",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement in the paper; figure-specific naming supports source-data organization.",
+      "file_evidence": "Header-only CSV with the same physical-variable schema as the other column-names file. This is metadata for a figure-ready dataset, not raw instrument output.",
+      "reasoning": "This file functions as a column-definition companion to cleaned source data. It is not raw and is consistent with Type 1 source-data deposits.",
+      "ambiguity": "Moderate, because it is metadata rather than a plottable dataset, but it belongs to a figure/source-data package.",
+      "key_columns_or_structure": "Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance"
+    },
+    {
+      "relative_path": "FigS10_R_CNP_11K.csv",
+      "filename": "FigS10_R_CNP_11K.csv",
+      "type": "type1",
+      "paper_evidence": "No evidence in the paper suggests this is raw instrument output; the figure-specific naming is consistent with source data for a plotted panel.",
+      "file_evidence": "Small CSV (573 B) with 10 rows and numeric values. The structure is tabular and directly plottable, matching cleaned figure data.",
+      "reasoning": "The file is compact, structured, and figure-associated. It appears to be replot-ready data rather than raw acquisition output, so Type 1 is appropriate.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Unnamed numeric columns; 10 rows; likely gate-voltage sweep data with voltage/current/resistance/conductance values"
+    },
+    {
+      "relative_path": "FigS10_R_CNP_12K_ColumnNames.csv",
+      "filename": "FigS10_R_CNP_12K_ColumnNames.csv",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data indication from the paper; figure-specific naming suggests source-data organization.",
+      "file_evidence": "Header-only CSV listing physical-variable columns: Gate Voltage index, Gate Voltage, Voltage, Current, Resistance, Conductance. This is schema metadata for a figure dataset.",
+      "reasoning": "This is documentation/metadata for a cleaned source-data table, not raw data. Under the provided definitions, figure/source-data deposits are Type 1.",
+      "ambiguity": "Moderate, because it is not itself a data table, but it is clearly part of a figure-data package.",
+      "key_columns_or_structure": "Gate Voltage index; Gate Voltage; Voltage; Current; Resistance; Conductance"
+    },
+    {
+      "relative_path": "FigS10_R_CNP_12K.csv",
+      "filename": "FigS10_R_CNP_12K.csv",
+      "type": "type1",
+      "paper_evidence": "No paper evidence indicates raw instrument output; the figure-specific filename is consistent with source data for a plotted figure panel.",
+      "file_evidence": "Small CSV (577 B) with 10 rows and numeric columns. It is structured and directly plottable, with values consistent with a processed measurement table.",
+      "reasoning": "This is a compact, figure-associated tabular dataset suitable for direct plotting, so it is Type 1.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Unnamed numeric columns; 10 rows; likely gate-voltage sweep data with voltage/current/resistance/conductance values"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the fabrication and characterization of twisted PbS moiré superlattices with strong interlayer chemical bonding, revealing twist-angle-dependent structural reconstruction and emergent flat-band electronic states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data location or accessible dataset could be determined from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "FigS10_R_Full_5.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 570,
+      "size_human": "570.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "3.95",
+        "-0.027893",
+        "1.72e-11",
+        "-1.6217e+09",
+        "-6.1663e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "3.95": "float64",
+        "-0.027893": "float64",
+        "1.72e-11": "float64",
+        "-1.6217e+09": "float64",
+        "-6.1663e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_Full_5.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.8K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.8K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11K.csv",
+      "extension": ".csv",
+      "size_bytes": 573,
+      "size_human": "573.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0037842",
+        "3.3401e-11",
+        "-1.1329e+08",
+        "-8.8266e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0037842": "float64",
+        "3.3401e-11": "float64",
+        "-1.1329e+08": "float64",
+        "-8.8266e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_12K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_12K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_12K.csv",
+      "extension": ".csv",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.028076",
+        "4.4272e-11",
+        "-6.3418e+08",
+        "-1.5768e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.028076": "float64",
+        "4.4272e-11": "float64",
+        "-6.3418e+08": "float64",
+        "-1.5768e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_12K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.2K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.2K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 568,
+      "size_human": "568.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.013184",
+        "3.0701e-12",
+        "4.2942e+09",
+        "2.3287e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.013184": "float64",
+        "3.0701e-12": "float64",
+        "4.2942e+09": "float64",
+        "2.3287e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.4K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.4K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.4K.csv",
+      "extension": ".csv",
+      "size_bytes": 583,
+      "size_human": "583.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0028381",
+        "4.0558e-12",
+        "-6.9977e+08",
+        "-1.429e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0028381": "float64",
+        "4.0558e-12": "float64",
+        "-6.9977e+08": "float64",
+        "-1.429e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.4K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.6K.csv",
+      "extension": ".csv",
+      "size_bytes": 579,
+      "size_human": "579.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0020752",
+        "4.5929e-12",
+        "-4.5183e+08",
+        "-2.2132e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0020752": "float64",
+        "4.5929e-12": "float64",
+        "-4.5183e+08": "float64",
+        "-2.2132e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.6K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.8K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.8K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6.8K.csv",
+      "extension": ".csv",
+      "size_bytes": 563,
+      "size_human": "563.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.058807",
+        "5.4962e-12",
+        "1.07e+10",
+        "9.3461e-11"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.058807": "float64",
+        "5.4962e-12": "float64",
+        "1.07e+10": "float64",
+        "9.3461e-11": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6.8K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.6K.csv",
+      "extension": ".csv",
+      "size_bytes": 559,
+      "size_human": "559.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.010162",
+        "3.97e-11",
+        "2.5598e+08",
+        "3.9066e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.010162": "float64",
+        "3.97e-11": "float64",
+        "2.5598e+08": "float64",
+        "3.9066e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.6K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_6K.csv",
+      "extension": ".csv",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.047943",
+        "2.1576e-12",
+        "2.2221e+10",
+        "4.5003e-11"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.047943": "float64",
+        "2.1576e-12": "float64",
+        "2.2221e+10": "float64",
+        "4.5003e-11": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_6K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.2K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.2K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 576,
+      "size_human": "576.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.019684",
+        "7.7301e-12",
+        "2.5464e+09",
+        "3.9271e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.019684": "float64",
+        "7.7301e-12": "float64",
+        "2.5464e+09": "float64",
+        "3.9271e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.4K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.4K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.4K.csv",
+      "extension": ".csv",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.026337",
+        "8.3588e-12",
+        "-3.1508e+09",
+        "-3.1738e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.026337": "float64",
+        "8.3588e-12": "float64",
+        "-3.1508e+09": "float64",
+        "-3.1738e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.4K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.6K.csv",
+      "extension": ".csv",
+      "size_bytes": 572,
+      "size_human": "572.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.055359",
+        "9.6252e-12",
+        "5.7514e+09",
+        "1.7387e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.055359": "float64",
+        "9.6252e-12": "float64",
+        "5.7514e+09": "float64",
+        "1.7387e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.6K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.8K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.8K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7.8K.csv",
+      "extension": ".csv",
+      "size_bytes": 576,
+      "size_human": "576.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0016785",
+        "1.0544e-11",
+        "-1.5919e+08",
+        "-6.2818e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0016785": "float64",
+        "1.0544e-11": "float64",
+        "-1.5919e+08": "float64",
+        "-6.2818e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7.8K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_7K.csv",
+      "extension": ".csv",
+      "size_bytes": 564,
+      "size_human": "564.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.007782",
+        "6.2744e-12",
+        "1.2403e+09",
+        "8.0627e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.007782": "float64",
+        "6.2744e-12": "float64",
+        "1.2403e+09": "float64",
+        "8.0627e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_7K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.4K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.4K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_8.2K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_8.2K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0021973",
+        "3.5641e-11",
+        "-6.1649e+07",
+        "-1.6221e-08"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0021973": "float64",
+        "3.5641e-11": "float64",
+        "-6.1649e+07": "float64",
+        "-1.6221e-08": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_11.2K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_11.2K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10K.csv",
+      "extension": ".csv",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.013336",
+        "2.3975e-11",
+        "5.5626e+08",
+        "1.7977e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.013336": "float64",
+        "2.3975e-11": "float64",
+        "5.5626e+08": "float64",
+        "1.7977e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.8K.csv",
+      "extension": ".csv",
+      "size_bytes": 580,
+      "size_human": "580.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.038788",
+        "3.1546e-11",
+        "1.2296e+09",
+        "8.133e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.038788": "float64",
+        "3.1546e-11": "float64",
+        "1.2296e+09": "float64",
+        "8.133e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.8K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.8K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.8K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.6K.csv",
+      "extension": ".csv",
+      "size_bytes": 578,
+      "size_human": "578.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "0.030365",
+        "2.9578e-11",
+        "1.0266e+09",
+        "9.7407e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "0.030365": "float64",
+        "2.9578e-11": "float64",
+        "1.0266e+09": "float64",
+        "9.7407e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.6K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_8.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 574,
+      "size_human": "574.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.038727",
+        "1.3901e-11",
+        "-2.7859e+09",
+        "-3.5894e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.038727": "float64",
+        "1.3901e-11": "float64",
+        "-2.7859e+09": "float64",
+        "-3.5894e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_8.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.4K.csv",
+      "extension": ".csv",
+      "size_bytes": 582,
+      "size_human": "582.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.077148",
+        "2.7679e-11",
+        "-2.7872e+09",
+        "-3.5878e-10"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.077148": "float64",
+        "2.7679e-11": "float64",
+        "-2.7872e+09": "float64",
+        "-3.5878e-10": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.4K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_8.4K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_8.4K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_8.4K.csv",
+      "extension": ".csv",
+      "size_bytes": 578,
+      "size_human": "578.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.0018005",
+        "1.5497e-11",
+        "-1.1619e+08",
+        "-8.6068e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.0018005": "float64",
+        "1.5497e-11": "float64",
+        "-1.1619e+08": "float64",
+        "-8.6068e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_8.4K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_8.6K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_8.6K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.4K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.4K_ColumnNames.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.2K.csv",
+      "extension": ".csv",
+      "size_bytes": 583,
+      "size_human": "583.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "-0.08",
+        "-0.014282",
+        "2.6114e-11",
+        "-5.4692e+08",
+        "-1.8284e-09"
+      ],
+      "column_count": 6,
+      "row_count": 10,
+      "dtypes": {
+        "0": "int64",
+        "-0.08": "float64",
+        "-0.014282": "float64",
+        "2.6114e-11": "float64",
+        "-5.4692e+08": "float64",
+        "-1.8284e-09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.2K.csv"
+    },
+    {
+      "filename": "FigS10_R_CNP_10.2K_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 70,
+      "size_human": "70.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Gate Voltage index",
+        "Gate Voltage",
+        "Voltage",
+        "Current",
+        "Resistance",
+        "Conductance"
+      ],
+      "column_count": 6,
+      "row_count": 0,
+      "dtypes": {
+        "Gate Voltage index": "object",
+        "Gate Voltage": "object",
+        "Voltage": "object",
+        "Current": "object",
+        "Resistance": "object",
+        "Conductance": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigS10_R_CNP_10.2K_ColumnNames.csv"
+    },
+    {
+      "filename": "Fig3CRxy.csv",
+      "extension": ".csv",
+      "size_bytes": 123902792,
+      "size_human": "118.2 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "0.1",
+        "0.2",
+        "-2",
+        "-0.02",
+        "-5610.6",
+        "-3.113e-06",
+        "5.5484e-10",
+        "1.4093e-08"
+      ],
+      "column_count": 9,
+      "row_count": 2070701,
+      "dtypes": {
+        "0": "int64",
+        "0.1": "int64",
+        "0.2": "int64",
+        "-2": "int64",
+        "-0.02": "float64",
+        "-5610.6": "float64",
+        "-3.113e-06": "float64",
+        "5.5484e-10": "float64",
+        "1.4093e-08": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Fig3CRxy.csv"
+    },
+    {
+      "filename": "Fig3CRxy_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 100,
+      "size_human": "100.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Trace Index",
+        "Voltage Index",
+        "Field Index",
+        "Bias Voltage",
+        "Field",
+        "Resistance X",
+        "Voltage X",
+        "Current X",
+        "DC Current"
+      ],
+      "column_count": 9,
+      "row_count": 0,
+      "dtypes": {
+        "Trace Index": "object",
+        "Voltage Index": "object",
+        "Field Index": "object",
+        "Bias Voltage": "object",
+        "Field": "object",
+        "Resistance X": "object",
+        "Voltage X": "object",
+        "Current X": "object",
+        "DC Current": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Fig3CRxy_ColumnNames.csv"
+    },
+    {
+      "filename": "Fig3BRxyBitSwitching.csv",
+      "extension": ".csv",
+      "size_bytes": 1016364,
+      "size_human": "992.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "0.1",
+        "0.2",
+        "0.3",
+        "-25611",
+        "-2.4866e-06",
+        "9.709e-11"
+      ],
+      "column_count": 7,
+      "row_count": 24059,
+      "dtypes": {
+        "0": "int64",
+        "0.1": "int64",
+        "0.2": "float64",
+        "0.3": "int64",
+        "-25611": "int64",
+        "-2.4866e-06": "float64",
+        "9.709e-11": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Fig3BRxyBitSwitching.csv"
+    },
+    {
+      "filename": "Fig3BRxyBitSwitching_ColumnNames.csv",
+      "extension": ".csv",
+      "size_bytes": 74,
+      "size_human": "74.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Repetition Index",
+        "DC Index",
+        "Time",
+        "DC Voltage",
+        "Resistance X",
+        "Voltage X",
+        "Current X"
+      ],
+      "column_count": 7,
+      "row_count": 0,
+      "dtypes": {
+        "Repetition Index": "object",
+        "DC Index": "object",
+        "Time": "object",
+        "DC Voltage": "object",
+        "Resistance X": "object",
+        "Voltage X": "object",
+        "Current X": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Fig3BRxyBitSwitching_ColumnNames.csv"
+    }
+  ]
+}

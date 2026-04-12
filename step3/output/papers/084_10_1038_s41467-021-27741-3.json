@@ -1,0 +1,138 @@
+{
+  "paper_id": "step1_0027",
+  "title": "Magnetically brightened dark electron-phonon bound states in a van der Waals antiferromagnet",
+  "doi": "10.1038/s41467-021-27741-3",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://www.semanticscholar.org/paper/6bde89e4725dd6af763e4a26bcf7da4c26e28c46",
+  "priority_score": 8.8,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-27741-3",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies the van der Waals antiferromagnet NiPS3 using ultrafast optical spectroscopy and shows that a broad d–d electronic transition is dressed by an A1g phonon, producing equally spaced phonon-replica peaks in transient reflectivity. The replicas appear only below the Néel temperature, and energy-resolved coherent phonon spectroscopy identifies the electronic origin as localized d–d transitions rather than spin–orbit-entangled excitons, with an exceptionally strong electron-phonon coupling (Huang–Rhys factor g ~ 10).",
+    "measurement_types": [
+      "broadband transient absorption / transient reflectivity spectroscopy",
+      "energy-resolved coherent phonon spectroscopy",
+      "temperature-dependent optical spectroscopy",
+      "Fourier transform analysis of time-domain oscillations",
+      "X-ray diffraction (sample characterization)",
+      "energy-dispersive X-ray spectroscopy (stoichiometry check)",
+      "Raman spectroscopy (used as external comparison/reference, not necessarily newly measured here)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the broadband pump-probe transient absorption setup: 1.88 eV pump excites the sample and a white-light probe measures transient reflectivity over 1.4–2.0 eV.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Transient reflectivity spectrum at 10 K and 2 ps delay showing low-energy excitonic features and a broad d–d transition with fine oscillatory phonon-replica structure; inset shows FFT of the oscillations with a peak near 28.5 meV.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Crystal structure of NiPS3 with Ni, P, and S atoms and arrows indicating the A1g phonon displacement pattern.",
+        "data_type": "structure image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Temperature-dependent transient reflectivity map showing that excitonic features and phonon-replica oscillations emerge below the Néel temperature.",
+        "data_type": "spectral map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Enlarged temperature-dependent view of the d–d transition region after background subtraction with a fifth-order polynomial fit.",
+        "data_type": "spectral map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Energy-integrated coherent phonon spectroscopy trace versus delay time, with oscillatory component and FFT showing phonon modes at 5.2, 7.5, and 11.5 THz; also includes filtered data below 1.53 eV to isolate the excitonic region.",
+        "data_type": "time trace / FFT spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Energy-resolved coherent phonon oscillation amplitude versus probe energy and delay time, showing that the 7.5 THz mode modulates the d–d transition region but not the excitonic region.",
+        "data_type": "time-energy map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Model fit of the d–d absorption/replica spectrum using a Poisson-weighted sum of phonon sidebands to extract the Huang–Rhys factor g and the renormalization shift Δ.",
+        "data_type": "spectrum with model fit",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5",
+        "description": "Schematic illustration of how magnetic order breaks local inversion symmetry at Ni sites below TN, enabling the d–d transition to become optically visible.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports time-resolved optical measurements collected directly from NiPS3 crystals: broadband pump-probe transient reflectivity with a 1.88 eV pump and 1.4–2.0 eV probe, and ultrafast coherent phonon spectroscopy with ~25 fs pulses. It also reports sample characterization measurements including SEM-EDS stoichiometry checks and XRD. The text does not provide raw file formats or repository links.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The plotted results are processed optical observables: transient reflectivity changes ΔR/R, background-subtracted oscillatory components ΔRosc/R, Fourier transforms of time-domain oscillations, temperature-dependent spectral maps, filtered/monochromated energy-resolved traces, and model fits using a Poisson-distributed phonon sideband model. These are not raw detector outputs but analyzed spectra and time traces.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data sets generated and/or analyzed during the current study are available from the corresponding author on reasonable request.'",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurement data are described only at the level of experimental acquisition: reflected probe signals from pump-probe spectroscopy, lock-in detected photodiode signals, and characterization data from SEM-EDS and XRD. No file names, formats, or public repository are given.",
+      "processed_data_description": "Processed data include transient reflectivity spectra, temperature-dependent maps, background-subtracted oscillatory traces, Fourier spectra, and fitted spectra used to extract the Huang–Rhys factor g and renormalization Δ.",
+      "figure_data_description": "Figure-specific data are clearly implied for the main figures (Fig. 1–5), but the paper does not explicitly state that source data files are deposited or publicly available.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned.",
+      "data_organization": "not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper does not provide a public source-data archive, raw data files, or scripts. It only states that data are available from the corresponding author on reasonable request, so the figures are not directly replot-ready from the paper text alone.",
+      "notes": "The dataset is primarily optical spectroscopy data with derived spectral processing. The key semantic distinction is that the main figures are based on processed transient reflectivity and coherent-phonon analyses, not on directly published raw detector traces. Supplementary figures are referenced (e.g., S1, S2, S5, S8), but their contents are not included in the provided text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "Methods describe direct acquisition of pump-probe reflectivity signals, coherent phonon traces, SEM-EDS, and XRD measurements, indicating raw experimental data were generated.",
+      "source_data_evidence": "The paper does not mention deposited source-data files or a source-data repository; only availability on request is stated.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": [
+        "The data sets generated and/or analyzed during the current study are available from the corresponding author on reasonable request.",
+        "Supplementary information The online version contains supplementary material",
+        "Detailed schematics of the setup are given in Supplementary Information"
+      ],
+      "priority_modalities": [
+        "pump-probe transient reflectivity time traces",
+        "broadband optical spectra",
+        "temperature-dependent spectral maps",
+        "coherent phonon oscillation traces",
+        "FFT spectra",
+        "XRD patterns",
+        "SEM-EDS composition data"
+      ],
+      "review_notes": "Be careful not to infer public source-data availability from the existence of figures. The paper clearly contains processed figure data and raw measurements were collected, but the text does not confirm that raw files or figure source data are deposited. Supplementary figures are referenced but not described in detail in the provided text."
+    }
+  },
+  "inspection_reports": []
+}

@@ -1,0 +1,1073 @@
+{
+  "paper_id": "step1_0090",
+  "title": "https://2DMat.ChemDX.org: Experimental data platform for 2D materials from synthesis to physical properties",
+  "doi": "10.1039/d3dd00243h",
+  "journal": "Digital Discovery",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4392184940",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 37,
+  "files_extracted": 13,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1039_d3dd00243h",
+  "files_inspected": 50,
+  "file_types_found": [
+    "json",
+    "tabular_text",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No files in this provided set are experimental figure-ready data from the 2D materials platform. The inspected files are repository/configuration or software test artifacts rather than scientific datasets.",
+  "type2_summary": "No files in this provided set are raw instrument outputs from the paper's RHEED/PL/Raman/AFM/XPS datasets. The only structured text files are session replay/test payloads unrelated to the paper's experimental measurements.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly supports both raw and processed experimental data in general, but none of the provided files match those modalities. The file set appears to be repository infrastructure and test payloads from a web project, not the 2D materials experimental dataset.",
+  "file_classifications": [
+    {
+      "relative_path": ".browserslistrc",
+      "filename": ".browserslistrc",
+      "type": "documentation",
+      "paper_evidence": "The paper concerns a data platform and does not indicate this file as part of experimental raw or processed datasets.",
+      "file_evidence": "Small config file with browser support settings; not data, not tabular measurements, and not plot-ready.",
+      "reasoning": "This is a project configuration file unrelated to dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "browser target list/config"
+    },
+    {
+      "relative_path": ".editorconfig",
+      "filename": ".editorconfig",
+      "type": "documentation",
+      "paper_evidence": "No evidence in the paper that this is dataset content.",
+      "file_evidence": "Editor configuration file; not a data file.",
+      "reasoning": "Clearly a development/configuration artifact, not a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "editor formatting rules"
+    },
+    {
+      "relative_path": ".github_actions_.npmrc",
+      "filename": ".github_actions_.npmrc",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence linking this to experimental data.",
+      "file_evidence": "NPM configuration file; not data.",
+      "reasoning": "Infrastructure/configuration file, not a dataset file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "npm registry/config settings"
+    },
+    {
+      "relative_path": ".github_actions_consumer-load-test_session-replay_mutation-body.txt",
+      "filename": ".github_actions_consumer-load-test_session-replay_mutation-body.txt",
+      "type": "other",
+      "paper_evidence": "The paper describes raw RHEED/PL/Raman experimental files and processed outputs, but nothing about this file type.",
+      "file_evidence": "Tabular text with JSON-like session replay payload content from GitHub Actions/load testing; not scientific measurements and not figure-ready data.",
+      "reasoning": "This is operational/test data from a software repository, not a materials dataset. It is structured but unrelated to the paper's experimental content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "single-column JSON-like payload fragments"
+    },
+    {
+      "relative_path": ".github_actions_consumer-load-test_session-replay_snapshot-body.txt",
+      "filename": ".github_actions_consumer-load-test_session-replay_snapshot-body.txt",
+      "type": "other",
+      "paper_evidence": "No paper evidence that this corresponds to experimental data.",
+      "file_evidence": "Large tabular text containing session replay snapshot payload fragments; software test artifact, not scientific data.",
+      "reasoning": "Not a raw measurement or processed figure dataset from the paper.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "single-column JSON-like payload fragments"
+    },
+    {
+      "relative_path": ".github_actions_docs-pr_.gitignore",
+      "filename": ".github_actions_docs-pr_.gitignore",
+      "type": "documentation",
+      "paper_evidence": "No relation to the paper's experimental datasets.",
+      "file_evidence": "Git ignore configuration file.",
+      "reasoning": "Repository housekeeping file, not dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "ignore patterns"
+    },
+    {
+      "relative_path": ".github_actions_package.json",
+      "filename": ".github_actions_package.json",
+      "type": "documentation",
+      "paper_evidence": "No evidence this is experimental data.",
+      "file_evidence": "JSON package manifest with name/description/devDependencies; software metadata, not data.",
+      "reasoning": "Project metadata/configuration, not a dataset file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "package metadata and dependencies"
+    },
+    {
+      "relative_path": "curl-example-mutation-payload.txt",
+      "filename": "curl-example-mutation-payload.txt",
+      "type": "other",
+      "paper_evidence": "The paper discusses raw experimental files and processed outputs, not HTTP request examples.",
+      "file_evidence": "Tabular text representing curl command payloads and HTTP headers for session replay; clearly software/network test content.",
+      "reasoning": "Not scientific data and not directly related to the materials platform's experimental datasets.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "curl command, URL, header-like fields"
+    },
+    {
+      "relative_path": "curl-example-snapshot-payload.txt",
+      "filename": "curl-example-snapshot-payload.txt",
+      "type": "other",
+      "paper_evidence": "No paper evidence linking this to experimental measurements.",
+      "file_evidence": "Tabular text of curl/session replay snapshot payloads; software artifact.",
+      "reasoning": "Operational test content, not a materials science dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "curl command, URL, header-like fields"
+    },
+    {
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig.app.json",
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig.app.json",
+      "type": "documentation",
+      "paper_evidence": "No evidence in the paper that this is dataset content.",
+      "file_evidence": "TypeScript configuration file; parse error indicates it is not even valid JSON in this inspection, but it is clearly a code/config artifact.",
+      "reasoning": "Development configuration, not experimental data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "TypeScript compiler options"
+    },
+    {
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig.json",
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig.json",
+      "type": "documentation",
+      "paper_evidence": "No evidence this file is part of the paper's data platform datasets.",
+      "file_evidence": "TypeScript configuration file; not data.",
+      "reasoning": "Project configuration artifact, not a dataset file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "TypeScript compiler options"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper presents https://2DMat.ChemDX.org, a web-based experimental data platform and database for 2D materials spanning synthesis and characterization, with an emphasis on RHEED growth monitoring and PL/Raman mapping. The platform standardizes upload, parsing, visualization, and sharing of raw experimental files, and adds ML toolkits for RHEED growth analysis and PL/Raman super-resolution; the main scientific contribution is the creation of a curated experimental 2D materials database and analysis workflow rather than a new material discovery.",
+    "measurement_types": [
+      "Reflection high-energy electron diffraction (RHEED) images",
+      "RHEED videos / time-series growth monitoring",
+      "Photoluminescence (PL) spectra",
+      "PL mapping (position-dependent spectra)",
+      "Raman spectra",
+      "Raman mapping (position-dependent spectra)",
+      "AFM images",
+      "XPS",
+      "sample metadata / synthesis parameters"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Overview of the 2D materials platform: systematic database construction, flexible data management, and analysis/ML toolkits.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "End-to-end data flow from laboratory data generation to upload, parsing, visualization, download, and ML analysis; includes server/software stack.",
+        "data_type": "workflow schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "GUI for drag-and-drop data upload.",
+        "data_type": "interface screenshot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Parsed input information displayed as a table alongside raw data files after upload.",
+        "data_type": "table + file listing",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "RHEED data viewer showing thumbnails, expanded image/video, and parsed time steps for a sample measured during MoSe2 growth on graphene/SiC.",
+        "data_type": "image/video viewer",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "RHEED line-profile analysis panel with guideline metadata and extracted brightness spectra.",
+        "data_type": "spectrum / line profile",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 5a",
+        "description": "PL/Raman fitting control panel for selecting fit function and initial parameters.",
+        "data_type": "interface screenshot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5b",
+        "description": "Raw PL spectrum and fitted curve at a selected pixel.",
+        "data_type": "spectrum",
+        "likely_source": "raw + processed"
+      },
+      {
+        "figure_id": "Fig. 5c",
+        "description": "Raw PL intensity map at a chosen wavelength.",
+        "data_type": "2D map / image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig. 5d",
+        "description": "Histogram of PL intensity statistics at the chosen wavelength.",
+        "data_type": "histogram",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 5e-5g",
+        "description": "Maps of fitted PL parameters: maximum intensity, peak energy/wavelength, and full width at half maximum.",
+        "data_type": "parameter maps",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. 5h-5j",
+        "description": "Histograms of the fitted PL parameter distributions.",
+        "data_type": "histogram",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. 6",
+        "description": "Super-resolution demonstration for PL mapping: original 60×60 data, down-sampled 30×30 input, and reconstructed 120×120 output across multiple wavelengths.",
+        "data_type": "image/map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig. S1",
+        "description": "Stacked RHEED image generated from video frames along a guideline direction.",
+        "data_type": "image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig. S2",
+        "description": "Benchmark results for the super-resolution toolkit.",
+        "data_type": "performance plot",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Yes. The platform stores raw experimental files directly from instruments without correction. For RHEED, raw images are saved as .png and videos as .mp4; for PL/Raman mapping, raw spectra are stored as .txt files. The paper also mentions associated AFM images and XPS for some samples, but the main platform datasets described are RHEED and PL/Raman.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Yes. The platform generates parsed metadata tables, RHEED line profiles extracted along user-defined guidelines, stacked RHEED images from videos, PL/Raman intensity maps, histograms, and fitted parameter maps (maximum intensity, peak position, FWHM). It also provides super-resolution outputs for PL/Raman mapping and ML-derived analyses such as PCA/K-means for RHEED.",
+    "dataset_characterization": {
+      "data_availability_statement": "All datasets are available on the web platform https://2DMat.ChemDX.org (DOI: 10.23218/2dmat.chemdx). Users can preview datasets with integrated visualization tools before downloading raw data and corresponding metadata. The data is licensed under CC-BY 4.0, and contributed data is owned by the respective contributors. Machine-learning toolkit source code is available on GitHub repositories linked from the toolkit page.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "scripts"
+      ],
+      "raw_data_description": "Raw measurement files are uploaded unchanged except for filename tags. RHEED data are .png images and .mp4 videos with '_rheed' in the filename and timestep information for image sequences; PL/Raman mapping data are .txt files with '_pl-pos' or '_raman-pos' tags. The platform also stores metadata and experimental parameters in .xlsx spreadsheets. The paper states that raw data are uploaded without corrections and that the parsing system does not alter the file contents.",
+      "processed_data_description": "Processed data include parsed metadata tables, standardized JSON-type data for further processing, extracted RHEED line profiles, stacked RHEED images, PL/Raman fitted spectra and parameter maps, histograms, and super-resolution reconstructed mapping data. The parsing modules convert raw files into a standardized readable format for web visualization.",
+      "figure_data_description": "Yes, figure-specific processed data are clearly provided through the platform visualization outputs, especially for RHEED and PL/Raman examples. However, the paper does not explicitly state that separate per-figure source-data files are deposited; instead, the platform provides downloadable raw data and metadata, plus interactive visualizations and derived analysis outputs.",
+      "scripts_description": "Yes. The machine learning toolkits are provided as source code in GitHub repositories, and the parsing/visualization pipeline is implemented with built-in Python modules. The ML toolkits are not run directly on the web UI; users download the code and examples for local use.",
+      "data_organization": "Mixed, platform-based organization by data group (DATA-UOS and DATA-POSTECH), sample ID, and measurement type. Upload relies on filename tags and spreadsheet metadata; the platform stores data in MongoDB and presents parsed tables and interactive plots.",
+      "replot_ready_data_present": true,
+      "replot_reason": "The platform provides downloadable raw files plus corresponding metadata, and the visualization tools expose the processed quantities used in the figures. This is sufficient for replotting many displayed analyses, although some ML outputs and interactive transformations may require the external GitHub code.",
+      "notes": "The parsing system is intentionally non-destructive: it checks schema/valid values for visualization but does not modify or validate the intrinsic correctness of the data. The paper emphasizes that users should only rename files during upload. Most of the public dataset is experimental and sample-centered rather than figure-centered. The platform currently focuses on two groups: DATA-UOS (in situ RHEED during MBE growth of transition metal chalcogenides) and DATA-POSTECH (PL/Raman mapping of exfoliated and CVD-grown TMDs)."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper explicitly says raw data files are uploaded directly without corrections, and gives raw file formats for RHEED (.png, .mp4) and PL/Raman (.txt).",
+      "source_data_evidence": "The platform provides parsed tables, extracted line profiles, fitted parameter maps, histograms, stacked images, and super-resolution outputs, which are processed/figure-level data rather than raw measurements.",
+      "both_evidence": "Both raw measurement files and processed/derived outputs are described as available through the platform.",
+      "data_availability_section_relevant": "All datasets are available on our web-based platform... Users can preview the datasets using integrated visualization tools before individually downloading the raw data and its corresponding metadata. The source code of the machine learning toolkits used in this work is available on GitHub repositories.",
+      "priority_modalities": [
+        "RHEED images",
+        "RHEED videos",
+        "PL spectra",
+        "PL mapping",
+        "Raman spectra",
+        "Raman mapping",
+        "metadata spreadsheets",
+        "AFM images",
+        "XPS"
+      ],
+      "review_notes": "Be careful not to classify the platform's interactive plots and fitted maps as raw data. The paper does not claim that all figure source data are separately deposited as figure-specific files; instead, it emphasizes downloadable raw files plus metadata and derived visualization/analysis outputs. ML toolkits are external source code, not embedded notebook-style supplementary scripts."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": ".browserslistrc",
+      "extension": "",
+      "size_bytes": 147,
+      "size_human": "147.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".browserslistrc"
+    },
+    {
+      "filename": ".editorconfig",
+      "extension": "",
+      "size_bytes": 287,
+      "size_human": "287.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".editorconfig"
+    },
+    {
+      "filename": ".github_actions_.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 19,
+      "size_human": "19.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": ".github_actions_.npmrc"
+    },
+    {
+      "filename": ".github_actions_consumer-load-test_session-replay_mutation-body.txt",
+      "extension": ".txt",
+      "size_bytes": 75163,
+      "size_human": "73.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "["
+      ],
+      "column_count": 1,
+      "row_count": 2951,
+      "dtypes": {
+        "[": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": ".github_actions_consumer-load-test_session-replay_mutation-body.txt"
+    },
+    {
+      "filename": ".github_actions_consumer-load-test_session-replay_snapshot-body.txt",
+      "extension": ".txt",
+      "size_bytes": 727067,
+      "size_human": "710.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "["
+      ],
+      "column_count": 1,
+      "row_count": 1793,
+      "dtypes": {
+        "[": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": ".github_actions_consumer-load-test_session-replay_snapshot-body.txt"
+    },
+    {
+      "filename": ".github_actions_docs-pr_.gitignore",
+      "extension": ".gitignore",
+      "size_bytes": 11,
+      "size_human": "11.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gitignore",
+      "download_source": "github",
+      "relative_path": ".github_actions_docs-pr_.gitignore"
+    },
+    {
+      "filename": ".github_actions_package.json",
+      "extension": ".json",
+      "size_bytes": 737,
+      "size_human": "737.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "description",
+        "private",
+        "type",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "@newrelic/browser-agent.actions",
+        "description": "A collection of github actions for browser agent automation.",
+        "private": "True",
+        "type": "module",
+        "devDependencies": "{'@actions/core': '^1.10.1', '@actions/github': '^6.0.0', '@aws-sdk/client-s3': '^3.476.0', '@aws-sd"
+      },
+      "download_source": "github",
+      "relative_path": ".github_actions_package.json"
+    },
+    {
+      "filename": ".gitignore",
+      "extension": "",
+      "size_bytes": 471,
+      "size_human": "471.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".gitignore"
+    },
+    {
+      "filename": ".husky_pre-commit",
+      "extension": "",
+      "size_bytes": 1150,
+      "size_human": "1.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".husky_pre-commit"
+    },
+    {
+      "filename": ".npmrc",
+      "extension": "",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".npmrc"
+    },
+    {
+      "filename": ".nvmrc",
+      "extension": "",
+      "size_bytes": 6,
+      "size_human": "6.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".nvmrc"
+    },
+    {
+      "filename": "LICENSE",
+      "extension": "",
+      "size_bytes": 11360,
+      "size_human": "11.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "LICENSE"
+    },
+    {
+      "filename": "changelog.json",
+      "extension": ".json",
+      "size_bytes": 108654,
+      "size_human": "106.1 KB",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting ',' delimiter: line 1779 column 3 (char 50001)",
+      "download_source": "github",
+      "relative_path": "changelog.json"
+    },
+    {
+      "filename": "curl-example-mutation-payload.txt",
+      "extension": ".txt",
+      "size_bytes": 65328,
+      "size_human": "63.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "curl",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888364107&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_7%26replay.firstTimestamp%3D1750888364107%26replay.lastTimestamp%3D1750888364697%26replay.nodes%3D12%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D6219%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D603560%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'",
+        "\\"
+      ],
+      "column_count": 3,
+      "row_count": 7,
+      "dtypes": {
+        "curl": "object",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888364107&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_7%26replay.firstTimestamp%3D1750888364107%26replay.lastTimestamp%3D1750888364697%26replay.nodes%3D12%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D6219%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D603560%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'": "object",
+        "\\": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "curl-example-mutation-payload.txt"
+    },
+    {
+      "filename": "curl-example-snapshot-payload.txt",
+      "extension": ".txt",
+      "size_bytes": 61448,
+      "size_human": "60.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "curl",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888362063&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_6%26replay.firstTimestamp%3D1750888362063%26replay.lastTimestamp%3D1750888364091%26replay.nodes%3D65%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D5613%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D516648%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'",
+        "\\"
+      ],
+      "column_count": 3,
+      "row_count": 7,
+      "dtypes": {
+        "curl": "object",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888362063&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_6%26replay.firstTimestamp%3D1750888362063%26replay.lastTimestamp%3D1750888364091%26replay.nodes%3D65%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D5613%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D516648%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'": "object",
+        "\\": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "curl-example-snapshot-payload.txt"
+    },
+    {
+      "filename": "package-lock.json",
+      "extension": ".json",
+      "size_bytes": 964104,
+      "size_human": "941.5 KB",
+      "file_type": "json",
+      "error": "JSON parse error: Unterminated string starting at: line 1306 column 19 (char 49992)",
+      "download_source": "github",
+      "relative_path": "package-lock.json"
+    },
+    {
+      "filename": "package.json",
+      "extension": ".json",
+      "size_bytes": 11393,
+      "size_human": "11.1 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "private",
+        "author",
+        "description",
+        "license",
+        "homepage",
+        "main",
+        "module",
+        "types",
+        "typesVersions",
+        "exports",
+        "devEngines",
+        "engines",
+        "scripts",
+        "config",
+        "repository",
+        "dependencies",
+        "devDependencies",
+        "files"
+      ],
+      "sample": {
+        "name": "@newrelic/browser-agent",
+        "version": "1.312.1",
+        "private": "False",
+        "author": "New Relic Browser Agent Team <browser-agent@newrelic.com>",
+        "description": "New Relic Browser Agent"
+      },
+      "download_source": "github",
+      "relative_path": "package.json"
+    },
+    {
+      "filename": "src_.npmignore",
+      "extension": ".npmignore",
+      "size_bytes": 36,
+      "size_human": "36.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmignore",
+      "download_source": "github",
+      "relative_path": "src_.npmignore"
+    },
+    {
+      "filename": "tests_webview-specs_assets_NRTestApp.zip",
+      "extension": ".zip",
+      "size_bytes": 818017,
+      "size_human": "798.8 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "tests_webview-specs_assets_NRTestApp.zip"
+    },
+    {
+      "filename": "third_party_manifest.json",
+      "extension": ".json",
+      "size_bytes": 32562,
+      "size_human": "31.8 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "lastUpdated",
+        "projectName",
+        "projectUrl",
+        "includeOptDeps",
+        "optionalDependencies",
+        "includeDev",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "lastUpdated": "Mon Mar 23 2026 23:41:59 GMT+0000 (Coordinated Universal Time)",
+        "projectName": "New Relic Browser Agent",
+        "projectUrl": "https://github.com/newrelic/newrelic-browser-agent",
+        "includeOptDeps": "True",
+        "optionalDependencies": "{}"
+      },
+      "download_source": "github",
+      "relative_path": "third_party_manifest.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-desktop-latest-vers.json",
+      "extension": ".json",
+      "size_bytes": 89,
+      "size_human": "89.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "chrome",
+        "edge",
+        "firefox",
+        "safari",
+        "safari_min"
+      ],
+      "sample": {
+        "chrome": "146",
+        "edge": "146",
+        "firefox": "148",
+        "safari": "26",
+        "safari_min": "18"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-desktop-latest-vers.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-desktop-supported.json",
+      "extension": ".json",
+      "size_bytes": 1263,
+      "size_human": "1.2 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "chrome",
+        "edge",
+        "firefox",
+        "safari"
+      ],
+      "sample": {
+        "chrome": "[{'browserName': 'Chrome', 'platformName': 'Windows 11', 'browserVersion': 'latest', 'comment': 'lat",
+        "edge": "[{'browserName': 'MicrosoftEdge', 'platformName': 'Windows 11', 'browserVersion': 'latest'}, {'brows",
+        "firefox": "[{'browserName': 'Firefox', 'platformName': 'Windows 11', 'browserVersion': 'latest'}, {'browserName",
+        "safari": "[{'browserName': 'Safari', 'platformName': 'macOS Sequoia', 'browserVersion': 'latest', 'comment': '"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-desktop-supported.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-mobile-supported.json",
+      "extension": ".json",
+      "size_bytes": 431,
+      "size_human": "431.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "ios",
+        "android"
+      ],
+      "sample": {
+        "ios": "[{'device_name': 'iPhone 17', 'version': '26.2', 'platformName': 'ios', 'browserName': 'Safari'}, {'",
+        "android": "[{'device_name': 'Pixel 10', 'version': '16', 'platformName': 'android', 'browserName': 'Chrome'}]"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-mobile-supported.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_.gitignore",
+      "extension": ".gitignore",
+      "size_bytes": 548,
+      "size_human": "548.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gitignore",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_.gitignore"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_angular.json",
+      "extension": ".json",
+      "size_bytes": 3065,
+      "size_human": "3.0 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "$schema",
+        "version",
+        "newProjectRoot",
+        "projects",
+        "cli"
+      ],
+      "sample": {
+        "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+        "version": "1",
+        "newProjectRoot": "projects",
+        "projects": "{'demo-app': {'projectType': 'application', 'schematics': {'@schematics/angular:component': {'inline",
+        "cli": "{'analytics': False}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_angular.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_package.json",
+      "extension": ".json",
+      "size_bytes": 822,
+      "size_human": "822.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "scripts",
+        "private",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "demo-app",
+        "version": "0.0.0",
+        "scripts": "{'ng': 'ng', 'start': 'ng serve --host 0.0.0.0', 'build': 'ng build', 'watch': 'ng build --watch --c",
+        "private": "True",
+        "dependencies": "{'@angular/animations': '^16.2.0', '@angular/common': '^16.2.0', '@angular/compiler': '^16.2.0', '@a"
+      },
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_package.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig.app.json",
+      "extension": ".json",
+      "size_bytes": 263,
+      "size_human": "263.0 B",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig.app.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig.json",
+      "extension": ".json",
+      "size_bytes": 901,
+      "size_human": "901.0 B",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig.json"
+    },
+    {
+      "filename": "tools_test-builds_browser-agent-wrapper_.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_browser-agent-wrapper_.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_browser-agent-wrapper_package.json",
+      "extension": ".json",
+      "size_bytes": 361,
+      "size_human": "361.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "browser-agent-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_browser-agent-wrapper_package.json"
+    },
+    {
+      "filename": "tools_test-builds_library-wrapper_.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_library-wrapper_.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_library-wrapper_package.json",
+      "extension": ".json",
+      "size_bytes": 487,
+      "size_human": "487.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "library-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_library-wrapper_package.json"
+    },
+    {
+      "filename": "tools_test-builds_package.json",
+      "extension": ".json",
+      "size_bytes": 229,
+      "size_human": "229.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "keywords",
+        "author",
+        "license",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "test-builds",
+        "version": "1.0.0",
+        "description": "",
+        "main": "builder.js",
+        "scripts": "{'build-all': 'node ./builder'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_package.json"
+    },
+    {
+      "filename": "tools_test-builds_raw-src-wrapper_.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_raw-src-wrapper_.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_raw-src-wrapper_package.json",
+      "extension": ".json",
+      "size_bytes": 355,
+      "size_human": "355.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "raw-src-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_raw-src-wrapper_package.json"
+    },
+    {
+      "filename": "tools_test-builds_rollup-micro-agent_.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_rollup-micro-agent_.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_rollup-micro-agent_package.json",
+      "extension": ".json",
+      "size_bytes": 606,
+      "size_human": "606.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "keywords",
+        "author",
+        "license",
+        "type",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "rollup-micro-agent",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'test': 'echo \"Error: no test specified\" && exit 1', 'build': 'rollup -c'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_rollup-micro-agent_package.json"
+    },
+    {
+      "filename": "NRAPI-Info.plist",
+      "extension": ".plist",
+      "size_bytes": 121,
+      "size_human": "121.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/NRAPI-Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/NRAPI-Info.plist"
+    },
+    {
+      "filename": "AppIcon60x60@2x.png",
+      "extension": ".png",
+      "size_bytes": 4412,
+      "size_human": "4.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/AppIcon60x60@2x.png",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/AppIcon60x60@2x.png"
+    },
+    {
+      "filename": "NRTestApp",
+      "extension": "",
+      "size_bytes": 332352,
+      "size_human": "324.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/NRTestApp",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/NRTestApp"
+    },
+    {
+      "filename": "01J-lp-oVM-view-Ze5-6b-2t3.nib",
+      "extension": ".nib",
+      "size_bytes": 1225,
+      "size_human": "1.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .nib",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib"
+    },
+    {
+      "filename": "UIViewController-01J-lp-oVM.nib",
+      "extension": ".nib",
+      "size_bytes": 924,
+      "size_human": "924.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .nib",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 258,
+      "size_human": "258.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist"
+    },
+    {
+      "filename": "Assets.car",
+      "extension": ".car",
+      "size_bytes": 26600,
+      "size_human": "26.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .car",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Assets.car",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Assets.car"
+    },
+    {
+      "filename": "AppIcon76x76@2x~ipad.png",
+      "extension": ".png",
+      "size_bytes": 5851,
+      "size_human": "5.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/AppIcon76x76@2x~ipad.png",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/AppIcon76x76@2x~ipad.png"
+    },
+    {
+      "filename": "PrivacyInfo.xcprivacy",
+      "extension": ".xcprivacy",
+      "size_bytes": 2915,
+      "size_human": "2.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .xcprivacy",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/PrivacyInfo.xcprivacy",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/PrivacyInfo.xcprivacy"
+    },
+    {
+      "filename": "NewRelic",
+      "extension": "",
+      "size_bytes": 2499376,
+      "size_human": "2.4 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/NewRelic",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/NewRelic"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 726,
+      "size_human": "726.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/Info.plist"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 1746,
+      "size_human": "1.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Info.plist"
+    },
+    {
+      "filename": "PkgInfo",
+      "extension": "",
+      "size_bytes": 8,
+      "size_human": "8.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/PkgInfo",
+      "from_zip": "tests_webview-specs_assets_NRTestApp.zip",
+      "relative_path": "zip_contents/NRTestApp.app/PkgInfo"
+    }
+  ]
+}

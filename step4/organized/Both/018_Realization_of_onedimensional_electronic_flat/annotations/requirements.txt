@@ -1,0 +1,5 @@
+The following python packages are required:
+
+numpy 1.18.1
+matplotlib 3.1.3
+scipy 1.4.1

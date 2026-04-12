@@ -1,0 +1,62 @@
+{
+  "paper_id": "step1_0156",
+  "title": "Investigation of the room-temperature photoelectron spectroscopy of type-II Weyl semimetal candidate WTe2",
+  "doi": "10.1007/s42864-023-00209-1",
+  "journal": "Tungsten",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4324348564",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "data-for-the-publication-in-situ-observation-of-ro.zip: Too large: 871.4MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1007_s42864-023-00209-1",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports room-temperature photoelectron spectroscopy measurements on WTe2 to investigate its electronic structure as a type-II Weyl semimetal candidate.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "Main findings are presented in the paper itself; additional data are not publicly downloadable and must be requested from the authors.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors declare that the main data supporting the findings of this study are available within the paper. Extra data are available from the corresponding authors upon request.",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "The paper states that the main data are included within the paper, and any extra data are available from the corresponding authors upon request. No external repository, publisher-hosted source data, or supplementary files were found.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "The paper states that the main data are included within the paper, and any extra data are available from the corresponding authors upon request. No external repository, publisher-hosted source data, or supplementary files were found.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "The authors declare that the main data supporting the findings of this study are available within the paper. Extra data are available from the corresponding authors upon request.",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": []
+}

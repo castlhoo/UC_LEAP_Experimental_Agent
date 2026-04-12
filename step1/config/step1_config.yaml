@@ -45,17 +45,17 @@ search:
   year_range:
     start: 2021
     end: 2026
-  max_results_per_query: 30
+  max_results_per_query: 20
   enabled_apis:
     semantic_scholar: true
     openalex: true
     crossref: true
     arxiv: true
   max_queries_per_api:
-    semantic_scholar: 12
-    openalex: 20
-    crossref: 12
-    arxiv: 15
+    semantic_scholar: 8
+    openalex: 10
+    crossref: 8
+    arxiv: 8
   rate_limits:
     semantic_scholar: 1.0
     openalex: 0.3

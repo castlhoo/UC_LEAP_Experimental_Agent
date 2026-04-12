@@ -1,0 +1,99 @@
+Title: Time-domain observation of interlayer exciton formation and thermalization in a MoSe2/WSe2 heterostructure
+DOI: 10.1038/s41467-023-42915-x
+Journal: Nature Communications
+Year: 2023
+Final label: Both
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: Most Figshare TXT/DAT files are clean, directly plottable source/processed data tables for spectra, transient absorption maps, and time traces. These are consistent with the paper’s explicit deposit of processed spectroscopic data.
+- Type2 summary: The simulation-like ksnapshots file is best treated as raw/intermediate theoretical output requiring interpretation, and the large PDF files are supplementary documentation rather than clean data tables.
+
+Type1 files
+- Delta_T_hetero_aligned_IL.dat
+  original path: Delta_T_hetero_aligned_IL.dat
+  classified as: type1
+  reasoning: This is a clean table of differential transmission data, likely a processed or calculated trace used for figures. It is not raw instrument output.
+  paper evidence: Processed spectroscopic data and calculated differential transmission traces are explicitly part of the paper’s data/figure set.
+  file evidence: Structured DAT file (225.9 KB) with 1952 rows and multiple numeric columns, directly plottable.
+  structure: Delay/time axis with multiple ΔT/T columns
+  ambiguity: Moderate due to the model-like filename, but the tabular structure strongly supports Type 1.
+- Delta_T_hetero_M.dat
+  original path: Delta_T_hetero_M.dat
+  classified as: type1
+  reasoning: Although the filename is model-like, the file is a structured table of differential transmission data and appears to be processed/source data rather than raw instrument output. It is directly replot-ready.
+  paper evidence: The paper states that processed spectroscopic data are available and includes calculated/processed differential transmission traces in the figures.
+  file evidence: Tabular DAT file (225.9 KB) with header-like numeric columns and 1952 rows; structured for direct plotting of time-dependent signals.
+  structure: Delay/time axis with multiple ΔT/T signal columns
+  ambiguity: Moderate because the filename suggests a model or simulation dataset, but the structure and deposit context support Type 1.
+- Delta_T_hetero_W.dat
+  original path: Delta_T_hetero_W.dat
+  classified as: type1
+  reasoning: This is a processed tabular trace dataset, not raw instrument output, and is replot-ready.
+  paper evidence: The paper includes processed transient absorption/source data and calculated traces for WSe2-related signals.
+  file evidence: Structured DAT file (175.4 KB) with 1952 rows and multiple numeric columns, suitable for direct plotting.
+  structure: Delay/time axis with multiple ΔT/T columns
+  ambiguity: Moderate because the filename is generic, but the structure is clear.
+- LinearAbsorption_MoSe2WSe2-77k.txt
+  original path: LinearAbsorption_MoSe2WSe2-77k.txt
+  classified as: type1
+  reasoning: Despite the filename lacking figure labels, the structure is a clean 2-column spectrum suitable for direct plotting with minimal processing. This matches Type 1 source/processed data rather than raw instrument output.
+  paper evidence: The paper explicitly says processed spectroscopic data are available on Figshare, and linear absorption spectra are among the reported processed/source data figures.
+  file evidence: Small tabular TXT (36.6 KB) with 2 numeric columns and 1023 rows, no header, directly loadable and plot-ready.
+  structure: Energy/wavelength-like x column and absorption/intensity-like y column
+  ambiguity: Low; the file is clearly a cleaned spectrum table.
+- PL_MoSe2WSe2-77k.txt
+  original path: PL_MoSe2WSe2-77k.txt
+  classified as: type1
+  reasoning: This is a cleaned 2-column PL spectrum, consistent with figure/source data and directly replot-ready.
+  paper evidence: The paper reports photoluminescence spectra as part of the spectroscopic data deposit and uses them as figure data.
+  file evidence: Small tabular TXT (64.5 KB) with 2 numeric columns and 4187 rows, directly plottable spectrum data.
+  structure: Spectral axis and PL intensity
+  ambiguity: Low.
+- TA_HighRepRate_MoSe2WSe2-4deg-77k-CCP.txt
+  original path: TA_HighRepRate_MoSe2WSe2-4deg-77k-CCP.txt
+  classified as: type1
+  reasoning: This is a compact processed dataset suitable for direct plotting, matching Type 1.
+  paper evidence: The paper includes transient absorption time traces and processed spectroscopic data deposits.
+  file evidence: Small structured tabular TXT (22.8 KB) with 4 numeric columns and 381 rows, directly plottable as time traces or spectra.
+  structure: Time/delay axis with multiple signal columns
+  ambiguity: Low.
+- TA_SpectrallyResolved_MoSe2WSe2-4deg-77k-CCP.txt
+  original path: TA_SpectrallyResolved_MoSe2WSe2-4deg-77k-CCP.txt
+  classified as: type1
+  reasoning: This is processed transient absorption source data: a dense but organized matrix of ΔT/T versus delay and probe energy. It is not raw instrument output in proprietary form.
+  paper evidence: The paper’s main transient absorption figures are processed ΔT/T maps and extracted spectra from the Figshare deposit.
+  file evidence: Large but structured tabular TXT (3.8 MB) with 210 numeric columns and 989 rows, representing a spectrotemporal map that can be plotted directly.
+  structure: Probe-energy axis plus many pump-probe delay columns
+  ambiguity: Moderate only because the file is large, but the structure is still clearly figure-ready.
+
+Type2 files
+- ksnapshots77K_h2_e1_400_1s.dat
+  original path: ksnapshots77K_h2_e1_400_1s.dat
+  classified as: type2
+  reasoning: Even though the file is tabular, the naming strongly suggests a simulation snapshot or intermediate theoretical output rather than a cleaned figure/source-data table. Conservatively, this is Type 2 because it likely requires interpretation or processing before direct use in figures.
+  paper evidence: The paper’s theory section discusses momentum-resolved exciton populations from microscopic simulations, which can correspond to intermediate simulation outputs rather than final figure tables.
+  file evidence: Small DAT file (5.3 KB) with 2 columns and 199 rows, but the filename is highly simulation-like ('ksnapshots', temperature, parameter tags) and not figure-labeled.
+  structure: k-like coordinate/index and snapshot value
+  ambiguity: Moderate; the file is tabular, but the filename and context indicate a model snapshot rather than finalized source data.
+
+Annotation files
+- 41467_2023_42915_MOESM1_ESM.pdf
+  original path: 41467_2023_42915_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This is not a replot-ready data table and does not appear to be raw instrument output. As a supplementary PDF, it is best treated as documentation/supporting material rather than Type 1 or Type 2 data.
+  paper evidence: The paper states that processed spectroscopic data are available on Figshare and supplementary information data are available by request; this PDF is likely supplementary/source-data documentation rather than a tabular dataset.
+  file evidence: Large PDF (18.3 MB) from nature_source_data; no tabular structure or machine-readable data content is indicated.
+  structure: PDF document; no tabular columns reported
+  ambiguity: The PDF could contain embedded source-data pages or figures, but without page-level inspection it cannot be safely classified as data.
+- 41467_2023_42915_MOESM2_ESM.pdf
+  original path: 41467_2023_42915_MOESM2_ESM.pdf
+  classified as: documentation
+  reasoning: This is supplementary documentation rather than a directly plottable dataset file. It is not clearly raw or cleaned tabular data.
+  paper evidence: Same supplementary-data context as MOESM1; the paper mentions supplementary information data and processed spectroscopic data deposits.
+  file evidence: Large PDF (11.2 MB) from nature_source_data; no machine-readable table structure is reported.
+  structure: PDF document; no tabular columns reported
+  ambiguity: Could contain source-data figures or methods details, but the available inspection does not support a data-file classification.
+
+Script files
+- none

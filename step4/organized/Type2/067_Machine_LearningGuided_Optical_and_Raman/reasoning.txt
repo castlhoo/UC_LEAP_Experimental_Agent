@@ -1,0 +1,101 @@
+Title: Machine Learning-Guided Optical and Raman Spectroscopy Characterization of 2D Materials
+DOI: 10.1201/9781003132981-9
+Journal: Machine Learning in 2D Materials Science
+Year: 2023
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No clearly figure-specific, cleaned, replot-ready source-data files were identified in the inspected set.
+- Type2 summary: The inspected files are dominated by large run-level cycling logs and instrument archives (Cycling, SEM, XPS, XRF), which are consistent with raw or unprocessed data rather than figure-ready source data.
+
+Type1 files
+- none
+
+Type2 files
+- Cycling.zip
+  original path: Cycling.zip
+  classified as: type2
+  reasoning: As an archive containing large experimental run files rather than a figure-specific table, it is not directly replot-ready without selecting and processing subsets. This fits raw/unprocessed data.
+  paper evidence: The paper does not provide a data availability statement or explicit source-data/figure-data description, so there is no paper-level evidence that this is cleaned source data.
+  file evidence: Large archive (97.1 MB) from Zenodo; archive name suggests experimental cycling data. The extracted contents are large run-level CSV/XLSX files with many rows and instrument-style columns, indicating raw or near-raw measurement output.
+  structure: Archive containing cycling run files
+  ambiguity: Moderate: archive-level classification is inferred from contents rather than direct inspection of the ZIP internals.
+- SEM.zip
+  original path: SEM.zip
+  classified as: type2
+  reasoning: Microscopy image archives are not directly replot-ready in the Type 1 sense and usually require image processing or selection for figures.
+  paper evidence: No explicit paper statement indicates this is source data or figure-ready data.
+  file evidence: Large archive (24.1 MB) from Zenodo; SEM typically stores microscopy images or instrument outputs, which are raw image data rather than tabular figure data.
+  structure: Archive containing SEM image data
+  ambiguity: Low to moderate: the SEM label strongly suggests raw image data, though the archive contents were not individually listed here.
+- XPS.zip
+  original path: XPS.zip
+  classified as: type2
+  reasoning: Because the archive contents are not directly shown and the paper gives no source-data indication, the conservative choice is raw/unprocessed or at least not confirmed figure-ready.
+  paper evidence: No explicit paper statement identifies this as cleaned source data or figure-ready data.
+  file evidence: Archive from Zenodo; XPS commonly denotes instrument output or processed spectra. The archive is small (58.1 KB), but the file type is still an archive rather than a directly plottable table.
+  structure: Archive containing XPS-related data
+  ambiguity: High: size is small, so it could contain processed spectra, but there is insufficient evidence to classify as Type 1.
+- XRF.zip
+  original path: XRF.zip
+  classified as: type2
+  reasoning: Without evidence of a figure-specific table or source-data organization, classify conservatively as raw/unprocessed archive data.
+  paper evidence: No explicit paper statement identifies this as cleaned source data.
+  file evidence: Small archive (22.1 KB) from Zenodo; XRF typically refers to instrument spectra or elemental analysis output, which may be raw or lightly processed but is not confirmed figure-ready.
+  structure: Archive containing XRF-related data
+  ambiguity: High: could contain processed spectra, but there is no direct evidence.
+- test_58_cell10_AlexeyBatch2_24-05-09_Channel_58_Wb_1.CSV
+  original path: zip_contents/Cycling/cell_10_Si_no_formation/test_58_cell10_AlexeyBatch2_24-05-09_Channel_58_Wb_1.CSV
+  classified as: type2
+  reasoning: This is raw cycling output, not a cleaned figure table.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Large CSV (51.6 MB, 381,990 rows) with electrochemical cycling run columns and timestamps.
+  structure: Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Charge/Discharge_Capacity(Ah)
+  ambiguity: Low
+- test_55_cell2_AlexeySputerTest_24-02-19_Channel_55_Wb_1.CSV
+  original path: zip_contents/Cycling/cell_2_SiGeSn_formation/test_55_cell2_AlexeySputerTest_24-02-19_Channel_55_Wb_1.CSV
+  classified as: type2
+  reasoning: This is clearly instrument/run output rather than a compact figure-ready table. It can be plotted only after substantial filtering/aggregation, so it is raw/unprocessed.
+  paper evidence: No paper evidence indicates this is figure/source data; no data availability statement was found.
+  file evidence: Very large CSV (100.4 MB, 760,858 rows) with run-level electrochemical cycling columns such as Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Capacity, Energy, and resistance metrics.
+  structure: Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Charge_Capacity(Ah), Discharge_Capacity(Ah), Energy, Resistance
+  ambiguity: Low
+- test_57_cell3_AlexeySputerTest_24-02-19_Channel_57_Wb_1.CSV
+  original path: zip_contents/Cycling/cell_3_SiGeSn_formation/test_57_cell3_AlexeySputerTest_24-02-19_Channel_57_Wb_1.CSV
+  classified as: type2
+  reasoning: Run-level cycling log requiring preprocessing/selection before figure use; not a compact replot-ready source-data table.
+  paper evidence: No paper evidence indicates this is cleaned source data.
+  file evidence: Very large CSV (101.0 MB, 764,496 rows) with the same electrochemical run-level columns as other cycling logs.
+  structure: Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Capacity, Energy, Resistance
+  ambiguity: Low
+- test_62_cell4_AlexeySputerTest_24-02-19_Channel_62_Wb_1.CSV
+  original path: zip_contents/Cycling/cell_4_SiGeSn_no_formation/test_62_cell4_AlexeySputerTest_24-02-19_Channel_62_Wb_1.CSV
+  classified as: type2
+  reasoning: Raw instrument-style cycling log; requires preprocessing for figure reproduction.
+  paper evidence: No paper evidence indicates this is cleaned source data.
+  file evidence: Large CSV (64.4 MB, 479,751 rows) with run-level electrochemical measurements.
+  structure: Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Capacity, Energy, Resistance
+  ambiguity: Low
+- test_62_cell4_AlexeySputerTest_24-02-19_Channel_62_Wb_1.xlsx
+  original path: zip_contents/Cycling/cell_4_SiGeSn_no_formation/test_62_cell4_AlexeySputerTest_24-02-19_Channel_62_Wb_1.xlsx
+  classified as: type2
+  reasoning: Although structured in Excel, the sheet contains a large run-level dataset rather than a compact figure-specific table, so it is still raw/unprocessed.
+  paper evidence: No paper evidence indicates this workbook is source-data organized by figure.
+  file evidence: Excel workbook with a Global_Info sheet and a Channel-62_1 sheet containing 20 columns x 53,171 rows of the same cycling measurements as the CSV.
+  structure: Global_Info; Channel-62_1 with Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Capacity, Energy
+  ambiguity: Low
+- test_63_cell5_AlexeySputerTest_24-02-19_Channel_63_Wb_1.CSV
+  original path: zip_contents/Cycling/cell_5_SiGeSn_no_formation/test_63_cell5_AlexeySputerTest_24-02-19_Channel_63_Wb_1.CSV
+  classified as: type2
+  reasoning: Raw run output requiring preprocessing; not directly figure-ready.
+  paper evidence: No paper evidence indicates this is cleaned source data.
+  file evidence: Large CSV (65.5 MB, 486,260 rows) with electrochemical cycling run columns.
+  structure: Data_Point, Date_Time, Test_Time(s), Cycle_Index, Current(A), Voltage(V), Charge/Discharge_Capacity(Ah)
+  ambiguity: Low
+
+Annotation files
+- none
+
+Script files
+- none

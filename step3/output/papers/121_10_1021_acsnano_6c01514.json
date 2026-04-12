@@ -1,0 +1,86 @@
+{
+  "paper_id": "step1_0031",
+  "title": "Large-Scale Integration of Experimental and Computational Data for 2D Materials",
+  "doi": "10.1021/acsnano.6c01514",
+  "journal": "ACS Nano",
+  "year": 2026,
+  "paper_url": "https://www.semanticscholar.org/paper/a7d53d11427eba6842873ef64a1be8e3f9d14a7f",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acsnano_6c01514",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready cleaned dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed measurement files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper-level prior strongly suggests external database-hosted data rather than attached source files. The only provided file appears to be a PDF document, not a dataset. Because file content was not inspected beyond metadata, classification is conservative.",
+  "file_classifications": [
+    {
+      "relative_path": "Application_of_MATLAB_in_Experimental_Data_Analysis_and_Visualization.pdf",
+      "filename": "Application_of_MATLAB_in_Experimental_Data_Analysis_and_Visualization.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is about X2DB, an open database of experimentally realized 2D materials with integrated experimental and computational data; no evidence in the paper suggests this PDF is a data file or source-data deposit.",
+      "file_evidence": "The file is a PDF from Zenodo with a title that reads like an article or report, not a data table, figure-specific source data file, or raw measurement output. No tabular structure, headers, or machine-readable data content is indicated by the inspection report.",
+      "reasoning": "This file does not match Type 1 because it is not a clean tabular dataset and cannot be directly replot-ready. It also does not match Type 2 because there is no evidence it contains raw experimental output or instrument data. The safest classification is documentation.",
+      "ambiguity": "High ambiguity because only metadata is available; the PDF could contain narrative text, figures, or embedded tables, but there is no evidence of dataset content.",
+      "key_columns_or_structure": "Not available from inspection metadata"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper presents X2DB, an open database integrating experimental and computational information on experimentally realized 2D materials to enable cross-linked analysis and prediction.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "An open database of experimentally realized 2D materials with linked experimental and computational information; no downloadable files or explicit URLs were found on the publisher page.",
+    "has_processed_plots": false,
+    "processed_plot_details": "An open database of experimentally realized 2D materials with linked experimental and computational information; no downloadable files or explicit URLs were found on the publisher page.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [
+        "raw"
+      ],
+      "raw_data_description": "An open database of experimentally realized 2D materials with linked experimental and computational information; no downloadable files or explicit URLs were found on the publisher page.",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "The paper describes X2DB as an open database integrating experimental and computational data on experimentally realized 2D materials, implying the data are hosted in an external database/repository rather than as publisher-hosted files.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The paper describes X2DB as an open database integrating experimental and computational data on experimentally realized 2D materials, implying the data are hosted in an external database/repository rather than as publisher-hosted files.",
+      "source_data_evidence": "The paper describes X2DB as an open database integrating experimental and computational data on experimentally realized 2D materials, implying the data are hosted in an external database/repository rather than as publisher-hosted files.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Application_of_MATLAB_in_Experimental_Data_Analysis_and_Visualization.pdf",
+      "extension": ".pdf",
+      "size_bytes": 223402,
+      "size_human": "218.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Application_of_MATLAB_in_Experimental_Data_Analysis_and_Visualization.pdf"
+    }
+  ]
+}

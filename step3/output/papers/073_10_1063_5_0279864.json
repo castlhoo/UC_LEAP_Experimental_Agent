@@ -1,0 +1,107 @@
+{
+  "paper_id": "step1_0017",
+  "title": "Directed light emission from monolayers on 2D materials via optical interferences.",
+  "doi": "10.1063/5.0279864",
+  "journal": "The Journal of chemical physics",
+  "year": 2025,
+  "paper_url": "https://www.semanticscholar.org/paper/c71dbb277904bb4f87dce322bc8db026fe8856b2",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1063_5_0279864",
+  "files_inspected": 2,
+  "file_types_found": [
+    "hdf5"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No files can be confidently classified as cleaned, replot-ready figure/source data based on the available evidence.",
+  "type2_summary": "Both files are large HDF5 datasets consistent with raw or simulation output, and neither has evidence of being directly replot-ready.",
+  "type1_files": [],
+  "type2_files": [
+    "angle_resolved_spectroscopy.hdf5",
+    "simulations_angle_resolved_reflectivity.hdf5"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "Paper evidence does not identify any source-data deposit or figure-specific cleaned tables. File inspection was limited because h5py was not installed, so internal datasets could not be checked. Classification therefore relies on conservative inference from file format, size, and filenames.",
+  "file_classifications": [
+    {
+      "relative_path": "angle_resolved_spectroscopy.hdf5",
+      "filename": "angle_resolved_spectroscopy.hdf5",
+      "type": "type2",
+      "paper_evidence": "The paper discusses angle-dependent reflectivity and photoluminescence measurements, but the publication provides no data availability statement and no indication that this file is cleaned, figure-ready source data.",
+      "file_evidence": "HDF5 binary file, 17.3 MB, sourced from Zenodo. No readable tabular structure could be inspected because h5py was unavailable, and the filename suggests an experimental spectroscopy dataset rather than a replot-ready table.",
+      "reasoning": "Given the lack of paper evidence for processed/source data and the file evidence pointing to a large HDF5 dataset, the conservative classification is raw/unprocessed data. It is not directly replot-ready from the available evidence.",
+      "ambiguity": "Moderate: internal HDF5 structure could not be inspected, so the exact level of processing is unknown. However, the format and size strongly favor Type 2.",
+      "key_columns_or_structure": "Unknown; HDF5 structure not inspectable in this environment"
+    },
+    {
+      "relative_path": "simulations_angle_resolved_reflectivity.hdf5",
+      "filename": "simulations_angle_resolved_reflectivity.hdf5",
+      "type": "type2",
+      "paper_evidence": "The paper focuses on optical interference effects in angle-dependent reflectivity and emission, but does not provide evidence that this file is a cleaned source-data table or figure-ready dataset.",
+      "file_evidence": "HDF5 binary file, 14.3 MB, sourced from Zenodo. The filename indicates simulation output related to angle-resolved reflectivity, and no internal structure could be inspected because h5py was unavailable.",
+      "reasoning": "This is most consistent with simulation output or intermediate data rather than a simple replot-ready table. In the absence of explicit paper evidence for source-data organization, the conservative choice is Type 2.",
+      "ambiguity": "Moderate: the file may contain processed simulation results, but the HDF5 format and lack of inspectable tabular structure prevent classifying it as Type 1.",
+      "key_columns_or_structure": "Unknown; HDF5 structure not inspectable in this environment"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper studies angle-dependent reflectivity and photoluminescence from molecular monolayers on hBN, showing that optical interference in the substrate can strongly direct light emission and reflection.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to rely on experimental angle-dependent reflectivity and photoluminescence measurements of molecular monolayers on hBN, but no accessible dataset was identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files or URLs were provided on the publisher page. It is not possible to determine whether the underlying reflectivity/photoluminescence data are archived elsewhere or only available from the authors.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files or URLs were provided on the publisher page. It is not possible to determine whether the underlying reflectivity/photoluminescence data are archived elsewhere or only available from the authors.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "angle_resolved_spectroscopy.hdf5",
+      "extension": ".hdf5",
+      "size_bytes": 18131736,
+      "size_human": "17.3 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zenodo",
+      "relative_path": "angle_resolved_spectroscopy.hdf5"
+    },
+    {
+      "filename": "simulations_angle_resolved_reflectivity.hdf5",
+      "extension": ".hdf5",
+      "size_bytes": 14971400,
+      "size_human": "14.3 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zenodo",
+      "relative_path": "simulations_angle_resolved_reflectivity.hdf5"
+    }
+  ]
+}

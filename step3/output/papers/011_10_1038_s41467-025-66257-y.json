@@ -1,0 +1,480 @@
+{
+  "paper_id": "step1_0295",
+  "title": "Experimental evidence of the topological obstruction in twisted bilayer graphene",
+  "doi": "10.1038/s41467-025-66257-y",
+  "journal": "arXiv preprint",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2506.08913v2",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 15,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-025-66257-y",
+  "files_inspected": 18,
+  "file_types_found": [
+    "instrument_raw",
+    "archive",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The two PDF files are Nature source-data supplements and are best classified as cleaned, figure-supporting Type 1 files.",
+  "type2_summary": "The Zenodo STM archive and all extracted .sxm files are raw instrument measurements, clearly Type 2.",
+  "type1_files": [
+    "41467_2025_66257_MOESM1_ESM.pdf",
+    "41467_2025_66257_MOESM2_ESM.pdf"
+  ],
+  "type2_files": [
+    "STM_images.zip",
+    "zip_contents/STM_images/SiCCAO#C012_300mV.sxm",
+    "zip_contents/STM_images/SiCCAO#C013_500mV.sxm",
+    "zip_contents/STM_images/SiCCAO#C014_350mV.sxm",
+    "zip_contents/STM_images/SiCCAO#C015_425mV.sxm",
+    "zip_contents/STM_images/SiCCAO#C016_325.sxm",
+    "zip_contents/STM_images/SiCCAO#C017_400mV.sxm"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The dataset clearly contains both cleaned source-data supplements and raw STM instrument files. The paper explicitly supports this mixed structure: raw measurements were deposited in Zenodo, while processed FFT/QPI and dispersion products appear in the manuscript and source-data PDFs.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2025_66257_MOESM1_ESM.pdf",
+      "filename": "41467_2025_66257_MOESM1_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that processed/source-data-style outputs are included, such as FFT-QPI maps, extracted dispersion points, and comparison plots to tight-binding calculations. A Nature source-data PDF is consistent with figure-ready supporting data.",
+      "file_evidence": "PDF from nature_source_data, moderate size (7.7 MB), likely organized as supplementary source data rather than raw instrument output. PDF format is suitable for figure-linked plots/tables and not raw STM acquisition data.",
+      "reasoning": "This file is best interpreted as cleaned, figure-supporting source data. The paper emphasizes processed outputs and the file source is Nature source data, which strongly favors Type 1 over raw data.",
+      "ambiguity": "The PDF contents were not directly inspected, so exact internal structure is unknown; classification relies on source and paper context.",
+      "key_columns_or_structure": "Not inspected; likely figure-linked source-data pages/plots"
+    },
+    {
+      "relative_path": "41467_2025_66257_MOESM2_ESM.pdf",
+      "filename": "41467_2025_66257_MOESM2_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The manuscript contains processed figure products and source-data-style outputs, and the supplementary source data PDFs are consistent with those materials.",
+      "file_evidence": "PDF from nature_source_data, 1.2 MB, indicating a curated supplementary/source-data document rather than raw STM acquisition files.",
+      "reasoning": "As a Nature source-data PDF, this is most consistent with cleaned, replot-ready supporting material. There is no evidence it is raw instrument output.",
+      "ambiguity": "Internal contents not inspected; classification is based on publication context and file provenance.",
+      "key_columns_or_structure": "Not inspected; likely figure-linked source-data pages/plots"
+    },
+    {
+      "relative_path": "STM_images.zip",
+      "filename": "STM_images.zip",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly says the STM data measured in the study were deposited in Zenodo, and the main results are based on raw STM topographs, LDOS maps, and dI/dV spectroscopy.",
+      "file_evidence": "Large archive (226.1 MB) from Zenodo, consistent with a raw data deposit. The archive contains instrument-format files (.sxm) associated with scanning probe microscopy.",
+      "reasoning": "This is a raw data archive containing unprocessed STM measurements. The size, repository source, and extracted contents all indicate raw/unprocessed data requiring processing before plotting.",
+      "ambiguity": "None significant.",
+      "key_columns_or_structure": "Archive containing raw STM scan files"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C012_300mV.sxm",
+      "filename": "SiCCAO#C012_300mV.sxm",
+      "type": "type2",
+      "paper_evidence": "The paper reports raw STM topography and LDOS/dI/dV measurements deposited in Zenodo, matching raw scan files.",
+      "file_evidence": "Instrument raw file (.sxm), 23.3 MB, extracted from the STM_images.zip archive. Filename resembles a scan/run identifier and bias setting, typical of raw STM acquisition.",
+      "reasoning": "This is clearly raw scanning probe instrument output and cannot be directly treated as figure-ready data without preprocessing.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C013_500mV.sxm",
+      "filename": "SiCCAO#C013_500mV.sxm",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly includes raw STM measurements in the deposited Zenodo dataset.",
+      "file_evidence": "Instrument raw .sxm file, 23.3 MB, from the raw STM archive. The naming and format are characteristic of unprocessed scan data.",
+      "reasoning": "Raw instrument output; requires processing to generate LDOS/QPI figures.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C014_350mV.sxm",
+      "filename": "SiCCAO#C014_350mV.sxm",
+      "type": "type2",
+      "paper_evidence": "The study’s Zenodo deposit is described as containing measured STM data, i.e., raw experimental scans.",
+      "file_evidence": "Instrument raw .sxm file, 23.3 MB, indicating a scanning probe microscopy acquisition rather than processed source data.",
+      "reasoning": "Raw measurement file; not directly replot-ready.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C015_425mV.sxm",
+      "filename": "SiCCAO#C015_425mV.sxm",
+      "type": "type2",
+      "paper_evidence": "The paper’s data deposit includes raw STM/STS measurements used to generate the published QPI and LDOS analyses.",
+      "file_evidence": "Instrument raw .sxm file, 23.3 MB, from the raw STM archive.",
+      "reasoning": "This is raw STM data requiring preprocessing for analysis and plotting.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C016_325.sxm",
+      "filename": "SiCCAO#C016_325.sxm",
+      "type": "type2",
+      "paper_evidence": "The manuscript states the measured STM data were deposited, consistent with raw scan files.",
+      "file_evidence": "Instrument raw .sxm file, 23.3 MB, extracted from the STM_images.zip archive.",
+      "reasoning": "Raw instrument output; not figure-ready without significant processing.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    },
+    {
+      "relative_path": "zip_contents/STM_images/SiCCAO#C017_400mV.sxm",
+      "filename": "SiCCAO#C017_400mV.sxm",
+      "type": "type2",
+      "paper_evidence": "The paper’s Zenodo deposit is described as containing the STM data measured in the study.",
+      "file_evidence": "Instrument raw .sxm file, 23.3 MB, from the raw STM archive.",
+      "reasoning": "This is raw scanning probe data and belongs in Type 2.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Raw STM scan file; internal structure not inspected"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies twisted bilayer graphene (TBG) with scanning tunneling microscopy/spectroscopy near a point defect to probe quasiparticle interference (QPI) and the local density of states. The key finding is that the observed 2q-arcs in Fourier-transformed LDOS are evidence that the two Dirac cones within a moiré mini-valley have the same chirality, confirming the topological obstruction of a two-band Wannier description; the data also reconstruct the band dispersion and Lifshitz transition near the van Hove singularity.",
+    "measurement_types": [
+      "STM topography",
+      "STS / dI/dV spectroscopy",
+      "LDOS mapping",
+      "QPI / Fourier-transform STM",
+      "tight-binding simulation",
+      "Berry curvature calculation",
+      "heterostrain analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the twisted graphene Brillouin zones, moiré mini-Brillouin zone, and the same-chirality Dirac cones within each mini-valley.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "STM topograph of 4.3° twisted bilayer graphene showing the moiré pattern and a point defect near the center.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Real-space LDOS map around the defect showing periodic quasiparticle interference modulations.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Schematic of intercone back-scattering processes and the expected FFT signatures for same- versus opposite-chirality Dirac cones.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Map of defect positions within the moiré unit cell used for comparing different scatterers.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "FFT magnitude of the LDOS map showing circles/arcs centered at moiré reciprocal-space points.",
+        "data_type": "diffraction pattern",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Experimental dI/dV spectra at several defect positions compared with theoretical LDOS spectra.",
+        "data_type": "spectrum",
+        "likely_source": "mixed: raw measurement plus derived/theory overlay"
+      },
+      {
+        "figure_id": "Fig2b-f",
+        "description": "Tight-binding simulated STM/QPI images and corresponding FFTs for different defect types/positions and with/without heterostrain.",
+        "data_type": "image / diffraction pattern",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Tight-binding simulation for a non-reconstructed carbon vacancy defect, showing weaker QPI signal.",
+        "data_type": "image / diffraction pattern",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Energy-dependent experimental QPI maps in real space and reciprocal space across the van Hove singularity.",
+        "data_type": "image series / diffraction pattern series",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Calculated constant-energy contours of pristine TBG across the Lifshitz transition, with indicated scattering vectors.",
+        "data_type": "calculated band-structure contour plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Unfolded band-contour/scattering schematic in the original graphene valleys, highlighting intra-mini-valley scattering.",
+        "data_type": "schematic / calculated contour plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Reconstructed dispersion from experimental QPI arc radii compared with tight-binding calculations, including heterostrain/no-strain bands.",
+        "data_type": "scatter plot / dispersion curve",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw STM measurements acquired in a custom-built UHV STM at 8.4 K and 10^-10 mbar: topography images, spatially resolved dI/dV (LDOS) maps, and spectroscopy at selected points around point defects in twisted bilayer graphene on SiC. The STM tip was Pt/Ir, and dI/dV maps were acquired with lock-in detection using a 10 mV AC modulation.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper presents processed LDOS maps, FFTs of the LDOS/QPI images, extracted 2q-arc radii versus energy, reconstructed band dispersion, and comparisons to tight-binding simulations. These are derived from the raw STM/STS data by spatial Fourier transform, arc fitting/width extraction, and energy-dependent analysis.",
+    "dataset_characterization": {
+      "data_availability_statement": "The STM data measured in this study have been deposited in the Zenodo database and can be accessed at https://doi.org/10.5281/zenodo.17360113.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "The paper explicitly says the STM data measured in the study are deposited in Zenodo, but it does not specify file formats, folder structure, or whether the deposit contains only raw scans or also intermediate products.",
+      "processed_data_description": "Processed data include LDOS maps, FFT-QPI images, extracted dispersion points from 2q-arc radii, and spectra compared to theory. The paper also discusses tight-binding calculations and simulated QPI images, but it does not state that these are deposited as separate data files.",
+      "figure_data_description": "Figure-specific data are clearly shown in the manuscript (real-space images, FFTs, spectra, and dispersion points), but the text does not explicitly state that per-figure source data files are provided. The Zenodo deposit likely contains the STM data, but the exact organization is not described.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text. Tight-binding and T-matrix calculations are described in the paper, but script availability is unknown.",
+      "data_organization": "unknown",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper states that STM data are deposited in Zenodo, which suggests the measurements are available for reanalysis. However, the text does not specify whether the deposit includes raw scans, processed figure source data, or scripts, so direct replot readiness cannot be fully verified from the paper alone.",
+      "notes": "The dataset is centered on STM/STS measurements of a TBG sample with a point defect, plus derived QPI/FFT and dispersion extraction. The manuscript distinguishes experimental data from tight-binding simulations and theoretical LDOS/QPI calculations. It also mentions supplementary sections for defect modeling, heterostrain, and additional samples, implying additional figure-related datasets may exist, but their exact contents are not described in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper explicitly states that STM data measured in the study were deposited in Zenodo, and the main results are based on raw STM topographs, LDOS maps, and dI/dV spectroscopy.",
+      "source_data_evidence": "The manuscript contains many processed outputs: FFT-QPI maps, extracted dispersion points, and comparison plots to tight-binding calculations, which are typical source-data-style figure products.",
+      "both_evidence": "The text implies both raw experimental STM data and processed figure data are part of the study, but it does not explicitly enumerate the contents of the Zenodo deposit.",
+      "data_availability_section_relevant": [
+        "The STM data measured in this study have been deposited in the Zenodo database",
+        "LDOS image",
+        "Modulus of the Fast Fourier Transform",
+        "The energy dependence of the QPIs",
+        "reconstructed from the data"
+      ],
+      "priority_modalities": [
+        "STM topography",
+        "STS dI/dV maps",
+        "LDOS images",
+        "FFT-QPI maps",
+        "dispersion extraction points",
+        "tight-binding simulation outputs"
+      ],
+      "review_notes": "Be careful not to conflate experimental STM data with theoretical tight-binding simulations. The paper clearly contains both, but only the experimental STM data are explicitly said to be deposited. The exact Zenodo contents, file formats, and whether scripts are included remain unknown from the provided text."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2025_66257_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 8038085,
+      "size_human": "7.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2025_66257_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2025_66257_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1246817,
+      "size_human": "1.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2025_66257_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "STM_images.zip",
+      "extension": ".zip",
+      "size_bytes": 237052538,
+      "size_human": "226.1 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "STM_images.zip"
+    },
+    {
+      "filename": "SiCCAO#C012_300mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387507,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C012_300mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C012_300mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C013_500mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387511,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C013_500mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C013_500mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C014_350mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C014_350mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C014_350mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C015_425mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387507,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C015_425mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C015_425mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C016_325.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C016_325.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C016_325.sxm"
+    },
+    {
+      "filename": "SiCCAO#C017_400mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387504,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C017_400mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C017_400mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C018_275mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C018_275mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C018_275mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C019_375.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387504,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C019_375.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C019_375.sxm"
+    },
+    {
+      "filename": "SiCCAO#C020_200mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C020_200mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C020_200mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C021_450mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387504,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C021_450mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C021_450mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C022_362mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C022_362mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C022_362mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C023_388mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 24387508,
+      "size_human": "23.3 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C023_388mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C023_388mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C024_300mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 6293422,
+      "size_human": "6.0 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C024_300mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C024_300mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C025_475mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 8413106,
+      "size_human": "8.0 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C025_475mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C025_475mV.sxm"
+    },
+    {
+      "filename": "SiCCAO#C031_150mV.sxm",
+      "extension": ".sxm",
+      "size_bytes": 8413110,
+      "size_human": "8.0 MB",
+      "file_type": "instrument_raw",
+      "note": "Raw instrument file (.sxm): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)",
+      "download_source": "zip_extracted",
+      "archive_path": "STM_images/SiCCAO#C031_150mV.sxm",
+      "from_zip": "STM_images.zip",
+      "relative_path": "zip_contents/STM_images/SiCCAO#C031_150mV.sxm"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+Title: Mitophagy curtails cytosolic mtDNA-dependent activation of cGAS/STING inflammation during aging
+DOI: 10.1038/s41467-024-45044-1
+Journal: Nature Communications
+Year: 2024
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The Excel source-data workbook is figure-organized, tabular, and replot-ready, so it is Type 1.
+- Type2 summary: No file is convincingly raw/unprocessed Type 2 based on the available file evidence.
+
+Type1 files
+- 41467_2024_45044_MOESM4_ESM.xlsx
+  original path: 41467_2024_45044_MOESM4_ESM.xlsx
+  classified as: type1
+  reasoning: The workbook is clearly structured as figure-specific source data with headers and organized sheets. It can likely be loaded and plotted with minimal processing, which fits Type 1. Although the file is large, the organization and paper evidence strongly indicate cleaned source data rather than raw instrument output.
+  paper evidence: The paper repeatedly states that source data are provided as a Source Data file, including detailed DEG/pathway lists. This matches figure-level source data rather than raw instrument output.
+  file evidence: Excel workbook with 20 sheets named by figures (e.g., 'Figure 1', 'Figure 2', 'Figure 2a', 'Figure 2b', 'Figure 3'), headers present, and key columns tied to specific figures. This is organized, tabular, and replot-ready.
+  structure: Figure-based sheets; examples include 'Fig 1b', 'Fig 2e', 'KEGG gene sets enriched in Old', 'HALLMARK gene sets enriched in Old', 'Fig 3e'
+  ambiguity: Low: large size could suggest complexity, but the figure-based sheet structure and source-data context resolve it toward Type 1.
+
+Type2 files
+- none
+
+Annotation files
+- 41467_2024_45044_MOESM1_ESM.pdf
+  original path: 41467_2024_45044_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This file appears to be a supplementary PDF document, not a dataset that can be directly re-plotted. It is therefore best classified as documentation rather than Type 1 or Type 2 data.
+  paper evidence: The paper states that source data are provided as a Source Data file, but no evidence indicates this PDF is a raw or figure-ready data table.
+  file evidence: PDF format, 10.0 MB, likely a supplementary document rather than a tabular dataset; no sheet/column structure available.
+  structure: Not applicable
+  ambiguity: Moderate: without opening the PDF, it could contain supplementary figures or methods, but the file evidence does not support a data-table classification.
+- 41467_2024_45044_MOESM2_ESM.pdf
+  original path: 41467_2024_45044_MOESM2_ESM.pdf
+  classified as: documentation
+  reasoning: Like the first PDF, this is most conservatively treated as documentation. There is insufficient evidence to classify it as Type 1 or Type 2 data.
+  paper evidence: The paper indicates source data are provided, but there is no specific evidence that this PDF contains raw measurements or figure-ready tables.
+  file evidence: PDF format, 1.7 MB, consistent with a supplementary document rather than structured data.
+  structure: Not applicable
+  ambiguity: Moderate: content unknown, but file format and lack of tabular structure argue against dataset classification.
+
+Script files
+- none

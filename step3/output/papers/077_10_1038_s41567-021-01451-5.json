@@ -1,0 +1,87 @@
+{
+  "paper_id": "step1_0210",
+  "title": "Twofold van Hove singularity and origin of charge order in topological kagome superconductor CsV3Sb5",
+  "doi": "10.1038/s41567-021-01451-5",
+  "journal": "Nature Physics",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W3159367619",
+  "priority_score": 10.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41567-021-01451-5",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No file could be confidently verified as cleaned, replot-ready tabular data from the provided inspection report.",
+  "type2_summary": "No file could be confidently verified as raw/unprocessed instrument output from the provided inspection report.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly supports the existence of source data, but the single inspected file is a PDF supplement rather than an obviously machine-readable dataset. If additional repository files (e.g., CSV/XLSX/TXT) are available, they may classify as type1; if instrument outputs are present, they may classify as type2.",
+  "file_classifications": [
+    {
+      "relative_path": "41567_2021_1451_MOESM1_ESM.pdf",
+      "filename": "41567_2021_1451_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that source data are available in a public repository and that supplementary source data files are hosted on the Nature publisher page.",
+      "file_evidence": "PDF file, 3.3 MB, from nature_source_data. No tabular structure, headers, or figure-specific data content were provided in the inspection report; likely a supplementary source-data PDF rather than a directly loadable dataset.",
+      "reasoning": "The paper indicates this is publisher-hosted source data, but the file inspection does not show machine-readable tabular data or raw instrument output. With only the available evidence, it is safest to classify it as documentation/source-data supplement rather than forcing a type1 or type2 dataset label.",
+      "ambiguity": "High: the file may contain figure-linked source data tables, but the inspection report does not expose internal structure, so direct replot readiness cannot be confirmed.",
+      "key_columns_or_structure": "Not available from inspection report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper investigates the electronic structure and charge-order mechanism in the kagome superconductor CsV3Sb5, identifying a twofold van Hove singularity as key to its charge ordering.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper provides source data in a public repository, with supplementary source data files also hosted on the Nature publisher page (PDF and MP4). The repository likely contains the underlying datasets used to support the findings, while other materials may be available upon request.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper provides source data in a public repository, with supplementary source data files also hosted on the Nature publisher page (PDF and MP4). The repository likely contains the underlying datasets used to support the findings, while other materials may be available upon request.",
+    "dataset_characterization": {
+      "data_availability_statement": "Source data are available at https://doi.org/10.7910/DVN/ZFQIJR . Other data that support the findings of this study are available from the corresponding author upon reasonable request.",
+      "data_provided_types": [
+        "raw",
+        "source_data"
+      ],
+      "raw_data_description": "The paper provides source data in a public repository, with supplementary source data files also hosted on the Nature publisher page (PDF and MP4). The repository likely contains the underlying datasets used to support the findings, while other materials may be available upon request.",
+      "processed_data_description": "",
+      "figure_data_description": "41567_2021_1451_MOESM1_ESM.pdf, 41567_2021_1451_MOESM2_ESM.mp4, opensearch.xml",
+      "scripts_description": "",
+      "data_organization": "Source data are deposited in an external repository at https://doi.org/10.7910/DVN/ZFQIJR (Dataverse). Additional supporting data are available from the corresponding author upon reasonable request.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "Source data are deposited in an external repository at https://doi.org/10.7910/DVN/ZFQIJR (Dataverse). Additional supporting data are available from the corresponding author upon reasonable request.",
+      "source_data_evidence": "41567_2021_1451_MOESM1_ESM.pdf, 41567_2021_1451_MOESM2_ESM.mp4, opensearch.xml",
+      "both_evidence": "Step 2 found both repository-style data and publisher source files",
+      "data_availability_section_relevant": "Source data are available at https://doi.org/10.7910/DVN/ZFQIJR . Other data that support the findings of this study are available from the corresponding author upon reasonable request.",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "41567_2021_1451_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3412100,
+      "size_human": "3.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2021_1451_MOESM1_ESM.pdf"
+    }
+  ]
+}

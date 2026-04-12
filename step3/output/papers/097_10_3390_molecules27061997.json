@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0100",
+  "title": "The “Historical Materials BAG”: A New Facilitated Access to Synchrotron X-ray Diffraction Analyses for Cultural Heritage Materials at the European Synchrotron Radiation Facility",
+  "doi": "10.3390/molecules27061997",
+  "journal": "Molecules",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4220787315",
+  "priority_score": 6.3,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_3390_molecules27061997",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No Type 1 dataset files were identified.",
+  "type2_summary": "No Type 2 raw dataset files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The provided file list contains only the article PDF. Based on both paper evidence and file evidence, there is no dataset file to classify as Type 1 or Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "molecules-27-01997.pdf",
+      "filename": "molecules-27-01997.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper reports synchrotron X-ray powder diffraction applications and no data availability statement or downloadable dataset was identified on the publisher page.",
+      "file_evidence": "The file is a 3.7 MB PDF from Zenodo, which is consistent with a publication/document rather than a data table or raw measurement file. No tabular structure or figure-data organization is indicated from the file report.",
+      "reasoning": "This file is the paper itself (or a paper copy), not a dataset file. It does not present replot-ready tabular data or raw instrument output. Therefore it should be classified as documentation rather than Type 1 or Type 2.",
+      "ambiguity": "Low ambiguity: the file is clearly a PDF publication, not a data deposit.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper describes a new ESRF beamtime access mode for synchrotron X-ray powder diffraction studies of cultural heritage materials and reports initial applications to pigments, paintings, ceramics, and wood.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports synchrotron X-ray powder diffraction applications to cultural heritage materials, but no explicit dataset location or accessible data files were provided in the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files or dataset URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files or dataset URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "molecules-27-01997.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3894896,
+      "size_human": "3.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "molecules-27-01997.pdf"
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+Title: Flat <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mi mathvariant="normal">Γ</mml:mi></mml:math> Moiré Bands in Twisted Bilayer <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" display="inline"><mml:mrow><mml:msub><mml:mrow><mml:mi>WSe</mml:mi></mml:mrow><mml:mrow><mml:mn>2</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math>
+DOI: 10.1103/physrevlett.131.046401
+Journal: Physical Review Letters
+Year: 2023
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The archive contains multiple small, structured, figure-specific tabular files that are directly plottable and best interpreted as cleaned source data / replot-ready numerical outputs.
+- Type2 summary: No clear raw/unprocessed instrument-output file is present among the inspected files; the archive appears to contain processed tabular data plus scripts rather than raw detector files.
+
+Type1 files
+- Ddata.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/Ddata.dat
+  classified as: type1
+  reasoning: Despite the lack of headers, the file is compact, structured, and clearly figure-oriented. It matches cleaned source data used to generate a plot, not raw experimental output.
+  paper evidence: The paper contains processed/fit-based datasets and figure-source data for extracted moiré parameters and simulated spectral functions; this file is consistent with figure-source numerical data rather than raw detector output.
+  file evidence: Small tabular text file with 14 rows and numeric columns only, no headers, organized as a figure-specific dataset under a figure-named directory. It is directly plottable with minimal processing.
+  structure: 3 numeric columns; 14 rows; no header
+  ambiguity: Low ambiguity because the file is tabular and figure-organized, though the exact physical column labels are not explicit.
+- dos-0.2.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/dos-0.2.dat
+  classified as: type1
+  reasoning: The file looks like cleaned source data for a figure panel or parameter sweep. It is not instrument output and does not require substantial preprocessing.
+  paper evidence: The paper emphasizes processed/source data for figure generation and parameter extraction; this file is consistent with a computed or cleaned dataset used for plotting rather than raw measurements.
+  file evidence: Structured numeric table with 399 rows, small size, no header, and figure-specific naming. It is directly plottable as a curve or surface slice.
+  structure: 4 numeric columns; 399 rows; no header
+- dos-0.6.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/dos-0.6.dat
+  classified as: type1
+  reasoning: This is cleaned tabular source data rather than raw experimental output. The structure is consistent with replot-ready figure data.
+  paper evidence: The paper includes processed/derived datasets and figure-source data; this file fits that role as a numerical table for plotting or model evaluation.
+  file evidence: Structured numeric table with 399 rows, small size, no header, and figure-oriented naming. Directly usable for plotting.
+  structure: 4 numeric columns; 399 rows; no header
+- dos_1.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/dos_1.dat
+  classified as: type1
+  reasoning: This is figure-ready tabular data, not raw measurement output.
+  paper evidence: The paper reports processed/source data for figure construction and model fitting, which is consistent with this tabular dataset.
+  file evidence: Structured numeric table with 398 rows, no header, and figure-specific naming. It is directly plottable with minimal processing.
+  structure: 5 numeric columns; 398 rows; no header
+- dos_6.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/dos_6.dat
+  classified as: type1
+  reasoning: This is cleaned source data suitable for replotting, not raw instrument data.
+  paper evidence: The paper’s data availability and analysis indicate processed/source datasets are included for figure generation and parameter extraction.
+  file evidence: Structured numeric table with 400 rows, no header, and figure-oriented naming. It is directly plottable.
+  structure: 5 numeric columns; 400 rows; no header
+- dos_9.dat
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/dos_9.dat
+  classified as: type1
+  reasoning: This is replot-ready source data rather than raw measurement output.
+  paper evidence: The paper contains processed/fit-based and source-data-style numerical outputs for figures and model comparisons.
+  file evidence: Structured numeric table with 599 rows, no header, and figure-specific naming. Directly plottable as tabular data.
+  structure: 5 numeric columns; 599 rows; no header
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- gnuplot_comm_tab.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_2.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_2.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_3.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_3.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_4.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_4.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_5.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_5.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_6.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_6.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_7.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_7.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_8.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_8.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- gnuplot_comm_tab_9.gp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gnuplot_comm_tab.gp
+  classified as: script
+  reasoning: This is a plotting script, not data.
+  paper evidence: The paper does not discuss plotting scripts specifically.
+  file evidence: Gnuplot script file used to generate figures from tabular data.
+  structure: gnuplot commands
+- gp_figs_tab_9.sh
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/fig1_Phase_factor_as_a_function_of_D_and_Denisty_of_states_of_the_bare_bands/gp_figs_tab.sh
+  classified as: script
+  reasoning: This is a script, not a dataset.
+  paper evidence: The paper does not mention shell scripts.
+  file evidence: Shell script file, likely used to automate plotting or data processing.
+  structure: shell script
+- main.cpp
+  original path: zip_contents/2025_SC_tWSe2_tJUV_model_zenodo/prog/main.cpp
+  classified as: script
+  reasoning: This is code used to generate or analyze data, not a dataset file.
+  paper evidence: The paper does not identify source code as a data product.
+  file evidence: C++ source code file, likely for simulation or data generation.
+  structure: C++ source code

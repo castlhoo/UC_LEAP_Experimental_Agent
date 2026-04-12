@@ -1,0 +1,29 @@
+Title: Moire-Engineered Ferroelectric Transistors for Nearly Trap-free, Low-Power and Non-Volatile 2D Electronics
+DOI: N/A
+Journal: arXiv preprint
+Year: 2025
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No evidence of cleaned, figure-ready tabular data files was identified.
+- Type2 summary: The only file is a large PDF deposit with no reported tabular structure, so it is classified conservatively as Type 2.
+
+Type1 files
+- none
+
+Type2 files
+- S.Majumdar_-_Back-End_CMOS_Compatible_and_Flexible_Ferroelectric_Memories_for_Neuromorphic_Computing_and_Adaptive_Sensing.pdf
+  original path: S.Majumdar_-_Back-End_CMOS_Compatible_and_Flexible_Ferroelectric_Memories_for_Neuromorphic_Computing_and_Adaptive_Sensing.pdf
+  classified as: type2
+  reasoning: Given the absence of paper evidence for cleaned/source data and the lack of any file-level indication of tabular, figure-ready structure, the conservative classification is Type 2. The large PDF size further supports that it is not a small replot-ready dataset file.
+  paper evidence: The provided paper analysis states that no data availability statement, downloadable files, repositories, or URLs were identified, so there is no paper evidence that this PDF is cleaned figure/source data.
+  file evidence: The file is a large 12.6 MB PDF from Zenodo. No tabular structure, headers, or figure-specific data organization is provided in the inspection report. Large PDF deposits are more consistent with raw or supplementary document-style content than directly replot-ready datasets.
+  structure: Not available from inspection; PDF document with no reported tabular dataset structure.
+  ambiguity: Moderate ambiguity because the file content was not directly inspected; however, in the absence of evidence for figure-ready tables, a conservative Type 2 assignment is appropriate.
+
+Annotation files
+- none
+
+Script files
+- none

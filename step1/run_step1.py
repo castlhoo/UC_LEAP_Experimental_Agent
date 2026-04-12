@@ -50,9 +50,16 @@ def main():
     step1_dir = os.path.dirname(os.path.abspath(__file__))
     config_dir = os.path.join(step1_dir, "config")
     output_dir = os.path.join(step1_dir, "output")
+    config_name = os.environ.get("STEP1_CONFIG_FILE", "step1_config.yaml")
+
+    logger.info(f"Using config: {config_name}")
 
     try:
-        candidates = run_step1(config_dir=config_dir, output_dir=output_dir)
+        candidates = run_step1(
+            config_dir=config_dir,
+            output_dir=output_dir,
+            config_name=config_name,
+        )
         keep = sum(1 for c in candidates if c["screening_decision"] == "keep")
         maybe = sum(1 for c in candidates if c["screening_decision"] == "maybe")
         logger.info(f"Step 1 complete. {keep} keep + {maybe} maybe = {keep+maybe} candidates for Step 2.")

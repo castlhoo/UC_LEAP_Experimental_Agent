@@ -1,0 +1,132 @@
+Title: py4DSTEM: A Software Package for Four-Dimensional Scanning Transmission Electron Microscopy Data Analysis
+DOI: 10.1017/s1431927621000477
+Journal: Microscopy and Microanalysis
+Year: 2021
+Final label: Type2 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: No cleaned, figure-ready, or source-data tables were identified.
+- Type2 summary: The ZIP archive is a software repository/package artifact rather than figure-ready data; it is the only item that fits the broader non-Type-1 category, though it is not raw instrument output in the strict sense.
+
+Type1 files
+- none
+
+Type2 files
+- pyxem_pyxem-v0.10.0.zip
+  original path: pyxem_pyxem-v0.10.0.zip
+  classified as: type2
+  reasoning: The archive is not directly replot-ready data and does not resemble a cleaned source-data deposit. Given the paper context and the repository-like contents, it is best treated as non-Type-1. Among the allowed dataset categories, it is closest to Type 2 because it is a packaged software/archive artifact rather than figure-ready data.
+  paper evidence: The paper is a software/package description for py4DSTEM and does not provide a data availability statement or indicate figure/source data deposits. No evidence suggests this archive is cleaned, figure-ready data.
+  file evidence: This is a ZIP archive from Zenodo containing a software repository structure (LICENSE, CONTRIBUTING, CODE_OF_CONDUCT, shell script, Python package files). The contents are code/documentation rather than tabular figure data.
+  structure: Archive contents: CODE_OF_CONDUCT.md, CONTRIBUTING.rst, LICENSE, pepstorm.sh, pyxem/__init__.py
+  ambiguity: Moderate: this is not raw instrument output, but it is also not Type 1. It is a software archive, so classification as Type 2 is a conservative fit under the provided scheme.
+
+Annotation files
+- CODE_OF_CONDUCT.md
+  original path: zip_contents/pyxem-pyxem-fbd53ae/CODE_OF_CONDUCT.md
+  classified as: documentation
+  reasoning: This is repository documentation, not dataset content.
+  paper evidence: No paper evidence indicates this is data associated with a figure or raw measurement.
+  file evidence: Markdown documentation file from a software repository; contains community guidelines, not scientific data.
+  structure: Policy/document text
+- CONTRIBUTING.rst
+  original path: zip_contents/pyxem-pyxem-fbd53ae/CONTRIBUTING.rst
+  classified as: documentation
+  reasoning: This is project documentation, not data.
+  paper evidence: No paper evidence indicates this is data associated with a figure or raw measurement.
+  file evidence: ReStructuredText documentation for contributing to a software project.
+  structure: Contribution guidelines text
+- LICENSE
+  original path: zip_contents/pyxem-pyxem-fbd53ae/LICENSE
+  classified as: documentation
+  reasoning: This is legal/documentation material, not dataset content.
+  paper evidence: No paper evidence indicates this is data associated with a figure or raw measurement.
+  file evidence: License text file for the software repository.
+  structure: License text
+- PULL_REQUEST_TEMPLATE.md
+- README.rst
+
+Script files
+- pepstorm.sh
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pepstorm.sh
+  classified as: script
+  reasoning: This is executable workflow code, not data.
+  paper evidence: No paper evidence indicates this is a figure-data file; the paper is about software rather than a data deposit.
+  file evidence: Shell script file, likely used for setup, testing, or automation in the repository.
+  structure: Shell script
+- release_info.py
+- __init__.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code
+- diffraction_component.py
+- reduced_intensity_correction_component.py
+- scalable_reference_pattern.py
+- scattering_fit_component_lobato.py
+- scattering_fit_component_xtables.py
+- __init___2.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code
+- generic_flat_detector.py
+- medipix_256x256.py
+- medipix_515x515.py
+- __init___3.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code
+- calibration_generator.py
+- displacement_gradient_tensor_generator.py
+- indexation_generator.py
+- integration_generator.py
+- pdf_generator1d.py
+- red_intensity_generator1d.py
+- subpixelrefinement_generator.py
+- variance_generator.py
+- vdf_generator.py
+- __init___4.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code
+- calibration_library.py
+- __init___5.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code
+- crystallographic_map.py
+- diffraction1d.py
+- diffraction2d.py
+- diffraction_variance1d.py
+- diffraction_variance2d.py
+- diffraction_vectors.py
+- electron_diffraction1d.py
+- electron_diffraction2d.py
+- indexation_results.py
+- pair_distribution_function1d.py
+- reduced_intensity1d.py
+- segments.py
+- strain_map.py
+- tensor_field.py
+- __init___6.py
+  original path: zip_contents/pyxem-pyxem-fbd53ae/pyxem/__init__.py
+  classified as: script
+  reasoning: This is source code, not dataset content.
+  paper evidence: No paper evidence indicates this is figure/source data.
+  file evidence: Python package initialization script; part of software codebase.
+  structure: Python module initialization code

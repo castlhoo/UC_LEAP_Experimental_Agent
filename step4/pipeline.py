@@ -24,6 +24,90 @@ from utils import save_with_latest
 logger = logging.getLogger(__name__)
 
 
+def _partition_papers(all_papers: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
+    """Partition papers by paper-level dataset type."""
+    groups = {"both": [], "type1": [], "type2": [], "neither": []}
+    for paper in all_papers:
+        has_t1 = paper.get("has_type1", False)
+        has_t2 = paper.get("has_type2", False)
+        if has_t1 and has_t2:
+            groups["both"].append(paper)
+        elif has_t1:
+            groups["type1"].append(paper)
+        elif has_t2:
+            groups["type2"].append(paper)
+        else:
+            groups["neither"].append(paper)
+    return groups
+
+
+def _select_balanced_has_any(
+    all_papers: List[Dict[str, Any]],
+    max_papers: int,
+) -> List[Dict[str, Any]]:
+    """
+    Select papers with any dataset signal while balancing Both / Type1-only / Type2-only.
+
+    Selection preserves the incoming order within each group, which is already sorted by
+    Step 3 priority. Empty groups are ignored.
+    """
+    groups = _partition_papers(all_papers)
+    active_group_names = [name for name in ("both", "type1", "type2") if groups[name]]
+    if not active_group_names or max_papers <= 0:
+        return []
+
+    allocations = {name: 0 for name in active_group_names}
+    selected_by_group = {name: [] for name in active_group_names}
+
+    base_quota = max_papers // len(active_group_names)
+    remainder = max_papers % len(active_group_names)
+
+    # First pass: equal-size quota per available group.
+    for name in active_group_names:
+        take = min(base_quota, len(groups[name]))
+        selected_by_group[name].extend(groups[name][:take])
+        allocations[name] = take
+
+    # Second pass: distribute remaining slots round-robin, preferring Both then Type1 then Type2.
+    remaining = max_papers - sum(allocations.values())
+    while remaining > 0:
+        progressed = False
+        for name in active_group_names:
+            if allocations[name] < len(groups[name]):
+                selected_by_group[name].append(groups[name][allocations[name]])
+                allocations[name] += 1
+                remaining -= 1
+                progressed = True
+                if remaining == 0:
+                    break
+        if not progressed:
+            break
+
+    selected = []
+    for name in ("both", "type1", "type2"):
+        selected.extend(selected_by_group.get(name, []))
+    return selected[:max_papers]
+
+
+def _select_papers(
+    all_papers: List[Dict[str, Any]],
+    both_papers: List[Dict[str, Any]],
+    mode: str,
+    max_papers: int | None,
+) -> List[Dict[str, Any]]:
+    """Select papers for Step 4 organization according to mode."""
+    if max_papers in (None, 0):
+        max_papers = None
+
+    if mode == "both_types":
+        return both_papers if max_papers is None else both_papers[:max_papers]
+    if mode == "has_any":
+        if max_papers is None:
+            return [p for p in all_papers if p.get("has_type1") or p.get("has_type2")]
+        return _select_balanced_has_any(all_papers, max_papers)
+    return all_papers if max_papers is None else all_papers[:max_papers]
+
+
 def _load_config() -> Dict[str, Any]:
     """Load Step 4 configuration."""
     config_path = os.path.join(
@@ -58,14 +142,14 @@ def run_step4() -> Dict[str, Any]:
 
     sel_config = config.get("selection", {})
     mode = sel_config.get("mode", "both_types")
-    max_papers = sel_config.get("max_papers", 30)
+    max_papers = sel_config.get("max_papers")
 
-    if mode == "both_types":
-        selected = both_papers[:max_papers]
-    elif mode == "has_any":
-        selected = [p for p in all_papers if p.get("has_type1") or p.get("has_type2")][:max_papers]
-    else:
-        selected = all_papers[:max_papers]
+    selected = _select_papers(
+        all_papers=all_papers,
+        both_papers=both_papers,
+        mode=mode,
+        max_papers=max_papers,
+    )
 
     if not selected:
         logger.warning("No papers selected for organization!")
@@ -119,6 +203,7 @@ def run_step4() -> Dict[str, Any]:
         # Phase 4: Organize dataset files
         logger.info("  Organizing dataset files...")
         org_result = organize_paper_files(paper, paper_dir, config)
+        _write_reasoning_file(paper=paper, paper_dir=paper_dir, org_result=org_result)
 
         # Build manifest entry
         manifest = {
@@ -192,6 +277,83 @@ def run_step4() -> Dict[str, Any]:
         "output_path": latest_path,
         "papers_organized": len(manifests),
     }
+
+
+def _write_reasoning_file(
+    paper: Dict[str, Any],
+    paper_dir: str,
+    org_result: Dict[str, List[Dict[str, Any]]],
+):
+    """Write a human-readable reasoning summary into each organized paper folder."""
+    lines: List[str] = []
+
+    title = paper.get("title", "")
+    doi = paper.get("doi", "")
+    journal = paper.get("journal", "")
+    year = paper.get("year", "")
+    confidence = paper.get("classification_confidence", "")
+    has_t1 = paper.get("has_type1", False)
+    has_t2 = paper.get("has_type2", False)
+    has_both = paper.get("has_both_types", False)
+
+    if has_both:
+        label = "Both"
+    elif has_t1:
+        label = "Type1 only"
+    elif has_t2:
+        label = "Type2 only"
+    else:
+        label = "Neither"
+
+    lines.append(f"Title: {title}")
+    lines.append(f"DOI: {doi or 'N/A'}")
+    lines.append(f"Journal: {journal or 'N/A'}")
+    lines.append(f"Year: {year or 'N/A'}")
+    lines.append(f"Final label: {label}")
+    lines.append(f"Classification confidence: {confidence or 'unknown'}")
+    lines.append("")
+
+    lines.append("Paper-level reasoning")
+    lines.append(f"- Type1 summary: {paper.get('type1_summary', '') or 'none'}")
+    lines.append(f"- Type2 summary: {paper.get('type2_summary', '') or 'none'}")
+    lines.append("")
+
+    for section, entries in (
+        ("Type1 files", org_result.get("type1_data", [])),
+        ("Type2 files", org_result.get("type2_data", [])),
+        ("Annotation files", org_result.get("annotations", [])),
+        ("Script files", org_result.get("scripts", [])),
+    ):
+        lines.append(section)
+        if not entries:
+            lines.append("- none")
+            lines.append("")
+            continue
+
+        for entry in entries:
+            cls = entry.get("classification", {})
+            lines.append(f"- {entry.get('renamed', entry.get('original', 'unknown'))}")
+            rel_path = cls.get("relative_path", "")
+            if rel_path:
+                lines.append(f"  original path: {rel_path}")
+            if cls.get("type"):
+                lines.append(f"  classified as: {cls.get('type')}")
+            if cls.get("reasoning"):
+                lines.append(f"  reasoning: {cls.get('reasoning')}")
+            if cls.get("paper_evidence"):
+                lines.append(f"  paper evidence: {cls.get('paper_evidence')}")
+            if cls.get("file_evidence"):
+                lines.append(f"  file evidence: {cls.get('file_evidence')}")
+            if cls.get("key_columns_or_structure"):
+                lines.append(f"  structure: {cls.get('key_columns_or_structure')}")
+            ambiguity = cls.get("ambiguity", "")
+            if ambiguity and ambiguity != "none":
+                lines.append(f"  ambiguity: {ambiguity}")
+        lines.append("")
+
+    reasoning_path = os.path.join(paper_dir, "reasoning.txt")
+    with open(reasoning_path, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines).strip() + "\n")
 
 
 def _build_file_list(file_entries: List[Dict]) -> List[Dict]:

@@ -1,0 +1,1057 @@
+{
+  "paper_id": "step1_0232",
+  "title": "Tailoring Dirac fermions by in-situ tunable high-order moire pattern in graphene-monolayer xenon heterostructure",
+  "doi": "10.1103/PhysRevLett.129.176402",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2203.09705v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 28,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_PhysRevLett_129_176402",
+  "files_inspected": 29,
+  "file_types_found": [
+    "tabular_text",
+    "binary",
+    "archive",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "Most extracted TXT files are clean, figure-ready tabular datasets with headers and small row counts, directly suitable for plotting ARPES-derived curves or 2D maps.",
+  "type2_summary": "The top-level ZIP archive is a packaged container rather than a directly plottable dataset; the paper itself also supports the presence of raw experimental measurements, though no individual extracted file here is clearly raw instrument output.",
+  "type1_files": [
+    "zip_contents/fig1_data/moirePatternDensityCorrelation_rotated.txt",
+    "zip_contents/fig1_data/RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt",
+    "zip_contents/fig1_data/RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt",
+    "zip_contents/fig1_data/RotatedtriLatticeIntensity_100sampleVertical_normalized.txt",
+    "zip_contents/fig2_data/imbalanceTimeDecay04V.txt",
+    "zip_contents/fig2_data/imbalanceTimeDecay1V.txt",
+    "zip_contents/fig2_data/imbalanceTimeDecay22V.txt",
+    "zip_contents/fig2_data/imbalanceTimeDecay34V.txt"
+  ],
+  "type2_files": [
+    "data.zip"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The paper clearly contains raw ARPES/LEED/STM measurements, but the provided files are mostly clean tabular source-data tables. No individual extracted file shows instrument-native raw output. The archive itself is treated conservatively as Type 2 because it is a packaging container, not a directly plottable dataset.",
+  "file_classifications": [
+    {
+      "relative_path": "data.zip",
+      "filename": "data.zip",
+      "type": "type2",
+      "paper_evidence": "The paper reports raw experimental ARPES/LEED/STM measurements, but gives no explicit statement that this archive is cleaned figure data or a source-data deposit.",
+      "file_evidence": "8.3 MB ZIP archive from Zenodo containing multiple figure-named text files; archive packaging and mixed contents are consistent with a deposited raw/working dataset rather than a single replot-ready table.",
+      "reasoning": "Because the archive itself is the container for the extracted files and is not directly replot-ready, and because the paper does not explicitly identify it as cleaned source data, it is safest to treat the archive as raw/unprocessed packaging.",
+      "ambiguity": "Moderate: the archive contains several tabular files that are individually Type 1, but the archive as a whole is not a figure-ready dataset.",
+      "key_columns_or_structure": "ZIP archive containing fig1_data and fig2_data text tables"
+    },
+    {
+      "relative_path": "zip_contents/fig1_data/moirePatternDensityCorrelation_rotated.txt",
+      "filename": "moirePatternDensityCorrelation_rotated.txt",
+      "type": "type1",
+      "paper_evidence": "The paper discusses figure-based moiré geometry and derived quantities, but does not explicitly label this file; however, no evidence suggests it is raw instrument output.",
+      "file_evidence": "Structured tabular TXT with headers x, y, correlation; 441 rows; small size; directly plottable as a 2D correlation map.",
+      "reasoning": "This is clean, figure-ready tabular data with physical variables and no signs of instrument-specific raw output. It can be replotted directly with minimal processing.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "x, y, correlation"
+    },
+    {
+      "relative_path": "zip_contents/fig1_data/RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt",
+      "filename": "RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt",
+      "type": "type1",
+      "paper_evidence": "The paper includes derived moiré-pattern figures and theoretical/processed visualizations, consistent with figure-source tables rather than raw measurements.",
+      "file_evidence": "Tabular TXT with headers x, y, potential; 10,201 rows; normalized intensity/potential grid; directly plottable as a 2D map.",
+      "reasoning": "The file is a regular grid of numeric values suitable for direct plotting and appears to be a processed/normalized figure dataset, not raw instrument output.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "x, y, potential"
+    },
+    {
+      "relative_path": "zip_contents/fig1_data/RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt",
+      "filename": "RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt",
+      "type": "type1",
+      "paper_evidence": "No explicit paper statement ties this file to raw acquisition; the paper’s figure-based presentation is consistent with processed simulation/figure data.",
+      "file_evidence": "Tabular TXT with headers x, y, potential; 10,201 rows; normalized grid data directly suitable for plotting.",
+      "reasoning": "This is a clean, structured table that can be plotted directly and shows no raw-instrument characteristics.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "x, y, potential"
+    },
+    {
+      "relative_path": "zip_contents/fig1_data/RotatedtriLatticeIntensity_100sampleVertical_normalized.txt",
+      "filename": "RotatedtriLatticeIntensity_100sampleVertical_normalized.txt",
+      "type": "type1",
+      "paper_evidence": "The paper contains derived moiré/geometry figures; no evidence indicates this is raw measurement output.",
+      "file_evidence": "Tabular TXT with headers x, y, potential; 10,201 rows; normalized grid data, directly replot-ready.",
+      "reasoning": "The file is a clean numeric table with a regular grid and normalized values, matching Type 1 figure/source data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "x, y, potential"
+    },
+    {
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay04V.txt",
+      "filename": "imbalanceTimeDecay04V.txt",
+      "type": "type1",
+      "paper_evidence": "The paper discusses extracted ARPES-derived quantities and processed curves, but does not identify this file as raw instrument output.",
+      "file_evidence": "Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable decay curve with uncertainties.",
+      "reasoning": "This is a compact, figure-ready dataset for a curve plot and requires minimal processing.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "time, imbalance, error"
+    },
+    {
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay1V.txt",
+      "filename": "imbalanceTimeDecay1V.txt",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement applies; the paper’s processed figure style is consistent with extracted curve data.",
+      "file_evidence": "Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable.",
+      "reasoning": "The file is a clean source-data table for a decay plot, not an instrument dump.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "time, imbalance, error"
+    },
+    {
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay22V.txt",
+      "filename": "imbalanceTimeDecay22V.txt",
+      "type": "type1",
+      "paper_evidence": "The paper presents processed ARPES-derived curves and extracted quantities, consistent with this kind of table.",
+      "file_evidence": "Small tabular TXT with headers time, imbalance, error; 18 rows; directly replot-ready.",
+      "reasoning": "This is figure-source style data with clear axes and uncertainty column.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "time, imbalance, error"
+    },
+    {
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay34V.txt",
+      "filename": "imbalanceTimeDecay34V.txt",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data indication; the paper’s processed figure data are the closest match.",
+      "file_evidence": "Small tabular TXT with headers time, imbalance, error; 18 rows; directly plottable.",
+      "reasoning": "This is a clean, replot-ready table and fits Type 1.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "time, imbalance, error"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies graphene/monolayer xenon (G/mXe) heterostructures, where annealing and Xe pressure tune the Xe lattice constant and thereby continuously tune a high-order moiré period from nanometers to effectively infinity. Lab-based ARPES directly observes graphene Dirac-cone replicas moving in momentum space and, in the commensurate limit, a Kekulé-distortion gap at the Dirac point from intervalley coupling; a continuum moiré Hamiltonian is used to explain the spectra and predict narrow moiré bands.",
+    "measurement_types": [
+      "angle-resolved photoemission spectroscopy (ARPES)",
+      "low-energy electron diffraction (LEED)",
+      "scanning tunneling microscopy (STM)",
+      "sample annealing / temperature-dependent in-situ tuning",
+      "pressure-controlled Xe deposition"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of first-order moiré effect in twisted bilayer graphene, showing coupling between Dirac fermions from different layers in momentum space.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic of high-order moiré effect in graphene/monolayer Xe, showing intervalley coupling and the momentum-space replica geometry.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Large-scale real-space atomic arrangement illustrating the high-order moiré pattern in G/mXe.",
+        "data_type": "image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Zoomed atomic arrangement showing graphene and Xe primitive vectors and the geometric relation leading to the high-order moiré.",
+        "data_type": "image/schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Zoomed-in center-region stacking configuration of the moiré pattern.",
+        "data_type": "image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Zoomed-in neighboring-corner stacking configuration of the moiré pattern.",
+        "data_type": "image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "ARPES Fermi-surface map of G/mXe showing graphene Dirac cone and replica features near Γ and K points.",
+        "data_type": "spectral map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "ARPES intensity plot at high binding energy along Γ-K, with free-standing Xe band calculation overlaid and an EDC at Γ.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Zoomed ARPES Fermi-surface map near Γ showing six Dirac-cone replicas around the moiré Brillouin zone.",
+        "data_type": "spectral map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Constant-energy ARPES intensity map near Γ at EB = 1.6 eV showing replica geometry.",
+        "data_type": "spectral map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Band dispersion along cut 2 near Γ showing a pair of Dirac-cone replicas.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Constant-energy ARPES maps near K at several binding energies, showing replica evolution.",
+        "data_type": "spectral map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2i",
+        "description": "ARPES band dispersion along cut 3 near K showing replica bands.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2j",
+        "description": "ARPES band dispersion along cut 4 near K showing replica bands.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Temperature-dependent ARPES data along Γ-K at the Fermi level, showing replica separation changes with annealing temperature.",
+        "data_type": "spectral map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Temperature-dependent ARPES band structures with MDCs at EF, tracking the α1 and α4 replica momenta and their merging near the commensurate limit.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Fermi-surface map near Γ at T = 51.5 K showing the merged replica feature.",
+        "data_type": "spectral map",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Extracted temperature dependence of replica momentum κ.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Extracted temperature dependence of the moiré period a'm.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Extracted temperature dependence of the Xe lattice constant aXe, compared with √3 aGra.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "ARPES band-structure evolution near K for different moiré periods, with theoretical simulations appended for comparison.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "EDCs at the K point for different moiré periods, including pristine graphene for comparison.",
+        "data_type": "spectrum",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Calculated EDCs at the K point from the continuum moiré Hamiltonian for finite moiré periods.",
+        "data_type": "spectrum",
+        "likely_source": "derived"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include lab-based ARPES spectra/maps collected at hν = 21.2 eV with ~0.5 mm spot size, temperature-dependent ARPES during annealing, and LEED used to characterize Xe monolayer structure. The paper also states monolayer graphene was characterized by STM, but no STM dataset is shown in the main figures.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots processed ARPES intensity maps, band dispersions along selected cuts, constant-energy maps, EDCs, MDCs, and extracted quantities such as replica momentum κ, moiré period a'm, and Xe lattice constant aXe. Theoretical band structures and calculated EDCs from a continuum moiré Hamiltonian are also overlaid or shown for comparison.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, or file-format description is given in the provided text. The paper only describes measurements, figures, and supplementary figures (S1-S6) in narrative form.",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the instrument level: ARPES collected on a home-designed facility with He-lamp photon energy 21.2 eV and ~0.5 mm spot size; LEED used for structural confirmation; STM used to characterize graphene. No file names, formats, or archive locations are mentioned.",
+      "processed_data_description": "Processed data include ARPES intensity plots, Fermi-surface maps, constant-energy maps, EDCs, MDCs, extracted replica momenta κ, inferred moiré periods a'm, inferred Xe lattice constants aXe, and theoretical spectra from a continuum Hamiltonian. These are presented as figure panels rather than as tabulated datasets.",
+      "figure_data_description": "Figure-specific source data are not explicitly mentioned. The paper refers to main figures and supplementary figures S1-S6, but does not state that source data files are provided.",
+      "scripts_description": "No scripts, notebooks, or analysis code are mentioned.",
+      "data_organization": "figure-based in the manuscript; supplementary figures referenced, but no explicit dataset folder structure is specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The paper does not provide explicit source-data files, numerical tables, or scripts. Replotting would require digitizing figures or access to the underlying ARPES datasets, which are not described as shared.",
+      "notes": "The main distinction is between raw ARPES/LEED/STM measurements and derived quantities extracted from ARPES (κ, a'm, aXe). Theoretical curves and simulated spectra are model outputs, not experimental raw data. Supplementary figures are referenced as containing additional LEED, pressure dependence, and low-temperature tuning results, but their underlying data-sharing status is unknown."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The Methods section explicitly states that ARPES measurements were performed and that LEED and STM were used for characterization, indicating acquisition of raw experimental data.",
+      "source_data_evidence": "No explicit mention of source-data files, deposited datasets, or figure-level data tables is present in the provided text.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": [
+        "Methods: \"ARPES measurements were performed at the home-designed facility with photon energy hν = 21.2 eV and photon spot size about 0.5 mm.\"",
+        "Methods: \"Xe monolayers were formed ... and then annealing at a temperature above the second-layer desorption temperature.\"",
+        "Figure captions reference main figures and supplementary figures S1-S6, but no source-data statement is included."
+      ],
+      "priority_modalities": [
+        "ARPES spectra",
+        "ARPES Fermi-surface maps",
+        "ARPES constant-energy maps",
+        "EDCs",
+        "MDCs",
+        "LEED patterns",
+        "STM images",
+        "theoretical band-structure simulations"
+      ],
+      "review_notes": "Be careful not to classify the theoretical continuum-Hamiltonian spectra as raw data. The paper clearly contains experimental raw measurements and many processed/derived ARPES plots, but no explicit evidence of shared source data or scripts."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "data.zip",
+      "extension": ".zip",
+      "size_bytes": 8748557,
+      "size_human": "8.3 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "data.zip"
+    },
+    {
+      "filename": "moirePatternDensityCorrelation_rotated.txt",
+      "extension": ".txt",
+      "size_bytes": 11254,
+      "size_human": "11.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "x",
+        "y",
+        "correlation"
+      ],
+      "column_count": 3,
+      "row_count": 441,
+      "dtypes": {
+        "x": "int64",
+        "y": "int64",
+        "correlation": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig1_data/moirePatternDensityCorrelation_rotated.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig1_data/moirePatternDensityCorrelation_rotated.txt"
+    },
+    {
+      "filename": "RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt",
+      "extension": ".txt",
+      "size_bytes": 153976,
+      "size_human": "150.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "x",
+        "y",
+        "potential"
+      ],
+      "column_count": 3,
+      "row_count": 10201,
+      "dtypes": {
+        "x": "float64",
+        "y": "int64",
+        "potential": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig1_data/RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig1_data/RotatedmoireLatticeIntensity_100sampleVertical_normalized.txt"
+    },
+    {
+      "filename": "RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt",
+      "extension": ".txt",
+      "size_bytes": 152844,
+      "size_human": "149.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "x",
+        "y",
+        "potential"
+      ],
+      "column_count": 3,
+      "row_count": 10201,
+      "dtypes": {
+        "x": "float64",
+        "y": "int64",
+        "potential": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig1_data/RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig1_data/RotatedsqrLatticeIntensity_100sampleVertical_normalized.txt"
+    },
+    {
+      "filename": "RotatedtriLatticeIntensity_100sampleVertical_normalized.txt",
+      "extension": ".txt",
+      "size_bytes": 154256,
+      "size_human": "150.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "x",
+        "y",
+        "potential"
+      ],
+      "column_count": 3,
+      "row_count": 10201,
+      "dtypes": {
+        "x": "float64",
+        "y": "int64",
+        "potential": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig1_data/RotatedtriLatticeIntensity_100sampleVertical_normalized.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig1_data/RotatedtriLatticeIntensity_100sampleVertical_normalized.txt"
+    },
+    {
+      "filename": "imbalanceTimeDecay04V.txt",
+      "extension": ".txt",
+      "size_bytes": 821,
+      "size_human": "821.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "time",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 18,
+      "dtypes": {
+        "time": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig2_data/imbalanceTimeDecay04V.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay04V.txt"
+    },
+    {
+      "filename": "imbalanceTimeDecay1V.txt",
+      "extension": ".txt",
+      "size_bytes": 805,
+      "size_human": "805.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "time",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 18,
+      "dtypes": {
+        "time": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig2_data/imbalanceTimeDecay1V.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay1V.txt"
+    },
+    {
+      "filename": "imbalanceTimeDecay22V.txt",
+      "extension": ".txt",
+      "size_bytes": 796,
+      "size_human": "796.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "time",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 18,
+      "dtypes": {
+        "time": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig2_data/imbalanceTimeDecay22V.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay22V.txt"
+    },
+    {
+      "filename": "imbalanceTimeDecay34V.txt",
+      "extension": ".txt",
+      "size_bytes": 799,
+      "size_human": "799.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "time",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 18,
+      "dtypes": {
+        "time": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig2_data/imbalanceTimeDecay34V.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig2_data/imbalanceTimeDecay34V.txt"
+    },
+    {
+      "filename": "panel_a_CutPerpendicularTransition_blue_data.txt",
+      "extension": ".txt",
+      "size_bytes": 232,
+      "size_human": "232.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 11,
+      "dtypes": {
+        "Disorder": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_a_CutPerpendicularTransition_blue_data.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_a_CutPerpendicularTransition_blue_data.txt"
+    },
+    {
+      "filename": "panel_a_TransitionDisorder6p84_red_data.txt",
+      "extension": ".txt",
+      "size_bytes": 508,
+      "size_human": "508.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "imbalance",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 12,
+      "dtypes": {
+        "Disorder": "float64",
+        "imbalance": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_a_TransitionDisorder6p84_red_data.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_a_TransitionDisorder6p84_red_data.txt"
+    },
+    {
+      "filename": "panel_b_cutalong.txt",
+      "extension": ".txt",
+      "size_bytes": 129,
+      "size_human": "129.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 8,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_b_cutalong.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_b_cutalong.txt"
+    },
+    {
+      "filename": "panel_b_cutalongFillarea.txt",
+      "extension": ".txt",
+      "size_bytes": 150,
+      "size_human": "150.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 10,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_b_cutalongFillarea.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_b_cutalongFillarea.txt"
+    },
+    {
+      "filename": "panel_b_cutAlongFillAreaupperBound.txt",
+      "extension": ".txt",
+      "size_bytes": 144,
+      "size_human": "144.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 10,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "int64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_b_cutAlongFillAreaupperBound.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_b_cutAlongFillAreaupperBound.txt"
+    },
+    {
+      "filename": "panel_b_cutperpen.txt",
+      "extension": ".txt",
+      "size_bytes": 104,
+      "size_human": "104.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 6,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_b_cutperpen.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_b_cutperpen.txt"
+    },
+    {
+      "filename": "panel_b_cutperpenFillarea.txt",
+      "extension": ".txt",
+      "size_bytes": 126,
+      "size_human": "126.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 8,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig3_data/panel_b_cutperpenFillarea.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig3_data/panel_b_cutperpenFillarea.txt"
+    },
+    {
+      "filename": "inset_of_panel_a_TransitionDisorder6p84_localizationLengthLogplot_retrievedYvalue_normalized.txt",
+      "extension": ".txt",
+      "size_bytes": 4432,
+      "size_human": "4.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "x_position",
+        "Disorder_1",
+        "Disorder_1_error",
+        "Disorder_2",
+        "Disorder_2_error",
+        "Disorder_3",
+        "Disorder_3_error",
+        "Disorder_4",
+        "Disorder_4_error",
+        "Disorder_5",
+        "Disorder_5_error",
+        "Disorder_6",
+        "Disorder_6_error",
+        "Disorder_7",
+        "Disorder_7_error",
+        "Disorder_8",
+        "Disorder_8_error",
+        "Disorder_9",
+        "Disorder_9_error",
+        "Disorder_10",
+        "Disorder_10_error",
+        "Disorder_11",
+        "Disorder_11_error",
+        "Disorder_12",
+        "Disorder_12_error"
+      ],
+      "column_count": 25,
+      "row_count": 10,
+      "dtypes": {
+        "x_position": "int64",
+        "Disorder_1": "int64",
+        "Disorder_1_error": "int64",
+        "Disorder_2": "float64",
+        "Disorder_2_error": "float64",
+        "Disorder_3": "float64",
+        "Disorder_3_error": "float64",
+        "Disorder_4": "float64",
+        "Disorder_4_error": "float64",
+        "Disorder_5": "float64",
+        "Disorder_5_error": "float64",
+        "Disorder_6": "float64",
+        "Disorder_6_error": "float64",
+        "Disorder_7": "float64",
+        "Disorder_7_error": "float64",
+        "Disorder_8": "float64",
+        "Disorder_8_error": "float64",
+        "Disorder_9": "float64",
+        "Disorder_9_error": "float64",
+        "Disorder_10": "float64",
+        "Disorder_10_error": "float64",
+        "Disorder_11": "float64",
+        "Disorder_11_error": "float64",
+        "Disorder_12": "float64",
+        "Disorder_12_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/inset_of_panel_a_TransitionDisorder6p84_localizationLengthLogplot_retrievedYvalue_normalized.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/inset_of_panel_a_TransitionDisorder6p84_localizationLengthLogplot_retrievedYvalue_normalized.txt"
+    },
+    {
+      "filename": "panel_a_TransitionDisorder6p84_localizationLength_linearVersion.txt",
+      "extension": ".txt",
+      "size_bytes": 473,
+      "size_human": "473.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "single_decay",
+        "single_error"
+      ],
+      "column_count": 3,
+      "row_count": 11,
+      "dtypes": {
+        "Disorder": "float64",
+        "single_decay": "float64",
+        "single_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_a_TransitionDisorder6p84_localizationLength_linearVersion.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_a_TransitionDisorder6p84_localizationLength_linearVersion.txt"
+    },
+    {
+      "filename": "panel_a_transition_p1.txt",
+      "extension": ".txt",
+      "size_bytes": 77,
+      "size_human": "77.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "single_decay",
+        "single_error"
+      ],
+      "column_count": 3,
+      "row_count": 1,
+      "dtypes": {
+        "Disorder": "int64",
+        "single_decay": "float64",
+        "single_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_a_transition_p1.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_a_transition_p1.txt"
+    },
+    {
+      "filename": "panel_a_transition_p2.txt",
+      "extension": ".txt",
+      "size_bytes": 78,
+      "size_human": "78.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "single_decay",
+        "single_error"
+      ],
+      "column_count": 3,
+      "row_count": 1,
+      "dtypes": {
+        "Disorder": "float64",
+        "single_decay": "float64",
+        "single_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_a_transition_p2.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_a_transition_p2.txt"
+    },
+    {
+      "filename": "panel_a_transition_p3.txt",
+      "extension": ".txt",
+      "size_bytes": 76,
+      "size_human": "76.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "single_decay",
+        "single_error"
+      ],
+      "column_count": 3,
+      "row_count": 1,
+      "dtypes": {
+        "Disorder": "int64",
+        "single_decay": "float64",
+        "single_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_a_transition_p3.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_a_transition_p3.txt"
+    },
+    {
+      "filename": "panel_a_transition_p4.txt",
+      "extension": ".txt",
+      "size_bytes": 76,
+      "size_human": "76.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Disorder",
+        "single_decay",
+        "single_error"
+      ],
+      "column_count": 3,
+      "row_count": 1,
+      "dtypes": {
+        "Disorder": "int64",
+        "single_decay": "float64",
+        "single_error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_a_transition_p4.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_a_transition_p4.txt"
+    },
+    {
+      "filename": "panel_b_cutAlong_imbalance.txt",
+      "extension": ".txt",
+      "size_bytes": 129,
+      "size_human": "129.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 8,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_b_cutAlong_imbalance.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_b_cutAlong_imbalance.txt"
+    },
+    {
+      "filename": "panel_b_cutPerpendicular_imbalance.txt",
+      "extension": ".txt",
+      "size_bytes": 104,
+      "size_human": "104.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "interaction",
+        "disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 6,
+      "dtypes": {
+        "interaction": "int64",
+        "disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_b_cutPerpendicular_imbalance.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_b_cutPerpendicular_imbalance.txt"
+    },
+    {
+      "filename": "panel_b_Phasemap_cutAlong_localizationLength.txt",
+      "extension": ".txt",
+      "size_bytes": 353,
+      "size_human": "353.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "scattering_length",
+        "transition_disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 8,
+      "dtypes": {
+        "scattering_length": "int64",
+        "transition_disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_b_Phasemap_cutAlong_localizationLength.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_b_Phasemap_cutAlong_localizationLength.txt"
+    },
+    {
+      "filename": "panel_b_Phasemap_cutPerpendicular_localizationLength.txt",
+      "extension": ".txt",
+      "size_bytes": 276,
+      "size_human": "276.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "scattering_length",
+        "transition_disorder",
+        "error"
+      ],
+      "column_count": 3,
+      "row_count": 6,
+      "dtypes": {
+        "scattering_length": "int64",
+        "transition_disorder": "float64",
+        "error": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig4_data/panel_b_Phasemap_cutPerpendicular_localizationLength.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig4_data/panel_b_Phasemap_cutPerpendicular_localizationLength.txt"
+    },
+    {
+      "filename": "histogram.txt",
+      "extension": ".txt",
+      "size_bytes": 4469,
+      "size_human": "4.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "HistogramX",
+        "HistogramY",
+        "FittedX",
+        "FittedY"
+      ],
+      "column_count": 4,
+      "row_count": 100,
+      "dtypes": {
+        "HistogramX": "float64",
+        "HistogramY": "int64",
+        "FittedX": "float64",
+        "FittedY": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "fig5_data/histogram.txt",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig5_data/histogram.txt"
+    },
+    {
+      "filename": "154_9335_raw.fits",
+      "extension": ".fits",
+      "size_bytes": 16787520,
+      "size_human": "16.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .fits",
+      "download_source": "zip_extracted",
+      "archive_path": "fig6_data/154_9335_raw.fits",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig6_data/154_9335_raw.fits"
+    },
+    {
+      "filename": "2023_11_16_154_singleLineDMD_nogrid.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1041691,
+      "size_human": "1017.3 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zip_extracted",
+      "archive_path": "fig6_data/2023_11_16_154_singleLineDMD_nogrid.pdf",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/fig6_data/2023_11_16_154_singleLineDMD_nogrid.pdf"
+    }
+  ]
+}

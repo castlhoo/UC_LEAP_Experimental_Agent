@@ -1,0 +1,93 @@
+Title: Anomalous excitonic phase diagram in band-gap-tuned Ta2Ni(Se,S)5
+DOI: 10.1038/s41467-023-43365-1
+Journal: Nature Communications
+Year: 2023
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No clearly replot-ready cleaned/source-data tables were present among the inspected files. The archive appears to contain mostly raw measurement outputs and documentation.
+- Type2 summary: The inspected dataset includes raw ARPES MATLAB data, raw XRD instrument files, and large EDX map CSVs that behave like image-like measurement grids rather than cleaned x-y tables.
+
+Type1 files
+- none
+
+Type2 files
+- TNSeS_Sdoping_low temperature_LHLV.mat
+  original path: zip_contents/NatCommun_TNSS_2023/ARPES_data/TNSeS_Sdoping_low temperature_LHLV.mat
+  classified as: type2
+  reasoning: This is consistent with raw ARPES measurement output requiring processing before plotting. The binary .mat format and experiment-like naming support Type 2.
+  paper evidence: ARPES spectra are explicitly described in the paper as raw measurements collected at beamlines, and the data availability statement says all generated data were deposited.
+  file evidence: MATLAB binary file, 5.3 MB, located in ARPES_data and named like an experiment/run file rather than a figure table.
+  structure: MATLAB binary; structure not directly exposed
+  ambiguity: Low: despite being in a data folder, the format and context strongly indicate raw/unprocessed data.
+- TNSS_60A_map_S.csv
+  original path: zip_contents/NatCommun_TNSS_2023/Other characterizations/EDX maps/TNSS_60A_map_S.csv
+  classified as: type2
+  reasoning: The file is effectively image-like measurement data stored in tabular form and is not directly replot-ready as a standard x-y dataset.
+  paper evidence: EDX maps are auxiliary characterization measurements, not processed summary curves in the paper.
+  file evidence: Large CSV (5.7 MB, 1502 rows, 2000 columns) with first cell 'Map of intensity of S K-alpha peak', consistent with a raw intensity map.
+  structure: 2D intensity grid for S K-alpha map
+  ambiguity: Low to moderate
+- TNSS_60A_map_Se.csv
+  original path: zip_contents/NatCommun_TNSS_2023/Other characterizations/EDX maps/TNSS_60A_map_Se.csv
+  classified as: type2
+  reasoning: This is raw map data rather than a cleaned plot table, so it falls under Type 2.
+  paper evidence: Same EDX-map context as other characterization data; not described as figure-ready summary data in the paper.
+  file evidence: Large CSV (5.7 MB, 1502 rows, 2000 columns) with first cell 'Map of intensity of Se L peak', indicating a dense spatial map.
+  structure: 2D intensity grid for Se L map
+  ambiguity: Low to moderate
+- TNSS_70A_map_S.csv
+  original path: zip_contents/NatCommun_TNSS_2023/Other characterizations/EDX maps/TNSS_70A_map_S.csv
+  classified as: type2
+  reasoning: Although CSV is tabular, the structure is a rasterized map/intensity grid, not a cleaned variable-vs-variable dataset. It would require reshaping/interpretation before direct plotting, so Type 2 is more appropriate.
+  paper evidence: The paper mentions other characterizations and the archive contains EDX maps, which are raw spatial measurement outputs rather than figure-ready summary tables.
+  file evidence: Large CSV (5.7 MB, 1502 rows, 2000 columns) with a first cell reading 'Map of intensity of S K-alpha peak', indicating a 2D map stored as a dense grid.
+  structure: 2D intensity grid for S K-alpha map
+  ambiguity: Low to moderate: CSV format can be Type 1 in some cases, but the map-like grid and size argue for raw image-like data.
+- TNSS_70A_map_Se.csv
+  original path: zip_contents/NatCommun_TNSS_2023/Other characterizations/EDX maps/TNSS_70A_map_Se.csv
+  classified as: type2
+  reasoning: The file structure indicates raw map data rather than a directly plottable summary dataset.
+  paper evidence: EDX mapping is a raw characterization modality, not a cleaned figure table in the paper.
+  file evidence: Large CSV (5.7 MB, 1502 rows, 2000 columns) with first cell 'Map of intensity of S L peak' despite the filename suggesting Se; the structure is still a dense map grid.
+  structure: 2D intensity grid for elemental map
+  ambiguity: Low to moderate: filename/content mismatch suggests metadata quirks, but the map-grid structure is decisive.
+- T25.ibw
+  original path: zip_contents/NatCommun_TNSS_2023/XRD_data/TNSS100/T25.ibw
+  classified as: type2
+  reasoning: This is clearly raw diffraction/instrument output requiring processing to obtain the plotted order parameter and transition temperature.
+  paper evidence: The paper explicitly states that synchrotron XRD raw intensity data were collected and deposited; XRD-derived order parameters are processed from such raw scans.
+  file evidence: Igor binary .ibw file, raw instrument format, in XRD_data/TNSS100 with experiment-like naming (T25).
+  structure: Raw XRD scan data; structure not directly exposed
+  ambiguity: Low
+
+Annotation files
+- 41467_2023_43365_MOESM1_ESM.pdf
+  original path: 41467_2023_43365_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This is most likely a supplementary document or data appendix rather than a directly replot-ready dataset. Without evidence of embedded tables or structured data, it should not be classified as Type 1 or Type 2.
+  paper evidence: The paper states that all data generated in the study were deposited in Figshare and that the study includes both raw measurements and processed/source data, but this PDF itself is not identified as a data table or figure dataset.
+  file evidence: PDF supplementary file, 2.8 MB, from Nature source data. No tabular structure or machine-readable columns are indicated in the inspection report.
+  structure: Not indicated
+  ambiguity: Moderate: could contain supplementary figures or tables, but no file-structure evidence supports direct classification as data.
+- 41467_2023_43365_MOESM2_ESM.pdf
+  original path: 41467_2023_43365_MOESM2_ESM.pdf
+  classified as: documentation
+  reasoning: As a PDF supplementary file, it is best treated as documentation unless explicit structured data evidence is available.
+  paper evidence: The publication indicates supplementary deposited data exist, but this file is not specifically identified as raw measurement data or figure-ready source data.
+  file evidence: PDF supplementary file, 4.4 MB, from Nature source data. No machine-readable tabular structure is reported.
+  structure: Not indicated
+  ambiguity: Moderate: could contain supplementary explanatory material or figures, but not enough evidence for Type 1/2.
+- readme.docx
+  original path: zip_contents/NatCommun_TNSS_2023/readme.docx
+  classified as: documentation
+  reasoning: This is documentation describing the dataset contents rather than data itself.
+  paper evidence: The paper does not identify the readme as data; it is ancillary to the deposited dataset.
+  file evidence: DOCX readme file, small size, likely descriptive metadata for the archive.
+  structure: Not applicable
+  ambiguity: None
+- README.txt
+
+Script files
+- none

@@ -1,0 +1,1522 @@
+{
+  "paper_id": "step1_0239",
+  "title": "Realization of one-dimensional electronic flat bands in an untwisted moire superlattice",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2206.09354v1",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 48,
+  "download_errors": [
+    "Data_HgTe_superlattice.zip: Too large: 544.3MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0239",
+  "files_inspected": 50,
+  "file_types_found": [
+    "excel",
+    "script",
+    "binary",
+    "tabular_text",
+    "archive"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The figure-specific Excel files in Raw_Data.zip are structured, small-to-moderate tabular datasets with headers or regular numeric columns, consistent with cleaned source data prepared for plotting.",
+  "type2_summary": "The archive-level files and large binary .p files are not directly replot-ready and require code or unpacking; they are best treated as raw/unprocessed or intermediate data containers.",
+  "type1_files": [
+    "zip_contents/fig2b/Lieb.xls",
+    "zip_contents/fig4e/fig4e.xlsx",
+    "zip_contents/fig5b/ekdata.xls",
+    "zip_contents/fig5c/data.xls",
+    "zip_contents/fig5d/data2.xls",
+    "zip_contents/fig7b/3DEk.xls"
+  ],
+  "type2_files": [
+    "Raw_Data.zip",
+    "NLSM_flat_band_files.zip",
+    "zip_contents/data/effective_hamiltonian.p",
+    "zip_contents/data/graphite_LL_spectrum.p"
+  ],
+  "classification_confidence": "high",
+  "classification_notes": "The paper-level evidence is weak for explicit raw/source labeling, so classification relies heavily on file structure. The extracted Excel files are clearly figure-oriented and plot-ready, while the zip archives and binary .p files are not directly usable without processing. The presence of both figure data and code/data artifacts means the overall deposit contains both Type 1 and Type 2 materials.",
+  "file_classifications": [
+    {
+      "relative_path": "Raw_Data.zip",
+      "filename": "Raw_Data.zip",
+      "type": "type2",
+      "paper_evidence": "The paper analysis reports no explicit data availability statement and no clear indication that only cleaned figure data were deposited; the archive name suggests raw data.",
+      "file_evidence": "Archive from Zenodo, 320 KB, containing multiple figure-linked files. The name 'Raw_Data.zip' strongly indicates raw or source-level deposited data rather than a single cleaned table.",
+      "reasoning": "Although the archive itself is not directly inspectable as a single plot-ready table, its naming and the presence of multiple extracted figure files indicate it is a container for underlying data. Conservatively classify the archive as Type 2 because it is an archive of data and not directly replot-ready.",
+      "ambiguity": "Moderate: the archive contains figure-specific spreadsheets, but the archive-level file is still a container and not directly plot-ready.",
+      "key_columns_or_structure": "Archive container"
+    },
+    {
+      "relative_path": "NLSM_flat_band_files.zip",
+      "filename": "NLSM_flat_band_files.zip",
+      "type": "type2",
+      "paper_evidence": "No explicit paper statement identifies this archive as cleaned source data; the paper analysis notes no data availability statement and no repository details in the publication text provided.",
+      "file_evidence": "Large archive (37.8 MB) from Zenodo containing notebooks, binary data files, and requirements.txt. The contents include processing notebooks and large binary datasets, which are not directly replot-ready.",
+      "reasoning": "This is a mixed research archive with code and large binary data, indicating a workflow/data package rather than a simple cleaned figure-data deposit. Conservatively classify the archive as Type 2.",
+      "ambiguity": "Moderate: the archive may include both processed and intermediate data, but the presence of large binary files and notebooks makes it nontrivial and not directly plot-ready.",
+      "key_columns_or_structure": "Archive container"
+    },
+    {
+      "relative_path": "zip_contents/fig2b/Lieb.xls",
+      "filename": "Lieb.xls",
+      "type": "type1",
+      "paper_evidence": "The file is organized by figure location ('fig2b'), which is consistent with figure/source data deposits rather than raw instrument output.",
+      "file_evidence": "Excel spreadsheet with 3 sheets, each 2 columns by 1071 rows, one sheet with headers. Small-to-moderate size and structured numeric tabular data suitable for direct plotting.",
+      "reasoning": "This is figure-specific tabular data with a clear structure and no signs of raw instrument output. It can likely be plotted with minimal processing, so it fits Type 1.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Two-column numeric tables; one sheet has headers, likely x-y data"
+    },
+    {
+      "relative_path": "zip_contents/fig4e/fig4e.xlsx",
+      "filename": "fig4e.xlsx",
+      "type": "type1",
+      "paper_evidence": "The file is figure-specific ('fig4e'), matching the pattern of cleaned source data organized for a particular panel.",
+      "file_evidence": "Excel workbook with 4 sheets. One sheet has headers ('N_h', 'blue', 'red') and 3 columns x 10 rows; another sheet is a 10-value row. Small, structured, and directly replot-ready.",
+      "reasoning": "The workbook is clearly curated for a figure panel and contains compact tabular data with labeled variables. This is characteristic of Type 1.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "N_h, blue, red"
+    },
+    {
+      "relative_path": "zip_contents/fig5b/ekdata.xls",
+      "filename": "ekdata.xls",
+      "type": "type1",
+      "paper_evidence": "The file is placed under a figure-specific directory ('fig5b'), suggesting source/cleaned data for a panel rather than raw acquisition output.",
+      "file_evidence": "Excel workbook with multiple sheets, each 2 columns x 50 rows, numeric tables without headers. Small size and regular structure indicate plot-ready data.",
+      "reasoning": "Despite lacking headers, the data are compact, organized, and figure-associated. The structure is consistent with cleaned dispersion data prepared for plotting, so Type 1 is the best fit.",
+      "ambiguity": "Low to moderate: no headers, but the figure-specific organization and regular numeric layout support cleaned data.",
+      "key_columns_or_structure": "Two-column numeric tables; likely energy vs momentum"
+    },
+    {
+      "relative_path": "zip_contents/fig5c/data.xls",
+      "filename": "data.xls",
+      "type": "type1",
+      "paper_evidence": "Located in a figure-specific folder ('fig5c'), consistent with source data for a figure panel.",
+      "file_evidence": "Single-sheet Excel file with 2 columns x 55 rows, numeric data only, small size, directly plottable with minimal processing.",
+      "reasoning": "This is a compact tabular dataset organized for a specific figure and appears ready for plotting. Type 1.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Two-column numeric table"
+    },
+    {
+      "relative_path": "zip_contents/fig5d/data2.xls",
+      "filename": "data2.xls",
+      "type": "type1",
+      "paper_evidence": "The file is figure-specific ('fig5d'), consistent with cleaned source data for a panel.",
+      "file_evidence": "Excel workbook with a headered sheet containing 5 columns x 10 rows and columns labeled 'blue' and 'red'. Small, structured, and plot-ready.",
+      "reasoning": "The presence of labeled columns and compact tabular data indicates a cleaned dataset prepared for figure reproduction. Type 1.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "blue, red; 5-column table"
+    },
+    {
+      "relative_path": "zip_contents/fig7b/3DEk.xls",
+      "filename": "3DEk.xls",
+      "type": "type1",
+      "paper_evidence": "The file is figure-specific ('fig7b'), indicating curated data for a particular panel.",
+      "file_evidence": "Excel workbook with 5 sheets, each 3 columns x 2600 rows, headers present. Large but still structured tabular data, likely a dense dispersion dataset.",
+      "reasoning": "Although relatively large for a spreadsheet, the data are still organized as labeled numeric tables and appear directly usable for plotting or analysis. This is more consistent with cleaned source data than raw instrument output, so Type 1.",
+      "ambiguity": "Moderate: size is larger than typical figure tables, but the tabular structure and headers support Type 1.",
+      "key_columns_or_structure": "Three-column tables with repeated header names; 2600 rows per sheet"
+    },
+    {
+      "relative_path": "zip_contents/requirements.txt",
+      "filename": "requirements.txt",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence needed; this is a dependency list accompanying the code archive.",
+      "file_evidence": "Plain text listing Python package requirements and versions.",
+      "reasoning": "This is documentation/supporting metadata for reproducibility, not data.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Package names and versions"
+    },
+    {
+      "relative_path": "zip_contents/code/parameter_fitting.ipynb",
+      "filename": "parameter_fitting.ipynb",
+      "type": "script",
+      "paper_evidence": "The paper analysis indicates the archive contains code notebooks, consistent with analysis/reproduction scripts rather than data.",
+      "file_evidence": "Jupyter notebook binary file used for parameter fitting.",
+      "reasoning": "This is executable analysis code, not a dataset file.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Notebook code"
+    },
+    {
+      "relative_path": "zip_contents/code/minimal_model.ipynb",
+      "filename": "minimal_model.ipynb",
+      "type": "script",
+      "paper_evidence": "The archive includes notebooks for modeling, indicating code rather than data.",
+      "file_evidence": "Jupyter notebook binary file.",
+      "reasoning": "This is a script/notebook used for modeling and analysis, not a dataset.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Notebook code"
+    },
+    {
+      "relative_path": "zip_contents/code/figure_generation.ipynb",
+      "filename": "figure_generation.ipynb",
+      "type": "script",
+      "paper_evidence": "The archive includes a notebook for figure generation, indicating reproducibility code.",
+      "file_evidence": "Jupyter notebook binary file.",
+      "reasoning": "This is code for generating figures, not a data file.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Notebook code"
+    },
+    {
+      "relative_path": "zip_contents/data/effective_hamiltonian.p",
+      "filename": "effective_hamiltonian.p",
+      "type": "type2",
+      "paper_evidence": "The archive contains large binary data files associated with modeling/analysis; no paper statement identifies this as cleaned figure data.",
+      "file_evidence": "Large binary pickle-like file, 13.8 MB, stored under data/. Not directly readable or plot-ready without code; likely serialized intermediate/model data.",
+      "reasoning": "This is a large binary serialized object requiring code to interpret, so it is not directly replot-ready. Conservatively Type 2.",
+      "ambiguity": "Moderate: could be processed model output rather than raw instrument data, but it is still non-tabular and not directly plottable.",
+      "key_columns_or_structure": "Binary serialized object"
+    },
+    {
+      "relative_path": "zip_contents/data/graphite_LL_spectrum.p",
+      "filename": "graphite_LL_spectrum.p",
+      "type": "type2",
+      "paper_evidence": "No explicit paper evidence indicates this is cleaned source data; it appears as a binary data artifact in the code/data archive.",
+      "file_evidence": "Binary pickle-like file, 1.5 MB, under data/. Requires code to inspect and is not directly plot-ready.",
+      "reasoning": "This is a serialized binary dataset or intermediate result, not a simple tabular figure dataset. Type 2.",
+      "ambiguity": "Moderate",
+      "key_columns_or_structure": "Binary serialized object"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the fabrication and characterization of twisted PbS moiré superlattices with strong interlayer chemical bonding, revealing twist-angle-dependent structural reconstruction and emergent flat-band electronic states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit data location or accessible dataset could be determined from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable files, repositories, or URLs were identified from the publisher page information provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Raw_Data.zip",
+      "extension": ".zip",
+      "size_bytes": 327713,
+      "size_human": "320.0 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Raw_Data.zip"
+    },
+    {
+      "filename": "NLSM_flat_band_files.zip",
+      "extension": ".zip",
+      "size_bytes": 39606509,
+      "size_human": "37.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "NLSM_flat_band_files.zip"
+    },
+    {
+      "filename": "Lieb.xls",
+      "extension": ".xls",
+      "size_bytes": 193024,
+      "size_human": "188.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            1.0,
+            -2.635489375751565
+          ],
+          "named_columns": [
+            1.0,
+            -2.635489375751565
+          ],
+          "column_count": 2,
+          "row_count": 1071,
+          "dtypes": {
+            "1.0": "int64",
+            "-2.635489375751565": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [
+            1.0,
+            5.84601811404184e-16
+          ],
+          "named_columns": [
+            1.0,
+            5.84601811404184e-16
+          ],
+          "column_count": 2,
+          "row_count": 1071,
+          "dtypes": {
+            "1.0": "int64",
+            "5.84601811404184e-16": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [
+            1.0,
+            3.035489375751566
+          ],
+          "named_columns": [
+            1.0,
+            3.035489375751566
+          ],
+          "column_count": 2,
+          "row_count": 1071,
+          "dtypes": {
+            "1.0": "int64",
+            "3.035489375751566": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig2b/Lieb.xls",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig2b/Lieb.xls"
+    },
+    {
+      "filename": "fig4e.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11019,
+      "size_human": "10.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet4",
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Sheet4",
+          "columns": [
+            "N_h",
+            "blue",
+            "red"
+          ],
+          "named_columns": [
+            "N_h",
+            "blue",
+            "red"
+          ],
+          "column_count": 3,
+          "row_count": 10,
+          "dtypes": {
+            "N_h": "int64",
+            "blue": "int64",
+            "red": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            144,
+            141,
+            138,
+            135,
+            132,
+            129,
+            126,
+            123,
+            120,
+            117
+          ],
+          "named_columns": [
+            144,
+            141,
+            138,
+            135,
+            132,
+            129,
+            126,
+            123,
+            120,
+            117
+          ],
+          "column_count": 10,
+          "row_count": 1,
+          "dtypes": {
+            "144": "int64",
+            "141": "int64",
+            "138": "int64",
+            "135": "int64",
+            "132": "int64",
+            "129": "int64",
+            "126": "int64",
+            "123": "int64",
+            "120": "int64",
+            "117": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig4e/fig4e.xlsx",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig4e/fig4e.xlsx"
+    },
+    {
+      "filename": "ekdata.xls",
+      "extension": ".xls",
+      "size_bytes": 42496,
+      "size_human": "41.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3",
+        "Sheet4",
+        "Sheet5",
+        "Sheet6",
+        "Sheet7",
+        "Sheet8",
+        "Sheet9",
+        "Sheet10",
+        "Sheet11",
+        "Sheet12"
+      ],
+      "sheet_count": 12,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "0.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "-2.0": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "2.0": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet4",
+          "columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "0.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet5",
+          "columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "-2.0": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet6",
+          "columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "2.0": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet7",
+          "columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "0.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet8",
+          "columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            -2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "-2.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet9",
+          "columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            2.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "2.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet10",
+          "columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "named_columns": [
+            -0.7853981633974483,
+            0.0
+          ],
+          "column_count": 2,
+          "row_count": 50,
+          "dtypes": {
+            "-0.7853981633974483": "float64",
+            "0.0": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig5b/ekdata.xls",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig5b/ekdata.xls"
+    },
+    {
+      "filename": "data.xls",
+      "extension": ".xls",
+      "size_bytes": 7168,
+      "size_human": "7.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            -2.75,
+            2.694095733040562
+          ],
+          "named_columns": [
+            -2.75,
+            2.694095733040562
+          ],
+          "column_count": 2,
+          "row_count": 55,
+          "dtypes": {
+            "-2.75": "float64",
+            "2.694095733040562": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig5c/data.xls",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig5c/data.xls"
+    },
+    {
+      "filename": "data2.xls",
+      "extension": ".xls",
+      "size_bytes": 21504,
+      "size_human": "21.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "blue",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "red",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "blue",
+            "red"
+          ],
+          "column_count": 5,
+          "row_count": 10,
+          "dtypes": {
+            "blue": "int64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "red": "int64",
+            "Unnamed: 4": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig5d/data2.xls",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig5d/data2.xls"
+    },
+    {
+      "filename": "3DEk.xls",
+      "extension": ".xls",
+      "size_bytes": 1005568,
+      "size_human": "982.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3",
+        "Sheet4",
+        "Sheet5"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            -2.4039362822667114e-16
+          ],
+          "named_columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            -2.4039362822667114e-16
+          ],
+          "column_count": 3,
+          "row_count": 2600,
+          "dtypes": {
+            "-0.3512407365520363": "float64",
+            "-0.3512407365520363.1": "float64",
+            "-2.4039362822667114e-16": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            -1.7419717065472762e-16
+          ],
+          "named_columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            -1.7419717065472762e-16
+          ],
+          "column_count": 3,
+          "row_count": 2600,
+          "dtypes": {
+            "-0.3512407365520363": "float64",
+            "-0.3512407365520363.1": "float64",
+            "-1.7419717065472762e-16": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            4.32085500211382e-16
+          ],
+          "named_columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            4.32085500211382e-16
+          ],
+          "column_count": 3,
+          "row_count": 2600,
+          "dtypes": {
+            "-0.3512407365520363": "float64",
+            "-0.3512407365520363.1": "float64",
+            "4.32085500211382e-16": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet4",
+          "columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            7.148347290135262e-16
+          ],
+          "named_columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            7.148347290135262e-16
+          ],
+          "column_count": 3,
+          "row_count": 2600,
+          "dtypes": {
+            "-0.3512407365520363": "float64",
+            "-0.3512407365520363.1": "float64",
+            "7.148347290135262e-16": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet5",
+          "columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            1.4882112228004053e-15
+          ],
+          "named_columns": [
+            -0.3512407365520363,
+            "-0.3512407365520363.1",
+            1.4882112228004053e-15
+          ],
+          "column_count": 3,
+          "row_count": 2600,
+          "dtypes": {
+            "-0.3512407365520363": "float64",
+            "-0.3512407365520363.1": "float64",
+            "1.4882112228004053e-15": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "fig7b/3DEk.xls",
+      "from_zip": "Raw_Data.zip",
+      "relative_path": "zip_contents/fig7b/3DEk.xls"
+    },
+    {
+      "filename": "requirements.txt",
+      "extension": ".txt",
+      "size_bytes": 87,
+      "size_human": "87.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "python",
+        "packages",
+        "are",
+        "required:"
+      ],
+      "column_count": 6,
+      "row_count": 4,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "python": "float64",
+        "packages": "float64",
+        "are": "float64",
+        "required:": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "requirements.txt",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/requirements.txt"
+    },
+    {
+      "filename": "parameter_fitting.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 278316,
+      "size_human": "271.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/parameter_fitting.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/parameter_fitting.ipynb"
+    },
+    {
+      "filename": "minimal_model.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 315512,
+      "size_human": "308.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/minimal_model.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/minimal_model.ipynb"
+    },
+    {
+      "filename": "minimal_model_largeQ.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 241946,
+      "size_human": "236.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/minimal_model_largeQ.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/minimal_model_largeQ.ipynb"
+    },
+    {
+      "filename": "minimal_model_full_strain.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 316970,
+      "size_human": "309.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/minimal_model_full_strain.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/minimal_model_full_strain.ipynb"
+    },
+    {
+      "filename": "rhombohedral_graphite.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 795936,
+      "size_human": "777.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/rhombohedral_graphite.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/rhombohedral_graphite.ipynb"
+    },
+    {
+      "filename": "mean_field_ferromagnetism.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 87367,
+      "size_human": "85.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/mean_field_ferromagnetism.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/mean_field_ferromagnetism.ipynb"
+    },
+    {
+      "filename": "CaAgP_model.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 797009,
+      "size_human": "778.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/CaAgP_model.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/CaAgP_model.ipynb"
+    },
+    {
+      "filename": "figure_generation.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 459776,
+      "size_human": "449.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figure_generation.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figure_generation.ipynb"
+    },
+    {
+      "filename": "superfluid_stiffness.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 94411,
+      "size_human": "92.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/superfluid_stiffness.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/superfluid_stiffness.ipynb"
+    },
+    {
+      "filename": "figure_1_RAW.svg",
+      "extension": ".svg",
+      "size_bytes": 465816,
+      "size_human": "454.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_1_RAW.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_1_RAW.svg"
+    },
+    {
+      "filename": "figure_SM_additional_sp_term.svg",
+      "extension": ".svg",
+      "size_bytes": 309618,
+      "size_human": "302.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_additional_sp_term.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_additional_sp_term.svg"
+    },
+    {
+      "filename": "figure_SM_magnetic_spectra.svg",
+      "extension": ".svg",
+      "size_bytes": 1871545,
+      "size_human": "1.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_magnetic_spectra.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_magnetic_spectra.svg"
+    },
+    {
+      "filename": "figure_SM_wf_shifts.svg",
+      "extension": ".svg",
+      "size_bytes": 64642,
+      "size_human": "63.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_wf_shifts.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_wf_shifts.svg"
+    },
+    {
+      "filename": "figure_1.svg",
+      "extension": ".svg",
+      "size_bytes": 553960,
+      "size_human": "541.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_1.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_1.svg"
+    },
+    {
+      "filename": "figure_3.svg",
+      "extension": ".svg",
+      "size_bytes": 5771404,
+      "size_human": "5.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_3.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_3.svg"
+    },
+    {
+      "filename": "figure_2.svg",
+      "extension": ".svg",
+      "size_bytes": 98068,
+      "size_human": "95.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_2.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_2.svg"
+    },
+    {
+      "filename": "figure_SM_magnetic_V0_scaling.svg",
+      "extension": ".svg",
+      "size_bytes": 27566,
+      "size_human": "26.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_magnetic_V0_scaling.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_magnetic_V0_scaling.svg"
+    },
+    {
+      "filename": "figure_3_RAW.svg",
+      "extension": ".svg",
+      "size_bytes": 5085324,
+      "size_human": "4.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_3_RAW.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_3_RAW.svg"
+    },
+    {
+      "filename": "figure_SM_large_flat_band.svg",
+      "extension": ".svg",
+      "size_bytes": 111939,
+      "size_human": "109.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_large_flat_band.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_large_flat_band.svg"
+    },
+    {
+      "filename": "figure_SM_stiffness_scaling.svg",
+      "extension": ".svg",
+      "size_bytes": 43062,
+      "size_human": "42.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_stiffness_scaling.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_stiffness_scaling.svg"
+    },
+    {
+      "filename": "figure_SM_DFT_CaAgP.svg",
+      "extension": ".svg",
+      "size_bytes": 416055,
+      "size_human": "406.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_DFT_CaAgP.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_DFT_CaAgP.svg"
+    },
+    {
+      "filename": "figure_SM_phase_diagrams.svg",
+      "extension": ".svg",
+      "size_bytes": 115180,
+      "size_human": "112.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "code/figures/figure_SM_phase_diagrams.svg",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/figures/figure_SM_phase_diagrams.svg"
+    },
+    {
+      "filename": "phase_diagram.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 95911,
+      "size_human": "93.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/phase_diagram.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/phase_diagram.ipynb"
+    },
+    {
+      "filename": "wannier90_band.dat",
+      "extension": ".dat",
+      "size_bytes": 45744,
+      "size_human": "44.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000000E+00",
+        "0.62303863E+01"
+      ],
+      "column_count": 2,
+      "row_count": 1387,
+      "dtypes": {
+        "0.00000000E+00": "float64",
+        "0.62303863E+01": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "code/DFT_data/wannier90_band.dat",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/DFT_data/wannier90_band.dat"
+    },
+    {
+      "filename": "wannier90_band_more.dat",
+      "extension": ".dat",
+      "size_bytes": 31422,
+      "size_human": "30.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000000E+00",
+        "0.58220317E+01"
+      ],
+      "column_count": 2,
+      "row_count": 953,
+      "dtypes": {
+        "0.00000000E+00": "float64",
+        "0.58220317E+01": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "code/DFT_data/wannier90_band_more.dat",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/DFT_data/wannier90_band_more.dat"
+    },
+    {
+      "filename": "wannier90_12orb_hr.dat",
+      "extension": ".dat",
+      "size_bytes": 20656800,
+      "size_human": "19.7 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-8",
+        "-4",
+        "-9",
+        "1",
+        "1.1",
+        "0.000040",
+        "0.000004"
+      ],
+      "column_count": 7,
+      "row_count": 413135,
+      "dtypes": {
+        "-8": "int64",
+        "-4": "int64",
+        "-9": "int64",
+        "1": "int64",
+        "1.1": "int64",
+        "0.000040": "float64",
+        "0.000004": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "code/DFT_data/wannier90_12orb_hr.dat",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/DFT_data/wannier90_12orb_hr.dat"
+    },
+    {
+      "filename": "wannier90_12orb_band.dat",
+      "extension": ".dat",
+      "size_bytes": 274464,
+      "size_human": "268.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000000E+00",
+        "0.23573886E+01"
+      ],
+      "column_count": 2,
+      "row_count": 8327,
+      "dtypes": {
+        "0.00000000E+00": "float64",
+        "0.23573886E+01": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "code/DFT_data/wannier90_12orb_band.dat",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/DFT_data/wannier90_12orb_band.dat"
+    },
+    {
+      "filename": "wannier90_hr.dat",
+      "extension": ".dat",
+      "size_bytes": 573800,
+      "size_human": "560.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-8",
+        "-4",
+        "-9",
+        "1",
+        "1.1",
+        "0.000129",
+        "-0.000000"
+      ],
+      "column_count": 7,
+      "row_count": 11475,
+      "dtypes": {
+        "-8": "int64",
+        "-4": "int64",
+        "-9": "int64",
+        "1": "int64",
+        "1.1": "int64",
+        "0.000129": "float64",
+        "-0.000000": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "code/DFT_data/wannier90_hr.dat",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/DFT_data/wannier90_hr.dat"
+    },
+    {
+      "filename": "mean_field_superconductivity.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 85463,
+      "size_human": "83.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/mean_field_superconductivity.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/mean_field_superconductivity.ipynb"
+    },
+    {
+      "filename": "effective_Hamiltonian.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 178444,
+      "size_human": "174.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/effective_Hamiltonian.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/effective_Hamiltonian.ipynb"
+    },
+    {
+      "filename": "models.py",
+      "extension": ".py",
+      "size_bytes": 15720,
+      "size_human": "15.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "code/modules/models.py",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/modules/models.py"
+    },
+    {
+      "filename": "tools.py",
+      "extension": ".py",
+      "size_bytes": 19323,
+      "size_human": "18.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "code/modules/tools.py",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/modules/tools.py"
+    },
+    {
+      "filename": "magnetic_orders.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 503119,
+      "size_human": "491.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "code/magnetic_orders.ipynb",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/code/magnetic_orders.ipynb"
+    },
+    {
+      "filename": "readme.txt",
+      "extension": ".txt",
+      "size_bytes": 344,
+      "size_human": "344.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "folder",
+        "./code",
+        "contains",
+        "code",
+        "and",
+        "notebooks",
+        "for",
+        "the",
+        "analysis",
+        "of",
+        "the.1",
+        "model",
+        "and.1",
+        "of.1",
+        "the.2",
+        "data.",
+        "The.1",
+        "notebooks.1",
+        "can",
+        "be",
+        "run",
+        "using",
+        "the.3",
+        "python",
+        "web",
+        "environment",
+        "jupyter."
+      ],
+      "column_count": 28,
+      "row_count": 2,
+      "dtypes": {
+        "The": "object",
+        "folder": "object",
+        "./code": "object",
+        "contains": "object",
+        "code": "object",
+        "and": "object",
+        "notebooks": "object",
+        "for": "object",
+        "the": "object",
+        "analysis": "object",
+        "of": "object",
+        "the.1": "object",
+        "model": "object",
+        "and.1": "object",
+        "of.1": "object",
+        "the.2": "object",
+        "data.": "object",
+        "The.1": "object",
+        "notebooks.1": "object",
+        "can": "object",
+        "be": "object",
+        "run": "object",
+        "using": "object",
+        "the.3": "object",
+        "python": "object",
+        "web": "object",
+        "environment": "object",
+        "jupyter.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "readme.txt",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/readme.txt"
+    },
+    {
+      "filename": "effective_hamiltonian.p",
+      "extension": ".p",
+      "size_bytes": 14490780,
+      "size_human": "13.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/effective_hamiltonian.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/effective_hamiltonian.p"
+    },
+    {
+      "filename": "graphite_LL_spectrum.p",
+      "extension": ".p",
+      "size_bytes": 1610137,
+      "size_human": "1.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/graphite_LL_spectrum.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/graphite_LL_spectrum.p"
+    },
+    {
+      "filename": "phase_diagram.p",
+      "extension": ".p",
+      "size_bytes": 6734,
+      "size_human": "6.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/phase_diagram.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/phase_diagram.p"
+    },
+    {
+      "filename": "magnetic_V0_scaling.p",
+      "extension": ".p",
+      "size_bytes": 1173,
+      "size_human": "1.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/magnetic_V0_scaling.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/magnetic_V0_scaling.p"
+    },
+    {
+      "filename": "degeneracy_scaling.p",
+      "extension": ".p",
+      "size_bytes": 763748,
+      "size_human": "745.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/degeneracy_scaling.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/degeneracy_scaling.p"
+    },
+    {
+      "filename": "magnetic_orders_spectra.p",
+      "extension": ".p",
+      "size_bytes": 2913785,
+      "size_human": "2.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/magnetic_orders_spectra.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/magnetic_orders_spectra.p"
+    },
+    {
+      "filename": "spectrum_strained_Lx100_Lz100_R200_without_sp.p",
+      "extension": ".p",
+      "size_bytes": 82027,
+      "size_human": "80.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .p",
+      "download_source": "zip_extracted",
+      "archive_path": "data/spectrum_strained_Lx100_Lz100_R200_without_sp.p",
+      "from_zip": "NLSM_flat_band_files.zip",
+      "relative_path": "zip_contents/data/spectrum_strained_Lx100_Lz100_R200_without_sp.p"
+    }
+  ]
+}

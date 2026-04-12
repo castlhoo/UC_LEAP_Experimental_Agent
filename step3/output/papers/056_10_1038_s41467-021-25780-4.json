@@ -1,0 +1,318 @@
+{
+  "paper_id": "step1_0175",
+  "title": "",
+  "doi": "10.1038/s41467-021-25780-4",
+  "journal": "arXiv (Cornell University)",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3206837489",
+  "priority_score": 5.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-25780-4",
+  "files_inspected": 3,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Both files are Nature supplementary/source-data PDFs associated with the paper's deposited supporting data and are most consistent with figure-supporting, replot-ready material rather than raw instrument output.",
+  "type2_summary": "No file shows clear evidence of raw STM acquisition data, proprietary microscopy output, or other unprocessed instrument-level data.",
+  "type1_files": [
+    "41467_2021_25780_MOESM1_ESM.pdf",
+    "41467_2021_25780_MOESM2_ESM.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper itself clearly includes raw STM measurements, but the provided files are Nature MOESM supplementary PDFs from the source-data repository. Without direct content extraction, the safest classification is Type 1 for both. No file-level evidence supports Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2021_25780_MOESM1_ESM.pdf",
+      "filename": "41467_2021_25780_MOESM1_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that supporting data are deposited in Yareta and includes processed/source-data-style outputs such as extracted phase/amplitude curves, histograms, and calculated DOS plots. Nature MOESM files are typically source-data supplements organized to support figures.",
+      "file_evidence": "PDF supplement from nature_source_data, 6.1 MB. As a source-data PDF, it is likely figure-supporting material rather than raw instrument output. The size is consistent with compiled source data/figure panels, not a single raw STM scan archive.",
+      "reasoning": "The paper explicitly contains both raw STM measurements and processed figure data, but the file context strongly indicates a Nature source-data supplement. Given the classification definitions, source-data deposits organized by figure are Type 1 if they are replot-ready or figure-supporting. No evidence suggests this PDF is a raw microscopy export or proprietary instrument file. Conservatively, this is classified as Type 1.",
+      "ambiguity": "Moderate: the PDF content was not directly inspected here, so the classification relies on the repository/source-data context and paper evidence rather than internal table structure.",
+      "key_columns_or_structure": "Not directly inspectable from metadata; likely figure-linked source data / compiled supplement"
+    },
+    {
+      "relative_path": "41467_2021_25780_MOESM2_ESM.pdf",
+      "filename": "41467_2021_25780_MOESM2_ESM.pdf",
+      "type": "type1",
+      "paper_evidence": "The publication uses processed/derived datasets for its main results, including Fourier-filtered STM images, dephasing maps, and bias-dependent phase/amplitude curves, and states that supporting data are deposited in Yareta.",
+      "file_evidence": "PDF supplement from nature_source_data, 3.7 MB. This is consistent with a source-data or supplementary figure-data PDF rather than raw STM acquisition output. No indication of proprietary raw scan format or instrument binary structure.",
+      "reasoning": "As with MOESM1, the file appears to be a supplementary source-data PDF associated with the paper. In the absence of evidence that it contains raw STM scan files, and given the paper's emphasis on processed figure data, the conservative classification is Type 1.",
+      "ambiguity": "Moderate: internal PDF contents were not directly parsed, so exact figure/table organization is unknown.",
+      "key_columns_or_structure": "Not directly inspectable from metadata; likely figure-linked source data / compiled supplement"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the charge density wave (CDW) in 2H-NbSe2 using bias-dependent scanning tunnelling microscopy (STM) topography combined with a simple 1D model and self-consistent electronic-structure calculations. The key finding is evidence for a multiband CDW: in addition to the known gap near the Fermi level, the CDW also opens gaps on another band, producing out-of-phase charge modulations whose bias-dependent STM contrast matches experiment.",
+    "measurement_types": [
+      "constant-current STM topography",
+      "Fourier-filtered STM image analysis",
+      "histogram-based phase/amplitude extraction from STM images",
+      "self-consistent tight-binding / random phase approximation calculations",
+      "density of states calculations",
+      "ARPES-constrained band-structure modeling"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of NbSe2 shown from top and side views, illustrating the layered trigonal structure and Se-Nb-Se trilayers.",
+        "data_type": "image / schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Calculated Fermi surface of NbSe2 from a two-band tight-binding fit to ARPES data, showing inner and outer pockets around Gamma and K.",
+        "data_type": "band-structure / Fermi-surface plot",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "STM topography at Vb = 50 mV showing atomic lattice and 3a0 x 3a0 CDW modulation.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "STM topography at Vb = -50 mV showing the same region with different CDW contrast.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "STM topography at Vb = -150 mV showing bias-dependent CDW contrast; image was corrected for a small instrumental artifact for visualization.",
+        "data_type": "image",
+        "likely_source": "raw measurement with minor visualization correction"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Magnified STM image of the region marked in Fig2a.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Fourier-filtered CDW component extracted from Fig2d.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Magnified STM image of the region marked in Fig2b.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Fourier-filtered CDW component extracted from Fig2f.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Magnified STM image of the region marked in Fig2c.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2i",
+        "description": "Fourier-filtered CDW component extracted from Fig2h.",
+        "data_type": "image",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2j",
+        "description": "Spatial map of the CDW dephasing parameter Theta(r) extracted from the STM image at 50 mV.",
+        "data_type": "parameter map / image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2k",
+        "description": "Spatial map of the CDW dephasing parameter Theta(r) extracted from the STM image at -50 mV.",
+        "data_type": "parameter map / image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig2l",
+        "description": "Spatial map of the CDW dephasing parameter Theta(r) extracted from the STM image at -150 mV.",
+        "data_type": "parameter map / image",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Bias dependence of the CDW phase extracted from the dephasing parameter, showing a non-monotonic trend with a minimum near the Fermi level.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Bias dependence of the CDW amplitude extracted from STM images, normalized to the value at 0.5 V.",
+        "data_type": "curve",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Bias dependence of the phase from the best-matching 1D two-gap simulation.",
+        "data_type": "curve",
+        "likely_source": "derived / simulated"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Bias dependence of the amplitude from the best-matching 1D two-gap simulation, normalized to the value at 0.5 V.",
+        "data_type": "curve",
+        "likely_source": "derived / simulated"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "1D model local density of states map for a single charge modulation with a gap centered at the Fermi level.",
+        "data_type": "model map",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Simulated topographic traces for the single-gap model at selected biases.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Bias dependence of phase and DOS for the single-gap model.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "1D model local density of states map for two charge modulations with two gaps at different energies and no relative phase shift.",
+        "data_type": "model map",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Simulated topographic traces for the two-gap in-phase model at selected biases.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "Bias dependence of phase and DOS for the two-gap in-phase model.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "1D model local density of states map for two charge modulations with two gaps at different energies and a 120-degree phase shift.",
+        "data_type": "model map",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4h",
+        "description": "Simulated topographic traces for the two-gap phase-shifted model at selected biases.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig4i",
+        "description": "Bias dependence of phase and DOS for the two-gap phase-shifted model.",
+        "data_type": "curve",
+        "likely_source": "simulated"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Calculated density of states for the inner and outer bands, comparing ungapped and gapped cases.",
+        "data_type": "DOS plot",
+        "likely_source": "derived / calculated"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Difference between gapped and ungapped density of states, highlighting CDW-induced DOS suppressions at energies away from the Fermi level.",
+        "data_type": "DOS difference plot",
+        "likely_source": "derived / calculated"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw constant-current STM topographic scans of cleaved NbSe2 surfaces acquired at multiple sample biases between -0.5 V and 0.5 V at 1.2 K in UHV. It also mentions ARPES-constrained band-structure inputs, but the directly collected experimental raw data described in the paper are the STM images.",
+    "has_processed_plots": true,
+    "processed_plot_details": "Processed outputs include Fourier-filtered CDW-only STM images, spatial maps of the dephasing parameter Theta(r), Gaussian-fit histograms used to extract phase and amplitude, bias-dependent phase and amplitude curves, simulated 1D STM traces, and calculated DOS curves from self-consistent band-structure calculations.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data supporting the findings have been deposited in the Yareta repository at the cited DOI. Computer codes are available upon reasonable request and preferably within a collaboration.",
+      "data_provided_types": [
+        "processed",
+        "source_data",
+        "unknown"
+      ],
+      "raw_data_description": "The paper explicitly describes STM images recorded in constant-current mode with at least 64 pixel/nm resolution, but it does not specify file formats or whether the deposited dataset includes the unprocessed raw scan files.",
+      "processed_data_description": "Processed data include Fourier-filtered CDW images, extracted dephasing parameter maps, Gaussian-fit histograms of phase and amplitude, bias-dependent phase/amplitude values, and calculated DOS curves. These are the quantities actually plotted in the main figures.",
+      "figure_data_description": "Figure-specific data are clearly implied for the main figures: the STM images, extracted maps, and plotted bias dependences are all figure-derived. The paper does not explicitly state that separate source-data files are attached per figure, but the deposited dataset likely contains the data underlying the figures.",
+      "scripts_description": "No analysis scripts or notebooks are provided in the text. The paper states that computer codes are available upon reasonable request, not as an openly deposited code archive.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper states that data are deposited in a repository and the figures are based on extracted numerical values and images, so at least some replotting is likely possible. However, the text does not specify exact file structure, formats, or whether raw STM scans and analysis scripts are included.",
+      "notes": "Important distinction: the experimental raw data are STM topographs, while most published plots are processed or derived from those scans. The paper also includes fully simulated/model-generated figures (1D model traces and self-consistent DOS), which are not raw measurements. The data availability statement is brief and does not enumerate contents of the Yareta deposit."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The Methods section explicitly says STM images were recorded in constant current mode, and the Results section analyzes those images directly.",
+      "source_data_evidence": "The paper presents extracted dephasing parameter maps, Gaussian-fit histograms, bias-dependent phase/amplitude curves, and calculated DOS plots, all of which are processed figure data.",
+      "both_evidence": "The paper both reports raw STM measurements and uses processed/derived data for the main figures, while also stating that the supporting data are deposited in Yareta.",
+      "data_availability_section_relevant": [
+        "The data that support the findings of this study has been deposited in the Yareta repository",
+        "Computer codes are available upon reasonable request",
+        "STM images were recorded in constant current mode",
+        "Fourier filtering",
+        "fitting the CDW contrast",
+        "extract the phase and amplitude",
+        "self-consistent calculations"
+      ],
+      "priority_modalities": [
+        "STM topography images",
+        "Fourier-filtered STM images",
+        "phase/amplitude maps",
+        "histograms",
+        "bias-dependent curves",
+        "calculated density of states",
+        "simulation outputs"
+      ],
+      "review_notes": "Do not treat the self-consistent DOS plots or 1D model traces as raw experimental data. The paper does not explicitly enumerate repository contents, so any claim about exact file types or folder structure should remain cautious."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2021_25780_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 6368965,
+      "size_human": "6.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_25780_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "41467_2021_25780_MOESM2_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3856323,
+      "size_human": "3.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_25780_MOESM2_ESM.pdf"
+    },
+    {
+      "filename": "41467_2021_25780_MOESM3_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 449593,
+      "size_human": "439.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_25780_MOESM3_ESM.pdf"
+    }
+  ]
+}

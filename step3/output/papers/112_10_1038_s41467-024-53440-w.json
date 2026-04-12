@@ -1,0 +1,201 @@
+{
+  "paper_id": "step1_0254",
+  "title": "Engineering band structures of two-dimensional materials with remote moire ferroelectricity",
+  "doi": "10.1038/s41467-024-53440-w",
+  "journal": "arXiv preprint",
+  "year": 2024,
+  "paper_url": "https://arxiv.org/abs/2405.12811v1",
+  "priority_score": 6.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-53440-w",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper demonstrates that a twisted, rhombohedral-stacked double-bilayer WSe2 can act as a remote ferroelectric moiré source that imprints a long-range electrostatic superlattice onto a separate bilayer graphene transport layer. The imprinted moiré produces satellite resistance peaks, tunable by WSe2 twist angle, and can coexist with conventional graphene/h-BN moiré; the authors also observe ferroelectric hysteresis and weak magnetic-fractal response, consistent with a long-range, weak superlattice potential.",
+    "measurement_types": [
+      "electrical transport (longitudinal resistance Rxx, Hall resistance Rxy)",
+      "magnetotransport / Landau fan measurements",
+      "temperature-dependent transport",
+      "dual-gate electrostatic tuning (n and displacement field D)",
+      "piezoresponse force microscopy (PFM)",
+      "transmission electron microscopy (TEM)",
+      "second-harmonic generation (SHG)",
+      "Raman spectroscopy",
+      "atomic force microscopy (AFM)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the h-BN/graphene/twisted double-bilayer WSe2/h-BN/graphite device stack used to imprint remote moiré potential onto bilayer graphene.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "TEM images of reconstructed twisted bilayer WSe2 showing domain reconstruction and dominant MX/XM rhombohedral domains.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic of stacking/domain configurations in parallel-stacked TMDCs, illustrating MX and XM domains and opposite out-of-plane polarizations.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Vertical PFM phase image of parallel-stacked twisted bilayer WSe2 showing ferroelectric domain contrast.",
+        "data_type": "image",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Conceptual illustration of remote imprinting of a ferroelectric moiré potential onto bilayer graphene.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Longitudinal resistance versus carrier density for three devices with different WSe2 twist angles, showing symmetric satellite peaks near charge neutrality.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Rxx versus carrier density for Device D1 at D = 0, showing satellite resistance peaks at the moiré filling densities.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Temperature dependence of Rxx versus top-gate voltage at fixed back-gate voltage, showing weakening of satellite peaks with temperature.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Color map of Rxx as a function of carrier density and displacement field for Device D1.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Magnetotransport Landau fan diagram of Rxx versus carrier density and magnetic field at D = 0, showing Landau levels from CNP and satellite peaks.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Expanded Rxx map near charge neutrality in n-D space, highlighting split peaks at finite displacement field.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Temperature dependence of Rxx versus top-gate voltage at fixed back-gate voltage near the CNP splitting regime.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Forward/backward back-gate sweeps of Rxx at fixed top-gate voltage, demonstrating hysteresis.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Forward/backward top-gate sweeps of Rxx at fixed back-gate voltage, showing little or no hysteresis.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Difference map between forward and backward back-gate sweeps as a function of n and D, quantifying hysteresis strength.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Rxx versus carrier density for Device D2 at D = 0, showing two sets of satellite peaks from ferroelectric moiré and conventional graphene/h-BN moiré.",
+        "data_type": "transport curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Rxx map versus carrier density and displacement field for Device D2, showing two groups of vertical satellite features.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Magnetotransport map of Rxx versus carrier density and magnetic field for Device D2, highlighting Landau fans and Hofstadter features from conventional moiré and weaker response from ferroelectric moiré.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Hall resistance Rxy versus carrier density and magnetic field for Device D2, used to identify commensurate states and flux ratios.",
+        "data_type": "transport map",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include TEM imaging of twisted WSe2 domain reconstruction, vertical PFM phase imaging of ferroelectric domains, SHG spectra for non-centrosymmetry, Raman spectroscopy for crystallographic alignment, AFM imaging for sample inspection, and low-temperature electrical transport/magnetotransport data (Rxx, Rxy) acquired in a cryostat with dual-gate control and magnetic field.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots processed transport observables as functions of carrier density n, displacement field D, temperature, gate voltages, and magnetic field B. These include resistance curves, n-D color maps, Landau fan diagrams, hysteresis difference maps, and extracted satellite-peak densities/twist angles derived from the transport data.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that relevant data supporting the findings are available within the article and the Supplementary Information file, and that all raw data are available from the corresponding authors upon request.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the level of measurement modalities and instruments: transport data from a cryostat with lock-in detection, TEM images from a STEM instrument, PFM phase images from AFM, SHG spectra from an optical spectrometer, Raman spectra, and AFM images. No file formats, repositories, or explicit raw-data file organization are given.",
+      "processed_data_description": "Processed data include resistance versus carrier density/temperature/gate voltage/magnetic field plots, n-D maps, Landau fan diagrams, hysteresis difference maps, and extracted moiré parameters such as twist angle, moiré wavelength, and filling density. The paper also describes conversion from gate voltages to n and D using capacitances extracted from Hall measurements.",
+      "figure_data_description": "Figure-specific data are clearly shown in the article, but the paper does not explicitly state that figure source data files are deposited. The data availability statement only says data are in the article/Supplementary Information and raw data are available on request.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned.",
+      "data_organization": "mixed / not specified",
+      "replot_ready_data_present": false,
+      "replot_reason": "The article provides plotted figures and some derived quantities, but does not explicitly provide downloadable source-data files, raw datasets, or scripts. Replotting would require extracting values from figures or requesting raw data from the authors.",
+      "notes": "The dataset is primarily transport-centric, with supporting microscopy and spectroscopy used for structural/ferroelectric characterization. The paper distinguishes raw measurements from derived transport maps and extracted moiré parameters, but does not provide a formal dataset package structure. Supplementary figures are referenced (e.g., SHG, Raman, Hall density, twisted WS2 comparison), but their underlying data organization is not described."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "The paper explicitly states that all raw data are available from the corresponding authors upon request, and the Methods describe multiple direct measurements (transport, TEM, PFM, SHG, Raman, AFM).",
+      "source_data_evidence": "The paper does not explicitly mention source-data files or a source-data repository; it only says relevant data are within the article and Supplementary Information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": [
+        "Relevant data supporting the findings of this study are available within the article and the Supplementary Information file.",
+        "All raw data are available from the corresponding authors upon request."
+      ],
+      "priority_modalities": [
+        "transport curves",
+        "magnetotransport maps",
+        "TEM images",
+        "PFM phase images",
+        "SHG spectra",
+        "Raman spectra",
+        "AFM images"
+      ],
+      "review_notes": "Do not infer a public raw-data repository or explicit source-data package. The paper supports classification as having raw data available on request, but not clearly as having separately deposited source data or scripts."
+    }
+  },
+  "inspection_reports": []
+}

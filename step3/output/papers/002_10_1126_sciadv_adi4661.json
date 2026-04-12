@@ -1,0 +1,1528 @@
+{
+  "paper_id": "step1_0188",
+  "title": "Coherent light control of a metastable hidden state",
+  "doi": "10.1126/sciadv.adi4661",
+  "journal": "Science Advances",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4388966729",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1126_sciadv_adi4661",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "binary",
+    "archive"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "The fig2 .dat files are structured, figure-organized tabular datasets with numeric values and header-like rows, suitable for direct plotting as cleaned source data.",
+  "type2_summary": "The .vnadat file is a proprietary/binary measurement file, and the top-level ZIP archive bundles mixed contents including likely raw/instrument data and calibration assets.",
+  "type1_files": [
+    "zip_contents/data/fig2/fig2c,d.dat",
+    "zip_contents/data/fig2/fig2d/fig2d_50.0V.dat",
+    "zip_contents/data/fig2/fig2d/fig2d_49.0V.dat",
+    "zip_contents/data/fig2/fig2d/fig2d_48.0V.dat",
+    "zip_contents/data/fig2/fig2d/fig2d_47.0V.dat"
+  ],
+  "type2_files": [
+    "data.zip",
+    "zip_contents/data/fig2/fig2e.vnadat"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper evidence is weak for explicit source-data/raw-data labeling, so classification relies heavily on file structure. The figure-named tabular .dat files are best treated as Type 1. The binary .vnadat file is best treated as Type 2 despite its figure-like name. Calibration YAML and SVG are documentation/support files, not dataset files.",
+  "file_classifications": [
+    {
+      "relative_path": "data.zip",
+      "filename": "data.zip",
+      "type": "type2",
+      "paper_evidence": "The paper does not provide a data availability statement or explicit source-data deposit description in the available information.",
+      "file_evidence": "41.0 MB Zenodo archive containing multiple extracted measurement-like files and calibration/setup assets; archive packaging suggests a dataset bundle rather than a single replot-ready table.",
+      "reasoning": "At the archive level, this is not directly plottable and appears to package multiple experiment-related files. Because the contents include large run-like tables and instrument/configuration files, the archive is best treated as raw/unprocessed dataset packaging rather than cleaned source data.",
+      "ambiguity": "Moderate: the archive contains both figure-like tables and likely raw/instrument outputs, so the archive itself is a container rather than a single data type.",
+      "key_columns_or_structure": "Archive container; mixed contents"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2e.vnadat",
+      "filename": "fig2e.vnadat",
+      "type": "type2",
+      "paper_evidence": "No explicit paper statement identifies this as cleaned source data; the paper only generally reports ultrafast photoemission measurements on a hidden CDW state.",
+      "file_evidence": "Binary/proprietary-looking .vnadat file, small instrument-style file, named like a figure/run-specific measurement (fig2e).",
+      "reasoning": "Despite the figure-oriented name, the binary proprietary format indicates instrument output or an intermediate measurement file rather than a directly replot-ready table. Minimal processing is unlikely.",
+      "ambiguity": "Moderate: the filename suggests figure association, but the binary format weighs strongly toward raw/instrument data.",
+      "key_columns_or_structure": "Binary proprietary data; no tabular columns"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2c,d.dat",
+      "filename": "fig2c,d.dat",
+      "type": "type1",
+      "paper_evidence": "No explicit source-data statement is available, but the file is organized by figure panel naming consistent with deposited figure data.",
+      "file_evidence": "Large tabular text file with header-like first line and numeric content; figure-specific path/name (fig2c,d); 1,500,061 rows; appears structured for plotting.",
+      "reasoning": "This is a large but clearly tabular, structured dataset with figure-panel naming and numeric values. Although sizable, it is directly loadable and likely represents processed figure/source data rather than raw instrument output.",
+      "ambiguity": "Low to moderate: size is large, but structure and figure-specific organization strongly support Type 1.",
+      "key_columns_or_structure": "Header-like columns: #, Data, saved, by, LaserCtrl; numeric LaserCtrl values"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_50.0V.dat",
+      "filename": "fig2d_50.0V.dat",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement; figure-specific naming is consistent with source-data style deposits.",
+      "file_evidence": "Tabular text file, figure-specific path, 1.3 MB, 40,059 rows, header-like structure, numeric content; directly loadable.",
+      "reasoning": "The file is a structured table organized by figure panel and voltage condition, with enough organization to be replotted with minimal processing. This matches cleaned source data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Header-like columns: #, Data, saved, by, LaserCtrl; numeric LaserCtrl values"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_49.0V.dat",
+      "filename": "fig2d_49.0V.dat",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement; figure-specific naming is consistent with source-data style deposits.",
+      "file_evidence": "Tabular text file, figure-specific path, 1.3 MB, 40,059 rows, header-like structure, numeric content; directly loadable.",
+      "reasoning": "Same structure as the neighboring voltage-resolved files, indicating processed figure/source data suitable for direct plotting.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Header-like columns: #, Data, saved, by, LaserCtrl; numeric LaserCtrl values"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_48.0V.dat",
+      "filename": "fig2d_48.0V.dat",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement; figure-specific naming is consistent with source-data style deposits.",
+      "file_evidence": "Tabular text file, figure-specific path, 1.3 MB, 40,059 rows, header-like structure, numeric content; directly loadable.",
+      "reasoning": "Structured, figure-organized numeric table that can be plotted with minimal processing, consistent with cleaned source data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Header-like columns: #, Data, saved, by, LaserCtrl; numeric LaserCtrl values"
+    },
+    {
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_47.0V.dat",
+      "filename": "fig2d_47.0V.dat",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement; figure-specific naming is consistent with source-data style deposits.",
+      "file_evidence": "Tabular text file, figure-specific path, 1.3 MB, 40,059 rows, header-like structure, numeric content; directly loadable.",
+      "reasoning": "Structured, figure-organized numeric table that can be plotted with minimal processing, consistent with cleaned source data.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Header-like columns: #, Data, saved, by, LaserCtrl; numeric LaserCtrl values"
+    },
+    {
+      "relative_path": "zip_contents/data/calib/20230112_optical_losses.yml",
+      "filename": "20230112_optical_losses.yml",
+      "type": "documentation",
+      "paper_evidence": "No explicit paper statement about this calibration file.",
+      "file_evidence": "YAML calibration/configuration file named optical_losses; likely metadata or setup parameters rather than measurement data.",
+      "reasoning": "This is not a dataset for plotting physical observables; it is calibration/supporting metadata used to interpret measurements.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Calibration parameters / metadata"
+    },
+    {
+      "relative_path": "zip_contents/data/calib/20221201_setup_labeled.svg",
+      "filename": "20221201_setup_labeled.svg",
+      "type": "documentation",
+      "paper_evidence": "No explicit paper statement about this setup figure.",
+      "file_evidence": "SVG labeled setup diagram; graphical documentation of experimental apparatus rather than numerical data.",
+      "reasoning": "This is documentation of the experimental setup, not a data table or raw measurement file.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Labeled schematic / figure"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports ultrafast photoemission measurements showing coherent optical control of a metastable hidden charge-density-wave state in 1T-TaS2.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit downloadable dataset could be identified from the paper metadata provided.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were provided in the available information.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were provided in the available information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "data.zip",
+      "extension": ".zip",
+      "size_bytes": 43010169,
+      "size_human": "41.0 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "data.zip"
+    },
+    {
+      "filename": "fig2e.vnadat",
+      "extension": ".vnadat",
+      "size_bytes": 10614,
+      "size_human": "10.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .vnadat",
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2e.vnadat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2e.vnadat"
+    },
+    {
+      "filename": "fig2c,d.dat",
+      "extension": ".dat",
+      "size_bytes": 49501380,
+      "size_human": "47.2 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 1500061,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2c,d.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2c,d.dat"
+    },
+    {
+      "filename": "fig2d_50.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_50.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_50.0V.dat"
+    },
+    {
+      "filename": "fig2d_49.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_49.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_49.0V.dat"
+    },
+    {
+      "filename": "fig2d_48.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_48.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_48.0V.dat"
+    },
+    {
+      "filename": "fig2d_47.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_47.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_47.0V.dat"
+    },
+    {
+      "filename": "fig2d_46.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_46.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_46.0V.dat"
+    },
+    {
+      "filename": "fig2d_45.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_45.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_45.0V.dat"
+    },
+    {
+      "filename": "fig2d_44.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_44.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_44.0V.dat"
+    },
+    {
+      "filename": "fig2d_43.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_43.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_43.0V.dat"
+    },
+    {
+      "filename": "fig2d_42.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_42.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_42.0V.dat"
+    },
+    {
+      "filename": "fig2d_41.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_41.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_41.0V.dat"
+    },
+    {
+      "filename": "fig2d_40.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321283,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_40.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_40.0V.dat"
+    },
+    {
+      "filename": "fig2d_39.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_39.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_39.0V.dat"
+    },
+    {
+      "filename": "fig2d_38.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_38.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_38.0V.dat"
+    },
+    {
+      "filename": "fig2d_37.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321283,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_37.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_37.0V.dat"
+    },
+    {
+      "filename": "fig2d_36.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_36.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_36.0V.dat"
+    },
+    {
+      "filename": "fig2d_35.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_35.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_35.0V.dat"
+    },
+    {
+      "filename": "fig2d_34.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321283,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_34.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_34.0V.dat"
+    },
+    {
+      "filename": "fig2d_33.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_33.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_33.0V.dat"
+    },
+    {
+      "filename": "fig2d_32.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_32.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_32.0V.dat"
+    },
+    {
+      "filename": "fig2d_31.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_31.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_31.0V.dat"
+    },
+    {
+      "filename": "fig2d_30.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_30.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_30.0V.dat"
+    },
+    {
+      "filename": "fig2d_29.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_29.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_29.0V.dat"
+    },
+    {
+      "filename": "fig2d_28.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321283,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_28.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_28.0V.dat"
+    },
+    {
+      "filename": "fig2d_27.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_27.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_27.0V.dat"
+    },
+    {
+      "filename": "fig2d_26.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_26.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_26.0V.dat"
+    },
+    {
+      "filename": "fig2d_25.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321283,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_25.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_25.0V.dat"
+    },
+    {
+      "filename": "fig2d_24.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_24.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_24.0V.dat"
+    },
+    {
+      "filename": "fig2d_23.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_23.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_23.0V.dat"
+    },
+    {
+      "filename": "fig2d_22.0V.dat",
+      "extension": ".dat",
+      "size_bytes": 1321284,
+      "size_human": "1.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "LaserCtrl"
+      ],
+      "column_count": 5,
+      "row_count": 40059,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "LaserCtrl": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig2/fig2d/fig2d_22.0V.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig2/fig2d/fig2d_22.0V.dat"
+    },
+    {
+      "filename": "20230112_optical_losses.yml",
+      "extension": ".yml",
+      "size_bytes": 3219,
+      "size_human": "3.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .yml",
+      "download_source": "zip_extracted",
+      "archive_path": "data/calib/20230112_optical_losses.yml",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/calib/20230112_optical_losses.yml"
+    },
+    {
+      "filename": "20221201_setup_labeled.svg",
+      "extension": ".svg",
+      "size_bytes": 252361,
+      "size_human": "246.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .svg",
+      "download_source": "zip_extracted",
+      "archive_path": "data/calib/20221201_setup_labeled.svg",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/calib/20221201_setup_labeled.svg"
+    },
+    {
+      "filename": "fig3a_power_dict_14.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1010,
+      "size_human": "1010.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_power_dict_14.pkl",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_power_dict_14.pkl"
+    },
+    {
+      "filename": "fig3a_EO_0.dat",
+      "extension": ".dat",
+      "size_bytes": 20636,
+      "size_human": "20.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_0.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_0.dat"
+    },
+    {
+      "filename": "fig3a_EO_1.dat",
+      "extension": ".dat",
+      "size_bytes": 20625,
+      "size_human": "20.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_1.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_1.dat"
+    },
+    {
+      "filename": "fig3a_EO_2.dat",
+      "extension": ".dat",
+      "size_bytes": 20630,
+      "size_human": "20.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_2.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_2.dat"
+    },
+    {
+      "filename": "fig3a_EO_3.dat",
+      "extension": ".dat",
+      "size_bytes": 20632,
+      "size_human": "20.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_3.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_3.dat"
+    },
+    {
+      "filename": "fig3a_EO_4.dat",
+      "extension": ".dat",
+      "size_bytes": 20629,
+      "size_human": "20.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_4.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_4.dat"
+    },
+    {
+      "filename": "fig3a_EO_5.dat",
+      "extension": ".dat",
+      "size_bytes": 20640,
+      "size_human": "20.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_5.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_5.dat"
+    },
+    {
+      "filename": "fig3a_EO_6.dat",
+      "extension": ".dat",
+      "size_bytes": 20653,
+      "size_human": "20.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 425,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_6.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_6.dat"
+    },
+    {
+      "filename": "fig3a_EO_9.dat",
+      "extension": ".dat",
+      "size_bytes": 30652,
+      "size_human": "29.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 625,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_9.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_9.dat"
+    },
+    {
+      "filename": "fig3a_EO_10.dat",
+      "extension": ".dat",
+      "size_bytes": 40652,
+      "size_human": "39.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 825,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_10.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_10.dat"
+    },
+    {
+      "filename": "fig3a_EO_11.dat",
+      "extension": ".dat",
+      "size_bytes": 40645,
+      "size_human": "39.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 825,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_11.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_11.dat"
+    },
+    {
+      "filename": "fig3a_EO_12.dat",
+      "extension": ".dat",
+      "size_bytes": 40648,
+      "size_human": "39.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 825,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_12.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_12.dat"
+    },
+    {
+      "filename": "fig3a_EO_13.dat",
+      "extension": ".dat",
+      "size_bytes": 40641,
+      "size_human": "39.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 825,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_13.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_13.dat"
+    },
+    {
+      "filename": "fig3a_EO_14.dat",
+      "extension": ".dat",
+      "size_bytes": 40653,
+      "size_human": "39.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 825,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_EO_14.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_EO_14.dat"
+    },
+    {
+      "filename": "fig3a_mw_0.dat",
+      "extension": ".dat",
+      "size_bytes": 10613,
+      "size_human": "10.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 225,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_mw_0.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_mw_0.dat"
+    },
+    {
+      "filename": "fig3a_mw_1.dat",
+      "extension": ".dat",
+      "size_bytes": 10612,
+      "size_human": "10.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Data",
+        "saved",
+        "by",
+        "VNAModel"
+      ],
+      "column_count": 5,
+      "row_count": 225,
+      "dtypes": {
+        "#": "object",
+        "Data": "object",
+        "saved": "object",
+        "by": "object",
+        "VNAModel": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "data/fig3/fig3a_mw_1.dat",
+      "from_zip": "data.zip",
+      "relative_path": "zip_contents/data/fig3/fig3a_mw_1.dat"
+    }
+  ]
+}

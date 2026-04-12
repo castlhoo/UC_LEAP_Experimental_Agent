@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0158",
+  "title": "<mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mi>α</mml:mi><mml:mo>−</mml:mo><mml:msub><mml:mi>As</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi>Te</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:mrow></mml:math> as a platform for the exploration of the electronic band structure of single layer <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mi>β</mml:mi><mml:mrow><mml:mo>−</mml:mo><mml:mi>tellurene</mml:mi></mml:mrow></mml:mrow></mml:math>",
+  "doi": "10.1103/physrevb.106.125152",
+  "journal": "Physical review. B./Physical review. B",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4298138252",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevb_106_125152",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready cleaned dataset files were identified.",
+  "type2_summary": "No raw/unprocessed dataset files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The provided file list contains only a PDF manuscript, not a dataset deposit. Based on both paper evidence and file evidence, there are no classifiable Type 1 or Type 2 data files.",
+  "file_classifications": [
+    {
+      "relative_path": "vanderMeij_Jesper_TheTrawlerAsA_PAPER_FINAL__1_.pdf",
+      "filename": "vanderMeij_Jesper_TheTrawlerAsA_PAPER_FINAL__1_.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis reports no data availability statement and no downloadable data files or external URLs on the publisher page, so there is no paper evidence that this PDF is a dataset file.",
+      "file_evidence": "Single PDF file, 317.0 KB, sourced from Zenodo. The filename indicates a paper manuscript ('PAPER_FINAL'), not a data table or instrument output. No tabular structure, headers, or figure-specific data content is indicated by the file report.",
+      "reasoning": "This file is a publication/document rather than a dataset. It does not present structured numerical data that can be directly reploted, and there is no evidence it contains raw or cleaned experimental data. Therefore it should not be classified as Type 1 or Type 2.",
+      "ambiguity": "Low ambiguity: the file is clearly a paper PDF, not a data file.",
+      "key_columns_or_structure": "Not applicable; PDF manuscript with no dataset structure reported"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper combines ARPES and DFT to show that the (100) surface of alpha-As2Te3 hosts anisotropic 2D electronic states attributed to single-layer beta-tellurene, making it a platform to probe its band structure.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to rely on ARPES measurements and DFT calculations, but no associated dataset, source data, or supplementary data files were located from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "vanderMeij_Jesper_TheTrawlerAsA_PAPER_FINAL__1_.pdf",
+      "extension": ".pdf",
+      "size_bytes": 324631,
+      "size_human": "317.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "vanderMeij_Jesper_TheTrawlerAsA_PAPER_FINAL__1_.pdf"
+    }
+  ]
+}

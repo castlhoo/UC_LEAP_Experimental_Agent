@@ -1,0 +1,543 @@
+{
+  "paper_id": "step1_0200",
+  "title": "Ultrafast photothermoelectric effect in Dirac semimetallic Cd3As2 revealed by terahertz emission",
+  "doi": "10.1038/s41467-022-29168-w",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4220833547",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-29168-w",
+  "files_inspected": 2,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel workbook Source_Data.xlsx is organized as figure-based source data with headers and sheet names matching the paper figures, making it replot-ready and consistent with Type 1.",
+  "type2_summary": "No clear raw/unprocessed instrument dataset file was identified from the provided files.",
+  "type1_files": [
+    "Source_Data.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The PDF supplement is treated as documentation rather than a dataset. The available evidence strongly supports a cleaned, figure-oriented source-data workbook and does not indicate any raw instrument file deposition.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2022_29168_MOESM1_ESM.pdf",
+      "filename": "41467_2022_29168_MOESM1_ESM.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper explicitly states that source data for several figures are provided separately as a Source Data file; this PDF is the Nature source-data supplement/documentation rather than a standalone dataset file.",
+      "file_evidence": "PDF format, Nature source-data naming, moderate size (~983 KB), and no tabular sheet/column structure. This is consistent with a supplementary source-data PDF or documentation file, not a directly replot-ready dataset.",
+      "reasoning": "The file is not a tabular data container and does not appear to be the primary dataset. It likely documents or packages source data rather than serving as a clean data table. Therefore it is best classified as documentation rather than type1/type2 data.",
+      "ambiguity": "Moderate: without opening the PDF, it is unclear whether it contains embedded figures, captions, or data tables. However, it is not the main structured dataset file.",
+      "key_columns_or_structure": "No tabular structure reported"
+    },
+    {
+      "relative_path": "Source_Data.xlsx",
+      "filename": "Source_Data.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly says: 'The source data underlying Fig. 1a, d, 2, 3, 4, and 5c, d are provided as a Source Data file [figshare DOI].' This is direct evidence for figure/source data rather than raw instrument output.",
+      "file_evidence": "Excel workbook with 16 figure-named sheets (e.g., Fig1a, Fig1d, Fig2a...), moderate size (~357 KB), and headered tabular structure. Reported sheets have dimensions suitable for direct plotting, such as Fig1d (4 cols x 904 rows) and Fig2c (6 cols x 1154 rows).",
+      "reasoning": "Both paper and file evidence indicate organized, figure-specific source data intended for replotting with minimal processing. This matches Type 1 exactly.",
+      "ambiguity": "None",
+      "key_columns_or_structure": "Figure-specific sheets: Fig1a, Fig1d, Fig2a, Fig2b, Fig2c, Fig2d, Fig3a, Fig3b, Fig3c, Fig3d; tabular headers present"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies ultrafast photothermoelectric (PTE) terahertz emission from Dirac semimetal Cd3As2 thin films grown by molecular beam epitaxy. By using thickness-gradient films and electro-optic THz sampling, the authors identify a photo-Seebeck response at zero field and a much larger photo-Nernst response under weak in-plane magnetic field (~0.4 T), attributing the enhancement to ambipolar transient transport and possibly anomalous Nernst contributions.",
+    "measurement_types": [
+      "THz time-domain electro-optic sampling",
+      "optical pump-probe THz emission spectroscopy",
+      "laser transmittance thickness mapping",
+      "magneto-THz emission measurement",
+      "polarization-dependent optical excitation measurement",
+      "azimuthal-angle-dependent emission measurement",
+      "magnetic-field-angle-dependent emission measurement",
+      "sample growth by molecular beam epitaxy",
+      "comparative THz emission measurement against ZnTe and InSb"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Thickness map of the Cd3As2 film on the wafer, obtained from 633-nm transmittance scanning; shows radial thickness gradient and excitation spot location.",
+        "data_type": "image / spatial map",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic of the THz emission and electro-optic sampling setup, including excitation geometry, magnetic field direction, and azimuthal angle definition.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Conceptual diagram of THz emission from in-plane Seebeck current, out-of-plane current, and magnetic-field-induced Nernst current.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Representative THz waveforms from in-plane Seebeck current, out-of-plane Seebeck current (via sample tilt), and Nernst current under magnetic field.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Peak THz field versus excitation intensity at zero magnetic field, showing sublinear power-law dependence.",
+        "data_type": "transport curve / power dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "THz waveforms under different excitation polarizations at zero magnetic field, showing polarization independence.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "THz waveforms versus sample azimuthal angle at zero magnetic field.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Peak THz field versus azimuthal angle, fitted by a cosine dependence to determine alignment with thickness gradient.",
+        "data_type": "angular dependence curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Peak THz field versus excitation intensity under ~0.4 T in-plane magnetic field, showing a different sublinear power law.",
+        "data_type": "transport curve / power dependence",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "THz waveforms under different excitation polarizations with magnetic field applied, showing polarization independence.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "THz waveforms versus azimuthal angle under magnetic field, showing a theta-dependent component plus a theta-independent magnetic component.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Azimuthal-angle dependence of THz peak amplitude with and without magnetic field, normalized to average amplitude.",
+        "data_type": "angular dependence curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "THz waveforms at reversed magnetic fields, demonstrating sign reversal of the magnetic component.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "THz waveforms for magnetic field aligned along x and 40 degrees away in the xz-plane, showing cosine projection behavior.",
+        "data_type": "time-domain waveform",
+        "likely_source": "raw measurement"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Orthogonal THz polarization components (Sx and Sy) for B parallel x and B parallel y, showing THz polarization perpendicular to in-plane magnetic field.",
+        "data_type": "polarization-resolved waveform / component plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Net magnetic THz signal amplitude at time zero versus magnetic field intensity, showing linear dependence.",
+        "data_type": "field dependence curve",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Schematic of transverse Seebeck effect in the thickness-gradient Cd3As2 film.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Schematic of ambipolar Nernst effect showing electron and hole contributions under magnetic field.",
+        "data_type": "schematic",
+        "likely_source": "derived"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Comparison of optimized THz emission from Cd3As2 with ZnTe (110) under the same excitation condition.",
+        "data_type": "comparison plot",
+        "likely_source": "processed data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Comparison of optimized THz emission from Cd3As2 with InSb (111) under reflective geometry and 2-um excitation.",
+        "data_type": "comparison plot",
+        "likely_source": "processed data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw time-domain THz waveforms measured by electro-optic sampling after femtosecond laser excitation of Cd3As2, including measurements with varying excitation polarization, azimuthal angle, sample tilt, magnetic-field direction, and magnetic-field strength. It also reports raw transmittance scans at 633 nm used to map film thickness, and comparative THz emission measurements on ZnTe and InSb reference samples.",
+    "has_processed_plots": true,
+    "processed_plot_details": "The paper plots derived quantities such as peak THz field amplitude versus excitation intensity, azimuthal angle, and magnetic field; normalized amplitudes; cosine fits; power-law fits; and thickness maps inferred from transmittance. These are processed from the measured waveforms or transmittance scans rather than being direct raw detector outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The source data underlying Fig. 1a, d, 2, 3, 4, and 5c, d are provided as a Source Data file at the given figshare DOI. Other data is available from the corresponding author upon reasonable request.",
+      "data_provided_types": [
+        "source_data",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurement files are not explicitly described as being deposited. The paper states that source data for selected figures are provided, but does not specify raw file formats, detector output formats, or a raw-data repository.",
+      "processed_data_description": "Processed data include figure-specific values such as thickness map values, THz peak amplitudes, normalized amplitudes, angular dependences, power-law fit data, magnetic-field dependence, and comparison intensities for reference materials.",
+      "figure_data_description": "Yes. The paper explicitly states that source data underlying Fig. 1a, d, 2, 3, 4, and 5c, d are provided. This implies figure-level data tables or files for replotting those panels.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned.",
+      "data_organization": "figure-based source data plus unspecified additional data available on request",
+      "replot_ready_data_present": true,
+      "replot_reason": "The paper explicitly provides source data for multiple main figures via a figshare DOI, which should be sufficient to replot those panels. However, the paper does not state that full raw measurement files or analysis scripts are included.",
+      "notes": "The dataset semantics are figure-centric rather than raw-instrument-centric. The provided 'Source Data' likely corresponds to processed numerical values used to generate the published plots, not the underlying raw THz time traces or transmittance scan images. Supplementary figures are referenced extensively, but no explicit source-data statement is given for them in the text provided."
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": true,
+      "both_expected": false,
+      "raw_data_evidence": "The paper says source data are provided for several figures, but it does not explicitly state that raw instrument files are deposited.",
+      "source_data_evidence": "Explicit statement: 'The source data underlying Fig. 1a, d, 2, 3, 4, and 5c, d are provided as a Source Data file [figshare DOI].'",
+      "both_evidence": "none",
+      "data_availability_section_relevant": [
+        "source data underlying Fig. 1a, d, 2, 3, 4, and 5c, d are provided",
+        "Other data is available from the corresponding author upon reasonable request"
+      ],
+      "priority_modalities": [
+        "THz time-domain waveforms",
+        "transmittance scan maps",
+        "angular dependence curves",
+        "power dependence curves",
+        "magnetic-field dependence curves",
+        "comparison THz intensity data"
+      ],
+      "review_notes": "Be careful not to label the provided source data as raw data. The paper strongly suggests processed figure data extracted from measurements. Raw THz traces may exist in the lab but are not explicitly deposited in the text. Supplementary figures are mentioned, but their source data availability is not explicitly stated here."
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_29168_MOESM1_ESM.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1006474,
+      "size_human": "982.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_29168_MOESM1_ESM.pdf"
+    },
+    {
+      "filename": "Source_Data.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 365525,
+      "size_human": "357.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig1a",
+        "Fig1d",
+        "Fig2a",
+        "Fig2b",
+        "Fig2c",
+        "Fig2d",
+        "Fig3a",
+        "Fig3b",
+        "Fig3c",
+        "Fig3d",
+        "Fig4a",
+        "Fig4b",
+        "Fig4c",
+        "Fig4d",
+        "Fig5c",
+        "Fig5d"
+      ],
+      "sheet_count": 16,
+      "sheets": [
+        {
+          "sheet_name": "Fig1a",
+          "columns": [
+            "Figure 1a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Figure 1a"
+          ],
+          "column_count": 30,
+          "row_count": 33,
+          "dtypes": {
+            "Figure 1a": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "float64",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig1d",
+          "columns": [
+            "Figure 1d",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "Figure 1d"
+          ],
+          "column_count": 4,
+          "row_count": 904,
+          "dtypes": {
+            "Figure 1d": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2a",
+          "columns": [
+            "Figure 2a",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "Figure 2a"
+          ],
+          "column_count": 2,
+          "row_count": 13,
+          "dtypes": {
+            "Figure 2a": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2b",
+          "columns": [
+            "Figure 2b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Figure 2b"
+          ],
+          "column_count": 5,
+          "row_count": 253,
+          "dtypes": {
+            "Figure 2b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2c",
+          "columns": [
+            "Figure 2c",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Figure 2c"
+          ],
+          "column_count": 6,
+          "row_count": 1154,
+          "dtypes": {
+            "Figure 2c": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2d",
+          "columns": [
+            "Figure 2d",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "Figure 2d"
+          ],
+          "column_count": 2,
+          "row_count": 21,
+          "dtypes": {
+            "Figure 2d": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3a",
+          "columns": [
+            "Figure 3a",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "Figure 3a"
+          ],
+          "column_count": 2,
+          "row_count": 15,
+          "dtypes": {
+            "Figure 3a": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3b",
+          "columns": [
+            "Figure 3b",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Figure 3b"
+          ],
+          "column_count": 6,
+          "row_count": 253,
+          "dtypes": {
+            "Figure 3b": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3c",
+          "columns": [
+            "Figure 3c",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Figure 3c"
+          ],
+          "column_count": 6,
+          "row_count": 1154,
+          "dtypes": {
+            "Figure 3c": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3d",
+          "columns": [
+            "Figure 3d",
+            "Unnamed: 1",
+            "Unnamed: 2"
+          ],
+          "named_columns": [
+            "Figure 3d"
+          ],
+          "column_count": 3,
+          "row_count": 21,
+          "dtypes": {
+            "Figure 3d": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "Source_Data.xlsx"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0113",
+  "title": "Evaluation of defect depth in CFRP composites by long pulse thermography",
+  "doi": "10.1016/j.ndteint.2022.102658",
+  "journal": "NDT & E International",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4225145960",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1016_j_ndteint_2022_102658",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No evidence of cleaned, replot-ready dataset files was found.",
+  "type2_summary": "No evidence of raw/unprocessed dataset files was found.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Only one file was provided, and it appears to be a paper PDF/documentation rather than a dataset. Without content extraction from the PDF, classification remains conservative.",
+  "file_classifications": [
+    {
+      "relative_path": "IEEE_TII-19-3402_OpenAccess.pdf",
+      "filename": "IEEE_TII-19-3402_OpenAccess.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis reports no data availability statement and no downloadable data files or repository links on the publisher page, so there is no paper-level evidence that this PDF is a dataset file.",
+      "file_evidence": "The file is a PDF and, from the provided inspection report alone, appears to be an article/document rather than a data table or raw measurement file. No tabular structure, headers, or figure-specific data organization is indicated.",
+      "reasoning": "Because the paper does not indicate any deposited data and the file is a PDF with no evidence of embedded replot-ready tables or raw instrument output, it should not be classified as Type 1 or Type 2 dataset data. It is best treated as documentation.",
+      "ambiguity": "Moderate: the inspection report does not expose PDF contents, so this is based on file type and the absence of dataset indicators rather than a full content parse.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper develops and validates analytical and heat-conduction models for estimating defect depth in CFRP composites using long pulse infrared thermography.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to present analytical and heat-conduction models for defect-depth estimation in CFRP composites using long pulse infrared thermography, but no accompanying dataset or source data was identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external repository links were listed on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external repository links were listed on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "IEEE_TII-19-3402_OpenAccess.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1087700,
+      "size_human": "1.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "IEEE_TII-19-3402_OpenAccess.pdf"
+    }
+  ]
+}

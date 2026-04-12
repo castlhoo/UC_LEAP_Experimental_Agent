@@ -1,0 +1,35 @@
+Title: Ultrafast Non‐Volatile Floating‐Gate Memory Based on All‐2D Materials
+DOI: 10.1002/adma.202311652
+Journal: Advanced Materials
+Year: 2024
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: One small structured CSV is present and is replot-ready in the sense of being clean tabular data, though it appears to be ancillary market-summary content rather than experimental figure data.
+- Type2 summary: No raw/unprocessed instrument output, microscopy files, HDF5, or other clear Type 2 dataset files were identified.
+
+Type1 files
+- Global_Non-Volatile_Memory_Market.csv
+  original path: Global_Non-Volatile_Memory_Market.csv
+  classified as: type1
+  reasoning: The file is directly loadable as a table and is cleanly structured, but its content is market-report metadata rather than physical measurement data. Under the provided definitions, it is still a cleaned tabular file and not raw/unprocessed data. It is therefore classified as Type 1 rather than Type 2, while noting that it is not figure-specific scientific source data.
+  paper evidence: The paper analysis provides no evidence that this CSV is raw experimental data or source data from the publication. The file therefore must be judged from its own structure and content.
+  file evidence: Small CSV (610 B) with 2 columns and 10 rows, header-based tabular structure. Columns are 'Feature of the Report' and 'Details'; sample content includes 'Market Size in 2024' and 'USD 89.23 Billion'. This is structured, human-readable summary data rather than instrument output.
+  structure: Feature of the Report, Details
+  ambiguity: moderate: the file is tabular and replot-ready, but its subject matter is not clearly tied to the paper's experimental figures; it appears to be ancillary/non-experimental data.
+
+Type2 files
+- none
+
+Annotation files
+- 4213vlsics06.pdf
+  original path: 4213vlsics06.pdf
+  classified as: documentation
+  reasoning: This file is a paper/documentation file rather than a dataset file. It does not represent figure-ready data or raw measurement data, so it is excluded from Type 1/Type 2 classification.
+  paper evidence: The paper analysis indicates no data availability statement and no identified publisher-hosted source data or external URLs. This PDF is therefore best treated as the publication itself, not a dataset deposit.
+  file evidence: PDF document, 250.9 KB, from Zenodo. No structural evidence of tabular figure data or raw instrument output was provided.
+  structure: not applicable
+
+Script files
+- none

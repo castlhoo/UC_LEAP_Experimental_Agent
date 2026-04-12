@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0286",
+  "title": "Fabrication and Characterization of the Moiré surface state on a topological insulator",
+  "doi": "10.1021/acs.nanolett.5c03535",
+  "journal": "arXiv preprint",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2509.03322v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acs_nanolett_5c03535",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No Type 1 dataset files were identified. The only file provided is a publication PDF, not figure-ready source data.",
+  "type2_summary": "No Type 2 raw data files were identified. The only file provided is a final printed article PDF, not experimental output.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The provided Zenodo file appears to be the article PDF itself. No dataset files were present, so classification into Type 1 or Type 2 is not applicable for this file.",
+  "file_classifications": [
+    {
+      "relative_path": "CIMNAS_Article_19_Final_printed_version.pdf",
+      "filename": "CIMNAS_Article_19_Final_printed_version.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement and no explicit indication that this PDF is source data or raw data.",
+      "file_evidence": "This is a 7.6 MB PDF from Zenodo with a title indicating it is the final printed article version, which strongly suggests it is the publication itself rather than a dataset file.",
+      "reasoning": "The file is not a data table, source-data deposit, or instrument output. Its filename and size indicate a manuscript/article PDF. Since it is documentation rather than a dataset, it is excluded from Type 1/Type 2 classification.",
+      "ambiguity": "Low ambiguity: the file is clearly a paper PDF, not a data file.",
+      "key_columns_or_structure": "Not applicable; PDF article text/figures rather than tabular dataset"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports experimental fabrication of a moiré superlattice on Sb2Te3 topological insulator thin films and its characterization by STM/STS and magnetic-field Landau level measurements.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset or source data could be confirmed from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "CIMNAS_Article_19_Final_printed_version.pdf",
+      "extension": ".pdf",
+      "size_bytes": 7935428,
+      "size_human": "7.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "CIMNAS_Article_19_Final_printed_version.pdf"
+    }
+  ]
+}

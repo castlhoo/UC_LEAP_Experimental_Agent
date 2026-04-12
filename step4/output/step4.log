@@ -1,142 +1,914 @@
-2026-04-07 18:41:50,620 [INFO] __main__: ============================================================
-2026-04-07 18:41:50,620 [INFO] __main__: Starting Step 4: Local Storage & Organization
-2026-04-07 18:41:50,620 [INFO] __main__: ============================================================
-2026-04-07 18:41:50,622 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:41:50,623 [INFO] step4.pipeline: Phase 1: Loading Step 3 classification results...
-2026-04-07 18:41:50,628 [INFO] step4.pipeline:   Total papers: 13
-2026-04-07 18:41:50,628 [INFO] step4.pipeline:   Both Type 1+2: 1
-2026-04-07 18:41:50,629 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:41:50,629 [INFO] step4.pipeline: Phase 2: Selecting papers to organize...
-2026-04-07 18:41:50,630 [INFO] step4.pipeline:   Selected 10 papers (mode=has_any)
-2026-04-07 18:41:50,630 [INFO] step4.pipeline:     [ 10.0] Fractional Chern insulators in magic-angle twisted bila
-2026-04-07 18:41:50,630 [INFO] step4.pipeline:     [ 10.0] Cascade of correlated electron states in the kagome sup
-2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [ 10.0] Observation of hybrid higher-order skin-topological eff
-2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [ 10.0] Josephson diode effect from Cooper pair momentum in a t
-2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  9.3] Proximity-induced chiral quantum light generation in st
-2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  9.0] Superconductivity and nematic order in a new titanium-b
-2026-04-07 18:41:50,631 [INFO] step4.pipeline:     [  8.3] Inverse design of chiral functional films by a robotic 
-2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  8.0] Extremely anisotropic van der Waals thermal conductors
-2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  7.0] Spin-polarized imaging of the antiferromagnetic structu
-2026-04-07 18:41:50,632 [INFO] step4.pipeline:     [  6.0] Intercell moiré exciton complexes in electron lattices
-2026-04-07 18:41:50,634 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:41:50,634 [INFO] step4.pipeline: Paper 1/10: Fractional Chern insulators in magic-angle twisted bila
-2026-04-07 18:41:50,635 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-04002-3
-2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Type: Both
-2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Dir: Both/001_Fractional_Chern_insulators_in_magicangle
-2026-04-07 18:41:50,635 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:41:53,423 [INFO] step4.pdf_downloader:     PDF downloaded (4567KB) via publisher
-2026-04-07 18:41:53,423 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:41:53,457 [INFO] step4.file_organizer:     type1_data: 1 files
-2026-04-07 18:41:53,457 [INFO] step4.file_organizer:     type2_data: 3 files
-2026-04-07 18:41:53,458 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:41:53,459 [INFO] step4.pipeline: Paper 2/10: Cascade of correlated electron states in the kagome sup
-2026-04-07 18:41:53,459 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-03946-w
-2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Dir: Type1/002_Cascade_of_correlated_electron_states
-2026-04-07 18:41:53,459 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:41:58,569 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
-2026-04-07 18:41:58,569 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:41:58,574 [INFO] step4.file_organizer:     type1_data: 2 files
-2026-04-07 18:41:58,575 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:41:58,575 [INFO] step4.pipeline: Paper 3/10: Observation of hybrid higher-order skin-topological eff
-2026-04-07 18:41:58,575 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-26414-5
-2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Dir: Type1/003_Observation_of_hybrid_higherorder_skintopological
-2026-04-07 18:41:58,576 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:01,121 [INFO] step4.pdf_downloader:     PDF downloaded (3682KB) via publisher
-2026-04-07 18:42:01,121 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:01,125 [INFO] step4.file_organizer:     type1_data: 1 files
-2026-04-07 18:42:01,126 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:01,126 [INFO] step4.pipeline: Paper 4/10: Josephson diode effect from Cooper pair momentum in a t
-2026-04-07 18:42:01,126 [INFO] step4.pipeline:   DOI: 10.1038/s41567-022-01699-5
-2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Dir: Type1/004_Josephson_diode_effect_from_Cooper
-2026-04-07 18:42:01,126 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:05,193 [INFO] step4.pdf_downloader:     PDF downloaded (2046KB) via publisher
-2026-04-07 18:42:05,194 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:05,201 [INFO] step4.file_organizer:     type1_data: 2 files
-2026-04-07 18:42:05,201 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:05,201 [INFO] step4.pipeline: Paper 5/10: Proximity-induced chiral quantum light generation in st
-2026-04-07 18:42:05,201 [INFO] step4.pipeline:   DOI: 10.1038/s41563-023-01645-7
-2026-04-07 18:42:05,201 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:05,201 [INFO] step4.pipeline:   Dir: Type1/005_Proximityinduced_chiral_quantum_light_generation
-2026-04-07 18:42:05,203 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:10,536 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
-2026-04-07 18:42:10,537 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:10,564 [INFO] step4.file_organizer:     type1_data: 13 files
-2026-04-07 18:42:10,564 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:10,565 [INFO] step4.pipeline: Paper 6/10: Superconductivity and nematic order in a new titanium-b
-2026-04-07 18:42:10,565 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-53870-6
-2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Dir: Type1/006_Superconductivity_and_nematic_order_in
-2026-04-07 18:42:10,565 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:13,149 [INFO] step4.pdf_downloader:     PDF downloaded (2181KB) via publisher
-2026-04-07 18:42:13,150 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:13,161 [INFO] step4.file_organizer:     type1_data: 5 files
-2026-04-07 18:42:13,162 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:13,163 [INFO] step4.pipeline: Paper 7/10: Inverse design of chiral functional films by a robotic 
-2026-04-07 18:42:13,163 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-41951-x
-2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Dir: Type1/007_Inverse_design_of_chiral_functional
-2026-04-07 18:42:13,163 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:15,578 [INFO] step4.pdf_downloader:     PDF downloaded (4844KB) via publisher
-2026-04-07 18:42:15,579 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:15,632 [INFO] step4.file_organizer:     type1_data: 9 files
-2026-04-07 18:42:15,633 [INFO] step4.file_organizer:     annotations: 5 files
-2026-04-07 18:42:15,633 [INFO] step4.file_organizer:     scripts: 9 files
-2026-04-07 18:42:15,633 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:15,634 [INFO] step4.pipeline: Paper 8/10: Extremely anisotropic van der Waals thermal conductors
-2026-04-07 18:42:15,634 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-03867-8
-2026-04-07 18:42:15,634 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:15,635 [INFO] step4.pipeline:   Dir: Type1/008_Extremely_anisotropic_van_der_Waals
-2026-04-07 18:42:15,635 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:18,240 [INFO] step4.pdf_downloader:     PDF downloaded (4641KB) via publisher
-2026-04-07 18:42:18,240 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:18,249 [INFO] step4.file_organizer:     type1_data: 3 files
-2026-04-07 18:42:18,249 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:18,250 [INFO] step4.pipeline: Paper 9/10: Spin-polarized imaging of the antiferromagnetic structu
-2026-04-07 18:42:18,250 [INFO] step4.pipeline:   DOI: 10.1038/s41598-022-18678-8
-2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Type: Type1
-2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Dir: Type1/009_Spinpolarized_imaging_of_the_antiferromagnetic
-2026-04-07 18:42:18,250 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:22,058 [INFO] step4.pdf_downloader:     PDF downloaded (2085KB) via publisher
-2026-04-07 18:42:22,059 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:22,071 [INFO] step4.file_organizer:     type1_data: 5 files
-2026-04-07 18:42:22,071 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:22,072 [INFO] step4.pipeline: Paper 10/10: Intercell moiré exciton complexes in electron lattices
-2026-04-07 18:42:22,072 [INFO] step4.pipeline:   DOI: 10.1038/s41563-023-01496-2
-2026-04-07 18:42:22,072 [INFO] step4.pipeline:   Type: Type2
-2026-04-07 18:42:22,072 [INFO] step4.pipeline:   Dir: Type2/010_Intercell_moiré_exciton_complexes_in
-2026-04-07 18:42:22,073 [INFO] step4.pipeline:   Downloading PDF...
-2026-04-07 18:42:27,202 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
-2026-04-07 18:42:27,203 [INFO] step4.pipeline:   Organizing dataset files...
-2026-04-07 18:42:27,264 [INFO] step4.file_organizer:     type2_data: 33 files
-2026-04-07 18:42:27,264 [INFO] step4.file_organizer:     scripts: 8 files
-2026-04-07 18:42:27,264 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:27,264 [INFO] step4.pipeline: Phase 5: Saving manifest...
-2026-04-07 18:42:27,270 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:27,270 [INFO] step4.pipeline: STEP 4 RESULTS SUMMARY
-2026-04-07 18:42:27,270 [INFO] step4.pipeline: ============================================================
-2026-04-07 18:42:27,270 [INFO] step4.pipeline: Papers organized:      10
-2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Both (T1+T2):        1
-2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Type 1 only:         8
-2026-04-07 18:42:27,270 [INFO] step4.pipeline:   Type 2 only:         1
-2026-04-07 18:42:27,270 [INFO] step4.pipeline: PDFs downloaded:        7
-2026-04-07 18:42:27,271 [INFO] step4.pipeline: Type 1 data files:     41
-2026-04-07 18:42:27,271 [INFO] step4.pipeline: Type 2 data files:     36
-2026-04-07 18:42:27,271 [INFO] step4.pipeline: Annotation files:      5
-2026-04-07 18:42:27,271 [INFO] step4.pipeline: Script files:          17
-2026-04-07 18:42:27,272 [INFO] step4.pipeline: ------------------------------------------------------------
-2026-04-07 18:42:27,272 [INFO] step4.pipeline:     1. [ Both] [PDF:✓] T1: 1 T2: 3 | Fractional Chern insulators in magic-angle tw
-2026-04-07 18:42:27,272 [INFO] step4.pipeline:     2. [Type1] [PDF:✗] T1: 2 T2: 0 | Cascade of correlated electron states in the 
-2026-04-07 18:42:27,272 [INFO] step4.pipeline:     3. [Type1] [PDF:✓] T1: 1 T2: 0 | Observation of hybrid higher-order skin-topol
-2026-04-07 18:42:27,272 [INFO] step4.pipeline:     4. [Type1] [PDF:✓] T1: 2 T2: 0 | Josephson diode effect from Cooper pair momen
-2026-04-07 18:42:27,272 [INFO] step4.pipeline:     5. [Type1] [PDF:✗] T1:13 T2: 0 | Proximity-induced chiral quantum light genera
-2026-04-07 18:42:27,273 [INFO] step4.pipeline:     6. [Type1] [PDF:✓] T1: 5 T2: 0 | Superconductivity and nematic order in a new 
-2026-04-07 18:42:27,273 [INFO] step4.pipeline:     7. [Type1] [PDF:✓] T1: 9 T2: 0 | Inverse design of chiral functional films by 
-2026-04-07 18:42:27,273 [INFO] step4.pipeline:     8. [Type1] [PDF:✓] T1: 3 T2: 0 | Extremely anisotropic van der Waals thermal c
-2026-04-07 18:42:27,273 [INFO] step4.pipeline:     9. [Type1] [PDF:✓] T1: 5 T2: 0 | Spin-polarized imaging of the antiferromagnet
-2026-04-07 18:42:27,273 [INFO] step4.pipeline:    10. [Type2] [PDF:✗] T1: 0 T2:33 | Intercell moiré exciton complexes in electron
-2026-04-07 18:42:27,273 [INFO] step4.pipeline: Manifest saved to C:\UCLEAP\UC_LEAP\step4/organized\manifest_latest.json
-2026-04-07 18:42:27,274 [INFO] __main__: ============================================================
-2026-04-07 18:42:27,274 [INFO] __main__: Step 4 complete in 37s. 10 papers organized.
+2026-04-11 12:42:08,250 [INFO] __main__: ============================================================
+2026-04-11 12:42:08,250 [INFO] __main__: Starting Step 4: Local Storage & Organization
+2026-04-11 12:42:08,250 [INFO] __main__: ============================================================
+2026-04-11 12:42:08,260 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:08,260 [INFO] step4.pipeline: Phase 1: Loading Step 3 classification results...
+2026-04-11 12:42:08,322 [INFO] step4.pipeline:   Total papers: 136
+2026-04-11 12:42:08,322 [INFO] step4.pipeline:   Both Type 1+2: 20
+2026-04-11 12:42:08,323 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:08,323 [INFO] step4.pipeline: Phase 2: Selecting papers to organize...
+2026-04-11 12:42:08,323 [INFO] step4.pipeline:   Selected 74 papers (mode=has_any)
+2026-04-11 12:42:08,323 [INFO] step4.pipeline:     [  9.8] Hetero-site nucleation for growing twisted bilayer grap
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  9.0] Coherent light control of a metastable hidden state
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  9.0] Time-domain observation of interlayer exciton formation
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  7.4] Softening of a flat phonon mode in the kagome ScV6Sn6
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  7.0] Observation of kagome-like bands in two-dimensional sem
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  6.4] CRISPR-mediated multiplexed live cell imaging of nonrep
+2026-04-11 12:42:08,324 [INFO] step4.pipeline:     [  6.3] Intrinsic TGF-β signaling attenuates proximal tubule mi
+2026-04-11 12:42:08,325 [INFO] step4.pipeline:     [  6.0] Coulomb screening of superconductivity in magic-angle t
+2026-04-11 12:42:08,325 [INFO] step4.pipeline:     [  6.0] Coupling and decoupling of bilayer graphene monitored b
+2026-04-11 12:42:08,325 [INFO] step4.pipeline:     [  6.0] Dipolar excitonic insulator in a moire lattice
+2026-04-11 12:42:08,325 [INFO] step4.pipeline:     [  6.0] Experimental evidence of the topological obstruction in
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] Intrinsic spin Hall torque in a moire Chern magnet
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] One-dimensional moire chains with partially-filled flat
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] PAM-flexible Engineered FnCas9 variants for robust and 
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] Tailoring Dirac fermions by in-situ tunable high-order 
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] Unusual magnetotransport in twisted bilayer graphene
+2026-04-11 12:42:08,326 [INFO] step4.pipeline:     [  6.0] Electronic procrystalline state in moire structures
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [  4.0] Realization of one-dimensional electronic flat bands in
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [  4.0] Subconfluent ARPE-19 Cells Display Mesenchymal Cell-Sta
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [  4.0] Topological Phase Transitions Driven by Sn Doping in (M
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [ 10.0] Josephson diode effect from Cooper pair momentum in a t
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [ 10.0] Polycrystalline SnSe with a thermoelectric figure of me
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [  9.8] Evidence for quantum spin liquid behaviour in single-la
+2026-04-11 12:42:08,327 [INFO] step4.pipeline:     [  9.3] Order-disorder charge density wave instability in the k
+2026-04-11 12:42:08,328 [INFO] step4.pipeline:     [  9.3] Unveiling Weyl-related optical responses in semiconduct
+2026-04-11 12:42:08,328 [INFO] step4.pipeline:     [  9.0] A robust and tunable Luttinger liquid in correlated edg
+2026-04-11 12:42:08,328 [INFO] step4.pipeline:     [  9.0] Flat <mml:math xmlns:mml="http://www.w3.org/1998/Math/M
+2026-04-11 12:42:08,328 [INFO] step4.pipeline:     [  9.0] Ultrafast photothermoelectric effect in Dirac semimetal
+2026-04-11 12:42:08,328 [INFO] step4.pipeline:     [  9.0] Synthesis of a monolayer fullerene network
+2026-04-11 12:42:08,330 [INFO] step4.pipeline:     [  8.3] Ultrafast Non‐Volatile Floating‐Gate Memory Based on Al
+2026-04-11 12:42:08,330 [INFO] step4.pipeline:     [  7.8] Boron clusters as broadband membrane carriers
+2026-04-11 12:42:08,330 [INFO] step4.pipeline:     [  7.5] Halogen-Functionalized Hole Transport Materials with St
+2026-04-11 12:42:08,330 [INFO] step4.pipeline:     [  7.5] Three-dimensional mapping of the altermagnetic spin spl
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.3] Phonon promoted charge density wave in topological kago
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.0] Spin density wave and van Hove singularity in the kagom
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.0] From Stoner to local moment magnetism in atomically thi
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.0] Mitophagy curtails cytosolic mtDNA-dependent activation
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.0] Multiple machine learning approach to characterize two-
+2026-04-11 12:42:08,331 [INFO] step4.pipeline:     [  7.0] Observation of a singular Weyl point surrounded by char
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.6] Native point defects and their implications for the Dir
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.3] Prosaposin maintains lipid homeostasis in dopamine neur
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.1] Halogen-Bonded Organic Framework (XOF) Based on Iodoniu
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.0] Deep learning assisted Raman spectroscopy for rapid ide
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.0] Extended Quantum Anomalous Hall States in Graphene/hBN 
+2026-04-11 12:42:08,332 [INFO] step4.pipeline:     [  6.0] Fine mapping spatiotemporal mechanisms of genetic varia
+2026-04-11 12:42:08,333 [INFO] step4.pipeline:     [  6.0] Fractional Quantum Anomalous Hall Effect in a Graphene 
+2026-04-11 12:42:08,333 [INFO] step4.pipeline:     [  6.0] Moire Engineering of Cooper-Pair Density Modulation Sta
+2026-04-11 12:42:08,333 [INFO] step4.pipeline:     [  6.0] Moire synaptic transistor for homogeneous-architecture 
+2026-04-11 12:42:08,333 [INFO] step4.pipeline:     [  6.0] Parallel transport and layer-resolved thermodynamic mea
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  6.0] Dirac cone spectroscopy of strongly correlated phases i
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  6.0] Moire magnetism in CrBr3 multilayers emerging from diff
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  6.0] Unconventional Nonlocal Relaxation Dynamics in a Twiste
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  5.0] Halogen‐Bonded Organic Framework (XOF) Based on Iodoniu
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  5.0] Photocurrent detected 2D spectroscopy via a pulse shape
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  5.0] χ (2)-induced artifact overwhelming the third-order sig
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  5.0] 
+2026-04-11 12:42:08,334 [INFO] step4.pipeline:     [  4.0] Development of broadly neutralizing antibodies targetin
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  4.0] Enhanced Phonon-Assisted Tunneling in Metal -- Twisted 
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  4.0] Entangled Moire Chern Insulator in Rhombohedral Graphen
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  4.0] Multi Moire Networks in Engineered Lateral Hetero-Bilay
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  9.0] Weyl spin-momentum locking in a chiral topological semi
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  7.6] Mn‐Rich MnSb<sub>2</sub>Te<sub>4</sub>: A Topological I
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  7.0] Anomalous excitonic phase diagram in band-gap-tuned Ta2
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  7.0] Device level reversible potassium intercalation into bi
+2026-04-11 12:42:08,335 [INFO] step4.pipeline:     [  7.0] Multidimensional XUV Photoemission Spectroscopy of 1T-T
+2026-04-11 12:42:08,336 [INFO] step4.pipeline:     [  6.0] 2D Materials for Neuromorphic Computing Devices
+2026-04-11 12:42:08,336 [INFO] step4.pipeline:     [  6.0] Machine Learning-Guided Optical and Raman Spectroscopy 
+2026-04-11 12:42:08,336 [INFO] step4.pipeline:     [  6.0] Semantic segmentation of ARPES spectra for electronic d
+2026-04-11 12:42:08,336 [INFO] step4.pipeline:     [  6.0] Switchable Chern insulator, isospin competitions and ch
+2026-04-11 12:42:08,336 [INFO] step4.pipeline:     [  6.0] Tunable Fractional Chern Insulators in Rhombohedral Gra
+2026-04-11 12:42:08,337 [INFO] step4.pipeline:     [  6.0] Twisted Angle-Dependent Work Functions in CVD-Grown Twi
+2026-04-11 12:42:08,337 [INFO] step4.pipeline:     [  5.0] py4DSTEM: A Software Package for Four-Dimensional Scann
+2026-04-11 12:42:08,337 [INFO] step4.pipeline:     [  4.0] Directed light emission from monolayers on 2D materials
+2026-04-11 12:42:08,337 [INFO] step4.pipeline:     [  4.0] Moire-Engineered Ferroelectric Transistors for Nearly T
+2026-04-11 12:42:08,340 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:08,340 [INFO] step4.pipeline: Paper 1/74: Hetero-site nucleation for growing twisted bilayer grap
+2026-04-11 12:42:08,340 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-22533-1
+2026-04-11 12:42:08,341 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:08,341 [INFO] step4.pipeline:   Dir: Both/001_Heterosite_nucleation_for_growing_twisted
+2026-04-11 12:42:08,341 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:11,393 [INFO] step4.pdf_downloader:     PDF downloaded (2187KB) via publisher
+2026-04-11 12:42:11,393 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:11,468 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:42:11,468 [INFO] step4.file_organizer:     type2_data: 6 files
+2026-04-11 12:42:11,468 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:11,468 [INFO] step4.file_organizer:     scripts: 1 files
+2026-04-11 12:42:11,474 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:11,474 [INFO] step4.pipeline: Paper 2/74: Coherent light control of a metastable hidden state
+2026-04-11 12:42:11,474 [INFO] step4.pipeline:   DOI: 10.1126/sciadv.adi4661
+2026-04-11 12:42:11,475 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:11,476 [INFO] step4.pipeline:   Dir: Both/002_Coherent_light_control_of_a
+2026-04-11 12:42:11,476 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:13,239 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:13,239 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:13,308 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-11 12:42:13,308 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:13,308 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:42:13,308 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:13,308 [INFO] step4.pipeline: Paper 3/74: Time-domain observation of interlayer exciton formation
+2026-04-11 12:42:13,308 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-42915-x
+2026-04-11 12:42:13,308 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:13,308 [INFO] step4.pipeline:   Dir: Both/003_Timedomain_observation_of_interlayer_exciton
+2026-04-11 12:42:13,308 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:17,359 [INFO] step4.pdf_downloader:     PDF downloaded (2300KB) via publisher
+2026-04-11 12:42:17,359 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:17,412 [INFO] step4.file_organizer:     type1_data: 7 files
+2026-04-11 12:42:17,412 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:42:17,412 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:42:17,412 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:17,412 [INFO] step4.pipeline: Paper 4/74: Softening of a flat phonon mode in the kagome ScV6Sn6
+2026-04-11 12:42:17,412 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-42186-6
+2026-04-11 12:42:17,412 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:17,412 [INFO] step4.pipeline:   Dir: Both/004_Softening_of_a_flat_phonon
+2026-04-11 12:42:17,412 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:19,945 [INFO] step4.pdf_downloader:     PDF downloaded (3615KB) via publisher
+2026-04-11 12:42:19,945 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:19,980 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:42:19,980 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:19,982 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:19,982 [INFO] step4.pipeline: Paper 5/74: Observation of kagome-like bands in two-dimensional sem
+2026-04-11 12:42:19,982 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-53314-1
+2026-04-11 12:42:19,982 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:19,983 [INFO] step4.pipeline:   Dir: Both/005_Observation_of_kagomelike_bands_in
+2026-04-11 12:42:19,983 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:22,525 [INFO] step4.pdf_downloader:     PDF downloaded (1714KB) via publisher
+2026-04-11 12:42:22,525 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:22,675 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-11 12:42:22,675 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-11 12:42:22,676 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:42:22,676 [INFO] step4.file_organizer:     scripts: 3 files
+2026-04-11 12:42:22,677 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:22,678 [INFO] step4.pipeline: Paper 6/74: CRISPR-mediated multiplexed live cell imaging of nonrep
+2026-04-11 12:42:22,678 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-29343-z
+2026-04-11 12:42:22,678 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:22,678 [INFO] step4.pipeline:   Dir: Both/006_CRISPRmediated_multiplexed_live_cell_imaging
+2026-04-11 12:42:22,678 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:25,257 [INFO] step4.pdf_downloader:     PDF downloaded (2963KB) via publisher
+2026-04-11 12:42:25,257 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:25,281 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:42:25,281 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:25,281 [INFO] step4.file_organizer:     annotations: 3 files
+2026-04-11 12:42:25,281 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:25,281 [INFO] step4.pipeline: Paper 7/74: Intrinsic TGF-β signaling attenuates proximal tubule mi
+2026-04-11 12:42:25,281 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-39050-y
+2026-04-11 12:42:25,281 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:25,281 [INFO] step4.pipeline:   Dir: Both/007_Intrinsic_TGFβ_signaling_attenuates_proximal
+2026-04-11 12:42:25,281 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:29,608 [INFO] step4.pdf_downloader:     PDF downloaded (4709KB) via publisher
+2026-04-11 12:42:29,608 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:29,747 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:42:29,747 [INFO] step4.file_organizer:     type2_data: 9 files
+2026-04-11 12:42:29,748 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:29,748 [INFO] step4.pipeline: Paper 8/74: Coulomb screening of superconductivity in magic-angle t
+2026-04-11 12:42:29,749 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:42:29,749 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:29,749 [INFO] step4.pipeline:   Dir: Both/008_Coulomb_screening_of_superconductivity_in
+2026-04-11 12:42:29,749 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:29,750 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:42:29,750 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:29,776 [INFO] step4.file_organizer:     type1_data: 8 files
+2026-04-11 12:42:29,776 [INFO] step4.file_organizer:     type2_data: 5 files
+2026-04-11 12:42:29,776 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:29,776 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:29,776 [INFO] step4.pipeline: Paper 9/74: Coupling and decoupling of bilayer graphene monitored b
+2026-04-11 12:42:29,776 [INFO] step4.pipeline:   DOI: 10.1021/acs.nanolett.1c03689
+2026-04-11 12:42:29,776 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:29,776 [INFO] step4.pipeline:   Dir: Both/009_Coupling_and_decoupling_of_bilayer
+2026-04-11 12:42:29,776 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:31,146 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:31,147 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:31,242 [INFO] step4.file_organizer:     type1_data: 4 files
+2026-04-11 12:42:31,242 [INFO] step4.file_organizer:     type2_data: 7 files
+2026-04-11 12:42:31,242 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:31,242 [INFO] step4.file_organizer:     scripts: 9 files
+2026-04-11 12:42:31,242 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:31,242 [INFO] step4.pipeline: Paper 10/74: Dipolar excitonic insulator in a moire lattice
+2026-04-11 12:42:31,242 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:42:31,242 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:31,242 [INFO] step4.pipeline:   Dir: Both/010_Dipolar_excitonic_insulator_in_a
+2026-04-11 12:42:31,242 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:31,242 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:42:31,242 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:31,276 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-11 12:42:31,276 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-11 12:42:31,276 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:31,276 [INFO] step4.file_organizer:     scripts: 2 files
+2026-04-11 12:42:31,276 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:31,276 [INFO] step4.pipeline: Paper 11/74: Experimental evidence of the topological obstruction in
+2026-04-11 12:42:31,276 [INFO] step4.pipeline:   DOI: 10.1038/s41467-025-66257-y
+2026-04-11 12:42:31,276 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:31,276 [INFO] step4.pipeline:   Dir: Both/011_Experimental_evidence_of_the_topological
+2026-04-11 12:42:31,276 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:34,051 [INFO] step4.pdf_downloader:     PDF downloaded (6708KB) via publisher
+2026-04-11 12:42:34,051 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:34,286 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:42:34,286 [INFO] step4.file_organizer:     type2_data: 7 files
+2026-04-11 12:42:34,286 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:34,286 [INFO] step4.pipeline: Paper 12/74: Intrinsic spin Hall torque in a moire Chern magnet
+2026-04-11 12:42:34,286 [INFO] step4.pipeline:   DOI: 10.1038/s41567-023-01979-8
+2026-04-11 12:42:34,286 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:34,286 [INFO] step4.pipeline:   Dir: Both/012_Intrinsic_spin_Hall_torque_in
+2026-04-11 12:42:34,286 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:39,595 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:39,595 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:39,658 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:42:39,658 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:39,658 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:39,658 [INFO] step4.pipeline: Paper 13/74: One-dimensional moire chains with partially-filled flat
+2026-04-11 12:42:39,658 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:42:39,658 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:39,658 [INFO] step4.pipeline:   Dir: Both/013_Onedimensional_moire_chains_with_partiallyfilled
+2026-04-11 12:42:39,658 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:39,658 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:42:39,658 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:39,682 [INFO] step4.file_organizer:     type1_data: 4 files
+2026-04-11 12:42:39,682 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-11 12:42:39,682 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:39,691 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:39,691 [INFO] step4.pipeline: Paper 14/74: PAM-flexible Engineered FnCas9 variants for robust and 
+2026-04-11 12:42:39,691 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-49233-w
+2026-04-11 12:42:39,692 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:39,692 [INFO] step4.pipeline:   Dir: Both/014_PAMflexible_Engineered_FnCas9_variants_for
+2026-04-11 12:42:39,692 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:44,031 [INFO] step4.pdf_downloader:     PDF downloaded (5027KB) via publisher
+2026-04-11 12:42:44,032 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:44,074 [INFO] step4.file_organizer:     type1_data: 7 files
+2026-04-11 12:42:44,076 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:44,076 [INFO] step4.file_organizer:     annotations: 3 files
+2026-04-11 12:42:44,076 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:44,076 [INFO] step4.pipeline: Paper 15/74: Tailoring Dirac fermions by in-situ tunable high-order 
+2026-04-11 12:42:44,076 [INFO] step4.pipeline:   DOI: 10.1103/PhysRevLett.129.176402
+2026-04-11 12:42:44,076 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:44,076 [INFO] step4.pipeline:   Dir: Both/015_Tailoring_Dirac_fermions_by_insitu
+2026-04-11 12:42:44,076 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:47,051 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:47,051 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:47,092 [INFO] step4.file_organizer:     type1_data: 8 files
+2026-04-11 12:42:47,092 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:42:47,092 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:47,092 [INFO] step4.pipeline: Paper 16/74: Unusual magnetotransport in twisted bilayer graphene
+2026-04-11 12:42:47,092 [INFO] step4.pipeline:   DOI: 10.1073/pnas.2118482119
+2026-04-11 12:42:47,092 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:47,092 [INFO] step4.pipeline:   Dir: Both/016_Unusual_magnetotransport_in_twisted_bilayer
+2026-04-11 12:42:47,092 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:48,505 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:48,505 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:48,560 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-11 12:42:48,560 [INFO] step4.file_organizer:     type2_data: 6 files
+2026-04-11 12:42:48,560 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:42:48,560 [INFO] step4.file_organizer:     scripts: 1 files
+2026-04-11 12:42:48,560 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:48,560 [INFO] step4.pipeline: Paper 17/74: Electronic procrystalline state in moire structures
+2026-04-11 12:42:48,560 [INFO] step4.pipeline:   DOI: 10.1038/s41467-025-66425-0
+2026-04-11 12:42:48,560 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:48,560 [INFO] step4.pipeline:   Dir: Both/017_Electronic_procrystalline_state_in_moire
+2026-04-11 12:42:48,560 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:53,502 [INFO] step4.pdf_downloader:     PDF downloaded (8436KB) via publisher
+2026-04-11 12:42:53,502 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:53,575 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:42:53,575 [INFO] step4.file_organizer:     type2_data: 7 files
+2026-04-11 12:42:53,575 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:53,575 [INFO] step4.pipeline: Paper 18/74: Realization of one-dimensional electronic flat bands in
+2026-04-11 12:42:53,575 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:42:53,575 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:53,575 [INFO] step4.pipeline:   Dir: Both/018_Realization_of_onedimensional_electronic_flat
+2026-04-11 12:42:53,575 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:53,575 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:42:53,575 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:53,660 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:42:53,660 [INFO] step4.file_organizer:     type2_data: 4 files
+2026-04-11 12:42:53,660 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:42:53,660 [INFO] step4.file_organizer:     scripts: 15 files
+2026-04-11 12:42:53,663 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:53,663 [INFO] step4.pipeline: Paper 19/74: Subconfluent ARPE-19 Cells Display Mesenchymal Cell-Sta
+2026-04-11 12:42:53,663 [INFO] step4.pipeline:   DOI: 10.1101/2023.10.27.564463
+2026-04-11 12:42:53,663 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:53,663 [INFO] step4.pipeline:   Dir: Both/019_Subconfluent_ARPE19_Cells_Display_Mesenchymal
+2026-04-11 12:42:53,663 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:56,559 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:56,559 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:56,592 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-11 12:42:56,592 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:42:56,592 [INFO] step4.file_organizer:     annotations: 3 files
+2026-04-11 12:42:56,592 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:56,592 [INFO] step4.pipeline: Paper 20/74: Topological Phase Transitions Driven by Sn Doping in (M
+2026-04-11 12:42:56,592 [INFO] step4.pipeline:   DOI: 10.3390/sym15020469
+2026-04-11 12:42:56,592 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:42:56,592 [INFO] step4.pipeline:   Dir: Both/020_Topological_Phase_Transitions_Driven_by
+2026-04-11 12:42:56,592 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:42:58,022 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:42:58,022 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:42:58,061 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-11 12:42:58,070 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:42:58,070 [INFO] step4.file_organizer:     annotations: 4 files
+2026-04-11 12:42:58,070 [INFO] step4.file_organizer:     scripts: 1 files
+2026-04-11 12:42:58,070 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:42:58,070 [INFO] step4.pipeline: Paper 21/74: Josephson diode effect from Cooper pair momentum in a t
+2026-04-11 12:42:58,070 [INFO] step4.pipeline:   DOI: 10.1038/s41567-022-01699-5
+2026-04-11 12:42:58,070 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:42:58,070 [INFO] step4.pipeline:   Dir: Type1/021_Josephson_diode_effect_from_Cooper
+2026-04-11 12:42:58,070 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:00,651 [INFO] step4.pdf_downloader:     PDF downloaded (2046KB) via publisher
+2026-04-11 12:43:00,651 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:00,659 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:00,666 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:00,666 [INFO] step4.pipeline: Paper 22/74: Polycrystalline SnSe with a thermoelectric figure of me
+2026-04-11 12:43:00,666 [INFO] step4.pipeline:   DOI: 10.1038/s41563-021-01064-6
+2026-04-11 12:43:00,666 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:00,667 [INFO] step4.pipeline:   Dir: Type1/022_Polycrystalline_SnSe_with_a_thermoelectric
+2026-04-11 12:43:00,668 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:03,129 [INFO] step4.pdf_downloader:     PDF downloaded (4139KB) via publisher
+2026-04-11 12:43:03,129 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:03,144 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-11 12:43:03,146 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:03,146 [INFO] step4.pipeline: Paper 23/74: Evidence for quantum spin liquid behaviour in single-la
+2026-04-11 12:43:03,146 [INFO] step4.pipeline:   DOI: 10.1038/s41567-021-01321-0
+2026-04-11 12:43:03,146 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:03,146 [INFO] step4.pipeline:   Dir: Type1/023_Evidence_for_quantum_spin_liquid
+2026-04-11 12:43:03,146 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:08,471 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:43:08,473 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:08,491 [INFO] step4.file_organizer:     type1_data: 9 files
+2026-04-11 12:43:08,492 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:08,492 [INFO] step4.pipeline: Paper 24/74: Order-disorder charge density wave instability in the k
+2026-04-11 12:43:08,493 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-36668-w
+2026-04-11 12:43:08,493 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:08,494 [INFO] step4.pipeline:   Dir: Type1/024_Orderdisorder_charge_density_wave_instability
+2026-04-11 12:43:08,494 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:11,066 [INFO] step4.pdf_downloader:     PDF downloaded (1916KB) via publisher
+2026-04-11 12:43:11,066 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:11,079 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:11,079 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:43:11,082 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:11,082 [INFO] step4.pipeline: Paper 25/74: Unveiling Weyl-related optical responses in semiconduct
+2026-04-11 12:43:11,082 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-33190-3
+2026-04-11 12:43:11,082 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:11,082 [INFO] step4.pipeline:   Dir: Type1/025_Unveiling_Weylrelated_optical_responses_in
+2026-04-11 12:43:11,082 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:13,738 [INFO] step4.pdf_downloader:     PDF downloaded (1696KB) via publisher
+2026-04-11 12:43:13,740 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:13,741 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:13,741 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:43:13,751 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:13,752 [INFO] step4.pipeline: Paper 26/74: A robust and tunable Luttinger liquid in correlated edg
+2026-04-11 12:43:13,752 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-43361-5
+2026-04-11 12:43:13,752 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:13,752 [INFO] step4.pipeline:   Dir: Type1/026_A_robust_and_tunable_Luttinger
+2026-04-11 12:43:13,752 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:18,165 [INFO] step4.pdf_downloader:     PDF downloaded (5482KB) via publisher
+2026-04-11 12:43:18,165 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:18,211 [INFO] step4.file_organizer:     type1_data: 8 files
+2026-04-11 12:43:18,211 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:43:18,211 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:18,211 [INFO] step4.pipeline: Paper 27/74: Flat <mml:math xmlns:mml="http://www.w3.org/1998/Math/M
+2026-04-11 12:43:18,211 [INFO] step4.pipeline:   DOI: 10.1103/physrevlett.131.046401
+2026-04-11 12:43:18,211 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:18,211 [INFO] step4.pipeline:   Dir: Type1/027_Flat_mmlmath_xmlnsmmlhttpwwww3org1998MathMathML_displayinlinemmlmi_mathvariantnormalΓmmlmimmlmath
+2026-04-11 12:43:18,211 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:21,188 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:43:21,188 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:21,241 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:43:21,241 [INFO] step4.file_organizer:     scripts: 19 files
+2026-04-11 12:43:21,241 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:21,241 [INFO] step4.pipeline: Paper 28/74: Ultrafast photothermoelectric effect in Dirac semimetal
+2026-04-11 12:43:21,241 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-29168-w
+2026-04-11 12:43:21,241 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:21,241 [INFO] step4.pipeline:   Dir: Type1/028_Ultrafast_photothermoelectric_effect_in_Dirac
+2026-04-11 12:43:21,241 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:23,691 [INFO] step4.pdf_downloader:     PDF downloaded (2155KB) via publisher
+2026-04-11 12:43:23,691 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:23,691 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:23,691 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:43:23,704 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:23,704 [INFO] step4.pipeline: Paper 29/74: Synthesis of a monolayer fullerene network
+2026-04-11 12:43:23,704 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-04771-5
+2026-04-11 12:43:23,704 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:23,706 [INFO] step4.pipeline:   Dir: Type1/029_Synthesis_of_a_monolayer_fullerene
+2026-04-11 12:43:23,706 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:29,005 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:43:29,005 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:29,013 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:29,013 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:29,020 [INFO] step4.pipeline: Paper 30/74: Ultrafast Non‐Volatile Floating‐Gate Memory Based on Al
+2026-04-11 12:43:29,020 [INFO] step4.pipeline:   DOI: 10.1002/adma.202311652
+2026-04-11 12:43:29,020 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:29,020 [INFO] step4.pipeline:   Dir: Type1/030_Ultrafast_NonVolatile_FloatingGate_Memory_Based
+2026-04-11 12:43:29,021 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:30,192 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:43:30,202 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:30,207 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:30,208 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:43:30,210 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:30,210 [INFO] step4.pipeline: Paper 31/74: Boron clusters as broadband membrane carriers
+2026-04-11 12:43:30,210 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-04413-w
+2026-04-11 12:43:30,210 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:30,210 [INFO] step4.pipeline:   Dir: Type1/031_Boron_clusters_as_broadband_membrane
+2026-04-11 12:43:30,211 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:33,349 [INFO] step4.pdf_downloader:     PDF downloaded (16026KB) via publisher
+2026-04-11 12:43:33,349 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:33,370 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:43:33,370 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:43:33,371 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:33,372 [INFO] step4.pipeline: Paper 32/74: Halogen-Functionalized Hole Transport Materials with St
+2026-04-11 12:43:33,372 [INFO] step4.pipeline:   DOI: 10.1021/acsnano.4c08018
+2026-04-11 12:43:33,372 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:33,372 [INFO] step4.pipeline:   Dir: Type1/032_HalogenFunctionalized_Hole_Transport_Materials_with
+2026-04-11 12:43:33,372 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:34,701 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:43:34,708 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:34,712 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:34,712 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:43:34,722 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:34,723 [INFO] step4.pipeline: Paper 33/74: Three-dimensional mapping of the altermagnetic spin spl
+2026-04-11 12:43:34,723 [INFO] step4.pipeline:   DOI: 10.1038/s41467-025-56647-7
+2026-04-11 12:43:34,723 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:34,723 [INFO] step4.pipeline:   Dir: Type1/033_Threedimensional_mapping_of_the_altermagnetic
+2026-04-11 12:43:34,723 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:37,332 [INFO] step4.pdf_downloader:     PDF downloaded (2654KB) via publisher
+2026-04-11 12:43:37,332 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:37,350 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:37,350 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:37,350 [INFO] step4.pipeline: Paper 34/74: Phonon promoted charge density wave in topological kago
+2026-04-11 12:43:37,350 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-45859-y
+2026-04-11 12:43:37,350 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:37,350 [INFO] step4.pipeline:   Dir: Type1/034_Phonon_promoted_charge_density_wave
+2026-04-11 12:43:37,350 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:40,000 [INFO] step4.pdf_downloader:     PDF downloaded (5983KB) via publisher
+2026-04-11 12:43:40,000 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:40,018 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:40,021 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:40,021 [INFO] step4.pipeline: Paper 35/74: Spin density wave and van Hove singularity in the kagom
+2026-04-11 12:43:40,021 [INFO] step4.pipeline:   DOI: 10.1038/s41467-025-59460-4
+2026-04-11 12:43:40,021 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:40,021 [INFO] step4.pipeline:   Dir: Type1/035_Spin_density_wave_and_van
+2026-04-11 12:43:40,021 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:42,515 [INFO] step4.pdf_downloader:     PDF downloaded (1910KB) via publisher
+2026-04-11 12:43:42,528 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:42,531 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:42,531 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:43:42,543 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:42,543 [INFO] step4.pipeline: Paper 36/74: From Stoner to local moment magnetism in atomically thi
+2026-04-11 12:43:42,544 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-40997-1
+2026-04-11 12:43:42,544 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:42,544 [INFO] step4.pipeline:   Dir: Type1/036_From_Stoner_to_local_moment
+2026-04-11 12:43:42,544 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:44,950 [INFO] step4.pdf_downloader:     PDF downloaded (1581KB) via publisher
+2026-04-11 12:43:44,950 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:44,966 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:44,968 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:44,968 [INFO] step4.pipeline: Paper 37/74: Mitophagy curtails cytosolic mtDNA-dependent activation
+2026-04-11 12:43:44,968 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-45044-1
+2026-04-11 12:43:44,968 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:44,969 [INFO] step4.pipeline:   Dir: Type1/037_Mitophagy_curtails_cytosolic_mtDNAdependent_activation
+2026-04-11 12:43:44,969 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:49,773 [INFO] step4.pdf_downloader:     PDF downloaded (8111KB) via publisher
+2026-04-11 12:43:49,773 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:49,796 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:49,796 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:43:49,796 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:49,796 [INFO] step4.pipeline: Paper 38/74: Multiple machine learning approach to characterize two-
+2026-04-11 12:43:49,810 [INFO] step4.pipeline:   DOI: 10.1038/s41699-020-00186-w
+2026-04-11 12:43:49,810 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:49,810 [INFO] step4.pipeline:   Dir: Type1/038_Multiple_machine_learning_approach_to
+2026-04-11 12:43:49,810 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:53,869 [INFO] step4.pdf_downloader:     PDF downloaded (2233KB) via publisher
+2026-04-11 12:43:53,869 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:53,875 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:53,878 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:53,879 [INFO] step4.pipeline: Paper 39/74: Observation of a singular Weyl point surrounded by char
+2026-04-11 12:43:53,879 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-24289-0
+2026-04-11 12:43:53,879 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:53,879 [INFO] step4.pipeline:   Dir: Type1/039_Observation_of_a_singular_Weyl
+2026-04-11 12:43:53,879 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:56,449 [INFO] step4.pdf_downloader:     PDF downloaded (4852KB) via publisher
+2026-04-11 12:43:56,449 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:56,458 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:43:56,466 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:56,467 [INFO] step4.pipeline: Paper 40/74: Native point defects and their implications for the Dir
+2026-04-11 12:43:56,467 [INFO] step4.pipeline:   DOI: 10.1038/s41535-021-00414-6
+2026-04-11 12:43:56,467 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:56,467 [INFO] step4.pipeline:   Dir: Type1/040_Native_point_defects_and_their
+2026-04-11 12:43:56,468 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:43:58,987 [INFO] step4.pdf_downloader:     PDF downloaded (1924KB) via publisher
+2026-04-11 12:43:58,992 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:43:59,005 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:43:59,007 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:43:59,008 [INFO] step4.pipeline: Paper 41/74: Prosaposin maintains lipid homeostasis in dopamine neur
+2026-04-11 12:43:59,008 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-41539-5
+2026-04-11 12:43:59,008 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:43:59,009 [INFO] step4.pipeline:   Dir: Type1/041_Prosaposin_maintains_lipid_homeostasis_in
+2026-04-11 12:43:59,009 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:01,606 [INFO] step4.pdf_downloader:     PDF downloaded (4989KB) via publisher
+2026-04-11 12:44:01,606 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:01,625 [INFO] step4.file_organizer:     type1_data: 7 files
+2026-04-11 12:44:01,625 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:01,625 [INFO] step4.pipeline: Paper 42/74: Halogen-Bonded Organic Framework (XOF) Based on Iodoniu
+2026-04-11 12:44:01,625 [INFO] step4.pipeline:   DOI: 10.1002/anie.202102448
+2026-04-11 12:44:01,625 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:01,625 [INFO] step4.pipeline:   Dir: Type1/042_HalogenBonded_Organic_Framework_XOF_Based
+2026-04-11 12:44:01,625 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:02,942 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:02,942 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:02,963 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:02,970 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:02,970 [INFO] step4.pipeline: Paper 43/74: Deep learning assisted Raman spectroscopy for rapid ide
+2026-04-11 12:44:02,970 [INFO] step4.pipeline:   DOI: 10.1016/j.apmt.2024.102499
+2026-04-11 12:44:02,970 [INFO] step4.pipeline:   Type: Both
+2026-04-11 12:44:02,970 [INFO] step4.pipeline:   Dir: Both/043_Deep_learning_assisted_Raman_spectroscopy
+2026-04-11 12:44:02,970 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:04,454 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:04,454 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:04,492 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:04,492 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:04,492 [INFO] step4.file_organizer:     scripts: 4 files
+2026-04-11 12:44:04,492 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:04,492 [INFO] step4.pipeline: Paper 44/74: Extended Quantum Anomalous Hall States in Graphene/hBN 
+2026-04-11 12:44:04,492 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:04,492 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:04,492 [INFO] step4.pipeline:   Dir: Type1/044_Extended_Quantum_Anomalous_Hall_States
+2026-04-11 12:44:04,492 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:04,492 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:04,492 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:04,514 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:04,514 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:04,514 [INFO] step4.pipeline: Paper 45/74: Fine mapping spatiotemporal mechanisms of genetic varia
+2026-04-11 12:44:04,514 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-36638-2
+2026-04-11 12:44:04,514 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:04,514 [INFO] step4.pipeline:   Dir: Type1/045_Fine_mapping_spatiotemporal_mechanisms_of
+2026-04-11 12:44:04,514 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:07,111 [INFO] step4.pdf_downloader:     PDF downloaded (3635KB) via publisher
+2026-04-11 12:44:07,123 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:07,196 [INFO] step4.file_organizer:     type1_data: 8 files
+2026-04-11 12:44:07,197 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:44:07,197 [INFO] step4.file_organizer:     scripts: 29 files
+2026-04-11 12:44:07,198 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:07,198 [INFO] step4.pipeline: Paper 46/74: Fractional Quantum Anomalous Hall Effect in a Graphene 
+2026-04-11 12:44:07,199 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:07,199 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:07,199 [INFO] step4.pipeline:   Dir: Type1/046_Fractional_Quantum_Anomalous_Hall_Effect
+2026-04-11 12:44:07,199 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:07,200 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:07,200 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:07,213 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:07,215 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:07,215 [INFO] step4.pipeline: Paper 47/74: Moire Engineering of Cooper-Pair Density Modulation Sta
+2026-04-11 12:44:07,216 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:07,216 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:07,216 [INFO] step4.pipeline:   Dir: Type1/047_Moire_Engineering_of_CooperPair_Density
+2026-04-11 12:44:07,216 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:07,217 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:07,217 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:07,267 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:07,274 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:07,274 [INFO] step4.pipeline: Paper 48/74: Moire synaptic transistor for homogeneous-architecture 
+2026-04-11 12:44:07,274 [INFO] step4.pipeline:   DOI: 10.1088/0256-307X/40/11/117201
+2026-04-11 12:44:07,274 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:07,275 [INFO] step4.pipeline:   Dir: Type1/048_Moire_synaptic_transistor_for_homogeneousarchitecture
+2026-04-11 12:44:07,275 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:09,681 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:09,681 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:09,708 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:09,708 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:44:09,708 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:09,708 [INFO] step4.pipeline: Paper 49/74: Parallel transport and layer-resolved thermodynamic mea
+2026-04-11 12:44:09,708 [INFO] step4.pipeline:   DOI: 10.1103/PhysRevB.104.L241410
+2026-04-11 12:44:09,708 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:09,708 [INFO] step4.pipeline:   Dir: Type1/049_Parallel_transport_and_layerresolved_thermodynamic
+2026-04-11 12:44:09,708 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:12,768 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:12,768 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:12,786 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-11 12:44:12,789 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:12,789 [INFO] step4.pipeline: Paper 50/74: Dirac cone spectroscopy of strongly correlated phases i
+2026-04-11 12:44:12,789 [INFO] step4.pipeline:   DOI: 10.1038/s41563-022-01428-6
+2026-04-11 12:44:12,789 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:12,791 [INFO] step4.pipeline:   Dir: Type1/050_Dirac_cone_spectroscopy_of_strongly
+2026-04-11 12:44:12,791 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:18,065 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:18,065 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:18,096 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:18,099 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:18,099 [INFO] step4.pipeline: Paper 51/74: Moire magnetism in CrBr3 multilayers emerging from diff
+2026-04-11 12:44:18,099 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-54870-2
+2026-04-11 12:44:18,099 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:18,099 [INFO] step4.pipeline:   Dir: Type1/051_Moire_magnetism_in_CrBr3_multilayers
+2026-04-11 12:44:18,099 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:20,533 [INFO] step4.pdf_downloader:     PDF downloaded (1972KB) via publisher
+2026-04-11 12:44:20,533 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:20,538 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:44:20,547 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:20,548 [INFO] step4.pipeline: Paper 52/74: Unconventional Nonlocal Relaxation Dynamics in a Twiste
+2026-04-11 12:44:20,548 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-35213-5
+2026-04-11 12:44:20,548 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:20,548 [INFO] step4.pipeline:   Dir: Type1/052_Unconventional_Nonlocal_Relaxation_Dynamics_in
+2026-04-11 12:44:20,548 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:23,005 [INFO] step4.pdf_downloader:     PDF downloaded (4247KB) via publisher
+2026-04-11 12:44:23,005 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:23,011 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-11 12:44:23,014 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:23,015 [INFO] step4.pipeline: Paper 53/74: Halogen‐Bonded Organic Framework (XOF) Based on Iodoniu
+2026-04-11 12:44:23,015 [INFO] step4.pipeline:   DOI: 10.1002/ange.202102448
+2026-04-11 12:44:23,015 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:23,015 [INFO] step4.pipeline:   Dir: Type1/053_HalogenBonded_Organic_Framework_XOF_Based
+2026-04-11 12:44:23,015 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:24,251 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:24,251 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:24,268 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:24,268 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:24,268 [INFO] step4.pipeline: Paper 54/74: Photocurrent detected 2D spectroscopy via a pulse shape
+2026-04-11 12:44:24,268 [INFO] step4.pipeline:   DOI: 10.1364/oe.566553
+2026-04-11 12:44:24,268 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:24,268 [INFO] step4.pipeline:   Dir: Type1/054_Photocurrent_detected_2D_spectroscopy_via
+2026-04-11 12:44:24,268 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:27,354 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:27,354 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:27,385 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-11 12:44:27,385 [INFO] step4.file_organizer:     annotations: 4 files
+2026-04-11 12:44:27,390 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:27,390 [INFO] step4.pipeline: Paper 55/74: χ (2)-induced artifact overwhelming the third-order sig
+2026-04-11 12:44:27,390 [INFO] step4.pipeline:   DOI: 10.1063/5.0228378
+2026-04-11 12:44:27,390 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:27,390 [INFO] step4.pipeline:   Dir: Type1/055_χ_2induced_artifact_overwhelming_the
+2026-04-11 12:44:27,391 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:28,853 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:28,853 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:28,858 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-11 12:44:28,871 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:28,872 [INFO] step4.pipeline: Paper 56/74: 
+2026-04-11 12:44:28,872 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-25780-4
+2026-04-11 12:44:28,872 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:28,872 [INFO] step4.pipeline:   Dir: Type1/056_
+2026-04-11 12:44:28,872 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:32,798 [INFO] step4.pdf_downloader:     PDF downloaded (2066KB) via publisher
+2026-04-11 12:44:32,800 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:32,803 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:44:32,812 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:32,813 [INFO] step4.pipeline: Paper 57/74: Development of broadly neutralizing antibodies targetin
+2026-04-11 12:44:32,813 [INFO] step4.pipeline:   DOI: 10.1038/s42003-022-03294-z
+2026-04-11 12:44:32,813 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:32,813 [INFO] step4.pipeline:   Dir: Type1/057_Development_of_broadly_neutralizing_antibodies
+2026-04-11 12:44:32,813 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:37,017 [INFO] step4.pdf_downloader:     PDF downloaded (4729KB) via publisher
+2026-04-11 12:44:37,019 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:37,074 [INFO] step4.file_organizer:     type1_data: 7 files
+2026-04-11 12:44:37,074 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-11 12:44:37,074 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:37,074 [INFO] step4.pipeline: Paper 58/74: Enhanced Phonon-Assisted Tunneling in Metal -- Twisted 
+2026-04-11 12:44:37,074 [INFO] step4.pipeline:   DOI: 10.1021/acsnano.5c06662
+2026-04-11 12:44:37,074 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:37,074 [INFO] step4.pipeline:   Dir: Type1/058_Enhanced_PhononAssisted_Tunneling_in_Metal
+2026-04-11 12:44:37,074 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:38,341 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:38,341 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:38,362 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-11 12:44:38,362 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:44:38,362 [INFO] step4.file_organizer:     scripts: 1 files
+2026-04-11 12:44:38,363 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:38,363 [INFO] step4.pipeline: Paper 59/74: Entangled Moire Chern Insulator in Rhombohedral Graphen
+2026-04-11 12:44:38,363 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:38,363 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:38,363 [INFO] step4.pipeline:   Dir: Type1/059_Entangled_Moire_Chern_Insulator_in
+2026-04-11 12:44:38,363 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:38,363 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:38,363 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:38,425 [INFO] step4.file_organizer:     type1_data: 8 files
+2026-04-11 12:44:38,425 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:44:38,425 [INFO] step4.file_organizer:     scripts: 32 files
+2026-04-11 12:44:38,425 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:38,439 [INFO] step4.pipeline: Paper 60/74: Multi Moire Networks in Engineered Lateral Hetero-Bilay
+2026-04-11 12:44:38,439 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:38,440 [INFO] step4.pipeline:   Type: Type1
+2026-04-11 12:44:38,440 [INFO] step4.pipeline:   Dir: Type1/060_Multi_Moire_Networks_in_Engineered
+2026-04-11 12:44:38,440 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:38,441 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:38,441 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:38,475 [INFO] step4.file_organizer:     type1_data: 11 files
+2026-04-11 12:44:38,475 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:38,475 [INFO] step4.pipeline: Paper 61/74: Weyl spin-momentum locking in a chiral topological semi
+2026-04-11 12:44:38,475 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-47976-0
+2026-04-11 12:44:38,475 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:38,475 [INFO] step4.pipeline:   Dir: Type2/061_Weyl_spinmomentum_locking_in_a
+2026-04-11 12:44:38,475 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:41,161 [INFO] step4.pdf_downloader:     PDF downloaded (2335KB) via publisher
+2026-04-11 12:44:41,162 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:41,180 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:44:41,183 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:41,183 [INFO] step4.pipeline: Paper 62/74: Mn‐Rich MnSb<sub>2</sub>Te<sub>4</sub>: A Topological I
+2026-04-11 12:44:41,183 [INFO] step4.pipeline:   DOI: 10.1002/adma.202102935
+2026-04-11 12:44:41,183 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:41,183 [INFO] step4.pipeline:   Dir: Type2/062_MnRich_MnSbsub2subTesub4sub_A_Topological_Insulator
+2026-04-11 12:44:41,183 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:42,451 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:42,451 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:42,475 [INFO] step4.file_organizer:     type2_data: 7 files
+2026-04-11 12:44:42,475 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:42,475 [INFO] step4.pipeline: Paper 63/74: Anomalous excitonic phase diagram in band-gap-tuned Ta2
+2026-04-11 12:44:42,475 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-43365-1
+2026-04-11 12:44:42,475 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:42,475 [INFO] step4.pipeline:   Dir: Type2/063_Anomalous_excitonic_phase_diagram_in
+2026-04-11 12:44:42,475 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:44,908 [INFO] step4.pdf_downloader:     PDF downloaded (1605KB) via publisher
+2026-04-11 12:44:44,908 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:44,966 [INFO] step4.file_organizer:     type2_data: 6 files
+2026-04-11 12:44:44,967 [INFO] step4.file_organizer:     annotations: 4 files
+2026-04-11 12:44:44,968 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:44,968 [INFO] step4.pipeline: Paper 64/74: Device level reversible potassium intercalation into bi
+2026-04-11 12:44:44,968 [INFO] step4.pipeline:   DOI: 10.1088/2053-1583/ac58a1
+2026-04-11 12:44:44,969 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:44,969 [INFO] step4.pipeline:   Dir: Type2/064_Device_level_reversible_potassium_intercalation
+2026-04-11 12:44:44,969 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:47,071 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:47,071 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:47,443 [INFO] step4.file_organizer:     type2_data: 6 files
+2026-04-11 12:44:47,443 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:47,443 [INFO] step4.pipeline: Paper 65/74: Multidimensional XUV Photoemission Spectroscopy of 1T-T
+2026-04-11 12:44:47,443 [INFO] step4.pipeline:   DOI: 10.5281/zenodo.5541489
+2026-04-11 12:44:47,443 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:47,443 [INFO] step4.pipeline:   Dir: Type2/065_Multidimensional_XUV_Photoemission_Spectroscopy_of
+2026-04-11 12:44:47,443 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:50,141 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:50,141 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:50,158 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:44:50,170 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:50,170 [INFO] step4.pipeline: Paper 66/74: 2D Materials for Neuromorphic Computing Devices
+2026-04-11 12:44:50,171 [INFO] step4.pipeline:   DOI: 10.1109/EDTM61175.2025.11041583
+2026-04-11 12:44:50,171 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:50,171 [INFO] step4.pipeline:   Dir: Type2/066_2D_Materials_for_Neuromorphic_Computing
+2026-04-11 12:44:50,171 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:52,014 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:52,014 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:52,020 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:52,032 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:52,032 [INFO] step4.pipeline: Paper 67/74: Machine Learning-Guided Optical and Raman Spectroscopy 
+2026-04-11 12:44:52,032 [INFO] step4.pipeline:   DOI: 10.1201/9781003132981-9
+2026-04-11 12:44:52,033 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:52,033 [INFO] step4.pipeline:   Dir: Type2/067_Machine_LearningGuided_Optical_and_Raman
+2026-04-11 12:44:52,033 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:53,806 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:53,806 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:54,105 [INFO] step4.file_organizer:     type2_data: 10 files
+2026-04-11 12:44:54,105 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:54,105 [INFO] step4.pipeline: Paper 68/74: Semantic segmentation of ARPES spectra for electronic d
+2026-04-11 12:44:54,105 [INFO] step4.pipeline:   DOI: 10.1063/10.0042266
+2026-04-11 12:44:54,105 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:54,105 [INFO] step4.pipeline:   Dir: Type2/068_Semantic_segmentation_of_ARPES_spectra
+2026-04-11 12:44:54,112 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:55,474 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:55,474 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:55,541 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:55,541 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:55,541 [INFO] step4.pipeline: Paper 69/74: Switchable Chern insulator, isospin competitions and ch
+2026-04-11 12:44:55,541 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:55,541 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:55,541 [INFO] step4.pipeline:   Dir: Type2/069_Switchable_Chern_insulator_isospin_competitions
+2026-04-11 12:44:55,541 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:55,557 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:55,557 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:55,652 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:55,652 [INFO] step4.file_organizer:     annotations: 5 files
+2026-04-11 12:44:55,652 [INFO] step4.file_organizer:     scripts: 32 files
+2026-04-11 12:44:55,654 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:55,654 [INFO] step4.pipeline: Paper 70/74: Tunable Fractional Chern Insulators in Rhombohedral Gra
+2026-04-11 12:44:55,654 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:55,654 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:55,654 [INFO] step4.pipeline:   Dir: Type2/070_Tunable_Fractional_Chern_Insulators_in
+2026-04-11 12:44:55,654 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:55,655 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:55,655 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:55,681 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:44:55,681 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:44:55,681 [INFO] step4.file_organizer:     scripts: 17 files
+2026-04-11 12:44:55,681 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:55,681 [INFO] step4.pipeline: Paper 71/74: Twisted Angle-Dependent Work Functions in CVD-Grown Twi
+2026-04-11 12:44:55,681 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:55,681 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:55,681 [INFO] step4.pipeline:   Dir: Type2/071_Twisted_AngleDependent_Work_Functions_in
+2026-04-11 12:44:55,681 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:55,681 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:55,681 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:55,768 [INFO] step4.file_organizer:     type2_data: 17 files
+2026-04-11 12:44:55,768 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-11 12:44:55,768 [INFO] step4.file_organizer:     scripts: 6 files
+2026-04-11 12:44:55,769 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:55,770 [INFO] step4.pipeline: Paper 72/74: py4DSTEM: A Software Package for Four-Dimensional Scann
+2026-04-11 12:44:55,770 [INFO] step4.pipeline:   DOI: 10.1017/s1431927621000477
+2026-04-11 12:44:55,770 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:55,770 [INFO] step4.pipeline:   Dir: Type2/072_py4DSTEM_A_Software_Package_for
+2026-04-11 12:44:55,770 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:57,137 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:57,137 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:57,215 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:57,215 [INFO] step4.file_organizer:     annotations: 5 files
+2026-04-11 12:44:57,216 [INFO] step4.file_organizer:     scripts: 40 files
+2026-04-11 12:44:57,217 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:57,217 [INFO] step4.pipeline: Paper 73/74: Directed light emission from monolayers on 2D materials
+2026-04-11 12:44:57,218 [INFO] step4.pipeline:   DOI: 10.1063/5.0279864
+2026-04-11 12:44:57,218 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:57,218 [INFO] step4.pipeline:   Dir: Type2/073_Directed_light_emission_from_monolayers
+2026-04-11 12:44:57,218 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:58,619 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-11 12:44:58,619 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:58,649 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-11 12:44:58,652 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:58,652 [INFO] step4.pipeline: Paper 74/74: Moire-Engineered Ferroelectric Transistors for Nearly T
+2026-04-11 12:44:58,653 [INFO] step4.pipeline:   DOI: 
+2026-04-11 12:44:58,653 [INFO] step4.pipeline:   Type: Type2
+2026-04-11 12:44:58,653 [INFO] step4.pipeline:   Dir: Type2/074_MoireEngineered_Ferroelectric_Transistors_for_Nearly
+2026-04-11 12:44:58,653 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-11 12:44:58,653 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-11 12:44:58,653 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-11 12:44:58,666 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-11 12:44:58,671 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:58,671 [INFO] step4.pipeline: Phase 5: Saving manifest...
+2026-04-11 12:44:58,697 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:58,697 [INFO] step4.pipeline: STEP 4 RESULTS SUMMARY
+2026-04-11 12:44:58,697 [INFO] step4.pipeline: ============================================================
+2026-04-11 12:44:58,697 [INFO] step4.pipeline: Papers organized:      74
+2026-04-11 12:44:58,697 [INFO] step4.pipeline:   Both (T1+T2):        21
+2026-04-11 12:44:58,697 [INFO] step4.pipeline:   Type 1 only:         39
+2026-04-11 12:44:58,697 [INFO] step4.pipeline:   Type 2 only:         14
+2026-04-11 12:44:58,697 [INFO] step4.pipeline:   Neither:             0
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: PDFs downloaded:        32
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: Type 1 data files:     243
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: Type 2 data files:     135
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: Annotation files:      69
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: Script files:          212
+2026-04-11 12:44:58,702 [INFO] step4.pipeline: ------------------------------------------------------------
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     1. [ Both] [PDF:✓] T1: 1 T2: 6 | Hetero-site nucleation for growing twisted bi
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     2. [ Both] [PDF:✗] T1: 5 T2: 2 | Coherent light control of a metastable hidden
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     3. [ Both] [PDF:✓] T1: 7 T2: 1 | Time-domain observation of interlayer exciton
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     4. [ Both] [PDF:✓] T1: 1 T2: 2 | Softening of a flat phonon mode in the kagome
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     5. [ Both] [PDF:✓] T1: 5 T2: 3 | Observation of kagome-like bands in two-dimen
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     6. [ Both] [PDF:✓] T1: 1 T2: 2 | CRISPR-mediated multiplexed live cell imaging
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     7. [ Both] [PDF:✓] T1: 1 T2: 9 | Intrinsic TGF-β signaling attenuates proximal
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     8. [ Both] [PDF:✗] T1: 8 T2: 5 | Coulomb screening of superconductivity in mag
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:     9. [ Both] [PDF:✗] T1: 4 T2: 7 | Coupling and decoupling of bilayer graphene m
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:    10. [ Both] [PDF:✗] T1: 5 T2: 3 | Dipolar excitonic insulator in a moire lattic
+2026-04-11 12:44:58,702 [INFO] step4.pipeline:    11. [ Both] [PDF:✓] T1: 2 T2: 7 | Experimental evidence of the topological obst
+2026-04-11 12:44:58,706 [INFO] step4.pipeline:    12. [ Both] [PDF:✗] T1: 2 T2: 2 | Intrinsic spin Hall torque in a moire Chern m
+2026-04-11 12:44:58,706 [INFO] step4.pipeline:    13. [ Both] [PDF:✗] T1: 4 T2: 3 | One-dimensional moire chains with partially-f
+2026-04-11 12:44:58,707 [INFO] step4.pipeline:    14. [ Both] [PDF:✓] T1: 7 T2: 2 | PAM-flexible Engineered FnCas9 variants for r
+2026-04-11 12:44:58,707 [INFO] step4.pipeline:    15. [ Both] [PDF:✗] T1: 8 T2: 1 | Tailoring Dirac fermions by in-situ tunable h
+2026-04-11 12:44:58,707 [INFO] step4.pipeline:    16. [ Both] [PDF:✗] T1: 3 T2: 6 | Unusual magnetotransport in twisted bilayer g
+2026-04-11 12:44:58,707 [INFO] step4.pipeline:    17. [ Both] [PDF:✓] T1: 2 T2: 7 | Electronic procrystalline state in moire stru
+2026-04-11 12:44:58,707 [INFO] step4.pipeline:    18. [ Both] [PDF:✗] T1: 6 T2: 4 | Realization of one-dimensional electronic fla
+2026-04-11 12:44:58,708 [INFO] step4.pipeline:    19. [ Both] [PDF:✗] T1: 3 T2: 2 | Subconfluent ARPE-19 Cells Display Mesenchyma
+2026-04-11 12:44:58,708 [INFO] step4.pipeline:    20. [ Both] [PDF:✗] T1: 3 T2: 1 | Topological Phase Transitions Driven by Sn Do
+2026-04-11 12:44:58,708 [INFO] step4.pipeline:    21. [Type1] [PDF:✓] T1: 2 T2: 0 | Josephson diode effect from Cooper pair momen
+2026-04-11 12:44:58,709 [INFO] step4.pipeline:    22. [Type1] [PDF:✓] T1: 5 T2: 0 | Polycrystalline SnSe with a thermoelectric fi
+2026-04-11 12:44:58,709 [INFO] step4.pipeline:    23. [Type1] [PDF:✗] T1: 9 T2: 0 | Evidence for quantum spin liquid behaviour in
+2026-04-11 12:44:58,709 [INFO] step4.pipeline:    24. [Type1] [PDF:✓] T1: 1 T2: 0 | Order-disorder charge density wave instabilit
+2026-04-11 12:44:58,709 [INFO] step4.pipeline:    25. [Type1] [PDF:✓] T1: 1 T2: 0 | Unveiling Weyl-related optical responses in s
+2026-04-11 12:44:58,710 [INFO] step4.pipeline:    26. [Type1] [PDF:✓] T1: 8 T2: 0 | A robust and tunable Luttinger liquid in corr
+2026-04-11 12:44:58,710 [INFO] step4.pipeline:    27. [Type1] [PDF:✗] T1: 6 T2: 0 | Flat <mml:math xmlns:mml="http://www.w3.org/1
+2026-04-11 12:44:58,710 [INFO] step4.pipeline:    28. [Type1] [PDF:✓] T1: 1 T2: 0 | Ultrafast photothermoelectric effect in Dirac
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    29. [Type1] [PDF:✗] T1: 1 T2: 0 | Synthesis of a monolayer fullerene network
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    30. [Type1] [PDF:✗] T1: 1 T2: 0 | Ultrafast Non‐Volatile Floating‐Gate Memory B
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    31. [Type1] [PDF:✓] T1: 6 T2: 0 | Boron clusters as broadband membrane carriers
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    32. [Type1] [PDF:✗] T1: 1 T2: 0 | Halogen-Functionalized Hole Transport Materia
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    33. [Type1] [PDF:✓] T1: 2 T2: 0 | Three-dimensional mapping of the altermagneti
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    34. [Type1] [PDF:✓] T1: 2 T2: 0 | Phonon promoted charge density wave in topolo
+2026-04-11 12:44:58,711 [INFO] step4.pipeline:    35. [Type1] [PDF:✓] T1: 2 T2: 0 | Spin density wave and van Hove singularity in
+2026-04-11 12:44:58,713 [INFO] step4.pipeline:    36. [Type1] [PDF:✓] T1: 2 T2: 0 | From Stoner to local moment magnetism in atom
+2026-04-11 12:44:58,713 [INFO] step4.pipeline:    37. [Type1] [PDF:✓] T1: 1 T2: 0 | Mitophagy curtails cytosolic mtDNA-dependent 
+2026-04-11 12:44:58,713 [INFO] step4.pipeline:    38. [Type1] [PDF:✓] T1: 1 T2: 0 | Multiple machine learning approach to charact
+2026-04-11 12:44:58,714 [INFO] step4.pipeline:    39. [Type1] [PDF:✓] T1: 2 T2: 0 | Observation of a singular Weyl point surround
+2026-04-11 12:44:58,714 [INFO] step4.pipeline:    40. [Type1] [PDF:✓] T1: 1 T2: 0 | Native point defects and their implications f
+2026-04-11 12:44:58,714 [INFO] step4.pipeline:    41. [Type1] [PDF:✓] T1: 7 T2: 0 | Prosaposin maintains lipid homeostasis in dop
+2026-04-11 12:44:58,714 [INFO] step4.pipeline:    42. [Type1] [PDF:✗] T1: 6 T2: 0 | Halogen-Bonded Organic Framework (XOF) Based 
+2026-04-11 12:44:58,715 [INFO] step4.pipeline:    43. [ Both] [PDF:✗] T1: 6 T2: 1 | Deep learning assisted Raman spectroscopy for
+2026-04-11 12:44:58,715 [INFO] step4.pipeline:    44. [Type1] [PDF:✗] T1: 6 T2: 0 | Extended Quantum Anomalous Hall States in Gra
+2026-04-11 12:44:58,715 [INFO] step4.pipeline:    45. [Type1] [PDF:✓] T1: 8 T2: 0 | Fine mapping spatiotemporal mechanisms of gen
+2026-04-11 12:44:58,715 [INFO] step4.pipeline:    46. [Type1] [PDF:✗] T1: 6 T2: 0 | Fractional Quantum Anomalous Hall Effect in a
+2026-04-11 12:44:58,716 [INFO] step4.pipeline:    47. [Type1] [PDF:✗] T1: 6 T2: 0 | Moire Engineering of Cooper-Pair Density Modu
+2026-04-11 12:44:58,716 [INFO] step4.pipeline:    48. [Type1] [PDF:✗] T1: 6 T2: 0 | Moire synaptic transistor for homogeneous-arc
+2026-04-11 12:44:58,716 [INFO] step4.pipeline:    49. [Type1] [PDF:✗] T1: 3 T2: 0 | Parallel transport and layer-resolved thermod
+2026-04-11 12:44:58,716 [INFO] step4.pipeline:    50. [Type1] [PDF:✗] T1: 6 T2: 0 | Dirac cone spectroscopy of strongly correlate
+2026-04-11 12:44:58,716 [INFO] step4.pipeline:    51. [Type1] [PDF:✓] T1: 2 T2: 0 | Moire magnetism in CrBr3 multilayers emerging
+2026-04-11 12:44:58,717 [INFO] step4.pipeline:    52. [Type1] [PDF:✓] T1: 1 T2: 0 | Unconventional Nonlocal Relaxation Dynamics i
+2026-04-11 12:44:58,717 [INFO] step4.pipeline:    53. [Type1] [PDF:✗] T1: 6 T2: 0 | Halogen‐Bonded Organic Framework (XOF) Based 
+2026-04-11 12:44:58,717 [INFO] step4.pipeline:    54. [Type1] [PDF:✗] T1: 5 T2: 0 | Photocurrent detected 2D spectroscopy via a p
+2026-04-11 12:44:58,717 [INFO] step4.pipeline:    55. [Type1] [PDF:✗] T1: 6 T2: 0 | χ (2)-induced artifact overwhelming the third
+2026-04-11 12:44:58,718 [INFO] step4.pipeline:    56. [Type1] [PDF:✓] T1: 2 T2: 0 | 
+2026-04-11 12:44:58,718 [INFO] step4.pipeline:    57. [Type1] [PDF:✓] T1: 7 T2: 0 | Development of broadly neutralizing antibodie
+2026-04-11 12:44:58,718 [INFO] step4.pipeline:    58. [Type1] [PDF:✗] T1: 2 T2: 0 | Enhanced Phonon-Assisted Tunneling in Metal -
+2026-04-11 12:44:58,719 [INFO] step4.pipeline:    59. [Type1] [PDF:✗] T1: 8 T2: 0 | Entangled Moire Chern Insulator in Rhombohedr
+2026-04-11 12:44:58,719 [INFO] step4.pipeline:    60. [Type1] [PDF:✗] T1:11 T2: 0 | Multi Moire Networks in Engineered Lateral He
+2026-04-11 12:44:58,719 [INFO] step4.pipeline:    61. [Type2] [PDF:✓] T1: 0 T2: 2 | Weyl spin-momentum locking in a chiral topolo
+2026-04-11 12:44:58,720 [INFO] step4.pipeline:    62. [Type2] [PDF:✗] T1: 0 T2: 7 | Mn‐Rich MnSb<sub>2</sub>Te<sub>4</sub>: A Top
+2026-04-11 12:44:58,720 [INFO] step4.pipeline:    63. [Type2] [PDF:✓] T1: 0 T2: 6 | Anomalous excitonic phase diagram in band-gap
+2026-04-11 12:44:58,720 [INFO] step4.pipeline:    64. [Type2] [PDF:✗] T1: 0 T2: 6 | Device level reversible potassium intercalati
+2026-04-11 12:44:58,720 [INFO] step4.pipeline:    65. [Type2] [PDF:✗] T1: 0 T2: 2 | Multidimensional XUV Photoemission Spectrosco
+2026-04-11 12:44:58,721 [INFO] step4.pipeline:    66. [Type2] [PDF:✗] T1: 0 T2: 1 | 2D Materials for Neuromorphic Computing Devic
+2026-04-11 12:44:58,721 [INFO] step4.pipeline:    67. [Type2] [PDF:✗] T1: 0 T2:10 | Machine Learning-Guided Optical and Raman Spe
+2026-04-11 12:44:58,721 [INFO] step4.pipeline:    68. [Type2] [PDF:✗] T1: 0 T2: 1 | Semantic segmentation of ARPES spectra for el
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    69. [Type2] [PDF:✗] T1: 0 T2: 1 | Switchable Chern insulator, isospin competiti
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    70. [Type2] [PDF:✗] T1: 0 T2: 2 | Tunable Fractional Chern Insulators in Rhombo
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    71. [Type2] [PDF:✗] T1: 0 T2:17 | Twisted Angle-Dependent Work Functions in CVD
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    72. [Type2] [PDF:✗] T1: 0 T2: 1 | py4DSTEM: A Software Package for Four-Dimensi
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    73. [Type2] [PDF:✗] T1: 0 T2: 2 | Directed light emission from monolayers on 2D
+2026-04-11 12:44:58,722 [INFO] step4.pipeline:    74. [Type2] [PDF:✗] T1: 0 T2: 1 | Moire-Engineered Ferroelectric Transistors fo
+2026-04-11 12:44:58,722 [INFO] step4.pipeline: Manifest saved to C:\UCLEAP\UC_LEAP\step4/organized\manifest_latest.json
+2026-04-11 12:44:58,726 [INFO] __main__: ============================================================
+2026-04-11 12:44:58,727 [INFO] __main__: Step 4 complete in 170s. 74 papers organized.

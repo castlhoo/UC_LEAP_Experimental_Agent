@@ -1,0 +1,99 @@
+# Step 1: Candidate Paper Search
+# GPT-query comparison config
+
+gpt:
+  enabled: true
+  use_gpt_queries: true
+  model: "gpt-5.4-mini"
+
+queries:
+  use_gpt: true
+  topic_keywords:
+    - "moire"
+    - "twisted bilayer graphene"
+    - "topological materials"
+    - "2D materials"
+    - "van der Waals heterostructure"
+    - "superconductivity"
+    - "kagome"
+    - "charge density wave"
+    - "quantum materials"
+    - "magnetism"
+    - "ARPES"
+    - "STM"
+    - "Raman spectroscopy"
+    - "neutron scattering"
+    - "transport measurements"
+  experiment_keywords:
+    - "experimental"
+    - "measurement"
+    - "transport"
+    - "spectroscopy"
+    - "microscopy"
+    - "device"
+    - "thin film"
+  data_keywords:
+    - "source data"
+    - "dataset"
+    - "data availability"
+    - "repository"
+    - "zenodo"
+    - "figshare"
+    - "supplementary data"
+
+search:
+  year_range:
+    start: 2021
+    end: 2026
+  max_results_per_query: 20
+  enabled_apis:
+    semantic_scholar: true
+    openalex: true
+    crossref: true
+    arxiv: true
+  max_queries_per_api:
+    semantic_scholar: 8
+    openalex: 10
+    crossref: 8
+    arxiv: 8
+  rate_limits:
+    semantic_scholar: 1.0
+    openalex: 0.3
+    crossref: 1.0
+    arxiv: 0.5
+
+journals:
+  high_priority:
+    - "Nature"
+    - "Science"
+    - "Nature Physics"
+    - "Nature Materials"
+    - "Nature Communications"
+    - "Physical Review Letters"
+    - "Advanced Materials"
+  mid_priority:
+    - "Physical Review B"
+    - "npj Quantum Materials"
+    - "ACS Nano"
+    - "Nano Letters"
+    - "2D Materials"
+    - "Applied Physics Letters"
+    - "Science Advances"
+
+scoring:
+  weights:
+    field_match_strong: 3
+    field_match_general: 2
+    field_match_weak: 1
+    experimental_clear: 3
+    experimental_mixed: 1
+    theory_only_penalty: -3
+    journal_top: 2
+    journal_mid: 1
+    dataset_signal_high: 3
+    dataset_signal_medium: 1
+    soft_material_penalty: -4
+    review_penalty: -4
+  thresholds:
+    keep_min: 7
+    maybe_min: 4

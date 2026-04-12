@@ -1,0 +1,69 @@
+Title: Dirac cone spectroscopy of strongly correlated phases in twisted trilayer graphene
+DOI: 10.1038/s41563-022-01428-6
+Journal: arXiv preprint
+Year: 2022
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All provided files are Nature-style source-data Excel workbooks organized by figure or extended-data figure, with tabular numeric content suitable for direct replotting.
+- Type2 summary: No files show evidence of raw instrument output, proprietary binary formats, microscopy images, or other unprocessed acquisition data.
+
+Type1 files
+- 41563_2022_1428_MOESM2_ESM.xlsx
+  original path: 41563_2022_1428_MOESM2_ESM.xlsx
+  classified as: type1
+  reasoning: Paper evidence explicitly supports source/figure data rather than raw instrument output. The workbook is organized by figure panels and contains tabular data that can be replot with minimal processing. Despite its relatively large size, the structure is consistent with cleaned source data, not raw data.
+  paper evidence: The paper states that source data for the main figures are provided with the paper, and this file is one of the Nature source-data XLSX deposits.
+  file evidence: Excel workbook with figure-specific sheets ('figure 1b_left panel', 'figure 1b_right panel', 'figure 1d', 'figure 1e', 'figure 1f'); contains tabular numeric data with headers in some sheets and structured arrays suitable for plotting. Large size is still consistent with dense figure source data.
+  structure: Figure-specific sheets; example headers include D0V/nm and D0.5V/nm
+  ambiguity: Low ambiguity; size is somewhat large but does not outweigh explicit source-data evidence.
+- 41563_2022_1428_MOESM3_ESM.xlsx
+  original path: 41563_2022_1428_MOESM3_ESM.xlsx
+  classified as: type1
+  reasoning: The figure-labeled sheet names and tabular structure indicate cleaned source data prepared for direct use in the paper's plots. No signs of raw instrument output or proprietary formats.
+  paper evidence: The publication provides source data for the figures, and this file is part of the accompanying Nature source-data set.
+  file evidence: Excel workbook with sheets named 'figure 2a', 'figure 2b', and 'figure 2c'; tabular numeric data with moderate size and figure-specific organization, consistent with replot-ready source data.
+  structure: Figure-specific sheets; mostly unnamed tabular columns
+  ambiguity: None significant.
+- 41563_2022_1428_MOESM4_ESM.xlsx
+  original path: 41563_2022_1428_MOESM4_ESM.xlsx
+  classified as: type1
+  reasoning: This is clearly figure source data, organized by figure and measurement channel (Rxx/Rxy). The data appear cleaned and directly replot-ready.
+  paper evidence: The paper explicitly says source data for the main figures and extended data figures are provided.
+  file evidence: Excel workbook with figure-specific sheets ('figure 3a_D0_Rxx', 'figure 3a_D0_Rxy', 'figure 3a_D0.2_Rxx', 'figure 3a_D0.2_Rxy', 'figure 3a_D0.15_Rxx', 'figure 3a_D0.15_Rxy', 'figure 3c'); structured tabular data suitable for plotting.
+  structure: Figure 3a and 3c sheets; resistance channels Rxx and Rxy
+  ambiguity: None.
+- 41563_2022_1428_MOESM5_ESM.xlsx
+  original path: 41563_2022_1428_MOESM5_ESM.xlsx
+  classified as: type1
+  reasoning: Although some sheets lack explicit headers, the workbook is still organized as figure source data and is suitable for plotting after minimal interpretation. No evidence of raw acquisition format.
+  paper evidence: The paper provides source data for the figures, including extended data, and this workbook is part of that deposit.
+  file evidence: Excel workbook with sheets 'figure 4a', 'figure 4b', 'figure 4c', and 'figure 4e'; tabular data with figure-specific organization and moderate-to-large size, consistent with source data rather than raw instrument files.
+  structure: Figure 4 sheets; unnamed tabular columns
+  ambiguity: Low to moderate due to unnamed columns in several sheets, but overall structure still matches source data.
+- 41563_2022_1428_MOESM6_ESM.xlsx
+  original path: 41563_2022_1428_MOESM6_ESM.xlsx
+  classified as: type1
+  reasoning: The file is clearly organized as extended-data source data and contains tabular measurements for two channels. This is characteristic of cleaned figure data, not raw data.
+  paper evidence: The paper states that source data for the extended data figures are provided with the paper.
+  file evidence: Excel workbook with sheets 'extended_data_fig1_Rxx' and 'extended_data_fig1_Rxy'; structured tabular data, figure-specific naming, and moderate size consistent with replot-ready source data.
+  structure: Extended Data Fig. 1; Rxx and Rxy channels
+  ambiguity: None.
+- 41563_2022_1428_MOESM7_ESM.xlsx
+  original path: 41563_2022_1428_MOESM7_ESM.xlsx
+  classified as: type1
+  reasoning: The compact, figure-specific tabular structure is directly replot-ready and strongly indicates source data rather than raw instrument output.
+  paper evidence: The paper provides source data for extended data figures, and this workbook is included in that set.
+  file evidence: Very small Excel workbook with one sheet ('extended_data_fig2') and a simple 4-column, 51-row table; this is typical of cleaned source data for a single figure panel.
+  structure: Extended Data Fig. 2; 4-column table
+  ambiguity: None.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

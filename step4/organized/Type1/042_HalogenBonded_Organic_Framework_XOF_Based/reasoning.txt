@@ -1,0 +1,69 @@
+Title: Halogen-Bonded Organic Framework (XOF) Based on Iodonium-Bridged N···I+···N Interactions: A Type of Diphase Periodic Organic Network.
+DOI: 10.1002/anie.202102448
+Journal: Angewandte Chemie
+Year: 2021
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All provided files are figure-linked, tabular, replot-ready datasets consistent with processed/source data deposits for supplementary figures.
+- Type2 summary: No files show clear raw/instrument-output characteristics such as proprietary formats, large unprocessed scans, microscopy images, or explicit raw-data labeling.
+
+Type1 files
+- FigureS30_MUV21_simulated.txt
+  original path: FigureS30_MUV21_simulated.txt
+  classified as: type1
+  reasoning: The file is clearly figure-ready simulated data, suitable for direct plotting. It is not raw measurement output.
+  paper evidence: The paper concerns structural characterization and the file naming indicates a supplementary figure dataset. No paper evidence suggests raw data deposition.
+  file evidence: Two-column tabular text file with figure-specific naming ('FigureS30', 'simulated') and headers ('MUV-21 simulated', 'Intenisty (a. u.)'). This is structured like a plotted profile rather than an instrument export.
+  structure: MUV-21 simulated; Intenisty (a. u.)
+  ambiguity: Low ambiguity: simulated, figure-labeled, and tabular.
+- FigureS31_MUV-20a_asynthesised.txt
+  original path: FigureS31_MUV-20a_asynthesised.txt
+  classified as: type1
+  reasoning: The file is structured, figure-linked, and directly plottable, which is characteristic of Type 1 source/cleaned data.
+  paper evidence: No paper evidence suggests raw instrument output; the file is consistent with supplementary figure data from the paper's characterization section.
+  file evidence: Two-column tabular text file with figure-specific naming ('FigureS31') and a sample row showing angle/intensity-style values. The headers indicate a processed profile for 'MUV-20a as-synthesised'.
+  structure: MUV-20a as-synthesised; Intenisty (a. u.)
+  ambiguity: Low ambiguity.
+- FigureS32_CH2Cl2.txt
+  original path: FigureS32_CH2Cl2.txt
+  classified as: type1
+  reasoning: This is organized figure data for a specific solvent condition and can be plotted directly with minimal processing, so it fits Type 1.
+  paper evidence: The paper reports experimental characterization and solution stability; the file appears to be one condition in a figure set. No evidence indicates raw data.
+  file evidence: Two-column tabular text file with figure-style naming and a solvent condition ('CH3Cl' as displayed in the header). The sample row shows angle/intensity-style data ('2 q(deg.)', 'Intenisty (a. u.)'), consistent with replot-ready diffraction data.
+  structure: CH3Cl; Intenisty (a. u.)
+  ambiguity: Moderate naming ambiguity: the filename says CH2Cl2 while the header shows CH3Cl, but the file structure still indicates processed figure data.
+- FigureS32_EtOH.txt
+  original path: FigureS32_EtOH.txt
+  classified as: type1
+  reasoning: This is organized figure data for a specific solvent condition and is directly plottable, so it is Type 1.
+  paper evidence: The paper includes solution/stability characterization, and this file appears to be one solvent-condition dataset. No raw-data statement is present.
+  file evidence: Two-column tabular text file with figure-style naming and a solvent label ('EtOH'). The structure matches replot-ready intensity-vs-angle data.
+  structure: EtOH; Intenisty (a. u.)
+  ambiguity: Low ambiguity.
+- FigureS32_hexane.txt
+  original path: FigureS32_hexane.txt
+  classified as: type1
+  reasoning: This is figure-ready tabular data, not raw instrument output, so it is Type 1.
+  paper evidence: The paper discusses stability/characterization in solution; this file is consistent with a solvent-condition figure dataset. No evidence of raw acquisition data.
+  file evidence: Two-column tabular text file with figure-specific naming and a solvent label ('Hexane'). The sample row indicates angle/intensity data suitable for direct plotting.
+  structure: Hexane; Intenisty (a. u.)
+  ambiguity: Low ambiguity.
+- FigureS34_asynthesised.txt
+  original path: FigureS34_asynthesised.txt
+  classified as: type1
+  reasoning: This is organized, figure-linked tabular data that can be plotted directly with minimal processing. It matches Type 1 source/figure data rather than raw instrument output.
+  paper evidence: The paper is about experimental characterization of a halogen-bonded organic framework, and the available files are organized as figure/supplementary figure datasets rather than raw instrument outputs. No evidence in the paper indicates these are raw files.
+  file evidence: Tabular text file with 2 columns, a clear figure-specific name ('FigureS34', 'as-synthesised'), and header-like labels ('MUV-21 as-synthesised', 'Intenisty (a. u.)'). The structure is consistent with replot-ready diffraction/intensity data.
+  structure: MUV-21 as-synthesised; Intenisty (a. u.)
+  ambiguity: Low ambiguity: the file looks like processed figure data, not raw acquisition data.
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

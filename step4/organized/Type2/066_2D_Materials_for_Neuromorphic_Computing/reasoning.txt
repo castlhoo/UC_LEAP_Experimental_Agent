@@ -1,0 +1,29 @@
+Title: 2D Materials for Neuromorphic Computing Devices
+DOI: 10.1109/EDTM61175.2025.11041583
+Journal: 2025 9th IEEE Electron Devices Technology & Manufacturing Conference (EDTM)
+Year: 2025
+Final label: Type2 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: No clear cleaned, figure-ready tabular dataset was identified from the available file evidence or paper evidence.
+- Type2 summary: One large PDF from Zenodo was identified; given the lack of explicit source-data evidence and no visible tabular structure, it is conservatively classified as Type 2.
+
+Type1 files
+- none
+
+Type2 files
+- S.Majumdar_-_Back-End_CMOS_Compatible_and_Flexible_Ferroelectric_Memories_for_Neuromorphic_Computing_and_Adaptive_Sensing.pdf
+  original path: S.Majumdar_-_Back-End_CMOS_Compatible_and_Flexible_Ferroelectric_Memories_for_Neuromorphic_Computing_and_Adaptive_Sensing.pdf
+  classified as: type2
+  reasoning: Because the paper provides no explicit indication of figure-ready source data, and the file evidence does not show a structured tabular dataset, the conservative classification is Type 2. The large size supports that it is not a simple cleaned data table. However, since the file is a PDF and not a direct data table, it is best treated as non-Type-1 dataset material rather than replot-ready source data.
+  paper evidence: The paper analysis states no data availability statement and no publisher-hosted dataset URLs were found, so there is no explicit evidence of cleaned/source figure data being deposited.
+  file evidence: Single PDF file, 12.6 MB, from Zenodo. Large PDF size is more consistent with a document or potentially embedded supplementary/raw material than with a small, directly replot-ready tabular dataset. No tabular structure, headers, or figure-specific data organization is visible from the file report.
+  structure: Not identifiable from the file report; no tabular columns or sheet structure reported.
+  ambiguity: Moderate: the file is a PDF, so its internal contents are unknown from the inspection report. It could be a paper or supplementary document rather than a dataset file. Classification as Type 2 is conservative based on size and lack of explicit source-data evidence.
+
+Annotation files
+- none
+
+Script files
+- none

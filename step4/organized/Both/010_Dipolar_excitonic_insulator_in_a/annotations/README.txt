@@ -1,0 +1,1 @@
+Dataset for "Proposed strongly correlated excitonic insulator in nitrogen-boron-centered triangulene honeycomb lattice". Detailed data will be uploaded when it's required by reviewers or after the paper is ready for publication.

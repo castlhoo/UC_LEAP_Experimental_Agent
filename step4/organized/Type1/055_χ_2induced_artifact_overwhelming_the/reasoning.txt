@@ -1,0 +1,65 @@
+Title: χ (2)-induced artifact overwhelming the third-order signal in 2D Raman-THz spectroscopy of non-centrosymmetric materials.
+DOI: 10.1063/5.0228378
+Journal: The Journal of chemical physics
+Year: 2024
+Final label: Type1 only
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: All files are figure/source-style tabular datasets with numeric structure and figure-specific names, consistent with cleaned replot-ready source data.
+- Type2 summary: No files show signs of raw instrument output, proprietary formats, large unprocessed scans, or explicit raw-data labeling.
+
+Type1 files
+- Fig2a.dat
+  original path: Fig2a.dat
+  classified as: type1
+  reasoning: This is organized, figure-specific tabular data that can be replotted with minimal processing. It matches a cleaned source-data style rather than raw instrument output.
+  paper evidence: The paper provides no raw-data statement and no indication that deposited files are instrument outputs; the available evidence is consistent with figure/source data deposits.
+  file evidence: Tabular text with headers, 31 rows, 42 numeric columns, and figure-like naming. The x-axis-like header values run from -1000 to 3000, suggesting a processed grid suitable for direct plotting.
+  structure: Grid-like numeric columns from -1000 to 3000; 31 rows; tabular matrix
+- Fig3c.dat
+  original path: Fig3c.dat
+  classified as: type1
+  reasoning: This is a cleaned, figure-ready dataset that can be plotted directly. The structure strongly supports Type 1.
+  paper evidence: No explicit raw-data statement exists in the paper; the deposit appears consistent with figure/source data.
+  file evidence: Tabular text, 31 rows, 42 numeric columns, figure-labeled filename, and a regular numeric matrix similar to other source-data files.
+  structure: Grid-like numeric columns from -1000 to 3000; 31 rows; tabular matrix
+- Fig3d.dat
+  original path: Fig3d.dat
+  classified as: type1
+  reasoning: The file is structured, compact, and clearly organized for figure reproduction. It is not characteristic of raw experimental output.
+  paper evidence: No paper evidence indicates raw instrument output; the publication context supports figure/source data rather than raw data.
+  file evidence: Tabular text with 16 rows and 22 numeric columns, figure-specific naming, and a regular numeric grid. The values are directly plottable as a curve or surface-like dataset.
+  structure: Numeric grid with columns 0 to 5 in 0.25 steps; 16 rows
+- Fig4a.dat
+  original path: Fig4a.dat
+  classified as: type1
+  reasoning: The file is organized as replot-ready source data rather than raw data.
+  paper evidence: The paper does not describe deposited files as raw measurements; no data availability statement or raw-data repository is given.
+  file evidence: Tabular text with 31 rows and 42 numeric columns, figure-specific naming, and a regular numeric grid suitable for direct plotting.
+  structure: Grid-like numeric columns from -1000 to 3000; 31 rows; tabular matrix
+- Fig4b_blue_curve.dat
+  original path: Fig4b_blue_curve.dat
+  classified as: type1
+  reasoning: This is a small, figure-specific curve dataset that is replot-ready and therefore Type 1.
+  paper evidence: No explicit raw-data statement in the paper; the file naming suggests figure source data.
+  file evidence: Two-column numeric tabular file with 40 rows and no header. The filename indicates a specific plotted curve, and the data are directly plottable.
+  structure: Two numeric columns; 40 rows; curve trace
+  ambiguity: low: no header, but structure is still figure-source-like
+- Fig4c_red_curve.dat
+  original path: Fig4c_red_curve.dat
+  classified as: type1
+  reasoning: Despite lacking a header, this is still a clean curve dataset intended for figure reproduction. It is not raw experimental output.
+  paper evidence: No paper evidence suggests this is raw instrument output; the naming is consistent with a figure trace deposit.
+  file evidence: Two-column numeric tabular file with 153 rows and no header. The filename explicitly indicates a plotted curve, and the data are directly plottable as x-y points.
+  structure: Two numeric columns; 153 rows; curve trace
+  ambiguity: low: no header, but the structure is still clearly replot-ready
+
+Type2 files
+- none
+
+Annotation files
+- none
+
+Script files
+- none

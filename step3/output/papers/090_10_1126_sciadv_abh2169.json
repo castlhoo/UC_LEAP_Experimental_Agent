@@ -1,0 +1,199 @@
+{
+  "paper_id": "step1_0147",
+  "title": "A single–cell type transcriptomics map of human tissues",
+  "doi": "10.1126/sciadv.abh2169",
+  "journal": "Science Advances",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3184729641",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 6,
+  "download_errors": [
+    "cellranger_output.zip: Too large: 1411.4MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1126_sciadv_abh2169",
+  "files_inspected": 7,
+  "file_types_found": [
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready cleaned data files were present in the inspected archive contents.",
+  "type2_summary": "No raw measurement or instrument-output data files were present in the inspected archive contents.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The provided ZIP appears to be a demo/analysis workflow bundle rather than a data deposit. Since the task is to classify dataset files into Type 1 or Type 2, none of the inspected files qualify as either data type. If a stricter forced choice were required for the archive as a whole, it would still not be Type 1 because it is not directly replot-ready data.",
+  "file_classifications": [
+    {
+      "relative_path": "scripts_demo.zip",
+      "filename": "scripts_demo.zip",
+      "type": "other",
+      "paper_evidence": "The paper analysis provided no data availability statement, repository link, or supplementary source-data description indicating this archive is figure-ready source data or raw data.",
+      "file_evidence": "Small ZIP archive from Zenodo containing analysis/demo workflow files rather than tabular measurements or instrument output.",
+      "reasoning": "This is an archive container, not a dataset file that can be directly plotted. Its contents are scripts and workflow configuration, so it is not Type 1 or Type 2 data itself.",
+      "ambiguity": "The archive may package data-related materials, but the inspected contents are primarily code/workflow files, not data tables or raw measurements.",
+      "key_columns_or_structure": "Archive containing R scripts, notebook, YAML config, and Snakefile"
+    },
+    {
+      "relative_path": "zip_contents/scripts_demo/2.0_individual_demo.R",
+      "filename": "2.0_individual_demo.R",
+      "type": "script",
+      "paper_evidence": "No paper evidence indicates this is source data or raw data; the paper description instead concerns transcriptomics and protein profiling, not analysis scripts.",
+      "file_evidence": "R script file used for analysis/demo workflow; not a data table or measurement file.",
+      "reasoning": "This is clearly executable code, not dataset content. It supports processing or visualization but is not itself a data file.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "R code"
+    },
+    {
+      "relative_path": "zip_contents/scripts_demo/3.2_integrated.ipynb",
+      "filename": "3.2_integrated.ipynb",
+      "type": "script",
+      "paper_evidence": "No paper evidence suggests this notebook is source data; it is more consistent with analysis code accompanying a workflow.",
+      "file_evidence": "Jupyter notebook file, typically containing code and narrative for analysis rather than raw/cleaned measurements.",
+      "reasoning": "This is analysis code/documentation, not a dataset. It cannot be directly classified as Type 1 or Type 2 data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Notebook cells / code"
+    },
+    {
+      "relative_path": "zip_contents/scripts_demo/config.yaml",
+      "filename": "config.yaml",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence indicates this is source data; it is consistent with workflow configuration accompanying analysis materials.",
+      "file_evidence": "YAML configuration file, likely specifying parameters/paths for a pipeline rather than containing measurements.",
+      "reasoning": "Configuration metadata is not data. It may help reproduce analysis but is neither raw nor cleaned figure-ready data.",
+      "ambiguity": "Low-level ambiguity only in whether it is documentation or configuration; it is not a data file.",
+      "key_columns_or_structure": "YAML key-value configuration"
+    },
+    {
+      "relative_path": "zip_contents/scripts_demo/Snakefile",
+      "filename": "Snakefile",
+      "type": "script",
+      "paper_evidence": "No paper evidence indicates this is source data; it is consistent with a workflow file used to generate outputs from data.",
+      "file_evidence": "Snakemake workflow file, i.e., pipeline logic rather than dataset content.",
+      "reasoning": "This is a processing script/workflow definition. It is not directly plottable and does not represent Type 1 or Type 2 data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Workflow rules and targets"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper presents a human tissue atlas built from single-cell transcriptomics and spatial antibody-based protein profiling to map gene and protein expression across 192 cell type clusters.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper describes a human tissue atlas generated from single-cell transcriptomics and spatial antibody-based protein profiling, but no accessible dataset location was identified from the available sources.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement, repository link, publisher source data, or supplementary data files were found from the provided information.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement, repository link, publisher source data, or supplementary data files were found from the provided information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "scripts_demo.zip",
+      "extension": ".zip",
+      "size_bytes": 11169,
+      "size_human": "10.9 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "scripts_demo.zip"
+    },
+    {
+      "filename": "2.0_individual_demo.R",
+      "extension": ".r",
+      "size_bytes": 5235,
+      "size_human": "5.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .r",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/2.0_individual_demo.R",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/2.0_individual_demo.R"
+    },
+    {
+      "filename": "3.2_integrated.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 2805,
+      "size_human": "2.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/3.2_integrated.ipynb",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/3.2_integrated.ipynb"
+    },
+    {
+      "filename": "3.1_integration.R",
+      "extension": ".r",
+      "size_bytes": 7634,
+      "size_human": "7.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .r",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/3.1_integration.R",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/3.1_integration.R"
+    },
+    {
+      "filename": "config.yaml",
+      "extension": ".yaml",
+      "size_bytes": 383,
+      "size_human": "383.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .yaml",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/config.yaml",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/config.yaml"
+    },
+    {
+      "filename": "Snakefile",
+      "extension": "",
+      "size_bytes": 2274,
+      "size_human": "2.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/Snakefile",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/Snakefile"
+    },
+    {
+      "filename": "3.3_integration.R",
+      "extension": ".r",
+      "size_bytes": 4040,
+      "size_human": "3.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .r",
+      "download_source": "zip_extracted",
+      "archive_path": "scripts_demo/3.3_integration.R",
+      "from_zip": "scripts_demo.zip",
+      "relative_path": "zip_contents/scripts_demo/3.3_integration.R"
+    }
+  ]
+}

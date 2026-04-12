@@ -1,0 +1,92 @@
+Title: Dipolar excitonic insulator in a moire lattice
+DOI: N/A
+Journal: arXiv preprint
+Year: 2021
+Final label: Both
+Classification confidence: high
+
+Paper-level reasoning
+- Type1 summary: The Excel files in the Main figures data folder are structured, figure-specific tabular datasets with headers and numeric measurements, suitable for direct plotting and therefore Type 1.
+- Type2 summary: The ZIP archive and Origin .opju files are packaging/proprietary project files that likely contain raw or analysis-state data and are not directly replot-ready, so they are Type 2.
+
+Type1 files
+- Fig 3a perfect drag line.xlsx
+  original path: zip_contents/raw data_Upload/Main figures data/Fig 3a perfect drag line.xlsx
+  classified as: type1
+  reasoning: This is structured, figure-specific tabular data that can be directly loaded and plotted with minimal processing. It matches Type 1.
+  paper evidence: No explicit paper statement identifies this as raw data; the file is organized as a figure-specific dataset, which is consistent with source/figure data deposits.
+  file evidence: Excel spreadsheet with 6 columns and 519 rows, header present, and physical-variable-like columns including Vb, IDrag_X, IDrive_X, Drag ratio, and I tunnel (x100).
+  structure: Vb, IDrag_X, IDrive_X, Drag ratio, I tunnel (x100)
+  ambiguity: Low ambiguity; the structure is clearly replot-ready.
+- Fig 3b ratio vs Temp.xlsx
+  original path: zip_contents/raw data_Upload/Main figures data/Fig 3b ratio vs Temp.xlsx
+  classified as: type1
+  reasoning: Despite the large number of columns, the file is structured tabular data with figure-oriented naming and appears directly usable for replotting. Type 1 is appropriate.
+  paper evidence: No explicit paper statement identifies this as raw data; the naming indicates a figure-specific dataset.
+  file evidence: Excel spreadsheet with 108 columns and 2001 rows, header present, organized as tabular data suitable for plotting temperature-dependent ratios.
+  structure: Temperature/ratio-style wide table; many numeric columns labeled by values such as 2, 2.5, 3, ...
+  ambiguity: Moderate only because the wide table may require minor interpretation of column meaning, but it remains replot-ready.
+- Fig 4a Rdrag versus T.xlsx
+  original path: zip_contents/raw data_Upload/Main figures data/Fig 4a Rdrag versus T.xlsx
+  classified as: type1
+  reasoning: This is organized tabular data that appears directly plottable as Rdrag versus temperature. It fits Type 1.
+  paper evidence: No explicit paper statement identifies this as raw data; the filename indicates a figure-specific dataset.
+  file evidence: Excel spreadsheet with 32 columns and 107 rows, header present, with numeric temperature-like columns and a clear measurement table structure.
+  structure: Temperature-like numeric columns; Rdrag versus T table
+  ambiguity: Low.
+- Fig2a Cp.xlsx
+  original path: zip_contents/raw data_Upload/Main figures data/Fig2a Cp.xlsx
+  classified as: type1
+  reasoning: Structured spreadsheet, figure-specific naming, and direct plot readiness support Type 1.
+  paper evidence: No explicit paper statement identifies this as raw data; the filename indicates a figure-specific dataset.
+  file evidence: Excel spreadsheet with 127 columns and 126 rows, header present, with numeric axis-like values spanning negative to positive values, consistent with capacitance-vs-gate/field style figure data.
+  structure: Wide numeric table; likely Cp versus control parameter
+  ambiguity: Low.
+- Fig2b i drag.xlsx
+  original path: zip_contents/raw data_Upload/Main figures data/Fig2b i drag.xlsx
+  classified as: type1
+  reasoning: This is clean, structured, figure-oriented tabular data and can be plotted with minimal processing. Type 1.
+  paper evidence: No explicit paper statement identifies this as raw data; the filename indicates a figure-specific dataset.
+  file evidence: Excel spreadsheet with 127 columns and 126 rows, header present, and numeric values consistent with a plotted measurement matrix.
+  structure: Wide numeric table; likely current/drag measurement matrix
+  ambiguity: Low.
+
+Type2 files
+- raw_data_Upload.zip
+  original path: raw_data_Upload.zip
+  classified as: type2
+  reasoning: As an archive, it is not directly replot-ready. Its role is to package multiple underlying datasets, including files that look like raw or semi-processed measurement outputs. Conservatively classify as Type 2.
+  paper evidence: The paper analysis indicates no explicit data availability statement, but the archive name and contents suggest a raw-data deposit accompanying the study.
+  file evidence: 30 MB ZIP archive containing multiple figure-related spreadsheets and Origin project files; archive packaging and size are consistent with a raw/unprocessed data bundle.
+  structure: Archive containing Excel and Origin files
+  ambiguity: The archive itself is a container, so classification is based on its contents and packaging rather than direct data structure.
+- Fig 4a inset origin file with embedded data.opju
+  original path: zip_contents/raw data_Upload/Main figures data/Fig 4a inset origin file with embedded data.opju
+  classified as: type2
+  reasoning: Because it is a proprietary binary project file requiring specialized software and likely containing embedded/raw plotting state, it is better treated as Type 2.
+  paper evidence: No explicit paper statement identifies this as processed source data; the file is an Origin project, which often stores embedded plotting data and analysis state.
+  file evidence: Binary proprietary Origin project file (.opju), not directly tabular or immediately replot-ready without Origin or conversion; embedded data suggests analysis/plot state rather than clean export.
+  structure: Binary Origin project with embedded data
+  ambiguity: Some Origin files can contain processed figure data, but the binary project format makes it nontrivial to use directly.
+- Fig 4b origin file with embedded data.opju
+  original path: zip_contents/raw data_Upload/Main figures data/Fig 4b origin file with embedded data.opju
+  classified as: type2
+  reasoning: Proprietary binary project files are conservatively classified as Type 2 unless clearly exported as clean source tables.
+  paper evidence: No explicit paper statement identifies this as processed source data; the file is a proprietary Origin project.
+  file evidence: Binary .opju file, likely requiring Origin to inspect or extract embedded data; not directly replot-ready.
+  structure: Binary Origin project with embedded data
+  ambiguity: Moderate, because embedded data may be figure-source data, but the format is still not clean tabular output.
+
+Annotation files
+- README.txt
+  original path: README.txt
+  classified as: documentation
+  reasoning: This is clearly documentation, not a dataset file to be plotted or processed into a figure. It does not fit Type 1 or Type 2.
+  paper evidence: The paper analysis says no data availability statement or repository/URL was identified, so there is no paper-level evidence that this README is a formal source-data deposit.
+  file evidence: Text README with a single sentence describing a dataset for a different paper title; no tabular rows, no numeric data, and it functions as metadata/documentation rather than data.
+  structure: Single-line text; no real columns or data rows
+  ambiguity: The README text appears mismatched to the paper title, suggesting a deposit from another project; this increases uncertainty about provenance but not about file role.
+
+Script files
+- FigS18_code_SimulateBandCharging_Phuong_CTF45_channel.py
+- FigS18_code_SimulateBandCharging_Phuong_CTF45_exciton contact.py

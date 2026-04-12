@@ -1,0 +1,42 @@
+Documentation for the code used in numerical simulations of tBLG network model.
+
+Algorithm 1:
+The presented algorithm for Fig.4 takes
+ - injected current distribution at fixed energy E as input 
+ - parameters of the S-matrix for the network model
+ - system sizes and value of magnetic flux defined by Fig.2
+  
+and returns the distribution of currents in the whole system as output.
+
+The main steps of the algorithm are the following:
+1) building the network geometry as networkx library directed graph. 
+Edge directions are that of mode propagation.
+2) using this geometry, node S-matrices and magnetic+dynamic phases accumulated on the links, 
+the system of equations for network model is filled. The variables are currents (modes) on the links, 
+two per each link in single valley.
+3) The obtained linear system of equations is solved.
+4) Using the geometry of the network (x, y coordinates of all links) 
+and obtained solution for current on each link in each of two channels per link,
+the full current density distribution is plotted in 2D plane.
+
+The specifications of the functions used to perform these steps are listed in file 
+"conductance_oscillations_mode_sum_annotated.py",
+and the examples of solving the network model and plotting the results are shown in file
+"Wave_packet_distributions_plotting.ipynb"
+
+Algorithm 2:
+The algorithm for Fig.7, which is placed in separate file "conductance_oscillations_mode_sum_annotated.py" uses 
+the previous algorithm 1 to calculate conductance between two narrow contacts. Additionally to parameters used in 
+Algorithm 1, it takes the sizes of both contacts. 
+The conductance is calculated in several steps:
+1) using each mode coming through the contact, the corresponding current distribution is built.
+2) the outgoing current through another contact is calculated using the summation over all channel in the second contact. 
+This gives conductance per single mode channel.
+3) the full conductance is the sum of single mode conductance contributions over all 
+modes incoming  into the first contact. Note that some part of the current goes.
+into the grounded boundary, and is not captured by the narrow contact.
+
+Since the evaluation takes quiet long time, the data on intermediate steps and at the end is saved to text files 
+in byte format using pickle library. 
+The code that allows one to load and use data from these files in presented in file 
+"conductance_data_file_to_plot_convertion.ipynb"

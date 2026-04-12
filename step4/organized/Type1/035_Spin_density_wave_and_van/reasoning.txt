@@ -1,0 +1,52 @@
+Title: Spin density wave and van Hove singularity in the kagome metal CeTi3Bi4
+DOI: 10.1038/s41467-025-59460-4
+Journal: Nature Communications
+Year: 2025
+Final label: Type1 only
+Classification confidence: medium
+
+Paper-level reasoning
+- Type1 summary: The XLSX files Fig2_source.xlsx and Fig3_source.xlsx are figure-specific source-data spreadsheets with headers and compact tabular structure, matching cleaned, replot-ready Type 1 data.
+- Type2 summary: No file is confidently classified as raw/unprocessed Type 2 based on the available file inspection. The PDFs are supplementary documentation rather than identifiable raw datasets.
+
+Type1 files
+- Fig2_source.xlsx
+  original path: Fig2_source.xlsx
+  classified as: type1
+  reasoning: This is a classic cleaned source-data spreadsheet: small, structured, figure-specific, and directly replot-ready with minimal processing. The paper evidence and file evidence both support Type 1.
+  paper evidence: The paper explicitly states that source data used in Fig. 2e are available in figshare. Fig. 2e is a processed intensity scan figure, so the deposited file is figure/source data rather than raw instrument output.
+  file evidence: XLSX spreadsheet, 12.6 KB, one sheet, 12 columns x 46 rows, with a clear figure-specific key column 'Figure 2e' and header structure.
+  structure: Figure 2e; tabular columns with headers
+  ambiguity: None
+- Fig3_source.xlsx
+  original path: Fig3_source.xlsx
+  classified as: type1
+  reasoning: This is figure-organized source data in a compact spreadsheet format, suitable for direct plotting or minimal cleanup. Both paper and file evidence strongly indicate Type 1.
+  paper evidence: The paper explicitly states that source data used in Figs. 3c, 3d, 3f, and 3g are available in figshare. These are processed integrated-intensity and field/temperature-dependence plots.
+  file evidence: XLSX spreadsheet, 12.3 KB, one sheet, 40 columns x 29 rows, with figure-specific key columns 'Figure 3c', 'Figure 3d', 'Figure 3f', and 'Figure 3g'.
+  structure: Figure 3c, Figure 3d, Figure 3f, Figure 3g; tabular columns with headers
+  ambiguity: None
+
+Type2 files
+- none
+
+Annotation files
+- 41467_2025_59460_MOESM1_ESM.pdf
+  original path: 41467_2025_59460_MOESM1_ESM.pdf
+  classified as: documentation
+  reasoning: This file is best treated as supplementary documentation rather than a dataset file. It may contain figures, captions, or embedded source-data context, but the inspection report does not indicate machine-readable tabular data suitable for direct plotting.
+  paper evidence: Nature Communications source-data supplements are typically PDF documentation/figure context rather than standalone replot-ready datasets; the paper explicitly says only selected figure source data are deposited in figshare, while other raw data are available on request.
+  file evidence: PDF format, 4.6 MB, Nature source-data supplement. No tabular structure, headers, or sheet-like organization reported.
+  structure: Not reported; PDF document
+  ambiguity: Moderate: without page-level inspection, the PDF could contain embedded source data or supplementary figures. However, there is insufficient evidence to classify it as type1 or type2 dataset.
+- 41467_2025_59460_MOESM2_ESM.pdf
+  original path: 41467_2025_59460_MOESM2_ESM.pdf
+  classified as: documentation
+  reasoning: This is also best classified as documentation. The file characteristics do not support direct replot-ready tabular data or raw instrument output.
+  paper evidence: Same paper context as above: the publication distinguishes between deposited figure source data and raw measurements available upon request.
+  file evidence: PDF format, 29.6 KB, Nature source-data supplement. Very small size suggests a short document, not a structured dataset.
+  structure: Not reported; PDF document
+  ambiguity: Moderate: could be a short supplementary note or figure legend PDF, but not enough evidence for dataset classification.
+
+Script files
+- none

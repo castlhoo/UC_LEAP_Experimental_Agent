@@ -1,0 +1,11 @@
+
+						Instructions for Tuning Fork Fitting and Error
+------------------------|-------------------------------------------------------------------------------------------------------
+Name:			| TuningForkError.m
+------------------------|-------------------------------------------------------------------------------------------------------
+Type: 			| Python script
+------------------------|-------------------------------------------------------------------------------------------------------
+Description:		| Tuning Fork Fitting and Error grabs raw data from data vault, rotate the X and Y Quadrature of AC 
+			| measurement. The script uses the lanczos algorithm to take gradient of DC measurement data and 
+			| fit it to the rotated AC data, finding the angle and amplitude of tuning fork vibration.
+------------------------|-------------------------------------------------------------------------------------------------------
