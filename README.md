@@ -1,6 +1,6 @@
 # UC LEAP — Framework Documentation
 
-A reproducible four-stage pipeline for discovering, verifying, downloading, and organizing materials-science papers with usable datasets.
+A reproducible multi-stage pipeline for discovering, verifying, downloading, classifying, and organizing materials-science papers with usable datasets.
 
 ---
 
@@ -8,10 +8,11 @@ A reproducible four-stage pipeline for discovering, verifying, downloading, and 
 
 1. [What this is and why it exists](#1-what-this-is-and-why-it-exists)
 2. [What we start with](#2-what-we-start-with)
-3. [The four-stage pipeline](#3-the-four-stage-pipeline)
+3. [The pipeline](#3-the-pipeline)
    - [Step 1 - Candidate Paper Search](#step-1---candidate-paper-search)
    - [Step 2 - Dataset Presence and Inventory Check](#step-2---dataset-presence-and-inventory-check)
    - [Step 3 - Dataset Download, Inspection, and Type Classification](#step-3---dataset-download-inspection-and-type-classification)
+   - [Step 3.5 - Script-Based Type 1 Reproduction Check](#step-35---script-based-type-1-reproduction-check)
    - [Step 4 - Local Storage and Organization](#step-4---local-storage-and-organization)
 4. [File and folder conventions](#4-file-and-folder-conventions)
 5. [Running the pipeline end-to-end](#5-running-the-pipeline-end-to-end)
@@ -31,6 +32,7 @@ The immediate goal is not yet to evaluate agents directly. The goal of this repo
 - find candidate papers in the right scientific domain,
 - verify whether those papers actually expose usable datasets,
 - inspect whether the released files contain **Type 1** and/or **Type 2** data,
+- optionally check whether raw data plus provided scripts can reproduce Type 1 outputs,
 - and organize the selected papers into a consistent local structure for later benchmarking work.
 
 This matters because dataset availability in materials science is noisy and inconsistent. Papers may mention data in publisher supplements, repository deposits, source-data spreadsheets, code archives, or raw instrument outputs. A benchmark cannot be built reliably unless these sources are located, inspected, and normalized first.
@@ -56,7 +58,7 @@ The practical inputs are:
 | Academic metadata APIs | Semantic Scholar, OpenAlex, CrossRef, and arXiv | `step1/paper_searcher.py` |
 | Dataset links discovered from papers | Repository URLs, DOI links, source-data references, generic downloadable links, and data availability statements | `step2/dataset_link_resolver.py` |
 | Repository inventories and downloadable files | Zenodo/Figshare/GitHub/Dryad plus Materials Cloud, OSF, Dataverse, and Mendeley Data inventories; publisher source data; PDFs; archives; spreadsheets; raw measurement files | `step2`-`step4` |
-| OpenAI model calls | Used for query generation, inventory assessment, paper understanding, and Type 1/Type 2 classification | `step1/gpt_client.py`, `step2/gpt_client.py`, `step3/gpt_client.py` |
+| OpenAI model calls | Used for paper screening, inventory assessment, paper understanding, Type 1/Type 2 classification, and script-reproduction analysis | `step1/gpt_client.py`, `step2/gpt_client.py`, `step3/gpt_client.py`, `step3_5/prompt_client.py` |
 
 ### The fundamental distinction between Type 1 and Type 2 data
 
@@ -74,20 +76,20 @@ In practice, the repository treats this distinction as a classification problem 
 
 ---
 
-## 3. The four-stage pipeline
+## 3. The pipeline
 
 The pipeline transforms broad literature search results into a locally organized benchmark-ready paper set.
 
 ```text
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Step 1    │ -> │   Step 2    │ -> │   Step 3    │ -> │   Step 4    │
-│ Candidate   │    │ Dataset     │    │ Download +  │    │ Local       │
-│ Search      │    │ Verification│    │ Classification│   │ Organization│
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
-       │                  │                  │                  │
-       ▼                  ▼                  ▼                  ▼
- step1/output/      step2/output/      step3/output/      step4/organized/
- candidates         inventory          classification     manifest + folders
+┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│   Step 1    │ -> │   Step 2    │ -> │   Step 3    │ -> │  Step 3.5   │ -> │   Step 4    │
+│ Candidate   │    │ Dataset     │    │ Download +  │    │ Script      │    │ Local       │
+│ Search      │    │ Verification│    │ Classification│   │ Reproduction│    │ Organization│
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+       │                  │                  │                  │                  │
+       ▼                  ▼                  ▼                  ▼                  ▼
+ step1/output/      step2/output/      step3/output/      step3_5/output/   step4/organized/
+ candidates         inventory          classification     script checks      manifest + folders
 ```
 
 ### Step 1 - Candidate Paper Search
@@ -106,12 +108,9 @@ The pipeline transforms broad literature search results into a locally organized
 
 **Process:**
 
-Step 1 combines two kinds of search generation:
+Step 1 builds broad search queries, searches multiple metadata APIs, deduplicates results, scores papers by priority, and assigns a screening decision such as `keep`, `maybe`, or `drop`.
 
-1. manual high-value queries,
-2. automatically combined keyword queries.
-
-It then searches multiple metadata APIs, deduplicates results, scores papers by priority, and assigns a screening decision such as `keep`, `maybe`, or `drop`.
+The active GPT use in Step 1 is the paper-screening prompt, which evaluates field match, experimental relevance, soft-material mismatch, review status, and whether data availability is mentioned.
 
 Key components:
 
@@ -132,7 +131,7 @@ Key components:
 
 **Rationale:** Step 1 optimizes for recall, not precision. It is acceptable to retain uncertain papers as `maybe` if they might become useful after deeper dataset inspection.
 
-**Current snapshot result:** The latest saved Step 1 output contains **82 candidates**: **21 keep**, **23 maybe**, **38 drop**.
+**Current note:** Step 1 is recall-oriented and may include noisy candidates. Semantic Scholar is treated as a best-effort source and can be rate-limited independently of the other APIs.
 
 ---
 
@@ -192,7 +191,7 @@ Each paper is assigned a `dataset_status`, such as:
 - `unclassified_link`
 - `no_dataset_found`
 
-Step 2 also now records verification metadata such as:
+Step 2 also records verification metadata such as:
 
 - `verification_score`
 - `verification_reasons`
@@ -200,7 +199,7 @@ Step 2 also now records verification metadata such as:
 
 **Rationale:** This stage narrows the broad Step 1 pool into papers with actual evidence of data availability, which is a stronger requirement than promising metadata alone.
 
-**Current snapshot result:** The latest saved Step 2 output processed **44 papers**, found **13 papers with data**, and recorded a status distribution of **3 verified**, **10 source_data_found**, **17 upon_request**, and **14 no_dataset_found**.
+**Current note:** Step 2 is still inventory-first. It does not yet decide final paper inclusion by itself; instead, it prepares normalized repository and file evidence for Step 3.
 
 ---
 
@@ -218,7 +217,7 @@ Step 2 also now records verification metadata such as:
 Step 3 runs six phases:
 
 1. load Step 2 results,
-2. download paper PDFs and analyze paper text,
+2. download paper PDFs and analyze paper text when available,
 3. download dataset files,
 4. inspect file contents,
 5. classify files into Type 1 / Type 2 with GPT and paper context,
@@ -247,15 +246,56 @@ Key components:
 - downloaded files under `step3/downloads/`
 - logs in `step3/output/step3.log`
 
-Step 3 now combines three kinds of evidence during Type 1 / Type 2 classification:
+Step 3 now uses two main kinds of evidence during Type 1 / Type 2 classification:
 
 1. paper/PDF analysis,
-2. rule-based priors derived from inspected files and paper context,
-3. balanced file sampling so Type 1-like and Type 2-like files are both shown to GPT.
+2. file inspection reports.
+
+The current design is prompt-led: paper context and file evidence are passed to GPT, while code-side inspection is used to summarize files rather than to override the final classification judgment.
 
 **Rationale:** This is the first stage where the repository reasons about the actual file contents rather than just repository metadata.
 
-**Current snapshot result:** The latest saved Step 3 output processed **13 papers**, with **1 paper containing both Type 1 and Type 2**, **8 Type 1 only**, **1 Type 2 only**, and **3 neither**. Across those papers, **39 files were downloaded** and **204 files were inspected**.
+**Important implementation note:** Step 3 and Step 4 now share the same PDF download strategy through `pdf_utils.py`, with the Step 3 downloader logic treated as the source of truth.
+
+---
+
+### Step 3.5 - Script-Based Type 1 Reproduction Check
+
+**Purpose:** Examine papers that contain Type 2 raw data plus scripts, and determine whether those scripts can reproduce reusable Type 1 outputs from the provided raw data.
+
+**Input:**
+
+- `step3/output/step3_classification_latest.json`
+- raw Type 2 files under `step3/downloads/`
+- script files identified in Step 3
+
+**Process:**
+
+Step 3.5 is split into three prompt-guided substeps:
+
+1. **Execution preparation**: identify the likely execution target, input files, expected outputs, and execution issues,
+2. **Execution patching**: make minimal path/entry-point/output-saving edits without changing the scientific logic,
+3. **Execution evaluation**: assess whether execution produced reusable Type 1 outputs and whether the paper should be upgraded to `Both`.
+
+This stage is implemented as an execution-oriented extension rather than a replacement for Step 3.
+
+Key components:
+
+- `step3_5/pipeline.py`
+- `step3_5/preparation.py`
+- `step3_5/patcher.py`
+- `step3_5/runner.py`
+- `step3_5/evaluator.py`
+- `step3_5/prompt_client.py`
+- `step3_5/config/step3_5_config.yaml`
+
+**Output:**
+
+- `step3_5/output/step3_5_results_latest.json`
+- per-paper results under `step3_5/output/papers/`
+- temporary execution bundles under `step3_5/work/`
+
+**Current note:** Step 3.5 is implemented, but it should still be considered an experimental extension. The current release can analyze and execute candidate script bundles, but Step 4 still primarily consumes Step 3 classification output rather than fully merging Step 3.5-generated Type 1 artifacts.
 
 ---
 
@@ -275,7 +315,7 @@ Step 4 performs five phases:
 
 1. load Step 3 classification results,
 2. select papers to organize,
-3. download PDFs when possible,
+3. reuse Step 3 paper PDFs when possible and otherwise retry the shared downloader,
 4. copy and rename files into a stable local structure using `relative_path`-aware file matching,
 5. generate a manifest for human and programmatic use.
 
@@ -294,6 +334,8 @@ Within each paper folder, the organizer separates:
 - scripts or notebooks
 - `pdf/` when available
 
+Step 4 also now treats supplementary information and peer-review attachments as documentation artifacts rather than dataset files when they appear as PDF/Word documents. Those files are organized under annotations rather than `type1_data` or `type2_data`.
+
 Key components:
 
 - `step4/pipeline.py`
@@ -309,7 +351,7 @@ Key components:
 
 **Rationale:** Downstream benchmarking work becomes much easier once each paper has a predictable folder layout and a manifest that records what was preserved and why.
 
-**Current snapshot result:** The latest Step 4 manifest records **10 organized papers**, including **1 Both**, **8 Type1-only**, and **1 Type2-only**. It also records **7 PDFs**, **41 Type 1 files**, **36 Type 2 files**, **5 annotation files**, and **17 script files**.
+**Current note:** Step 4 writes `reasoning.txt` into each organized paper folder so that paper-level and file-level classification reasoning can be reviewed without opening JSON files directly.
 
 ---
 
@@ -322,8 +364,12 @@ UC_LEAP/
 ├── step1/
 ├── step2/
 ├── step3/
+├── step3_5/
 ├── step4/
+├── prompt_reference/
 ├── requirements.txt
+├── run_pipeline.py
+├── pdf_utils.py
 ├── utils.py
 ├── .env
 └── .env.example
@@ -334,6 +380,7 @@ Pipeline artifact conventions:
 - Step 1 writes candidate lists under `step1/output/`
 - Step 2 writes dataset verification inventories under `step2/output/`
 - Step 3 writes classification summaries under `step3/output/` and raw downloads under `step3/downloads/`
+- Step 3.5 writes script-reproduction summaries under `step3_5/output/` and temporary execution bundles under `step3_5/work/`
 - Step 4 writes the curated local corpus under `step4/organized/`
 
 The Step 4 organized structure looks like:
@@ -429,6 +476,13 @@ $env:STEP1_CONFIG_FILE="step1_config_gpt_queries.yaml"; python -m step1.run_step
 2. Review `step4/organized/manifest_latest.json`.
 3. Use the organized folders as the curated starting point for downstream benchmark construction.
 
+#### Step 3.5
+
+1. Identify papers with raw Type 2 data plus scripts.
+2. Prepare and minimally patch executable bundles when possible.
+3. Evaluate whether script execution can generate reusable Type 1 outputs from the provided raw data.
+4. Review `step3_5/output/step3_5_results_latest.json` and per-paper JSON files under `step3_5/output/papers/`.
+
 ## 6. Key design decisions and rationale
 
 ### D1. Multi-API search for recall
@@ -479,33 +533,45 @@ $env:STEP1_CONFIG_FILE="step1_config_gpt_queries.yaml"; python -m step1.run_step
 
 **Rationale:** Long-running download and classification stages should not lose the last good snapshot if a run fails midway.
 
+### D9. Keep script-based reproduction separate from file classification
+
+**Decision:** Use Step 3 for direct file classification and Step 3.5 for script-based reproduction analysis.
+
+**Rationale:** Raw-plus-script bundles are important, but mixing execution logic directly into Step 3 would make the core Type 1 / Type 2 classifier much harder to interpret and maintain.
+
+### D10. Use shared PDF download logic across Step 3 and Step 4
+
+**Decision:** Treat the Step 3 PDF downloader as the source of truth and reuse the same download strategy in Step 4 through a shared utility module.
+
+**Rationale:** The paper PDF retrieval problem should not diverge between classification and organization stages. A shared implementation reduces patch drift and debugging confusion.
+
 ---
 
 ## 7. Current repository status
 
-As of the current saved outputs in this repository:
+As of the current code state in this repository:
 
-- Step 1 has produced and saved candidate screening artifacts.
-- Step 2 has verified or partially verified dataset availability for a subset of papers.
-- Step 3 has completed download and classification outputs for 13 papers.
-- Step 4 has organized 10 papers into the local corpus.
+- Step 1 is runnable through `run_pipeline.py` and its standalone module entry point.
+- Step 2 includes broader repository coverage and richer verification metadata.
+- Step 3 uses prompt-led paper/file classification and shared PDF download logic.
+- Step 3.5 is implemented as a script-reproduction extension with preparation, patching, and execution-evaluation stages.
+- Step 4 organizes selected papers, preserves reasoning text files, and routes supplementary/peer-review documents into annotations.
 
 The codebase has also been updated so that:
 
-- Step 1 is runnable again through `step1/pipeline.py`.
-- Step 2 includes broader repository coverage and richer verification metadata.
-- Step 3 uses balanced sampling plus rule-based priors to reduce missed `Both` cases.
-- Step 4 uses safer path-aware file organization and explicit `Neither` handling.
-- shared artifact saving is safer for interrupted runs.
+- the full pipeline can be launched through `python run_pipeline.py`,
+- prompt reference documents under `prompt_reference/` reflect the current prompts,
+- Step 3 and Step 4 now share the same PDF retrieval strategy,
+- Step 4 writes per-paper `reasoning.txt` summaries for easier human review.
 
 ---
 
 ## 8. Open questions and future work
 
-1. Restore or reimplement the missing Step 1 pipeline module so the full pipeline can be rerun cleanly from scratch.
+1. Improve Step 1 handling of heavily rate-limited metadata APIs without slowing the full pipeline excessively.
 2. Continue expanding repository support and publisher-source parsing for less common hosting patterns.
-3. Add stronger corpus-side review reports and manifests for ambiguous or human-review-needed files.
-4. Add a downstream stage that converts the organized corpus into benchmark-ready paper packages.
+3. Tighten Step 3.5 integration so generated Type 1 artifacts can be merged more directly into Step 4.
+4. Add stronger corpus-side review reports and manifests for ambiguous or human-review-needed files.
 5. Add aggregation scripts and quality-control reports across the full corpus.
 
 ---
@@ -524,4 +590,4 @@ The codebase has also been updated so that:
 
 ---
 
-*Document version: 1.1 - UC LEAP step1-step4 repository documentation*
+*Document version: 1.2 - UC LEAP pipeline documentation (step1-step4 plus step3.5)*
