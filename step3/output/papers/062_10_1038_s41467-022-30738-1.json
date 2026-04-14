@@ -1,0 +1,217 @@
+{
+  "paper_id": "step1_0099",
+  "title": "ZrTe2/CrTe2: an epitaxial van der Waals platform for spintronics",
+  "doi": "10.1038/s41467-022-30738-1",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W3187065337",
+  "priority_score": 9.4,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-30738-1",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports molecular-beam-epitaxy growth of epitaxial van der Waals heterostructures combining ultrathin ferromagnetic 1T-CrTe2 with topological-semimetal ZrTe2 on sapphire. The key findings are that 1 u.c. CrTe2 remains ferromagnetic with anomalous Hall effect, thicker CrTe2 can show unconventional Hall signatures suggestive of topological Hall physics, and ZrTe2 can drive current-induced magnetization switching in a full vdW device while also exhibiting measurable spin-charge conversion.",
+    "measurement_types": [
+      "Molecular beam epitaxy growth monitoring (RHEED)",
+      "Scanning transmission electron microscopy (HAADF-STEM)",
+      "Energy-dispersive X-ray spectroscopy (EDX)",
+      "Scanning tunneling microscopy (STM) topography",
+      "X-ray diffraction (XRD)",
+      "X-ray photoemission spectroscopy (XPS)",
+      "Angle-resolved photoemission spectroscopy (ARPES)",
+      "Electrical transport / Hall resistance",
+      "Anomalous Hall conductivity extraction",
+      "Pulsed current-induced magnetization switching",
+      "Spin-torque ferromagnetic resonance (ST-FMR)",
+      "Density functional theory (DFT) / spin Hall conductivity calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the 1T-CrTe2 structure grown on ZrTe2, including crystallographic directions.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical or drawn schematic"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "RHEED patterns during growth for CrTe2 and ZrTe2/CrTe2 heterostructure, showing streaky epitaxial signatures.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Cross-sectional HAADF-STEM images of ZrTe2/CrTe2 heterostructure showing atomically sharp interface and layer alignment.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "STM topography and line scan of 1 u.c. CrTe2 on ZrTe2, giving step height/thickness.",
+        "data_type": "image / topography",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "XRD 2θ scan of CrTe2 thin film with substrate and film peaks plus rocking curve inset.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "XPS spectrum of CrTe2 film showing Te 3d and Cr 2p peaks with fitted components.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Brillouin-zone schematic for bulk and projected CrTe2 zones.",
+        "data_type": "schematic",
+        "likely_source": "theoretical or drawn schematic"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "ARPES band dispersion of 12 u.c. CrTe2 along the \u0003b3-M direction.",
+        "data_type": "band map / spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "DFT-calculated bulk CrTe2 band structure with spin-orbit coupling.",
+        "data_type": "calculated band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "ARPES spectra comparing 4 u.c. ZrTe2, 4 u.c. ZrTe2/1 u.c. CrTe2, and 4 u.c. ZrTe2/3 u.c. CrTe2 over a larger binding-energy window.",
+        "data_type": "band map / spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Same ARPES comparison as Fig2d but over a smaller binding-energy window to highlight near-Fermi-level dispersion.",
+        "data_type": "band map / spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Hall-bar device schematic used for anomalous Hall measurements.",
+        "data_type": "schematic",
+        "likely_source": "theoretical or drawn schematic"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Anomalous Hall resistance versus magnetic field for 12 u.c. CrTe2 at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Anomalous Hall resistance versus magnetic field for ZrTe2(4 u.c.)/CrTe2(12 u.c.) at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Anomalous Hall resistance versus magnetic field for ZrTe2(4 u.c.)/CrTe2(3 u.c.) at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Anomalous Hall resistance versus magnetic field for ZrTe2(4 u.c.)/CrTe2(1 u.c.) at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Temperature-dependent anomalous Hall conductivity summary for the CrTe2 samples/heterostructures.",
+        "data_type": "transport-derived plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Schematic of current-induced magnetization switching in ZrTe2/CrTe2 and pulse sequence.",
+        "data_type": "schematic",
+        "likely_source": "theoretical or drawn schematic"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Pulse-current-induced magnetization switching traces for ZrTe2(8 u.c.)/CrTe2(3 u.c.) at 50 K under in-plane field.",
+        "data_type": "transport curve / switching trace",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "ST-FMR mixing-voltage spectrum for ZrTe2/Py with symmetric and antisymmetric Lorentzian fits.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "DFT-calculated band structure of bulk ZrTe2 and corresponding spin Hall conductivity.",
+        "data_type": "calculated band structure / conductivity plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "DFT-calculated band structure of trilayer ZrTe2 and corresponding spin Hall conductivity.",
+        "data_type": "calculated band structure / conductivity plot",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include in situ RHEED patterns during MBE growth, cross-sectional STEM images and EDX maps, STM topography scans, XRD scans and rocking curves, XPS spectra, ARPES spectra, Hall resistance versus magnetic field and temperature, pulsed switching traces, and ST-FMR voltage spectra. The paper also reports first-principles DFT and Kubo/Wannier-based spin Hall conductivity calculations as non-experimental data.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'All data for the ﬁgures and other Supplementary information that support this work are available upon reasonable request to the corresponding author.' No public repository, DOI, or downloadable dataset is mentioned in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only by measurement modality and instrument, not by file format or repository. Examples include RHEED during growth, HAADF-STEM/EDX from aberration-corrected TEM, STM topography, XRD and XPS spectra, ARPES spectra, transport measurements in PPMS, pulsed switching measurements, and ST-FMR spectra. The text does not specify raw file formats or whether raw files are archived.",
+      "processed_data_description": "Processed data include fitted spectra (e.g. XPS peak fitting, ST-FMR symmetric/antisymmetric Lorentzian decomposition), derived quantities such as anomalous Hall conductivity, extracted lattice constants from STEM Fourier transforms, and spin Hall efficiency/conductivity estimates from ST-FMR and transport. The paper also refers to supplementary analyses for Hall subtraction, magnetoresistance, and DFT-derived anisotropy/SHC results.",
+      "figure_data_description": "Figure-specific source data are implied because the paper says all data for the figures and supplementary information are available upon request. However, no explicit statement about uploaded source-data files, figure data tables, or a source-data repository is given.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned. Theoretical calculations were performed with VASP, Quantum Espresso, and Wannier90, but the paper does not provide custom scripts.",
+      "notes": "The dataset is multimodal and mixes experimental raw measurements with processed/derived plots and theoretical calculations. Several figures are clearly processed from raw spectra or transport traces (e.g. second-derivative ARPES images, fitted XPS, extracted anomalous Hall conductivity, ST-FMR fit parameters). The paper does not distinguish a separate public 'source data' package from raw data; availability is limited to request from the corresponding author."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods explicitly describe multiple direct measurements: RHEED, STM, STEM/EDX, XRD, XPS, ARPES, PPMS Hall measurements, pulsed switching, and ST-FMR. Figure captions and text refer to measured spectra and transport curves.",
+      "source_data_evidence": "The paper states that 'All data for the figures and other Supplementary information that support this work are available upon reasonable request to the corresponding author,' implying figure/source data exist, but no explicit repository is given.",
+      "data_availability_section_relevant": "All data for the figures and other Supplementary information that support this work are available upon reasonable request to the corresponding author.",
+      "priority_modalities": [
+        "RHEED patterns",
+        "HAADF-STEM images",
+        "EDX maps",
+        "STM topography",
+        "XRD scans",
+        "XPS spectra",
+        "ARPES band maps",
+        "Hall resistance curves",
+        "switching traces",
+        "ST-FMR spectra",
+        "DFT band structures",
+        "spin Hall conductivity calculations"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

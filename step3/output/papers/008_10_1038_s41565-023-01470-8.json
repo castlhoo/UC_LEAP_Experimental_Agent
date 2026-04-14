@@ -1,0 +1,561 @@
+{
+  "paper_id": "step1_0182",
+  "title": "Time-domain observation of ballistic orbital-angular-momentum currents with giant relaxation length in tungsten",
+  "doi": "10.1038/s41565-023-01470-8",
+  "journal": "Nature Nanotechnology",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4385638502",
+  "priority_score": 9.6,
+  "dataset_status": "verified",
+  "files_downloaded": 9,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41565-023-01470-8",
+  "files_inspected": 9,
+  "file_types_found": [
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All inspected files are figure-linked source data, processed current traces, or simulation outputs that are directly replot-ready. They match the Nature source-data style and the paper’s figure-specific datasets.",
+  "type2_summary": "No file appears to be a raw instrument export or unprocessed acquisition file. The raw terahertz measurements described in the paper are not present as separate raw files in this set.",
+  "type1_files": [
+    "41565_2023_1470_MOESM1_ESM_1.pdf",
+    "41565_2023_1470_MOESM2_ESM_1.pdf",
+    "fig2b_1.txt",
+    "fig4b_to_e_1.txt",
+    "fig5d_to_g_1.txt",
+    "fig4a_1.txt",
+    "fig3_1.txt",
+    "fig5c_1.txt",
+    "fig2a_1.txt"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly describes raw THz emission measurements, but the provided files are all curated figure/source data or processed/simulation outputs. No clear raw instrument output is included in the inspected set.",
+  "file_classifications": [
+    {
+      "relative_path": "41565_2023_1470_MOESM1_ESM_1.pdf",
+      "filename": "41565_2023_1470_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data and figure-related data supporting the plots are available online; Nature source-data PDFs are typically figure-linked deposits rather than raw instrument exports.",
+      "file_evidence": "Large PDF (10.9 MB) from nature_source_data, consistent with a compiled source-data/figure-support document rather than raw instrument output. No instrument-specific metadata is visible from the inspection report.",
+      "reasoning": "This is most consistent with a figure/source-data PDF used to support the published plots. In the paper context, such deposits are treated as cleaned, replot-ready source data rather than raw measurements.",
+      "ambiguity": "Moderate: the PDF contents were not directly inspected, so exact figure linkage is inferred from repository/source and size.",
+      "key_columns_or_structure": "PDF source-data document; figure-linked content not enumerated"
+    },
+    {
+      "relative_path": "41565_2023_1470_MOESM2_ESM_1.pdf",
+      "filename": "41565_2023_1470_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The publication indicates online source data and supplementary materials accompanying the figures; this aligns with a processed/supporting-data PDF rather than raw acquisition files.",
+      "file_evidence": "Small PDF (107.8 KB) from nature_source_data, likely a supplementary note, caption, or compact source-data document. No raw instrument structure is indicated.",
+      "reasoning": "Given the Nature source-data context and compact size, this is best classified as figure-supporting/source documentation, i.e. cleaned or explanatory rather than raw.",
+      "ambiguity": "Moderate: exact contents are not shown, so classification relies on repository context and file characteristics.",
+      "key_columns_or_structure": "PDF supplementary/source-data document"
+    },
+    {
+      "relative_path": "fig2b_1.txt",
+      "filename": "fig2b_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 2b in the paper is a plotted terahertz emission waveform comparing Ni|Pt, Ni|W, and Ni|Ti, i.e. figure-ready data derived from electro-optic sampling traces.",
+      "file_evidence": "Tabular text with clear headers: Time[ps], S_THz Ni|Pt, S_THz Ni|Ti, S_THz Ni|W. The structure is directly plottable as time-domain waveforms with minimal processing.",
+      "reasoning": "This is clean, figure-specific source data for a published waveform plot. Although the underlying measurement is experimental, the file is organized for direct replotting and matches Type 1 criteria.",
+      "ambiguity": "Low: the file is clearly figure-oriented and replot-ready.",
+      "key_columns_or_structure": "Time[ps], S_THz Ni|Pt, S_THz Ni|Ti, S_THz Ni|W"
+    },
+    {
+      "relative_path": "fig4b_to_e_1.txt",
+      "filename": "fig4b_to_e_1.txt",
+      "type": "type1",
+      "paper_evidence": "The paper’s Fig. 4b–e are extracted transport metrics versus W thickness: delay, amplitude, width, and area/time-integrated current. These are processed quantities presented as figure data.",
+      "file_evidence": "Small tabular file with columns W thickness [nm], delay [fs], amplitude, width [fs], area. This is compact, organized, and directly plottable.",
+      "reasoning": "These are processed, figure-ready summary values extracted from the raw terahertz traces, not raw instrument output. Direct replotting is straightforward.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "W thickness [nm], delay [fs], amplitude, width [fs], area"
+    },
+    {
+      "relative_path": "fig5d_to_g_1.txt",
+      "filename": "fig5d_to_g_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 5d–g are simulation outputs from the ballistic transport model, i.e. theoretical/processed figure data.",
+      "file_evidence": "Small tabular file with W thickness [nm], delay [ps], amplitude, width [fs], area. The structure matches plotted model outputs and is directly usable for replotting.",
+      "reasoning": "This is figure-ready simulation data, not raw measurement data. It fits Type 1 by both paper context and file structure.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "W thickness [nm], delay [ps], amplitude, width [fs], area"
+    },
+    {
+      "relative_path": "fig4a_1.txt",
+      "filename": "fig4a_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 4a shows extracted sheet charge-current transients I_C(t) versus time and thickness, which are processed from the measured THz traces.",
+      "file_evidence": "Tabular text with Time [ps] and I_C Ni|Pt / I_C Ni|W(thickness) columns. This is a processed current-trace dataset suitable for direct plotting.",
+      "reasoning": "Although derived from experiment, the file contains processed current transients already converted from the raw THz signal. That makes it replot-ready source data, i.e. Type 1.",
+      "ambiguity": "Low to moderate: it is derived from raw data, but the file itself is already processed and figure-specific.",
+      "key_columns_or_structure": "Time [ps], I_C Ni|Pt, I_C Ni|W(2), I_C Ni|W(3), I_C Ni|W(5), I_C Ni|W(10), I_C Ni|W(15), I_C Ni|W(20)"
+    },
+    {
+      "relative_path": "fig3_1.txt",
+      "filename": "fig3_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 3 in the paper presents terahertz emission signals S_THz versus time for Ni|W thickness series, which are figure data from the experiment.",
+      "file_evidence": "Tabular text with Time [ps] and S_THz Ni|Pt / S_THz Ni|W(thickness) columns. The file is organized for direct plotting of the published waveforms.",
+      "reasoning": "This is clean, figure-specific waveform data. Even though it originates from measurement, the file is already curated for plotting and thus Type 1.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Time [ps], S_THz Ni|Pt, S_THz Ni|W(2), S_THz Ni|W(3), S_THz Ni|W(5), S_THz Ni|W(10), S_THz Ni|W(15), S_THz Ni|W(20)"
+    },
+    {
+      "relative_path": "fig5c_1.txt",
+      "filename": "fig5c_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 5c compares simulated charge-current transients with experiment, so the file corresponds to processed/model output rather than raw acquisition.",
+      "file_evidence": "Tabular text with Time [ps] and I_C Ni|Pt / I_C Ni|W(thickness) columns. The structure is directly plottable and matches a model/processed current trace.",
+      "reasoning": "This is figure-ready current-trace data, likely simulation output or processed curves used in the model comparison. It is not raw instrument output.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Time [ps], I_C Ni|Pt, I_C Ni|W(2), I_C Ni|W(3), I_C Ni|W(5), I_C Ni|W(10), I_C Ni|W(15), I_C Ni|W(20)"
+    },
+    {
+      "relative_path": "fig2a_1.txt",
+      "filename": "fig2a_1.txt",
+      "type": "type1",
+      "paper_evidence": "Fig. 2a is a published terahertz emission waveform comparison for Py|Pt, Py|Ti, and Py|W, which is figure-ready data in the paper context.",
+      "file_evidence": "Tabular text with Time[ps] and S_THz Py|Pt / S_THz Py|Ti / S_THz Py|W columns. This is directly plottable as a waveform dataset.",
+      "reasoning": "The file is organized as clean source data for the figure and can be replotted with minimal processing, so it is Type 1.",
+      "ambiguity": "Low.",
+      "key_columns_or_structure": "Time[ps], S_THz Py|Pt, S_THz Py|Ti, S_THz Py|W"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies ultrafast angular-momentum transport in Ni|W|SiO2 thin-film stacks using femtosecond-laser excitation and time-resolved terahertz emission spectroscopy. The key finding is that Ni injects orbital-angular-momentum currents into W that propagate ballistically over a very long relaxation length (~80 nm) and are converted mainly at the W/SiO2 interface by the inverse orbital Rashba–Edelstein effect, producing delayed and broadened terahertz charge-current bursts.",
+    "measurement_types": [
+      "time-resolved terahertz emission spectroscopy",
+      "electro-optic sampling of terahertz fields",
+      "optical pump excitation / pump-fluence dependence",
+      "optical transmission spectroscopy",
+      "terahertz transmission spectroscopy",
+      "ab initio electronic-structure calculations",
+      "model-based current extraction / deconvolution"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Conceptual schematic of femtosecond excitation of FM|PM stacks, showing generation of spin and orbital accumulations, injection of spin and orbital currents into the paramagnetic layer, and conversion into an in-plane charge current that emits a terahertz pulse.",
+        "data_type": "schematic / conceptual diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "Measured terahertz emission waveforms from Py|Pt, Py|W, and Py|Ti samples, showing similar waveform shapes and polarity/sign changes consistent with known spin/orbital conversion behavior.",
+        "data_type": "transport curve / time-domain waveform",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Measured terahertz emission waveforms from Ni|Pt, Ni|W, and Ni|Ti samples, highlighting that Ni|W differs strongly in polarity and temporal shape from the Pt and Ti cases.",
+        "data_type": "transport curve / time-domain waveform",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Terahertz emission signals from Ni|W with varying W thickness, normalized to absorbed pump fluence and sample impedance, compared with a Ni|Pt reference.",
+        "data_type": "transport curve / time-domain waveform",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Extracted sheet charge-current transients IC(t) for Ni|W as a function of W thickness, including a reference Ni|Pt trace.",
+        "data_type": "transport curve / extracted current trace",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Delay of the current maximum Δtmax versus W thickness, showing approximately linear growth.",
+        "data_type": "scatter plot / extracted parameter",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Relative amplitude of the current maximum versus W thickness, showing attenuation with thickness.",
+        "data_type": "scatter plot / extracted parameter",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Full width at half maximum of IC(t) versus W thickness, showing linear broadening.",
+        "data_type": "scatter plot / extracted parameter",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 4e",
+        "description": "Time-integrated charge current versus W thickness, showing only weak decay and supporting a long relaxation length.",
+        "data_type": "scatter plot / integrated quantity",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 5a",
+        "description": "Schematic model of orbital-current wave packets propagating through W and being converted into charge current at the W/SiO2 interface by IOREE.",
+        "data_type": "schematic / conceptual diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 5b",
+        "description": "Qualitative ballistic response functions rz(t) at different depths in W for a delta-like orbital accumulation.",
+        "data_type": "theoretical curve",
+        "likely_source": "theoretical calculations / analytical model"
+      },
+      {
+        "figure_id": "Fig. 5c",
+        "description": "Simulated charge-current transients IC(t) for ballistic transport, compared with experiment.",
+        "data_type": "transport curve / simulation",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig. 5d",
+        "description": "Simulated delay of the current maximum versus W thickness.",
+        "data_type": "scatter plot / simulation output",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig. 5e",
+        "description": "Simulated relative amplitude of the current maximum versus W thickness.",
+        "data_type": "scatter plot / simulation output",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig. 5f",
+        "description": "Simulated full width at half maximum of IC(t) versus W thickness.",
+        "data_type": "scatter plot / simulation output",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig. 5g",
+        "description": "Simulated time-integrated current versus W thickness.",
+        "data_type": "scatter plot / simulation output",
+        "likely_source": "theoretical calculations / simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The raw measurements are time-domain terahertz emission signals STHz(t) recorded by electro-optic sampling after femtosecond optical pumping of FM|PM thin-film stacks. The paper also mentions optical and terahertz transmission spectroscopy used to characterize absorptance, d.c. conductivity, and Drude relaxation rate.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that the data supporting the plots in the main text are available online, and that methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and data/code availability statements are available via the article DOI. The excerpt is truncated before the full data availability text, so the exact repository location and file list are unknown from the provided text.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw experimental data are described as terahertz emission signals STHz(t) measured versus time by electro-optic sampling. The paper does not specify a raw-data file format, repository structure, or whether the raw detector traces are deposited directly.",
+      "processed_data_description": "Processed data include deconvolved electric-field waveforms E(t), extracted sheet charge currents IC(t), normalized currents, and derived quantities such as peak delay, peak amplitude, FWHM, and time-integrated current versus W thickness. The Methods describe deconvolution in the time domain using a measured setup response function and conversion to current via a generalized Ohm's law.",
+      "figure_data_description": "Figure-ready data are clearly present for the main figures: raw terahertz traces in Fig. 2 and Fig. 3, extracted current traces and summary metrics in Fig. 4, and simulated/model curves in Fig. 5. The paper explicitly refers to 'source data' in the online content statement, but the exact contents are not listed in the provided text.",
+      "scripts_description": "No analysis scripts, notebooks, or code files are explicitly described in the provided text. The Methods mention matrix-based deconvolution and ab initio calculations using FLEUR and WANNIER90, but not user-facing scripts or deposited code.",
+      "notes": "The dataset is mixed: experimental time-domain terahertz traces, processed current traces derived from deconvolution and impedance correction, and theoretical/ab initio simulation outputs. The paper distinguishes raw measured terahertz signals from extracted sheet currents and from simulated model curves. Supplementary figures are referenced extensively, implying additional figure-specific data, but their exact file contents are not given in the excerpt."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports measured terahertz emission signals STHz(t) from FM|PM stacks and describes electro-optic sampling of the emitted terahertz field as the primary experiment.",
+      "source_data_evidence": "The online content statement mentions source data, and the main text presents figure-ready extracted quantities such as IC(t), Δtmax, FWHM, and integrated current, which are processed from the raw terahertz traces.",
+      "data_availability_section_relevant": "“The data that support the plots in the main text of this paper are ope…”; “methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information… and statements of data and code availability are available at https://doi.org/10.1038/s41565-023-01470-8.”",
+      "priority_modalities": [
+        "time-domain terahertz waveforms",
+        "electro-optic sampling traces",
+        "processed current traces",
+        "thickness-dependent transport metrics",
+        "ab initio simulation outputs",
+        "supplementary figure source data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41565_2023_1470_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 11418997,
+      "size_human": "10.9 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41565_2023_1470_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41565_2023_1470_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 110352,
+      "size_human": "107.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41565_2023_1470_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "fig2b_1.txt",
+      "extension": ".txt",
+      "size_bytes": 100624,
+      "size_human": "98.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time[ps]",
+        "Unnamed: 1",
+        "S_THz Ni|Pt",
+        "Unnamed: 3",
+        "S_THz Ni|Ti",
+        "Unnamed: 5",
+        "S_THz Ni|W"
+      ],
+      "column_count": 7,
+      "row_count": 1201,
+      "dtypes": {
+        "Time[ps]": "float64",
+        "Unnamed: 1": "float64",
+        "S_THz Ni|Pt": "float64",
+        "Unnamed: 3": "float64",
+        "S_THz Ni|Ti": "float64",
+        "Unnamed: 5": "float64",
+        "S_THz Ni|W": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig2b_1.txt"
+    },
+    {
+      "filename": "fig4b_to_e_1.txt",
+      "extension": ".txt",
+      "size_bytes": 397,
+      "size_human": "397.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "W thickness [nm]",
+        "delay [fs]",
+        "Unnamed: 2",
+        "amplitude",
+        "Unnamed: 4",
+        "width [fs]",
+        "Unnamed: 6",
+        "area"
+      ],
+      "column_count": 8,
+      "row_count": 7,
+      "dtypes": {
+        "W thickness [nm]": "int64",
+        "delay [fs]": "float64",
+        "Unnamed: 2": "float64",
+        "amplitude": "float64",
+        "Unnamed: 4": "float64",
+        "width [fs]": "float64",
+        "Unnamed: 6": "float64",
+        "area": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig4b_to_e_1.txt"
+    },
+    {
+      "filename": "fig5d_to_g_1.txt",
+      "extension": ".txt",
+      "size_bytes": 476,
+      "size_human": "476.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "W thickness [nm]",
+        "delay [ps]",
+        "Unnamed: 2",
+        "amplitude",
+        "Unnamed: 4",
+        "width [fs]",
+        "Unnamed: 6",
+        "area"
+      ],
+      "column_count": 8,
+      "row_count": 7,
+      "dtypes": {
+        "W thickness [nm]": "float64",
+        "delay [ps]": "float64",
+        "Unnamed: 2": "float64",
+        "amplitude": "float64",
+        "Unnamed: 4": "float64",
+        "width [fs]": "float64",
+        "Unnamed: 6": "float64",
+        "area": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig5d_to_g_1.txt"
+    },
+    {
+      "filename": "fig4a_1.txt",
+      "extension": ".txt",
+      "size_bytes": 48415,
+      "size_human": "47.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time [ps]",
+        "Unnamed: 1",
+        "I_C Ni|Pt ",
+        "Unnamed: 3",
+        "I_C Ni|W(2)",
+        "Unnamed: 5",
+        "I_C Ni|W(3)",
+        "Unnamed: 7",
+        "I_C Ni|W(5)",
+        "Unnamed: 9",
+        "I_C Ni|W(10)",
+        "Unnamed: 11",
+        "I_C Ni|W(15)",
+        "Unnamed: 13",
+        "I_C Ni|W(20)"
+      ],
+      "column_count": 15,
+      "row_count": 288,
+      "dtypes": {
+        "Time [ps]": "float64",
+        "Unnamed: 1": "float64",
+        "I_C Ni|Pt ": "float64",
+        "Unnamed: 3": "float64",
+        "I_C Ni|W(2)": "float64",
+        "Unnamed: 5": "float64",
+        "I_C Ni|W(3)": "float64",
+        "Unnamed: 7": "float64",
+        "I_C Ni|W(5)": "float64",
+        "Unnamed: 9": "float64",
+        "I_C Ni|W(10)": "float64",
+        "Unnamed: 11": "float64",
+        "I_C Ni|W(15)": "float64",
+        "Unnamed: 13": "float64",
+        "I_C Ni|W(20)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig4a_1.txt"
+    },
+    {
+      "filename": "fig3_1.txt",
+      "extension": ".txt",
+      "size_bytes": 204341,
+      "size_human": "199.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time [ps]",
+        "Unnamed: 1",
+        "S_THz Ni|Pt",
+        "Unnamed: 3",
+        "S_THz Ni|W(2)",
+        "Unnamed: 5",
+        "S_THz Ni|W(3)",
+        "Unnamed: 7",
+        "S_THz Ni|W(5)",
+        "Unnamed: 9",
+        "S_THz Ni|W(10)",
+        "Unnamed: 11",
+        "S_THz Ni|W(15)",
+        "Unnamed: 13",
+        "S_THz Ni|W(20)"
+      ],
+      "column_count": 15,
+      "row_count": 1201,
+      "dtypes": {
+        "Time [ps]": "float64",
+        "Unnamed: 1": "float64",
+        "S_THz Ni|Pt": "float64",
+        "Unnamed: 3": "float64",
+        "S_THz Ni|W(2)": "float64",
+        "Unnamed: 5": "float64",
+        "S_THz Ni|W(3)": "float64",
+        "Unnamed: 7": "float64",
+        "S_THz Ni|W(5)": "float64",
+        "Unnamed: 9": "float64",
+        "S_THz Ni|W(10)": "float64",
+        "Unnamed: 11": "float64",
+        "S_THz Ni|W(15)": "float64",
+        "Unnamed: 13": "float64",
+        "S_THz Ni|W(20)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig3_1.txt"
+    },
+    {
+      "filename": "fig5c_1.txt",
+      "extension": ".txt",
+      "size_bytes": 41437,
+      "size_human": "40.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time [ps]",
+        "Unnamed: 1",
+        "I_C Ni|Pt ",
+        "Unnamed: 3",
+        "I_C Ni|W(2)",
+        "Unnamed: 5",
+        "I_C Ni|W(3)",
+        "Unnamed: 7",
+        "I_C Ni|W(5)",
+        "Unnamed: 9",
+        "I_C Ni|W(10)",
+        "Unnamed: 11",
+        "I_C Ni|W(15)",
+        "Unnamed: 13",
+        "I_C Ni|W(20)"
+      ],
+      "column_count": 15,
+      "row_count": 288,
+      "dtypes": {
+        "Time [ps]": "float64",
+        "Unnamed: 1": "float64",
+        "I_C Ni|Pt ": "float64",
+        "Unnamed: 3": "float64",
+        "I_C Ni|W(2)": "float64",
+        "Unnamed: 5": "float64",
+        "I_C Ni|W(3)": "float64",
+        "Unnamed: 7": "float64",
+        "I_C Ni|W(5)": "float64",
+        "Unnamed: 9": "float64",
+        "I_C Ni|W(10)": "float64",
+        "Unnamed: 11": "float64",
+        "I_C Ni|W(15)": "float64",
+        "Unnamed: 13": "float64",
+        "I_C Ni|W(20)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig5c_1.txt"
+    },
+    {
+      "filename": "fig2a_1.txt",
+      "extension": ".txt",
+      "size_bytes": 100102,
+      "size_human": "97.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Time[ps]",
+        "Unnamed: 1",
+        "S_THz Py|Pt",
+        "Unnamed: 3",
+        "S_THz Py|Ti",
+        "Unnamed: 5",
+        "S_THz Py|W"
+      ],
+      "column_count": 7,
+      "row_count": 1201,
+      "dtypes": {
+        "Time[ps]": "float64",
+        "Unnamed: 1": "float64",
+        "S_THz Py|Pt": "float64",
+        "Unnamed: 3": "float64",
+        "S_THz Py|Ti": "float64",
+        "Unnamed: 5": "float64",
+        "S_THz Py|W": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "fig2a_1.txt"
+    }
+  ]
+}

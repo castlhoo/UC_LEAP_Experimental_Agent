@@ -1,0 +1,732 @@
+{
+  "paper_id": "step1_0226",
+  "title": "Interferometric single-shot parity measurement in InAs–Al hybrid devices",
+  "doi": "10.1038/s41586-024-08445-2",
+  "journal": "Nature",
+  "year": 2025,
+  "paper_url": "https://openalex.org/W4407722127",
+  "priority_score": 9.5,
+  "dataset_status": "verified",
+  "files_downloaded": 9,
+  "files_extracted": 36,
+  "download_errors": [
+    "converted_data.zip: Too large: 4583.1MB",
+    "trivial_A.zip: Too large: 9645.1MB",
+    "cut_loop_B.zip: Too large: 8361.0MB",
+    "cut_loop_A.zip: Too large: 11268.1MB",
+    "injector.zip: Too large: 5984.1MB",
+    "mpr_A1.zip: Too large: 13868.2MB",
+    "mpr_A2.zip: Too large: 9776.6MB",
+    "mpr_B1.zip: Too large: 13930.1MB",
+    "trivial_B.zip: Too large: 13638.4MB",
+    "simulated.zip: Too large: 953.0MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-024-08445-2",
+  "files_inspected": 45,
+  "file_types_found": [
+    "json",
+    "hdf5",
+    "pdf",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 185 column 19 (char 12229)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper demonstrates interferometric single-shot fermion-parity readout in InAs–Al hybrid nanowire devices using a gate-defined triple quantum dot coupled to a proximitized nanowire. The key result is a flux-dependent bimodal quantum-capacitance signal with h/2e periodicity, enabling parity assignment in a single shot with ~1% assignment error and millisecond-scale dwell times, while also constraining trivial Andreev-state explanations.",
+    "measurement_types": [
+      "dispersive gate sensing / quantum capacitance readout",
+      "rf reflectometry",
+      "time-domain single-shot measurement",
+      "magnetic-field-dependent flux interferometry",
+      "charge stability / gate-voltage sweeps",
+      "histogram/statistical analysis of time traces",
+      "quantum dynamics simulation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Idealized interferometer model: a nanowire with Majorana zero modes at its ends coupled to a quantum dot, showing two tunnel paths and flux dependence of the combined fermion parity.",
+        "data_type": "schematic / theoretical diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Example energy spectra of the interferometer for total parity Z = -1 and Z = +1 near the dot charge-degeneracy avoided crossing as a function of dot plunger voltage.",
+        "data_type": "theoretical energy spectrum",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Gate layout of the triple-quantum-dot interferometer coupled to the gate-defined nanowire and resonator readout circuit.",
+        "data_type": "schematic / device layout",
+        "likely_source": "experimental device schematic"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Cross-section of the gate-defined superconducting nanowire heterostructure stack.",
+        "data_type": "schematic cross-section",
+        "likely_source": "device design / materials schematic"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Scanning electron microscopy image of the fabricated device with the Al strip and gate layers highlighted in false color.",
+        "data_type": "microscopy image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Time trace of the measured complex quantum capacitance at a magnetic-field value where the parity-dependent capacitance difference is minimal and no visible switching occurs.",
+        "data_type": "time trace",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Histogram of complex quantum-capacitance values for the time trace in Fig. 3a.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Histogram of the real part of the quantum-capacitance signal with Gaussian fits used to extract signal-to-noise ratio.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Time trace at the magnetic-field value where the parity-dependent capacitance difference is maximal, showing random telegraph switching.",
+        "data_type": "time trace",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Histogram of complex quantum-capacitance values for the time trace in Fig. 3d.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Histogram of the real part of the quantum-capacitance signal with Gaussian fits for SNR extraction.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "Histogram of dwell times between switching events, fit to an exponential distribution to extract parity-switching times.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "Quantum-capacitance histogram versus magnetic field, showing flux-dependent bimodality with h/2e periodicity.",
+        "data_type": "2D histogram / heatmap",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3i",
+        "description": "Kurtosis of the measured quantum capacitance as a function of magnetic field and dot detuning, used to identify bimodality regions.",
+        "data_type": "2D map / statistical metric plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Simulated dynamical quantum-capacitance histogram showing two parity branches as a function of magnetic flux and dot offset charge.",
+        "data_type": "simulation heatmap / histogram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Simulated kurtosis of quantum capacitance versus dot offset charge and flux.",
+        "data_type": "simulation 2D map / statistical metric plot",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw rf reflectometry measurements of the resonator response used to infer complex quantum capacitance time traces. It also includes magnetic-field sweeps, gate-voltage sweeps of dot 2, time traces of consecutive single-shot measurements, and dwell-time statistics derived from switching events. The raw experimental observables are the resonator response signals and their time records; the paper does not specify file formats in the text provided.",
+    "dataset_characterization": {
+      "data_availability_statement": "The datasets associated with the figures are available at Zenodo (https://doi.org/10.5281/zenodo.14804379). Additional data from devices A and B, including quantum dot charging energies and level spacings, inter-dot couplings, dot–wire couplings, and wire plunger gates, are available from the corresponding author on request. The source code used for analysis and figure generation is available in a public GitHub repository.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw experimental data are implied to be rf reflectometry / resonator-response time traces and sweep data from the quantum-capacitance measurements, but the paper text does not specify exact file names, formats, or directory structure.",
+      "processed_data_description": "Processed data include converted complex quantum-capacitance traces (CQ~), downsampled/averaged time traces, histograms, Gaussian-fit results for SNR, dwell-time histograms with exponential fits, kurtosis maps, and extracted parameters such as ΔCQ, SNR, τRTS, and oscillation period.",
+      "figure_data_description": "Yes. The paper explicitly states that datasets associated with the figures are available at Zenodo, indicating figure-linked source data. The text does not specify whether each figure has separate source-data files, but the availability statement strongly implies figure-specific data packaging.",
+      "scripts_description": "Yes. The source code that performs the analysis and generates the figures is available in a public GitHub repository (github.com/microsoft/azure-quantum-parity-readout).",
+      "notes": "The dataset appears to combine experimental measurement records, derived analysis products, and simulation outputs. The paper distinguishes between measured resonator response, converted complex quantum capacitance, statistical summaries (histograms/kurtosis), and simulated dynamical CQ. The text also mentions supplementary information containing detailed tuning protocols, coupling extraction, and model/simulation methods. The main paper does not provide a full raw-data schema, but it clearly indicates both open Zenodo figure datasets and separate code for reproduction."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper describes consecutive single-shot resonator-response measurements, time traces, magnetic-field sweeps, and gate-voltage sweeps, which are direct experimental observables.",
+      "source_data_evidence": "The paper states that datasets associated with the figures are available at Zenodo and that source code for analysis and figure generation is available on GitHub.",
+      "data_availability_section_relevant": "“The datasets associated with the figures in this paper are available at Zenodo… Further data from devices A and B… are available from the corresponding author on request.” “The source code that performs the analysis and generates the figures in this paper are available at our public GitHub repository…”",
+      "priority_modalities": [
+        "rf reflectometry time traces",
+        "complex quantum capacitance (CQ~) records",
+        "histograms",
+        "kurtosis maps",
+        "magnetic-field sweeps",
+        "gate-voltage sweeps",
+        "simulation outputs",
+        "SEM image data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2024_8445_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 23313196,
+      "size_human": "22.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8445_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2024_8445_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 457487,
+      "size_human": "446.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8445_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "thermometry_1.zip",
+      "extension": ".zip",
+      "size_bytes": 14651906,
+      "size_human": "14.0 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "thermometry_1.zip"
+    },
+    {
+      "filename": "qpp_1.zip",
+      "extension": ".zip",
+      "size_bytes": 2114424,
+      "size_human": "2.0 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "qpp_1.zip"
+    },
+    {
+      "filename": "charge_noise_1.zip",
+      "extension": ".zip",
+      "size_bytes": 2975316,
+      "size_human": "2.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "charge_noise_1.zip"
+    },
+    {
+      "filename": "tgp2_tuneup_1.zip",
+      "extension": ".zip",
+      "size_bytes": 20103323,
+      "size_human": "19.2 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "tgp2_tuneup_1.zip"
+    },
+    {
+      "filename": "azure-quantum-parity-readout_1.json",
+      "extension": ".json",
+      "size_bytes": 3019,
+      "size_human": "2.9 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "title",
+        "description",
+        "doi",
+        "version",
+        "created",
+        "licenses",
+        "sources",
+        "resources",
+        "contributors",
+        "privacy",
+        "security",
+        "procedures",
+        "use"
+      ],
+      "sample": {
+        "name": "azure-quantum-parity-readout",
+        "title": "Interferometric single-shot parity measurement in InAs-Al hybrid devices",
+        "description": "This data accompanies the publication \"Interferometric single-shot parity measurement in InAs-Al hyb",
+        "doi": "",
+        "version": "1.0"
+      },
+      "download_source": "zenodo",
+      "relative_path": "azure-quantum-parity-readout_1.json"
+    },
+    {
+      "filename": "dot_tuneup_A1_1.zip",
+      "extension": ".zip",
+      "size_bytes": 808128,
+      "size_human": "789.2 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "dot_tuneup_A1_1.zip"
+    },
+    {
+      "filename": "qdmzm_A1_1.zip",
+      "extension": ".zip",
+      "size_bytes": 4682903,
+      "size_human": "4.5 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "qdmzm_A1_1.zip"
+    },
+    {
+      "filename": "thermometry_calib_41mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_41mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_41mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_50mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_50mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_50mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_65mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_65mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_65mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_80mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_80mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_80mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_100mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_100mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_100mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_150mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_150mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_150mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_200mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_200mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_200mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_250mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_250mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_250mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_302mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_302mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_302mK.h5"
+    },
+    {
+      "filename": "thermometry_calib_30mK.h5",
+      "extension": ".h5",
+      "size_bytes": 70264,
+      "size_human": "68.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/calib/thermometry_calib_30mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/calib/thermometry_calib_30mK.h5"
+    },
+    {
+      "filename": "thermometry_data_41mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_41mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_41mK.h5"
+    },
+    {
+      "filename": "thermometry_data_50mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_50mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_50mK.h5"
+    },
+    {
+      "filename": "thermometry_data_65mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_65mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_65mK.h5"
+    },
+    {
+      "filename": "thermometry_data_80mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_80mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_80mK.h5"
+    },
+    {
+      "filename": "thermometry_data_100mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_100mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_100mK.h5"
+    },
+    {
+      "filename": "thermometry_data_150mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_150mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_150mK.h5"
+    },
+    {
+      "filename": "thermometry_data_200mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_200mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_200mK.h5"
+    },
+    {
+      "filename": "thermometry_data_250mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_250mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_250mK.h5"
+    },
+    {
+      "filename": "thermometry_data_302mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_302mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_302mK.h5"
+    },
+    {
+      "filename": "thermometry_data_30mK.h5",
+      "extension": ".h5",
+      "size_bytes": 1617968,
+      "size_human": "1.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/thermometry/data/thermometry_data_30mK.h5",
+      "from_zip": "thermometry_1.zip",
+      "relative_path": "zip_contents/raw_data/thermometry/data/thermometry_data_30mK.h5"
+    },
+    {
+      "filename": "qpp_Vrf.h5",
+      "extension": ".h5",
+      "size_bytes": 2406168,
+      "size_human": "2.3 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/qpp/qpp_Vrf.h5",
+      "from_zip": "qpp_1.zip",
+      "relative_path": "zip_contents/raw_data/qpp/qpp_Vrf.h5"
+    },
+    {
+      "filename": "qpp_calib.h5",
+      "extension": ".h5",
+      "size_bytes": 8088,
+      "size_human": "7.9 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/qpp/qpp_calib.h5",
+      "from_zip": "qpp_1.zip",
+      "relative_path": "zip_contents/raw_data/qpp/qpp_calib.h5"
+    },
+    {
+      "filename": "charge_noise_Vrf.h5",
+      "extension": ".h5",
+      "size_bytes": 3311616,
+      "size_human": "3.2 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/charge_noise/charge_noise_Vrf.h5",
+      "from_zip": "charge_noise_1.zip",
+      "relative_path": "zip_contents/raw_data/charge_noise/charge_noise_Vrf.h5"
+    },
+    {
+      "filename": "deviceA1_tgp2_ds_right.h5",
+      "extension": ".h5",
+      "size_bytes": 3183672,
+      "size_human": "3.0 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceA1_tgp2_ds_right.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceA1_tgp2_ds_right.h5"
+    },
+    {
+      "filename": "deviceA2_tgp2_ds_left.h5",
+      "extension": ".h5",
+      "size_bytes": 4339488,
+      "size_human": "4.1 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceA2_tgp2_ds_left.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceA2_tgp2_ds_left.h5"
+    },
+    {
+      "filename": "deviceA2_tgp2_ds_right.h5",
+      "extension": ".h5",
+      "size_bytes": 4339488,
+      "size_human": "4.1 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceA2_tgp2_ds_right.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceA2_tgp2_ds_right.h5"
+    },
+    {
+      "filename": "deviceB1_tgp2_ds_left.h5",
+      "extension": ".h5",
+      "size_bytes": 3061640,
+      "size_human": "2.9 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceB1_tgp2_ds_left.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceB1_tgp2_ds_left.h5"
+    },
+    {
+      "filename": "deviceB1_tgp2_ds_right.h5",
+      "extension": ".h5",
+      "size_bytes": 3061640,
+      "size_human": "2.9 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceB1_tgp2_ds_right.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceB1_tgp2_ds_right.h5"
+    },
+    {
+      "filename": "deviceA1_tgp2_ds_left.h5",
+      "extension": ".h5",
+      "size_bytes": 3183672,
+      "size_human": "3.0 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/tgp2_tuneup/deviceA1_tgp2_ds_left.h5",
+      "from_zip": "tgp2_tuneup_1.zip",
+      "relative_path": "zip_contents/raw_data/tgp2_tuneup/deviceA1_tgp2_ds_left.h5"
+    },
+    {
+      "filename": "QD2_bias.h5",
+      "extension": ".h5",
+      "size_bytes": 102048,
+      "size_human": "99.7 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/dot_tuneup_A1/QD2_bias.h5",
+      "from_zip": "dot_tuneup_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/dot_tuneup_A1/QD2_bias.h5"
+    },
+    {
+      "filename": "QD3_bias.h5",
+      "extension": ".h5",
+      "size_bytes": 102048,
+      "size_human": "99.7 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/dot_tuneup_A1/QD3_bias.h5",
+      "from_zip": "dot_tuneup_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/dot_tuneup_A1/QD3_bias.h5"
+    },
+    {
+      "filename": "QD1_QD3.h5",
+      "extension": ".h5",
+      "size_bytes": 617824,
+      "size_human": "603.3 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/dot_tuneup_A1/QD1_QD3.h5",
+      "from_zip": "dot_tuneup_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/dot_tuneup_A1/QD1_QD3.h5"
+    },
+    {
+      "filename": "QD1_bias.h5",
+      "extension": ".h5",
+      "size_bytes": 102048,
+      "size_human": "99.7 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/dot_tuneup_A1/QD1_bias.h5",
+      "from_zip": "dot_tuneup_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/dot_tuneup_A1/QD1_bias.h5"
+    },
+    {
+      "filename": "qd1mzm_Vrf.h5",
+      "extension": ".h5",
+      "size_bytes": 2600249,
+      "size_human": "2.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/qdmzm_A1/qd1mzm_Vrf.h5",
+      "from_zip": "qdmzm_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/qdmzm_A1/qd1mzm_Vrf.h5"
+    },
+    {
+      "filename": "qdmzm_A1_calib.h5",
+      "extension": ".h5",
+      "size_bytes": 66168,
+      "size_human": "64.6 KB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/qdmzm_A1/qdmzm_A1_calib.h5",
+      "from_zip": "qdmzm_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/qdmzm_A1/qdmzm_A1_calib.h5"
+    },
+    {
+      "filename": "qd3mzm_Vrf.h5",
+      "extension": ".h5",
+      "size_bytes": 2600249,
+      "size_human": "2.5 MB",
+      "file_type": "hdf5",
+      "error": "h5py not installed",
+      "download_source": "zip_extracted",
+      "archive_path": "raw_data/qdmzm_A1/qd3mzm_Vrf.h5",
+      "from_zip": "qdmzm_A1_1.zip",
+      "relative_path": "zip_contents/raw_data/qdmzm_A1/qd3mzm_Vrf.h5"
+    }
+  ]
+}

@@ -1,0 +1,805 @@
+{
+  "paper_id": "step1_0290",
+  "title": "De novo design of luciferases using deep learning",
+  "doi": "10.1038/s41586-023-05696-3",
+  "journal": "Nature",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4321480048",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 9,
+  "files_extracted": 16,
+  "download_errors": [
+    "scaffold_generation.tar.gz: Too large: 12047.5MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-023-05696-3",
+  "files_inspected": 25,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "binary",
+    "excel",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 199 column 20 (char 12313)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports de novo design of small, highly stable luciferases using deep-learning-generated NTF2-like protein scaffolds and computational active-site design. The authors created DTZ-specific LuxSit and h-CTZ-specific luciferases, with LuxSit-i showing native-like catalytic efficiency, strong substrate specificity, thermostability, and utility for live-cell and multiplexed bioluminescent assays.",
+    "measurement_types": [
+      "computational protein structure prediction",
+      "molecular docking / protein-ligand design",
+      "enzyme activity assays",
+      "luminescence emission spectra",
+      "kinetic enzyme assays (Km, kcat/Km)",
+      "circular dichroism spectroscopy",
+      "size-exclusion chromatography",
+      "SDS-PAGE",
+      "mass spectrometry",
+      "cell imaging / fluorescence microscopy",
+      "site-saturation mutagenesis screening",
+      "DFT calculations",
+      "molecular dynamics simulations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Computational workflow for family-wide hallucination of NTF2-like scaffolds and subsequent luciferase active-site design. Includes selection of NTF2 topology by docking DTZ into native proteins, generation of hallucinated scaffolds, and comparison of scaffold quality and predicted binding energies.",
+        "data_type": "schematic / scatter plots / distributions",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "Coomassie-stained SDS-PAGE of purified recombinant LuxSit from E. coli.",
+        "data_type": "gel image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "Size-exclusion chromatography profile showing LuxSit is monodisperse and monomeric.",
+        "data_type": "chromatography trace",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "Far-UV circular dichroism spectra at 25 C, 95 C, and after cooling, plus melting curve.",
+        "data_type": "spectrum / thermal unfolding curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2d",
+        "description": "Luminescence emission spectra of DTZ with and without LuxSit.",
+        "data_type": "emission spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2e",
+        "description": "Structural alignment of the design model and AlphaFold2-predicted LuxSit model.",
+        "data_type": "structure overlay",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 2f-i",
+        "description": "Site-saturation mutagenesis analysis of substrate-interacting residues, showing structural views and amino-acid preference/activity profiles for catalytic and packing positions.",
+        "data_type": "structure overlay plus sequence-activity heatmap/profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "Substrate concentration dependence of LuxSit, LuxSit-f, and LuxSit-i activity with signal-to-background ratios.",
+        "data_type": "enzyme kinetics curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Macroscopic luminescence images of DTZ with purified LuxSit and LuxSit-i.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "Fluorescence and luminescence microscopy of live HEK293T cells expressing LuxSit-i-mTagBFP2.",
+        "data_type": "microscopy image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Chemical structures of coelenterazine substrate analogues.",
+        "data_type": "chemical structure diagram",
+        "likely_source": "schematic"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "LuxSit-i substrate specificity across selected luciferins, including image and quantified luminescence.",
+        "data_type": "bar plot / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Heat map comparing substrate specificity of LuxSit-i, native luciferases, and HTZ3-G4 across multiple substrates.",
+        "data_type": "heat map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Spectral separation of LuxSit-i-DTZ and RLuc-PP-CTZ emission using optical filters.",
+        "data_type": "emission spectrum / filter response schematic",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4e",
+        "description": "Schematic of multiplex luciferase assay using NF-kB-LuxSit-i and CRE-RLuc reporters.",
+        "data_type": "schematic",
+        "likely_source": "schematic"
+      },
+      {
+        "figure_id": "Fig. 4f",
+        "description": "Substrate-resolved multiplex assay readout in cell lysates after pathway activation.",
+        "data_type": "bar plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4g",
+        "description": "Spectrally resolved multiplex assay readout using both substrates and two filters.",
+        "data_type": "bar plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 1",
+        "description": "Proposed catalytic mechanism for coelenterazine-utilizing luciferases, emphasizing anionic intermediate formation, SET oxygenation, and dioxetane thermolysis.",
+        "data_type": "mechanistic schematic",
+        "likely_source": "theoretical calculations or literature synthesis"
+      },
+      {
+        "figure_id": "Extended Data Fig. 2",
+        "description": "Workflow schematic for colony-based luciferase screening from oligo library to bacterial colonies and imaging.",
+        "data_type": "workflow schematic",
+        "likely_source": "experimental workflow"
+      },
+      {
+        "figure_id": "Extended Data Fig. 3",
+        "description": "Expression, purification, SEC, mass spectrometry, and CD characterization of LuxSit variants.",
+        "data_type": "gel / chromatography / mass spectrum / CD spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 4",
+        "description": "Expression, purification, and activity measurement of selected de novo-designed luciferases for h-CTZ.",
+        "data_type": "gel / activity plots",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 5",
+        "description": "Comparison of model-based affinity predictions with mutational effects from SSM.",
+        "data_type": "correlation / scatter plot",
+        "likely_source": "theoretical calculations plus experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 6",
+        "description": "Optimization of LuxSit variants showing improved photon flux and flash kinetics.",
+        "data_type": "kinetics / activity plots",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 7",
+        "description": "Additional kinetic characterization including pH dependence and turnover behavior.",
+        "data_type": "kinetics curves",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 8",
+        "description": "DFT and MD analysis supporting the anion-stabilization mechanism and comparing transition-state stabilization by LuxSit and LuxSit-i.",
+        "data_type": "computational energy / structural analysis",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Extended Data Fig. 9",
+        "description": "Subcellular targeting of LuxSit-i in mammalian cells and retained activity.",
+        "data_type": "microscopy image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 10",
+        "description": "Additional multiplexed bioluminescence microscopy and assay validation.",
+        "data_type": "microscopy / assay readouts",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements including SDS-PAGE gels, size-exclusion chromatography traces, circular dichroism spectra, luminescence emission spectra, enzyme kinetics curves, colony-based screening images, mass spectra, and fluorescence/luminescence microscopy images. It also includes computational outputs from docking, structure prediction, DFT, and MD simulations.",
+    "dataset_characterization": {
+      "data_availability_statement": "Source data for Figs. 2–4 are available online. The gene sequence for LuxSit-i has been deposited to GenBank (OP820699). Design models of LuxSit and LuxSit-i are provided in Supplementary Data. Codon-optimized plasmids for bacterial and mammalian expression are available through Addgene. All relevant scripts and a Jupyter notebook for family-wide hallucination scaffold generation are available, and all generated scaffolds plus luciferase design scripts are hosted in downloadable archives.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw measurements are not described as a single unified repository, but the paper explicitly mentions source data for figures and shows experimental outputs such as gels, spectra, chromatograms, microscopy images, and assay readouts. The exact file formats are not specified in the text.",
+      "processed_data_description": "Processed data include figure-ready source data for Figs. 2–4, design models for LuxSit and LuxSit-i, quantified activity values, kinetic parameters, substrate specificity matrices, and normalized assay outputs. The paper also references Supplementary Data for design models.",
+      "figure_data_description": "Yes. The paper explicitly states that source data for Figs. 2–4 are available online, implying figure-level data files are provided. Extended Data figures are not explicitly stated as source-data-backed in the text provided, but they likely accompany the paper in supplementary materials.",
+      "scripts_description": "Yes. The paper provides computational scripts and a Jupyter notebook for scaffold generation, plus a separate archive of luciferase design scripts. The Rosetta suite and RifDock source code are also referenced.",
+      "notes": "The dataset is mixed-modal: experimental biochemistry/cell-imaging data, computational design outputs, and executable design workflows. The paper distinguishes between generated scaffolds, design models, and source data for figures. Raw experimental files are not explicitly deposited in a dedicated raw-data repository in the text, but figure source data and computational artifacts are clearly provided. The computational pipeline includes family-wide hallucination, RifDock/RIF generation, RosettaDesign, ProteinMPNN, AlphaFold2 evaluation, and QM/MD mechanistic calculations."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct experimental measurements such as SDS-PAGE, SEC, CD spectra, luminescence spectra, microscopy, and colony screening images, indicating raw measurements were collected.",
+      "source_data_evidence": "The Data availability section explicitly states: 'Source data for Figs. 2–4 are available online.'",
+      "data_availability_section_relevant": [
+        "Source data for Figs. 2–4 are available online.",
+        "See Supplementary Data for design models of LuxSit and LuxSit-i.",
+        "Codon-optimized plasmids encoding LuxSit-i for bacterial and mammalian expression are available through Addgene.",
+        "All relevant scripts and an accompanying Jupiter notebook for family-wide hallucination scaffold generation are available here.",
+        "All generated scaffolds are available here.",
+        "Computational design scripts for the luciferase libraries are available here."
+      ],
+      "priority_modalities": [
+        "SDS-PAGE gel images",
+        "size-exclusion chromatography traces",
+        "circular dichroism spectra",
+        "luminescence emission spectra",
+        "enzyme kinetics curves",
+        "microscopy images",
+        "mass spectra",
+        "protein structure models",
+        "docking / design outputs",
+        "simulation outputs",
+        "analysis scripts / notebooks"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2023_5696_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1096283,
+      "size_human": "1.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1502396,
+      "size_human": "1.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM3_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 405740,
+      "size_human": "396.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM3_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM4_ESM_1.zip",
+      "extension": ".zip",
+      "size_bytes": 68087,
+      "size_human": "66.5 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM4_ESM_1.zip"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM5_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 245231,
+      "size_human": "239.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig.2b",
+        "Fig.2c",
+        "Fig.2d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig.2b",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1"
+          ],
+          "named_columns": [],
+          "column_count": 2,
+          "row_count": 9791,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.2c",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [],
+          "column_count": 4,
+          "row_count": 72,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2d",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2"
+          ],
+          "named_columns": [],
+          "column_count": 3,
+          "row_count": 202,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM5_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM6_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9815,
+      "size_human": "9.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig.3a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig.3a",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [],
+          "column_count": 10,
+          "row_count": 8,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM6_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2023_5696_MOESM7_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 23607,
+      "size_human": "23.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig.4b",
+        "Fig.4c",
+        "Fig.4d",
+        "Fig.4f",
+        "Fig.4g"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig.4b",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [],
+          "column_count": 8,
+          "row_count": 63,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.4c",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15"
+          ],
+          "named_columns": [],
+          "column_count": 16,
+          "row_count": 11,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.4d",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [],
+          "column_count": 5,
+          "row_count": 202,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.4f",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [],
+          "column_count": 7,
+          "row_count": 4,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.4g",
+          "columns": [
+            "Unnamed: 0",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [],
+          "column_count": 7,
+          "row_count": 4,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2023_5696_MOESM7_ESM_1.xlsx"
+    },
+    {
+      "filename": "scaffolds.tar_1.gz",
+      "extension": ".gz",
+      "size_bytes": 68680416,
+      "size_human": "65.5 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "discovered",
+      "relative_path": "scaffolds.tar_1.gz"
+    },
+    {
+      "filename": "luciferase_designs_methods_1.zip",
+      "extension": ".zip",
+      "size_bytes": 135790,
+      "size_human": "132.6 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "discovered",
+      "relative_path": "luciferase_designs_methods_1.zip"
+    },
+    {
+      "filename": "luxsit.pdb",
+      "extension": ".pdb",
+      "size_bytes": 162669,
+      "size_human": "158.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luxsit.pdb",
+      "from_zip": "41586_2023_5696_MOESM4_ESM_1.zip",
+      "relative_path": "zip_contents/luxsit.pdb"
+    },
+    {
+      "filename": "luxsiti_relaxed.pdb",
+      "extension": ".pdb",
+      "size_bytes": 162275,
+      "size_human": "158.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luxsiti_relaxed.pdb",
+      "from_zip": "41586_2023_5696_MOESM4_ESM_1.zip",
+      "relative_path": "zip_contents/luxsiti_relaxed.pdb"
+    },
+    {
+      "filename": "NOTE",
+      "extension": "",
+      "size_bytes": 1825,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/4.Filtering/NOTE",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/4.Filtering/NOTE"
+    },
+    {
+      "filename": "DTN_rotlib.params",
+      "extension": ".params",
+      "size_bytes": 6498,
+      "size_human": "6.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .params",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/1.RIFgen/DTN_rotlib.params",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/1.RIFgen/DTN_rotlib.params"
+    },
+    {
+      "filename": "require_hb.txt",
+      "extension": ".txt",
+      "size_bytes": 112,
+      "size_human": "112.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "HBOND_DEFINITION"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "HBOND_DEFINITION": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/1.RIFgen/require_hb.txt",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/1.RIFgen/require_hb.txt"
+    },
+    {
+      "filename": "rifgen.flags",
+      "extension": ".flags",
+      "size_bytes": 2213,
+      "size_human": "2.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .flags",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/1.RIFgen/rifgen.flags",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/1.RIFgen/rifgen.flags"
+    },
+    {
+      "filename": "DTN_rotlib.pdb",
+      "extension": ".pdb",
+      "size_bytes": 159075,
+      "size_human": "155.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/1.RIFgen/DTN_rotlib.pdb",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/1.RIFgen/DTN_rotlib.pdb"
+    },
+    {
+      "filename": "DTN_10.pdb",
+      "extension": ".pdb",
+      "size_bytes": 5091,
+      "size_human": "5.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/1.RIFgen/DTN_10.pdb",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/1.RIFgen/DTN_10.pdb"
+    },
+    {
+      "filename": "DTN_rotlib.params",
+      "extension": ".params",
+      "size_bytes": 6498,
+      "size_human": "6.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .params",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/3.RosettaDesign/DTN_rotlib.params",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/3.RosettaDesign/DTN_rotlib.params"
+    },
+    {
+      "filename": "inp_1502.pssm",
+      "extension": ".pssm",
+      "size_bytes": 22671,
+      "size_human": "22.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pssm",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/3.RosettaDesign/inp_1502.pssm",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/3.RosettaDesign/inp_1502.pssm"
+    },
+    {
+      "filename": "inp_1502_000000029.pdb",
+      "extension": ".pdb",
+      "size_bytes": 192592,
+      "size_human": "188.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/3.RosettaDesign/inp_1502_000000029.pdb",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/3.RosettaDesign/inp_1502_000000029.pdb"
+    },
+    {
+      "filename": "DTN_rotlib.pdb",
+      "extension": ".pdb",
+      "size_bytes": 159075,
+      "size_human": "155.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/3.RosettaDesign/DTN_rotlib.pdb",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/3.RosettaDesign/DTN_rotlib.pdb"
+    },
+    {
+      "filename": "design_w_pssm_rifdock.xml",
+      "extension": ".xml",
+      "size_bytes": 9405,
+      "size_human": "9.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .xml",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/3.RosettaDesign/design_w_pssm_rifdock.xml",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/3.RosettaDesign/design_w_pssm_rifdock.xml"
+    },
+    {
+      "filename": "inp_1502.pdb",
+      "extension": ".pdb",
+      "size_bytes": 184141,
+      "size_human": "179.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pdb",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/2.RIFdock/inp_1502.pdb",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/2.RIFdock/inp_1502.pdb"
+    },
+    {
+      "filename": "inp_1502.pos",
+      "extension": ".pos",
+      "size_bytes": 63,
+      "size_human": "63.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pos",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/2.RIFdock/inp_1502.pos",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/2.RIFdock/inp_1502.pos"
+    },
+    {
+      "filename": "rifdock.flags",
+      "extension": ".flags",
+      "size_bytes": 4481,
+      "size_human": "4.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .flags",
+      "download_source": "zip_extracted",
+      "archive_path": "luciferase_design_scripts/2.RIFdock/rifdock.flags",
+      "from_zip": "luciferase_designs_methods_1.zip",
+      "relative_path": "zip_contents/luciferase_design_scripts/2.RIFdock/rifdock.flags"
+    }
+  ]
+}

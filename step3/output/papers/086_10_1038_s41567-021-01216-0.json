@@ -1,0 +1,149 @@
+{
+  "paper_id": "step1_0313",
+  "title": "Unusual high-field metal in a Kondo insulator",
+  "doi": "10.1038/s41567-021-01216-0",
+  "journal": "Nature Physics",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3133582468",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41567-021-01216-0",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies the Kondo insulator YbB12 under high magnetic field using pulsed-field transport, magnetization, magnetostriction, and contactless resistivity (PDO) measurements. The main finding is that the high-field metallic state is a Kondo metal with unusual quantum oscillations whose frequency and cyclotron mass depend strongly on field, consistent with a two-fluid picture in which neutral fermions coexist with conventional heavy charged quasiparticles.",
+    "measurement_types": [
+      "pulsed-field contactless resistivity / proximity-detector oscillator (PDO)",
+      "magnetization",
+      "magnetostriction / dilatometry",
+      "magnetotransport resistivity",
+      "quantum oscillation analysis (SdH and dHvA)",
+      "heat-capacity values referenced from prior work"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "PDO resonance frequency versus magnetic field for YbB12 at several tilt angles, showing a dip at the insulator-to-metal transition and the onset of oscillations in the high-field metallic state.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Oscillatory component of the PDO frequency versus inverse field for multiple tilt angles, showing a single aperiodic oscillation series and Landau-level indexing.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Landau-level index plots comparing low-field Kondo-insulator oscillations and high-field Kondo-metal oscillations for H || [100].",
+        "data_type": "derived analysis plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Temperature dependence of the oscillation amplitude at several fields, fit with the Lifshitz-Kosevich form; inset shows extracted cyclotron energy versus field.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Linearized Landau-level plots after subtracting an offset field H*; used to extract the field-dependent oscillation parameter F0.",
+        "data_type": "derived analysis plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Field dependence of quantum-oscillation frequency in the KI and KM states, plus inset of cyclotron mass versus field.",
+        "data_type": "derived analysis plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Angle dependence of oscillation frequencies comparing KI-state dHvA data with KM-state frequencies calculated from the field-dependent model.",
+        "data_type": "derived analysis plot",
+        "likely_source": "experimental data plus model-based calculation"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Resistivity versus temperature in the high-field metallic state at 55 T, showing a maximum, linear-T regime, and low-T Fermi-liquid-like behavior.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Resistivity versus T^2 in the high-field metallic state, used to extract the T^2 coefficient A2.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Kadowaki-Woods ratio comparison plot placing YbB12 among heavy-fermion and transition-metal systems.",
+        "data_type": "comparison plot",
+        "likely_source": "experimental data compiled with literature values"
+      },
+      {
+        "figure_id": "Extended Data Fig. 1",
+        "description": "Magnetostriction and magnetization versus field, showing the insulator-to-metal transition and metamagnetic transition at 46.3 T, plus inferred valence change.",
+        "data_type": "transport curve / thermodynamic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 2",
+        "description": "Additional high-field PDO / magnetotransport data, including oscillations and weak magnetoresistance up to higher fields.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 3",
+        "description": "Pulsed-current magnetoresistance measurement setup and data showing weak longitudinal magnetoresistance and heating effects on down-sweeps.",
+        "data_type": "transport curve / schematic",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw pulsed-field measurements of PDO resonance frequency, resistivity, magnetization, and magnetostriction on YbB12 single crystals. The raw signals include PDO frequency shifts from an LC tank circuit, voltage from a compensated-coil susceptometer proportional to dM/dt, Bragg-wavelength shifts from fiber Bragg grating dilatometry, and voltage/resistance traces from pulsed-current magnetotransport.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data that support the plots within this paper and other findings of this study are available from the corresponding authors upon reasonable request. The code that support the plots within this paper and other findings of this study are available from the corresponding authors upon reasonable request.",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are not described as publicly deposited files or in a repository. The paper only states that supporting data are available from the corresponding authors upon reasonable request. Raw measurements were collected using pulsed magnets, PDO circuits, a compensated-coil susceptometer, and fiber Bragg grating dilatometry, but file formats and archival structure are not specified.",
+      "processed_data_description": "The paper clearly uses processed/derived quantities for analysis: background-subtracted oscillatory components (e.g. Δf), Landau-level indices, fitted cyclotron energies, extracted frequencies FKI/FKM, fitted effective masses m*, resistivity fits versus T and T^2, and the Kadowaki-Woods ratio. These appear as figure-ready curves and extracted parameters, but no table of numerical values is provided in the text.",
+      "figure_data_description": "Figure-specific source data are implied by the statement that data supporting the plots are available on request, but no explicit source-data repository, file list, or per-figure downloadable dataset is mentioned. The figures are therefore supported by underlying experimental datasets, but the paper does not specify a separate source-data package.",
+      "scripts_description": "The paper states that code supporting the plots and other findings is available from the corresponding authors upon reasonable request. No scripts, notebooks, or code repository are named, and no analysis workflow files are described.",
+      "notes": "The dataset is primarily experimental and multi-modal, with several derived quantities obtained by background subtraction, Landau indexing, LK fitting, and model-based conversion from oscillation frequency to Fermi-surface area. The paper distinguishes raw pulsed-field signals from processed oscillatory components and fitted parameters, but does not provide a public open-access dataset or explicit source-data archive in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct measurements of PDO frequency, magnetization, magnetostriction, and resistivity in pulsed magnetic fields, and says the data supporting the plots are available from the corresponding authors upon reasonable request.",
+      "source_data_evidence": "The figures rely on processed quantities such as background-subtracted oscillations, Landau-level plots, fitted masses, extracted frequencies, and resistivity fits, which are figure-ready derived data.",
+      "data_availability_section_relevant": "“The data that support the plots within this paper and other findings of this study are available from the corresponding authors upon reasonable request.” “The code that support the plots within this paper and other findings of this study are available from the corresponding authors upon reasonable request.”",
+      "priority_modalities": [
+        "PDO frequency traces",
+        "magnetization time traces / integrated magnetization",
+        "magnetostriction wavelength-shift traces",
+        "resistivity versus field and temperature",
+        "background-subtracted oscillation data",
+        "Landau-level indexing data",
+        "fit outputs (m*, F, A2, KW ratio)"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

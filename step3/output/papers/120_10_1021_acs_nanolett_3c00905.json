@@ -1,0 +1,205 @@
+{
+  "paper_id": "step1_0370",
+  "title": "Aharonov-Bohm interference and phase-coherent surface-state transport in topological insulator rings",
+  "doi": "10.1021/acs.nanolett.3c00905",
+  "journal": "arXiv preprint",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2303.01750v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 7,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acs_nanolett_3c00905",
+  "files_inspected": 7,
+  "file_types_found": [
+    "binary",
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clearly replot-ready cleaned/source data files were identified. The deposit appears to contain article/document files and figure PDFs rather than tabular datasets.",
+  "type2_summary": "No explicit raw instrument-output files were identified from the inspection reports.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Paper evidence indicates no data availability statement and no downloadable data links on the publisher page. The Zenodo deposit appears to be a document/figure package rather than a true data repository. Because the file inspection reports do not expose internal PDF contents, classification of the figure PDFs remains conservative.",
+  "file_classifications": [
+    {
+      "relative_path": "MoEM_article_58576_1.pdf",
+      "filename": "MoEM_article_58576_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is a published arXiv preprint on magnetotransport in topological insulator rings; no data availability statement or explicit raw/processed data description was found.",
+      "file_evidence": "Large PDF (1.5 MB) with article-like naming suggests the manuscript/full text rather than a data table or figure dataset.",
+      "reasoning": "This is the paper/documentation file, not a dataset intended for plotting. It does not contain replot-ready numerical data based on the available inspection.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable; article PDF"
+    },
+    {
+      "relative_path": "MoEM_article_58576_1.xml",
+      "filename": "MoEM_article_58576_1.xml",
+      "type": "documentation",
+      "paper_evidence": "No evidence in the paper indicates this is a data file; it is consistent with publisher/article metadata or full-text XML.",
+      "file_evidence": "XML file from Zenodo, likely article markup/metadata rather than experimental data; no indication of tabular measurements or figure-specific structure.",
+      "reasoning": "This appears to be publication metadata/full-text encoding, not experimental data. It is not replot-ready and does not represent raw or cleaned dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable; XML article markup/metadata"
+    },
+    {
+      "relative_path": "Fig4_1.pdf",
+      "filename": "Fig4_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper is about figures showing magnetotransport results, but no explicit statement that this file is source data or raw data was found.",
+      "file_evidence": "PDF figure file, 276.6 KB, named as a specific figure. However, PDF alone does not confirm whether it is a plotted figure image or underlying data.",
+      "reasoning": "Because the file is a PDF and not a tabular source-data format, it is not directly replot-ready numerical data. It is most likely a figure asset or extracted figure, but the inspection does not prove it contains usable data points.",
+      "ambiguity": "Ambiguous: could be a figure panel PDF rather than data. Conservatively not classified as type1.",
+      "key_columns_or_structure": "Not applicable; figure PDF"
+    },
+    {
+      "relative_path": "Fig3_1.pdf",
+      "filename": "Fig3_1.pdf",
+      "type": "other",
+      "paper_evidence": "No explicit paper evidence that this is source data or raw data.",
+      "file_evidence": "PDF figure file, 267.2 KB, figure-specific naming suggests a figure asset rather than a data table.",
+      "reasoning": "Not enough evidence that this is cleaned, replot-ready data. It is more consistent with a figure file than a dataset file.",
+      "ambiguity": "Ambiguous: likely a figure PDF, but not enough evidence to call it type1.",
+      "key_columns_or_structure": "Not applicable; figure PDF"
+    },
+    {
+      "relative_path": "Fig1_1.pdf",
+      "filename": "Fig1_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper likely contains a figure 1 showing sample/device or transport data, but no explicit source-data statement is available.",
+      "file_evidence": "PDF figure file, 722.9 KB, named as a figure. This is consistent with a rendered figure rather than underlying numerical data.",
+      "reasoning": "Without tabular structure or explicit source-data labeling, this cannot be treated as replot-ready data. Conservatively classified as other.",
+      "ambiguity": "Ambiguous: could be a figure panel PDF, not data.",
+      "key_columns_or_structure": "Not applicable; figure PDF"
+    },
+    {
+      "relative_path": "Fig2_1.pdf",
+      "filename": "Fig2_1.pdf",
+      "type": "other",
+      "paper_evidence": "No explicit evidence that this file is processed source data.",
+      "file_evidence": "PDF figure file, 261.6 KB, figure-specific naming suggests a plotted figure asset.",
+      "reasoning": "The file does not present a directly loadable numerical dataset. It is therefore not type1.",
+      "ambiguity": "Ambiguous: likely figure asset only.",
+      "key_columns_or_structure": "Not applicable; figure PDF"
+    },
+    {
+      "relative_path": "physClassActionBohmAhar_1.pdf",
+      "filename": "physClassActionBohmAhar_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is an arXiv preprint; this filename strongly suggests a related article/document rather than data.",
+      "file_evidence": "Small PDF (61.8 KB) with a non-figure, article-like name; likely supplementary documentation or a related manuscript excerpt, not experimental data.",
+      "reasoning": "This is best treated as documentation rather than dataset content. No evidence of numerical measurements or figure-ready tables.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable; document PDF"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports low-temperature magnetotransport experiments on topological insulator ring and nanoribbon structures, showing Aharonov-Bohm oscillations that evidence phase-coherent quasi-ballistic transport of topological surface states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental magnetotransport measurements on topological insulator ring and nanoribbon devices, but no associated dataset or source data files were located.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or URLs were found on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or URLs were found on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "MoEM_article_58576_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1589626,
+      "size_human": "1.5 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "MoEM_article_58576_1.pdf"
+    },
+    {
+      "filename": "MoEM_article_58576_1.xml",
+      "extension": ".xml",
+      "size_bytes": 48614,
+      "size_human": "47.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .xml",
+      "download_source": "zenodo",
+      "relative_path": "MoEM_article_58576_1.xml"
+    },
+    {
+      "filename": "Fig4_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 283191,
+      "size_human": "276.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Fig4_1.pdf"
+    },
+    {
+      "filename": "Fig3_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 273640,
+      "size_human": "267.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Fig3_1.pdf"
+    },
+    {
+      "filename": "Fig1_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 740269,
+      "size_human": "722.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Fig1_1.pdf"
+    },
+    {
+      "filename": "Fig2_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 267851,
+      "size_human": "261.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Fig2_1.pdf"
+    },
+    {
+      "filename": "physClassActionBohmAhar_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 63289,
+      "size_human": "61.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "physClassActionBohmAhar_1.pdf"
+    }
+  ]
+}

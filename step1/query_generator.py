@@ -108,16 +108,28 @@ def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]
     # Focus on topic + experimental/measurement keywords for recall.
     arxiv_queries = []
     arxiv_topic_kw = [
-        "moire", "twisted bilayer", "topological", "2D materials",
-        "superconductor", "quantum oscillations", "magnetoresistance",
-        "van der Waals", "correlated electron", "thin film",
-        "Raman spectroscopy", "ARPES", "STM", "neutron scattering",
-        "charge density wave", "kagome", "ferroelectric", "multiferroic",
-        "magnetic topological", "Weyl semimetal", "graphene transport",
+        # Topological & quantum phases
+        "topological insulator", "topological superconductor",
+        "Weyl semimetal", "Dirac semimetal", "Majorana", "skyrmion",
+        "Mott insulator", "heavy fermion", "Kondo", "spin liquid",
+        "frustrated magnet", "vortex", "Josephson junction",
+        # Superconductors
+        "cuprate", "nickelate", "iron-based superconductor",
+        # 2D / van der Waals
+        "graphene", "TMD", "moiré", "twisted bilayer",
+        "heterostructure", "van der Waals", "2D material",
+        # Ordering & transitions
+        "charge density wave", "phase transition", "exchange bias",
+        # Functional materials
+        "ferroelectric", "multiferroic", "thermoelectric", "piezoelectric",
+        # Observables
+        "quantum oscillation", "Fermi surface", "superconducting gap",
     ]
     arxiv_exp_kw = [
         "experimental", "measurement", "transport", "spectroscopy",
-        "device", "fabrication",
+        "STM", "ARPES", "Raman", "neutron scattering", "XRD",
+        "magnetoresistance", "Hall effect", "specific heat",
+        "thin film", "single crystal",
     ]
     for t in arxiv_topic_kw:
         for e in arxiv_exp_kw:
@@ -131,9 +143,21 @@ def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]
     if len(crossref_queries) < 15:
         crossref_queries = base_queries[:30]
 
+    # Europe PMC: supports full-text search, good for finding data availability mentions
+    europe_pmc_queries = base_queries.copy()
+    europe_pmc_extra = [
+        "condensed matter experimental data availability",
+        "2D materials source data supplementary",
+        "topological materials measurement dataset",
+        "thin film characterization open data",
+        "quantum materials transport data repository",
+    ]
+    europe_pmc_queries.extend(europe_pmc_extra)
+
     return {
         "semantic_scholar": semantic_scholar_queries,
         "openalex": openalex_queries,
         "arxiv": arxiv_queries,
         "crossref": crossref_queries,
+        "europe_pmc": europe_pmc_queries,
     }

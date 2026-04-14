@@ -1,0 +1,8 @@
+name: cps-theory
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyter
+  - pip
+  - kwant=1.4.3

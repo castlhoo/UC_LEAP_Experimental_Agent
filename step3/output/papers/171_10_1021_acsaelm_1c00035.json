@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0142",
+  "title": "Ultrasensitive Sensors Based on PdO@SrFe<sub>2</sub>O<sub>4</sub> Nanosphere-Modified Fibers for Real-Time Monitoring of Ethanol Gas",
+  "doi": "10.1021/acsaelm.1c00035",
+  "journal": "ACS Applied Electronic Materials",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3156586869",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1021_acsaelm_1c00035",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clearly identifiable cleaned, replot-ready dataset file was exposed in the inspection report.",
+  "type2_summary": "No clearly identifiable raw/unprocessed measurement file was exposed in the inspection report.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The paper is experimentally oriented, but the provided file inspection does not reveal any dataset contents beyond a PDF container. Without page-level or embedded-content inspection, classification as Type 1 or Type 2 would be speculative.",
+  "file_classifications": [
+    {
+      "relative_path": "3162_1.pdf",
+      "filename": "3162_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper summary and metadata do not indicate any raw-data or source-data repository structure; no explicit statement about this PDF being figure data or raw data was provided.",
+      "file_evidence": "Single PDF file from Zenodo, 325.9 KB. No internal structure, tables, headers, or machine-readable variables were provided in the inspection report, so its content cannot be verified as replot-ready data or raw instrument output from the available evidence.",
+      "reasoning": "Because the file is a PDF and the inspection report does not expose any embedded tabular data or figure-specific dataset structure, it is safest to treat it as documentation rather than classify it as Type 1 or Type 2. There is insufficient file evidence to support direct replotting or raw measurement status.",
+      "ambiguity": "High ambiguity: the PDF may be the article or supplementary documentation, but the available inspection report does not reveal data content.",
+      "key_columns_or_structure": "Not available from inspection"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports an experimentally fabricated PdO@SrFe2O4 fiber-based sensor with high selectivity and sensitivity for real-time ethanol gas detection at low temperature.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental sensor fabrication and performance results, but no downloadable dataset or supporting data location is indicated in the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "3162_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 333724,
+      "size_human": "325.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "3162_1.pdf"
+    }
+  ]
+}

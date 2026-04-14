@@ -1,0 +1,236 @@
+{
+  "paper_id": "step1_0295",
+  "title": "Landau quantization and highly mobile fermions in an insulator",
+  "doi": "10.1038/s41586-020-03084-9",
+  "journal": "Nature",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3091885927",
+  "priority_score": 8.4,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-020-03084-9",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "One supplementary PDF in a source-data folder, most consistent with figure-supporting, replot-ready material rather than raw instrument output.",
+  "type2_summary": "No clearly raw/unprocessed instrument files were identified from the available inspection.",
+  "type1_files": [
+    "41586_2020_3084_MOESM1_ESM_1.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper itself clearly contains raw transport measurements, but the only inspected file is a PDF in a nature_source_data location. Without internal page-level inspection, classification must remain conservative. No explicit raw-data file was provided in the inspection report.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2020_3084_MOESM1_ESM_1.pdf",
+      "filename": "41586_2020_3084_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper describes figure-style supporting data for transport, FFT, Arrhenius, and device images, and the Nature supplementary file is consistent with source-data style figure support rather than a raw instrument dump. No statement indicates this file is a raw repository export.",
+      "file_evidence": "Single PDF supplementary file, 729.4 KB, from nature_source_data. A PDF of this size is consistent with a compiled source-data/supplementary figure package rather than raw instrument output. The file format is directly viewable and likely organized for figure support.",
+      "reasoning": "Given the paper's emphasis on figure-specific transport traces, processed FFT/fit plots, and device images, and the absence of any explicit raw-data designation, this file is best treated as cleaned/source-data style material. A PDF in a source-data folder is more consistent with figure-ready supporting material than with raw unprocessed measurements.",
+      "ambiguity": "Moderate: the file is a PDF, so exact internal structure cannot be inspected here. However, paper context and repository location favor Type 1.",
+      "key_columns_or_structure": "Not inspectable from metadata; likely figure-ordered supplementary/source-data pages"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies monolayer WTe2, a 2D insulating topological material, using low-temperature magnetotransport in a specially designed bottom-contact geometry that suppresses edge conduction. The key result is the observation of strong Shubnikov–de Haas-like quantum oscillations and, in one device at 500 mK, a fully quantized regime with discrete Landau-level-like peaks despite the sample remaining highly resistive, which the authors argue is consistent with highly mobile neutral fermions inside the insulating gap.",
+    "measurement_types": [
+      "two-probe electrical transport",
+      "four-probe electrical transport",
+      "magnetoresistance vs magnetic field",
+      "gate-dependent resistance",
+      "conductance vs magnetic field",
+      "temperature-dependent transport / Arrhenius analysis",
+      "FFT analysis of quantum oscillations",
+      "dc I-V characterization"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the device architecture: monolayer WTe2 encapsulated by hBN with selectively etched contact windows so electrodes contact the bulk without touching edges; inset optical image of a typical device.",
+        "data_type": "image / schematic",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Two-probe resistance of device #1 versus top-gate voltage at several temperatures, showing a strongly insulating regime near zero gate voltage.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Four-probe resistance versus temperature at selected top-gate voltages, plotted in Arrhenius form and fit to activation behavior to extract gaps.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Low-temperature magnetoresistance of device #1 in the insulating plateau as a function of perpendicular magnetic field, showing large oscillations on a huge resistance background.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Oscillatory component of resistance normalized by zero-field resistance plotted versus 1/B for several temperatures, showing SdH-like periodicity and thermal suppression.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "FFT spectrum of the oscillatory magnetoresistance, showing a dominant frequency peak near 48.6 T.",
+        "data_type": "spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Temperature dependence of oscillation amplitude at selected fields, compared with standard and modified Lifshitz-Kosevich fits; inset shows extracted effective mass.",
+        "data_type": "transport curve / fit plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Device #2 two-probe resistance versus bottom-gate voltage at 2 K and 500 mK, showing the insulating regime and gate tuning of contact/transport behavior.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Magnetic-field-dependent conductance of device #2 at 2 K and 500 mK, showing onset of oscillations and a lower onset field at lower temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Zoomed conductance trace in the quantized regime above 1 T, showing discrete peaks interpreted as Landau-level-like quantization.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Magnetoresistance of device #1 in the electron-doped regime, showing absence of quantum oscillations.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Magnetoresistance of device #2 in the electron-doped regime, also showing no quantum oscillations.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Color map of normalized oscillatory resistance versus magnetic field and top-gate voltage for device #1, showing strong oscillations in the insulating plateau that weaken upon doping.",
+        "data_type": "heatmap / transport map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig1",
+        "description": "Step-by-step fabrication workflow and optical images of device #1, plus dc I-V curves for device #1 and device #3 showing ohmic behavior.",
+        "data_type": "image / fabrication sequence / I-V curves",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig2",
+        "description": "Device #2 optical image, gate-dependent resistance, and raw/processed magnetoresistance traces at selected gate voltages, including conductance-plotted versions and FFT-like oscillation visibility.",
+        "data_type": "image / transport curves / processed transport curves",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig3",
+        "description": "Device #3 optical image, comparison of device quality via gate-tuned resistance, temperature-dependent four-probe resistance showing MIT, and FFT amplitude maps of quantum oscillations versus carrier density and displacement field.",
+        "data_type": "image / transport maps / FFT maps",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig4",
+        "description": "Additional gate- and displacement-field-dependent FFT amplitude maps and branch analysis for device #3, including gate dependence of specific oscillation branches.",
+        "data_type": "processed transport map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig5",
+        "description": "Quantum oscillation data for different contact configurations, used to argue robustness against contact geometry.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig6",
+        "description": "dc measurement version of the quantum oscillation data, used to show consistency with lock-in measurements.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig7",
+        "description": "Magnetotransport under in-plane magnetic field, showing no quantum oscillations.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig8",
+        "description": "Additional analysis supporting the modified Lifshitz-Kosevich fitting and extracted parameters.",
+        "data_type": "fit plot / processed transport data",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig9",
+        "description": "Weak hints of quantum oscillations in the electron-doped regime of device #1 at the lowest temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig10",
+        "description": "Devices fabricated without graphite gates, showing weaker-quality data but hints of oscillations in the insulating regime.",
+        "data_type": "transport curve / device comparison",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw electrical transport measurements on monolayer WTe2 devices: two-probe and four-probe resistance/conductance versus gate voltage, temperature, and magnetic field; dc I-V curves; and magnetotransport under perpendicular and in-plane fields. Measurements were performed in a Quantum Design Dynacool cryostat and a Bluefors LD250 dilution refrigerator using low-frequency lock-in excitation (< 7 Hz, < 5 mV) and a current preamplifier.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data that support the findings of this study are available from the corresponding author upon reasonable request.",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are not described as being deposited in a public repository or attached as files. The paper only states that supporting data are available from the corresponding author upon reasonable request.",
+      "processed_data_description": "The paper presents processed quantities derived from transport traces, including normalized oscillatory components Rosc/R0, FFT amplitudes and frequencies, Arrhenius fits for activation gaps, and modified Lifshitz-Kosevich fit parameters such as effective mass and Dingle-like damping.",
+      "figure_data_description": "Figure-ready data are clearly shown in the main text and Extended Data figures, but no explicit source-data package, table of numerical values, or repository is mentioned in the provided text.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned.",
+      "notes": "The dataset is primarily transport time-series/field-sweep data from multiple devices (#1, #2, #3), with several derived analysis layers: background-subtracted oscillations, 1/B periodic traces, FFT spectra, normalized amplitude maps versus gate and displacement field, and fit-derived parameters. The paper distinguishes raw magnetotransport traces from processed oscillation components and FFT maps, but does not specify file formats, naming conventions, or whether source data are included as supplementary files. The Methods and Extended Data emphasize device-specific comparisons and control measurements (different contact geometries, dc vs lock-in, in-plane field, no-graphite-gate devices) as part of the dataset semantics."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "raw_data_evidence": "The paper describes direct transport measurements (e.g., resistance versus gate voltage, magnetic field, and temperature; dc I-V curves; lock-in measurements) but does not mention a public raw-data repository.",
+      "source_data_evidence": "No explicit statement about source data files, source-data archive, or downloadable figure data is present in the provided text.",
+      "data_availability_section_relevant": "“The data that support the findings of this study are available from the corresponding author upon reasonable request.”; “Detailed fabrication procedures are described in Methods, Extended Data Fig. 1 and Supplementary Information S1 and S2.”; “Details of the fitting procedures are described in the Supplementary Information S3.”",
+      "priority_modalities": [
+        "electrical transport traces",
+        "magnetoresistance sweeps",
+        "conductance sweeps",
+        "gate-dependent resistance maps",
+        "FFT spectra",
+        "Arrhenius plots",
+        "dc I-V curves",
+        "device optical images"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2020_3084_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 746856,
+      "size_human": "729.4 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2020_3084_MOESM1_ESM_1.pdf"
+    }
+  ]
+}

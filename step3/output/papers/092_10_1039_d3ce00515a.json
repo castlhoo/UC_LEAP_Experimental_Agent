@@ -1,0 +1,179 @@
+{
+  "paper_id": "step1_0255",
+  "title": "2D graphitic-like gallium nitride and other structural selectivity in confinement at the graphene/SiC interface",
+  "doi": "10.1039/d3ce00515a",
+  "journal": "CrystEngComm",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4386527984",
+  "priority_score": 7.3,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1039_d3ce00515a",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports MOCVD growth of intercalated 2D GaN at the graphene/SiC interface, combining C-AFM, HAADF/ABF STEM, EDS, and EELS to probe structure and chemistry. The key finding is an experimentally measured buckled GaN monolayer (buckling 1.01 ± 0.11 Å) at the interface, but with evidence that the upper layers deviate from the expected graphitic-like GaN stacking and instead show oxygen-mediated formation of ultrathin Ga2O3-like order.",
+    "measurement_types": [
+      "tapping-mode AFM topography",
+      "conductive AFM current mapping",
+      "HAADF-STEM imaging",
+      "ABF-STEM imaging",
+      "STEM linear intensity profiling",
+      "EDS elemental mapping",
+      "EELS spectrum imaging",
+      "FIB lamella preparation",
+      "TEM imaging"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the conductive AFM setup used for vertical current mapping through the graphene/SiC interface.",
+        "data_type": "schematic",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "AFM morphology image of epitaxial graphene on SiC after intercalation at 700 °C.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "AFM morphology image of epitaxial graphene on SiC after intercalation at 1100 °C.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "C-AFM current map for the 700 °C sample showing spatially extended intercalated regions with lower current contrast.",
+        "data_type": "transport map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "C-AFM current map for the 1100 °C sample showing small intercalated patches surrounded by non-intercalated regions.",
+        "data_type": "transport map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Histogram of current distribution for the 700 °C sample used to estimate intercalated area fraction.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "Histogram of current distribution for the 1100 °C sample used to estimate intercalated area fraction.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "HAADF-STEM image of the intercalated graphene/SiC interface near the [11-20] zone axis, showing bright Ga contrast at the interface.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Linear intensity profile extracted from Fig. 2a and integrated over the boxed region to measure interplanar distances.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "HAADF-STEM image of the non-intercalated graphene/SiC interface near the [11-20] zone axis.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Linear intensity profile extracted from Fig. 2c and integrated over the boxed region to measure interplanar distances in the non-intercalated interface.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3",
+        "description": "ADF-STEM image in spectrum-imaging mode with correlated 2D EDS elemental maps for Si, N, Ga, and O.",
+        "data_type": "image plus elemental maps",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "ADF-STEM image showing the regions used for EELS spectrum integration in four boxes across the intercalated structure.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Integrated EELS spectra from four spatial regions, showing N K-edge and O K-edge evolution across the intercalated stack.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5",
+        "description": "ABF-STEM image of the atomic order in the intercalated structure, interpreted as a buckled GaN monolayer plus an upper Ga2O3-like arrangement.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "FigS1",
+        "description": "Supplementary EELS spectra from bulk 4H-SiC and amorphous carbon used to assess background or contamination contributions to oxygen signals.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "FigS2",
+        "description": "Supplementary figure referenced for additional details on the stacking order fault in the SiC substrate at the interface.",
+        "data_type": "unknown",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include AFM topography scans, C-AFM current maps, TEM/STEM images (HAADF and ABF), STEM line profiles, EDS elemental maps, and EELS spectrum-imaging data collected on FIB-prepared lamellae. The paper also describes MOCVD growth conditions and sample preparation, but no raw file formats or repository links are given.",
+    "dataset_characterization": {
+      "data_availability_statement": "ESI available via DOI; no explicit open repository or code/data archive stated.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described at the instrument level: AFM images from tapping-mode AFM, current maps from C-AFM with Pt-coated Si tips, TEM/STEM images from FEI THEMIS 200 and JEOL ARM 200F, EDS and EELS acquired in spectrum-imaging mode, and FIB-prepared TEM lamellae. No file formats, metadata schema, or repository structure are mentioned.",
+      "processed_data_description": "Processed data include current histograms used to estimate intercalated area fractions, integrated line profiles from HAADF images used to measure interplanar spacings, integrated EELS spectra from selected boxes, and 2D elemental maps from EDS. The paper reports derived quantities such as intercalation fractions (66% and 3%) and buckling distance (1.01 ± 0.11 Å).",
+      "figure_data_description": "Figure-specific data are clearly presented in the paper as images, maps, spectra, histograms, and line profiles. However, there is no explicit statement that underlying source data files for each figure are separately provided.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned.",
+      "notes": "The dataset is primarily experimental microscopy/spectroscopy data with substantial post-processing for figure generation and quantitative extraction. The paper distinguishes between raw imaging/spectroscopy acquisition and derived quantities, but does not describe a formal data package structure. Supplementary information is referenced for additional spectra and interface details, suggesting some extra figure-level data may exist in the ESI."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct acquisition of AFM, C-AFM, HAADF/ABF-STEM, EDS, and EELS measurements, all of which are raw experimental observations before processing.",
+      "source_data_evidence": "The paper includes processed histograms, integrated line profiles, integrated EELS spectra, and elemental maps that are figure-ready and derived from the raw measurements.",
+      "data_availability_section_relevant": "“† Electronic supplementary information (ESI) available. See DOI: https://doi.org/10.1039/d3ce00515a” and figure captions describing integrated profiles, histograms, and spectrum-imaging outputs.",
+      "priority_modalities": [
+        "AFM topography",
+        "C-AFM current maps",
+        "HAADF-STEM images",
+        "ABF-STEM images",
+        "EDS elemental maps",
+        "EELS spectra",
+        "line profiles",
+        "histograms"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

@@ -1,0 +1,228 @@
+{
+  "paper_id": "step1_0004",
+  "title": "Anomalous thickness dependence of Curie temperature in air-stable two-dimensional ferromagnetic 1T-CrTe2 grown by chemical vapor deposition",
+  "doi": "10.1038/s41467-021-21072-z",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3126851846",
+  "priority_score": 8.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-21072-z",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports chemical vapor deposition growth of air-stable ultrathin 1T-CrTe2 single crystals on SiO2/Si with controllable thickness. The key findings are that the crystals show intrinsic ferromagnetism with robust anomalous Hall effect, a thickness-driven switch of magnetic easy axis from in-plane to out-of-plane, and an anomalous increase of Curie temperature as thickness decreases from ~130 nm to ~7.5 nm, which the authors attribute to weakened Coulomb screening in the 2D limit.",
+    "measurement_types": [
+      "optical microscopy",
+      "atomic force microscopy (AFM)",
+      "Raman spectroscopy",
+      "Raman mapping",
+      "X-ray photoelectron spectroscopy (XPS)",
+      "scanning transmission electron microscopy (STEM-HAADF)",
+      "electron energy-loss spectroscopy (EELS) mapping",
+      "energy-dispersive X-ray spectroscopy (EDS)",
+      "vibrating sample magnetometry (VSM)",
+      "SQUID magnetometry",
+      "magneto-transport / Hall measurements",
+      "magnetoresistance",
+      "reflective magnetic circular dichroism (RMCD)",
+      "density functional theory (DFT) calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of CVD growth of 1T-CrTe2 single crystals on SiO2/Si using CrCl2 and Te precursors.",
+        "data_type": "schematic",
+        "likely_source": "experimental concept / illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Thickness of 1T-CrTe2 single crystals as a function of growth temperature, with optical microscopy images and a Raman mapping inset showing spatial uniformity.",
+        "data_type": "image / processed quantitative plot / Raman map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "AFM image and height profile of a representative hexagonal 1T-CrTe2 flake showing ~1.2 nm thickness.",
+        "data_type": "AFM topography / line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Optical images and Raman intensity evolution of a ~4 nm sample exposed to air for 0, 5, 10, and 15 days, demonstrating air stability.",
+        "data_type": "image / Raman time series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Low-magnification STEM-HAADF image of a hexagonal 1T-CrTe2 flake.",
+        "data_type": "STEM image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Atomic-resolution STEM-HAADF image showing the in-plane hexagonal atomic arrangement of 1T-CrTe2.",
+        "data_type": "STEM image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Fast Fourier transform pattern corresponding to the atomic-resolution STEM image.",
+        "data_type": "diffraction/FFT pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Cross-sectional atomic-resolution STEM-HAADF image showing layered Z-shaped octahedral coordination in the 1T phase.",
+        "data_type": "cross-sectional STEM image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "STEM-EELS elemental map of Cr.",
+        "data_type": "elemental map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Overlay of Cr-EELS map on HAADF image.",
+        "data_type": "composite image / elemental overlay",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Magnetization hysteresis loop for ~40 nm 1T-CrTe2 with magnetic field parallel to the c-axis.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Magnetization hysteresis loop for ~40 nm 1T-CrTe2 with magnetic field perpendicular to the c-axis.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Magnetization hysteresis loop for ~3 nm 1T-CrTe2 with magnetic field parallel to the c-axis.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Magnetization hysteresis loop for ~3 nm 1T-CrTe2 with magnetic field perpendicular to the c-axis.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Remanence and coercive force versus thickness, extracted from 100 K hysteresis loops.",
+        "data_type": "processed quantitative plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "DFT-calculated magnetic anisotropy energy versus on-site Coulomb potential U for monolayer and bulk 1T-CrTe2.",
+        "data_type": "theoretical curve",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Out-of-plane Hall resistance hysteresis loops and anomalous Hall signal for a 10 nm device.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Magnetoresistance versus magnetic field for the 10 nm device, showing butterfly-shaped hysteresis.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Temperature-dependent Hall resistance for a 15 nm 1T-CrTe2 crystal.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Temperature-dependent Hall resistance for a 130 nm 1T-CrTe2 crystal.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "RMCD signal versus out-of-plane magnetic field at different temperatures for a 7.6 nm domain.",
+        "data_type": "magneto-optical curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "RMCD signal versus out-of-plane magnetic field at different temperatures for a 19 nm domain.",
+        "data_type": "magneto-optical curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "Curie temperature versus thickness/layer number, compiled from Arrott plots and RMCD remanence analysis.",
+        "data_type": "processed quantitative plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4h",
+        "description": "DFT-calculated density of states for monolayer and bulk 1T-CrTe2 at U = 4 eV.",
+        "data_type": "theoretical DOS plot",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from OM, AFM, Raman spectra and Raman maps, XPS, STEM-HAADF images, EELS/EDS maps, VSM/SQUID magnetization loops, Hall and magnetoresistance transport traces, and RMCD field/temperature sweeps. Theoretical raw inputs are not provided as raw files, but DFT calculations were performed using experimental lattice constants and relaxed atomic structures.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data that support the study are available in this paper and corresponding Supplementary Information. Additional data are available from the corresponding authors upon reasonable request.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurement files are not explicitly described as downloadable or deposited in a repository. The paper states that supporting data are contained in the paper and Supplementary Information, but does not specify file formats, archives, or a public raw-data repository.",
+      "processed_data_description": "Processed data include thickness-versus-growth-temperature statistics, Raman intensity maps, extracted remanence/coercive force versus thickness, Curie temperatures extracted from dM/dT minima, Arrott plots, RMCD remanence-derived Tc values, Hall resistance and magnetoresistance curves, and DFT-derived MAE and DOS plots. These are figure-ready quantitative summaries derived from measurements or calculations.",
+      "figure_data_description": "Figure-specific data are clearly presented in the main figures and Supplementary Figures, but the paper does not explicitly state that separate source-data files are provided. The figures appear to be built from experimental traces, maps, and extracted summary values shown directly in the article and supplementary material.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned. DFT calculations are described methodologically, but no scripts are provided.",
+      "notes": "The dataset is primarily a mixed experimental/theoretical figure dataset embedded in the article and supplementary information. The paper emphasizes multiple characterization modalities and thickness-dependent statistics, but does not describe a standalone data package. The most important semantic distinction is that many plotted quantities are processed/extracted from raw measurements: Tc from dM/dT minima or Arrott plots, remanence/coercivity from hysteresis loops, and transport-derived carrier density/mobility from Hall data. Theoretical outputs (MAE, DOS) are simulation results rather than measured data."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "raw_data_evidence": "The Methods section describes direct acquisition of OM, AFM, Raman, XPS, STEM, VSM/SQUID, RMCD, and transport measurements, implying raw instrument data were collected.",
+      "source_data_evidence": "The paper does not mention a separate source-data repository or explicit source-data files; it only states that data are available in the paper and Supplementary Information.",
+      "data_availability_section_relevant": "“The data that support the study are available in this paper and corresponding Supplementary Information. Additional data are available from the corresponding authors upon reasonable request.”",
+      "priority_modalities": [
+        "optical microscopy images",
+        "AFM height maps",
+        "Raman spectra and Raman maps",
+        "XPS spectra",
+        "STEM-HAADF images",
+        "EELS/EDS elemental maps",
+        "magnetization hysteresis loops",
+        "Hall resistance and magnetoresistance traces",
+        "RMCD field sweeps",
+        "DFT MAE and DOS outputs"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

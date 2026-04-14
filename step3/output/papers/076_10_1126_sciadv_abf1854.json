@@ -1,0 +1,1095 @@
+{
+  "paper_id": "step1_0116",
+  "title": "Reappearance of first Shapiro step in narrow topological Josephson junctions",
+  "doi": "10.1126/sciadv.abf1854",
+  "journal": "Science Advances",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3177038652",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1126_sciadv_abf1854",
+  "files_inspected": 50,
+  "file_types_found": [
+    "binary",
+    "tabular_text",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 154 column 24 (char 9863)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports experimental Josephson-junction measurements in topological insulator nanoribbons, showing suppression/reappearance of the first Shapiro step and interpreting it in terms of confinement-induced changes to the current-phase relation.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset could be identified from the available information. The paper appears to report experimental Josephson-junction measurements, but no associated data files were located.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted source data, supplementary files, or external repository links were provided on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted source data, supplementary files, or external repository links were provided on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "data_repository_1.zip",
+      "extension": ".zip",
+      "size_bytes": 78444604,
+      "size_human": "74.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "data_repository_1.zip"
+    },
+    {
+      "filename": "Device_4.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 2178543,
+      "size_human": "2.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/Device_4.ipynb",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/Device_4.ipynb"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-11.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19005,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-11.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-11.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-10.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18714,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-10.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-10.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-16.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19356,
+      "size_human": "18.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-16.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-16.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-17.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19360,
+      "size_human": "18.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-17.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-17.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-6.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18566,
+      "size_human": "18.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-6.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-6.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-7.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18879,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-7.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-7.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-17.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19422,
+      "size_human": "19.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-17.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-17.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-16.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18835,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-16.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-16.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-7.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18840,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-7.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-7.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-6.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18794,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-6.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-6.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-10.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18888,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-10.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-10.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-11.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18758,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-11.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-11.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-8.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18764,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-8.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-8.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-5.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18860,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-5.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-5.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-9.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18675,
+      "size_human": "18.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-9.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-9.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-18.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19431,
+      "size_human": "19.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-18.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-18.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-15.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19157,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-15.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-15.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-19.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19298,
+      "size_human": "18.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-19.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-19.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-14.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19102,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-14.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-14.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-12.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19058,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-12.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-12.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-13.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18895,
+      "size_human": "18.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-13.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-13.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-13.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19138,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-13.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-13.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-12.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19146,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-12.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-12.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-9.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18756,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-9.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-9.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-8.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18964,
+      "size_human": "18.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-8.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-8.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-5.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 18810,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-5.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-5.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-19.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19239,
+      "size_human": "18.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-19.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-19.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-14.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19144,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-14.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-14.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-18.5dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19383,
+      "size_human": "18.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-18.5dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-18.5dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-15.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19115,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-15.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-15.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_6000MHz_2_6000.0MHz_-20.0dBm2021-7-20_22.44.44.csv",
+      "extension": ".csv",
+      "size_bytes": 19316,
+      "size_human": "18.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-20.0dBm2021-7-20_22.44.44.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_6GHz/Viridian6_J18_6000MHz_2_6000.0MHz_-20.0dBm2021-7-20_22.44.44.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-10.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18836,
+      "size_human": "18.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-10.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-10.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-27.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18765,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-27.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-27.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-7.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18975,
+      "size_human": "18.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-7.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-7.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-18.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19032,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-18.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-18.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-36.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19039,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-36.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-36.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-14.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19150,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-14.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-14.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-23.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18769,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-23.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-23.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-32.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19102,
+      "size_human": "18.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-32.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-32.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-35.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19031,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-35.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-35.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-24.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18744,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-24.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-24.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-13.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19043,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-13.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-13.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-31.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18775,
+      "size_human": "18.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-31.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-31.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-8.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19088,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-8.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-8.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-28.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 18637,
+      "size_human": "18.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-28.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-28.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-20.5dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19045,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-20.5dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-20.5dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-39.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19049,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-39.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-39.0dBm2021-7-21_4.24.22.csv"
+    },
+    {
+      "filename": "Viridian6_J18_3000MHz_1_3000.0MHz_-17.0dBm2021-7-21_4.24.22.csv",
+      "extension": ".csv",
+      "size_bytes": 19063,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "User Name: c "
+      ],
+      "column_count": 1,
+      "row_count": 352,
+      "dtypes": {
+        "User Name: c ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-17.0dBm2021-7-21_4.24.22.csv",
+      "from_zip": "data_repository_1.zip",
+      "relative_path": "zip_contents/data_repository/RF_data/Device_Al3/RF_J18_3GHz/Viridian6_J18_3000MHz_1_3000.0MHz_-17.0dBm2021-7-21_4.24.22.csv"
+    }
+  ]
+}

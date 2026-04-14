@@ -168,7 +168,7 @@ def gpt_assess_inventory(
         abstract_summary=paper.get("abstract_summary", ""),
         repo_type=inventory.get("repo_type", "unknown"),
         repo_title=inventory.get("title", ""),
-        repo_description=inventory.get("description", "")[:300],
+        repo_description=(inventory.get("description") or "")[:300],
         file_list=file_list_str,
     )
 

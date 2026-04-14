@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0210",
+  "title": "Measurement of the Positive Muon Anomalous Magnetic Moment to 0.46 ppm",
+  "doi": "10.1103/physrevlett.126.141801",
+  "journal": "Physical Review Letters",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W4235490860",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevlett_126_141801",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clearly identifiable cleaned, replot-ready dataset files were evidenced in the inspection report.",
+  "type2_summary": "No clearly identifiable raw/unprocessed dataset files were evidenced in the inspection report.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The paper itself is an experimental measurement paper, but the accessible publication evidence does not indicate downloadable source/raw data. The file inspection reports are too limited to classify either PDF as type1 or type2 with confidence.",
+  "file_classifications": [
+    {
+      "relative_path": "NuFact2025_Zejia_Lu_1.pdf",
+      "filename": "NuFact2025_Zejia_Lu_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper is an experimental PRL on the muon anomalous magnetic moment, but the available publication evidence does not indicate that this PDF is a data deposit or a figure-data supplement.",
+      "file_evidence": "PDF file from Zenodo, 4.3 MB. No internal structure, tables, headers, or machine-readable variables were provided in the inspection report, so its role cannot be verified from file metadata alone.",
+      "reasoning": "Because the inspection report only identifies a PDF with no content details, there is insufficient evidence to classify it as cleaned replot-ready data (type1) or raw data (type2). It is most conservatively treated as an ancillary document/other file rather than dataset data.",
+      "ambiguity": "High ambiguity: the file may be a paper, presentation, or documentation PDF rather than data; no content inspection was available.",
+      "key_columns_or_structure": "Not available from inspection report"
+    },
+    {
+      "relative_path": "v28no4p334_1.pdf",
+      "filename": "v28no4p334_1.pdf",
+      "type": "other",
+      "paper_evidence": "The publication evidence does not identify this file as source data, raw data, or figure-specific processed data.",
+      "file_evidence": "PDF file from Zenodo, 881.4 KB. No extracted text, tables, or data structure were provided, so there is no basis to infer whether it contains data or documentation.",
+      "reasoning": "With only filename, size, and extension available, the file cannot be reliably assigned to type1 or type2. Conservatively, it is classified as other because it is not demonstrably a dataset file.",
+      "ambiguity": "High ambiguity: could be a document, article PDF, or supplementary material; no content-level evidence was provided.",
+      "key_columns_or_structure": "Not available from inspection report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports the first Fermilab measurement of the positive muon anomalous magnetic moment using precision spin-precession and magnetic-field measurements in a storage ring.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports precision muon spin-precession and magnetic-field measurement data for the Fermilab muon g-2 experiment, but no accessible dataset or source data was found from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page. The paper appears to report experimental measurements, but the accessible page does not indicate where underlying data can be obtained.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or URLs were identified on the publisher page. The paper appears to report experimental measurements, but the accessible page does not indicate where underlying data can be obtained.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "NuFact2025_Zejia_Lu_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4533823,
+      "size_human": "4.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "NuFact2025_Zejia_Lu_1.pdf"
+    },
+    {
+      "filename": "v28no4p334_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 902582,
+      "size_human": "881.4 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "v28no4p334_1.pdf"
+    }
+  ]
+}

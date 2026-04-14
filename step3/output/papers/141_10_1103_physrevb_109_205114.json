@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0240",
+  "title": "Relocalization of uranium <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:mn>5</mml:mn><mml:mi>f</mml:mi></mml:mrow></mml:math> electrons in the antiferromagnetic heavy-fermion superconductor <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:msub><mml:mi>UPd</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:msub><mml:mi>Al</mml:mi><mml:mn>3</mml:mn></mml:msub></mml:mrow></mml:math>: Insights from angle-resolved photoemission spectroscopy",
+  "doi": "10.1103/physrevb.109.205114",
+  "journal": "Physical review. B./Physical review. B",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4396625525",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevb_109_205114",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear figure-ready or cleaned tabular dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed measurement files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Paper evidence indicates no explicit data repository or downloadable data files. The sole file is a PDF with a paper-like filename and size, so it is classified as documentation rather than Type 1 or Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "213_Correlation_between_C_and_F_Electrons_in_Heavy_Fermion_Superconductors_1.pdf",
+      "filename": "213_Correlation_between_C_and_F_Electrons_in_Heavy_Fermion_Superconductors_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is an ARPES study of UPd2Al3 and the provided analysis found no data availability statement, no downloadable data files, and no repository links. This suggests the paper itself does not explicitly provide dataset files or source-data organization.",
+      "file_evidence": "Single PDF file, 551 KB, from Zenodo. The filename looks like a paper/document rather than a data table or instrument output. No tabular structure or figure-specific data content is indicated from the file report.",
+      "reasoning": "This file is best interpreted as documentation or the paper itself, not a dataset file containing replot-ready or raw measurements. There is no evidence of structured numerical data, headers, or instrument output. Therefore it should not be classified as Type 1 or Type 2.",
+      "ambiguity": "Moderate: without opening the PDF content, it is not possible to fully exclude embedded supplementary data, but the available evidence strongly favors documentation.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports angle-resolved photoemission spectroscopy measurements on the heavy-fermion superconductor UPd2Al3 to study temperature-dependent localization and hybridization of U 5f electrons.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports ARPES measurements on UPd2Al3, but based on the available information there is no explicit indication of where the underlying experimental data can be accessed.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper, and no downloadable data files or external repository links were found on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper, and no downloadable data files or external repository links were found on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "213_Correlation_between_C_and_F_Electrons_in_Heavy_Fermion_Superconductors_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 564193,
+      "size_human": "551.0 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "213_Correlation_between_C_and_F_Electrons_in_Heavy_Fermion_Superconductors_1.pdf"
+    }
+  ]
+}

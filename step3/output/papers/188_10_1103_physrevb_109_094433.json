@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0201",
+  "title": "Griffiths phase–like behavior in nearly half-metallic CoFeVAl: Theory and experiment",
+  "doi": "10.1103/physrevb.109.094433",
+  "journal": "Physical review. B./Physical review. B",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4393144764",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevb_109_094433",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready or replot-ready dataset files were identified from the provided file inspection reports.",
+  "type2_summary": "No raw/unprocessed experimental data files were identified from the provided file inspection reports.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper-level evidence explicitly suggests no data availability statement or supplementary/source data. The Zenodo files appear to be PDFs of articles, not data files. Because the file contents were not text-mined here, the classification is conservative and limited to documentation.",
+  "file_classifications": [
+    {
+      "relative_path": "741-Texto_del_artículo-3286-4-10-20230501__1__1.pdf",
+      "filename": "741-Texto_del_artículo-3286-4-10-20230501__1__1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement, no supplementary files, and no external dataset URLs were found; this file is therefore not supported by paper evidence as a data deposit.",
+      "file_evidence": "PDF file from Zenodo with a large article-like size (866.9 KB) and a title suggesting it is the article text ('Texto del artículo'). No tabular structure or data-sheet indicators are available from the inspection report.",
+      "reasoning": "This appears to be a paper/document PDF rather than a dataset file. There is no evidence of figure-ready tables or raw measurements inside the inspection report, so it should not be classified as type1 or type2.",
+      "ambiguity": "The file content was not directly inspected, so this is based on metadata and repository context only.",
+      "key_columns_or_structure": "Not applicable; likely article PDF"
+    },
+    {
+      "relative_path": "06B_-_20250910_N_Marcano_et_al_Journal_of_Alloys_and_Compounds_1039_2025_182787__Open_Access__1.pdf",
+      "filename": "06B_-_20250910_N_Marcano_et_al_Journal_of_Alloys_and_Compounds_1039_2025_182787__Open_Access__1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement, no supplementary files, and no external dataset URLs were found; this file is therefore not supported by paper evidence as a data deposit.",
+      "file_evidence": "PDF file from Zenodo with article-like size (2.0 MB) and an open-access journal article naming pattern. No tabular data structure, sheet names, or variable headers are reported.",
+      "reasoning": "This is also most consistent with a publication PDF rather than a dataset file. Without evidence of embedded tables or source data, it should be treated as documentation.",
+      "ambiguity": "The inspection report does not provide internal PDF content, so classification is conservative.",
+      "key_columns_or_structure": "Not applicable; likely article PDF"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper combines experiments and first-principles calculations to study magnetic, transport, and electronic properties of the Heusler alloy CoFeVAl, revealing Griffiths phase-like behavior and nearly half-metallic ferromagnetism.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to rely on experimental measurements and first-principles calculations, but no downloadable dataset or data repository was identified from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no supplementary files, source data, or external dataset URLs were found on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no supplementary files, source data, or external dataset URLs were found on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "741-Texto_del_artículo-3286-4-10-20230501__1__1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 887750,
+      "size_human": "866.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "741-Texto_del_artículo-3286-4-10-20230501__1__1.pdf"
+    },
+    {
+      "filename": "06B_-_20250910_N_Marcano_et_al_Journal_of_Alloys_and_Compounds_1039_2025_182787__Open_Access__1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2119683,
+      "size_human": "2.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "06B_-_20250910_N_Marcano_et_al_Journal_of_Alloys_and_Compounds_1039_2025_182787__Open_Access__1.pdf"
+    }
+  ]
+}

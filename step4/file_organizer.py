@@ -16,6 +16,22 @@ from typing import Dict, Any, List, Optional
 
 logger = logging.getLogger(__name__)
 
+SUPPLEMENTARY_DOC_EXTENSIONS = {".pdf", ".doc", ".docx"}
+SUPPLEMENTARY_DOC_PATTERNS = (
+    "supplementary",
+    "supp_info",
+    "supp info",
+    "supporting_information",
+    "supporting information",
+    "peer_review",
+    "peer review",
+    "reviewer",
+    "response_to_review",
+    "response to review",
+    "response_to_reviewer",
+    "response to reviewer",
+)
+
 
 def make_paper_dirname(index: int, title: str, max_words: int = 5) -> str:
     """
@@ -170,6 +186,11 @@ def _categorize_file(
 
     Returns one of: type1_data, type2_data, annotations, scripts, skip
     """
+    # Force supplementary / peer-review documents into annotations.
+    # These often appear as end-of-paper links and can be mistaken for data attachments.
+    if _is_supplementary_document(filename, relative_path):
+        return "annotations"
+
     # Check GPT classification first
     gpt_type = classifications.get(relative_path, "") or classifications.get(filename, "")
 
@@ -194,11 +215,21 @@ def _categorize_file(
     if ext in script_extensions:
         return "scripts"
 
-    # Skip archives, PDFs, and unclassified
-    skip_exts = {".zip", ".tar.gz", ".gz", ".pdf"}
+    # Skip archives and unclassified files
+    skip_exts = {".zip", ".tar.gz", ".gz"}
     if ext in skip_exts:
         return "skip"
 
     # If GPT didn't classify it but it's a data file, skip it
     # (rather than misclassify)
     return "skip"
+
+
+def _is_supplementary_document(filename: str, relative_path: str) -> bool:
+    """Detect supplementary information / peer review documents that should be kept as annotations."""
+    ext = os.path.splitext(filename)[1].lower()
+    if ext not in SUPPLEMENTARY_DOC_EXTENSIONS:
+        return False
+
+    normalized = f"{relative_path} {filename}".replace("\\", "/").lower()
+    return any(pattern in normalized for pattern in SUPPLEMENTARY_DOC_PATTERNS)

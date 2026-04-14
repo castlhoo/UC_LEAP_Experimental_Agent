@@ -1,0 +1,247 @@
+{
+  "paper_id": "step1_0192",
+  "title": "Interchange reconnection as the source of the fast solar wind within coronal holes",
+  "doi": "10.1038/s41586-023-05955-3",
+  "journal": "Nature",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4379739912",
+  "priority_score": 4.5,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-023-05955-3",
+  "files_inspected": 3,
+  "file_types_found": [
+    "tabular_text"
+  ],
+  "has_type1": true,
+  "has_type2": true,
+  "has_both_types": true,
+  "type1_summary": "One small, likely processed/derived tabular file appears to be figure-source or replot-ready data.",
+  "type2_summary": "Two very large, sparsely labeled tabular files are consistent with raw or intermediate mission/simulation data requiring preprocessing.",
+  "type1_files": [
+    "jiycuts_1.dat"
+  ],
+  "type2_files": [
+    "psi_jiy1_1.dat",
+    "psi_ti1_1.dat"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The repository appears to mix raw-like large data products with at least one smaller derived/source-data table. The single-column 'SR' labeling is not sufficiently descriptive to identify exact variables, so classifications are conservative and size/role-based.",
+  "file_classifications": [
+    {
+      "relative_path": "psi_jiy1_1.dat",
+      "filename": "psi_jiy1_1.dat",
+      "type": "type2",
+      "paper_evidence": "The paper states that PSP mission data were used and are openly available, including SWEAP/FIELDS/ISOIS measurements. This file name does not correspond to a figure-specific source-data label and is consistent with a raw mission data product from Zenodo.",
+      "file_evidence": "Very large tabular text file (156.3 MB) with only one column labeled 'SR' and no clear figure-oriented variable names or units. The size and sparse structure suggest instrument output or minimally processed raw data rather than replot-ready figure data.",
+      "reasoning": "Paper evidence supports raw observational inputs. File evidence strongly indicates a large raw or near-raw dataset rather than cleaned source data. It is not directly replot-ready from the available structure, so conservative classification is Type 2.",
+      "ambiguity": "The single-column structure is unusual for a final figure dataset, but the file is too large and insufficiently labeled to treat as cleaned source data.",
+      "key_columns_or_structure": "SR"
+    },
+    {
+      "relative_path": "jiycuts_1.dat",
+      "filename": "jiycuts_1.dat",
+      "type": "type1",
+      "paper_evidence": "The paper includes figure-ready processed/simulation outputs and source data for figures. This file name is consistent with a cut/derived dataset used to generate a figure panel, likely from the reconnection simulation or processed analysis products.",
+      "file_evidence": "Small tabular text file (510.1 KB) with one column labeled 'SR'. Compared with the much larger raw-like files, this size is more consistent with a processed figure source-data file. The compact size suggests it can be plotted with minimal processing.",
+      "reasoning": "Although the column naming is sparse, the file is small and appears to be a derived cut or source-data table rather than raw mission output. Given the paper's use of processed figure source data and the file's manageable size, Type 1 is the best fit.",
+      "ambiguity": "Moderate ambiguity because the single-column label does not clearly identify the variable or units. Classification relies mainly on size and likely figure-source role.",
+      "key_columns_or_structure": "SR"
+    },
+    {
+      "relative_path": "psi_ti1_1.dat",
+      "filename": "psi_ti1_1.dat",
+      "type": "type2",
+      "paper_evidence": "The paper explicitly uses raw PSP mission measurements and simulation outputs, but this filename is not clearly tied to a figure-specific source-data table. It is more consistent with a raw or intermediate data product from the Zenodo repository.",
+      "file_evidence": "Very large tabular text file (156.3 MB) with only one column labeled 'SR'. The size and minimal structure indicate a raw or intermediate dataset requiring additional processing before plotting.",
+      "reasoning": "Despite the lack of explicit raw labeling in the filename, the file characteristics strongly favor raw/unprocessed data. It is not directly replot-ready and is much larger than typical figure source data, so Type 2 is the conservative choice.",
+      "ambiguity": "Moderate ambiguity because the filename alone does not reveal the measurement type, but the file size and structure are decisive.",
+      "key_columns_or_structure": "SR"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper argues that the fast solar wind in coronal holes is driven by interchange magnetic reconnection between open and closed coronal magnetic flux. Using Parker Solar Probe in situ plasma, energetic-particle, and magnetic-field measurements together with PFSS coronal-field mapping and PIC simulations, the authors show that supergranulation-scale magnetic structure is imprinted in microstreams, switchbacks, and energetic ion spectra, consistent with continuous reconnection in the low corona. The observations and simulations together suggest reconnection is collisionless and energetic enough to power the fast wind.",
+    "measurement_types": [
+      "in situ solar wind plasma measurements (proton/alpha velocity, density, abundance)",
+      "in situ magnetic field measurements",
+      "energetic ion spectroscopy",
+      "extreme ultraviolet solar imaging (SDO/AIA 193 Å)",
+      "photospheric magnetogram-based coronal field modeling (PFSS)",
+      "particle-in-cell simulation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Energetic ion spectrogram from PSP Encounter 10 showing ions from thermal energies to >85 keV, organized into microstream intervals.",
+        "data_type": "spectrum / time-energy spectrogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Hot solar wind ion energy flux extending to suprathermal energies, showing the same encounter’s particle distribution.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Radial proton velocity time series with red arcs marking microstreams and a blue trace of thermal alpha-particle abundance AHe.",
+        "data_type": "transport curve / time series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Radial magnetic field time series showing switchbacks organized by the microstreams.",
+        "data_type": "time series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "PFSS-derived photospheric footpoint longitude versus time, showing PSP connection to two distinct coronal holes.",
+        "data_type": "model output / trajectory map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "SDO/AIA 193 Å EUV image of the corona with PFSS footpoints overlaid, showing two near-equatorial coronal holes.",
+        "data_type": "image",
+        "likely_source": "experimental data plus model overlay"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Structure within the first coronal hole: radial speed extrema versus longitude, vertical magnetic field versus altitude, and photospheric polarity map from PFSS/magnetogram data.",
+        "data_type": "multi-panel map/curve",
+        "likely_source": "experimental data and theoretical/model output"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Same type of coronal-hole structure as Fig. 2b for the second coronal hole.",
+        "data_type": "multi-panel map/curve",
+        "likely_source": "experimental data and theoretical/model output"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Time sequence of dimensionless radial flux cuts through a PIC reconnection simulation, showing bursty outflow structure.",
+        "data_type": "simulation curve / time sequence",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "PIC simulation snapshot of reconnection exhaust with dimensionless radial flux and magnetic field lines, showing Alfvénic flows from the reconnection site.",
+        "data_type": "simulation image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Schematic of interchange reconnection between open and closed magnetic flux in the low corona, illustrating repeated reconnection and bursty outflow filling open flux.",
+        "data_type": "schematic",
+        "likely_source": "conceptual/theoretical"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Simulated proton and alpha differential energy flux spectra from the reconnection exhaust, showing soft power-law tails.",
+        "data_type": "spectrum",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "PSP-measured proton and alpha differential energy flux spectra during 20 Nov 2021, showing power-law-like suprathermal tails beyond 100 keV.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Extended Data Fig. 1",
+        "description": "PFSS-modeled magnitude of the radial magnetic field versus distance, used to estimate the Alfvén speed at the reconnection site.",
+        "data_type": "model curve",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Extended Data Fig. 2",
+        "description": "Proton temperature in the reconnection plane from the PIC simulation with overlying magnetic field lines, showing strong heating in the exhaust.",
+        "data_type": "simulation image",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw observational inputs include Parker Solar Probe SWEAP measurements (SPAN-Ion proton and alpha particle data products), FIELDS magnetic-field measurements, ISOIS/Epi-Lo energetic particle measurements, and SDO/HMI and SDO/AIA solar observations used for PFSS mapping and coronal context. The paper also uses a PIC simulation output dataset generated by the authors.",
+    "dataset_characterization": {
+      "data_availability_statement": "PSP mission data are openly available at the NASA Space Physics Data Facility; analysis used IDL/SPEDAS; simulation data are available at Zenodo DOI 10.5281/zenodo.7562035.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "The paper describes raw observational data as PSP mission data from SWEAP, FIELDS, and ISOIS, plus SDO/HMI and SDO/AIA observations. Specific products named include SPAN-Ion SF00 and sf01 data products, and ISOIS/Epi-Lo data. The paper does not specify file formats in the text, but indicates the data are openly available from NASA Space Physics Data Facility.",
+      "processed_data_description": "Processed data include PFSS-derived footpoint mappings, Carrington-longitude time series, averaged energy-flux spectra, and fitted power-law indices. The paper also describes subtraction of about 1% contaminant protons from the alpha spectrum and averaging SPAN-Ion data over a specified time interval. These are analysis products rather than raw measurements.",
+      "figure_data_description": "The article explicitly mentions 'source data' in the online content, implying figure-level source data are provided with the paper, but the text does not enumerate per-figure source-data files. Figures combine raw observational data, PFSS model outputs, and simulation outputs.",
+      "scripts_description": "No analysis scripts or notebooks are explicitly provided in the text. The paper mentions use of the IDL/SPEDAS software package for analysis and the open-source pfsspy software for PFSS modeling, but does not state that custom scripts are deposited.",
+      "notes": "This is a mixed observational + modeling paper. The dataset is semantically heterogeneous: in situ time series and spectra from PSP, remote-sensing EUV/magnetogram inputs for coronal mapping, derived PFSS footpoints and projected magnetic-field estimates, and PIC simulation outputs. Figure 4 uses processed energy-flux spectra rather than raw counts/distributions. The simulation data are explicitly archived on Zenodo, while the PSP mission data are external open mission data. The paper does not claim a single unified raw dataset; instead it combines multiple instrument streams and derived model products."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper explicitly says PSP mission data were used and are openly available, including SWEAP, FIELDS, and ISOIS measurements, and that SDO/HMI and SDO/AIA observations were used.",
+      "source_data_evidence": "The online content states that source data are available with the article, and the figures rely on processed spectra, PFSS footpoints, and simulation outputs suitable as figure source data.",
+      "data_availability_section_relevant": "“The PSP mission data used in this study are openly available at the NASA Space Physics Data Facility ... Simulation data is available at https://doi.org/10.5281/zenodo.7562035.” Also: “Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information ... are available...”",
+      "priority_modalities": [
+        "time series",
+        "energy spectra",
+        "magnetic field measurements",
+        "plasma velocity and density",
+        "EUV images",
+        "magnetograms",
+        "PFSS model outputs",
+        "PIC simulation outputs"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "psi_jiy1_1.dat",
+      "extension": ".dat",
+      "size_bytes": 163939876,
+      "size_human": "156.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "SR"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "psi_jiy1_1.dat"
+    },
+    {
+      "filename": "jiycuts_1.dat",
+      "extension": ".dat",
+      "size_bytes": 522384,
+      "size_human": "510.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "SR"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "jiycuts_1.dat"
+    },
+    {
+      "filename": "psi_ti1_1.dat",
+      "extension": ".dat",
+      "size_bytes": 163939876,
+      "size_human": "156.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "SR"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "psi_ti1_1.dat"
+    }
+  ]
+}

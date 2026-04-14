@@ -1,3 +1,0 @@
-This folder contains the data used for Figure 5b, provided in .txt-Format. 
-
-The file "td_data_dazpwr_0,0005.txt" contains the data shown in Figure 5b for an RF power of 0.0005. The first column lists the time delay in femtoseconds whereas the second column lists the measured intensities (not normalized). The other files "td_data_dazpowr_....txt" contain data for all other RF power values. Note that the RF power is indicated by the numeric value at the end of each filename.

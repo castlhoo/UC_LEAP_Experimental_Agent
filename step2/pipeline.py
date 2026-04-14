@@ -80,7 +80,7 @@ def run_step2() -> Dict[str, Any]:
         if (i + 1) % 10 == 1 or (i + 1) == len(candidates):
             logger.info(f"  Resolving links for paper {i + 1}/{len(candidates)}...")
 
-        title = paper.get("title", "")[:60]
+        title = (paper.get("title") or "")[:60]
 
         # Phase 2: Resolve dataset links
         link_result = resolve_dataset_links(
@@ -160,7 +160,7 @@ def run_step2() -> Dict[str, Any]:
         if not repos:
             continue
 
-        title = entry["paper"].get("title", "")[:50]
+        title = (entry["paper"].get("title") or "")[:50]
         logger.info(f"  [{i + 1}] {title}... ({len(repos)} repos)")
 
         for repo in repos:

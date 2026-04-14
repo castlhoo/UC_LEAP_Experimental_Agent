@@ -1,0 +1,420 @@
+{
+  "paper_id": "step1_0012",
+  "title": "Octupole-driven magnetoresistance in an antiferromagnetic tunnel junction",
+  "doi": "10.1038/s41586-022-05463-w",
+  "journal": "Nature",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4317242203",
+  "priority_score": 10.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-022-05463-w",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All three files are structured Excel source-data tables with labeled variables corresponding to figure-ready transport and magneto-optical datasets. They are replot-ready with minimal processing.",
+  "type2_summary": "No clear raw/unprocessed instrument-output files were provided in this dataset.",
+  "type1_files": [
+    "41586_2022_5463_MOESM2_ESM_1.xlsx",
+    "41586_2022_5463_MOESM3_ESM_1.xlsx",
+    "41586_2022_5463_MOESM4_ESM_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly mentions source data availability, and the file structures match Nature-style source data deposits. No raw microscopy images, proprietary instrument files, or unprocessed measurement streams are present in the provided file list.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2022_5463_MOESM2_ESM_1.xlsx",
+      "filename": "41586_2022_5463_MOESM2_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data are available online, and the described figures include processed quantities such as spin polarization and octupole polarization. This file matches figure/source-data style deposits rather than raw instrument output.",
+      "file_evidence": "Excel workbook with 3 sheets; Sheet1 has 7 columns x 10001 rows and key columns 'spin polarization' and 'Octupole polarization'. The structure is tabular and labeled, suitable for direct plotting or analysis with minimal processing.",
+      "reasoning": "Although the file is relatively large, its organized tabular structure and labeled derived variables indicate replot-ready source data rather than raw measurements. The presence of processed physical quantities strongly supports Type 1.",
+      "ambiguity": "Minor ambiguity because the row count is large, but the content is still organized as source data and not instrument output.",
+      "key_columns_or_structure": "spin polarization, Octupole polarization; 7 columns x 10001 rows"
+    },
+    {
+      "relative_path": "41586_2022_5463_MOESM3_ESM_1.xlsx",
+      "filename": "41586_2022_5463_MOESM3_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper indicates source data are available and the relevant figures include MOKE, Hall, and TMR curves. This file aligns with figure-level source data for those plots.",
+      "file_evidence": "Excel workbook with 3 sheets; Sheet1 has 10 columns x 1000 rows and key columns 'MOKE', 'Hall', and 'TMR'. The data are organized in a clean tabular format consistent with figure source data.",
+      "reasoning": "The file appears to contain processed, plot-ready datasets for multiple figures. The labeled columns correspond to measured response curves rather than raw instrument streams, so it is Type 1.",
+      "ambiguity": "Low ambiguity; the structure is clearly source-data-like.",
+      "key_columns_or_structure": "MOKE, Hall, TMR; 10 columns x 1000 rows"
+    },
+    {
+      "relative_path": "41586_2022_5463_MOESM4_ESM_1.xlsx",
+      "filename": "41586_2022_5463_MOESM4_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper's source data include transport curves for Fe/MgO/Mn3Sn under different field geometries and temperature dependence, matching the kinds of figure data expected here.",
+      "file_evidence": "Excel workbook with 3 sheets; Sheet1 has 10 columns x 723 rows and key columns 'E⊥B', 'E//B', 'Small loop', and 'Temperature dependent'. This is a structured, labeled dataset suitable for direct plotting.",
+      "reasoning": "The file is clearly organized as figure-ready source data for multiple transport measurements. The column labels indicate processed experimental curves rather than raw instrument output.",
+      "ambiguity": "Low ambiguity; the file is strongly consistent with source data.",
+      "key_columns_or_structure": "E⊥B, E//B, Small loop, Temperature dependent; 10 columns x 723 rows"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports room-temperature tunnelling magnetoresistance in an all-antiferromagnetic tunnel junction, Mn3Sn/MgO/Mn3Sn, where the two resistance states correspond to parallel and antiparallel configurations of cluster magnetic octupoles in chiral antiferromagnetic Mn3Sn. The authors also demonstrate anisotropic longitudinal spin-polarized current in Fe/MgO/Mn3Sn junctions and argue, via experiment and first-principles calculations, that the large TMR arises from time-reversal-symmetry breaking octupole order rather than conventional weak spin polarization.",
+    "measurement_types": [
+      "tunnelling resistance / magnetoresistance transport",
+      "Hall resistivity",
+      "polar magneto-optical Kerr effect (MOKE)",
+      "inelastic electron tunnelling spectroscopy",
+      "high-resolution transmission electron microscopy (HRTEM)",
+      "nanobeam electron diffraction",
+      "reflection high-energy electron diffraction (RHEED)",
+      "temperature-dependent transport",
+      "bias-dependent transport",
+      "first-principles DFT / Wannier pDOS calculations",
+      "first-principles tunnelling conductance / transport simulations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of a conventional ferromagnetic tunnel junction showing parallel and antiparallel magnetization configurations that produce two resistance states.",
+        "data_type": "schematic",
+        "likely_source": "illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic of an all-antiferromagnetic tunnel junction based on Mn3Sn, defining binary states by parallel or antiparallel cluster magnetic octupole polarization.",
+        "data_type": "schematic",
+        "likely_source": "illustration"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Calculated projected density of states (pDOS) for opposite spin states in Mn3Sn, showing symmetric spin-up/spin-down character.",
+        "data_type": "calculated DOS plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Calculated pDOS projected onto octupolar ordered states in Mn3Sn, showing majority/minority octupole bands with an energy shift.",
+        "data_type": "calculated DOS plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Cross-sectional HRTEM image of the W/Mn3Sn/MgO/Mn3Sn/Ta multilayer showing continuous layers and sharp interfaces.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Schematic of polar MOKE measurement geometry for probing top and bottom Mn3Sn layers.",
+        "data_type": "schematic",
+        "likely_source": "illustration"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Polar MOKE hysteresis loops versus out-of-plane magnetic field for top and bottom Mn3Sn layers, showing different coercive fields.",
+        "data_type": "magneto-optical hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Hall resistance versus out-of-plane magnetic field, showing two switching events associated with the two Mn3Sn layers.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Tunnelling resistance versus out-of-plane magnetic field, showing low- and high-resistance states assigned to antiparallel and parallel octupole configurations; inset shows resistance versus MgO thickness.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of Fe/MgO/Mn3Sn junction with in-plane magnetized Fe used to detect longitudinal spin-polarized current with E perpendicular to B.",
+        "data_type": "schematic",
+        "likely_source": "illustration"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Schematic of Fe/MgO/Mn3Sn junction with perpendicular magnetized Fe used to detect longitudinal spin-polarized current with E parallel to B.",
+        "data_type": "schematic",
+        "likely_source": "illustration"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "TMR versus in-plane magnetic field in Fe/MgO/Mn3Sn, giving a negative TMR ratio and indicating spin polarization transverse to the electric field.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "TMR versus out-of-plane magnetic field in Fe/MgO/Mn3Sn, giving a positive TMR ratio and indicating spin polarization parallel to the electric field.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Field-sweep TMR loops after saturating Mn3Sn octupoles with positive or negative in-plane fields, demonstrating opposite TMR polarity depending on octupole state.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Temperature dependence of TMR in Fe/MgO/Mn3Sn, showing that the effect exists only in the non-collinear antichiral phase of Mn3Sn.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from transport and microscopy/magneto-optical characterization: HRTEM images of the multilayer stack, RHEED streak patterns during growth, nanobeam electron diffraction, polar MOKE hysteresis loops, Hall resistivity sweeps, tunnelling resistance versus magnetic field, temperature, bias, and MgO thickness, and inelastic electron tunnelling spectra. The methods also mention room-temperature and low-temperature electrical measurements using a physical property measurement system and a probe system with a source-measurement unit.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available at the article DOI. The provided text does not include the actual data/code availability wording, repository link, or file list.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are not explicitly described as downloadable files or repository objects in the provided text. The paper describes the acquisition of raw measurements using TEM, RHEED, MOKE, Hall, and transport setups, but does not specify file formats, naming conventions, or a public archive for the raw datasets.",
+      "processed_data_description": "Processed data include extracted hysteresis loops, Hall resistivity after subtraction of a longitudinal contribution, zero-field Hall resistivity estimated from +0 and -0 field approaches, TMR ratios computed from high- and low-resistance states, and spin polarization estimates derived using the Julliere model. The paper also discusses normalized TMR simulations based on octupole polarizations and Fermi-level shifts.",
+      "figure_data_description": "Figure-specific data are clearly present in the paper as plotted curves and images, and the text references Extended Data figures and Supplementary figures. However, the provided excerpt does not explicitly state whether source data files for each figure are deposited, only that 'source data' are available via the article's online content.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text. The paper only states that data and code availability information is available online, without specifying scripts.",
+      "notes": "The dataset is a mixed experimental-theoretical package. Experimental modalities dominate the main claims, while first-principles DFT/Wannier/PWCOND calculations provide simulated pDOS and tunnelling conductance. The paper distinguishes raw measurements from derived quantities such as TMR ratios and spin polarization estimates, but the excerpt does not provide explicit repository structure. Extended Data and Supplementary figures are referenced extensively, implying additional figure-level datasets beyond the main figures."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods describe direct acquisition of TEM images, RHEED patterns, MOKE loops, Hall measurements, and tunnelling resistance measurements, indicating raw experimental data were collected.",
+      "source_data_evidence": "The article states that 'source data' are available in the online content, and the main text/Methods describe many figure-derived quantities such as TMR ratios, Hall resistivity after subtraction, and fitted/estimated spin polarization.",
+      "data_availability_section_relevant": "Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at the DOI.",
+      "priority_modalities": [
+        "transport curves",
+        "magneto-optical hysteresis loops",
+        "TEM images",
+        "RHEED patterns",
+        "diffraction patterns",
+        "DFT/Wannier calculated DOS",
+        "first-principles tunnelling conductance",
+        "bias dependence",
+        "temperature dependence"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2022_5463_MOESM2_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 567206,
+      "size_human": "553.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "spin polarization",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Octupole polarization",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "spin polarization",
+            "Octupole polarization"
+          ],
+          "column_count": 7,
+          "row_count": 10001,
+          "dtypes": {
+            "spin polarization": "float64",
+            "Unnamed: 1": "int64",
+            "Unnamed: 2": "int64",
+            "Unnamed: 3": "float64",
+            "Octupole polarization": "float64",
+            "Unnamed: 5": "int64",
+            "Unnamed: 6": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_5463_MOESM2_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2022_5463_MOESM3_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 62204,
+      "size_human": "60.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "MOKE",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Hall",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "TMR",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "MOKE",
+            "Hall",
+            "TMR"
+          ],
+          "column_count": 10,
+          "row_count": 1000,
+          "dtypes": {
+            "MOKE": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Hall": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "TMR": "float64",
+            "Unnamed: 9": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_5463_MOESM3_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2022_5463_MOESM4_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 51448,
+      "size_human": "50.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1",
+        "Sheet2",
+        "Sheet3"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "E⊥B",
+            "Unnamed: 1",
+            "E//B",
+            "Unnamed: 3",
+            "Small loop",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Temperature dependent",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "E⊥B",
+            "E//B",
+            "Small loop",
+            "Temperature dependent"
+          ],
+          "column_count": 10,
+          "row_count": 723,
+          "dtypes": {
+            "E⊥B": "float64",
+            "Unnamed: 1": "float64",
+            "E//B": "float64",
+            "Unnamed: 3": "float64",
+            "Small loop": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Temperature dependent": "float64",
+            "Unnamed: 9": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Sheet2",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Sheet3",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_5463_MOESM4_ESM_1.xlsx"
+    }
+  ]
+}

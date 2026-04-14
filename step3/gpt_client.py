@@ -113,23 +113,20 @@ Return JSON:
       "figure_id": "Fig1a",
       "description": "what this figure shows",
       "data_type": "image / spectrum / transport curve / diffraction pattern",
-      "likely_source": "raw measurement / processed data / derived"
+      "likely_source": "theoretical calculations or simulations / experimental data"
     }}
   ],
 
   "has_raw_measurements": true/false,
   "raw_measurement_details": "what raw data was collected (e.g. STM scans, neutron spectra)",
 
-  "has_processed_plots": true/false,
-  "processed_plot_details": "what processed data is plotted",
-
   "dataset_characterization": {{
-    "data_availability_statement": "summarize any statement about data availability in the paper",
+    "data_availability_statement": "summarize any statement about data availability, downloadable data, or data uploaded to an open-access repository",
 
     "data_provided_types": [
       "raw",
       "processed",
-      "source_data",
+      "theoretical_or_simulated",
       "scripts",
       "unknown"
     ],
@@ -142,25 +139,16 @@ Return JSON:
 
     "scripts_description": "whether analysis scripts or notebooks are mentioned",
 
-    "data_organization": "e.g. figure-based folders / raw folders / mixed / not specified",
-
-    "replot_ready_data_present": true/false,
-
-    "replot_reason": "why the data is or is not directly usable for replotting",
-
     "notes": "any important observations about how data is structured or described"
   }},
 
   "classification_prior": {{
     "raw_data_expected": true/false,
     "source_data_expected": true/false,
-    "both_expected": true/false,
     "raw_data_evidence": "brief evidence from the paper",
     "source_data_evidence": "brief evidence from the paper",
-    "both_evidence": "brief evidence if both are implied, else 'none'",
     "data_availability_section_relevant": "important phrases from data availability / methods / figure captions",
-    "priority_modalities": ["measurement or file modalities likely to appear in dataset"],
-    "review_notes": "anything the classifier should be careful about"
+    "priority_modalities": ["measurement or file modalities likely to appear in dataset"]
   }}
 }}
 
@@ -171,9 +159,8 @@ Return JSON:
 3. Distinguish clearly between:
    - raw measurement data
    - processed/cleaned data
-   - figure/source data
    - scripts
-4. "Source data" usually means processed figure data, NOT raw data.
+4. "Source data" often refers to processed figure-ready data, but it can also include raw data depending on the paper and repository context.
 5. If unclear, say "unknown" instead of guessing.
 6. Be concise but precise.
 7. Focus especially on dataset semantics — this will be used for downstream classification.
@@ -248,8 +235,6 @@ def _empty_paper_analysis(reason: str) -> Dict[str, Any]:
         "figures": [],
         "has_raw_measurements": False,
         "raw_measurement_details": "",
-        "has_processed_plots": False,
-        "processed_plot_details": "",
         "dataset_characterization": {
             "data_availability_statement": "",
             "data_provided_types": [],
@@ -257,21 +242,15 @@ def _empty_paper_analysis(reason: str) -> Dict[str, Any]:
             "processed_data_description": "",
             "figure_data_description": "",
             "scripts_description": "",
-            "data_organization": "",
-            "replot_ready_data_present": False,
-            "replot_reason": "",
             "notes": reason,
         },
         "classification_prior": {
             "raw_data_expected": False,
             "source_data_expected": False,
-            "both_expected": False,
             "raw_data_evidence": "",
             "source_data_evidence": "",
-            "both_evidence": "none",
             "data_availability_section_relevant": "",
             "priority_modalities": [],
-            "review_notes": reason,
         },
         "notes": reason,
     }
@@ -294,26 +273,26 @@ Paper abstract: {abstract}
 === PAPER ANALYSIS (from reading the full publication) ===
 {paper_analysis}
 
-=== RULE-BASED PRIOR ===
-{rule_prior}
-
 === FILE INSPECTION REPORTS ===
 {file_reports}
 
 === CLASSIFICATION DEFINITIONS ===
 
 Type 1 (Cleaned, replot-ready):
-- Tabular data (CSV, XLSX, TXT) with column headers naming physical variables
+- Tabular data (CSV, XLSX, TXT) with column headers naming variables, especially processed variables (e.g. R/resistance, which most of the time has to be processed from voltage and current signals)
 - Organized as figure-specific data (e.g., "Fig1", "Figure_3e", "FigS4")
 - Small-to-moderate file sizes appropriate for figure data
+- Theoretical calculation or simulation data
+- Optical microscopy data (Specifically, white light imaging for sample geometry. File type is usually jpg or png)
 - Can be directly loaded and plotted with minimal processing
 - "Source Data" deposits organized by figure = Type 1 (source data ≠ raw data)
 
 Type 2 (Raw/unprocessed):
 - Instrument output: binary/proprietary formats, microscopy images, HDF5, etc.
-- Files named after scans, experiments, or instrument runs
+- Files named after scans, sample names, experiments, experimental conditions, or instrument runs
+- Files in which all variables/units are directly measured from instruments (for example, voltage, current, Gauss/kilogauss)
 - Files requiring processing scripts to generate figures
-- Files explicitly described as raw in the paper
+- Files explicitly described as raw in the paper or description in the online data repository link
 - Large files significantly bigger than typical figure datasets
 - Data requiring significant preprocessing before plotting
 
@@ -328,7 +307,8 @@ Type 2 (Raw/unprocessed):
    - Explicitly describe the conflict
    - Resolve conservatively
 5. If the paper explicitly states data is raw → prioritize that (Type 2)
-6. If the paper explicitly states data is figure/source data → prioritize that (Type 1)
+6. If the paper explicitly states data is figure → prioritize that (Type 1)
+7. For AFM and other microscopy data that is not white light imaging (normal microscope pictures) that is not stated raw/processed clearly in any descriptions: Consider as type 1, if there is a good amount of type 1 (>=2 files or 30%) data in this dataset. Consider them as type 2, if otherwise.
 
 === REASONING PROCEDURE ===
 
@@ -338,7 +318,7 @@ Step A. Paper Evidence
 - Identify any statements about whether the dataset is raw, processed, or figure data
 
 Step B. File Evidence
-- Inspect filename, extension, size, structure, headers, sheet names
+- Inspect filename, extension, size, structure, headers, sheet names, variable names and units
 
 Step C. Functional Role
 - Determine if the file is:
@@ -349,7 +329,7 @@ Step C. Functional Role
   - other
 
 Step D. Replot Test
-- Can this file be directly plotted with minimal processing?
+- Can this file be directly plotted with common variables as the axes with minimal processing?
   → Yes → supports Type 1
   → No → supports Type 2
 
@@ -381,9 +361,11 @@ Return JSON:
   "has_both": true/false,
   "type1_summary": "...",
   "type2_summary": "...",
-  "rule_based_alignment": "whether the final decision agrees with the rule-based prior, and why",
   "type1_files": ["..."],
   "type2_files": ["..."],
+  "data_organization": "e.g. figure-based folders / raw folders / mixed / not specified",
+  "replot_ready_data_present": true/false,
+  "replot_reason": "why the data is or is not directly usable for replotting",
   "confidence": "high" | "medium" | "low",
   "notes": "important observations"
 }}
@@ -412,9 +394,7 @@ def classify_dataset_types(
     if not file_reports:
         return _empty_classification("No files to classify")
 
-    rule_prior = _compute_rule_based_prior(file_reports, paper_analysis)
-    selected_reports = _select_balanced_reports(file_reports, rule_prior)
-    rule_prior_str = _format_rule_prior(rule_prior)
+    selected_reports = _select_reports_for_prompt(file_reports)
 
     # Try with up to 20 files first, then retry with fewer on token overflow
     for max_files in [20, 10, 5]:
@@ -431,7 +411,6 @@ def classify_dataset_types(
             journal=paper.get("journal", ""),
             abstract=paper.get("abstract_summary", ""),
             paper_analysis=analysis_str,
-            rule_prior=rule_prior_str,
             file_reports=reports_str,
         )
 
@@ -446,9 +425,6 @@ def classify_dataset_types(
             for fc in result.get("file_classifications", []):
                 if "relative_path" not in fc:
                     fc["relative_path"] = ""
-            result.setdefault("rule_based_alignment", "")
-            result.setdefault("rule_prior", rule_prior)
-            result = _reconcile_rule_and_gpt(result, rule_prior)
             return result
         except ValueError as e:
             # Empty response — retry with fewer files
@@ -483,30 +459,21 @@ def _format_paper_analysis(analysis: Optional[Dict[str, Any]]) -> str:
 
     if analysis.get("has_raw_measurements"):
         lines.append(f"Raw measurements: {analysis.get('raw_measurement_details', '')}")
-    if analysis.get("has_processed_plots"):
-        lines.append(f"Processed plots: {analysis.get('processed_plot_details', '')}")
-
     dataset_char = analysis.get("dataset_characterization", {}) or {}
     if dataset_char.get("data_availability_statement"):
         lines.append(f"Data availability: {dataset_char.get('data_availability_statement', '')}")
     provided_types = dataset_char.get("data_provided_types", [])
     if provided_types:
         lines.append(f"Data provided types: {', '.join(provided_types)}")
-    if dataset_char.get("data_organization"):
-        lines.append(f"Data organization: {dataset_char.get('data_organization', '')}")
-
     prior = analysis.get("classification_prior", {}) or {}
     if prior:
         lines.append("Classification prior:")
         lines.append(f"  raw_data_expected: {prior.get('raw_data_expected', False)}")
         lines.append(f"  source_data_expected: {prior.get('source_data_expected', False)}")
-        lines.append(f"  both_expected: {prior.get('both_expected', False)}")
         if prior.get("raw_data_evidence"):
             lines.append(f"  raw_data_evidence: {prior.get('raw_data_evidence', '')}")
         if prior.get("source_data_evidence"):
             lines.append(f"  source_data_evidence: {prior.get('source_data_evidence', '')}")
-        if prior.get("both_evidence"):
-            lines.append(f"  both_evidence: {prior.get('both_evidence', '')}")
         if prior.get("priority_modalities"):
             lines.append(f"  priority_modalities: {', '.join(prior.get('priority_modalities', []))}")
 
@@ -523,156 +490,14 @@ def _format_paper_analysis(analysis: Optional[Dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def _compute_rule_based_prior(
-    file_reports: List[Dict[str, Any]],
-    paper_analysis: Optional[Dict[str, Any]] = None,
-) -> Dict[str, Any]:
-    type1_score = 0
-    type2_score = 0
-    type1_signals: List[str] = []
-    type2_signals: List[str] = []
+def _select_reports_for_prompt(file_reports: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    """
+    Keep prompt inputs manageable without adding classification logic.
 
-    for report in file_reports:
-        ext = (report.get("extension") or "").lower()
-        file_type = report.get("file_type", "")
-        rel = (report.get("relative_path") or report.get("filename") or "").lower()
-
-        if ext in {".csv", ".tsv", ".xlsx", ".xls"}:
-            type1_score += 2
-            type1_signals.append(f"{rel}: tabular extension")
-        if file_type in {"tabular_text", "excel"}:
-            type1_score += 2
-            type1_signals.append(f"{rel}: structured tabular file")
-        if any(token in rel for token in ("fig", "figure", "source", "plot")):
-            type1_score += 2
-            type1_signals.append(f"{rel}: figure/source-like naming")
-        if report.get("has_header") or any(sheet.get("has_header") for sheet in report.get("sheets", [])):
-            type1_score += 1
-            type1_signals.append(f"{rel}: header-like structure")
-
-        if ext in {".h5", ".hdf5", ".nxs", ".mat", ".sxm", ".ibw", ".spe"}:
-            type2_score += 3
-            type2_signals.append(f"{rel}: raw/instrument extension")
-        if file_type in {"instrument_raw", "microscopy_image", "hdf5"}:
-            type2_score += 3
-            type2_signals.append(f"{rel}: raw/instrument file type")
-        if ext in {".zip", ".tar.gz", ".gz"}:
-            type2_score += 1
-            type2_signals.append(f"{rel}: archive may contain raw data")
-        if (report.get("size_bytes") or 0) > 10_000_000:
-            type2_score += 1
-            type2_signals.append(f"{rel}: large file size")
-
-    prior = (paper_analysis or {}).get("classification_prior", {}) or {}
-    if prior.get("raw_data_expected"):
-        type2_score += 2
-        type2_signals.append(f"paper prior: {prior.get('raw_data_evidence', 'raw data expected')}")
-    if prior.get("source_data_expected"):
-        type1_score += 2
-        type1_signals.append(f"paper prior: {prior.get('source_data_evidence', 'source/processed data expected')}")
-    if prior.get("both_expected"):
-        type1_score += 1
-        type2_score += 1
-        type1_signals.append(f"paper prior both: {prior.get('both_evidence', 'both expected')}")
-        type2_signals.append(f"paper prior both: {prior.get('both_evidence', 'both expected')}")
-
-    both_candidate = type1_score >= 4 and type2_score >= 4
-    return {
-        "type1_score": type1_score,
-        "type2_score": type2_score,
-        "both_candidate": both_candidate,
-        "type1_signals": type1_signals[:12],
-        "type2_signals": type2_signals[:12],
-    }
-
-
-def _bucket_report(report: Dict[str, Any]) -> str:
-    ext = (report.get("extension") or "").lower()
-    file_type = report.get("file_type", "")
-    rel = (report.get("relative_path") or report.get("filename") or "").lower()
-
-    if file_type in {"tabular_text", "excel"} or ext in {".csv", ".tsv", ".xlsx", ".xls"}:
-        return "type1"
-    if any(token in rel for token in ("fig", "figure", "source", "plot")):
-        return "type1"
-    if file_type in {"instrument_raw", "microscopy_image", "hdf5"} or ext in {".h5", ".hdf5", ".nxs", ".mat", ".sxm", ".ibw", ".spe", ".tif", ".tiff"}:
-        return "type2"
-    if file_type in {"script", "pdf"} or ext in {".py", ".ipynb", ".m", ".r", ".jl", ".sh", ".pdf"}:
-        return "support"
-    return "unclear"
-
-
-def _select_balanced_reports(
-    file_reports: List[Dict[str, Any]],
-    rule_prior: Dict[str, Any],
-) -> List[Dict[str, Any]]:
-    buckets = {"type1": [], "type2": [], "support": [], "unclear": []}
-    for report in file_reports:
-        buckets[_bucket_report(report)].append(report)
-
-    selected: List[Dict[str, Any]] = []
-    selected.extend(buckets["type1"][:6])
-    selected.extend(buckets["type2"][:6])
-    selected.extend(buckets["support"][:2])
-    selected.extend(buckets["unclear"][:4])
-
-    if rule_prior.get("both_candidate"):
-        selected.extend(buckets["type1"][6:8])
-        selected.extend(buckets["type2"][6:8])
-
-    # Preserve original order for readability while deduplicating.
-    seen = set()
-    ordered = []
-    selected_keys = {
-        (r.get("relative_path") or r.get("filename") or "")
-        for r in selected
-    }
-    for report in file_reports:
-        key = report.get("relative_path") or report.get("filename") or ""
-        if key in selected_keys and key not in seen:
-            seen.add(key)
-            ordered.append(report)
-    return ordered
-
-
-def _format_rule_prior(rule_prior: Dict[str, Any]) -> str:
-    lines = [
-        f"type1_score: {rule_prior.get('type1_score', 0)}",
-        f"type2_score: {rule_prior.get('type2_score', 0)}",
-        f"both_candidate: {rule_prior.get('both_candidate', False)}",
-    ]
-    t1 = rule_prior.get("type1_signals", [])
-    t2 = rule_prior.get("type2_signals", [])
-    if t1:
-        lines.append("type1_signals:")
-        lines.extend(f"  - {signal}" for signal in t1[:8])
-    if t2:
-        lines.append("type2_signals:")
-        lines.extend(f"  - {signal}" for signal in t2[:8])
-    return "\n".join(lines)
-
-
-def _reconcile_rule_and_gpt(
-    result: Dict[str, Any],
-    rule_prior: Dict[str, Any],
-) -> Dict[str, Any]:
-    has_t1 = result.get("has_type1", False)
-    has_t2 = result.get("has_type2", False)
-    both = result.get("has_both", False)
-
-    if rule_prior.get("both_candidate") and has_t1 and not has_t2:
-        result["notes"] = f"{result.get('notes', '')} Rule-based prior suggests hidden Type 2 evidence; review recommended.".strip()
-        result["confidence"] = "medium" if result.get("confidence") == "high" else result.get("confidence", "medium")
-    if rule_prior.get("both_candidate") and has_t2 and not has_t1:
-        result["notes"] = f"{result.get('notes', '')} Rule-based prior suggests hidden Type 1 evidence; review recommended.".strip()
-        result["confidence"] = "medium" if result.get("confidence") == "high" else result.get("confidence", "medium")
-    if rule_prior.get("both_candidate") and both:
-        result["rule_based_alignment"] = "Rule-based prior and GPT both indicate both-type data."
-    elif rule_prior.get("both_candidate") and not both:
-        result["rule_based_alignment"] = "Rule-based prior indicates both-type evidence, but GPT did not fully confirm both."
-    else:
-        result["rule_based_alignment"] = "Rule-based prior is broadly consistent with GPT output."
-    return result
+    This function preserves the original file order and only trims overly large
+    file sets so the prompt fits within model limits.
+    """
+    return file_reports
 
 
 def _format_file_reports(reports: List[Dict[str, Any]]) -> str:
@@ -763,10 +588,11 @@ def _empty_classification(reason: str) -> Dict[str, Any]:
         "has_both": False,
         "type1_summary": "none",
         "type2_summary": "none",
-        "rule_based_alignment": "",
-        "rule_prior": {},
         "type1_files": [],
         "type2_files": [],
+        "data_organization": "",
+        "replot_ready_data_present": False,
+        "replot_reason": "",
         "confidence": "low",
         "notes": reason,
     }

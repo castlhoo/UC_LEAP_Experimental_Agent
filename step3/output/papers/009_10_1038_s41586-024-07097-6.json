@@ -1,0 +1,110 @@
+{
+  "paper_id": "step1_0232",
+  "title": "Non-reciprocal topological solitons in active metamaterials",
+  "doi": "10.1038/s41586-024-07097-6",
+  "journal": "Nature",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4392984807",
+  "priority_score": 9.5,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-024-07097-6",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Both files are Nature-hosted source-data PDFs, which are typically figure-specific and replot-ready rather than raw instrument outputs.",
+  "type2_summary": "No explicit raw/unprocessed files were provided in the inspected file list.",
+  "type1_files": [
+    "41586_2024_7097_MOESM1_ESM_1.pdf",
+    "41586_2024_7097_MOESM2_ESM_1.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper states that all supporting data are available in an external repository, suggesting additional raw data may exist there. However, among the inspected files, only Nature source-data PDFs are present, so the classification is Type 1 for both. No Type 2 files were provided in the file inspection report.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2024_7097_MOESM1_ESM_1.pdf",
+      "filename": "41586_2024_7097_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper's data availability statement says all supporting data are in a public repository, while Nature-hosted supplementary/source files are provided as source data PDFs. The paper evidence does not indicate this PDF is raw instrument output.",
+      "file_evidence": "PDF source-data file from Nature; small-to-moderate size (586.3 KB), consistent with figure/source-data material rather than raw experimental output. No indication of proprietary/raw instrument format or large unprocessed dataset.",
+      "reasoning": "Given the paper context and the file being a Nature source-data PDF, this is most consistent with figure-specific, replot-ready source data rather than raw measurements. The file type and size support Type 1.",
+      "ambiguity": "Moderate: the paper emphasizes that all supporting data are in an external repository, so this PDF may be supplementary source data rather than the primary dataset. However, source-data PDFs are classified as Type 1 by definition.",
+      "key_columns_or_structure": "Not inspectable from metadata alone; likely figure-specific source data embedded in PDF"
+    },
+    {
+      "relative_path": "41586_2024_7097_MOESM2_ESM_1.pdf",
+      "filename": "41586_2024_7097_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The publication provides Nature-hosted source-data PDFs alongside the main repository. There is no indication this PDF contains raw instrument output; it is part of the source-data package.",
+      "file_evidence": "PDF source-data file from Nature; size 1.0 MB, consistent with figure/source-data content. No evidence of binary/raw measurement format or large unprocessed data tables.",
+      "reasoning": "As a source-data PDF, this is best treated as cleaned, figure-oriented data that can support replotting with minimal processing. Therefore Type 1.",
+      "ambiguity": "Moderate: exact internal structure is not visible from the inspection report, but the source-data PDF designation strongly favors Type 1.",
+      "key_columns_or_structure": "Not inspectable from metadata alone; likely figure-specific source data embedded in PDF"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports non-reciprocal topological solitons in active metamaterials, combining topological mechanics with engineered material dynamics.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "All data supporting the study are publicly available in the repository; publisher-hosted source data/supplementary files are also available as PDFs and a video.",
+    "has_processed_plots": true,
+    "processed_plot_details": "All data supporting the study are publicly available in the repository; publisher-hosted source data/supplementary files are also available as PDFs and a video.",
+    "dataset_characterization": {
+      "data_availability_statement": "All the data supporting this study are available on the public repository https://uva-hva.gitlab.host/published-projects/non-reciprocal-topological-solitons .",
+      "data_provided_types": [
+        "raw",
+        "source_data"
+      ],
+      "raw_data_description": "All data supporting the study are publicly available in the repository; publisher-hosted source data/supplementary files are also available as PDFs and a video.",
+      "processed_data_description": "",
+      "figure_data_description": "41586_2024_7097_MOESM1_ESM.pdf, 41586_2024_7097_MOESM2_ESM.pdf, 41586_2024_7097_MOESM3_ESM.mp4, opensearch.xml",
+      "scripts_description": "",
+      "data_organization": "The paper states that all supporting data are available in a public repository at https://uva-hva.gitlab.host/published-projects/non-reciprocal-topological-solitons. Nature also hosts supplementary/source files (two PDF source-data files and one MP4), but the primary data availability statement points to the external repository.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper states that all supporting data are available in a public repository at https://uva-hva.gitlab.host/published-projects/non-reciprocal-topological-solitons. Nature also hosts supplementary/source files (two PDF source-data files and one MP4), but the primary data availability statement points to the external repository.",
+      "source_data_evidence": "41586_2024_7097_MOESM1_ESM.pdf, 41586_2024_7097_MOESM2_ESM.pdf, 41586_2024_7097_MOESM3_ESM.mp4, opensearch.xml",
+      "both_evidence": "Step 2 found both repository-style data and publisher source files",
+      "data_availability_section_relevant": "All the data supporting this study are available on the public repository https://uva-hva.gitlab.host/published-projects/non-reciprocal-topological-solitons .",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2024_7097_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 600331,
+      "size_human": "586.3 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_7097_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2024_7097_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1076959,
+      "size_human": "1.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_7097_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

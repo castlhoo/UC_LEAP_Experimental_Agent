@@ -1,0 +1,876 @@
+{
+  "paper_id": "step1_0115",
+  "title": "Controllable orbital angular momentum monopoles in chiral topological semimetals",
+  "doi": "10.1038/s41567-024-02655-1",
+  "journal": "Nature Physics",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4402982803",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 43,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41567-024-02655-1",
+  "files_inspected": 43,
+  "file_types_found": [
+    "binary",
+    "script",
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 219 column 5 (char 11778)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies the chiral topological semimetals PdGa and PtGa, using soft X-ray circular dichroism angle-resolved photoemission spectroscopy (CD-ARPES) together with DFT/Wannier-based photoemission simulations. The main result is direct experimental evidence for orbital angular momentum (OAM) monopoles near the multifold fermion at the R point, including a reversal of monopole polarity between opposite crystal enantiomers and a photon-energy-dependent rotation of the dichroic texture caused by orbital interference effects.",
+    "measurement_types": [
+      "soft X-ray ARPES",
+      "circular dichroism ARPES (CD-ARPES)",
+      "DFT electronic structure calculations",
+      "Wannier tight-binding modeling",
+      "Wannier-ARPES simulations",
+      "Laue X-ray crystal orientation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "Schematic of the chiral B20 crystal structure of PdGa, showing helical atomic winding along [111].",
+        "data_type": "schematic / crystal structure diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Calculated global OAM monopole texture around the double spin-1 multifold band degeneracy at the R point, including OAM direction on constant-energy contours and projected textures along selected directions.",
+        "data_type": "theoretical band-structure / vector-field plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "Experimental geometry for CD-ARPES, showing crystal orientations and light incidence used to probe the 3D OAM texture around R.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 2a-b",
+        "description": "CD-ARPES Fermi-surface maps of PdGa(111) for the two enantiomers, showing opposite polar dichroic textures near R.",
+        "data_type": "2D ARPES map / dichroic image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "Binding-energy-dependent CD-ARPES cut along the dashed line in the PdGa(111) enantiomer-B map.",
+        "data_type": "ARPES spectrum / energy-momentum cut",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2d-e",
+        "description": "CD-ARPES data for PtGa(111), showing momentum-resolved dichroism and an energy-dependent cut.",
+        "data_type": "2D ARPES map and energy-momentum spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2f",
+        "description": "CD-ARPES binding-energy-dependent data for PdGa(001).",
+        "data_type": "ARPES spectrum / energy-momentum cut",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3a-d",
+        "description": "Photon-energy evolution of CD-ARPES spectra for PtGa(111) along M–R–M, comparing experiment, simulation, and calculated Fermi-surface maps at several photon energies.",
+        "data_type": "energy-momentum spectra and 2D dichroic maps",
+        "likely_source": "both experimental data and simulations"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Orbital-resolved magnetic texture of Pd d orbitals at representative atomic sites near R, resolved by magnetic quantum number m.",
+        "data_type": "orbital-resolved theoretical texture plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Intrasite contributions to CD-ARPES, comparing local OAM and local dichroism for selected Pd atoms.",
+        "data_type": "orbital-resolved dichroism map",
+        "likely_source": "theoretical simulations"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Example intersite interference contribution to the CD-ARPES signal between two Pd atoms.",
+        "data_type": "interference contribution map",
+        "likely_source": "theoretical simulations"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Total bulk CD-ARPES signal obtained by summing intrasite and interference contributions.",
+        "data_type": "combined dichroism map",
+        "likely_source": "theoretical simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental measurements are soft X-ray ARPES/CD-ARPES spectra collected on PdGa and PtGa single crystals at the ADRESS beamline (Swiss Light Source) using a PHOIBOS-150 analyzer, with left- and right-circular polarization, at ~20 K, over photon energies from 360 eV to 1.021 keV. The paper also mentions in situ sputtering/annealing cleaning and Laue X-ray alignment of crystals before ARPES.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available at the article DOI link. The provided text does not include the explicit data/code availability wording beyond this pointer.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw data are the measured ARPES/CD-ARPES spectra and Fermi-surface maps acquired experimentally. The paper does not specify file formats, repository names, or whether the raw detector frames are deposited; it only describes the acquisition setup and normalization procedure.",
+      "processed_data_description": "Processed data include normalized dichroism maps and total-intensity maps computed from left/right circular polarization measurements using CD = I+/I+_tot - I-/I-_tot and Itot = 1/2(I+/I+_tot + I-/I-_tot). For line cuts, Itot was corrected for analyzer transmission and background-subtracted; Fermi-surface maps were integrated within ±100 meV of EF.",
+      "figure_data_description": "Figure-ready data are clearly present in the paper as experimental CD-ARPES maps, energy-momentum cuts, and simulated counterparts shown side-by-side. The text also refers to 'source data' in the online content, but the excerpt does not specify per-figure source-data file contents.",
+      "scripts_description": "Analysis/simulation software is explicitly mentioned: QUANTUM ESPRESSO for DFT, Wannier90 for Wannier functions, and DYNAMICS-W90 for Wannier-ARPES simulations. The paper also references the chinook framework and a Korringa–Kohn–Rostoker-based evaluation of radial integrals. No standalone analysis notebooks or custom scripts are explicitly described in the excerpt.",
+      "notes": "The dataset is a hybrid of experimental CD-ARPES measurements and theory/simulation outputs. The experimental data are heavily processed into normalized dichroism and intensity maps before plotting. The simulations are not just qualitative sketches: they are generated from DFT-derived Wannier Hamiltonians, slab models, and photoemission matrix-element calculations, including atomic-centred approximation and interference terms. The paper emphasizes that photon-energy dependence arises from interatomic interference and out-of-plane momentum effects. Supplementary information is important for conventions, symmetry analysis, and additional simulation details, but the excerpt does not enumerate supplementary datasets."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section describes direct ARPES/CD-ARPES measurements on single crystals at a synchrotron beamline, including acquisition conditions and normalization of measured intensities.",
+      "source_data_evidence": "The paper shows processed experimental maps and simulated figure panels, and explicitly mentions 'source data' in the online content pointer, indicating figure-ready data availability.",
+      "data_availability_section_relevant": "“Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information; details of author contributions and competing interests; and statements of data and code availability are available at https://doi.org/10.1038/s41567-024-02655-1.”",
+      "priority_modalities": [
+        "CD-ARPES 2D maps",
+        "ARPES energy-momentum cuts",
+        "Fermi-surface intensity maps",
+        "DFT band structures",
+        "Wannier tight-binding Hamiltonians",
+        "simulated photoemission spectra",
+        "crystal orientation / Laue X-ray alignment data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41567_2024_2655_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2307790,
+      "size_human": "2.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2024_2655_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": ".gitignore_1",
+      "extension": "",
+      "size_bytes": 303,
+      "size_human": "303.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".gitignore_1"
+    },
+    {
+      "filename": "CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 4693,
+      "size_human": "4.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "cmake_minimum_required(VERSION",
+        "3.0)"
+      ],
+      "column_count": 2,
+      "row_count": 154,
+      "dtypes": {
+        "cmake_minimum_required(VERSION": "object",
+        "3.0)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "CMakeLists_1.txt"
+    },
+    {
+      "filename": "ConfigExamples_ConfigCache_gnu_openblas_1.txt",
+      "extension": ".txt",
+      "size_bytes": 926,
+      "size_human": "926.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Build",
+        "type"
+      ],
+      "column_count": 3,
+      "row_count": 24,
+      "dtypes": {
+        "#": "object",
+        "Build": "object",
+        "type": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "ConfigExamples_ConfigCache_gnu_openblas_1.txt"
+    },
+    {
+      "filename": "ConfigExamples_ConfigCache_intel_1.txt",
+      "extension": ".txt",
+      "size_bytes": 900,
+      "size_human": "900.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Build",
+        "type"
+      ],
+      "column_count": 3,
+      "row_count": 23,
+      "dtypes": {
+        "#": "object",
+        "Build": "object",
+        "type": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "ConfigExamples_ConfigCache_intel_1.txt"
+    },
+    {
+      "filename": "data_WS2_nosoc_ws2_11bnd_mlwf_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 4276413,
+      "size_human": "4.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "5Feb2022",
+        "at",
+        "12:01:15"
+      ],
+      "column_count": 5,
+      "row_count": 56355,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "5Feb2022": "float64",
+        "at": "float64",
+        "12:01:15": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WS2_nosoc_ws2_11bnd_mlwf_tb_1.dat"
+    },
+    {
+      "filename": "data_WS2_nosoc_ws2_11bnd_proj_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 4276413,
+      "size_human": "4.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "5Feb2022",
+        "at",
+        "11:55:41"
+      ],
+      "column_count": 5,
+      "row_count": 56355,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "5Feb2022": "float64",
+        "at": "float64",
+        "11:55:41": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WS2_nosoc_ws2_11bnd_proj_tb_1.dat"
+    },
+    {
+      "filename": "data_WS2_soc_orbital_1.dat",
+      "extension": ".dat",
+      "size_bytes": 707003,
+      "size_human": "690.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "1",
+        "1.1",
+        "-75.5447069257401",
+        "-3.933555525452012E-002"
+      ],
+      "column_count": 4,
+      "row_count": 9800,
+      "dtypes": {
+        "1": "int64",
+        "1.1": "int64",
+        "-75.5447069257401": "float64",
+        "-3.933555525452012E-002": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WS2_soc_orbital_1.dat"
+    },
+    {
+      "filename": "data_WS2_soc_ws2_11bnd_mlwf_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 17077971,
+      "size_human": "16.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "5Feb2022",
+        "at",
+        "14:11:04"
+      ],
+      "column_count": 5,
+      "row_count": 222609,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "5Feb2022": "float64",
+        "at": "float64",
+        "14:11:04": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WS2_soc_ws2_11bnd_mlwf_tb_1.dat"
+    },
+    {
+      "filename": "data_WS2_soc_ws2_11bnd_proj_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 17077971,
+      "size_human": "16.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "6Feb2022",
+        "at",
+        "10:26:13"
+      ],
+      "column_count": 5,
+      "row_count": 222609,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "6Feb2022": "float64",
+        "at": "float64",
+        "10:26:13": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WS2_soc_ws2_11bnd_proj_tb_1.dat"
+    },
+    {
+      "filename": "data_WSe2_nosoc_wse2_11bnd_mlwf_sym_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 4276413,
+      "size_human": "4.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "5Sep2021",
+        "at",
+        "00:56:09"
+      ],
+      "column_count": 5,
+      "row_count": 56355,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "5Sep2021": "float64",
+        "at": "float64",
+        "00:56:09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WSe2_nosoc_wse2_11bnd_mlwf_sym_tb_1.dat"
+    },
+    {
+      "filename": "data_WSe2_nosoc_wse2_11bnd_proj_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 4276413,
+      "size_human": "4.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "28Jul2021",
+        "at",
+        "15:48:42"
+      ],
+      "column_count": 5,
+      "row_count": 56355,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "28Jul2021": "float64",
+        "at": "float64",
+        "15:48:42": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WSe2_nosoc_wse2_11bnd_proj_tb_1.dat"
+    },
+    {
+      "filename": "data_WSe2_soc_wse2_soc_11bnd_hr_1.dat",
+      "extension": ".dat",
+      "size_bytes": 5543022,
+      "size_human": "5.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "2Feb2022",
+        "at",
+        "21:49:21"
+      ],
+      "column_count": 5,
+      "row_count": 110854,
+      "dtypes": {
+        "written": "int64",
+        "on": "float64",
+        "2Feb2022": "float64",
+        "at": "float64",
+        "21:49:21": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WSe2_soc_wse2_soc_11bnd_hr_1.dat"
+    },
+    {
+      "filename": "data_WSe2_soc_wse2_soc_11bnd_tb_1.dat",
+      "extension": ".dat",
+      "size_bytes": 17077971,
+      "size_human": "16.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "written",
+        "on",
+        "2Feb2022",
+        "at",
+        "21:49:21"
+      ],
+      "column_count": 5,
+      "row_count": 222609,
+      "dtypes": {
+        "written": "float64",
+        "on": "float64",
+        "2Feb2022": "float64",
+        "at": "float64",
+        "21:49:21": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "data_WSe2_soc_wse2_soc_11bnd_tb_1.dat"
+    },
+    {
+      "filename": "examples_ws2_oam_1.py",
+      "extension": ".py",
+      "size_bytes": 3276,
+      "size_human": "3.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_ws2_oam_1.py"
+    },
+    {
+      "filename": "examples_ws2_oam_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 3267,
+      "size_human": "3.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_ws2_oam_txt_1.py"
+    },
+    {
+      "filename": "examples_wse2_nosoc_bands_1.py",
+      "extension": ".py",
+      "size_bytes": 1936,
+      "size_human": "1.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_wse2_nosoc_bands_1.py"
+    },
+    {
+      "filename": "examples_wse2_nosoc_bands_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 1890,
+      "size_human": "1.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_wse2_nosoc_bands_txt_1.py"
+    },
+    {
+      "filename": "examples_wse2_nosoc_oam_1.py",
+      "extension": ".py",
+      "size_bytes": 2169,
+      "size_human": "2.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_wse2_nosoc_oam_1.py"
+    },
+    {
+      "filename": "examples_wse2_soc_bands_1.py",
+      "extension": ".py",
+      "size_bytes": 1476,
+      "size_human": "1.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_wse2_soc_bands_1.py"
+    },
+    {
+      "filename": "examples_wse2_soc_bands_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 1480,
+      "size_human": "1.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "examples_wse2_soc_bands_txt_1.py"
+    },
+    {
+      "filename": "inp_path_GKMKG_1.dat",
+      "extension": ".dat",
+      "size_bytes": 149,
+      "size_human": "149.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "5"
+      ],
+      "column_count": 1,
+      "row_count": 6,
+      "dtypes": {
+        "5": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "inp_path_GKMKG_1.dat"
+    },
+    {
+      "filename": "inp_path_MKGKM_1.dat",
+      "extension": ".dat",
+      "size_bytes": 148,
+      "size_human": "148.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "5"
+      ],
+      "column_count": 1,
+      "row_count": 6,
+      "dtypes": {
+        "5": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "inp_path_MKGKM_1.dat"
+    },
+    {
+      "filename": "python_utils_PlotBands_1.py",
+      "extension": ".py",
+      "size_bytes": 6669,
+      "size_human": "6.5 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_PlotBands_1.py"
+    },
+    {
+      "filename": "python_utils_SOCInput_1.py",
+      "extension": ".py",
+      "size_bytes": 3293,
+      "size_human": "3.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_SOCInput_1.py"
+    },
+    {
+      "filename": "python_utils_SOCInput_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 3523,
+      "size_human": "3.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_SOCInput_txt_1.py"
+    },
+    {
+      "filename": "python_utils_gen_pulse_1.py",
+      "extension": ".py",
+      "size_bytes": 846,
+      "size_human": "846.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_gen_pulse_1.py"
+    },
+    {
+      "filename": "python_utils_plot_obs_1.py",
+      "extension": ".py",
+      "size_bytes": 1614,
+      "size_human": "1.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_plot_obs_1.py"
+    },
+    {
+      "filename": "python_utils_plot_obs_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 1614,
+      "size_human": "1.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_plot_obs_txt_1.py"
+    },
+    {
+      "filename": "python_utils_read_wann_calc_1.py",
+      "extension": ".py",
+      "size_bytes": 2102,
+      "size_human": "2.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_read_wann_calc_1.py"
+    },
+    {
+      "filename": "python_utils_read_wann_calc_txt_1.py",
+      "extension": ".py",
+      "size_bytes": 2004,
+      "size_human": "2.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_read_wann_calc_txt_1.py"
+    },
+    {
+      "filename": "python_utils_wann_evol_1.py",
+      "extension": ".py",
+      "size_bytes": 3418,
+      "size_human": "3.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_wann_evol_1.py"
+    },
+    {
+      "filename": "python_utils_wannier_orbitals_1.py",
+      "extension": ".py",
+      "size_bytes": 1776,
+      "size_human": "1.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "python_utils_wannier_orbitals_1.py"
+    },
+    {
+      "filename": "scitools_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 931,
+      "size_human": "931.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "set(OBJECT_FILES"
+      ],
+      "column_count": 1,
+      "row_count": 47,
+      "dtypes": {
+        "set(OBJECT_FILES": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "scitools_CMakeLists_1.txt"
+    },
+    {
+      "filename": "scitools_basic_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 435,
+      "size_human": "435.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 26,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "scitools_basic_CMakeLists_1.txt"
+    },
+    {
+      "filename": "scitools_math_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 532,
+      "size_human": "532.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 32,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "scitools_math_CMakeLists_1.txt"
+    },
+    {
+      "filename": "scitools_phys_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 289,
+      "size_human": "289.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 15,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "scitools_phys_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 125,
+      "size_human": "125.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "add_subdirectory(basic)"
+      ],
+      "column_count": 1,
+      "row_count": 4,
+      "dtypes": {
+        "add_subdirectory(basic)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_basic_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 344,
+      "size_human": "344.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 18,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_basic_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_iotools_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 451,
+      "size_human": "451.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 19,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_iotools_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_pes_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 464,
+      "size_human": "464.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 22,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_pes_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_programs_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 1539,
+      "size_human": "1.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 52,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_programs_CMakeLists_1.txt"
+    },
+    {
+      "filename": "src_wannier_CMakeLists_1.txt",
+      "extension": ".txt",
+      "size_bytes": 1401,
+      "size_human": "1.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "include_directories("
+      ],
+      "column_count": 1,
+      "row_count": 49,
+      "dtypes": {
+        "include_directories(": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "src_wannier_CMakeLists_1.txt"
+    }
+  ]
+}

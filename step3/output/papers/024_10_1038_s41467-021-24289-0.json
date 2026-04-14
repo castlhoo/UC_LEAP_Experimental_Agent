@@ -1,0 +1,335 @@
+{
+  "paper_id": "step1_0088",
+  "title": "Observation of a singular Weyl point surrounded by charged nodal walls in PtGa",
+  "doi": "10.1038/s41467-021-24289-0",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3174020714",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-24289-0",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Both files appear to be Nature source-data PDFs associated with the paper's supporting figures and extracted results, consistent with cleaned or figure-linked data rather than raw instrument output.",
+  "type2_summary": "No clear raw/unprocessed instrument-output files were identified in the provided file set.",
+  "type1_files": [
+    "41467_2021_24289_MOESM1_ESM_1.pdf",
+    "41467_2021_24289_MOESM2_ESM_1.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper itself clearly contains both raw experimental measurements and processed/theoretical results, but the provided file set only includes two source-data PDFs. Without direct content extraction from the PDFs, classification relies on the repository/source context and file size, both of which favor Type 1.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2021_24289_MOESM1_ESM_1.pdf",
+      "filename": "41467_2021_24289_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that data supporting the conclusions are available in a public repository and the described source data include figure-specific ARPES spectra, curvature plots, and extracted parameters. This file is a Nature source-data PDF, which is typically organized as figure-ready supporting data rather than raw instrument output.",
+      "file_evidence": "PDF source-data file, moderate size (1.2 MB), likely containing organized figure panels/tables or extracted plots rather than proprietary raw measurement output. The repository source is 'nature_source_data', which strongly suggests curated source data.",
+      "reasoning": "Given the paper's explicit source-data availability and the Nature source-data packaging, this file is most consistent with cleaned, figure-linked data intended for direct inspection or replotting. No evidence suggests it is a raw instrument dump.",
+      "ambiguity": "The internal PDF contents were not directly inspected here, so exact structure is unknown; however, the source-data context strongly favors Type 1.",
+      "key_columns_or_structure": "Not directly inspectable from metadata; likely figure-linked source data or extracted values"
+    },
+    {
+      "relative_path": "41467_2021_24289_MOESM2_ESM_1.pdf",
+      "filename": "41467_2021_24289_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The publication reports processed ARPES/curvature plots, calculated band structures, and extracted Weyl-point information deposited as supporting source data. A second Nature source-data PDF is therefore likely another curated, figure-associated dataset rather than raw measurements.",
+      "file_evidence": "PDF source-data file, small size (141.8 KB), consistent with a compact figure-specific table, schematic, or processed dataset. The 'nature_source_data' source indicates curated supporting material.",
+      "reasoning": "This file is best classified as Type 1 because it is a source-data PDF in a paper that explicitly provides processed/figure-linked supporting data. Its small size also fits a compact replot-ready or documentation-like source-data artifact rather than raw experimental output.",
+      "ambiguity": "The exact contents are not visible from the inspection report, so there is some uncertainty; still, the source-data context and file size favor Type 1.",
+      "key_columns_or_structure": "Not directly inspectable from metadata; likely compact figure-linked data or extracted parameters"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports that PtGa hosts a singular Weyl point at the Brillouin-zone center that is not paired with an opposite-chirality Weyl point, because its Berry curvature is absorbed by symmetry-protected Weyl nodal walls on the Brillouin-zone boundaries. The claim is supported by angle-resolved photoemission spectroscopy (ARPES) and spin-resolved ARPES, together with density functional theory (DFT) and Wannier-based topological analysis, showing no Fermi arc associated with the singular Weyl point and identifying additional accidental Weyl points in the bulk.",
+    "measurement_types": [
+      "ARPES",
+      "spin-resolved ARPES (SARPES)",
+      "single-crystal X-ray diffraction / Laue backscattering",
+      "synchrotron-based photoemission Fermi-surface mapping",
+      "DFT electronic-structure calculations",
+      "Wannier tight-binding / topological Berry-curvature calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of a conventional Weyl semimetal obeying the no-go theorem, with paired Weyl points and surface Fermi arcs connecting opposite-chirality projections.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic of a chiral topological semimetal with high-chirality nodes (RSW and spin-1 Weyl points) and large surface Fermi arcs.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic of the proposed singular Weyl point surrounded by Weyl nodal walls on the Brillouin-zone boundaries, with no surface Fermi arc.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Three-dimensional bulk Brillouin zone of PtGa with high-symmetry points labeled.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Crystal structure / unit cell of PtGa.",
+        "data_type": "structure diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Calculated bulk band structure of PtGa along high-symmetry lines, showing the singular Weyl point at Γ and doubly degenerate nodal-wall crossings on the BZ boundary.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "ARPES Fermi-surface map in the Γ–M–X plane at hv = 605 eV, showing bulk and surface-state features.",
+        "data_type": "image / ARPES map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "ARPES Fermi-surface map in the X–R–M plane at hv = 545 eV, showing bulk and surface-state features.",
+        "data_type": "image / ARPES map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "ARPES Fermi-surface map in the Γ–X–M plane at hv = 605 eV and 12 K.",
+        "data_type": "image / ARPES map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "High-resolution ARPES spectrum along Γ–X near the singular Weyl point.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Curvature-intensity plot corresponding to the Γ–X ARPES cut, highlighting the Weyl point.",
+        "data_type": "processed spectrum / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Calculated band dispersion along X–Γ–X.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "High-resolution ARPES spectrum along Γ–M in the second Brillouin zone.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Curvature-intensity plot corresponding to the Γ–M ARPES cut.",
+        "data_type": "processed spectrum / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Calculated band dispersion along M–Γ–M.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "3D intensity plot of the electronic structure in the Γ–X–M plane, showing the singular Weyl point and Weyl nodal walls on the BZ boundary.",
+        "data_type": "3D intensity image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2i-p",
+        "description": "Alternating ARPES spectra and calculated dispersions along multiple BZ-boundary high-symmetry lines (MX1, MX2, MR, XR), used to verify the nodal walls.",
+        "data_type": "spectra and band-structure plots",
+        "likely_source": "mixed experimental data and theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "3D band structure along the R–M–X plane showing Fermi-surface pockets near M with nonzero Chern number.",
+        "data_type": "band structure / FS image",
+        "likely_source": "mixed experimental data and theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "3D band structure along the Γ–X–M plane showing Fermi-surface pockets near M with nonzero Chern number.",
+        "data_type": "band structure / FS image",
+        "likely_source": "mixed experimental data and theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Spin-integrated ARPES band structure along Γ–M near the singular Weyl point, with MDC/EDC cut positions marked.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Calculated Berry-curvature field on the Fermi-surface pockets formed by bands N−3 and N−2, shown in x/y/z components.",
+        "data_type": "vector-field / surface map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3e-g",
+        "description": "Spin-resolved MDC spectra projected onto X, Y, and Z spin components.",
+        "data_type": "spin-resolved spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3h-j",
+        "description": "Spin-resolved EDC spectra projected onto X, Y, and Z spin components.",
+        "data_type": "spin-resolved spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Schematic of one symmetry-related group of accidental Weyl points in momentum space, including WP0 at Γ and generic-k WP1/WP2 points.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Symmetry-generated full set of Weyl points in the Brillouin zone.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Projections of the Weyl points along crystallographic directions, indicating which points lie in or out of the Γ–X–M plane.",
+        "data_type": "schematic / projection map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Symmetrized ARPES spectrum along cut1 across two WP1 points.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Curvature-intensity plot for the symmetrized cut1 ARPES spectrum.",
+        "data_type": "processed spectrum / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "Calculated band structure along cut1.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "Raw ARPES spectrum along cut1 across two WP1 points.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4h",
+        "description": "Curvature-intensity plot for the raw cut1 ARPES spectrum.",
+        "data_type": "processed spectrum / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4i",
+        "description": "In-plane Berry-curvature field in the kz = 0 plane with projected Weyl points and nodal-wall charge distribution overlaid.",
+        "data_type": "vector-field / map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4j",
+        "description": "ARPES spectrum along cut2 across two WP2 points.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4k",
+        "description": "Curvature-intensity plot for the cut2 ARPES spectrum.",
+        "data_type": "processed spectrum / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4l",
+        "description": "ARPES spectrum along cut2 in the second Brillouin zone.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4m",
+        "description": "Calculated band structure along cut2.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include synchrotron ARPES and spin-resolved ARPES spectra/maps collected on PtGa single crystals at multiple photon energies (e.g. 545, 605, 620, and 95 eV), along with temperature-dependent measurements at 10–20 K. The paper also mentions crystal-quality checks by Laue backscattering and single-crystal X-ray diffraction.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'Data that support the conclusions of this study are available in a public repository (MARVEL Materials Cloud Archive) with the same title of this paper (https://archive.materialscloud.org).' No explicit statement about code or scripts being deposited is given in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "The paper does not specify file formats, but the underlying raw data are experimental ARPES and spin-resolved ARPES measurements from synchrotron beamlines, plus crystal characterization data. The repository is said to contain data supporting the conclusions, but the text does not explicitly distinguish which files are raw detector outputs versus exported spectra.",
+      "processed_data_description": "Processed data clearly include curvature-intensity plots, symmetrized spectra, extracted Fermi-surface maps, Berry-curvature fields, and calculated band dispersions/topological quantities (e.g. Weyl-point locations and chiral charges). The paper also lists Weyl-point coordinates, energies, and chiralities in Supplementary Table 1.",
+      "figure_data_description": "Figure-specific data are implied to be available through the public repository because the paper says all supporting data are in the Materials Cloud Archive. The text does not explicitly say 'source data' files are provided per figure, but the figures are built from ARPES maps, spin-resolved spectra, and DFT outputs that are likely included as figure-ready datasets.",
+      "scripts_description": "Analysis scripts are mentioned only indirectly through software used for calculations: VASP, Wannier90, and WannierTools. The paper does not state that custom analysis scripts or notebooks are deposited.",
+      "notes": "The dataset is mixed-modal: experimental photoemission data, processed spectral images, and theoretical/computational outputs. The paper strongly distinguishes raw ARPES/SARPES measurements from processed curvature plots and from DFT/Wannier-derived band structures and Berry-curvature/topological analyses. Supplementary materials are important because they contain additional figures and the table of 37 Weyl points."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section explicitly reports ARPES and SARPES measurements at several beamlines, with specified photon energies, resolutions, temperatures, and sample preparation, indicating primary raw experimental measurements exist.",
+      "source_data_evidence": "The paper states that data supporting the conclusions are available in a public repository, and the main text/figures include processed curvature plots, symmetrized spectra, calculated band structures, Berry-curvature maps, and Supplementary Table 1 with extracted Weyl-point parameters.",
+      "data_availability_section_relevant": "‘Data that support the conclusions of this study are available in a public repository (MARVEL Materials Cloud Archive) with the same title of this paper (https://archive.materialscloud.org).’ Also relevant: ‘The location of WPs and the calculation of their chirality have been performed using ... WannierTools ... based on the Wannier tight-binding model constructed using the Wannier90 code.’",
+      "priority_modalities": [
+        "ARPES spectra",
+        "spin-resolved ARPES spectra",
+        "Fermi-surface maps",
+        "curvature-intensity plots",
+        "DFT band structures",
+        "Berry-curvature maps",
+        "Weyl-point coordinate tables",
+        "single-crystal X-ray / Laue characterization"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2021_24289_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1237458,
+      "size_human": "1.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_24289_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2021_24289_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 145190,
+      "size_human": "141.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_24289_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

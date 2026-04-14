@@ -1,0 +1,109 @@
+{
+  "paper_id": "step1_0450",
+  "title": "Quantitative scanning thermal microscopy studies of the influence of interfaces and heat transport anisotropy in 2D materials",
+  "doi": "10.22443/rms.mmc2023.379",
+  "journal": "Proceedings of the Microscience Microscopy Congress 2023 incorporating EMAG 2023",
+  "year": 2023,
+  "paper_url": "https://doi.org/10.22443/rms.mmc2023.379",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_22443_rms_mmc2023_379",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready cleaned data files were provided in the inspected file list.",
+  "type2_summary": "No raw measurement files were provided in the inspected file list.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper itself reports quantitative HV-SThM measurements and extracted thermal parameters, but the provided file inventory contains no actual data tables, source data, or raw instrument outputs. Therefore no Type 1 or Type 2 dataset file can be identified from the available files.",
+  "file_classifications": [
+    {
+      "relative_path": "218-Article_Text-419-1-10-20260203_1.pdf",
+      "filename": "218-Article_Text-419-1-10-20260203_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper text describes the study and figures, but no explicit data repository, source-data package, or downloadable dataset is mentioned in the provided publication summary.",
+      "file_evidence": "Single PDF article text file from Zenodo, 320.4 KB, which is consistent with a paper/manuscript document rather than a data table or raw measurement file.",
+      "reasoning": "This file is the article itself, not a dataset file containing measurements. It serves as documentation for the study and provides context for the experimental methods and results, but it is not replot-ready data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "N/A"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies heat transport in 2D materials using quantitative high-vacuum scanning thermal microscopy (HV-SThM), focusing on anisotropic graphene, γ-InSe, and perovskite flakes on Si and SiO2 substrates. The main findings reported are that interface thermal resistance affects heat transport only up to a certain limit, after which it becomes negligible, and that the method can resolve nanoscale variations in thermal properties and quantify anisotropic thermal conductivities and interfacial thermal resistivity.",
+    "measurement_types": [
+      "High-vacuum scanning thermal microscopy (HV-SThM)",
+      "Topographic feedback / AFM-like surface topography",
+      "Thermal transport mapping",
+      "Quantitative thermal conductivity extraction",
+      "Interfacial thermal resistivity estimation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the HV-SThM setup showing the probe, sample, laser/topographic feedback, photodiode, Wheatstone bridge, and variable resistance used to measure probe temperature changes during scanning.",
+        "data_type": "schematic",
+        "likely_source": "experimental setup illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Fabrication workflow for preparing substrates and 2D flakes, including exfoliation and BEXP, solvent treatment, Ar ions, Ar/O2 plasma, and formation of wedged flakes.",
+        "data_type": "process diagram",
+        "likely_source": "experimental workflow"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Summary of materials and extracted thermal parameters, listing interfacial thermal resistance (rint) and thermal conductivities kxy and kz for γ-InSe/Si and perovskite/SiO2.",
+        "data_type": "table",
+        "likely_source": "experimental data analysis"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The raw measurements are HV-SThM scans collected under high vacuum at room temperature while moving a resistively heated probe across the sample surface. The paper indicates that the probe temperature changes with probe-sample heat flow and that quantitative maps of sample heat transport are obtained from these scans.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, downloadable dataset, or code availability statement is present in the provided text.",
+      "data_provided_types": [
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are not explicitly described as files or formats. The paper only states that HV-SThM measurements were performed and that the probe was scanned across the sample surface to obtain thermal maps.",
+      "processed_data_description": "Processed data appear as extracted quantitative values of interfacial thermal resistance and anisotropic thermal conductivities summarized in a table for specific material/substrate systems.",
+      "figure_data_description": "Figure-level data are partially present only as a summarized table of extracted parameters; no explicit source-data files or per-figure downloadable datasets are mentioned.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned.",
+      "notes": "The text is a short conference-style paper with schematic figures and a results table rather than a full data paper. The dataset semantics are therefore limited: the main experimental output is spatially resolved thermal maps from HV-SThM, but only derived quantitative parameters are explicitly shown in the provided text. No supplementary data, raw scan files, or repository information is given.",
+      "classification_prior": {
+        "raw_data_expected": true,
+        "source_data_expected": true,
+        "raw_data_evidence": "The paper describes direct HV-SThM measurements: the probe is scanned across the sample surface and Vout changes with probe-sample heat flow, producing quantitative maps of heat transport.",
+        "source_data_evidence": "A table reports extracted values of rint, kxy, and kz for specific samples, indicating processed/figure-ready quantitative data.",
+        "data_availability_section_relevant": "No explicit data availability statement is included in the provided text.",
+        "priority_modalities": [
+          "HV-SThM thermal maps",
+          "topography scans",
+          "probe voltage/temperature readout",
+          "extracted thermal conductivity values",
+          "interfacial thermal resistivity values"
+        ]
+      }
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "218-Article_Text-419-1-10-20260203_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 328108,
+      "size_human": "320.4 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "218-Article_Text-419-1-10-20260203_1.pdf"
+    }
+  ]
+}

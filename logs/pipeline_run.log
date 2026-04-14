@@ -1,0 +1,589 @@
+2026-04-13 16:44:02,055 [INFO] __main__: Skipping steps before Step 4
+2026-04-13 16:44:02,059 [INFO] __main__: Skipping Step 1
+2026-04-13 16:44:02,059 [INFO] __main__: Skipping Step 2
+2026-04-13 16:44:02,059 [INFO] __main__: Skipping Step 3
+2026-04-13 16:44:02,059 [INFO] __main__: Skipping Step 3.5
+2026-04-13 16:44:02,060 [INFO] __main__: ========================================================================
+2026-04-13 16:44:02,060 [INFO] __main__: Running Step 4
+2026-04-13 16:44:02,060 [INFO] __main__: ========================================================================
+2026-04-13 16:44:02,060 [INFO] step4.run_step4: ============================================================
+2026-04-13 16:44:02,060 [INFO] step4.run_step4: Starting Step 4: Local Storage & Organization
+2026-04-13 16:44:02,060 [INFO] step4.run_step4: ============================================================
+2026-04-13 16:44:02,063 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:02,063 [INFO] step4.pipeline: Phase 1: Loading Step 3 classification results...
+2026-04-13 16:44:02,137 [INFO] step4.pipeline:   Total papers: 204
+2026-04-13 16:44:02,137 [INFO] step4.pipeline:   Both Type 1+2: 5
+2026-04-13 16:44:02,137 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:02,137 [INFO] step4.pipeline: Phase 2: Selecting papers to organize...
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:   Selected 47 papers (mode=has_any)
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:     [ 10.0] Direct observation of altermagnetic band splitting in C
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:     [ 10.0] Fractional Chern insulators in magic-angle twisted bila
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:     [  9.8] Heterodimensional superlattice with in-plane anomalous 
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:     [  4.5] Interchange reconnection as the source of the fast sola
+2026-04-13 16:44:02,138 [INFO] step4.pipeline:     [  4.3] Aerosol responses to precipitation along North American
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [ 10.0] Octupole-driven magnetoresistance in an antiferromagnet
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [  9.8] Symmetry-broken Josephson junctions and superconducting
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [  9.6] Time-domain observation of ballistic orbital-angular-mo
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [  9.5] Non-reciprocal topological solitons in active metamater
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [  9.3] Unveiling Weyl-related optical responses in semiconduct
+2026-04-13 16:44:02,139 [INFO] step4.pipeline:     [  9.0] Cooling low-dimensional electron systems into the micro
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  9.0] Delayed fluorescence from inverted singlet and triplet 
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  9.0] Topology stabilized fluctuations in a magnetic nodal se
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  8.4] Landau quantization and highly mobile fermions in an in
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  8.0] Fermi Surface Mapping and the Nature of Charge-Density-
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  8.0] Synthesis of a semimetallic Weyl ferromagnet with point
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  7.7] Giant spontaneous Hall effect in a nonmagnetic Weyl–Kon
+2026-04-13 16:44:02,140 [INFO] step4.pipeline:     [  7.6] Synthesis of goldene comprising single-atom layer gold
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.5] Three-dimensional mapping of the altermagnetic spin spl
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.3] Phonon promoted charge density wave in topological kago
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.0] Topological features in the ferromagnetic Weyl semimeta
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.0] Enhanced fusogenicity and pathogenicity of SARS-CoV-2 D
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.0] Interfacial chemical bond and internal electric field m
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  7.0] Observation of a singular Weyl point surrounded by char
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  6.8] Highly efficient ethylene production via electrocatalyt
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  6.0] Magnetotransport evidence for the nontrivial topologica
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  6.0] Spatially mapping thermal transport in graphene by an o
+2026-04-13 16:44:02,142 [INFO] step4.pipeline:     [  6.0] Terahertz and multi-terahertz spectroscopy of light-dri
+2026-04-13 16:44:02,143 [INFO] step4.pipeline:     [  5.0] First Sagittarius A* Event Horizon Telescope Results. I
+2026-04-13 16:44:02,143 [INFO] step4.pipeline:     [  5.0] 
+2026-04-13 16:44:02,143 [INFO] step4.pipeline:     [  4.6] Proteomic and transcriptomic profiling reveal different
+2026-04-13 16:44:02,143 [INFO] step4.pipeline:     [  4.0] A Fermi surface descriptor quantifying the correlations
+2026-04-13 16:44:02,143 [INFO] step4.pipeline:     [  4.0] Pressure-induced transition from a Mott insulator to a 
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [ 10.0] CMOS-based cryogenic control of silicon quantum circuit
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [ 10.0] Electron ptychography achieves atomic-resolution limits
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [ 10.0] Switchable chiral transport in charge-ordered kagome me
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [  9.0] Extreme magnetoresistance at high-mobility oxide hetero
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [  9.0] Weyl spin-momentum locking in a chiral topological semi
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [  8.8] Highly Efficient and Stable Dion−Jacobson Perovskite So
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [  8.0] Pick-and-Place Transfer of Arbitrary-Metal Electrodes f
+2026-04-13 16:44:02,144 [INFO] step4.pipeline:     [  7.0] Data repository accompanying "Flux-tunable Josephson Ef
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  7.0] Multidimensional XUV Photoemission Spectroscopy of 1T-T
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  7.0] A unifying mechanism for cation effect modulating C1 an
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  7.0] From Stoner to local moment magnetism in atomically thi
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  6.0] Dataset for visualizing the atomic-scale origin of meta
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  6.0] Detection of magnetic monopole in image potential state
+2026-04-13 16:44:02,145 [INFO] step4.pipeline:     [  6.0] Epitaxial Growth of the Bi<sub><i>y</i></sub>Sb<sub>2–<
+2026-04-13 16:44:02,148 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:02,149 [INFO] step4.pipeline: Paper 1/47: Direct observation of altermagnetic band splitting in C
+2026-04-13 16:44:02,149 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-46476-5
+2026-04-13 16:44:02,149 [INFO] step4.pipeline:   Type: Both
+2026-04-13 16:44:02,149 [INFO] step4.pipeline:   Dir: Both/001_Direct_observation_of_altermagnetic_band
+2026-04-13 16:44:02,149 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:05,285 [INFO] step4.pdf_downloader:     PDF downloaded (2998KB) via publisher
+2026-04-13 16:44:05,285 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:05,303 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:44:05,303 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:44:05,303 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:44:05,306 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:05,306 [INFO] step4.pipeline: Paper 2/47: Fractional Chern insulators in magic-angle twisted bila
+2026-04-13 16:44:05,306 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-04002-3
+2026-04-13 16:44:05,306 [INFO] step4.pipeline:   Type: Both
+2026-04-13 16:44:05,307 [INFO] step4.pipeline:   Dir: Both/002_Fractional_Chern_insulators_in_magicangle
+2026-04-13 16:44:05,307 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:10,392 [INFO] step4.pdf_downloader:     PDF downloaded (4567KB) via publisher
+2026-04-13 16:44:10,394 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:10,433 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:44:10,433 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-13 16:44:10,434 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:10,434 [INFO] step4.pipeline: Paper 3/47: Heterodimensional superlattice with in-plane anomalous 
+2026-04-13 16:44:10,434 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-05031-2
+2026-04-13 16:44:10,434 [INFO] step4.pipeline:   Type: Both
+2026-04-13 16:44:10,434 [INFO] step4.pipeline:   Dir: Both/003_Heterodimensional_superlattice_with_inplane_anomalous
+2026-04-13 16:44:10,438 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:20,970 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:44:20,970 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:20,982 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:44:20,982 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:44:20,982 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:44:20,982 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:20,982 [INFO] step4.pipeline: Paper 4/47: Interchange reconnection as the source of the fast sola
+2026-04-13 16:44:20,988 [INFO] step4.pipeline:   DOI: 10.1038/s41586-023-05955-3
+2026-04-13 16:44:20,988 [INFO] step4.pipeline:   Type: Both
+2026-04-13 16:44:20,988 [INFO] step4.pipeline:   Dir: Both/004_Interchange_reconnection_as_the_source
+2026-04-13 16:44:20,988 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:25,761 [INFO] step4.pdf_downloader:     PDF downloaded (3753KB) via publisher
+2026-04-13 16:44:25,762 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:25,947 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:44:25,947 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:44:25,949 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:25,949 [INFO] step4.pipeline: Paper 5/47: Aerosol responses to precipitation along North American
+2026-04-13 16:44:25,950 [INFO] step4.pipeline:   DOI: 10.5194/acp-21-16121-2021
+2026-04-13 16:44:25,950 [INFO] step4.pipeline:   Type: Both
+2026-04-13 16:44:25,950 [INFO] step4.pipeline:   Dir: Both/005_Aerosol_responses_to_precipitation_along
+2026-04-13 16:44:25,950 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:31,174 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:44:31,174 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:31,190 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:44:31,191 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:44:31,192 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:31,192 [INFO] step4.pipeline: Paper 6/47: Octupole-driven magnetoresistance in an antiferromagnet
+2026-04-13 16:44:31,192 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-05463-w
+2026-04-13 16:44:31,192 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:31,192 [INFO] step4.pipeline:   Dir: Type1/006_Octupoledriven_magnetoresistance_in_an_antiferromagnetic
+2026-04-13 16:44:31,192 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:34,530 [INFO] step4.pdf_downloader:     PDF downloaded (11339KB) via publisher
+2026-04-13 16:44:34,530 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:34,530 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:44:34,546 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:34,546 [INFO] step4.pipeline: Paper 7/47: Symmetry-broken Josephson junctions and superconducting
+2026-04-13 16:44:34,546 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-38005-7
+2026-04-13 16:44:34,547 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:34,547 [INFO] step4.pipeline:   Dir: Type1/007_Symmetrybroken_Josephson_junctions_and_superconducting
+2026-04-13 16:44:34,547 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:39,024 [INFO] step4.pdf_downloader:     PDF downloaded (1372KB) via publisher
+2026-04-13 16:44:39,024 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:39,039 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:44:39,039 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:39,042 [INFO] step4.pipeline: Paper 8/47: Time-domain observation of ballistic orbital-angular-mo
+2026-04-13 16:44:39,042 [INFO] step4.pipeline:   DOI: 10.1038/s41565-023-01470-8
+2026-04-13 16:44:39,042 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:39,042 [INFO] step4.pipeline:   Dir: Type1/008_Timedomain_observation_of_ballistic_orbitalangularmomentum
+2026-04-13 16:44:39,042 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:43,860 [INFO] step4.pdf_downloader:     PDF downloaded (2140KB) via publisher
+2026-04-13 16:44:43,860 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:43,900 [INFO] step4.file_organizer:     type1_data: 9 files
+2026-04-13 16:44:43,900 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:43,900 [INFO] step4.pipeline: Paper 9/47: Non-reciprocal topological solitons in active metamater
+2026-04-13 16:44:43,900 [INFO] step4.pipeline:   DOI: 10.1038/s41586-024-07097-6
+2026-04-13 16:44:43,900 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:43,900 [INFO] step4.pipeline:   Dir: Type1/009_Nonreciprocal_topological_solitons_in_active
+2026-04-13 16:44:43,900 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:53,425 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:44:53,425 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:53,441 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:44:53,443 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:53,443 [INFO] step4.pipeline: Paper 10/47: Unveiling Weyl-related optical responses in semiconduct
+2026-04-13 16:44:53,443 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-33190-3
+2026-04-13 16:44:53,443 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:53,443 [INFO] step4.pipeline:   Dir: Type1/010_Unveiling_Weylrelated_optical_responses_in
+2026-04-13 16:44:53,446 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:56,430 [INFO] step4.pdf_downloader:     PDF downloaded (1696KB) via publisher
+2026-04-13 16:44:56,446 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:56,463 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:44:56,463 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:44:56,463 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:56,463 [INFO] step4.pipeline: Paper 11/47: Cooling low-dimensional electron systems into the micro
+2026-04-13 16:44:56,463 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-28222-x
+2026-04-13 16:44:56,463 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:56,463 [INFO] step4.pipeline:   Dir: Type1/011_Cooling_lowdimensional_electron_systems_into
+2026-04-13 16:44:56,463 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:44:59,347 [INFO] step4.pdf_downloader:     PDF downloaded (1720KB) via publisher
+2026-04-13 16:44:59,347 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:44:59,367 [INFO] step4.file_organizer:     type1_data: 7 files
+2026-04-13 16:44:59,367 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:44:59,367 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:44:59,367 [INFO] step4.pipeline: Paper 12/47: Delayed fluorescence from inverted singlet and triplet 
+2026-04-13 16:44:59,367 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-05132-y
+2026-04-13 16:44:59,367 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:44:59,367 [INFO] step4.pipeline:   Dir: Type1/012_Delayed_fluorescence_from_inverted_singlet
+2026-04-13 16:44:59,367 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:02,565 [INFO] step4.pdf_downloader:     PDF downloaded (6872KB) via publisher
+2026-04-13 16:45:02,573 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:02,586 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:45:02,586 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:02,586 [INFO] step4.pipeline: Paper 13/47: Topology stabilized fluctuations in a magnetic nodal se
+2026-04-13 16:45:02,586 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-40765-1
+2026-04-13 16:45:02,586 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:02,586 [INFO] step4.pipeline:   Dir: Type1/013_Topology_stabilized_fluctuations_in_a
+2026-04-13 16:45:02,586 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:06,019 [INFO] step4.pdf_downloader:     PDF downloaded (9276KB) via publisher
+2026-04-13 16:45:06,020 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:06,047 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:45:06,047 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:45:06,047 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:06,047 [INFO] step4.pipeline: Paper 14/47: Landau quantization and highly mobile fermions in an in
+2026-04-13 16:45:06,047 [INFO] step4.pipeline:   DOI: 10.1038/s41586-020-03084-9
+2026-04-13 16:45:06,047 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:06,047 [INFO] step4.pipeline:   Dir: Type1/014_Landau_quantization_and_highly_mobile
+2026-04-13 16:45:06,047 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:15,426 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:45:15,426 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:15,426 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:45:15,441 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:15,441 [INFO] step4.pipeline: Paper 15/47: Fermi Surface Mapping and the Nature of Charge-Density-
+2026-04-13 16:45:15,441 [INFO] step4.pipeline:   DOI: 10.1103/physrevx.11.041030
+2026-04-13 16:45:15,441 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:15,441 [INFO] step4.pipeline:   Dir: Type1/015_Fermi_Surface_Mapping_and_the
+2026-04-13 16:45:15,441 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:22,955 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:45:22,955 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:22,962 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:45:22,962 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:45:22,962 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:22,962 [INFO] step4.pipeline: Paper 16/47: Synthesis of a semimetallic Weyl ferromagnet with point
+2026-04-13 16:45:22,962 [INFO] step4.pipeline:   DOI: 10.1038/s41586-024-08330-y
+2026-04-13 16:45:22,962 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:22,962 [INFO] step4.pipeline:   Dir: Type1/016_Synthesis_of_a_semimetallic_Weyl
+2026-04-13 16:45:22,962 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:32,200 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:45:32,200 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:32,249 [INFO] step4.file_organizer:     type1_data: 10 files
+2026-04-13 16:45:32,249 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:32,249 [INFO] step4.pipeline: Paper 17/47: Giant spontaneous Hall effect in a nonmagnetic Weyl–Kon
+2026-04-13 16:45:32,249 [INFO] step4.pipeline:   DOI: 10.1073/pnas.2013386118
+2026-04-13 16:45:32,249 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:32,249 [INFO] step4.pipeline:   Dir: Type1/017_Giant_spontaneous_Hall_effect_in
+2026-04-13 16:45:32,249 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:37,148 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:45:37,155 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:37,181 [INFO] step4.file_organizer:     type1_data: 5 files
+2026-04-13 16:45:37,181 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:45:37,181 [INFO] step4.file_organizer:     scripts: 12 files
+2026-04-13 16:45:37,181 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:37,181 [INFO] step4.pipeline: Paper 18/47: Synthesis of goldene comprising single-atom layer gold
+2026-04-13 16:45:37,196 [INFO] step4.pipeline:   DOI: 10.1038/s44160-024-00518-4
+2026-04-13 16:45:37,196 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:37,196 [INFO] step4.pipeline:   Dir: Type1/018_Synthesis_of_goldene_comprising_singleatom
+2026-04-13 16:45:37,196 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:40,300 [INFO] step4.pdf_downloader:     PDF downloaded (1774KB) via publisher
+2026-04-13 16:45:40,300 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:40,316 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:45:40,316 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:45:40,316 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:40,316 [INFO] step4.pipeline: Paper 19/47: Three-dimensional mapping of the altermagnetic spin spl
+2026-04-13 16:45:40,316 [INFO] step4.pipeline:   DOI: 10.1038/s41467-025-56647-7
+2026-04-13 16:45:40,316 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:40,316 [INFO] step4.pipeline:   Dir: Type1/019_Threedimensional_mapping_of_the_altermagnetic
+2026-04-13 16:45:40,316 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:43,308 [INFO] step4.pdf_downloader:     PDF downloaded (2654KB) via publisher
+2026-04-13 16:45:43,308 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:43,324 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:45:43,326 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:43,326 [INFO] step4.pipeline: Paper 20/47: Phonon promoted charge density wave in topological kago
+2026-04-13 16:45:43,326 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-45859-y
+2026-04-13 16:45:43,326 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:43,326 [INFO] step4.pipeline:   Dir: Type1/020_Phonon_promoted_charge_density_wave
+2026-04-13 16:45:43,326 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:46,410 [INFO] step4.pdf_downloader:     PDF downloaded (5983KB) via publisher
+2026-04-13 16:45:46,410 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:46,424 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:45:46,425 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:46,425 [INFO] step4.pipeline: Paper 21/47: Topological features in the ferromagnetic Weyl semimeta
+2026-04-13 16:45:46,425 [INFO] step4.pipeline:   DOI: 10.1103/physrevresearch.5.013068
+2026-04-13 16:45:46,425 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:46,425 [INFO] step4.pipeline:   Dir: Type1/021_Topological_features_in_the_ferromagnetic
+2026-04-13 16:45:46,425 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:53,665 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:45:53,665 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:53,698 [INFO] step4.file_organizer:     type1_data: 12 files
+2026-04-13 16:45:53,698 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:53,698 [INFO] step4.pipeline: Paper 22/47: Enhanced fusogenicity and pathogenicity of SARS-CoV-2 D
+2026-04-13 16:45:53,698 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-04266-9
+2026-04-13 16:45:53,698 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:53,698 [INFO] step4.pipeline:   Dir: Type1/022_Enhanced_fusogenicity_and_pathogenicity_of
+2026-04-13 16:45:53,698 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:57,200 [INFO] step4.pdf_downloader:     PDF downloaded (10664KB) via publisher
+2026-04-13 16:45:57,205 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:57,220 [INFO] step4.file_organizer:     type1_data: 6 files
+2026-04-13 16:45:57,221 [INFO] step4.file_organizer:     annotations: 3 files
+2026-04-13 16:45:57,223 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:57,223 [INFO] step4.pipeline: Paper 23/47: Interfacial chemical bond and internal electric field m
+2026-04-13 16:45:57,223 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-24511-z
+2026-04-13 16:45:57,223 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:57,224 [INFO] step4.pipeline:   Dir: Type1/023_Interfacial_chemical_bond_and_internal
+2026-04-13 16:45:57,224 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:45:59,663 [INFO] step4.pdf_downloader:     PDF downloaded (4080KB) via publisher
+2026-04-13 16:45:59,663 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:45:59,669 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:45:59,672 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:45:59,672 [INFO] step4.pipeline: Paper 24/47: Observation of a singular Weyl point surrounded by char
+2026-04-13 16:45:59,672 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-24289-0
+2026-04-13 16:45:59,672 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:45:59,672 [INFO] step4.pipeline:   Dir: Type1/024_Observation_of_a_singular_Weyl
+2026-04-13 16:45:59,672 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:02,237 [INFO] step4.pdf_downloader:     PDF downloaded (4852KB) via publisher
+2026-04-13 16:46:02,237 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:02,244 [INFO] step4.file_organizer:     type1_data: 2 files
+2026-04-13 16:46:02,244 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:02,253 [INFO] step4.pipeline: Paper 25/47: Highly efficient ethylene production via electrocatalyt
+2026-04-13 16:46:02,253 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-27372-8
+2026-04-13 16:46:02,253 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:02,254 [INFO] step4.pipeline:   Dir: Type1/025_Highly_efficient_ethylene_production_via
+2026-04-13 16:46:02,254 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:04,829 [INFO] step4.pdf_downloader:     PDF downloaded (2115KB) via publisher
+2026-04-13 16:46:04,830 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:04,841 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:46:04,842 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:46:04,843 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:04,843 [INFO] step4.pipeline: Paper 26/47: Magnetotransport evidence for the nontrivial topologica
+2026-04-13 16:46:04,843 [INFO] step4.pipeline:   DOI: 10.1016/j.jallcom.2021.159993
+2026-04-13 16:46:04,843 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:04,843 [INFO] step4.pipeline:   Dir: Type1/026_Magnetotransport_evidence_for_the_nontrivial
+2026-04-13 16:46:04,843 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:08,263 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:08,264 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:08,288 [INFO] step4.file_organizer:     type1_data: 10 files
+2026-04-13 16:46:08,288 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:46:08,298 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:08,298 [INFO] step4.pipeline: Paper 27/47: Spatially mapping thermal transport in graphene by an o
+2026-04-13 16:46:08,299 [INFO] step4.pipeline:   DOI: 10.1038/s41699-021-00277-2
+2026-04-13 16:46:08,299 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:08,299 [INFO] step4.pipeline:   Dir: Type1/027_Spatially_mapping_thermal_transport_in
+2026-04-13 16:46:08,299 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:11,060 [INFO] step4.pdf_downloader:     PDF downloaded (1546KB) via publisher
+2026-04-13 16:46:11,067 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:11,088 [INFO] step4.file_organizer:     type1_data: 9 files
+2026-04-13 16:46:11,088 [INFO] step4.file_organizer:     annotations: 3 files
+2026-04-13 16:46:11,090 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:11,090 [INFO] step4.pipeline: Paper 28/47: Terahertz and multi-terahertz spectroscopy of light-dri
+2026-04-13 16:46:11,090 [INFO] step4.pipeline:   DOI: 10.1109/irmmw-thz57677.2023.10299298
+2026-04-13 16:46:11,090 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:11,090 [INFO] step4.pipeline:   Dir: Type1/028_Terahertz_and_multiterahertz_spectroscopy_of
+2026-04-13 16:46:11,090 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:14,379 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:14,380 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:14,405 [INFO] step4.file_organizer:     type1_data: 12 files
+2026-04-13 16:46:14,411 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:14,411 [INFO] step4.pipeline: Paper 29/47: First Sagittarius A* Event Horizon Telescope Results. I
+2026-04-13 16:46:14,411 [INFO] step4.pipeline:   DOI: 10.3847/2041-8213/ac6674
+2026-04-13 16:46:14,412 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:14,412 [INFO] step4.pipeline:   Dir: Type1/029_First_Sagittarius_A_Event_Horizon
+2026-04-13 16:46:14,412 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:20,998 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:20,998 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:21,032 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:46:21,032 [INFO] step4.file_organizer:     annotations: 4 files
+2026-04-13 16:46:21,032 [INFO] step4.file_organizer:     scripts: 4 files
+2026-04-13 16:46:21,032 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:21,032 [INFO] step4.pipeline: Paper 30/47: 
+2026-04-13 16:46:21,032 [INFO] step4.pipeline:   DOI: 10.1038/s41467-021-25780-4
+2026-04-13 16:46:21,032 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:21,032 [INFO] step4.pipeline:   Dir: Type1/030_
+2026-04-13 16:46:21,032 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:23,566 [INFO] step4.pdf_downloader:     PDF downloaded (2066KB) via publisher
+2026-04-13 16:46:23,567 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:23,589 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:46:23,592 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:23,592 [INFO] step4.pipeline: Paper 31/47: Proteomic and transcriptomic profiling reveal different
+2026-04-13 16:46:23,592 [INFO] step4.pipeline:   DOI: 10.7554/elife.62585
+2026-04-13 16:46:23,592 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:23,592 [INFO] step4.pipeline:   Dir: Type1/031_Proteomic_and_transcriptomic_profiling_reveal
+2026-04-13 16:46:23,592 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:27,264 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:27,264 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:27,275 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:46:27,276 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:46:27,276 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:27,276 [INFO] step4.pipeline: Paper 32/47: A Fermi surface descriptor quantifying the correlations
+2026-04-13 16:46:27,276 [INFO] step4.pipeline:   DOI: 10.21468/scipostphyscore.8.4.085
+2026-04-13 16:46:27,278 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:27,278 [INFO] step4.pipeline:   Dir: Type1/032_A_Fermi_surface_descriptor_quantifying
+2026-04-13 16:46:27,278 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:31,085 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:31,085 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:31,094 [INFO] step4.file_organizer:     type1_data: 3 files
+2026-04-13 16:46:31,095 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:31,096 [INFO] step4.pipeline: Paper 33/47: Pressure-induced transition from a Mott insulator to a 
+2026-04-13 16:46:31,096 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-37971-2
+2026-04-13 16:46:31,097 [INFO] step4.pipeline:   Type: Type1
+2026-04-13 16:46:31,097 [INFO] step4.pipeline:   Dir: Type1/033_Pressureinduced_transition_from_a_Mott
+2026-04-13 16:46:31,097 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:35,010 [INFO] step4.pdf_downloader:     PDF downloaded (1337KB) via publisher
+2026-04-13 16:46:35,010 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:35,020 [INFO] step4.file_organizer:     type1_data: 1 files
+2026-04-13 16:46:35,024 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:35,024 [INFO] step4.pipeline: Paper 34/47: CMOS-based cryogenic control of silicon quantum circuit
+2026-04-13 16:46:35,025 [INFO] step4.pipeline:   DOI: 10.1038/s41586-021-03469-4
+2026-04-13 16:46:35,025 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:35,025 [INFO] step4.pipeline:   Dir: Type2/034_CMOSbased_cryogenic_control_of_silicon
+2026-04-13 16:46:35,025 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:44,496 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:44,496 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:44,515 [INFO] step4.file_organizer:     type2_data: 4 files
+2026-04-13 16:46:44,515 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:46:44,516 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:44,517 [INFO] step4.pipeline: Paper 35/47: Electron ptychography achieves atomic-resolution limits
+2026-04-13 16:46:44,517 [INFO] step4.pipeline:   DOI: 10.1126/science.abg2533
+2026-04-13 16:46:44,517 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:44,517 [INFO] step4.pipeline:   Dir: Type2/035_Electron_ptychography_achieves_atomicresolution_limits
+2026-04-13 16:46:44,517 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:47,702 [INFO] step4.pdf_downloader:     PDF downloaded (3132KB) via semantic_scholar
+2026-04-13 16:46:47,702 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:47,787 [INFO] step4.file_organizer:     type2_data: 3 files
+2026-04-13 16:46:47,787 [INFO] step4.file_organizer:     scripts: 1 files
+2026-04-13 16:46:47,788 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:47,789 [INFO] step4.pipeline: Paper 36/47: Switchable chiral transport in charge-ordered kagome me
+2026-04-13 16:46:47,789 [INFO] step4.pipeline:   DOI: 10.1038/s41586-022-05127-9
+2026-04-13 16:46:47,789 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:47,789 [INFO] step4.pipeline:   Dir: Type2/036_Switchable_chiral_transport_in_chargeordered
+2026-04-13 16:46:47,789 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:50,416 [INFO] step4.pdf_downloader:     PDF downloaded (5319KB) via publisher
+2026-04-13 16:46:50,416 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:50,421 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:46:50,422 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:50,423 [INFO] step4.pipeline: Paper 37/47: Extreme magnetoresistance at high-mobility oxide hetero
+2026-04-13 16:46:50,423 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-48398-8
+2026-04-13 16:46:50,423 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:50,423 [INFO] step4.pipeline:   Dir: Type2/037_Extreme_magnetoresistance_at_highmobility_oxide
+2026-04-13 16:46:50,423 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:53,279 [INFO] step4.pdf_downloader:     PDF downloaded (2217KB) via publisher
+2026-04-13 16:46:53,280 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:53,286 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:46:53,286 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:53,286 [INFO] step4.pipeline: Paper 38/47: Weyl spin-momentum locking in a chiral topological semi
+2026-04-13 16:46:53,286 [INFO] step4.pipeline:   DOI: 10.1038/s41467-024-47976-0
+2026-04-13 16:46:53,286 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:53,286 [INFO] step4.pipeline:   Dir: Type2/038_Weyl_spinmomentum_locking_in_a
+2026-04-13 16:46:53,286 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:55,816 [INFO] step4.pdf_downloader:     PDF downloaded (2335KB) via publisher
+2026-04-13 16:46:55,816 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:55,832 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:46:55,834 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:55,834 [INFO] step4.pipeline: Paper 39/47: Highly Efficient and Stable Dion−Jacobson Perovskite So
+2026-04-13 16:46:55,834 [INFO] step4.pipeline:   DOI: 10.1002/adma.202105083
+2026-04-13 16:46:55,835 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:55,835 [INFO] step4.pipeline:   Dir: Type2/039_Highly_Efficient_and_Stable_DionJacobson
+2026-04-13 16:46:55,835 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:46:58,864 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:46:58,864 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:46:59,033 [INFO] step4.file_organizer:     type2_data: 6 files
+2026-04-13 16:46:59,033 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:46:59,035 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:46:59,035 [INFO] step4.pipeline: Paper 40/47: Pick-and-Place Transfer of Arbitrary-Metal Electrodes f
+2026-04-13 16:46:59,035 [INFO] step4.pipeline:   DOI: 10.1021/acsnano.4c13592
+2026-04-13 16:46:59,035 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:46:59,035 [INFO] step4.pipeline:   Dir: Type2/040_PickandPlace_Transfer_of_ArbitraryMetal_Electrodes
+2026-04-13 16:46:59,035 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:02,039 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:47:02,039 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:02,059 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:47:02,060 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:47:02,061 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:02,062 [INFO] step4.pipeline: Paper 41/47: Data repository accompanying "Flux-tunable Josephson Ef
+2026-04-13 16:47:02,062 [INFO] step4.pipeline:   DOI: 10.5281/zenodo.10212998
+2026-04-13 16:47:02,062 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:02,062 [INFO] step4.pipeline:   Dir: Type2/041_Data_repository_accompanying_Fluxtunable_Josephson
+2026-04-13 16:47:02,063 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:08,154 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:47:08,154 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:08,330 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:47:08,330 [INFO] step4.file_organizer:     annotations: 15 files
+2026-04-13 16:47:08,342 [INFO] step4.file_organizer:     scripts: 59 files
+2026-04-13 16:47:08,345 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:08,345 [INFO] step4.pipeline: Paper 42/47: Multidimensional XUV Photoemission Spectroscopy of 1T-T
+2026-04-13 16:47:08,345 [INFO] step4.pipeline:   DOI: 10.5281/zenodo.5541489
+2026-04-13 16:47:08,345 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:08,345 [INFO] step4.pipeline:   Dir: Type2/042_Multidimensional_XUV_Photoemission_Spectroscopy_of
+2026-04-13 16:47:08,345 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:14,967 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:47:14,967 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:14,980 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:47:14,989 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:14,989 [INFO] step4.pipeline: Paper 43/47: A unifying mechanism for cation effect modulating C1 an
+2026-04-13 16:47:14,989 [INFO] step4.pipeline:   DOI: 10.1038/s41467-022-33199-8
+2026-04-13 16:47:14,989 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:14,989 [INFO] step4.pipeline:   Dir: Type2/043_A_unifying_mechanism_for_cation
+2026-04-13 16:47:14,990 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:17,972 [INFO] step4.pdf_downloader:     PDF downloaded (2688KB) via publisher
+2026-04-13 16:47:17,974 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:17,990 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:47:17,992 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:17,993 [INFO] step4.pipeline: Paper 44/47: From Stoner to local moment magnetism in atomically thi
+2026-04-13 16:47:17,993 [INFO] step4.pipeline:   DOI: 10.1038/s41467-023-40997-1
+2026-04-13 16:47:17,993 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:17,993 [INFO] step4.pipeline:   Dir: Type2/044_From_Stoner_to_local_moment
+2026-04-13 16:47:17,993 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:22,274 [INFO] step4.pdf_downloader:     PDF downloaded (1581KB) via publisher
+2026-04-13 16:47:22,274 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:22,294 [INFO] step4.file_organizer:     type2_data: 2 files
+2026-04-13 16:47:22,298 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:22,299 [INFO] step4.pipeline: Paper 45/47: Dataset for visualizing the atomic-scale origin of meta
+2026-04-13 16:47:22,299 [INFO] step4.pipeline:   DOI: 10.5281/zenodo.7510909
+2026-04-13 16:47:22,299 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:22,300 [INFO] step4.pipeline:   Dir: Type2/045_Dataset_for_visualizing_the_atomicscale
+2026-04-13 16:47:22,300 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:30,534 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:47:30,534 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:30,658 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:47:30,659 [INFO] step4.file_organizer:     annotations: 2 files
+2026-04-13 16:47:30,661 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:30,662 [INFO] step4.pipeline: Paper 46/47: Detection of magnetic monopole in image potential state
+2026-04-13 16:47:30,662 [INFO] step4.pipeline:   DOI: 
+2026-04-13 16:47:30,662 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:30,663 [INFO] step4.pipeline:   Dir: Type2/046_Detection_of_magnetic_monopole_in
+2026-04-13 16:47:30,663 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:30,664 [WARNING] step4.pdf_downloader:     No DOI — cannot download PDF
+2026-04-13 16:47:30,664 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:30,668 [INFO] step4.file_organizer:     type2_data: 1 files
+2026-04-13 16:47:30,670 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:30,671 [INFO] step4.pipeline: Paper 47/47: Epitaxial Growth of the Bi<sub><i>y</i></sub>Sb<sub>2–<
+2026-04-13 16:47:30,671 [INFO] step4.pipeline:   DOI: 10.1021/acs.cgd.2c00906
+2026-04-13 16:47:30,672 [INFO] step4.pipeline:   Type: Type2
+2026-04-13 16:47:30,672 [INFO] step4.pipeline:   Dir: Type2/047_Epitaxial_Growth_of_the_BisubiyisubSbsub2iyisubTesub3ixisubSesubixisub
+2026-04-13 16:47:30,672 [INFO] step4.pipeline:   Downloading PDF...
+2026-04-13 16:47:34,665 [WARNING] step4.pdf_downloader:     Could not download PDF from any source
+2026-04-13 16:47:34,665 [INFO] step4.pipeline:   Organizing dataset files...
+2026-04-13 16:47:34,685 [INFO] step4.file_organizer:     type2_data: 5 files
+2026-04-13 16:47:34,685 [INFO] step4.file_organizer:     annotations: 1 files
+2026-04-13 16:47:34,690 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:34,690 [INFO] step4.pipeline: Phase 5: Saving manifest...
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: STEP 4 RESULTS SUMMARY
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: ============================================================
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: Papers organized:      47
+2026-04-13 16:47:34,715 [INFO] step4.pipeline:   Both (T1+T2):        5
+2026-04-13 16:47:34,715 [INFO] step4.pipeline:   Type 1 only:         28
+2026-04-13 16:47:34,715 [INFO] step4.pipeline:   Type 2 only:         14
+2026-04-13 16:47:34,715 [INFO] step4.pipeline:   Neither:             0
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: PDFs downloaded:        26
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: Type 1 data files:     126
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: Type 2 data files:     43
+2026-04-13 16:47:34,715 [INFO] step4.pipeline: Annotation files:      49
+2026-04-13 16:47:34,718 [INFO] step4.pipeline: Script files:          76
+2026-04-13 16:47:34,718 [INFO] step4.pipeline: ------------------------------------------------------------
+2026-04-13 16:47:34,718 [INFO] step4.pipeline:     1. [ Both] [PDF:✓] T1: 3 T2: 2 | Direct observation of altermagnetic band spli
+2026-04-13 16:47:34,718 [INFO] step4.pipeline:     2. [ Both] [PDF:✓] T1: 1 T2: 3 | Fractional Chern insulators in magic-angle tw
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     3. [ Both] [PDF:✗] T1: 2 T2: 1 | Heterodimensional superlattice with in-plane 
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     4. [ Both] [PDF:✓] T1: 1 T2: 2 | Interchange reconnection as the source of the
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     5. [ Both] [PDF:✗] T1: 1 T2: 1 | Aerosol responses to precipitation along Nort
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     6. [Type1] [PDF:✓] T1: 3 T2: 0 | Octupole-driven magnetoresistance in an antif
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     7. [Type1] [PDF:✓] T1: 2 T2: 0 | Symmetry-broken Josephson junctions and super
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     8. [Type1] [PDF:✓] T1: 9 T2: 0 | Time-domain observation of ballistic orbital-
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:     9. [Type1] [PDF:✗] T1: 2 T2: 0 | Non-reciprocal topological solitons in active
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:    10. [Type1] [PDF:✓] T1: 1 T2: 0 | Unveiling Weyl-related optical responses in s
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:    11. [Type1] [PDF:✓] T1: 7 T2: 0 | Cooling low-dimensional electron systems into
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:    12. [Type1] [PDF:✓] T1: 3 T2: 0 | Delayed fluorescence from inverted singlet an
+2026-04-13 16:47:34,719 [INFO] step4.pipeline:    13. [Type1] [PDF:✓] T1: 1 T2: 0 | Topology stabilized fluctuations in a magneti
+2026-04-13 16:47:34,721 [INFO] step4.pipeline:    14. [Type1] [PDF:✗] T1: 1 T2: 0 | Landau quantization and highly mobile fermion
+2026-04-13 16:47:34,721 [INFO] step4.pipeline:    15. [Type1] [PDF:✗] T1: 3 T2: 0 | Fermi Surface Mapping and the Nature of Charg
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    16. [Type1] [PDF:✗] T1:10 T2: 0 | Synthesis of a semimetallic Weyl ferromagnet 
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    17. [Type1] [PDF:✗] T1: 5 T2: 0 | Giant spontaneous Hall effect in a nonmagneti
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    18. [Type1] [PDF:✓] T1: 3 T2: 0 | Synthesis of goldene comprising single-atom l
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    19. [Type1] [PDF:✓] T1: 2 T2: 0 | Three-dimensional mapping of the altermagneti
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    20. [Type1] [PDF:✓] T1: 2 T2: 0 | Phonon promoted charge density wave in topolo
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    21. [Type1] [PDF:✗] T1:12 T2: 0 | Topological features in the ferromagnetic Wey
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    22. [Type1] [PDF:✓] T1: 6 T2: 0 | Enhanced fusogenicity and pathogenicity of SA
+2026-04-13 16:47:34,722 [INFO] step4.pipeline:    23. [Type1] [PDF:✓] T1: 1 T2: 0 | Interfacial chemical bond and internal electr
+2026-04-13 16:47:34,723 [INFO] step4.pipeline:    24. [Type1] [PDF:✓] T1: 2 T2: 0 | Observation of a singular Weyl point surround
+2026-04-13 16:47:34,723 [INFO] step4.pipeline:    25. [Type1] [PDF:✓] T1: 1 T2: 0 | Highly efficient ethylene production via elec
+2026-04-13 16:47:34,724 [INFO] step4.pipeline:    26. [Type1] [PDF:✗] T1:10 T2: 0 | Magnetotransport evidence for the nontrivial 
+2026-04-13 16:47:34,724 [INFO] step4.pipeline:    27. [Type1] [PDF:✓] T1: 9 T2: 0 | Spatially mapping thermal transport in graphe
+2026-04-13 16:47:34,724 [INFO] step4.pipeline:    28. [Type1] [PDF:✗] T1:12 T2: 0 | Terahertz and multi-terahertz spectroscopy of
+2026-04-13 16:47:34,724 [INFO] step4.pipeline:    29. [Type1] [PDF:✗] T1: 1 T2: 0 | First Sagittarius A* Event Horizon Telescope 
+2026-04-13 16:47:34,724 [INFO] step4.pipeline:    30. [Type1] [PDF:✓] T1: 3 T2: 0 | 
+2026-04-13 16:47:34,725 [INFO] step4.pipeline:    31. [Type1] [PDF:✗] T1: 3 T2: 0 | Proteomic and transcriptomic profiling reveal
+2026-04-13 16:47:34,725 [INFO] step4.pipeline:    32. [Type1] [PDF:✗] T1: 3 T2: 0 | A Fermi surface descriptor quantifying the co
+2026-04-13 16:47:34,725 [INFO] step4.pipeline:    33. [Type1] [PDF:✓] T1: 1 T2: 0 | Pressure-induced transition from a Mott insul
+2026-04-13 16:47:34,725 [INFO] step4.pipeline:    34. [Type2] [PDF:✗] T1: 0 T2: 4 | CMOS-based cryogenic control of silicon quant
+2026-04-13 16:47:34,725 [INFO] step4.pipeline:    35. [Type2] [PDF:✓] T1: 0 T2: 3 | Electron ptychography achieves atomic-resolut
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    36. [Type2] [PDF:✓] T1: 0 T2: 1 | Switchable chiral transport in charge-ordered
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    37. [Type2] [PDF:✓] T1: 0 T2: 2 | Extreme magnetoresistance at high-mobility ox
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    38. [Type2] [PDF:✓] T1: 0 T2: 2 | Weyl spin-momentum locking in a chiral topolo
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    39. [Type2] [PDF:✗] T1: 0 T2: 6 | Highly Efficient and Stable Dion−Jacobson Per
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    40. [Type2] [PDF:✗] T1: 0 T2: 1 | Pick-and-Place Transfer of Arbitrary-Metal El
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    41. [Type2] [PDF:✗] T1: 0 T2: 2 | Data repository accompanying "Flux-tunable Jo
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    42. [Type2] [PDF:✗] T1: 0 T2: 2 | Multidimensional XUV Photoemission Spectrosco
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    43. [Type2] [PDF:✓] T1: 0 T2: 2 | A unifying mechanism for cation effect modula
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    44. [Type2] [PDF:✓] T1: 0 T2: 2 | From Stoner to local moment magnetism in atom
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    45. [Type2] [PDF:✗] T1: 0 T2: 1 | Dataset for visualizing the atomic-scale orig
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    46. [Type2] [PDF:✗] T1: 0 T2: 1 | Detection of magnetic monopole in image poten
+2026-04-13 16:47:34,726 [INFO] step4.pipeline:    47. [Type2] [PDF:✗] T1: 0 T2: 5 | Epitaxial Growth of the Bi<sub><i>y</i></sub>
+2026-04-13 16:47:34,726 [INFO] step4.pipeline: Manifest saved to C:\UCLEAP\UC_LEAP\step4/organized\manifest_latest.json
+2026-04-13 16:47:34,735 [INFO] step4.run_step4: ============================================================
+2026-04-13 16:47:34,735 [INFO] step4.run_step4: Step 4 complete in 213s. 47 papers organized.
+2026-04-13 16:47:34,737 [INFO] __main__: Step 4 finished in 213s
+2026-04-13 16:47:34,737 [INFO] __main__: ========================================================================
+2026-04-13 16:47:34,738 [INFO] __main__: Unified pipeline complete.
+2026-04-13 16:47:34,738 [INFO] __main__:   - Step 4: 213s
+2026-04-13 16:47:34,738 [INFO] __main__: Total elapsed: 213s
+2026-04-13 16:47:34,738 [INFO] __main__: ========================================================================

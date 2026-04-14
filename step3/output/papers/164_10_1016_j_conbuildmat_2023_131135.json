@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0328",
+  "title": "Investigation on the methods of measuring aggregate surface energy based on spreading pressure",
+  "doi": "10.1016/j.conbuildmat.2023.131135",
+  "journal": "Construction and Building Materials",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4361280899",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1016_j_conbuildmat_2023_131135",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No cleaned, replot-ready dataset files were identified.",
+  "type2_summary": "No raw/unprocessed dataset files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper analysis indicates no data availability statement and no dataset URLs. The only provided file is the article PDF, so there is insufficient evidence for either Type 1 or Type 2 dataset content.",
+  "file_classifications": [
+    {
+      "relative_path": "article_1.pdf",
+      "filename": "article_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper is about methods for measuring aggregate surface energy and the provided analysis found no data availability statement or repository-linked dataset description indicating raw or figure data.",
+      "file_evidence": "Single PDF file, 1.3 MB, from Zenodo. This is consistent with a paper/document rather than a data table, source-data package, or raw instrument output.",
+      "reasoning": "The file is the publication itself, not a dataset file. It provides context for the study but does not contain structured data intended for replotting. Since there is no accompanying evidence of raw or cleaned data files, it is classified as documentation.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "N/A"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper investigates methods for measuring aggregate surface energy using spreading pressure, focusing on characterization of construction aggregates.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset or supplementary/source data could be identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "article_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1367422,
+      "size_human": "1.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "article_1.pdf"
+    }
+  ]
+}

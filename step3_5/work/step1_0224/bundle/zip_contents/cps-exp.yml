@@ -1,0 +1,14 @@
+name: cps-exp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - jupyter
+  - pip
+  - pip:
+    - matplotlib==3.4.3
+    - scipy==1.8
+    - proplot==0.9.5
+    - xarray==2022.3
+    - qcodes==0.33
+    - netcdf4==1.5.8

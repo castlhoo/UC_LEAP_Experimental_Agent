@@ -1,0 +1,762 @@
+{
+  "paper_id": "step1_0143",
+  "title": "Interfacial chemical bond and internal electric field modulated Z-scheme Sv-ZnIn2S4/MoSe2 photocatalyst for efficient hydrogen evolution",
+  "doi": "10.1038/s41467-021-24511-z",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3133226951",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-24511-z",
+  "files_inspected": 1,
+  "file_types_found": [
+    "excel"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The provided file is a figure-organized Excel source-data workbook containing plot-ready experimental spectra and diffraction data for figures 2q-3g.",
+  "type2_summary": "No clear raw/unprocessed instrument-output file is present in the inspected dataset.",
+  "type1_files": [
+    "41467_2021_24511_MOESM3_ESM_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper includes many raw experimental modalities in the study overall, but the inspected file is explicitly a Nature source-data workbook organized by figure panels. No raw microscopy image files or proprietary instrument exports were provided here.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2021_24511_MOESM3_ESM_1.xlsx",
+      "filename": "41467_2021_24511_MOESM3_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data are provided with the paper, and the listed figures (2q-3g) are experimental figure panels. The workbook sheets are organized by figure number, indicating figure-level source data rather than raw instrument exports.",
+      "file_evidence": "Excel workbook with 29 sheets named by figure panels (e.g., Figure 2q, 2r, 2s, 3a-3g). Sheet structures are tabular and plot-ready, with headers such as 'XRD patterns', 'Raman', 'EPR spectrum', and 'XPS survey spectrum'. File size (1.3 MB) is consistent with curated source data.",
+      "reasoning": "This is a figure-organized source-data workbook. The sheet names match published figures, and the columns correspond to plotted spectra/patterns. Although the underlying measurements are experimental, the file is not a raw instrument dump; it is cleaned, figure-specific data intended for direct plotting.",
+      "ambiguity": "Low ambiguity. The only caveat is that the data are experimental source data, but the figure-based organization and tabular format clearly place it in Type 1.",
+      "key_columns_or_structure": "Figure 2q: XRD patterns; Figure 2r: Raman, SV-ZIS, SV-ZIS/MoSe2, MoSe2; Figure 2s: EPR spectrum; Figure 3a: XPS survey spectrum; Figure 3b-3g: XPS core-level spectra"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports a sulfur-vacancy-rich ZnIn2S4/MoSe2 heterostructured photocatalyst designed to promote direct Z-scheme charge transfer for visible-light hydrogen evolution. The key idea is that interfacial Mo–S bonding plus an internally generated electric field, together with sulfur vacancies in ZnIn2S4, suppress recombination and boost charge separation, yielding a high H2 evolution rate of 63.21 mmol g−1 h−1 and AQY of 76.48% at 420 nm.",
+    "measurement_types": [
+      "SEM",
+      "TEM",
+      "HRTEM",
+      "EDS elemental mapping",
+      "XRD",
+      "Raman spectroscopy",
+      "EPR spin-trapping",
+      "XPS",
+      "UV-vis diffuse reflectance/absorption spectroscopy",
+      "Photoluminescence spectroscopy",
+      "Photocurrent response",
+      "Electrochemical impedance spectroscopy (EIS)",
+      "Mott-Schottky analysis",
+      "UPS",
+      "Surface photovoltage (SPV) spectroscopy",
+      "Photocatalytic hydrogen evolution testing",
+      "Apparent quantum yield (AQY) measurement",
+      "DFT calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1",
+        "description": "Schematic presentation of the synthetic route for sulfur-vacancy-rich ZnIn2S4 and the ZnIn2S4/MoSe2 heterostructure.",
+        "data_type": "schematic",
+        "likely_source": "processed/illustrative figure"
+      },
+      {
+        "figure_id": "Fig2a-c",
+        "description": "SEM, TEM, and HRTEM images of pristine ZnIn2S4 showing flower-like hierarchical microspheres made of nanosheets and lattice fringes indexed to ZnIn2S4.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d-f",
+        "description": "TEM and HRTEM images of MoSe2 nanosheets with lattice spacings assigned to 2H-MoSe2.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2g-j",
+        "description": "SEM/TEM/HRTEM images of Sv-ZIS/MoSe2 showing intimate 2D/2D contact and lattice fringes from both ZnIn2S4 and MoSe2.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2k-p",
+        "description": "EDS spectra and elemental mapping for Zn, In, S, Mo, and Se in Sv-ZIS/MoSe2, showing uniform distribution and composition.",
+        "data_type": "image/spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2q",
+        "description": "XRD patterns of ZIS, Sv-ZIS, MoSe2, and Sv-ZIS/MoSe2 confirming phase composition and successful composite formation.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2r",
+        "description": "Raman spectra of Sv-ZIS, MoSe2, and Sv-ZIS/MoSe2, including a Mo–S bonding-related peak.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2s",
+        "description": "EPR spectra comparing ZIS, Sv-ZIS, and Sv-ZIS/MoSe2 to evidence sulfur vacancies.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a-g",
+        "description": "XPS survey and core-level spectra (S 2p, Zn 2p, In 3d, Mo 3d, Mo 3p, Se 3d) used to identify chemical states, sulfur vacancies, and Mo–S bonding.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a-b",
+        "description": "Photocatalytic H2 evolution amount versus time and H2 evolution rate for different photocatalysts and compositions.",
+        "data_type": "transport/kinetics curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Wavelength-dependent AQY/action spectrum for Sv-ZIS/MoSe2.",
+        "data_type": "curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Cycling stability of the optimized Sv-ZIS/5.0MoSe2 photocatalyst over 20 h and 5 cycles.",
+        "data_type": "stability curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "UV-vis absorption spectra of ZIS, Sv-ZIS, MoSe2, and Sv-ZIS/MoSe2.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Photoluminescence spectra showing carrier recombination suppression by sulfur vacancies and MoSe2 coupling.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Photocurrent response under illumination for the as-prepared samples.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "EIS Nyquist plots comparing interfacial charge-transfer resistance.",
+        "data_type": "impedance spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Kubelka-Munk/Tauc-type plots used to estimate band gaps of ZIS, Sv-ZIS, and Sv-ZIS/MoSe2.",
+        "data_type": "derived curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig6b-d",
+        "description": "Mott-Schottky plots used to determine flat-band potentials and n-type behavior of ZIS, Sv-ZIS, and MoSe2.",
+        "data_type": "electrochemical curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "UPS spectra used to determine work functions and Fermi levels of Sv-ZIS and MoSe2.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6f",
+        "description": "Band alignment diagram for Sv-ZIS, MoSe2, and Sv-ZIS/MoSe2 derived from optical/electrochemical/UPS data.",
+        "data_type": "schematic/derived diagram",
+        "likely_source": "processed/derived data"
+      },
+      {
+        "figure_id": "Fig7a-b",
+        "description": "DFT-optimized heterostructure structure and charge-density-difference plot showing Mo–S bonding and interfacial charge redistribution.",
+        "data_type": "simulation image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig7c",
+        "description": "Proposed photocatalytic Z-scheme mechanism diagram for Sv-ZIS/MoSe2 under visible light.",
+        "data_type": "schematic",
+        "likely_source": "processed/illustrative figure"
+      },
+      {
+        "figure_id": "Fig7d",
+        "description": "Surface photovoltage spectra of Sv-ZIS, MoSe2, and Sv-ZIS/MoSe2 supporting Z-scheme charge transfer.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig7e",
+        "description": "DMPO spin-trapping EPR spectra for superoxide radical detection in Sv-ZIS/MoSe2 under dark and light conditions.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from SEM, TEM/HRTEM, EDS mapping, XRD, Raman, EPR, XPS, UV-vis absorption, PL, photocurrent, EIS, Mott-Schottky, UPS, SPV, and photocatalytic H2 evolution/gas chromatography. It also reports DFT simulation outputs. Instrument names and settings are given in Methods, but the paper does not provide raw files or file formats in the text.",
+    "dataset_characterization": {
+      "data_availability_statement": "The experimental data that support the findings of this study are available from the corresponding author upon reasonable request. Source data are provided with this paper.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurement data are described only at the instrument level: SEM/EDS (SU8010), TEM (JEM-2100 plus), XRD (Bruker D8 Advance), XPS (Thermo ESCALAB 250 XI X), UV-vis (PerkinElmer Lambda 750 S), PL (F-4600), UPS (AXIS SUPRA), SPV setup, Raman (LabRAM HR Evolution), EPR (JEOL JES-FA200), photocatalysis (Labsolar-6A, GC 7900), and electrochemistry (CHI-660E). No raw file names, formats, or repository links are given.",
+      "processed_data_description": "The paper reports processed quantities extracted from measurements, including atomic ratios from EDS/XPS, phase assignments from XRD/Raman/XPS, band gaps from Kubelka-Munk plots, flat-band potentials from Mott-Schottky plots, work functions from UPS, AQY values, H2 evolution rates, and stability retention. These are figure-ready derived values rather than primary instrument files.",
+      "figure_data_description": "The paper states that 'Source data are provided with this paper,' implying figure-specific source data are available. The text does not specify which figures have source data files, but the statement suggests processed figure data accompany the publication.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned. DFT calculations are described methodologically, but no scripts or input files are provided in the text.",
+      "notes": "The dataset is primarily experimental with some theoretical/simulation data. The paper distinguishes between raw measurements collected on instruments and derived/processed values used in figures and mechanistic interpretation. Supplementary tables and figures are referenced for composition ratios, AQY details, and comparison data, but their actual files are not included in the provided text. The DFT section specifies computational parameters (CASTEP, PBE, USPP, cutoff energy, k-point mesh, convergence criteria), which is useful for reproducing simulations but does not constitute a script or dataset repository."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "Methods list many direct measurements from microscopy, spectroscopy, electrochemistry, and photocatalytic testing, indicating raw experimental data were collected.",
+      "source_data_evidence": "The paper explicitly states 'Source data are provided with this paper,' indicating figure-level source data are available.",
+      "data_availability_section_relevant": "“The experimental data that support the findings of this study are available from the corresponding author upon reasonable request. Source data are provided with this paper.”",
+      "priority_modalities": [
+        "SEM/TEM/HRTEM images",
+        "EDS elemental maps",
+        "XRD diffraction patterns",
+        "Raman spectra",
+        "EPR spectra",
+        "XPS spectra",
+        "UV-vis absorption spectra",
+        "PL spectra",
+        "photocurrent curves",
+        "EIS Nyquist plots",
+        "Mott-Schottky plots",
+        "UPS spectra",
+        "SPV spectra",
+        "photocatalytic H2 evolution time series",
+        "AQY/action spectra",
+        "DFT simulation outputs"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2021_24511_MOESM3_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 1324335,
+      "size_human": "1.3 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 2q",
+        "Figure 2r",
+        "Figure 2s",
+        "Figure 3a",
+        "Figure 3b",
+        "Figure 3c",
+        "Figure 3d",
+        "Figure 3e",
+        "Figure 3f",
+        "Figure 3g",
+        "Figure 4a",
+        "Figure 4b",
+        "Figure 4c",
+        "Figure 4d",
+        "Figure 5a",
+        "Figure 5b",
+        "Figure 5c",
+        "Figure 5d",
+        "Figure 6a",
+        "Figure 6b",
+        "Figure 6c",
+        "Figure 6d",
+        "Figure 6e",
+        "Figure 7b",
+        "Figure 7c",
+        "Figure S6",
+        "Figure S7",
+        "Figure S8",
+        "Figure S9"
+      ],
+      "sheet_count": 29,
+      "sheets": [
+        {
+          "sheet_name": "Figure 2q",
+          "columns": [
+            "XRD patterns",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10"
+          ],
+          "named_columns": [
+            "XRD patterns"
+          ],
+          "column_count": 11,
+          "row_count": 4004,
+          "dtypes": {
+            "XRD patterns": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2r",
+          "columns": [
+            "Raman",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "SV-ZIS",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "MoSe2",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Raman",
+            "SV-ZIS",
+            "SV-ZIS/MoSe2",
+            "MoSe2"
+          ],
+          "column_count": 12,
+          "row_count": 2047,
+          "dtypes": {
+            "Raman": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "SV-ZIS": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "MoSe2": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2s",
+          "columns": [
+            "EPR spectrum",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "EPR spectrum"
+          ],
+          "column_count": 8,
+          "row_count": 4098,
+          "dtypes": {
+            "EPR spectrum": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3a",
+          "columns": [
+            "XPS survey spectrum",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "XPS survey spectrum"
+          ],
+          "column_count": 13,
+          "row_count": 1364,
+          "dtypes": {
+            "XPS survey spectrum": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3b",
+          "columns": [
+            "XPS S 2p",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "ZIS",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "SV-ZIS",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25"
+          ],
+          "named_columns": [
+            "XPS S 2p",
+            "ZIS",
+            "SV-ZIS",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 26,
+          "row_count": 362,
+          "dtypes": {
+            "XPS S 2p": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "ZIS": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "SV-ZIS": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3c",
+          "columns": [
+            "XPS Zn 2p",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "ZIS",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "SV-ZIS",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25"
+          ],
+          "named_columns": [
+            "XPS Zn 2p",
+            "ZIS",
+            "SV-ZIS",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 26,
+          "row_count": 372,
+          "dtypes": {
+            "XPS Zn 2p": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "ZIS": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "SV-ZIS": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3d",
+          "columns": [
+            "XPS In 3d",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "ZIS",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "SV-ZIS",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25"
+          ],
+          "named_columns": [
+            "XPS In 3d",
+            "ZIS",
+            "SV-ZIS",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 26,
+          "row_count": 442,
+          "dtypes": {
+            "XPS In 3d": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "ZIS": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "SV-ZIS": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3e",
+          "columns": [
+            "XPS Mo 3d",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "XPS Mo 3d",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 12,
+          "row_count": 362,
+          "dtypes": {
+            "XPS Mo 3d": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3f",
+          "columns": [
+            "XPS Mo 3p",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "XPS Mo 3p",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 12,
+          "row_count": 412,
+          "dtypes": {
+            "XPS Mo 3p": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3g",
+          "columns": [
+            "XPS Se 3d",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "SV-ZIS/MoSe2",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "XPS Se 3d",
+            "SV-ZIS/MoSe2"
+          ],
+          "column_count": 10,
+          "row_count": 282,
+          "dtypes": {
+            "XPS Se 3d": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "SV-ZIS/MoSe2": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_24511_MOESM3_ESM_1.xlsx"
+    }
+  ]
+}

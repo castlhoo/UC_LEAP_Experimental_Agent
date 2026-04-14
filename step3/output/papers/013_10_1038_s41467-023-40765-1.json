@@ -1,0 +1,699 @@
+{
+  "paper_id": "step1_0266",
+  "title": "Topology stabilized fluctuations in a magnetic nodal semimetal",
+  "doi": "10.1038/s41467-023-40765-1",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4386164997",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-40765-1",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel workbook is figure-linked, tabular, and directly replot-ready, so it is Type 1 cleaned/source data.",
+  "type2_summary": "No clearly identifiable raw/unprocessed data files are present in the inspection report.",
+  "type1_files": [
+    "data_CeAlGe_Nat_Commun_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper discusses raw measurements, but the provided file set does not include obvious raw instrument outputs. The workbook appears to be curated source data deposited for figures, while the PDFs are supplementary documentation rather than data tables.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2023_40765_MOESM1_ESM_1.pdf",
+      "filename": "41467_2023_40765_MOESM1_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that supplementary information and a peer review file are available; this PDF is consistent with a supplementary document rather than a data table. No explicit evidence that it contains figure-ready source data.",
+      "file_evidence": "PDF format, 4.1 MB, from nature_source_data. No sheet/column structure is available, so it is not directly inspectable as tabular replot-ready data from the file report.",
+      "reasoning": "Given only the inspection report, this is best treated as supplementary documentation rather than a dataset file. There is insufficient evidence to classify it as raw or cleaned data.",
+      "ambiguity": "High: the PDF could contain supplementary figures, methods, or source-data explanations, but the report does not expose its contents.",
+      "key_columns_or_structure": "PDF document; no tabular structure reported"
+    },
+    {
+      "relative_path": "41467_2023_40765_MOESM2_ESM_1.pdf",
+      "filename": "41467_2023_40765_MOESM2_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper mentions supplementary information and a peer review file. This PDF is consistent with an accompanying document, not clearly a data file.",
+      "file_evidence": "PDF format, 4.6 MB, from nature_source_data. No tabular metadata or sheet structure is reported.",
+      "reasoning": "Without content-level evidence, the conservative classification is documentation rather than data. It may contain supplementary text/figures, but that is not enough to call it Type 1 or Type 2.",
+      "ambiguity": "High: content not visible in the inspection report.",
+      "key_columns_or_structure": "PDF document; no tabular structure reported"
+    },
+    {
+      "relative_path": "data_CeAlGe_Nat_Commun_1.xlsx",
+      "filename": "data_CeAlGe_Nat_Commun_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly states that the data used in the study are available in Figshare. The workbook contains figure-linked sheets for transport, heat capacity, REXS, dilatometry, and neutron-related data, matching the paper's source-data/figure-data style.",
+      "file_evidence": "Excel workbook with 18 sheets and explicit figure/supplement references in sheet names, e.g. '(1,2,3,4,5,S2,S7) ρxx, xy - T', '(1) C - T', '(1, 5, S15) REXS sigma-pi at K', '(2, 3, S4, S5, S7) ρxx, xy - B', '(2, 3, 5, S6, S7) κxx, xy - B', '(2, 3) ΔL - B'. Columns are organized as measured variables with units and are directly plottable with minimal processing.",
+      "reasoning": "Although the underlying measurements are raw experimental observations in the paper, the workbook structure is figure-oriented and cleaned for plotting. The sheet names map to specific figures/supplementary figures, and the columns are already in analysis-ready form. By the dataset definition, this is Type 1 source/cleaned data rather than raw instrument output.",
+      "ambiguity": "Low: some columns are measured quantities, but the organization and naming clearly indicate curated source data.",
+      "key_columns_or_structure": "Sheets include Temperature (K), Magnetic Field (Oe), Resistivity (Ohm-m), Sample Temp. (K), Samp HC (mJ/mole-K), H/K/L, Seconds, amptek_r2, Conductivity (W/K-m), Seebeck Coef. (µV/K), etc."
+    }
+  ],
+  "paper_analysis": {
+    "summary": "CeAlGe, a non-centrosymmetric magnetic Weyl semimetal candidate, is shown to host a narrow temperature window of locally correlated magnetic fluctuations well above its thermodynamic magnetic transition at TN = 4.5 K. Using resonant elastic X-ray scattering, electrical/thermal transport, dilatometry, and neutron scattering, the authors argue that these fluctuations are stabilized by coupling between Weyl fermions and local moments, with the observed ordering wavevector matching Weyl-node nesting conditions.",
+    "measurement_types": [
+      "single-crystal resonant elastic X-ray scattering (REXS)",
+      "longitudinal electrical resistivity / magnetotransport",
+      "thermal conductivity / thermal transport",
+      "heat capacity",
+      "magnetic susceptibility",
+      "dilatometry / thermal expansion",
+      "elastic neutron scattering",
+      "inelastic neutron scattering (time-of-flight)",
+      "inelastic triple-axis neutron scattering",
+      "powder X-ray diffraction",
+      "Raman measurements",
+      "ab initio calculations / electronic structure calculations",
+      "theoretical effective-field / model calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure schematic of CeAlGe in space group I41md, showing Ce-Ce bonds and broken inversion symmetry.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical or illustrative schematic"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Longitudinal resistivity versus temperature at different magnetic fields applied along c.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Heat-capacity difference between CeAlGe and LaAlGe at 0 T and 9 T, with integrated entropy curves.",
+        "data_type": "thermodynamic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Calculated Weyl-node locations in the Brillouin zone and the relation of the magnetic wavevector to Weyl-node nesting.",
+        "data_type": "band-structure / reciprocal-space schematic",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Schematic of nesting between Weyl cones and coupling to a localized magnetic ion.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "REXS intensity map in the sigma-pi channel showing an incommensurate magnetic peak at negative K values over temperature.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "REXS intensity map in the sigma-pi channel showing the corresponding incommensurate peak at positive K values, with temperature-dependent integrated peak intensity inset.",
+        "data_type": "diffraction pattern / reciprocal-space map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Phase-diagram estimate from the second derivative of longitudinal resistivity with respect to magnetic field.",
+        "data_type": "derived transport map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Phase-diagram estimate from the second derivative of thermal conductivity with respect to magnetic field.",
+        "data_type": "derived transport map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Phase-diagram estimate from dilatometry / thermal expansion measurements, showing a distinct regime above TN.",
+        "data_type": "derived thermomechanical map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Schematic assignment of magnetic phases and fluctuation regime as a function of temperature and field.",
+        "data_type": "schematic",
+        "likely_source": "interpretive diagram"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Field-dependent electrical and thermal conductivities at T = 2 K, showing transitions between magnetic regimes.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Magnetoresistance versus temperature/field showing crossover from positive to negative MR near 12.8 K.",
+        "data_type": "transport curve / color map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Field suppression of thermal conductivity at 12.8 K, including comparison of maximal changes in thermal conductivity and resistivity.",
+        "data_type": "transport curve / derived comparison",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Low-temperature dilation measurements.",
+        "data_type": "dilatometry curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Magnetoresistance versus applied magnetic field at T = 12.8 K, showing near-zero MR.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Longitudinal resistivity versus temperature/field with a Kondo-like fit highlighting a resistivity minimum near 20 K.",
+        "data_type": "transport curve with fit",
+        "likely_source": "experimental data plus phenomenological fitting"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Schematic of scattering between two Weyl nodes of the same chirality, distinguishing intraband and interband processes.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Map of Weyl-node separations and measured magnetic wavevector in momentum space.",
+        "data_type": "reciprocal-space schematic",
+        "likely_source": "theoretical/compiled from prior calculations plus experimental marker"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Decomposition of scattering vectors relative to the magnetic propagation-vector basis.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Calculated second-order free-energy contribution as a function of scattering-vector orientation in the magnetic basis.",
+        "data_type": "theoretical plot",
+        "likely_source": "theoretical calculation"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Calculated free energy versus temperature for different finite-domain cutoffs, showing stabilization over a wider temperature range for smaller domains.",
+        "data_type": "theoretical plot",
+        "likely_source": "theoretical calculation"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Summary plot comparing inverse MR deviation, maximal field-induced thermal-conductivity deviation, and REXS intensity versus temperature in the fluctuation-stabilization regime.",
+        "data_type": "summary plot / derived data",
+        "likely_source": "processed experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Yes. The paper reports raw measurements from single-crystal and powder experiments: longitudinal resistivity and thermal conductivity in a PPMS Dynacool, dilatometry in a capacitive dilatometer, resonant elastic X-ray scattering at NSLS-II beamline 4-ID near the Ce L2 edge, elastic and inelastic neutron scattering on SEQUOIA, HB-1/PTAX, and HB-3/TAX, powder X-ray diffraction for lattice constants, and Raman measurements. The text also mentions co-aligned single crystals and specific incident energies/fields for neutron experiments.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data used in this study are available in the Figshare database under accession code https://doi.org/10.6084/m9.figshare.23576637.' It also notes that supplementary information contains additional details, and that a peer review file is available.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are implied to be the direct instrument outputs from transport, dilatometry, REXS, neutron scattering, powder XRD, and Raman measurements. The paper does not specify file formats, directory structure, or whether raw detector/event files are included in Figshare.",
+      "processed_data_description": "Processed data clearly include derived quantities such as second derivatives of resistivity and thermal conductivity, symmetrized dilatometry, integrated REXS peak intensities normalized to a structural Bragg peak, entropy obtained by cumulative integration of heat capacity, magnetoresistance, and fitted resistivity curves using a Kondo phenomenological model.",
+      "figure_data_description": "Figure-ready data are definitely present in the sense that the paper reports plotted traces, maps, and inset summaries for the main figures. However, the text does not explicitly state whether separate source-data files per figure are included in the repository.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "The dataset is multimodal and mixes direct measurements with derived/processed quantities and theory curves. Several figures rely on post-processing: numerical derivatives for phase maps, Lorentzian peak fitting with background subtraction for REXS, symmetrization of dilatometry, and model fitting of resistivity. The paper explicitly distinguishes experimental observations from theoretical effective-Hamiltonian calculations, but does not describe any software package or script distribution. The Figshare link is the only explicit data repository statement in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section lists multiple direct measurements performed on instruments (PPMS Dynacool, NSLS-II beamline 4-ID, SEQUOIA, HB-1/HB-3, dilatometer), indicating raw experimental data were collected.",
+      "source_data_evidence": "Figure captions and Results describe derived quantities such as second derivatives, integrated peak intensities, entropy from heat-capacity integration, symmetrized dilatometry, and fitted resistivity curves, which are typical source/processed data products.",
+      "data_availability_section_relevant": "“The data used in this study are available in the Figshare database under accession code https://doi.org/10.6084/m9.figshare.23576637.”; “Error bars represent one standard deviation and are obtained through propagation of errors from counting statistics and Lorentzian peak fitting.”; “The entropy S ... is extracted through cumulative integration of the heat capacity.”; “The resulting dilatometry was symmetrized.”",
+      "priority_modalities": [
+        "transport curves",
+        "thermal conductivity",
+        "heat capacity",
+        "REXS diffraction maps",
+        "neutron scattering spectra",
+        "dilatometry",
+        "powder XRD",
+        "Raman spectra",
+        "theoretical free-energy calculations"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_40765_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4312905,
+      "size_human": "4.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_40765_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2023_40765_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4805063,
+      "size_human": "4.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_40765_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "data_CeAlGe_Nat_Commun_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9765095,
+      "size_human": "9.3 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "(1,2,3,4,5,S2,S7) ρxx, xy - T",
+        "(1) C - T",
+        "(1, 5, S15) REXS sigma-pi at K",
+        "(2, 3, S4, S5, S7) ρxx, xy - B",
+        "(2, 3, 5, S6, S7) κxx, xy - B",
+        "(2, 3) ΔL - B",
+        "(S3) ρxx, xy - T (LaAlGe)",
+        "(S3, S5) ρxx, xy - B (LaAlGe)",
+        "(S8) M - B",
+        "(S10) CEF, Neutron",
+        "(S12) REXS sigma-sigma Escan",
+        "(S12) REXS sigma-pi Escan",
+        "(S13) REXS sigma-sigma 00L",
+        "(S13) REXS sigma-pi 00L",
+        "(S14) REXS sigma-sigma 10L",
+        "(S14) REXS sigma-pi 10L",
+        "(S18) Raman CeAlGe",
+        "(S19) Raman LaAlGe"
+      ],
+      "sheet_count": 18,
+      "sheets": [
+        {
+          "sheet_name": "(1,2,3,4,5,S2,S7) ρxx, xy - T",
+          "columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)"
+          ],
+          "column_count": 7,
+          "row_count": 27341,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Magnetic Field (Oe)": "float64",
+            "Bridge 1 Resistivity (Ohm-m)": "float64",
+            "Bridge 1 Excitation (uA)": "float64",
+            "Bridge 1 Std. Dev. (Ohm-m)": "float64",
+            "Number of Readings": "int64",
+            "Bridge 1 Resistance (Ohms)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(1) C - T",
+          "columns": [
+            "System Status (Code)",
+            "Field (Oersted)",
+            "Sample Temp (Kelvin)",
+            "Samp HC (mJ/mole-K)",
+            "Samp HC Err (mJ/mole-K)",
+            "Addenda HC (µJ/K)",
+            "Addenda HC Err (µJ/K)",
+            "Total HC (µJ/K)",
+            "Total HC Err (µJ/K)",
+            "Sample Coupling (Percent)",
+            "Samp HC/Temp (mJ/mole-K/K)"
+          ],
+          "named_columns": [
+            "System Status (Code)",
+            "Field (Oersted)",
+            "Sample Temp (Kelvin)",
+            "Samp HC (mJ/mole-K)",
+            "Samp HC Err (mJ/mole-K)",
+            "Addenda HC (µJ/K)",
+            "Addenda HC Err (µJ/K)",
+            "Total HC (µJ/K)",
+            "Total HC Err (µJ/K)",
+            "Sample Coupling (Percent)",
+            "Samp HC/Temp (mJ/mole-K/K)"
+          ],
+          "column_count": 11,
+          "row_count": 1842,
+          "dtypes": {
+            "System Status (Code)": "int64",
+            "Field (Oersted)": "float64",
+            "Sample Temp (Kelvin)": "float64",
+            "Samp HC (mJ/mole-K)": "float64",
+            "Samp HC Err (mJ/mole-K)": "float64",
+            "Addenda HC (µJ/K)": "float64",
+            "Addenda HC Err (µJ/K)": "float64",
+            "Total HC (µJ/K)": "float64",
+            "Total HC Err (µJ/K)": "float64",
+            "Sample Coupling (Percent)": "float64",
+            "Samp HC/Temp (mJ/mole-K/K)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(1, 5, S15) REXS sigma-pi at K",
+          "columns": [
+            "H",
+            "K",
+            "L",
+            "T-DegK",
+            "Seconds",
+            "amptek_r2"
+          ],
+          "named_columns": [
+            "H",
+            "K",
+            "L",
+            "T-DegK",
+            "Seconds",
+            "amptek_r2"
+          ],
+          "column_count": 6,
+          "row_count": 2020,
+          "dtypes": {
+            "H": "float64",
+            "K": "float64",
+            "L": "float64",
+            "T-DegK": "float64",
+            "Seconds": "float64",
+            "amptek_r2": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(2, 3, S4, S5, S7) ρxx, xy - B",
+          "columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)"
+          ],
+          "column_count": 7,
+          "row_count": 7240,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Magnetic Field (Oe)": "float64",
+            "Bridge 1 Resistivity (Ohm-m)": "float64",
+            "Bridge 1 Excitation (uA)": "float64",
+            "Bridge 1 Std. Dev. (Ohm-m)": "float64",
+            "Number of Readings": "int64",
+            "Bridge 1 Resistance (Ohms)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(2, 3, 5, S6, S7) κxx, xy - B",
+          "columns": [
+            "Magnetic Field (Oe)",
+            "Sample Temp. (K)",
+            "Conductivity (W/K-m)",
+            "Cond. Error",
+            "Seebeck Coef. (µV/K)",
+            "Seebeck Error",
+            "Resistivity (Ohm-m)",
+            "Resist Error",
+            "Figure of Merit ZT",
+            "Merit Error"
+          ],
+          "named_columns": [
+            "Magnetic Field (Oe)",
+            "Sample Temp. (K)",
+            "Conductivity (W/K-m)",
+            "Cond. Error",
+            "Seebeck Coef. (µV/K)",
+            "Seebeck Error",
+            "Resistivity (Ohm-m)",
+            "Resist Error",
+            "Figure of Merit ZT",
+            "Merit Error"
+          ],
+          "column_count": 10,
+          "row_count": 3243,
+          "dtypes": {
+            "Magnetic Field (Oe)": "float64",
+            "Sample Temp. (K)": "float64",
+            "Conductivity (W/K-m)": "float64",
+            "Cond. Error": "float64",
+            "Seebeck Coef. (µV/K)": "float64",
+            "Seebeck Error": "float64",
+            "Resistivity (Ohm-m)": "float64",
+            "Resist Error": "float64",
+            "Figure of Merit ZT": "float64",
+            "Merit Error": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(2, 3) ΔL - B",
+          "columns": [
+            "Rel. time",
+            "Temperature (K)",
+            "Field (T)",
+            "Capacitance (pF)",
+            "Loss (nS)",
+            "delta L (1E-6 cm)"
+          ],
+          "named_columns": [
+            "Rel. time",
+            "Temperature (K)",
+            "Field (T)",
+            "Capacitance (pF)",
+            "Loss (nS)",
+            "delta L (1E-6 cm)"
+          ],
+          "column_count": 6,
+          "row_count": 34708,
+          "dtypes": {
+            "Rel. time": "int64",
+            "Temperature (K)": "float64",
+            "Field (T)": "float64",
+            "Capacitance (pF)": "float64",
+            "Loss (nS)": "float64",
+            "delta L (1E-6 cm)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(S3) ρxx, xy - T (LaAlGe)",
+          "columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 3 Resistivity (Ohm-m)",
+            "Bridge 3 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Bridge 3 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)",
+            "Bridge 3 Resistance (Ohms)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 3 Resistivity (Ohm-m)",
+            "Bridge 3 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Bridge 3 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)",
+            "Bridge 3 Resistance (Ohms)"
+          ],
+          "column_count": 11,
+          "row_count": 9159,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Magnetic Field (Oe)": "float64",
+            "Bridge 1 Resistivity (Ohm-m)": "float64",
+            "Bridge 1 Excitation (uA)": "float64",
+            "Bridge 3 Resistivity (Ohm-m)": "float64",
+            "Bridge 3 Excitation (uA)": "float64",
+            "Bridge 1 Std. Dev. (Ohm-m)": "float64",
+            "Bridge 3 Std. Dev. (Ohm-m)": "float64",
+            "Number of Readings": "int64",
+            "Bridge 1 Resistance (Ohms)": "float64",
+            "Bridge 3 Resistance (Ohms)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(S3, S5) ρxx, xy - B (LaAlGe)",
+          "columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 3 Resistivity (Ohm-m)",
+            "Bridge 3 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Bridge 3 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)",
+            "Bridge 3 Resistance (Ohms)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "Bridge 1 Resistivity (Ohm-m)",
+            "Bridge 1 Excitation (uA)",
+            "Bridge 3 Resistivity (Ohm-m)",
+            "Bridge 3 Excitation (uA)",
+            "Bridge 1 Std. Dev. (Ohm-m)",
+            "Bridge 3 Std. Dev. (Ohm-m)",
+            "Number of Readings",
+            "Bridge 1 Resistance (Ohms)",
+            "Bridge 3 Resistance (Ohms)"
+          ],
+          "column_count": 11,
+          "row_count": 2534,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Magnetic Field (Oe)": "float64",
+            "Bridge 1 Resistivity (Ohm-m)": "float64",
+            "Bridge 1 Excitation (uA)": "float64",
+            "Bridge 3 Resistivity (Ohm-m)": "float64",
+            "Bridge 3 Excitation (uA)": "float64",
+            "Bridge 1 Std. Dev. (Ohm-m)": "float64",
+            "Bridge 3 Std. Dev. (Ohm-m)": "float64",
+            "Number of Readings": "int64",
+            "Bridge 1 Resistance (Ohms)": "float64",
+            "Bridge 3 Resistance (Ohms)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(S8) M - B",
+          "columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "DC Moment Fixed Ctr (emu)",
+            "DC Moment Err Fixed Ctr (emu)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Magnetic Field (Oe)",
+            "DC Moment Fixed Ctr (emu)",
+            "DC Moment Err Fixed Ctr (emu)"
+          ],
+          "column_count": 4,
+          "row_count": 3719,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Magnetic Field (Oe)": "float64",
+            "DC Moment Fixed Ctr (emu)": "float64",
+            "DC Moment Err Fixed Ctr (emu)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "(S10) CEF, Neutron",
+          "columns": [
+            "1 K / 1 T",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "10 K / 0 T",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "10 K / 1 T",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "10 K / 8 T",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18"
+          ],
+          "named_columns": [
+            "1 K / 1 T",
+            "10 K / 0 T",
+            "10 K / 1 T",
+            "10 K / 8 T"
+          ],
+          "column_count": 19,
+          "row_count": 22801,
+          "dtypes": {
+            "1 K / 1 T": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "10 K / 0 T": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "10 K / 1 T": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "float64",
+            "10 K / 8 T": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "data_CeAlGe_Nat_Commun_1.xlsx"
+    }
+  ]
+}

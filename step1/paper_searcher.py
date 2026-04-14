@@ -11,8 +11,10 @@ APIs used:
 Goal: maximize recall by combining results from all sources.
 """
 
+import os
 import re
 import time
+import random
 import logging
 import requests
 from typing import List, Dict, Any, Optional
@@ -54,17 +56,54 @@ SEMANTIC_SCHOLAR_FIELDS = (
 )
 
 
+_s2_key_warned = False
+
+
+def _semantic_scholar_headers() -> Dict[str, str]:
+    global _s2_key_warned
+    headers = {"User-Agent": "UC_LEAP_Step1/1.0"}
+    api_key = os.getenv("SEMANTIC_SCHOLAR_API_KEY", "").strip()
+    if api_key:
+        headers["x-api-key"] = api_key
+    elif not _s2_key_warned:
+        logger.warning(
+            "SEMANTIC_SCHOLAR_API_KEY not set. Rate limit is very low (~100 req/5min). "
+            "Get a FREE key at https://www.semanticscholar.org/product/api#api-key-form "
+            "and add it to your .env file."
+        )
+        _s2_key_warned = True
+    return headers
+
+
+def _retry_after_seconds(resp: requests.Response, fallback: int) -> int:
+    retry_after = resp.headers.get("Retry-After")
+    if retry_after:
+        try:
+            return max(int(retry_after), 1)
+        except ValueError:
+            pass
+    return fallback
+
+
 def search_semantic_scholar(
     query: str,
     max_results: int = 30,
     year_start: int = 2021,
     year_end: int = 2026,
     rate_delay: float = 1.0,
+    retry_backoffs: Optional[List[int]] = None,
+    max_attempts: int = 6,
 ) -> List[Dict[str, Any]]:
     """Search Semantic Scholar API."""
     papers = []
     offset = 0
     limit = min(max_results, 100)
+    retry_backoffs = retry_backoffs or [15, 30, 60, 120, 180]
+    headers = _semantic_scholar_headers()
+
+    has_api_key = bool(os.getenv("SEMANTIC_SCHOLAR_API_KEY", "").strip())
+    pre_delay = rate_delay if has_api_key else max(rate_delay, 6.0)
+    time.sleep(pre_delay)
 
     try:
         params = {
@@ -74,25 +113,53 @@ def search_semantic_scholar(
             "fields": SEMANTIC_SCHOLAR_FIELDS,
             "year": f"{year_start}-{year_end}",
         }
-        resp = requests.get(
-            SEMANTIC_SCHOLAR_SEARCH_URL,
-            params=params,
-            timeout=30,
-            headers={"User-Agent": "UC_LEAP_Step1/1.0"},
-        )
+        resp = None
+
+        for attempt in range(max_attempts):
+            resp = requests.get(
+                SEMANTIC_SCHOLAR_SEARCH_URL,
+                params=params,
+                timeout=30,
+                headers=headers,
+            )
+
+            if resp.status_code == 200:
+                break
+
+            if resp.status_code == 429:
+                fallback = retry_backoffs[min(attempt, len(retry_backoffs) - 1)]
+                backoff = _retry_after_seconds(resp, fallback)
+                jitter = random.uniform(0, backoff * 0.3)
+                wait = backoff + jitter
+                logger.warning(
+                    f"Semantic Scholar 429 for '{query[:60]}', "
+                    f"waiting {wait:.0f}s (attempt {attempt + 1}/{max_attempts})..."
+                )
+                time.sleep(wait)
+                continue
+
+            if resp.status_code >= 500 and attempt < max_attempts - 1:
+                fallback = retry_backoffs[min(attempt, len(retry_backoffs) - 1)]
+                jitter = random.uniform(0, fallback * 0.3)
+                wait = fallback + jitter
+                logger.warning(
+                    f"Semantic Scholar {resp.status_code} for '{query[:60]}', "
+                    f"waiting {wait:.0f}s (attempt {attempt + 1}/{max_attempts})..."
+                )
+                time.sleep(wait)
+                continue
+
+            break
+
+        if resp is None:
+            raise RuntimeError("Semantic Scholar request did not produce a response")
 
         if resp.status_code == 429:
-            for backoff in [10, 30, 60]:
-                logger.warning(f"Semantic Scholar rate limited, waiting {backoff}s...")
-                time.sleep(backoff)
-                resp = requests.get(
-                    SEMANTIC_SCHOLAR_SEARCH_URL,
-                    params=params,
-                    timeout=30,
-                    headers={"User-Agent": "UC_LEAP_Step1/1.0"},
-                )
-                if resp.status_code != 429:
-                    break
+            logger.warning(
+                f"Semantic Scholar rate limit persisted after {max_attempts} attempts "
+                f"for query: {query[:60]}. Skipping — other APIs will compensate."
+            )
+            return papers
 
         if resp.status_code != 200:
             logger.warning(
@@ -130,7 +197,6 @@ def search_semantic_scholar(
     except Exception as e:
         logger.error(f"Semantic Scholar parse error: {e}")
 
-    time.sleep(rate_delay)
     return papers
 
 
@@ -431,6 +497,96 @@ def search_arxiv(
 
 
 # ===================================================================
+# 5. Europe PMC
+# ===================================================================
+
+EUROPE_PMC_SEARCH_URL = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
+
+
+def search_europe_pmc(
+    query: str,
+    max_results: int = 30,
+    year_start: int = 2021,
+    year_end: int = 2026,
+    rate_delay: float = 0.3,
+) -> List[Dict[str, Any]]:
+    """Search Europe PMC API (free, no key required)."""
+    papers = []
+
+    try:
+        params = {
+            "query": f"{query} (PUB_YEAR:[{year_start} TO {year_end}])",
+            "format": "json",
+            "pageSize": min(max_results, 25),
+            "resultType": "core",
+            "sort": "RELEVANCE",
+        }
+        resp = requests.get(
+            EUROPE_PMC_SEARCH_URL,
+            params=params,
+            timeout=30,
+        )
+
+        if resp.status_code != 200:
+            logger.warning(
+                f"Europe PMC returned {resp.status_code} for query: {query[:60]}"
+            )
+            return papers
+
+        data = resp.json()
+        for item in data.get("resultList", {}).get("result", []):
+            p = _empty_raw_paper()
+            p["title"] = item.get("title", "") or ""
+            p["abstract"] = item.get("abstractText", "") or ""
+            p["journal"] = item.get("journalTitle", "") or ""
+            p["year"] = item.get("pubYear")
+            if p["year"]:
+                try:
+                    p["year"] = int(p["year"])
+                except (ValueError, TypeError):
+                    p["year"] = None
+            p["doi"] = item.get("doi", "") or ""
+            pmid = item.get("pmid", "")
+            pmcid = item.get("pmcid", "")
+            p["paper_url"] = (
+                f"https://europepmc.org/article/MED/{pmid}" if pmid
+                else f"https://europepmc.org/article/PMC/{pmcid}" if pmcid
+                else ""
+            )
+            p["authors"] = []
+            author_list = item.get("authorList", {}).get("author", [])
+            for a in author_list:
+                full = a.get("fullName", "")
+                if full:
+                    p["authors"].append(full)
+            p["citation_count"] = item.get("citedByCount")
+            p["source_api"] = "europe_pmc"
+            p["external_ids"] = {}
+            if pmid:
+                p["external_ids"]["pmid"] = pmid
+            if pmcid:
+                p["external_ids"]["pmcid"] = pmcid
+            if p["doi"]:
+                p["external_ids"]["DOI"] = p["doi"]
+            p["open_access_url"] = ""
+            if item.get("isOpenAccess") == "Y" and pmcid:
+                p["open_access_url"] = f"https://europepmc.org/article/PMC/{pmcid}"
+            p["concepts"] = item.get("meshHeadingList", {}).get("meshHeading", []) if isinstance(item.get("meshHeadingList"), dict) else []
+            p["raw_metadata"] = {
+                "publicationTypes": [item.get("pubType", "")],
+            }
+            papers.append(p)
+
+    except requests.RequestException as e:
+        logger.error(f"Europe PMC request error: {e}")
+    except Exception as e:
+        logger.error(f"Europe PMC parse error: {e}")
+
+    time.sleep(rate_delay)
+    return papers
+
+
+# ===================================================================
 # Unified search dispatcher
 # ===================================================================
 
@@ -453,12 +609,14 @@ def search_all_apis(
     year_end = config.get("year_range", {}).get("end", 2026)
     max_per_query = config.get("max_results_per_query", 30)
     rate_limits = config.get("rate_limits", {})
+    retry_policy = config.get("retry_policy", {})
 
     api_functions = {
         "semantic_scholar": search_semantic_scholar,
         "openalex": search_openalex,
         "crossref": search_crossref,
         "arxiv": search_arxiv,
+        "europe_pmc": search_europe_pmc,
     }
 
     enabled_apis = config.get("enabled_apis", {})
@@ -484,26 +642,60 @@ def search_all_apis(
             "openalex": 20,
             "crossref": 12,
             "arxiv": 15,
+            "europe_pmc": 12,
         }
         query_limit = config_max_queries.get(api_name, default_limits.get(api_name, 15))
         selected_queries = queries[:query_limit]
 
+        consecutive_empty = 0
         for i, query in enumerate(selected_queries):
+            # If Semantic Scholar gave 0 results twice in a row, likely rate-limited — skip rest
+            if api_name == "semantic_scholar" and consecutive_empty >= 2:
+                logger.warning(
+                    f"  [{api_name}] Skipping remaining {len(selected_queries) - i} queries "
+                    f"(consecutive empty results — likely rate-limited). "
+                    f"OpenAlex/CrossRef/arXiv will compensate."
+                )
+                break
+
             logger.info(
                 f"  [{api_name}] Query {i+1}/{len(selected_queries)}: {query[:60]}..."
             )
             try:
-                results = search_fn(
-                    query=query,
-                    max_results=max_per_query,
-                    year_start=year_start,
-                    year_end=year_end,
-                    rate_delay=rate_delay,
-                )
+                if api_name == "semantic_scholar":
+                    results = search_fn(
+                        query=query,
+                        max_results=max_per_query,
+                        year_start=year_start,
+                        year_end=year_end,
+                        rate_delay=rate_delay,
+                        retry_backoffs=retry_policy.get(
+                            "semantic_scholar_backoffs", [15, 30, 60, 120, 180]
+                        ),
+                        max_attempts=retry_policy.get(
+                            "semantic_scholar_max_attempts", 6
+                        ),
+                    )
+                else:
+                    results = search_fn(
+                        query=query,
+                        max_results=max_per_query,
+                        year_start=year_start,
+                        year_end=year_end,
+                        rate_delay=rate_delay,
+                    )
+
+                if api_name == "semantic_scholar" and len(results) == 0:
+                    consecutive_empty += 1
+                else:
+                    consecutive_empty = 0
+
                 all_papers.extend(results)
                 logger.info(f"    -> {len(results)} results")
             except Exception as e:
                 logger.error(f"  [{api_name}] Error for query '{query[:40]}': {e}")
+                if api_name == "semantic_scholar":
+                    consecutive_empty += 1
 
     logger.info(f"Total raw results from all APIs: {len(all_papers)}")
     return all_papers

@@ -1,0 +1,134 @@
+{
+  "paper_id": "step1_0165",
+  "title": "<i>Ab initio</i> study of the electronic states of V<sub>3</sub>Si in momentum space",
+  "doi": "10.1039/d3ra04535h",
+  "journal": "RSC Advances",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4386289136",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "Azulene_2D.zip: Too large: 798.1MB",
+    "Phenol.zip: Too large: 3097.8MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1039_d3ra04535h",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports a first-principles FP-LAPW study of the electronic structure of cubic A15 V3Si in momentum space, focusing on band structure, Fermi surface, electron momentum density, Compton profiles, and electron localization. The calculated isotropic Compton profile agrees very well with experiment, the 2D momentum density reproduces 2D-ACAR features, and the bonding analysis indicates predominantly metallic bonding with some Si-to-V charge transfer.",
+    "measurement_types": [
+      "Compton scattering / Compton profile",
+      "2D-ACAR (two-dimensional angular correlation of annihilation radiation)",
+      "X-ray diffraction",
+      "electronic structure calculation (FP-LAPW / DFT)",
+      "Fermi surface calculation",
+      "electron localization function (ELF)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1",
+        "description": "Electronic band structure of V3Si along high-symmetry directions.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2",
+        "description": "Partial density of states from V and Si s, p, d orbitals; V(s), V(p), Si(s), and Si(d) are scaled for visibility.",
+        "data_type": "spectrum",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3",
+        "description": "Band-resolved Fermi surfaces from the first through fourth bands, shown in the irreducible Brillouin zone.",
+        "data_type": "3D surface / reciprocal-space image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Band structure zoomed to the energy window around the Fermi level (−0.5 to 0.5 eV) to show the bands that generate the Fermi surface.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig5",
+        "description": "Calculated 2D electron momentum density of V3Si, including a view and a projection onto the px–py plane.",
+        "data_type": "2D intensity map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig6",
+        "description": "Experimental and theoretical valence Compton profiles, with a lower-panel difference curve Jtheory(pz) − Jexperiment(pz) and error bars.",
+        "data_type": "spectrum / line plot",
+        "likely_source": "both experimental data and theoretical calculations"
+      },
+      {
+        "figure_id": "Fig7",
+        "description": "Anisotropies between directional Compton profiles along principal crystallographic directions.",
+        "data_type": "difference curve / line plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig8",
+        "description": "Crystal structure of V3Si and ELF maps in the (100) plane at x = 0.5 and x = 1, with enlarged views.",
+        "data_type": "structure image / scalar field map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig9",
+        "description": "ELF map of V3Si in the (110) plane with an enlarged view.",
+        "data_type": "scalar field map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig10",
+        "description": "Reciprocal form factor B(r) of V3Si compared with experiment, showing minima and zero crossings.",
+        "data_type": "line plot",
+        "likely_source": "both experimental data and theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper cites and compares against experimental Compton profile data (from a 59.54 keV gamma-ray Compton spectrometer), 2D-ACAR measurements, Fermi-surface-related experimental results, and X-ray diffraction/charge-transfer studies from the literature. However, the paper itself does not report newly collected raw experimental files; it is primarily a theoretical FP-LAPW study using published experimental datasets for comparison.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, downloadable dataset, or source-data archive is mentioned in the provided text.",
+      "data_provided_types": [
+        "theoretical_or_simulated",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "No raw data files are described as being generated or deposited by the authors. The only raw-like experimental inputs mentioned are published experimental Compton profiles, 2D-ACAR data, and other literature results used for comparison.",
+      "processed_data_description": "The paper describes processed quantities derived from FP-LAPW/DFT: band structures, partial DOS, Fermi surfaces, 1D and 2D electron momentum densities, isotropic and directional Compton profiles, anisotropy curves, ELF maps, and reciprocal form factor B(r). Experimental Compton profiles are also processed by subtracting core contributions from Biggs tables, normalizing to 21.083 electrons in the 0–7 a.u. range, and convoluting with a Gaussian resolution function of 0.53 a.u. width.",
+      "figure_data_description": "Figure-ready data are clearly implied for all main figures, but the paper does not state that source data files are separately provided. The figures appear to be generated from theoretical calculations, with some figures overlaying or comparing to experimental curves from the literature.",
+      "scripts_description": "No scripts, notebooks, or code repositories are mentioned. The calculations were performed with the Elk code, and visualization used VESTA and XCrysden, but no custom analysis scripts are described.",
+      "notes": "This is primarily a simulation/theory paper rather than a data-generation paper. The dataset semantics are dominated by derived observables computed from DFT: reciprocal-space band structures, momentum densities, and bonding descriptors. Experimental data are used only as external benchmarks. The paper distinguishes between valence-only theoretical Compton profiles and experimental profiles corrected for core contributions, and it explicitly mentions spherical averaging for polycrystalline CP and Gaussian convolution to match experimental resolution."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper compares to experimental Compton profiles, 2D-ACAR measurements, and Fermi-surface experiments, but does not present newly acquired raw measurements from the authors.",
+      "source_data_evidence": "Multiple figures are generated from theoretical calculations and processed comparisons, including band structures, DOS, Fermi surfaces, momentum densities, anisotropies, ELF maps, and B(r).",
+      "data_availability_section_relevant": "No explicit data availability statement is present in the provided text; relevant methodological phrases include 'core contribution ... is subtracted', 'normalised to 21.083 electrons in the 0–7 a.u. range', 'convoluted with a Gaussian resolution function taking 0.53 a.u. width', and 'spherical average of CP'.",
+      "priority_modalities": [
+        "band structure data",
+        "density of states",
+        "Fermi surface meshes",
+        "Compton profile curves",
+        "electron momentum density maps",
+        "ELF scalar fields",
+        "reciprocal form factor curves"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

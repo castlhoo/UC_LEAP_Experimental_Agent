@@ -372,12 +372,27 @@ pip install -r requirements.txt
 2. Set `OPENAI_API_KEY` in `.env`.
    A safe starting point is to copy `.env.example` and fill in the real key locally.
 
-3. Run each step from the repository root:
+3. Run the full pipeline from the repository root:
+
+```bash
+python run_pipeline.py
+```
+
+This unified entry point runs:
+
+- Step 1
+- Step 2
+- Step 3
+- Step 3.5
+- Step 4
+
+If you prefer, you can still run each step manually:
 
 ```bash
 python -m step1.run_step1
 python -m step2.run_step2
 python -m step3.run_step3
+python -m step3_5.run_step3_5
 python -m step4.run_step4
 ```
 

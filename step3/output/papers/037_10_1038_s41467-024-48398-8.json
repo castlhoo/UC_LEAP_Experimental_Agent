@@ -1,0 +1,212 @@
+{
+  "paper_id": "step1_0121",
+  "title": "Extreme magnetoresistance at high-mobility oxide heterointerfaces with dynamic defect tunability",
+  "doi": "10.1038/s41467-024-48398-8",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4397032209",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-48398-8",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No clearly replot-ready, tabular figure data files were identifiable from the provided inspection reports.",
+  "type2_summary": "Both files are Nature source-data PDFs of moderate size and are most conservatively treated as raw or minimally processed deposited experimental data rather than clean figure-ready tables.",
+  "type1_files": [],
+  "type2_files": [
+    "41467_2024_48398_MOESM1_ESM_1.pdf",
+    "41467_2024_48398_MOESM2_ESM_1.pdf"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The strongest evidence available is that these are Nature source-data PDFs deposited alongside the paper. Because the internal contents were not exposed, the classification is conservative and leans Type 2. If the PDFs contain figure-specific tables internally, that would require direct inspection to reclassify as Type 1.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2024_48398_MOESM1_ESM_1.pdf",
+      "filename": "41467_2024_48398_MOESM1_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper states that the data generated in this study were deposited in the data.dtu.dk repository and describes raw experimental measurements for magnetotransport, scanning SQUID imaging, and ARPES. This file is from the Nature source-data package, which in this context is more consistent with deposited raw/near-raw experimental data than figure-only tables.",
+      "file_evidence": "PDF source-data file, 4.6 MB, from nature_source_data. The file is not a small tabular CSV/XLSX figure dataset and is relatively large, suggesting embedded raw or minimally processed experimental content rather than clean replot-ready tables.",
+      "reasoning": "Given the paper's explicit data-deposition statement and the file's source-data PDF nature and size, the conservative classification is raw/unprocessed or near-raw data. There is no evidence that it is a clean figure-ready table.",
+      "ambiguity": "The exact internal structure of the PDF is not provided, so the classification is based on repository/source-data context and file size rather than visible columns.",
+      "key_columns_or_structure": "Not inspectable from the provided report; likely embedded experimental figures/data rather than tabular headers."
+    },
+    {
+      "relative_path": "41467_2024_48398_MOESM2_ESM_1.pdf",
+      "filename": "41467_2024_48398_MOESM2_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The publication reports deposited study data and includes raw experimental modalities (transport, SQUID, ARPES). A second source-data PDF in the Nature package is therefore more likely to contain raw or minimally processed supporting data than clean figure-ready tables.",
+      "file_evidence": "PDF source-data file, 3.1 MB, from nature_source_data. The size and PDF format are more consistent with embedded experimental outputs or supplementary raw data than with compact, directly replot-ready tabular datasets.",
+      "reasoning": "Without internal table structure visible, the conservative choice is Type 2 because the file is part of the source-data deposit and not clearly a cleaned, figure-specific table file.",
+      "ambiguity": "The file could contain processed source data for a figure, but the available inspection does not show headers or figure labels needed to support Type 1.",
+      "key_columns_or_structure": "Not inspectable from the provided report; likely embedded experimental figures/data rather than tabular headers."
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports extreme, non-saturating positive magnetoresistance in the high-mobility oxide heterointerface γ-Al2O3/SrTiO3, reaching 80,000% at 15 T and 2 K. By combining magnetotransport, scanning SQUID current imaging, and resonant ARPES, the authors argue that the XMR is not primarily band-structure-driven but instead arises from semiclassical guiding-center transport in a weakly disordered, inhomogeneous conductor, and that oxygen-vacancy dynamics can tune the effect over orders of magnitude.",
+    "measurement_types": [
+      "DC magnetotransport (sheet resistance, magnetoresistance, Hall resistance, Hall angle)",
+      "temperature-dependent transport",
+      "annealing/aging-dependent transport",
+      "scanning SQUID microscopy / magnetic stray-field imaging",
+      "resonant angle-resolved photoemission spectroscopy (ARPES)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Magnetoresistance of γ-Al2O3/SrTiO3 versus out-of-plane magnetic field at low temperature, showing very large positive, non-saturating MR.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Temperature dependence of magnetoresistance at different magnetic fields, showing strong enhancement at low temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Sheet resistance versus temperature at different magnetic fields, identifying three transport regimes.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Magnetic-field/temperature phase diagram with characteristic temperatures Tm and Ti defining three regions.",
+        "data_type": "phase diagram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Arrhenius plot / extracted thermal activation barrier for the field-induced resistive regime.",
+        "data_type": "derived plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Temperature dependence of crossover fields from dMR/dB, Hall resistance, and Hall angle saturation.",
+        "data_type": "derived transport plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Comparison of magnetoresistance before and after long room-temperature storage, showing dynamic enhancement by aging.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Magnetoresistance after stepwise annealing in oxygen, showing strong suppression of MR with annealing.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Scanning SQUID magnetic-flux maps of current flow for samples with different carrier densities, revealing inhomogeneous current distributions.",
+        "data_type": "image / spatial map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Zero-field mobility versus sheet carrier density across samples with different growth and post-treatment conditions.",
+        "data_type": "scatter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Magnetoresistance at 15 T versus sheet carrier density across samples with different growth and post-treatment conditions.",
+        "data_type": "scatter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Magnetoresistance versus zero-field mobility for several magnetic fields, showing scaling across samples.",
+        "data_type": "scatter/curve plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Same mobility scaling data replotted versus μ0B to show near-collapse of curves.",
+        "data_type": "scaled transport plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Schematic of semiclassical guiding-center motion in a 2D-constrained disorder landscape.",
+        "data_type": "schematic",
+        "likely_source": "theoretical / conceptual"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Schematic showing disorder-limited vertical motion and squeezed current paths in the guiding-center picture.",
+        "data_type": "schematic",
+        "likely_source": "theoretical / conceptual"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Schematic showing thermal activation enabling vertical motion and suppressing the high-resistance state.",
+        "data_type": "schematic",
+        "likely_source": "theoretical / conceptual"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from DC magnetotransport in van der Pauw geometry up to 15 T and 2 K–room temperature, scanning SQUID magnetic-flux maps acquired with a 1.8 µm pickup loop at 4 K, and resonant ARPES spectra acquired at 12 K with soft X-rays at the ADRESS beamline. The text does not specify file formats for the raw data.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that the data generated in this study have been deposited in the data.dtu.dk database at https://doi.org/10.11583/DTU.25611375. They also cite a specific data repository paper and mention supplementary information is available online.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described only at the instrument/measurement level: transport traces from van der Pauw and one 4-terminal geometry, SQUID magnetic-flux maps, and ARPES spectra. No explicit file formats, directory structure, or instrument-export formats are given in the paper text.",
+      "processed_data_description": "The paper clearly uses processed/derived quantities including magnetoresistance, sheet resistance, Hall coefficient, Hall angle, carrier density, mobility, crossover fields, activation barriers, and phase-diagram boundaries. These are extracted from the raw measurements by symmetrization/antisymmetrization, linear fits, Arrhenius analysis, and derivative-based crossover identification.",
+      "figure_data_description": "Figure-specific source data are implied by the data repository and by references to supplementary figures (e.g. S1–S16), but the paper text does not explicitly enumerate per-figure source-data files. The presence of many plotted curves and maps suggests figure-ready processed data were generated from the raw measurements.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the paper text.",
+      "notes": "The dataset appears to combine multiple modalities and multiple processing levels: transport data are symmetrized/antisymmetrized before plotting; carrier density and mobility are extracted from low-field Hall slopes; crossover fields are obtained from intersections of linear fits; activation energies come from Arrhenius plots; SQUID data are spatial maps of magnetic flux interpreted as current-flow inhomogeneity; ARPES data are reused/adapted from a prior publication and are presented as band-structure evidence rather than newly generated in this paper. The paper emphasizes experimental data rather than simulations, with schematics only for the proposed mechanism."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods describe direct experimental acquisition of magnetotransport, scanning SQUID, and ARPES data, and the Data availability section says the data generated in this study were deposited in a repository.",
+      "source_data_evidence": "The paper contains many derived quantities and figure-ready plots: MR, Rs(T,B), phase diagrams, activation barriers, crossover fields, mobility/carrier-density scaling, and processed SQUID/ARPES figures; it also references supplementary figures and a data repository.",
+      "data_availability_section_relevant": "“The data generated in this study have been deposited in the data.dtu.dk database accessible at https://doi.org/10.11583/DTU.25611375.”; “Supplementary information The online version contains supplementary material...”",
+      "priority_modalities": [
+        "transport curves",
+        "Hall data",
+        "magnetoresistance vs field/temperature",
+        "SQUID flux maps",
+        "ARPES spectra",
+        "derived phase-diagram plots"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2024_48398_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4863607,
+      "size_human": "4.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_48398_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2024_48398_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3300194,
+      "size_human": "3.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_48398_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

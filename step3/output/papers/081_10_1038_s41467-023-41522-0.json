@@ -1,0 +1,275 @@
+{
+  "paper_id": "step1_0014",
+  "title": "Dipole field in nitrogen-enriched carbon nitride with external forces to boost the artificial photosynthesis of hydrogen peroxide",
+  "doi": "10.1038/s41467-023-41522-0",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4386799926",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-41522-0",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports a nitrogen-rich triazole-based carbon nitride (C3N5) photocatalyst that forms an intrinsic dipole field and spontaneous polarization, improving directional charge separation and boosting artificial photosynthesis of hydrogen peroxide. Under simulated sunlight plus ultrasonic force, C3N5 reaches 3809.5 µmol g−1 h−1 H2O2 production with 92% 2e− selectivity, attributed to enhanced O2 adsorption at triazole N sites and an indirect 2e− ORR pathway via *O2− and *OOH intermediates.",
+    "measurement_types": [
+      "TEM",
+      "XRD",
+      "FT-IR",
+      "UV–Vis absorption spectroscopy",
+      "EPR spectroscopy",
+      "NEXAFS (C K-edge and N K-edge)",
+      "solid-state 13C NMR",
+      "solid-state 15N NMR",
+      "PFM",
+      "KPFM",
+      "photocatalytic H2O2 production assay (KI colorimetry)",
+      "RRDE",
+      "Tauc plot / Mott-Schottky analysis",
+      "in situ pressure-dependent UV–Vis absorption",
+      "transient absorption spectroscopy",
+      "photoluminescence spectroscopy",
+      "O2-TPD",
+      "DFT calculations",
+      "in situ EPR with DMPO spin trapping",
+      "E. coli disinfection assay"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of photocatalytic carrier recombination pathways, showing bulk recombination (BR) and surface recombination (SR).",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Conceptual diagram of dipole moment, dipole field, and modulation by alternating external forces.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Mechanistic cartoon comparing a nonpolar photocatalyst versus a dipolar photocatalyst under external force, emphasizing directional charge separation.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Structural unit models of C3N4 and C3N5 with charge centers and calculated dipole moments.",
+        "data_type": "molecular model / calculation",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Calculated dipole moment versus number of structural units for C3N4 and C3N5.",
+        "data_type": "calculated trend plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "UV–Vis absorption spectra of C3N4 and C3N5, showing redshifted absorption edge for C3N5.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "EPR spectra comparing unpaired electron signals in C3N4 and C3N5.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "N K-edge NEXAFS spectra of C3N4 and C3N5.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Structural model plus solid-state 13C and 15N NMR spectra identifying triazole/triazine motifs in C3N5.",
+        "data_type": "spectrum / structural assignment",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "PFM phase hysteresis loop and amplitude butterfly loop for C3N5 and C3N4, used to estimate piezoelectric response.",
+        "data_type": "hysteresis loop / electromechanical response curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "KPFM surface potential maps and contact potential difference comparison for C3N4 and C3N5 under dark and light conditions.",
+        "data_type": "image / surface potential map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Time-dependent H2O2 production curves for C3N4 and C3N5 under six conditions: Us, Vis, and Us/Vis combinations.",
+        "data_type": "transport/kinetic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Bar chart of H2O2 yield at 60 min for the same six photocatalytic conditions.",
+        "data_type": "bar chart / kinetic summary",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Comparison of H2O2 formation rate constant kf and decomposition rate constant kd across conditions.",
+        "data_type": "kinetic parameter plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Effect of O2, air, and N2 atmospheres on H2O2 production in the C3N5/Us/Vis system.",
+        "data_type": "bar/curve plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "H2O2 production under different media and illumination conditions (pH 3 water, pure water, tap water; Vis and simulated sunlight).",
+        "data_type": "bar chart",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Real-time E. coli disinfection/inactivation using generated H2O2 over time.",
+        "data_type": "biological assay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "In situ pressure-dependent UV–Vis absorption spectra for C3N4 and C3N5 up to 15 GPa.",
+        "data_type": "spectrum vs pressure",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Bandgap variation with pressure for C3N4 and C3N5, including pressure release behavior.",
+        "data_type": "line plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Transient absorption time profiles at 560 nm for C3N4 and C3N5 with biexponential fits.",
+        "data_type": "time-resolved spectroscopy curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Solid-state PL spectra of C3N4 and C3N5 under fixed excitation.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Pressure-dependent PL peak position and peak intensity for C3N4 and C3N5.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "O2 temperature-programmed desorption curves comparing O2 adsorption on C3N4 and C3N5.",
+        "data_type": "desorption curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Atomic-numbered molecular structure models of C3N4 and C3N5.",
+        "data_type": "molecular model",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Electron localization function maps for C3N4 and C3N5 at 0 and 2 GPa.",
+        "data_type": "computed spatial map",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Hot-spot diagram of O2 adsorption energies for each C/N atom under vertical and plane adsorption at 0 and 2 GPa.",
+        "data_type": "calculated heatmap",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Gibbs free energy diagram for ORR intermediates on C3N4 and C3N5 with and without pressure.",
+        "data_type": "energy diagram",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Schematic of the in situ EPR setup and DMPO trapping principle for *O2− and *OOH.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "In situ EPR spectra showing radical evolution during H2O2 production.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6d",
+        "description": "Concentration and lifetime of radicals (*O2− and *OOH) versus time during photocatalysis.",
+        "data_type": "time series / kinetic plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig6e",
+        "description": "Proposed reaction mechanism for dipole-field-induced spontaneous polarization and indirect 2e− ORR to H2O2.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Yes. The paper reports raw experimental measurements from TEM, XRD, FT-IR, UV–Vis absorption, EPR, NEXAFS, solid-state NMR, PFM, KPFM, photocatalytic H2O2 assays (KI colorimetry), RRDE, in situ high-pressure UV–Vis and PL, TA spectroscopy, O2-TPD, and in situ EPR radical-trapping experiments. The Methods specify instrument types and conditions, e.g. Xe lamp irradiation, ultrasonic cleaner, diamond anvil cell, optical fiber spectrometer, and KI colorimetric readout at 350 nm.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support the plots within this paper and other findings of this study are available from the corresponding author upon reasonable request.' No repository, accession number, or public downloadable dataset is mentioned in the provided text.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurements are described only at the instrument/method level, not as deposited files. The paper names the measurement modalities and instruments but does not specify file formats, folder structure, or a public raw-data archive.",
+      "processed_data_description": "Processed data include fitted kinetic parameters (kf, kd), calculated bandgaps from Tauc plots, effective piezoelectric coefficient d33 from PFM loops, CPD averages/ranges from KPFM, radical concentrations/lifetimes from in situ EPR, and comparative summary plots/bar charts derived from the measurements.",
+      "figure_data_description": "Figure-specific data are clearly implied: the plots in Figs. 2–6 are supported by the underlying measurements and fitted/calculated values, but the paper does not state that source data files are publicly provided. Supplementary figures are extensively referenced, including spectra, loops, pressure-dependent traces, and simulated spectra.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "The dataset is a mixed experimental/theoretical study. Experimental raw data are generated in-house and then processed into spectra, curves, fitted lifetimes, kinetic constants, and summary bars. Theoretical outputs include DFT dipole moments, adsorption energies, ELF maps, and Gibbs free-energy diagrams. The paper repeatedly references supplementary figures and tables, but the text does not indicate an open source-data package or code release."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods and Results describe many direct measurements: TEM images, XRD patterns, UV–Vis spectra, PFM/KPFM maps, TA/PL spectra, O2-TPD curves, and in situ EPR spectra. These are raw or near-raw instrument outputs.",
+      "source_data_evidence": "The paper reports derived quantities and figure-ready summaries such as H2O2 yield curves, kf/kd fits, d33 estimates, bandgap values, CPD averages, radical concentrations/lifetimes, and DFT-calculated energies and dipole moments.",
+      "data_availability_section_relevant": "“The data that support the plots within this paper and other findings of this study are available from the corresponding author upon reasonable request.”",
+      "priority_modalities": [
+        "spectroscopy",
+        "microscopy images",
+        "diffraction patterns",
+        "time-resolved spectroscopy",
+        "electromechanical hysteresis loops",
+        "surface potential maps",
+        "photocatalytic kinetics",
+        "DFT simulation outputs",
+        "EPR spin-trapping spectra"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

@@ -1,0 +1,1178 @@
+{
+  "paper_id": "step1_0285",
+  "title": "Giant spontaneous Hall effect in a nonmagnetic Weyl–Kondo semimetal",
+  "doi": "10.1073/pnas.2013386118",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W2900047190",
+  "priority_score": 7.7,
+  "dataset_status": "verified",
+  "files_downloaded": 12,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1073_pnas_2013386118",
+  "files_inspected": 12,
+  "file_types_found": [
+    "tabular_text",
+    "script",
+    "excel"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All spreadsheet files are figure-panel-organized, small-to-moderate tabular datasets suitable for direct plotting and consistent with cleaned/source figure data.",
+  "type2_summary": "No clear raw/unprocessed instrument-output files were identified in the provided deposit.",
+  "type1_files": [
+    "Figure_5_1.xlsx",
+    "Figure_1_1.xlsx",
+    "Figure_3_1.xlsx",
+    "Figure_4_1.xlsx",
+    "Figure_2_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper evidence and file evidence are consistent with a Zenodo deposit of source data for published figures, not raw experimental outputs. Several files lack headers, but the explicit figure-panel sheet names strongly support Type 1. The repository also includes multiple Python scripts and a requirements file, which are not data files.",
+  "file_classifications": [
+    {
+      "relative_path": "Figure_5_1.xlsx",
+      "filename": "Figure_5_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper is a figure-based experimental report and the Zenodo deposit appears to contain figure-associated data rather than raw instrument dumps; no statement indicates this file is raw.",
+      "file_evidence": "Excel workbook organized into figure-specific sheets ('Figure 5a', 'Figure 5b', 'Figure 5c', 'Figure 5d', 'Figure 5d-inset'). Moderate size and tabular numeric data with no headers, consistent with replot-ready source data for published panels.",
+      "reasoning": "Despite lacking headers, the sheet names map directly to figure panels and the numeric tables are structured for plotting. This matches Type 1 source/cleaned figure data rather than raw measurements.",
+      "ambiguity": "Low ambiguity: no raw-data indicators; strong figure-panel organization.",
+      "key_columns_or_structure": "Figure 5a/5b/5c/5d panel data; numeric x-y style tables"
+    },
+    {
+      "relative_path": "Figure_1_1.xlsx",
+      "filename": "Figure_1_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper is a published experimental paper with figure-oriented deposited data; no raw-data statement is present.",
+      "file_evidence": "Workbook contains sheets named 'Figure 1 e', 'Figure 1f', and 'Figure 1j'. Small figure-specific tables, including 2-column traces and a compact multi-column table, are typical source data for replotting figures.",
+      "reasoning": "The file is clearly organized by figure panel and appears directly plottable with minimal processing, so it is Type 1.",
+      "ambiguity": "None significant.",
+      "key_columns_or_structure": "Figure 1e/1f 2-column traces; Figure 1j compact multi-column table"
+    },
+    {
+      "relative_path": "Figure_3_1.xlsx",
+      "filename": "Figure_3_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "No evidence in the paper suggests these are raw instrument outputs; the dataset deposit is consistent with figure source data.",
+      "file_evidence": "Sheets are explicitly labeled by figure panels ('Figure 3b', 'Figure 3c', 'Figure 3e', 'Figure 3f'). Each sheet is a small 2-column numeric table suitable for direct plotting.",
+      "reasoning": "This is classic replot-ready figure data, not raw data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Figure 3b/3c/3e/3f 2-column numeric traces"
+    },
+    {
+      "relative_path": "Figure_4_1.xlsx",
+      "filename": "Figure_4_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper does not indicate raw data deposition; the available files are figure-associated.",
+      "file_evidence": "Workbook sheets are named by figure panels ('Figure 4a' through 'Figure 4f' plus insets). The tables are compact and structured for plotting, with numeric values consistent with processed source data.",
+      "reasoning": "Figure-panel organization and manageable size strongly support Type 1.",
+      "ambiguity": "Low; headers are absent, but the panel structure is explicit.",
+      "key_columns_or_structure": "Figure 4a/4b multi-series tables; Figure 4d and inset small summary tables"
+    },
+    {
+      "relative_path": "Figure_2_1.xlsx",
+      "filename": "Figure_2_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "No paper evidence of raw instrument files; the deposit is figure-oriented.",
+      "file_evidence": "Workbook contains figure-panel sheets ('Figure 2b', 'Figure 2b-inset', 'Figure 2d', 'Figure 2d-inset', 'Figure 2e', 'Figure 2f', 'Figure 2g'). The data are tabular and panel-specific, with one sheet having headers, indicating processed/organized source data.",
+      "reasoning": "This is directly aligned with published figure panels and is replot-ready with minimal processing, so Type 1.",
+      "ambiguity": "None significant.",
+      "key_columns_or_structure": "Figure 2b/2d/2e/2f/2g panel data; inset tables"
+    },
+    {
+      "relative_path": "spheres_plotting_1.py",
+      "filename": "spheres_plotting_1.py",
+      "type": "script",
+      "paper_evidence": "The paper does not mention this script explicitly, but the Zenodo deposit includes analysis/plotting code rather than data.",
+      "file_evidence": "Python script; likely used for plotting or analysis. Not a data file.",
+      "reasoning": "Classified as script because it is executable code, not tabular data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "Spheres_rutile_1.py",
+      "filename": "Spheres_rutile_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; appears to be deposited code.",
+      "file_evidence": "Python script, likely analysis/plotting or model generation code.",
+      "reasoning": "Executable code rather than data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "rutile_band_structure_1.py",
+      "filename": "rutile_band_structure_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; appears to be deposited computational code.",
+      "file_evidence": "Python script, likely for band-structure calculation or plotting.",
+      "reasoning": "Executable code rather than data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "effects_plotting_1.py",
+      "filename": "effects_plotting_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; appears to be analysis/plotting code in the Zenodo deposit.",
+      "file_evidence": "Python script, likely used to generate figures or analyze results.",
+      "reasoning": "Executable code rather than data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "requirements_1.txt",
+      "filename": "requirements_1.txt",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence; this is repository metadata rather than experimental data.",
+      "file_evidence": "Text file listing Python package requirements (48 rows). This is environment documentation, not data.",
+      "reasoning": "Classified as documentation because it describes software dependencies.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "Python package list"
+    },
+    {
+      "relative_path": "effects_compute_1.py",
+      "filename": "effects_compute_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; appears to be computational code in the deposit.",
+      "file_evidence": "Python script, likely performing calculations or preprocessing for figures.",
+      "reasoning": "Executable code rather than data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    },
+    {
+      "relative_path": "magnon_library_rutile_1.py",
+      "filename": "magnon_library_rutile_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; appears to be a code library in the Zenodo deposit.",
+      "file_evidence": "Large Python script/library (76.4 KB), consistent with reusable computational routines rather than data tables.",
+      "reasoning": "Executable code rather than data.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "N/A"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports an experimentally observed giant spontaneous Hall effect in a noncentrosymmetric, time-reversal-symmetric Weyl–Kondo semimetal, attributed to Weyl nodes generated by strong Kondo correlations.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset or source data could be identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Figure_5_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 347772,
+      "size_human": "339.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 5a",
+        "Figure 5b",
+        "Figure 5c",
+        "Figure 5d",
+        "Figure 5d-inset"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Figure 5a",
+          "columns": [
+            0,
+            -10.17958,
+            "-10.17958.1",
+            -6.60342,
+            "-6.60342.1",
+            "-6.60342.2",
+            "-6.60342.3",
+            -5.52825,
+            "-5.52825.1",
+            -5.15875,
+            "-5.15875.1",
+            "-5.15875.2",
+            "-5.15875.3",
+            -0.49805,
+            "-0.49805.1",
+            0.13769,
+            "0.13769.1",
+            "0.13769.2",
+            "0.13769.3",
+            0.84214,
+            "0.84214.1",
+            1.92499,
+            "1.92499.1",
+            2.19047,
+            "2.19047.1",
+            "2.19047.2",
+            "2.19047.3",
+            2.6884,
+            "2.6884.1",
+            "2.6884.2"
+          ],
+          "named_columns": [
+            0,
+            -10.17958,
+            "-10.17958.1",
+            -6.60342,
+            "-6.60342.1",
+            "-6.60342.2",
+            "-6.60342.3",
+            -5.52825,
+            "-5.52825.1",
+            -5.15875,
+            "-5.15875.1",
+            "-5.15875.2",
+            "-5.15875.3",
+            -0.49805,
+            "-0.49805.1",
+            0.13769,
+            "0.13769.1",
+            "0.13769.2",
+            "0.13769.3",
+            0.84214,
+            "0.84214.1",
+            1.92499,
+            "1.92499.1",
+            2.19047,
+            "2.19047.1",
+            "2.19047.2",
+            "2.19047.3",
+            2.6884,
+            "2.6884.1",
+            "2.6884.2"
+          ],
+          "column_count": 33,
+          "row_count": 1200,
+          "dtypes": {
+            "0": "float64",
+            "-10.17958": "float64",
+            "-10.17958.1": "float64",
+            "-6.60342": "float64",
+            "-6.60342.1": "float64",
+            "-6.60342.2": "float64",
+            "-6.60342.3": "float64",
+            "-5.52825": "float64",
+            "-5.52825.1": "float64",
+            "-5.15875": "float64",
+            "-5.15875.1": "float64",
+            "-5.15875.2": "float64",
+            "-5.15875.3": "float64",
+            "-0.49805": "float64",
+            "-0.49805.1": "float64",
+            "0.13769": "float64",
+            "0.13769.1": "float64",
+            "0.13769.2": "float64",
+            "0.13769.3": "float64",
+            "0.84214": "float64",
+            "0.84214.1": "float64",
+            "1.92499": "float64",
+            "1.92499.1": "float64",
+            "2.19047": "float64",
+            "2.19047.1": "float64",
+            "2.19047.2": "float64",
+            "2.19047.3": "float64",
+            "2.6884": "float64",
+            "2.6884.1": "float64",
+            "2.6884.2": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 5b",
+          "columns": [
+            -0.1,
+            0.67454
+          ],
+          "named_columns": [
+            -0.1,
+            0.67454
+          ],
+          "column_count": 2,
+          "row_count": 20,
+          "dtypes": {
+            "-0.1": "float64",
+            "0.67454": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 5c",
+          "columns": [
+            -0.1,
+            -0.35645
+          ],
+          "named_columns": [
+            -0.1,
+            -0.35645
+          ],
+          "column_count": 2,
+          "row_count": 20,
+          "dtypes": {
+            "-0.1": "float64",
+            "-0.35645": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 5d",
+          "columns": [
+            0.97168,
+            268.93811,
+            270.55542
+          ],
+          "named_columns": [
+            0.97168,
+            268.93811,
+            270.55542
+          ],
+          "column_count": 3,
+          "row_count": 9,
+          "dtypes": {
+            "0.97168": "float64",
+            "268.93811": "float64",
+            "270.55542": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 5d-inset",
+          "columns": [
+            1727.9316,
+            -2121.42538,
+            664.05,
+            27.6,
+            41.35411,
+            68.21179
+          ],
+          "named_columns": [
+            1727.9316,
+            -2121.42538,
+            664.05,
+            27.6,
+            41.35411,
+            68.21179
+          ],
+          "column_count": 6,
+          "row_count": 9,
+          "dtypes": {
+            "1727.9316": "float64",
+            "-2121.42538": "float64",
+            "664.05": "float64",
+            "27.6": "float64",
+            "41.35411": "float64",
+            "68.21179": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Figure_5_1.xlsx"
+    },
+    {
+      "filename": "Figure_1_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 18985,
+      "size_human": "18.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 1 e",
+        "Figure 1f",
+        "Figure 1j"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Figure 1 e",
+          "columns": [
+            -1,
+            "-1.1"
+          ],
+          "named_columns": [
+            -1,
+            "-1.1"
+          ],
+          "column_count": 2,
+          "row_count": 201,
+          "dtypes": {
+            "-1": "float64",
+            "-1.1": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 1f",
+          "columns": [
+            -1,
+            "-1.1"
+          ],
+          "named_columns": [
+            -1,
+            "-1.1"
+          ],
+          "column_count": 2,
+          "row_count": 201,
+          "dtypes": {
+            "-1": "float64",
+            "-1.1": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 1j",
+          "columns": [
+            302.00476,
+            52.19781,
+            2.00328,
+            52.14656,
+            62.00339,
+            52.15011,
+            122.00365,
+            52.15911,
+            182.00401,
+            52.17184,
+            242.00439,
+            52.18509
+          ],
+          "named_columns": [
+            302.00476,
+            52.19781,
+            2.00328,
+            52.14656,
+            62.00339,
+            52.15011,
+            122.00365,
+            52.15911,
+            182.00401,
+            52.17184,
+            242.00439,
+            52.18509
+          ],
+          "column_count": 12,
+          "row_count": 29,
+          "dtypes": {
+            "302.00476": "float64",
+            "52.19781": "float64",
+            "2.00328": "float64",
+            "52.14656": "float64",
+            "62.00339": "float64",
+            "52.15011": "float64",
+            "122.00365": "float64",
+            "52.15911": "float64",
+            "182.00401": "float64",
+            "52.17184": "float64",
+            "242.00439": "float64",
+            "52.18509": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Figure_1_1.xlsx"
+    },
+    {
+      "filename": "Figure_3_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 25438,
+      "size_human": "24.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 3b",
+        "Figure 3c",
+        "Figure 3e",
+        "Figure 3f"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Figure 3b",
+          "columns": [
+            -0.00399,
+            0.05201
+          ],
+          "named_columns": [
+            -0.00399,
+            0.05201
+          ],
+          "column_count": 2,
+          "row_count": 180,
+          "dtypes": {
+            "-0.00399": "float64",
+            "0.05201": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3c",
+          "columns": [
+            -0.00399,
+            -0.00108
+          ],
+          "named_columns": [
+            -0.00399,
+            -0.00108
+          ],
+          "column_count": 2,
+          "row_count": 180,
+          "dtypes": {
+            "-0.00399": "float64",
+            "-0.00108": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3e",
+          "columns": [
+            0.00133,
+            0.13136
+          ],
+          "named_columns": [
+            0.00133,
+            0.13136
+          ],
+          "column_count": 2,
+          "row_count": 180,
+          "dtypes": {
+            "0.00133": "float64",
+            "0.13136": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 3f",
+          "columns": [
+            0.00133,
+            -0.00102
+          ],
+          "named_columns": [
+            0.00133,
+            -0.00102
+          ],
+          "column_count": 2,
+          "row_count": 180,
+          "dtypes": {
+            "0.00133": "float64",
+            "-0.00102": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Figure_3_1.xlsx"
+    },
+    {
+      "filename": "Figure_4_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 57373,
+      "size_human": "56.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 4a",
+        "Figure 4b",
+        "Figure 4c",
+        "Figure 4d",
+        "Figure 4d-inset",
+        "Figure 4e",
+        "Figure 4f"
+      ],
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet_name": "Figure 4a",
+          "columns": [
+            -0.00467,
+            26394.79161,
+            "-0.00467.1",
+            24035.32612,
+            "-0.00467.2",
+            20641.49318,
+            "-0.00467.3",
+            17750.53467,
+            "-0.00467.4",
+            15623.51901,
+            "-0.00467.5",
+            9474.42615
+          ],
+          "named_columns": [
+            -0.00467,
+            26394.79161,
+            "-0.00467.1",
+            24035.32612,
+            "-0.00467.2",
+            20641.49318,
+            "-0.00467.3",
+            17750.53467,
+            "-0.00467.4",
+            15623.51901,
+            "-0.00467.5",
+            9474.42615
+          ],
+          "column_count": 12,
+          "row_count": 180,
+          "dtypes": {
+            "-0.00467": "float64",
+            "26394.79161": "float64",
+            "-0.00467.1": "float64",
+            "24035.32612": "float64",
+            "-0.00467.2": "float64",
+            "20641.49318": "float64",
+            "-0.00467.3": "float64",
+            "17750.53467": "float64",
+            "-0.00467.4": "float64",
+            "15623.51901": "float64",
+            "-0.00467.5": "float64",
+            "9474.42615": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4b",
+          "columns": [
+            -0.00467,
+            69.93396,
+            0.00521,
+            52.36101,
+            0.00515,
+            31.61601,
+            0.00509,
+            16.58537,
+            0.00332,
+            6.29917,
+            0.00308,
+            0.16549
+          ],
+          "named_columns": [
+            -0.00467,
+            69.93396,
+            0.00521,
+            52.36101,
+            0.00515,
+            31.61601,
+            0.00509,
+            16.58537,
+            0.00332,
+            6.29917,
+            0.00308,
+            0.16549
+          ],
+          "column_count": 12,
+          "row_count": 180,
+          "dtypes": {
+            "-0.00467": "float64",
+            "69.93396": "float64",
+            "0.00521": "float64",
+            "52.36101": "float64",
+            "0.00515": "float64",
+            "31.61601": "float64",
+            "0.00509": "float64",
+            "16.58537": "float64",
+            "0.00332": "float64",
+            "6.29917": "float64",
+            "0.00308": "float64",
+            "0.16549": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4c",
+          "columns": [
+            -0.00467,
+            0.26495
+          ],
+          "named_columns": [
+            -0.00467,
+            0.26495
+          ],
+          "column_count": 2,
+          "row_count": 180,
+          "dtypes": {
+            "-0.00467": "float64",
+            "0.26495": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4d",
+          "columns": [
+            2,
+            667.43623,
+            "2.1",
+            635.46476,
+            "2.2",
+            306.21117
+          ],
+          "named_columns": [
+            2,
+            667.43623,
+            "2.1",
+            635.46476,
+            "2.2",
+            306.21117
+          ],
+          "column_count": 6,
+          "row_count": 19,
+          "dtypes": {
+            "2": "int64",
+            "667.43623": "float64",
+            "2.1": "int64",
+            "635.46476": "float64",
+            "2.2": "int64",
+            "306.21117": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4d-inset",
+          "columns": [
+            2,
+            8.8842,
+            "2.1",
+            5.31328,
+            "2.2",
+            1.52212
+          ],
+          "named_columns": [
+            2,
+            8.8842,
+            "2.1",
+            5.31328,
+            "2.2",
+            1.52212
+          ],
+          "column_count": 6,
+          "row_count": 19,
+          "dtypes": {
+            "2": "int64",
+            "8.8842": "float64",
+            "2.1": "int64",
+            "5.31328": "float64",
+            "2.2": "int64",
+            "1.52212": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4e",
+          "columns": [
+            9.0,
+            667.43856,
+            420.08873
+          ],
+          "named_columns": [
+            9.0,
+            667.43856,
+            420.08873
+          ],
+          "column_count": 3,
+          "row_count": 20,
+          "dtypes": {
+            "9.0": "float64",
+            "667.43856": "float64",
+            "420.08873": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 4f",
+          "columns": [
+            "Co3Sn2S2",
+            12
+          ],
+          "named_columns": [
+            "Co3Sn2S2",
+            12
+          ],
+          "column_count": 2,
+          "row_count": 6,
+          "dtypes": {
+            "Co3Sn2S2": "object",
+            "12": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Figure_4_1.xlsx"
+    },
+    {
+      "filename": "Figure_2_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 67722,
+      "size_human": "66.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Figure 2b",
+        "Figure 2b-inset",
+        "Figure 2d",
+        "Figure 2d-inset",
+        "Figure 2e",
+        "Figure 2f",
+        "Figure 2g"
+      ],
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet_name": "Figure 2b",
+          "columns": [
+            8.99996,
+            0.00723,
+            8.99997,
+            0.00596,
+            "8.99997.1",
+            0.00476,
+            "8.99997.2",
+            0.00343
+          ],
+          "named_columns": [
+            8.99996,
+            0.00723,
+            8.99997,
+            0.00596,
+            "8.99997.1",
+            0.00476,
+            "8.99997.2",
+            0.00343
+          ],
+          "column_count": 8,
+          "row_count": 180,
+          "dtypes": {
+            "8.99996": "float64",
+            "0.00723": "float64",
+            "8.99997": "float64",
+            "0.00596": "float64",
+            "8.99997.1": "float64",
+            "0.00476": "float64",
+            "8.99997.2": "float64",
+            "0.00343": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2b-inset",
+          "columns": [
+            0.0,
+            0.00723
+          ],
+          "named_columns": [
+            0.0,
+            0.00723
+          ],
+          "column_count": 2,
+          "row_count": 11,
+          "dtypes": {
+            "0.0": "int64",
+            "0.00723": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2d",
+          "columns": [
+            9.00003,
+            -0.00433,
+            "9.00003.1",
+            -0.00408,
+            "9.00003.2",
+            -0.00344,
+            "9.00003.3",
+            -0.00132,
+            "9.00003.4",
+            0.00091,
+            "9.00003.5",
+            0.00283,
+            "9.00003.6",
+            0.00402
+          ],
+          "named_columns": [
+            9.00003,
+            -0.00433,
+            "9.00003.1",
+            -0.00408,
+            "9.00003.2",
+            -0.00344,
+            "9.00003.3",
+            -0.00132,
+            "9.00003.4",
+            0.00091,
+            "9.00003.5",
+            0.00283,
+            "9.00003.6",
+            0.00402
+          ],
+          "column_count": 14,
+          "row_count": 180,
+          "dtypes": {
+            "9.00003": "float64",
+            "-0.00433": "float64",
+            "9.00003.1": "float64",
+            "-0.00408": "float64",
+            "9.00003.2": "float64",
+            "-0.00344": "float64",
+            "9.00003.3": "float64",
+            "-0.00132": "float64",
+            "9.00003.4": "float64",
+            "0.00091": "float64",
+            "9.00003.5": "float64",
+            "0.00283": "float64",
+            "9.00003.6": "float64",
+            "0.00402": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2d-inset",
+          "columns": [
+            0.0,
+            -0.00433
+          ],
+          "named_columns": [
+            0.0,
+            -0.00433
+          ],
+          "column_count": 2,
+          "row_count": 18,
+          "dtypes": {
+            "0.0": "int64",
+            "-0.00433": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2e",
+          "columns": [
+            0.00286,
+            -0.17395,
+            "0.00286.1",
+            -0.1609,
+            "Unnamed: 4",
+            "0.00286.2",
+            -0.20623,
+            0.03229
+          ],
+          "named_columns": [
+            0.00286,
+            -0.17395,
+            "0.00286.1",
+            -0.1609,
+            "0.00286.2",
+            -0.20623,
+            0.03229
+          ],
+          "column_count": 8,
+          "row_count": 187,
+          "dtypes": {
+            "0.00286": "float64",
+            "-0.17395": "float64",
+            "0.00286.1": "float64",
+            "-0.1609": "float64",
+            "Unnamed: 4": "float64",
+            "0.00286.2": "float64",
+            "-0.20623": "float64",
+            "0.03229": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2f",
+          "columns": [
+            -0.00204,
+            -4.15811,
+            0.00128,
+            -2.93849,
+            0.00457,
+            -1.69095,
+            0.00122,
+            -0.57304,
+            0.00451,
+            -0.02839
+          ],
+          "named_columns": [
+            -0.00204,
+            -4.15811,
+            0.00128,
+            -2.93849,
+            0.00457,
+            -1.69095,
+            0.00122,
+            -0.57304,
+            0.00451,
+            -0.02839
+          ],
+          "column_count": 10,
+          "row_count": 187,
+          "dtypes": {
+            "-0.00204": "float64",
+            "-4.15811": "float64",
+            "0.00128": "float64",
+            "-2.93849": "float64",
+            "0.00457": "float64",
+            "-1.69095": "float64",
+            "0.00122": "float64",
+            "-0.57304": "float64",
+            "0.00451": "float64",
+            "-0.02839": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Figure 2g",
+          "columns": [
+            3,
+            0.52302,
+            "3.1",
+            "0.52302.1"
+          ],
+          "named_columns": [
+            3,
+            0.52302,
+            "3.1",
+            "0.52302.1"
+          ],
+          "column_count": 4,
+          "row_count": 12,
+          "dtypes": {
+            "3": "float64",
+            "0.52302": "float64",
+            "3.1": "float64",
+            "0.52302.1": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Figure_2_1.xlsx"
+    },
+    {
+      "filename": "spheres_plotting_1.py",
+      "extension": ".py",
+      "size_bytes": 5639,
+      "size_human": "5.5 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "spheres_plotting_1.py"
+    },
+    {
+      "filename": "Spheres_rutile_1.py",
+      "extension": ".py",
+      "size_bytes": 5583,
+      "size_human": "5.5 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "Spheres_rutile_1.py"
+    },
+    {
+      "filename": "rutile_band_structure_1.py",
+      "extension": ".py",
+      "size_bytes": 4000,
+      "size_human": "3.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "rutile_band_structure_1.py"
+    },
+    {
+      "filename": "effects_plotting_1.py",
+      "extension": ".py",
+      "size_bytes": 13090,
+      "size_human": "12.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "effects_plotting_1.py"
+    },
+    {
+      "filename": "requirements_1.txt",
+      "extension": ".txt",
+      "size_bytes": 766,
+      "size_human": "766.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "apptools==5.2.1"
+      ],
+      "column_count": 1,
+      "row_count": 48,
+      "dtypes": {
+        "apptools==5.2.1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "requirements_1.txt"
+    },
+    {
+      "filename": "effects_compute_1.py",
+      "extension": ".py",
+      "size_bytes": 21941,
+      "size_human": "21.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "effects_compute_1.py"
+    },
+    {
+      "filename": "magnon_library_rutile_1.py",
+      "extension": ".py",
+      "size_bytes": 78255,
+      "size_human": "76.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "magnon_library_rutile_1.py"
+    }
+  ]
+}

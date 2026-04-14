@@ -1,0 +1,146 @@
+{
+  "paper_id": "step1_0013",
+  "title": "Monolithic integration of embedded III-V lasers on SOI",
+  "doi": "10.1038/s41377-023-01128-z",
+  "journal": "Light Science & Applications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4362521216",
+  "priority_score": 6.8,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41377-023-01128-z",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper demonstrates monolithic integration of InAs/GaAs quantum-dot lasers directly grown inside pre-patterned trenches on SOI, with butt-coupled output into silicon waveguides. By combining trench engineering, homoepitaxial Si(111) V-grooves, defect-filtering III-V buffer layers, and facet polishing, the authors achieve CW lasing up to 85 °C and waveguide-output power up to 6.8 mW, showing a scalable route to on-chip light sources on silicon photonic platforms.",
+    "measurement_types": [
+      "scanning electron microscopy (SEM)",
+      "optical microscopy",
+      "atomic force microscopy (AFM)",
+      "electron channeling contrast imaging (ECCI)",
+      "cross-sectional transmission electron microscopy (TEM)",
+      "room-temperature photoluminescence (PL) spectroscopy",
+      "light-current-voltage (L-I-V) electrical/optical characterization",
+      "optical spectra vs current",
+      "optical spectra vs temperature",
+      "white-light interferometric imaging"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Conceptual schematic and overview images of monolithically integrated embedded InAs QD lasers on SOI, including the SOI wafer with pre-patterned trenches, SEM/optical images of the fabricated chip, and the silicon grating structures inside the laser trench.",
+        "data_type": "schematic + image",
+        "likely_source": "experimental data and schematic illustration"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Fabrication flow of the SOI template, fork-shaped silicon edge coupler design, simulated electric-field distribution of the coupler, and the step-by-step monolithic laser integration process inside the trench.",
+        "data_type": "schematic + simulation",
+        "likely_source": "theoretical calculations or simulations plus process schematic"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Epitaxial laser structure, material characterization of the trenched GaAs/SOI template, and comparison of PL from InAs QDs grown on trenched SOI versus GaAs(001), including AFM of QDs.",
+        "data_type": "image + spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4",
+        "description": "SEM and optical images of the fabricated monolithically integrated lasers coupled to silicon waveguides, including the fork-like mode converter, wet-etched versus FIB-polished facets, and white-light interferometric image of the final device.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 5",
+        "description": "CW characterization of embedded lasers with and without silicon-waveguide coupling: temperature-dependent L-I curves, threshold/slope-efficiency analysis, and optical spectra versus current and temperature.",
+        "data_type": "transport curve + spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Supplementary Fig. S1",
+        "description": "Additional edge-coupler design exploration showing the effect of fork-shape parameters on mode expansion/coupling.",
+        "data_type": "simulation",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Supplementary Fig. S2",
+        "description": "Various edge coupler designs fabricated to reduce coupling loss between monolithically integrated lasers and silicon waveguides.",
+        "data_type": "image/schematic",
+        "likely_source": "experimental data and design schematic"
+      },
+      {
+        "figure_id": "Supplementary Fig. S3",
+        "description": "Additional SEM images of protected waveguides and homoepitaxial Si V-groove structures in the trench.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Supplementary Fig. S4",
+        "description": "Height-contrast issue caused by polycrystalline material deposition outside the trench.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Supplementary Fig. S5",
+        "description": "Detailed schematic and additional characterization of III-V buffer layers grown on trenched SOI.",
+        "data_type": "schematic + image/spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Supplementary Fig. S6",
+        "description": "Pulsed characterization of the monolithically integrated laser.",
+        "data_type": "transport curve + spectrum",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from microscopy (SEM, optical microscopy, AFM, ECCI, TEM, white-light interferometry), optical spectroscopy (PL and laser emission spectra), and electrical/optical device testing (CW and pulsed L-I-V curves, threshold current, output power, temperature-dependent performance). The text does not specify file formats or whether the underlying instrument output files are shared.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state: 'The data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.' No repository, DOI, or downloadable dataset is mentioned.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are implied to come from instrument measurements and characterization tools, but the paper does not describe file names, formats, or a public archive. Instruments explicitly mentioned include SEM, AFM, ECCI, TEM, PL spectroscopy, white-light interferometry, and electrical/optical test setups for L-I and spectra.",
+      "processed_data_description": "Processed data include extracted quantities such as RMS roughness, TDD, QD density, threshold current, slope efficiency, characteristic temperature (T0), coupling loss estimates, insertion loss estimates, and fitted values from temperature-dependent L-I analysis. These are presented in figures and text rather than as tables or downloadable processed datasets.",
+      "figure_data_description": "Figure-ready data are clearly embedded in the paper as plots, spectra, and images. The paper does not mention separate source-data files for figures, nor any figure-level data repository.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned.",
+      "notes": "This is primarily an experimental device/materials paper with a mix of raw microscopy images, spectroscopy traces, and derived device metrics. Some figures also contain schematic drawings and simulations (e.g., coupler field distribution), which are not raw measurements. The paper emphasizes fabrication/process flow and device performance rather than releasing a structured dataset."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "raw_data_evidence": "The paper includes multiple direct experimental measurements and images (SEM, AFM, ECCI, TEM, PL spectra, L-I curves, optical spectra) and discusses their measured values.",
+      "source_data_evidence": "No explicit statement about source-data files, downloadable figure data, or a public repository is given; only a request-on-contact data availability statement appears.",
+      "data_availability_section_relevant": "“The data underlying the results presented in this paper are not publicly available at this time but may be obtained from the authors upon reasonable request.”",
+      "priority_modalities": [
+        "SEM images",
+        "AFM topography",
+        "ECCI images",
+        "TEM cross-sections",
+        "PL spectra",
+        "L-I-V curves",
+        "laser emission spectra",
+        "white-light interferometry",
+        "simulation field maps"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

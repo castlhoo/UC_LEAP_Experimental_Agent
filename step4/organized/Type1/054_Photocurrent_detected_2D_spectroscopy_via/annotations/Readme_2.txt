@@ -1,3 +1,0 @@
-This folder contains the data for Figure 3a in .txt format. 
-
-The files "BeforeCtimeCorr.txt" and "AfterCtimeCorr.txt" contain the integrated spectra at each Dazzler delay before and after correction, respectively. The diffracted intensities are normalized to the average diffracted intensity. The values of the time-delay axis of the Dazzler is given by "DazzlerDelay_values.txt" in units of femtoseconds.

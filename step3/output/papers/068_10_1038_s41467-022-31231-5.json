@@ -1,0 +1,538 @@
+{
+  "paper_id": "step1_0304",
+  "title": "Spin relaxation in a single-electron graphene quantum dot",
+  "doi": "10.1038/s41467-022-31231-5",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4283515950",
+  "priority_score": 9.3,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 27,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-31231-5",
+  "files_inspected": 29,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "script",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 212 column 5 (char 12823)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies spin relaxation in a single-electron bilayer graphene quantum dot (BLG QD) using pulsed-gate transport spectroscopy at millikelvin temperatures and finite out-of-plane magnetic field. The authors extract spin relaxation times T1 exceeding 200 μs at 1.9 T, with a strong field dependence consistent with much longer lifetimes at lower fields, making BLG a promising platform for spin qubits.",
+    "measurement_types": [
+      "scanning electron microscopy (device image)",
+      "DC transport / Coulomb blockade spectroscopy",
+      "finite-bias spectroscopy",
+      "pulsed-gate transient current spectroscopy",
+      "time-dependent pulsed transport readout",
+      "magnetic-field-dependent spin-splitting spectroscopy"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "False-color SEM image of the gate-defined BLG quantum dot device layout, showing split gates, finger gates, source/drain, and bias-tee connections.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic band diagram along the channel illustrating how a finger gate forms the quantum dot and how a neighboring gate tunes the tunnel barrier asymmetry.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Calculated/illustrated single-particle energy spectrum of the first orbital state versus out-of-plane magnetic field, including spin-orbit splitting and valley/spin Zeeman shifts.",
+        "data_type": "spectrum",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Finite-bias spectroscopy map of the N=0 to 1 electron transition at B⊥ = 0.5 T, resolving the single-particle states.",
+        "data_type": "transport map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Extracted energy splitting ΔE between the two K0 valley-polarized spin states as a function of B⊥, used to determine ΔSO and gs.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Square-pulse timing scheme for transient current spectroscopy, showing initialization and measurement windows and the possible tunneling/relaxation processes.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Current map versus finger-gate voltage and pulse amplitude at the N=0 to 1 transition, showing onset of transient current when the pulse exceeds the level splitting.",
+        "data_type": "transport map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Average number of electrons per pulse cycle versus measurement pulse width τm, showing linear ground-state transport and saturation of excited-state transport; fit yields blocking and tunneling rates.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Three-level pulse sequence schematic with initialization, loading/holding, and readout steps for separating relaxation from measurement.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Average electrons per pulse cycle versus finger-gate voltage and holding time τh under the three-level pulse protocol, showing the relevant transport peaks.",
+        "data_type": "transport map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Normalized excited-state survival probability versus holding time τh at B⊥ = 1.7 T, showing no resolvable decay within noise and only a lower bound on T1.",
+        "data_type": "decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Normalized excited-state survival probability versus holding time τh at B⊥ = 2.4 T, showing weak decay corresponding to T1 around 50 μs.",
+        "data_type": "decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Normalized excited-state survival probability versus holding time τh at B⊥ = 2.9 T, showing clear exponential decay with T1 around 5 μs.",
+        "data_type": "decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Spin relaxation time T1 plotted versus spin splitting ΔE and magnetic field on a double-log scale, including a B^-8 guide to the eye and a shaded region where only lower bounds are possible.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The raw measurements are electrical transport traces collected on a BLG quantum dot device in a dilution refrigerator, including current as a function of gate voltage, pulse amplitude, pulse timing, and magnetic field. The paper specifically describes DC transport, finite-bias spectroscopy, and pulsed-gate transient current measurements; the raw instrument output is current versus gate/pulse parameters, not microscopy raw files.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data supporting the ﬁndings are available in a Zenodo repository under accession code https://doi.org/10.5281/zenodo.6599004.'",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "The paper does not specify file formats or instrument file types. It implies raw electrical measurement data from transport experiments (current traces/maps versus VFG, VA, τm, τh, B⊥) and SEM imaging for the device figure, but does not describe the repository contents in detail.",
+      "processed_data_description": "Processed data clearly includes extracted quantities such as ΔE versus B⊥, blocking rate γ, tunnel rate ΓD, normalized survival probabilities P↓(τh)/P↓(0), and fitted T1 values. The paper also refers to fit curves and lower bounds derived from comparison with calculated traces.",
+      "figure_data_description": "Figure-specific data are presented in the main text as transport maps and curves; the paper does not explicitly say whether separate source-data files are provided for each figure, but the Zenodo repository is stated to contain supporting data. Supplementary figures are referenced (Supplementary Figs. 1, 2, 3, 4), suggesting additional figure-level datasets exist.",
+      "scripts_description": "No analysis scripts, notebooks, or code are mentioned in the paper text.",
+      "notes": "The dataset is primarily experimental transport data with derived fit parameters. The paper distinguishes raw measured current maps from processed quantities used to extract T1. Theoretical/schematic panels (device band diagrams and pulse sequences) are not data measurements. The text does not specify whether the Zenodo repository contains raw time traces, source-data tables, or only processed figure data; therefore the exact repository structure is unknown."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports multiple experimental transport measurements: 'current through the QD as a function of the pulse amplitude VA and VFG', 'average number of electrons per pulse cycle', and 'data sets for different B⊥' used to extract T1.",
+      "source_data_evidence": "The paper states that 'The data supporting the findings are available in a Zenodo repository' and presents figure-specific extracted curves and fits, indicating figure-ready supporting data are likely included.",
+      "data_availability_section_relevant": "“The data supporting the ﬁndings are available in a Zenodo repository under accession code https://doi.org/10.5281/zenodo.6599004.”; “Supplementary information The online version contains supplementary material available at ...”; “The error bars correspond to the current noise level in the measurement.”",
+      "priority_modalities": [
+        "transport current maps",
+        "pulse-sequence time traces",
+        "gate-voltage sweeps",
+        "magnetic-field sweeps",
+        "SEM image",
+        "fit/extracted parameter tables"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_31231_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1381229,
+      "size_human": "1.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_31231_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "extension": ".zip",
+      "size_bytes": 3412229,
+      "size_human": "3.3 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip"
+    },
+    {
+      "filename": "0-README.txt",
+      "extension": ".txt",
+      "size_bytes": 493,
+      "size_human": "493.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "All",
+        "the",
+        "data",
+        "and",
+        "scripts",
+        "used",
+        "to",
+        "generate",
+        "the.1",
+        "figures",
+        "in",
+        "the.2",
+        "publication"
+      ],
+      "column_count": 13,
+      "row_count": 11,
+      "dtypes": {
+        "All": "object",
+        "the": "object",
+        "data": "object",
+        "and": "object",
+        "scripts": "object",
+        "used": "object",
+        "to": "object",
+        "generate": "object",
+        "the.1": "object",
+        "figures": "object",
+        "in": "object",
+        "the.2": "object",
+        "publication": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/0-README.txt",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/0-README.txt"
+    },
+    {
+      "filename": "FigS1.pkl",
+      "extension": ".pkl",
+      "size_bytes": 16207,
+      "size_human": "15.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1.pkl"
+    },
+    {
+      "filename": "FigS1.py",
+      "extension": ".py",
+      "size_bytes": 488,
+      "size_human": "488.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1.py"
+    },
+    {
+      "filename": "FigS1_Inset.pkl",
+      "extension": ".pkl",
+      "size_bytes": 585217,
+      "size_human": "571.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1_Inset.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1_Inset.pkl"
+    },
+    {
+      "filename": "FigS1_Inset.py",
+      "extension": ".py",
+      "size_bytes": 639,
+      "size_human": "639.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1_Inset.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS1/FigS1_Inset.py"
+    },
+    {
+      "filename": "FigS2_a.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1855619,
+      "size_human": "1.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2_a.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2_a.pkl"
+    },
+    {
+      "filename": "FigS2_b.pkl",
+      "extension": ".pkl",
+      "size_bytes": 780595,
+      "size_human": "762.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2_b.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2_b.pkl"
+    },
+    {
+      "filename": "FigS2a.py",
+      "extension": ".py",
+      "size_bytes": 609,
+      "size_human": "609.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2a.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2a.py"
+    },
+    {
+      "filename": "FigS2b.py",
+      "extension": ".py",
+      "size_bytes": 661,
+      "size_human": "661.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2b.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS2/FigS2b.py"
+    },
+    {
+      "filename": "Waterfall_linecuts.pkl",
+      "extension": ".pkl",
+      "size_bytes": 49713,
+      "size_human": "48.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS4/Waterfall_linecuts.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS4/Waterfall_linecuts.pkl"
+    },
+    {
+      "filename": "Waterfall_linecuts.py",
+      "extension": ".py",
+      "size_bytes": 869,
+      "size_human": "869.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/FigS4/Waterfall_linecuts.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/FigS4/Waterfall_linecuts.py"
+    },
+    {
+      "filename": "Diamond.pkl",
+      "extension": ".pkl",
+      "size_bytes": 398865,
+      "size_human": "389.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 1/d)/Diamond.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 1/d)/Diamond.pkl"
+    },
+    {
+      "filename": "Diamond.py",
+      "extension": ".py",
+      "size_bytes": 650,
+      "size_human": "650.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 1/d)/Diamond.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 1/d)/Diamond.py"
+    },
+    {
+      "filename": "G_Factor.pkl",
+      "extension": ".pkl",
+      "size_bytes": 577,
+      "size_human": "577.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 1/e)/G_Factor.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 1/e)/G_Factor.pkl"
+    },
+    {
+      "filename": "G_Factor.py",
+      "extension": ".py",
+      "size_bytes": 929,
+      "size_human": "929.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 1/e)/G_Factor.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 1/e)/G_Factor.py"
+    },
+    {
+      "filename": "Vpp.pkl",
+      "extension": ".pkl",
+      "size_bytes": 81831,
+      "size_human": "79.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 2/b)/Vpp.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 2/b)/Vpp.pkl"
+    },
+    {
+      "filename": "Vpp.py",
+      "extension": ".py",
+      "size_bytes": 617,
+      "size_human": "617.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 2/b)/Vpp.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 2/b)/Vpp.py"
+    },
+    {
+      "filename": "Dual_pulse.pkl",
+      "extension": ".pkl",
+      "size_bytes": 4578,
+      "size_human": "4.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 2/c)/Dual_pulse.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 2/c)/Dual_pulse.pkl"
+    },
+    {
+      "filename": "Dual_pulse.py",
+      "extension": ".py",
+      "size_bytes": 1070,
+      "size_human": "1.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 2/c)/Dual_pulse.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 2/c)/Dual_pulse.py"
+    },
+    {
+      "filename": "3d_plot.pkl",
+      "extension": ".pkl",
+      "size_bytes": 139435,
+      "size_human": "136.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/b)/3d_plot.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/b)/3d_plot.pkl"
+    },
+    {
+      "filename": "3d_plot.py",
+      "extension": ".py",
+      "size_bytes": 721,
+      "size_human": "721.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/b)/3d_plot.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/b)/3d_plot.py"
+    },
+    {
+      "filename": "T1.py",
+      "extension": ".py",
+      "size_bytes": 2371,
+      "size_human": "2.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1.py"
+    },
+    {
+      "filename": "T1_1_7T.pkl",
+      "extension": ".pkl",
+      "size_bytes": 523,
+      "size_human": "523.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_1_7T.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_1_7T.pkl"
+    },
+    {
+      "filename": "T1_2_4T.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1108,
+      "size_human": "1.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_2_4T.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_2_4T.pkl"
+    },
+    {
+      "filename": "T1_2_9T.pkl",
+      "extension": ".pkl",
+      "size_bytes": 619,
+      "size_human": "619.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_2_9T.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 3/c-e)/T1_2_9T.pkl"
+    },
+    {
+      "filename": "B_field_dependence.pkl",
+      "extension": ".pkl",
+      "size_bytes": 661,
+      "size_human": "661.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 4/B_field_dependence.pkl",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 4/B_field_dependence.pkl"
+    },
+    {
+      "filename": "B_field_dependence.py",
+      "extension": ".py",
+      "size_bytes": 1736,
+      "size_human": "1.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Spin relaxation in a single-electron graphene quantum dot/Figure 4/B_field_dependence.py",
+      "from_zip": "Spin_relaxation_in_a_single-electron_graphene_quantum_dot_1.zip",
+      "relative_path": "zip_contents/Spin relaxation in a single-electron graphene quantum dot/Figure 4/B_field_dependence.py"
+    }
+  ]
+}

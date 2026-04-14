@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0424",
+  "title": "Material Identification Method for Railway Structures Using 2D-LiDAR",
+  "doi": "10.1109/bcd57833.2023.10466318",
+  "journal": "2023 IEEE/ACIS 8th International Conference on Big Data, Cloud Computing, and Data Science (BCD)",
+  "year": 2023,
+  "paper_url": "https://doi.org/10.1109/bcd57833.2023.10466318",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1109_bcd57833_2023_10466318",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear cleaned, replot-ready dataset files were identified from the available file inspection report.",
+  "type2_summary": "No clear raw/unprocessed instrument data files were identified from the available file inspection report.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper evidence suggests this is an applied methods paper with no explicit data repository or data availability statement. Only one Zenodo PDF file was reported, and no structured dataset files were provided for classification.",
+  "file_classifications": [
+    {
+      "relative_path": "ICCM23_PPT_573_1.pdf",
+      "filename": "ICCM23_PPT_573_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement and no downloadable data files or dataset URLs were identified on the publisher page. The paper is about a 2D-LiDAR-based material identification method for railway structures, suggesting an applied methods paper rather than a data deposit paper.",
+      "file_evidence": "Single 9.8 MB PDF from Zenodo. As a PDF, it is likely a presentation or documentation file rather than a structured dataset. No tabular structure, headers, sheets, or measurement variables are available from the file report.",
+      "reasoning": "This file is not a dataset table or figure-data file. Based on the available inspection report, it is best treated as documentation/presentation material. There is no evidence that it contains replot-ready cleaned data or raw instrument output.",
+      "ambiguity": "Moderate: the PDF content was not directly inspected here, so it could contain slides with figures or embedded data, but the file report does not provide evidence of structured dataset content.",
+      "key_columns_or_structure": "Not available from report; PDF document/presentation"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper presents a 2D-LiDAR-based method to identify materials in railway structures, likely for infrastructure inspection rather than fundamental materials research.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit dataset or source data is available from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or dataset URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or dataset URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "ICCM23_PPT_573_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 10241016,
+      "size_human": "9.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "ICCM23_PPT_573_1.pdf"
+    }
+  ]
+}

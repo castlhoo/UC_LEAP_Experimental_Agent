@@ -1,0 +1,96 @@
+{
+  "paper_id": "step1_0097",
+  "title": "Topology and geometry under the nonlinear electromagnetic spotlight",
+  "doi": "10.1038/s41563-021-00992-7",
+  "journal": "Nature Materials",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3134555148",
+  "priority_score": 6.9,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41563-021-00992-7",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This is a review article on how nonlinear electromagnetic responses can reveal quantum geometry and topology in materials such as topological insulators, Weyl semimetals, graphene, and 2D crystals. It emphasizes second-harmonic generation, photogalvanic effects, nonlinear Hall effects, and high-harmonic generation as probes of Berry connection/curvature and as tools to detect or control emergent phases. The paper is primarily conceptual and literature-synthesizing rather than reporting a new experimental dataset.",
+    "measurement_types": [
+      "optical second-harmonic generation (SHG)",
+      "photocurrent / photogalvanic measurements",
+      "circular photogalvanic effect (CPGE)",
+      "nonlinear Hall transport",
+      "high-harmonic generation (HHG)",
+      "THz emission from ultrafast photocurrents",
+      "gate-tuned electrical nonlinear response",
+      "magneto-optical / symmetry-dependent optical response"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Conceptual overview of how nonlinear electromagnetic probes can uncover, probe, and control quantum materials and emergent phases.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 2",
+        "description": "Summary of nonlinear response channels and the regimes where they appear, including second-order, third-order, and higher-harmonic processes.",
+        "data_type": "schematic / response diagram",
+        "likely_source": "theoretical calculations or conceptual summary"
+      },
+      {
+        "figure_id": "Fig. 3",
+        "description": "Experimental examples in topological materials, including CPGE, shift current, ultrafast photocurrent/THz emission, and SHG in Weyl semimetals such as TaAs.",
+        "data_type": "transport curve / optical response / time-domain signal",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4",
+        "description": "Examples of Berry-curvature-related nonlinear responses in 2D and 3D materials, including nonlinear Hall effect, valley-contrasting Berry curvature, and related symmetry arguments.",
+        "data_type": "transport curve / schematic / optical response",
+        "likely_source": "experimental data and theoretical interpretation"
+      }
+    ],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "No new raw measurements are presented in this review. The paper discusses raw experimental modalities from the literature, such as SHG spectra, photocurrent traces, THz emission signals, and nonlinear transport curves, but does not provide a new primary dataset itself.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'Data availability: Correspondence and requests for materials should be addressed to K.S. Burch (email: ks.burch@bc.edu).' No repository, downloadable dataset, or source-data archive is described in the provided text.",
+      "data_provided_types": [
+        "unknown"
+      ],
+      "raw_data_description": "No raw data files, instrument outputs, or file formats are described in the paper text. The article is a review and does not specify collected raw measurements.",
+      "processed_data_description": "No processed dataset, tables of extracted values, or curated numerical data package is described in the provided text.",
+      "figure_data_description": "Figure-specific source data are not mentioned in the provided text. The figures described are review schematics and literature-summary figures rather than a new figure dataset.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned.",
+      "notes": "This is a review article synthesizing prior experimental and theoretical work. The main 'data' content is literature-derived qualitative summaries and conceptual figures, not a standalone experimental dataset. Any quantitative values mentioned (e.g., photon energies, band gaps, quantized response units) are narrative examples from cited papers rather than newly provided data."
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "raw_data_evidence": "The text is a review and contains no statement that the authors collected or deposit raw measurements for this paper.",
+      "source_data_evidence": "No source-data repository, figure source files, or downloadable processed data are mentioned in the provided text.",
+      "data_availability_section_relevant": "Data availability: Correspondence and requests for materials should be addressed to K.S. Burch (email: ks.burch@bc.edu).",
+      "priority_modalities": [
+        "optical spectra",
+        "photocurrent traces",
+        "THz emission waveforms",
+        "nonlinear transport curves",
+        "SHG intensity vs angle/frequency",
+        "pump-probe time-domain signals"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

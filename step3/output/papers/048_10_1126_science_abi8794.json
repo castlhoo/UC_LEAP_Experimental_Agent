@@ -1,0 +1,252 @@
+{
+  "paper_id": "step1_0213",
+  "title": "Probing topological spin liquids on a programmable quantum simulator",
+  "doi": "10.1126/science.abi8794",
+  "journal": "Science",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3216297445",
+  "priority_score": 10.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1126_science_abi8794",
+  "files_inspected": 1,
+  "file_types_found": [
+    "script"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready data files were provided in the inspected file list.",
+  "type2_summary": "No raw/unprocessed data files were provided in the inspected file list.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "Paper evidence strongly supports the existence of both raw experimental shots and processed figure-ready observables in the study, but the inspected repository item is only a script. Therefore no Type 1 or Type 2 dataset file can be assigned from the provided file list.",
+  "file_classifications": [
+    {
+      "relative_path": "kagome_mc_simulation_1.py",
+      "filename": "kagome_mc_simulation_1.py",
+      "type": "script",
+      "paper_evidence": "The paper reports numerical simulations (DMRG, exact diagonalization) and mentions TeNPy-based calculations on clusters, so code-like files are plausibly associated with theoretical/simulation work rather than raw experimental measurements.",
+      "file_evidence": "Python script, 4.2 KB, labeled as analysis or plotting code. This is executable code rather than a data table or instrument output.",
+      "reasoning": "This file is not data itself, so it does not fit Type 1 or Type 2. It is best classified as a script. It likely supports simulation or plotting workflows and would be used to generate or analyze results rather than directly replotting measured data.",
+      "ambiguity": "Low ambiguity: file is clearly code, not a dataset.",
+      "key_columns_or_structure": "Python source code; no tabular columns"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper demonstrates a programmable Rydberg-atom quantum simulator realizing a frustrated dimer model on a kagome/ruby-lattice geometry, and uses nonlocal string operators to probe signatures of a topological quantum spin liquid. The main findings are the emergence of an approximate dimer phase near 1/4 filling, finite closed-loop Z and X parities consistent with topological order and long-range coherence, and evidence for a superposition of topological sectors in an array with a hole, suggesting a path toward topological qubit encoding.",
+    "measurement_types": [
+      "fluorescence imaging of single-atom states",
+      "projective readout of ground-state atoms / Rydberg occupation snapshots",
+      "Rydberg excitation density measurements",
+      "string parity measurements (Z-loop and X-loop operators)",
+      "quench-based basis-rotation measurement",
+      "density-density correlation measurements",
+      "time-dependent state-preparation dynamics",
+      "numerical simulations (DMRG, exact diagonalization)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1A",
+        "description": "Fluorescence image of 219 atoms arranged on kagome-lattice links, showing the experimental geometry and a representative final atom configuration.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1B",
+        "description": "Schematic of the blockade geometry and mapping between Rydberg excitations and dimer coverings on the kagome lattice.",
+        "data_type": "schematic / diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1C",
+        "description": "Conceptual depiction of the quantum spin liquid as a coherent superposition of many dimer coverings.",
+        "data_type": "schematic / diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1D",
+        "description": "Time-dependent detuning and Rabi-frequency waveform used for quasi-adiabatic state preparation.",
+        "data_type": "control waveform / pulse sequence",
+        "likely_source": "experimental protocol"
+      },
+      {
+        "figure_id": "Fig1E",
+        "description": "Bulk Rydberg density versus sweep endpoint and probabilities of vertices being empty, singly occupied, or doubly occupied by dimers.",
+        "data_type": "line plot / probability plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2A",
+        "description": "Definition of the diagonal Z string operator on a loop perpendicular to kagome bonds.",
+        "data_type": "schematic / operator definition",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2B",
+        "description": "Expected Z parity for perfect dimer coverings on loops enclosing one or more vertices.",
+        "data_type": "schematic / theoretical rule",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2C",
+        "description": "Measured Z-loop parity versus sweep endpoint for several loop sizes, showing finite closed-loop parity in the dimer regime.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3A",
+        "description": "Definition of the off-diagonal X string operator on a triangle of the kagome lattice.",
+        "data_type": "schematic / operator definition",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig3B",
+        "description": "Illustration that a closed X loop maps one dimer covering to another valid dimer covering.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig3C",
+        "description": "Basis-rotation protocol showing how a quench maps X-string measurement to a dual Z-string measurement.",
+        "data_type": "schematic / pulse protocol",
+        "likely_source": "theoretical + experimental protocol"
+      },
+      {
+        "figure_id": "Fig3D",
+        "description": "Experimental quench parameters used to implement the basis rotation.",
+        "data_type": "control waveform / parameter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3E",
+        "description": "Calibration of the quench time via revival of dual-string Z parity, identifying the basis-rotation time.",
+        "data_type": "time trace / calibration curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3F",
+        "description": "Measured X-loop parity versus final detuning and loop size, indicating long-range coherence.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4A",
+        "description": "Open X string creating monomer (e-anyon) excitations at its endpoints.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig4B",
+        "description": "Definition of the BFFM-normalized Z string order parameter.",
+        "data_type": "schematic / formula",
+        "likely_source": "theoretical definition"
+      },
+      {
+        "figure_id": "Fig4C",
+        "description": "Definition of the BFFM-normalized X string order parameter.",
+        "data_type": "schematic / formula",
+        "likely_source": "theoretical definition"
+      },
+      {
+        "figure_id": "Fig4D",
+        "description": "Comparison of closed Z-loop parity with squared open-Z-string expectation values.",
+        "data_type": "comparison plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4E",
+        "description": "Comparison of closed X-loop parity with squared open-X-string expectation values.",
+        "data_type": "comparison plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4F",
+        "description": "BFFM-normalized Z order parameter versus detuning, showing consistency with zero in the QSL regime and absence of VBS order.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4G",
+        "description": "BFFM-normalized X order parameter versus detuning, vanishing in the QSL regime and distinguishing it from the trivial phase.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4H",
+        "description": "Scaling of closed Z-loop parity with loop area and perimeter, showing crossover from area-law to perimeter-law behavior.",
+        "data_type": "scaling plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4I",
+        "description": "Scaling of closed X-loop parity with loop area and perimeter, consistent with perimeter-law behavior.",
+        "data_type": "scaling plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5A",
+        "description": "Topological sectors in an array with a hole, including hole-to-boundary Z strings and their sector dependence.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5B",
+        "description": "Measured logical operators ZL and XL versus detuning, showing superposition of topological sectors in the QSL regime.",
+        "data_type": "line plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5C",
+        "description": "Correlations between pairs of hole-to-boundary Z strings, consistent with topological-sector structure.",
+        "data_type": "correlation plot",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The raw measurements are single-shot fluorescence images / projective readouts of individual atoms in 2D optical-tweezer arrays, from which ground-state versus Rydberg occupation is inferred. The paper also reports time-resolved quench measurements and repeated experimental shots used to compute loop parities, densities, and correlations.",
+    "dataset_characterization": {
+      "data_availability_statement": "The provided text does not include an explicit data availability statement or repository link. It only states that 'Materials and methods are available as supplementary materials' and that numerical simulations were performed with TeNPy on Harvard clusters.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described as fluorescence images / projective readout images of the atom array after evolution under the Rydberg Hamiltonian. Each shot yields a binary occupation pattern for atoms on kagome-lattice links. The text does not specify file formats, repository location, or whether raw images are deposited.",
+      "processed_data_description": "Processed data include bulk Rydberg density, vertex occupation probabilities (empty / single-dimer / double-dimer), loop parity averages, BFFM-normalized string order parameters, density-density correlators, and scaling analyses versus loop size or detuning. These are obtained by averaging over many repetitions and over symmetry-related loops in the bulk, excluding edge-touching loops.",
+      "figure_data_description": "Figure-specific data are clearly implied: each main-text figure and several supplementary figures are based on extracted observables from repeated experimental shots. The paper states that parities are averaged over identical loops including reflection and rotation symmetries, and error bars are standard errors of the mean. However, no explicit source-data file structure is given in the text.",
+      "scripts_description": "No analysis scripts or notebooks are mentioned in the provided text. Numerical work is said to use the Tensor Network Python (TeNPy) package, but no custom code repository or script archive is described.",
+      "notes": "The dataset is a mix of experimental shot-level binary images and derived observables. The key semantic distinction is that the raw measurements are single-shot atom-resolved readouts, while the published figures use processed averages, parity operators, and normalized order parameters. Supplementary material also contains calibration data (quench-time revival, phase dependence), site-resolved density maps, and numerical simulations (DMRG and exact diagonalization) that are not raw experimental measurements. The text suggests figure-level aggregation over symmetry-equivalent loops and exclusion of boundary loops, which is important for downstream data interpretation."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper repeatedly refers to 'single-shot images', 'projective readout', and averaging over many experimental repetitions, indicating underlying raw atom-resolved measurement shots.",
+      "source_data_evidence": "The figures are built from extracted observables such as loop parities, densities, correlations, and calibrated quench times; these are processed figure-ready data rather than only raw images.",
+      "data_availability_section_relevant": "Key phrases: 'After the evolution, the state is analyzed by projective readout of ground state atoms'; 'we evaluate the string observables directly from single-shot images, averaging over many experimental repetitions'; 'Error bars are calculated as the standard error of the mean'; 'Materials and methods are available as supplementary materials'; 'The DMRG simulations were performed using the Tensor Network Python (TeNPy) package'.",
+      "priority_modalities": [
+        "single-shot fluorescence images",
+        "binary atom occupation maps",
+        "loop parity values",
+        "density and correlation matrices",
+        "time-series calibration traces",
+        "DMRG / exact-diagonalization simulation outputs"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "kagome_mc_simulation_1.py",
+      "extension": ".py",
+      "size_bytes": 4319,
+      "size_human": "4.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zenodo",
+      "relative_path": "kagome_mc_simulation_1.py"
+    }
+  ]
+}

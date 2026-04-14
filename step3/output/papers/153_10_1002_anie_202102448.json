@@ -1,0 +1,1063 @@
+{
+  "paper_id": "step1_0058",
+  "title": "Halogen‐Bonded Organic Framework (XOF) Based on Iodonium‐Bridged N⋅⋅⋅I<sup>+</sup>⋅⋅⋅N Interactions: A Type of Diphase Periodic Organic Network",
+  "doi": "10.1002/anie.202102448",
+  "journal": "Angewandte Chemie International Edition",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3179396805",
+  "priority_score": 5.6,
+  "dataset_status": "verified",
+  "files_downloaded": 50,
+  "files_extracted": 0,
+  "download_errors": [
+    "5_hofs.tar.gz: Too large: 780.5MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1002_anie_202102448",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting property name enclosed in double quotes: line 187 column 82 (char 10942)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports the design and experimental characterization of a new two-dimensional halogen-bonded organic framework stabilized by iodonium-bridged N⋯I+⋯N interactions, including its structure and solution stability.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental structural and stability characterization of a halogen-bonded organic framework, but no accessible dataset or supporting data files were located from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found on the publisher page, and no downloadable data files or repository links were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found on the publisher page, and no downloadable data files or repository links were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "FigureS34_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28237,
+      "size_human": "27.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-21 as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS34_asynthesised_1.txt"
+    },
+    {
+      "filename": "FigureS30_MUV21_simulated_1.txt",
+      "extension": ".txt",
+      "size_bytes": 34154,
+      "size_human": "33.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 simulated",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-21 simulated": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS30_MUV21_simulated_1.txt"
+    },
+    {
+      "filename": "FigureS32_CH2Cl2_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19964,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "CH3Cl",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "CH3Cl": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_CH2Cl2_1.txt"
+    },
+    {
+      "filename": "FigureS31_MUV-20a_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19981,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "MUV-20a as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS31_MUV-20a_asynthesised_1.txt"
+    },
+    {
+      "filename": "FigureS32_EtOH_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19976,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "EtOH",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "EtOH": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_EtOH_1.txt"
+    },
+    {
+      "filename": "FigureS32_hexane_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19990,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Hexane",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "Hexane": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_hexane_1.txt"
+    },
+    {
+      "filename": "FigureS32_Simulated_1.txt",
+      "extension": ".txt",
+      "size_bytes": 27036,
+      "size_human": "26.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Simulated",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "Simulated": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_Simulated_1.txt"
+    },
+    {
+      "filename": "FigureS34_Hexane_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28217,
+      "size_human": "27.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 Hexane",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-21 Hexane": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS34_Hexane_1.txt"
+    },
+    {
+      "filename": "FigureS32_EthylAcetate_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19990,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Ethyl acetate",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "Ethyl acetate": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_EthylAcetate_1.txt"
+    },
+    {
+      "filename": "FigureS27_purple_MUV21_1.txt",
+      "extension": ".txt",
+      "size_bytes": 52111,
+      "size_human": "50.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 3547,
+      "dtypes": {
+        "MUV-21": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS27_purple_MUV21_1.txt"
+    },
+    {
+      "filename": "FigureS29_MUV20b_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42699,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-20b as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS29_MUV20b_asynthesised_1.txt"
+    },
+    {
+      "filename": "FigureS31_MUV-20b_ether_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19976,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b ether",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "MUV-20b ether": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS31_MUV-20b_ether_1.txt"
+    },
+    {
+      "filename": "FigureS34_CH3Cl_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28185,
+      "size_human": "27.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 CH3Cl",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-21 CH3Cl": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS34_CH3Cl_1.txt"
+    },
+    {
+      "filename": "FigureS38_MUV21_TGA_1.txt",
+      "extension": ".txt",
+      "size_bytes": 867815,
+      "size_human": "847.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 TGA\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS38_MUV21_TGA_1.txt"
+    },
+    {
+      "filename": "FigureS39_40_1.txt",
+      "extension": ".txt",
+      "size_bytes": 1000,
+      "size_human": "1000.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "40ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS39_40_1.txt"
+    },
+    {
+      "filename": "FigureS42_MUV20b_CO2_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42663,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b CO2",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-20b CO2": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS42_MUV20b_CO2_1.txt"
+    },
+    {
+      "filename": "FigureS27_blue_MUV20b_1.txt",
+      "extension": ".txt",
+      "size_bytes": 52291,
+      "size_human": "51.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 3547,
+      "dtypes": {
+        "MUV-20b": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS27_blue_MUV20b_1.txt"
+    },
+    {
+      "filename": "FigureS32_CH3Cl_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19964,
+      "size_human": "19.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "CH3Cl",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1372,
+      "dtypes": {
+        "CH3Cl": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS32_CH3Cl_1.txt"
+    },
+    {
+      "filename": "FigureS33_CH3Cl_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28186,
+      "size_human": "27.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b CH3Cl",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-20b CH3Cl": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS33_CH3Cl_1.txt"
+    },
+    {
+      "filename": "FigureS34_H2O_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28194,
+      "size_human": "27.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 H2O",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-21 H2O": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS34_H2O_1.txt"
+    },
+    {
+      "filename": "Figure5_blue_MUV20a_1.txt",
+      "extension": ".txt",
+      "size_bytes": 64505,
+      "size_human": "63.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 4097,
+      "dtypes": {
+        "MUV-20a": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure5_blue_MUV20a_1.txt"
+    },
+    {
+      "filename": "FigureS46_a_MUV20a_1.txt",
+      "extension": ".txt",
+      "size_bytes": 3840,
+      "size_human": "3.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a",
+        "Unnamed: 1",
+        "Unnamed: 2",
+        "Unnamed: 3"
+      ],
+      "column_count": 4,
+      "row_count": 203,
+      "dtypes": {
+        "MUV-20a": "object",
+        "Unnamed: 1": "object",
+        "Unnamed: 2": "object",
+        "Unnamed: 3": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS46_a_MUV20a_1.txt"
+    },
+    {
+      "filename": "Figure4_blue_25_1.txt",
+      "extension": ".txt",
+      "size_bytes": 806,
+      "size_human": "806.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "25ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_blue_25_1.txt"
+    },
+    {
+      "filename": "Figure4_red_40_1.txt",
+      "extension": ".txt",
+      "size_bytes": 790,
+      "size_human": "790.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "40ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_red_40_1.txt"
+    },
+    {
+      "filename": "Figure4_blue_55_1.txt",
+      "extension": ".txt",
+      "size_bytes": 823,
+      "size_human": "823.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "55ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_blue_55_1.txt"
+    },
+    {
+      "filename": "Figure5_purple_MUV21_1.txt",
+      "extension": ".txt",
+      "size_bytes": 126647,
+      "size_human": "123.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 8193,
+      "dtypes": {
+        "MUV-21": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure5_purple_MUV21_1.txt"
+    },
+    {
+      "filename": "FigureS28_MUV20a_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42684,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-20a as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS28_MUV20a_asynthesised_1.txt"
+    },
+    {
+      "filename": "FigureS31_MUV-20a_simulated_1.txt",
+      "extension": ".txt",
+      "size_bytes": 27465,
+      "size_human": "26.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a simulated",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-20a simulated": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS31_MUV-20a_simulated_1.txt"
+    },
+    {
+      "filename": "FigureS42_MUV20a_activated_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42690,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a activated",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-20a activated": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS42_MUV20a_activated_1.txt"
+    },
+    {
+      "filename": "FigureS46_c_MUV21_1.txt",
+      "extension": ".txt",
+      "size_bytes": 7148,
+      "size_human": "7.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21",
+        "Unnamed: 1",
+        "Unnamed: 2",
+        "Unnamed: 3"
+      ],
+      "column_count": 4,
+      "row_count": 393,
+      "dtypes": {
+        "MUV-21": "object",
+        "Unnamed: 1": "object",
+        "Unnamed: 2": "object",
+        "Unnamed: 3": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS46_c_MUV21_1.txt"
+    },
+    {
+      "filename": "FigureS27_red_MUV20a_1.txt",
+      "extension": ".txt",
+      "size_bytes": 34791,
+      "size_human": "34.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1774,
+      "dtypes": {
+        "MUV-20a": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS27_red_MUV20a_1.txt"
+    },
+    {
+      "filename": "FigureS33_CH2Cl2_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28187,
+      "size_human": "27.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b CH2Cl2",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-20b CH2Cl2": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS33_CH2Cl2_1.txt"
+    },
+    {
+      "filename": "FigureS33_H2O_1.txt",
+      "extension": ".txt",
+      "size_bytes": 28891,
+      "size_human": "28.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b H2O",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-20b H2O": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS33_H2O_1.txt"
+    },
+    {
+      "filename": "FigureS40_red_40_1.txt",
+      "extension": ".txt",
+      "size_bytes": 590,
+      "size_human": "590.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "40ºC\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS40_red_40_1.txt"
+    },
+    {
+      "filename": "FigureS35_MUV20a_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 1767373,
+      "size_human": "1.7 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20a as-synthesised\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS35_MUV20a_asynthesised_1.txt"
+    },
+    {
+      "filename": "Figure4_red_10_1.txt",
+      "extension": ".txt",
+      "size_bytes": 809,
+      "size_human": "809.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "10ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_red_10_1.txt"
+    },
+    {
+      "filename": "Figure4_blue_40_1.txt",
+      "extension": ".txt",
+      "size_bytes": 811,
+      "size_human": "811.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "40ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_blue_40_1.txt"
+    },
+    {
+      "filename": "FigureS40_red_10_1.txt",
+      "extension": ".txt",
+      "size_bytes": 630,
+      "size_human": "630.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "10ºC\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS40_red_10_1.txt"
+    },
+    {
+      "filename": "Figure4_blue_10_1.txt",
+      "extension": ".txt",
+      "size_bytes": 816,
+      "size_human": "816.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "10¼C \t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_blue_10_1.txt"
+    },
+    {
+      "filename": "FigureS29_MUV20b_simulated_1.txt",
+      "extension": ".txt",
+      "size_bytes": 26966,
+      "size_human": "26.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b simulated",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 1902,
+      "dtypes": {
+        "MUV-20b simulated": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS29_MUV20b_simulated_1.txt"
+    },
+    {
+      "filename": "Figure4_red_25_1.txt",
+      "extension": ".txt",
+      "size_bytes": 790,
+      "size_human": "790.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "40ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_red_25_1.txt"
+    },
+    {
+      "filename": "Figure4_red_55_1.txt",
+      "extension": ".txt",
+      "size_bytes": 812,
+      "size_human": "812.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "55ºC\t\t\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "Figure4_red_55_1.txt"
+    },
+    {
+      "filename": "Figure5_black_NaH3TTFTB_1.txt",
+      "extension": ".txt",
+      "size_bytes": 125750,
+      "size_human": "122.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "NaH3TTFTB",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 8193,
+      "dtypes": {
+        "NaH3TTFTB": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure5_black_NaH3TTFTB_1.txt"
+    },
+    {
+      "filename": "FigureS40_red_25_1.txt",
+      "extension": ".txt",
+      "size_bytes": 601,
+      "size_human": "601.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "25ºC\t"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS40_red_25_1.txt"
+    },
+    {
+      "filename": "FigureS46_d_MUV21_1.txt",
+      "extension": ".txt",
+      "size_bytes": 4829,
+      "size_human": "4.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 single crystal",
+        "Unnamed: 1",
+        "Unnamed: 2",
+        "Unnamed: 3"
+      ],
+      "column_count": 4,
+      "row_count": 393,
+      "dtypes": {
+        "MUV-21 single crystal": "object",
+        "Unnamed: 1": "object",
+        "Unnamed: 2": "object",
+        "Unnamed: 3": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS46_d_MUV21_1.txt"
+    },
+    {
+      "filename": "Figure5_red_MUV20b_1.txt",
+      "extension": ".txt",
+      "size_bytes": 127457,
+      "size_human": "124.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-20b",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 8193,
+      "dtypes": {
+        "MUV-20b": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Figure5_red_MUV20b_1.txt"
+    },
+    {
+      "filename": "FigureS38_MUV21_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42680,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-21 as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS38_MUV21_asynthesised_1.txt"
+    },
+    {
+      "filename": "FigureS40_blue_25_1.txt",
+      "extension": ".txt",
+      "size_bytes": 1338,
+      "size_human": "1.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "ÿþ2"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zenodo",
+      "relative_path": "FigureS40_blue_25_1.txt"
+    },
+    {
+      "filename": "FigureS1_NMR_NaH3TTFTB_1.txt",
+      "extension": ".txt",
+      "size_bytes": 109,
+      "size_human": "109.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "1",
+        "Nov12-2021",
+        "13.6508",
+        "12.5604",
+        "3.01516",
+        "498382",
+        "8.02228",
+        "7.74495",
+        "8.12832",
+        "1.34355e+06",
+        "7.4361",
+        "7.2218",
+        "8",
+        "1.32234e+06",
+        "Unnamed: 14"
+      ],
+      "column_count": 15,
+      "row_count": 0,
+      "dtypes": {
+        "1": "object",
+        "Nov12-2021": "object",
+        "13.6508": "object",
+        "12.5604": "object",
+        "3.01516": "object",
+        "498382": "object",
+        "8.02228": "object",
+        "7.74495": "object",
+        "8.12832": "object",
+        "1.34355e+06": "object",
+        "7.4361": "object",
+        "7.2218": "object",
+        "8": "object",
+        "1.32234e+06": "object",
+        "Unnamed: 14": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS1_NMR_NaH3TTFTB_1.txt"
+    },
+    {
+      "filename": "FigureS30_MUV21_asynthesised_1.txt",
+      "extension": ".txt",
+      "size_bytes": 42680,
+      "size_human": "41.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "MUV-21 as-synthesised",
+        "Unnamed: 1"
+      ],
+      "column_count": 2,
+      "row_count": 2895,
+      "dtypes": {
+        "MUV-21 as-synthesised": "object",
+        "Unnamed: 1": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "FigureS30_MUV21_asynthesised_1.txt"
+    }
+  ]
+}

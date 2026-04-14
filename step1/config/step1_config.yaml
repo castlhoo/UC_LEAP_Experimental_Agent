@@ -9,29 +9,85 @@ gpt:
 queries:
   use_gpt: false
   topic_keywords:
-    - "moire"
-    - "twisted bilayer graphene"
-    - "topological materials"
-    - "2D materials"
-    - "van der Waals heterostructure"
-    - "superconductivity"
-    - "kagome"
+    # Topological & quantum phases
+    - "topological insulator"
+    - "topological superconductor"
+    - "Weyl semimetal"
+    - "Dirac semimetal"
+    - "Majorana"
+    - "skyrmion"
+    - "spin-orbit coupling"
+    - "vortex"
+    - "Josephson junction"
+    - "Mott insulator"
+    - "heavy fermion"
+    - "Kondo"
+    - "spin liquid"
+    - "frustrated magnet"
+    # Superconductors
+    - "cuprate"
+    - "nickelate"
+    - "iron-based superconductor"
+    - "superconducting gap"
+    # 2D / van der Waals
+    - "graphene"
+    - "TMD"
+    - "moiré"
+    - "twisted bilayer"
+    - "heterostructure"
+    - "van der Waals"
+    - "2D material"
+    # Ordering & transitions
     - "charge density wave"
-    - "quantum materials"
-    - "magnetism"
-    - "ARPES"
-    - "STM"
-    - "Raman spectroscopy"
-    - "neutron scattering"
-    - "transport measurements"
+    - "phase transition"
+    - "magnetic anisotropy"
+    - "exchange bias"
+    # Functional materials
+    - "ferroelectric"
+    - "multiferroic"
+    - "thermoelectric"
+    - "piezoelectric"
+    # Physical observables
+    - "Fermi surface"
+    - "band structure"
+    - "lattice constant"
+    - "quantum oscillation"
   experiment_keywords:
-    - "experimental"
-    - "measurement"
-    - "transport"
-    - "spectroscopy"
-    - "microscopy"
-    - "device"
+    # Spectroscopy & microscopy
+    - "STM"
+    - "STS"
+    - "ARPES"
+    - "SET"
+    - "EELS"
+    - "Raman"
+    - "tunneling spectroscopy"
+    - "point-contact spectroscopy"
+    - "neutron scattering"
+    # Diffraction & imaging
+    - "XRD"
+    - "TEM"
+    - "AFM"
+    # Growth & fabrication
+    - "MBE"
+    - "PLD"
+    - "CVD"
+    - "sputtering"
+    - "exfoliation"
+    - "flux growth"
+    - "Bridgman"
+    # Sample forms
     - "thin film"
+    - "single crystal"
+    - "bulk crystal"
+    # Transport & thermodynamic
+    - "magnetoresistance"
+    - "Hall effect"
+    - "specific heat"
+    - "de Haas-van Alphen"
+    - "Shubnikov-de Haas"
+    - "electronic transport"
+    - "thermal transport"
+    - "thermal coefficient"
   data_keywords:
     - "source data"
     - "dataset"
@@ -47,20 +103,26 @@ search:
     end: 2026
   max_results_per_query: 20
   enabled_apis:
-    semantic_scholar: true
+    semantic_scholar: false
     openalex: true
     crossref: true
     arxiv: true
+    europe_pmc: true
   max_queries_per_api:
-    semantic_scholar: 8
-    openalex: 10
-    crossref: 8
-    arxiv: 8
+    semantic_scholar: 5
+    openalex: 20
+    crossref: 10
+    arxiv: 12
+    europe_pmc: 12
   rate_limits:
-    semantic_scholar: 1.0
+    semantic_scholar: 8.0
     openalex: 0.3
     crossref: 1.0
     arxiv: 0.5
+    europe_pmc: 0.3
+  retry_policy:
+    semantic_scholar_backoffs: [15, 30, 60, 120, 180]
+    semantic_scholar_max_attempts: 6
 
 journals:
   high_priority:

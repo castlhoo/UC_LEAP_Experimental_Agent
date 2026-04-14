@@ -1,0 +1,3905 @@
+{
+  "paper_id": "step1_0267",
+  "title": "A robust and tunable Luttinger liquid in correlated edge of transition-metal second-order topological insulator Ta2Pd3Te5",
+  "doi": "10.1038/s41467-023-43361-5",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4388929299",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 18,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-43361-5",
+  "files_inspected": 18,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting value: line 172 column 7 (char 11750)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "Ta2Pd3Te5 is a layered transition-metal compound identified as a 2D second-order topological insulator whose edge states host a robust, tunable Luttinger liquid. Using DFT/ARPES plus extensive low-temperature electrical transport on thin flakes and bulk devices, the paper shows coexisting bulk insulating behavior, in-gap edge conduction, and an edge gap, with a gate- and thickness-dependent phase diagram spanning LL to Fermi-liquid-like regimes.",
+    "measurement_types": [
+      "density functional theory (DFT) / band-structure calculations",
+      "angle-resolved photoemission spectroscopy (ARPES)",
+      "high-resolution scanning transmission electron microscopy (STEM)",
+      "electrical transport (two-terminal, four-terminal, Hall bar)",
+      "differential conductance dI/dV vs bias and temperature",
+      "nonlocal transport",
+      "temperature-dependent resistance / Arrhenius analysis",
+      "device optical microscopy"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of Ta2Pd3Te5 viewed along the chain direction, with an inset optical image of a needle-like single crystal.",
+        "data_type": "structure image / optical image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Cross-sectional STEM images along [010] and [001] showing layered/quasi-1D structure and monolayer thickness ~0.7 nm.",
+        "data_type": "microscopy image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "ARPES intensity plot along Γ–Y showing the band structure and conduction-band bottom above EF after Fermi-Dirac division.",
+        "data_type": "spectrum / band map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Photon-energy-dependent ARPES intensity at EF-0.05 eV showing weak interlayer coupling.",
+        "data_type": "spectrum / band map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Schematic of double-band inversion along the Y–Γ line.",
+        "data_type": "schematic / band diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Modified band structure with added onsite energy to simulate interaction-induced gap opening.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "Calculated 1D gapped edge-state spectrum of the 2D quadrupole topological insulator.",
+        "data_type": "band structure / edge spectrum",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic showing gate-tuned Fermi level shift with back-gate voltage.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Device #A1 differential conductance dI/dV versus back-gate voltage at 0.42 K, with optical image and measurement schematic inset.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Device #A2 differential conductance dI/dV versus back-gate voltage at 6.01 K, with optical image and measurement schematic inset.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Log-log dI/dV versus DC bias for device #A1 at CNP and multiple temperatures, showing bulk gap, power-law LL region, and low-bias edge gap.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Log-log dI/dV versus DC bias for device #A2 at 6.01 K and multiple back-gate voltages, showing evolution from three-region to two-region behavior.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Temperature dependence of dI/dV for device #A2 at different gate voltages, with Arrhenius fits in the inset.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Hall-bar nonlocal measurement geometry on a thin film, with optical image inset.",
+        "data_type": "schematic / device image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Local differential conductance dI0/dV0 versus back-gate voltage at different temperatures for device #A3.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Nonlocal voltage ratio Vnl1/V0 versus back-gate voltage at different temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Nonlocal voltage ratio Vnl2/V0 versus back-gate voltage at different temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Device #A4 dI/dV versus DC bias at Vbg = 0 V for multiple temperatures, showing LL power-law behavior and low-T edge gap.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Scaled conductance collapse [(dI/dV)/T^0.69 vs eVDC/kBT] demonstrating universal LL scaling.",
+        "data_type": "scaled transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Gate-tunable LL exponent alpha extracted from transport data across devices.",
+        "data_type": "derived parameter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Temperature-dependent dI/dV and gate sweep for device #B1 showing LL without a distinct edge gap.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Device #B1 dI/dV versus DC bias at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Scaled conductance collapse for device #B1 demonstrating LL scaling.",
+        "data_type": "scaled transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Bulk sample #C1 dI/dV versus temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Bulk sample #C1 dI/dV versus DC bias at multiple temperatures.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Scaled conductance collapse for bulk sample #C1.",
+        "data_type": "scaled transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5g",
+        "description": "Temperature-dependent bulk conductivity for type B and type C samples.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5h",
+        "description": "Temperature-dependent edge conductivity for type B and type C samples.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5i",
+        "description": "Starting resistance of LL behavior versus edge square number, showing approximate linear scaling over five orders of magnitude.",
+        "data_type": "derived parameter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Thickness-dependent bulk gap extracted from dI/dV(T) Arrhenius analysis.",
+        "data_type": "derived parameter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Thickness-dependent LL phase diagram with transition temperatures T1/T1*/T1** and T2.",
+        "data_type": "phase diagram / derived parameter plot",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include ARPES intensity maps, STEM images, and extensive electrical transport traces from thin-film and bulk devices: dI/dV versus DC bias, dI/dV versus temperature, dI/dV versus back-gate voltage, nonlocal voltages, and resistance/conductivity versus temperature. The paper also mentions optical images of devices and Hall-bar/nonlocal configurations. The raw data were generated using cryostats, lock-in measurements, and gate/bias sources.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that all data needed to evaluate the conclusions are present in the main text and/or Supplementary Information, and that all raw data generated in the study have been deposited in Figshare at https://doi.org/10.6084/m9.figshare.24407743.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described as the measurements generated in this study and deposited in Figshare. The paper does not specify file formats, but the underlying raw modalities are ARPES spectra/maps, STEM images, and transport measurement traces from cryostats using Keithley sources and lock-in detection.",
+      "processed_data_description": "Processed data include extracted gaps from Arrhenius fits, power-law exponents from log-log conductance fits, scaled-collapse plots, conductivity/edge-conductivity curves, and phase-diagram transition temperatures versus thickness. The paper explicitly describes fitting procedures and derived quantities such as bulk gap Δ, edge gap Ee, and LL exponent α.",
+      "figure_data_description": "Figure-ready data are clearly provided in the main figures and Supplementary Information, and the authors state that raw data are deposited. The text also notes that raw data are included in Supplementary Fig. 12 for some exponent extraction and that supplementary figures contain additional systematic datasets.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "The dataset is multimodal and mixes experimental raw measurements with derived/fit parameters and theoretical band-structure calculations. The paper distinguishes between raw transport traces and processed quantities such as exponents, gaps, and phase boundaries. Supplementary figures are important for the full dataset, especially for repeated devices and raw data supporting exponent extraction. The repository is explicitly described as raw data deposited on Figshare, but no separate statement about source-data files or scripts is given."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The authors state that 'all of the raw data generated in this study have been deposited in Figshare.'",
+      "source_data_evidence": "The paper presents many figure-specific extracted quantities and fit results (gaps, exponents, scaled collapses, phase diagrams) and says all data needed to evaluate the conclusions are present in the main text and/or Supplementary Information.",
+      "data_availability_section_relevant": [
+        "All data needed to evaluate the conclusions in the paper are present in the main text and/or the Supplementary Information.",
+        "all of the raw data generated in this study have been deposited in Figshare",
+        "Raw data are included in Supplementary Fig. 12",
+        "The error bars reflect the uncertainty due to measurement noise",
+        "The gray dot dash lines show the power-law behavior",
+        "The yellow dot dash lines are fitting curves of Arrhenius equation"
+      ],
+      "priority_modalities": [
+        "ARPES intensity maps",
+        "STEM microscopy images",
+        "transport traces (dI/dV vs VDC, T, Vbg)",
+        "nonlocal voltage measurements",
+        "conductivity/resistance vs temperature",
+        "DFT band structures / edge spectra",
+        "derived fit parameters (gap, exponent, phase boundaries)"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_43361_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2710804,
+      "size_human": "2.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_43361_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "source_data_for_Fig2_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 6122414,
+      "size_human": "5.8 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig2b",
+        "Fig2c",
+        "Fig2d",
+        "Fig2e",
+        "Fig2f"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig2b",
+          "columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 30690,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig2c",
+          "columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 5001,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig2d",
+          "columns": [
+            "T = 0.42 K",
+            "Unnamed: 1",
+            "T = 0.91 K",
+            "Unnamed: 3",
+            "T = 1.42 K",
+            "Unnamed: 5",
+            "T = 1.88 K",
+            "Unnamed: 7",
+            "T = 2.56 K",
+            "Unnamed: 9",
+            "T = 3.75 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 0.42 K",
+            "T = 0.91 K",
+            "T = 1.42 K",
+            "T = 1.88 K",
+            "T = 2.56 K",
+            "T = 3.75 K"
+          ],
+          "column_count": 12,
+          "row_count": 15276,
+          "dtypes": {
+            "T = 0.42 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.91 K": "object",
+            "Unnamed: 3": "object",
+            "T = 1.42 K": "object",
+            "Unnamed: 5": "object",
+            "T = 1.88 K": "object",
+            "Unnamed: 7": "object",
+            "T = 2.56 K": "object",
+            "Unnamed: 9": "object",
+            "T = 3.75 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2e",
+          "columns": [
+            "V_bg = -12.5 V",
+            "Unnamed: 1",
+            "V_bg = -7.5 V",
+            "Unnamed: 3",
+            "V_bg = 0 V",
+            "Unnamed: 5",
+            "V_bg = 5 V",
+            "Unnamed: 7",
+            "V_bg = 10 V",
+            "Unnamed: 9",
+            "V_bg = 15 V",
+            "Unnamed: 11",
+            "V_bg = 20 V",
+            "Unnamed: 13",
+            "V_bg = 30 V",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "V_bg = -12.5 V",
+            "V_bg = -7.5 V",
+            "V_bg = 0 V",
+            "V_bg = 5 V",
+            "V_bg = 10 V",
+            "V_bg = 15 V",
+            "V_bg = 20 V",
+            "V_bg = 30 V"
+          ],
+          "column_count": 16,
+          "row_count": 9311,
+          "dtypes": {
+            "V_bg = -12.5 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = -7.5 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = 0 V": "object",
+            "Unnamed: 5": "object",
+            "V_bg = 5 V": "object",
+            "Unnamed: 7": "object",
+            "V_bg = 10 V": "object",
+            "Unnamed: 9": "object",
+            "V_bg = 15 V": "object",
+            "Unnamed: 11": "object",
+            "V_bg = 20 V": "object",
+            "Unnamed: 13": "object",
+            "V_bg = 30 V": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig2f",
+          "columns": [
+            "V_bg = -12.5 V",
+            "Unnamed: 1",
+            "V_bg = 0 V",
+            "Unnamed: 3",
+            "V_bg = 15 V",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "V_bg = -12.5 V",
+            "V_bg = 0 V",
+            "V_bg = 15 V"
+          ],
+          "column_count": 6,
+          "row_count": 26845,
+          "dtypes": {
+            "V_bg = -12.5 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = 0 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = 15 V": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Fig2_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Fig3_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 13078928,
+      "size_human": "12.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig3b",
+        "Fig3b_inset",
+        "Fig3c",
+        "Fig3c_inset",
+        "Fig3d",
+        "Fig3d_inset"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "Fig3b",
+          "columns": [
+            "T = 1.6 K",
+            "Unnamed: 1",
+            "T = 3.1 K",
+            "Unnamed: 3",
+            "T = 5.0 K",
+            "Unnamed: 5",
+            "T = 8.0 K",
+            "Unnamed: 7",
+            "T = 11.9 K",
+            "Unnamed: 9",
+            "T = 15.9 K",
+            "Unnamed: 11",
+            "T = 23.9 K",
+            "Unnamed: 13",
+            "T = 31.8 K",
+            "Unnamed: 15",
+            "T = 44.8 K",
+            "Unnamed: 17",
+            "T = 59.6 K",
+            "Unnamed: 19",
+            "T = 79.2 K",
+            "Unnamed: 21",
+            "T = 98.5 K",
+            "Unnamed: 23",
+            "T = 119.1 K",
+            "Unnamed: 25"
+          ],
+          "named_columns": [
+            "T = 1.6 K",
+            "T = 3.1 K",
+            "T = 5.0 K",
+            "T = 8.0 K",
+            "T = 11.9 K",
+            "T = 15.9 K",
+            "T = 23.9 K",
+            "T = 31.8 K",
+            "T = 44.8 K",
+            "T = 59.6 K",
+            "T = 79.2 K",
+            "T = 98.5 K",
+            "T = 119.1 K"
+          ],
+          "column_count": 26,
+          "row_count": 9002,
+          "dtypes": {
+            "T = 1.6 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.1 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.0 K": "object",
+            "Unnamed: 5": "object",
+            "T = 8.0 K": "object",
+            "Unnamed: 7": "object",
+            "T = 11.9 K": "object",
+            "Unnamed: 9": "object",
+            "T = 15.9 K": "object",
+            "Unnamed: 11": "object",
+            "T = 23.9 K": "object",
+            "Unnamed: 13": "object",
+            "T = 31.8 K": "object",
+            "Unnamed: 15": "object",
+            "T = 44.8 K": "object",
+            "Unnamed: 17": "object",
+            "T = 59.6 K": "object",
+            "Unnamed: 19": "object",
+            "T = 79.2 K": "object",
+            "Unnamed: 21": "object",
+            "T = 98.5 K": "object",
+            "Unnamed: 23": "object",
+            "T = 119.1 K": "object",
+            "Unnamed: 25": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3b_inset",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "dI/Dv_max (2e^2/h)",
+            "dI/dV_min (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "dI/Dv_max (2e^2/h)",
+            "dI/dV_min (2e^2/h)"
+          ],
+          "column_count": 4,
+          "row_count": 13,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "dI/Dv_max (2e^2/h)": "float64",
+            "dI/dV_min (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig3c",
+          "columns": [
+            "T = 1.6 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "T = 3.1 K",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "T = 5.0 K",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "T = 8.0 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "T = 11.9 K",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "T = 15.9 K",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "T = 23.9 K",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "T = 31.8 K",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "T = 1.6 K",
+            "T = 3.1 K",
+            "T = 5.0 K",
+            "T = 8.0 K",
+            "T = 11.9 K",
+            "T = 15.9 K",
+            "T = 23.9 K",
+            "T = 31.8 K"
+          ],
+          "column_count": 52,
+          "row_count": 9002,
+          "dtypes": {
+            "T = 1.6 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "T = 3.1 K": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "T = 5.0 K": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "T = 8.0 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "T = 11.9 K": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "T = 15.9 K": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "T = 23.9 K": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "T = 31.8 K": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3c_inset",
+          "columns": [
+            "T (K)",
+            "V_nl1/V_0",
+            "V_nl1/V_0_max",
+            "V_nl1/V_0_min"
+          ],
+          "named_columns": [
+            "T (K)",
+            "V_nl1/V_0",
+            "V_nl1/V_0_max",
+            "V_nl1/V_0_min"
+          ],
+          "column_count": 4,
+          "row_count": 13,
+          "dtypes": {
+            "T (K)": "float64",
+            "V_nl1/V_0": "float64",
+            "V_nl1/V_0_max": "float64",
+            "V_nl1/V_0_min": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig3d",
+          "columns": [
+            "T = 1.6 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "T = 3.1 K",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "T = 5.0 K",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "T = 8.0 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "T = 11.9 K",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "T = 15.9 K",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "T = 23.9 K",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "T = 31.8 K",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "T = 1.6 K",
+            "T = 3.1 K",
+            "T = 5.0 K",
+            "T = 8.0 K",
+            "T = 11.9 K",
+            "T = 15.9 K",
+            "T = 23.9 K",
+            "T = 31.8 K"
+          ],
+          "column_count": 52,
+          "row_count": 9002,
+          "dtypes": {
+            "T = 1.6 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "T = 3.1 K": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "T = 5.0 K": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "T = 8.0 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "T = 11.9 K": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "T = 15.9 K": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "T = 23.9 K": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "T = 31.8 K": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig3d_inset",
+          "columns": [
+            "T (K)",
+            "V_nl2/V_0",
+            "V_nl2/V_0_max",
+            "V_nl2/V_0_min"
+          ],
+          "named_columns": [
+            "T (K)",
+            "V_nl2/V_0",
+            "V_nl2/V_0_max",
+            "V_nl2/V_0_min"
+          ],
+          "column_count": 4,
+          "row_count": 13,
+          "dtypes": {
+            "T (K)": "float64",
+            "V_nl2/V_0": "float64",
+            "V_nl2/V_0_max": "float64",
+            "V_nl2/V_0_min": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Fig3_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Fig4_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 616803,
+      "size_human": "602.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig4a",
+        "Fig4b",
+        "Fig4c"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig4a",
+          "columns": [
+            "T = 1.60 K",
+            "Unnamed: 1",
+            "T = 3.04 K",
+            "Unnamed: 3",
+            "T = 5.02 K",
+            "Unnamed: 5",
+            "T = 6.99 K",
+            "Unnamed: 7",
+            "T = 8.97 K",
+            "Unnamed: 9",
+            "T = 10.95 K",
+            "Unnamed: 11",
+            "T = 12.94 K",
+            "Unnamed: 13",
+            "T = 15.92 K",
+            "Unnamed: 15",
+            "T = 19.89 K",
+            "Unnamed: 17",
+            "T = 24.86 K",
+            "Unnamed: 19",
+            "T = 29.84 K",
+            "Unnamed: 21",
+            "T = 39.79 K",
+            "Unnamed: 23"
+          ],
+          "named_columns": [
+            "T = 1.60 K",
+            "T = 3.04 K",
+            "T = 5.02 K",
+            "T = 6.99 K",
+            "T = 8.97 K",
+            "T = 10.95 K",
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.79 K"
+          ],
+          "column_count": 24,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 1.60 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.04 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.02 K": "object",
+            "Unnamed: 5": "object",
+            "T = 6.99 K": "object",
+            "Unnamed: 7": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 9": "object",
+            "T = 10.95 K": "object",
+            "Unnamed: 11": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 13": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 15": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 17": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 19": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 21": "object",
+            "T = 39.79 K": "object",
+            "Unnamed: 23": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig4b",
+          "columns": [
+            "T = 12.94 K",
+            "Unnamed: 1",
+            "T = 15.92 K",
+            "Unnamed: 3",
+            "T = 19.89 K",
+            "Unnamed: 5",
+            "T = 24.86 K",
+            "Unnamed: 7",
+            "T = 29.84 K",
+            "Unnamed: 9",
+            "T = 39.79 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.79 K"
+          ],
+          "column_count": 12,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 12.94 K": "object",
+            "Unnamed: 1": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 3": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 5": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 7": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 9": "object",
+            "T = 39.79 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig4c",
+          "columns": [
+            "device #A2",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "device #A8",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "device #A10",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "device #A2",
+            "device #A8",
+            "device #A10"
+          ],
+          "column_count": 12,
+          "row_count": 9,
+          "dtypes": {
+            "device #A2": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "device #A8": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "device #A10": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Fig4_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Fig5_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 4756846,
+      "size_human": "4.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig5a",
+        "Fig5b",
+        "Fig5c",
+        "Fig5d",
+        "Fig5e",
+        "Fig5f",
+        "Fig5g",
+        "Fig5h",
+        "Fig5i"
+      ],
+      "sheet_count": 9,
+      "sheets": [
+        {
+          "sheet_name": "Fig5a",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 55892,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig5b",
+          "columns": [
+            "T = 1.53 K",
+            "Unnamed: 1",
+            "T = 2.00 K",
+            "Unnamed: 3",
+            "T = 3.00 K",
+            "Unnamed: 5",
+            "T = 4.00 K",
+            "Unnamed: 7",
+            "T = 5.00 K",
+            "Unnamed: 9",
+            "T = 6.50 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 1.53 K",
+            "T = 2.00 K",
+            "T = 3.00 K",
+            "T = 4.00 K",
+            "T = 5.00 K",
+            "T = 6.50 K"
+          ],
+          "column_count": 12,
+          "row_count": 4055,
+          "dtypes": {
+            "T = 1.53 K": "object",
+            "Unnamed: 1": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.00 K": "object",
+            "Unnamed: 5": "object",
+            "T = 4.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 5.00 K": "object",
+            "Unnamed: 9": "object",
+            "T = 6.50 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig5c",
+          "columns": [
+            "T = 1.53 K",
+            "Unnamed: 1",
+            "T = 2.00 K",
+            "Unnamed: 3",
+            "T = 3.00 K",
+            "Unnamed: 5",
+            "T = 4.00 K",
+            "Unnamed: 7",
+            "T = 5.00 K",
+            "Unnamed: 9",
+            "T = 6.50 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 1.53 K",
+            "T = 2.00 K",
+            "T = 3.00 K",
+            "T = 4.00 K",
+            "T = 5.00 K",
+            "T = 6.50 K"
+          ],
+          "column_count": 12,
+          "row_count": 4055,
+          "dtypes": {
+            "T = 1.53 K": "object",
+            "Unnamed: 1": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.00 K": "object",
+            "Unnamed: 5": "object",
+            "T = 4.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 5.00 K": "object",
+            "Unnamed: 9": "object",
+            "T = 6.50 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig5d",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 301,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig5e",
+          "columns": [
+            "T = 0.40 K",
+            "Unnamed: 1",
+            "T = 0.50 K",
+            "Unnamed: 3",
+            "T = 0.70 K",
+            "Unnamed: 5",
+            "T = 1.00 K",
+            "Unnamed: 7",
+            "T = 1.50 K",
+            "Unnamed: 9",
+            "T = 2.00 K",
+            "Unnamed: 11",
+            "T = 3.00 K",
+            "Unnamed: 13",
+            "T = 4.00 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 0.40 K",
+            "T = 0.50 K",
+            "T = 0.70 K",
+            "T = 1.00 K",
+            "T = 1.50 K",
+            "T = 2.00 K",
+            "T = 3.00 K",
+            "T = 4.00 K"
+          ],
+          "column_count": 16,
+          "row_count": 2107,
+          "dtypes": {
+            "T = 0.40 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.50 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.70 K": "object",
+            "Unnamed: 5": "object",
+            "T = 1.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.50 K": "object",
+            "Unnamed: 9": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 11": "object",
+            "T = 3.00 K": "object",
+            "Unnamed: 13": "object",
+            "T = 4.00 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig5f",
+          "columns": [
+            "T = 0.40 K",
+            "Unnamed: 1",
+            "T = 0.50 K",
+            "Unnamed: 3",
+            "T = 0.70 K",
+            "Unnamed: 5",
+            "T = 1.00 K",
+            "Unnamed: 7",
+            "T = 1.50 K",
+            "Unnamed: 9",
+            "T = 2.00 K",
+            "Unnamed: 11",
+            "T = 3.00 K",
+            "Unnamed: 13",
+            "T = 4.00 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 0.40 K",
+            "T = 0.50 K",
+            "T = 0.70 K",
+            "T = 1.00 K",
+            "T = 1.50 K",
+            "T = 2.00 K",
+            "T = 3.00 K",
+            "T = 4.00 K"
+          ],
+          "column_count": 16,
+          "row_count": 2107,
+          "dtypes": {
+            "T = 0.40 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.50 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.70 K": "object",
+            "Unnamed: 5": "object",
+            "T = 1.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.50 K": "object",
+            "Unnamed: 9": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 11": "object",
+            "T = 3.00 K": "object",
+            "Unnamed: 13": "object",
+            "T = 4.00 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig5g",
+          "columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figure).",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22"
+          ],
+          "named_columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figure)."
+          ],
+          "column_count": 23,
+          "row_count": 2002,
+          "dtypes": {
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figure).": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig5h",
+          "columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28"
+          ],
+          "named_columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures)."
+          ],
+          "column_count": 29,
+          "row_count": 2002,
+          "dtypes": {
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig5i",
+          "columns": [
+            "Unnamed: 0",
+            "thickness (nm)",
+            "length (nm)",
+            "width (nm)",
+            "□_edge",
+            "R_LL (kΩ)"
+          ],
+          "named_columns": [
+            "thickness (nm)",
+            "length (nm)",
+            "width (nm)",
+            "□_edge",
+            "R_LL (kΩ)"
+          ],
+          "column_count": 6,
+          "row_count": 12,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "thickness (nm)": "int64",
+            "length (nm)": "int64",
+            "width (nm)": "int64",
+            "□_edge": "float64",
+            "R_LL (kΩ)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Fig5_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Fig6_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9635,
+      "size_human": "9.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig6"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig6",
+          "columns": [
+            "Unnamed: 0",
+            "thickness (nm)",
+            "bulk gap (meV)",
+            "T1 (K)",
+            "T2 (K)",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "thickness (nm).1",
+            "bulk gap (meV).1",
+            "T1* (K)",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "thickness (nm).2",
+            "bulk gap (meV).2",
+            "T1** (K)"
+          ],
+          "named_columns": [
+            "thickness (nm)",
+            "bulk gap (meV)",
+            "T1 (K)",
+            "T2 (K)",
+            "thickness (nm).1",
+            "bulk gap (meV).1",
+            "T1* (K)",
+            "thickness (nm).2",
+            "bulk gap (meV).2",
+            "T1** (K)"
+          ],
+          "column_count": 15,
+          "row_count": 10,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "thickness (nm)": "float64",
+            "bulk gap (meV)": "float64",
+            "T1 (K)": "float64",
+            "T2 (K)": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "object",
+            "thickness (nm).1": "float64",
+            "bulk gap (meV).1": "float64",
+            "T1* (K)": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "object",
+            "thickness (nm).2": "float64",
+            "bulk gap (meV).2": "float64",
+            "T1** (K)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Fig6_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig2_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 2707492,
+      "size_human": "2.6 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig2a",
+        "SFig2b,c",
+        "SFig2d",
+        "SFig2e",
+        "SFig2f",
+        "SFig2g"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "SFig2a",
+          "columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 9001,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig2b,c",
+          "columns": [
+            "V_bg = 0 V",
+            "Unnamed: 1",
+            "V_bg = 20 V",
+            "Unnamed: 3",
+            "V_bg = 40 V",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "V_bg = 0 V",
+            "V_bg = 20 V",
+            "V_bg = 40 V"
+          ],
+          "column_count": 6,
+          "row_count": 32710,
+          "dtypes": {
+            "V_bg = 0 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = 20 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = 40 V": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig2d",
+          "columns": [
+            "T = 1.60 K",
+            "Unnamed: 1",
+            "T = 3.04 K",
+            "Unnamed: 3",
+            "T = 5.03 K",
+            "Unnamed: 5",
+            "T = 6.99 K",
+            "Unnamed: 7",
+            "T = 8.97 K",
+            "Unnamed: 9",
+            "T = 10.96 K",
+            "Unnamed: 11",
+            "T = 12.94 K",
+            "Unnamed: 13",
+            "T = 15.92 K",
+            "Unnamed: 15",
+            "T = 19.89 K",
+            "Unnamed: 17",
+            "T = 24.86 K",
+            "Unnamed: 19",
+            "T = 29.84 K",
+            "Unnamed: 21",
+            "T = 39.79 K",
+            "Unnamed: 23"
+          ],
+          "named_columns": [
+            "T = 1.60 K",
+            "T = 3.04 K",
+            "T = 5.03 K",
+            "T = 6.99 K",
+            "T = 8.97 K",
+            "T = 10.96 K",
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.79 K"
+          ],
+          "column_count": 24,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 1.60 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.04 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.03 K": "object",
+            "Unnamed: 5": "object",
+            "T = 6.99 K": "object",
+            "Unnamed: 7": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 9": "object",
+            "T = 10.96 K": "object",
+            "Unnamed: 11": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 13": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 15": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 17": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 19": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 21": "object",
+            "T = 39.79 K": "object",
+            "Unnamed: 23": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig2e",
+          "columns": [
+            "T = 12.94 K",
+            "Unnamed: 1",
+            "T = 15.92 K",
+            "Unnamed: 3",
+            "T = 19.89 K",
+            "Unnamed: 5",
+            "T = 24.86 K",
+            "Unnamed: 7",
+            "T = 29.84 K",
+            "Unnamed: 9",
+            "T = 39.79 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.79 K"
+          ],
+          "column_count": 12,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 12.94 K": "object",
+            "Unnamed: 1": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 3": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 5": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 7": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 9": "object",
+            "T = 39.79 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig2f",
+          "columns": [
+            "T = 1.60 K",
+            "Unnamed: 1",
+            "T = 3.04 K",
+            "Unnamed: 3",
+            "T = 5.01 K",
+            "Unnamed: 5",
+            "T = 6.99 K",
+            "Unnamed: 7",
+            "T = 8.97 K",
+            "Unnamed: 9",
+            "T = 10.95 K",
+            "Unnamed: 11",
+            "T = 12.94 K",
+            "Unnamed: 13",
+            "T = 15.92 K",
+            "Unnamed: 15",
+            "T = 19.89 K",
+            "Unnamed: 17",
+            "T = 24.86 K",
+            "Unnamed: 19",
+            "T = 29.84 K",
+            "Unnamed: 21",
+            "T = 39.78 K",
+            "Unnamed: 23"
+          ],
+          "named_columns": [
+            "T = 1.60 K",
+            "T = 3.04 K",
+            "T = 5.01 K",
+            "T = 6.99 K",
+            "T = 8.97 K",
+            "T = 10.95 K",
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.78 K"
+          ],
+          "column_count": 24,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 1.60 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.04 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.01 K": "object",
+            "Unnamed: 5": "object",
+            "T = 6.99 K": "object",
+            "Unnamed: 7": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 9": "object",
+            "T = 10.95 K": "object",
+            "Unnamed: 11": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 13": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 15": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 17": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 19": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 21": "object",
+            "T = 39.78 K": "object",
+            "Unnamed: 23": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig2g",
+          "columns": [
+            "T = 12.94 K",
+            "Unnamed: 1",
+            "T = 15.92 K",
+            "Unnamed: 3",
+            "T = 19.89 K",
+            "Unnamed: 5",
+            "T = 24.86 K",
+            "Unnamed: 7",
+            "T = 29.84 K",
+            "Unnamed: 9",
+            "T = 39.78 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K",
+            "T = 24.86 K",
+            "T = 29.84 K",
+            "T = 39.78 K"
+          ],
+          "column_count": 12,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 12.94 K": "object",
+            "Unnamed: 1": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 3": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 5": "object",
+            "T = 24.86 K": "object",
+            "Unnamed: 7": "object",
+            "T = 29.84 K": "object",
+            "Unnamed: 9": "object",
+            "T = 39.78 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig2_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig3_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 2167328,
+      "size_human": "2.1 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig3a",
+        "SFig3b",
+        "SFig3c",
+        "SFig3d",
+        "SFig3e",
+        "SFig3f"
+      ],
+      "sheet_count": 6,
+      "sheets": [
+        {
+          "sheet_name": "SFig3a",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 32819,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig3b",
+          "columns": [
+            "T = 1.60 K",
+            "Unnamed: 1",
+            "T = 3.07 K",
+            "Unnamed: 3",
+            "T = 5.03 K",
+            "Unnamed: 5",
+            "T = 7.01 K",
+            "Unnamed: 7",
+            "T = 8.97 K",
+            "Unnamed: 9",
+            "T = 10.95 K",
+            "Unnamed: 11",
+            "T = 12.94 K",
+            "Unnamed: 13",
+            "T = 15.92 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 1.60 K",
+            "T = 3.07 K",
+            "T = 5.03 K",
+            "T = 7.01 K",
+            "T = 8.97 K",
+            "T = 10.95 K",
+            "T = 12.94 K",
+            "T = 15.92 K"
+          ],
+          "column_count": 16,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 1.60 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.07 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.03 K": "object",
+            "Unnamed: 5": "object",
+            "T = 7.01 K": "object",
+            "Unnamed: 7": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 9": "object",
+            "T = 10.95 K": "object",
+            "Unnamed: 11": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 13": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig3c",
+          "columns": [
+            "T = 7.01 K",
+            "Unnamed: 1",
+            "T = 8.97 K",
+            "Unnamed: 3",
+            "T = 10.95 K",
+            "Unnamed: 5",
+            "T = 12.94 K",
+            "Unnamed: 7",
+            "T = 15.92 K",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "T = 7.01 K",
+            "T = 8.97 K",
+            "T = 10.95 K",
+            "T = 12.94 K",
+            "T = 15.92 K"
+          ],
+          "column_count": 10,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 7.01 K": "object",
+            "Unnamed: 1": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 3": "object",
+            "T = 10.95 K": "object",
+            "Unnamed: 5": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 7": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig3d",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 17205,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig3e",
+          "columns": [
+            "T = 1.60 K",
+            "Unnamed: 1",
+            "T = 3.04 K",
+            "Unnamed: 3",
+            "T = 5.01 K",
+            "Unnamed: 5",
+            "T = 6.99 K",
+            "Unnamed: 7",
+            "T = 8.97 K",
+            "Unnamed: 9",
+            "T = 10.96 K",
+            "Unnamed: 11",
+            "T = 12.94 K",
+            "Unnamed: 13",
+            "T = 15.92 K",
+            "Unnamed: 15",
+            "T = 19.89 K",
+            "Unnamed: 17"
+          ],
+          "named_columns": [
+            "T = 1.60 K",
+            "T = 3.04 K",
+            "T = 5.01 K",
+            "T = 6.99 K",
+            "T = 8.97 K",
+            "T = 10.96 K",
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K"
+          ],
+          "column_count": 18,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 1.60 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.04 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.01 K": "object",
+            "Unnamed: 5": "object",
+            "T = 6.99 K": "object",
+            "Unnamed: 7": "object",
+            "T = 8.97 K": "object",
+            "Unnamed: 9": "object",
+            "T = 10.96 K": "object",
+            "Unnamed: 11": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 13": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 15": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 17": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig3f",
+          "columns": [
+            "T = 8.97 K",
+            "Unnamed: 1",
+            "T = 10.96 K",
+            "Unnamed: 3",
+            "T = 12.94 K",
+            "Unnamed: 5",
+            "T = 15.92 K",
+            "Unnamed: 7",
+            "T = 19.89 K",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "T = 8.97 K",
+            "T = 10.96 K",
+            "T = 12.94 K",
+            "T = 15.92 K",
+            "T = 19.89 K"
+          ],
+          "column_count": 10,
+          "row_count": 1229,
+          "dtypes": {
+            "T = 8.97 K": "object",
+            "Unnamed: 1": "object",
+            "T = 10.96 K": "object",
+            "Unnamed: 3": "object",
+            "T = 12.94 K": "object",
+            "Unnamed: 5": "object",
+            "T = 15.92 K": "object",
+            "Unnamed: 7": "object",
+            "T = 19.89 K": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig3_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig4_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 3672249,
+      "size_human": "3.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig4a",
+        "SFig4b",
+        "SFig4c",
+        "SFig4d"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "SFig4a",
+          "columns": [
+            "T = 1.56 K",
+            "Unnamed: 1",
+            "T = 2.00 K",
+            "Unnamed: 3",
+            "T = 3.06 K",
+            "Unnamed: 5",
+            "T = 4.04 K",
+            "Unnamed: 7",
+            "T = 6.01 K",
+            "Unnamed: 9",
+            "T = 7.98 K",
+            "Unnamed: 11",
+            "T = 9.96 K",
+            "Unnamed: 13",
+            "T = 14.9 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 1.56 K",
+            "T = 2.00 K",
+            "T = 3.06 K",
+            "T = 4.04 K",
+            "T = 6.01 K",
+            "T = 7.98 K",
+            "T = 9.96 K",
+            "T = 14.9 K"
+          ],
+          "column_count": 16,
+          "row_count": 5611,
+          "dtypes": {
+            "T = 1.56 K": "object",
+            "Unnamed: 1": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.06 K": "object",
+            "Unnamed: 5": "object",
+            "T = 4.04 K": "object",
+            "Unnamed: 7": "object",
+            "T = 6.01 K": "object",
+            "Unnamed: 9": "object",
+            "T = 7.98 K": "object",
+            "Unnamed: 11": "object",
+            "T = 9.96 K": "object",
+            "Unnamed: 13": "object",
+            "T = 14.9 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig4b",
+          "columns": [
+            "T = 6.01 K",
+            "Unnamed: 1",
+            "T = 7.98 K",
+            "Unnamed: 3",
+            "T = 9.96 K",
+            "Unnamed: 5",
+            "T = 14.9 K",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "T = 6.01 K",
+            "T = 7.98 K",
+            "T = 9.96 K",
+            "T = 14.9 K"
+          ],
+          "column_count": 8,
+          "row_count": 5611,
+          "dtypes": {
+            "T = 6.01 K": "object",
+            "Unnamed: 1": "object",
+            "T = 7.98 K": "object",
+            "Unnamed: 3": "object",
+            "T = 9.96 K": "object",
+            "Unnamed: 5": "object",
+            "T = 14.9 K": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig4c",
+          "columns": [
+            "T = 1.56 K",
+            "Unnamed: 1",
+            "T = 2.00 K",
+            "Unnamed: 3",
+            "T = 3.06 K",
+            "Unnamed: 5",
+            "T = 4.04 K",
+            "Unnamed: 7",
+            "T = 6.01 K",
+            "Unnamed: 9",
+            "T = 7.98 K",
+            "Unnamed: 11",
+            "T = 9.96 K",
+            "Unnamed: 13",
+            "T = 14.92 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 1.56 K",
+            "T = 2.00 K",
+            "T = 3.06 K",
+            "T = 4.04 K",
+            "T = 6.01 K",
+            "T = 7.98 K",
+            "T = 9.96 K",
+            "T = 14.92 K"
+          ],
+          "column_count": 16,
+          "row_count": 5611,
+          "dtypes": {
+            "T = 1.56 K": "object",
+            "Unnamed: 1": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.06 K": "object",
+            "Unnamed: 5": "object",
+            "T = 4.04 K": "object",
+            "Unnamed: 7": "object",
+            "T = 6.01 K": "object",
+            "Unnamed: 9": "object",
+            "T = 7.98 K": "object",
+            "Unnamed: 11": "object",
+            "T = 9.96 K": "object",
+            "Unnamed: 13": "object",
+            "T = 14.92 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig4d",
+          "columns": [
+            "T = 6.01 K",
+            "Unnamed: 1",
+            "T = 7.98 K",
+            "Unnamed: 3",
+            "T = 9.96 K",
+            "Unnamed: 5",
+            "T = 14.92 K",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "T = 6.01 K",
+            "T = 7.98 K",
+            "T = 9.96 K",
+            "T = 14.92 K"
+          ],
+          "column_count": 8,
+          "row_count": 5611,
+          "dtypes": {
+            "T = 6.01 K": "object",
+            "Unnamed: 1": "object",
+            "T = 7.98 K": "object",
+            "Unnamed: 3": "object",
+            "T = 9.96 K": "object",
+            "Unnamed: 5": "object",
+            "T = 14.92 K": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig4_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig5_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 2574914,
+      "size_human": "2.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig5b",
+        "SFig5c"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "SFig5b",
+          "columns": [
+            "T = 1.56 K",
+            "Unnamed: 1",
+            "T = 3.06 K",
+            "Unnamed: 3",
+            "T = 6.01 K",
+            "Unnamed: 5",
+            "T = 9.97 K",
+            "Unnamed: 7",
+            "T = 14.9 K",
+            "Unnamed: 9",
+            "T = 19.7 K",
+            "Unnamed: 11",
+            "T = 29.8 K",
+            "Unnamed: 13",
+            "T = 48.4 K",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "T = 1.56 K",
+            "T = 3.06 K",
+            "T = 6.01 K",
+            "T = 9.97 K",
+            "T = 14.9 K",
+            "T = 19.7 K",
+            "T = 29.8 K",
+            "T = 48.4 K"
+          ],
+          "column_count": 16,
+          "row_count": 5002,
+          "dtypes": {
+            "T = 1.56 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.06 K": "object",
+            "Unnamed: 3": "object",
+            "T = 6.01 K": "object",
+            "Unnamed: 5": "object",
+            "T = 9.97 K": "object",
+            "Unnamed: 7": "object",
+            "T = 14.9 K": "object",
+            "Unnamed: 9": "object",
+            "T = 19.7 K": "object",
+            "Unnamed: 11": "object",
+            "T = 29.8 K": "object",
+            "Unnamed: 13": "object",
+            "T = 48.4 K": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig5c",
+          "columns": [
+            "T = 1.56 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "T = 3.06 K",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "T = 6.01 K",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "T = 9.97 K",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "T = 14.9 K",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "T = 19.7 K",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "T = 29.8 K",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "T = 48.4 K",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "T = 1.56 K",
+            "T = 3.06 K",
+            "T = 6.01 K",
+            "T = 9.97 K",
+            "T = 14.9 K",
+            "T = 19.7 K",
+            "T = 29.8 K",
+            "T = 48.4 K"
+          ],
+          "column_count": 32,
+          "row_count": 5002,
+          "dtypes": {
+            "T = 1.56 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "T = 3.06 K": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "T = 6.01 K": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "T = 9.97 K": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "T = 14.9 K": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "T = 19.7 K": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "T = 29.8 K": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "T = 48.4 K": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig5_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig7_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 200986,
+      "size_human": "196.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig7e,f,g",
+        "SFig7i"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "SFig7e,f,g",
+          "columns": [
+            "V_bg (V)",
+            "dV/dI_ground (Ω)",
+            "dI/dV_ground (μS)",
+            "V_bg (V).1",
+            "dV/dI_unground (Ω)",
+            "dI/dV_unground (μS)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dV/dI_ground (Ω)",
+            "dI/dV_ground (μS)",
+            "V_bg (V).1",
+            "dV/dI_unground (Ω)",
+            "dI/dV_unground (μS)"
+          ],
+          "column_count": 6,
+          "row_count": 1537,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dV/dI_ground (Ω)": "float64",
+            "dI/dV_ground (μS)": "float64",
+            "V_bg (V).1": "float64",
+            "dV/dI_unground (Ω)": "float64",
+            "dI/dV_unground (μS)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig7i",
+          "columns": [
+            "V_bg (V)",
+            "dI/dV_ground (μS)",
+            "V_bg (V).1",
+            "dI/dV_unground (μS)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dI/dV_ground (μS)",
+            "V_bg (V).1",
+            "dI/dV_unground (μS)"
+          ],
+          "column_count": 4,
+          "row_count": 1701,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dI/dV_ground (μS)": "float64",
+            "V_bg (V).1": "float64",
+            "dI/dV_unground (μS)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig7_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig8_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 4321168,
+      "size_human": "4.1 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig8a",
+        "SFig8b",
+        "SFig8c",
+        "SFig8d",
+        "SFig8e",
+        "SFig8f",
+        "SFig8g",
+        "SFig8h",
+        "SFig8i"
+      ],
+      "sheet_count": 9,
+      "sheets": [
+        {
+          "sheet_name": "SFig8a",
+          "columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "V_bg (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 16120,
+          "dtypes": {
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig8b",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 61174,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig8c",
+          "columns": [
+            "T = 1.01 K",
+            "Unnamed: 1",
+            "T = 3.22 K",
+            "Unnamed: 3",
+            "T = 5.38 K",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "T = 1.01 K",
+            "T = 3.22 K",
+            "T = 5.38 K"
+          ],
+          "column_count": 6,
+          "row_count": 5601,
+          "dtypes": {
+            "T = 1.01 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.22 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.38 K": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig8d",
+          "columns": [
+            "T = 1.01 K",
+            "Unnamed: 1",
+            "T = 3.22 K",
+            "Unnamed: 3",
+            "T = 5.38 K",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "T = 1.01 K",
+            "T = 3.22 K",
+            "T = 5.38 K"
+          ],
+          "column_count": 6,
+          "row_count": 5601,
+          "dtypes": {
+            "T = 1.01 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.22 K": "object",
+            "Unnamed: 3": "object",
+            "T = 5.38 K": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig8e",
+          "columns": [
+            "T = 3.12 K",
+            "Unnamed: 1",
+            "T = 5.29 K",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "T = 3.12 K",
+            "T = 5.29 K"
+          ],
+          "column_count": 4,
+          "row_count": 14362,
+          "dtypes": {
+            "T = 3.12 K": "object",
+            "Unnamed: 1": "object",
+            "T = 5.29 K": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig8f",
+          "columns": [
+            "T = 3.12 K",
+            "Unnamed: 1",
+            "T = 5.29 K",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "T = 3.12 K",
+            "T = 5.29 K"
+          ],
+          "column_count": 4,
+          "row_count": 14362,
+          "dtypes": {
+            "T = 3.12 K": "object",
+            "Unnamed: 1": "object",
+            "T = 5.29 K": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig8g",
+          "columns": [
+            "V_DC (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "V_DC (V)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 2384,
+          "dtypes": {
+            "V_DC (V)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig8h",
+          "columns": [
+            "T = 1.89 K",
+            "Unnamed: 1",
+            "T = 3.16 K",
+            "Unnamed: 3",
+            "T = 6.74 K",
+            "Unnamed: 5",
+            "T = 10.5 K",
+            "Unnamed: 7",
+            "T = 14.8 K",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "T = 1.89 K",
+            "T = 3.16 K",
+            "T = 6.74 K",
+            "T = 10.5 K",
+            "T = 14.8 K"
+          ],
+          "column_count": 10,
+          "row_count": 2385,
+          "dtypes": {
+            "T = 1.89 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.16 K": "object",
+            "Unnamed: 3": "object",
+            "T = 6.74 K": "object",
+            "Unnamed: 5": "object",
+            "T = 10.5 K": "object",
+            "Unnamed: 7": "object",
+            "T = 14.8 K": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig8i",
+          "columns": [
+            "T = 1.89 K",
+            "Unnamed: 1",
+            "T = 3.16 K",
+            "Unnamed: 3",
+            "T = 6.74 K",
+            "Unnamed: 5",
+            "T = 10.5 K",
+            "Unnamed: 7",
+            "T = 14.8 K",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "T = 1.89 K",
+            "T = 3.16 K",
+            "T = 6.74 K",
+            "T = 10.5 K",
+            "T = 14.8 K"
+          ],
+          "column_count": 10,
+          "row_count": 2385,
+          "dtypes": {
+            "T = 1.89 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.16 K": "object",
+            "Unnamed: 3": "object",
+            "T = 6.74 K": "object",
+            "Unnamed: 5": "object",
+            "T = 10.5 K": "object",
+            "Unnamed: 7": "object",
+            "T = 14.8 K": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig8_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig9_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10897,
+      "size_human": "10.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig9a",
+        "SFig9b"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "SFig9a",
+          "columns": [
+            "Unnamed: 0",
+            "channel length (μm)",
+            "number of tunnel barriers",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "channel length (μm).1",
+            "number of tunnel barriers.1",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "channel length (μm).2",
+            "number of tunnel barriers.2"
+          ],
+          "named_columns": [
+            "channel length (μm)",
+            "number of tunnel barriers",
+            "channel length (μm).1",
+            "number of tunnel barriers.1",
+            "channel length (μm).2",
+            "number of tunnel barriers.2"
+          ],
+          "column_count": 11,
+          "row_count": 8,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "channel length (μm)": "float64",
+            "number of tunnel barriers": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "channel length (μm).1": "float64",
+            "number of tunnel barriers.1": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "channel length (μm).2": "float64",
+            "number of tunnel barriers.2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig9b",
+          "columns": [
+            "Unnamed: 0",
+            "channel length (μm)",
+            "alpha",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "channel length (μm).1",
+            "alpha.1",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "channel length (μm).2",
+            "alpha.2"
+          ],
+          "named_columns": [
+            "channel length (μm)",
+            "alpha",
+            "channel length (μm).1",
+            "alpha.1",
+            "channel length (μm).2",
+            "alpha.2"
+          ],
+          "column_count": 11,
+          "row_count": 13,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "channel length (μm)": "float64",
+            "alpha": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "channel length (μm).1": "float64",
+            "alpha.1": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "object",
+            "channel length (μm).2": "float64",
+            "alpha.2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig9_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig10_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 1206060,
+      "size_human": "1.2 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig10a",
+        "SFig10b"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "SFig10a",
+          "columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23"
+          ],
+          "named_columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures)."
+          ],
+          "column_count": 24,
+          "row_count": 2002,
+          "dtypes": {
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig10b",
+          "columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28"
+          ],
+          "named_columns": [
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures)."
+          ],
+          "column_count": 29,
+          "row_count": 2002,
+          "dtypes": {
+            "In order to make the data points in different curves distribute evenly in x-axis, the data in this figure is linear interpolated from the original measurement data (which can be found in original data in supplementary figures).": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig10_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig11_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9074,
+      "size_human": "8.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig11"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "SFig11",
+          "columns": [
+            "Unnamed: 0",
+            "thickness (nm)",
+            "bulk gap (meV)",
+            "T1 (K)",
+            "T2 (K)"
+          ],
+          "named_columns": [
+            "thickness (nm)",
+            "bulk gap (meV)",
+            "T1 (K)",
+            "T2 (K)"
+          ],
+          "column_count": 5,
+          "row_count": 7,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "thickness (nm)": "int64",
+            "bulk gap (meV)": "int64",
+            "T1 (K)": "int64",
+            "T2 (K)": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig11_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig12_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 9392845,
+      "size_human": "9.0 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig12a",
+        "SFig12b",
+        "SFig12c",
+        "SFig12d",
+        "SFig12e",
+        "SFig12f",
+        "SFig12g",
+        "SFig12h",
+        "SFig12i",
+        "SFig12j",
+        "SFig12k",
+        "SFig12l",
+        "SFig12m",
+        "SFig12n"
+      ],
+      "sheet_count": 14,
+      "sheets": [
+        {
+          "sheet_name": "SFig12a",
+          "columns": [
+            "V_bg = -12.5 V",
+            "Unnamed: 1",
+            "V_bg = 0 V",
+            "Unnamed: 3",
+            "V_bg = 15 V",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "V_bg = -12.5 V",
+            "V_bg = 0 V",
+            "V_bg = 15 V"
+          ],
+          "column_count": 6,
+          "row_count": 26845,
+          "dtypes": {
+            "V_bg = -12.5 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = 0 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = 15 V": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig12b",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 9960,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig12c",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 59012,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig12d",
+          "columns": [
+            "V_bg = -23 V",
+            "Unnamed: 1",
+            "V_bg = -15 V",
+            "Unnamed: 3",
+            "V_bg = -2 V",
+            "Unnamed: 5",
+            "V_bg = 23 V",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "V_bg = -23 V",
+            "V_bg = -15 V",
+            "V_bg = -2 V",
+            "V_bg = 23 V"
+          ],
+          "column_count": 8,
+          "row_count": 2760,
+          "dtypes": {
+            "V_bg = -23 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = -15 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = -2 V": "object",
+            "Unnamed: 5": "object",
+            "V_bg = 23 V": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig12e",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 20085,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig12f",
+          "columns": [
+            "V_bg = -23 V",
+            "Unnamed: 1",
+            "V_bg = -15 V",
+            "Unnamed: 3",
+            "V_bg = -2 V",
+            "Unnamed: 5",
+            "V_bg = 23 V",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "V_bg = -23 V",
+            "V_bg = -15 V",
+            "V_bg = -2 V",
+            "V_bg = 23 V"
+          ],
+          "column_count": 8,
+          "row_count": 2708,
+          "dtypes": {
+            "V_bg = -23 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = -15 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = -2 V": "object",
+            "Unnamed: 5": "object",
+            "V_bg = 23 V": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig12g",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 21001,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig12h",
+          "columns": [
+            "V_bg = -40 V",
+            "Unnamed: 1",
+            "V_bg = 40 V",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "V_bg = -40 V",
+            "V_bg = 40 V"
+          ],
+          "column_count": 4,
+          "row_count": 756,
+          "dtypes": {
+            "V_bg = -40 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = 40 V": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig12i",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 6622,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig12j",
+          "columns": [
+            "V_bg = -30 V",
+            "Unnamed: 1",
+            "V_bg = -15 V",
+            "Unnamed: 3",
+            "V_bg = 0 V",
+            "Unnamed: 5",
+            "V_bg = 15 V",
+            "Unnamed: 7",
+            "V_bg = 30 V",
+            "Unnamed: 9",
+            "V_bg = 45 V",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "V_bg = -30 V",
+            "V_bg = -15 V",
+            "V_bg = 0 V",
+            "V_bg = 15 V",
+            "V_bg = 30 V",
+            "V_bg = 45 V"
+          ],
+          "column_count": 12,
+          "row_count": 1655,
+          "dtypes": {
+            "V_bg = -30 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = -15 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = 0 V": "object",
+            "Unnamed: 5": "object",
+            "V_bg = 15 V": "object",
+            "Unnamed: 7": "object",
+            "V_bg = 30 V": "object",
+            "Unnamed: 9": "object",
+            "V_bg = 45 V": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig12_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig13_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 6864563,
+      "size_human": "6.5 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig13a",
+        "SFig13b",
+        "SFig13c",
+        "SFig13d",
+        "SFig13e",
+        "SFig13f",
+        "SFig13g",
+        "SFig13h",
+        "SFig13i"
+      ],
+      "sheet_count": 9,
+      "sheets": [
+        {
+          "sheet_name": "SFig13a",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)-a",
+            "dI/dV (2e^2/h).1",
+            "Unnamed: 5",
+            "V_bg (V)-b",
+            "dI/dV (2e^2/h).2"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)-a",
+            "dI/dV (2e^2/h).1",
+            "V_bg (V)-b",
+            "dI/dV (2e^2/h).2"
+          ],
+          "column_count": 8,
+          "row_count": 15037,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)-a": "float64",
+            "dI/dV (2e^2/h).1": "float64",
+            "Unnamed: 5": "float64",
+            "V_bg (V)-b": "float64",
+            "dI/dV (2e^2/h).2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig13b",
+          "columns": [
+            "V_bg = -30 V",
+            "Unnamed: 1",
+            "V_bg = -20 V",
+            "Unnamed: 3",
+            "V_bg = -10 V",
+            "Unnamed: 5",
+            "V_bg = 0 V",
+            "Unnamed: 7",
+            "V_bg = 10 V",
+            "Unnamed: 9",
+            "V_bg = 20 V",
+            "Unnamed: 11",
+            "V_bg = 30 V",
+            "Unnamed: 13",
+            "V_bg = 40 V",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "V_bg = -30 V",
+            "V_bg = -20 V",
+            "V_bg = -10 V",
+            "V_bg = 0 V",
+            "V_bg = 10 V",
+            "V_bg = 20 V",
+            "V_bg = 30 V",
+            "V_bg = 40 V"
+          ],
+          "column_count": 16,
+          "row_count": 1655,
+          "dtypes": {
+            "V_bg = -30 V": "object",
+            "Unnamed: 1": "object",
+            "V_bg = -20 V": "object",
+            "Unnamed: 3": "object",
+            "V_bg = -10 V": "object",
+            "Unnamed: 5": "object",
+            "V_bg = 0 V": "object",
+            "Unnamed: 7": "object",
+            "V_bg = 10 V": "object",
+            "Unnamed: 9": "object",
+            "V_bg = 20 V": "object",
+            "Unnamed: 11": "object",
+            "V_bg = 30 V": "object",
+            "Unnamed: 13": "object",
+            "V_bg = 40 V": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig13c",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 61174,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig13d",
+          "columns": [
+            "T = 0.40 K",
+            "Unnamed: 1",
+            "T = 1.01 K",
+            "Unnamed: 3",
+            "T = 3.22 K",
+            "Unnamed: 5",
+            "T = 5.38 K",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "T = 0.40 K",
+            "T = 1.01 K",
+            "T = 3.22 K",
+            "T = 5.38 K"
+          ],
+          "column_count": 8,
+          "row_count": 6563,
+          "dtypes": {
+            "T = 0.40 K": "object",
+            "Unnamed: 1": "object",
+            "T = 1.01 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.22 K": "object",
+            "Unnamed: 5": "object",
+            "T = 5.38 K": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig13e",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 69901,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig13f",
+          "columns": [
+            "T = 1.86 K",
+            "Unnamed: 1",
+            "T = 3.16 K",
+            "Unnamed: 3",
+            "T = 3.83 K",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "T = 1.86 K",
+            "T = 3.16 K",
+            "T = 3.83 K"
+          ],
+          "column_count": 6,
+          "row_count": 2385,
+          "dtypes": {
+            "T = 1.86 K": "object",
+            "Unnamed: 1": "object",
+            "T = 3.16 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.83 K": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig13g",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "Unnamed: 2",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)",
+            "V_bg (V)",
+            "dI/dV (2e^2/h).1"
+          ],
+          "column_count": 5,
+          "row_count": 55808,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64",
+            "Unnamed: 2": "float64",
+            "V_bg (V)": "float64",
+            "dI/dV (2e^2/h).1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig13h",
+          "columns": [
+            "T = 1.53 K",
+            "Unnamed: 1",
+            "T = 2.00 K",
+            "Unnamed: 3",
+            "T = 3.00 K",
+            "Unnamed: 5",
+            "T = 4.00 K",
+            "Unnamed: 7",
+            "T = 5.00 K",
+            "Unnamed: 9",
+            "T = 6.50 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 1.53 K",
+            "T = 2.00 K",
+            "T = 3.00 K",
+            "T = 4.00 K",
+            "T = 5.00 K",
+            "T = 6.50 K"
+          ],
+          "column_count": 12,
+          "row_count": 4055,
+          "dtypes": {
+            "T = 1.53 K": "object",
+            "Unnamed: 1": "object",
+            "T = 2.00 K": "object",
+            "Unnamed: 3": "object",
+            "T = 3.00 K": "object",
+            "Unnamed: 5": "object",
+            "T = 4.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 5.00 K": "object",
+            "Unnamed: 9": "object",
+            "T = 6.50 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig13i",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 12647,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig13_1.xlsx"
+    },
+    {
+      "filename": "source_data_for_Supplementary_Fig14_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 3728429,
+      "size_human": "3.6 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "SFig14a",
+        "SFig14b",
+        "SFig14c",
+        "SFig14d",
+        "SFig14e",
+        "SFig14f",
+        "SFig14g",
+        "SFig14h",
+        "SFig14i",
+        "SFig14j",
+        "SFig14k"
+      ],
+      "sheet_count": 11,
+      "sheets": [
+        {
+          "sheet_name": "SFig14a",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 193,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14b",
+          "columns": [
+            "T = 0.30 K",
+            "Unnamed: 1",
+            "T = 0.50 K",
+            "Unnamed: 3",
+            "T = 0.79 K",
+            "Unnamed: 5",
+            "T = 0.97 K",
+            "Unnamed: 7",
+            "T = 1.50 K",
+            "Unnamed: 9",
+            "T = 2.01 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 0.30 K",
+            "T = 0.50 K",
+            "T = 0.79 K",
+            "T = 0.97 K",
+            "T = 1.50 K",
+            "T = 2.01 K"
+          ],
+          "column_count": 12,
+          "row_count": 4449,
+          "dtypes": {
+            "T = 0.30 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.50 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.79 K": "object",
+            "Unnamed: 5": "object",
+            "T = 0.97 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.50 K": "object",
+            "Unnamed: 9": "object",
+            "T = 2.01 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig14c",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 229,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14d",
+          "columns": [
+            "T = 0.30 K",
+            "Unnamed: 1",
+            "T = 0.50 K",
+            "Unnamed: 3",
+            "T = 0.79 K",
+            "Unnamed: 5",
+            "T = 0.97 K",
+            "Unnamed: 7",
+            "T = 1.50 K",
+            "Unnamed: 9",
+            "T = 2.01 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 0.30 K",
+            "T = 0.50 K",
+            "T = 0.79 K",
+            "T = 0.97 K",
+            "T = 1.50 K",
+            "T = 2.01 K"
+          ],
+          "column_count": 12,
+          "row_count": 4449,
+          "dtypes": {
+            "T = 0.30 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.50 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.79 K": "object",
+            "Unnamed: 5": "object",
+            "T = 0.97 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.50 K": "object",
+            "Unnamed: 9": "object",
+            "T = 2.01 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig14e",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 229,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14f",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 502,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14g",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 229,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14h",
+          "columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "named_columns": [
+            "T (K)",
+            "dI/dV (2e^2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 535,
+          "dtypes": {
+            "T (K)": "float64",
+            "dI/dV (2e^2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "SFig14i",
+          "columns": [
+            "T = 0.40 K",
+            "Unnamed: 1",
+            "T = 0.60 K",
+            "Unnamed: 3",
+            "T = 0.79 K",
+            "Unnamed: 5",
+            "T = 1.00 K",
+            "Unnamed: 7",
+            "T = 1.49 K",
+            "Unnamed: 9",
+            "T = 1.98 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 0.40 K",
+            "T = 0.60 K",
+            "T = 0.79 K",
+            "T = 1.00 K",
+            "T = 1.49 K",
+            "T = 1.98 K"
+          ],
+          "column_count": 12,
+          "row_count": 6619,
+          "dtypes": {
+            "T = 0.40 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.60 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.79 K": "object",
+            "Unnamed: 5": "object",
+            "T = 1.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.49 K": "object",
+            "Unnamed: 9": "object",
+            "T = 1.98 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "SFig14j",
+          "columns": [
+            "T = 0.40 K",
+            "Unnamed: 1",
+            "T = 0.60 K",
+            "Unnamed: 3",
+            "T = 0.79 K",
+            "Unnamed: 5",
+            "T = 1.00 K",
+            "Unnamed: 7",
+            "T = 1.49 K",
+            "Unnamed: 9",
+            "T = 1.98 K",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "T = 0.40 K",
+            "T = 0.60 K",
+            "T = 0.79 K",
+            "T = 1.00 K",
+            "T = 1.49 K",
+            "T = 1.98 K"
+          ],
+          "column_count": 12,
+          "row_count": 6619,
+          "dtypes": {
+            "T = 0.40 K": "object",
+            "Unnamed: 1": "object",
+            "T = 0.60 K": "object",
+            "Unnamed: 3": "object",
+            "T = 0.79 K": "object",
+            "Unnamed: 5": "object",
+            "T = 1.00 K": "object",
+            "Unnamed: 7": "object",
+            "T = 1.49 K": "object",
+            "Unnamed: 9": "object",
+            "T = 1.98 K": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "source_data_for_Supplementary_Fig14_1.xlsx"
+    }
+  ]
+}

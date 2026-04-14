@@ -1,0 +1,344 @@
+{
+  "paper_id": "step1_0333",
+  "title": "Electron ptychography achieves atomic-resolution limits set by lattice vibrations",
+  "doi": "10.1126/science.abg2533",
+  "journal": "Science",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3119920837",
+  "priority_score": 10.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 3,
+  "download_errors": [
+    "Fig_03.zip: Too large: 11006.8MB",
+    "Fig_02.zip: Too large: 2718.2MB",
+    "Fig_01.zip: Too large: 1820.2MB",
+    "uncorrected_ptycho.zip: Too large: 5173.0MB"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1126_science_abg2533",
+  "files_inspected": 4,
+  "file_types_found": [
+    "binary",
+    "matlab",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No clearly cleaned, figure-ready tabular dataset files were identified in the provided archive contents.",
+  "type2_summary": "The archive contains a large ZIP container, large MATLAB numerical datasets, and a MATLAB script in a figure-code folder. These are consistent with raw/simulation-level or processing inputs rather than directly replot-ready cleaned data.",
+  "type1_files": [],
+  "type2_files": [
+    "Fig_04_1.zip",
+    "zip_contents/Fig 4 code/MoSe2_2048.mat",
+    "zip_contents/Fig 4 code/MoSe2_2048_true_object.mat"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper itself is about electron ptychography on PrScO3, but the provided files are labeled MoSe2 and are located in a 'Fig 4 code' folder. This mismatch suggests the archive may contain example/simulation code or unrelated supplementary material. Because the internal contents of the MAT files are not inspectable from metadata alone, classification is conservative and based on file type, size, and folder context.",
+  "file_classifications": [
+    {
+      "relative_path": "Fig_04_1.zip",
+      "filename": "Fig_04_1.zip",
+      "type": "type2",
+      "paper_evidence": "The paper states that raw experimental data for the main text and supplementary materials will be available after publication from PARADIM, and the reported experiments are based on raw 4D-STEM diffraction patterns. A large Zenodo archive is consistent with a raw data deposit.",
+      "file_evidence": "87.2 MB ZIP archive from Zenodo, likely containing multiple large data files and code. Archive packaging and large size are more consistent with a raw or mixed repository than a cleaned figure table.",
+      "reasoning": "The archive itself is not directly replot-ready and appears to be a container for extracted data/code. Given the paper's explicit raw-data statement and the archive-like structure, it is safest to classify the archive as type2 at the top level.",
+      "ambiguity": "The archive may contain a mix of raw data and scripts; without inspecting all contents, the top-level ZIP is conservatively treated as raw/mixed raw repository material.",
+      "key_columns_or_structure": "Archive container; contents not directly tabular"
+    },
+    {
+      "relative_path": "zip_contents/Fig 4 code/MoSe2_2048.mat",
+      "filename": "MoSe2_2048.mat",
+      "type": "type2",
+      "paper_evidence": "The paper includes simulated multislice reconstructions and computed depth-resolution analyses. Files associated with figure code and MATLAB data are consistent with simulation inputs/outputs used to generate figure panels rather than cleaned source-data tables.",
+      "file_evidence": "Large MATLAB binary file (28.2 MB) inside a folder named 'Fig 4 code'. The name 'MoSe2_2048' suggests a large numerical array or simulation dataset, not a small figure-ready table. MATLAB .mat files typically require loading and interpretation before plotting.",
+      "reasoning": "This is not directly replot-ready in the sense of a cleaned table; it is a large binary numerical dataset likely used by the figure-generation code. The folder context ('Fig 4 code') and file size strongly indicate processed/simulation data requiring code to interpret.",
+      "ambiguity": "The exact content is not inspectable from metadata alone, but the combination of .mat format, large size, and code-folder placement makes type2 the conservative choice.",
+      "key_columns_or_structure": "MATLAB array(s); structure unknown"
+    },
+    {
+      "relative_path": "zip_contents/Fig 4 code/bo_probe_aberration_opt_bilayer_MoSe2_science_zenodo.m",
+      "filename": "bo_probe_aberration_opt_bilayer_MoSe2_science_zenodo.m",
+      "type": "script",
+      "paper_evidence": "The paper states that codes developed at Cornell University are published on GitHub, and the ptychography toolkit is available separately. A MATLAB .m file in a figure-code folder is consistent with analysis or simulation code used to generate results.",
+      "file_evidence": "MATLAB script file (.m), very small (8.3 KB), clearly executable code rather than data.",
+      "reasoning": "This is not data to be plotted; it is a script used for processing/simulation/figure generation.",
+      "ambiguity": "None.",
+      "key_columns_or_structure": "MATLAB code; no data columns"
+    },
+    {
+      "relative_path": "zip_contents/Fig 4 code/MoSe2_2048_true_object.mat",
+      "filename": "MoSe2_2048_true_object.mat",
+      "type": "type2",
+      "paper_evidence": "The paper discusses simulated multislice reconstructions and theoretical depth-localization examples. A 'true_object' file in a figure-code folder is consistent with ground-truth simulation data used to validate reconstruction methods.",
+      "file_evidence": "Large MATLAB binary file (59.0 MB), likely containing a large simulated object array or ground-truth model. Such files are not directly replot-ready without loading and interpreting the array structure.",
+      "reasoning": "This is most likely simulation ground truth or numerical object data used by the accompanying script. It is raw/simulation-level numerical content rather than cleaned figure-ready data, so type2 is appropriate.",
+      "ambiguity": "Exact internal variables are unknown, but the file name and size strongly support a simulation/raw numerical role.",
+      "key_columns_or_structure": "MATLAB array(s); likely object/potential field"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper demonstrates multislice electron ptychography on thick crystalline PrScO3, showing that full inversion of multiple electron scattering can recover atomic columns with lateral resolution approaching the intrinsic atomic size limit set by thermal vibrations. The method achieves sub-picometer positional precision, resolves light oxygen atoms in a thick bulk crystal, and enables depth sectioning with sub-nanometer 3D localization of dopants from a single projection dataset.",
+    "measurement_types": [
+      "4D-STEM diffraction patterns",
+      "electron ptychography reconstruction",
+      "high-resolution TEM / STEM comparison images",
+      "quantitative convergent beam electron diffraction (QCBED)",
+      "X-ray diffraction (XRD) comparison",
+      "multislice numerical simulations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1A",
+        "description": "Schematic of the electron ptychography experimental setup: focused probe raster-scanned across the sample with diffraction patterns recorded at each position.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 1B",
+        "description": "Simulated/illustrative probe intensity distribution as it propagates into a thick sample, showing beam spreading with depth.",
+        "data_type": "simulation/diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 1C",
+        "description": "Conceptual depiction of multislice transmission functions at different depths and sequential scattering through slices.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 1D",
+        "description": "Comparison of total phase images from multislice versus single-slice ptychographic reconstructions on simulated PrScO3 datasets at different thicknesses.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 1E",
+        "description": "Phase at Pr, Sc, and O atomic sites versus sample thickness, showing linear thickness dependence in multislice ptychography.",
+        "data_type": "line plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 2A",
+        "description": "Experimental multislice ptychographic phase image of [001]-oriented PrScO3, resolving all atomic sublattices.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2B",
+        "description": "Phase profiles across Pr-Pr dumbbells with multiple line profiles overlaid and averaged.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2C",
+        "description": "Phase profiles across O-Sc-O atomic columns, showing resolution of light oxygen atoms.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2D",
+        "description": "Fourier transform intensity of the reconstructed phase image.",
+        "data_type": "Fourier-space image / power spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2E",
+        "description": "Power spectrum along a selected direction, highlighting high-frequency information transfer.",
+        "data_type": "spectrum/power spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3A",
+        "description": "Projected electrostatic potential of PrScO3 without thermal vibrations (static/frozen potential).",
+        "data_type": "image/potential map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 3B",
+        "description": "Projected potential broadened by thermal vibrations at 300 K.",
+        "data_type": "image/potential map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 3C",
+        "description": "Simulated ptychographic reconstructed potential including thermal fluctuations for a 21 nm thick sample.",
+        "data_type": "image/potential map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 3D",
+        "description": "Experimental cropped region of the reconstructed potential used for width analysis.",
+        "data_type": "image/potential map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3E",
+        "description": "Histogram of measured Pr-Pr distances from repeated experimental measurements.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3F",
+        "description": "Histogram of measured Sc-O bond lengths, distinguishing two inequivalent bond distances.",
+        "data_type": "histogram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4A",
+        "description": "Reconstructed phase images of selected depth slices from experimental multislice ptychography, showing depth sectioning through the sample.",
+        "data_type": "image stack / slice images",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4B",
+        "description": "Depth profile of phase intensity along a line through the reconstructed slices.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4C",
+        "description": "Cartoon of beam spreading and vacuum/sample geometry used to interpret depth profiles.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 4D",
+        "description": "Measured depth profiles at atomic columns with error-function fits used to estimate depth resolution.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4E",
+        "description": "Simulated multislice reconstructions showing two Pr dopants at different depths in a PrScO3 matrix.",
+        "data_type": "image stack / slice images",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 4F",
+        "description": "Depth variation of phase intensity across the simulated Pr dopants.",
+        "data_type": "line profile",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 4G",
+        "description": "Depth profiles for simulated single dopants of different species (Pr, Sc, O), with Gaussian fits and depth-resolution comparison.",
+        "data_type": "line profile",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 4H",
+        "description": "Computed depth resolution versus illuminated dose for multislice ptychography.",
+        "data_type": "curve/plot",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental data are 4D-STEM diffraction patterns collected on a 300 keV Titan Themis using an EMPAD detector. The dataset consists of 128 x 128 scan positions, each with a 128 x 128 pixel diffraction pattern, acquired with a defocused probe over a 5.2 x 5.2 nm^2 area. The paper also reports QCBED measurements for Debye-Waller factors and references XRD measurements from prior work for comparison.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that raw experimental data for the results in the main text and supplementary materials will be available after publication from PARADIM via a DOI link. The codes developed at Cornell University are published on GitHub (muller-group-cornell), and the ptychography reconstruction toolkit PtychoShelves from PSI is available on the PSI website.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw data are described as experimental 4D-STEM diffraction patterns from EMPAD, acquired at 300 keV with 128 x 128 detector pixels and 128 x 128 scan positions. The paper does not specify a file format, but implies downloadable experimental datasets from PARADIM after publication.",
+      "processed_data_description": "Processed data include multislice ptychographic reconstructions (phase, amplitude, and slice-resolved object functions), extracted atomic-column widths, measured Pr-Pr distances, Sc-O bond lengths, depth profiles, Fourier/power spectra, and fitted broadening/resolution values. Tables S1 and S2 contain quantitative width and Debye-Waller factor results.",
+      "figure_data_description": "Yes. The paper includes figure-specific quantitative outputs such as phase profiles, histograms, Fourier power spectra, depth profiles, and simulated comparison images. Supplementary Movies S1 and S2 provide slice-by-slice reconstructed phase evolution. The paper does not explicitly state that separate source-data files per figure are deposited, but the main text and supplement clearly rely on figure-derived datasets.",
+      "scripts_description": "Yes. The authors state that the Cornell-developed codes are published on GitHub, and the PSI PtychoShelves toolkit is available online. The reconstruction algorithm is described as a generalized maximum-likelihood method with gradient descent, mixed-state probe treatment, and multislice propagation.",
+      "notes": "The dataset is a mix of raw detector measurements, reconstructed/processed phase and amplitude maps, simulation outputs used for method validation, and derived quantitative measurements. The paper emphasizes that the reconstruction is not a simple projection image but an inversion of multiple scattering across many slices. Supplementary materials include Movies S1 and S2, Figs. S1-S17, and Tables S1-S2. The raw experimental dataset is the primary measurement input; the published figures are mostly processed reconstructions and derived analyses rather than raw detector frames."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper explicitly states that raw experimental data of the results in the main text and supplementary materials will be available after publication from PARADIM, and the experiments were based on 4D-STEM diffraction patterns recorded by EMPAD.",
+      "source_data_evidence": "The paper includes reconstructed phase images, line profiles, histograms, Fourier/power spectra, depth profiles, tables of widths and Debye-Waller factors, and supplementary movies, all of which are processed figure-ready outputs.",
+      "data_availability_section_relevant": "“Raw experimental data of the results presented in the main text and supplementary materials is available after the publication from PARADIM... The codes developed at Cornell University are published on GitHub... The ptychography reconstruction toolkit, PtychoShelves... is available on the website...”",
+      "priority_modalities": [
+        "4D-STEM diffraction patterns",
+        "ptychographic phase reconstructions",
+        "slice-resolved object functions",
+        "Fourier/power spectra",
+        "line profiles and histograms",
+        "QCBED datasets",
+        "simulation-generated diffraction data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "Fig_04_1.zip",
+      "extension": ".zip",
+      "size_bytes": 91481156,
+      "size_human": "87.2 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Fig_04_1.zip"
+    },
+    {
+      "filename": "MoSe2_2048.mat",
+      "extension": ".mat",
+      "size_bytes": 29614766,
+      "size_human": "28.2 MB",
+      "file_type": "matlab",
+      "variables": {
+        "sigma_vz": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "float32"
+        },
+        "v_z": {
+          "shape": [
+            2048,
+            2048
+          ],
+          "dtype": "float32"
+        }
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "Fig 4 code/MoSe2_2048.mat",
+      "from_zip": "Fig_04_1.zip",
+      "relative_path": "zip_contents/Fig 4 code/MoSe2_2048.mat"
+    },
+    {
+      "filename": "bo_probe_aberration_opt_bilayer_MoSe2_science_zenodo.m",
+      "extension": ".m",
+      "size_bytes": 8508,
+      "size_human": "8.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .m",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig 4 code/bo_probe_aberration_opt_bilayer_MoSe2_science_zenodo.m",
+      "from_zip": "Fig_04_1.zip",
+      "relative_path": "zip_contents/Fig 4 code/bo_probe_aberration_opt_bilayer_MoSe2_science_zenodo.m"
+    },
+    {
+      "filename": "MoSe2_2048_true_object.mat",
+      "extension": ".mat",
+      "size_bytes": 61855038,
+      "size_human": "59.0 MB",
+      "file_type": "matlab",
+      "variables": {
+        "object": {
+          "shape": [
+            3072,
+            3072
+          ],
+          "dtype": "complex64"
+        },
+        "p": {
+          "shape": [],
+          "dtype": "[('dx_spec', 'O')]"
+        }
+      },
+      "download_source": "zip_extracted",
+      "archive_path": "Fig 4 code/MoSe2_2048_true_object.mat",
+      "from_zip": "Fig_04_1.zip",
+      "relative_path": "zip_contents/Fig 4 code/MoSe2_2048_true_object.mat"
+    }
+  ]
+}

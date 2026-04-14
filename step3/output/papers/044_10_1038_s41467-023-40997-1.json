@@ -1,0 +1,270 @@
+{
+  "paper_id": "step1_0081",
+  "title": "From Stoner to local moment magnetism in atomically thin Cr2Te3",
+  "doi": "10.1038/s41467-023-40997-1",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4386387550",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-40997-1",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No clearly replot-ready, figure-organized tabular source files were identifiable from the inspection reports.",
+  "type2_summary": "Both files are Nature source-data PDFs with no visible tabular structure in the inspection report, and the paper context strongly supports archived raw or mixed measurement data.",
+  "type1_files": [],
+  "type2_files": [
+    "41467_2023_40997_MOESM1_ESM_1.pdf",
+    "41467_2023_40997_MOESM2_ESM_1.pdf"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly contains both raw measurements and processed figure-ready results, but the two provided files are only identifiable as source-data PDFs. Without internal inspection, conservative classification favors Type 2. If page-level content reveals figure-labeled tables or CSV-like structure, reclassification to Type 1 may be warranted.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2023_40997_MOESM1_ESM_1.pdf",
+      "filename": "41467_2023_40997_MOESM1_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper states that data are available in the Stanford Digital Repository and the provided analysis indicates raw measurements were archived, including RHEED, XRD, STM, XMCD/XAS, and ARPES. A Nature Communications MOESM source-data PDF in this context is likely a compiled raw-data supplement rather than a cleaned figure table.",
+      "file_evidence": "PDF source-data file, 4.2 MB, from nature_source_data. No indication of tabular headers or figure-specific organization is available from the inspection report. The size is consistent with embedded raw/processed instrument outputs rather than a small replot-ready table.",
+      "reasoning": "Given the paper's explicit emphasis on archived measurements and the file being a source-data PDF without evidence of structured figure-ready tables, the conservative classification is raw/unprocessed (Type 2).",
+      "ambiguity": "Moderate: without page-level inspection, the PDF could contain mixed source data. However, absent clear figure-table structure, raw/source-data handling is the safer choice.",
+      "key_columns_or_structure": "Not inspectable from report; likely embedded source-data figures or raw measurement pages"
+    },
+    {
+      "relative_path": "41467_2023_40997_MOESM2_ESM_1.pdf",
+      "filename": "41467_2023_40997_MOESM2_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The publication and supplied analysis indicate that the deposited repository contains raw measurements and supplementary source data for multiple experimental modalities. No explicit statement identifies this file as cleaned, figure-ready tabular data.",
+      "file_evidence": "PDF source-data file, 4.1 MB, from nature_source_data. The file is not a CSV/XLSX/TXT table and no headers, sheet names, or figure labels are available from the inspection report. The size and format are more consistent with raw or mixed source data than directly replot-ready tables.",
+      "reasoning": "Because the file is a source-data PDF and there is no evidence of organized, directly plottable tables, it is classified conservatively as Type 2.",
+      "ambiguity": "Moderate: could contain processed source data for specific figures, but the available evidence does not support Type 1.",
+      "key_columns_or_structure": "Not inspectable from report; likely embedded source-data figures or raw measurement pages"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies atomically thin epitaxial Cr2Te3 films and shows that ferromagnetism persists down to the monolayer, but the Curie temperature is strongly suppressed. By combining STM, XRD/RHEED, XMCD/XAS, ARPES, and DFT+U, the authors conclude that thicker films behave like Stoner itinerant ferromagnets, whereas the monolayer crosses over to more localized Heisenberg-like magnetism due to a reduced density of states near the Fermi level and dimensionality/strain effects.",
+    "measurement_types": [
+      "RHEED",
+      "XRD (2θ-ω scan)",
+      "STM topography",
+      "XMCD",
+      "XAS",
+      "ARPES",
+      "DFT+U electronic structure calculations",
+      "SQUID magnetization (mentioned for 6 ML in Supplementary Fig. 2)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of Cr2Te3 showing alternating Cr-deficient and Cr-filled layers and local octahedral coordination.",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "RHEED patterns along two substrate orientations during film growth, showing sharp streaks consistent with epitaxial growth.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Wide-angle XRD 2θ-ω scan showing Cr2Te3 film peaks on Si substrate.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Atomic-resolution STM image of 1 ML Cr2Te3 with line profile and FFT inset, used to extract lattice constant and reconstruction.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Atomic-resolution STM image of 6 ML Cr2Te3 with line profile and FFT inset, used to extract lattice constant and reconstruction.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Schematic of octahedral-to-trigonal local symmetry change in the monolayer and corresponding t2g splitting into a1g and egπ bands.",
+        "data_type": "schematic / band-structure diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Cr L2,3-edge XAS spectra (ρ+ and ρ−) and XMCD for 1 ML Cr2Te3, with weak but clear dichroism.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Cr L2,3-edge XAS spectra (ρ+ and ρ−) and XMCD for 3 ML Cr2Te3, showing a stronger ferromagnetic signal.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Temperature-dependent XMCD spectra for 1 ML Cr2Te3 used to determine the Curie temperature.",
+        "data_type": "spectrum series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Temperature-dependent XMCD spectra for 3 ML Cr2Te3.",
+        "data_type": "spectrum series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Temperature-dependent XMCD spectra for 6 ML Cr2Te3.",
+        "data_type": "spectrum series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "XMCD/XAS ratio versus temperature for 1 ML, 3 ML, and 6 ML samples, showing reduced magnetic signal in the monolayer.",
+        "data_type": "curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Fermi surface map of 6 ML Cr2Te3 around Γ.",
+        "data_type": "spectral image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Fermi surface map of 1 ML Cr2Te3 around Γ.",
+        "data_type": "spectral image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Temperature-dependent ARPES band evolution in 6 ML Cr2Te3 showing exchange splitting below TC and band merging above TC.",
+        "data_type": "spectral image series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Temperature-dependent ARPES band evolution in 1 ML Cr2Te3 showing little change across TC.",
+        "data_type": "spectral image series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Temperature-dependent energy shift extracted from ARPES for 6 ML and 1 ML samples, compared with Stoner-model expectation.",
+        "data_type": "curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Temperature-dependent momentum shift extracted from ARPES for 6 ML and 1 ML samples, compared with Stoner-model expectation.",
+        "data_type": "curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "High-resolution s- and p-polarized ARPES dispersions along Γ-M for 6 ML Cr2Te3.",
+        "data_type": "spectral image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Second-derivative versions of the 6 ML ARPES dispersions to enhance weak bands.",
+        "data_type": "processed spectral image",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "DFT+U calculated bulk Cr2Te3 band structure.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "High-resolution s- and p-polarized ARPES dispersions along Γ-M for 1 ML Cr2Te3.",
+        "data_type": "spectral image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Second-derivative versions of the 1 ML ARPES dispersions.",
+        "data_type": "processed spectral image",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "DFT+U calculated monolayer Cr2Te3 band structure.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "Comparison of calculated density of states with experimental photoemission spectra for 1 ML and 6 ML Cr2Te3.",
+        "data_type": "spectrum / DOS curve",
+        "likely_source": "mixed experimental and theoretical"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include in-situ RHEED patterns during MBE growth, XRD 2θ-ω scans, low-temperature STM topography images, temperature-dependent XMCD/XAS spectra at Cr L2,3 edges collected in TEY mode, and ARPES spectra/Fermi-surface maps collected with a Scienta R4000 analyzer. The paper also mentions SQUID magnetization data for 6 ML in Supplementary Fig. 2.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'Data are available in the Stanford Digital Repository at https://purl.stanford.edu/nf616ft8456.' It also notes that supplementary information is available online, but no explicit statement about code or scripts is given in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "The paper describes raw data as instrument-collected measurements: RHEED during growth, STM images acquired in ultrahigh vacuum at 77 K, ARPES spectra measured in situ with specified photon energies and resolutions, and XAS/XMCD spectra measured at SSRL in TEY mode under circularly polarized light and magnetic field. File formats are not specified.",
+      "processed_data_description": "Processed data include second-derivative ARPES images, extracted energy and momentum shifts versus temperature, XMCD/XAS ratios versus temperature, angle-integrated photoemission spectra used as DOS estimates, and DFT+U-derived band structures/DOS. The paper also references supplementary figures with additional extracted quantities such as lattice parameters, magnetization curves, and U-dependence.",
+      "figure_data_description": "Figure-specific data are clearly presented in the main text as plotted spectra, images, and curves. The paper does not explicitly say whether separate source-data files are deposited, but the repository statement suggests data are available. Supplementary figures are referenced extensively, implying additional figure data exist.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text.",
+      "notes": "The dataset appears to combine multiple modalities and levels of processing: direct experimental images/spectra, derived quantities from those spectra, and theoretical outputs from DFT+U. The paper explicitly distinguishes raw spectroscopic measurements from processed representations such as second derivatives and integrated photoemission spectra. The availability statement is generic and does not specify whether the repository contains raw detector files, figure-ready CSVs, or both."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section gives detailed acquisition conditions for ARPES, STM, XAS/XMCD, RHEED, and XRD, indicating that instrument-level measurements were collected and likely archived.",
+      "source_data_evidence": "Multiple figures rely on extracted or transformed quantities such as second-derivative ARPES, XMCD/XAS ratios, temperature-dependent energy/momentum shifts, and DFT+U curves, which are figure-ready processed data.",
+      "data_availability_section_relevant": "Data are available in the Stanford Digital Repository at https://purl.stanford.edu/nf616ft8456. Supplementary information The online version contains supplementary material available at https://doi.org/10.1038/s41467-023-40997-1.",
+      "priority_modalities": [
+        "RHEED patterns",
+        "XRD diffraction scans",
+        "STM topography images",
+        "XMCD/XAS spectra",
+        "ARPES spectra and Fermi-surface maps",
+        "DFT+U band structures and DOS"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2023_40997_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4393551,
+      "size_human": "4.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_40997_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2023_40997_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4336330,
+      "size_human": "4.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2023_40997_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

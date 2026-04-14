@@ -1,0 +1,975 @@
+{
+  "paper_id": "step1_0299",
+  "title": "High-mobility spin-polarized quasi-two-dimensional electron gas and large low-field magnetoresistance at the interface of EuTiO3/SrTiO3 (110) heterostructures",
+  "doi": "10.1063/5.0198762",
+  "journal": "APL Materials",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4392452138",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 34,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1063_5_0198762",
+  "files_inspected": 34,
+  "file_types_found": [
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 207 column 20 (char 10834)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports experimental evidence for a high-mobility spin-polarized quasi-2D electron gas with large low-field magnetoresistance at the EuTiO3/SrTiO3 (110) interface.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports experimental measurements on EuTiO3/SrTiO3 (110) heterostructures, but no accessible dataset or supplementary/source data was identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "rxx_T_A_1.csv",
+      "extension": ".csv",
+      "size_bytes": 84853,
+      "size_human": "82.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "50mK",
+        "180mK",
+        "340mK",
+        "750mK",
+        "940mK",
+        "1K"
+      ],
+      "column_count": 7,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "50mK": "float64",
+        "180mK": "float64",
+        "340mK": "float64",
+        "750mK": "float64",
+        "940mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "rxx_T_A_1.csv"
+    },
+    {
+      "filename": "Si_4_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6089,
+      "size_human": "5.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_4_1.csv"
+    },
+    {
+      "filename": "B_12_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6520,
+      "size_human": "6.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 151,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_12_1.csv"
+    },
+    {
+      "filename": "Si_5_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6792,
+      "size_human": "6.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_5_1.csv"
+    },
+    {
+      "filename": "Si_6_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6807,
+      "size_human": "6.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_6_1.csv"
+    },
+    {
+      "filename": "B_13_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6531,
+      "size_human": "6.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 151,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_13_1.csv"
+    },
+    {
+      "filename": "B_1_1.csv",
+      "extension": ".csv",
+      "size_bytes": 12658,
+      "size_human": "12.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_1_1.csv"
+    },
+    {
+      "filename": "Si_7_1.csv",
+      "extension": ".csv",
+      "size_bytes": 7036,
+      "size_human": "6.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_7_1.csv"
+    },
+    {
+      "filename": "B_2_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13282,
+      "size_human": "13.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_2_1.csv"
+    },
+    {
+      "filename": "B_3_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13079,
+      "size_human": "12.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_3_1.csv"
+    },
+    {
+      "filename": "B_5_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13068,
+      "size_human": "12.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_5_1.csv"
+    },
+    {
+      "filename": "B_4_1.csv",
+      "extension": ".csv",
+      "size_bytes": 12952,
+      "size_human": "12.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_4_1.csv"
+    },
+    {
+      "filename": "Si_8_1.csv",
+      "extension": ".csv",
+      "size_bytes": 27289,
+      "size_human": "26.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        " "
+      ],
+      "column_count": 6,
+      "row_count": 634,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        " ": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_8_1.csv"
+    },
+    {
+      "filename": "Symmetrized_Si-8_1.csv",
+      "extension": ".csv",
+      "size_bytes": 10171,
+      "size_human": "9.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "Rxx",
+        "Rxy"
+      ],
+      "column_count": 3,
+      "row_count": 396,
+      "dtypes": {
+        "B(T)": "float64",
+        "Rxx": "float64",
+        "Rxy": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Symmetrized_Si-8_1.csv"
+    },
+    {
+      "filename": "RT_both_1.csv",
+      "extension": ".csv",
+      "size_bytes": 33371,
+      "size_human": "32.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "T(Si mask)",
+        "Rxx(Si mask)",
+        "T(for low pressure  sample)",
+        "Rxx(for low pressure  sample)"
+      ],
+      "column_count": 4,
+      "row_count": 1693,
+      "dtypes": {
+        "T(Si mask)": "float64",
+        "Rxx(Si mask)": "float64",
+        "T(for low pressure  sample)": "float64",
+        "Rxx(for low pressure  sample)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "RT_both_1.csv"
+    },
+    {
+      "filename": "Readme_1.txt",
+      "extension": ".txt",
+      "size_bytes": 3433,
+      "size_human": "3.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Data",
+        "Sets",
+        "for",
+        "a",
+        "pre-print",
+        "titled"
+      ],
+      "column_count": 6,
+      "row_count": 65,
+      "dtypes": {
+        "Data": "object",
+        "Sets": "object",
+        "for": "object",
+        "a": "object",
+        "pre-print": "object",
+        "titled": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zenodo",
+      "relative_path": "Readme_1.txt"
+    },
+    {
+      "filename": "delsigma_T_B_1.csv",
+      "extension": ".csv",
+      "size_bytes": 18552,
+      "size_human": "18.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "100mK",
+        "250mK",
+        "500mK",
+        "720mK",
+        "1K",
+        "1.2K"
+      ],
+      "column_count": 7,
+      "row_count": 301,
+      "dtypes": {
+        "B": "float64",
+        "100mK": "float64",
+        "250mK": "float64",
+        "500mK": "float64",
+        "720mK": "float64",
+        "1K": "float64",
+        "1.2K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "delsigma_T_B_1.csv"
+    },
+    {
+      "filename": "delrxx_T_B_1.csv",
+      "extension": ".csv",
+      "size_bytes": 77219,
+      "size_human": "75.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "100mK",
+        "250mK",
+        "500mK",
+        "720mK",
+        "1K"
+      ],
+      "column_count": 6,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "100mK": "float64",
+        "250mK": "float64",
+        "500mK": "float64",
+        "720mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "delrxx_T_B_1.csv"
+    },
+    {
+      "filename": "delRxx_T_A_1.csv",
+      "extension": ".csv",
+      "size_bytes": 92260,
+      "size_human": "90.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "50mK",
+        "180mK",
+        "340mK",
+        "750mK",
+        "940mK",
+        "1K"
+      ],
+      "column_count": 7,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "50mK": "float64",
+        "180mK": "float64",
+        "340mK": "float64",
+        "750mK": "float64",
+        "940mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "delRxx_T_A_1.csv"
+    },
+    {
+      "filename": "delrxx_si_parallel_A_1.csv",
+      "extension": ".csv",
+      "size_bytes": 2668,
+      "size_human": "2.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0",
+        "0.00453"
+      ],
+      "column_count": 2,
+      "row_count": 158,
+      "dtypes": {
+        "0": "float64",
+        "0.00453": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "delrxx_si_parallel_A_1.csv"
+    },
+    {
+      "filename": "delrxx_parallel_B_1.csv",
+      "extension": ".csv",
+      "size_bytes": 27168,
+      "size_human": "26.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "delRxx"
+      ],
+      "column_count": 2,
+      "row_count": 1000,
+      "dtypes": {
+        "B(T)": "float64",
+        "delRxx": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "delrxx_parallel_B_1.csv"
+    },
+    {
+      "filename": "B_9_1.csv",
+      "extension": ".csv",
+      "size_bytes": 12278,
+      "size_human": "12.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 301,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_9_1.csv"
+    },
+    {
+      "filename": "B_10_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13100,
+      "size_human": "12.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 301,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_10_1.csv"
+    },
+    {
+      "filename": "B_8_1.csv",
+      "extension": ".csv",
+      "size_bytes": 12998,
+      "size_human": "12.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 301,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_8_1.csv"
+    },
+    {
+      "filename": "B_11_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13007,
+      "size_human": "12.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 301,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_11_1.csv"
+    },
+    {
+      "filename": "B_7_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13042,
+      "size_human": "12.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 301,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_7_1.csv"
+    },
+    {
+      "filename": "rxx_T_B_1.csv",
+      "extension": ".csv",
+      "size_bytes": 71694,
+      "size_human": "70.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "100mK",
+        "250mK",
+        "500mK",
+        "720mK",
+        "1K"
+      ],
+      "column_count": 6,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "100mK": "float64",
+        "250mK": "float64",
+        "500mK": "float64",
+        "720mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "rxx_T_B_1.csv"
+    },
+    {
+      "filename": "rxy_T_A_1.csv",
+      "extension": ".csv",
+      "size_bytes": 84765,
+      "size_human": "82.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "50mK",
+        "180mK",
+        "340mK",
+        "750mK",
+        "940mK",
+        "1K"
+      ],
+      "column_count": 7,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "50mK": "float64",
+        "180mK": "float64",
+        "340mK": "float64",
+        "750mK": "float64",
+        "940mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "rxy_T_A_1.csv"
+    },
+    {
+      "filename": "B_6_1.csv",
+      "extension": ".csv",
+      "size_bytes": 106500,
+      "size_human": "104.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X Hall (ohms)",
+        "Y Hall(ohms)",
+        "X  Rxx(ohms)",
+        "Y Rxx(ohms)",
+        "Unnamed: 5"
+      ],
+      "column_count": 6,
+      "row_count": 2503,
+      "dtypes": {
+        "B(T)": "float64",
+        "X Hall (ohms)": "float64",
+        "Y Hall(ohms)": "float64",
+        "X  Rxx(ohms)": "float64",
+        "Y Rxx(ohms)": "float64",
+        "Unnamed: 5": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "B_6_1.csv"
+    },
+    {
+      "filename": "rxy_T_B_1.csv",
+      "extension": ".csv",
+      "size_bytes": 71789,
+      "size_human": "70.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B",
+        "100mK",
+        "250mK",
+        "500mK",
+        "720mK",
+        "1K"
+      ],
+      "column_count": 6,
+      "row_count": 791,
+      "dtypes": {
+        "B": "float64",
+        "100mK": "float64",
+        "250mK": "float64",
+        "500mK": "float64",
+        "720mK": "float64",
+        "1K": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "rxy_T_B_1.csv"
+    },
+    {
+      "filename": "Si_1_1.csv",
+      "extension": ".csv",
+      "size_bytes": 13177,
+      "size_human": "12.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 317,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_1_1.csv"
+    },
+    {
+      "filename": "Si_2_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6617,
+      "size_human": "6.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_2_1.csv"
+    },
+    {
+      "filename": "Si_3_1.csv",
+      "extension": ".csv",
+      "size_bytes": 6627,
+      "size_human": "6.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B(T)",
+        "X component of Hall (ohms)",
+        "Y component of Hall(ohms)",
+        "X component of Rxx(ohms)",
+        "Y component of Rxx(ohms)"
+      ],
+      "column_count": 5,
+      "row_count": 159,
+      "dtypes": {
+        "B(T)": "float64",
+        "X component of Hall (ohms)": "float64",
+        "Y component of Hall(ohms)": "float64",
+        "X component of Rxx(ohms)": "float64",
+        "Y component of Rxx(ohms)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zenodo",
+      "relative_path": "Si_3_1.csv"
+    },
+    {
+      "filename": "2406.14029v1_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4057402,
+      "size_human": "3.9 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "2406.14029v1_1.pdf"
+    }
+  ]
+}

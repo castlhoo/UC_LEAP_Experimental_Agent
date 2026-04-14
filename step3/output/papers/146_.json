@@ -1,0 +1,1102 @@
+{
+  "paper_id": "step1_0366",
+  "title": "Topological superconductivity in a topological insulator",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2022,
+  "paper_url": "https://arxiv.org/abs/2208.09609v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0366",
+  "files_inspected": 50,
+  "file_types_found": [
+    "binary",
+    "tabular_text",
+    "script",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting value: line 201 column 34 (char 10623)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports crystal growth and magneto-transport measurements on Ni$_3$In$_2$S$_2$ single crystals, identifying weak anti-localization and topological-insulator-like behavior at low temperature.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper likely contains experimental crystal growth and magneto-transport measurement data, but no accessible dataset or supplementary/source data was identified from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "dataset_1.zip",
+      "extension": ".zip",
+      "size_bytes": 2790339,
+      "size_human": "2.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "dataset_1.zip"
+    },
+    {
+      "filename": "Fig1c.csv",
+      "extension": ".csv",
+      "size_bytes": 19016,
+      "size_human": "18.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "I_b (nA)\tdV/dI (Ω) at 0.4 K\tdV/dI (Ω) at 1.4 K\tdV/dI (Ω) at 2.4 K\tdV/dI (Ω) at 3.4 K\tdV/dI (Ω) at 4.4 K"
+      ],
+      "column_count": 1,
+      "row_count": 201,
+      "dtypes": {
+        "I_b (nA)\tdV/dI (Ω) at 0.4 K\tdV/dI (Ω) at 1.4 K\tdV/dI (Ω) at 2.4 K\tdV/dI (Ω) at 3.4 K\tdV/dI (Ω) at 4.4 K": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1c.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1c.csv"
+    },
+    {
+      "filename": "Fig1c_inset.csv",
+      "extension": ".csv",
+      "size_bytes": 617,
+      "size_human": "617.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "T (K)\tI_c (nA)"
+      ],
+      "column_count": 1,
+      "row_count": 48,
+      "dtypes": {
+        "T (K)\tI_c (nA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1c_inset.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1c_inset.csv"
+    },
+    {
+      "filename": "Fig1d.csv",
+      "extension": ".csv",
+      "size_bytes": 21581,
+      "size_human": "21.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V (mV)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 601,
+      "dtypes": {
+        "V (mV)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1d.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1d.csv"
+    },
+    {
+      "filename": "Fig1d_inset.csv",
+      "extension": ".csv",
+      "size_bytes": 54,
+      "size_human": "54.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_n (mV)\t1/n"
+      ],
+      "column_count": 1,
+      "row_count": 3,
+      "dtypes": {
+        "V_n (mV)\t1/n": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1d_inset.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1d_inset.csv"
+    },
+    {
+      "filename": "Fig1e.csv",
+      "extension": ".csv",
+      "size_bytes": 734566,
+      "size_human": "717.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 24321,
+      "dtypes": {
+        "B_z (mT)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1e.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1e.csv"
+    },
+    {
+      "filename": "Fig1f.csv",
+      "extension": ".csv",
+      "size_bytes": 329874,
+      "size_human": "322.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 15477,
+      "dtypes": {
+        "B_z (mT)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1f.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1f.csv"
+    },
+    {
+      "filename": "Fig1g.csv",
+      "extension": ".csv",
+      "size_bytes": 1085714,
+      "size_human": "1.0 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 40401,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 1/Fig1g.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 1/Fig1g.csv"
+    },
+    {
+      "filename": "Fig2a.csv",
+      "extension": ".csv",
+      "size_bytes": 1420438,
+      "size_human": "1.4 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 48492,
+      "dtypes": {
+        "B_x (T)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2a.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2a.csv"
+    },
+    {
+      "filename": "Fig2b.csv",
+      "extension": ".csv",
+      "size_bytes": 503623,
+      "size_human": "491.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 24472,
+      "dtypes": {
+        "B_x (T)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2b.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2b.csv"
+    },
+    {
+      "filename": "Fig2c.csv",
+      "extension": ".csv",
+      "size_bytes": 1124698,
+      "size_human": "1.1 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 58082,
+      "dtypes": {
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2c.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2c.csv"
+    },
+    {
+      "filename": "Fig2d.csv",
+      "extension": ".csv",
+      "size_bytes": 617083,
+      "size_human": "602.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G (V)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 27150,
+      "dtypes": {
+        "V_G (V)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2d.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2d.csv"
+    },
+    {
+      "filename": "Fig2e 0V.csv",
+      "extension": ".csv",
+      "size_bytes": 4275,
+      "size_human": "4.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e 0V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e 0V.csv"
+    },
+    {
+      "filename": "Fig2e 10V.csv",
+      "extension": ".csv",
+      "size_bytes": 4054,
+      "size_human": "4.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 242,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e 10V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e 10V.csv"
+    },
+    {
+      "filename": "Fig2e -10V.csv",
+      "extension": ".csv",
+      "size_bytes": 4098,
+      "size_human": "4.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 240,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e -10V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e -10V.csv"
+    },
+    {
+      "filename": "Fig2e 20V.csv",
+      "extension": ".csv",
+      "size_bytes": 4032,
+      "size_human": "3.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e 20V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e 20V.csv"
+    },
+    {
+      "filename": "Fig2e -20V.csv",
+      "extension": ".csv",
+      "size_bytes": 4244,
+      "size_human": "4.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 240,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e -20V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e -20V.csv"
+    },
+    {
+      "filename": "Fig2e -30V.csv",
+      "extension": ".csv",
+      "size_bytes": 4864,
+      "size_human": "4.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e -30V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e -30V.csv"
+    },
+    {
+      "filename": "Fig2e -40V.csv",
+      "extension": ".csv",
+      "size_bytes": 4741,
+      "size_human": "4.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2e -40V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2e -40V.csv"
+    },
+    {
+      "filename": "Fig2f 0V.csv",
+      "extension": ".csv",
+      "size_bytes": 2940,
+      "size_human": "2.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 150,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f 0V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f 0V.csv"
+    },
+    {
+      "filename": "Fig2f 10V.csv",
+      "extension": ".csv",
+      "size_bytes": 257105,
+      "size_human": "251.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 20232,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f 10V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f 10V.csv"
+    },
+    {
+      "filename": "Fig2f -10V.csv",
+      "extension": ".csv",
+      "size_bytes": 3827,
+      "size_human": "3.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 207,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f -10V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f -10V.csv"
+    },
+    {
+      "filename": "Fig2f 20V.csv",
+      "extension": ".csv",
+      "size_bytes": 512465,
+      "size_human": "500.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 36249,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f 20V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f 20V.csv"
+    },
+    {
+      "filename": "Fig2f -20V.csv",
+      "extension": ".csv",
+      "size_bytes": 4640,
+      "size_human": "4.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f -20V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f -20V.csv"
+    },
+    {
+      "filename": "Fig2f -30V.csv",
+      "extension": ".csv",
+      "size_bytes": 4587,
+      "size_human": "4.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f -30V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f -30V.csv"
+    },
+    {
+      "filename": "Fig2f -40V.csv",
+      "extension": ".csv",
+      "size_bytes": 4790,
+      "size_human": "4.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_c (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 241,
+      "dtypes": {
+        "B_x (T)\tI_c (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure 2/Fig2f -40V.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure 2/Fig2f -40V.csv"
+    },
+    {
+      "filename": "FigS2.csv",
+      "extension": ".csv",
+      "size_bytes": 14433,
+      "size_human": "14.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "I_b (nA)\tdV/dI (Ω) at 0.4 K\tdV/dI (Ω) at 1.4 K\tdV/dI (Ω) at 2.4 K\tdV/dI (Ω) at 3.4 K\tdV/dI (Ω) at 4.4 K"
+      ],
+      "column_count": 1,
+      "row_count": 160,
+      "dtypes": {
+        "I_b (nA)\tdV/dI (Ω) at 0.4 K\tdV/dI (Ω) at 1.4 K\tdV/dI (Ω) at 2.4 K\tdV/dI (Ω) at 3.4 K\tdV/dI (Ω) at 4.4 K": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S2/FigS2.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S2/FigS2.csv"
+    },
+    {
+      "filename": "FigS2_inset.csv",
+      "extension": ".csv",
+      "size_bytes": 573,
+      "size_human": "573.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "T (K)\tI_c (nA)"
+      ],
+      "column_count": 1,
+      "row_count": 48,
+      "dtypes": {
+        "T (K)\tI_c (nA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S2/FigS2_inset.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S2/FigS2_inset.csv"
+    },
+    {
+      "filename": "FigS3.csv",
+      "extension": ".csv",
+      "size_bytes": 26417,
+      "size_human": "25.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V (mV)\tI_b (μA)\tI_fit (μA)"
+      ],
+      "column_count": 1,
+      "row_count": 601,
+      "dtypes": {
+        "V (mV)\tI_b (μA)\tI_fit (μA)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S3/FigS3.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S3/FigS3.csv"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction.nb",
+      "extension": ".nb",
+      "size_bytes": 423205,
+      "size_human": "413.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .nb",
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction.nb",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction.nb"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_Data_Ic_Device_A.dat",
+      "extension": ".dat",
+      "size_bytes": 965,
+      "size_human": "965.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)",
+        "I_c (nA)"
+      ],
+      "column_count": 2,
+      "row_count": 98,
+      "dtypes": {
+        "B_z (mT)": "float64",
+        "I_c (nA)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_A.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_A.dat"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_Data_Ic_Device_B.dat",
+      "extension": ".dat",
+      "size_bytes": 974,
+      "size_human": "974.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)",
+        "I_c (nA)"
+      ],
+      "column_count": 2,
+      "row_count": 99,
+      "dtypes": {
+        "B_z (mT)": "float64",
+        "I_c (nA)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_B.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_B.dat"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_Data_Ic_Device_C.dat",
+      "extension": ".dat",
+      "size_bytes": 1011,
+      "size_human": "1011.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)",
+        "I_c (nA)"
+      ],
+      "column_count": 2,
+      "row_count": 94,
+      "dtypes": {
+        "B_z (mT)": "float64",
+        "I_c (nA)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_C.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_Data_Ic_Device_C.dat"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_j_Device_A.dat",
+      "extension": ".dat",
+      "size_bytes": 7569,
+      "size_human": "7.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "\"#x(nm)",
+        "j(A/m)\""
+      ],
+      "column_count": 2,
+      "row_count": 201,
+      "dtypes": {
+        "\"#x(nm)": "float64",
+        "j(A/m)\"": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_A.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_A.dat"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_j_Device_B.dat",
+      "extension": ".dat",
+      "size_bytes": 7613,
+      "size_human": "7.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "\"#x(nm)",
+        "j(A/m)\""
+      ],
+      "column_count": 2,
+      "row_count": 201,
+      "dtypes": {
+        "\"#x(nm)": "float64",
+        "j(A/m)\"": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_B.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_B.dat"
+    },
+    {
+      "filename": "Fraunhofer_Reconstruction_j_Device_C.dat",
+      "extension": ".dat",
+      "size_bytes": 4684,
+      "size_human": "4.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "\"#x(nm)",
+        "j(A/m)\""
+      ],
+      "column_count": 2,
+      "row_count": 201,
+      "dtypes": {
+        "\"#x(nm)": "int64",
+        "j(A/m)\"": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_C.dat",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/Fraunhofer_Reconstruction_j_Device_C.dat"
+    },
+    {
+      "filename": "readme.txt",
+      "extension": ".txt",
+      "size_bytes": 278,
+      "size_human": "278.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Operating",
+        "system:",
+        "any",
+        "which",
+        "runs",
+        "Wolfram",
+        "Mathematica"
+      ],
+      "column_count": 7,
+      "row_count": 3,
+      "dtypes": {
+        "Operating": "object",
+        "system:": "object",
+        "any": "object",
+        "which": "object",
+        "runs": "object",
+        "Wolfram": "object",
+        "Mathematica": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S5/readme.txt",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S5/readme.txt"
+    },
+    {
+      "filename": "FigS6a.csv",
+      "extension": ".csv",
+      "size_bytes": 94771,
+      "size_human": "92.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 4949,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6a.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6a.csv"
+    },
+    {
+      "filename": "FigS6b.csv",
+      "extension": ".csv",
+      "size_bytes": 47502,
+      "size_human": "46.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 2525,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6b.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6b.csv"
+    },
+    {
+      "filename": "FigS6c.csv",
+      "extension": ".csv",
+      "size_bytes": 105147,
+      "size_human": "102.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 5307,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6c.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6c.csv"
+    },
+    {
+      "filename": "FigS6d.csv",
+      "extension": ".csv",
+      "size_bytes": 99519,
+      "size_human": "97.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 4949,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6d.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6d.csv"
+    },
+    {
+      "filename": "FigS6e.csv",
+      "extension": ".csv",
+      "size_bytes": 466948,
+      "size_human": "456.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 21109,
+      "dtypes": {
+        "B_z (mT)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6e.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6e.csv"
+    },
+    {
+      "filename": "FigS6f.csv",
+      "extension": ".csv",
+      "size_bytes": 54,
+      "size_human": "54.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tB_z (mT)"
+      ],
+      "column_count": 1,
+      "row_count": 5,
+      "dtypes": {
+        "B_x (T)\tB_z (mT)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S6/FigS6f.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S6/FigS6f.csv"
+    },
+    {
+      "filename": "FigS7.csv",
+      "extension": ".csv",
+      "size_bytes": 788453,
+      "size_human": "770.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G (V)\tI_b (nA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 27150,
+      "dtypes": {
+        "V_G (V)\tI_b (nA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S7/FigS7.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S7/FigS7.csv"
+    },
+    {
+      "filename": "FigS8a.csv",
+      "extension": ".csv",
+      "size_bytes": 1681102,
+      "size_human": "1.6 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 60491,
+      "dtypes": {
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S8/FigS8a.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S8/FigS8a.csv"
+    },
+    {
+      "filename": "FigS8b.csv",
+      "extension": ".csv",
+      "size_bytes": 3123957,
+      "size_human": "3.0 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)"
+      ],
+      "column_count": 1,
+      "row_count": 168941,
+      "dtypes": {
+        "B_x (T)\tI_b (μA)\tdV/dI (Ω)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S8/FigS8b.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S8/FigS8b.csv"
+    },
+    {
+      "filename": "FigS9a.csv",
+      "extension": ".csv",
+      "size_bytes": 126,
+      "size_human": "126.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G (T)\tΔB_x (T)\terror (T)"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "V_G (T)\tΔB_x (T)\terror (T)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S9/FigS9a.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S9/FigS9a.csv"
+    },
+    {
+      "filename": "FigS9b.csv",
+      "extension": ".csv",
+      "size_bytes": 137,
+      "size_human": "137.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G (T)\tΔB_x (T)\terror (T)"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "V_G (T)\tΔB_x (T)\terror (T)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/Figure S9/FigS9b.csv",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/Figure S9/FigS9b.csv"
+    },
+    {
+      "filename": "TINW-JJ-Phenomenology-nanoSQUID.py",
+      "extension": ".py",
+      "size_bytes": 6186,
+      "size_human": "6.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/phenomenological model/TINW-JJ-Phenomenology-nanoSQUID.py",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/phenomenological model/TINW-JJ-Phenomenology-nanoSQUID.py"
+    },
+    {
+      "filename": "TI-NW-JJ-paper.ipynb",
+      "extension": ".ipynb",
+      "size_bytes": 15536,
+      "size_human": "15.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ipynb",
+      "download_source": "zip_extracted",
+      "archive_path": "dataset/tight binding model/TI-NW-JJ-paper.ipynb",
+      "from_zip": "dataset_1.zip",
+      "relative_path": "zip_contents/dataset/tight binding model/TI-NW-JJ-paper.ipynb"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "paper_id": "step1_0404",
+  "title": "Weak Antilocalization and topological edge states in PdSn$_4$",
+  "doi": "10.1063/5.0145377",
+  "journal": "arXiv preprint",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2303.14912v1",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1063_5_0145377",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No standalone cleaned, replot-ready data files were provided in the inspected file list.",
+  "type2_summary": "No standalone raw/unprocessed instrument data files were provided in the inspected file list.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "Paper evidence strongly suggests the study generated both raw measurements and processed figure data, but the supplied file inventory contains only a single PDF. Without accompanying CSV/XLSX/TXT, image, or instrument-output files, no Type 1 or Type 2 dataset file can be confirmed.",
+  "file_classifications": [
+    {
+      "relative_path": "Nathan_Ronceray_internship_report_edge_states_1.pdf",
+      "filename": "Nathan_Ronceray_internship_report_edge_states_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper description indicates the dataset includes experimental and theoretical results, but no explicit data-availability statement or source-data organization is provided in the supplied text.",
+      "file_evidence": "Single large PDF (14.6 MB) from Zenodo; this is consistent with a report/manuscript or documentation rather than a tabular dataset or instrument output. No internal structure, headers, or figure-specific data files are provided here.",
+      "reasoning": "This file is not a data table or a raw instrument file. Based on the available evidence, it is best classified as documentation rather than Type 1 or Type 2 data. It may contain figures and discussion, but the file itself is not directly replot-ready dataset content.",
+      "ambiguity": "High ambiguity because the PDF may embed figures or supplementary material, but without page-level extraction or accompanying data files, it cannot be treated as a dataset file.",
+      "key_columns_or_structure": "Not applicable; PDF document with unknown internal structure"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports synthesis of PdSn4 single crystals by a self-flux route and shows that the material crystallizes in the Aea2 space group rather than the previously debated Ccce assignment. Experimentally, the crystals exhibit metallic transport with large non-saturating linear magnetoresistance, Shubnikov–de Haas oscillations, and weak antilocalization; DFT/Wannier calculations further indicate weak topological insulating character with topological edge states near the Γ point.",
+    "measurement_types": [
+      "powder X-ray diffraction (PXRD) / Rietveld refinement",
+      "single-crystal X-ray diffraction (flake XRD)",
+      "field-emission scanning electron microscopy (FESEM)",
+      "energy-dispersive X-ray spectroscopy (EDS)",
+      "X-ray photoelectron spectroscopy (XPS)",
+      "electrical resistivity vs temperature",
+      "magnetoresistance / magnetotransport",
+      "Shubnikov–de Haas oscillation analysis",
+      "Hall/quantum-oscillation-derived Landau fan analysis",
+      "magnetoconductivity and HLN fitting",
+      "density functional theory (band structure, DOS, surface/edge states)",
+      "Wannierization / topological invariant calculation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Rietveld-refined powder XRD pattern of PdSn4 comparing fits for Ccce and Aea2 space groups; Aea2 gives better intensity agreement and lower chi-square.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Unit cell rendering of PdSn4 in the Aea2 space group.",
+        "data_type": "structure visualization",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Unit cell rendering of PdSn4 in the Ccce space group.",
+        "data_type": "structure visualization",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "XRD pattern from a mechanically cleaved PdSn4 crystal flake showing preferred orientation along (002n) reflections and confirming growth axis.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2",
+        "description": "FESEM image showing terrace-like morphology and EDS spectrum confirming Pd and Sn composition with no foreign impurity peaks.",
+        "data_type": "image / spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "XPS spectrum in the Sn 3d region, including Sn doublet and additional SnO-related peaks.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "XPS spectrum in the Pd 3d region showing Pd spin-orbit doublet.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Resistivity versus temperature curve fitted with Bloch-Grüneisen formalism over 2–300 K.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Magnetoresistance percentage versus magnetic field at multiple temperatures, showing non-saturating linear MR and a low-field cusp.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Derivative resistivity versus inverse magnetic field showing SdH oscillations; inset shows FFT peaks labeled alpha, 2alpha, and beta.",
+        "data_type": "transport curve / frequency spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Landau level fan diagram used to extract Berry phase from SdH oscillations.",
+        "data_type": "analysis plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Kohler scaling plot of MR versus H/rho0 at several temperatures, showing violation of conventional Kohler's rule.",
+        "data_type": "transport scaling plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Extended Kohler scaling plot of MR versus H/(rho0 nT), showing collapse of curves and near-linear power-law behavior.",
+        "data_type": "transport scaling plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Low-field magnetoconductivity fitted with HLN expression at several temperatures; inset shows 100 K fit with quadratic form beta H^2 + c.",
+        "data_type": "transport curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Temperature dependence of HLN fitting parameters, including alpha and phase coherence length.",
+        "data_type": "analysis plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig7a",
+        "description": "First Brillouin zone with high-symmetry path used for DFT band-structure calculations.",
+        "data_type": "diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig7b",
+        "description": "DFT bulk band structure without spin-orbit coupling.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig7c",
+        "description": "DFT bulk band structure with spin-orbit coupling.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig7d",
+        "description": "Projected density of states without SOC.",
+        "data_type": "density of states",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig7e",
+        "description": "Projected density of states with SOC.",
+        "data_type": "density of states",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig8a",
+        "description": "Wannier-based band dispersion in the kz=0 plane without SOC, showing Dirac-cone-like dispersion.",
+        "data_type": "band dispersion",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig8b",
+        "description": "Wannier-based band dispersion in the kz=0 plane with SOC, showing gapped/parabolic dispersion.",
+        "data_type": "band dispersion",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig9a",
+        "description": "Schematic of the (110) surface plane and the path used for edge-state spectrum calculation.",
+        "data_type": "diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig9b",
+        "description": "Calculated edge-state spectrum of PdSn4 showing a Dirac-cone-like feature near Γ.",
+        "data_type": "surface/edge band spectrum",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig9c",
+        "description": "Calculated bulk spectral function for PdSn4.",
+        "data_type": "spectral function",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental measurements include PXRD scans of crushed powder and cleaved flakes, FESEM images, EDS spectra, XPS spectra in Sn 3d and Pd 3d regions, resistivity versus temperature data, magnetoresistance versus field data up to ±12 T, low-field magnetoconductivity data for HLN analysis, and quantum-oscillation data used for SdH/FFT and Landau fan analysis. The paper also reports DFT-generated electronic structure data, but those are not raw measurements.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, downloadable dataset, or source-data statement is provided in the supplied text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described only at the level of instrument-acquired measurements: Rigaku mini flex II XRD scans, Zeiss EVO-50 FESEM images and EDS spectra, PHI-5000 Versa Probe III XPS spectra, and Quantum Design PPMS transport measurements. File formats are not stated.",
+      "processed_data_description": "Processed data include Rietveld-refined PXRD results, fitted XPS peak positions/FWHM, Bloch-Grüneisen fit parameters, MR percentages, FFT frequencies from SdH oscillations, Onsager-derived Fermi-surface areas, Landau fan intercept/Berry phase, Kohler and extended-Kohler scaling variables, HLN fit parameters (alpha, l_phi), and DFT/Wannier-derived band structures, DOS, edge spectra, and Z2 invariants. These are presented in tables and plotted figures.",
+      "figure_data_description": "Figure-specific source data are not explicitly provided as separate files. The paper presents figure-ready plots and tables, but does not mention supplementary source data, raw figure data files, or a repository containing per-figure datasets.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned. Computational tools are named (Quantum Espresso, WANNIER90, Wannier Tools, FullProf, VESTA), but no custom scripts are described.",
+      "notes": "The paper mixes experimental raw measurements with substantial post-processed analysis and first-principles simulation outputs. Tables 1-4 contain extracted/refined parameters rather than raw traces. Theoretical datasets are generated in silico from the Aea2 structure and are not experimental source data. The text does not indicate whether any underlying numerical data are shared separately."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The methods explicitly state that XRD, FESEM/EDS, XPS, and PPMS transport measurements were recorded, implying raw instrument data were collected.",
+      "source_data_evidence": "The paper includes figure captions, fitted curves, FFT results, Rietveld refinements, HLN fits, and DFT/Wannier outputs, which are processed figure-ready data.",
+      "data_availability_section_relevant": "Relevant phrases include: 'Rietveld refinement of powder XRD pattern', 'XPS spectra are fitted with Gaussian fitting formula', 'FFT of SdH oscillations', 'HLN fitted low field magnetoconductivity', 'calculated band structure', 'Wannier Tools', and 'theoretical calculations suggest'. No explicit data-sharing phrase is present.",
+      "priority_modalities": [
+        "PXRD diffraction scans",
+        "single-crystal XRD",
+        "FESEM images",
+        "EDS spectra",
+        "XPS spectra",
+        "transport curves (rho-T, MR-H, MC-H)",
+        "FFT spectra",
+        "Landau fan plots",
+        "DFT band structures",
+        "density of states",
+        "edge/surface spectral functions"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "Nathan_Ronceray_internship_report_edge_states_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 15260957,
+      "size_human": "14.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Nathan_Ronceray_internship_report_edge_states_1.pdf"
+    }
+  ]
+}

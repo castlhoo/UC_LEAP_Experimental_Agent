@@ -1,0 +1,235 @@
+{
+  "paper_id": "step1_0060",
+  "title": "Uniaxial strain-induced phase transition in the 2D topological semimetal IrTe2",
+  "doi": "10.1038/s43246-021-00130-5",
+  "journal": "Communications Materials",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3120834118",
+  "priority_score": 5.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s43246-021-00130-5",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies 1T-IrTe2, a layered topological semimetal, under modest uniaxial tensile strain (~0.1%). Using ARPES, STM, XPS, LEED, and DFT, the authors show that strain stabilizes the long-sought 6×1 charge-ordered ground state over macroscopic areas, induces Ir→Te charge transfer, weakens interlayer Te–Te bonding, and drives a Lifshitz transition that exposes previously inaccessible bulk Dirac-like states.",
+    "measurement_types": [
+      "Angle-resolved photoemission spectroscopy (ARPES)",
+      "Micro-ARPES mapping",
+      "X-ray photoemission spectroscopy (XPS)",
+      "Scanning tunneling microscopy (STM)",
+      "Low-energy electron diffraction (LEED)",
+      "Density functional theory (DFT) charge density calculations",
+      "Crystal orbital Hamilton population (COHP) bonding analysis",
+      "Tight-binding modeling of kz dispersion",
+      "Transport / resistivity characterization of crystals (for sample characterization)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "High-temperature 1×1 crystal structure of IrTe2 in top and side view, with lattice directions and unit cell indicated.",
+        "data_type": "image",
+        "likely_source": "theoretical illustration / structural schematic"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Low-temperature 6×1 crystal structure showing Ir–Ir dimers and the enlarged unit cell.",
+        "data_type": "image",
+        "likely_source": "theoretical illustration / structural schematic"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Bulk Brillouin zone of the high-temperature phase with high-symmetry points.",
+        "data_type": "image",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Photograph of the home-built strain device used to apply uniaxial strain.",
+        "data_type": "image",
+        "likely_source": "experimental apparatus photo"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "ARPES band dispersion of unstrained IrTe2 at high temperature along L-A-L.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "ARPES band dispersion of unstrained IrTe2 at low temperature along H-A-H, showing broadened/mixed-phase features.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "ARPES band dispersion of strained IrTe2 at low temperature, showing sharp bands and surface/bulk-like states consistent with a single 6×1 phase.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "Fermi surface of unstrained high-temperature IrTe2.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "Fermi surface of unstrained low-temperature IrTe2 with broken three-fold symmetry due to domain mixture.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1j",
+        "description": "Fermi surface of strained low-temperature IrTe2 showing directional symmetry breaking and 6×1 periodicity.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Large-scale STM image of unstrained IrTe2 at 4.5 K showing mixed rotational domains.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Large-scale STM image of strained IrTe2 at 4.5 K showing a single unidirectional domain.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "LEED pattern of unstrained IrTe2 at 30 K.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Atomic-resolution STM image of unstrained IrTe2 showing multiple 3n+2 periodicities/domains.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "LEED pattern of strained IrTe2 at 30 K showing a single 6×1 periodicity and single domain orientation.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Atomic-resolution STM image of strained IrTe2 showing the 6×1 periodicity.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "STM line cut across the 6×1 modulation showing two inequivalent groups of three atoms and height differences.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "Real-space micro-ARPES intensity map showing the strained 6×1 phase over a millimeter-scale region.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Ir 4f7/2 XPS core-level spectra at 300 K comparing strained and unstrained samples; strained sample shows a shoulder/second component associated with Ir3+δ+.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Ir 4f7/2 XPS core-level spectra at 30 K comparing strained and unstrained samples; strained sample shows enhanced Ir3+δ+ peak with ratio consistent with pure 6×1 phase.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "DFT-calculated electronic density for the high-temperature 1×1 phase.",
+        "data_type": "simulation image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "DFT-calculated electronic density for the 6×1 phase showing increased interlayer charge density.",
+        "data_type": "simulation image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Calculated relative interlayer Te–Te bond strengths in the 6×1 phase compared with the high-temperature phase, based on COHP analysis.",
+        "data_type": "theoretical plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "kz-dependent ARPES dispersions comparing strained low-temperature and unstrained high-temperature phases, with fitted contours and tight-binding dispersions showing reduced interlayer hopping.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data with model fit overlay"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "ARPES spectra at several ky values showing overlapping bulk Dirac-like states and hyperbolic dispersions.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data with model overlay"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Fermi surface near the A-point highlighting the in-plane structure of Dirac and surface states and the cut positions used in Fig. 4c.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include ARPES spectra, micro-ARPES maps, XPS core-level spectra, STM topographic images and line profiles, LEED diffraction images, and strain-gauge voltage readings used to calibrate applied strain. The paper also reports DFT-calculated charge densities and COHP bond analyses, which are not raw measurements but computed outputs.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'Data are available from the corresponding authors upon reasonable request.' It also notes that supplementary information is available online via the article DOI, but no public repository or downloadable dataset is mentioned in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw experimental data are described by instrument and modality rather than by file format: ARPES/XPS at Diamond I05 and PEARL beamlines using a Scienta-Omicron R4000 analyzer; micro-ARPES at University of Fribourg using a Scienta-Omicron DA30 analyzer; STM on a low-temperature STM at 4.5 K; LEED images; and strain calibration via commercial strain gauges in a Wheatstone bridge circuit. The paper does not specify file formats, naming conventions, or a deposited raw-data archive.",
+      "processed_data_description": "Processed data include extracted peak-area ratios from XPS (e.g. Ir3+δ+/(Ir3+ + Ir3+δ+)), fitted kz contours from ARPES, tight-binding-extracted hopping parameters, and qualitative phase/domain assignments from STM/LEED/ARPES. The paper also reports DFT-relaxed structures and COHP-derived bond strengths as computed quantities.",
+      "figure_data_description": "Figure-specific source data are not explicitly stated as deposited. The paper references supplementary figures (S1–S7, S3, S4, S5, S6, S7) and supplementary table S1, implying additional figure-supporting data exist, but no explicit 'source data' file or repository is mentioned in the provided text.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned. Computational methods are described (VASP, LOBSTER, VESTA, tight-binding fitting), but no scripts are provided or referenced as downloadable.",
+      "notes": "The dataset is multimodal and combines experimental raw measurements with processed spectral images and theoretical/computational outputs. The paper emphasizes that the strain-stabilized 6×1 phase is observed over macroscopic regions, but the actual data access is limited to request from corresponding authors. Supplementary material likely contains additional spectra, constant-energy cuts, and characterization maps, but the text does not specify a public data package."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct measurements from ARPES, XPS, STM, LEED, micro-ARPES, and strain-gauge calibration, all of which are raw experimental data modalities.",
+      "source_data_evidence": "The paper includes figure-specific processed outputs such as fitted ARPES contours, extracted XPS peak ratios, COHP bond-strength comparisons, and tight-binding parameter extraction, indicating source/processed data used to generate figures.",
+      "data_availability_section_relevant": "Data are available from the corresponding authors upon reasonable request. Supplementary information The online version contains supplementary material.",
+      "priority_modalities": [
+        "ARPES spectra",
+        "XPS core-level spectra",
+        "STM topography",
+        "LEED diffraction patterns",
+        "micro-ARPES maps",
+        "strain-gauge calibration data",
+        "DFT charge-density outputs",
+        "COHP bond-strength data",
+        "tight-binding fit parameters"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

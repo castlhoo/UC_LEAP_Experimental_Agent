@@ -1,0 +1,992 @@
+{
+  "paper_id": "step1_0392",
+  "title": "Topological magnon insulators in two-dimensional van der Waals ferromagnets CrSiTe$_3$ and CrGeTe$_3$: towards intrinsic gap-tunability",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2021,
+  "paper_url": "https://arxiv.org/abs/2107.03835v1",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 33,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0392",
+  "files_inspected": 35,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 208 column 20 (char 12004)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports crystal growth and magneto-transport measurements on Ni$_3$In$_2$S$_2$ single crystals, identifying weak anti-localization and topological-insulator-like behavior at low temperature.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper likely contains experimental crystal growth and magneto-transport measurement data, but no accessible dataset or supplementary/source data was identified from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Data_1.zip",
+      "extension": ".zip",
+      "size_bytes": 157124,
+      "size_human": "153.4 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Data_1.zip"
+    },
+    {
+      "filename": "Nathan_Ronceray_internship_report_edge_states_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 15260957,
+      "size_human": "14.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Nathan_Ronceray_internship_report_edge_states_1.pdf"
+    },
+    {
+      "filename": "Fig1a.txt",
+      "extension": ".txt",
+      "size_bytes": 18371,
+      "size_human": "17.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "SUS"
+      ],
+      "column_count": 2,
+      "row_count": 1037,
+      "dtypes": {
+        "Tem": "float64",
+        "SUS": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig1/Fig1a.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig1/Fig1a.txt"
+    },
+    {
+      "filename": "Fig1b.txt",
+      "extension": ".txt",
+      "size_bytes": 5950,
+      "size_human": "5.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "0 T (Sample 1)",
+        "Tem.1",
+        "5 T (Sample 1)",
+        "Tem.2",
+        "0 T (Sample 2)",
+        "Tem.3",
+        "3 T (Sample 2)"
+      ],
+      "column_count": 8,
+      "row_count": 98,
+      "dtypes": {
+        "Tem": "float64",
+        "0 T (Sample 1)": "float64",
+        "Tem.1": "float64",
+        "5 T (Sample 1)": "float64",
+        "Tem.2": "float64",
+        "0 T (Sample 2)": "float64",
+        "Tem.3": "float64",
+        "3 T (Sample 2)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig1/Fig1b.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig1/Fig1b.txt"
+    },
+    {
+      "filename": "Fig1c.txt",
+      "extension": ".txt",
+      "size_bytes": 2725,
+      "size_human": "2.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "Sub s1",
+        "Tem.1",
+        "Sub s2"
+      ],
+      "column_count": 4,
+      "row_count": 98,
+      "dtypes": {
+        "Tem": "float64",
+        "Sub s1": "float64",
+        "Tem.1": "float64",
+        "Sub s2": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig1/Fig1c.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig1/Fig1c.txt"
+    },
+    {
+      "filename": "Fig1c-chi.txt",
+      "extension": ".txt",
+      "size_bytes": 17996,
+      "size_human": "17.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "Chi"
+      ],
+      "column_count": 2,
+      "row_count": 996,
+      "dtypes": {
+        "Tem": "float64",
+        "Chi": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig1/Fig1c-chi.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig1/Fig1c-chi.txt"
+    },
+    {
+      "filename": "Fig2a.txt",
+      "extension": ".txt",
+      "size_bytes": 28334,
+      "size_human": "27.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 845,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2a.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2a.txt"
+    },
+    {
+      "filename": "Fig2b.txt",
+      "extension": ".txt",
+      "size_bytes": 26744,
+      "size_human": "26.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 796,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2b.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2b.txt"
+    },
+    {
+      "filename": "Fig2c.txt",
+      "extension": ".txt",
+      "size_bytes": 7717,
+      "size_human": "7.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 265,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2c.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2c.txt"
+    },
+    {
+      "filename": "Fig2d.txt",
+      "extension": ".txt",
+      "size_bytes": 8306,
+      "size_human": "8.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 264,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2d.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2d.txt"
+    },
+    {
+      "filename": "Fig2e.txt",
+      "extension": ".txt",
+      "size_bytes": 3686,
+      "size_human": "3.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-0.99241",
+        "0"
+      ],
+      "column_count": 2,
+      "row_count": 261,
+      "dtypes": {
+        "-0.99241": "float64",
+        "0": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2e.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2e.txt"
+    },
+    {
+      "filename": "Fig2f.txt",
+      "extension": ".txt",
+      "size_bytes": 8555,
+      "size_human": "8.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.98036",
+        "1.75E-5",
+        "4.99996",
+        "1.63978E-5"
+      ],
+      "column_count": 4,
+      "row_count": 263,
+      "dtypes": {
+        "0.98036": "float64",
+        "1.75E-5": "float64",
+        "4.99996": "float64",
+        "1.63978E-5": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig2/Fig2f.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig2/Fig2f.txt"
+    },
+    {
+      "filename": "11.4.txt",
+      "extension": ".txt",
+      "size_bytes": 14157,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00132",
+        "-0.04594"
+      ],
+      "column_count": 2,
+      "row_count": 796,
+      "dtypes": {
+        "-3.00132": "float64",
+        "-0.04594": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/11.4.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/11.4.txt"
+    },
+    {
+      "filename": "16.6.txt",
+      "extension": ".txt",
+      "size_bytes": 14107,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00346",
+        "-0.02149"
+      ],
+      "column_count": 2,
+      "row_count": 794,
+      "dtypes": {
+        "-3.00346": "float64",
+        "-0.02149": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/16.6.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/16.6.txt"
+    },
+    {
+      "filename": "21.2.txt",
+      "extension": ".txt",
+      "size_bytes": 14170,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00725",
+        "-0.01255"
+      ],
+      "column_count": 2,
+      "row_count": 796,
+      "dtypes": {
+        "-3.00725": "float64",
+        "-0.01255": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/21.2.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/21.2.txt"
+    },
+    {
+      "filename": "3.8.txt",
+      "extension": ".txt",
+      "size_bytes": 14175,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00306",
+        "-0.00432"
+      ],
+      "column_count": 2,
+      "row_count": 797,
+      "dtypes": {
+        "-3.00306": "float64",
+        "-0.00432": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/3.8.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/3.8.txt"
+    },
+    {
+      "filename": "31.1.txt",
+      "extension": ".txt",
+      "size_bytes": 14139,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00209",
+        "-0.00417"
+      ],
+      "column_count": 2,
+      "row_count": 794,
+      "dtypes": {
+        "-3.00209": "float64",
+        "-0.00417": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/31.1.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/31.1.txt"
+    },
+    {
+      "filename": "5.6.txt",
+      "extension": ".txt",
+      "size_bytes": 14172,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.00248",
+        "-0.01604"
+      ],
+      "column_count": 2,
+      "row_count": 796,
+      "dtypes": {
+        "-3.00248": "float64",
+        "-0.01604": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/5.6.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/5.6.txt"
+    },
+    {
+      "filename": "63.6.txt",
+      "extension": ".txt",
+      "size_bytes": 14083,
+      "size_human": "13.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-3.007",
+        "-0.00191"
+      ],
+      "column_count": 2,
+      "row_count": 795,
+      "dtypes": {
+        "-3.007": "float64",
+        "-0.00191": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig3/63.6.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig3/63.6.txt"
+    },
+    {
+      "filename": "Fig4a inset.txt",
+      "extension": ".txt",
+      "size_bytes": 14223,
+      "size_human": "13.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "3.00445",
+        "0.0114"
+      ],
+      "column_count": 2,
+      "row_count": 794,
+      "dtypes": {
+        "3.00445": "float64",
+        "0.0114": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig4/Fig4a inset.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig4/Fig4a inset.txt"
+    },
+    {
+      "filename": "Fig4a.txt",
+      "extension": ".txt",
+      "size_bytes": 4551,
+      "size_human": "4.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "Kyx Sample 1",
+        "Error",
+        "Tem.1",
+        "Kyx Sample 2",
+        "Error.1",
+        "Tem.2",
+        "Kxx(0T) s2",
+        "Tem.3",
+        "Kxx(0T) s1"
+      ],
+      "column_count": 10,
+      "row_count": 98,
+      "dtypes": {
+        "Tem": "float64",
+        "Kyx Sample 1": "float64",
+        "Error": "float64",
+        "Tem.1": "float64",
+        "Kyx Sample 2": "float64",
+        "Error.1": "float64",
+        "Tem.2": "float64",
+        "Kxx(0T) s2": "float64",
+        "Tem.3": "float64",
+        "Kxx(0T) s1": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig4/Fig4a.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig4/Fig4a.txt"
+    },
+    {
+      "filename": "╨┬╜¿╬─▒╛╬─╡╡.txt",
+      "extension": ".txt",
+      "size_bytes": 13451,
+      "size_human": "13.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "0.002",
+        "Unnamed: 2",
+        "0.004",
+        "Unnamed: 4",
+        "0.006",
+        "Unnamed: 6",
+        "0.008",
+        "Unnamed: 8",
+        "0.01",
+        "Unnamed: 10",
+        "0.02",
+        "Unnamed: 12",
+        "0.03",
+        "Unnamed: 14",
+        "0.04",
+        "Unnamed: 16",
+        "0.05",
+        "Unnamed: 18",
+        "0.06",
+        "Unnamed: 20",
+        "0.07",
+        "Unnamed: 22",
+        "0.08",
+        "Unnamed: 24",
+        "0.09"
+      ],
+      "column_count": 26,
+      "row_count": 60,
+      "dtypes": {
+        "Unnamed: 0": "float64",
+        "0.002": "float64",
+        "Unnamed: 2": "float64",
+        "0.004": "float64",
+        "Unnamed: 4": "float64",
+        "0.006": "float64",
+        "Unnamed: 6": "float64",
+        "0.008": "float64",
+        "Unnamed: 8": "float64",
+        "0.01": "float64",
+        "Unnamed: 10": "float64",
+        "0.02": "float64",
+        "Unnamed: 12": "float64",
+        "0.03": "float64",
+        "Unnamed: 14": "float64",
+        "0.04": "float64",
+        "Unnamed: 16": "float64",
+        "0.05": "float64",
+        "Unnamed: 18": "float64",
+        "0.06": "float64",
+        "Unnamed: 20": "float64",
+        "0.07": "float64",
+        "Unnamed: 22": "float64",
+        "0.08": "float64",
+        "Unnamed: 24": "float64",
+        "0.09": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/Fig4/╨┬╜¿╬─▒╛╬─╡╡.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/Fig4/╨┬╜¿╬─▒╛╬─╡╡.txt"
+    },
+    {
+      "filename": "(a).txt",
+      "extension": ".txt",
+      "size_bytes": 1862,
+      "size_human": "1.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "2.91351",
+        "1.10042",
+        "3.12791",
+        "1.08813"
+      ],
+      "column_count": 4,
+      "row_count": 54,
+      "dtypes": {
+        "2.91351": "float64",
+        "1.10042": "float64",
+        "3.12791": "float64",
+        "1.08813": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS1/(a).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS1/(a).txt"
+    },
+    {
+      "filename": "(b).txt",
+      "extension": ".txt",
+      "size_bytes": 974,
+      "size_human": "974.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "3.12791",
+        "-0.16386"
+      ],
+      "column_count": 2,
+      "row_count": 53,
+      "dtypes": {
+        "3.12791": "float64",
+        "-0.16386": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS1/(b).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS1/(b).txt"
+    },
+    {
+      "filename": "(c).txt",
+      "extension": ".txt",
+      "size_bytes": 2846,
+      "size_human": "2.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "0 T",
+        "Tem.1",
+        "5 T"
+      ],
+      "column_count": 4,
+      "row_count": 80,
+      "dtypes": {
+        "Tem": "float64",
+        "0 T": "float64",
+        "Tem.1": "float64",
+        "5 T": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS1/(c).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS1/(c).txt"
+    },
+    {
+      "filename": "(d).txt",
+      "extension": ".txt",
+      "size_bytes": 1412,
+      "size_human": "1.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "2.48803",
+        "-0.1351"
+      ],
+      "column_count": 2,
+      "row_count": 79,
+      "dtypes": {
+        "2.48803": "float64",
+        "-0.1351": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS1/(d).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS1/(d).txt"
+    },
+    {
+      "filename": "Power test.txt",
+      "extension": ".txt",
+      "size_bytes": 16017,
+      "size_human": "15.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "Wyx(800)",
+        "Field.1",
+        "Wyx(1000)",
+        "Unnamed: 4",
+        "Field.2",
+        "Wyx(1470)",
+        "Unnamed: 7"
+      ],
+      "column_count": 8,
+      "row_count": 265,
+      "dtypes": {
+        "Field": "float64",
+        "Wyx(800)": "float64",
+        "Field.1": "float64",
+        "Wyx(1000)": "float64",
+        "Unnamed: 4": "float64",
+        "Field.2": "float64",
+        "Wyx(1470)": "float64",
+        "Unnamed: 7": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS2/Power test.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS2/Power test.txt"
+    },
+    {
+      "filename": "(a).txt",
+      "extension": ".txt",
+      "size_bytes": 79888,
+      "size_human": "78.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "8.97084",
+        "0.03935",
+        "-8.97359",
+        "0.03935.1"
+      ],
+      "column_count": 4,
+      "row_count": 2381,
+      "dtypes": {
+        "8.97084": "float64",
+        "0.03935": "float64",
+        "-8.97359": "float64",
+        "0.03935.1": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(a).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(a).txt"
+    },
+    {
+      "filename": "(b).txt",
+      "extension": ".txt",
+      "size_bytes": 30608,
+      "size_human": "29.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "3.02631",
+        "-0.00101",
+        "-3.04049",
+        "-9.80848E-4"
+      ],
+      "column_count": 4,
+      "row_count": 820,
+      "dtypes": {
+        "3.02631": "float64",
+        "-0.00101": "float64",
+        "-3.04049": "float64",
+        "-9.80848E-4": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(b).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(b).txt"
+    },
+    {
+      "filename": "(c).txt",
+      "extension": ".txt",
+      "size_bytes": 24252,
+      "size_human": "23.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 599,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(c).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(c).txt"
+    },
+    {
+      "filename": "(d).txt",
+      "extension": ".txt",
+      "size_bytes": 24291,
+      "size_human": "23.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Field",
+        "down",
+        "Field.1",
+        "up"
+      ],
+      "column_count": 4,
+      "row_count": 599,
+      "dtypes": {
+        "Field": "float64",
+        "down": "float64",
+        "Field.1": "float64",
+        "up": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(d).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(d).txt"
+    },
+    {
+      "filename": "(e).txt",
+      "extension": ".txt",
+      "size_bytes": 12427,
+      "size_human": "12.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "1",
+        "8.41685E-7"
+      ],
+      "column_count": 2,
+      "row_count": 598,
+      "dtypes": {
+        "1": "float64",
+        "8.41685E-7": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(e).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(e).txt"
+    },
+    {
+      "filename": "(f).txt",
+      "extension": ".txt",
+      "size_bytes": 17199,
+      "size_human": "16.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "1",
+        "1.10433E-5",
+        "4.99996",
+        "1.01492E-5"
+      ],
+      "column_count": 4,
+      "row_count": 598,
+      "dtypes": {
+        "1": "float64",
+        "1.10433E-5": "float64",
+        "4.99996": "float64",
+        "1.01492E-5": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS3/(f).txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS3/(f).txt"
+    },
+    {
+      "filename": "Kxx.txt",
+      "extension": ".txt",
+      "size_bytes": 1784,
+      "size_human": "1.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "2.46211",
+        "5.37606"
+      ],
+      "column_count": 2,
+      "row_count": 97,
+      "dtypes": {
+        "2.46211": "float64",
+        "5.37606": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS4/Kxx.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS4/Kxx.txt"
+    },
+    {
+      "filename": "Kxy normal.txt",
+      "extension": ".txt",
+      "size_bytes": 758,
+      "size_human": "758.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Tem",
+        "Sample 1",
+        "error",
+        "Tem.1",
+        "Sample 2",
+        "error.1"
+      ],
+      "column_count": 6,
+      "row_count": 21,
+      "dtypes": {
+        "Tem": "float64",
+        "Sample 1": "float64",
+        "error": "float64",
+        "Tem.1": "float64",
+        "Sample 2": "float64",
+        "error.1": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data/FigS4/Kxy normal.txt",
+      "from_zip": "Data_1.zip",
+      "relative_path": "zip_contents/Data/FigS4/Kxy normal.txt"
+    }
+  ]
+}

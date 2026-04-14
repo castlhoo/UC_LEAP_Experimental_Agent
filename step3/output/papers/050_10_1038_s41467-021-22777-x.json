@@ -1,0 +1,220 @@
+{
+  "paper_id": "step1_0003",
+  "title": "Room-temperature intrinsic ferromagnetism in epitaxial CrTe2 ultrathin films",
+  "doi": "10.1038/s41467-021-22777-x",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3158389949",
+  "priority_score": 10.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-22777-x",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports epitaxial growth of stoichiometric mono- to few-layer CrTe2 on bilayer graphene by MBE and demonstrates intrinsic ferromagnetism persisting up to room temperature, with strong perpendicular magnetic anisotropy and a spin-split metallic band structure. The magnetic order is supported by SQUID, XMCD, and ARPES, and the monolayer still shows ferromagnetism with TC around 200 K, making ultrathin CrTe2 a promising 2D spintronic material.",
+    "measurement_types": [
+      "Molecular beam epitaxy growth monitoring",
+      "Scanning tunneling microscopy (STM) topography and atomic-resolution imaging",
+      "X-ray diffraction (XRD) 2θ-ω scan and Laue fringes",
+      "Transmission electron microscopy / HAADF-STEM",
+      "Superconducting quantum interference device (SQUID) magnetometry",
+      "X-ray absorption spectroscopy (XAS)",
+      "X-ray magnetic circular dichroism (XMCD)",
+      "Angle-resolved photoemission spectroscopy (ARPES)",
+      "First-principles density functional theory (DFT) calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of MBE growth of CrTe2 films on graphene.",
+        "data_type": "schematic / illustration",
+        "likely_source": "theoretical or conceptual illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "STM topography of a 7 ML CrTe2 film showing atomically flat terraces; inset optical image of a large-area film.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Line-scan profile across STM terraces showing uniform step height of about 6.14 Å.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "XRD 2θ-ω diffraction pattern with Laue fringes around the CrTe2 (001) reflection and fitted thickness/roughness parameters.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data with fitting/modeling"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Atomically resolved STM image showing hexagonal lattice structure.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Line profile from atomic-resolution STM image giving lattice periodicity of about 3.81 Å.",
+        "data_type": "line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Temperature-dependent magnetization curves for CrTe2 films of different thicknesses under out-of-plane field.",
+        "data_type": "magnetization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Out-of-plane magnetic hysteresis loops of 7 ML CrTe2 at different temperatures.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "In-plane magnetic hysteresis loops of 7 ML CrTe2 at different temperatures.",
+        "data_type": "magnetization hysteresis curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Expanded hysteresis loops at 300 K and inset temperature dependence of perpendicular anisotropy constant Ku.",
+        "data_type": "magnetization hysteresis curve / derived parameter plot",
+        "likely_source": "experimental data with derived analysis"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of XMCD measurement geometry.",
+        "data_type": "schematic / illustration",
+        "likely_source": "conceptual illustration"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "XAS and XMCD spectra of 7 ML CrTe2 from 5 K to 300 K, including integrals at 5 K.",
+        "data_type": "spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Enlarged Cr L3-edge XAS spectra at 200 K, 250 K, and 300 K for different X-ray helicities.",
+        "data_type": "spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Temperature dependence of spin moment ms and orbital moment ml derived from XMCD sum rules.",
+        "data_type": "derived parameter plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "XAS and XMCD spectra of 1 ML CrTe2 at various temperatures.",
+        "data_type": "spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Enlarged XAS near the Cr L3 edge showing helicity-dependent differences for 1 ML CrTe2.",
+        "data_type": "spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "XMCD percentage versus temperature for 1 ML CrTe2.",
+        "data_type": "derived parameter plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Thickness-temperature phase diagram compiling TC values from XMCD and SQUID.",
+        "data_type": "phase diagram / derived plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "ARPES valence-band dispersion of 7 ML CrTe2 along M-Γ-K.",
+        "data_type": "band dispersion map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "DFT-calculated spin-polarized band structure of 7 ML CrTe2.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "ARPES near-Fermi-level dispersion measured with He Iα photons and MDC peak fits.",
+        "data_type": "band dispersion map",
+        "likely_source": "experimental data with peak fitting"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "ARPES near-Fermi-level dispersion measured with He IIα photons and MDC peak fits.",
+        "data_type": "band dispersion map",
+        "likely_source": "experimental data with peak fitting"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Combined experimental and theoretical near-EF band structure comparison.",
+        "data_type": "comparison plot",
+        "likely_source": "experimental data plus theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Thickness-dependent ARPES intensity maps from 1 ML to 15 ML CrTe2.",
+        "data_type": "band dispersion maps",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from STM scans, XRD scans, SQUID magnetization curves, XAS/XMCD spectra, and ARPES intensity maps. It also includes TEM/HAADF-STEM images. The methods specify instrument settings and acquisition conditions, such as in-situ STM, MoKα1 XRD, SQUID up to 7 T, TEY-mode XAS/XMCD at beamline I10, and ARPES with He Iα/He IIα photons.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that the main data supporting the findings are available within the article and its Supplementary Information files, and that extra data are available from the corresponding authors upon reasonable request.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurement files are not explicitly described as deposited in a repository. The paper names the instruments and modalities used to collect data, but does not specify downloadable raw file formats or an open raw-data archive.",
+      "processed_data_description": "Processed/derived quantities include fitted XRD thickness and roughness, lattice constants from STM line profiles, Curie temperatures from M-T or XMCD fits, perpendicular anisotropy constant Ku, and spin/orbital moments derived from XMCD sum rules. ARPES peak positions are extracted by MDC fitting and compared with DFT bands.",
+      "figure_data_description": "Figure-specific data are clearly presented in the article and Supplementary Information as plotted curves, spectra, images, and derived quantities. The paper does not explicitly say that source-data files for each figure are deposited separately.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the paper text. DFT calculations are described methodologically, but no scripts are provided.",
+      "notes": "The dataset is primarily an experimental characterization set plus theoretical DFT outputs. The paper emphasizes figure-ready processed data rather than a formal public raw-data repository. Supplementary Information is referenced for additional figures and supporting measurements. The main semantic distinction is: raw instrument outputs were collected, but the paper only explicitly guarantees availability of the main data in the article/SI and extra data on request."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The methods describe direct acquisition of STM, XRD, SQUID, XAS/XMCD, ARPES, and TEM measurements, implying raw instrument data were collected.",
+      "source_data_evidence": "The paper presents many figure-ready curves and derived values, such as fitted XRD parameters, XMCD-derived moments, TC values, Ku, and MDC-extracted band positions.",
+      "data_availability_section_relevant": "\"The authors declare that the main data supporting the findings of this study are available within the article and its Supplementary Information files. Extra data are available from the corresponding authors upon reasonable request.\"",
+      "priority_modalities": [
+        "STM topography images",
+        "XRD diffraction scans",
+        "SQUID magnetization curves",
+        "XAS/XMCD spectra",
+        "ARPES band maps",
+        "TEM/HAADF-STEM images",
+        "DFT band structures"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

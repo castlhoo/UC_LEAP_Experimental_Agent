@@ -1,0 +1,795 @@
+{
+  "paper_id": "step1_0330",
+  "title": "Enhanced fusogenicity and pathogenicity of SARS-CoV-2 Delta P681R mutation",
+  "doi": "10.1038/s41586-021-04266-9",
+  "journal": "Nature",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3216478751",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 9,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-021-04266-9",
+  "files_inspected": 9,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "The Excel supplementary tables are figure-linked, headered, and directly replot-ready source data. They include epidemiological summaries, curated sequence metadata, and figure-specific hamster/virology measurements.",
+  "type2_summary": "No clearly identifiable raw/unprocessed instrument-output files were present in the inspected set. The PDFs could not be structurally inspected and are conservatively treated as documentation rather than raw data.",
+  "type1_files": [
+    "41586_2021_4266_MOESM4_ESM_1.xlsx",
+    "41586_2021_4266_MOESM5_ESM_1.xlsx",
+    "41586_2021_4266_MOESM6_ESM_1.xlsx",
+    "41586_2021_4266_MOESM7_ESM_1.xlsx",
+    "41586_2021_4266_MOESM8_ESM_1.xlsx",
+    "41586_2021_4266_MOESM9_ESM_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper strongly supports the presence of raw experimental measurements in the study overall, but the inspected files are mostly curated supplementary tables/source data rather than raw instrument outputs. The PDFs lack enough structural metadata to classify as type1 or type2, so they were conservatively labeled documentation.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2021_4266_MOESM1_ESM_1.pdf",
+      "filename": "41586_2021_4266_MOESM1_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature source-data package for this paper; no figure-specific tabular content was provided in the inspection report for this PDF.",
+      "file_evidence": "PDF format, 719.6 KB, from nature_source_data. No sheet/column structure available; likely supplementary document or figure/source-data PDF rather than a directly replot-ready table.",
+      "reasoning": "Insufficient structural evidence to classify as type1 or type2. Conservatively treat as documentation because the inspection report does not expose machine-readable data structure.",
+      "ambiguity": "High ambiguity: could contain supplementary figures, methods, or source-data pages, but no extractable table/image metadata was provided.",
+      "key_columns_or_structure": "Not available from inspection report"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM2_ESM_1.pdf",
+      "filename": "41586_2021_4266_MOESM2_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature source-data package for this paper; no figure-specific tabular content was provided in the inspection report for this PDF.",
+      "file_evidence": "PDF format, 156.9 KB, from nature_source_data. No sheet/column structure available; likely supplementary document or figure/source-data PDF rather than a directly replot-ready table.",
+      "reasoning": "Insufficient structural evidence to classify as type1 or type2. Conservatively treat as documentation because the inspection report does not expose machine-readable data structure.",
+      "ambiguity": "High ambiguity: could contain supplementary figures, methods, or source-data pages, but no extractable table/image metadata was provided.",
+      "key_columns_or_structure": "Not available from inspection report"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM3_ESM_1.pdf",
+      "filename": "41586_2021_4266_MOESM3_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "Nature source-data package for this paper; no figure-specific tabular content was provided in the inspection report for this PDF.",
+      "file_evidence": "PDF format, 400.1 KB, from nature_source_data. No sheet/column structure available; likely supplementary document or figure/source-data PDF rather than a directly replot-ready table.",
+      "reasoning": "Insufficient structural evidence to classify as type1 or type2. Conservatively treat as documentation because the inspection report does not expose machine-readable data structure.",
+      "ambiguity": "High ambiguity: could contain supplementary figures, methods, or source-data pages, but no extractable table/image metadata was provided.",
+      "key_columns_or_structure": "Not available from inspection report"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM4_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM4_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper figure captions and data availability indicate raw data are summarized in Supplementary Tables 1 and 2; this file is Supplementary Table 1 for daily deposited GISAID sequences.",
+      "file_evidence": "Excel table with headered columns, 20 cols x 214 rows, sheet 'Table S1'. Key column explicitly names 'Supplementary Table 1. Number of daily deposited sequences in GISAID.'",
+      "reasoning": "This is organized tabular source data with clear headers and figure/table linkage, suitable for direct plotting with minimal processing. Although it reflects underlying experimental/epidemiological data, the paper presents it as supplementary table/source data rather than raw instrument output.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Supplementary Table 1. Number of daily deposited sequences in GISAID."
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM5_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM5_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper figure captions and data availability indicate raw data are summarized in Supplementary Tables 1 and 2; this file is Supplementary Table 2 for spike mutation percentages.",
+      "file_evidence": "Excel table with headered columns, 6 cols x 976 rows, sheet 'Table S2'. Key column explicitly names 'Supplementary Table 2. Percentage of the mutations detected in the S protein of the B.1.617 lineage.'",
+      "reasoning": "This is figure-ready processed/tabulated source data with clear headers and direct plotting potential. It is not raw sequence data itself, but a curated summary table.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Supplementary Table 2. Percentage of the mutations detected in the S protein of the B.1.617 lineage."
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM6_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM6_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Supplementary Table 3 is described as genomic regions and primers used for CPER, i.e. a methods/supporting table rather than raw measurements.",
+      "file_evidence": "Excel table with 8 cols x 16 rows, sheet 'Table S3'. Key column: 'The SARS-CoV-2 genomic region encoded by each template and the primers used for the preparation of each fragment for CPER.'",
+      "reasoning": "This is structured reference/methods data, directly readable and not requiring heavy preprocessing. It is not raw experimental output.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "SARS-CoV-2 genomic region; primers used for CPER"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM7_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM7_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Supplementary Table 4 summarizes viral sequences used in the study, consistent with curated source data supporting phylogenetic analysis.",
+      "file_evidence": "Excel table with 10 cols x 25 rows, sheet 'Table S4'. Key column: 'Summary of the viral sequences used in this study.'",
+      "reasoning": "This is a small curated table with headers and direct replot/lookup utility. It is not raw sequence files, but organized metadata/source data.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Summary of the viral sequences used in this study"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM8_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM8_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper states raw data are summarized in supplementary tables for Fig. 1 and provides figure-linked source data for hamster infection readouts; this file contains figure-specific data for Fig. 2c, 2d, 2f, and 2h.",
+      "file_evidence": "Excel workbook with four figure-specific sheets: 'Fig. 2c', 'Fig. 2d', 'Fig. 2f', 'Fig. 2h'. Headered tables include viral RNA in oral swab, % body weight, histopathological scoring, and % area of large type II pneumocytes.",
+      "reasoning": "This is classic Nature source data organized by figure, with clear headers and small tabular datasets that can be directly replotted. Despite originating from experimental measurements, the file is processed/source-data rather than raw instrument output.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Fig. 2c Viral RNA in oral swab; Fig. 2d % Body weight; Fig. 2f Histopathological scoring of lung lesions; Fig. 2h % Area of large type II pneumocytes"
+    },
+    {
+      "relative_path": "41586_2021_4266_MOESM9_ESM_1.xlsx",
+      "filename": "41586_2021_4266_MOESM9_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Paper provides figure-linked source data for Fig. 4a–4c, including body weight, PenH, and viral titre measurements.",
+      "file_evidence": "Excel workbook with three figure-specific sheets: 'Fig. 4a', 'Fig. 4b', 'Fig. 4c'. Headered tables include % body weight, PenH, and viral titre.",
+      "reasoning": "This is figure-ready source data with explicit figure labels and tabular structure, directly usable for plotting with minimal processing.",
+      "ambiguity": "Low",
+      "key_columns_or_structure": "Fig. 4a % Body weight; Fig. 4b PenH; Fig. 4c Viral titre"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the SARS-CoV-2 Delta (B.1.617.2) variant and shows that the spike P681R mutation is a hallmark of the lineage that enhances spike cleavage, cell–cell fusion, syncytium formation, and pathogenicity in Syrian hamsters. The work combines phylogenetic analysis of GISAID genomes, cell-culture virology, pseudovirus and fusion assays, neutralization assays, and animal infection/pathology experiments to link a single spike mutation to the Delta phenotype.",
+    "measurement_types": [
+      "phylogenetic analysis of viral genomes",
+      "epidemic frequency/time-series analysis",
+      "RT-qPCR viral RNA quantification",
+      "bright-field microscopy of syncytia",
+      "plaque size measurement",
+      "immunofluorescence microscopy",
+      "cell-cell fusion assay",
+      "Western blot",
+      "pseudovirus infectivity assay",
+      "neutralization assay",
+      "animal body weight monitoring",
+      "whole-body plethysmography (PenH)",
+      "plaque assay for viral titers",
+      "histopathology (H&E staining)",
+      "immunohistochemistry",
+      "microCT imaging"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Phylogenetic tree showing B.1.617 sublineages forming monophyletic clusters.",
+        "data_type": "phylogenetic tree",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Number of SARS-CoV-2 sequences deposited per day in GISAID for India, the UK, and the world.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Daily percentage of B.1.617 sublineages among deposited sequences over time in India, the UK, and the world.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Top amino-acid replacements in spike across B.1.617 and sublineages, highlighting conservation of P681R and L452R.",
+        "data_type": "bar/percentage plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Growth kinetics of B.1.617.2/Delta versus B.1.1 in Vero, VeroE6/TMPRSS2, and Calu-3 cells measured by RT-qPCR.",
+        "data_type": "growth curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Syncytium formation in infected cells, including representative images and size distributions of floating syncytia.",
+        "data_type": "microscopy image + distribution plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Viral RNA levels in oral swabs from infected hamsters over time.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Body weight changes in hamsters infected with B.1.617.2/Delta or B.1.1.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Representative H&E-stained lung sections from infected and uninfected hamsters.",
+        "data_type": "histology image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Histopathological scoring of lung lesions over time.",
+        "data_type": "score plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Area of large type II pneumocytes in hamster lungs at 5 d.p.i.",
+        "data_type": "quantified image-derived plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Growth kinetics of reverse-genetics-generated D614G and D614G/P681R viruses in cell culture.",
+        "data_type": "growth curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Floating syncytia formed by D614G versus D614G/P681R viruses and their size distributions.",
+        "data_type": "microscopy image + distribution plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "GFP-expressing adherent syncytia in infected cells and their size distributions.",
+        "data_type": "fluorescence microscopy image + distribution plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Western blot of spike cleavage showing increased S2 cleavage with P681R.",
+        "data_type": "western blot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Cell-based fusion assay comparing D614G and D614G/P681R spike-mediated fusion with ACE2 or ACE2/TMPRSS2 target cells.",
+        "data_type": "functional assay plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Body weight changes in hamsters infected with D614G or D614G/P681R viruses.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Pulmonary function (PenH) in infected hamsters over time.",
+        "data_type": "time-series plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Virus titers in lungs and nasal turbinates at 3 and 7 d.p.i.",
+        "data_type": "bar/scatter plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Representative lung histopathology images showing bronchioloalveolar epithelial hyperplasia and type II pneumocyte prominence.",
+        "data_type": "histology image",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include SARS-CoV-2 genome sequences downloaded from GISAID; RT-qPCR cycle-derived viral RNA quantification from cell supernatants, oral swabs, and nasal epithelial cultures; microscopy images of syncytia and GFP-positive cells; Western blot images; neutralization assay readouts; hamster body weights; PenH plethysmography traces/values; plaque assay titers from lungs and nasal turbinates; H&E and immunohistochemistry histology images; and microCT images/severity scores.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, details of author contributions and competing interests, and statements of data and code availability are available at the DOI link. Figure captions explicitly say that raw data are summarized in Supplementary Tables 1 and 2 for Fig. 1. The text also indicates use of GISAID genomes and deposited sequence metadata as the basis for phylogenetic/epidemic analyses.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "The paper clearly describes collection of raw experimental measurements, but the excerpt does not specify a public raw-data repository or file formats. Raw inputs include GISAID genome sequences, cell-culture and animal assay measurements, microscopy images, and pathology images. For the phylogenetic/epidemic analysis, the genomes and corresponding metadata were downloaded from GISAID as of 31 May 2021.",
+      "processed_data_description": "Processed data include summarized lineage counts and percentages over time, top spike amino-acid replacement frequencies, quantified syncytium sizes, viral RNA copy numbers, body-weight percentages, histopathology scores, area measurements of large type II pneumocytes, fusion activity values, S2/(S+S2) ratios, neutralization comparisons, PenH summaries, and virus titers. Supplementary Tables 1 and 2 are explicitly cited as summaries of the raw data for Fig. 1.",
+      "figure_data_description": "Figure-specific data are clearly provided at least in summarized form: Fig. 1 captions state that raw data are summarized in Supplementary Tables 1 and 2. Several figures mention raw data in extended data figures (for example, Fig. 2g refers to raw data in Extended Data Fig. 5b). The excerpt does not explicitly state whether a separate source-data file is provided for each figure, but Nature articles commonly provide source data; here that is not directly confirmed in the text.",
+      "scripts_description": "No analysis scripts, notebooks, or code files are mentioned in the excerpt. The paper only states that code availability information is available online, but no specific scripts are described in the provided text.",
+      "notes": "The dataset is a mixed experimental and computational dataset. The computational component uses large-scale public sequence data from GISAID and produces processed phylogenetic/time-series summaries. The experimental component spans virology, cell biology, animal pathology, and imaging. The paper distinguishes raw measurements from summarized/processed values in captions, but the excerpt does not provide explicit file names, repository accession numbers for source data, or code/script locations."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct measurements from RT-qPCR, microscopy, Western blots, neutralization assays, hamster body weights, PenH, plaque assays, histology, and microCT. It also says genomes were downloaded from GISAID and that raw data are summarized in Supplementary Tables 1 and 2.",
+      "source_data_evidence": "Figure captions explicitly state that raw data are summarized in Supplementary Tables 1 and 2, and Extended Data figures are referenced as containing raw data for some analyses.",
+      "data_availability_section_relevant": "“Any methods, additional references, Nature Research reporting summaries, source data, extended data, supplementary information ... and statements of data and code availability are available at https://doi.org/10.1038/s41586-021-04266-9.”; “The raw data are summarized in Supplementary Table 1.”; “The raw data are summarized in Supplementary Table 2.”; “Raw data are shown in Extended Data Fig. 5b.”",
+      "priority_modalities": [
+        "genome sequences",
+        "RT-qPCR tables",
+        "microscopy images",
+        "histology images",
+        "Western blot images",
+        "plaque assay counts/titers",
+        "body weight time series",
+        "PenH plethysmography",
+        "microCT images",
+        "neutralization assay measurements"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2021_4266_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 736848,
+      "size_human": "719.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 160645,
+      "size_human": "156.9 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM3_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 409706,
+      "size_human": "400.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM3_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM4_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 28980,
+      "size_human": "28.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Table S1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Table S1",
+          "columns": [
+            "Supplementary Table 1. Number of daily deposited sequences in GISAID.",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19"
+          ],
+          "named_columns": [
+            "Supplementary Table 1. Number of daily deposited sequences in GISAID."
+          ],
+          "column_count": 20,
+          "row_count": 214,
+          "dtypes": {
+            "Supplementary Table 1. Number of daily deposited sequences in GISAID.": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM4_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM5_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 52379,
+      "size_human": "51.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Table S2"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Table S2",
+          "columns": [
+            "Supplementary Table 2. Percentage of the mutations detected in the S protein of the B.1.617 lineage.",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "Supplementary Table 2. Percentage of the mutations detected in the S protein of the B.1.617 lineage."
+          ],
+          "column_count": 6,
+          "row_count": 976,
+          "dtypes": {
+            "Supplementary Table 2. Percentage of the mutations detected in the S protein of the B.1.617 lineage.": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM5_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM6_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11301,
+      "size_human": "11.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Table S3"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Table S3",
+          "columns": [
+            "Supplementary Table 3. The SARS-CoV-2 genomic region encoded by each template and the primers used for the preparation of each fragment for CPER.",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "Supplementary Table 3. The SARS-CoV-2 genomic region encoded by each template and the primers used for the preparation of each fragment for CPER."
+          ],
+          "column_count": 8,
+          "row_count": 16,
+          "dtypes": {
+            "Supplementary Table 3. The SARS-CoV-2 genomic region encoded by each template and the primers used for the preparation of each fragment for CPER.": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM6_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM7_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 11355,
+      "size_human": "11.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Table S4"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Table S4",
+          "columns": [
+            "Supplementary Table 4. Summary of the viral sequences used in this study.",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Supplementary Table 4. Summary of the viral sequences used in this study."
+          ],
+          "column_count": 10,
+          "row_count": 25,
+          "dtypes": {
+            "Supplementary Table 4. Summary of the viral sequences used in this study.": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM7_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM8_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 21106,
+      "size_human": "20.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 2c",
+        "Fig. 2d",
+        "Fig. 2f",
+        "Fig. 2h"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 2c",
+          "columns": [
+            "Fig. 2c, Viral RNA in oral swab",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "Fig. 2c, Viral RNA in oral swab"
+          ],
+          "column_count": 9,
+          "row_count": 20,
+          "dtypes": {
+            "Fig. 2c, Viral RNA in oral swab": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2d",
+          "columns": [
+            "Fig. 2d, % Body weight",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Fig. 2d, % Body weight"
+          ],
+          "column_count": 10,
+          "row_count": 24,
+          "dtypes": {
+            "Fig. 2d, % Body weight": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2f",
+          "columns": [
+            "Fig. 2f, Histopathological scoring of lung lesions",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "Fig. 2f, Histopathological scoring of lung lesions"
+          ],
+          "column_count": 8,
+          "row_count": 61,
+          "dtypes": {
+            "Fig. 2f, Histopathological scoring of lung lesions": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 2h",
+          "columns": [
+            "Fig. 2h, % Area of large type II pneumocytes",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Fig. 2h, % Area of large type II pneumocytes"
+          ],
+          "column_count": 5,
+          "row_count": 5,
+          "dtypes": {
+            "Fig. 2h, % Area of large type II pneumocytes": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM8_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2021_4266_MOESM9_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 15800,
+      "size_human": "15.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 4a",
+        "Fig. 4b",
+        "Fig. 4c"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 4a",
+          "columns": [
+            "Fig. 4a, % Body weight",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Fig. 4a, % Body weight"
+          ],
+          "column_count": 10,
+          "row_count": 13,
+          "dtypes": {
+            "Fig. 4a, % Body weight": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 4b",
+          "columns": [
+            "Fig. 4b, PenH",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Fig. 4b, PenH"
+          ],
+          "column_count": 7,
+          "row_count": 13,
+          "dtypes": {
+            "Fig. 4b, PenH": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 4c",
+          "columns": [
+            "Fig. 4c, Viral titre",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Fig. 4c, Viral titre"
+          ],
+          "column_count": 12,
+          "row_count": 9,
+          "dtypes": {
+            "Fig. 4c, Viral titre": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2021_4266_MOESM9_ESM_1.xlsx"
+    }
+  ]
+}

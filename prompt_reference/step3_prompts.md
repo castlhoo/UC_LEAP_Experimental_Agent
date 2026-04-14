@@ -1,9 +1,9 @@
 # Step 3 Prompts
 
-This file summarizes the GPT prompts used in Step 3 dataset understanding and file classification.
+This file summarizes the GPT prompts used in Step 3 paper understanding and file classification.
 Step 3 is the first stage that works with actual downloaded files rather than only metadata or repository inventories.
-The first prompt reads the paper itself to understand the scientific context and how the authors describe their data, while the second prompt uses that context together with file inspection reports to classify files into Type 1, Type 2, scripts, or documentation.
-These outputs drive the paper-level `has_type1 / has_type2 / has_both_types` decision that later feeds Step 4 organization.
+The first prompt reads the paper itself to extract scientific context and dataset semantics, while the second prompt uses that paper context together with file inspection reports to classify files into Type 1, Type 2, scripts, or documentation.
+In the current codebase, Step 3 classification is prompt-led: paper analysis and file evidence are passed directly to GPT, while older rule-based prior and reconciliation logic are no longer part of the active classification prompt flow.
 
 ## Prompt A: Paper Analysis
 
@@ -58,23 +58,20 @@ Return JSON:
       "figure_id": "Fig1a",
       "description": "what this figure shows",
       "data_type": "image / spectrum / transport curve / diffraction pattern",
-      "likely_source": "raw measurement / processed data / derived"
+      "likely_source": "theoretical calculations or simulations / experimental data"
     }
   ],
 
   "has_raw_measurements": true/false,
   "raw_measurement_details": "what raw data was collected (e.g. STM scans, neutron spectra)",
 
-  "has_processed_plots": true/false,
-  "processed_plot_details": "what processed data is plotted",
-
   "dataset_characterization": {
-    "data_availability_statement": "summarize any statement about data availability in the paper",
+    "data_availability_statement": "summarize any statement about data availability, downloadable data, or data uploaded to an open-access repository",
 
     "data_provided_types": [
       "raw",
       "processed",
-      "source_data",
+      "theoretical_or_simulated",
       "scripts",
       "unknown"
     ],
@@ -87,25 +84,16 @@ Return JSON:
 
     "scripts_description": "whether analysis scripts or notebooks are mentioned",
 
-    "data_organization": "e.g. figure-based folders / raw folders / mixed / not specified",
-
-    "replot_ready_data_present": true/false,
-
-    "replot_reason": "why the data is or is not directly usable for replotting",
-
     "notes": "any important observations about how data is structured or described"
   },
 
   "classification_prior": {
     "raw_data_expected": true/false,
     "source_data_expected": true/false,
-    "both_expected": true/false,
     "raw_data_evidence": "brief evidence from the paper",
     "source_data_evidence": "brief evidence from the paper",
-    "both_evidence": "brief evidence if both are implied, else 'none'",
     "data_availability_section_relevant": "important phrases from data availability / methods / figure captions",
-    "priority_modalities": ["measurement or file modalities likely to appear in dataset"],
-    "review_notes": "anything the classifier should be careful about"
+    "priority_modalities": ["measurement or file modalities likely to appear in dataset"]
   }}
 
 === IMPORTANT RULES ===
@@ -115,9 +103,8 @@ Return JSON:
 3. Distinguish clearly between:
    - raw measurement data
    - processed/cleaned data
-   - figure/source data
    - scripts
-4. "Source data" usually means processed figure data, NOT raw data.
+4. "Source data" often refers to processed figure-ready data, but it can also include raw data depending on the paper and repository context.
 5. If unclear, say "unknown" instead of guessing.
 6. Be concise but precise.
 7. Focus especially on dataset semantics — this will be used for downstream classification.
@@ -147,26 +134,26 @@ Paper abstract: {abstract}
 === PAPER ANALYSIS (from reading the full publication) ===
 {paper_analysis}
 
-=== RULE-BASED PRIOR ===
-{rule_prior}
-
 === FILE INSPECTION REPORTS ===
 {file_reports}
 
 === CLASSIFICATION DEFINITIONS ===
 
 Type 1 (Cleaned, replot-ready):
-- Tabular data (CSV, XLSX, TXT) with column headers naming physical variables
+- Tabular data (CSV, XLSX, TXT) with column headers naming variables, especially processed variables (e.g. R/resistance, which most of the time has to be processed from voltage and current signals)
 - Organized as figure-specific data (e.g., "Fig1", "Figure_3e", "FigS4")
 - Small-to-moderate file sizes appropriate for figure data
+- Theoretical calculation or simulation data
+- Optical microscopy data (Specifically, white light imaging for sample geometry. File type is usually jpg or png)
 - Can be directly loaded and plotted with minimal processing
 - "Source Data" deposits organized by figure = Type 1 (source data ≠ raw data)
 
 Type 2 (Raw/unprocessed):
 - Instrument output: binary/proprietary formats, microscopy images, HDF5, etc.
-- Files named after scans, experiments, or instrument runs
+- Files named after scans, sample names, experiments, experimental conditions, or instrument runs
+- Files in which all variables/units are directly measured from instruments (for example, voltage, current, Gauss/kilogauss)
 - Files requiring processing scripts to generate figures
-- Files explicitly described as raw in the paper
+- Files explicitly described as raw in the paper or description in the online data repository link
 - Large files significantly bigger than typical figure datasets
 - Data requiring significant preprocessing before plotting
 
@@ -181,7 +168,8 @@ Type 2 (Raw/unprocessed):
    - Explicitly describe the conflict
    - Resolve conservatively
 5. If the paper explicitly states data is raw → prioritize that (Type 2)
-6. If the paper explicitly states data is figure/source data → prioritize that (Type 1)
+6. If the paper explicitly states data is figure → prioritize that (Type 1)
+7. For AFM and other microscopy data that is not white light imaging (normal microscope pictures) that is not stated raw/processed clearly in any descriptions: Consider as type 1, if there is a good amount of type 1 (>=2 files or 30%) data in this dataset. Consider them as type 2, if otherwise.
 
 === REASONING PROCEDURE ===
 
@@ -191,7 +179,7 @@ Step A. Paper Evidence
 - Identify any statements about whether the dataset is raw, processed, or figure data
 
 Step B. File Evidence
-- Inspect filename, extension, size, structure, headers, sheet names
+- Inspect filename, extension, size, structure, headers, sheet names, variable names and units
 
 Step C. Functional Role
 - Determine if the file is:
@@ -202,7 +190,7 @@ Step C. Functional Role
   - other
 
 Step D. Replot Test
-- Can this file be directly plotted with minimal processing?
+- Can this file be directly plotted with common variables as the axes with minimal processing?
   → Yes → supports Type 1
   → No → supports Type 2
 
@@ -234,9 +222,11 @@ Return JSON:
   "has_both": true/false,
   "type1_summary": "...",
   "type2_summary": "...",
-  "rule_based_alignment": "whether the final decision agrees with the rule-based prior, and why",
   "type1_files": ["..."],
   "type2_files": ["..."],
+  "data_organization": "e.g. figure-based folders / raw folders / mixed / not specified",
+  "replot_ready_data_present": true/false,
+  "replot_reason": "why the data is or is not directly usable for replotting",
   "confidence": "high" | "medium" | "low",
   "notes": "important observations"
 }

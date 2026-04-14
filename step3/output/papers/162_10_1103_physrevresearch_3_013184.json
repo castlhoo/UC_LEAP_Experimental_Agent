@@ -1,0 +1,912 @@
+{
+  "paper_id": "step1_0358",
+  "title": "Gutzwiller hybrid quantum-classical computing approach for correlated materials",
+  "doi": "10.1103/physrevresearch.3.013184",
+  "journal": "Physical Review Research",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3010355574",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevresearch_3_013184",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "script",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 224 column 5 (char 12156)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper presents a hybrid quantum-classical Gutzwiller embedding framework implemented on quantum hardware to simulate the periodic Anderson model and reproduce correlated-electron phase behavior in an infinite lattice.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset or source data could be confirmed from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "GQCE_PAM-master_1.zip",
+      "extension": ".zip",
+      "size_bytes": 600989,
+      "size_human": "586.9 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "GQCE_PAM-master_1.zip"
+    },
+    {
+      "filename": "LICENSE",
+      "extension": "",
+      "size_bytes": 35149,
+      "size_human": "34.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/LICENSE",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/LICENSE"
+    },
+    {
+      "filename": "README.md",
+      "extension": ".md",
+      "size_bytes": 457,
+      "size_human": "457.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .md",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/README.md",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/README.md"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 86026,
+      "size_human": "84.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.00/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.00/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 50,
+      "size_human": "50.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.00/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.00/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 89450,
+      "size_human": "87.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.10/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.10/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 50,
+      "size_human": "50.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.10/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.10/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 85981,
+      "size_human": "84.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.20/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.20/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 50,
+      "size_human": "50.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.20/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.20/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 85984,
+      "size_human": "84.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.30/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.30/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 50,
+      "size_human": "50.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.30/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.30/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 86004,
+      "size_human": "84.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.40/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.40/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 50,
+      "size_human": "50.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/1.40/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/1.40/xopts.dat"
+    },
+    {
+      "filename": "analysis_e.py",
+      "extension": ".py",
+      "size_bytes": 920,
+      "size_human": "920.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/analysis_e.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/analysis_e.py"
+    },
+    {
+      "filename": "analysis_n.py",
+      "extension": ".py",
+      "size_bytes": 678,
+      "size_human": "678.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/analysis_n.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/analysis_n.py"
+    },
+    {
+      "filename": "analysis_z.py",
+      "extension": ".py",
+      "size_bytes": 974,
+      "size_human": "974.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/analysis_z.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/analysis_z.py"
+    },
+    {
+      "filename": "scan_alm_c1_eps_c.py",
+      "extension": ".py",
+      "size_bytes": 1672,
+      "size_human": "1.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/scan_alm_c1_eps_c.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/scan_alm_c1_eps_c.py"
+    },
+    {
+      "filename": "stat_e.dat",
+      "extension": ".dat",
+      "size_bytes": 185,
+      "size_human": "185.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "1.00000",
+        "-1.16670",
+        "0.00535",
+        "-0.00459"
+      ],
+      "column_count": 4,
+      "row_count": 4,
+      "dtypes": {
+        "1.00000": "float64",
+        "-1.16670": "float64",
+        "0.00535": "float64",
+        "-0.00459": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/stat_e.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/stat_e.dat"
+    },
+    {
+      "filename": "stat_n.dat",
+      "extension": ".dat",
+      "size_bytes": 104,
+      "size_human": "104.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "1.10000",
+        "1.00000",
+        "0.00000"
+      ],
+      "column_count": 3,
+      "row_count": 3,
+      "dtypes": {
+        "1.10000": "float64",
+        "1.00000": "float64",
+        "0.00000": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/stat_n.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/stat_n.dat"
+    },
+    {
+      "filename": "stat_z.dat",
+      "extension": ".dat",
+      "size_bytes": 140,
+      "size_human": "140.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "1.10000",
+        "0.00105",
+        "0.00078",
+        "0.73925"
+      ],
+      "column_count": 4,
+      "row_count": 3,
+      "dtypes": {
+        "1.10000": "float64",
+        "0.00105": "float64",
+        "0.00078": "float64",
+        "0.73925": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/Mott/stat_z.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/Mott/stat_z.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 442399,
+      "size_human": "432.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/0.00/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/0.00/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 51,
+      "size_human": "51.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 1,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/0.00/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/0.00/xopts.dat"
+    },
+    {
+      "filename": "xopts_history.dat",
+      "extension": ".dat",
+      "size_bytes": 311,
+      "size_human": "311.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "xopt"
+      ],
+      "column_count": 2,
+      "row_count": 38,
+      "dtypes": {
+        "#": "float64",
+        "xopt": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/0.00/xopts_history.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/0.00/xopts_history.dat"
+    },
+    {
+      "filename": "analysis_e.py",
+      "extension": ".py",
+      "size_bytes": 728,
+      "size_human": "728.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/analysis_e.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/analysis_e.py"
+    },
+    {
+      "filename": "analysis_n.py",
+      "extension": ".py",
+      "size_bytes": 754,
+      "size_human": "754.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/analysis_n.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/analysis_n.py"
+    },
+    {
+      "filename": "analysis_z.py",
+      "extension": ".py",
+      "size_bytes": 874,
+      "size_human": "874.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/analysis_z.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/analysis_z.py"
+    },
+    {
+      "filename": "get_z_one_case_aspen.py",
+      "extension": ".py",
+      "size_bytes": 397,
+      "size_human": "397.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/get_z_one_case_aspen.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/get_z_one_case_aspen.py"
+    },
+    {
+      "filename": "scan_alm_c1_eps_c.py",
+      "extension": ".py",
+      "size_bytes": 1643,
+      "size_human": "1.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/scan_alm_c1_eps_c.py",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/scan_alm_c1_eps_c.py"
+    },
+    {
+      "filename": "stat_e.dat",
+      "extension": ".dat",
+      "size_bytes": 37,
+      "size_human": "37.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000",
+        "-1.57913",
+        "0.02840",
+        "-0.01798"
+      ],
+      "column_count": 4,
+      "row_count": 0,
+      "dtypes": {
+        "0.00000": "object",
+        "-1.57913": "object",
+        "0.02840": "object",
+        "-0.01798": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/stat_e.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/stat_e.dat"
+    },
+    {
+      "filename": "stat_n.dat",
+      "extension": ".dat",
+      "size_bytes": 35,
+      "size_human": "35.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000",
+        "2.00000",
+        "0.00000.1",
+        "0.00000.2"
+      ],
+      "column_count": 4,
+      "row_count": 0,
+      "dtypes": {
+        "0.00000": "object",
+        "2.00000": "object",
+        "0.00000.1": "object",
+        "0.00000.2": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/stat_n.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/stat_n.dat"
+    },
+    {
+      "filename": "stat_z.dat",
+      "extension": ".dat",
+      "size_bytes": 35,
+      "size_human": "35.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.00000",
+        "0.58695",
+        "0.01322",
+        "0.02253"
+      ],
+      "column_count": 4,
+      "row_count": 0,
+      "dtypes": {
+        "0.00000": "object",
+        "0.58695": "object",
+        "0.01322": "object",
+        "0.02253": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/stat_z.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/stat_z.dat"
+    },
+    {
+      "filename": "zlist.dat",
+      "extension": ".dat",
+      "size_bytes": 385,
+      "size_human": "385.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "3.5934"
+      ],
+      "column_count": 1,
+      "row_count": 54,
+      "dtypes": {
+        "3.5934": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/ec_0.0/zlist.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/ec_0.0/zlist.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 91782,
+      "size_human": "89.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.00/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.00/Gutz.log"
+    },
+    {
+      "filename": "dos.dat",
+      "extension": ".dat",
+      "size_bytes": 27527,
+      "size_human": "26.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-2.500000",
+        "0.000000",
+        "0.000000.1"
+      ],
+      "column_count": 3,
+      "row_count": 1000,
+      "dtypes": {
+        "-2.500000": "float64",
+        "0.000000": "float64",
+        "0.000000.1": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.00/dos.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.00/dos.dat"
+    },
+    {
+      "filename": "dos.pdf",
+      "extension": ".pdf",
+      "size_bytes": 29274,
+      "size_human": "28.6 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.00/dos.pdf",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.00/dos.pdf"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 77,
+      "size_human": "77.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 2,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.00/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.00/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 81517,
+      "size_human": "79.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.10/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.10/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 103,
+      "size_human": "103.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 3,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.10/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.10/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 117150,
+      "size_human": "114.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.20/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.20/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 129,
+      "size_human": "129.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 4,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.20/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.20/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 117146,
+      "size_human": "114.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.30/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.30/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 155,
+      "size_human": "155.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 5,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.30/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.30/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 319507,
+      "size_human": "312.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.40/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.40/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 77,
+      "size_human": "77.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 2,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.40/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.40/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 180614,
+      "size_human": "176.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.50/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.50/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 207,
+      "size_human": "207.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.50/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.50/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 482066,
+      "size_human": "470.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.60/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.60/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 233,
+      "size_human": "233.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 8,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.60/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.60/xopts.dat"
+    },
+    {
+      "filename": "Gutz.log",
+      "extension": ".log",
+      "size_bytes": 41851,
+      "size_human": "40.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .log",
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.70/Gutz.log",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.70/Gutz.log"
+    },
+    {
+      "filename": "xopts.dat",
+      "extension": ".dat",
+      "size_bytes": 259,
+      "size_human": "259.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.000000000000000000e+00"
+      ],
+      "column_count": 1,
+      "row_count": 9,
+      "dtypes": {
+        "0.000000000000000000e+00": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "GQCE_PAM-master/aspen/kondo_metal/0.70/xopts.dat",
+      "from_zip": "GQCE_PAM-master_1.zip",
+      "relative_path": "zip_contents/GQCE_PAM-master/aspen/kondo_metal/0.70/xopts.dat"
+    }
+  ]
+}

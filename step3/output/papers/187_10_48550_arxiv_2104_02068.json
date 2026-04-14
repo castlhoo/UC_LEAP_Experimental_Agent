@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0167",
+  "title": "First Analysis of Jupiter in Gamma Rays and a New Search for Dark Matter",
+  "doi": "10.48550/arxiv.2104.02068",
+  "journal": "arXiv (Cornell University)",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W4382317440",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_48550_arxiv_2104_02068",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear cleaned, replot-ready dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed dataset files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The paper itself concerns gamma-ray analysis and dark matter constraints, which typically would not map to condensed-matter-style dataset deposits. The single Zenodo PDF appears more likely to be documentation or the paper itself than a data file.",
+  "file_classifications": [
+    {
+      "relative_path": "JBES-V23-No3-p60-66_1.pdf",
+      "filename": "JBES-V23-No3-p60-66_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement and no downloadable data files or external dataset links were listed on the arXiv page, so there is no paper evidence that this PDF is a data deposit.",
+      "file_evidence": "The file is a single PDF (633.1 KB) from Zenodo. No internal structure, tables, headers, or machine-readable data content were provided in the inspection report, so it cannot be identified as tabular figure data or raw instrument output from file metadata alone.",
+      "reasoning": "Given the lack of paper evidence for a dataset and the absence of any file-content evidence indicating structured data, this is most conservatively treated as documentation rather than Type 1 or Type 2 data. A PDF of this size is more consistent with a paper or report than a replot-ready dataset.",
+      "ambiguity": "High ambiguity because the PDF contents were not inspected directly; it may contain the article or supplementary documentation rather than data.",
+      "key_columns_or_structure": "Not available from inspection report"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports a Fermi-LAT gamma-ray analysis of Jupiter and uses the non-detection to constrain dark matter capture and annihilation scenarios in the Jovian environment.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to use Fermi-LAT gamma-ray observational data and analysis products, but no accompanying dataset is provided through the publisher page or linked repository.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external dataset links were listed on the arXiv page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external dataset links were listed on the arXiv page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "JBES-V23-No3-p60-66_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 648297,
+      "size_human": "633.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "JBES-V23-No3-p60-66_1.pdf"
+    }
+  ]
+}

@@ -1,0 +1,784 @@
+{
+  "paper_id": "step1_0373",
+  "title": "Topological surface states in the Kondo insulator YbB$_{12}$ revealed via planar tunneling spectroscopy",
+  "doi": "10.1103/PhysRevB.107.165132",
+  "journal": "arXiv preprint",
+  "year": 2023,
+  "paper_url": "https://arxiv.org/abs/2301.03642v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 30,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_PhysRevB_107_165132",
+  "files_inspected": 33,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "script",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 178 column 24 (char 11928)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports planar tunneling spectroscopy on YbB12 single crystals and interprets the spectra as evidence for topological surface Dirac fermions and hybridized band edges in a Kondo insulator.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to present experimental planar tunneling spectroscopy data on YbB12 single crystals, but no downloadable dataset or supporting data files are indicated in the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or external URLs were provided on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or external URLs were provided on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Data_repository_1.zip",
+      "extension": ".zip",
+      "size_bytes": 28064014,
+      "size_human": "26.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Data_repository_1.zip"
+    },
+    {
+      "filename": "etqr0380_qayoom___1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 697831,
+      "size_human": "681.5 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "etqr0380_qayoom___1.pdf"
+    },
+    {
+      "filename": "Ferfolja_JMCC_2020_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4995289,
+      "size_human": "4.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Ferfolja_JMCC_2020_1.pdf"
+    },
+    {
+      "filename": "figure 1.csv",
+      "extension": ".csv",
+      "size_bytes": 1037570,
+      "size_human": "1013.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "1.011377469890351364e+02",
+        "8.818211835095432605e+01",
+        "7.517522560475703131e+01",
+        "6.216638740094789739e+01",
+        "4.920388007611785497e+01",
+        "3.633478083210219012e+01",
+        "2.360481869859123805e+01",
+        "1.105823366617017456e+01",
+        "-1.262355661770264481e+00",
+        "-1.331607558880940978e+01",
+        "-2.506391174683675160e+01",
+        "-3.646881418831654997e+01",
+        "-4.749579295833922998e+01",
+        "-5.811200399468536659e+01",
+        "-6.828682524322377390e+01",
+        "-7.799192291463965887e+01",
+        "-8.720130784662195822e+01",
+        "-9.589138197308560052e+01",
+        "-1.040409749386578824e+02",
+        "-1.116313709323794114e+02",
+        "-1.186463258492651391e+02",
+        "-1.250720749219210717e+02",
+        "-1.308973309967229000e+02",
+        "-1.361132736600355599e+02",
+        "-1.407135294495095650e+02",
+        "-1.446941434135403881e+02",
+        "-1.480535423084625393e+02",
+        "-1.507924897478900164e+02",
+        "-1.529140336417651724e+02",
+        "-1.544234462840848892e+02"
+      ],
+      "column_count": 200,
+      "row_count": 202,
+      "dtypes": {
+        "1.011377469890351364e+02": "float64",
+        "8.818211835095432605e+01": "float64",
+        "7.517522560475703131e+01": "float64",
+        "6.216638740094789739e+01": "float64",
+        "4.920388007611785497e+01": "float64",
+        "3.633478083210219012e+01": "float64",
+        "2.360481869859123805e+01": "float64",
+        "1.105823366617017456e+01": "float64",
+        "-1.262355661770264481e+00": "float64",
+        "-1.331607558880940978e+01": "float64",
+        "-2.506391174683675160e+01": "float64",
+        "-3.646881418831654997e+01": "float64",
+        "-4.749579295833922998e+01": "float64",
+        "-5.811200399468536659e+01": "float64",
+        "-6.828682524322377390e+01": "float64",
+        "-7.799192291463965887e+01": "float64",
+        "-8.720130784662195822e+01": "float64",
+        "-9.589138197308560052e+01": "float64",
+        "-1.040409749386578824e+02": "float64",
+        "-1.116313709323794114e+02": "float64",
+        "-1.186463258492651391e+02": "float64",
+        "-1.250720749219210717e+02": "float64",
+        "-1.308973309967229000e+02": "float64",
+        "-1.361132736600355599e+02": "float64",
+        "-1.407135294495095650e+02": "float64",
+        "-1.446941434135403881e+02": "float64",
+        "-1.480535423084625393e+02": "float64",
+        "-1.507924897478900164e+02": "float64",
+        "-1.529140336417651724e+02": "float64",
+        "-1.544234462840848892e+02": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 1/figure 1.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 1/figure 1.csv"
+    },
+    {
+      "filename": "hybr_gap_Bi1-x_Sb_x_Te3_paper.py",
+      "extension": ".py",
+      "size_bytes": 10592,
+      "size_human": "10.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 1/hybr_gap_Bi1-x_Sb_x_Te3_paper.py",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 1/hybr_gap_Bi1-x_Sb_x_Te3_paper.py"
+    },
+    {
+      "filename": "figure 2 processed.gwy",
+      "extension": ".gwy",
+      "size_bytes": 6342015,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .gwy",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 processed.gwy",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 processed.gwy"
+    },
+    {
+      "filename": "figure 2 raw.spm",
+      "extension": ".spm",
+      "size_bytes": 1613824,
+      "size_human": "1.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .spm",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 raw.spm",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 raw.spm"
+    },
+    {
+      "filename": "figure 2 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 263,
+      "size_human": "263.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Fig.",
+        "2:"
+      ],
+      "column_count": 2,
+      "row_count": 4,
+      "dtypes": {
+        "Fig.": "object",
+        "2:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 readme.txt"
+    },
+    {
+      "filename": "figure 3 inset readme.txt",
+      "extension": ".txt",
+      "size_bytes": 502,
+      "size_human": "502.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 9,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/figure 3 inset readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/figure 3 inset readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/14/2022 21:10:46|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/14/2022 21:10:46|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 09:45:59|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 09:45:59|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 22:18:12|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 22:18:12|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 12:16:17|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 12:16:17|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 14:46:52|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 14:46:52|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv"
+    },
+    {
+      "filename": "figure 3 main readme.txt",
+      "extension": ".txt",
+      "size_bytes": 541,
+      "size_human": "541.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Processing",
+        "steps",
+        "of",
+        "data",
+        "published",
+        "in",
+        "figure",
+        "3",
+        "(main)"
+      ],
+      "column_count": 9,
+      "row_count": 5,
+      "dtypes": {
+        "Processing": "object",
+        "steps": "object",
+        "of": "object",
+        "data": "object",
+        "published": "object",
+        "in": "object",
+        "figure": "object",
+        "3": "object",
+        "(main)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 main/figure 3 main readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 main/figure 3 main readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv",
+      "extension": ".csv",
+      "size_bytes": 374703,
+      "size_human": "365.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/14/2022 15:30:02|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1003,
+      "dtypes": {
+        "09/14/2022 15:30:02|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 main/FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 main/FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv"
+    },
+    {
+      "filename": "figure 4a readme.txt",
+      "extension": ".txt",
+      "size_bytes": 1003,
+      "size_human": "1003.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 14,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4a/figure 4a readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4a/figure 4a readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "extension": ".csv",
+      "size_bytes": 8236793,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "05/12/2023 07:48:27|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40403,
+      "dtypes": {
+        "05/12/2023 07:48:27|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4a/FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4a/FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv"
+    },
+    {
+      "filename": "figure 4b readme.txt",
+      "extension": ".txt",
+      "size_bytes": 704,
+      "size_human": "704.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 11,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4b/figure 4b readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4b/figure 4b readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4b/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4b/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "figure 5 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 816,
+      "size_human": "816.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 13,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 5/figure 5 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 5/figure 5 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 5/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 5/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "figure 6 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 383,
+      "size_human": "383.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 8,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 6/figure 6 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 6/figure 6 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv",
+      "extension": ".csv",
+      "size_bytes": 24763200,
+      "size_human": "23.6 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "12/28/2022 16:05:50|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 112121,
+      "dtypes": {
+        "12/28/2022 16:05:50|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 6/FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 6/FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv"
+    },
+    {
+      "filename": "figure 7a readme.txt",
+      "extension": ".txt",
+      "size_bytes": 309,
+      "size_human": "309.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7a/figure 7a readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7a/figure 7a readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv",
+      "extension": ".csv",
+      "size_bytes": 63230546,
+      "size_human": "60.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "12/03/2022 18:28:11|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 286288,
+      "dtypes": {
+        "12/03/2022 18:28:11|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7a/FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7a/FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv"
+    },
+    {
+      "filename": "figure 7b readme.txt",
+      "extension": ".txt",
+      "size_bytes": 311,
+      "size_human": "311.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 8,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7b/figure 7b readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7b/figure 7b readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "extension": ".csv",
+      "size_bytes": 35558289,
+      "size_human": "33.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "05/17/2023 15:18:22|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 161003,
+      "dtypes": {
+        "05/17/2023 15:18:22|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7b/FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7b/FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv"
+    },
+    {
+      "filename": "figure 7c readme.txt",
+      "extension": ".txt",
+      "size_bytes": 302,
+      "size_human": "302.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7c/figure 7c readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7c/figure 7c readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv",
+      "extension": ".csv",
+      "size_bytes": 7586913,
+      "size_human": "7.2 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "08/30/2024 17:04:33|ssggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40574,
+      "dtypes": {
+        "08/30/2024 17:04:33|ssggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7c/FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7c/FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv"
+    },
+    {
+      "filename": "figure 8 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 357,
+      "size_human": "357.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "VTG",
+        "(V):",
+        "Top",
+        "Gate",
+        "Voltage"
+      ],
+      "column_count": 5,
+      "row_count": 7,
+      "dtypes": {
+        "VTG": "object",
+        "(V):": "object",
+        "Top": "object",
+        "Gate": "object",
+        "Voltage": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/figure 8 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/figure 8 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8321102,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/10/2024 19:11:14|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/10/2024 19:11:14|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    }
+  ]
+}

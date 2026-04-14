@@ -1,0 +1,252 @@
+{
+  "paper_id": "step1_0305",
+  "title": "Two-dimensional heavy fermions in the van der Waals metal CeSiI",
+  "doi": "10.1038/s41586-023-06868-x",
+  "journal": "Nature",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4390940875",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-023-06868-x",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "CeSiI is a van der Waals intermetallic that hosts a two-dimensional heavy-fermion antiferromagnetic ground state, established by heat capacity, resistivity, STM/STS, ARPES, magnetization, magnetotransport, and DFT. The paper shows coherent c–f hybridization, a Kondo scale of about 74 K, antiferromagnetic order at about 7.5 K, quasi-2D Fermi surfaces, and persistence of heavy-fermion signatures down to few-layer flakes.",
+    "measurement_types": [
+      "single-crystal synthesis and X-ray diffraction",
+      "atomic force microscopy (AFM) thickness/topography",
+      "heat capacity / calorimetry",
+      "electrical resistivity / transport",
+      "scanning tunnelling microscopy (STM) topography",
+      "scanning tunnelling spectroscopy (STS)",
+      "angle-resolved photoemission spectroscopy (ARPES)",
+      "magnetic susceptibility / vibrating-sample magnetometry",
+      "magnetization vs field",
+      "magnetoresistance",
+      "Hall effect",
+      "Shubnikov–de Haas quantum oscillations",
+      "neutron scattering (cited prior work)",
+      "density functional theory (DFT) / DFT+U calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of CeSiI.",
+        "data_type": "image / structural schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Top view of the silicene-like Si layer with iodine removed for clarity.",
+        "data_type": "image / structural schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Side view of a single CeSiI layer.",
+        "data_type": "image / structural schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "AFM image and height profile of an exfoliated ultra-thin CeSiI flake; step heights indicate trilayer and single-layer increments.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Temperature dependence of heat capacity for several samples, showing lambda anomaly and Schottky-like feature.",
+        "data_type": "transport/thermodynamic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Resistivity versus temperature at zero field, with AFM and coherence regimes marked; inset shows Fermi-liquid fit of rho vs T^2.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "Temperature-dependent STS local density of states fitted to a Fano line shape; inset shows Kondo linewidth versus temperature and Kondo-model fit.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "ARPES intensity map of CeSiI along K-Gamma-M showing dispersive bands and avoided crossing with flat f bands.",
+        "data_type": "spectral map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Angle-integrated energy distribution curves for CeSiI and LaSiI highlighting f-derived peaks.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "ARPES spectrum of LaSiI used as nonmagnetic reference.",
+        "data_type": "spectral map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Second derivative ARPES map highlighting the hybridization gap/avoided crossing.",
+        "data_type": "processed spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Temperature-dependent ARPES energy distribution curves along a momentum cut through the hybridization region.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Difference spectra between on- and off-intersection ARPES cuts showing the hybridization gap opening.",
+        "data_type": "processed spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Magnetic susceptibility versus temperature with Curie-Weiss behavior and AFM cusp at TN.",
+        "data_type": "transport/thermodynamic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Magnetization versus field at 2 K showing metamagnetic transitions and plateaus.",
+        "data_type": "magnetization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "STM topography around a defect showing standing-wave modulations and Fourier transform peak at qAFM.",
+        "data_type": "image + Fourier transform",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "DFT+U electronic band structure in the layered AFM ground state.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Magnetoresistance versus field at different temperatures showing features at metamagnetic transitions.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Magnetoresistance plotted versus c-axis field component for different tilt angles.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "High-field magnetoresistance oscillations (SdH) and extracted oscillatory component versus inverse field.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "FFT spectrum of SdH oscillations showing six frequencies and corresponding cyclotron orbits.",
+        "data_type": "frequency spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Angle dependence of SdH oscillations plotted versus c-axis field component, demonstrating quasi-2D behavior.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "kz-dependent ARPES Fermi-surface map showing weak kz dispersion and quasi-2D Fermi surface.",
+        "data_type": "spectral map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "DFT Fermi surface with critical points and nesting vector qAFM.",
+        "data_type": "theoretical Fermi-surface plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Optical microscopy image of a transport device made from a 15-layer CeSiI flake.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Temperature dependence of resistance of the 15-layer flake and inset magnetoresistance versus field.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Hall resistance versus field at different temperatures and inset Hall coefficient versus temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Comparison of magnetoresistance for 4-layer and 15-layer flakes, showing shifted metamagnetic transitions in the thinner flake.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include AFM topography scans, heat-capacity traces, resistivity and magnetoresistance curves, Hall-effect traces, magnetization/susceptibility data from vibrating-sample magnetometry, STM topographs and tunnelling spectra, ARPES intensity maps and energy distribution curves, and high-field SdH oscillation data. The paper also references neutron-scattering results from prior work and DFT/DFT+U calculations generated for band structure and Fermi-surface analysis.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available online at the DOI link. The provided text does not include the explicit data/code availability wording, repository name, or accession numbers.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described as instrument outputs collected on specific platforms: PPMS DynaCool heat-capacity and magnetotransport traces, STM/STS spectra and topographs from a home-built cryogenic UHV instrument, ARPES spectra at synchrotron beamlines, AFM maps from a tapping-mode cryogenic UHV instrument, and single-crystal XRD data collected on an Agilent SuperNova diffractometer. The paper does not specify file formats or a public raw-data repository in the provided text.",
+      "processed_data_description": "Processed data include fitted Sommerfeld coefficients from heat-capacity modeling, CEF-subtracted entropy curves, Fano-fit linewidths, second-derivative ARPES maps, difference spectra between ARPES cuts, FFT spectra of SdH oscillations, extracted effective masses, Hall coefficients, and DFT+U-derived exchange ratios and Fermi surfaces. These are analysis products derived from raw measurements rather than primary instrument outputs.",
+      "figure_data_description": "Figure captions and text indicate figure-specific data are shown for all main figures and Extended Data figures, but the provided text does not explicitly state whether source data files are deposited. The mention of 'source data' in the online content suggests figure-level source data are likely available, but this is not directly confirmed in the excerpt.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are described in the provided text. The paper only states that code availability information is online, without details here.",
+      "notes": "The dataset is multimodal and mixes experimental raw measurements with substantial post-processing and model fitting. Several figures rely on derived quantities: heat-capacity fits, ARPES second derivatives, FFTs of SdH oscillations, and DFT/DFT+U simulations. The Methods section gives detailed experimental protocols and fitting procedures, which strongly suggests reproducible processing but does not expose file-level organization. Extended Data figures are explicitly referenced for additional heat-capacity, STS, Hall, and transport data."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports direct measurements from AFM, heat capacity, resistivity, STS, ARPES, magnetization, Hall effect, and SdH transport, and the Methods describe instrument-based acquisition of these data.",
+      "source_data_evidence": "The article explicitly refers to figure-specific data and Extended Data figures, and the online content mentions 'source data'; multiple plots are clearly derived/processed (fits, FFTs, second derivatives, difference spectra).",
+      "data_availability_section_relevant": "“Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information ... and statements of data and code availability are available at https://doi.org/10.1038/s41586-023-06868-x.”",
+      "priority_modalities": [
+        "AFM images and height profiles",
+        "heat capacity vs temperature",
+        "resistivity and magnetoresistance vs field/temperature",
+        "Hall resistance",
+        "STM topography and STS spectra",
+        "ARPES intensity maps and EDCs",
+        "XRD structural data",
+        "FFT spectra of quantum oscillations",
+        "DFT/DFT+U band structures and Fermi surfaces"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

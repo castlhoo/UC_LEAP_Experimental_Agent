@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0396",
+  "title": "Single crystal growth, chemical defects, magnetic and transport properties of antiferromagnetic topological insulators (Ge$_{1-δ-x}$Mn$_x$)$_2$Bi$_2$Te$_5$ ($x\\leq 0.47$, $0.11 \\leq δ\\leq 0.20$)",
+  "doi": "",
+  "journal": "arXiv preprint",
+  "year": 2024,
+  "paper_url": "https://arxiv.org/abs/2404.17764v1",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\step1_0396",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear cleaned, figure-ready, or replot-ready dataset files were identified.",
+  "type2_summary": "No clear raw/unprocessed instrument data files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The paper-analysis text contains a mismatch between the stated paper title/abstract and the summary, which reduces confidence. Based on the file evidence alone, the deposit does not appear to contain identifiable dataset files.",
+  "file_classifications": [
+    {
+      "relative_path": "264.T._Rajesh__G._Sasikala__S._Sumathi__S._Suguna_and_R._Jayavel_1.pdf",
+      "filename": "264.T._Rajesh__G._Sasikala__S._Sumathi__S._Suguna_and_R._Jayavel_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The provided paper-analysis text is internally inconsistent: it describes a paper on Ge-Bi-Te antiferromagnetic topological insulators, but the summary mentions Ni3In2S2 and weak anti-localization. No explicit data-availability statement or dataset description indicating raw or figure data was found.",
+      "file_evidence": "Single PDF file from Zenodo, 1.4 MB. No tabular structure, sheet names, or machine-readable columns are available from the inspection report. As a PDF, it is more likely a paper or documentation file than a directly replot-ready dataset.",
+      "reasoning": "Because the only available file is a PDF and there is no evidence of embedded figure-specific tables or raw instrument output, it cannot be classified as Type 1 or Type 2 dataset data with confidence. The safest classification is documentation.",
+      "ambiguity": "High ambiguity: the file may be the paper itself or a supplementary document rather than a dataset file; no content inspection beyond metadata was provided.",
+      "key_columns_or_structure": "Not available from inspection; PDF document only"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports crystal growth and magneto-transport measurements on Ni$_3$In$_2$S$_2$ single crystals, identifying weak anti-localization and topological-insulator-like behavior at low temperature.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper likely contains experimental crystal growth and magneto-transport measurement data, but no accessible dataset or supplementary/source data was identified from the available information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or dataset URLs were provided.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "264.T._Rajesh__G._Sasikala__S._Sumathi__S._Suguna_and_R._Jayavel_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1503428,
+      "size_human": "1.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "264.T._Rajesh__G._Sasikala__S._Sumathi__S._Suguna_and_R._Jayavel_1.pdf"
+    }
+  ]
+}

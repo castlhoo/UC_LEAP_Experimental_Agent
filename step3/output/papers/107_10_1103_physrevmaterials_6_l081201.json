@@ -1,0 +1,847 @@
+{
+  "paper_id": "step1_0120",
+  "title": "Transparent Josephson junctions in higher-order topological insulator <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:msub><mml:mi>WTe</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:math> via Pd diffusion",
+  "doi": "10.1103/physrevmaterials.6.l081201",
+  "journal": "Physical Review Materials",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4293458159",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 27,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevmaterials_6_l081201",
+  "files_inspected": 28,
+  "file_types_found": [
+    "tabular_text",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting value: line 213 column 68 (char 11935)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports experimental evidence that Pd diffuses into WTe2 to form superconducting PdTe_x, enabling highly transparent Josephson junctions in a higher-order topological insulator.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset could be confirmed from the paper metadata provided; data availability is not specified.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were identified from the provided information.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no publisher-hosted files or external dataset URLs were identified from the provided information.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Data_v2_1.zip",
+      "extension": ".zip",
+      "size_bytes": 1172873,
+      "size_human": "1.1 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Data_v2_1.zip"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 381,
+      "size_human": "381.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "All",
+        "data",
+        "used",
+        "in",
+        "the",
+        "publication",
+        "\"Transparent",
+        "Josephson",
+        "Junctions",
+        "in.1",
+        "Higher-Order",
+        "Topological",
+        "Insulator",
+        "WTe2",
+        "via",
+        "Pd",
+        "Diffusion\"",
+        "is",
+        "made",
+        "publicly",
+        "available",
+        "here."
+      ],
+      "column_count": 22,
+      "row_count": 2,
+      "dtypes": {
+        "All": "object",
+        "data": "object",
+        "used": "object",
+        "in": "object",
+        "the": "object",
+        "publication": "object",
+        "\"Transparent": "object",
+        "Josephson": "object",
+        "Junctions": "object",
+        "in.1": "object",
+        "Higher-Order": "object",
+        "Topological": "object",
+        "Insulator": "object",
+        "WTe2": "object",
+        "via": "object",
+        "Pd": "object",
+        "Diffusion\"": "object",
+        "is": "object",
+        "made": "object",
+        "publicly": "object",
+        "available": "object",
+        "here.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/README.txt"
+    },
+    {
+      "filename": "Supp_EDX_horizontal.dat",
+      "extension": ".dat",
+      "size_bytes": 60647,
+      "size_human": "59.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "Pd",
+        "Te",
+        "W"
+      ],
+      "column_count": 4,
+      "row_count": 1401,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "Pd": "object",
+        "Te": "object",
+        "W": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Supplementary Information/S2/e/Supp_EDX_horizontal.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Supplementary Information/S2/e/Supp_EDX_horizontal.dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 411,
+      "size_human": "411.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Here",
+        "you",
+        "can",
+        "find",
+        "the",
+        "description",
+        "of",
+        "the.1",
+        "data."
+      ],
+      "column_count": 9,
+      "row_count": 9,
+      "dtypes": {
+        "Here": "object",
+        "you": "object",
+        "can": "object",
+        "find": "object",
+        "the": "object",
+        "description": "object",
+        "of": "object",
+        "the.1": "object",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Supplementary Information/S2/e/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Supplementary Information/S2/e/README.txt"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 552,
+      "size_human": "552.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "specifies",
+        "information",
+        "about",
+        "the",
+        "data."
+      ],
+      "column_count": 7,
+      "row_count": 18,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "specifies": "object",
+        "information": "object",
+        "about": "object",
+        "the": "object",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/f/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/f/README.txt"
+    },
+    {
+      "filename": "S1_Ic_T_2(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 1691,
+      "size_human": "1.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 46,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/f/S1_Ic_T_2(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/f/S1_Ic_T_2(blue).dat"
+    },
+    {
+      "filename": "S1_Ic_T_1(red).dat",
+      "extension": ".dat",
+      "size_bytes": 1695,
+      "size_human": "1.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 46,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/f/S1_Ic_T_1(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/f/S1_Ic_T_1(red).dat"
+    },
+    {
+      "filename": "V(I)_l_to_r(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 7118,
+      "size_human": "7.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "bias_current",
+        "dc-voltage"
+      ],
+      "column_count": 2,
+      "row_count": 302,
+      "dtypes": {
+        "bias_current": "object",
+        "dc-voltage": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/c/V(I)_l_to_r(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/c/V(I)_l_to_r(blue).dat"
+    },
+    {
+      "filename": "V(I)_r_to_l(red).dat",
+      "extension": ".dat",
+      "size_bytes": 7162,
+      "size_human": "7.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "current_bias",
+        "dc-voltage"
+      ],
+      "column_count": 2,
+      "row_count": 302,
+      "dtypes": {
+        "current_bias": "object",
+        "dc-voltage": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/c/V(I)_r_to_l(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/c/V(I)_r_to_l(red).dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 596,
+      "size_human": "596.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "specifies",
+        "information",
+        "about",
+        "the",
+        "data."
+      ],
+      "column_count": 7,
+      "row_count": 14,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "specifies": "object",
+        "information": "object",
+        "about": "object",
+        "the": "float64",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/c/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/c/README.txt"
+    },
+    {
+      "filename": "Fraunhofer.dat",
+      "extension": ".dat",
+      "size_bytes": 5074801,
+      "size_human": "4.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "B-field",
+        "dc-current_bias",
+        "dV/dI"
+      ],
+      "column_count": 3,
+      "row_count": 194918,
+      "dtypes": {
+        "B-field": "object",
+        "dc-current_bias": "object",
+        "dV/dI": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/d/Fraunhofer.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/d/Fraunhofer.dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 364,
+      "size_human": "364.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "specifies",
+        "information",
+        "about",
+        "the",
+        "data."
+      ],
+      "column_count": 7,
+      "row_count": 11,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "specifies": "object",
+        "information": "object",
+        "about": "object",
+        "the": "object",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/d/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/d/README.txt"
+    },
+    {
+      "filename": "I_c1(red).dat",
+      "extension": ".dat",
+      "size_bytes": 991,
+      "size_human": "991.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_c1(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_c1(red).dat"
+    },
+    {
+      "filename": "Fit.dat",
+      "extension": ".dat",
+      "size_bytes": 7552,
+      "size_human": "7.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Temperature (T)",
+        "Y(T) = 0,501183*(3,87419E-6)*10,82*(1-1,3*exp(-(10,82*3,87419E-6)/(8,617E-5*3,2*x)))/2,011/(9,735E-6)"
+      ],
+      "column_count": 2,
+      "row_count": 201,
+      "dtypes": {
+        "Temperature (T)": "object",
+        "Y(T) = 0,501183*(3,87419E-6)*10,82*(1-1,3*exp(-(10,82*3,87419E-6)/(8,617E-5*3,2*x)))/2,011/(9,735E-6)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/Fit.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/Fit.dat"
+    },
+    {
+      "filename": "I_r1(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 952,
+      "size_human": "952.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_r1(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_r1(blue).dat"
+    },
+    {
+      "filename": "I_r2(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 988,
+      "size_human": "988.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_r2(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_r2(blue).dat"
+    },
+    {
+      "filename": "I_c2(red).dat",
+      "extension": ".dat",
+      "size_bytes": 964,
+      "size_human": "964.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_c2(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_c2(red).dat"
+    },
+    {
+      "filename": "I_c3(red).dat",
+      "extension": ".dat",
+      "size_bytes": 988,
+      "size_human": "988.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_c3(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_c3(red).dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 1275,
+      "size_human": "1.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "specifies",
+        "information",
+        "about",
+        "the",
+        "data."
+      ],
+      "column_count": 7,
+      "row_count": 28,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "specifies": "object",
+        "information": "object",
+        "about": "object",
+        "the": "float64",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/README.txt"
+    },
+    {
+      "filename": "I_r3(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 962,
+      "size_human": "962.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "temperature (T)",
+        "switching current (Ic)",
+        "normalized current (Ic/Ic_max)"
+      ],
+      "column_count": 3,
+      "row_count": 29,
+      "dtypes": {
+        "temperature (T)": "object",
+        "switching current (Ic)": "object",
+        "normalized current (Ic/Ic_max)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/e/I_r3(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/e/I_r3(blue).dat"
+    },
+    {
+      "filename": "R_I_l_to_r(blue).dat",
+      "extension": ".dat",
+      "size_bytes": 5258,
+      "size_human": "5.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "I",
+        "dV/dI"
+      ],
+      "column_count": 2,
+      "row_count": 302,
+      "dtypes": {
+        "I": "object",
+        "dV/dI": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/b/R_I_l_to_r(blue).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/b/R_I_l_to_r(blue).dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 603,
+      "size_human": "603.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "specifies",
+        "information",
+        "about",
+        "the",
+        "data."
+      ],
+      "column_count": 7,
+      "row_count": 14,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "specifies": "object",
+        "information": "object",
+        "about": "object",
+        "the": "float64",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/b/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/b/README.txt"
+    },
+    {
+      "filename": "R_I_r_to_l(red).dat",
+      "extension": ".dat",
+      "size_bytes": 5232,
+      "size_human": "5.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "I",
+        "dV/dI"
+      ],
+      "column_count": 2,
+      "row_count": 302,
+      "dtypes": {
+        "I": "object",
+        "dV/dI": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 4/b/R_I_r_to_l(red).dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 4/b/R_I_r_to_l(red).dat"
+    },
+    {
+      "filename": "EDX_LineCut_Right.dat",
+      "extension": ".dat",
+      "size_bytes": 8058,
+      "size_human": "7.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Distance [µm]\tPd L"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 3/b/EDX_LineCut_Right.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 3/b/EDX_LineCut_Right.dat"
+    },
+    {
+      "filename": "EDX_LineCut_Left.dat",
+      "extension": ".dat",
+      "size_bytes": 8059,
+      "size_human": "7.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Distance [µm]\tPd L"
+      ],
+      "column_count": 1,
+      "encoding": "latin-1",
+      "note": "Non-UTF8 encoding",
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 3/b/EDX_LineCut_Left.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 3/b/EDX_LineCut_Left.dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 221,
+      "size_human": "221.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Here",
+        "you",
+        "can",
+        "find",
+        "the",
+        "description",
+        "of",
+        "the.1",
+        "data."
+      ],
+      "column_count": 9,
+      "row_count": 5,
+      "dtypes": {
+        "Here": "object",
+        "you": "object",
+        "can": "object",
+        "find": "object",
+        "the": "object",
+        "description": "object",
+        "of": "object",
+        "the.1": "object",
+        "data.": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 3/b/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 3/b/README.txt"
+    },
+    {
+      "filename": "EDX_EMPA.dat",
+      "extension": ".dat",
+      "size_bytes": 70954,
+      "size_human": "69.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Unnamed: 0",
+        "HAADF",
+        "Ti",
+        "Te",
+        "Pd",
+        "W",
+        "Nb"
+      ],
+      "column_count": 7,
+      "row_count": 1108,
+      "dtypes": {
+        "Unnamed: 0": "object",
+        "HAADF": "object",
+        "Ti": "object",
+        "Te": "object",
+        "Pd": "object",
+        "W": "object",
+        "Nb": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 2/b/EDX_EMPA.dat",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 2/b/EDX_EMPA.dat"
+    },
+    {
+      "filename": "README.txt",
+      "extension": ".txt",
+      "size_bytes": 616,
+      "size_human": "616.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Here",
+        "you",
+        "can",
+        "find",
+        "the",
+        "description",
+        "of",
+        "the.1",
+        "data."
+      ],
+      "column_count": 9,
+      "row_count": 12,
+      "dtypes": {
+        "Here": "object",
+        "you": "object",
+        "can": "object",
+        "find": "object",
+        "the": "object",
+        "description": "object",
+        "of": "object",
+        "the.1": "object",
+        "data.": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data_v2/Main Text/Fig 2/b/README.txt",
+      "from_zip": "Data_v2_1.zip",
+      "relative_path": "zip_contents/Data_v2/Main Text/Fig 2/b/README.txt"
+    }
+  ]
+}

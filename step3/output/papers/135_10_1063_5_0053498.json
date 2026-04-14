@@ -1,0 +1,1261 @@
+{
+  "paper_id": "step1_0382",
+  "title": "Observation of Planar Hall Effect in Topological Insulator -- Bi$_2$Te$_3$",
+  "doi": "10.1063/5.0053498",
+  "journal": "arXiv preprint",
+  "year": 2021,
+  "paper_url": "https://arxiv.org/abs/2104.05246v2",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 48,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1063_5_0053498",
+  "files_inspected": 50,
+  "file_types_found": [
+    "binary",
+    "tabular_text",
+    "script",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting value: line 182 column 7 (char 11620)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports planar Hall effect (PHE) measurements in epitaxial Bi2Te3 thin films grown by molecular beam epitaxy on Si(111) and Al2O3(0001), with thicknesses of 14 QL and 30 QL. The key finding is that the conventional sin(2φ) PHE is observed, but its amplitude increases with thickness and, in the thicker films, increases with temperature, indicating a significant bulk contribution rather than a purely surface-state origin.",
+    "measurement_types": [
+      "molecular beam epitaxy growth",
+      "X-ray diffraction (XRD)",
+      "Raman spectroscopy",
+      "reflection high-energy electron diffraction (RHEED)",
+      "DC transport resistivity vs temperature",
+      "angle-dependent planar Hall transport",
+      "magnetoresistance / magnetoconductance",
+      "Hall mobility and carrier concentration extraction",
+      "weak antilocalization fitting (Hikami-Larkin-Nagaoka model)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1a",
+        "description": "XRD spectra of Bi2Te3 films grown on Si(111) and Al2O3(0001), showing characteristic Bi2Te3 peaks and confirming crystalline phase/orientation.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 1b",
+        "description": "Resistivity versus temperature for 14 QL Bi2Te3 on Al2O3, showing metallic behavior with a low-temperature upturn.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 1c",
+        "description": "Resistivity versus temperature for 14 QL Bi2Te3 on Si(111), showing metallic behavior with a low-temperature upturn.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 1d",
+        "description": "Mobility versus temperature for BSi14 and BA14, showing higher mobility for the Al2O3-grown film.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2a",
+        "description": "Transverse resistivity ρxy versus in-plane angle φ for BSi14 and BA14 at B = 5 T, with sin(2φ) fit demonstrating conventional planar Hall effect.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2b",
+        "description": "ρxy versus φ for BA14 at different magnetic fields, showing increasing amplitude with field and B^2 scaling.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2c",
+        "description": "ρxy versus φ for BSi14 at different magnetic fields, showing conventional angular dependence and B^2 scaling.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2d",
+        "description": "Planar Hall amplitude versus temperature for BA14 at B = 5 T, showing monotonic decrease with temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3a",
+        "description": "Longitudinal resistivity versus magnetic field for BSi14 in out-of-plane and in-plane configurations, with low-field cusp in the perpendicular case indicating weak antilocalization; inset shows magnetoconductance with HLN fit.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3b",
+        "description": "Longitudinal resistivity versus magnetic field for BA14 in out-of-plane and in-plane configurations, with HLN-fit inset for magnetoconductance.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3c",
+        "description": "HLN fitting parameter α versus temperature for both devices, used to infer the number of coherent channels and dephasing behavior.",
+        "data_type": "processed fit parameter plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 3d",
+        "description": "Phase coherence length lφ versus temperature for both devices, with power-law fit lφ = aT^-γ.",
+        "data_type": "processed fit parameter plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "ρxy versus φ for BSi30, showing conventional planar Hall behavior; inset shows planar Hall amplitude versus field with B^2 fit.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Planar Hall amplitude versus magnetic field comparing BSi14 and BSi30, both following B^2 dependence.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "ρxy versus φ for BSi30 at different temperatures, showing temperature evolution of the planar Hall signal.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Planar Hall amplitude versus temperature for BSi30 and BA30, showing an increase with temperature in the thicker films.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from XRD, Raman spectroscopy, RHEED imaging, DC resistivity/magnetotransport, angle-dependent planar Hall scans, and Hall measurements on Bi2Te3 thin films. Transport data were collected using a Keithley 6221 current source and 2182A nanovoltmeter in a variable-temperature insert cryostat with an Attocube rotation stage, down to 1.5 K.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support the findings of this study are available from the corresponding author upon request.' No open repository, DOI, or public dataset link is given.",
+      "data_provided_types": [
+        "unknown",
+        "processed"
+      ],
+      "raw_data_description": "Raw data are not described as downloadable files or deposited datasets. The paper only describes the experimental instruments and measurement conditions used to collect XRD, Raman, RHEED, and transport data.",
+      "processed_data_description": "Processed data include extracted resistivity curves, mobility versus temperature, planar Hall amplitudes, HLN fit parameters (α and lφ), and summarized values in Table I (mobility, carrier concentration, lattice constant, α, lφ). The paper also discusses fitted B^2, sin(2φ), cos(2φ), and HLN model parameters.",
+      "figure_data_description": "Figure-specific source data are not explicitly stated to be provided. The paper contains plotted experimental curves and fitted lines, but no explicit statement about supplementary source-data files or figure data tables.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned. The paper only notes that supplementary material contains 'data of additional devices, fitting routine and description of calculations used in the manuscript.'",
+      "notes": "The dataset is primarily experimental and figure-driven. The manuscript distinguishes between direct measurements and fitted/extracted quantities, but does not specify file formats or a structured public dataset. Supplementary material is mentioned as containing additional device data and fitting routines, suggesting some processed analysis support, but the availability of raw source files remains unknown."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper reports multiple direct measurements: XRD spectra, Raman spectra, RHEED images, resistivity vs temperature, angle-dependent ρxy scans, and magnetoconductance/magnetoresistance measurements.",
+      "source_data_evidence": "The paper includes fitted quantities and summarized values: sin(2φ) and B^2 fits for PHE, HLN fits for magnetoconductance, extracted α and lφ, and Table I of structural/transport parameters.",
+      "data_availability_section_relevant": "“The data that support the findings of this study are available from the corresponding author upon request.” and “Supplementary Material contains data of additional devices, fitting routine and description of calculations used in the manuscript.”",
+      "priority_modalities": [
+        "XRD diffraction patterns",
+        "Raman spectra",
+        "RHEED images",
+        "resistivity vs temperature curves",
+        "angle-dependent planar Hall transport curves",
+        "magnetoresistance / magnetoconductance curves",
+        "HLN fit parameter tables",
+        "mobility and carrier concentration data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "Data_repository_1.zip",
+      "extension": ".zip",
+      "size_bytes": 28064014,
+      "size_human": "26.8 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Data_repository_1.zip"
+    },
+    {
+      "filename": "Fig._S11_1.zip",
+      "extension": ".zip",
+      "size_bytes": 98646065,
+      "size_human": "94.1 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Fig._S11_1.zip"
+    },
+    {
+      "filename": "figure 1.csv",
+      "extension": ".csv",
+      "size_bytes": 1037570,
+      "size_human": "1013.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "1.011377469890351364e+02",
+        "8.818211835095432605e+01",
+        "7.517522560475703131e+01",
+        "6.216638740094789739e+01",
+        "4.920388007611785497e+01",
+        "3.633478083210219012e+01",
+        "2.360481869859123805e+01",
+        "1.105823366617017456e+01",
+        "-1.262355661770264481e+00",
+        "-1.331607558880940978e+01",
+        "-2.506391174683675160e+01",
+        "-3.646881418831654997e+01",
+        "-4.749579295833922998e+01",
+        "-5.811200399468536659e+01",
+        "-6.828682524322377390e+01",
+        "-7.799192291463965887e+01",
+        "-8.720130784662195822e+01",
+        "-9.589138197308560052e+01",
+        "-1.040409749386578824e+02",
+        "-1.116313709323794114e+02",
+        "-1.186463258492651391e+02",
+        "-1.250720749219210717e+02",
+        "-1.308973309967229000e+02",
+        "-1.361132736600355599e+02",
+        "-1.407135294495095650e+02",
+        "-1.446941434135403881e+02",
+        "-1.480535423084625393e+02",
+        "-1.507924897478900164e+02",
+        "-1.529140336417651724e+02",
+        "-1.544234462840848892e+02"
+      ],
+      "column_count": 200,
+      "row_count": 202,
+      "dtypes": {
+        "1.011377469890351364e+02": "float64",
+        "8.818211835095432605e+01": "float64",
+        "7.517522560475703131e+01": "float64",
+        "6.216638740094789739e+01": "float64",
+        "4.920388007611785497e+01": "float64",
+        "3.633478083210219012e+01": "float64",
+        "2.360481869859123805e+01": "float64",
+        "1.105823366617017456e+01": "float64",
+        "-1.262355661770264481e+00": "float64",
+        "-1.331607558880940978e+01": "float64",
+        "-2.506391174683675160e+01": "float64",
+        "-3.646881418831654997e+01": "float64",
+        "-4.749579295833922998e+01": "float64",
+        "-5.811200399468536659e+01": "float64",
+        "-6.828682524322377390e+01": "float64",
+        "-7.799192291463965887e+01": "float64",
+        "-8.720130784662195822e+01": "float64",
+        "-9.589138197308560052e+01": "float64",
+        "-1.040409749386578824e+02": "float64",
+        "-1.116313709323794114e+02": "float64",
+        "-1.186463258492651391e+02": "float64",
+        "-1.250720749219210717e+02": "float64",
+        "-1.308973309967229000e+02": "float64",
+        "-1.361132736600355599e+02": "float64",
+        "-1.407135294495095650e+02": "float64",
+        "-1.446941434135403881e+02": "float64",
+        "-1.480535423084625393e+02": "float64",
+        "-1.507924897478900164e+02": "float64",
+        "-1.529140336417651724e+02": "float64",
+        "-1.544234462840848892e+02": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 1/figure 1.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 1/figure 1.csv"
+    },
+    {
+      "filename": "hybr_gap_Bi1-x_Sb_x_Te3_paper.py",
+      "extension": ".py",
+      "size_bytes": 10592,
+      "size_human": "10.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 1/hybr_gap_Bi1-x_Sb_x_Te3_paper.py",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 1/hybr_gap_Bi1-x_Sb_x_Te3_paper.py"
+    },
+    {
+      "filename": "figure 2 processed.gwy",
+      "extension": ".gwy",
+      "size_bytes": 6342015,
+      "size_human": "6.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .gwy",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 processed.gwy",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 processed.gwy"
+    },
+    {
+      "filename": "figure 2 raw.spm",
+      "extension": ".spm",
+      "size_bytes": 1613824,
+      "size_human": "1.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .spm",
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 raw.spm",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 raw.spm"
+    },
+    {
+      "filename": "figure 2 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 263,
+      "size_human": "263.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Fig.",
+        "2:"
+      ],
+      "column_count": 2,
+      "row_count": 4,
+      "dtypes": {
+        "Fig.": "object",
+        "2:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 2/figure 2 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 2/figure 2 readme.txt"
+    },
+    {
+      "filename": "figure 3 inset readme.txt",
+      "extension": ".txt",
+      "size_bytes": 502,
+      "size_human": "502.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 9,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/figure 3 inset readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/figure 3 inset readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/14/2022 21:10:46|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/14/2022 21:10:46|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_-10V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 09:45:59|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 09:45:59|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_0V_sr1-dev4-10uAV_up0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 22:18:12|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 22:18:12|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_10V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 12:16:17|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 12:16:17|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_2V_sr1-dev4-10uAV_dn0.csv"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv",
+      "extension": ".csv",
+      "size_bytes": 599108,
+      "size_human": "585.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/15/2022 14:46:52|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1603,
+      "dtypes": {
+        "09/15/2022 14:46:52|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 inset/FvV_BST_1deg_001_Bfieldsweep_4p5K_4V_sr1-dev4-10uAV_up0.csv"
+    },
+    {
+      "filename": "figure 3 main readme.txt",
+      "extension": ".txt",
+      "size_bytes": 541,
+      "size_human": "541.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Processing",
+        "steps",
+        "of",
+        "data",
+        "published",
+        "in",
+        "figure",
+        "3",
+        "(main)"
+      ],
+      "column_count": 9,
+      "row_count": 5,
+      "dtypes": {
+        "Processing": "object",
+        "steps": "object",
+        "of": "object",
+        "data": "object",
+        "published": "object",
+        "in": "object",
+        "figure": "object",
+        "3": "object",
+        "(main)": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 main/figure 3 main readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 main/figure 3 main readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv",
+      "extension": ".csv",
+      "size_bytes": 374703,
+      "size_human": "365.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/14/2022 15:30:02|sggggggggggggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 1003,
+      "dtypes": {
+        "09/14/2022 15:30:02|sggggggggggggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 3/figure 3 main/FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 3/figure 3 main/FvV_BST_1deg_001_TGsweep_4p5K_0T_sr1-dev4-10uAV_up.csv"
+    },
+    {
+      "filename": "figure 4a readme.txt",
+      "extension": ".txt",
+      "size_bytes": 1003,
+      "size_human": "1003.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 14,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4a/figure 4a readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4a/figure 4a readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "extension": ".csv",
+      "size_bytes": 8236793,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "05/12/2023 07:48:27|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40403,
+      "dtypes": {
+        "05/12/2023 07:48:27|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4a/FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4a/FvV_BST_1deg_035_VIsweep_GateBatch_100mK_0T_dev1_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv"
+    },
+    {
+      "filename": "figure 4b readme.txt",
+      "extension": ".txt",
+      "size_bytes": 704,
+      "size_human": "704.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 11,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4b/figure 4b readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4b/figure 4b readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 4/figure 4b/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 4/figure 4b/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "figure 5 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 816,
+      "size_human": "816.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 13,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 5/figure 5 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 5/figure 5 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 5/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 5/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "figure 6 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 383,
+      "size_human": "383.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 8,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 6/figure 6 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 6/figure 6 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv",
+      "extension": ".csv",
+      "size_bytes": 24763200,
+      "size_human": "23.6 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "12/28/2022 16:05:50|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 112121,
+      "dtypes": {
+        "12/28/2022 16:05:50|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 6/FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 6/FvV_BST_1deg_026_IVsweep_GateBatch_100mK_0T_kR1-dev8-10nAV_up.csv"
+    },
+    {
+      "filename": "figure 7a readme.txt",
+      "extension": ".txt",
+      "size_bytes": 309,
+      "size_human": "309.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7a/figure 7a readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7a/figure 7a readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv",
+      "extension": ".csv",
+      "size_bytes": 63230546,
+      "size_human": "60.3 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "12/03/2022 18:28:11|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 286288,
+      "dtypes": {
+        "12/03/2022 18:28:11|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7a/FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7a/FvV_BST_1deg_005_VIsweep_BfieldBatch_zoomHR_100mK_-3V_kR1-dev4HB-10mVV-10MVA_up.csv"
+    },
+    {
+      "filename": "figure 7b readme.txt",
+      "extension": ".txt",
+      "size_bytes": 311,
+      "size_human": "311.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 8,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7b/figure 7b readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7b/figure 7b readme.txt"
+    },
+    {
+      "filename": "FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "extension": ".csv",
+      "size_bytes": 35558289,
+      "size_human": "33.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "05/17/2023 15:18:22|ssggggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 161003,
+      "dtypes": {
+        "05/17/2023 15:18:22|ssggggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7b/FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7b/FvV_BST_1deg_035_VIsweep_BfieldBatch_TG0V_0.1K_S3b-10mVV-14_M1b-10MVA-11-kR1_M2b-10-12-hp2_up.csv"
+    },
+    {
+      "filename": "figure 7c readme.txt",
+      "extension": ".txt",
+      "size_bytes": 302,
+      "size_human": "302.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "steps:"
+      ],
+      "column_count": 1,
+      "row_count": 7,
+      "dtypes": {
+        "steps:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7c/figure 7c readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7c/figure 7c readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv",
+      "extension": ".csv",
+      "size_bytes": 7586913,
+      "size_human": "7.2 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "08/30/2024 17:04:33|ssggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40574,
+      "dtypes": {
+        "08/30/2024 17:04:33|ssggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 7/figure 7c/FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 7/figure 7c/FvV_BST_079_dev7_BfieldIVmap_base_1VTG_S4c-2-gnd-1VV-range1u_M1b-4-gnd-1MVA_M2m-3-5-1x_dn_2.csv"
+    },
+    {
+      "filename": "figure 8 readme.txt",
+      "extension": ".txt",
+      "size_bytes": 357,
+      "size_human": "357.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "VTG",
+        "(V):",
+        "Top",
+        "Gate",
+        "Voltage"
+      ],
+      "column_count": 5,
+      "row_count": 7,
+      "dtypes": {
+        "VTG": "object",
+        "(V):": "object",
+        "Top": "object",
+        "Gate": "object",
+        "Voltage": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/figure 8 readme.txt",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/figure 8 readme.txt"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8321102,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/10/2024 19:11:14|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/10/2024 19:11:14|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100mK_8T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "extension": ".csv",
+      "size_bytes": 8322890,
+      "size_human": "7.9 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "09/05/2024 21:30:12|ssgggggggggg"
+      ],
+      "column_count": 1,
+      "row_count": 40826,
+      "dtypes": {
+        "09/05/2024 21:30:12|ssgggggggggg": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv",
+      "from_zip": "Data_repository_1.zip",
+      "relative_path": "zip_contents/Data repository/figure 8/FvV_BST_079_dev8_GateIVmap_100p0mK_0T_S4c-18-gnd-1VV-range1u_M1b-9-gnd-1MVA_M2m-11-10-1x_.csv"
+    },
+    {
+      "filename": "3439-230113225250-Hall Trace 0T to -1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1873267,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4727,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3439-230113225250-Hall Trace 0T to -1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3439-230113225250-Hall Trace 0T to -1T 0.005As.txt"
+    },
+    {
+      "filename": "3440-230113232447-Hall Trace -1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1871294,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4723,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3440-230113232447-Hall Trace -1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3440-230113232447-Hall Trace -1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3442-230113235856-Hall Trace 0T to +1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1858629,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4729,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3442-230113235856-Hall Trace 0T to +1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3442-230113235856-Hall Trace 0T to +1T 0.005As.txt"
+    },
+    {
+      "filename": "3443-230114003054-Hall Trace +1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1853229,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4726,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3443-230114003054-Hall Trace +1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3443-230114003054-Hall Trace +1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3456-230114022711-Hall Trace 0T to -1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1863008,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4713,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3456-230114022711-Hall Trace 0T to -1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3456-230114022711-Hall Trace 0T to -1T 0.005As.txt"
+    },
+    {
+      "filename": "3457-230114025908-Hall Trace -1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1860239,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4707,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3457-230114025908-Hall Trace -1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3457-230114025908-Hall Trace -1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3459-230114033317-Hall Trace 0T to +1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1844844,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4706,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3459-230114033317-Hall Trace 0T to +1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3459-230114033317-Hall Trace 0T to +1T 0.005As.txt"
+    },
+    {
+      "filename": "3460-230114040514-Hall Trace +1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1841849,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4708,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3460-230114040514-Hall Trace +1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3460-230114040514-Hall Trace +1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3473-230114055605-Hall Trace 0T to -1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1861796,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4710,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3473-230114055605-Hall Trace 0T to -1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3473-230114055605-Hall Trace 0T to -1T 0.005As.txt"
+    },
+    {
+      "filename": "3474-230114062803-Hall Trace -1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1861396,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4710,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3474-230114062803-Hall Trace -1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3474-230114062803-Hall Trace -1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3476-230114070211-Hall Trace 0T to +1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1846034,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4709,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3476-230114070211-Hall Trace 0T to +1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3476-230114070211-Hall Trace 0T to +1T 0.005As.txt"
+    },
+    {
+      "filename": "3477-230114073409-Hall Trace +1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1841849,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4708,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3477-230114073409-Hall Trace +1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3477-230114073409-Hall Trace +1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3490-230114092458-Hall Trace 0T to -1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1861780,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4710,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3490-230114092458-Hall Trace 0T to -1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3490-230114092458-Hall Trace 0T to -1T 0.005As.txt"
+    },
+    {
+      "filename": "3491-230114095655-Hall Trace -1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1862501,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4702,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3491-230114095655-Hall Trace -1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3491-230114095655-Hall Trace -1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3493-230114103104-Hall Trace 0T to +1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1850709,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4709,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3493-230114103104-Hall Trace 0T to +1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3493-230114103104-Hall Trace 0T to +1T 0.005As.txt"
+    },
+    {
+      "filename": "3494-230114110302-Hall Trace +1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1846942,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4709,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3494-230114110302-Hall Trace +1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3494-230114110302-Hall Trace +1T to 0T 0.005As.txt"
+    },
+    {
+      "filename": "3507-230114125353-Hall Trace 0T to -1T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1862584,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4710,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3507-230114125353-Hall Trace 0T to -1T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3507-230114125353-Hall Trace 0T to -1T 0.005As.txt"
+    },
+    {
+      "filename": "3508-230114132551-Hall Trace -1T to 0T 0.005As.txt",
+      "extension": ".txt",
+      "size_bytes": 1853262,
+      "size_human": "1.8 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "Notes:"
+      ],
+      "column_count": 1,
+      "row_count": 4690,
+      "dtypes": {
+        "Notes:": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Fig. S11/Temp. dep of Cr,V-80/3508-230114132551-Hall Trace -1T to 0T 0.005As.txt",
+      "from_zip": "Fig._S11_1.zip",
+      "relative_path": "zip_contents/Fig. S11/Temp. dep of Cr,V-80/3508-230114132551-Hall Trace -1T to 0T 0.005As.txt"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0510",
+  "title": "Two-Band Model and Point Contact Spectroscopy of Nodal-Line Semimetal CaAg<sub>0.9</sub>Pd<sub>0.1</sub>P",
+  "doi": "10.7566/jpscp.38.011028",
+  "journal": "Proceedings of the 29th International Conference on Low Temperature Physics (LT29)",
+  "year": 2023,
+  "paper_url": "https://doi.org/10.7566/jpscp.38.011028",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_7566_jpscp_38_011028",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready, replot-ready dataset files were identified.",
+  "type2_summary": "No raw/unprocessed measurement files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper evidence indicates no downloadable source/raw data were identified. The single provided file is a PDF document, so it is not classifiable as Type 1 or Type 2 based on the available evidence.",
+  "file_classifications": [
+    {
+      "relative_path": "SRF_thin_film_conference_Tunneling_spectroscopy_1.pdf",
+      "filename": "SRF_thin_film_conference_Tunneling_spectroscopy_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis found no data availability statement, no repository links, and no indication that downloadable source or raw data were provided. The paper is a conference proceeding focused on analysis and spectroscopy, not on releasing a data package.",
+      "file_evidence": "The only file provided is a PDF, which is typically a document rather than a data table or instrument output. No internal structure, headers, or tabular variables were available from the inspection report.",
+      "reasoning": "Because the file is a PDF and there is no evidence that it contains figure-ready tables or raw measurement data, it is best classified as documentation rather than Type 1 or Type 2 data. The paper evidence also does not support a data deposit.",
+      "ambiguity": "The PDF could potentially contain figures or embedded supplementary material, but without extracted content or metadata, this cannot be verified. Conservative classification is documentation.",
+      "key_columns_or_structure": "Not applicable; no tabular structure identified"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper studies the nodal-line semimetal CaAg0.9Pd0.1P using a two-band model and point-contact spectroscopy to analyze its electronic structure.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No explicit dataset or source data is provided in the available paper metadata; the paper appears to present analysis of point-contact spectroscopy and a two-band model without any accessible accompanying data files.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files, repository links, or supplementary/source data were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files, repository links, or supplementary/source data were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "SRF_thin_film_conference_Tunneling_spectroscopy_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1139793,
+      "size_human": "1.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "SRF_thin_film_conference_Tunneling_spectroscopy_1.pdf"
+    }
+  ]
+}

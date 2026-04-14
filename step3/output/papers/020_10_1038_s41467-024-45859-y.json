@@ -1,0 +1,281 @@
+{
+  "paper_id": "step1_0079",
+  "title": "Phonon promoted charge density wave in topological kagome metal ScV6Sn6",
+  "doi": "10.1038/s41467-024-45859-y",
+  "journal": "Nature Communications",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4392111350",
+  "priority_score": 7.3,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-024-45859-y",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Both files are Nature Communications source-data PDFs from the paper's public data deposit. The paper explicitly mentions source data availability, including a Fig. 1b .xls file and other supporting data, which strongly suggests these PDFs are cleaned, figure-oriented supplementary materials rather than raw instrument outputs.",
+  "type2_summary": "No clear raw/unprocessed instrument files were identified among the provided files.",
+  "type1_files": [
+    "41467_2024_45859_MOESM1_ESM_1.pdf",
+    "41467_2024_45859_MOESM2_ESM_1.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The inspection reports do not expose internal PDF contents, so classification is based on paper evidence plus repository/source-data context. If the PDFs contain only documentation or embedded figure panels, Type 1 remains appropriate; if they contain raw scans or instrument exports, that would require reclassification, but there is no evidence for that here.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2024_45859_MOESM1_ESM_1.pdf",
+      "filename": "41467_2024_45859_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data are available in the Materials Cloud Archive and specifically mentions a .xls file for Fig. 1b and other relevant data. The publication also presents figure-based experimental results (e.g., transport curves, Raman spectra, ARPES maps) that are typically deposited as replot-ready source data.",
+      "file_evidence": "PDF source-data supplement from Nature Communications, 6.0 MB. The file is part of the 'nature_source_data' deposit and is sized like a figure/source-data compilation rather than a raw instrument dump. No evidence of proprietary raw instrument format or scan-level naming is present.",
+      "reasoning": "Given the explicit source-data context from the paper and the repository source, this is most consistent with cleaned, figure-oriented supplementary data rather than raw instrument output. The file is likely organized for direct inspection or replotting with minimal processing.",
+      "ambiguity": "The PDF content itself was not inspected here, so exact internal structure is unknown; classification relies on repository context and paper evidence.",
+      "key_columns_or_structure": "Not inspectable from filename alone; likely figure/source-data documentation or embedded figure data"
+    },
+    {
+      "relative_path": "41467_2024_45859_MOESM2_ESM_1.pdf",
+      "filename": "41467_2024_45859_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly indicates that source data and supporting data are available in the public archive, and the study contains many figure-based experimental datasets (STM, ARPES, Raman, transport, XPS) that are commonly deposited as cleaned source data for replotting.",
+      "file_evidence": "PDF source-data supplement from Nature Communications, 8.2 MB, in the 'nature_source_data' collection. The size and repository context are consistent with supplementary source-data material rather than raw binary instrument files.",
+      "reasoning": "In the absence of evidence for raw proprietary measurement output, and given the explicit source-data deposit context, this file is best classified as cleaned/source-data material suitable for replotting or documentation of figure data.",
+      "ambiguity": "The exact contents are not visible from the inspection report, so there is some uncertainty; however, the conservative interpretation of a Nature source-data PDF is Type 1.",
+      "key_columns_or_structure": "Not inspectable from filename alone; likely figure/source-data documentation or embedded figure data"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "ScV6Sn6 is a bilayer kagome metal with a 3D charge-density-wave (CDW) transition near 92 K (also studied in an 80 K sample), and the paper combines STM, ARPES, Raman scattering, transport, and DFT to probe its origin. The main conclusion is that the CDW is likely promoted by lattice degrees of freedom and strong electron-phonon coupling, while ARPES also identifies topological surface states and van Hove singularities near the Fermi level that may contribute to the in-plane CDW wave vector.",
+    "measurement_types": [
+      "STM topography",
+      "transport resistivity",
+      "specific heat capacity",
+      "ARPES (FS maps, band dispersions, photon-energy and polarization dependent)",
+      "Raman scattering",
+      "DFT band structure calculations",
+      "DFT phonon calculations",
+      "XPS core-level spectroscopy"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structure of ScV6Sn6 in the normal state, showing the layered unit cell and kagome lattice topology.",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b(i)",
+        "description": "Temperature-dependent in-plane resistivity showing an anomaly near 92 K consistent with the CDW transition.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b(ii)",
+        "description": "Temperature-dependent specific heat capacity showing a transition near 92 K.",
+        "data_type": "transport/thermodynamic curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "STM topograph of the Sn2 termination in the normal state, with corresponding Fourier transform showing only Bragg peaks.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "STM topograph of the Sn2 termination in the CDW phase, showing in-plane sqrt(3)x sqrt(3) R30° modulation and its Fourier transform with CDW peaks.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Schematic of bulk and surface Brillouin zones with high-symmetry points.",
+        "data_type": "schematic / reciprocal-space diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Schematic of in-plane Brillouin-zone folding from the pristine to the CDW-reconstructed zone.",
+        "data_type": "schematic / reciprocal-space diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of the kagome surface termination used for ARPES interpretation.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Sn 4d XPS core-level spectrum used to identify the surface termination.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Fermi-surface map on the kagome termination measured with circularly polarized light.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d-f",
+        "description": "ARPES band dispersions along Gamma-M and Gamma-K on the kagome termination, including photon-energy and polarization dependence.",
+        "data_type": "ARPES spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2g-l",
+        "description": "Same termination-identification and ARPES measurements as Fig. 2a-f, but on the ScSn3/2 termination.",
+        "data_type": "XPS spectrum / ARPES spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Zoomed Fermi-surface map on the ScSn3/2 termination.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "ARPES dispersion along Gamma-M highlighting topological Dirac surface states.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Stacked constant-energy maps around the K point showing Dirac-cone features.",
+        "data_type": "ARPES intensity maps",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Second-derivative ARPES dispersion along Gamma-K-M-Gamma showing Dirac cones and van Hove singularities.",
+        "data_type": "processed ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "DFT-calculated band structure along Gamma-K-M-Gamma with identified Dirac cones and van Hove singularities.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3f-i",
+        "description": "Series of momentum cuts across K-M and perpendicular to Gamma-K used to establish the saddle-point nature of VHS1, VHS2, and VHS3.",
+        "data_type": "ARPES cut spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3j",
+        "description": "Schematic of kagome Fermi surface nesting at VHS filling, comparing 2x2 CDW nesting vectors and sqrt(3)x sqrt(3) CDW nesting vectors.",
+        "data_type": "schematic / FS nesting diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3k-l",
+        "description": "Temperature-dependent ARPES band dispersions below and above TCDW showing negligible reconstruction across the CDW transition.",
+        "data_type": "temperature-dependent ARPES spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Temperature-dependent Raman colormap from 15 K to 190 K showing phonon modes and the broad two-phonon feature.",
+        "data_type": "Raman map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Representative Raman spectra below and above TCDW, showing E2g, A1g, the two-phonon mode, and emergent CDW modes.",
+        "data_type": "Raman spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Calculated Raman-active mode frequencies near Gamma.",
+        "data_type": "theoretical phonon mode plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4d-e",
+        "description": "Temperature evolution of the A3 Raman mode frequency and linewidth, suggesting possible amplitude-mode behavior.",
+        "data_type": "Raman peak fitting results",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4f",
+        "description": "DFT phonon dispersion of pristine ScV6Sn6 along high-symmetry paths and K-H-K, including unstable modes at H and L but not at (1/3,1/3,1/3).",
+        "data_type": "phonon dispersion plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4g",
+        "description": "Reference distortion pattern of the trihexagonal 2x2x1 CDW in CsV3Sb5.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4h",
+        "description": "Schematic distortion pattern for the sqrt(3)x sqrt(3)x3 CDW in ScV6Sn6, emphasizing Sc and Sn displacements.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from STM topography scans, ARPES spectra and Fermi-surface maps, Raman spectra (Stokes and anti-Stokes), resistivity and heat-capacity measurements, and XPS core-level spectra. The methods specify instrument settings for ARPES, Raman, and STM, but the paper text does not provide raw file formats or file names beyond a source-data spreadsheet for Fig. 1b and a public repository.",
+    "dataset_characterization": {
+      "data_availability_statement": "The authors state that all data needed to evaluate the conclusions are present in the paper and/or Supplementary Information, and that all other supporting data are available from the corresponding authors upon request. They also state that source data, including the .xls file for Fig. 1b and other relevant data, are available at the MARVEL Materials Cloud Archive under the same title of the paper.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw measurements are implied for STM, ARPES, Raman, resistivity, specific heat, and XPS, but the paper does not describe raw file formats, naming conventions, or a complete raw-data archive. The methods only describe how the measurements were acquired.",
+      "processed_data_description": "Processed data explicitly include the Fig. 1b .xls source data file and figure-ready curves/maps/spectra shown in the paper. The ARPES second-derivative plots, Fourier transforms of STM topographs, and Raman peak fits are processed representations derived from raw measurements.",
+      "figure_data_description": "Yes. The paper explicitly mentions source data for Fig. 1b and other relevant data in the public repository. The text implies figure-ready data for the main figures, but does not enumerate per-figure files or a complete figure-data manifest.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the paper text.",
+      "notes": "The dataset is a mixed experimental/theoretical package. Experimental data span multiple modalities and samples with two different CDW transition temperatures (92 K and 80 K). The paper distinguishes raw measurements from processed visualizations such as Fourier transforms, second-derivative ARPES, and fitted Raman peak parameters, but only explicitly confirms availability of source data rather than full raw datasets. Theoretical outputs include DFT band structures, surface-state calculations, and phonon dispersions used for comparison with experiment."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The study reports direct experimental measurements from STM, ARPES, Raman, resistivity, specific heat, and XPS, and the data availability statement says supporting data are available from the authors and that all data needed are present in the paper/Supplementary Information.",
+      "source_data_evidence": "The data availability section explicitly mentions 'Source data (the.xls file for Fig. 1b and other relevant data) are available at a public repository (MARVEL Materials Cloud Archive)'.",
+      "data_availability_section_relevant": "All data needed to evaluate the conclusions in the paper are present in the paper and/or the Supplementary Information. Source data (the.xls file for Fig. 1b and other relevant data) are available at a public repository (MARVEL Materials Cloud Archive) with the same title of this paper.",
+      "priority_modalities": [
+        "STM topography files",
+        "ARPES spectra and intensity maps",
+        "Raman spectra",
+        "resistivity and heat-capacity tables/spreadsheets",
+        "XPS core-level spectra",
+        "DFT band-structure and phonon-dispersion outputs"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2024_45859_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 6243253,
+      "size_human": "6.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45859_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2024_45859_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 8577663,
+      "size_human": "8.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2024_45859_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

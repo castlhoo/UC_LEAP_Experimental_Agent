@@ -1,0 +1,798 @@
+{
+  "paper_id": "step1_0312",
+  "title": "Pauli Blockade of Tunable Two-Electron Spin and Valley States in Graphene Quantum Dots",
+  "doi": "10.1103/physrevlett.128.067702",
+  "journal": "Physical Review Letters",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W3170793807",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 48,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevlett_128_067702",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "numpy",
+    "pdf",
+    "script",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 197 column 25 (char 12462)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper reports experimental observation and control of Pauli blockade in coupled bilayer graphene double quantum dots, demonstrating tunable spin and valley selection rules in two-electron states.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental measurements on coupled bilayer graphene double quantum dots, but no downloadable dataset or source data location is indicated in the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no publisher-hosted files or external URLs were identified.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Spin_½_and_Nonrelativistic_Quantum_Mechanics_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 70309,
+      "size_human": "68.7 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Spin_½_and_Nonrelativistic_Quantum_Mechanics_1.pdf"
+    },
+    {
+      "filename": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "extension": ".zip",
+      "size_bytes": 14779490,
+      "size_human": "14.1 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip"
+    },
+    {
+      "filename": "() - README.txt",
+      "extension": ".txt",
+      "size_bytes": 211,
+      "size_human": "211.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "The",
+        "following",
+        "versions",
+        "of",
+        "Pyhton",
+        "and",
+        "the",
+        "packages",
+        "have",
+        "been",
+        "used:"
+      ],
+      "column_count": 11,
+      "row_count": 6,
+      "dtypes": {
+        "The": "object",
+        "following": "object",
+        "versions": "object",
+        "of": "object",
+        "Pyhton": "object",
+        "and": "object",
+        "the": "object",
+        "packages": "object",
+        "have": "float64",
+        "been": "float64",
+        "used:": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "() - README.txt",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/() - README.txt"
+    },
+    {
+      "filename": "background_corrections.py",
+      "extension": ".py",
+      "size_bytes": 4027,
+      "size_human": "3.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/background_corrections.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/background_corrections.py"
+    },
+    {
+      "filename": "CutRange.py",
+      "extension": ".py",
+      "size_bytes": 658,
+      "size_human": "658.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/CutRange.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/CutRange.py"
+    },
+    {
+      "filename": "detuning_1102_-1mV.pkl",
+      "extension": ".pkl",
+      "size_bytes": 288517,
+      "size_human": "281.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/detuning_1102_-1mV.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/detuning_1102_-1mV.pkl"
+    },
+    {
+      "filename": "detuning_1102_1mV.pkl",
+      "extension": ".pkl",
+      "size_bytes": 356053,
+      "size_human": "347.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/detuning_1102_1mV.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/detuning_1102_1mV.pkl"
+    },
+    {
+      "filename": "detuning_1120_-1mV.pkl",
+      "extension": ".pkl",
+      "size_bytes": 809455,
+      "size_human": "790.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/detuning_1120_-1mV.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/detuning_1120_-1mV.pkl"
+    },
+    {
+      "filename": "detuning_1120_1mV.pkl",
+      "extension": ".pkl",
+      "size_bytes": 727047,
+      "size_human": "710.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/detuning_1120_1mV.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/detuning_1120_1mV.pkl"
+    },
+    {
+      "filename": "Detuning_cut_negative_bias_filter.pdf",
+      "extension": ".pdf",
+      "size_bytes": 469190,
+      "size_human": "458.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Detuning_cut_negative_bias_filter.pdf",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Detuning_cut_negative_bias_filter.pdf"
+    },
+    {
+      "filename": "Detuning_cut_positive_bias_filter.pdf",
+      "extension": ".pdf",
+      "size_bytes": 471181,
+      "size_human": "460.1 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Detuning_cut_positive_bias_filter.pdf",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Detuning_cut_positive_bias_filter.pdf"
+    },
+    {
+      "filename": "Fig10a_(11)_(02)_1mV_DetuningCut.py",
+      "extension": ".py",
+      "size_bytes": 1145,
+      "size_human": "1.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Fig10a_(11)_(02)_1mV_DetuningCut.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Fig10a_(11)_(02)_1mV_DetuningCut.py"
+    },
+    {
+      "filename": "Fig10c_(11)_(02)_-1mV_DetuningCut.py",
+      "extension": ".py",
+      "size_bytes": 949,
+      "size_human": "949.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Fig10c_(11)_(02)_-1mV_DetuningCut.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Fig10c_(11)_(02)_-1mV_DetuningCut.py"
+    },
+    {
+      "filename": "Fig4a_(11)_(20)_-1mV_DetuningCut.py",
+      "extension": ".py",
+      "size_bytes": 948,
+      "size_human": "948.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Fig4a_(11)_(20)_-1mV_DetuningCut.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Fig4a_(11)_(20)_-1mV_DetuningCut.py"
+    },
+    {
+      "filename": "Fig5b_(11)_(20)_1mV_DetuningCut.py",
+      "extension": ".py",
+      "size_bytes": 939,
+      "size_human": "939.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/Fig5b_(11)_(20)_1mV_DetuningCut.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/Fig5b_(11)_(20)_1mV_DetuningCut.py"
+    },
+    {
+      "filename": "background_corrections.cpython-38.pyc",
+      "extension": ".pyc",
+      "size_bytes": 3387,
+      "size_human": "3.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pyc",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/__pycache__/background_corrections.cpython-38.pyc",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/__pycache__/background_corrections.cpython-38.pyc"
+    },
+    {
+      "filename": "CutRange.cpython-38.pyc",
+      "extension": ".pyc",
+      "size_bytes": 724,
+      "size_human": "724.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .pyc",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutsData/__pycache__/CutRange.cpython-38.pyc",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutsData/__pycache__/CutRange.cpython-38.pyc"
+    },
+    {
+      "filename": "Fig10b_DetuningSimulationDataSet1102_1mV.py",
+      "extension": ".py",
+      "size_bytes": 26901,
+      "size_human": "26.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/Fig10b_DetuningSimulationDataSet1102_1mV.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/Fig10b_DetuningSimulationDataSet1102_1mV.py"
+    },
+    {
+      "filename": "Fig10d_DetuningSimulationDataSet1102_-1mV.py",
+      "extension": ".py",
+      "size_bytes": 30814,
+      "size_human": "30.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/Fig10d_DetuningSimulationDataSet1102_-1mV.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/Fig10d_DetuningSimulationDataSet1102_-1mV.py"
+    },
+    {
+      "filename": "Fig4b_DetuningSimulationDataSet1120_-1mV.py",
+      "extension": ".py",
+      "size_bytes": 30377,
+      "size_human": "29.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/Fig4b_DetuningSimulationDataSet1120_-1mV.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/Fig4b_DetuningSimulationDataSet1120_-1mV.py"
+    },
+    {
+      "filename": "Fig5c_DetuningSimulationDataSet1120_1mV.py",
+      "extension": ".py",
+      "size_bytes": 32089,
+      "size_human": "31.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/Fig5c_DetuningSimulationDataSet1120_1mV.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/Fig5c_DetuningSimulationDataSet1120_1mV.py"
+    },
+    {
+      "filename": "g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476.pkl",
+      "extension": ".pkl",
+      "size_bytes": 4008351,
+      "size_human": "3.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476.pkl"
+    },
+    {
+      "filename": "g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl",
+      "extension": ".pkl",
+      "size_bytes": 4008351,
+      "size_human": "3.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=18_DO=0.375_d1=0_d2=0.2_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl"
+    },
+    {
+      "filename": "g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476.pkl",
+      "extension": ".pkl",
+      "size_bytes": 4008351,
+      "size_human": "3.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476.pkl"
+    },
+    {
+      "filename": "g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl",
+      "extension": ".pkl",
+      "size_bytes": 2566751,
+      "size_human": "2.4 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/DetuningCutSimulations/g11=15_g12=15_gv_s=18_gv_a=19_DO=0.36_d1=0_d2=0.34_Gd=0.006_VFlip = 0.7071067811865476_bias=-1.pkl"
+    },
+    {
+      "filename": "overview1.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1008302,
+      "size_human": "984.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig1/overview1.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig1/overview1.pkl"
+    },
+    {
+      "filename": "overview2.pkl",
+      "extension": ".pkl",
+      "size_bytes": 1008302,
+      "size_human": "984.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pkl",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig1/overview2.pkl",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig1/overview2.pkl"
+    },
+    {
+      "filename": "overview_for_zenodo.py",
+      "extension": ".py",
+      "size_bytes": 1440,
+      "size_human": "1.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig1/overview_for_zenodo.py",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig1/overview_for_zenodo.py"
+    },
+    {
+      "filename": "background_corrections.cpython-39.pyc",
+      "extension": ".pyc",
+      "size_bytes": 3982,
+      "size_human": "3.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .pyc",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig1/__pycache__/background_corrections.cpython-39.pyc",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig1/__pycache__/background_corrections.cpython-39.pyc"
+    },
+    {
+      "filename": "0mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/0mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/0mT-.npy"
+    },
+    {
+      "filename": "0mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/0mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/0mT.npy"
+    },
+    {
+      "filename": "100mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/100mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/100mT-.npy"
+    },
+    {
+      "filename": "100mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/100mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/100mT.npy"
+    },
+    {
+      "filename": "150mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/150mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/150mT-.npy"
+    },
+    {
+      "filename": "150mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/150mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/150mT.npy"
+    },
+    {
+      "filename": "200mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/200mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/200mT-.npy"
+    },
+    {
+      "filename": "200mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/200mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/200mT.npy"
+    },
+    {
+      "filename": "250mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/250mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/250mT-.npy"
+    },
+    {
+      "filename": "250mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/250mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/250mT.npy"
+    },
+    {
+      "filename": "300mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/300mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/300mT-.npy"
+    },
+    {
+      "filename": "300mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/300mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/300mT.npy"
+    },
+    {
+      "filename": "350mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/350mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/350mT-.npy"
+    },
+    {
+      "filename": "350mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/350mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/350mT.npy"
+    },
+    {
+      "filename": "400mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/400mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/400mT-.npy"
+    },
+    {
+      "filename": "400mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/400mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/400mT.npy"
+    },
+    {
+      "filename": "450mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/450mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/450mT-.npy"
+    },
+    {
+      "filename": "450mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/450mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/450mT.npy"
+    },
+    {
+      "filename": "500mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/500mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/500mT-.npy"
+    },
+    {
+      "filename": "500mT.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/500mT.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/500mT.npy"
+    },
+    {
+      "filename": "50mT-.npy",
+      "extension": ".npy",
+      "size_bytes": 716984,
+      "size_human": "700.2 KB",
+      "file_type": "numpy",
+      "shape": [
+        3,
+        238,
+        251
+      ],
+      "dtype": "float32",
+      "download_source": "zip_extracted",
+      "archive_path": "Fig2_Fig6789/Messdaten_fuer_samuels_plot/50mT-.npy",
+      "from_zip": "Role_of_antisymmetric_orbitals_and_electron-electron_interactions_on_the_two-particle_1.zip",
+      "relative_path": "zip_contents/Fig2_Fig6789/Messdaten_fuer_samuels_plot/50mT-.npy"
+    }
+  ]
+}

@@ -1,0 +1,2172 @@
+{
+  "paper_id": "step1_0188",
+  "title": "Electrical spectroscopy of defect states and their hybridization in monolayer MoS2",
+  "doi": "10.1038/s41467-022-35651-1",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4313488910",
+  "priority_score": 7.5,
+  "dataset_status": "verified",
+  "files_downloaded": 4,
+  "files_extracted": 42,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-35651-1",
+  "files_inspected": 46,
+  "file_types_found": [
+    "tabular_text",
+    "excel",
+    "pdf",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 185 column 19 (char 11454)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies monolayer MOCVD-grown MoS2 on sapphire using a CMOS-compatible MIS capacitor geometry and adapts deep-level transient spectroscopy (DLTS) to a 2D semiconductor. The authors identify two electrically active defect signatures: a deeper level attributed mainly to isolated sulfur vacancies and a shallower level attributed to hybridized neighboring sulfur-vacancy pairs, supported by aberration-corrected STEM and DFT calculations. They further show that defect hybridization broadens the defect DOS and can materially affect transistor off-current and subthreshold behavior.",
+    "measurement_types": [
+      "capacitance-voltage (C-V) characterization",
+      "Fourier-transform deep-level transient spectroscopy (FT-DLTS)",
+      "aberration-corrected annular dark-field scanning transmission electron microscopy (ADF-STEM)",
+      "Raman spectroscopy",
+      "density functional theory (DFT) calculations",
+      "Ar plasma treatment followed by electrical spectroscopy",
+      "control metal-insulator-metal (MIM) capacitance measurements",
+      "transferred-contact electrical measurements"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of the MIS capacitor device stack used for C-V and DLTS on monolayer MoS2 on sapphire with bottom gate, HfO2 dielectric, and top Au contact.",
+        "data_type": "schematic",
+        "likely_source": "theoretical/illustrative"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Temperature-dependent C-V curve showing capacitance versus gate voltage, oxide capacitance saturation, and n-type behavior with threshold voltage extraction.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Band-diagram and pulse-timing schematic explaining the adapted DLTS measurement in a monolayer MIS geometry, including reference/pulse states and capacitance transient readout.",
+        "data_type": "schematic",
+        "likely_source": "theoretical/illustrative"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Normalized FT-DLTS temperature scans for multiple correlation functions, showing two peaks labeled T1 and T2.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Arrhenius plots used to extract activation energies and capture cross sections for the two trap states.",
+        "data_type": "derived plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Schematic band-gap placement and relative concentrations of the two detected trap states.",
+        "data_type": "schematic",
+        "likely_source": "interpretive/derived"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic showing how pulse width changes trap filling in the DLTS protocol.",
+        "data_type": "schematic",
+        "likely_source": "theoretical/illustrative"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "DLTS temperature sweeps at different pulse widths, showing peak amplitude changes and peak shifts.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Peak amplitude versus pulse width for T1 and T2.",
+        "data_type": "derived plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Extracted trap energy versus pulse width, used to estimate linewidth broadening.",
+        "data_type": "derived plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Conceptual density-of-states diagram illustrating how partial versus full trap filling shifts the measured activation energy and defines linewidth.",
+        "data_type": "schematic",
+        "likely_source": "theoretical/illustrative"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "ADF-STEM image of monolayer MoS2 showing atomic lattice and sulfur vacancy defects.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Zoomed STEM image highlighting single sulfur vacancies, double sulfur vacancies, and neighboring vacancy pairs.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Histogram and Gaussian fits of defect concentrations measured from 21 pristine STEM regions.",
+        "data_type": "histogram",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "DFT density of states for isolated single sulfur vacancy, with in-gap defect levels marked.",
+        "data_type": "calculated DOS",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "DFT density of states for double sulfur vacancy, showing similar in-gap levels and an additional state in the conduction band.",
+        "data_type": "calculated DOS",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "DFT density of states for neighboring same-plane sulfur vacancy pair, showing four hybridized in-gap states.",
+        "data_type": "calculated DOS",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Top and side view charge density distribution for a defect state of isolated sulfur vacancy.",
+        "data_type": "charge density image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Top and side view charge density distribution for a defect state of double sulfur vacancy.",
+        "data_type": "charge density image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "Top and side view charge density distribution for the first in-gap state of neighboring sulfur vacancy pair, showing hybridization and delocalization.",
+        "data_type": "charge density image",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include temperature- and voltage-dependent capacitance transients from the MIS capacitor during FT-DLTS, C-V sweeps from 12 K to 400 K and at room temperature, and ADF-STEM image series acquired on transferred monolayer MoS2 regions. The paper also reports Raman spectra for thickness/quality confirmation and additional electrical measurements after Ar plasma treatment and after transferring metal contacts.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support the findings of this study are available in Zenodo at https://doi.org/10.5281/zenodo.7389794.' No explicit mention of scripts or notebooks is given in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "The paper implies raw experimental data consist of capacitance transients, C-V curves, STEM image series, and Raman spectra collected with specific instruments (PhysTech FT-1030 DLTS system, Boonton 7200 capacitance meter, Keysight E4980A LCR meter, FEI Titan Themis 60–300 STEM). File formats are not specified in the text.",
+      "processed_data_description": "Processed data include normalized FT-DLTS spectra, Arrhenius plots, extracted trap energies and capture cross sections, peak amplitudes versus pulse width, linewidth estimates, defect concentration histograms from STEM image analysis, and DFT-derived DOS/charge-density plots. The paper also describes manual drift correction and double Gaussian filtering for STEM image processing.",
+      "figure_data_description": "Figure-ready data are clearly present for multiple figures: DLTS spectra, Arrhenius fits, pulse-width dependence plots, defect concentration histograms, and DFT DOS/charge-density plots. The text does not explicitly say whether per-figure source data files are deposited, but the Zenodo repository is stated to contain supporting data.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "The dataset is multimodal and mixes experimental raw traces/images with derived quantities and simulation outputs. The paper explicitly distinguishes measurement conditions and processing steps: FT-DLTS uses numerical Fourier transformation of capacitance transients; STEM images are drift-corrected manually and filtered with double Gaussian filtering; DFT results are generated in VASP with specified parameters. The repository likely contains supporting data for the published figures, but the exact contents and file organization are not described in the text.",
+      "data_provided_types_explanation": "Raw: measured capacitance transients, C-V curves, STEM images, Raman spectra. Processed: normalized DLTS spectra, extracted energies/cross sections, histograms, linewidth estimates. Theoretical_or_simulated: DFT DOS and charge density plots."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods describe direct acquisition of capacitance transients, C-V curves, STEM images, and Raman spectra, and the Data availability section points to a Zenodo repository supporting the findings.",
+      "source_data_evidence": "Multiple figures are based on processed/derived quantities such as normalized FT-DLTS spectra, Arrhenius fits, defect concentration histograms, and DFT-calculated DOS/charge densities, which are typical source-data candidates.",
+      "data_availability_section_relevant": "“The data that support the ﬁndings of this study are available in Zenodo at https://doi.org/10.5281/zenodo.7389794.”; “Capacitance transient signals are digitalized through numerical Fourier transformation”; “Images from series ... are aligned manually for the drift correction and used to calculate the S defect concentrations”; “For all the plotted figures, we set zero energy at the conductance band minimum.”",
+      "priority_modalities": [
+        "capacitance transient time traces",
+        "C-V curves",
+        "FT-DLTS spectra",
+        "STEM image series",
+        "Raman spectra",
+        "DFT DOS and charge-density outputs"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_35651_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 9892071,
+      "size_human": "9.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_35651_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "Main_text_1.zip",
+      "extension": ".zip",
+      "size_bytes": 334045,
+      "size_human": "326.2 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Main_text_1.zip"
+    },
+    {
+      "filename": "Supplementary_Information_1.zip",
+      "extension": ".zip",
+      "size_bytes": 1470717,
+      "size_human": "1.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Supplementary_Information_1.zip"
+    },
+    {
+      "filename": "DFT_data_1.zip",
+      "extension": ".zip",
+      "size_bytes": 101847,
+      "size_human": "99.5 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "DFT_data_1.zip"
+    },
+    {
+      "filename": "Fig_1b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 128875,
+      "size_human": "125.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_1b_2"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_1b_2",
+          "columns": [
+            "Vg",
+            "Capacitance (μF/cm2)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Vg",
+            "Capacitance (μF/cm2)"
+          ],
+          "column_count": 79,
+          "row_count": 202,
+          "dtypes": {
+            "Vg": "float64",
+            "Capacitance (μF/cm2)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_1b.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_1b.xlsx"
+    },
+    {
+      "filename": "Fig_2a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 70613,
+      "size_human": "69.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_2a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_2a",
+          "columns": [
+            "Unnamed: 0",
+            "DLTS signal (fF)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5"
+          ],
+          "named_columns": [
+            "DLTS signal (fF)"
+          ],
+          "column_count": 6,
+          "row_count": 171,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "DLTS signal (fF)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_2a.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_2a.xlsx"
+    },
+    {
+      "filename": "Fig_2b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 60462,
+      "size_human": "59.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_2b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_2b",
+          "columns": [
+            "T1_Arr_x: \n1000/T",
+            "T1_Arr_y: \nln(τ∙vth∙Nc)",
+            "T1_Arr_y fit",
+            "T2_Arr_x: \n1000/T",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)",
+            "T2_Arr_y fit"
+          ],
+          "named_columns": [
+            "T1_Arr_x: \n1000/T",
+            "T1_Arr_y: \nln(τ∙vth∙Nc)",
+            "T1_Arr_y fit",
+            "T2_Arr_x: \n1000/T",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)",
+            "T2_Arr_y fit"
+          ],
+          "column_count": 6,
+          "row_count": 11,
+          "dtypes": {
+            "T1_Arr_x: \n1000/T": "float64",
+            "T1_Arr_y: \nln(τ∙vth∙Nc)": "float64",
+            "T1_Arr_y fit": "float64",
+            "T2_Arr_x: \n1000/T": "float64",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)": "float64",
+            "T2_Arr_y fit": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_2b.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_2b.xlsx"
+    },
+    {
+      "filename": "Fig_3b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 70001,
+      "size_human": "68.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_3b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_3b",
+          "columns": [
+            "Temperature",
+            "tP = 10 us",
+            "tP = 100 us",
+            "tP = 1 ms",
+            "tP = 10 ms",
+            "tP = 100 ms",
+            "tP = 1 s"
+          ],
+          "named_columns": [
+            "Temperature",
+            "tP = 10 us",
+            "tP = 100 us",
+            "tP = 1 ms",
+            "tP = 10 ms",
+            "tP = 100 ms",
+            "tP = 1 s"
+          ],
+          "column_count": 7,
+          "row_count": 170,
+          "dtypes": {
+            "Temperature": "float64",
+            "tP = 10 us": "float64",
+            "tP = 100 us": "float64",
+            "tP = 1 ms": "float64",
+            "tP = 10 ms": "float64",
+            "tP = 100 ms": "float64",
+            "tP = 1 s": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_3b.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_3b.xlsx"
+    },
+    {
+      "filename": "Fig_3c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 60243,
+      "size_human": "58.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_3c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_3c",
+          "columns": [
+            "Pulse width tP (s)",
+            "T1_peak amplitude (fF)",
+            "T2_peak amplitude (fF)"
+          ],
+          "named_columns": [
+            "Pulse width tP (s)",
+            "T1_peak amplitude (fF)",
+            "T2_peak amplitude (fF)"
+          ],
+          "column_count": 3,
+          "row_count": 6,
+          "dtypes": {
+            "Pulse width tP (s)": "float64",
+            "T1_peak amplitude (fF)": "float64",
+            "T2_peak amplitude (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_3c.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_3c.xlsx"
+    },
+    {
+      "filename": "Fig_3d.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 59947,
+      "size_human": "58.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_3d"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_3d",
+          "columns": [
+            "Pulse width tP (s)",
+            "T1_trap energy position (Et-Ec)",
+            "T2_trap energy position (Et-Ec)"
+          ],
+          "named_columns": [
+            "Pulse width tP (s)",
+            "T1_trap energy position (Et-Ec)",
+            "T2_trap energy position (Et-Ec)"
+          ],
+          "column_count": 3,
+          "row_count": 6,
+          "dtypes": {
+            "Pulse width tP (s)": "float64",
+            "T1_trap energy position (Et-Ec)": "float64",
+            "T2_trap energy position (Et-Ec)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_3d.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_3d.xlsx"
+    },
+    {
+      "filename": "Fig_4c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 60078,
+      "size_human": "58.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_4c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_4c",
+          "columns": [
+            "Vs concentration (1013 cm-2)",
+            "Vs2 concentration (1013 cm-2)",
+            "VsVs concentration (1013 cm-2)"
+          ],
+          "named_columns": [
+            "Vs concentration (1013 cm-2)",
+            "Vs2 concentration (1013 cm-2)",
+            "VsVs concentration (1013 cm-2)"
+          ],
+          "column_count": 3,
+          "row_count": 21,
+          "dtypes": {
+            "Vs concentration (1013 cm-2)": "float64",
+            "Vs2 concentration (1013 cm-2)": "float64",
+            "VsVs concentration (1013 cm-2)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_4c.xlsx",
+      "from_zip": "Main_text_1.zip",
+      "relative_path": "zip_contents/Fig_4c.xlsx"
+    },
+    {
+      "filename": "Fig_S11.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 55168,
+      "size_human": "53.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S11"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S11",
+          "columns": [
+            "Dose rate",
+            "Vs concentration",
+            "Vs2 concentration"
+          ],
+          "named_columns": [
+            "Dose rate",
+            "Vs concentration",
+            "Vs2 concentration"
+          ],
+          "column_count": 3,
+          "row_count": 17,
+          "dtypes": {
+            "Dose rate": "int64",
+            "Vs concentration": "int64",
+            "Vs2 concentration": "int64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S11.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S11.xlsx"
+    },
+    {
+      "filename": "Fig_S16a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 139501,
+      "size_human": "136.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S16a - Pristine",
+        "Fig_S16a - Ar plasma"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S16a - Pristine",
+          "columns": [
+            "Vg (V)",
+            "Capacitance - Pristine (μF/cm2)"
+          ],
+          "named_columns": [
+            "Vg (V)",
+            "Capacitance - Pristine (μF/cm2)"
+          ],
+          "column_count": 2,
+          "row_count": 1001,
+          "dtypes": {
+            "Vg (V)": "float64",
+            "Capacitance - Pristine (μF/cm2)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_S16a - Ar plasma",
+          "columns": [
+            "Vg (V)",
+            "Capacitance - Ar plasma (μF/cm2)"
+          ],
+          "named_columns": [
+            "Vg (V)",
+            "Capacitance - Ar plasma (μF/cm2)"
+          ],
+          "column_count": 2,
+          "row_count": 1001,
+          "dtypes": {
+            "Vg (V)": "float64",
+            "Capacitance - Ar plasma (μF/cm2)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S16a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S16a.xlsx"
+    },
+    {
+      "filename": "Fig_S16b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 102142,
+      "size_human": "99.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S16b - Pristine",
+        "Fig_S16b - Ar plasma"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S16b - Pristine",
+          "columns": [
+            "13 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "300 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "404 K",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "13 K",
+            "300 K",
+            "404 K"
+          ],
+          "column_count": 8,
+          "row_count": 52,
+          "dtypes": {
+            "13 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "300 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "404 K": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_S16b - Ar plasma",
+          "columns": [
+            "14 K",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "300 K",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "405 K",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "14 K",
+            "300 K",
+            "405 K"
+          ],
+          "column_count": 8,
+          "row_count": 62,
+          "dtypes": {
+            "14 K": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "300 K": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "float64",
+            "405 K": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S16b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S16b.xlsx"
+    },
+    {
+      "filename": "Fig_S16c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 105072,
+      "size_human": "102.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S16c _ Pristine",
+        "Fig_S16c _ Ar plasma"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S16c _ Pristine",
+          "columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss 1",
+            "Fit_gauss 2"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss 1",
+            "Fit_gauss 2"
+          ],
+          "column_count": 5,
+          "row_count": 128,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "DLTS signal b1 (fF)": "float64",
+            "Fit_temperature": "float64",
+            "Fit_gauss 1": "float64",
+            "Fit_gauss 2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_S16c _ Ar plasma",
+          "columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss 1",
+            "Fit_gauss 2"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss 1",
+            "Fit_gauss 2"
+          ],
+          "column_count": 5,
+          "row_count": 113,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "DLTS signal b1 (fF)": "float64",
+            "Fit_temperature": "float64",
+            "Fit_gauss 1": "float64",
+            "Fit_gauss 2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S16c.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S16c.xlsx"
+    },
+    {
+      "filename": "Fig_S18a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 81114,
+      "size_human": "79.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S18a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S18a",
+          "columns": [
+            "Unnamed: 0",
+            "Capacitance (pF)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Capacitance (pF)"
+          ],
+          "column_count": 10,
+          "row_count": 401,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "Capacitance (pF)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S18a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S18a.xlsx"
+    },
+    {
+      "filename": "Fig_S18b - inset.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 58273,
+      "size_human": "56.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S16b - inset"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S16b - inset",
+          "columns": [
+            "T2_Arr_x: \n1000/T",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)",
+            "T2_Arr_y fit"
+          ],
+          "named_columns": [
+            "T2_Arr_x: \n1000/T",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)",
+            "T2_Arr_y fit"
+          ],
+          "column_count": 3,
+          "row_count": 8,
+          "dtypes": {
+            "T2_Arr_x: \n1000/T": "float64",
+            "T2_Arr_y: \nln(τ∙vth∙Nc)": "float64",
+            "T2_Arr_y fit": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S18b - inset.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S18b - inset.xlsx"
+    },
+    {
+      "filename": "Fig_S18b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 62741,
+      "size_human": "61.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S16b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S16b",
+          "columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss_T2"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)",
+            "Fit_temperature",
+            "Fit_gauss_T2"
+          ],
+          "column_count": 4,
+          "row_count": 132,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "DLTS signal b1 (fF)": "float64",
+            "Fit_temperature": "float64",
+            "Fit_gauss_T2": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S18b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S18b.xlsx"
+    },
+    {
+      "filename": "Fig_S19a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 89380,
+      "size_human": "87.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S19a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S19a",
+          "columns": [
+            "Vg (V)",
+            "Capacitance (F)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Vg (V)",
+            "Capacitance (F)"
+          ],
+          "column_count": 10,
+          "row_count": 402,
+          "dtypes": {
+            "Vg (V)": "float64",
+            "Capacitance (F)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S19a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S19a.xlsx"
+    },
+    {
+      "filename": "Fig_S19b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 99199,
+      "size_human": "96.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S19b - 410 K",
+        "Fig_S19b - 14 K"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S19b - 410 K",
+          "columns": [
+            "Reference Voltage UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Reference Voltage UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 67,
+          "dtypes": {
+            "Reference Voltage UR (V)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_S19b - 14 K",
+          "columns": [
+            "Reference Voltage UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Reference Voltage UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 42,
+          "dtypes": {
+            "Reference Voltage UR (V)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S19b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S19b.xlsx"
+    },
+    {
+      "filename": "Fig_S19c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 60829,
+      "size_human": "59.4 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S19c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S19c",
+          "columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 128,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S19c.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S19c.xlsx"
+    },
+    {
+      "filename": "Fig_S1b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 95242,
+      "size_human": "93.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S1b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S1b",
+          "columns": [
+            "Raman shift",
+            "Intensity",
+            "fit_x",
+            "fit_y"
+          ],
+          "named_columns": [
+            "Raman shift",
+            "Intensity",
+            "fit_x",
+            "fit_y"
+          ],
+          "column_count": 4,
+          "row_count": 1014,
+          "dtypes": {
+            "Raman shift": "float64",
+            "Intensity": "float64",
+            "fit_x": "float64",
+            "fit_y": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S1b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S1b.xlsx"
+    },
+    {
+      "filename": "Fig_S2a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 75032,
+      "size_human": "73.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S2a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S2a",
+          "columns": [
+            "Forward_Vg (V)",
+            "Forward_Capacitance (F)",
+            "Backward_Vg (V)",
+            "Backward_Capacitance (F)"
+          ],
+          "named_columns": [
+            "Forward_Vg (V)",
+            "Forward_Capacitance (F)",
+            "Backward_Vg (V)",
+            "Backward_Capacitance (F)"
+          ],
+          "column_count": 4,
+          "row_count": 501,
+          "dtypes": {
+            "Forward_Vg (V)": "float64",
+            "Forward_Capacitance (F)": "float64",
+            "Backward_Vg (V)": "float64",
+            "Backward_Capacitance (F)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S2a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S2a.xlsx"
+    },
+    {
+      "filename": "Fig_S2b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 156724,
+      "size_human": "153.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S2b_forward",
+        "Fig_S2b_backward"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S2b_forward",
+          "columns": [
+            "Vg",
+            "Capacitance (μF/cm2)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Vg",
+            "Capacitance (μF/cm2)"
+          ],
+          "column_count": 79,
+          "row_count": 202,
+          "dtypes": {
+            "Vg": "float64",
+            "Capacitance (μF/cm2)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_S2b_backward",
+          "columns": [
+            "Vg",
+            "Capacitance (μF/cm2)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Vg",
+            "Capacitance (μF/cm2)"
+          ],
+          "column_count": 79,
+          "row_count": 201,
+          "dtypes": {
+            "Vg": "float64",
+            "Capacitance (μF/cm2)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object",
+            "Unnamed: 16": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object",
+            "Unnamed: 19": "object",
+            "Unnamed: 20": "object",
+            "Unnamed: 21": "object",
+            "Unnamed: 22": "object",
+            "Unnamed: 23": "object",
+            "Unnamed: 24": "object",
+            "Unnamed: 25": "object",
+            "Unnamed: 26": "object",
+            "Unnamed: 27": "object",
+            "Unnamed: 28": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S2b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S2b.xlsx"
+    },
+    {
+      "filename": "Fig_S2c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 57650,
+      "size_human": "56.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S2c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S2c",
+          "columns": [
+            "Temperature (K)",
+            "Vth_f",
+            "Vth_b"
+          ],
+          "named_columns": [
+            "Temperature (K)",
+            "Vth_f",
+            "Vth_b"
+          ],
+          "column_count": 3,
+          "row_count": 78,
+          "dtypes": {
+            "Temperature (K)": "float64",
+            "Vth_f": "float64",
+            "Vth_b": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S2c.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S2c.xlsx"
+    },
+    {
+      "filename": "Fig_S3a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 103525,
+      "size_human": "101.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S3a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S3a",
+          "columns": [
+            "Vg",
+            "Capacitance (F)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10"
+          ],
+          "named_columns": [
+            "Vg",
+            "Capacitance (F)"
+          ],
+          "column_count": 11,
+          "row_count": 502,
+          "dtypes": {
+            "Vg": "float64",
+            "Capacitance (F)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S3a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S3a.xlsx"
+    },
+    {
+      "filename": "Fig_S3b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 104634,
+      "size_human": "102.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S3b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S3b",
+          "columns": [
+            "Vg",
+            "Resistance (Ohm)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10"
+          ],
+          "named_columns": [
+            "Vg",
+            "Resistance (Ohm)"
+          ],
+          "column_count": 11,
+          "row_count": 502,
+          "dtypes": {
+            "Vg": "float64",
+            "Resistance (Ohm)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S3b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S3b.xlsx"
+    },
+    {
+      "filename": "Fig_S5a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 98190,
+      "size_human": "95.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S5a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S5a",
+          "columns": [
+            "Time (s)",
+            "DLTS signal (arb. units)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Time (s)",
+            "DLTS signal (arb. units)"
+          ],
+          "column_count": 10,
+          "row_count": 514,
+          "dtypes": {
+            "Time (s)": "float64",
+            "DLTS signal (arb. units)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S5a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S5a.xlsx"
+    },
+    {
+      "filename": "Fig_S5b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 68134,
+      "size_human": "66.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S5b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S5b",
+          "columns": [
+            "Unnamed: 0",
+            "DLTS signal (fF)"
+          ],
+          "named_columns": [
+            "DLTS signal (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 171,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "DLTS signal (fF)": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S5b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S5b.xlsx"
+    },
+    {
+      "filename": "Fig_S6a.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 64850,
+      "size_human": "63.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S6a"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S6a",
+          "columns": [
+            "Pulse width tP (s)",
+            "DLTS signal - b1 (fF)"
+          ],
+          "named_columns": [
+            "Pulse width tP (s)",
+            "DLTS signal - b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 37,
+          "dtypes": {
+            "Pulse width tP (s)": "float64",
+            "DLTS signal - b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S6a.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S6a.xlsx"
+    },
+    {
+      "filename": "Fig_S6b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 64662,
+      "size_human": "63.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S6b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S6b",
+          "columns": [
+            "Reference bias UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Reference bias UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 30,
+          "dtypes": {
+            "Reference bias UR (V)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S6b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S6b.xlsx"
+    },
+    {
+      "filename": "Fig_S6c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 64525,
+      "size_human": "63.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S6c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S6c",
+          "columns": [
+            "Reference bias UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Reference bias UR (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 26,
+          "dtypes": {
+            "Reference bias UR (V)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S6c.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S6c.xlsx"
+    },
+    {
+      "filename": "Fig_S6d.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 64558,
+      "size_human": "63.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S6d"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S6d",
+          "columns": [
+            "Pulse voltage UP (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "named_columns": [
+            "Pulse voltage UP (V)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 2,
+          "row_count": 27,
+          "dtypes": {
+            "Pulse voltage UP (V)": "float64",
+            "DLTS signal b1 (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S6d.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S6d.xlsx"
+    },
+    {
+      "filename": "Fig_S7.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 78820,
+      "size_human": "77.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S7"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S7",
+          "columns": [
+            "Unnamed: 0",
+            "DLTS signal (fF)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "DLTS signal (fF)"
+          ],
+          "column_count": 12,
+          "row_count": 171,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "DLTS signal (fF)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S7.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S7.xlsx"
+    },
+    {
+      "filename": "Fig_S8.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 59679,
+      "size_human": "58.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S8"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S8",
+          "columns": [
+            "Pulse width tP (s)",
+            "DLTS signal b1 (fF)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Pulse width tP (s)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 7,
+          "row_count": 38,
+          "dtypes": {
+            "Pulse width tP (s)": "float64",
+            "DLTS signal b1 (fF)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S8.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S8.xlsx"
+    },
+    {
+      "filename": "Fig_S9b.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 69530,
+      "size_human": "67.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S9b"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S9b",
+          "columns": [
+            "Pulse width tP (s)",
+            "DLTS signal b1 (fF)",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "Pulse width tP (s)",
+            "DLTS signal b1 (fF)"
+          ],
+          "column_count": 10,
+          "row_count": 171,
+          "dtypes": {
+            "Pulse width tP (s)": "float64",
+            "DLTS signal b1 (fF)": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S9b.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S9b.xlsx"
+    },
+    {
+      "filename": "Fig_S9c.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 58250,
+      "size_human": "56.9 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S9c"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S9c",
+          "columns": [
+            "Pulse voltage UP (V)",
+            "T1_peak amplitude (fF)",
+            "T2_peak amplitude (fF)"
+          ],
+          "named_columns": [
+            "Pulse voltage UP (V)",
+            "T1_peak amplitude (fF)",
+            "T2_peak amplitude (fF)"
+          ],
+          "column_count": 3,
+          "row_count": 9,
+          "dtypes": {
+            "Pulse voltage UP (V)": "float64",
+            "T1_peak amplitude (fF)": "float64",
+            "T2_peak amplitude (fF)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S9c.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S9c.xlsx"
+    },
+    {
+      "filename": "Fig_S9d.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 58185,
+      "size_human": "56.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_S9d"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Fig_S9d",
+          "columns": [
+            "Pulse voltage UP (V)",
+            "T1_trap energy position (Et-Ec)",
+            "T2_trap energy position (Et-Ec)"
+          ],
+          "named_columns": [
+            "Pulse voltage UP (V)",
+            "T1_trap energy position (Et-Ec)",
+            "T2_trap energy position (Et-Ec)"
+          ],
+          "column_count": 3,
+          "row_count": 9,
+          "dtypes": {
+            "Pulse voltage UP (V)": "float64",
+            "T1_trap energy position (Et-Ec)": "float64",
+            "T2_trap energy position (Et-Ec)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Fig_S9d.xlsx",
+      "from_zip": "Supplementary_Information_1.zip",
+      "relative_path": "zip_contents/Fig_S9d.xlsx"
+    },
+    {
+      "filename": "Band_VS2.csv",
+      "extension": ".csv",
+      "size_bytes": 529960,
+      "size_human": "517.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "0.0",
+        "-14.2699"
+      ],
+      "column_count": 2,
+      "row_count": 26999,
+      "dtypes": {
+        "0.0": "float64",
+        "-14.2699": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Band_VS2.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/Band_VS2.csv"
+    },
+    {
+      "filename": "Defect_levels.csv",
+      "extension": ".csv",
+      "size_bytes": 579,
+      "size_human": "579.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "Defect type",
+        "E(cond-def1) eV",
+        "E(cond-def2) eV",
+        "E(cond-def3) eV",
+        "E(cond-def4) eV",
+        "E(cond-def5) eV",
+        "E(cond-def6) eV"
+      ],
+      "column_count": 7,
+      "row_count": 16,
+      "dtypes": {
+        "Defect type": "object",
+        "E(cond-def1) eV": "object",
+        "E(cond-def2) eV": "object",
+        "E(cond-def3) eV": "object",
+        "E(cond-def4) eV": "object",
+        "E(cond-def5) eV": "object",
+        "E(cond-def6) eV": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Defect_levels.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/Defect_levels.csv"
+    },
+    {
+      "filename": "DOS_VS.csv",
+      "extension": ".csv",
+      "size_bytes": 4767,
+      "size_human": "4.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-1.83167",
+        "72.929"
+      ],
+      "column_count": 2,
+      "row_count": 300,
+      "dtypes": {
+        "-1.83167": "float64",
+        "72.929": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS.csv"
+    },
+    {
+      "filename": "DOS_VS_VS_1st.csv",
+      "extension": ".csv",
+      "size_bytes": 4937,
+      "size_human": "4.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-2.33917",
+        "10.883"
+      ],
+      "column_count": 2,
+      "row_count": 304,
+      "dtypes": {
+        "-2.33917": "float64",
+        "10.883": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS_VS_1st.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS_VS_1st.csv"
+    },
+    {
+      "filename": "DOS_VS_VS_2nd.csv",
+      "extension": ".csv",
+      "size_bytes": 4383,
+      "size_human": "4.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-2.345",
+        "51.1439"
+      ],
+      "column_count": 2,
+      "row_count": 300,
+      "dtypes": {
+        "-2.345": "float64",
+        "51.1439": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS_VS_2nd.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS_VS_2nd.csv"
+    },
+    {
+      "filename": "DOS_VS_VS_3rd.csv",
+      "extension": ".csv",
+      "size_bytes": 4881,
+      "size_human": "4.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-2.36833",
+        "20.3513"
+      ],
+      "column_count": 2,
+      "row_count": 300,
+      "dtypes": {
+        "-2.36833": "float64",
+        "20.3513": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS_VS_3rd.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS_VS_3rd.csv"
+    },
+    {
+      "filename": "DOS_VS_VS_4th.csv",
+      "extension": ".csv",
+      "size_bytes": 4867,
+      "size_human": "4.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-2.32167",
+        "70.7314"
+      ],
+      "column_count": 2,
+      "row_count": 300,
+      "dtypes": {
+        "-2.32167": "float64",
+        "70.7314": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS_VS_4th.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS_VS_4th.csv"
+    },
+    {
+      "filename": "DOS_VS2.csv",
+      "extension": ".csv",
+      "size_bytes": 3919,
+      "size_human": "3.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "-0.825",
+        "25.9004"
+      ],
+      "column_count": 2,
+      "row_count": 300,
+      "dtypes": {
+        "-0.825": "float64",
+        "25.9004": "float64"
+      },
+      "has_header": false,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "DOS_VS2.csv",
+      "from_zip": "DFT_data_1.zip",
+      "relative_path": "zip_contents/DOS_VS2.csv"
+    }
+  ]
+}

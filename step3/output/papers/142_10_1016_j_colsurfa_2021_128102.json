@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0141",
+  "title": "Silver nanoparticles decorated two dimensional MoS2 nanosheets for enhanced photocatalytic activity",
+  "doi": "10.1016/j.colsurfa.2021.128102",
+  "journal": "Colloids and Surfaces A Physicochemical and Engineering Aspects",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W4200000878",
+  "priority_score": 6.0,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1016_j_colsurfa_2021_128102",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No figure-ready, tabular, or directly replot-ready dataset files were identified.",
+  "type2_summary": "No raw instrument-output or unprocessed measurement files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper evidence suggests no explicit data availability statement or downloadable data files. Both inspected files appear to be non-data PDFs on Zenodo, so the dataset does not contain identifiable Type 1 or Type 2 data based on the provided inspection reports.",
+  "file_classifications": [
+    {
+      "relative_path": "d2tc00759b_1.pdf",
+      "filename": "d2tc00759b_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper does not indicate any downloadable raw or source data, and no data availability statement or figure-linked dataset was identified.",
+      "file_evidence": "PDF file from Zenodo, 2.7 MB. Based on the filename and size alone, it appears to be a document rather than a structured data table or instrument output. No internal structure was provided to indicate figure data or raw measurements.",
+      "reasoning": "With no paper evidence for data deposition and no file-level evidence of tabular, figure-specific, or instrument-style data, this is most conservatively treated as a non-dataset document rather than Type 1 or Type 2 data.",
+      "ambiguity": "High uncertainty because the PDF contents were not inspected here; it could be a poster, article, or supplementary document rather than data.",
+      "key_columns_or_structure": "Not identifiable from the available inspection report"
+    },
+    {
+      "relative_path": "Poster_NH_conference_Waters_1.pdf",
+      "filename": "Poster_NH_conference_Waters_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The publication itself does not mention this poster or any associated data repository content.",
+      "file_evidence": "PDF poster file from Zenodo, 855.5 KB. The filename explicitly indicates a conference poster, which is documentation/presentation material rather than a data file.",
+      "reasoning": "This is clearly a poster document, not a dataset. It does not fit Type 1 or Type 2 because it is not data intended for replotting or raw analysis.",
+      "ambiguity": "Low; the file is explicitly a poster.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports the synthesis of Ag nanoparticle-decorated 2D MoS2 nanosheets and evaluates their improved photocatalytic performance.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to report experimental synthesis and photocatalytic performance results for Ag nanoparticle-decorated MoS2 nanosheets, but no accessible dataset or supporting data files were found.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files or external URLs were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files or external URLs were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "d2tc00759b_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2878786,
+      "size_human": "2.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "d2tc00759b_1.pdf"
+    },
+    {
+      "filename": "Poster_NH_conference_Waters_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 875994,
+      "size_human": "855.5 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Poster_NH_conference_Waters_1.pdf"
+    }
+  ]
+}

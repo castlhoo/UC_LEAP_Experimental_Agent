@@ -1,0 +1,869 @@
+{
+  "paper_id": "step1_0223",
+  "title": "Data and Code for 'phi0-Josephson junction from skewed shape'",
+  "doi": "10.5281/zenodo.7374094",
+  "journal": "Zenodo (CERN European Organization for Nuclear Research)",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4310694342",
+  "priority_score": 5.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 49,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_5281_zenodo_7374094",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "script",
+    "microscopy_image",
+    "binary",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 219 column 5 (char 11630)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This Zenodo repository provides data, code, and supporting materials for a study reporting evidence of a phi0 Josephson junction in skewed Sn-InSb nanowire devices.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Repository contains data, code, and supporting materials for the study on evidence of a phi0 Josephson junction in skewed Sn-InSb nanowire devices.",
+    "has_processed_plots": false,
+    "processed_plot_details": "Repository contains data, code, and supporting materials for the study on evidence of a phi0 Josephson junction in skewed Sn-InSb nanowire devices.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [
+        "raw"
+      ],
+      "raw_data_description": "Repository contains data, code, and supporting materials for the study on evidence of a phi0 Josephson junction in skewed Sn-InSb nanowire devices.",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "Zenodo repository accompanying the study 'phi0-Josephson junction from skewed shape'",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "Zenodo repository accompanying the study 'phi0-Josephson junction from skewed shape'",
+      "source_data_evidence": "Zenodo repository accompanying the study 'phi0-Josephson junction from skewed shape'",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "extension": ".zip",
+      "size_bytes": 376829418,
+      "size_human": "359.4 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip"
+    },
+    {
+      "filename": "1.61c.tif",
+      "extension": ".tif",
+      "size_bytes": 882137,
+      "size_human": "861.5 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (861.5 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.61c.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.61c.tif"
+    },
+    {
+      "filename": "Thumbs.db",
+      "extension": ".db",
+      "size_bytes": 180224,
+      "size_human": "176.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .db",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/Thumbs.db",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/Thumbs.db"
+    },
+    {
+      "filename": "1.21a.tif",
+      "extension": ".tif",
+      "size_bytes": 882143,
+      "size_human": "861.5 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (861.5 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.21a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.21a.tif"
+    },
+    {
+      "filename": "1.41a.tif",
+      "extension": ".tif",
+      "size_bytes": 882143,
+      "size_human": "861.5 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (861.5 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.41a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.41a.tif"
+    },
+    {
+      "filename": "1.52a.tif",
+      "extension": ".tif",
+      "size_bytes": 882143,
+      "size_human": "861.5 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (861.5 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.52a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.52a.tif"
+    },
+    {
+      "filename": "1.53a.tif",
+      "extension": ".tif",
+      "size_bytes": 882143,
+      "size_human": "861.5 KB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (861.5 KB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.53a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.53a.tif"
+    },
+    {
+      "filename": "1.61d.tif",
+      "extension": ".tif",
+      "size_bytes": 3241415,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.61d.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.61d.tif"
+    },
+    {
+      "filename": "1.11a.tif",
+      "extension": ".tif",
+      "size_bytes": 3241434,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.11a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.11a.tif"
+    },
+    {
+      "filename": "1.11b.tif",
+      "extension": ".tif",
+      "size_bytes": 3241434,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.11b.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.11b.tif"
+    },
+    {
+      "filename": "1.11d.tif",
+      "extension": ".tif",
+      "size_bytes": 3241421,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.11d.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.11d.tif"
+    },
+    {
+      "filename": "1.61a.tif",
+      "extension": ".tif",
+      "size_bytes": 3241421,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.61a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.61a.tif"
+    },
+    {
+      "filename": "1.61b.tif",
+      "extension": ".tif",
+      "size_bytes": 3241421,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.61b.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.61b.tif"
+    },
+    {
+      "filename": "1.12a.tif",
+      "extension": ".tif",
+      "size_bytes": 3241440,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.12a.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.12a.tif"
+    },
+    {
+      "filename": "1.12b.tif",
+      "extension": ".tif",
+      "size_bytes": 3241440,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.12b.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.12b.tif"
+    },
+    {
+      "filename": "1.11c.tif",
+      "extension": ".tif",
+      "size_bytes": 3241421,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.11c.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.11c.tif"
+    },
+    {
+      "filename": "1.11e.tif",
+      "extension": ".tif",
+      "size_bytes": 3241415,
+      "size_human": "3.1 MB",
+      "file_type": "microscopy_image",
+      "note": "TIFF image file (3.1 MB), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Devices/1.11e.tif",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Devices/1.11e.tif"
+    },
+    {
+      "filename": "data_1014.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 224,
+      "size_human": "224.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "11"
+      ],
+      "column_count": 1,
+      "row_count": 19,
+      "dtypes": {
+        "11": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1014.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1014.meta.txt"
+    },
+    {
+      "filename": "data_1004.dat",
+      "extension": ".dat",
+      "size_bytes": 2056,
+      "size_human": "2.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1004.dat"
+      ],
+      "column_count": 3,
+      "row_count": 45,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1004.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1004.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1004.dat"
+    },
+    {
+      "filename": "data_1004.set",
+      "extension": ".set",
+      "size_bytes": 1743,
+      "size_human": "1.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1004.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1004.set"
+    },
+    {
+      "filename": "data_1159.py",
+      "extension": ".py",
+      "size_bytes": 15331,
+      "size_human": "15.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1159.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1159.py"
+    },
+    {
+      "filename": "data_1160.dat",
+      "extension": ".dat",
+      "size_bytes": 321609,
+      "size_human": "314.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1160.dat"
+      ],
+      "column_count": 3,
+      "row_count": 3349,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1160.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1160.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1160.dat"
+    },
+    {
+      "filename": "data_1158.set",
+      "extension": ".set",
+      "size_bytes": 1929,
+      "size_human": "1.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1158.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1158.set"
+    },
+    {
+      "filename": "data_1156.set",
+      "extension": ".set",
+      "size_bytes": 1892,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1156.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1156.set"
+    },
+    {
+      "filename": "data_1136.set",
+      "extension": ".set",
+      "size_bytes": 1880,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1136.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1136.set"
+    },
+    {
+      "filename": "data_1134.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 175,
+      "size_human": "175.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "501"
+      ],
+      "column_count": 1,
+      "row_count": 15,
+      "dtypes": {
+        "501": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1134.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1134.meta.txt"
+    },
+    {
+      "filename": "data_1134.dat",
+      "extension": ".dat",
+      "size_bytes": 49038,
+      "size_human": "47.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1134.dat"
+      ],
+      "column_count": 3,
+      "row_count": 529,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1134.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1134.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1134.dat"
+    },
+    {
+      "filename": "data_1133.dat",
+      "extension": ".dat",
+      "size_bytes": 10353,
+      "size_human": "10.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1133.dat"
+      ],
+      "column_count": 3,
+      "row_count": 129,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1133.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1133.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1133.dat"
+    },
+    {
+      "filename": "data_1133.py",
+      "extension": ".py",
+      "size_bytes": 14629,
+      "size_human": "14.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1133.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1133.py"
+    },
+    {
+      "filename": "data_1132.dat",
+      "extension": ".dat",
+      "size_bytes": 49038,
+      "size_human": "47.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1132.dat"
+      ],
+      "column_count": 3,
+      "row_count": 529,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1132.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1132.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1132.dat"
+    },
+    {
+      "filename": "data_1132.py",
+      "extension": ".py",
+      "size_bytes": 14631,
+      "size_human": "14.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1132.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1132.py"
+    },
+    {
+      "filename": "data_1132.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 175,
+      "size_human": "175.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "501"
+      ],
+      "column_count": 1,
+      "row_count": 15,
+      "dtypes": {
+        "501": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1132.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1132.meta.txt"
+    },
+    {
+      "filename": "data_1131.set",
+      "extension": ".set",
+      "size_bytes": 1880,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1131.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1131.set"
+    },
+    {
+      "filename": "data_1128.py",
+      "extension": ".py",
+      "size_bytes": 14627,
+      "size_human": "14.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1128.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1128.py"
+    },
+    {
+      "filename": "data_1125.set",
+      "extension": ".set",
+      "size_bytes": 1910,
+      "size_human": "1.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1125.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1125.set"
+    },
+    {
+      "filename": "data_1142.dat",
+      "extension": ".dat",
+      "size_bytes": 2490132,
+      "size_human": "2.4 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1142.dat"
+      ],
+      "column_count": 3,
+      "row_count": 25629,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1142.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1142.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1142.dat"
+    },
+    {
+      "filename": "data_1123.set",
+      "extension": ".set",
+      "size_bytes": 1877,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1123.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1123.set"
+    },
+    {
+      "filename": "data_1123.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 197,
+      "size_human": "197.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "201"
+      ],
+      "column_count": 1,
+      "row_count": 17,
+      "dtypes": {
+        "201": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1123.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1123.meta.txt"
+    },
+    {
+      "filename": "data_1122.set",
+      "extension": ".set",
+      "size_bytes": 1879,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1122.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1122.set"
+    },
+    {
+      "filename": "data_1141.dat",
+      "extension": ".dat",
+      "size_bytes": 2490135,
+      "size_human": "2.4 MB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1141.dat"
+      ],
+      "column_count": 3,
+      "row_count": 25629,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1141.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1141.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1141.dat"
+    },
+    {
+      "filename": "data_1122.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 197,
+      "size_human": "197.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "201"
+      ],
+      "column_count": 1,
+      "row_count": 17,
+      "dtypes": {
+        "201": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1122.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1122.meta.txt"
+    },
+    {
+      "filename": "data_1121.dat",
+      "extension": ".dat",
+      "size_bytes": 12327,
+      "size_human": "12.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1121.dat"
+      ],
+      "column_count": 3,
+      "row_count": 132,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1121.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1121.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1121.dat"
+    },
+    {
+      "filename": "data_1121.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 194,
+      "size_human": "194.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "101"
+      ],
+      "column_count": 1,
+      "row_count": 17,
+      "dtypes": {
+        "101": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1121.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1121.meta.txt"
+    },
+    {
+      "filename": "data_1118.py",
+      "extension": ".py",
+      "size_bytes": 14601,
+      "size_human": "14.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1118.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1118.py"
+    },
+    {
+      "filename": "data_1117.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 193,
+      "size_human": "193.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "301"
+      ],
+      "column_count": 1,
+      "row_count": 17,
+      "dtypes": {
+        "301": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1117.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1117.meta.txt"
+    },
+    {
+      "filename": "data_1120.dat",
+      "extension": ".dat",
+      "size_bytes": 23823,
+      "size_human": "23.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1120.dat"
+      ],
+      "column_count": 3,
+      "row_count": 232,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1120.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1120.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1120.dat"
+    },
+    {
+      "filename": "data_1114.meta.txt",
+      "extension": ".txt",
+      "size_bytes": 193,
+      "size_human": "193.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "201"
+      ],
+      "column_count": 1,
+      "row_count": 17,
+      "dtypes": {
+        "201": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1114.meta.txt",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1114.meta.txt"
+    },
+    {
+      "filename": "data_1140.py",
+      "extension": ".py",
+      "size_bytes": 15291,
+      "size_human": "14.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1140.py",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1140.py"
+    },
+    {
+      "filename": "data_1139.set",
+      "extension": ".set",
+      "size_bytes": 1913,
+      "size_human": "1.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .set",
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1139.set",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1139.set"
+    },
+    {
+      "filename": "data_1111.dat",
+      "extension": ".dat",
+      "size_bytes": 34498,
+      "size_human": "33.7 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Filename:",
+        "data_1111.dat"
+      ],
+      "column_count": 3,
+      "row_count": 379,
+      "dtypes": {
+        "#": "float64",
+        "Filename:": "object",
+        "data_1111.dat": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "QPC_Tin2/Tin_QPC2_data/data_1111.dat",
+      "from_zip": "_Raw_data_QPC_Tin2_Device_A_A1_1.zip",
+      "relative_path": "zip_contents/QPC_Tin2/Tin_QPC2_data/data_1111.dat"
+    }
+  ]
+}

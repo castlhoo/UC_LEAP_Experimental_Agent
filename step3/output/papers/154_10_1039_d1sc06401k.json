@@ -1,0 +1,1195 @@
+{
+  "paper_id": "step1_0193",
+  "title": "Interpretation of Mott–Schottky plots of photoanodes for water splitting",
+  "doi": "10.1039/d1sc06401k",
+  "journal": "Chemical Science",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4226226506",
+  "priority_score": 5.4,
+  "dataset_status": "verified",
+  "files_downloaded": 37,
+  "files_extracted": 13,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1039_d1sc06401k",
+  "files_inspected": 50,
+  "file_types_found": [
+    "json",
+    "binary",
+    "tabular_text",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No paper-related figure-ready scientific data files were identified among the inspected files.",
+  "type2_summary": "No paper-related raw experimental or instrument-output files were identified among the inspected files.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper itself contains experimental cyclic voltammetry and literature-derived/simulated figure data, but none of the inspected files correspond to those datasets. The file set appears to be from an unrelated software repository rather than the materials science paper's data archive.",
+  "file_classifications": [
+    {
+      "relative_path": ".browserslistrc_1",
+      "filename": ".browserslistrc_1",
+      "type": "other",
+      "paper_evidence": "No relation to the paper's experimental or simulation data; appears to be repository configuration.",
+      "file_evidence": "Small text config file from GitHub; no data columns or scientific variables.",
+      "reasoning": "This is project configuration, not dataset content, so it is neither raw nor figure-ready data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "configuration text"
+    },
+    {
+      "relative_path": ".editorconfig_1",
+      "filename": ".editorconfig_1",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Editor configuration file; no scientific content.",
+      "reasoning": "Repository metadata/configuration only.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "configuration text"
+    },
+    {
+      "relative_path": ".github_actions__1.npmrc",
+      "filename": ".github_actions__1.npmrc",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "npm configuration file.",
+      "reasoning": "Build/configuration artifact, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "configuration text"
+    },
+    {
+      "relative_path": ".github_actions_consumer-load-test_session-replay_mutation-body_1.txt",
+      "filename": ".github_actions_consumer-load-test_session-replay_mutation-body_1.txt",
+      "type": "other",
+      "paper_evidence": "No relation to the materials science paper.",
+      "file_evidence": "Tabular text, but content is clearly unrelated web/session replay JSON-like logs from New Relic.",
+      "reasoning": "Not scientific data from the paper; unrelated application log content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "[, JSON-like log entries"
+    },
+    {
+      "relative_path": ".github_actions_consumer-load-test_session-replay_snapshot-body_1.txt",
+      "filename": ".github_actions_consumer-load-test_session-replay_snapshot-body_1.txt",
+      "type": "other",
+      "paper_evidence": "No relation to the paper.",
+      "file_evidence": "Large tabular text containing session replay payload/log content, not scientific measurements.",
+      "reasoning": "Unrelated operational log data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "[, JSON-like log entries"
+    },
+    {
+      "relative_path": ".github_actions_docs-pr__1.gitignore",
+      "filename": ".github_actions_docs-pr__1.gitignore",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Ignore file for GitHub Actions/docs workflow.",
+      "reasoning": "Repository housekeeping file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "ignore rules"
+    },
+    {
+      "relative_path": ".github_actions_package_1.json",
+      "filename": ".github_actions_package_1.json",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Package metadata/config JSON with name, description, dependencies.",
+      "reasoning": "Documentation/configuration rather than data or script.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "package metadata keys"
+    },
+    {
+      "relative_path": ".gitignore_1",
+      "filename": ".gitignore_1",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Ignore rules file.",
+      "reasoning": "Repository housekeeping.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "ignore rules"
+    },
+    {
+      "relative_path": ".husky_pre-commit_1",
+      "filename": ".husky_pre-commit_1",
+      "type": "script",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Pre-commit hook script.",
+      "reasoning": "Executable workflow script, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "shell hook script"
+    },
+    {
+      "relative_path": ".npmrc_1",
+      "filename": ".npmrc_1",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "npm configuration file.",
+      "reasoning": "Configuration only.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "configuration text"
+    },
+    {
+      "relative_path": ".nvmrc_1",
+      "filename": ".nvmrc_1",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Node version file.",
+      "reasoning": "Environment configuration, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "version string"
+    },
+    {
+      "relative_path": "LICENSE_1",
+      "filename": "LICENSE_1",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "License text.",
+      "reasoning": "Legal documentation, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "license text"
+    },
+    {
+      "relative_path": "changelog_1.json",
+      "filename": "changelog_1.json",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "JSON changelog; parse error due to truncation, but clearly release notes/metadata.",
+      "reasoning": "Documentation of software changes, not scientific data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "changelog entries"
+    },
+    {
+      "relative_path": "curl-example-mutation-payload_1.txt",
+      "filename": "curl-example-mutation-payload_1.txt",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Curl example payload for web session replay; unrelated to scientific measurements.",
+      "reasoning": "Operational/web payload content, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "curl command fragments"
+    },
+    {
+      "relative_path": "curl-example-snapshot-payload_1.txt",
+      "filename": "curl-example-snapshot-payload_1.txt",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Curl example payload for web session replay; unrelated to scientific measurements.",
+      "reasoning": "Operational/web payload content, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "curl command fragments"
+    },
+    {
+      "relative_path": "package-lock_1.json",
+      "filename": "package-lock_1.json",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Node package lockfile; parse error due to truncation, but clearly dependency metadata.",
+      "reasoning": "Software dependency documentation, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "dependency tree metadata"
+    },
+    {
+      "relative_path": "package_1.json",
+      "filename": "package_1.json",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Package metadata JSON with scripts, dependencies, exports.",
+      "reasoning": "Repository/package documentation, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "package metadata keys"
+    },
+    {
+      "relative_path": "src__1.npmignore",
+      "filename": "src__1.npmignore",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Ignore file.",
+      "reasoning": "Repository housekeeping.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "ignore rules"
+    },
+    {
+      "relative_path": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "filename": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "type": "other",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Archive of test assets for a webview app, not scientific data.",
+      "reasoning": "Unrelated software test artifact.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "archive contents not inspected"
+    },
+    {
+      "relative_path": "third_party_manifest_1.json",
+      "filename": "third_party_manifest_1.json",
+      "type": "documentation",
+      "paper_evidence": "No relation to paper data.",
+      "file_evidence": "Manifest of third-party dependencies.",
+      "reasoning": "Dependency documentation, not dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "dependency manifest keys"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reinterprets Mott–Schottky analysis of BiVO4 and hematite photoanodes for water splitting, arguing that many reported very high doping densities are not true bulk dopant densities but artifacts caused by electron injection from the collecting contact during capacitance measurements. Using electrostatic arguments and drift-diffusion/SCAPS simulations, the authors derive a resolution limit for capacitance-based doping detection and conclude that most literature values for these photoanodes lie at or below that limit.",
+    "measurement_types": [
+      "Mott–Schottky capacitance-voltage measurement",
+      "cyclic voltammetry",
+      "drift-diffusion simulation",
+      "SCAPS device simulation",
+      "capacitance profiling / differential capacitance analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Simulated equilibrium band diagram of a photoanode showing built-in potential at the photoanode/electrolyte interface and the depletion region width.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Simulated carrier concentration versus position for a photoanode with constant doping density, illustrating depletion region sweep-out under a small voltage perturbation.",
+        "data_type": "line plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Experimental cyclic voltammetry curves of a BiVO4 photoanode in the dark and under one-sun illumination, with bias regions annotated.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Simulated band diagram of a doped BiVO4 photoanode under reverse bias in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Simulated band diagram of a doped BiVO4 photoanode at equilibrium in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Simulated band diagram of a doped BiVO4 photoanode under forward bias in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Simulated band diagram of a doped BiVO4 photoanode at flatband conditions in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Net carrier concentration versus position for the doped BiVO4 photoanode under the bias conditions in Fig2b–e.",
+        "data_type": "line plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "Simulated capacitance-voltage curve and corresponding Mott–Schottky plot for the doped BiVO4 photoanode, showing a capacitance step and linear region.",
+        "data_type": "transport curve",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Simulated band diagram of an intrinsic photoanode under deep reverse bias in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Simulated band diagram of an intrinsic photoanode at equilibrium in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Simulated band diagram of an intrinsic photoanode under forward bias in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Simulated band diagram of an intrinsic photoanode at flatband conditions in the dark.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Net carrier concentration versus position for the intrinsic photoanode under the bias conditions in Fig3a–d.",
+        "data_type": "line plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Simulated capacitance-voltage curve and corresponding Mott–Schottky plot for the intrinsic photoanode, showing an electrochemical-capacitance-driven step and apparent flatband potential.",
+        "data_type": "transport curve",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Schematic illustration of electron injection from the collecting contact into the photoanode causing the capacitance step in dark Mott–Schottky measurements.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Literature-derived maximum forward bias values used in Mott–Schottky measurements of BiVO4 and hematite photoanodes, calculated from dark open-circuit potential and apparent flatband potential.",
+        "data_type": "scatter plot",
+        "likely_source": "processed literature data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Literature doping/trap densities for BiVO4 and Fe2O3 plotted versus apparent device thickness, together with the calculated minimum resolvable density lines.",
+        "data_type": "scatter plot",
+        "likely_source": "processed literature data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Same literature doping-density dataset as Fig5b after scaling capacitance by 10^-2, showing invariance of the data relative to the resolution limit.",
+        "data_type": "scatter plot",
+        "likely_source": "processed literature data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Literature doping densities for InP photoelectrodes versus reported device thickness, compared to the resolution limit; used as a positive control showing values above threshold.",
+        "data_type": "scatter plot",
+        "likely_source": "processed literature data"
+      },
+      {
+        "figure_id": "Fig6a",
+        "description": "Simulated band diagram of an intrinsic photoanode at dark equilibrium showing a constant electric field through the absorber.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig6b",
+        "description": "Simulated band diagram of an intrinsic photoanode under illumination at anodic potential, showing field across the full thickness and hole transfer barrier at the interface.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig6c",
+        "description": "Simulated band diagram of an intrinsic photoanode under illumination at cathodic potential, again showing a field across the full thickness.",
+        "data_type": "image",
+        "likely_source": "theoretical calculations or simulations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper includes at least one experimental cyclic voltammetry dataset for a BiVO4 photoanode in dark and illuminated conditions. The rest of the main quantitative analysis is based on literature-reported Mott–Schottky/capacitance-voltage data and on numerical simulations rather than newly collected raw spectra or microscopy data.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'MATLAB scripts for the SCAPS simulations in this paper are archived in Zenodo with the identifier DOI: 10.5281/zenodo.6413163.' No explicit statement is given in the provided text about raw experimental data files or figure source data tables being deposited.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Only one explicit raw experimental dataset is described in the text: cyclic voltammetry curves of a BiVO4 photoanode in dark and under one-sun illumination, provided by Dr Miguel García Tecedor. The paper does not specify file format, repository, or whether the raw CV traces are deposited.",
+      "processed_data_description": "The paper compiles literature Mott–Schottky-derived doping/trap densities, apparent flatband potentials, dark open-circuit potentials, and apparent device thicknesses into plotted datasets. These are processed/derived values extracted from published reports, not raw measurements. The authors also compute resolution-limit curves using analytical expressions and compare literature points against them.",
+      "figure_data_description": "Figure data are largely reconstructed from simulations or from literature-derived processed values. The text does not mention separate source-data files for individual figures, except that the SCAPS simulation scripts are archived. The plotted literature points in Fig. 5 are clearly processed from cited papers; the simulated band diagrams and capacitance curves are generated from numerical models.",
+      "scripts_description": "Yes. MATLAB scripts for the SCAPS simulations are explicitly mentioned as archived on Zenodo. The paper also states that simulations were carried out using SCAPS and that the simulation details/parameters are in the ESI.",
+      "notes": "This is primarily a theory/simulation and literature-reanalysis paper, not a new experimental dataset paper. The main 'dataset' is a curated set of literature-derived Mott–Schottky results for BiVO4, hematite, and a small InP control set, combined with simulated capacitance-voltage and band-diagram outputs. The key semantic distinction is that the reported doping densities are treated as derived/processed quantities from Mott–Schottky fits, not direct raw measurements. The paper emphasizes that these derived values are resolution-limited and should be interpreted as upper bounds unless well above the detection threshold."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The text explicitly mentions experimental cyclic voltammetry curves of a BiVO4 photoanode in Fig. 2(a) and acknowledges that the data were provided by another researcher.",
+      "source_data_evidence": "Fig. 5 compiles literature-derived doping densities, apparent thicknesses, and forward-bias values; the paper also states that MATLAB scripts for SCAPS simulations are archived in Zenodo.",
+      "data_availability_section_relevant": "\"MATLAB scripts for the SCAPS simulations in this paper are archived in Zenodo with the identifier DOI: 10.5281/zenodo.6413163.\"",
+      "priority_modalities": [
+        "cyclic voltammetry",
+        "capacitance-voltage / Mott-Schottky data",
+        "literature-derived scatter data",
+        "SCAPS simulation outputs",
+        "MATLAB scripts"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": ".browserslistrc_1",
+      "extension": "",
+      "size_bytes": 147,
+      "size_human": "147.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".browserslistrc_1"
+    },
+    {
+      "filename": ".editorconfig_1",
+      "extension": "",
+      "size_bytes": 287,
+      "size_human": "287.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".editorconfig_1"
+    },
+    {
+      "filename": ".github_actions__1.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 19,
+      "size_human": "19.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": ".github_actions__1.npmrc"
+    },
+    {
+      "filename": ".github_actions_consumer-load-test_session-replay_mutation-body_1.txt",
+      "extension": ".txt",
+      "size_bytes": 75163,
+      "size_human": "73.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "["
+      ],
+      "column_count": 1,
+      "row_count": 2951,
+      "dtypes": {
+        "[": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": ".github_actions_consumer-load-test_session-replay_mutation-body_1.txt"
+    },
+    {
+      "filename": ".github_actions_consumer-load-test_session-replay_snapshot-body_1.txt",
+      "extension": ".txt",
+      "size_bytes": 727067,
+      "size_human": "710.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "["
+      ],
+      "column_count": 1,
+      "row_count": 1793,
+      "dtypes": {
+        "[": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": ".github_actions_consumer-load-test_session-replay_snapshot-body_1.txt"
+    },
+    {
+      "filename": ".github_actions_docs-pr__1.gitignore",
+      "extension": ".gitignore",
+      "size_bytes": 11,
+      "size_human": "11.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gitignore",
+      "download_source": "github",
+      "relative_path": ".github_actions_docs-pr__1.gitignore"
+    },
+    {
+      "filename": ".github_actions_package_1.json",
+      "extension": ".json",
+      "size_bytes": 737,
+      "size_human": "737.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "description",
+        "private",
+        "type",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "@newrelic/browser-agent.actions",
+        "description": "A collection of github actions for browser agent automation.",
+        "private": "True",
+        "type": "module",
+        "devDependencies": "{'@actions/core': '^1.10.1', '@actions/github': '^6.0.0', '@aws-sdk/client-s3': '^3.476.0', '@aws-sd"
+      },
+      "download_source": "github",
+      "relative_path": ".github_actions_package_1.json"
+    },
+    {
+      "filename": ".gitignore_1",
+      "extension": "",
+      "size_bytes": 471,
+      "size_human": "471.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".gitignore_1"
+    },
+    {
+      "filename": ".husky_pre-commit_1",
+      "extension": "",
+      "size_bytes": 1150,
+      "size_human": "1.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".husky_pre-commit_1"
+    },
+    {
+      "filename": ".npmrc_1",
+      "extension": "",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".npmrc_1"
+    },
+    {
+      "filename": ".nvmrc_1",
+      "extension": "",
+      "size_bytes": 6,
+      "size_human": "6.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".nvmrc_1"
+    },
+    {
+      "filename": "LICENSE_1",
+      "extension": "",
+      "size_bytes": 11360,
+      "size_human": "11.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "LICENSE_1"
+    },
+    {
+      "filename": "changelog_1.json",
+      "extension": ".json",
+      "size_bytes": 108654,
+      "size_human": "106.1 KB",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting ',' delimiter: line 1779 column 3 (char 50001)",
+      "download_source": "github",
+      "relative_path": "changelog_1.json"
+    },
+    {
+      "filename": "curl-example-mutation-payload_1.txt",
+      "extension": ".txt",
+      "size_bytes": 65328,
+      "size_human": "63.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "curl",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888364107&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_7%26replay.firstTimestamp%3D1750888364107%26replay.lastTimestamp%3D1750888364697%26replay.nodes%3D12%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D6219%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D603560%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'",
+        "\\"
+      ],
+      "column_count": 3,
+      "row_count": 7,
+      "dtypes": {
+        "curl": "object",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888364107&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_7%26replay.firstTimestamp%3D1750888364107%26replay.lastTimestamp%3D1750888364697%26replay.nodes%3D12%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D6219%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D603560%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'": "object",
+        "\\": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "curl-example-mutation-payload_1.txt"
+    },
+    {
+      "filename": "curl-example-snapshot-payload_1.txt",
+      "extension": ".txt",
+      "size_bytes": 61448,
+      "size_human": "60.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "curl",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888362063&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_6%26replay.firstTimestamp%3D1750888362063%26replay.lastTimestamp%3D1750888364091%26replay.nodes%3D65%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D5613%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D516648%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'",
+        "\\"
+      ],
+      "column_count": 3,
+      "row_count": 7,
+      "dtypes": {
+        "curl": "object",
+        "'https://staging-bam.nr-data.net/browser/blobs?browser_monitoring_key=0986481b53&type=SessionReplay&app_id=3123991&protocol_version=0&timestamp=1750888362063&attributes=content_encoding%3Dgzip%26entityGuid%3DMTA2NzA2MXxCUk9XU0VSfEFQUExJQ0FUSU9OfDMxMjM5OTE%26harvestId%3D6bc3b1a821e8374d_b0895222f4c5fafe_6%26replay.firstTimestamp%3D1750888362063%26replay.lastTimestamp%3D1750888364091%26replay.nodes%3D65%26session.durationMs%3D3360%26agentVersion%3D1.292.0%26session%3D6bc3b1a821e8374d%26rst%3D5613%26hasMeta%3Dfalse%26hasSnapshot%3Dfalse%26hasError%3Dfalse%26isFirstChunk%3Dfalse%26decompressedBytes%3D516648%26invalidStylesheetsDetected%3Dfalse%26inlinedAllStylesheets%3Dfalse%26rrweb.version%3D%255E2.0.0-alpha.18%26payload.type%3Dstandard%26enduser.id%3Djporter@newrelic.com%26currentUrl%3Dhttps://staging-one.newrelic.com/catalogs/software'": "object",
+        "\\": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "github",
+      "relative_path": "curl-example-snapshot-payload_1.txt"
+    },
+    {
+      "filename": "package-lock_1.json",
+      "extension": ".json",
+      "size_bytes": 964104,
+      "size_human": "941.5 KB",
+      "file_type": "json",
+      "error": "JSON parse error: Unterminated string starting at: line 1306 column 19 (char 49992)",
+      "download_source": "github",
+      "relative_path": "package-lock_1.json"
+    },
+    {
+      "filename": "package_1.json",
+      "extension": ".json",
+      "size_bytes": 11393,
+      "size_human": "11.1 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "private",
+        "author",
+        "description",
+        "license",
+        "homepage",
+        "main",
+        "module",
+        "types",
+        "typesVersions",
+        "exports",
+        "devEngines",
+        "engines",
+        "scripts",
+        "config",
+        "repository",
+        "dependencies",
+        "devDependencies",
+        "files"
+      ],
+      "sample": {
+        "name": "@newrelic/browser-agent",
+        "version": "1.312.1",
+        "private": "False",
+        "author": "New Relic Browser Agent Team <browser-agent@newrelic.com>",
+        "description": "New Relic Browser Agent"
+      },
+      "download_source": "github",
+      "relative_path": "package_1.json"
+    },
+    {
+      "filename": "src__1.npmignore",
+      "extension": ".npmignore",
+      "size_bytes": 36,
+      "size_human": "36.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmignore",
+      "download_source": "github",
+      "relative_path": "src__1.npmignore"
+    },
+    {
+      "filename": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "extension": ".zip",
+      "size_bytes": 818017,
+      "size_human": "798.8 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "github",
+      "relative_path": "tests_webview-specs_assets_NRTestApp_1.zip"
+    },
+    {
+      "filename": "third_party_manifest_1.json",
+      "extension": ".json",
+      "size_bytes": 32562,
+      "size_human": "31.8 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "lastUpdated",
+        "projectName",
+        "projectUrl",
+        "includeOptDeps",
+        "optionalDependencies",
+        "includeDev",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "lastUpdated": "Mon Mar 23 2026 23:41:59 GMT+0000 (Coordinated Universal Time)",
+        "projectName": "New Relic Browser Agent",
+        "projectUrl": "https://github.com/newrelic/newrelic-browser-agent",
+        "includeOptDeps": "True",
+        "optionalDependencies": "{}"
+      },
+      "download_source": "github",
+      "relative_path": "third_party_manifest_1.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-desktop-latest-vers_1.json",
+      "extension": ".json",
+      "size_bytes": 89,
+      "size_human": "89.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "chrome",
+        "edge",
+        "firefox",
+        "safari",
+        "safari_min"
+      ],
+      "sample": {
+        "chrome": "146",
+        "edge": "146",
+        "firefox": "148",
+        "safari": "26",
+        "safari_min": "18"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-desktop-latest-vers_1.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-desktop-supported_1.json",
+      "extension": ".json",
+      "size_bytes": 1263,
+      "size_human": "1.2 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "chrome",
+        "edge",
+        "firefox",
+        "safari"
+      ],
+      "sample": {
+        "chrome": "[{'browserName': 'Chrome', 'platformName': 'Windows 11', 'browserVersion': 'latest', 'comment': 'lat",
+        "edge": "[{'browserName': 'MicrosoftEdge', 'platformName': 'Windows 11', 'browserVersion': 'latest'}, {'brows",
+        "firefox": "[{'browserName': 'Firefox', 'platformName': 'Windows 11', 'browserVersion': 'latest'}, {'browserName",
+        "safari": "[{'browserName': 'Safari', 'platformName': 'macOS Sequoia', 'browserVersion': 'latest', 'comment': '"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-desktop-supported_1.json"
+    },
+    {
+      "filename": "tools_browsers-lists_lt-mobile-supported_1.json",
+      "extension": ".json",
+      "size_bytes": 431,
+      "size_human": "431.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "ios",
+        "android"
+      ],
+      "sample": {
+        "ios": "[{'device_name': 'iPhone 17', 'version': '26.2', 'platformName': 'ios', 'browserName': 'Safari'}, {'",
+        "android": "[{'device_name': 'Pixel 10', 'version': '16', 'platformName': 'android', 'browserName': 'Chrome'}]"
+      },
+      "download_source": "github",
+      "relative_path": "tools_browsers-lists_lt-mobile-supported_1.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app__1.gitignore",
+      "extension": ".gitignore",
+      "size_bytes": 548,
+      "size_human": "548.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gitignore",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app__1.gitignore"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_angular_1.json",
+      "extension": ".json",
+      "size_bytes": 3065,
+      "size_human": "3.0 KB",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "$schema",
+        "version",
+        "newProjectRoot",
+        "projects",
+        "cli"
+      ],
+      "sample": {
+        "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+        "version": "1",
+        "newProjectRoot": "projects",
+        "projects": "{'demo-app': {'projectType': 'application', 'schematics': {'@schematics/angular:component': {'inline",
+        "cli": "{'analytics': False}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_angular_1.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_package_1.json",
+      "extension": ".json",
+      "size_bytes": 822,
+      "size_human": "822.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "scripts",
+        "private",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "demo-app",
+        "version": "0.0.0",
+        "scripts": "{'ng': 'ng', 'start': 'ng serve --host 0.0.0.0', 'build': 'ng build', 'watch': 'ng build --watch --c",
+        "private": "True",
+        "dependencies": "{'@angular/animations': '^16.2.0', '@angular/common': '^16.2.0', '@angular/compiler': '^16.2.0', '@a"
+      },
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_package_1.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig.app_1.json",
+      "extension": ".json",
+      "size_bytes": 263,
+      "size_human": "263.0 B",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig.app_1.json"
+    },
+    {
+      "filename": "tools_sandbox-apps_angular-demo-app_tsconfig_1.json",
+      "extension": ".json",
+      "size_bytes": 901,
+      "size_human": "901.0 B",
+      "file_type": "json",
+      "error": "JSON parse error: Expecting value: line 1 column 1 (char 0)",
+      "download_source": "github",
+      "relative_path": "tools_sandbox-apps_angular-demo-app_tsconfig_1.json"
+    },
+    {
+      "filename": "tools_test-builds_browser-agent-wrapper__1.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_browser-agent-wrapper__1.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_browser-agent-wrapper_package_1.json",
+      "extension": ".json",
+      "size_bytes": 361,
+      "size_human": "361.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "browser-agent-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_browser-agent-wrapper_package_1.json"
+    },
+    {
+      "filename": "tools_test-builds_library-wrapper__1.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_library-wrapper__1.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_library-wrapper_package_1.json",
+      "extension": ".json",
+      "size_bytes": 487,
+      "size_human": "487.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "library-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_library-wrapper_package_1.json"
+    },
+    {
+      "filename": "tools_test-builds_package_1.json",
+      "extension": ".json",
+      "size_bytes": 229,
+      "size_human": "229.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "keywords",
+        "author",
+        "license",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "test-builds",
+        "version": "1.0.0",
+        "description": "",
+        "main": "builder.js",
+        "scripts": "{'build-all': 'node ./builder'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_package_1.json"
+    },
+    {
+      "filename": "tools_test-builds_raw-src-wrapper__1.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_raw-src-wrapper__1.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_raw-src-wrapper_package_1.json",
+      "extension": ".json",
+      "size_bytes": 355,
+      "size_human": "355.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "author",
+        "license",
+        "dependencies"
+      ],
+      "sample": {
+        "name": "raw-src-wrapper",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'build': 'webpack --config webpack.config.js --mode=production --node-env=production'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_raw-src-wrapper_package_1.json"
+    },
+    {
+      "filename": "tools_test-builds_rollup-micro-agent__1.npmrc",
+      "extension": ".npmrc",
+      "size_bytes": 18,
+      "size_human": "18.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .npmrc",
+      "download_source": "github",
+      "relative_path": "tools_test-builds_rollup-micro-agent__1.npmrc"
+    },
+    {
+      "filename": "tools_test-builds_rollup-micro-agent_package_1.json",
+      "extension": ".json",
+      "size_bytes": 606,
+      "size_human": "606.0 B",
+      "file_type": "json",
+      "structure": "object",
+      "keys": [
+        "name",
+        "version",
+        "description",
+        "main",
+        "scripts",
+        "keywords",
+        "author",
+        "license",
+        "type",
+        "dependencies",
+        "devDependencies"
+      ],
+      "sample": {
+        "name": "rollup-micro-agent",
+        "version": "1.0.0",
+        "description": "",
+        "main": "index.js",
+        "scripts": "{'test': 'echo \"Error: no test specified\" && exit 1', 'build': 'rollup -c'}"
+      },
+      "download_source": "github",
+      "relative_path": "tools_test-builds_rollup-micro-agent_package_1.json"
+    },
+    {
+      "filename": "NRAPI-Info.plist",
+      "extension": ".plist",
+      "size_bytes": 121,
+      "size_human": "121.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/NRAPI-Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/NRAPI-Info.plist"
+    },
+    {
+      "filename": "AppIcon60x60@2x.png",
+      "extension": ".png",
+      "size_bytes": 4412,
+      "size_human": "4.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/AppIcon60x60@2x.png",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/AppIcon60x60@2x.png"
+    },
+    {
+      "filename": "NRTestApp",
+      "extension": "",
+      "size_bytes": 332352,
+      "size_human": "324.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/NRTestApp",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/NRTestApp"
+    },
+    {
+      "filename": "01J-lp-oVM-view-Ze5-6b-2t3.nib",
+      "extension": ".nib",
+      "size_bytes": 1225,
+      "size_human": "1.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .nib",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib"
+    },
+    {
+      "filename": "UIViewController-01J-lp-oVM.nib",
+      "extension": ".nib",
+      "size_bytes": 924,
+      "size_human": "924.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .nib",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 258,
+      "size_human": "258.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Base.lproj/LaunchScreen.storyboardc/Info.plist"
+    },
+    {
+      "filename": "Assets.car",
+      "extension": ".car",
+      "size_bytes": 26600,
+      "size_human": "26.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .car",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Assets.car",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Assets.car"
+    },
+    {
+      "filename": "AppIcon76x76@2x~ipad.png",
+      "extension": ".png",
+      "size_bytes": 5851,
+      "size_human": "5.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .png",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/AppIcon76x76@2x~ipad.png",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/AppIcon76x76@2x~ipad.png"
+    },
+    {
+      "filename": "PrivacyInfo.xcprivacy",
+      "extension": ".xcprivacy",
+      "size_bytes": 2915,
+      "size_human": "2.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .xcprivacy",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/PrivacyInfo.xcprivacy",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/PrivacyInfo.xcprivacy"
+    },
+    {
+      "filename": "NewRelic",
+      "extension": "",
+      "size_bytes": 2499376,
+      "size_human": "2.4 MB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/NewRelic",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/NewRelic"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 726,
+      "size_human": "726.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Frameworks/NewRelic.framework/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Frameworks/NewRelic.framework/Info.plist"
+    },
+    {
+      "filename": "Info.plist",
+      "extension": ".plist",
+      "size_bytes": 1746,
+      "size_human": "1.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .plist",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/Info.plist",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/Info.plist"
+    },
+    {
+      "filename": "PkgInfo",
+      "extension": "",
+      "size_bytes": 8,
+      "size_human": "8.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "NRTestApp.app/PkgInfo",
+      "from_zip": "tests_webview-specs_assets_NRTestApp_1.zip",
+      "relative_path": "zip_contents/NRTestApp.app/PkgInfo"
+    }
+  ]
+}

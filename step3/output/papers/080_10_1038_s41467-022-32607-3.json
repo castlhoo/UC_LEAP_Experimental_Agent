@@ -1,0 +1,1084 @@
+{
+  "paper_id": "step1_0256",
+  "title": "Toward a BT.2020 green emitter through a combined multiple resonance effect and multi-lock strategy",
+  "doi": "10.1038/s41467-022-32607-3",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4292677395",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 4,
+  "files_extracted": 40,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-32607-3",
+  "files_inspected": 44,
+  "file_types_found": [
+    "binary",
+    "excel",
+    "pdf",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 207 column 20 (char 11063)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports two new rigid multiple-resonance thermally activated delayed fluorescence (MR-TADF) green emitters, tCzphB-Ph and tCzphB-Fl, designed by locking phenyl groups in a BN-core framework with spiro-carbon bridges. The molecules show unusually narrow green emission (down to 14 nm FWHM in cyclohexane, CIE y up to 0.77) and enable high-performance OLEDs, including a BT.2020-compatible green device with high EQE and very high luminance.",
+    "measurement_types": [
+      "UV-vis absorption spectroscopy",
+      "photoluminescence (PL) spectroscopy",
+      "time-resolved fluorescence / transient PL decay",
+      "phosphorescence spectroscopy",
+      "quantum yield measurement",
+      "cyclic voltammetry",
+      "thermogravimetric analysis (TGA)",
+      "single-crystal X-ray diffraction",
+      "OLED electroluminescence (EL) spectra",
+      "current density-voltage-luminance (J-V-L) measurements",
+      "external quantum efficiency (EQE) characterization",
+      "operational lifetime testing",
+      "DFT / TD-DFT quantum chemical calculations",
+      "vibrationally resolved fluorescence simulations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1",
+        "description": "Molecular structures and design strategy comparing t-DABNA, DtBuCzB, tCzphB-Ph, and tCzphB-Fl.",
+        "data_type": "chemical structure schematic",
+        "likely_source": "experimental design / drawn structures"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "UV-vis absorption, fluorescence, and low-temperature phosphorescence spectra of tCzphB-Ph in toluene.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Room-temperature fluorescence spectra comparing t-DABNA, DtBuCzB, tCzphB-Ph, and tCzphB-Fl in toluene.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Fluorescence spectra of tCzphB-Ph in different solvents and in CBP/TPSS host films, showing solvent and host effects on emission width and peak position.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Transient PL decay spectra of tCzphB-Ph and tCzphB-Fl doped into TPSS films, showing prompt and delayed components.",
+        "data_type": "decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Single-crystal structure of tCzphB-Ph (top and side views).",
+        "data_type": "crystal structure image",
+        "likely_source": "experimental X-ray crystallography"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "HONTO/LUNTO distributions for tCzphB-Ph in the S1 state from TD-DFT.",
+        "data_type": "orbital isosurface image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Simulated vibrationally resolved fluorescence spectrum for DtBuCzB with dominant vibrational modes indicated.",
+        "data_type": "simulated spectrum",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Simulated vibrationally resolved fluorescence spectrum for tCzphB-Ph with dominant vibrational modes indicated.",
+        "data_type": "simulated spectrum",
+        "likely_source": "theoretical calculations / simulations"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "EL spectra of TADF OLEDs containing tCzphBs, PHOLED containing Ir(ppy)3, and PSTADF OLEDs containing both Ir(ppy)3 and tCzphBs; inset shows device image and absorption spectrum reference.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "1931 CIE coordinates of the device emissions.",
+        "data_type": "chromaticity plot",
+        "likely_source": "derived from experimental EL spectra"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Current density-voltage-luminance characteristics of the OLEDs.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "EQE versus luminance characteristics of the OLEDs, including roll-off behavior.",
+        "data_type": "performance curve",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements from UV-vis spectroscopy, PL/EL spectroscopy, transient decay, phosphorescence, cyclic voltammetry, TGA, X-ray diffraction, and OLED electrical/lifetime testing. Instrumentation is explicitly listed in Methods, including Shimadzu UV2600, PTI QM-40 spectrofluorometer, PTI TimeMaster, Horiba DeltaFlex TCSPC, CHI-600E electrochemical analyzer, TA-Q50 TGA, Bruker APEX-II CCD diffractometer, and OLED test systems.",
+    "dataset_characterization": {
+      "data_availability_statement": "The data supporting the findings are provided in the Supplementary Information. Single-crystal data were deposited in the Cambridge Crystallographic Data Center (CCDC-2175560 for tCzphB-Ph and CCDC-2175561 for tCzphB-Fl). The DFT and TD-DFT raw data are available at Figshare (https://doi.org/10.6084/m9.figshare.20319060.v1). Source data are provided with this paper.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw experimental measurements are implied by the Methods and include spectra, decay traces, electrochemical curves, thermal analysis curves, diffraction frames/data, and OLED performance measurements. The paper does not specify file formats for these raw datasets, except for crystallographic deposition in CCDC and computational raw data in Figshare.",
+      "processed_data_description": "Processed data include extracted photophysical parameters in Table 1, crystal structure refinements, calculated HOMO/LUMO energies from cyclic voltammetry, CIE coordinates, FWHM values, EQE values, and lifetime metrics. Supplementary tables and notes contain additional derived quantities such as Huang-Rhys analysis, bond dissociation energy, and device optimization details.",
+      "figure_data_description": "Yes. The paper states that source data are provided with the paper, indicating figure-ready data are available. Figures are based on experimental spectra, device curves, crystallographic images, and theoretical simulation outputs; supplementary figures are also referenced extensively.",
+      "scripts_description": "No analysis scripts or notebooks are mentioned. Computational work was performed with Gaussian 16, Multiwfn, VMD, and GaussianView, but these are software tools rather than provided scripts.",
+      "notes": "The dataset is a mixed experimental-theoretical package. Experimental raw measurements are not explicitly described as downloadable files in the main text, but source data are stated to be included with the paper. The clearest externally accessible raw-like datasets are the CCDC crystal structures and the Figshare DFT/TD-DFT raw data. Figure data are both measured and simulated, with many key claims supported by derived quantities rather than only raw traces."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "Methods describe direct measurements from multiple instruments, and Data availability states that DFT and TD-DFT raw data are available at Figshare and single-crystal data are deposited in CCDC.",
+      "source_data_evidence": "Data availability explicitly says 'Source data are provided with this paper.'",
+      "data_availability_section_relevant": [
+        "The data supporting the findings in this study are provided in the Supplementary Information file.",
+        "The single-crystal data have been deposited in the Cambridge Crystallographic Data Center database",
+        "The DFT and TD-DFT raw data are available at the Figshare database",
+        "Source data are provided with this paper."
+      ],
+      "priority_modalities": [
+        "spectra",
+        "transient decay traces",
+        "electroluminescence curves",
+        "current-voltage-luminance curves",
+        "crystallographic data",
+        "computational output files",
+        "lifetime test data"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_32607_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 3381211,
+      "size_human": "3.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_32607_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2022_32607_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4031951,
+      "size_human": "3.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_32607_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2022_32607_MOESM3_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 10082515,
+      "size_human": "9.6 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig.2a",
+        "Fig.2b",
+        "Fig.2c",
+        "Fig.2d",
+        "Fig.3c",
+        "Fig.3d",
+        "Fig.4a",
+        "Fig.4c",
+        "Fig.4d",
+        "Supplementary Fig.2",
+        "Supplementary Fig.3a",
+        "Supplementary Fig.3b",
+        "Supplementary Fig.3c",
+        "Supplementary Fig.3d",
+        "Supplementary Fig.7",
+        "Supplementary Fig.8",
+        "Supplementary Fig.9",
+        "Supplementary Fig.10",
+        "Supplementary Fig.12",
+        "Supplementary Fig.13",
+        "Supplementary Fig.14",
+        "Supplementary Fig.15",
+        "Supplementary Fig.16"
+      ],
+      "sheet_count": 23,
+      "sheets": [
+        {
+          "sheet_name": "Fig.2a",
+          "columns": [
+            "tCzphB-Ph",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "tCzphB-Fl",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "tCzphB-Ph",
+            "tCzphB-Fl"
+          ],
+          "column_count": 13,
+          "row_count": 504,
+          "dtypes": {
+            "tCzphB-Ph": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "tCzphB-Fl": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2b",
+          "columns": [
+            "t-DABNA",
+            "Unnamed: 1",
+            "DtBuCzB",
+            "Unnamed: 3",
+            "tCzphB-Ph",
+            "Unnamed: 5",
+            "tCzphB-Fl",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "t-DABNA",
+            "DtBuCzB",
+            "tCzphB-Ph",
+            "tCzphB-Fl"
+          ],
+          "column_count": 8,
+          "row_count": 253,
+          "dtypes": {
+            "t-DABNA": "object",
+            "Unnamed: 1": "object",
+            "DtBuCzB": "object",
+            "Unnamed: 3": "object",
+            "tCzphB-Ph": "object",
+            "Unnamed: 5": "object",
+            "tCzphB-Fl": "object",
+            "Unnamed: 7": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.2c",
+          "columns": [
+            "DCM",
+            "Unnamed: 1",
+            "THF",
+            "Unnamed: 3",
+            "Tol",
+            "Unnamed: 5",
+            "cHex",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "CBP",
+            "Unnamed: 10",
+            "TPSS",
+            "Unnamed: 12"
+          ],
+          "named_columns": [
+            "DCM",
+            "THF",
+            "Tol",
+            "cHex",
+            "CBP",
+            "TPSS"
+          ],
+          "column_count": 13,
+          "row_count": 254,
+          "dtypes": {
+            "DCM": "object",
+            "Unnamed: 1": "object",
+            "THF": "object",
+            "Unnamed: 3": "object",
+            "Tol": "object",
+            "Unnamed: 5": "object",
+            "cHex": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "float64",
+            "CBP": "object",
+            "Unnamed: 10": "object",
+            "TPSS": "object",
+            "Unnamed: 12": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.2d",
+          "columns": [
+            "tCzphB-Fl",
+            "Unnamed: 1",
+            "tCzphB-Ph",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "tCzphB-Fl.1",
+            "tCzphB-Ph.1"
+          ],
+          "named_columns": [
+            "tCzphB-Fl",
+            "tCzphB-Ph",
+            "tCzphB-Fl.1",
+            "tCzphB-Ph.1"
+          ],
+          "column_count": 8,
+          "row_count": 16387,
+          "dtypes": {
+            "tCzphB-Fl": "object",
+            "Unnamed: 1": "object",
+            "tCzphB-Ph": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "object",
+            "tCzphB-Fl.1": "object",
+            "tCzphB-Ph.1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig.3c",
+          "columns": [
+            "DtBuCzB",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "DtBuCzB"
+          ],
+          "column_count": 4,
+          "row_count": 3754,
+          "dtypes": {
+            "DtBuCzB": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.3d",
+          "columns": [
+            "tCzphB-Fl",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "tCzphB-Fl"
+          ],
+          "column_count": 4,
+          "row_count": 3754,
+          "dtypes": {
+            "tCzphB-Fl": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.4a",
+          "columns": [
+            "Abs. tCzphB-Ph",
+            "Unnamed: 1",
+            "PhOLED:Ir(ppy)3",
+            "Unnamed: 3",
+            "PSTADF:tCzphB-Ph",
+            "Unnamed: 5",
+            "PSTADF:tCzphB-Fl",
+            "Unnamed: 7",
+            "TADF:tCzphB-Fl",
+            "Unnamed: 9",
+            "TADF:tCzphB-Ph",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "Abs. tCzphB-Ph",
+            "PhOLED:Ir(ppy)3",
+            "PSTADF:tCzphB-Ph",
+            "PSTADF:tCzphB-Fl",
+            "TADF:tCzphB-Fl",
+            "TADF:tCzphB-Ph"
+          ],
+          "column_count": 12,
+          "row_count": 503,
+          "dtypes": {
+            "Abs. tCzphB-Ph": "object",
+            "Unnamed: 1": "object",
+            "PhOLED:Ir(ppy)3": "object",
+            "Unnamed: 3": "object",
+            "PSTADF:tCzphB-Ph": "object",
+            "Unnamed: 5": "object",
+            "PSTADF:tCzphB-Fl": "object",
+            "Unnamed: 7": "object",
+            "TADF:tCzphB-Fl": "object",
+            "Unnamed: 9": "object",
+            "TADF:tCzphB-Ph": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.4c",
+          "columns": [
+            "TADF:tCzphB-Fl",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "TADF:tCzphB-Ph",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "PSTADF:tCzphB-Fl",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "PSTADF:tCzphB-Ph",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "PhOLED:Ir(ppy)3",
+            "Unnamed: 13",
+            "Unnamed: 14"
+          ],
+          "named_columns": [
+            "TADF:tCzphB-Fl",
+            "TADF:tCzphB-Ph",
+            "PSTADF:tCzphB-Fl",
+            "PSTADF:tCzphB-Ph",
+            "PhOLED:Ir(ppy)3"
+          ],
+          "column_count": 15,
+          "row_count": 346,
+          "dtypes": {
+            "TADF:tCzphB-Fl": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "TADF:tCzphB-Ph": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "PSTADF:tCzphB-Fl": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object",
+            "PSTADF:tCzphB-Ph": "object",
+            "Unnamed: 10": "object",
+            "Unnamed: 11": "object",
+            "PhOLED:Ir(ppy)3": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig.4d",
+          "columns": [
+            "TADF:tCzphB-Ph",
+            "Unnamed: 1",
+            "TADF:tCzphB-Fl",
+            "Unnamed: 3",
+            "PSTADF: tCzphB-Ph",
+            "Unnamed: 5",
+            "PSTADF: tCzphB-Fl",
+            "Unnamed: 7",
+            "PHOLED: Ir(ppy)3",
+            "Unnamed: 9"
+          ],
+          "named_columns": [
+            "TADF:tCzphB-Ph",
+            "TADF:tCzphB-Fl",
+            "PSTADF: tCzphB-Ph",
+            "PSTADF: tCzphB-Fl",
+            "PHOLED: Ir(ppy)3"
+          ],
+          "column_count": 10,
+          "row_count": 82,
+          "dtypes": {
+            "TADF:tCzphB-Ph": "object",
+            "Unnamed: 1": "object",
+            "TADF:tCzphB-Fl": "object",
+            "Unnamed: 3": "object",
+            "PSTADF: tCzphB-Ph": "object",
+            "Unnamed: 5": "object",
+            "PSTADF: tCzphB-Fl": "object",
+            "Unnamed: 7": "object",
+            "PHOLED: Ir(ppy)3": "object",
+            "Unnamed: 9": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Supplementary Fig.2",
+          "columns": [
+            "DCM",
+            "Unnamed: 1",
+            "THF",
+            "Unnamed: 3",
+            "Tol",
+            "Unnamed: 5",
+            "cHex",
+            "Unnamed: 7",
+            "CBP",
+            "Unnamed: 9",
+            "TPSS",
+            "Unnamed: 11"
+          ],
+          "named_columns": [
+            "DCM",
+            "THF",
+            "Tol",
+            "cHex",
+            "CBP",
+            "TPSS"
+          ],
+          "column_count": 12,
+          "row_count": 503,
+          "dtypes": {
+            "DCM": "object",
+            "Unnamed: 1": "object",
+            "THF": "object",
+            "Unnamed: 3": "object",
+            "Tol": "object",
+            "Unnamed: 5": "object",
+            "cHex": "object",
+            "Unnamed: 7": "object",
+            "CBP": "object",
+            "Unnamed: 9": "object",
+            "TPSS": "object",
+            "Unnamed: 11": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_32607_MOESM3_ESM_1.xlsx"
+    },
+    {
+      "filename": "TD-DFT_1.zip",
+      "extension": ".zip",
+      "size_bytes": 8125085,
+      "size_human": "7.7 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "figshare",
+      "relative_path": "TD-DFT_1.zip"
+    },
+    {
+      "filename": "DtBuCzB_HONTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 138582,
+      "size_human": "135.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_HONTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_HONTO.jpg"
+    },
+    {
+      "filename": "DtBuCzB_LUNTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 137682,
+      "size_human": "134.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_LUNTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_LUNTO.jpg"
+    },
+    {
+      "filename": "DtBuCzB_PL.gjf",
+      "extension": ".gjf",
+      "size_bytes": 203,
+      "size_human": "203.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_PL.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_PL.gjf"
+    },
+    {
+      "filename": "DtBuCzB_PL.out",
+      "extension": ".out",
+      "size_bytes": 1060694,
+      "size_human": "1.0 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_PL.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_PL.out"
+    },
+    {
+      "filename": "DtBuCzB_S0.gjf",
+      "extension": ".gjf",
+      "size_bytes": 3543,
+      "size_human": "3.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_S0.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_S0.gjf"
+    },
+    {
+      "filename": "DtBuCzB_S0.out",
+      "extension": ".out",
+      "size_bytes": 2250936,
+      "size_human": "2.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_S0.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_S0.out"
+    },
+    {
+      "filename": "DtBuCzB_S1.gjf",
+      "extension": ".gjf",
+      "size_bytes": 3952,
+      "size_human": "3.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_S1.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_S1.gjf"
+    },
+    {
+      "filename": "DtBuCzB_S1.out",
+      "extension": ".out",
+      "size_bytes": 2648111,
+      "size_human": "2.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_S1.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_S1.out"
+    },
+    {
+      "filename": "DtBuCzB_td.gjf",
+      "extension": ".gjf",
+      "size_bytes": 3943,
+      "size_human": "3.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_td.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_td.gjf"
+    },
+    {
+      "filename": "DtBuCzB_td.out",
+      "extension": ".out",
+      "size_bytes": 106767,
+      "size_human": "104.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "DtBuCzB/DtBuCzB_td.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/DtBuCzB/DtBuCzB_td.out"
+    },
+    {
+      "filename": "t-DABNA_HONTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 122455,
+      "size_human": "119.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_HONTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_HONTO.jpg"
+    },
+    {
+      "filename": "t-DABNA_LUNTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 123898,
+      "size_human": "121.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_LUNTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_LUNTO.jpg"
+    },
+    {
+      "filename": "t-DABNA_PL.gjf",
+      "extension": ".gjf",
+      "size_bytes": 203,
+      "size_human": "203.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_PL.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_PL.gjf"
+    },
+    {
+      "filename": "t-DABNA_PL.out",
+      "extension": ".out",
+      "size_bytes": 1154072,
+      "size_human": "1.1 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_PL.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_PL.out"
+    },
+    {
+      "filename": "t-DABNA_S0.gjf",
+      "extension": ".gjf",
+      "size_bytes": 3683,
+      "size_human": "3.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_S0.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_S0.gjf"
+    },
+    {
+      "filename": "t-DABNA_S0.out",
+      "extension": ".out",
+      "size_bytes": 2594225,
+      "size_human": "2.5 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_S0.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_S0.out"
+    },
+    {
+      "filename": "t-DABNA_S1.gjf",
+      "extension": ".gjf",
+      "size_bytes": 4108,
+      "size_human": "4.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_S1.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_S1.gjf"
+    },
+    {
+      "filename": "t-DABNA_S1.out",
+      "extension": ".out",
+      "size_bytes": 2979675,
+      "size_human": "2.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_S1.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_S1.out"
+    },
+    {
+      "filename": "t-DABNA_td.gjf",
+      "extension": ".gjf",
+      "size_bytes": 4099,
+      "size_human": "4.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_td.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_td.gjf"
+    },
+    {
+      "filename": "t-DABNA_td.out",
+      "extension": ".out",
+      "size_bytes": 111026,
+      "size_human": "108.4 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "t-DABNA/t-DABNA_td.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/t-DABNA/t-DABNA_td.out"
+    },
+    {
+      "filename": "tCzphB-Fl_HONTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 167105,
+      "size_human": "163.2 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_HONTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_HONTO.jpg"
+    },
+    {
+      "filename": "tCzphB-Fl_LUNTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 168614,
+      "size_human": "164.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_LUNTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_LUNTO.jpg"
+    },
+    {
+      "filename": "tCzphB-Fl_PL.gjf",
+      "extension": ".gjf",
+      "size_bytes": 204,
+      "size_human": "204.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_PL.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_PL.gjf"
+    },
+    {
+      "filename": "tCzphB-Fl_PL.out",
+      "extension": ".out",
+      "size_bytes": 1837188,
+      "size_human": "1.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_PL.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_PL.out"
+    },
+    {
+      "filename": "tCzphB-Fl_S0.gjf",
+      "extension": ".gjf",
+      "size_bytes": 4874,
+      "size_human": "4.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_S0.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_S0.gjf"
+    },
+    {
+      "filename": "tCzphB-Fl_S0.out",
+      "extension": ".out",
+      "size_bytes": 3481250,
+      "size_human": "3.3 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_S0.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_S0.out"
+    },
+    {
+      "filename": "tCzphB-Fl_S1.gjf",
+      "extension": ".gjf",
+      "size_bytes": 5435,
+      "size_human": "5.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_S1.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_S1.gjf"
+    },
+    {
+      "filename": "tCzphB-Fl_S1.out",
+      "extension": ".out",
+      "size_bytes": 4835198,
+      "size_human": "4.6 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_S1.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_S1.out"
+    },
+    {
+      "filename": "tCzphB-Fl_td.gjf",
+      "extension": ".gjf",
+      "size_bytes": 5426,
+      "size_human": "5.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_td.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_td.gjf"
+    },
+    {
+      "filename": "tCzphB-Fl_td.out",
+      "extension": ".out",
+      "size_bytes": 130684,
+      "size_human": "127.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Fl/tCzphB-Fl_td.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Fl/tCzphB-Fl_td.out"
+    },
+    {
+      "filename": "tCzphB-Ph_HONTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 174788,
+      "size_human": "170.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_HONTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_HONTO.jpg"
+    },
+    {
+      "filename": "tCzphB-Ph_LUNTO.jpg",
+      "extension": ".jpg",
+      "size_bytes": 176200,
+      "size_human": "172.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .jpg",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_LUNTO.jpg",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_LUNTO.jpg"
+    },
+    {
+      "filename": "tCzphB-Ph_PL.gjf",
+      "extension": ".gjf",
+      "size_bytes": 203,
+      "size_human": "203.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_PL.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_PL.gjf"
+    },
+    {
+      "filename": "tCzphB-Ph_PL.out",
+      "extension": ".out",
+      "size_bytes": 1928809,
+      "size_human": "1.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_PL.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_PL.out"
+    },
+    {
+      "filename": "tCzphB-Ph_S0.gjf",
+      "extension": ".gjf",
+      "size_bytes": 5013,
+      "size_human": "4.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_S0.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_S0.gjf"
+    },
+    {
+      "filename": "tCzphB-Ph_S0.out",
+      "extension": ".out",
+      "size_bytes": 5010158,
+      "size_human": "4.8 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_S0.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_S0.out"
+    },
+    {
+      "filename": "tCzphB-Ph_S1.gjf",
+      "extension": ".gjf",
+      "size_bytes": 5590,
+      "size_human": "5.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_S1.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_S1.gjf"
+    },
+    {
+      "filename": "tCzphB-Ph_S1.out",
+      "extension": ".out",
+      "size_bytes": 5877311,
+      "size_human": "5.6 MB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_S1.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_S1.out"
+    },
+    {
+      "filename": "tCzphB-Ph_td.gjf",
+      "extension": ".gjf",
+      "size_bytes": 5581,
+      "size_human": "5.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .gjf",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_td.gjf",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_td.gjf"
+    },
+    {
+      "filename": "tCzphB-Ph_td.out",
+      "extension": ".out",
+      "size_bytes": 131835,
+      "size_human": "128.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .out",
+      "download_source": "zip_extracted",
+      "archive_path": "tCzphB-Ph/tCzphB-Ph_td.out",
+      "from_zip": "TD-DFT_1.zip",
+      "relative_path": "zip_contents/tCzphB-Ph/tCzphB-Ph_td.out"
+    }
+  ]
+}

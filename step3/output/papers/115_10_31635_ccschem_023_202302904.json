@@ -1,0 +1,104 @@
+{
+  "paper_id": "step1_0071",
+  "title": "Multicolor Circularly Polarized Luminescence of a Single-Component System Revealing Multiple Information Encryption",
+  "doi": "10.31635/ccschem.023.202302904",
+  "journal": "CCS Chemistry",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4381837254",
+  "priority_score": 6.4,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_31635_ccschem_023_202302904",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear figure-ready or replot-ready dataset files were identified from the provided files.",
+  "type2_summary": "No clear raw/unprocessed measurement files were identified from the provided files.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "The file titles do not match the target paper, so there is no reliable evidence that these are supporting datasets for the analyzed article. If these PDFs contain supplementary figures or embedded source data, that cannot be determined from the available inspection report.",
+  "file_classifications": [
+    {
+      "relative_path": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium_1.pdf",
+      "filename": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper under analysis is a different CCS Chemistry article on multicolor circularly polarized luminescence; no evidence in the provided paper summary indicates this PDF is source data or figure data for that paper.",
+      "file_evidence": "PDF from Zenodo with a title matching a different publication (Angew. Chem. Int. Ed. 2022, Willis et al.) rather than the target paper. As a PDF, it is likely a paper/document rather than a dataset file.",
+      "reasoning": "Because the filename clearly corresponds to another article and not the target paper, it cannot be confidently treated as dataset data for the analyzed paper. With no content inspection showing embedded tables or source-data structure, the conservative classification is documentation.",
+      "ambiguity": "High ambiguity due to mismatch between target paper and file title; could be an unrelated paper PDF rather than data.",
+      "key_columns_or_structure": "Not applicable; PDF document, no dataset structure identified"
+    },
+    {
+      "relative_path": "Enantiopure_distorted_ribbon-shaped_nanographene_c_1.pdf",
+      "filename": "Enantiopure_distorted_ribbon-shaped_nanographene_c_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The provided paper summary does not mention this file or any supporting data organization; no evidence links it to the target CCS Chemistry paper.",
+      "file_evidence": "PDF from Zenodo with a title suggesting a separate publication on enantiopure distorted ribbon-shaped nanographene. No tabular structure, sheet names, or figure-specific data indicators are available from the inspection report.",
+      "reasoning": "This appears to be a standalone paper PDF rather than a data file. Since it is not clearly source data, raw data, or figure-ready data for the target paper, the conservative choice is documentation.",
+      "ambiguity": "High ambiguity because only filename-level evidence is available; content was not inspected and the title does not match the target paper.",
+      "key_columns_or_structure": "Not applicable; PDF document, no dataset structure identified"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports an experimentally demonstrated single-component metal-free luminescent material that produces multicolor circularly polarized emission for information encryption applications.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "No downloadable dataset or source data could be identified from the provided information.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no files or URLs were found on the publisher page. It is not possible to determine whether supporting data are in supplementary materials, a repository, or available from the authors.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no files or URLs were found on the publisher page. It is not possible to determine whether supporting data are in supplementary materials, a repository, or available from the authors.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1246242,
+      "size_human": "1.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Angew_Chem_Int_Ed_-_2022_-_Willis_-_Efficient_1400_1600_nm_Circularly_Polarized_Luminescence_from_a_Tuned_Chiral_Erbium_1.pdf"
+    },
+    {
+      "filename": "Enantiopure_distorted_ribbon-shaped_nanographene_c_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 4982815,
+      "size_human": "4.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Enantiopure_distorted_ribbon-shaped_nanographene_c_1.pdf"
+    }
+  ]
+}

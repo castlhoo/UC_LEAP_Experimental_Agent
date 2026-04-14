@@ -1,0 +1,628 @@
+{
+  "paper_id": "step1_0346",
+  "title": "Delayed fluorescence from inverted singlet and triplet excited states",
+  "doi": "10.1038/s41586-022-05132-y",
+  "journal": "Nature",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4295762974",
+  "priority_score": 9.0,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-022-05132-y",
+  "files_inspected": 3,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All provided files are curated source-data or figure-linked datasets organized for direct plotting or near-direct plotting. The Excel workbook is clearly replot-ready figure data, and the PDFs are Nature source-data files associated with the article.",
+  "type2_summary": "No clear raw/unprocessed instrument files were provided. The dataset does not include proprietary instrument exports, scan files, or other obvious raw measurement outputs.",
+  "type1_files": [
+    "41586_2022_5132_MOESM2_ESM_1.pdf",
+    "41586_2022_5132_MOESM3_ESM_1.pdf",
+    "Data_Suporting_Delayed_Fluorescence_from_Inverted_Singlet_and_Triplet_Excited_States_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper strongly indicates source-data availability and figure-linked datasets. No explicit raw instrument files are present in the provided file list. The PDF contents were not directly inspected, so their Type 1 classification is based on repository context and paper evidence.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2022_5132_MOESM2_ESM_1.pdf",
+      "filename": "41586_2022_5132_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that online content includes source data, and the figures/extended data are organized as figure-specific datasets. This file is from the Nature source-data package, which is typically figure-ready rather than raw instrument output.",
+      "file_evidence": "PDF source-data file from nature_source_data, size 2.6 MB. The repository context indicates it is part of the article's source data package rather than a raw instrument export. PDF source-data files in Nature are usually figure-linked and replot-ready or near-replot-ready.",
+      "reasoning": "Although the exact internal contents are not shown, the file is clearly part of the curated source-data deposit associated with the paper's figures. Given the paper's explicit source-data availability and the file's placement in the Nature source-data package, the conservative classification is Type 1.",
+      "ambiguity": "Moderate: internal structure is not inspected here, so the classification relies on repository context and paper evidence rather than visible tabular headers.",
+      "key_columns_or_structure": "Not inspected; likely figure-linked source data or plotted data in PDF form"
+    },
+    {
+      "relative_path": "41586_2022_5132_MOESM3_ESM_1.pdf",
+      "filename": "41586_2022_5132_MOESM3_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly mentions source data and extended data accompanying the article. This file is in the Nature source-data deposit, which generally corresponds to figure-associated data rather than raw instrument files.",
+      "file_evidence": "PDF file in nature_source_data, size 9.9 MB. The larger size is consistent with a multi-panel source-data PDF containing figure-ready plots/tables, not a proprietary raw instrument file.",
+      "reasoning": "The file is best interpreted as curated source data for figures or extended data. In the absence of evidence that it is raw instrument output, and given the Nature source-data context, Type 1 is the conservative choice.",
+      "ambiguity": "Moderate: the file contents are not directly inspected, so there is some uncertainty about whether it contains embedded raw traces versus figure-ready exports.",
+      "key_columns_or_structure": "Not inspected; likely multi-panel source-data PDF with plots/tables"
+    },
+    {
+      "relative_path": "Data_Suporting_Delayed_Fluorescence_from_Inverted_Singlet_and_Triplet_Excited_States_1.xlsx",
+      "filename": "Data_Suporting_Delayed_Fluorescence_from_Inverted_Singlet_and_Triplet_Excited_States_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly says the data underlying the article are available on Figshare and that online content includes source data. The workbook sheets are organized by figure and extended data figure, matching figure-ready source data.",
+      "file_evidence": "Excel workbook with 7 sheets named Fig1, Fig3, Fig4, Extended Data Fig1, Extended Data Fig2, Extended Data Fig3, and Extended Data Fig4. The sheets contain headers and structured columns, including processed variables such as ΔEST (eV), f, ES1(eV), and figure-specific datasets with thousands of rows. This is directly replot-ready with minimal processing.",
+      "reasoning": "This is a classic Type 1 source-data workbook: figure-organized, tabular, headered, and intended for direct plotting. The presence of processed quantities and figure-specific sheets strongly supports cleaned/replot-ready data rather than raw instrument output.",
+      "ambiguity": "Low: the structure clearly matches figure-ready source data.",
+      "key_columns_or_structure": "Fig1: ΔEST (eV), f, ES1(eV); Fig3: figure-specific time-resolved decay data; Fig4: device performance curves; Extended Data Fig1-4: spectroscopy, fits, and kinetic plots"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports a heptazine-based organic emitter, HzTFEX2, that experimentally shows an inverted singlet–triplet gap (ΔEST = −11 ± 2 meV), producing delayed fluorescence from a singlet state below the triplet state. The authors combine quantum-chemical screening, synthesis, photophysical spectroscopy, and OLED fabrication to show fast sub-microsecond delayed fluorescence and a peak external quantum efficiency of 17% in a blue OLED.",
+    "measurement_types": [
+      "TDDFT screening calculations",
+      "EOM-CCSD excited-state calculations",
+      "ADC(2) calculations",
+      "CASPT2 calculations",
+      "UV–vis absorption spectroscopy",
+      "steady-state photoluminescence spectroscopy",
+      "absolute photoluminescence quantum yield measurement",
+      "transient absorption spectroscopy",
+      "time-correlated single-photon counting transient PL decay",
+      "temperature-dependent photoluminescence kinetics",
+      "ultraviolet photoelectron yield spectroscopy",
+      "OLED current density–voltage–luminance measurement",
+      "external quantum efficiency measurement",
+      "viewing-angle luminance measurement",
+      "transient electroluminescence decay"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of singlet and triplet excited-state splitting by exchange interaction and inversion by double-excitation effects.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "General molecular design of heptazine analogues with two substituent positions R1 and R2; 186 substituents generate 34,596 candidates.",
+        "data_type": "molecular structure diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Screening statistics showing number of molecules as a function of ΔEST and oscillator strength f from TDDFT.",
+        "data_type": "scatter/heatmap-like screening plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "S1–S0 energy gap versus ΔEST and oscillator strength f, color-coded by fluorescence color.",
+        "data_type": "scatter plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Molecular structures of lead candidates HzTFEX2 and HzPipX2 with EOM-CCSD-calculated ΔEST values.",
+        "data_type": "molecular structure diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Dominant natural transition orbitals for S1 and T1 of HzTFEX2.",
+        "data_type": "orbital isosurface image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Dominant natural transition orbitals for S1 and T1 of HzPipX2.",
+        "data_type": "orbital isosurface image",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Steady-state absorption and photoluminescence spectra of HzTFEX2 and HzPipX2 in deaerated toluene.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Temperature-dependent transient PL decays of HzTFEX2.",
+        "data_type": "time-resolved decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Temperature-dependent transient PL decays of HzPipX2.",
+        "data_type": "time-resolved decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Temperature dependence of delayed fluorescence time constants τDF for both molecules with exponential fits versus inverse temperature.",
+        "data_type": "Arrhenius-like plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Excited-state kinetic scheme and fitted rate constants for HzTFEX2.",
+        "data_type": "energy-level diagram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Excited-state kinetic scheme and fitted rate constants for HzPipX2.",
+        "data_type": "energy-level diagram",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "OLED current density–voltage–luminance characteristics and inset EL spectra for HzTFEX2 device.",
+        "data_type": "transport/optoelectronic curve plus spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "External quantum efficiency versus luminance for the OLED and inset viewing-angle luminance dependence.",
+        "data_type": "device performance curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Transient electroluminescence decays of OLEDs using HzTFEX2, 4CzIPN, and MADN.",
+        "data_type": "time-resolved device decay curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig1",
+        "description": "Transient absorption map of HzTFEX2, integrated transient absorption spectra in deaerated and aerated toluene, and decays monitored at 700 nm and 1600 nm.",
+        "data_type": "time-resolved spectroscopy map and decay curves",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataFig2",
+        "description": "Fits of S1 population dynamics to transient PL decay data for HzTFEX2 and HzPipX2, with simulated T1 populations.",
+        "data_type": "fit curves / kinetic model output",
+        "likely_source": "experimental data with model fitting"
+      },
+      {
+        "figure_id": "ExtendedDataFig3",
+        "description": "Temperature dependence of kISC and kRISC for both molecules with Arrhenius fits and a schematic of activation energies.",
+        "data_type": "Arrhenius plots",
+        "likely_source": "experimental data with model fitting"
+      },
+      {
+        "figure_id": "ExtendedDataFig4",
+        "description": "Photophysical properties of HzTFEX2 in solid-state host matrix: PL spectra, transient PL decays, temperature dependence of τDF, and kISC/kRISC.",
+        "data_type": "spectra and decay curves",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "ExtendedDataTable1",
+        "description": "Tabulated photophysical parameters for HzTFEX2 and HzPipX2, including λPL, ΦPL, τPF, τDF, kr, knr, kISC, kRISC, activation energies, and ΔEST.",
+        "data_type": "table",
+        "likely_source": "processed experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include UV–vis absorption spectra, steady-state PL spectra, absolute PL quantum yield measurements, transient absorption traces/maps, transient PL decay traces at multiple temperatures, ionization potential measurements by ultraviolet photoelectron yield spectroscopy, OLED EL spectra, current density–voltage–luminance data, viewing-angle luminance data, and transient EL decay traces. The paper names the instruments used but does not provide file formats or raw file names in the text.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data underlying this article are available at https://doi.org/10.6084/m9.figshare.20058977.' It also notes that online content includes source data, extended data, supplementary information, and a Nature Research Reporting Summary.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "The text indicates that underlying data are deposited on Figshare, but it does not specify raw file formats or a raw-data directory structure. Raw experimental data likely correspond to spectroscopy traces, decay curves, and device characterization measurements collected with the listed instruments.",
+      "processed_data_description": "Processed data include fitted kinetic parameters (kr, knr, kISC, kRISC), activation energies, ΔEST values, photophysical summary values in Extended Data Table 1, and derived quantities such as oscillator strengths, energy gaps, and screening statistics from TDDFT/EOM-CCSD/ADC(2)/CASPT2 calculations.",
+      "figure_data_description": "Yes. The paper explicitly mentions 'source data' in the online content statement, implying figure-level source data are provided. Extended Data figures and tables are also part of the article package, and the Figshare deposit is stated to contain the underlying data.",
+      "scripts_description": "Analysis scripts are mentioned only indirectly: transient PL decay fitting used 'scipy.integrate.odeint' and 'scipy.optimize.curve_fit' in Python 3.7. No standalone scripts or notebooks are explicitly stated as deposited.",
+      "notes": "The dataset mixes experimental measurements, derived kinetic parameters, and theoretical/computational screening outputs. The computational dataset is large and enumerative: 34,596 heptazine candidates screened by TDDFT, with a smaller subset evaluated by higher-level methods. The paper distinguishes between raw spectral/decay measurements and processed quantities extracted by fitting and Arrhenius analysis. Figure-specific source data are likely present, but the text does not enumerate file names or exact repository contents."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section describes direct measurements of absorption, PL, transient absorption, transient PL, photoelectron yield, and OLED EL/J-V-L characteristics, and the Data availability section says the underlying data are available on Figshare.",
+      "source_data_evidence": "The online content statement explicitly includes 'source data'; Extended Data Table 1 and multiple fitted plots indicate processed figure-ready data are part of the article package.",
+      "data_availability_section_relevant": "“The data underlying this article are available at https://doi.org/10.6084/m9.figshare.20058977.”; “Online content ... source data, extended data, supplementary information ... are available ...”; “The details of the synthesis and characterization are given in the Supplementary Information.”",
+      "priority_modalities": [
+        "UV–vis absorption spectra",
+        "photoluminescence spectra",
+        "transient absorption traces",
+        "time-correlated single-photon counting decay curves",
+        "Arrhenius plots / kinetic fits",
+        "OLED current-voltage-luminance curves",
+        "electroluminescence spectra",
+        "viewing-angle luminance data",
+        "quantum-chemistry output tables",
+        "molecular orbital visualizations"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2022_5132_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2733157,
+      "size_human": "2.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_5132_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2022_5132_MOESM3_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 10421156,
+      "size_human": "9.9 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2022_5132_MOESM3_ESM_1.pdf"
+    },
+    {
+      "filename": "Data_Suporting_Delayed_Fluorescence_from_Inverted_Singlet_and_Triplet_Excited_States_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 2272838,
+      "size_human": "2.2 MB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig1",
+        "Fig3",
+        "Fig4",
+        "Extended Data Fig1",
+        "Extended Data Fig2",
+        "Extended Data Fig3",
+        "Extended Data Fig4"
+      ],
+      "sheet_count": 7,
+      "sheets": [
+        {
+          "sheet_name": "Fig1",
+          "columns": [
+            "ΔEST (eV)",
+            "f",
+            "ES1(eV)"
+          ],
+          "named_columns": [
+            "ΔEST (eV)",
+            "f",
+            "ES1(eV)"
+          ],
+          "column_count": 3,
+          "row_count": 34596,
+          "dtypes": {
+            "ΔEST (eV)": "float64",
+            "f": "float64",
+            "ES1(eV)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig3",
+          "columns": [
+            "Fig3a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Fig3b",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Fig3c",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Fig3d",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Fig3a",
+            "Fig3b",
+            "Fig3c",
+            "Fig3d"
+          ],
+          "column_count": 31,
+          "row_count": 3837,
+          "dtypes": {
+            "Fig3a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "float64",
+            "Fig3b": "object",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Fig3c": "object",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "float64",
+            "Fig3d": "object",
+            "Unnamed: 29": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig4",
+          "columns": [
+            "Fig4a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Fig4b",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Fig4c",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "Fig4a",
+            "Fig4b",
+            "Fig4c"
+          ],
+          "column_count": 16,
+          "row_count": 1214,
+          "dtypes": {
+            "Fig4a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "float64",
+            "Fig4b": "object",
+            "Unnamed: 8": "object",
+            "Unnamed: 9": "float64",
+            "Fig4c": "object",
+            "Unnamed: 11": "object",
+            "Unnamed: 12": "object",
+            "Unnamed: 13": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig1",
+          "columns": [
+            "Extended Data Fig1a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16",
+            "Unnamed: 17",
+            "Unnamed: 18",
+            "Unnamed: 19",
+            "Unnamed: 20",
+            "Unnamed: 21",
+            "Unnamed: 22",
+            "Unnamed: 23",
+            "Unnamed: 24",
+            "Unnamed: 25",
+            "Unnamed: 26",
+            "Unnamed: 27",
+            "Unnamed: 28",
+            "Unnamed: 29"
+          ],
+          "named_columns": [
+            "Extended Data Fig1a"
+          ],
+          "column_count": 322,
+          "row_count": 1998,
+          "dtypes": {
+            "Extended Data Fig1a": "object",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64",
+            "Unnamed: 17": "float64",
+            "Unnamed: 18": "float64",
+            "Unnamed: 19": "float64",
+            "Unnamed: 20": "float64",
+            "Unnamed: 21": "float64",
+            "Unnamed: 22": "float64",
+            "Unnamed: 23": "float64",
+            "Unnamed: 24": "float64",
+            "Unnamed: 25": "float64",
+            "Unnamed: 26": "float64",
+            "Unnamed: 27": "float64",
+            "Unnamed: 28": "float64",
+            "Unnamed: 29": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig2",
+          "columns": [
+            "Extended Data Fig2a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "Extended Data Fig2b",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8"
+          ],
+          "named_columns": [
+            "Extended Data Fig2a",
+            "Extended Data Fig2b"
+          ],
+          "column_count": 9,
+          "row_count": 2949,
+          "dtypes": {
+            "Extended Data Fig2a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "object",
+            "Unnamed: 4": "float64",
+            "Extended Data Fig2b": "object",
+            "Unnamed: 6": "object",
+            "Unnamed: 7": "object",
+            "Unnamed: 8": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig3",
+          "columns": [
+            "Extended Data Fig3a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Extended Data Fig3b",
+            "Unnamed: 5",
+            "Unnamed: 6"
+          ],
+          "named_columns": [
+            "Extended Data Fig3a",
+            "Extended Data Fig3b"
+          ],
+          "column_count": 7,
+          "row_count": 9,
+          "dtypes": {
+            "Extended Data Fig3a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "object",
+            "Unnamed: 3": "float64",
+            "Extended Data Fig3b": "object",
+            "Unnamed: 5": "object",
+            "Unnamed: 6": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Extended Data Fig4",
+          "columns": [
+            "Extended Data Fig4a",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Extended Data Fig4b",
+            "Unnamed: 4",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Extended Data Fig4c",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Extended Data Fig4d",
+            "Unnamed: 17",
+            "Unnamed: 18"
+          ],
+          "named_columns": [
+            "Extended Data Fig4a",
+            "Extended Data Fig4b",
+            "Extended Data Fig4c",
+            "Extended Data Fig4d"
+          ],
+          "column_count": 19,
+          "row_count": 787,
+          "dtypes": {
+            "Extended Data Fig4a": "object",
+            "Unnamed: 1": "object",
+            "Unnamed: 2": "float64",
+            "Extended Data Fig4b": "object",
+            "Unnamed: 4": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Extended Data Fig4c": "object",
+            "Unnamed: 14": "object",
+            "Unnamed: 15": "float64",
+            "Extended Data Fig4d": "object",
+            "Unnamed: 17": "object",
+            "Unnamed: 18": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "figshare",
+      "relative_path": "Data_Suporting_Delayed_Fluorescence_from_Inverted_Singlet_and_Triplet_Excited_States_1.xlsx"
+    }
+  ]
+}

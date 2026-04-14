@@ -1,0 +1,185 @@
+{
+  "paper_id": "step1_0390",
+  "title": "Topological Metal-Insulator Transition within the Ferromagnetic state",
+  "doi": "10.1038/s41467-026-70042-w",
+  "journal": "arXiv preprint",
+  "year": 2025,
+  "paper_url": "https://arxiv.org/abs/2511.07625v1",
+  "priority_score": 4.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-026-70042-w",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "K2Cr8O16 is shown to undergo a ferromagnetic metal-insulator transition (FM-MIT) in which the insulating state emerges without loss of ferromagnetic order. Combining neutron scattering, inelastic x-ray scattering, magnetization, and first-principles calculations, the authors argue that the transition is not Peierls-driven (no phonon softening) but instead corresponds to a correlation-assisted topological transition where Weyl points present in the metallic ferromagnetic phase disappear in the monoclinic insulating phase.",
+    "measurement_types": [
+      "neutron powder diffraction",
+      "single-crystal neutron diffraction",
+      "inelastic neutron scattering",
+      "inelastic x-ray scattering",
+      "angle-dependent magnetization",
+      "density functional theory (band structure)",
+      "density functional perturbation theory / phonon calculations",
+      "Wannier-based Berry curvature / Weyl point analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal structures of K2Cr8O16 in the tetragonal metallic phase and monoclinic insulating phase, showing the chimney/double-chain motif and lattice vectors.",
+        "data_type": "image / structural schematic",
+        "likely_source": "theoretical/structural model"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Magnetic Cr sublattice model with exchange paths J1, J2, J3 and the inferred ferromagnetic spin arrangement.",
+        "data_type": "image / structural schematic",
+        "likely_source": "experimental interpretation plus theoretical model"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Angle-dependent magnetization at 120 K for several applied fields, fitted with a sinusoidal function to determine the in-plane easy-axis orientation.",
+        "data_type": "transport/magnetization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Neutron powder diffraction pattern at 10 K with Rietveld refinement and magnetic reflection assignment; inset shows single-crystal magnetic refinement comparison.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Temperature dependence of neutron diffraction intensities at (2,1,1) and (1,2,1) reflections across the MIT.",
+        "data_type": "diffraction intensity vs temperature",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Powder INS spectra at 5 K collected with Ei = 9 meV.",
+        "data_type": "spectrum / intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Powder INS spectra at 130 K collected with Ei = 9 meV.",
+        "data_type": "spectrum / intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Spin-wave/Heisenberg-model fit to the 5 K INS spectra, extracting exchange parameters.",
+        "data_type": "spectrum with model fit",
+        "likely_source": "experimental data plus theoretical fitting"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Spin-wave/Heisenberg-model fit to the 130 K INS spectra, showing similar exchange couplings across the MIT.",
+        "data_type": "spectrum with model fit",
+        "likely_source": "experimental data plus theoretical fitting"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Local CrO6 octahedron schematic showing compression and local orbital axes.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical/structural model"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Calculated Weyl points in the tetragonal Brillouin zone and the nesting vector qnest connecting opposite-chirality nodes.",
+        "data_type": "reciprocal-space point plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "DFT band structure of the tetragonal metallic phase (U = 0 eV) with t2g orbital character projection and Weyl-point location indicated.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "DFT band structure of the monoclinic insulating phase (U = 4 eV) with orbital projections, showing gap opening and orbital splitting.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "IXS energy scans at q near qCDW for 20 K, 95 K, and 115 K, showing phonon peaks and elastic scattering.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Integrated elastic scattering intensity across qCDW as a function of temperature, fitted to a mean-field order-parameter form.",
+        "data_type": "intensity vs temperature",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Transverse phonon dispersion across qCDW at multiple temperatures, showing no phonon softening.",
+        "data_type": "dispersion curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Longitudinal phonon dispersion across qCDW at multiple temperatures, also showing no phonon condensation.",
+        "data_type": "dispersion curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4e",
+        "description": "Comparison of measured phonon dispersion from Γ to M with calculated phonon dispersion from first principles.",
+        "data_type": "dispersion curve",
+        "likely_source": "experimental data plus theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include neutron powder diffraction patterns, single-crystal neutron diffraction peak intensities, inelastic neutron scattering spectra at multiple incident energies and temperatures, inelastic x-ray scattering energy scans and phonon dispersions, and angle-dependent magnetization curves. The paper also reports first-principles electronic-structure, exchange, Berry-curvature, and phonon calculations.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'All data needed to evaluate the conclusions of this study are available within the Article and its Supplementary Information. All datasets generated and/or analyzed during the current study are available from the corresponding authors upon request.' No public repository or downloadable archive is mentioned in the provided text.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw experimental data were collected on specific instruments: IXS at SPring-8 BL35XU (Ei = 21.74 keV), NPD at SNS/POWGEN, single-crystal ND at PSI/ZEBRA, INS at J-PARC/4SEASON with multiple incident energies, and magnetization on a Quantum Design MPMS3. The paper does not specify file formats or a public raw-data archive.",
+      "processed_data_description": "Processed data include Rietveld refinement profiles, extracted peak intensities versus temperature, fitted INS spectra and exchange parameters (J1, J2, J3), fitted magnetization angular dependence, fitted elastic intensity order-parameter curves, and derived phonon dispersions. The paper also reports DFT-derived band structures, Wannier downfolding results, Berry curvature/Weyl point locations, and DFPT phonon dispersions.",
+      "figure_data_description": "Figure-ready data are clearly present in the article and Supplementary Information as plotted diffraction patterns, spectra, dispersions, and fitted curves. The text does not explicitly mention a separate source-data repository or figure-source-data files.",
+      "scripts_description": "Analysis software/packages are named (FullProf, SpinW, Dave, Quantum ESPRESSO, Phonopy, Wannier90, TB2J, WannierTools), but no custom analysis scripts, notebooks, or code repository are mentioned.",
+      "notes": "The dataset is a mixed experimental-theoretical package rather than a single tabular dataset. Experimental data are modality-specific and instrument-specific, while theoretical data are derived from DFT/DFPT and Wannier-based post-processing. The paper emphasizes that supplementary material contains additional analysis details and figures, but the provided text does not indicate open-source raw files or code. The most important semantic distinction is that many published results are processed/fitted outputs from raw scattering or magnetization measurements, not raw detector images or event lists."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section explicitly describes multiple measurements on raw experimental instruments: neutron powder diffraction, single-crystal neutron diffraction, INS, IXS, and magnetization measurements.",
+      "source_data_evidence": "The paper presents fitted Rietveld profiles, fitted spectra, extracted exchange constants, phonon dispersions, and DFT/Wannier-derived band/topology results, which are figure-ready processed data.",
+      "data_availability_section_relevant": "All data needed to evaluate the conclusions of this study are available within the Article and its Supplementary Information. All datasets generated and/or analyzed during the current study are available from the corresponding authors upon request.",
+      "priority_modalities": [
+        "neutron diffraction patterns",
+        "inelastic neutron scattering spectra",
+        "inelastic x-ray scattering spectra",
+        "magnetization vs angle/field",
+        "DFT band structures",
+        "phonon dispersions",
+        "Rietveld refinement outputs",
+        "Weyl point / Berry curvature data"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

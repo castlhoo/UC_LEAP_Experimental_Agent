@@ -1,0 +1,189 @@
+{
+  "paper_id": "step1_0246",
+  "title": "Temperature-dependent interphase formation and Li+ transport in lithium metal batteries",
+  "doi": "10.1038/s41467-023-40221-0",
+  "journal": "Nature Communications",
+  "year": 2023,
+  "paper_url": "https://openalex.org/W4385257145",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-023-40221-0",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies low-temperature lithium metal battery behavior by combining electrochemistry with cryo-HRTEM, EELS, XPS, AFM, SEM, Raman, DSC, TGC, and DFT. The key finding is that at low temperature the main kinetic bottleneck is Li+ diffusion through the SEI, and that incomplete electrolyte decomposition produces organic-rich, metastable SEI layers; fluorinated electrolytes (LiFSI–MTFA/FEC) favor inorganic-rich SEI and improve low-temperature Li plating reversibility and stability.",
+    "measurement_types": [
+      "Li||Cu Coulombic efficiency and cycling",
+      "electrochemical polarization / voltage profiles",
+      "electrochemical impedance spectroscopy (EIS)",
+      "ionic conductivity",
+      "Raman spectroscopy",
+      "differential scanning calorimetry (DSC)",
+      "scanning electron microscopy (SEM)",
+      "cryogenic high-resolution transmission electron microscopy (cryo-HRTEM)",
+      "cryogenic TEM / STEM",
+      "electron energy loss spectroscopy (EELS)",
+      "energy-dispersive X-ray spectroscopy (EDS)",
+      "X-ray photoelectron spectroscopy (XPS)",
+      "atomic force microscopy (AFM) / PeakForce QNM",
+      "titration gas chromatography (TGC)",
+      "DFT molecular orbital and desolvation-energy calculations",
+      "pouch-cell cycling"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig. 1",
+        "description": "Schematic of Li+ transport and charge-transfer steps during Li plating at room and low temperature, emphasizing slower transport and incomplete electrolyte decomposition at low temperature leading to dendritic Li.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 2a-c",
+        "description": "Schematic solvation structures for three electrolytes: LiPF6–EC/DMC, LiFSI–EC/DMC, and LiFSI–MTFA/FEC.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig. 2d",
+        "description": "Raman spectra of the three electrolytes showing Li+ coordination environments.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 2e",
+        "description": "Molecular structures and HOMO/LUMO energy levels of salts and solvents, including calculated MTFA LUMO.",
+        "data_type": "calculation plot",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig. 2f-h",
+        "description": "Coulombic efficiency of Li||Cu cells in the three electrolytes at 25, 0, and -20 °C.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 3a-i",
+        "description": "SEM top-view and cross-section images of Li deposits formed in the three electrolytes at 25, 0, and -20 °C.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4a",
+        "description": "Ionic conductivity of the three electrolytes as a function of temperature.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4b",
+        "description": "Three-electrode cell setup used for temperature-dependent EIS with LTO as working and counter electrodes.",
+        "data_type": "schematic",
+        "likely_source": "experimental setup illustration"
+      },
+      {
+        "figure_id": "Fig. 4c",
+        "description": "Equivalent circuit used to fit EIS data and separate resistance contributions.",
+        "data_type": "schematic",
+        "likely_source": "analysis model"
+      },
+      {
+        "figure_id": "Fig. 4d",
+        "description": "Arrhenius-type resistance/charge-transfer results for LTO85||LTO65 cells, used to extract desolvation activation energy.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 4e-f",
+        "description": "Fitted ohmic resistance and interfacial resistance in Li||Cu cells after Li deposition; inset shows SEI resistance.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 5a-i",
+        "description": "Cryo-HRTEM images of SEI on deposited Li at 25, 0, and -20 °C in the three electrolytes, showing mosaic SEI with inorganic nanocrystals in organic matrix.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 5j-l",
+        "description": "Statistical analysis of SEI structural features from cryo-HRTEM images.",
+        "data_type": "processed statistics",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 5m-n",
+        "description": "SEI thickness and SEI content versus electrolyte and temperature, with error bars from three independent measurements.",
+        "data_type": "processed statistics",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 6a-e",
+        "description": "Cryo-TEM, EELS mapping/spectra, and EDS results for indirect SEI on the current collector in LiFSI–MTFA/FEC, showing LiF/Li2O/organic core-shell-like nanoballs.",
+        "data_type": "image / spectrum / elemental map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 7a-b",
+        "description": "XPS C 1s and F 1s spectra of SEI formed in different electrolytes and temperatures, showing temperature-dependent changes in organic and fluorinated species.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig. 7c",
+        "description": "Schematic of bond-breaking / reaction pathways for salts and solvents at different temperatures.",
+        "data_type": "schematic",
+        "likely_source": "theoretical interpretation"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include electrochemical cycling data from Li||Cu coin cells and Cu||LFP pouch cells, EIS spectra, Raman spectra, DSC thermograms, SEM images, cryo-(S)TEM/HRTEM images, EELS and EDS maps/spectra, XPS spectra, AFM PeakForce QNM measurements, and TGC gas chromatograms/quantification of H2 from Li reaction with water. Theoretical raw inputs are molecular structures and DFT/MD simulation outputs used to compute HOMO/LUMO and desolvation energies.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support the findings of this study are available from the corresponding author upon request.' No public repository, downloadable dataset, or accession number is mentioned in the provided text.",
+      "data_provided_types": [
+        "unknown",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described only at the instrument level in Methods: Raman spectra, SEM, DSC, XPS, AFM, cryo-(S)TEM, TGC, EIS, and battery cycling were collected using named instruments and cell configurations. The paper does not specify file formats, raw file names, or a repository containing the raw measurements.",
+      "processed_data_description": "Processed data include fitted resistance values (Rb, RSEI, Rct), Arrhenius-derived activation energies, statistical analyses of cryo-HRTEM images, SEI thickness/content statistics, and quantified metallic Li amounts from TGC calibration curves. These are figure-ready extracted values rather than a separate tabulated dataset in the text.",
+      "figure_data_description": "Figure-specific source data are not explicitly mentioned in the provided text. The paper references Supplementary Figures and statistical analyses, but does not state that source data files are deposited publicly.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned. DFT and MD software packages are named (Gaussian09, Gaussian16, GROMACS 2020), but no custom scripts are described.",
+      "notes": "The dataset is primarily experimental with some theoretical/simulation outputs. The paper emphasizes post-mortem characterization after rinsing/drying samples, meaning many images/spectra are processed from prepared specimens rather than in situ raw streams. The only explicit data-access statement is author-request only, so open source-data availability is unknown from the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "raw_data_evidence": "Methods describe direct collection of Raman, SEM, DSC, XPS, AFM, cryo-(S)TEM, TGC, EIS, and cycling measurements on specific instruments and cells.",
+      "source_data_evidence": "The text reports fitted resistances, activation energies, SEI thickness/content statistics, and quantified Li amounts, but does not mention a separate source-data repository or downloadable figure data.",
+      "data_availability_section_relevant": "\"The data that support the findings of this study are available from the corresponding author upon request.\"",
+      "priority_modalities": [
+        "electrochemical cycling curves",
+        "EIS spectra",
+        "Raman spectra",
+        "SEM images",
+        "cryo-HRTEM / cryo-TEM images",
+        "EELS maps and spectra",
+        "EDS maps",
+        "XPS spectra",
+        "AFM force maps",
+        "DSC thermograms",
+        "TGC chromatograms",
+        "DFT/MD simulation outputs"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

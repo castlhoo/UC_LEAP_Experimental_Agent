@@ -1,0 +1,84 @@
+{
+  "paper_id": "step1_0130",
+  "title": "Tuning the oxygen defects and Fermi levels via In3+ doping in SnO2-In2O3 nanocomposite for efficient CO detection",
+  "doi": "10.1016/j.snb.2022.131412",
+  "journal": "Sensors and Actuators B Chemical",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4206739974",
+  "priority_score": 5.3,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1016_j_snb_2022_131412",
+  "files_inspected": 1,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No cleaned, replot-ready dataset files were identified.",
+  "type2_summary": "No raw/unprocessed experimental data files were identified.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "Paper evidence suggests no associated downloadable dataset was made available. The Zenodo-hosted PDF appears to be documentation rather than data.",
+  "file_classifications": [
+    {
+      "relative_path": "Kalanda_et_al__AAM__-_Phys._Status_Solidi_B_2019__256__1800278_1.pdf",
+      "filename": "Kalanda_et_al__AAM__-_Phys._Status_Solidi_B_2019__256__1800278_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper analysis indicates no data availability statement, no supplementary data, and no repository links were identified on the publisher page.",
+      "file_evidence": "Single PDF file from Zenodo, 1.4 MB. This is a publication/document file rather than a data table, image stack, or instrument output. No internal structure indicating figure data was provided in the inspection report.",
+      "reasoning": "This file is the paper itself or a related document, not a dataset file containing experimental values. It does not meet Type 1 or Type 2 criteria because there is no evidence of tabular, figure-specific, or raw measurement data inside the file from the provided inspection report.",
+      "ambiguity": "Low ambiguity: the file is clearly a PDF document, and no dataset content was reported.",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports experimental tuning of oxygen defects and Fermi levels in In3+-doped SnO2-In2O3 nanocomposites to improve CO gas-sensing performance.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to be an experimental materials science study, but based on the available publisher information there is no accessible dataset or source data provided.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found, and no downloadable data files, supplementary materials, or external repository links were identified on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found, and no downloadable data files, supplementary materials, or external repository links were identified on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Kalanda_et_al__AAM__-_Phys._Status_Solidi_B_2019__256__1800278_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 1470033,
+      "size_human": "1.4 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Kalanda_et_al__AAM__-_Phys._Status_Solidi_B_2019__256__1800278_1.pdf"
+    }
+  ]
+}

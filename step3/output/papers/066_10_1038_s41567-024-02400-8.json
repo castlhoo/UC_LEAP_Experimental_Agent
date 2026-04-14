@@ -1,0 +1,884 @@
+{
+  "paper_id": "step1_0228",
+  "title": "Observation of Josephson harmonics in tunnel junctions",
+  "doi": "10.1038/s41567-024-02400-8",
+  "journal": "Nature Physics",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4321472151",
+  "priority_score": 9.3,
+  "dataset_status": "verified",
+  "files_downloaded": 50,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41567-024-02400-8",
+  "files_inspected": 50,
+  "file_types_found": [
+    "binary",
+    "script",
+    "tabular_text",
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clearly replot-ready cleaned data files were identified among the inspected files. The only potentially relevant item is the supplementary PDF, but it is documentation rather than a structured dataset.",
+  "type2_summary": "No explicit raw measurement files were identified in the inspected subset. The paper does report raw spectroscopy, charge-dispersion, and microscopy data in the repository, but the shown files are mostly code and repository metadata.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper strongly suggests that raw spectroscopy and microscopy data exist in the associated repository, but the inspected file subset does not expose those data files. If additional repository contents are available, they may contain Type 1 source data or Type 2 raw measurements.",
+  "file_classifications": [
+    {
+      "relative_path": "41567_2024_2400_MOESM1_ESM_1.pdf",
+      "filename": "41567_2024_2400_MOESM1_ESM_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "The paper states that methods, additional references, source data, extended data, supplementary information, and data/code availability statements are available online. A Nature supplementary PDF is typically documentation rather than a data table.",
+      "file_evidence": "PDF, large (8.6 MB), likely supplementary information rather than a structured dataset. No tabular structure or figure-specific data format is indicated in the inspection report.",
+      "reasoning": "This is best treated as supplementary documentation, not a replot-ready dataset file. It may contain figures or methods, but the available evidence does not support classifying it as Type 1 or Type 2 data.",
+      "ambiguity": "The PDF may contain embedded source data or figures, but without page-level inspection it cannot be classified as data.",
+      "key_columns_or_structure": "Not specified; likely narrative text, figures, and methods"
+    },
+    {
+      "relative_path": ".gitignore_1",
+      "filename": ".gitignore_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; this is repository metadata, not scientific data.",
+      "file_evidence": "Small GitHub housekeeping file.",
+      "reasoning": "Not a dataset file.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "BUILD_1",
+      "filename": "BUILD_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; repository build metadata.",
+      "file_evidence": "Binary GitHub build/config file, not a data table or measurement file.",
+      "reasoning": "Not scientific data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "LICENSE_1",
+      "filename": "LICENSE_1",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence; legal metadata.",
+      "file_evidence": "License text file.",
+      "reasoning": "Documentation only.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "WORKSPACE_1",
+      "filename": "WORKSPACE_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; repository configuration.",
+      "file_evidence": "Binary workspace/config file.",
+      "reasoning": "Not dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "conftest_1.py",
+      "filename": "conftest_1.py",
+      "type": "script",
+      "paper_evidence": "The paper mentions source data and code availability, but this file is clearly a test/configuration script rather than data.",
+      "file_evidence": "Python script used for analysis or plotting/testing.",
+      "reasoning": "Code, not data. Likely supports analysis or tests for the repository.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_BUILD_1",
+      "filename": "discussion_adaptive_malt_BUILD_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; repository build metadata.",
+      "file_evidence": "Binary build/config file.",
+      "reasoning": "Not dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_adaptive_malt_1.py",
+      "filename": "discussion_adaptive_malt_adaptive_malt_1.py",
+      "type": "script",
+      "paper_evidence": "The paper provides data and code availability, but this is analysis code rather than data.",
+      "file_evidence": "Large Python analysis/plotting script (70.4 KB).",
+      "reasoning": "Code file, likely used to process or plot data; not itself a dataset.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_adaptive_malt_test_1.py",
+      "filename": "discussion_adaptive_malt_adaptive_malt_test_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; repository test code.",
+      "file_evidence": "Python test script.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_grid_search_runner_1.py",
+      "filename": "discussion_adaptive_malt_grid_search_runner_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis code.",
+      "file_evidence": "Python runner script.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_grid_search_runner_experiments_1.py",
+      "filename": "discussion_adaptive_malt_grid_search_runner_experiments_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis code.",
+      "file_evidence": "Python script for experiments/grid search.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_trial_runner_1.py",
+      "filename": "discussion_adaptive_malt_trial_runner_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis code.",
+      "file_evidence": "Python runner script.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_trial_runner_experiments_1.py",
+      "filename": "discussion_adaptive_malt_trial_runner_experiments_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis code.",
+      "file_evidence": "Python script for trial runner experiments.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_adaptive_malt_utils_1.py",
+      "filename": "discussion_adaptive_malt_utils_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; utility code.",
+      "file_evidence": "Python utility module.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_neutra_BUILD_1",
+      "filename": "discussion_neutra_BUILD_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; repository build metadata.",
+      "file_evidence": "Binary build/config file.",
+      "reasoning": "Not dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_neutra___init___1.py",
+      "filename": "discussion_neutra___init___1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; package initialization code.",
+      "file_evidence": "Small Python module.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_neutra_neutra_kernel_1.py",
+      "filename": "discussion_neutra_neutra_kernel_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis/model code.",
+      "file_evidence": "Python script, likely kernel/model implementation.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_neutra_neutra_kernel_test_1.py",
+      "filename": "discussion_neutra_neutra_kernel_test_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; test code.",
+      "file_evidence": "Python test script.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_pathfinder_BUILD_1",
+      "filename": "discussion_pathfinder_BUILD_1",
+      "type": "other",
+      "paper_evidence": "No paper evidence; repository build metadata.",
+      "file_evidence": "Binary build/config file.",
+      "reasoning": "Not dataset content.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    },
+    {
+      "relative_path": "discussion_pathfinder_pathfinder_1.py",
+      "filename": "discussion_pathfinder_pathfinder_1.py",
+      "type": "script",
+      "paper_evidence": "No direct paper evidence; analysis code.",
+      "file_evidence": "Python script.",
+      "reasoning": "Code, not data.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Not applicable"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies Al–AlOx–Al tunnel Josephson junctions used in transmon qubits and shows that the standard sinusoidal current-phase relation is insufficient to explain measured spectra. By fitting spectroscopy data from multiple laboratories with Hamiltonians including higher Josephson harmonics, the authors find percent-level second-harmonic contributions and show these harmonics can strongly affect charge dispersion and qubit design tradeoffs.",
+    "measurement_types": [
+      "microwave spectroscopy of transmon transition frequencies",
+      "resonator spectroscopy / dispersive readout frequency shifts",
+      "charge-dispersion measurements versus offset charge",
+      "magnetic-field-dependent spectroscopy",
+      "STEM imaging of tunnel barriers",
+      "scanning electron microscopy of junctions",
+      "molecular dynamics simulations of barrier structure"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1",
+        "description": "Conceptual illustration that tunnel junction current-phase relations can include higher Josephson harmonics beyond the usual sin(phi) term; shows a representative harmonic-corrected current-phase relation compared with a purely sinusoidal one.",
+        "data_type": "schematic / theory plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "False-colored SEM image of a typical Al–AlOx–Al Josephson junction fabricated at KIT.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Cross-section schematic of the tunnel junction showing multiple conduction channels with different transparencies contributing to the current-phase relation.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "False-colored HAADF-STEM image of the AlOx tunnel barrier showing atomic-scale structure and thickness variations.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Normalized Fourier coefficients c_m(T_n) versus harmonic order m for low- and high-transparency channels, illustrating alternating signs and slower decay for higher transparency.",
+        "data_type": "theory plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Sketch of how higher-order Josephson harmonics modify the transmon potential and shift energy levels relative to a pure cos(phi) potential.",
+        "data_type": "schematic / energy-level diagram",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Illustration of charge dispersion versus offset charge ng, including even/odd parity branches.",
+        "data_type": "theory plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Differences between measured transmon transition frequencies and predictions from the standard transmon Hamiltonian for KIT, ENS, Köln, and IBM Hanoi samples.",
+        "data_type": "transport/spectroscopy residual plot",
+        "likely_source": "experimental data compared to model"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Same comparison as Fig. 3a but using the Josephson-harmonics Hamiltonian; includes both a truncated EJ4 phenomenological model and a mesoscopic inhomogeneous-barrier model.",
+        "data_type": "spectroscopy residual plot",
+        "likely_source": "experimental data compared to model"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Ranges of Josephson harmonic ratios |EJm/EJ1| consistent with measured spectra, with markers from the mesoscopic model and bounds from limiting transparency cases.",
+        "data_type": "parameter-range plot",
+        "likely_source": "fit results / model inference"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Measured charge dispersion of the Köln device for transmon states j=1,2,3 as a function of f01 tuned by in-plane magnetic field, compared with standard-model and harmonics-model predictions.",
+        "data_type": "spectroscopy curve",
+        "likely_source": "experimental data and model"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Charge dispersion for IBM qubits 0–2 and levels j=1–4, showing that Josephson harmonics can reduce charge dispersion relative to the standard model.",
+        "data_type": "spectroscopy curve",
+        "likely_source": "experimental data and model"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Comparison of EJ1/EC from the harmonics model versus EJ/EC from the standard model, showing that the standard model misestimates the ratio relevant for charge dispersion.",
+        "data_type": "parameter comparison plot",
+        "likely_source": "fit results / model inference"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental spectroscopy measurements of transmon transition frequencies f0j (j=1 to 6) and resonator frequencies fres,j, plus charge-dispersion data versus offset charge ng and magnetic field B_parallel for the Köln device. It also includes raw microscopy images (SEM and STEM) of junction structures. The paper does not specify file formats in the main text.",
+    "dataset_characterization": {
+      "data_availability_statement": "The spectroscopy data and the model parameters supporting the findings are available in the Jülich DATA repository at https://doi.org/10.26165/JUELICH-DATA/LGRHUH. The paper also states that methods, additional references, source data, extended data, supplementary information, and statements of data and code availability are available online.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described as measured spectroscopy data from multiple transmon devices across laboratories, including transition frequencies into states j=1..6, resonator frequencies for j=0,1, charge-dispersion measurements versus offset charge and magnetic field, and microscopy images (SEM/STEM). The paper does not describe raw file formats, naming conventions, or instrument export formats.",
+      "processed_data_description": "Processed data include fitted model parameters (EC, EJ, Omega, G, and harmonics EJm or mesoscopic parameters d-bar and sigma), model-predicted transition frequencies, residuals between model and experiment, charge-dispersion curves, and ranges of allowed harmonic ratios. These are derived from inverse-eigenvalue-problem fitting and numerical diagonalization.",
+      "figure_data_description": "Figure-specific data are clearly implied and partially described: Fig. 3 uses measured transition-frequency datasets from KIT, ENS, Köln, and IBM Hanoi; Fig. 4 uses charge-dispersion datasets for Köln and IBM qubits. The paper explicitly mentions that all model parameters are provided in the repository, but the main text does not enumerate separate source-data files per figure.",
+      "scripts_description": "Analysis is performed with numerical diagonalization, inverse eigenvalue problem solving, automatic differentiation, and optimization using TensorFlow Probability and BFGS/Newton methods. The paper mentions code availability online, but the main text does not explicitly state that scripts/notebooks are deposited in the repository; this is therefore only implied/unknown from the provided text.",
+      "notes": "The dataset is a mix of experimental spectroscopy, microscopy, and derived model-fit outputs. The main scientific dataset is not a single raw measurement modality but a multi-lab collection of transmon spectra used to infer Josephson harmonics. The repository is said to contain spectroscopy data and model parameters; the paper also references supplementary figures and methods for additional sample-specific data. The text strongly indicates processed figure-ready data and fitted parameters are provided, while the exact presence of raw instrument files and analysis scripts is not fully specified in the excerpt."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The paper explicitly reports measured spectroscopy data, charge-dispersion measurements, and SEM/STEM images, all of which are primary experimental observations.",
+      "source_data_evidence": "The paper states that the spectroscopy data and model parameters are available in the Jülich DATA repository, and the figures rely on fitted/model-predicted frequencies, residuals, and harmonic ratios.",
+      "data_availability_section_relevant": [
+        "The spectroscopy data and the model parameters that support the findings of this study are available in the Jülich DATA repository",
+        "Methods: Diagonalizing the Hamiltonians to obtain model predictions",
+        "Methods: Solving the IEP to obtain model parameters",
+        "Methods: Scanning the Josephson energies"
+      ],
+      "priority_modalities": [
+        "microwave spectroscopy tables/curves",
+        "resonator frequency data",
+        "charge dispersion versus offset charge",
+        "magnetic-field sweep data",
+        "SEM images",
+        "STEM images",
+        "fit parameter tables",
+        "model-predicted spectra"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41567_2024_2400_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 9049586,
+      "size_human": "8.6 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41567_2024_2400_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": ".gitignore_1",
+      "extension": "",
+      "size_bytes": 815,
+      "size_human": "815.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": ".gitignore_1"
+    },
+    {
+      "filename": "BUILD_1",
+      "extension": "",
+      "size_bytes": 916,
+      "size_human": "916.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "BUILD_1"
+    },
+    {
+      "filename": "LICENSE_1",
+      "extension": "",
+      "size_bytes": 23076,
+      "size_human": "22.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "LICENSE_1"
+    },
+    {
+      "filename": "WORKSPACE_1",
+      "extension": "",
+      "size_bytes": 721,
+      "size_human": "721.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "WORKSPACE_1"
+    },
+    {
+      "filename": "conftest_1.py",
+      "extension": ".py",
+      "size_bytes": 1346,
+      "size_human": "1.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "conftest_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_BUILD_1",
+      "extension": "",
+      "size_bytes": 2874,
+      "size_human": "2.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_BUILD_1"
+    },
+    {
+      "filename": "discussion_adaptive_malt_adaptive_malt_1.py",
+      "extension": ".py",
+      "size_bytes": 72125,
+      "size_human": "70.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_adaptive_malt_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_adaptive_malt_test_1.py",
+      "extension": ".py",
+      "size_bytes": 2117,
+      "size_human": "2.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_adaptive_malt_test_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_grid_search_runner_1.py",
+      "extension": ".py",
+      "size_bytes": 3241,
+      "size_human": "3.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_grid_search_runner_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_grid_search_runner_experiments_1.py",
+      "extension": ".py",
+      "size_bytes": 16297,
+      "size_human": "15.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_grid_search_runner_experiments_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_trial_runner_1.py",
+      "extension": ".py",
+      "size_bytes": 1796,
+      "size_human": "1.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_trial_runner_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_trial_runner_experiments_1.py",
+      "extension": ".py",
+      "size_bytes": 5479,
+      "size_human": "5.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_trial_runner_experiments_1.py"
+    },
+    {
+      "filename": "discussion_adaptive_malt_utils_1.py",
+      "extension": ".py",
+      "size_bytes": 3048,
+      "size_human": "3.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_adaptive_malt_utils_1.py"
+    },
+    {
+      "filename": "discussion_neutra_BUILD_1",
+      "extension": "",
+      "size_bytes": 1775,
+      "size_human": "1.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "discussion_neutra_BUILD_1"
+    },
+    {
+      "filename": "discussion_neutra___init___1.py",
+      "extension": ".py",
+      "size_bytes": 766,
+      "size_human": "766.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_neutra___init___1.py"
+    },
+    {
+      "filename": "discussion_neutra_neutra_kernel_1.py",
+      "extension": ".py",
+      "size_bytes": 16638,
+      "size_human": "16.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_neutra_neutra_kernel_1.py"
+    },
+    {
+      "filename": "discussion_neutra_neutra_kernel_test_1.py",
+      "extension": ".py",
+      "size_bytes": 4751,
+      "size_human": "4.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_neutra_neutra_kernel_test_1.py"
+    },
+    {
+      "filename": "discussion_pathfinder_BUILD_1",
+      "extension": "",
+      "size_bytes": 1352,
+      "size_human": "1.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "discussion_pathfinder_BUILD_1"
+    },
+    {
+      "filename": "discussion_pathfinder_pathfinder_1.py",
+      "extension": ".py",
+      "size_bytes": 11295,
+      "size_human": "11.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_pathfinder_pathfinder_1.py"
+    },
+    {
+      "filename": "discussion_pathfinder_pathfinder_test_1.py",
+      "extension": ".py",
+      "size_bytes": 3930,
+      "size_human": "3.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_pathfinder_pathfinder_test_1.py"
+    },
+    {
+      "filename": "discussion_probabilistic_bundle_adjustment_requirements_1.txt",
+      "extension": ".txt",
+      "size_bytes": 856,
+      "size_human": "856.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "#",
+        "Copyright",
+        "2024",
+        "The",
+        "TensorFlow",
+        "Probability",
+        "Authors."
+      ],
+      "column_count": 7,
+      "row_count": 22,
+      "dtypes": {
+        "#": "object",
+        "Copyright": "object",
+        "2024": "object",
+        "The": "object",
+        "TensorFlow": "object",
+        "Probability": "float64",
+        "Authors.": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "github",
+      "relative_path": "discussion_probabilistic_bundle_adjustment_requirements_1.txt"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_diffusion_1.py",
+      "extension": ".py",
+      "size_bytes": 11282,
+      "size_human": "11.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_diffusion_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_diffusion_test_1.py",
+      "extension": ".py",
+      "size_bytes": 5733,
+      "size_human": "5.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_diffusion_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_models_1.py",
+      "extension": ".py",
+      "size_bytes": 30415,
+      "size_human": "29.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_models_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_models_test_1.py",
+      "extension": ".py",
+      "size_bytes": 7514,
+      "size_human": "7.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_models_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_nerf_rendering_1.py",
+      "extension": ".py",
+      "size_bytes": 12674,
+      "size_human": "12.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_nerf_rendering_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_nerf_rendering_test_1.py",
+      "extension": ".py",
+      "size_bytes": 6191,
+      "size_human": "6.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_nerf_rendering_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_probnerf_1.py",
+      "extension": ".py",
+      "size_bytes": 10873,
+      "size_human": "10.6 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_probnerf_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_saving_1.py",
+      "extension": ".py",
+      "size_bytes": 2102,
+      "size_human": "2.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_saving_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_saving_test_1.py",
+      "extension": ".py",
+      "size_bytes": 1568,
+      "size_human": "1.5 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_saving_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_array_util_1.py",
+      "extension": ".py",
+      "size_bytes": 1093,
+      "size_human": "1.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_array_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_camera_util_1.py",
+      "extension": ".py",
+      "size_bytes": 4786,
+      "size_human": "4.7 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_camera_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_gin_utils_1.py",
+      "extension": ".py",
+      "size_bytes": 1392,
+      "size_human": "1.4 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_gin_utils_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_math_util_1.py",
+      "extension": ".py",
+      "size_bytes": 2301,
+      "size_human": "2.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_math_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_math_util_test_1.py",
+      "extension": ".py",
+      "size_bytes": 1930,
+      "size_human": "1.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_math_util_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_plot_util_1.py",
+      "extension": ".py",
+      "size_bytes": 10361,
+      "size_human": "10.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_plot_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_test_util_1.py",
+      "extension": ".py",
+      "size_bytes": 3221,
+      "size_human": "3.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_test_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_test_util_test_1.py",
+      "extension": ".py",
+      "size_bytes": 1891,
+      "size_human": "1.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_test_util_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_tree2_1.py",
+      "extension": ".py",
+      "size_bytes": 33779,
+      "size_human": "33.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_tree2_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_tree2_test_1.py",
+      "extension": ".py",
+      "size_bytes": 9123,
+      "size_human": "8.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_tree2_test_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_tree_util_1.py",
+      "extension": ".py",
+      "size_bytes": 4288,
+      "size_human": "4.2 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_tree_util_1.py"
+    },
+    {
+      "filename": "discussion_robust_inverse_graphics_util_tree_util_test_1.py",
+      "extension": ".py",
+      "size_bytes": 1995,
+      "size_human": "1.9 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_robust_inverse_graphics_util_tree_util_test_1.py"
+    },
+    {
+      "filename": "discussion_turnkey_inference_candidate_BUILD_1",
+      "extension": "",
+      "size_bytes": 2736,
+      "size_human": "2.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "github",
+      "relative_path": "discussion_turnkey_inference_candidate_BUILD_1"
+    },
+    {
+      "filename": "discussion_turnkey_inference_candidate___init___1.py",
+      "extension": ".py",
+      "size_bytes": 897,
+      "size_human": "897.0 B",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_turnkey_inference_candidate___init___1.py"
+    },
+    {
+      "filename": "discussion_turnkey_inference_candidate_window_tune_nuts_sampling_1.py",
+      "extension": ".py",
+      "size_bytes": 24543,
+      "size_human": "24.0 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_turnkey_inference_candidate_window_tune_nuts_sampling_1.py"
+    },
+    {
+      "filename": "discussion_turnkey_inference_candidate_window_tune_nuts_sampling_test_1.py",
+      "extension": ".py",
+      "size_bytes": 2359,
+      "size_human": "2.3 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "discussion_turnkey_inference_candidate_window_tune_nuts_sampling_test_1.py"
+    },
+    {
+      "filename": "discussion_where-nan_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 89881,
+      "size_human": "87.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "github",
+      "relative_path": "discussion_where-nan_1.pdf"
+    },
+    {
+      "filename": "required_packages_1.py",
+      "extension": ".py",
+      "size_bytes": 1138,
+      "size_human": "1.1 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "required_packages_1.py"
+    },
+    {
+      "filename": "setup_1.py",
+      "extension": ".py",
+      "size_bytes": 3938,
+      "size_human": "3.8 KB",
+      "file_type": "script",
+      "note": "Python script (analysis or plotting code)",
+      "download_source": "github",
+      "relative_path": "setup_1.py"
+    }
+  ]
+}

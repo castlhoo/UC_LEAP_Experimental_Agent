@@ -1,0 +1,348 @@
+{
+  "paper_id": "step1_0075",
+  "title": "Three-dimensional mapping of the altermagnetic spin splitting in CrSb",
+  "doi": "10.1038/s41467-025-56647-7",
+  "journal": "Nature Communications",
+  "year": 2025,
+  "paper_url": "https://openalex.org/W4407252363",
+  "priority_score": 7.5,
+  "dataset_status": "verified",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-025-56647-7",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Both files appear to be Nature Communications source-data PDFs associated with figures or processed outputs, not raw instrument exports.",
+  "type2_summary": "No clear raw/unprocessed instrument files were identified among the provided files.",
+  "type1_files": [
+    "41467_2025_56647_MOESM1_ESM_1.pdf",
+    "41467_2025_56647_MOESM2_ESM_1.pdf"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly reports raw experimental acquisition, but the provided files themselves are source-data PDFs from the manuscript repository. No binary instrument outputs, HDF5 files, or obvious raw scan files were provided. Classification is therefore conservative and based on the repository/file context.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2025_56647_MOESM1_ESM_1.pdf",
+      "filename": "41467_2025_56647_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper states that all source data accompanying the manuscript have been deposited in Figshare, and the figures described include many figure-specific processed/extracted datasets (e.g., ARPES maps, extracted MDCs, spin polarization curves, DFT comparisons). This strongly supports a figure/source-data role rather than raw instrument output.",
+      "file_evidence": "Large PDF source-data file (17.1 MB), consistent with a compiled figure/source-data supplement rather than a raw instrument dump. PDF format is typical for organized source-data pages or figure panels that can be directly inspected and re-plotted only after extraction, but the repository context indicates source data accompanying figures.",
+      "reasoning": "Given the explicit source-data deposit and the likely figure-oriented nature of the Nature Communications supplementary source data, this file is best classified as cleaned/source data rather than raw measurement output. The size is large, but the format and repository context favor Type 1 over Type 2.",
+      "ambiguity": "Moderate: the PDF format and large size could in principle contain scanned/raw plots, but the paper context and Nature source-data convention favor figure/source data.",
+      "key_columns_or_structure": "PDF source-data pages; likely figure panels, plots, and/or annotated source data rather than tabular columns"
+    },
+    {
+      "relative_path": "41467_2025_56647_MOESM2_ESM_1.pdf",
+      "filename": "41467_2025_56647_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The manuscript explicitly says all source data are deposited, and the paper’s figures include processed quantitative outputs and theoretical comparisons that are typically supplied as figure source data in Nature Communications supplements.",
+      "file_evidence": "Small PDF file (462.4 KB), consistent with a compact source-data or documentation-style supplement rather than raw experimental output. PDF format suggests organized, figure-ready content rather than instrument-native raw data.",
+      "reasoning": "This file is most consistent with cleaned/source data or figure-support material. It is not a raw instrument file and is likely directly tied to one or more figures in the paper.",
+      "ambiguity": "Moderate: without opening the PDF, exact contents are unknown; however, repository context and file size strongly favor Type 1.",
+      "key_columns_or_structure": "PDF source-data pages; likely figure-specific plots or documentation"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the altermagnetic metal CrSb using synchrotron ARPES, spin-resolved ARPES, XRD, and DFT/tight-binding modeling. The main result is direct spectroscopic evidence for bulk-type g-wave altermagnetism with a very large momentum-dependent band/spin splitting, reaching about 1.0 eV near the Fermi level, and a microscopic explanation that attributes the splitting to strong third-nearest-neighbor Cr–Cr hopping mediated by Sb.",
+    "measurement_types": [
+      "X-ray diffraction (XRD)",
+      "temperature-dependent resistivity",
+      "core-level photoemission",
+      "synchrotron-based angle-resolved photoemission spectroscopy (ARPES)",
+      "spin-resolved ARPES",
+      "density functional theory (DFT) calculations",
+      "tight-binding model calculations",
+      "Wannier-based electronic structure analysis"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Crystal and spin/lattice structure of CrSb, showing NiAs-type structure and nearest/next-nearest/third-nearest Cr–Cr bonds.",
+        "data_type": "schematic / structural diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "XRD H-K map (L=0) of a (001)-oriented crystal confirming crystal quality and lattice constants.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Spin-group symmetry operations connecting opposite-spin sublattices.",
+        "data_type": "schematic / symmetry diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Nodal planes in momentum space and 3D Brillouin zone showing where spin splitting vanishes.",
+        "data_type": "theoretical diagram",
+        "likely_source": "theoretical calculations / symmetry analysis"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "In-plane kx-ky ARPES map at E = -0.65 eV showing hole pockets around Γ.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "kx-kz ARPES map at E = -0.5 eV along Γ-M showing kz dispersion and photon-energy dependence.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "ARPES spectrum along Γ-M with 80 eV photons showing split valence bands near EF.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "ARPES spectrum along Γ-M with 68 eV photons showing unsplit/less split bands near kz ~ 0.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "ARPES spectrum along Γ-M with 90 eV photons showing unsplit/less split bands near kz ~ 0.5c*.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Second-derivative version of Fig. 2a to enhance band visibility.",
+        "data_type": "processed ARPES spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Second-derivative version of Fig. 2b.",
+        "data_type": "processed ARPES spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Second-derivative version of Fig. 2c.",
+        "data_type": "processed ARPES spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2g",
+        "description": "DFT band structure with altermagnetism and SOC at kz = 0.28c*, including spin polarization coloring.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2h",
+        "description": "DFT band structure with altermagnetism and SOC at kz = 0.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2i",
+        "description": "DFT band structure with altermagnetism and SOC at kz = 0.5c*.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2j",
+        "description": "DFT band structure for nonmagnetic case with SOC at kz = 0.28c*.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2k",
+        "description": "DFT band structure for altermagnetism without SOC at kz = 0.28c*.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2l",
+        "description": "kx-kz ARPES contour map at E = -0.5 eV showing kz evolution of splitting.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2m",
+        "description": "Second derivative of the kx-kz map in Fig. 2l.",
+        "data_type": "processed ARPES map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig2n",
+        "description": "DFT kx-kz contour at E = -0.5 eV for comparison with experiment.",
+        "data_type": "theoretical contour map",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "kx-ky constant-energy ARPES map at E = -0.65 eV with overlaid DFT contours, showing flower-like pockets.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data with theoretical overlay"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Fermi surface ARPES map at 105 eV showing six-fold flower-like pockets near EF.",
+        "data_type": "ARPES intensity map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Energy-momentum cuts at multiple azimuthal angles θ showing in-plane evolution of splitting.",
+        "data_type": "ARPES spectra",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "DFT band structures corresponding to the angular cuts in Fig. 3c.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Momentum distribution curves (MDCs) at E = -0.6 eV extracted from Fig. 3c and fitted with two Gaussians.",
+        "data_type": "processed spectral line cuts",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Extracted momentum splitting Δk versus θ compared with DFT.",
+        "data_type": "extracted quantitative curve",
+        "likely_source": "processed experimental data plus theoretical comparison"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Spin-integrated ARPES spectrum along Γ-M for the spin-ARPES sample.",
+        "data_type": "ARPES spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Second derivative of the spin-integrated ARPES spectrum with spin labels.",
+        "data_type": "processed ARPES spectrum",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Spin-resolved MDCs for Sz up and down along the selected cut.",
+        "data_type": "spin-resolved spectral line cuts",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Extracted spin polarization versus momentum with error bars.",
+        "data_type": "processed quantitative curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Schematic of the dominant third-nearest-neighbor hopping path between Cr atoms mediated by Sb p orbitals.",
+        "data_type": "schematic / model diagram",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Eight-band tight-binding fit to DFT band dispersions along Γ-M at kz = 0.28c*.",
+        "data_type": "theoretical band structure",
+        "likely_source": "theoretical calculations / fitted model"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "TB band dispersions with q1+q4 reduced by half.",
+        "data_type": "theoretical parameter-sweep band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "TB band dispersions with q2+q3 reduced by half.",
+        "data_type": "theoretical parameter-sweep band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "ΔE1U as a function of q2+q3 and q1+q4.",
+        "data_type": "theoretical parameter-sweep plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5f",
+        "description": "ΔE2U as a function of q2+q3 and q1+q4.",
+        "data_type": "theoretical parameter-sweep plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5g",
+        "description": "ΔE1 along Γ-M at kz = 0.28c* for increasing hopping strength, simulating compression.",
+        "data_type": "theoretical curve family",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5h",
+        "description": "ΔE2 along Γ-M at kz = 0.28c* for increasing hopping strength, simulating compression.",
+        "data_type": "theoretical curve family",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements include synchrotron ARPES intensity maps and spectra (kx-ky maps, kx-kz maps, energy-momentum cuts, Fermi surface maps), spin-resolved ARPES spectra/MDCs, XRD diffraction maps, resistivity vs temperature, and core-level photoemission spectra. The paper states that ARPES was performed on cleaved (001) crystals under ultrahigh vacuum, and spin-resolved ARPES used VESPA with calibrated Sherman function.",
+    "dataset_characterization": {
+      "data_availability_statement": "All source data accompanying the manuscript have been deposited in Figshare at https://doi.org/10.6084/m9.figshare.25865749.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "The paper does not explicitly state that full raw detector files are deposited. It describes raw measurements collected by ARPES, spin-ARPES, XRD, resistivity, and core-level photoemission instruments, but the repository is referred to as 'source data' rather than raw instrument data.",
+      "processed_data_description": "The paper explicitly uses processed data products such as second-derivative ARPES spectra, extracted MDC peak positions, fitted momentum splitting Δk, extracted spin polarization curves, and tabulated tight-binding hopping parameters. These are figure-ready or analysis-derived quantities.",
+      "figure_data_description": "Yes. The statement that 'all the source data accompanying this manuscript' are deposited in Figshare strongly suggests figure-level source data are provided for the main manuscript figures, likely including the plotted experimental and theoretical datasets used to generate the figures.",
+      "scripts_description": "No analysis scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "The paper clearly separates experimental measurements from analysis products: second derivatives are used to visualize bands, MDCs are fitted with Gaussians to extract Δk, and spin polarization is extracted using a calibrated Sherman function. Theoretical datasets include DFT band structures, DFT-derived contours, and tight-binding parameter sweeps. The repository is described only as 'source data'; whether it contains raw detector files, processed CSV/TXT tables, or figure panels is not specified in the text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section describes direct experimental acquisition of ARPES, spin-resolved ARPES, XRD, resistivity, and core-level photoemission data, indicating raw measurements were collected.",
+      "source_data_evidence": "The Data availability section says 'All the source data accompanying this manuscript have been deposited in the Figshare repository,' indicating figure/source data are provided.",
+      "data_availability_section_relevant": "All the source data accompanying this manuscript have been deposited in the Figshare repository, accessible via https://doi.org/10.6084/m9.figshare.25865749.",
+      "priority_modalities": [
+        "ARPES intensity maps",
+        "spin-resolved MDCs",
+        "XRD diffraction patterns",
+        "resistivity vs temperature curves",
+        "core-level photoemission spectra",
+        "DFT band structures",
+        "tight-binding model outputs",
+        "extracted peak positions and spin polarization curves"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2025_56647_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 17982395,
+      "size_human": "17.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2025_56647_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2025_56647_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 473469,
+      "size_human": "462.4 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2025_56647_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

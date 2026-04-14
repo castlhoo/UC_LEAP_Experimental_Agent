@@ -1,0 +1,1227 @@
+{
+  "paper_id": "step1_0189",
+  "title": "Multimodal host–guest complexation for efficient and stable perovskite photovoltaics",
+  "doi": "10.1038/s41467-021-23566-2",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3172882011",
+  "priority_score": 8.6,
+  "dataset_status": "verified",
+  "files_downloaded": 3,
+  "files_extracted": 47,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-021-23566-2",
+  "files_inspected": 50,
+  "file_types_found": [
+    "tabular_text",
+    "pdf",
+    "binary",
+    "excel",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Unterminated string starting at: line 194 column 24 (char 12305)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper reports a multimodal host–guest complexation strategy for FAPbI3-based perovskite solar cells using the crown ether dibenzo-21-crown-7 (DB21C7) to deliver Cs+ ions in chlorobenzene without damaging the film. The treatment creates a Cs-rich surface and a Cs gradient into the bulk, passivates Pb-related defects, suppresses non-radiative recombination, improves phase stability, and yields devices with >24% PCE and strong operational stability.",
+    "measurement_types": [
+      "X-ray photoelectron spectroscopy (XPS)",
+      "scanning electron microscopy (SEM)",
+      "energy-dispersive X-ray spectroscopy (EDS/EDX)",
+      "Kelvin probe force microscopy (KPFM)",
+      "ultraviolet photoelectron spectroscopy (UPS)",
+      "grazing-incidence wide-angle X-ray scattering (GIWAXS)",
+      "powder X-ray diffraction (pXRD)",
+      "X-ray reflectivity (XRR)",
+      "solid-state NMR (133Cs, 14N)",
+      "density functional theory (DFT) calculations",
+      "current density-voltage (J-V) photovoltaic measurements",
+      "maximum power point tracking (MPP)",
+      "external quantum efficiency (EQE)",
+      "time-resolved photoluminescence (TRPL)",
+      "cathodoluminescence (CL) mapping",
+      "photoluminescence spectral photon flux / PLQY",
+      "inductively coupled plasma optical emission spectroscopy (ICP-OES)",
+      "cross-sectional SEM",
+      "STEM-EDX"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Molecular structure of the CsI–DB21C7 host–guest complex.",
+        "data_type": "molecular structure",
+        "likely_source": "theoretical/chemical schematic"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic comparison of gradient Cs doping versus homogeneous Cs doping in perovskite films.",
+        "data_type": "schematic",
+        "likely_source": "conceptual illustration"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "XPS Cs 3d core-level spectra showing Cs incorporation in treated films and absence in control.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "XPS Pb 4f spectra showing suppression of metallic Pb after treatment.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1e",
+        "description": "Top-view SEM image of control perovskite film morphology.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1f",
+        "description": "Top-view SEM image of treated perovskite film showing larger grains and needle-like surface structures.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1g",
+        "description": "KPFM map of control film surface potential.",
+        "data_type": "image/map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1h",
+        "description": "KPFM map of treated film surface potential, showing more homogeneous/higher potential.",
+        "data_type": "image/map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1i",
+        "description": "UPS spectra comparing work function and valence band maximum of control and treated films.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "GIWAXS reciprocal-space map of control film showing perovskite phases and PbI2/hexagonal impurities.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "GIWAXS reciprocal-space map of treated film showing disappearance of PbI2 and appearance of low-q surface species.",
+        "data_type": "diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Peak intensities versus probing depth for perovskite, PbI2, and surface species, comparing control and treated films.",
+        "data_type": "processed diffraction/intensity plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Relative change in pseudo-cubic unit cell parameter versus probing depth.",
+        "data_type": "processed structural plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "133Cs ssNMR spectra of CsI, CsI–DB21C7, and FAPbI3 samples showing Cs incorporation and complexation.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "14N ssNMR spectra showing increased distortion of the FA environment after Cs treatment.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "DFT schematic of three Cs-doping configurations (M1–M3) and their calculated band gaps.",
+        "data_type": "theoretical model + computed bandgap plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "DFT density of states for pristine, vacancy-containing, and Cs-passivated FAPbI3 surfaces.",
+        "data_type": "theoretical electronic structure plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Bar/point plot of photovoltaic metrics (PCE, VOC, JSC, FF) for control, homogeneous Cs-doped, DB21C7-only, and target devices.",
+        "data_type": "transport/performance plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "J-V curves of champion control and target solar cells, with inset MPP tracking.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Photoluminescence spectral photon flux and derived PLQY comparison for full devices.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Loss analysis breakdown showing radiative, non-radiative, and transport losses.",
+        "data_type": "processed performance analysis plot",
+        "likely_source": "experimental data/derived analysis"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Ambient stability XRD evolution of control and target perovskite films over time.",
+        "data_type": "diffraction pattern series",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Average relative humidity during ambient aging in Lausanne.",
+        "data_type": "environmental time series",
+        "likely_source": "measured environmental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "MPP tracking of unencapsulated devices under one-sun illumination.",
+        "data_type": "transport/time-series curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Thermal stability of devices at 85 °C.",
+        "data_type": "stability time-series curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5e",
+        "description": "Lead leakage quantified after immersing solar cells in water by ICP-OES.",
+        "data_type": "quantitative analytical plot",
+        "likely_source": "experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports many direct experimental measurements: XPS core-level spectra, SEM images, KPFM maps, UPS spectra, GIWAXS reciprocal-space maps, pXRD patterns, ssNMR spectra, TRPL decays, PL spectral photon flux, J-V curves, EQE spectra, MPP tracking traces, CL maps, XRR scans, STEM-EDX maps, and ICP-OES lead-leaching measurements. It also includes DFT-calculated structures, band gaps, and density of states.",
+    "dataset_characterization": {
+      "data_availability_statement": "The provided text does not include a formal Data availability statement or repository link. It does mention that computational details are in the Methods and that supplementary figures/tables/note contain additional data, but no explicit public dataset location is given in the excerpt.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are described as instrument outputs from specific measurements: XPS spectra (PHI VersaProbe II), GIWAXS/pXRD patterns (PETRA III beamline P08 and PANalytical diffractometer), SEM/EDX and STEM-EDX images/maps, KPFM maps, UPS spectra, ssNMR spectra, TRPL traces, PL flux spectra, J-V scans, EQE spectra, MPP tracking traces, XRR scans, and ICP-OES measurements. The paper does not specify file formats or a downloadable raw-data archive in the excerpt.",
+      "processed_data_description": "Processed data include normalized photovoltaic metrics, extracted work function and VBM values from UPS, peak intensities versus probing depth from GIWAXS, unit-cell parameter changes, fitted NMR interpretations, DFT-derived band gaps and density of states, TRPL-derived recombination constants, quasi-Fermi level splitting, and loss-decomposition percentages. Supplementary figures/tables are explicitly referenced for optimized conditions, depth profiles, and fitting details.",
+      "figure_data_description": "Figure-specific data are clearly presented throughout the main figures and supplementary figures, but the excerpt does not state that source data files are deposited. The paper repeatedly references Supplementary Figs. 1-20 and Supplementary Tables 1-4, implying figure-ready processed datasets exist, but availability of separate source-data files is not explicitly stated here.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text. DFT calculations are described methodologically, but no scripts are referenced.",
+      "notes": "The dataset is multimodal and mixed: experimental raw measurements, derived/fit quantities, and theoretical/simulated outputs. The paper distinguishes control vs target vs homogeneous-doping samples and includes depth-dependent measurements (XPS depth profiles, GIWAXS incident-angle series, TOF-SIMS depth profiles) that are processed into compositional gradients. Supplementary material appears important for optimization, calibration, and detailed analysis, but the excerpt does not confirm open-access source data or code."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods section lists many direct instrument measurements and acquisition settings, indicating raw experimental data were collected (e.g., XPS, GIWAXS, SEM, NMR, TRPL, J-V, EQE, MPP, ICP-OES).",
+      "source_data_evidence": "The paper presents many derived plots and fitted quantities in figures and supplementary materials, such as loss breakdowns, depth-dependent intensities, band gaps, recombination constants, and stability curves, which are figure-ready processed/source data.",
+      "data_availability_section_relevant": "Relevant phrases include: 'Supplementary Fig. 3', 'Supplementary Fig. 7', 'Supplementary Table 1', 'Supplementary Note 1', 'computational details provided in the Methods', and repeated references to figure-specific analyses and depth profiles. No explicit repository statement appears in the excerpt.",
+      "priority_modalities": [
+        "XPS spectra",
+        "GIWAXS reciprocal-space maps",
+        "pXRD patterns",
+        "SEM images",
+        "KPFM maps",
+        "UPS spectra",
+        "ssNMR spectra",
+        "TRPL decays",
+        "J-V curves",
+        "EQE spectra",
+        "MPP tracking traces",
+        "ICP-OES concentration data",
+        "DFT structures and density of states"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2021_23566_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 13914860,
+      "size_human": "13.3 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_23566_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2021_23566_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 97843,
+      "size_human": "95.5 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_23566_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "extension": ".zip",
+      "size_bytes": 3184727,
+      "size_human": "3.0 MB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2021_23566_MOESM3_ESM_1.zip"
+    },
+    {
+      "filename": "Fig 3.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 29164,
+      "size_human": "28.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig 3a",
+        "Fig 3b",
+        "Fig 3d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig 3a",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig 3b",
+          "columns": [],
+          "named_columns": [],
+          "column_count": 0,
+          "row_count": 0,
+          "dtypes": {},
+          "has_header": false,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig 3d",
+          "columns": [
+            -3.0,
+            123.0,
+            -3.17,
+            122.0,
+            -3.01,
+            -107.0
+          ],
+          "named_columns": [
+            -3.0,
+            123.0,
+            -3.17,
+            122.0,
+            -3.01,
+            -107.0
+          ],
+          "column_count": 6,
+          "row_count": 601,
+          "dtypes": {
+            "-3.0": "float64",
+            "123.0": "float64",
+            "-3.17": "float64",
+            "122.0": "float64",
+            "-3.01": "float64",
+            "-107.0": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/Fig 3.xlsx",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/Fig 3.xlsx"
+    },
+    {
+      "filename": "Fig 4.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 60247,
+      "size_human": "58.8 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig 4a",
+        "Fig 4b",
+        "Fig 4c"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig 4a",
+          "columns": [
+            "PCE",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Jsc",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Voc",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "FF",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15"
+          ],
+          "named_columns": [
+            "PCE",
+            "Jsc",
+            "Voc",
+            "FF"
+          ],
+          "column_count": 16,
+          "row_count": 8,
+          "dtypes": {
+            "PCE": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Jsc": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Voc": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "FF": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4b",
+          "columns": [
+            "JV",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "MPP",
+            "Unnamed: 5",
+            "Unnamed: 6",
+            "Unnamed: 7"
+          ],
+          "named_columns": [
+            "JV",
+            "MPP"
+          ],
+          "column_count": 8,
+          "row_count": 349,
+          "dtypes": {
+            "JV": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "MPP": "float64",
+            "Unnamed: 5": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 4c",
+          "columns": [
+            "Unnamed: 0",
+            "control",
+            "target"
+          ],
+          "named_columns": [
+            "control",
+            "target"
+          ],
+          "column_count": 3,
+          "row_count": 1024,
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "control": "int64",
+            "target": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/Fig 4.xlsx",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/Fig 4.xlsx"
+    },
+    {
+      "filename": "Fig 5.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 262244,
+      "size_human": "256.1 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig 5a",
+        "Fig 5b",
+        "Fig 5c",
+        "Fig 5d",
+        "Fig 5e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig 5a",
+          "columns": [
+            "control",
+            "Unnamed: 1",
+            "Unnamed: 2",
+            "Unnamed: 3",
+            "Unnamed: 4",
+            "target",
+            "Unnamed: 6",
+            "Unnamed: 7",
+            "Unnamed: 8",
+            "Unnamed: 9",
+            "Unnamed: 10",
+            "Unnamed: 11",
+            "Unnamed: 12",
+            "Unnamed: 13",
+            "Unnamed: 14",
+            "Unnamed: 15",
+            "Unnamed: 16"
+          ],
+          "named_columns": [
+            "control",
+            "target"
+          ],
+          "column_count": 17,
+          "row_count": 2171,
+          "dtypes": {
+            "control": "float64",
+            "Unnamed: 1": "float64",
+            "Unnamed: 2": "float64",
+            "Unnamed: 3": "float64",
+            "Unnamed: 4": "float64",
+            "target": "float64",
+            "Unnamed: 6": "float64",
+            "Unnamed: 7": "float64",
+            "Unnamed: 8": "float64",
+            "Unnamed: 9": "float64",
+            "Unnamed: 10": "float64",
+            "Unnamed: 11": "float64",
+            "Unnamed: 12": "float64",
+            "Unnamed: 13": "float64",
+            "Unnamed: 14": "float64",
+            "Unnamed: 15": "float64",
+            "Unnamed: 16": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 5b",
+          "columns": [
+            1,
+            78
+          ],
+          "named_columns": [
+            1,
+            78
+          ],
+          "column_count": 2,
+          "row_count": 12,
+          "dtypes": {
+            "1": "int64",
+            "78": "int64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 5c",
+          "columns": [
+            "Control",
+            "Unnamed: 1",
+            "Target",
+            "Unnamed: 3"
+          ],
+          "named_columns": [
+            "Control",
+            "Target"
+          ],
+          "column_count": 4,
+          "row_count": 200,
+          "dtypes": {
+            "Control": "float64",
+            "Unnamed: 1": "float64",
+            "Target": "float64",
+            "Unnamed: 3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 5d",
+          "columns": [
+            "Unnamed: 0",
+            "Control",
+            "Unnamed: 2",
+            "Target",
+            "Unnamed: 4"
+          ],
+          "named_columns": [
+            "Control",
+            "Target"
+          ],
+          "column_count": 5,
+          "row_count": 4,
+          "dtypes": {
+            "Unnamed: 0": "int64",
+            "Control": "float64",
+            "Unnamed: 2": "float64",
+            "Target": "float64",
+            "Unnamed: 4": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig 5e",
+          "columns": [
+            "Unnamed: 0",
+            "control",
+            "target"
+          ],
+          "named_columns": [
+            "control",
+            "target"
+          ],
+          "column_count": 3,
+          "row_count": 2,
+          "dtypes": {
+            "Unnamed: 0": "object",
+            "control": "float64",
+            "target": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/Fig 5.xlsx",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/Fig 5.xlsx"
+    },
+    {
+      "filename": "uxnmr.par",
+      "extension": ".par",
+      "size_bytes": 28761,
+      "size_human": "28.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .par",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/uxnmr.par",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/uxnmr.par"
+    },
+    {
+      "filename": "format.ased",
+      "extension": ".ased",
+      "size_bytes": 3672,
+      "size_human": "3.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .ased",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/format.ased",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/format.ased"
+    },
+    {
+      "filename": "pulseprogram",
+      "extension": "",
+      "size_bytes": 1841,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pulseprogram",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pulseprogram"
+    },
+    {
+      "filename": "format.temp",
+      "extension": ".temp",
+      "size_bytes": 2691,
+      "size_human": "2.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .temp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/format.temp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/format.temp"
+    },
+    {
+      "filename": "audita.txt",
+      "extension": ".txt",
+      "size_bytes": 1119,
+      "size_human": "1.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "##TITLE=",
+        "Audit",
+        "trail,",
+        "TopSpin",
+        "3.6.2"
+      ],
+      "column_count": 5,
+      "row_count": 22,
+      "dtypes": {
+        "##TITLE=": "object",
+        "Audit": "object",
+        "trail,": "object",
+        "TopSpin": "object",
+        "3.6.2": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/audita.txt",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/audita.txt"
+    },
+    {
+      "filename": "proc",
+      "extension": "",
+      "size_bytes": 2174,
+      "size_human": "2.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/proc",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/proc"
+    },
+    {
+      "filename": "title",
+      "extension": "",
+      "size_bytes": 14,
+      "size_human": "14.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/title",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/title"
+    },
+    {
+      "filename": "auditp.txt",
+      "extension": ".txt",
+      "size_bytes": 2210,
+      "size_human": "2.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "##TITLE=",
+        "Audit",
+        "trail,",
+        "TopSpin",
+        "3.6.2"
+      ],
+      "column_count": 5,
+      "row_count": 43,
+      "dtypes": {
+        "##TITLE=": "object",
+        "Audit": "object",
+        "trail,": "object",
+        "TopSpin": "object",
+        "3.6.2": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/auditp.txt",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/auditp.txt"
+    },
+    {
+      "filename": "assocs",
+      "extension": "",
+      "size_bytes": 427,
+      "size_human": "427.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/assocs",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/assocs"
+    },
+    {
+      "filename": "intrng",
+      "extension": "",
+      "size_bytes": 76,
+      "size_human": "76.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/intrng",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/intrng"
+    },
+    {
+      "filename": "1r",
+      "extension": "",
+      "size_bytes": 131072,
+      "size_human": "128.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/1r",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/1r"
+    },
+    {
+      "filename": "1i",
+      "extension": "",
+      "size_bytes": 131072,
+      "size_human": "128.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/1i",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/1i"
+    },
+    {
+      "filename": "procs",
+      "extension": "",
+      "size_bytes": 2199,
+      "size_human": "2.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/procs",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/procs"
+    },
+    {
+      "filename": "outd",
+      "extension": "",
+      "size_bytes": 512,
+      "size_human": "512.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pdata/1/outd",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pdata/1/outd"
+    },
+    {
+      "filename": "stanprogram20949.precomp",
+      "extension": ".precomp",
+      "size_bytes": 3865,
+      "size_human": "3.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .precomp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/stanprogram20949.precomp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/stanprogram20949.precomp"
+    },
+    {
+      "filename": "fid",
+      "extension": "",
+      "size_bytes": 4096,
+      "size_human": "4.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/fid",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/fid"
+    },
+    {
+      "filename": "stanprogram20949",
+      "extension": "",
+      "size_bytes": 1841,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/stanprogram20949",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/stanprogram20949"
+    },
+    {
+      "filename": "shimvalues",
+      "extension": "",
+      "size_bytes": 2697,
+      "size_human": "2.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/shimvalues",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/shimvalues"
+    },
+    {
+      "filename": "adcInfo_TRX3.xml",
+      "extension": ".xml",
+      "size_bytes": 449,
+      "size_human": "449.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .xml",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/adcInfo_TRX3.xml",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/adcInfo_TRX3.xml"
+    },
+    {
+      "filename": "uxnmr.info",
+      "extension": ".info",
+      "size_bytes": 7702,
+      "size_human": "7.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .info",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/uxnmr.info",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/uxnmr.info"
+    },
+    {
+      "filename": "scon2",
+      "extension": "",
+      "size_bytes": 633,
+      "size_human": "633.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/scon2",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/scon2"
+    },
+    {
+      "filename": "pulseprogram.precomp",
+      "extension": ".precomp",
+      "size_bytes": 3605,
+      "size_human": "3.5 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .precomp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/pulseprogram.precomp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/pulseprogram.precomp"
+    },
+    {
+      "filename": "vtc_pid_settings",
+      "extension": "",
+      "size_bytes": 99,
+      "size_human": "99.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/vtc_pid_settings",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/vtc_pid_settings"
+    },
+    {
+      "filename": "acqu",
+      "extension": "",
+      "size_bytes": 7771,
+      "size_human": "7.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/acqu",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/acqu"
+    },
+    {
+      "filename": "acqus",
+      "extension": "",
+      "size_bytes": 7911,
+      "size_human": "7.7 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/acqus",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/acqus"
+    },
+    {
+      "filename": "specpar",
+      "extension": "",
+      "size_bytes": 4433,
+      "size_human": "4.3 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/1/specpar",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/1/specpar"
+    },
+    {
+      "filename": "uxnmr.par",
+      "extension": ".par",
+      "size_bytes": 28761,
+      "size_human": "28.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .par",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/uxnmr.par",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/uxnmr.par"
+    },
+    {
+      "filename": "stanprogram20558.precomp",
+      "extension": ".precomp",
+      "size_bytes": 2934,
+      "size_human": "2.9 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .precomp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/stanprogram20558.precomp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/stanprogram20558.precomp"
+    },
+    {
+      "filename": "pulseprogram",
+      "extension": "",
+      "size_bytes": 1841,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pulseprogram",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pulseprogram"
+    },
+    {
+      "filename": "format.temp",
+      "extension": ".temp",
+      "size_bytes": 2691,
+      "size_human": "2.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .temp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/format.temp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/format.temp"
+    },
+    {
+      "filename": "audita.txt",
+      "extension": ".txt",
+      "size_bytes": 1144,
+      "size_human": "1.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "##TITLE=",
+        "Audit",
+        "trail,",
+        "TopSpin",
+        "3.6.2"
+      ],
+      "column_count": 5,
+      "row_count": 22,
+      "dtypes": {
+        "##TITLE=": "object",
+        "Audit": "object",
+        "trail,": "object",
+        "TopSpin": "object",
+        "3.6.2": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/audita.txt",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/audita.txt"
+    },
+    {
+      "filename": "proc",
+      "extension": "",
+      "size_bytes": 2175,
+      "size_human": "2.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/proc",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/proc"
+    },
+    {
+      "filename": "title",
+      "extension": "",
+      "size_bytes": 71,
+      "size_human": "71.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/title",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/title"
+    },
+    {
+      "filename": "auditp.txt",
+      "extension": ".txt",
+      "size_bytes": 2055,
+      "size_human": "2.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "##TITLE=",
+        "Audit",
+        "trail,",
+        "TopSpin",
+        "3.6.2"
+      ],
+      "column_count": 5,
+      "row_count": 47,
+      "dtypes": {
+        "##TITLE=": "object",
+        "Audit": "object",
+        "trail,": "object",
+        "TopSpin": "object",
+        "3.6.2": "object"
+      },
+      "has_header": true,
+      "has_numeric_data": false,
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/auditp.txt",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/auditp.txt"
+    },
+    {
+      "filename": "assocs",
+      "extension": "",
+      "size_bytes": 575,
+      "size_human": "575.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/assocs",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/assocs"
+    },
+    {
+      "filename": "1r",
+      "extension": "",
+      "size_bytes": 131072,
+      "size_human": "128.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/1r",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/1r"
+    },
+    {
+      "filename": "1i",
+      "extension": "",
+      "size_bytes": 131072,
+      "size_human": "128.0 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/1i",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/1i"
+    },
+    {
+      "filename": "procs",
+      "extension": "",
+      "size_bytes": 2190,
+      "size_human": "2.1 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/procs",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/procs"
+    },
+    {
+      "filename": "outd",
+      "extension": "",
+      "size_bytes": 512,
+      "size_human": "512.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/pdata/1/outd",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/pdata/1/outd"
+    },
+    {
+      "filename": "stanprogram20949.precomp",
+      "extension": ".precomp",
+      "size_bytes": 3865,
+      "size_human": "3.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: .precomp",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/stanprogram20949.precomp",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/stanprogram20949.precomp"
+    },
+    {
+      "filename": "fid",
+      "extension": "",
+      "size_bytes": 16000,
+      "size_human": "15.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/fid",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/fid"
+    },
+    {
+      "filename": "stanprogram20949",
+      "extension": "",
+      "size_bytes": 1841,
+      "size_human": "1.8 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/stanprogram20949",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/stanprogram20949"
+    },
+    {
+      "filename": "shimvalues",
+      "extension": "",
+      "size_bytes": 2697,
+      "size_human": "2.6 KB",
+      "file_type": "binary",
+      "note": "Unknown format: ",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/shimvalues",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/shimvalues"
+    },
+    {
+      "filename": "adcInfo_TRX3.xml",
+      "extension": ".xml",
+      "size_bytes": 450,
+      "size_human": "450.0 B",
+      "file_type": "binary",
+      "note": "Unknown format: .xml",
+      "download_source": "zip_extracted",
+      "archive_path": "Source data/ssNMR-data/133Cs/4/adcInfo_TRX3.xml",
+      "from_zip": "41467_2021_23566_MOESM3_ESM_1.zip",
+      "relative_path": "zip_contents/Source data/ssNMR-data/133Cs/4/adcInfo_TRX3.xml"
+    }
+  ]
+}

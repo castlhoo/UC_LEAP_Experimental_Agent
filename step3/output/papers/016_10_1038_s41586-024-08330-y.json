@@ -1,0 +1,1287 @@
+{
+  "paper_id": "step1_0200",
+  "title": "Synthesis of a semimetallic Weyl ferromagnet with point Fermi surface",
+  "doi": "10.1038/s41586-024-08330-y",
+  "journal": "Nature",
+  "year": 2025,
+  "paper_url": "https://openalex.org/W4406715763",
+  "priority_score": 8.0,
+  "dataset_status": "verified",
+  "files_downloaded": 10,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41586-024-08330-y",
+  "files_inspected": 10,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "All listed files are figure-organized source data or source-data PDFs, with processed variables and sheet names tied to specific figures. They are replot-ready or nearly replot-ready and match the paper's stated source-data availability.",
+  "type2_summary": "No file shows clear raw instrument output, proprietary binary format, or unprocessed measurement dumps. The paper mentions Zenodo availability, but the inspected files are all figure source data rather than raw data.",
+  "type1_files": [
+    "41586_2024_8330_MOESM1_ESM_1.pdf",
+    "41586_2024_8330_MOESM2_ESM_1.pdf",
+    "41586_2024_8330_MOESM3_ESM_1.xlsx",
+    "41586_2024_8330_MOESM4_ESM_1.xlsx",
+    "41586_2024_8330_MOESM5_ESM_1.xlsx",
+    "41586_2024_8330_MOESM6_ESM_1.xlsx",
+    "Fig2_1.xlsx",
+    "Fig4_1.xlsx",
+    "Fig1_1.xlsx",
+    "Fig3_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "high",
+  "classification_notes": "The paper explicitly states that all relevant data are available from Zenodo, but the inspected files are all structured source-data/figure-data files rather than raw experimental dumps. One workbook (Fig3_1.xlsx / MOESM5) contains a headerless sheet, but its figure-based organization still supports Type 1 classification.",
+  "file_classifications": [
+    {
+      "relative_path": "41586_2024_8330_MOESM1_ESM_1.pdf",
+      "filename": "41586_2024_8330_MOESM1_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "Nature source-data files are explicitly listed as supplementary/source data for figures in the paper; the publication states all relevant data are available from Zenodo and provides publisher-hosted source data files.",
+      "file_evidence": "PDF source-data file, 8.7 MB, from nature_source_data. The naming convention MOESM1_ESM indicates figure/source-data supplement rather than raw instrument output.",
+      "reasoning": "This is a publisher-hosted source-data PDF, which fits figure-associated, replot-ready supplemental data rather than raw measurements. The paper supports source-data availability.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PDF source data / figure supplement"
+    },
+    {
+      "relative_path": "41586_2024_8330_MOESM2_ESM_1.pdf",
+      "filename": "41586_2024_8330_MOESM2_ESM_1.pdf",
+      "type": "type1",
+      "paper_evidence": "The paper provides multiple Nature source-data files as supplementary/source data.",
+      "file_evidence": "PDF source-data file, 11.1 MB, from nature_source_data. Publisher supplement format, not raw instrument output.",
+      "reasoning": "As a source-data PDF tied to the paper's figures/results, it is best treated as Type 1.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "PDF source data / figure supplement"
+    },
+    {
+      "relative_path": "41586_2024_8330_MOESM3_ESM_1.xlsx",
+      "filename": "41586_2024_8330_MOESM3_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper explicitly provides source data files for figures; this file corresponds to one of those Nature-hosted source data spreadsheets.",
+      "file_evidence": "Excel workbook with figure-specific sheets: Fig_1c, Fig_1d, Fig_1e, Fig_1e_inset. Columns are processed variables such as band_soc0_scl, band_soc137, B_ref_u, Gxx_u, Gxy_u, temps (K), and Ryx_S2268_2_temp_slice_col13 (e2/h).",
+      "reasoning": "Figure-organized spreadsheet with labeled axes/series is directly replot-ready and clearly processed source data, not raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig_1c: band_soc0_scl, band_soc137, band_soc138, band_soc139; Fig_1d: B_ref_u, Gxx_u, B_ref_d, Gxx_d, Gxy_u, Gxy_d; Fig_1e_inset: temps (K), Ryx_S2268_2_temp_slice_col13 (e2/h)"
+    },
+    {
+      "relative_path": "41586_2024_8330_MOESM4_ESM_1.xlsx",
+      "filename": "41586_2024_8330_MOESM4_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper provides figure-linked source data in Nature-hosted spreadsheets.",
+      "file_evidence": "Excel workbook with sheets Fig. 2a through Fig. 2e. Contains processed, figure-ready columns such as B, Sxy_20nm_d/u, thickness, sxy, band_nonmag0_scl, band_nonmag44, band_nonmag45, kz and energy arrays.",
+      "reasoning": "This is organized exactly as figure source data and can be replotted with minimal processing.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig. 2a/2b: B, Sxy_20nm_d/u, Sxy_40nm_d/u, Sxy_80nm_d/u, Sxy_120nm_d/u, Sxy_160nm_d/u; Fig. 2c: thickness, sxy, thickness_A, sxy_A; Fig. 2d: band_nonmag0_scl, band_nonmag44, band_nonmag45; Fig. 2e: kz0/energy0 ... kz3/energy3"
+    },
+    {
+      "relative_path": "41586_2024_8330_MOESM5_ESM_1.xlsx",
+      "filename": "41586_2024_8330_MOESM5_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper's source-data package includes figure-specific spreadsheets.",
+      "file_evidence": "Excel workbook with sheets Fig. 3a, Fig. 3b, Fig. 3d. Contains processed angular and ratio data such as A_theta, A_AMR_Dr, B_theta, B_AMR_Dr, C_theta, C_AMR_Dr, Cr, In, AMR_ratio_%. One sheet has no header but still appears to be tabulated figure data.",
+      "reasoning": "Despite one headerless sheet, the workbook is clearly figure source data and is directly usable for plotting after minimal interpretation.",
+      "ambiguity": "minor: Fig. 3d has no header, but the sheet is still structured as tabular source data rather than raw instrument output.",
+      "key_columns_or_structure": "Fig. 3a: A_theta, A_AMR_Dr, B_theta, B_AMR_Dr, C_theta, C_AMR_Dr; Fig. 3b: Cr, In, AMR_ratio_%"
+    },
+    {
+      "relative_path": "41586_2024_8330_MOESM6_ESM_1.xlsx",
+      "filename": "41586_2024_8330_MOESM6_ESM_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper states that source data are available and includes Nature-hosted figure supplements.",
+      "file_evidence": "Excel workbook with sheets Fig. 4a and Fig. 4d. The data are figure-organized and appear processed/comparison-style, e.g. 'present work, Composition C' and 'AHA_many_materials_S2231'.",
+      "reasoning": "This is clearly figure source data, likely for comparison plots, and is replot-ready.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig. 4a: present work, Composition C; Fig. 4d: AHA_many_materials_S2231"
+    },
+    {
+      "relative_path": "Fig2_1.xlsx",
+      "filename": "Fig2_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Zenodo deposit contains the same figure-linked data as the Nature source-data files; the paper says all relevant data are available from Zenodo.",
+      "file_evidence": "Excel workbook with figure-specific sheets Fig. 2a through Fig. 2e, matching the publisher source data. Processed columns include B, Sxy_* series, thickness, sxy, band_nonmag* and kz/energy arrays.",
+      "reasoning": "This is a duplicate Zenodo copy of figure source data, not raw instrument output.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig. 2a/2b: B, Sxy_*; Fig. 2c: thickness, sxy; Fig. 2d: band_nonmag*; Fig. 2e: kz*/energy*"
+    },
+    {
+      "relative_path": "Fig4_1.xlsx",
+      "filename": "Fig4_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Zenodo deposit mirrors the paper's figure source data; the paper states all relevant data are available from Zenodo.",
+      "file_evidence": "Excel workbook with figure sheets Fig. 4a and Fig. 4d, containing processed comparison data rather than raw measurements.",
+      "reasoning": "Figure-organized spreadsheet, directly replot-ready.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig. 4a: present work, Composition C; Fig. 4d: AHA_many_materials_S2231"
+    },
+    {
+      "relative_path": "Fig1_1.xlsx",
+      "filename": "Fig1_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Zenodo deposit mirrors the paper's figure source data; the paper states all relevant data are available from Zenodo.",
+      "file_evidence": "Excel workbook with figure-specific sheets Fig_1c, Fig_1d, Fig_1e, Fig_1e_inset. Contains processed band and transport variables with headers.",
+      "reasoning": "This is clean, figure-based source data suitable for direct plotting.",
+      "ambiguity": "none",
+      "key_columns_or_structure": "Fig_1c: band_soc0_scl, band_soc137, band_soc138, band_soc139; Fig_1d: B_ref_u, Gxx_u, B_ref_d, Gxx_d, Gxy_u, Gxy_d; Fig_1e_inset: temps (K), Ryx_S2268_2_temp_slice_col13 (e2/h)"
+    },
+    {
+      "relative_path": "Fig3_1.xlsx",
+      "filename": "Fig3_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "Zenodo deposit mirrors the paper's figure source data; the paper states all relevant data are available from Zenodo.",
+      "file_evidence": "Excel workbook with sheets Fig. 3a, Fig. 3b, Fig. 3d. Contains processed angular/AMR data and comparison tables; one sheet lacks headers but remains tabular figure data.",
+      "reasoning": "This is figure source data, not raw instrument output.",
+      "ambiguity": "minor: Fig. 3d has no header, but structure still indicates source-data table.",
+      "key_columns_or_structure": "Fig. 3a: A_theta, A_AMR_Dr, B_theta, B_AMR_Dr, C_theta, C_AMR_Dr; Fig. 3b: Cr, In, AMR_ratio_%"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports the synthesis of a semimetallic Weyl ferromagnet with a point Fermi surface, indicating an experimentally realized topological magnetic material.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "All data relevant to the study's conclusions are deposited in Zenodo; the publisher page also provides multiple downloadable source data files (PDF and XLSX) as supplementary/source data.",
+    "has_processed_plots": true,
+    "processed_plot_details": "All data relevant to the study's conclusions are deposited in Zenodo; the publisher page also provides multiple downloadable source data files (PDF and XLSX) as supplementary/source data.",
+    "dataset_characterization": {
+      "data_availability_statement": "All data relevant to the conclusions of this study are available from Zenodo 53 .",
+      "data_provided_types": [
+        "raw",
+        "source_data"
+      ],
+      "raw_data_description": "All data relevant to the study's conclusions are deposited in Zenodo; the publisher page also provides multiple downloadable source data files (PDF and XLSX) as supplementary/source data.",
+      "processed_data_description": "",
+      "figure_data_description": "41586_2024_8330_MOESM1_ESM.pdf, 41586_2024_8330_MOESM2_ESM.pdf, 41586_2024_8330_MOESM3_ESM.xlsx, 41586_2024_8330_MOESM4_ESM.xlsx, 41586_2024_8330_MOESM5_ESM.xlsx",
+      "scripts_description": "",
+      "data_organization": "The paper states that all data relevant to the conclusions are available from Zenodo (DOI: 10.5281/zenodo.13969155). Nature-hosted source data/supplementary files are also available on the publisher page.",
+      "replot_ready_data_present": true,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "both_expected": true,
+      "raw_data_evidence": "The paper states that all data relevant to the conclusions are available from Zenodo (DOI: 10.5281/zenodo.13969155). Nature-hosted source data/supplementary files are also available on the publisher page.",
+      "source_data_evidence": "41586_2024_8330_MOESM1_ESM.pdf, 41586_2024_8330_MOESM2_ESM.pdf, 41586_2024_8330_MOESM3_ESM.xlsx, 41586_2024_8330_MOESM4_ESM.xlsx, 41586_2024_8330_MOESM5_ESM.xlsx",
+      "both_evidence": "Step 2 found both repository-style data and publisher source files",
+      "data_availability_section_relevant": "All data relevant to the conclusions of this study are available from Zenodo 53 .",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "41586_2024_8330_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 9105649,
+      "size_human": "8.7 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2024_8330_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 11611965,
+      "size_human": "11.1 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM2_ESM_1.pdf"
+    },
+    {
+      "filename": "41586_2024_8330_MOESM3_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 53418,
+      "size_human": "52.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_1c",
+        "Fig_1d",
+        "Fig_1e",
+        "Fig_1e_inset"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Fig_1c",
+          "columns": [
+            "band_soc0_scl",
+            "band_soc137",
+            "band_soc138",
+            "band_soc139"
+          ],
+          "named_columns": [
+            "band_soc0_scl",
+            "band_soc137",
+            "band_soc138",
+            "band_soc139"
+          ],
+          "column_count": 4,
+          "row_count": 200,
+          "dtypes": {
+            "band_soc0_scl": "float64",
+            "band_soc137": "float64",
+            "band_soc138": "float64",
+            "band_soc139": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1d",
+          "columns": [
+            "B_ref_u",
+            "Gxx_u",
+            "B_ref_d",
+            "Gxx_d",
+            "B_ref_u.1",
+            "Gxy_u",
+            "B_ref_d.1",
+            "Gxy_d"
+          ],
+          "named_columns": [
+            "B_ref_u",
+            "Gxx_u",
+            "B_ref_d",
+            "Gxx_d",
+            "B_ref_u.1",
+            "Gxy_u",
+            "B_ref_d.1",
+            "Gxy_d"
+          ],
+          "column_count": 8,
+          "row_count": 264,
+          "dtypes": {
+            "B_ref_u": "float64",
+            "Gxx_u": "float64",
+            "B_ref_d": "float64",
+            "Gxx_d": "float64",
+            "B_ref_u.1": "float64",
+            "Gxy_u": "float64",
+            "B_ref_d.1": "float64",
+            "Gxy_d": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1e",
+          "columns": [
+            "B_ref_u",
+            "Gxy_u",
+            "B_ref_d",
+            "Gxy_d"
+          ],
+          "named_columns": [
+            "B_ref_u",
+            "Gxy_u",
+            "B_ref_d",
+            "Gxy_d"
+          ],
+          "column_count": 4,
+          "row_count": 254,
+          "dtypes": {
+            "B_ref_u": "float64",
+            "Gxy_u": "float64",
+            "B_ref_d": "float64",
+            "Gxy_d": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1e_inset",
+          "columns": [
+            "temps (K)",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)"
+          ],
+          "named_columns": [
+            "temps (K)",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 31,
+          "dtypes": {
+            "temps (K)": "int64",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM3_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2024_8330_MOESM4_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 214213,
+      "size_human": "209.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 2a",
+        "Fig. 2b",
+        "Fig. 2c",
+        "Fig. 2d",
+        "Fig. 2e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 2a",
+          "columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "named_columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "column_count": 11,
+          "row_count": 500,
+          "dtypes": {
+            "B": "float64",
+            "Sxy_20nm_d": "float64",
+            "Sxy_20nm_u": "float64",
+            "Sxy_40nm_d": "float64",
+            "Sxy_40nm_u": "float64",
+            "Sxy_80nm_d": "float64",
+            "Sxy_80nm_u": "float64",
+            "Sxy_120nm_d": "float64",
+            "Sxy_120nm_u": "float64",
+            "Sxy_160nm_d": "float64",
+            "Sxy_160nm_u": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2b",
+          "columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "named_columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "column_count": 11,
+          "row_count": 1000,
+          "dtypes": {
+            "B": "float64",
+            "Sxy_20nm_d": "float64",
+            "Sxy_20nm_u": "float64",
+            "Sxy_40nm_d": "float64",
+            "Sxy_40nm_u": "float64",
+            "Sxy_80nm_d": "float64",
+            "Sxy_80nm_u": "float64",
+            "Sxy_120nm_d": "float64",
+            "Sxy_120nm_u": "float64",
+            "Sxy_160nm_d": "float64",
+            "Sxy_160nm_u": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2c",
+          "columns": [
+            "thickness",
+            "sxy",
+            "thickness_A",
+            "sxy_A"
+          ],
+          "named_columns": [
+            "thickness",
+            "sxy",
+            "thickness_A",
+            "sxy_A"
+          ],
+          "column_count": 4,
+          "row_count": 11,
+          "dtypes": {
+            "thickness": "object",
+            "sxy": "object",
+            "thickness_A": "float64",
+            "sxy_A": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2d",
+          "columns": [
+            "band_nonmag0_scl",
+            "band_nonmag44",
+            "band_nonmag45"
+          ],
+          "named_columns": [
+            "band_nonmag0_scl",
+            "band_nonmag44",
+            "band_nonmag45"
+          ],
+          "column_count": 3,
+          "row_count": 200,
+          "dtypes": {
+            "band_nonmag0_scl": "float64",
+            "band_nonmag44": "float64",
+            "band_nonmag45": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2e",
+          "columns": [
+            "kz0",
+            "energy0",
+            "kz1",
+            "energy1",
+            "kz2",
+            "energy2",
+            "kz3",
+            "energy3"
+          ],
+          "named_columns": [
+            "kz0",
+            "energy0",
+            "kz1",
+            "energy1",
+            "kz2",
+            "energy2",
+            "kz3",
+            "energy3"
+          ],
+          "column_count": 8,
+          "row_count": 200,
+          "dtypes": {
+            "kz0": "float64",
+            "energy0": "float64",
+            "kz1": "float64",
+            "energy1": "float64",
+            "kz2": "float64",
+            "energy2": "float64",
+            "kz3": "float64",
+            "energy3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM4_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2024_8330_MOESM5_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 40911,
+      "size_human": "40.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 3a",
+        "Fig. 3b",
+        "Fig. 3d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 3a",
+          "columns": [
+            "A_theta",
+            "A_AMR_Dr",
+            "B_theta",
+            "B_AMR_Dr",
+            "C_theta",
+            "C_AMR_Dr"
+          ],
+          "named_columns": [
+            "A_theta",
+            "A_AMR_Dr",
+            "B_theta",
+            "B_AMR_Dr",
+            "C_theta",
+            "C_AMR_Dr"
+          ],
+          "column_count": 6,
+          "row_count": 73,
+          "dtypes": {
+            "A_theta": "float64",
+            "A_AMR_Dr": "float64",
+            "B_theta": "float64",
+            "B_AMR_Dr": "float64",
+            "C_theta": "float64",
+            "C_AMR_Dr": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3b",
+          "columns": [
+            "Cr",
+            "In",
+            "AMR_ratio_%"
+          ],
+          "named_columns": [
+            "Cr",
+            "In",
+            "AMR_ratio_%"
+          ],
+          "column_count": 3,
+          "row_count": 39,
+          "dtypes": {
+            "Cr": "float64",
+            "In": "float64",
+            "AMR_ratio_%": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3d",
+          "columns": [
+            0.015705001,
+            -0.68238002,
+            -0.83959001,
+            -0.91025001,
+            -0.94294,
+            -0.95937997,
+            -0.96812999,
+            -0.97272003,
+            -0.97472,
+            -0.97478002,
+            -0.97302997,
+            -0.96912003,
+            -0.96208,
+            -0.94948,
+            -0.92461997,
+            -0.86132997,
+            -0.62734997,
+            -0.40470001,
+            -0.14717001,
+            0.47389999,
+            0.45849001,
+            1.0548,
+            1.0092,
+            1.2686,
+            1.4335001,
+            1.7563,
+            1.5027,
+            1.9526,
+            2.3934,
+            2.1078999
+          ],
+          "named_columns": [
+            0.015705001,
+            -0.68238002,
+            -0.83959001,
+            -0.91025001,
+            -0.94294,
+            -0.95937997,
+            -0.96812999,
+            -0.97272003,
+            -0.97472,
+            -0.97478002,
+            -0.97302997,
+            -0.96912003,
+            -0.96208,
+            -0.94948,
+            -0.92461997,
+            -0.86132997,
+            -0.62734997,
+            -0.40470001,
+            -0.14717001,
+            0.47389999,
+            0.45849001,
+            1.0548,
+            1.0092,
+            1.2686,
+            1.4335001,
+            1.7563,
+            1.5027,
+            1.9526,
+            2.3934,
+            2.1078999
+          ],
+          "column_count": 41,
+          "row_count": 60,
+          "dtypes": {
+            "0.015705001": "float64",
+            "-0.68238002": "float64",
+            "-0.83959001": "float64",
+            "-0.91025001": "float64",
+            "-0.94294": "float64",
+            "-0.95937997": "float64",
+            "-0.96812999": "float64",
+            "-0.97272003": "float64",
+            "-0.97472": "float64",
+            "-0.97478002": "float64",
+            "-0.97302997": "float64",
+            "-0.96912003": "float64",
+            "-0.96208": "float64",
+            "-0.94948": "float64",
+            "-0.92461997": "float64",
+            "-0.86132997": "float64",
+            "-0.62734997": "float64",
+            "-0.40470001": "float64",
+            "-0.14717001": "float64",
+            "0.47389999": "float64",
+            "0.45849001": "float64",
+            "1.0548": "float64",
+            "1.0092": "float64",
+            "1.2686": "float64",
+            "1.4335001": "float64",
+            "1.7563": "float64",
+            "1.5027": "float64",
+            "1.9526": "float64",
+            "2.3934": "float64",
+            "2.1078999": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM5_ESM_1.xlsx"
+    },
+    {
+      "filename": "41586_2024_8330_MOESM6_ESM_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 85573,
+      "size_human": "83.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 4a",
+        "Fig. 4d"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 4a",
+          "columns": [
+            "present work, Composition C",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "present work, Composition C"
+          ],
+          "column_count": 2,
+          "row_count": 2787,
+          "dtypes": {
+            "present work, Composition C": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 4d",
+          "columns": [
+            "AHA_many_materials_S2231",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "AHA_many_materials_S2231"
+          ],
+          "column_count": 2,
+          "row_count": 70,
+          "dtypes": {
+            "AHA_many_materials_S2231": "object",
+            "Unnamed: 1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "nature_source_data",
+      "relative_path": "41586_2024_8330_MOESM6_ESM_1.xlsx"
+    },
+    {
+      "filename": "Fig2_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 214213,
+      "size_human": "209.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 2a",
+        "Fig. 2b",
+        "Fig. 2c",
+        "Fig. 2d",
+        "Fig. 2e"
+      ],
+      "sheet_count": 5,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 2a",
+          "columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "named_columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "column_count": 11,
+          "row_count": 500,
+          "dtypes": {
+            "B": "float64",
+            "Sxy_20nm_d": "float64",
+            "Sxy_20nm_u": "float64",
+            "Sxy_40nm_d": "float64",
+            "Sxy_40nm_u": "float64",
+            "Sxy_80nm_d": "float64",
+            "Sxy_80nm_u": "float64",
+            "Sxy_120nm_d": "float64",
+            "Sxy_120nm_u": "float64",
+            "Sxy_160nm_d": "float64",
+            "Sxy_160nm_u": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2b",
+          "columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "named_columns": [
+            "B",
+            "Sxy_20nm_d",
+            "Sxy_20nm_u",
+            "Sxy_40nm_d",
+            "Sxy_40nm_u",
+            "Sxy_80nm_d",
+            "Sxy_80nm_u",
+            "Sxy_120nm_d",
+            "Sxy_120nm_u",
+            "Sxy_160nm_d",
+            "Sxy_160nm_u"
+          ],
+          "column_count": 11,
+          "row_count": 1000,
+          "dtypes": {
+            "B": "float64",
+            "Sxy_20nm_d": "float64",
+            "Sxy_20nm_u": "float64",
+            "Sxy_40nm_d": "float64",
+            "Sxy_40nm_u": "float64",
+            "Sxy_80nm_d": "float64",
+            "Sxy_80nm_u": "float64",
+            "Sxy_120nm_d": "float64",
+            "Sxy_120nm_u": "float64",
+            "Sxy_160nm_d": "float64",
+            "Sxy_160nm_u": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2c",
+          "columns": [
+            "thickness",
+            "sxy",
+            "thickness_A",
+            "sxy_A"
+          ],
+          "named_columns": [
+            "thickness",
+            "sxy",
+            "thickness_A",
+            "sxy_A"
+          ],
+          "column_count": 4,
+          "row_count": 11,
+          "dtypes": {
+            "thickness": "object",
+            "sxy": "object",
+            "thickness_A": "float64",
+            "sxy_A": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2d",
+          "columns": [
+            "band_nonmag0_scl",
+            "band_nonmag44",
+            "band_nonmag45"
+          ],
+          "named_columns": [
+            "band_nonmag0_scl",
+            "band_nonmag44",
+            "band_nonmag45"
+          ],
+          "column_count": 3,
+          "row_count": 200,
+          "dtypes": {
+            "band_nonmag0_scl": "float64",
+            "band_nonmag44": "float64",
+            "band_nonmag45": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 2e",
+          "columns": [
+            "kz0",
+            "energy0",
+            "kz1",
+            "energy1",
+            "kz2",
+            "energy2",
+            "kz3",
+            "energy3"
+          ],
+          "named_columns": [
+            "kz0",
+            "energy0",
+            "kz1",
+            "energy1",
+            "kz2",
+            "energy2",
+            "kz3",
+            "energy3"
+          ],
+          "column_count": 8,
+          "row_count": 200,
+          "dtypes": {
+            "kz0": "float64",
+            "energy0": "float64",
+            "kz1": "float64",
+            "energy1": "float64",
+            "kz2": "float64",
+            "energy2": "float64",
+            "kz3": "float64",
+            "energy3": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig2_1.xlsx"
+    },
+    {
+      "filename": "Fig4_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 85573,
+      "size_human": "83.6 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 4a",
+        "Fig. 4d"
+      ],
+      "sheet_count": 2,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 4a",
+          "columns": [
+            "present work, Composition C",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "present work, Composition C"
+          ],
+          "column_count": 2,
+          "row_count": 2787,
+          "dtypes": {
+            "present work, Composition C": "object",
+            "Unnamed: 1": "object"
+          },
+          "has_header": true,
+          "has_numeric_data": false
+        },
+        {
+          "sheet_name": "Fig. 4d",
+          "columns": [
+            "AHA_many_materials_S2231",
+            "Unnamed: 1"
+          ],
+          "named_columns": [
+            "AHA_many_materials_S2231"
+          ],
+          "column_count": 2,
+          "row_count": 70,
+          "dtypes": {
+            "AHA_many_materials_S2231": "object",
+            "Unnamed: 1": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig4_1.xlsx"
+    },
+    {
+      "filename": "Fig1_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 53418,
+      "size_human": "52.2 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig_1c",
+        "Fig_1d",
+        "Fig_1e",
+        "Fig_1e_inset"
+      ],
+      "sheet_count": 4,
+      "sheets": [
+        {
+          "sheet_name": "Fig_1c",
+          "columns": [
+            "band_soc0_scl",
+            "band_soc137",
+            "band_soc138",
+            "band_soc139"
+          ],
+          "named_columns": [
+            "band_soc0_scl",
+            "band_soc137",
+            "band_soc138",
+            "band_soc139"
+          ],
+          "column_count": 4,
+          "row_count": 200,
+          "dtypes": {
+            "band_soc0_scl": "float64",
+            "band_soc137": "float64",
+            "band_soc138": "float64",
+            "band_soc139": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1d",
+          "columns": [
+            "B_ref_u",
+            "Gxx_u",
+            "B_ref_d",
+            "Gxx_d",
+            "B_ref_u.1",
+            "Gxy_u",
+            "B_ref_d.1",
+            "Gxy_d"
+          ],
+          "named_columns": [
+            "B_ref_u",
+            "Gxx_u",
+            "B_ref_d",
+            "Gxx_d",
+            "B_ref_u.1",
+            "Gxy_u",
+            "B_ref_d.1",
+            "Gxy_d"
+          ],
+          "column_count": 8,
+          "row_count": 264,
+          "dtypes": {
+            "B_ref_u": "float64",
+            "Gxx_u": "float64",
+            "B_ref_d": "float64",
+            "Gxx_d": "float64",
+            "B_ref_u.1": "float64",
+            "Gxy_u": "float64",
+            "B_ref_d.1": "float64",
+            "Gxy_d": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1e",
+          "columns": [
+            "B_ref_u",
+            "Gxy_u",
+            "B_ref_d",
+            "Gxy_d"
+          ],
+          "named_columns": [
+            "B_ref_u",
+            "Gxy_u",
+            "B_ref_d",
+            "Gxy_d"
+          ],
+          "column_count": 4,
+          "row_count": 254,
+          "dtypes": {
+            "B_ref_u": "float64",
+            "Gxy_u": "float64",
+            "B_ref_d": "float64",
+            "Gxy_d": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig_1e_inset",
+          "columns": [
+            "temps (K)",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)"
+          ],
+          "named_columns": [
+            "temps (K)",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)"
+          ],
+          "column_count": 2,
+          "row_count": 31,
+          "dtypes": {
+            "temps (K)": "int64",
+            "Ryx_S2268_2_temp_slice_col13 (e2/h)": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig1_1.xlsx"
+    },
+    {
+      "filename": "Fig3_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 40911,
+      "size_human": "40.0 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Fig. 3a",
+        "Fig. 3b",
+        "Fig. 3d"
+      ],
+      "sheet_count": 3,
+      "sheets": [
+        {
+          "sheet_name": "Fig. 3a",
+          "columns": [
+            "A_theta",
+            "A_AMR_Dr",
+            "B_theta",
+            "B_AMR_Dr",
+            "C_theta",
+            "C_AMR_Dr"
+          ],
+          "named_columns": [
+            "A_theta",
+            "A_AMR_Dr",
+            "B_theta",
+            "B_AMR_Dr",
+            "C_theta",
+            "C_AMR_Dr"
+          ],
+          "column_count": 6,
+          "row_count": 73,
+          "dtypes": {
+            "A_theta": "float64",
+            "A_AMR_Dr": "float64",
+            "B_theta": "float64",
+            "B_AMR_Dr": "float64",
+            "C_theta": "float64",
+            "C_AMR_Dr": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3b",
+          "columns": [
+            "Cr",
+            "In",
+            "AMR_ratio_%"
+          ],
+          "named_columns": [
+            "Cr",
+            "In",
+            "AMR_ratio_%"
+          ],
+          "column_count": 3,
+          "row_count": 39,
+          "dtypes": {
+            "Cr": "float64",
+            "In": "float64",
+            "AMR_ratio_%": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        },
+        {
+          "sheet_name": "Fig. 3d",
+          "columns": [
+            0.015705001,
+            -0.68238002,
+            -0.83959001,
+            -0.91025001,
+            -0.94294,
+            -0.95937997,
+            -0.96812999,
+            -0.97272003,
+            -0.97472,
+            -0.97478002,
+            -0.97302997,
+            -0.96912003,
+            -0.96208,
+            -0.94948,
+            -0.92461997,
+            -0.86132997,
+            -0.62734997,
+            -0.40470001,
+            -0.14717001,
+            0.47389999,
+            0.45849001,
+            1.0548,
+            1.0092,
+            1.2686,
+            1.4335001,
+            1.7563,
+            1.5027,
+            1.9526,
+            2.3934,
+            2.1078999
+          ],
+          "named_columns": [
+            0.015705001,
+            -0.68238002,
+            -0.83959001,
+            -0.91025001,
+            -0.94294,
+            -0.95937997,
+            -0.96812999,
+            -0.97272003,
+            -0.97472,
+            -0.97478002,
+            -0.97302997,
+            -0.96912003,
+            -0.96208,
+            -0.94948,
+            -0.92461997,
+            -0.86132997,
+            -0.62734997,
+            -0.40470001,
+            -0.14717001,
+            0.47389999,
+            0.45849001,
+            1.0548,
+            1.0092,
+            1.2686,
+            1.4335001,
+            1.7563,
+            1.5027,
+            1.9526,
+            2.3934,
+            2.1078999
+          ],
+          "column_count": 41,
+          "row_count": 60,
+          "dtypes": {
+            "0.015705001": "float64",
+            "-0.68238002": "float64",
+            "-0.83959001": "float64",
+            "-0.91025001": "float64",
+            "-0.94294": "float64",
+            "-0.95937997": "float64",
+            "-0.96812999": "float64",
+            "-0.97272003": "float64",
+            "-0.97472": "float64",
+            "-0.97478002": "float64",
+            "-0.97302997": "float64",
+            "-0.96912003": "float64",
+            "-0.96208": "float64",
+            "-0.94948": "float64",
+            "-0.92461997": "float64",
+            "-0.86132997": "float64",
+            "-0.62734997": "float64",
+            "-0.40470001": "float64",
+            "-0.14717001": "float64",
+            "0.47389999": "float64",
+            "0.45849001": "float64",
+            "1.0548": "float64",
+            "1.0092": "float64",
+            "1.2686": "float64",
+            "1.4335001": "float64",
+            "1.7563": "float64",
+            "1.5027": "float64",
+            "1.9526": "float64",
+            "2.3934": "float64",
+            "2.1078999": "float64"
+          },
+          "has_header": false,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "Fig3_1.xlsx"
+    }
+  ]
+}

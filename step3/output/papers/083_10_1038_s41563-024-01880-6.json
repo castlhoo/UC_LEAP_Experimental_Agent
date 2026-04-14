@@ -1,0 +1,163 @@
+{
+  "paper_id": "step1_0125",
+  "title": "Non-thermal phonon dynamics and a quenched exciton condensate probed by surface-sensitive electron diffraction",
+  "doi": "10.1038/s41563-024-01880-6",
+  "journal": "Nature Materials",
+  "year": 2024,
+  "paper_url": "https://openalex.org/W4396494958",
+  "priority_score": 9.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41563-024-01880-6",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies ultrafast lattice dynamics in 1T-TiSe2 using surface-sensitive ultrafast low-energy electron diffuse scattering (ULEEDS). The authors resolve strongly momentum-dependent, non-thermal phonon build-up dominated by out-of-plane acoustic (ZA) modes and use the transient quench of charge-density-wave superstructure peaks to estimate that the excitonic contribution accounts for about 30% of the total lattice distortion in the CDW phase.",
+    "measurement_types": [
+      "ultrafast low-energy electron diffraction (ULEED)",
+      "ultrafast electron diffuse scattering",
+      "pump-probe diffraction imaging",
+      "temperature-calibrated diffraction intensity vs temperature",
+      "ab initio density functional theory phonon calculations",
+      "density functional perturbation theory phonon lifetime calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Experimental ULEED setup, TiSe2 crystal structure, and a low-energy electron diffraction pattern at 30 K showing main lattice peaks and CDW superstructure spots.",
+        "data_type": "schematic + diffraction pattern image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Fractional intensity-change maps between selected pump-probe delays, showing suppression of Bragg peaks and redistribution into diffuse background at different times.",
+        "data_type": "diffraction pattern image / intensity ratio map",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of scattering geometry and real-space depiction of a phonon contributing to diffuse background.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Calculated phonon dispersion of TiSe2 with color-coded relative contribution of each phonon mode to the diffuse background; ZA branch dominates.",
+        "data_type": "phonon dispersion / calculated weight map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Intensity profile across main lattice spots with ring regions used for momentum-resolved integration.",
+        "data_type": "line profile over diffraction intensity",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Transient change in out-of-plane mean-squared displacement extracted from Bragg-spot suppression and fit with a stretched exponential.",
+        "data_type": "time-resolved curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Time evolution of diffuse intensity integrated in momentum rings around a main lattice spot, showing different rise times at different q.",
+        "data_type": "time-resolved curves",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Pixelwise map of extracted phonon rise times across reciprocal space.",
+        "data_type": "2D parameter map",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Mean-squared displacement change versus time for four fluences, with stretched-exponential fits and temperature calibration.",
+        "data_type": "time-resolved curves",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Momentum-resolved phonon build-up times for several fluences compared with calculated phonon lifetimes.",
+        "data_type": "scatter/curve comparison plot",
+        "likely_source": "experimental data + theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Schematic comparison of single-mode relaxation in simulations versus global non-equilibrium population dynamics in the experiment.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "Schematic of excitonic insulator and Peierls contributions to the periodic lattice distortion in TiSe2.",
+        "data_type": "schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Time evolution of the CDW structural order parameter for several fluences, showing quench and partial recovery.",
+        "data_type": "time-resolved curve",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Order parameter plotted versus lattice temperature, showing non-thermal separation of CDW quench and phonon heating.",
+        "data_type": "phase-space curve / parametric plot",
+        "likely_source": "processed experimental data"
+      },
+      {
+        "figure_id": "Fig5d",
+        "description": "Fluence dependence of CDW relaxation time and quenched/quasi-thermalized order parameter values, including a threshold fluence kink.",
+        "data_type": "parameter-vs-fluence plot",
+        "likely_source": "processed experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw measurements are time-resolved low-energy electron diffraction images I(kx, ky, Δt) recorded in reflection geometry from a TiSe2 surface using 86 eV probe electrons and pump-probe delays. The detector is a phosphor screen/MCP assembly read out by a CMOS camera, producing reciprocal-space diffraction images as a function of delay and fluence.",
+    "dataset_characterization": {
+      "data_availability_statement": "The article states that methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information, acknowledgements, peer review information, author contributions, competing interests, and statements of data and code availability are available online at the DOI link. The provided text does not include the actual data/code availability wording or repository details.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "The paper describes raw experimental data as diffraction images I(kx, ky, Δt) collected with ULEED. It does not specify a public raw-data file format or repository in the provided text. Raw acquisition involves 2D reciprocal-space images from a CMOS camera after MCP/phosphor detection.",
+      "processed_data_description": "Processed data include background-corrected main-spot intensities, extracted out-of-plane mean-squared displacement changes, ring-integrated diffuse intensities, pixelwise rise-time maps, fluence-dependent relaxation times, and order-parameter-versus-temperature curves. The paper also describes calibration of temperature from adiabatic heating and fitting with stretched exponentials and custom models.",
+      "figure_data_description": "The paper explicitly refers to 'source data' being available online via the article's data availability materials, but the provided text does not enumerate figure-specific files. Based on the figures, source-data-like processed datasets likely exist for the time traces, momentum-resolved maps, fluence series, and calculated phonon weights/lifetimes, but this is not explicitly detailed in the text.",
+      "scripts_description": "The provided text does not mention analysis scripts, notebooks, or code files directly. It only states that code availability information is available online.",
+      "notes": "The dataset is a mix of raw reciprocal-space diffraction images and derived observables. The key analysis steps are: background correction of Bragg peaks, conversion to out-of-plane MSD via the Debye-Waller relation, ring integration in reciprocal space, pixelwise fitting of rise times, and comparison to DFT/DFPT calculations. The paper also uses theoretical phonon dispersions and lifetimes to interpret the experimental diffuse scattering. No explicit file naming, repository, or format is given in the provided text."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The experiment records backscattering electron images I(kx, ky, Δt) as a function of pump-probe delay, which are direct raw diffraction measurements.",
+      "source_data_evidence": "The paper presents extracted mean-squared displacement curves, ring-integrated diffuse intensities, pixelwise rise-time maps, and fluence-dependent fitted parameters, all of which are processed figure-ready data.",
+      "data_availability_section_relevant": "“Any methods, additional references, Nature Portfolio reporting summaries, source data, extended data, supplementary information ... and statements of data and code availability are available at https://doi.org/10.1038/s41563-024-01880-6.”",
+      "priority_modalities": [
+        "2D diffraction images",
+        "reciprocal-space intensity maps",
+        "time-delay series",
+        "fluence series",
+        "processed fit parameters",
+        "phonon dispersion calculations",
+        "phonon lifetime calculations"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

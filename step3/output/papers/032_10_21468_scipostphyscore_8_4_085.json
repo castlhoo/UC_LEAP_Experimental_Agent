@@ -1,0 +1,391 @@
+{
+  "paper_id": "step1_0511",
+  "title": "A Fermi surface descriptor quantifying the correlations between anomalous Hall effect and Fermi surface geometry",
+  "doi": "10.21468/scipostphyscore.8.4.085",
+  "journal": "SciPost Physics Core",
+  "year": 2025,
+  "paper_url": "https://doi.org/10.21468/scipostphyscore.8.4.085",
+  "priority_score": 4.0,
+  "dataset_status": "verified",
+  "files_downloaded": 6,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_21468_scipostphyscore_8_4_085",
+  "files_inspected": 6,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Three XLSX files contain small, labeled tabular data with clear headers and are directly replot-ready, so they are classified as Type 1 processed/figure-ready data.",
+  "type2_summary": "No file shows clear evidence of raw/unprocessed instrument output, large binary measurement data, or files requiring substantial preprocessing.",
+  "type1_files": [
+    "decay-rate-log-log-data_1.xlsx",
+    "xtransport-lifetime-log-log-data_1.xlsx",
+    "ztransport-lifetime-log-log-data_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The file set does not strongly match the paper title about anomalous Hall effect and Fermi-surface geometry, suggesting these files may come from a different dataset or ancillary repository content. None of the files show clear raw experimental signatures. The PDF files are too underspecified to classify beyond 'other'.",
+  "file_classifications": [
+    {
+      "relative_path": "decay-rate-log-log-data_1.xlsx",
+      "filename": "decay-rate-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper is about theoretical/computational Fermi-surface descriptors and transport correlations, with no indication of raw experimental instrument output. A small tabular XLSX with plotted variables is consistent with figure-ready processed data.",
+      "file_evidence": "XLSX spreadsheet with one sheet, 6 columns x 250 rows, clear headers ('log T', several numeric parameter columns, '<- κ/k0'). This is structured tabular data suitable for direct plotting with minimal processing.",
+      "reasoning": "The file is organized, small, and contains labeled variables rather than raw instrument channels. It can be replot-ready and fits the Type 1 definition of cleaned/processed data.",
+      "ambiguity": "The filename is not obviously tied to the paper title, so there is some uncertainty about whether it belongs to this specific paper; however, based on structure alone it is clearly Type 1 if included in the dataset.",
+      "key_columns_or_structure": "log T; parameter columns 0.1, 0.025, 0.00625, 0.0015625; '<- κ/k0'"
+    },
+    {
+      "relative_path": "Torus-pic_1.pdf",
+      "filename": "Torus-pic_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper contains schematic and Fermi-surface illustration figures, but no explicit evidence that this PDF is a source-data or figure-data file for those figures.",
+      "file_evidence": "PDF image file with a generic name ('Torus-pic') and no tabular structure or metadata indicating figure-ready data. It appears to be an illustration or document rather than a dataset.",
+      "reasoning": "This is not clearly raw data or replot-ready tabular data. Without evidence that it contains source data or a figure-specific dataset, it is safest to classify as other.",
+      "ambiguity": "Could be a figure asset or a standalone illustration, but there is insufficient evidence to classify as type1 or type2.",
+      "key_columns_or_structure": "PDF image/document; no tabular structure detected"
+    },
+    {
+      "relative_path": "xtransport-lifetime-log-log-data_1.xlsx",
+      "filename": "xtransport-lifetime-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper emphasizes processed theoretical/computational transport quantities and figure-based comparisons. A labeled spreadsheet of transport/lifetime data is consistent with processed source data rather than raw measurements.",
+      "file_evidence": "XLSX spreadsheet with one sheet, 6 columns x 250 rows, headers including 'log T' and '<- κ/k0', indicating organized numerical data ready for plotting.",
+      "reasoning": "The structure is clean, compact, and directly plottable. It matches Type 1 because it is processed tabular data rather than raw instrument output.",
+      "ambiguity": "Filename suggests transport/lifetime data, but the exact physical context is unclear from the file alone; still, the format strongly supports Type 1.",
+      "key_columns_or_structure": "log T; parameter columns 0.1, 0.025, 0.00625, 0.0015625; '<- κ/k0'"
+    },
+    {
+      "relative_path": "numerics-decay-rate_1.pdf",
+      "filename": "numerics-decay-rate_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper is computational/theoretical, but there is no explicit mention of a PDF numerics document or source-data figure file in the provided paper evidence.",
+      "file_evidence": "Small PDF (52.8 KB) with a generic numerics-related name, but no tabular structure or direct indication of whether it is a plot, report, or raw output.",
+      "reasoning": "Insufficient evidence to call this replot-ready data or raw data. It is most conservatively treated as other.",
+      "ambiguity": "Could be a figure PDF or a numerical report, but the available metadata is not enough to classify it as type1 or type2.",
+      "key_columns_or_structure": "PDF document; no tabular structure detected"
+    },
+    {
+      "relative_path": "ztransport-lifetime-log-log-data_1.xlsx",
+      "filename": "ztransport-lifetime-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper discusses computed transport descriptors and correlations, which aligns with processed spreadsheet data used for plotting figures.",
+      "file_evidence": "XLSX spreadsheet with one sheet, 6 columns x 250 rows, clear headers ('log T', numeric parameter columns, '<- κ/k0'). This is organized, labeled data suitable for direct plotting.",
+      "reasoning": "This is a clean tabular dataset with explicit headers and modest size, matching Type 1 replot-ready data.",
+      "ambiguity": "The filename is not directly tied to the paper title, but the file structure is unambiguously processed/figure-ready.",
+      "key_columns_or_structure": "log T; parameter columns 0.1, 0.025, 0.00625, 0.0015625; '<- κ/k0'"
+    },
+    {
+      "relative_path": "numerics-transport-scattering-rate_1.pdf",
+      "filename": "numerics-transport-scattering-rate_1.pdf",
+      "type": "other",
+      "paper_evidence": "The paper includes theoretical transport calculations, but there is no explicit evidence that this PDF is a source-data file or raw output.",
+      "file_evidence": "PDF file of moderate size (97.2 KB) with a generic numerics/transport/scattering-rate name, but no visible tabular structure or metadata indicating raw vs processed content.",
+      "reasoning": "The file could be a plot, report, or calculation output, but there is not enough evidence to classify it as type1 or type2. Conservative choice is other.",
+      "ambiguity": "Potentially figure-related, but not enough information to determine whether it is replot-ready or raw.",
+      "key_columns_or_structure": "PDF document; no tabular structure detected"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper proposes a phenomenological Fermi-surface geometry descriptor, HF, intended to correlate with intrinsic anomalous Hall conductivity (AHC) and, more tentatively, spin Hall conductivity (SHC). Using DFT-derived Fermi surfaces for 16 materials and comparing against experimentally reported AHC values, the authors report a strong linear correlation (R2 = 0.97), outperforming a Berry-curvature/Kubo-based comparison in their dataset. The work is primarily theoretical/computational and argues that hyperbolic regions of the Fermi surface encode transport-relevant geometry, including cases with multiple elementary band representations (EBRs).",
+    "measurement_types": [
+      "density functional theory (DFT) electronic structure calculations",
+      "Fermi surface geometry analysis",
+      "anomalous Hall conductivity (AHC) comparison to experiment",
+      "spin Hall conductivity (SHC) comparison to theory",
+      "band structure calculation",
+      "Berry-curvature/Kubo-formalism transport calculation"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1A",
+        "description": "Schematic of local Fermi-surface geometry types in a magnetic field: elliptic, planar, and hyperbolic; also illustrates cyclotron-orbit splitting near a hyperbolic point.",
+        "data_type": "schematic image",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1B",
+        "description": "Example of a fully hyperbolic surface (pseudosphere-like) used to illustrate ergodic/geodesic-flow behavior.",
+        "data_type": "schematic image",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2A",
+        "description": "Schematic of the HF calculation in the Hall-measurement direction.",
+        "data_type": "schematic image",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2B",
+        "description": "Correlation plot of predicted SHC values from the Kubo formalism versus HF for Pt, W3W, and TaGa3.",
+        "data_type": "scatter plot / correlation curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig2C",
+        "description": "Correlation plot of experimentally determined intrinsic AHC versus HF for multiple materials, including layered/quasi-2D systems.",
+        "data_type": "scatter plot / correlation curve",
+        "likely_source": "mixed: experimental AHC values plus theoretical HF calculations"
+      },
+      {
+        "figure_id": "Fig2D",
+        "description": "Correlation plot of experimentally determined intrinsic AHC versus AHC predicted by the Kubo formalism.",
+        "data_type": "scatter plot / correlation curve",
+        "likely_source": "mixed: experimental data plus theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3A",
+        "description": "Band structure of CrPt3 showing two topologically disconnected band sets crossing the Fermi level, separated by a continuous gap and colored by EBR set.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3B",
+        "description": "Energy-dependent AHC for CrPt3 comparing Kubo-based prediction with HF-based prediction obtained by summing separate EBR contributions.",
+        "data_type": "transport curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4",
+        "description": "Dependence of calculated total HF on k-mesh density for Fe and Co2FeSi, showing convergence/plateau behavior.",
+        "data_type": "convergence plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5A",
+        "description": "Fermi surface of Ni conduction band with hyperbolic points classified into smooth (blue) and singular (red) regions.",
+        "data_type": "Fermi-surface image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5B",
+        "description": "Fermi surface of Ni valence band with the same hyperbolic-point classification.",
+        "data_type": "Fermi-surface image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig6",
+        "description": "Supplementary SHC versus energy for TaGa3.",
+        "data_type": "transport curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig7A",
+        "description": "Supplementary Fermi surface for a tilted Dirac cone, showing enhanced local curvature around the Dirac point.",
+        "data_type": "Fermi-surface image",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig7B",
+        "description": "Supplementary band structure for a tilted Dirac cone with constant-energy cuts indicated.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "No new raw experimental measurements are reported in the paper. The study uses previously published experimentally determined intrinsic AHC values from the literature and compares them to DFT-derived HF values and Kubo-formalism calculations. The paper does not describe collecting raw instrument data such as transport traces, ARPES, STM, diffraction, or spectroscopy files.",
+    "dataset_characterization": {
+      "data_availability_statement": "No explicit data availability statement, repository link, downloadable dataset, or code release is present in the provided text.",
+      "data_provided_types": [
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Unknown / not provided. The paper does not describe raw measurement files or instrument outputs generated by the authors.",
+      "processed_data_description": "The paper uses processed quantities including HF values computed from DFT Fermi surfaces, experimentally reported intrinsic AHC values compiled from prior literature, Kubo-predicted AHC/SHC values, and energy-dependent transport curves. It also discusses k-mesh convergence data for HF and band-structure-derived EBR-separated Fermi-surface contributions.",
+      "figure_data_description": "Figure-ready data are clearly implied for the correlation plots, band structures, Fermi surfaces, convergence curves, and energy-dependent AHC/SHC plots. However, the paper does not state that source data files are deposited or attached.",
+      "scripts_description": "No scripts, notebooks, or code repositories are mentioned in the provided text.",
+      "notes": "This is primarily a computational/theoretical paper. The main dataset is a curated set of 16 compounds with DFT-derived Fermi surfaces and literature experimental AHC values. The paper distinguishes between single-EBR and multi-EBR Fermi surfaces and uses this to interpret outliers (Co2MnAl, CrPt3). The HF descriptor is computed from Fermi-surface geometry only, without Wannier projection. The text suggests the method could be automated for databases, but does not document an actual released dataset or workflow files."
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "raw_data_evidence": "The paper reports DFT calculations and literature comparisons, but no newly acquired raw experimental datasets or instrument outputs are described.",
+      "source_data_evidence": "The figures are based on computed HF, computed Kubo AHC/SHC, band structures, Fermi surfaces, and compiled experimental AHC values; however, no explicit source-data repository or supplementary data files are mentioned in the text provided.",
+      "data_availability_section_relevant": "No explicit data availability statement, repository link, downloadable dataset, or code release is present in the provided text.",
+      "priority_modalities": [
+        "DFT electronic structure outputs",
+        "Fermi surface geometry data",
+        "band structure data",
+        "transport correlation tables",
+        "k-mesh convergence data",
+        "literature-compiled experimental AHC values"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "decay-rate-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27311,
+      "size_human": "26.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "decay-rate-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "Torus-pic_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2930064,
+      "size_human": "2.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Torus-pic_1.pdf"
+    },
+    {
+      "filename": "xtransport-lifetime-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27109,
+      "size_human": "26.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "xtransport-lifetime-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "numerics-decay-rate_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 54071,
+      "size_human": "52.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "numerics-decay-rate_1.pdf"
+    },
+    {
+      "filename": "ztransport-lifetime-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 26978,
+      "size_human": "26.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "ztransport-lifetime-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "numerics-transport-scattering-rate_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 99537,
+      "size_human": "97.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "numerics-transport-scattering-rate_1.pdf"
+    }
+  ]
+}

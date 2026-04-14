@@ -1,0 +1,197 @@
+{
+  "paper_id": "step1_0101",
+  "title": "Micrometre-scale single-crystalline borophene on a square-lattice Cu(100) surface",
+  "doi": "10.1038/s41557-021-00879-9",
+  "journal": "Nature Chemistry",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4210279252",
+  "priority_score": 9.4,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 1,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41557-021-00879-9",
+  "files_inspected": 1,
+  "file_types_found": [
+    "tabular_text"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "No clear figure-ready tabular dataset was identified from the inspected file.",
+  "type2_summary": "No clear raw instrument-output dataset was identified from the inspected file.",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper strongly supports the presence of both raw experimental data and theoretical/simulation data overall, but the single inspected file does not match the main raw measurement modalities described in the paper. Its XSF-related content suggests a structural or simulation-support file rather than a replot-ready dataset.",
+  "file_classifications": [
+    {
+      "relative_path": "41557_2021_879_MOESM13_ESM_1.txt",
+      "filename": "41557_2021_879_MOESM13_ESM_1.txt",
+      "type": "other",
+      "paper_evidence": "The paper states that supplementary data are available, but does not identify this file as a figure-ready dataset or a raw measurement file. The reported raw data in the paper are LEEM, LEED, XPS, and STM outputs, whereas this file appears unrelated to those instrument outputs.",
+      "file_evidence": "The file is a tabular_text file with 490 rows and a single column, but the content is not a numeric table. The first row indicates 'XCrySDen XSF file', which is a structure/format marker rather than plottable data. The file likely contains crystallographic structure information or a text-based simulation file, not a clean table.",
+      "reasoning": "Because the content is not a directly plottable numeric dataset and instead appears to be a text representation of an XSF structure file, it does not fit Type 1. It is also not clearly raw instrument output in the sense of Type 2. The most conservative classification is 'other'.",
+      "ambiguity": "Moderate. The file may encode a crystal structure or simulation input/output in text form, but the available inspection does not show a clean table or raw measurement stream.",
+      "key_columns_or_structure": "Single text column; content begins with 'XCrySDen XSF file'"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper reports the epitaxial growth of micrometer-scale single-crystalline borophene on Cu(100) by MBE, monitored in real time with LEEM/LEED and characterized by XPS and low-temperature STM. The authors identify a new β13 borophene phase with a rectangular unit cell containing 10 boron atoms and 2 vacancies, stabilized mainly by charge transfer from Cu rather than covalent bonding, and predicted to host multiple anisotropic, tilted Dirac cones.",
+    "measurement_types": [
+      "bright-field LEEM",
+      "dark-field LEEM",
+      "LEED",
+      "micro-LEED",
+      "in-situ XPS / XPEEM",
+      "low-temperature STM",
+      "CO-functionalized high-resolution STM",
+      "DFT calculations",
+      "STM simulation (Tersoff-Hamann)",
+      "FFT of STM images"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a-h",
+        "description": "Sequence of bright-field LEEM images showing borophene nucleation at Cu step edges, lateral growth across terraces, and eventual coalescence into a continuous monolayer film on Cu(100).",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1i-k",
+        "description": "XPS spectra of Cu 3p before/after growth, time-resolved B 1s spectra during deposition, and B 1s spectra showing borophene peak at growth temperature and an additional higher-binding-energy peak after room-temperature overdeposition.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a-e",
+        "description": "Dark-field LEEM images and composite LEED pattern showing four rotational borophene domain orientations on Cu(100).",
+        "data_type": "image / diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Dark-field LEEM image of micrometer-sized faceted single-crystal borophene islands on broad Cu(100) terraces, with facet orientations labeled relative to Cu(011).",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3a-b",
+        "description": "Large-area STM topography of borophene islands and a height profile across an island and substrate step edge, supporting monolayer thickness.",
+        "data_type": "image / line profile",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c-d",
+        "description": "High-resolution STM images showing linear stripe modulations, domain junctions, and rectangular lattice features with dislocations across stripes.",
+        "data_type": "image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e-f",
+        "description": "FFT of a high-resolution STM image and a LEED pattern from a single domain, demonstrating consistency between real-space and reciprocal-space periodicities.",
+        "data_type": "FFT / diffraction pattern",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Comparison of experimental ultrahigh-resolution STM topography, DFT-simulated STM image, and atomistic model for the proposed β13 borophene structure including supermodulation.",
+        "data_type": "image / simulation",
+        "likely_source": "experimental data + theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Schematic atomic model of β13 borophene showing 10 boron atoms and 2 vacancies in the unit cell.",
+        "data_type": "schematic / structural model",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Schematic of β13 borophene lattice crossing stripe regions, indicating where dark holes appear in experiment.",
+        "data_type": "schematic",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "DFT electronic band structure of free-standing β13 borophene with orbital character coloring and highlighted Dirac cones.",
+        "data_type": "band structure",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Density of states for pristine Cu, free-standing β13 borophene, and β13 borophene on Cu(100), showing charge-transfer doping and preserved borophene DOS shape.",
+        "data_type": "DOS curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Charge redistribution isosurface between Cu and borophene, showing electron depletion on Cu and accumulation on B.",
+        "data_type": "charge density isosurface",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig5d-f",
+        "description": "3D contours of three Dirac cones at GX, XM, and GY in free-standing β13 borophene.",
+        "data_type": "3D band-structure surface / theoretical contour",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "The paper reports raw experimental measurements including real-time LEEM image sequences during growth, LEED patterns, in-situ XPS/XPEEM spectra from selected areas, and low-temperature STM topography images. The methods also mention raw STM acquisition at 5 K with a qPlus sensor and CO-functionalized tips, and LEED/LEEM images processed for display in ImageJ. No raw file formats or repository are specified.",
+    "dataset_characterization": {
+      "data_availability_statement": "Supplementary Information is available for this paper. The data that support the findings of this study are available from the corresponding author upon request.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "unknown"
+      ],
+      "raw_data_description": "Raw data are described as experimental LEEM images, LEED patterns, XPS spectra, and STM images collected in situ or under UHV. The paper does not specify file formats, directory structure, or a public repository.",
+      "processed_data_description": "Processed data include contrast-enhanced and color-coded LEEM/LEED images, XPS peak fits performed in CasaXPS using Gaussian/Lorentzian mixtures, STM flatten/smooth/corrugation-reversed images processed in Gwyddion, FFTs of STM images, and line profiles extracted from STM topography. The paper also presents derived quantities such as binding energies, domain orientations, vacancy ratio, unit-cell dimensions, charge transfer per boron atom, and DFT-derived band structures/DOS.",
+      "figure_data_description": "Figure-specific data are clearly implied by the captions and methods, but no explicit source-data archive is mentioned. The paper states that data supporting the findings are available from the corresponding author upon request, suggesting figure data may exist internally but is not openly deposited in the text provided.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned. The paper only names software used for processing and simulation: ImageJ, CasaXPS, Gwyddion, GXSM, Photoshop, and Quantum Espresso.",
+      "notes": "The dataset is a mixed experimental-theoretical package. Experimental raw measurements were processed into publication figures, while DFT-generated outputs (optimized structures, simulated STM, DOS, band structures, charge-density differences) are also central to the paper. The text does not indicate an open-access raw-data repository or supplementary source-data files; access is by request to the corresponding author. The most important modalities for downstream classification are microscopy images (LEEM/STM), diffraction patterns (LEED/micro-LEED), spectroscopy (XPS), and computational electronic-structure outputs."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "Methods explicitly describe acquisition of LEEM, LEED, XPS, and STM measurements, and the figures show these experimental outputs.",
+      "source_data_evidence": "Methods describe image processing in ImageJ/Gwyddion, XPS peak fitting in CasaXPS, FFTs of STM images, and DFT/STM simulations used to generate figure-ready panels.",
+      "data_availability_section_relevant": "“Supplementary Information is available for this paper. The data that support the findings of this study are available from the corresponding author upon request.” Also: “All LEEM bright-field and dark-field images were processed using the standard basic contrast enhancement and artificial color-coding operations within the software ImageJ.” “The XPS peak fitting was done by CasaXPS software…” “All STM images were processed using the standard basic flatten, smooth, or corrugation reverse operations within Gwyddion software.”",
+      "priority_modalities": [
+        "LEEM image sequences",
+        "dark-field LEEM images",
+        "LEED diffraction patterns",
+        "micro-LEED",
+        "XPS spectra",
+        "STM topography images",
+        "FFT of STM images",
+        "DFT band structures",
+        "DOS curves",
+        "charge-density difference maps",
+        "simulated STM images"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41557_2021_879_MOESM13_ESM_1.txt",
+      "extension": ".txt",
+      "size_bytes": 19584,
+      "size_human": "19.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "489"
+      ],
+      "column_count": 1,
+      "row_count": 490,
+      "dtypes": {
+        "489": "object"
+      },
+      "has_header": false,
+      "has_numeric_data": false,
+      "download_source": "discovered",
+      "relative_path": "41557_2021_879_MOESM13_ESM_1.txt"
+    }
+  ]
+}

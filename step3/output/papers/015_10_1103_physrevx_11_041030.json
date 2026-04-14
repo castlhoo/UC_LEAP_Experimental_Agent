@@ -1,0 +1,297 @@
+{
+  "paper_id": "step1_0283",
+  "title": "Fermi Surface Mapping and the Nature of Charge-Density-Wave Order in the Kagome Superconductor <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mml:mrow><mml:msub><mml:mrow><mml:mi>CsV</mml:mi></mml:mrow><mml:mrow><mml:mn>3</mml:mn></mml:mrow></mml:msub></mml:mrow><mml:mrow><mml:msub><mml:mrow><mml:mi>Sb</mml:mi></mml:mrow><mml:mrow><mml:mn>5</mml:mn></mml:mrow></mml:msub></mml:mrow></mml:math>",
+  "doi": "10.1103/physrevx.11.041030",
+  "journal": "Physical Review X",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3214128538",
+  "priority_score": 8.0,
+  "dataset_status": "verified",
+  "files_downloaded": 6,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1103_physrevx_11_041030",
+  "files_inspected": 6,
+  "file_types_found": [
+    "excel",
+    "pdf"
+  ],
+  "has_type1": true,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "Three XLSX files are compact, headered, and figure-ready processed datasets that can likely be plotted directly with minimal processing.",
+  "type2_summary": "No file shows clear evidence of raw/unprocessed instrument output, proprietary formats, or large measurement dumps.",
+  "type1_files": [
+    "decay-rate-log-log-data_1.xlsx",
+    "xtransport-lifetime-log-log-data_1.xlsx",
+    "ztransport-lifetime-log-log-data_1.xlsx"
+  ],
+  "type2_files": [],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper context is about CsV3Sb5 and does not explicitly mention raw/source data availability. The Zenodo files provided here do not resemble raw experimental outputs; instead they look like processed numerical datasets and accompanying PDFs. Because the PDF contents were not opened, those files are conservatively labeled documentation/other rather than forced into Type 1 or Type 2.",
+  "file_classifications": [
+    {
+      "relative_path": "decay-rate-log-log-data_1.xlsx",
+      "filename": "decay-rate-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "The paper-level evidence does not indicate raw data; the available metadata says no raw/source data statement or repository link was found. The presence of Zenodo-hosted, figure-like tabular files is more consistent with processed data deposits.",
+      "file_evidence": "XLSX table with headers and a compact 6-column x 250-row structure. The columns include 'log T' and several numeric parameter columns (0.1, 0.025, 0.00625, 0.0015625) plus a label '<- κ/k0', which looks like processed, plot-ready numerical data rather than instrument output.",
+      "reasoning": "This is a small, organized spreadsheet with explicit headers and no signs of raw instrument channels or unprocessed measurements. It can likely be plotted directly as a log-log dataset with minimal processing, so it fits Type 1.",
+      "ambiguity": "Moderate: the file name suggests numerical results from a calculation or fit, but the structure strongly favors replot-ready processed data.",
+      "key_columns_or_structure": "log T; 0.1; 0.025; 0.00625; 0.0015625; <- κ/k0"
+    },
+    {
+      "relative_path": "Torus-pic_1.pdf",
+      "filename": "Torus-pic_1.pdf",
+      "type": "other",
+      "paper_evidence": "No paper evidence indicates this is raw or source data; the dataset description does not connect it to a specific figure or measurement channel.",
+      "file_evidence": "PDF image file, 2.8 MB. The name 'Torus-pic' suggests a rendered picture/illustration rather than tabular data or instrument output.",
+      "reasoning": "This does not appear to be a dataset file for replotting or raw measurement data. It is most likely a figure/illustration or supplementary image, so it is not classifiable as Type 1 or Type 2 under the provided definitions.",
+      "ambiguity": "High: without opening the PDF, it is unclear whether this is a figure, schematic, or documentation image. Conservatively classified as other.",
+      "key_columns_or_structure": "PDF image/graphic; no tabular structure reported"
+    },
+    {
+      "relative_path": "xtransport-lifetime-log-log-data_1.xlsx",
+      "filename": "xtransport-lifetime-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement is available; the repository context suggests processed, figure-oriented deposits rather than raw instrument exports.",
+      "file_evidence": "XLSX spreadsheet with the same compact 6-column x 250-row structure and headers as the other figure-like tables. The presence of 'log T' and parameter columns indicates processed numerical data suitable for direct plotting.",
+      "reasoning": "The file is structured, small, and plot-ready. It lacks raw measurement channels and appears to be a processed dataset for a transport/lifetime figure, so Type 1 is the conservative fit.",
+      "ambiguity": "Moderate: the filename references transport/lifetime, but the internal structure is still clearly processed and replot-ready.",
+      "key_columns_or_structure": "log T; 0.1; 0.025; 0.00625; 0.0015625; <- κ/k0"
+    },
+    {
+      "relative_path": "numerics-decay-rate_1.pdf",
+      "filename": "numerics-decay-rate_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence indicates this is raw or source data.",
+      "file_evidence": "Small PDF (52.8 KB) with a filename indicating numerical results or a plotted decay-rate output rather than tabular data.",
+      "reasoning": "This appears to be a rendered numerical figure, report, or documentation artifact rather than a dataset file. It is not raw data and not clearly a replot-ready table.",
+      "ambiguity": "Moderate: without opening the PDF, it could be a figure or a short report page. Conservatively treated as documentation.",
+      "key_columns_or_structure": "PDF; no tabular structure reported"
+    },
+    {
+      "relative_path": "ztransport-lifetime-log-log-data_1.xlsx",
+      "filename": "ztransport-lifetime-log-log-data_1.xlsx",
+      "type": "type1",
+      "paper_evidence": "No explicit raw-data statement is available; the available evidence points to curated Zenodo deposits rather than instrument exports.",
+      "file_evidence": "XLSX spreadsheet with a compact 6-column x 250-row table and explicit headers. The structure matches the other processed log-log data files and is directly suitable for plotting.",
+      "reasoning": "This is clearly organized, small, and figure-ready. It is best classified as Type 1 because it can be replot directly with minimal processing.",
+      "ambiguity": "Low to moderate: the content is not fully visible, but the structure strongly indicates processed data.",
+      "key_columns_or_structure": "log T; 0.1; 0.025; 0.00625; 0.0015625; <- κ/k0"
+    },
+    {
+      "relative_path": "numerics-transport-scattering-rate_1.pdf",
+      "filename": "numerics-transport-scattering-rate_1.pdf",
+      "type": "documentation",
+      "paper_evidence": "No paper evidence indicates this is raw or source data.",
+      "file_evidence": "Small PDF (97.2 KB) with a filename suggesting numerical scattering-rate output, likely a figure or report rather than a data table.",
+      "reasoning": "This is not a tabular dataset and does not resemble raw instrument output. It is most plausibly a documentation/figure PDF associated with numerical results.",
+      "ambiguity": "Moderate: the PDF content is not inspected directly, so it could be a figure page. Conservatively classified as documentation.",
+      "key_columns_or_structure": "PDF; no tabular structure reported"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "The paper reports quantum oscillation and diffraction measurements showing that charge-density-wave order in kagome superconductor CsV3Sb5 reconstructs the Fermi surface and involves correlated interlayer distortions.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper reports quantum oscillation and diffraction measurements, but based on the available information there is no identifiable public dataset or source data package.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the paper metadata provided, and no downloadable data files or external repository links were found on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the paper metadata provided, and no downloadable data files or external repository links were found on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "decay-rate-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27311,
+      "size_human": "26.7 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "decay-rate-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "Torus-pic_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 2930064,
+      "size_human": "2.8 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "Torus-pic_1.pdf"
+    },
+    {
+      "filename": "xtransport-lifetime-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 27109,
+      "size_human": "26.5 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "xtransport-lifetime-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "numerics-decay-rate_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 54071,
+      "size_human": "52.8 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "numerics-decay-rate_1.pdf"
+    },
+    {
+      "filename": "ztransport-lifetime-log-log-data_1.xlsx",
+      "extension": ".xlsx",
+      "size_bytes": 26978,
+      "size_human": "26.3 KB",
+      "file_type": "excel",
+      "sheet_names": [
+        "Sheet1"
+      ],
+      "sheet_count": 1,
+      "sheets": [
+        {
+          "sheet_name": "Sheet1",
+          "columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "named_columns": [
+            "log T",
+            0.1,
+            0.025,
+            0.00625,
+            0.0015625,
+            "<- κ/k0"
+          ],
+          "column_count": 6,
+          "row_count": 250,
+          "dtypes": {
+            "log T": "float64",
+            "0.1": "float64",
+            "0.025": "float64",
+            "0.00625": "float64",
+            "0.0015625": "float64",
+            "<- κ/k0": "float64"
+          },
+          "has_header": true,
+          "has_numeric_data": true
+        }
+      ],
+      "download_source": "zenodo",
+      "relative_path": "ztransport-lifetime-log-log-data_1.xlsx"
+    },
+    {
+      "filename": "numerics-transport-scattering-rate_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 99537,
+      "size_human": "97.2 KB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "zenodo",
+      "relative_path": "numerics-transport-scattering-rate_1.pdf"
+    }
+  ]
+}

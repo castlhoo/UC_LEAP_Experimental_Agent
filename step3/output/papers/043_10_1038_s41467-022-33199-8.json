@@ -1,0 +1,280 @@
+{
+  "paper_id": "step1_0187",
+  "title": "A unifying mechanism for cation effect modulating C1 and C2 productions from CO2 electroreduction",
+  "doi": "10.1038/s41467-022-33199-8",
+  "journal": "Nature Communications",
+  "year": 2022,
+  "paper_url": "https://openalex.org/W4296366695",
+  "priority_score": 7.0,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 2,
+  "files_extracted": 0,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-022-33199-8",
+  "files_inspected": 2,
+  "file_types_found": [
+    "pdf"
+  ],
+  "has_type1": false,
+  "has_type2": true,
+  "has_both_types": false,
+  "type1_summary": "No clearly replot-ready, figure-organized tabular dataset was identifiable from the provided file inspection reports.",
+  "type2_summary": "Both files are large PDF source-data/supplementary documents and are most conservatively treated as raw or compiled supplementary material requiring extraction/processing before direct plotting.",
+  "type1_files": [],
+  "type2_files": [
+    "41467_2022_33199_MOESM1_ESM_1.pdf",
+    "41467_2022_33199_MOESM2_ESM_1.pdf"
+  ],
+  "classification_confidence": "medium",
+  "classification_notes": "The paper clearly contains both raw and processed data overall, but the two provided files are only identified as large PDF source-data documents. Without internal content inspection, a conservative Type 2 classification is appropriate.",
+  "file_classifications": [
+    {
+      "relative_path": "41467_2022_33199_MOESM1_ESM_1.pdf",
+      "filename": "41467_2022_33199_MOESM1_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The paper states that the main experimental and simulation data are deposited as raw data in Zenodo/ioChem-BD, including experimental measurements and simulation outputs. This file is in the Nature source-data package but is a large PDF, which is more consistent with raw/compiled supplementary material than clean figure-ready tables.",
+      "file_evidence": "PDF format, very large size (10.0 MB), and no indication of tabular figure-specific organization from the file inspection report. Nature MOESM PDFs commonly contain supplementary raw figures, methods, or compiled data rather than directly replot-ready tables.",
+      "reasoning": "Because the paper explicitly emphasizes raw data deposition and the file is a large PDF without evidence of structured, figure-ready tabular content, the conservative classification is Type 2. The file is not directly replot-ready from the available evidence.",
+      "ambiguity": "Moderate: the file is a source-data PDF, but without internal structure inspection it is unclear whether it contains figure-specific extracted data or raw supplementary material. Conservatively treated as raw/unprocessed.",
+      "key_columns_or_structure": "Not available from inspection; PDF source-data/supplementary document"
+    },
+    {
+      "relative_path": "41467_2022_33199_MOESM2_ESM_1.pdf",
+      "filename": "41467_2022_33199_MOESM2_ESM_1.pdf",
+      "type": "type2",
+      "paper_evidence": "The publication states that raw experimental and simulation data are available in repositories, while figure-ready processed data are also present in the main text/Supplementary Information. This file is another large Nature source-data PDF, which more likely corresponds to raw or compiled supplementary material than a clean replot-ready dataset.",
+      "file_evidence": "PDF format, substantial size (5.2 MB), and no visible tabular headers, sheet structure, or figure-specific variable names from the inspection report. The file appears to be a supplementary/source-data document rather than a structured table.",
+      "reasoning": "Given the paper's explicit raw-data availability and the lack of evidence that this PDF is organized as clean figure-ready data, the conservative choice is Type 2. It likely requires extraction or manual processing before plotting.",
+      "ambiguity": "Moderate: could contain source-data figures or tables, but the inspection report does not provide enough structure to call it Type 1.",
+      "key_columns_or_structure": "Not available from inspection; PDF source-data/supplementary document"
+    }
+  ],
+  "paper_analysis": {
+    "summary": "This paper studies the cation effect in CO2 electroreduction on Ag and Cu electrodes, combining DFT-CES atomistic simulations with flow-cell electrolysis and electrochemical impedance measurements. The main finding is a unified mechanism in which CO and C2H4 formation are governed by cation-coupled electron transfer (CCET) steps, while CH4 formation follows proton-coupled electron transfer (PCET); the cation effect is traced to cation-dependent surface charge density rather than only cation identity.",
+    "measurement_types": [
+      "DFT-CES quantum-mechanics-based multiscale simulation",
+      "density functional theory (DFT)",
+      "molecular dynamics (MD)",
+      "flow-cell electrolysis / chronoamperometry",
+      "gas chromatography (TCD/FID)",
+      "staircase potentio electrochemical impedance spectroscopy (SPEIS)",
+      "X-ray diffraction (XRD)",
+      "scanning electron microscopy (SEM)",
+      "energy-dispersive X-ray spectroscopy (EDS)",
+      "X-ray photoelectron spectroscopy (XPS)",
+      "extended X-ray absorption fine structure (EXAFS)",
+      "high-angle annular dark-field scanning transmission electron microscopy (HAADF-STEM)"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Time evolution of the K+–intermediate distance during a 5 ns DFT-CES trajectory, showing whether intermediates coordinate with K+ at the electrified interface.",
+        "data_type": "simulation trajectory / time series",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "Schematic reaction path for CO2-to-CO formation, highlighting possible cation-coordinated intermediates.",
+        "data_type": "schematic / reaction pathway diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Schematic reaction path for CO-to-CH4 formation with intermediate states along the hydrogenation sequence.",
+        "data_type": "schematic / reaction pathway diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Schematic reaction path for CO-to-C2H4 formation via C–C coupling, showing cation-coordinated intermediates.",
+        "data_type": "schematic / reaction pathway diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Reaction free-energy diagram for CO2-to-CO on Ag(111), identifying the cation-coupled electron transfer step as the rate-determining step.",
+        "data_type": "energy diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Reaction free-energy diagram for CO-to-CH4 on Cu(100), showing a proton-coupled electron transfer rate-determining step.",
+        "data_type": "energy diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "Reaction free-energy diagram for CO-to-C2H4 on Cu(100), showing cation-coupled electron transfer in the C–C coupling pathway.",
+        "data_type": "energy diagram",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Changes in K+ coordination number and Bader charge of *CO2 and *OCCO during DFT-CES iterations.",
+        "data_type": "line plot / iteration trace",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Charge-density difference isosurface showing electron redistribution upon cation coupling.",
+        "data_type": "3D isosurface / charge-density map",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Schematic energy-level diagram showing LUMO downshift and partial filling of adsorbed CO2 upon cation coupling.",
+        "data_type": "energy-level schematic",
+        "likely_source": "theoretical calculations or simulations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Polarization curves for CO production on Ag in KOH electrolytes plotted on the SHE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Same CO polarization curves plotted on the RHE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Same CO polarization curves plotted on the cation concentration-corrected electrode (CCE) scale, showing collapse of curves across K+ concentrations.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Polarization curves for C2H4 production on Cu during CO reduction in KOH electrolytes plotted on the SHE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Same C2H4 polarization curves plotted on the RHE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3f",
+        "description": "Same C2H4 polarization curves plotted on the CCE scale, showing collapse across K+ concentrations.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3g",
+        "description": "Polarization curves for CH4 production on Cu during CO reduction in KOH electrolytes plotted on the SHE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3h",
+        "description": "Same CH4 polarization curves plotted on the RHE scale, showing collapse across pH conditions.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig3i",
+        "description": "Same CH4 polarization curves plotted on the CCE scale.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Correlation between bulk [M+] and estimated surface charge density |σ| for Ag and Cu electrodes.",
+        "data_type": "scatter plot / correlation plot",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Log-log correlation between CO partial current density jCO and |σ| on Ag, showing first-order dependence.",
+        "data_type": "scatter plot / kinetic correlation",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Log-log correlation between C2H4 partial current density jC2H4 and |σ| on Cu, showing first-order dependence.",
+        "data_type": "scatter plot / kinetic correlation",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5a",
+        "description": "C2H4 partial current density versus potential for bare and Nafion-coated Cu in 5 M KOH.",
+        "data_type": "transport / electrochemical polarization curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5b",
+        "description": "Differential capacitance Cdiff versus potential for bare and Nafion-coated Cu in 5 M KOH.",
+        "data_type": "electrochemical impedance / capacitance curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig5c",
+        "description": "Schematic of the catalyst–electrolyte interface comparing Naﬁon-free and Naﬁon-coated Cu, emphasizing higher surface charge density with Nafion.",
+        "data_type": "schematic",
+        "likely_source": "theoretical interpretation based on experimental data"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Yes. The paper reports raw experimental measurements from electrochemical flow-cell electrolysis (chronoamperometry polarization curves and product analysis by online gas chromatography), SPEIS impedance spectra for differential capacitance, and materials characterization data from XRD, SEM/EDS, XPS, EXAFS, and HAADF-STEM. It also reports raw simulation trajectories and electronic-structure outputs from DFT-CES/MD calculations.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states that all data are available in the main text or Supplementary Information. The main DFT data are available in ioChem-BD at https://doi.org/10.19061/iochem-bd-6-162. The main MD data and experimental data are available in Zenodo at https://zenodo.org/badge/latestdoi/530912301. The DFT-CES code has been deposited in GitHub/Zenodo at https://zenodo.org/badge/latestdoi/53105010666.",
+      "data_provided_types": [
+        "raw",
+        "processed",
+        "theoretical_or_simulated",
+        "scripts"
+      ],
+      "raw_data_description": "Raw data include electrochemical measurements from the flow cell (chronoamperometry current-potential data, gas chromatography product signals, impedance spectra), characterization outputs (XRD patterns, SEM/EDS images/maps, XPS spectra, EXAFS spectra, HAADF-STEM images), and simulation outputs from DFT-CES/MD trajectories and electronic-structure calculations. The paper does not specify file formats in the text, but it explicitly points to repositories for DFT, MD, and experimental data.",
+      "processed_data_description": "Processed data include polarization curves plotted on SHE/RHE/CCE scales, Faradaic efficiencies, partial current densities, Tafel slopes, estimated surface charge density |σ| derived by integrating differential capacitance from EPZC, and correlation plots between |σ| and reaction rates. The paper also uses Bader charges, coordination numbers, and reaction free-energy profiles as processed simulation-derived quantities.",
+      "figure_data_description": "Figure-specific data are implied to be available through the repositories and Supplementary Information, but the text does not explicitly say 'source data' files per figure. The figures themselves are based on both experimental and simulation-derived datasets, and the paper states that all data are available in the main text or Supplementary Information.",
+      "scripts_description": "A DFT-CES code is explicitly mentioned as deposited. No separate analysis notebooks or scripts for experimental data processing are described in the text, but the computational code is available via the cited repository.",
+      "notes": "The dataset is mixed-modal: simulation trajectories and electronic-structure data, electrochemical raw measurements, and derived kinetic/thermodynamic quantities. The paper distinguishes raw measurements from derived quantities such as CCE-scale replotting, |σ| estimation from Cdiff, and Bader charge/PDOS analyses. The repositories appear to contain the main DFT data, main MD data, and experimental data, but the text does not enumerate individual files or whether figure source data are separately packaged."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": true,
+      "raw_data_evidence": "The Methods and Data availability sections explicitly mention experimental measurements, DFT/MD data, and that the main DFT data and main MD and experimental data are deposited in repositories.",
+      "source_data_evidence": "Figures are built from polarization curves, impedance-derived capacitance, reaction free-energy profiles, Bader charges, and correlation plots; the paper states all data are available in the main text or Supplementary Information and in repositories, implying figure-ready processed data are provided.",
+      "data_availability_section_relevant": "“All data is available in the main text or Supplementary Information. The main DFT data are available in the ioChem-BD... The main MD data and experimental data are available in the Zenodo... The DFT-CES code has been deposited...”",
+      "priority_modalities": [
+        "electrochemical polarization curves",
+        "gas chromatography product quantification",
+        "impedance spectra / differential capacitance",
+        "DFT-CES trajectories",
+        "MD trajectories",
+        "reaction free-energy profiles",
+        "Bader charge / PDOS outputs",
+        "XRD patterns",
+        "SEM/EDS images",
+        "XPS spectra",
+        "EXAFS spectra",
+        "HAADF-STEM images"
+      ]
+    }
+  },
+  "inspection_reports": [
+    {
+      "filename": "41467_2022_33199_MOESM1_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 10450770,
+      "size_human": "10.0 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_33199_MOESM1_ESM_1.pdf"
+    },
+    {
+      "filename": "41467_2022_33199_MOESM2_ESM_1.pdf",
+      "extension": ".pdf",
+      "size_bytes": 5406097,
+      "size_human": "5.2 MB",
+      "file_type": "pdf",
+      "note": "PDF file, cannot inspect data content",
+      "download_source": "nature_source_data",
+      "relative_path": "41467_2022_33199_MOESM2_ESM_1.pdf"
+    }
+  ]
+}

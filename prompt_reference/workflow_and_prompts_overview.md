@@ -2,8 +2,8 @@
 
 This document is a concise shareable overview of the current UC LEAP workflow and the prompts used to generate the present results.
 It is intended for collaborators who want to review the pipeline, understand how papers/files are being classified, and suggest targeted improvements.
-The pipeline currently runs from Step 1 through Step 4, with GPT used mainly in Step 1 screening, Step 2 inventory interpretation, and Step 3 paper/file classification.
-Step 4 does not use a new GPT prompt; instead, it organizes files and preserves the reasoning generated upstream.
+The current repository now includes an additional Step 3.5 script-reproduction stage between Step 3 and Step 4.
+GPT is used in Step 1 screening, Step 2 inventory interpretation, Step 3 paper/file classification, and Step 3.5 execution preparation / patching / evaluation, while Step 4 remains a rule-based organization stage.
 
 ## High-level workflow
 
@@ -48,6 +48,21 @@ Main files:
 - [step3/pipeline.py](C:\UCLEAP\UC_LEAP\step3\pipeline.py)
 - [step3_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step3_prompts.md)
 
+### Step 3.5. Script-assisted Type 1 reproduction
+
+Step 3.5 handles papers that appear to provide Type 2 raw data together with scripts.
+It does not replace Step 3 classification; instead, it prepares execution, proposes minimal execution-only patches, and evaluates whether the script outputs should count as reusable Type 1 data that upgrades a paper to `Both`.
+This stage is especially useful for papers where raw data are provided directly but figure-ready processed arrays may need to be reproduced from the supplied scripts.
+At the current repository state, Step 3.5 writes its own outputs and generated artifacts, but Step 4 organization is still primarily driven by Step 3 paper-level classification results.
+
+Main files:
+- [step3_5/prompt_client.py](C:\UCLEAP\UC_LEAP\step3_5\prompt_client.py)
+- [step3_5/preparation.py](C:\UCLEAP\UC_LEAP\step3_5\preparation.py)
+- [step3_5/patcher.py](C:\UCLEAP\UC_LEAP\step3_5\patcher.py)
+- [step3_5/runner.py](C:\UCLEAP\UC_LEAP\step3_5\runner.py)
+- [step3_5/evaluator.py](C:\UCLEAP\UC_LEAP\step3_5\evaluator.py)
+- [step3_5_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step3_5_prompts.md)
+
 ### Step 4. Local organization and human-readable reasoning export
 
 Step 4 takes the Step 3 classification results and organizes selected papers into a local folder structure.
@@ -79,6 +94,7 @@ For convenience, the current prompt references are split into separate files:
 - [step1_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step1_prompts.md)
 - [step2_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step2_prompts.md)
 - [step3_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step3_prompts.md)
+- [step3_5_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step3_5_prompts.md)
 - [step4_prompts.md](C:\UCLEAP\UC_LEAP\prompt_reference\step4_prompts.md)
 
 ## Notes for reviewers
@@ -87,9 +103,11 @@ The most useful places to comment are usually:
 - Step 1 screening criteria that may be too broad or too narrow
 - Step 2 repository relevance checks that may over-trust unrelated links
 - Step 3 Type 1 / Type 2 reasoning, especially when a paper looks misclassified
+- Step 3.5 script-reproduction judgments, especially where raw-plus-script bundles should or should not count as `Both`
 - Step 4 `reasoning.txt` output format if it can be made easier for human review
 
 If you are reviewing classification quality, the most actionable artifacts are:
 - Step 2 inventory JSON for paper-level repository evidence
 - Step 3 per-paper JSON for detailed classification reasoning
+- Step 3.5 per-paper JSON for script-execution and generated-output reasoning
 - Step 4 `reasoning.txt` files for quick human review

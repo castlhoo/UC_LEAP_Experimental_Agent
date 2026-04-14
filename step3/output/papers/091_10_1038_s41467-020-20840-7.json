@@ -1,0 +1,189 @@
+{
+  "paper_id": "step1_0108",
+  "title": "Nonreciprocal charge transport up to room temperature in bulk Rashba semiconductor α-GeTe",
+  "doi": "10.1038/s41467-020-20840-7",
+  "journal": "Nature Communications",
+  "year": 2021,
+  "paper_url": "https://openalex.org/W3123287054",
+  "priority_score": 7.4,
+  "dataset_status": "source_data_found",
+  "files_downloaded": 0,
+  "files_extracted": 0,
+  "download_errors": [
+    "No downloadable URLs found"
+  ],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_1038_s41467-020-20840-7",
+  "files_inspected": 0,
+  "file_types_found": [],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "This paper studies nonreciprocal charge transport in Te-terminated bulk Rashba semiconductor α-GeTe grown by MBE on Al2O3(0001), combining ARPES and harmonic transport measurements with theory. The key result is room-temperature unidirectional magnetoresistance (UMR) with a bilinear dependence on magnetic field and current, and an unusual non-monotonic temperature dependence of the nonreciprocal coefficient γ, which the authors attribute mainly to bulk Rashba states rather than surface states.",
+    "measurement_types": [
+      "molecular beam epitaxy growth characterization",
+      "ARPES band mapping",
+      "temperature-dependent resistivity",
+      "Hall effect / Hall resistivity",
+      "angular-dependent second-harmonic transport",
+      "ac harmonic magnetotransport",
+      "theoretical band-structure / Boltzmann transport calculations"
+    ],
+    "figures": [
+      {
+        "figure_id": "Fig1a",
+        "description": "Schematic of rhombohedral α-GeTe crystal structure showing displaced Ge and Te layers and ferroelectric polarization along the c axis.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig1b",
+        "description": "ARPES band map along K–Γ–K showing bulk Rashba splitting, surface states, and the band-crossing point below the Fermi level.",
+        "data_type": "spectrum",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1c",
+        "description": "Temperature dependence of longitudinal resistivity ρxx for α-GeTe thin film; inset shows optical image of the Hall device.",
+        "data_type": "transport curve / image",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig1d",
+        "description": "Carrier concentration versus temperature extracted from Hall measurements, with an inset showing representative Hall resistivity Rxy versus magnetic field at 10 K.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2a",
+        "description": "Schematic of the ac harmonic measurement geometry with current along x and magnetic-field rotation in xy, yz, and zx planes.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig2b",
+        "description": "Angle dependence of first-harmonic resistance Rω and second-harmonic resistance R2ω at 10 K and 9 T in three rotation geometries.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2c",
+        "description": "In-plane angular dependence of R2ω at 300 K for several magnetic fields, fitted by a sinusoid.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2d",
+        "description": "Magnetic-field dependence of the extracted second-harmonic amplitude ΔR2ω at fixed current density.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2e",
+        "description": "Current-density dependence of ΔR2ω at 300 K and 9 T.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data"
+      },
+      {
+        "figure_id": "Fig2f",
+        "description": "Temperature dependence of the nonreciprocal coefficient γ, comparing experiment and theory.",
+        "data_type": "transport curve",
+        "likely_source": "experimental data + theoretical calculations"
+      },
+      {
+        "figure_id": "Fig3a",
+        "description": "Schematic of 2D Rashba band structure at equilibrium.",
+        "data_type": "image / schematic",
+        "likely_source": "theoretical illustration"
+      },
+      {
+        "figure_id": "Fig3b",
+        "description": "Fermi contours and distribution-function corrections above the band-crossing point, illustrating enhanced second-order spin current.",
+        "data_type": "schematic",
+        "likely_source": "theoretical model"
+      },
+      {
+        "figure_id": "Fig3c",
+        "description": "Fermi contours and distribution-function corrections below the band-crossing point, illustrating partial cancellation of second-order spin current.",
+        "data_type": "schematic",
+        "likely_source": "theoretical model"
+      },
+      {
+        "figure_id": "Fig3d",
+        "description": "Conversion of second-order spin current into nonlinear charge current under magnetic field, with parallel/antiparallel field states.",
+        "data_type": "schematic",
+        "likely_source": "theoretical model"
+      },
+      {
+        "figure_id": "Fig3e",
+        "description": "Continuation of the schematic showing magnetic-field-direction-dependent resistance states.",
+        "data_type": "schematic",
+        "likely_source": "theoretical model"
+      },
+      {
+        "figure_id": "Fig4a",
+        "description": "Calculated Rashba band dispersion under in-plane magnetic field, divided into three energy regions.",
+        "data_type": "band structure plot",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4b",
+        "description": "Calculated second-order charge current J2x versus magnetic field for different Fermi-level positions at 0 K.",
+        "data_type": "theoretical curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4c",
+        "description": "Calculated J2x versus Fermi-level position at fixed magnetic field for several temperatures.",
+        "data_type": "theoretical curve",
+        "likely_source": "theoretical calculations"
+      },
+      {
+        "figure_id": "Fig4d",
+        "description": "Calculated temperature dependence of fractional change Γ at various Fermi levels, compared across cases.",
+        "data_type": "theoretical curve",
+        "likely_source": "theoretical calculations"
+      }
+    ],
+    "has_raw_measurements": true,
+    "raw_measurement_details": "Raw experimental measurements include in situ ARPES photoemission spectra collected with He-Iα (21.2 eV) photons, transport voltages/resistances from Hall-bar devices measured in a PPMS using sinusoidal ac current and lock-in detection, Hall resistivity versus magnetic field, temperature-dependent resistivity, and angle-dependent first- and second-harmonic resistance signals during magnetic-field rotation.",
+    "dataset_characterization": {
+      "data_availability_statement": "The paper states: 'The data that support this study are available from the corresponding author upon reasonable request.' No public repository, downloadable dataset, or accession number is mentioned in the provided text.",
+      "data_provided_types": [
+        "unknown",
+        "theoretical_or_simulated"
+      ],
+      "raw_data_description": "Raw data are not described as deposited files or shared formats. The paper only describes how they were collected experimentally: ARPES in situ on grown samples, transport in Hall-bar devices in a PPMS, with Keithley 6221 current source and SR830 lock-in amplifiers. No file format, repository, or raw-data package is specified.",
+      "processed_data_description": "Processed data include extracted carrier concentration n versus temperature, extracted nonreciprocal coefficient γ versus temperature, and fitted amplitudes ΔR2ω from angular scans. The paper also refers to theoretical curves overlaid on experimental data and to a theoretical prediction for carrier concentration in Fig. 1d.",
+      "figure_data_description": "Figure-ready data are clearly present in the paper as plotted curves and fitted lines, but the text does not state that source data files are provided. Supplementary figures are referenced (e.g. Supplementary Figs. 4, 8, 13, 2), but no explicit source-data availability is described.",
+      "scripts_description": "No analysis scripts, notebooks, or code repository are mentioned in the provided text. The theoretical calculations are described conceptually, but no code is provided.",
+      "notes": "The dataset appears to mix experimental measurements and theoretical calculations. Experimental figures are mostly transport curves and ARPES spectra; theoretical figures are band-structure and transport-model outputs. The paper emphasizes comparison between experiment and theory, especially for carrier concentration and γ(T). There is no evidence in the text of a structured open dataset, raw-data archive, or source-data supplement."
+    },
+    "classification_prior": {
+      "raw_data_expected": true,
+      "source_data_expected": false,
+      "raw_data_evidence": "The Methods section explicitly describes ARPES measurements, Hall-bar transport measurements, and lock-in detection, indicating raw experimental measurements were collected.",
+      "source_data_evidence": "The paper does not mention a source-data repository or downloadable source-data files; it only says data are available from the corresponding author upon reasonable request.",
+      "data_availability_section_relevant": [
+        "The data that support this study are available from the corresponding author upon reasonable request.",
+        "Supplementary information is available for this paper"
+      ],
+      "priority_modalities": [
+        "ARPES spectra",
+        "transport resistance curves",
+        "Hall resistivity",
+        "second-harmonic resistance",
+        "temperature-dependent carrier concentration",
+        "theoretical band-structure and magnetotransport curves"
+      ]
+    }
+  },
+  "inspection_reports": []
+}

@@ -1,0 +1,551 @@
+{
+  "paper_id": "step1_0303",
+  "title": "Interplay of Kondo Physics with Incommensurate Charge Density Waves in CeTe$_3$",
+  "doi": "10.48550/arxiv.2502.04814",
+  "journal": "ArXiv.org",
+  "year": 2025,
+  "paper_url": "https://openalex.org/W4407309630",
+  "priority_score": 7.0,
+  "dataset_status": "verified",
+  "files_downloaded": 1,
+  "files_extracted": 19,
+  "download_errors": [],
+  "download_dir": "C:\\UCLEAP\\UC_LEAP\\step3/downloads\\10_48550_arxiv_2502_04814",
+  "files_inspected": 20,
+  "file_types_found": [
+    "tabular_text",
+    "archive"
+  ],
+  "has_type1": false,
+  "has_type2": false,
+  "has_both_types": false,
+  "type1_summary": "none",
+  "type2_summary": "none",
+  "type1_files": [],
+  "type2_files": [],
+  "classification_confidence": "low",
+  "classification_notes": "GPT error: Expecting ',' delimiter: line 202 column 6 (char 11236)",
+  "file_classifications": [],
+  "paper_analysis": {
+    "summary": "The paper uses ARPES to study how incommensurate charge density waves and Ce 4f hybridization interplay in CeTe3, supporting its characterization as a weak Kondo material.",
+    "measurement_types": [],
+    "figures": [],
+    "has_raw_measurements": false,
+    "raw_measurement_details": "",
+    "has_processed_plots": false,
+    "processed_plot_details": "The paper appears to present ARPES measurements and analysis of CeTe3, but no downloadable dataset is linked from the available record.",
+    "dataset_characterization": {
+      "data_availability_statement": "",
+      "data_provided_types": [],
+      "raw_data_description": "",
+      "processed_data_description": "",
+      "figure_data_description": "",
+      "scripts_description": "",
+      "data_organization": "No data availability statement was found in the arXiv record, and no supplementary files, source data, or external repository links were provided on the publisher page.",
+      "replot_ready_data_present": false,
+      "replot_reason": "Fallback prior based on Step 2 source-data metadata",
+      "notes": "Built without PDF text"
+    },
+    "classification_prior": {
+      "raw_data_expected": false,
+      "source_data_expected": false,
+      "both_expected": false,
+      "raw_data_evidence": "",
+      "source_data_evidence": "No data availability statement was found in the arXiv record, and no supplementary files, source data, or external repository links were provided on the publisher page.",
+      "both_evidence": "none",
+      "data_availability_section_relevant": "",
+      "priority_modalities": [],
+      "review_notes": "Fallback prior derived from Step 2 only"
+    },
+    "notes": "Fallback paper prior derived from Step 2 metadata"
+  },
+  "inspection_reports": [
+    {
+      "filename": "Raw_data_1.zip",
+      "extension": ".zip",
+      "size_bytes": 39737,
+      "size_human": "38.8 KB",
+      "file_type": "archive",
+      "note": "Archive file",
+      "download_source": "zenodo",
+      "relative_path": "Raw_data_1.zip"
+    },
+    {
+      "filename": "Figure1_b.txt",
+      "extension": ".txt",
+      "size_bytes": 22966,
+      "size_human": "22.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "T_cooling(K)",
+        "R_cooling(Ohm)",
+        "T_heating(K)",
+        "R_heating(Ohm)"
+      ],
+      "column_count": 4,
+      "row_count": 660,
+      "dtypes": {
+        "T_cooling(K)": "float64",
+        "R_cooling(Ohm)": "float64",
+        "T_heating(K)": "float64",
+        "R_heating(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure1_b.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure1_b.txt"
+    },
+    {
+      "filename": "Figure2_b.txt",
+      "extension": ".txt",
+      "size_bytes": 3610,
+      "size_human": "3.5 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_NL_up(Ohm)",
+        "R_NL_down(Ohm)"
+      ],
+      "column_count": 3,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_NL_up(Ohm)": "float64",
+        "R_NL_down(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_b.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_b.txt"
+    },
+    {
+      "filename": "Figure2_c.txt",
+      "extension": ".txt",
+      "size_bytes": 2617,
+      "size_human": "2.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sx(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_c.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_c.txt"
+    },
+    {
+      "filename": "Figure2_d.txt",
+      "extension": ".txt",
+      "size_bytes": 2980,
+      "size_human": "2.9 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sy(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sy(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_d.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_d.txt"
+    },
+    {
+      "filename": "Figure2_e.txt",
+      "extension": ".txt",
+      "size_bytes": 5256,
+      "size_human": "5.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_NL_up(Ohm)",
+        "R_NL_down(Ohm)"
+      ],
+      "column_count": 3,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_NL_up(Ohm)": "float64",
+        "R_NL_down(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_e.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_e.txt"
+    },
+    {
+      "filename": "Figure2_f.txt",
+      "extension": ".txt",
+      "size_bytes": 4175,
+      "size_human": "4.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_CSI^Sx(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_f.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_f.txt"
+    },
+    {
+      "filename": "Figure2_g.txt",
+      "extension": ".txt",
+      "size_bytes": 4472,
+      "size_human": "4.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_CSI^Sy(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_CSI^Sy(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_g.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_g.txt"
+    },
+    {
+      "filename": "Figure2_h.txt",
+      "extension": ".txt",
+      "size_bytes": 3676,
+      "size_human": "3.6 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_NL_up(Ohm)",
+        "R_NL_down(Ohm)"
+      ],
+      "column_count": 3,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_NL_up(Ohm)": "float64",
+        "R_NL_down(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_h.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_h.txt"
+    },
+    {
+      "filename": "Figure2_i.txt",
+      "extension": ".txt",
+      "size_bytes": 2896,
+      "size_human": "2.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sx(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_i.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_i.txt"
+    },
+    {
+      "filename": "Figure2_j.txt",
+      "extension": ".txt",
+      "size_bytes": 3196,
+      "size_human": "3.1 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sy(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 102,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sy(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_j.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_j.txt"
+    },
+    {
+      "filename": "Figure2_k.txt",
+      "extension": ".txt",
+      "size_bytes": 5433,
+      "size_human": "5.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_NL_up(Ohm)",
+        "R_NL_down(Ohm)"
+      ],
+      "column_count": 3,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_NL_up(Ohm)": "float64",
+        "R_NL_down(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_k.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_k.txt"
+    },
+    {
+      "filename": "Figure2_l.txt",
+      "extension": ".txt",
+      "size_bytes": 4052,
+      "size_human": "4.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_CSI^Sx(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_l.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_l.txt"
+    },
+    {
+      "filename": "Figure2_m.txt",
+      "extension": ".txt",
+      "size_bytes": 4865,
+      "size_human": "4.8 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_z(Oe)",
+        "R_CSI^Sy(Ohm)"
+      ],
+      "column_count": 2,
+      "row_count": 152,
+      "dtypes": {
+        "H_z(Oe)": "float64",
+        "R_CSI^Sy(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure2_m.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure2_m.txt"
+    },
+    {
+      "filename": "Figure3_a.txt",
+      "extension": ".txt",
+      "size_bytes": 8188,
+      "size_human": "8.0 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sx(Ohm)",
+        "R_CSI^Sy(Ohm)",
+        "R_CSI^Sz(Ohm)"
+      ],
+      "column_count": 4,
+      "row_count": 112,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64",
+        "R_CSI^Sy(Ohm)": "float64",
+        "R_CSI^Sz(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure3_a.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure3_a.txt"
+    },
+    {
+      "filename": "Figure3_b.txt",
+      "extension": ".txt",
+      "size_bytes": 8443,
+      "size_human": "8.2 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "H_x(Oe)",
+        "R_CSI^Sx(Ohm)",
+        "R_CSI^Sy(Ohm)",
+        "R_CSI^Sz(Ohm)"
+      ],
+      "column_count": 4,
+      "row_count": 112,
+      "dtypes": {
+        "H_x(Oe)": "float64",
+        "R_CSI^Sx(Ohm)": "float64",
+        "R_CSI^Sy(Ohm)": "float64",
+        "R_CSI^Sz(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure3_b.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure3_b.txt"
+    },
+    {
+      "filename": "Figure4_a.txt",
+      "extension": ".txt",
+      "size_bytes": 246,
+      "size_human": "246.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "T_CCDW(K)",
+        "deltaR_CSI_Sx_CCDW(mOhm)",
+        "deltaR_CSI_Sy_CCDW(mOhm)",
+        "T_NCCDW(K)",
+        "deltaR_CSI_Sx_NCCDW(mOhm)",
+        "deltaR_CSI_Sy_NCCDW(mOhm)"
+      ],
+      "column_count": 6,
+      "row_count": 3,
+      "dtypes": {
+        "T_CCDW(K)": "int64",
+        "deltaR_CSI_Sx_CCDW(mOhm)": "float64",
+        "deltaR_CSI_Sy_CCDW(mOhm)": "int64",
+        "T_NCCDW(K)": "int64",
+        "deltaR_CSI_Sx_NCCDW(mOhm)": "float64",
+        "deltaR_CSI_Sy_NCCDW(mOhm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure4_a.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure4_a.txt"
+    },
+    {
+      "filename": "Figure4_b.txt",
+      "extension": ".txt",
+      "size_bytes": 539,
+      "size_human": "539.0 B",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G(V)",
+        "deltaR_CSI_Sx_CCDW(mOhm)",
+        "deltaR_CSI_Sy_CCDW(mOhm)",
+        "deltaR_CSI_Sx_NCCDW(mOhm)",
+        "deltaR_CSI_Sy_NCCDW(mOhm)"
+      ],
+      "column_count": 5,
+      "row_count": 13,
+      "dtypes": {
+        "V_G(V)": "int64",
+        "deltaR_CSI_Sx_CCDW(mOhm)": "float64",
+        "deltaR_CSI_Sy_CCDW(mOhm)": "int64",
+        "deltaR_CSI_Sx_NCCDW(mOhm)": "float64",
+        "deltaR_CSI_Sy_NCCDW(mOhm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure4_b.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure4_b.txt"
+    },
+    {
+      "filename": "Figure4_c.txt",
+      "extension": ".txt",
+      "size_bytes": 3474,
+      "size_human": "3.4 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G(V)",
+        "R_xx_CCDW(Ohm)",
+        "R_xx_NCCDW(Ohm)"
+      ],
+      "column_count": 3,
+      "row_count": 141,
+      "dtypes": {
+        "V_G(V)": "int64",
+        "R_xx_CCDW(Ohm)": "float64",
+        "R_xx_NCCDW(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure4_c.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure4_c.txt"
+    },
+    {
+      "filename": "Figure4_d.txt",
+      "extension": ".txt",
+      "size_bytes": 4444,
+      "size_human": "4.3 KB",
+      "file_type": "tabular_text",
+      "columns": [
+        "V_G(V)",
+        "deltaR_LSV(Ohm)",
+        "H_y(Oe)",
+        "R_NL(Ohm)"
+      ],
+      "column_count": 4,
+      "row_count": 141,
+      "dtypes": {
+        "V_G(V)": "int64",
+        "deltaR_LSV(Ohm)": "float64",
+        "H_y(Oe)": "float64",
+        "R_NL(Ohm)": "float64"
+      },
+      "has_header": true,
+      "has_numeric_data": true,
+      "download_source": "zip_extracted",
+      "archive_path": "Raw data/Figure4_d.txt",
+      "from_zip": "Raw_data_1.zip",
+      "relative_path": "zip_contents/Raw data/Figure4_d.txt"
+    }
+  ]
+}
