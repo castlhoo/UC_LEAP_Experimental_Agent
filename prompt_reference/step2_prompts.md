@@ -1,9 +1,40 @@
-# Step 2 Prompts
+# Step 2 Prompt Reference
 
-This file summarizes the GPT prompt used in Step 2 repository and inventory assessment.
-The prompt is applied after Step 2 has already discovered candidate repository links or publisher-hosted source-data files for a paper.
-Its role is to inspect the visible inventory, infer what kinds of data are present, and estimate how relevant that repository is to the paper.
-The structured output is then used to help assign `dataset_status`, estimate `type1 / type2 / both / unknown`, and decide whether the paper should move forward to Step 3.
+Step 2 verifies whether Step 1 candidates have actual dataset evidence.
+It resolves links, classifies repository URLs, collects repository inventories, and optionally asks GPT to assess the visible inventory.
+
+## Active Role
+
+Step 2 does **not** download every data file for inspection. It works at the link and repository-inventory level.
+
+## Inputs
+
+- `step1/output/step1_candidates_latest.json`
+- Paper DOI / landing page / metadata links
+- Data availability links and repository URLs
+- Repository inventory APIs where available
+
+## Outputs
+
+- `step2/output/step2_inventory_<timestamp>.json`
+- `step2/output/step2_inventory_latest.json`
+
+## Dataset Status Values
+
+Step 2 records a paper-level dataset status such as:
+
+- `verified`
+- `source_data_found`
+- `unclassified_link`
+- `upon_request`
+- `no_dataset_found`
+
+It also records repository URLs, data URL candidates, ambiguous URLs, ignored URLs, paper PDF URLs, inventory counts, and verification notes.
+
+## GPT Use
+
+Step 2 uses the inventory assessment prompt in `step2/gpt_client.py` when GPT inventory assessment is enabled.
+The prompt sees repository metadata and up to the first 50 visible files from an inventory.
 
 ## Prompt A: Inventory Assessment
 
@@ -64,16 +95,18 @@ Definitions:
 - has_processed_data: Cleaned/analyzed data (e.g., .csv, .xlsx, .txt with columns, figure source data)
 - has_code: Analysis scripts (e.g., .py, .m, .ipynb, .R)
 - dataset_type:
-  - "type1": Clean, figure-replot-ready dataset. Tabular data (.csv, .xlsx, .txt) with clear
-    column headers, or organized figure source data. Can be directly loaded and plotted.
-    Examples: FigureData/ folders, Source_Data.xlsx, plot_data.csv
-  - "type2": Raw measurement dataset. Original instrument output files that need processing
-    before plotting. Examples: .h5, .nxs, .dat, .spe, raw images, binary formats
-  - "both": Contains both type1 and type2 data (e.g., raw/ + processed/ directories)
-  - "unknown": Cannot determine from file listing alone
-- replot_feasibility: How easy to re-create figures from this data
+  - "type1": Clean, figure-replot-ready dataset. Tabular data (.csv, .xlsx, .txt) with clear column headers, or organized figure source data. Can be directly loaded and plotted.
+  - "type2": Raw measurement dataset. Original instrument output files that need processing before plotting. Examples: .h5, .nxs, .dat, .spe, raw images, binary formats.
+  - "both": Contains both type1 and type2 data.
+  - "unknown": Cannot determine from file listing alone.
+- replot_feasibility:
   - "high": tabular data with clear columns, can directly plot
   - "medium": data present but needs some processing
   - "low": raw instrument data, complex formats
-  - "unknown": can't determine from file listing alone
+  - "unknown": cannot determine from file listing alone
 ```
+
+## Decision Logic
+
+Step 2 remains inventory-first. It should not make the final Type 1 / Type 2 decision.
+Its purpose is to decide whether there is enough dataset evidence to send the paper to Step 3 and Step 4.

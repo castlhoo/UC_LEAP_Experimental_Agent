@@ -1,0 +1,56 @@
+# Step 5: Local Storage & Organization
+# ====================================
+
+# Input: Step 4 classification output
+input_file: "step4/output/step4_classification_latest.json"
+
+# Output directory for organized papers
+output_dir: "step5/organized"
+
+# Which papers to organize
+selection:
+  mode: "has_any"             # "both_types" = T1+T2 only, "has_any" = balanced mix of T1/T2/both, "all" = all papers
+  max_papers: null            # null/0 = organize all selected papers
+
+# PDF settings
+# Step 5 primarily copies PDFs already collected in Step 4's pdf/ folder.
+pdf:
+  enabled: false
+  use_unpaywall: true
+  unpaywall_email: "ucleap@example.com"
+  timeout: 60
+
+# HTTP settings
+http:
+  timeout: 60
+  user_agent: "UC_LEAP_Step5/1.0 (dataset-organization)"
+
+# File category keywords (for annotation/script detection beyond GPT classification)
+annotation:
+  filenames:
+    - "README"
+    - "readme"
+    - "METADATA"
+    - "metadata"
+    - "DESCRIPTION"
+    - "description"
+    - "LICENSE"
+    - "CHANGELOG"
+  extensions:
+    - ".md"
+    - ".rst"
+
+scripts:
+  extensions:
+    - ".py"
+    - ".m"
+    - ".R"
+    - ".jl"
+    - ".ipynb"
+    - ".sh"
+
+# Renaming
+rename:
+  enabled: true
+  # Prefix format: {paper_idx:03d}_{short_title}
+  max_title_words: 5

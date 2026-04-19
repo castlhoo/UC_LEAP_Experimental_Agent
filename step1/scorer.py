@@ -19,9 +19,6 @@ DEFAULT_WEIGHTS = {
     "experimental_clear": 3,
     "experimental_mixed": 1,
     "experimental_theory_only": 0,
-    "journal_top": 2,
-    "journal_mid": 1,
-    "journal_other": 0,
     "dataset_signal_high": 3,
     "dataset_signal_medium": 1,
     "dataset_signal_low": 0,
@@ -121,32 +118,7 @@ def compute_score(
     else:
         breakdown.append("Experimental uncertain: +0")
 
-    # 3. Journal score
-    journal = paper.get("journal", "")
-    journal_norm = _normalize_journal(journal)
-    journal_matched = False
-
-    for j in high_priority_journals:
-        if _journal_matches(journal_norm, _normalize_journal(j)):
-            pts = w.get("journal_top", 2)
-            score += pts
-            breakdown.append(f"Top journal ({journal}): +{pts}")
-            journal_matched = True
-            break
-
-    if not journal_matched:
-        for j in mid_priority_journals:
-            if _journal_matches(journal_norm, _normalize_journal(j)):
-                pts = w.get("journal_mid", 1)
-                score += pts
-                breakdown.append(f"Mid journal ({journal}): +{pts}")
-                journal_matched = True
-                break
-
-    if not journal_matched:
-        breakdown.append(f"Journal other ({journal}): +0")
-
-    # 4. Dataset signal score
+    # 3. Dataset signal score
     ds_level = dataset_signal.get("level", "low")
     if ds_level == "high":
         pts = w.get("dataset_signal_high", 3)
@@ -159,7 +131,7 @@ def compute_score(
     else:
         breakdown.append("Dataset signal low: +0")
 
-    # 5. Penalties
+    # 4. Penalties
     if screening.get("soft_material_flag"):
         conf = screening.get("soft_material_confidence", "medium")
         pts = w.get("soft_material_penalty", -4)
@@ -176,14 +148,7 @@ def compute_score(
         score += pts
         breakdown.append(f"Review article: {pts}")
 
-    # 6. Citation bonus (small)
-    citation_count = paper.get("citation_count")
-    if citation_count is not None and citation_count > 50:
-        bonus = min(1.0, citation_count / 200)
-        score += bonus
-        breakdown.append(f"Citation bonus ({citation_count} cites): +{bonus:.1f}")
-
-    # 7. Multi-API bonus (found by multiple sources = more reliable)
+    # 5. Multi-API bonus (found by multiple sources = more reliable)
     source_apis = paper.get("source_apis") or [paper.get("source_api", "")]
     if len(source_apis) > 1:
         bonus = 0.5

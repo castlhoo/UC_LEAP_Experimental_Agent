@@ -1,13 +1,12 @@
 # Step 1: Candidate Paper Search
-# GPT-query comparison config
+# Expanded keyword comparison config.
+# Query LLM generation has been removed; this file only changes static keywords.
 
 gpt:
   enabled: true
-  use_gpt_queries: true
   model: "gpt-5.4-mini"
 
 queries:
-  use_gpt: true
   topic_keywords:
     - "moire"
     - "twisted bilayer graphene"
@@ -43,7 +42,7 @@ queries:
 
 search:
   year_range:
-    start: 2021
+    start: 2015
     end: 2026
   max_results_per_query: 20
   enabled_apis:
@@ -51,16 +50,17 @@ search:
     openalex: true
     crossref: true
     arxiv: true
+    europe_pmc: false
   max_queries_per_api:
     semantic_scholar: 8
     openalex: 10
     crossref: 8
-    arxiv: 8
+    arxiv: 25
   rate_limits:
     semantic_scholar: 1.0
     openalex: 0.3
     crossref: 1.0
-    arxiv: 0.5
+    arxiv: 3.0
 
 journals:
   high_priority:
@@ -88,8 +88,6 @@ scoring:
     experimental_clear: 3
     experimental_mixed: 1
     theory_only_penalty: -3
-    journal_top: 2
-    journal_mid: 1
     dataset_signal_high: 3
     dataset_signal_medium: 1
     soft_material_penalty: -4

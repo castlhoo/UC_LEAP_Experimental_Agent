@@ -13,7 +13,10 @@ import re
 import time
 import logging
 import requests
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
+from urllib.parse import urlparse, unquote
+
+from pdf_utils import resolve_paper_pdf_url
 
 logger = logging.getLogger(__name__)
 
@@ -25,6 +28,38 @@ DATASET_DOMAINS = [
 ]
 
 DATASET_DOI_PREFIXES = ["10.5281", "10.6084", "10.5061", "10.17632", "10.24435", "10.7910"]
+
+PAPER_PDF_HOSTS = (
+    "nature.com",
+    "science.org",
+    "journals.aps.org",
+    "link.springer.com",
+    "arxiv.org",
+)
+
+DATA_CANDIDATE_EXTENSIONS = (
+    ".csv", ".tsv", ".txt", ".dat", ".xlsx", ".xls", ".zip", ".tar.gz", ".gz",
+    ".h5", ".hdf5", ".nxs", ".json", ".npy", ".npz", ".mat", ".sxm", ".ibw",
+    ".spe", ".doc", ".docx", ".ppt", ".pptx",
+)
+
+JUNK_EXTENSIONS = (
+    ".css", ".js", ".ico", ".svg", ".webmanifest",
+    ".mp4", ".avi", ".mov", ".gif", ".mpg", ".mpeg",
+)
+
+JUNK_URL_TOKENS = (
+    "opensearch.xml", "favicon", "robots.txt", "sitemap", "manifest.json",
+    "/static/", "/assets/", "/css/", "/js/", "google-analytics", "doubleclick",
+    "track", "click", "redirect", "pixel",
+)
+
+DATA_URL_TOKENS = (
+    "source-data", "sourcedata", "source_data", "source data",
+    "supplementary", "supplemental", "supporting-information", "supportinginfo",
+    "supporting_information", "esm", "moesm", "mediaobjects", "mmc", "dataset",
+    "datafile", "rawdata", "raw-data", "processed-data",
+)
 
 
 # ===================================================================
@@ -254,7 +289,7 @@ def _extract_generic_downloads(html: str, base_url: str) -> List[Dict[str, Any]]
     """Extract likely downloadable dataset/source files from generic publisher pages."""
     found = []
     seen = set()
-    pattern = r'href="([^"]*\.(?:xlsx?|csv|tsv|txt|dat|zip|tar\.gz|gz|h5|hdf5|nxs|json|xml|np[yz]|mat|sxm|ibw|spe|pdf)[^"]*)"'
+    pattern = r'href="([^"]*\.(?:xlsx?|csv|tsv|txt|dat|zip|tar\.gz|gz|h5|hdf5|nxs|json|np[yz]|mat|sxm|ibw|spe|docx?|pptx?|pdf)[^"]*)"'
     for match in re.findall(pattern, html[:250000], re.IGNORECASE):
         if match.startswith("http"):
             url = match
@@ -276,6 +311,326 @@ def _extract_generic_downloads(html: str, base_url: str) -> List[Dict[str, Any]]
             "source": "generic_download",
         })
     return found
+
+
+def _normalize_url(url: str) -> str:
+    """Normalize common HTML/url artifacts without changing URL semantics."""
+    return (url or "").replace("&amp;", "&").strip().rstrip('.,;:)"\'}]')
+
+
+def _filename_from_url(url: str) -> str:
+    parsed = urlparse(url)
+    name = unquote(parsed.path.rsplit("/", 1)[-1])
+    return name.split("?")[0] if name else ""
+
+
+def _url_extension(url_or_name: str) -> str:
+    value = (url_or_name or "").lower().split("?")[0]
+    if value.endswith(".tar.gz"):
+        return ".tar.gz"
+    match = re.search(r'(\.[a-z0-9]+)$', value)
+    return match.group(1) if match else ""
+
+
+def _is_repository_url(url: str) -> bool:
+    lower = (url or "").lower()
+    return any(domain in lower for domain in DATASET_DOMAINS) or any(
+        prefix in lower for prefix in DATASET_DOI_PREFIXES
+    )
+
+
+def _is_junk_url(url: str) -> Tuple[bool, str]:
+    lower = (url or "").lower()
+    ext = _url_extension(urlparse(url).path)
+    if any(token in lower for token in JUNK_URL_TOKENS):
+        return True, "site_resource_or_tracking_url"
+    if ext in JUNK_EXTENSIONS:
+        return True, f"ignored_extension:{ext}"
+    return False, ""
+
+
+def _is_paper_pdf_url(url: str, doi: str = "") -> bool:
+    lower = (url or "").lower()
+    parsed = urlparse(lower)
+    if not parsed.path.endswith(".pdf"):
+        return False
+    if "static-content.springer.com" in lower or any(token in lower for token in DATA_URL_TOKENS):
+        return False
+    if doi:
+        doi_tail = doi.lower().replace("/", "_")
+        path = parsed.path.replace("/", "_")
+        if doi_tail in path:
+            return True
+    return any(host in parsed.netloc for host in PAPER_PDF_HOSTS)
+
+
+def _is_data_candidate_url(url: str) -> bool:
+    lower = (url or "").lower()
+    ext = _url_extension(urlparse(url).path)
+    if "static-content.springer.com" in lower:
+        return True
+    if any(token in lower for token in DATA_URL_TOKENS):
+        return True
+    if ext in DATA_CANDIDATE_EXTENSIONS:
+        return True
+    return False
+
+
+def _candidate_info(url: str, source: str, reason: str) -> Dict[str, Any]:
+    return {
+        "url": url,
+        "filename": _filename_from_url(url),
+        "source": source,
+        "reason": reason,
+    }
+
+
+def _dedupe_dicts_by_url(items: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    seen = set()
+    deduped = []
+    for item in items:
+        url = _normalize_url(item.get("url", ""))
+        if not url or url in seen:
+            continue
+        seen.add(url)
+        clean = dict(item)
+        clean["url"] = url
+        if not clean.get("filename"):
+            clean["filename"] = _filename_from_url(url)
+        deduped.append(clean)
+    return deduped
+
+
+def _route_link_candidates(
+    urls: List[str],
+    file_infos: List[Dict[str, Any]],
+    doi: str,
+) -> Dict[str, Any]:
+    """
+    Route found links into mechanical buckets only:
+    paper PDFs, direct data candidates, repositories, and obvious junk.
+    """
+    paper_pdf_urls: List[str] = []
+    data_url_candidates: List[Dict[str, Any]] = []
+    repository_urls: List[str] = []
+    ambiguous_url_candidates: List[Dict[str, Any]] = []
+    ignored_urls: List[Dict[str, Any]] = []
+    discovered_urls: List[str] = []
+
+    def add_url(url: str, source: str = "url_scan", filename: str = ""):
+        clean = _normalize_url(url)
+        if not clean:
+            return
+        is_junk, junk_reason = _is_junk_url(clean)
+        if is_junk:
+            ignored_urls.append(_candidate_info(clean, source, junk_reason))
+            return
+        if _is_paper_pdf_url(clean, doi):
+            paper_pdf_urls.append(clean)
+            return
+        if _is_repository_url(clean):
+            repository_urls.append(clean)
+            discovered_urls.append(clean)
+            return
+        if _is_data_candidate_url(clean):
+            info = _candidate_info(clean, source, "direct_data_or_supplementary_candidate")
+            if filename:
+                info["filename"] = filename
+            data_url_candidates.append(info)
+            discovered_urls.append(clean)
+            return
+        ambiguous_url_candidates.append(
+            _candidate_info(clean, source, "non_junk_unresolved_url")
+        )
+        discovered_urls.append(clean)
+
+    for item in file_infos:
+        add_url(
+            item.get("url", ""),
+            item.get("source", "publisher_file"),
+            item.get("filename", ""),
+        )
+
+    for url in urls:
+        add_url(url)
+
+    paper_pdf_urls = list(dict.fromkeys(paper_pdf_urls))
+    repository_urls = list(dict.fromkeys(repository_urls))
+    discovered_urls = list(dict.fromkeys(discovered_urls))
+    data_url_candidates = _dedupe_dicts_by_url(data_url_candidates)
+    ambiguous_url_candidates = _dedupe_dicts_by_url(ambiguous_url_candidates)
+    ignored_urls = _dedupe_dicts_by_url(ignored_urls)
+
+    # Backward-compatible alias: these are now clean direct data candidates,
+    # not a semantic source/supplementary classification.
+    return {
+        "paper_pdf_urls": paper_pdf_urls,
+        "data_url_candidates": data_url_candidates,
+        "repository_urls": repository_urls,
+        "ambiguous_url_candidates": ambiguous_url_candidates,
+        "ignored_urls": ignored_urls,
+        "discovered_urls": discovered_urls,
+        "source_data_files": data_url_candidates,
+    }
+
+
+def _inspect_url_for_review(
+    url: str,
+    http_config: Dict[str, Any],
+) -> Dict[str, Any]:
+    """Fetch a small page/file preview for ambiguous URL review."""
+    timeout = http_config.get("timeout", 30)
+    headers = {"User-Agent": http_config.get("user_agent", "UC_LEAP_Step2/1.0")}
+    info = {
+        "url": url,
+        "final_url": "",
+        "status_code": None,
+        "content_type": "",
+        "html_title": "",
+        "text_snippet": "",
+        "links": [],
+        "error": "",
+    }
+    try:
+        resp = requests.get(url, headers=headers, timeout=timeout, allow_redirects=True, stream=True)
+        info["status_code"] = resp.status_code
+        info["final_url"] = resp.url
+        info["content_type"] = resp.headers.get("content-type", "")
+        content = resp.raw.read(50000, decode_content=True)
+        resp.close()
+        if not content:
+            return info
+        text = content.decode("utf-8", errors="ignore")
+        title_match = re.search(r"<title[^>]*>(.*?)</title>", text, re.I | re.S)
+        if title_match:
+            info["html_title"] = re.sub(r"\s+", " ", title_match.group(1)).strip()[:300]
+        plain = re.sub(r"<script\b.*?</script>", " ", text, flags=re.I | re.S)
+        plain = re.sub(r"<style\b.*?</style>", " ", plain, flags=re.I | re.S)
+        plain = re.sub(r"<[^>]+>", " ", plain)
+        info["text_snippet"] = re.sub(r"\s+", " ", plain).strip()[:2000]
+        hrefs = re.findall(r'href=["\']([^"\']+)["\']', text, flags=re.I)
+        cleaned_links = []
+        for href in hrefs:
+            href = _normalize_url(href)
+            if href and len(cleaned_links) < 20:
+                cleaned_links.append(href)
+        info["links"] = cleaned_links
+    except Exception as e:
+        info["error"] = str(e)[:300]
+    return info
+
+
+def _review_ambiguous_urls_with_gpt(
+    paper: Dict[str, Any],
+    routed: Dict[str, Any],
+    http_config: Dict[str, Any],
+    gpt_call_fn,
+    model: str,
+    max_urls: int = 8,
+) -> Dict[str, Any]:
+    """Use GPT only on unresolved non-junk URLs after fetching lightweight previews."""
+    ambiguous = routed.get("ambiguous_url_candidates", [])
+    if not ambiguous or not gpt_call_fn:
+        return routed
+
+    inspections = []
+    for item in ambiguous[:max_urls]:
+        inspections.append({
+            "candidate": item,
+            "page_preview": _inspect_url_for_review(item.get("url", ""), http_config),
+        })
+
+    prompt = f"""Classify these ambiguous URLs for a condensed matter/materials science paper.
+
+Paper title: {paper.get('title', '')}
+DOI: {paper.get('doi', '')}
+Journal: {paper.get('journal', '')}
+Abstract summary: {paper.get('abstract_summary', '')}
+
+The rule-based scanner already removed obvious junk such as CSS, JS, favicon, tracking, video, and opensearch.
+For each remaining ambiguous URL, decide whether it should be treated as:
+- "data_candidate": direct or likely downloadable data/supplementary/source-data URL
+- "repository": dataset repository or data landing page
+- "paper_pdf": main article PDF
+- "ignore": clearly not useful for data/PDF after reading the preview
+- "ambiguous": still unclear but should be preserved for human/next-step review
+
+Be recall-friendly. Only choose "ignore" if it is clearly not data, not a repository, and not a useful supplementary/data page.
+
+Return JSON:
+{{
+  "classifications": [
+    {{
+      "url": "...",
+      "classification": "data_candidate" | "repository" | "paper_pdf" | "ignore" | "ambiguous",
+      "reason": "brief reason",
+      "suggested_filename": "optional filename if useful"
+    }}
+  ]
+}}
+
+Ambiguous URL previews:
+{inspections}
+"""
+    system = "You classify ambiguous scholarly URLs for dataset discovery. Return structured JSON only."
+
+    try:
+        review = gpt_call_fn(
+            prompt=prompt,
+            system_prompt=system,
+            model=model,
+            temperature=0.1,
+            max_tokens=1200,
+        )
+    except Exception as e:
+        logger.warning(f"Ambiguous URL GPT review failed: {e}")
+        routed["ambiguous_url_review_error"] = str(e)[:300]
+        return routed
+
+    decisions = review.get("classifications", [])
+    by_url = {d.get("url", ""): d for d in decisions if d.get("url")}
+    remaining_ambiguous = []
+    for item in ambiguous:
+        url = item.get("url", "")
+        decision = by_url.get(url, {})
+        classification = decision.get("classification", "ambiguous")
+        reason = decision.get("reason", "gpt_ambiguous_review")
+        filename = decision.get("suggested_filename") or item.get("filename", "")
+
+        if classification == "data_candidate":
+            routed["data_url_candidates"].append({
+                "url": url,
+                "filename": filename,
+                "source": item.get("source", "ambiguous_url"),
+                "reason": f"gpt_ambiguous_review: {reason}",
+            })
+            if url not in routed["discovered_urls"]:
+                routed["discovered_urls"].append(url)
+        elif classification == "repository":
+            routed["repository_urls"].append(url)
+            if url not in routed["discovered_urls"]:
+                routed["discovered_urls"].append(url)
+        elif classification == "paper_pdf":
+            routed["paper_pdf_urls"].append(url)
+        elif classification == "ignore":
+            routed["ignored_urls"].append({
+                "url": url,
+                "filename": filename,
+                "source": item.get("source", "ambiguous_url"),
+                "reason": f"gpt_ambiguous_review_ignore: {reason}",
+            })
+        else:
+            preserved = dict(item)
+            preserved["gpt_review_reason"] = reason
+            remaining_ambiguous.append(preserved)
+
+    routed["data_url_candidates"] = _dedupe_dicts_by_url(routed["data_url_candidates"])
+    routed["repository_urls"] = list(dict.fromkeys(routed["repository_urls"]))
+    routed["paper_pdf_urls"] = list(dict.fromkeys(routed["paper_pdf_urls"]))
+    routed["ignored_urls"] = _dedupe_dicts_by_url(routed["ignored_urls"])
+    routed["ambiguous_url_candidates"] = _dedupe_dicts_by_url(remaining_ambiguous)
+    routed["ambiguous_url_review"] = review
+    return routed
 
 
 def _extract_nature(html: str, final_url: str, doi: str, result: Dict):
@@ -587,15 +942,23 @@ def resolve_dataset_links(
     use_gpt: bool = False,
     gpt_call_fn=None,
     gpt_model: str = "gpt-5.4-mini",
+    review_ambiguous_urls: bool = False,
+    ambiguous_gpt_call_fn=None,
+    ambiguous_gpt_model: str = "gpt-5.4-mini",
+    ambiguous_max_urls: int = 8,
 ) -> Dict[str, Any]:
     """
     Resolve all dataset links for a paper using multiple strategies.
 
     Returns:
         Dict with:
-          - discovered_urls: list of all found URLs
+          - discovered_urls: list of repository/data/other non-junk URLs
           - sources: dict mapping source_method -> list of URLs
-          - source_data_files: list of publisher-hosted files
+          - paper_pdf_urls: list of article PDF URLs for Step 3
+          - data_url_candidates: broad direct data/supplementary file candidates
+          - repository_urls: external dataset repository URLs
+          - ambiguous_url_candidates: non-junk URLs that need review
+          - ignored_urls: obvious publisher/site junk URLs
           - data_availability_text: DA statement from paper
           - gpt_analysis: GPT's analysis of data availability
           - has_dataset_link: bool
@@ -688,12 +1051,43 @@ def resolve_dataset_links(
                 all_urls.add(url)
                 sources.setdefault("gpt_discovered", []).append(url)
 
+    routed = _route_link_candidates(list(all_urls), source_data_files, doi)
+    if review_ambiguous_urls and routed.get("ambiguous_url_candidates"):
+        routed = _review_ambiguous_urls_with_gpt(
+            paper=paper,
+            routed=routed,
+            http_config=http_config,
+            gpt_call_fn=ambiguous_gpt_call_fn,
+            model=ambiguous_gpt_model,
+            max_urls=ambiguous_max_urls,
+        )
+    pdf_resolution = resolve_paper_pdf_url(
+        {**paper, "paper_pdf_urls": routed["paper_pdf_urls"]},
+        http_config=http_config,
+        unpaywall_email=http_config.get("unpaywall_email", "uc_leap@research.edu"),
+        use_unpaywall=http_config.get("use_unpaywall", True),
+    )
+
     return {
-        "discovered_urls": list(all_urls),
+        "discovered_urls": routed["discovered_urls"],
         "sources": sources,
-        "source_data_files": source_data_files,
+        "paper_pdf_urls": pdf_resolution.get("paper_pdf_urls", []),
+        "resolved_paper_pdf_url": pdf_resolution.get("resolved_paper_pdf_url", ""),
+        "paper_pdf_source": pdf_resolution.get("paper_pdf_source", ""),
+        "pdf_resolution_status": pdf_resolution.get("pdf_resolution_status", "not_found"),
+        "data_url_candidates": routed["data_url_candidates"],
+        "repository_urls": routed["repository_urls"],
+        "ambiguous_url_candidates": routed.get("ambiguous_url_candidates", []),
+        "ambiguous_url_review": routed.get("ambiguous_url_review", {}),
+        "ambiguous_url_review_error": routed.get("ambiguous_url_review_error", ""),
+        "ignored_urls": routed["ignored_urls"],
+        "source_data_files": routed["source_data_files"],
         "data_availability_text": da_text,
         "da_upon_request": da_upon_request,
         "gpt_analysis": gpt_analysis,
-        "has_dataset_link": len(all_urls) > 0 or len(source_data_files) > 0,
+        "has_dataset_link": bool(
+            routed["repository_urls"]
+            or routed["data_url_candidates"]
+            or routed.get("ambiguous_url_candidates")
+        ),
     }

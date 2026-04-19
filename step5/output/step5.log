@@ -1,0 +1,678 @@
+2026-04-18 21:30:51,025 [INFO] __main__: ============================================================
+2026-04-18 21:30:51,025 [INFO] __main__: Starting Step 5: Local Storage & Organization
+2026-04-18 21:30:51,026 [INFO] __main__: ============================================================
+2026-04-18 21:30:51,028 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,028 [INFO] step5.pipeline: Phase 1: Loading Step 4 classification results...
+2026-04-18 21:30:51,098 [INFO] step5.pipeline:   Total papers: 161
+2026-04-18 21:30:51,098 [INFO] step5.pipeline:   Both Type 1+2: 23
+2026-04-18 21:30:51,098 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,098 [INFO] step5.pipeline: Phase 2: Selecting papers to organize...
+2026-04-18 21:30:51,099 [INFO] step5.pipeline:   Selected 53 papers (mode=has_any)
+2026-04-18 21:30:51,099 [INFO] step5.pipeline:     Intertwined Topological and Magnetic Orders in Atomical
+2026-04-18 21:30:51,099 [INFO] step5.pipeline:     Relation between interfacial shear and friction force i
+2026-04-18 21:30:51,099 [INFO] step5.pipeline:     Proximity-induced chiral quantum light generation in st
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Comparative study of magnetic quantum oscillations in H
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Concurrence of anomalous Hall effect and charge density
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Current-induced giant diamagnetism in the Mott insulato
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Discovery of a Weyl fermion state with Fermi arcs in ni
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Experimental Observation of Topological Superconductivi
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Extremely large magnetoresistance and Fermi surface top
+2026-04-18 21:30:51,100 [INFO] step5.pipeline:     Fast thermometry with a proximity Josephson junction
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Inverse design of chiral functional films by a robotic 
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Picosecond energy transfer in a transition metal dichal
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Pressure induced isostructural phase transition in bisk
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Proximity-induced superconductivity and quantum interfe
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Quantum oscillation and nontrivial transport in the Dir
+2026-04-18 21:30:51,101 [INFO] step5.pipeline:     Quantum Oscillations and Coherent Interlayer Transport 
+2026-04-18 21:30:51,102 [INFO] step5.pipeline:     Signature of point nodal superconductivity in the Dirac
+2026-04-18 21:30:51,102 [INFO] step5.pipeline:     Temperature induced Neutral to Ionic phase Transition o
+2026-04-18 21:30:51,102 [INFO] step5.pipeline:     Coexistence of Elastic Modulations in the Charge Densit
+2026-04-18 21:30:51,102 [INFO] step5.pipeline:     Giant Rashba‐Type Spin Splitting in Ferroelectric GeTe(
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Microwave-to-optical conversion with a gallium phosphid
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Quantum Confinement and Electronic Structure at the Sur
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Temperature-Induced Lifshitz Transition in<mml:math xml
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Fermi Surface of Three-Dimensional<mml:math xmlns:mml="
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Isospin magnetism and spin-polarized superconductivity 
+2026-04-18 21:30:51,103 [INFO] step5.pipeline:     Spin-valley coupling in single-electron bilayer graphen
+2026-04-18 21:30:51,104 [INFO] step5.pipeline:     Evidence of cooperative effect on the enhanced supercon
+2026-04-18 21:30:51,104 [INFO] step5.pipeline:     A Fermi surface descriptor quantifying the correlations
+2026-04-18 21:30:51,104 [INFO] step5.pipeline:     Breaking the rotating wave approximation for a strongly
+2026-04-18 21:30:51,104 [INFO] step5.pipeline:     Charge density wave modulated third-order nonlinear Hal
+2026-04-18 21:30:51,105 [INFO] step5.pipeline:     Charge density wave sliding driven by an interplay of c
+2026-04-18 21:30:51,105 [INFO] step5.pipeline:     Charge-stripe order, antiferromagnetism, and spin dynam
+2026-04-18 21:30:51,105 [INFO] step5.pipeline:     Emergence of a Metal–Insulator Transition and High-Temp
+2026-04-18 21:30:51,105 [INFO] step5.pipeline:     Gate-tuned superconductor-insulator transition in (Li,F
+2026-04-18 21:30:51,105 [INFO] step5.pipeline:     Magnetic field driven novel phase transitions in EuTiO$
+2026-04-18 21:30:51,106 [INFO] step5.pipeline:     p-Wave Superconductivity in Iron-based Superconductors
+2026-04-18 21:30:51,106 [INFO] step5.pipeline:     Raman and fluorescence contributions to resonant inelas
+2026-04-18 21:30:51,106 [INFO] step5.pipeline:     Superconductivity in the Ru-Doped CuIr2Te4 Telluride Ch
+2026-04-18 21:30:51,106 [INFO] step5.pipeline:     Theory for the Charge-Density-Wave Mechanism of 3D Quan
+2026-04-18 21:30:51,106 [INFO] step5.pipeline:     Unveiling the Charge Density Wave Inhomogeneity and Pse
+2026-04-18 21:30:51,107 [INFO] step5.pipeline:     Deep moiré potentials in twisted transition metal dicha
+2026-04-18 21:30:51,107 [INFO] step5.pipeline:     Efficient and stable emission of warm-white light from 
+2026-04-18 21:30:51,108 [INFO] step5.pipeline:     Elemental Topological Dirac Semimetal: <mml:math xmlns:
+2026-04-18 21:30:51,108 [INFO] step5.pipeline:     Directional Emission of a Deterministically Fabricated 
+2026-04-18 21:30:51,108 [INFO] step5.pipeline:     Observation of Fermi arc and its connection with bulk s
+2026-04-18 21:30:51,108 [INFO] step5.pipeline:     Observation of large topologically trivial Fermi arcs i
+2026-04-18 21:30:51,109 [INFO] step5.pipeline:     Coexistence of Dirac fermion and charge density wave in
+2026-04-18 21:30:51,109 [INFO] step5.pipeline:     Microscopic spinon-chargon theory of magnetic polarons 
+2026-04-18 21:30:51,109 [INFO] step5.pipeline:     Superconductivity and Fermi Surface Nesting in the Cand
+2026-04-18 21:30:51,109 [INFO] step5.pipeline:     Interfacial chemical bond and internal electric field m
+2026-04-18 21:30:51,110 [INFO] step5.pipeline:     Pressure-induced transition from a Mott insulator to a 
+2026-04-18 21:30:51,110 [INFO] step5.pipeline:     Phonon-assisted indirect transitions in angle-resolved 
+2026-04-18 21:30:51,110 [INFO] step5.pipeline:     Observation of bulk states and spin-polarized topologic
+2026-04-18 21:30:51,112 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,113 [INFO] step5.pipeline: Paper 1/53: Intertwined Topological and Magnetic Orders in Atomical
+2026-04-18 21:30:51,113 [INFO] step5.pipeline:   DOI: 10.1021/acs.nanolett.0c05117
+2026-04-18 21:30:51,113 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,113 [INFO] step5.pipeline:   Dir: Both/001_Intertwined_Topological_and_Magnetic_Orders
+2026-04-18 21:30:51,113 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,129 [INFO] step5.file_organizer:     type1: 1 files
+2026-04-18 21:30:51,129 [INFO] step5.file_organizer:     type2: 2 files
+2026-04-18 21:30:51,129 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:51,129 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,131 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,132 [INFO] step5.pipeline: Paper 2/53: Relation between interfacial shear and friction force i
+2026-04-18 21:30:51,132 [INFO] step5.pipeline:   DOI: 10.1038/s41565-022-01237-7
+2026-04-18 21:30:51,132 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,132 [INFO] step5.pipeline:   Dir: Both/002_Relation_between_interfacial_shear_and
+2026-04-18 21:30:51,132 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,237 [INFO] step5.file_organizer:     type1: 10 files
+2026-04-18 21:30:51,237 [INFO] step5.file_organizer:     type2: 38 files
+2026-04-18 21:30:51,238 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:51,238 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,241 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,241 [INFO] step5.pipeline: Paper 3/53: Proximity-induced chiral quantum light generation in st
+2026-04-18 21:30:51,241 [INFO] step5.pipeline:   DOI: 10.1038/s41563-023-01645-7
+2026-04-18 21:30:51,241 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,242 [INFO] step5.pipeline:   Dir: Both/003_Proximityinduced_chiral_quantum_light_generation
+2026-04-18 21:30:51,242 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,309 [INFO] step5.file_organizer:     type1: 22 files
+2026-04-18 21:30:51,310 [INFO] step5.file_organizer:     type2: 4 files
+2026-04-18 21:30:51,310 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:51,310 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,313 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,313 [INFO] step5.pipeline: Paper 4/53: Comparative study of magnetic quantum oscillations in H
+2026-04-18 21:30:51,313 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.110.L161108
+2026-04-18 21:30:51,313 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,313 [INFO] step5.pipeline:   Dir: Both/004_Comparative_study_of_magnetic_quantum
+2026-04-18 21:30:51,313 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,497 [INFO] step5.file_organizer:     type1: 32 files
+2026-04-18 21:30:51,497 [INFO] step5.file_organizer:     type2: 2 files
+2026-04-18 21:30:51,497 [INFO] step5.file_organizer:     annotations: 4 files
+2026-04-18 21:30:51,497 [INFO] step5.file_organizer:     scripts: 8 files
+2026-04-18 21:30:51,498 [INFO] step5.file_organizer:     pdf: 39 files
+2026-04-18 21:30:51,498 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,501 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,502 [INFO] step5.pipeline: Paper 5/53: Concurrence of anomalous Hall effect and charge density
+2026-04-18 21:30:51,502 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.104.L041103
+2026-04-18 21:30:51,502 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,502 [INFO] step5.pipeline:   Dir: Both/005_Concurrence_of_anomalous_Hall_effect
+2026-04-18 21:30:51,502 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,526 [INFO] step5.file_organizer:     type1: 11 files
+2026-04-18 21:30:51,526 [INFO] step5.file_organizer:     type2: 2 files
+2026-04-18 21:30:51,526 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:51,526 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,526 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,526 [INFO] step5.pipeline: Paper 6/53: Current-induced giant diamagnetism in the Mott insulato
+2026-04-18 21:30:51,526 [INFO] step5.pipeline:   DOI: 10.1126/science.aah4297
+2026-04-18 21:30:51,526 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,526 [INFO] step5.pipeline:   Dir: Both/006_Currentinduced_giant_diamagnetism_in_the
+2026-04-18 21:30:51,526 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,716 [INFO] step5.file_organizer:     type1: 1 files
+2026-04-18 21:30:51,716 [INFO] step5.file_organizer:     type2: 18 files
+2026-04-18 21:30:51,716 [INFO] step5.file_organizer:     annotations: 4 files
+2026-04-18 21:30:51,716 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:51,716 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,724 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,724 [INFO] step5.pipeline: Paper 7/53: Discovery of a Weyl fermion state with Fermi arcs in ni
+2026-04-18 21:30:51,724 [INFO] step5.pipeline:   DOI: 10.1038/nphys3437
+2026-04-18 21:30:51,724 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,724 [INFO] step5.pipeline:   Dir: Both/007_Discovery_of_a_Weyl_fermion
+2026-04-18 21:30:51,725 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,898 [INFO] step5.file_organizer:     type1: 27 files
+2026-04-18 21:30:51,898 [INFO] step5.file_organizer:     type2: 23 files
+2026-04-18 21:30:51,898 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:51,899 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,902 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,902 [INFO] step5.pipeline: Paper 8/53: Experimental Observation of Topological Superconductivi
+2026-04-18 21:30:51,902 [INFO] step5.pipeline:   DOI: 10.1016/j.scib.2017.05.008
+2026-04-18 21:30:51,902 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,902 [INFO] step5.pipeline:   Dir: Both/008_Experimental_Observation_of_Topological_Superconductivity
+2026-04-18 21:30:51,902 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:51,949 [INFO] step5.file_organizer:     type1: 4 files
+2026-04-18 21:30:51,949 [INFO] step5.file_organizer:     type2: 10 files
+2026-04-18 21:30:51,949 [INFO] step5.file_organizer:     annotations: 5 files
+2026-04-18 21:30:51,950 [INFO] step5.file_organizer:     scripts: 6 files
+2026-04-18 21:30:51,950 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:51,950 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:51,953 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:51,953 [INFO] step5.pipeline: Paper 9/53: Extremely large magnetoresistance and Fermi surface top
+2026-04-18 21:30:51,953 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.96.125122
+2026-04-18 21:30:51,953 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:51,953 [INFO] step5.pipeline:   Dir: Both/009_Extremely_large_magnetoresistance_and_Fermi
+2026-04-18 21:30:51,953 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:52,004 [INFO] step5.file_organizer:     type1: 18 files
+2026-04-18 21:30:52,005 [INFO] step5.file_organizer:     type2: 3 files
+2026-04-18 21:30:52,005 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:52,005 [INFO] step5.file_organizer:     scripts: 2 files
+2026-04-18 21:30:52,005 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:52,005 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:52,008 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:52,008 [INFO] step5.pipeline: Paper 10/53: Fast thermometry with a proximity Josephson junction
+2026-04-18 21:30:52,008 [INFO] step5.pipeline:   DOI: 10.1063/1.5010236
+2026-04-18 21:30:52,009 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:52,009 [INFO] step5.pipeline:   Dir: Both/010_Fast_thermometry_with_a_proximity
+2026-04-18 21:30:52,009 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:52,225 [INFO] step5.file_organizer:     type1: 80 files
+2026-04-18 21:30:52,226 [INFO] step5.file_organizer:     type2: 18 files
+2026-04-18 21:30:52,226 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:52,226 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:52,227 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:52,231 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:52,231 [INFO] step5.pipeline: Paper 11/53: Inverse design of chiral functional films by a robotic 
+2026-04-18 21:30:52,232 [INFO] step5.pipeline:   DOI: 10.1038/s41467-023-41951-x
+2026-04-18 21:30:52,232 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:52,232 [INFO] step5.pipeline:   Dir: Both/011_Inverse_design_of_chiral_functional
+2026-04-18 21:30:52,232 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:52,495 [INFO] step5.file_organizer:     type1: 19 files
+2026-04-18 21:30:52,495 [INFO] step5.file_organizer:     type2: 18 files
+2026-04-18 21:30:52,496 [INFO] step5.file_organizer:     scripts: 18 files
+2026-04-18 21:30:52,496 [INFO] step5.file_organizer:     pdf: 9 files
+2026-04-18 21:30:52,496 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:52,500 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:52,500 [INFO] step5.pipeline: Paper 12/53: Picosecond energy transfer in a transition metal dichal
+2026-04-18 21:30:52,500 [INFO] step5.pipeline:   DOI: 10.1073/pnas.2119726119
+2026-04-18 21:30:52,500 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:52,500 [INFO] step5.pipeline:   Dir: Both/012_Picosecond_energy_transfer_in_a
+2026-04-18 21:30:52,500 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:53,210 [INFO] step5.file_organizer:     type1: 10 files
+2026-04-18 21:30:53,210 [INFO] step5.file_organizer:     type2: 39 files
+2026-04-18 21:30:53,210 [INFO] step5.file_organizer:     annotations: 4 files
+2026-04-18 21:30:53,210 [INFO] step5.file_organizer:     scripts: 2 files
+2026-04-18 21:30:53,210 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:53,211 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:53,214 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:53,215 [INFO] step5.pipeline: Paper 13/53: Pressure induced isostructural phase transition in bisk
+2026-04-18 21:30:53,215 [INFO] step5.pipeline:   DOI: 10.1002/pssr.202200057
+2026-04-18 21:30:53,215 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:53,215 [INFO] step5.pipeline:   Dir: Both/013_Pressure_induced_isostructural_phase_transition
+2026-04-18 21:30:53,215 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:53,328 [INFO] step5.file_organizer:     type1: 13 files
+2026-04-18 21:30:53,328 [INFO] step5.file_organizer:     type2: 40 files
+2026-04-18 21:30:53,329 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:53,329 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:53,334 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:53,334 [INFO] step5.pipeline: Paper 14/53: Proximity-induced superconductivity and quantum interfe
+2026-04-18 21:30:53,335 [INFO] step5.pipeline:   DOI: 10.1021/acs.nanolett.7b04870
+2026-04-18 21:30:53,335 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:53,335 [INFO] step5.pipeline:   Dir: Both/014_Proximityinduced_superconductivity_and_quantum_interference
+2026-04-18 21:30:53,335 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:53,475 [INFO] step5.file_organizer:     type1: 35 files
+2026-04-18 21:30:53,475 [INFO] step5.file_organizer:     type2: 11 files
+2026-04-18 21:30:53,475 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:53,475 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:53,481 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:53,481 [INFO] step5.pipeline: Paper 15/53: Quantum oscillation and nontrivial transport in the Dir
+2026-04-18 21:30:53,481 [INFO] step5.pipeline:   DOI: 10.1063/1.4948654
+2026-04-18 21:30:53,481 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:53,481 [INFO] step5.pipeline:   Dir: Both/015_Quantum_oscillation_and_nontrivial_transport
+2026-04-18 21:30:53,481 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,043 [INFO] step5.file_organizer:     type1: 20 files
+2026-04-18 21:30:54,044 [INFO] step5.file_organizer:     type2: 7 files
+2026-04-18 21:30:54,044 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:54,044 [INFO] step5.file_organizer:     scripts: 28 files
+2026-04-18 21:30:54,044 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:54,044 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,051 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,051 [INFO] step5.pipeline: Paper 16/53: Quantum Oscillations and Coherent Interlayer Transport 
+2026-04-18 21:30:54,051 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevMaterials.2.021201
+2026-04-18 21:30:54,051 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,051 [INFO] step5.pipeline:   Dir: Both/016_Quantum_Oscillations_and_Coherent_Interlayer
+2026-04-18 21:30:54,052 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,151 [INFO] step5.file_organizer:     type1: 38 files
+2026-04-18 21:30:54,151 [INFO] step5.file_organizer:     type2: 11 files
+2026-04-18 21:30:54,151 [INFO] step5.file_organizer:     annotations: 1 files
+2026-04-18 21:30:54,151 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:54,152 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,155 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,156 [INFO] step5.pipeline: Paper 17/53: Signature of point nodal superconductivity in the Dirac
+2026-04-18 21:30:54,156 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.110.054515
+2026-04-18 21:30:54,157 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,157 [INFO] step5.pipeline:   Dir: Both/017_Signature_of_point_nodal_superconductivity
+2026-04-18 21:30:54,157 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,259 [INFO] step5.file_organizer:     type1: 10 files
+2026-04-18 21:30:54,259 [INFO] step5.file_organizer:     type2: 41 files
+2026-04-18 21:30:54,259 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:54,259 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,262 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,263 [INFO] step5.pipeline: Paper 18/53: Temperature induced Neutral to Ionic phase Transition o
+2026-04-18 21:30:54,263 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.105.054106
+2026-04-18 21:30:54,263 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,263 [INFO] step5.pipeline:   Dir: Both/018_Temperature_induced_Neutral_to_Ionic
+2026-04-18 21:30:54,263 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,621 [INFO] step5.file_organizer:     type1: 1 files
+2026-04-18 21:30:54,621 [INFO] step5.file_organizer:     type2: 17 files
+2026-04-18 21:30:54,621 [INFO] step5.file_organizer:     annotations: 3 files
+2026-04-18 21:30:54,621 [INFO] step5.file_organizer:     pdf: 9 files
+2026-04-18 21:30:54,622 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,625 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,625 [INFO] step5.pipeline: Paper 19/53: Coexistence of Elastic Modulations in the Charge Densit
+2026-04-18 21:30:54,626 [INFO] step5.pipeline:   DOI: 10.1021/acs.nanolett.9b00268
+2026-04-18 21:30:54,626 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,626 [INFO] step5.pipeline:   Dir: Both/019_Coexistence_of_Elastic_Modulations_in
+2026-04-18 21:30:54,626 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,701 [INFO] step5.file_organizer:     type1: 50 files
+2026-04-18 21:30:54,701 [INFO] step5.file_organizer:     type2: 2 files
+2026-04-18 21:30:54,701 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:54,701 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,704 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,705 [INFO] step5.pipeline: Paper 20/53: Giant Rashba‐Type Spin Splitting in Ferroelectric GeTe(
+2026-04-18 21:30:54,705 [INFO] step5.pipeline:   DOI: 10.1002/adma.201503459
+2026-04-18 21:30:54,705 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,705 [INFO] step5.pipeline:   Dir: Both/020_Giant_RashbaType_Spin_Splitting_in
+2026-04-18 21:30:54,705 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:54,855 [INFO] step5.file_organizer:     type1: 15 files
+2026-04-18 21:30:54,855 [INFO] step5.file_organizer:     type2: 29 files
+2026-04-18 21:30:54,855 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:54,856 [INFO] step5.file_organizer:     pdf: 9 files
+2026-04-18 21:30:54,856 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:54,859 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:54,861 [INFO] step5.pipeline: Paper 21/53: Microwave-to-optical conversion with a gallium phosphid
+2026-04-18 21:30:54,861 [INFO] step5.pipeline:   DOI: 10.1038/s41467-022-28670-5
+2026-04-18 21:30:54,861 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:54,862 [INFO] step5.pipeline:   Dir: Both/021_Microwavetooptical_conversion_with_a_gallium
+2026-04-18 21:30:54,862 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:55,245 [INFO] step5.file_organizer:     type1: 52 files
+2026-04-18 21:30:55,246 [INFO] step5.file_organizer:     type2: 8 files
+2026-04-18 21:30:55,246 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:55,246 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:55,250 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:55,250 [INFO] step5.pipeline: Paper 22/53: Quantum Confinement and Electronic Structure at the Sur
+2026-04-18 21:30:55,250 [INFO] step5.pipeline:   DOI: 10.1021/acsnano.3c04186
+2026-04-18 21:30:55,250 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:55,251 [INFO] step5.pipeline:   Dir: Both/022_Quantum_Confinement_and_Electronic_Structure
+2026-04-18 21:30:55,251 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:55,502 [INFO] step5.file_organizer:     type1: 95 files
+2026-04-18 21:30:55,502 [INFO] step5.file_organizer:     type2: 5 files
+2026-04-18 21:30:55,502 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:55,503 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:55,509 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:55,509 [INFO] step5.pipeline: Paper 23/53: Temperature-Induced Lifshitz Transition in<mml:math xml
+2026-04-18 21:30:55,510 [INFO] step5.pipeline:   DOI: 10.1103/physrevlett.115.166602
+2026-04-18 21:30:55,510 [INFO] step5.pipeline:   Type: Both
+2026-04-18 21:30:55,510 [INFO] step5.pipeline:   Dir: Both/023_TemperatureInduced_Lifshitz_Transition_inmmlmath_xmlnsmmlhttpwwww3org1998MathMathML
+2026-04-18 21:30:55,510 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:55,871 [INFO] step5.file_organizer:     type1: 1 files
+2026-04-18 21:30:55,872 [INFO] step5.file_organizer:     type2: 16 files
+2026-04-18 21:30:55,873 [INFO] step5.file_organizer:     annotations: 3 files
+2026-04-18 21:30:55,873 [INFO] step5.file_organizer:     pdf: 7 files
+2026-04-18 21:30:55,873 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:55,875 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:55,879 [INFO] step5.pipeline: Paper 24/53: Fermi Surface of Three-Dimensional<mml:math xmlns:mml="
+2026-04-18 21:30:55,879 [INFO] step5.pipeline:   DOI: 10.1103/physrevlett.114.237601
+2026-04-18 21:30:55,879 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:55,879 [INFO] step5.pipeline:   Dir: Type1/024_Fermi_Surface_of_ThreeDimensionalmmlmath_xmlnsmmlhttpwwww3org1998MathMathML
+2026-04-18 21:30:55,879 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:55,982 [INFO] step5.file_organizer:     type1: 43 files
+2026-04-18 21:30:55,982 [INFO] step5.file_organizer:     annotations: 1 files
+2026-04-18 21:30:55,982 [INFO] step5.file_organizer:     scripts: 3 files
+2026-04-18 21:30:55,982 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:55,982 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:55,986 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:55,986 [INFO] step5.pipeline: Paper 25/53: Isospin magnetism and spin-polarized superconductivity 
+2026-04-18 21:30:55,986 [INFO] step5.pipeline:   DOI: 10.1126/science.abm8386
+2026-04-18 21:30:55,986 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:55,986 [INFO] step5.pipeline:   Dir: Type1/025_Isospin_magnetism_and_spinpolarized_superconductivity
+2026-04-18 21:30:55,986 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,661 [INFO] step5.file_organizer:     type1: 20 files
+2026-04-18 21:30:56,661 [INFO] step5.file_organizer:     annotations: 4 files
+2026-04-18 21:30:56,661 [INFO] step5.file_organizer:     scripts: 14 files
+2026-04-18 21:30:56,661 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:56,661 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,665 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,665 [INFO] step5.pipeline: Paper 26/53: Spin-valley coupling in single-electron bilayer graphen
+2026-04-18 21:30:56,667 [INFO] step5.pipeline:   DOI: 10.1038/s41467-021-25498-3
+2026-04-18 21:30:56,667 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,667 [INFO] step5.pipeline:   Dir: Type1/026_Spinvalley_coupling_in_singleelectron_bilayer
+2026-04-18 21:30:56,667 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,788 [INFO] step5.file_organizer:     type1: 10 files
+2026-04-18 21:30:56,788 [INFO] step5.file_organizer:     annotations: 16 files
+2026-04-18 21:30:56,788 [INFO] step5.file_organizer:     scripts: 22 files
+2026-04-18 21:30:56,788 [INFO] step5.file_organizer:     pdf: 5 files
+2026-04-18 21:30:56,788 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,788 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,788 [INFO] step5.pipeline: Paper 27/53: Evidence of cooperative effect on the enhanced supercon
+2026-04-18 21:30:56,788 [INFO] step5.pipeline:   DOI: 10.1038/s41467-019-08560-z
+2026-04-18 21:30:56,788 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,788 [INFO] step5.pipeline:   Dir: Type1/027_Evidence_of_cooperative_effect_on
+2026-04-18 21:30:56,788 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,826 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:56,826 [INFO] step5.file_organizer:     pdf: 5 files
+2026-04-18 21:30:56,826 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,826 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,826 [INFO] step5.pipeline: Paper 28/53: A Fermi surface descriptor quantifying the correlations
+2026-04-18 21:30:56,826 [INFO] step5.pipeline:   DOI: 10.21468/scipostphyscore.8.4.085
+2026-04-18 21:30:56,826 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,826 [INFO] step5.pipeline:   Dir: Type1/028_A_Fermi_surface_descriptor_quantifying
+2026-04-18 21:30:56,826 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,860 [INFO] step5.file_organizer:     type1: 3 files
+2026-04-18 21:30:56,860 [INFO] step5.file_organizer:     pdf: 7 files
+2026-04-18 21:30:56,860 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,860 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,860 [INFO] step5.pipeline: Paper 29/53: Breaking the rotating wave approximation for a strongly
+2026-04-18 21:30:56,860 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.94.161302
+2026-04-18 21:30:56,860 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,860 [INFO] step5.pipeline:   Dir: Type1/029_Breaking_the_rotating_wave_approximation
+2026-04-18 21:30:56,873 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,920 [INFO] step5.file_organizer:     type1: 4 files
+2026-04-18 21:30:56,922 [INFO] step5.file_organizer:     scripts: 2 files
+2026-04-18 21:30:56,922 [INFO] step5.file_organizer:     pdf: 7 files
+2026-04-18 21:30:56,923 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,926 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,926 [INFO] step5.pipeline: Paper 30/53: Charge density wave modulated third-order nonlinear Hal
+2026-04-18 21:30:56,927 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.110.235135
+2026-04-18 21:30:56,927 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,927 [INFO] step5.pipeline:   Dir: Type1/030_Charge_density_wave_modulated_thirdorder
+2026-04-18 21:30:56,927 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:56,974 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:56,974 [INFO] step5.file_organizer:     scripts: 21 files
+2026-04-18 21:30:56,974 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:56,974 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:56,978 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:56,978 [INFO] step5.pipeline: Paper 31/53: Charge density wave sliding driven by an interplay of c
+2026-04-18 21:30:56,978 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.100.245126
+2026-04-18 21:30:56,980 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:56,980 [INFO] step5.pipeline:   Dir: Type1/031_Charge_density_wave_sliding_driven
+2026-04-18 21:30:56,980 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,095 [INFO] step5.file_organizer:     type1: 42 files
+2026-04-18 21:30:57,095 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:57,097 [INFO] step5.file_organizer:     pdf: 5 files
+2026-04-18 21:30:57,097 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,099 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,101 [INFO] step5.pipeline: Paper 32/53: Charge-stripe order, antiferromagnetism, and spin dynam
+2026-04-18 21:30:57,101 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.100.125142
+2026-04-18 21:30:57,101 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,101 [INFO] step5.pipeline:   Dir: Type1/032_Chargestripe_order_antiferromagnetism_and_spin
+2026-04-18 21:30:57,101 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,292 [INFO] step5.file_organizer:     type1: 49 files
+2026-04-18 21:30:57,292 [INFO] step5.file_organizer:     annotations: 3 files
+2026-04-18 21:30:57,293 [INFO] step5.file_organizer:     scripts: 2 files
+2026-04-18 21:30:57,293 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:57,293 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,298 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,298 [INFO] step5.pipeline: Paper 33/53: Emergence of a Metal–Insulator Transition and High-Temp
+2026-04-18 21:30:57,299 [INFO] step5.pipeline:   DOI: 10.1021/acs.nanolett.8b01764
+2026-04-18 21:30:57,299 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,299 [INFO] step5.pipeline:   Dir: Type1/033_Emergence_of_a_MetalInsulator_Transition
+2026-04-18 21:30:57,300 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,413 [INFO] step5.file_organizer:     type1: 30 files
+2026-04-18 21:30:57,413 [INFO] step5.file_organizer:     scripts: 2 files
+2026-04-18 21:30:57,413 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:57,413 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,423 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,423 [INFO] step5.pipeline: Paper 34/53: Gate-tuned superconductor-insulator transition in (Li,F
+2026-04-18 21:30:57,423 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.93.060501
+2026-04-18 21:30:57,423 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,423 [INFO] step5.pipeline:   Dir: Type1/034_Gatetuned_superconductorinsulator_transition_in_LiFeOHFeSe
+2026-04-18 21:30:57,423 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,558 [INFO] step5.file_organizer:     type1: 60 files
+2026-04-18 21:30:57,558 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:57,558 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,558 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,558 [INFO] step5.pipeline: Paper 35/53: Magnetic field driven novel phase transitions in EuTiO$
+2026-04-18 21:30:57,558 [INFO] step5.pipeline:   DOI: 10.1088/1361-648X/ac2f11
+2026-04-18 21:30:57,558 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,558 [INFO] step5.pipeline:   Dir: Type1/035_Magnetic_field_driven_novel_phase
+2026-04-18 21:30:57,565 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,597 [INFO] step5.file_organizer:     type1: 14 files
+2026-04-18 21:30:57,597 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:57,597 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,605 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,605 [INFO] step5.pipeline: Paper 36/53: p-Wave Superconductivity in Iron-based Superconductors
+2026-04-18 21:30:57,605 [INFO] step5.pipeline:   DOI: 10.1038/s41598-019-50687-y
+2026-04-18 21:30:57,605 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,605 [INFO] step5.pipeline:   Dir: Type1/036_pWave_Superconductivity_in_Ironbased_Superconductors
+2026-04-18 21:30:57,605 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,631 [INFO] step5.file_organizer:     type1: 1 files
+2026-04-18 21:30:57,631 [INFO] step5.file_organizer:     annotations: 6 files
+2026-04-18 21:30:57,631 [INFO] step5.file_organizer:     scripts: 6 files
+2026-04-18 21:30:57,631 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:57,631 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,637 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,637 [INFO] step5.pipeline: Paper 37/53: Raman and fluorescence contributions to resonant inelas
+2026-04-18 21:30:57,637 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.97.035110
+2026-04-18 21:30:57,637 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,637 [INFO] step5.pipeline:   Dir: Type1/037_Raman_and_fluorescence_contributions_to
+2026-04-18 21:30:57,637 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,703 [INFO] step5.file_organizer:     type1: 34 files
+2026-04-18 21:30:57,703 [INFO] step5.file_organizer:     annotations: 4 files
+2026-04-18 21:30:57,703 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:57,703 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,707 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,707 [INFO] step5.pipeline: Paper 38/53: Superconductivity in the Ru-Doped CuIr2Te4 Telluride Ch
+2026-04-18 21:30:57,708 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.100.174504
+2026-04-18 21:30:57,708 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,708 [INFO] step5.pipeline:   Dir: Type1/038_Superconductivity_in_the_RuDoped_CuIr2Te4
+2026-04-18 21:30:57,708 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,769 [INFO] step5.file_organizer:     type1: 39 files
+2026-04-18 21:30:57,769 [INFO] step5.file_organizer:     annotations: 1 files
+2026-04-18 21:30:57,769 [INFO] step5.file_organizer:     scripts: 3 files
+2026-04-18 21:30:57,769 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:57,770 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,773 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,774 [INFO] step5.pipeline: Paper 39/53: Theory for the Charge-Density-Wave Mechanism of 3D Quan
+2026-04-18 21:30:57,774 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevLett.125.206601
+2026-04-18 21:30:57,774 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,775 [INFO] step5.pipeline:   Dir: Type1/039_Theory_for_the_ChargeDensityWave_Mechanism
+2026-04-18 21:30:57,775 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,825 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:57,825 [INFO] step5.file_organizer:     annotations: 11 files
+2026-04-18 21:30:57,825 [INFO] step5.file_organizer:     scripts: 15 files
+2026-04-18 21:30:57,825 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:57,825 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,828 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,828 [INFO] step5.pipeline: Paper 40/53: Unveiling the Charge Density Wave Inhomogeneity and Pse
+2026-04-18 21:30:57,828 [INFO] step5.pipeline:   DOI: 10.1016/j.scib.2018.02.018
+2026-04-18 21:30:57,828 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,828 [INFO] step5.pipeline:   Dir: Type1/040_Unveiling_the_Charge_Density_Wave
+2026-04-18 21:30:57,828 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:57,973 [INFO] step5.file_organizer:     type1: 93 files
+2026-04-18 21:30:57,973 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:57,973 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:57,979 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:57,979 [INFO] step5.pipeline: Paper 41/53: Deep moiré potentials in twisted transition metal dicha
+2026-04-18 21:30:57,979 [INFO] step5.pipeline:   DOI: 10.1038/s41567-021-01174-7
+2026-04-18 21:30:57,980 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:57,980 [INFO] step5.pipeline:   Dir: Type1/041_Deep_moiré_potentials_in_twisted
+2026-04-18 21:30:57,980 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,017 [INFO] step5.file_organizer:     type1: 6 files
+2026-04-18 21:30:58,017 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,017 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,017 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,017 [INFO] step5.pipeline: Paper 42/53: Efficient and stable emission of warm-white light from 
+2026-04-18 21:30:58,017 [INFO] step5.pipeline:   DOI: 10.1038/s41586-018-0691-0
+2026-04-18 21:30:58,017 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,017 [INFO] step5.pipeline:   Dir: Type1/042_Efficient_and_stable_emission_of
+2026-04-18 21:30:58,017 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,133 [INFO] step5.file_organizer:     type1: 20 files
+2026-04-18 21:30:58,133 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,137 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,138 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,140 [INFO] step5.pipeline: Paper 43/53: Elemental Topological Dirac Semimetal: <mml:math xmlns:
+2026-04-18 21:30:58,140 [INFO] step5.pipeline:   DOI: 10.1103/physrevlett.118.146402
+2026-04-18 21:30:58,140 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,140 [INFO] step5.pipeline:   Dir: Type1/043_Elemental_Topological_Dirac_Semimetal_mmlmath
+2026-04-18 21:30:58,140 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,287 [INFO] step5.file_organizer:     type1: 43 files
+2026-04-18 21:30:58,287 [INFO] step5.file_organizer:     scripts: 14 files
+2026-04-18 21:30:58,287 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:58,287 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,287 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,287 [INFO] step5.pipeline: Paper 44/53: Directional Emission of a Deterministically Fabricated 
+2026-04-18 21:30:58,287 [INFO] step5.pipeline:   DOI: 10.1021/acsphotonics.9b00369
+2026-04-18 21:30:58,287 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,287 [INFO] step5.pipeline:   Dir: Type1/044_Directional_Emission_of_a_Deterministically
+2026-04-18 21:30:58,287 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,308 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:58,308 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,308 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,308 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,308 [INFO] step5.pipeline: Paper 45/53: Observation of Fermi arc and its connection with bulk s
+2026-04-18 21:30:58,308 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.94.241119
+2026-04-18 21:30:58,308 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,308 [INFO] step5.pipeline:   Dir: Type1/045_Observation_of_Fermi_arc_and
+2026-04-18 21:30:58,308 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,340 [INFO] step5.file_organizer:     type1: 4 files
+2026-04-18 21:30:58,341 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:58,341 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,341 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,341 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,341 [INFO] step5.pipeline: Paper 46/53: Observation of large topologically trivial Fermi arcs i
+2026-04-18 21:30:58,341 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.94.121112
+2026-04-18 21:30:58,341 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,341 [INFO] step5.pipeline:   Dir: Type1/046_Observation_of_large_topologically_trivial
+2026-04-18 21:30:58,341 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,425 [INFO] step5.file_organizer:     type1: 11 files
+2026-04-18 21:30:58,425 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:30:58,426 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,429 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,429 [INFO] step5.pipeline: Paper 47/53: Coexistence of Dirac fermion and charge density wave in
+2026-04-18 21:30:58,429 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.108.245156
+2026-04-18 21:30:58,429 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,430 [INFO] step5.pipeline:   Dir: Type1/047_Coexistence_of_Dirac_fermion_and
+2026-04-18 21:30:58,430 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,527 [INFO] step5.file_organizer:     type1: 44 files
+2026-04-18 21:30:58,527 [INFO] step5.file_organizer:     annotations: 2 files
+2026-04-18 21:30:58,527 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,527 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,532 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,532 [INFO] step5.pipeline: Paper 48/53: Microscopic spinon-chargon theory of magnetic polarons 
+2026-04-18 21:30:58,532 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.99.224422
+2026-04-18 21:30:58,532 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,532 [INFO] step5.pipeline:   Dir: Type1/048_Microscopic_spinonchargon_theory_of_magnetic
+2026-04-18 21:30:58,532 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,547 [INFO] step5.file_organizer:     type1: 3 files
+2026-04-18 21:30:58,547 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:58,547 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,557 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,557 [INFO] step5.pipeline: Paper 49/53: Superconductivity and Fermi Surface Nesting in the Cand
+2026-04-18 21:30:58,557 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.102.205117
+2026-04-18 21:30:58,557 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,557 [INFO] step5.pipeline:   Dir: Type1/049_Superconductivity_and_Fermi_Surface_Nesting
+2026-04-18 21:30:58,558 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,586 [INFO] step5.file_organizer:     type1: 3 files
+2026-04-18 21:30:58,586 [INFO] step5.file_organizer:     pdf: 7 files
+2026-04-18 21:30:58,587 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,590 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,590 [INFO] step5.pipeline: Paper 50/53: Interfacial chemical bond and internal electric field m
+2026-04-18 21:30:58,590 [INFO] step5.pipeline:   DOI: 10.1038/s41467-021-24511-z
+2026-04-18 21:30:58,591 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,591 [INFO] step5.pipeline:   Dir: Type1/050_Interfacial_chemical_bond_and_internal
+2026-04-18 21:30:58,592 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,624 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:58,625 [INFO] step5.file_organizer:     pdf: 5 files
+2026-04-18 21:30:58,625 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,627 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,629 [INFO] step5.pipeline: Paper 51/53: Pressure-induced transition from a Mott insulator to a 
+2026-04-18 21:30:58,629 [INFO] step5.pipeline:   DOI: 10.1038/s41467-023-37971-2
+2026-04-18 21:30:58,630 [INFO] step5.pipeline:   Type: Type1
+2026-04-18 21:30:58,630 [INFO] step5.pipeline:   Dir: Type1/051_Pressureinduced_transition_from_a_Mott
+2026-04-18 21:30:58,630 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:58,667 [INFO] step5.file_organizer:     type1: 2 files
+2026-04-18 21:30:58,667 [INFO] step5.file_organizer:     pdf: 5 files
+2026-04-18 21:30:58,667 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:58,674 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:58,674 [INFO] step5.pipeline: Paper 52/53: Phonon-assisted indirect transitions in angle-resolved 
+2026-04-18 21:30:58,674 [INFO] step5.pipeline:   DOI: 10.1103/PhysRevB.94.075429
+2026-04-18 21:30:58,674 [INFO] step5.pipeline:   Type: Type2
+2026-04-18 21:30:58,674 [INFO] step5.pipeline:   Dir: Type2/052_Phononassisted_indirect_transitions_in_angleresolved
+2026-04-18 21:30:58,674 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:30:59,742 [INFO] step5.file_organizer:     type2: 2 files
+2026-04-18 21:30:59,758 [INFO] step5.file_organizer:     pdf: 3 files
+2026-04-18 21:30:59,758 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:30:59,761 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:30:59,761 [INFO] step5.pipeline: Paper 53/53: Observation of bulk states and spin-polarized topologic
+2026-04-18 21:30:59,761 [INFO] step5.pipeline:   DOI: 10.1103/physrevb.100.195134
+2026-04-18 21:30:59,761 [INFO] step5.pipeline:   Type: Type2
+2026-04-18 21:30:59,761 [INFO] step5.pipeline:   Dir: Type2/053_Observation_of_bulk_states_and
+2026-04-18 21:30:59,763 [INFO] step5.pipeline:   Organizing dataset files...
+2026-04-18 21:31:00,007 [INFO] step5.file_organizer:     type2: 46 files
+2026-04-18 21:31:00,007 [INFO] step5.file_organizer:     pdf: 1 files
+2026-04-18 21:31:00,007 [INFO] step5.file_organizer:     summary: 1 files
+2026-04-18 21:31:00,013 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:31:00,013 [INFO] step5.pipeline: Phase 5: Saving manifest...
+2026-04-18 21:31:00,083 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:31:00,084 [INFO] step5.pipeline: STEP 5 RESULTS SUMMARY
+2026-04-18 21:31:00,084 [INFO] step5.pipeline: ============================================================
+2026-04-18 21:31:00,084 [INFO] step5.pipeline: Papers organized:      53
+2026-04-18 21:31:00,084 [INFO] step5.pipeline:   Both (T1+T2):        23
+2026-04-18 21:31:00,084 [INFO] step5.pipeline:   Type 1 only:         28
+2026-04-18 21:31:00,085 [INFO] step5.pipeline:   Type 2 only:         2
+2026-04-18 21:31:00,085 [INFO] step5.pipeline:   Neither:             0
+2026-04-18 21:31:00,085 [INFO] step5.pipeline: Papers with PDF:        53
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Papers with summary:    53
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Type 1 data files:     1153
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Type 2 data files:     412
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Annotation files:      84
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Script files:          168
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: PDF files:             189
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Summary files:         53
+2026-04-18 21:31:00,086 [INFO] step5.pipeline: Reasoning files:       106
+2026-04-18 21:31:00,087 [INFO] step5.pipeline: ------------------------------------------------------------
+2026-04-18 21:31:00,087 [INFO] step5.pipeline:     1. [ Both] [PDF:Y] T1: 1 T2: 2 | Intertwined Topological and Magnetic Orders i
+2026-04-18 21:31:00,087 [INFO] step5.pipeline:     2. [ Both] [PDF:Y] T1:10 T2:38 | Relation between interfacial shear and fricti
+2026-04-18 21:31:00,087 [INFO] step5.pipeline:     3. [ Both] [PDF:Y] T1:22 T2: 4 | Proximity-induced chiral quantum light genera
+2026-04-18 21:31:00,087 [INFO] step5.pipeline:     4. [ Both] [PDF:Y] T1:32 T2: 2 | Comparative study of magnetic quantum oscilla
+2026-04-18 21:31:00,087 [INFO] step5.pipeline:     5. [ Both] [PDF:Y] T1:11 T2: 2 | Concurrence of anomalous Hall effect and char
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:     6. [ Both] [PDF:Y] T1: 1 T2:18 | Current-induced giant diamagnetism in the Mot
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:     7. [ Both] [PDF:Y] T1:27 T2:23 | Discovery of a Weyl fermion state with Fermi 
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:     8. [ Both] [PDF:Y] T1: 4 T2:10 | Experimental Observation of Topological Super
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:     9. [ Both] [PDF:Y] T1:18 T2: 3 | Extremely large magnetoresistance and Fermi s
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:    10. [ Both] [PDF:Y] T1:80 T2:18 | Fast thermometry with a proximity Josephson j
+2026-04-18 21:31:00,088 [INFO] step5.pipeline:    11. [ Both] [PDF:Y] T1:19 T2:18 | Inverse design of chiral functional films by 
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    12. [ Both] [PDF:Y] T1:10 T2:39 | Picosecond energy transfer in a transition me
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    13. [ Both] [PDF:Y] T1:13 T2:40 | Pressure induced isostructural phase transiti
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    14. [ Both] [PDF:Y] T1:35 T2:11 | Proximity-induced superconductivity and quant
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    15. [ Both] [PDF:Y] T1:20 T2: 7 | Quantum oscillation and nontrivial transport 
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    16. [ Both] [PDF:Y] T1:38 T2:11 | Quantum Oscillations and Coherent Interlayer 
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    17. [ Both] [PDF:Y] T1:10 T2:41 | Signature of point nodal superconductivity in
+2026-04-18 21:31:00,089 [INFO] step5.pipeline:    18. [ Both] [PDF:Y] T1: 1 T2:17 | Temperature induced Neutral to Ionic phase Tr
+2026-04-18 21:31:00,090 [INFO] step5.pipeline:    19. [ Both] [PDF:Y] T1:50 T2: 2 | Coexistence of Elastic Modulations in the Cha
+2026-04-18 21:31:00,090 [INFO] step5.pipeline:    20. [ Both] [PDF:Y] T1:15 T2:29 | Giant Rashba‐Type Spin Splitting in Ferroelec
+2026-04-18 21:31:00,090 [INFO] step5.pipeline:    21. [ Both] [PDF:Y] T1:52 T2: 8 | Microwave-to-optical conversion with a galliu
+2026-04-18 21:31:00,090 [INFO] step5.pipeline:    22. [ Both] [PDF:Y] T1:95 T2: 5 | Quantum Confinement and Electronic Structure 
+2026-04-18 21:31:00,090 [INFO] step5.pipeline:    23. [ Both] [PDF:Y] T1: 1 T2:16 | Temperature-Induced Lifshitz Transition in<mm
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    24. [Type1] [PDF:Y] T1:43 T2: 0 | Fermi Surface of Three-Dimensional<mml:math x
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    25. [Type1] [PDF:Y] T1:20 T2: 0 | Isospin magnetism and spin-polarized supercon
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    26. [Type1] [PDF:Y] T1:10 T2: 0 | Spin-valley coupling in single-electron bilay
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    27. [Type1] [PDF:Y] T1: 2 T2: 0 | Evidence of cooperative effect on the enhance
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    28. [Type1] [PDF:Y] T1: 3 T2: 0 | A Fermi surface descriptor quantifying the co
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    29. [Type1] [PDF:Y] T1: 4 T2: 0 | Breaking the rotating wave approximation for 
+2026-04-18 21:31:00,091 [INFO] step5.pipeline:    30. [Type1] [PDF:Y] T1: 2 T2: 0 | Charge density wave modulated third-order non
+2026-04-18 21:31:00,092 [INFO] step5.pipeline:    31. [Type1] [PDF:Y] T1:42 T2: 0 | Charge density wave sliding driven by an inte
+2026-04-18 21:31:00,092 [INFO] step5.pipeline:    32. [Type1] [PDF:Y] T1:49 T2: 0 | Charge-stripe order, antiferromagnetism, and 
+2026-04-18 21:31:00,092 [INFO] step5.pipeline:    33. [Type1] [PDF:Y] T1:30 T2: 0 | Emergence of a Metal–Insulator Transition and
+2026-04-18 21:31:00,092 [INFO] step5.pipeline:    34. [Type1] [PDF:Y] T1:60 T2: 0 | Gate-tuned superconductor-insulator transitio
+2026-04-18 21:31:00,092 [INFO] step5.pipeline:    35. [Type1] [PDF:Y] T1:14 T2: 0 | Magnetic field driven novel phase transitions
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    36. [Type1] [PDF:Y] T1: 1 T2: 0 | p-Wave Superconductivity in Iron-based Superc
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    37. [Type1] [PDF:Y] T1:34 T2: 0 | Raman and fluorescence contributions to reson
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    38. [Type1] [PDF:Y] T1:39 T2: 0 | Superconductivity in the Ru-Doped CuIr2Te4 Te
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    39. [Type1] [PDF:Y] T1: 2 T2: 0 | Theory for the Charge-Density-Wave Mechanism 
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    40. [Type1] [PDF:Y] T1:93 T2: 0 | Unveiling the Charge Density Wave Inhomogenei
+2026-04-18 21:31:00,093 [INFO] step5.pipeline:    41. [Type1] [PDF:Y] T1: 6 T2: 0 | Deep moiré potentials in twisted transition m
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    42. [Type1] [PDF:Y] T1:20 T2: 0 | Efficient and stable emission of warm-white l
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    43. [Type1] [PDF:Y] T1:43 T2: 0 | Elemental Topological Dirac Semimetal: <mml:m
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    44. [Type1] [PDF:Y] T1: 2 T2: 0 | Directional Emission of a Deterministically F
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    45. [Type1] [PDF:Y] T1: 4 T2: 0 | Observation of Fermi arc and its connection w
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    46. [Type1] [PDF:Y] T1:11 T2: 0 | Observation of large topologically trivial Fe
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    47. [Type1] [PDF:Y] T1:44 T2: 0 | Coexistence of Dirac fermion and charge densi
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    48. [Type1] [PDF:Y] T1: 3 T2: 0 | Microscopic spinon-chargon theory of magnetic
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    49. [Type1] [PDF:Y] T1: 3 T2: 0 | Superconductivity and Fermi Surface Nesting i
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    50. [Type1] [PDF:Y] T1: 2 T2: 0 | Interfacial chemical bond and internal electr
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    51. [Type1] [PDF:Y] T1: 2 T2: 0 | Pressure-induced transition from a Mott insul
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    52. [Type2] [PDF:Y] T1: 0 T2: 2 | Phonon-assisted indirect transitions in angle
+2026-04-18 21:31:00,094 [INFO] step5.pipeline:    53. [Type2] [PDF:Y] T1: 0 T2:46 | Observation of bulk states and spin-polarized
+2026-04-18 21:31:00,094 [INFO] step5.pipeline: Manifest saved to C:\UCLEAP\UC_LEAP\step5/organized\manifest_latest.json
+2026-04-18 21:31:00,099 [INFO] __main__: ============================================================
+2026-04-18 21:31:00,099 [INFO] __main__: Step 5 complete in 9s. 53 papers organized.

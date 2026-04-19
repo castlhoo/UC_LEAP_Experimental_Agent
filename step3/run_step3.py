@@ -27,7 +27,7 @@ def main():
     logger = logging.getLogger(__name__)
 
     logger.info("=" * 60)
-    logger.info("Starting Step 3: Dataset Download, Inspection & Classification")
+    logger.info("Starting Step 3: Paper Analysis")
     logger.info("=" * 60)
 
     start = time.time()
@@ -38,8 +38,8 @@ def main():
         logger.info("=" * 60)
         logger.info(
             f"Step 3 complete in {elapsed:.0f}s. "
-            f"{result.get('both_type_count', 0)} papers with BOTH types "
-            f"out of {result.get('total_processed', 0)} processed."
+            f"{result.get('analyzed_count', 0)} papers analyzed, "
+            f"{result.get('skipped_count', 0)} skipped."
         )
     except Exception as e:
         logger.error(f"Step 3 failed: {e}", exc_info=True)

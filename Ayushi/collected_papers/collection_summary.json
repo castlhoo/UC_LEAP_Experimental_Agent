@@ -1,0 +1,938 @@
+{
+  "collection_name": "Condensed Matter Physics - Experimental Datasets with Open Data",
+  "collection_date": "2026-04-04",
+  "revision_date": "2026-04-11",
+  "revision_notes": [
+    "v2: P01 author list corrected against arXiv preprint (co-first authors are L. Chen and A. X. Wu; Tulu is third, not co-first).",
+    "v2: All 20 paper PDFs were re-scanned end-to-end (body + references) for Zenodo/figshare citations, not just the Data Availability section, per reviewer guidance. New evidence added to P08, P14, P16; negative scans documented for P01 and P10.",
+    "v2: Microscopy images (AFM .tiff, MFM .gwy, SEM/TEM .tif) are assumed processed (Type 1) unless the paper, README, or Zenodo description explicitly states otherwise. This affects P01, P16, P18, P20.",
+    "v2: DFT outputs and Monte Carlo simulation results deposited for figure reproduction are treated as Type 1 (calculation results for figures, not raw instrument data). This affects P16.",
+    "v2: Preprint PDFs are used throughout because the published versions are copyrighted; published DOIs are retained in metadata.",
+    "v2: P09 (Graphene-CrSBr spintronics) data.zip was previously not extracted, so the dataset folder appeared empty. The zip is intact (218 MB on disk, 800 entries / 503 MB uncompressed, includes 23 .dat raw instrument files under '*/Raw data/'). Extracted in place to dataset/type2/extracted/ on 2026-04-11. P09 retained as Type2."
+  ],
+  "total_papers": 20,
+  "papers_downloaded": 20,
+  "total_size_mb": 193.52,
+  "subfields_covered": [
+    "quantum transport",
+    "strongly correlated electrons",
+    "2D materials / moir\u00e9",
+    "kagome metals",
+    "altermagnets",
+    "nickelate superconductors",
+    "topological superconductors",
+    "spintronics"
+  ],
+  "papers": [
+    {
+      "paper_id": "P01",
+      "title": "Exceptional electronic transport and quantum oscillations in thin bismuth crystals grown inside van der Waals materials",
+      "authors": "Laisi Chen*, Amy X. Wu*, Naol Tulu, Joshua Wang, Adrian Juanson, Kenji Watanabe, Takashi Taniguchi, Michael T. Pettes, Marshall Campbell, Chaitanya A. Gadre, Yinong Zhou, Hangman Chen, Penghui Cao, Luis A. Jauregui, Ruqian Wu, Xiaoqing Pan, Javier D. Sanchez-Yamagishi (*co-first, per arXiv preprint)",
+      "year": 2024,
+      "journal": "Nature Materials",
+      "doi": "10.1038/s41563-024-01894-0",
+      "arxiv_id": "2211.07681",
+      "dataset_url": "https://zenodo.org/records/10929346",
+      "dataset_record_id": "10929346",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "Figure_3e_sample3.csv",
+          "format": "CSV",
+          "has_headers": true,
+          "sample_headers": [
+            "Temperature (K)",
+            "Resistance (Ohm)"
+          ]
+        },
+        {
+          "name": "Figure_4d_raw_gate-10V.csv",
+          "format": "CSV",
+          "has_headers": true,
+          "sample_headers": [
+            "B field (T)",
+            "Resistance (Ohm)"
+          ]
+        },
+        {
+          "name": "ExtendedDataFigure7a_sampleM78-2.csv",
+          "format": "CSV",
+          "has_headers": true,
+          "sample_headers": [
+            "B field (T)",
+            "Resistance (Ohm)"
+          ]
+        },
+        {
+          "name": "ExtendedDataFigure6a_sampleM58.csv",
+          "format": "CSV",
+          "has_headers": true,
+          "sample_headers": [
+            "Temperature (K)",
+            "Sheet Resistance (Ohm)"
+          ]
+        }
+      ],
+      "total_files_available": 91,
+      "files_downloaded": 15,
+      "total_size_mb": 290.5,
+      "downloaded_size_mb": 2.5,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1",
+      "classification_reason": "91 files organized per figure. 75 CSVs: 68 with annotated headers (Temperature (K), Resistance (Ohm), B field (T)), 7 with numeric indices but still processed data for figure panels. 16 TIFF AFM images = processed microscopy (AFM images should be assumed processed unless stated otherwise). No 'raw' language in paper or Zenodo.",
+      "notes": "Published version: Nature Materials 2024 (10.1038/s41563-024-01894-0). arXiv preprint used for PDF \u2014 published version is copyrighted.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "No data availability section in arXiv preprint.",
+        "Zenodo description mirrors abstract.",
+        "Full PDF reference list scan (refs 1-31) found no Zenodo citation in main text. Dataset 10929346 is not cited in the preprint; likely added at Nature Materials publication stage."
+      ],
+      "paper_text_scanned_for_zenodo_refs": true,
+      "files_added": []
+    },
+    {
+      "paper_id": "P02",
+      "title": "Visualizing the atomic-scale origin of metallic behavior in Kondo insulators",
+      "authors": "Pirie et al.",
+      "year": 2023,
+      "journal": "Science",
+      "doi": "10.1126/science.abq5375",
+      "arxiv_id": "2303.15432",
+      "dataset_url": "https://zenodo.org/records/7510910",
+      "dataset_record_id": "7510910",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "Figure 1.ipynb",
+          "format": "ipynb",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "Figure 2.ipynb",
+          "format": "ipynb",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "Figure 3.ipynb",
+          "format": "ipynb",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "Figure 4.ipynb",
+          "format": "ipynb",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "readme.txt",
+          "format": "txt",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "2017-10-04_Fe_SmB6_002.3ds",
+          "format": "3ds (STM data)",
+          "has_headers": false,
+          "sample_headers": []
+        }
+      ],
+      "total_files_available": 15,
+      "files_downloaded": 10,
+      "total_size_mb": 468.3,
+      "downloaded_size_mb": 19.0,
+      "scripts": [
+        "Figure 1.ipynb",
+        "Figure 2.ipynb",
+        "Figure 3.ipynb",
+        "Figure 4.ipynb"
+      ],
+      "readme_present": true,
+      "readme_summary": "Data for reproducing all figures in Science 379, 1214-1218 (2023). Jupyter notebooks for each figure + raw STM data.",
+      "classification": "Type2",
+      "classification_reason": "Zenodo explicitly: 'raw data files and analysis steps.' README describes .3ds as 'simultaneously recorded dI/dV, I(V), and topography measurements.' All data in proprietary .3ds/.FL/.TFR/.npz binary formats. ipynb are scripts. 3\u00d7 size: 468 MB >> 1 MB.",
+      "notes": "Kondo insulator SmB6 STM study. Notebooks reproduce paper figures. Large raw .3ds files skipped.",
+      "scripts_count": 4,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Paper: 'All data and analysis presented in this paper are deposited in Zenodo'",
+        "Zenodo: 'This dataset contains the raw data files and analysis steps'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P03",
+      "title": "Terahertz photocurrent probe of quantum geometry and interactions in magic-angle twisted bilayer graphene",
+      "authors": "TBG collaboration",
+      "year": 2025,
+      "journal": "Nature Materials",
+      "doi": "10.1038/s41563-025-02180-3",
+      "arxiv_id": "2406.16532",
+      "dataset_url": "https://zenodo.org/records/14882593",
+      "dataset_record_id": "14882593",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "Figure._1.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "Filling Factor",
+            "angle values (-45, -135, etc.)"
+          ]
+        },
+        {
+          "name": "Figure._2.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "Theta-FillFactor",
+            "resistivity values"
+          ]
+        },
+        {
+          "name": "Figure._3.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "Filling Factor",
+            "L1",
+            "L2",
+            "Sigmaxxx",
+            "Sigmaxxy"
+          ]
+        },
+        {
+          "name": "Figure._4.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "angle",
+            "temperature",
+            "fill factor"
+          ]
+        },
+        {
+          "name": "Figure._5.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "Fill Factor-Theta",
+            "angle values"
+          ]
+        }
+      ],
+      "total_files_available": 5,
+      "files_downloaded": 5,
+      "total_size_mb": 0.4,
+      "downloaded_size_mb": 0.4,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1",
+      "classification_reason": "5 xlsx files per figure with annotated headers (Filling Factor, conductivity, Sigmaxxx). 0.4 MB. Zenodo: 'Data includes photocurrent and resistivity measurements.' 'raw data' in paper text refers to measurement display, not deposit.",
+      "notes": "Magic-angle TBG terahertz photocurrent. Perfect for replotting - each xlsx corresponds to one figure.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Zenodo: 'Data includes photocurrent and resistivity measurements'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P04",
+      "title": "Direct visualization of electronic transport in a quantum anomalous Hall insulator",
+      "authors": "Ferguson et al.",
+      "year": 2023,
+      "journal": "Nature Materials",
+      "doi": "10.1038/s41563-023-01622-0",
+      "arxiv_id": "2112.13122",
+      "dataset_url": "https://zenodo.org/records/8037337",
+      "dataset_record_id": "8037337",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "fig1/field_sweep_0.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "Magnetic Field (T)",
+            "I (A)",
+            "Vxy (V)",
+            "R_xy (Ohm)"
+          ]
+        },
+        {
+          "name": "fig1/gate_sweep_Rxx_0.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "Gate Voltage (V)",
+            "I (A)",
+            "Vxy (V)",
+            "R_xy (Ohm)",
+            "R_2T (Ohm)"
+          ]
+        },
+        {
+          "name": "fig2/transport_gate_sweep.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "VBG (Volts)",
+            "Rxy (Ohms)",
+            "R2T (Ohms)"
+          ]
+        },
+        {
+          "name": "fig3/transport_data.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "VBG (V)",
+            "sig_xx (h/e^2)",
+            "sig_xy (h/e^2)"
+          ]
+        },
+        {
+          "name": "fig2/image_data.npz",
+          "format": "npz",
+          "has_headers": false,
+          "sample_headers": [
+            "SQUID flux and current density images"
+          ]
+        }
+      ],
+      "total_files_available": 39,
+      "files_downloaded": 39,
+      "total_size_mb": 13.3,
+      "downloaded_size_mb": 13.3,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": true,
+      "readme_summary": "Data organized by figure (main_text/fig1-fig4, extended_data/ed1-ed9). Transport data in txt with physical headers, SQUID imaging in npz.",
+      "paper_pdf_downloaded": true,
+      "classification": "Type1+Type2",
+      "classification_reason": "Zenodo: 'Source data for...' (not raw). 25 txt with annotated headers (Magnetic Field (T), Rxy (Ohm), sig_xx (h/e^2)) = Type 1. 12 npz binary SQUID imaging files = Type 2.",
+      "paper_data_statements": [
+        "Zenodo: 'Source data for Direct visualization of electronic transport in a quantum anomalous Hall insulator'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P05",
+      "title": "Distinct switching of chiral transport in the kagome metals KV3Sb5 and CsV3Sb5",
+      "authors": "Guo et al.",
+      "year": 2023,
+      "journal": "npj Quantum Materials",
+      "doi": "10.1038/s41535-024-00629-3",
+      "arxiv_id": "2306.00593",
+      "dataset_url": "https://zenodo.org/records/10138673",
+      "dataset_record_id": "10138673",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "OriginalData.zip",
+          "format": "zip",
+          "has_headers": false,
+          "sample_headers": []
+        },
+        {
+          "name": "KVS-QO.opju",
+          "format": "opju (Origin)",
+          "has_headers": true,
+          "sample_headers": [
+            "quantum oscillation data"
+          ]
+        },
+        {
+          "name": "CVS-QO.opju",
+          "format": "opju (Origin)",
+          "has_headers": true,
+          "sample_headers": [
+            "quantum oscillation data"
+          ]
+        },
+        {
+          "name": "CVS+KVS-eMChA.oggu",
+          "format": "oggu (Origin)",
+          "has_headers": true,
+          "sample_headers": [
+            "eMChA transport data"
+          ]
+        }
+      ],
+      "total_files_available": 6,
+      "files_downloaded": 6,
+      "total_size_mb": 85.1,
+      "downloaded_size_mb": 85.1,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type2",
+      "classification_reason": "Proprietary Origin format (.opju/.oggu) requires Origin software. OriginalData.zip contains raw .dat. 85 MB >> replot estimate. Paper: 'Data that support the findings...will be deposited to Zenodo.'",
+      "notes": "Kagome metals chiral transport with quantum oscillation data in Origin format.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Paper: 'Data that support the findings of this study will be deposited to Zenodo'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P06",
+      "title": "Direct observation of altermagnetic band splitting in CrSb thin films",
+      "authors": "Reimers et al.",
+      "year": 2024,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-024-46476-5",
+      "arxiv_id": "2310.17280",
+      "dataset_url": "https://zenodo.org/records/10531915",
+      "dataset_record_id": "10531915",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "FigS1_XRD_Phi_scan_CS42.dat",
+          "format": "dat",
+          "has_headers": true,
+          "sample_headers": [
+            "Q",
+            "ExpIntensity",
+            "ExpError"
+          ]
+        },
+        {
+          "name": "FigS1_XRD_Rocking300_CS42.dat",
+          "format": "dat",
+          "has_headers": true,
+          "sample_headers": [
+            "Q",
+            "ExpIntensity",
+            "ExpError"
+          ]
+        },
+        {
+          "name": "FigS1_XRD_t2t_CS42.xy",
+          "format": "xy",
+          "has_headers": false,
+          "sample_headers": [
+            "2theta",
+            "intensity"
+          ]
+        },
+        {
+          "name": "FigS3a_ARPES_profile1.dat",
+          "format": "dat",
+          "has_headers": true,
+          "sample_headers": [
+            "E",
+            "GrayValue"
+          ]
+        },
+        {
+          "name": "FigS3a_ARPES_profile2.dat",
+          "format": "dat",
+          "has_headers": true,
+          "sample_headers": [
+            "E",
+            "GrayValue"
+          ]
+        },
+        {
+          "name": "FigS3A_ARPES_profile3.dat",
+          "format": "dat",
+          "has_headers": true,
+          "sample_headers": [
+            "E",
+            "GrayValue"
+          ]
+        }
+      ],
+      "total_files_available": 6,
+      "files_downloaded": 6,
+      "total_size_mb": 0.1,
+      "downloaded_size_mb": 0.1,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type2",
+      "classification_reason": "Paper explicitly: 'The raw data of the XRD and ARPES line graphs shown in this study have been deposited in the Zenodo database.' Paper text overrides file structure inference per classification rules.",
+      "notes": "First direct observation of altermagnetic band splitting. XRD + ARPES line profiles.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Paper: 'The raw data of the XRD and ARPES line graphs shown in this study have been deposited in the Zenodo database under accession code 10.5281/zenodo.10531915.'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P07",
+      "title": "Charge density waves in infinite-layer NdNiO2 nickelates",
+      "authors": "Tam et al.",
+      "year": 2022,
+      "journal": "Nature Materials",
+      "doi": "10.1038/s41563-022-01330-1",
+      "arxiv_id": "2112.04440",
+      "dataset_url": "https://zenodo.org/records/6778273",
+      "dataset_record_id": "6778273",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "Figure_01.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "Figure 1b, 1c, 1d sheets"
+          ]
+        },
+        {
+          "name": "fig2/fig2a.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "energy",
+            "fluorescence-yield"
+          ]
+        },
+        {
+          "name": "fig3/fig3a_L027.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "H",
+            "intensity"
+          ]
+        },
+        {
+          "name": "fig4/fig4a_21K.txt",
+          "format": "txt",
+          "has_headers": true,
+          "sample_headers": [
+            "temperature-labeled files"
+          ]
+        }
+      ],
+      "total_files_available": 4,
+      "files_downloaded": 4,
+      "total_size_mb": 0.6,
+      "downloaded_size_mb": 0.6,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1",
+      "classification_reason": "Paper: 'All the data supporting the findings...deposited in the Zenodo repository.' Annotated headers (energy, fluorescence-yield, H, intensity). Figure-organized (fig2-fig4 dirs). No 'raw' in paper text. 0.6 MB appropriate for replotting.",
+      "notes": "Nickelate CDW in NdNiO2. Resonant X-ray scattering data organized by figure panels (fig2a-p, fig3, fig4).",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Paper: 'All the data supporting the findings of this study are available in the Supplementary Information and deposited in the Zenodo repository'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P08",
+      "title": "Rotation of gap nodes in the topological superconductor Cux(PbSe)5(Bi2Se3)6",
+      "authors": "Bagchi et al.",
+      "year": 2024,
+      "journal": "Physical Review B",
+      "doi": "10.1103/PhysRevB.109.104507",
+      "arxiv_id": "2305.16732",
+      "dataset_url": "https://zenodo.org/records/10684776",
+      "dataset_record_id": "10684776",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "data.zip",
+          "format": "zip",
+          "has_headers": false,
+          "sample_headers": []
+        }
+      ],
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 328.2,
+      "downloaded_size_mb": 27.0,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1+Type2",
+      "classification_reason": "README: 'data underlying all figures...in .csv or .txt file format. Furthermore, raw data files are provided.' raw_data/ subfolders = explicit Type 2 signal. 67 clean csv/txt = Type 1. .3ds/.sxm in raw_data/ = Type 2.",
+      "notes": "Topological superconductor gap node rotation. Raw data archived. Download may be partial.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Paper main text (found via text scan): 'in the generation of main and supplementary figures are available in Zenodo with the identifier 10.5281/zenodo.10684776.'",
+        "README: 'data underlying all figures of the paper...is given in .csv or .txt file format. Furthermore, raw data files are provided.'"
+      ],
+      "paper_text_scanned_for_zenodo_refs": true,
+      "files_added": []
+    },
+    {
+      "paper_id": "P09",
+      "title": "Electrostatically controlled spin polarization in Graphene-CrSBr magnetic proximity heterostructures",
+      "authors": "Authors et al.",
+      "year": 2024,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-024-48809-w",
+      "arxiv_id": "2312.07131",
+      "dataset_url": "https://zenodo.org/records/10654565",
+      "dataset_record_id": "10654565",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "files": [
+        {
+          "name": "data.zip",
+          "format": "zip",
+          "has_headers": false,
+          "sample_headers": []
+        }
+      ],
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 208.3,
+      "downloaded_size_mb": 208.3,
+      "zip_contents": "800 entries / 503 MB uncompressed. Contains: '180K field sweep/Raw data (180K)/data_*.dat' + .set instrument files, 'Rxx B model comparison/' analysis figures (.png/.svg/.eps), and Python plotting/processing scripts. Zip extracted in-place to dataset/type2/extracted/ to make contents browsable.",
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1+Type2",
+      "classification_reason": "Mixed deposit. Type 2 evidence: 23 raw .dat instrument files under '*/Raw data/' and '*/Raw data (180K)/' folders, Zenodo description explicitly mentions 'raw data', .set instrument config files alongside each .dat. Type 1 evidence: figure-organized analysis subfolders ('180K field sweep/pics/', 'Rxx B model comparison/vertical plots/...') containing the processed/plotted outputs that accompany the paper figures, plus the Python plotting scripts that turn the raw .dat files into those figures.",
+      "notes": "Graphene-CrSBr magnetic proximity heterostructure. Spintronics/QHE data + model. data.zip is intact (218 MB on disk, unzip -t passes); previously appeared 'empty' because nothing was extracted in dataset/type2/. Extracted on 2026-04-11 to dataset/type2/extracted/ for visibility. Reclassified Type1+Type2 because the deposit bundles both raw instrument files and the per-figure plotting scripts/outputs.",
+      "scripts_count": 60,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "Zenodo: 'For raw data and symmetry analysis of quantum Hall effect field sweep data at 20K'",
+        "Zip contains folder named 'Raw data (180K)/'"
+      ],
+      "files_added": []
+    },
+    {
+      "paper_id": "P10",
+      "title": "Conventional Superconductivity in the Doped Kagome Superconductor Cs(V0.86Ta0.14)3Sb5 from Vortex Lattice Studies",
+      "authors": "Xie et al.",
+      "year": 2024,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-024-50856-2",
+      "arxiv_id": "2403.06046",
+      "dataset_url": "https://figshare.com/articles/dataset/25737993",
+      "dataset_record_id": "25737993",
+      "dataset_repository": "figshare",
+      "download_success": true,
+      "files": [
+        {
+          "name": "Cs135_Nature_Communication_Data_Tables.xlsx",
+          "format": "xlsx",
+          "has_headers": true,
+          "sample_headers": [
+            "T (K)",
+            "\u03bc_0 H (T)",
+            "q (1E-2 nm^-1)",
+            "B (T)",
+            "|F(q)| (mT)",
+            "\u03c1s2(t)/\u03c1s2(0)"
+          ]
+        }
+      ],
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 0.02,
+      "downloaded_size_mb": 0.02,
+      "scripts": [],
+      "readme_present": false,
+      "classification": "Type1",
+      "classification_reason": "Single xlsx with multi-sheet data per figure (Fig1b-Fig4b). Annotated physical headers (T(K), \u03bc\u2080H(T), q(1E-2 nm^-1), B(T), |F(q)|(mT)). 0.02 MB. Directly replotable.",
+      "notes": "Kagome superconductor vortex lattice. SANS data with magnetic field, temperature, form factor measurements.",
+      "scripts_count": 0,
+      "paper_pdf_downloaded": true,
+      "paper_data_statements": [
+        "No data availability section in arXiv preprint.",
+        "Full PDF reference list scan (refs 1-72) found no figshare/Zenodo citation in main text. Dataset (figshare 25737993) is not cited in the preprint; likely added at Nature Communications publication stage."
+      ],
+      "paper_text_scanned_for_zenodo_refs": true,
+      "files_added": []
+    },
+    {
+      "paper_id": "P11",
+      "title": "Quantum spin Hall effect in magnetic graphene",
+      "authors": "Kuiri et al.",
+      "year": 2025,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-025-60377-1",
+      "arxiv_id": "2312.07515",
+      "dataset_url": "https://zenodo.org/records/15588027",
+      "dataset_record_id": "15588027",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 25,
+      "files_downloaded": 25,
+      "total_size_mb": 11.4,
+      "downloaded_size_mb": 11.4,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "Paper: 'All data contained in the figures will be available at zenodo.org.' Zenodo: 'Source data for the figures.' 24 .dat files with annotated headers (Field_40K, M_40K, Isd(A), Vtg(V), Rxx(ohm)). Figure-organized. 11.4 MB. No 'raw' language.",
+      "paper_data_statements": [
+        "Paper: 'All data contained in the figures will be available at zenodo.org upon publication.'",
+        "Zenodo: 'Source data for the figures presented in the article Nat. Commun. 16, 5336 (2025).'"
+      ]
+    },
+    {
+      "paper_id": "P12",
+      "title": "Terahertz Neel spin-orbit torques drive nonlinear magnon dynamics in antiferromagnetic Mn2Au",
+      "authors": "Baierl et al.",
+      "year": 2023,
+      "journal": "Nature Communications",
+      "doi": "10.1038/s41467-023-41569-z",
+      "arxiv_id": "2305.03368",
+      "dataset_url": "https://zenodo.org/records/8255849",
+      "dataset_record_id": "8255849",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 27,
+      "files_downloaded": 27,
+      "total_size_mb": 0.5,
+      "downloaded_size_mb": 0.5,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "Zenodo: 'datasets provided for Figures 2-4. Files are provided as comma-separated text files with column headers.' 27 CSVs with annotated headers (Time (ps), Electric field (arb. u.), Signal (murad)). 0.5 MB. 'Raw data' in paper is a figure subsection label, not deposit description.",
+      "paper_data_statements": [
+        "Zenodo: 'datasets provided for Figures 2-4. Files are provided as comma-separated text files with column headers. The value delimiter is comma.'"
+      ]
+    },
+    {
+      "paper_id": "P13",
+      "title": "Particle-hole symmetry protects spin-valley blockade in graphene quantum dots",
+      "authors": "Garreis et al.",
+      "year": 2023,
+      "journal": "Nature",
+      "doi": "10.1038/s41586-023-05953-5",
+      "arxiv_id": "2303.10201",
+      "dataset_url": "https://zenodo.org/records/7821944",
+      "dataset_record_id": "7821944",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 59.2,
+      "downloaded_size_mb": 59.2,
+      "scripts": [
+        "overview_for_zenodo.py",
+        "ExtDataFig3dh.py",
+        "ExtDataFig3efij_for_zenodo.py"
+      ],
+      "scripts_count": 23,
+      "readme_present": true,
+      "paper_pdf_downloaded": true,
+      "classification": "Type2",
+      "classification_reason": "Paper: 'data supporting the findings are available in a Zenodo repository.' 40 .pkl pickle binary files requiring Python scripts to process into plots. README: 'The python script will generate the plots.' Binary format = Type 2. 59 MB.",
+      "paper_data_statements": [
+        "Paper: 'The data supporting the findings are available in a Zenodo repository'",
+        "README: 'The python script will generate the plots shown in the manuscript.'"
+      ]
+    },
+    {
+      "paper_id": "P14",
+      "title": "Induced superconducting correlations in a quantum anomalous Hall insulator",
+      "authors": "Uday et al.",
+      "year": 2024,
+      "journal": "Nature Physics",
+      "doi": "10.1038/s41567-024-02574-1",
+      "arxiv_id": "2307.08578",
+      "dataset_url": "https://zenodo.org/records/11231864",
+      "dataset_record_id": "11231864",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 15.8,
+      "downloaded_size_mb": 15.8,
+      "scripts": [
+        "CAR.ipynb"
+      ],
+      "scripts_count": 1,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "61 CSVs with annotated headers (B(T), R_D(Ohm), Idc(A), V_D(V)) organized per figure (Fig1-4, FigS1-13). Zenodo says 'raw data files' but all files have labeled columns and are figure-organized = Type1 per definition. KWANT .ipynb = scripts (not data). No binary/instrument/unlabeled files exist.",
+      "paper_data_statements": [
+        "Paper: 'Data availability: The data that support the findings of this study are available at the online depository figshare with the identifier **** and Supplementary Information.'",
+        "Zenodo: 'raw data files and KWANT simulation code used in the generation of the main and supplementary figures'",
+        "Note: 'raw data files' here means measurement CSVs with annotated headers, not unprocessed instrument data",
+        "Discrepancy: arXiv preprint states figshare (placeholder identifier ****); final data deposited on Zenodo (record 11231864) at publication time."
+      ],
+      "paper_text_scanned_for_zenodo_refs": true
+    },
+    {
+      "paper_id": "P15",
+      "title": "Coherent spin-wave transport in an antiferromagnet",
+      "authors": "Hortensius et al.",
+      "year": 2021,
+      "journal": "Nature Physics",
+      "doi": "10.1038/s41567-021-01290-4",
+      "arxiv_id": "2105.05886",
+      "dataset_url": "https://zenodo.org/records/4716539",
+      "dataset_record_id": "4716539",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 0.5,
+      "downloaded_size_mb": 0.5,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "Paper: 'All data presented in this work will be made publicly available.' Zenodo: 'figure source data.' Annotated headers (Temperature (K), Frequency (GHz), k vector (10^5 cm-1), group velocity (m/s)). Figure-organized (Figure1-4/). 0.5 MB. No 'raw' language.",
+      "paper_data_statements": [
+        "Paper: 'All data presented in this work will be made publicly available with the identifier (DOI)...'",
+        "Zenodo: 'figure source data for Coherent spin-wave transport in an antiferromagnet'"
+      ]
+    },
+    {
+      "paper_id": "P16",
+      "title": "Room temperature wavelike exciton transport in a van der Waals superatomic semiconductor",
+      "authors": "Tulyagankhodjaev et al.",
+      "year": 2023,
+      "journal": "Science",
+      "doi": "10.1126/science.adf2698",
+      "arxiv_id": "2306.07808",
+      "dataset_url": "https://zenodo.org/records/8183811",
+      "dataset_record_id": "8183811",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 14.6,
+      "downloaded_size_mb": 14.6,
+      "scripts": [],
+      "scripts_count": 5,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "Zenodo: 'Data and code necessary to reproduce the figures.' 17 xlsx with annotated headers (Time (ps), Carrier Density, Polaron Population). DFT calculation outputs and Monte Carlo simulation results = Type1 (calculation results for figures). .tif microscopy images = Type1 (processed). All content serves figure reproduction. Paper data availability statement explicitly excludes raw files from the deposit, reinforcing Type1.",
+      "paper_data_statements": [
+        "Paper: 'Data and materials availability: All data are available in the main text or the supplementary materials. Raw files are available from the corresponding author upon reasonable request.'",
+        "Zenodo: 'Data and code necessary to reproduce the figures in the main text and supplementary materials'"
+      ],
+      "paper_text_scanned_for_zenodo_refs": true
+    },
+    {
+      "paper_id": "P17",
+      "title": "Band structure of KTaO3 two dimensional electron gas: ARPES data and tight binding fits",
+      "authors": "Bruno et al.",
+      "year": 2022,
+      "journal": "APL Materials",
+      "doi": "10.5281/zenodo.7051384",
+      "arxiv_id": "1903.06077",
+      "dataset_url": "https://zenodo.org/records/7051384",
+      "dataset_record_id": "7051384",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 27,
+      "files_downloaded": 27,
+      "total_size_mb": 7.6,
+      "downloaded_size_mb": 7.6,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1+Type2",
+      "classification_reason": "8 CSVs with annotated headers (Binding Energy (eV), kx (A^-1), tight binding fits) = Type1. 19 CSVs without headers (Fermi surface band contour coordinate pairs, no column labels) = Type2 (lacks labeled headers per rules). Zenodo: 'ARPES measurements of the band structure.' No 'raw' in text.",
+      "paper_data_statements": [
+        "Zenodo: 'angle resolved photoemission spectroscopy measurements of the band structure...experimental data complemented with tight binding fits (eight bands).'"
+      ]
+    },
+    {
+      "paper_id": "P18",
+      "title": "Probing the spin dimensionality in single-layer CrSBr van der Waals heterostructures by magneto-transport measurements",
+      "authors": "Boix-Constant et al.",
+      "year": 2022,
+      "journal": "Advanced Materials",
+      "doi": "10.1002/adma.202204940",
+      "arxiv_id": "2204.04095",
+      "dataset_url": "https://zenodo.org/records/14228437",
+      "dataset_record_id": "14228437",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 21.1,
+      "downloaded_size_mb": 21.1,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "14 txt files with annotated headers (T (K), B (T), MR (%), J1_change(%)). Figure-organized (Figure1-4/). 1 TIFF image = processed microscopy (assumed processed unless paper/readme states otherwise). No 'raw' language in Zenodo or paper text.",
+      "paper_data_statements": [
+        "Zenodo: 'Dataset of the publication: Probing the spin dimensionality in single-layer CrSBr van der Waals heterostructures by magneto-transport measurements'"
+      ]
+    },
+    {
+      "paper_id": "P19",
+      "title": "Topological magnon band structure of emergent Landau levels in a skyrmion lattice",
+      "authors": "Weber et al.",
+      "year": 2022,
+      "journal": "Science",
+      "doi": "10.1126/science.abe4441",
+      "arxiv_id": "2203.08159",
+      "dataset_url": "https://zenodo.org/records/5724117",
+      "dataset_record_id": "5724117",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 1,
+      "files_downloaded": 1,
+      "total_size_mb": 60.0,
+      "downloaded_size_mb": 60.0,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": false,
+      "paper_pdf_downloaded": true,
+      "classification": "Type2",
+      "classification_reason": "Paper ref [43] explicitly: 'Raw data for Topological magnon band structure...Zenodo repository.' 1905 raw neutron .tof/.dat instrument files from 4 beamlines. Binary instrument format. README maps raw scan numbers to figures. 60 MB.",
+      "paper_data_statements": [
+        "Paper ref [43]: 'T. Weber et al., Raw data for Topological magnon band structure of emergent Landau levels in a skyrmion lattice, Zenodo repository'",
+        "README: 'This archive collects the full data sets that were used for our paper'"
+      ]
+    },
+    {
+      "paper_id": "P20",
+      "title": "Thermoelectric signature of individual skyrmions",
+      "authors": "Fernandez Scarioni et al.",
+      "year": 2021,
+      "journal": "Physical Review Letters",
+      "doi": "10.1103/PhysRevLett.126.077202",
+      "arxiv_id": "2001.10251",
+      "dataset_url": "https://zenodo.org/records/4322235",
+      "dataset_record_id": "4322235",
+      "dataset_repository": "zenodo",
+      "download_success": true,
+      "total_files_available": 18,
+      "files_downloaded": 18,
+      "total_size_mb": 21.5,
+      "downloaded_size_mb": 21.5,
+      "scripts": [],
+      "scripts_count": 0,
+      "readme_present": true,
+      "paper_pdf_downloaded": true,
+      "classification": "Type1",
+      "classification_reason": "README maps each file to figure panels. 10 .txt with annotated headers (I_heater (mA), T_stripe (K), V_ANE (V), \u03bc\u2080H_z (mT)). 6 .gwy Gwyddion MFM files = assumed processed (microscopy data assumed processed unless stated otherwise). No 'raw' language in paper text or README.",
+      "paper_data_statements": [
+        "README describes per-figure: e.g. 'ANE voltage as a function of the applied magnetic field - Figure_1b.txt'",
+        "'MFM measurements of the device - Figure_1cde.gwy (can be opened with Gwyddion)'"
+      ]
+    }
+  ]
+}

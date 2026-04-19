@@ -3,11 +3,9 @@
 
 gpt:
   enabled: true
-  use_gpt_queries: false
   model: "gpt-5.4-mini"
 
 queries:
-  use_gpt: false
   topic_keywords:
     # Topological & quantum phases
     - "topological insulator"
@@ -99,7 +97,7 @@ queries:
 
 search:
   year_range:
-    start: 2021
+    start: 2015
     end: 2026
   max_results_per_query: 20
   enabled_apis:
@@ -107,18 +105,18 @@ search:
     openalex: true
     crossref: true
     arxiv: true
-    europe_pmc: true
+    europe_pmc: false
   max_queries_per_api:
     semantic_scholar: 5
     openalex: 20
     crossref: 10
-    arxiv: 12
+    arxiv: 25
     europe_pmc: 12
   rate_limits:
     semantic_scholar: 8.0
     openalex: 0.3
     crossref: 1.0
-    arxiv: 0.5
+    arxiv: 3.0
     europe_pmc: 0.3
   retry_policy:
     semantic_scholar_backoffs: [15, 30, 60, 120, 180]
@@ -150,8 +148,6 @@ scoring:
     experimental_clear: 3
     experimental_mixed: 1
     theory_only_penalty: -3
-    journal_top: 2
-    journal_mid: 1
     dataset_signal_high: 3
     dataset_signal_medium: 1
     soft_material_penalty: -4

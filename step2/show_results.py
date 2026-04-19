@@ -1,45 +1,74 @@
-"""Quick script to display Step 2 results for manual verification."""
+"""Quick script to display Step 2 data-presence results for manual verification."""
+import collections
 import json
+import sys
 
-data = json.load(open("step2/output/step2_inventory_latest.json", "r", encoding="utf-8"))
 
-print("=" * 80)
-print("TYPE 1 (Clean / Replot-ready) Papers")
-print("=" * 80)
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
-t1 = [p for p in data["papers"] if p.get("dataset_type") == "type1"]
-for i, p in enumerate(t1, 1):
-    title = p["title"][:70]
-    journal = p["journal"]
-    doi = p["doi"]
-    score = p["priority_score"]
-    ev = p.get("type1_evidence", "none")[:150]
-    url = p["paper_url"]
-    n_files = len(p.get("source_data_files", []))
-    print(f"{i:2d}. [{score:5.1f}] {title}")
-    print(f"    Journal: {journal}")
-    print(f"    DOI: {doi}")
-    print(f"    URL: {url}")
-    print(f"    Source files: {n_files}")
-    print(f"    Type1 evidence: {ev}")
-    print()
 
-print("=" * 80)
-print("UNKNOWN TYPE (but data found) Papers")
-print("=" * 80)
+def main():
+    data = json.load(open("step2/output/step2_inventory_latest.json", "r", encoding="utf-8"))
+    papers = data["papers"]
 
-unk = [p for p in data["papers"]
-       if p.get("dataset_type") == "unknown"
-       and p["dataset_status"] not in ("no_dataset_found",)]
-for i, p in enumerate(unk, 1):
-    title = p["title"][:70]
-    status = p["dataset_status"]
-    journal = p["journal"]
-    url = p["paper_url"]
-    print(f"{i:2d}. [{status}] {title}")
-    print(f"    Journal: {journal} | URL: {url}")
-    print()
+    status_counts = collections.Counter(p["dataset_status"] for p in papers)
 
-print("=" * 80)
-print(f"Summary: {len(t1)} type1, {len(unk)} unknown-with-data, "
-      f"{sum(1 for p in data['papers'] if p['dataset_status']=='no_dataset_found')} no-data")
+    print("=" * 80)
+    print("STEP 2 DATA PRESENCE SUMMARY")
+    print("=" * 80)
+    for status, count in status_counts.most_common():
+        print(f"{status:>17}: {count}")
+
+    with_data = [
+        p for p in papers
+        if p["dataset_status"] in ("verified", "source_data_found", "link_found")
+    ]
+    upon_request = [p for p in papers if p["dataset_status"] == "upon_request"]
+
+    print("=" * 80)
+    print("PAPERS WITH DATA LINKS / FILES")
+    print("=" * 80)
+    for i, p in enumerate(with_data[:50], 1):
+        title = p["title"][:70]
+        journal = p["journal"]
+        doi = p["doi"]
+        score = p["priority_score"]
+        status = p["dataset_status"]
+        n_data = len(p.get("data_url_candidates", p.get("source_data_files", [])))
+        n_ambiguous = len(p.get("ambiguous_url_candidates", []))
+        pdf_status = p.get("pdf_resolution_status", "not_found")
+        pdf_source = p.get("paper_pdf_source", "")
+        n_ignored = len(p.get("ignored_urls", []))
+        repos = p.get("repositories", [])
+        repo_summary = ", ".join(
+            f"{r.get('repo_type', '?')}({r.get('inventory', {}).get('file_count', 0)} files)"
+            for r in repos
+            if r.get("inventory", {}).get("success")
+        )
+
+        print(f"{i:2d}. [{score:5.1f}] [{status}] {title}")
+        print(f"    Journal: {journal}")
+        print(f"    DOI: {doi}")
+        print(
+            f"    Repos: {repo_summary or 'none'} | Data URLs: {n_data} | "
+            f"PDF: {pdf_status}{('/' + pdf_source) if pdf_source else ''} | "
+            f"Ambiguous: {n_ambiguous} | Ignored: {n_ignored}"
+        )
+        print()
+
+    print("=" * 80)
+    print("UPON REQUEST")
+    print("=" * 80)
+    for i, p in enumerate(upon_request[:30], 1):
+        print(f"{i:2d}. {p['title'][:70]}")
+
+    print("=" * 80)
+    print(
+        f"Summary: {len(with_data)} with data/link, {len(upon_request)} upon-request, "
+        f"{status_counts.get('no_dataset_found', 0)} no-data"
+    )
+
+
+if __name__ == "__main__":
+    main()

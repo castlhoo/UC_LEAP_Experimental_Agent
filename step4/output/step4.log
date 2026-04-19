@@ -1,0 +1,602 @@
+2026-04-18 21:10:14,830 [INFO] __main__: ============================================================
+2026-04-18 21:10:14,835 [INFO] __main__: Starting Step 4: Dataset Type Classification
+2026-04-18 21:10:14,835 [INFO] __main__: ============================================================
+2026-04-18 21:10:14,835 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:10:14,835 [INFO] step4.pipeline: Phase 1: Loading Step 2 evidence and Step 3 paper analyses...
+2026-04-18 21:10:14,879 [INFO] step4.pipeline: Loaded 161 papers for Prompt B classification
+2026-04-18 21:10:14,879 [INFO] step4.pipeline: Skipped 122 dataset papers missing Step 3 analysis
+2026-04-18 21:10:14,880 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:10:14,880 [INFO] step4.pipeline: Phase 2: Downloading dataset files...
+2026-04-18 21:10:14,881 [INFO] step4.pipeline:   [1/161] Fermi Surface of Three-Dimensional<mml:math xmlns:mml="http:...
+2026-04-18 21:10:14,883 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,885 [INFO] step4.pipeline:   [2/161] Intertwined Topological and Magnetic Orders in Atomically Th...
+2026-04-18 21:10:14,886 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,888 [INFO] step4.pipeline:   [3/161] Isospin magnetism and spin-polarized superconductivity in Be...
+2026-04-18 21:10:14,889 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,891 [INFO] step4.pipeline:   [4/161] Relation between interfacial shear and friction force in 2D ...
+2026-04-18 21:10:14,893 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,897 [INFO] step4.pipeline:   [5/161] Spin-valley coupling in single-electron bilayer graphene qua...
+2026-04-18 21:10:14,899 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,903 [INFO] step4.pipeline:   [6/161] Symmetry-broken Josephson junctions and superconducting diod...
+2026-04-18 21:10:14,904 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,905 [INFO] step4.pipeline:   [7/161] A Fermi surface descriptor quantifying the correlations betw...
+2026-04-18 21:10:14,906 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,906 [INFO] step4.pipeline:   [8/161] Breaking the rotating wave approximation for a strongly driv...
+2026-04-18 21:10:14,906 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,910 [INFO] step4.pipeline:   [9/161] Charge density wave modulated third-order nonlinear Hall eff...
+2026-04-18 21:10:14,911 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,913 [INFO] step4.pipeline:   [10/161] Charge density wave sliding driven by an interplay of conven...
+2026-04-18 21:10:14,915 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,918 [INFO] step4.pipeline:   [11/161] Charge-stripe order, antiferromagnetism, and spin dynamics i...
+2026-04-18 21:10:14,922 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,926 [INFO] step4.pipeline:   [12/161] Comparative study of magnetic quantum oscillations in Hall a...
+2026-04-18 21:10:14,928 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,935 [INFO] step4.pipeline:   [13/161] Concurrence of anomalous Hall effect and charge density wave...
+2026-04-18 21:10:14,938 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,941 [INFO] step4.pipeline:   [14/161] Current-induced giant diamagnetism in the Mott insulator Ca2...
+2026-04-18 21:10:14,943 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,949 [INFO] step4.pipeline:   [15/161] Discovery of a Weyl fermion state with Fermi arcs in niobium...
+2026-04-18 21:10:14,953 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,958 [INFO] step4.pipeline:   [16/161] Electron Thermalization and Relaxation in Laser-Heated Nicke...
+2026-04-18 21:10:14,960 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,963 [INFO] step4.pipeline:   [17/161] Emergence of a Metal–Insulator Transition and High-Temperatu...
+2026-04-18 21:10:14,967 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,971 [INFO] step4.pipeline:   [18/161] Experimental Observation of Topological Superconductivity an...
+2026-04-18 21:10:14,973 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,976 [INFO] step4.pipeline:   [19/161] Extremely large magnetoresistance and Fermi surface topology...
+2026-04-18 21:10:14,978 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,984 [INFO] step4.pipeline:   [20/161] Fast thermometry with a proximity Josephson junction...
+2026-04-18 21:10:14,984 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:14,994 [INFO] step4.pipeline:   [21/161] Gate-tuned superconductor-insulator transition in (Li,Fe)OHF...
+2026-04-18 21:10:14,995 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,000 [INFO] step4.pipeline:   [22/161] Imaging local discharge cascades for correlated electrons in...
+2026-04-18 21:10:15,001 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,004 [INFO] step4.pipeline:   [23/161] Inverse design of chiral functional films by a robotic AI-gu...
+2026-04-18 21:10:15,005 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,008 [INFO] step4.pipeline:   [24/161] Magnetic field driven novel phase transitions in EuTiO$_3$...
+2026-04-18 21:10:15,011 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,013 [INFO] step4.pipeline:   [25/161] Origin of the density wave instability in trilayer nickelate...
+2026-04-18 21:10:15,014 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,015 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,017 [INFO] step4.pipeline:   [26/161] p-Wave Superconductivity in Iron-based Superconductors...
+2026-04-18 21:10:15,019 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,020 [INFO] step4.pipeline:   [27/161] Phonon-assisted indirect transitions in angle-resolved photo...
+2026-04-18 21:10:15,021 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,023 [INFO] step4.pipeline:   [28/161] Picosecond energy transfer in a transition metal dichalcogen...
+2026-04-18 21:10:15,025 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,028 [INFO] step4.pipeline:   [29/161] Pressure induced isostructural phase transition in biskyrmio...
+2026-04-18 21:10:15,030 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,033 [INFO] step4.pipeline:   [30/161] Proximity-induced superconductivity and quantum interference...
+2026-04-18 21:10:15,036 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,037 [INFO] step4.pipeline:   [31/161] Quantum oscillation and nontrivial transport in the Dirac Se...
+2026-04-18 21:10:15,037 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,044 [INFO] step4.pipeline:   [32/161] Quantum Oscillations and Coherent Interlayer Transport in a ...
+2026-04-18 21:10:15,045 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,050 [INFO] step4.pipeline:   [33/161] Raman and fluorescence contributions to resonant inelastic s...
+2026-04-18 21:10:15,052 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,055 [INFO] step4.pipeline:   [34/161] Signature of point nodal superconductivity in the Dirac semi...
+2026-04-18 21:10:15,056 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,060 [INFO] step4.pipeline:   [35/161] Stable, highly-responsive and broadband photodetection based...
+2026-04-18 21:10:15,064 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,066 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,087 [INFO] step4.pipeline:   [36/161] Superconductivity in the Ru-Doped CuIr2Te4 Telluride Chalcog...
+2026-04-18 21:10:15,087 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,087 [INFO] step4.pipeline:   [37/161] Temperature induced Neutral to Ionic phase Transition of the...
+2026-04-18 21:10:15,095 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,098 [INFO] step4.pipeline:   [38/161] Theory for the Charge-Density-Wave Mechanism of 3D Quantum H...
+2026-04-18 21:10:15,100 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,103 [INFO] step4.pipeline:   [39/161] Two-gap superconductivity in LaNiGa$_2$ with non-unitary tri...
+2026-04-18 21:10:15,104 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,105 [INFO] step4.pipeline:   [40/161] Unveiling the Charge Density Wave Inhomogeneity and Pseudoga...
+2026-04-18 21:10:15,107 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,116 [INFO] step4.pipeline:   [41/161] Elemental Topological Dirac Semimetal: <mml:math xmlns:mml="...
+2026-04-18 21:10:15,117 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,121 [INFO] step4.pipeline:   [42/161] Accurate Determination of the Neutron Skin Thickness of <mml...
+2026-04-18 21:10:15,121 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,124 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,126 [INFO] step4.pipeline:   [43/161] Coexistence of Elastic Modulations in the Charge Density Wav...
+2026-04-18 21:10:15,128 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,132 [INFO] step4.pipeline:   [44/161] Direct imaging and electronic structure modulation of moiré ...
+2026-04-18 21:10:15,133 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,134 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,144 [INFO] step4.pipeline:   [45/161] Directional Emission of a Deterministically Fabricated Quant...
+2026-04-18 21:10:15,146 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,148 [INFO] step4.pipeline:   [46/161] Giant Rashba‐Type Spin Splitting in Ferroelectric GeTe(111)...
+2026-04-18 21:10:15,151 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,153 [INFO] step4.pipeline:   [47/161] Microwave-to-optical conversion with a gallium phosphide pho...
+2026-04-18 21:10:15,156 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,159 [INFO] step4.pipeline:   [48/161] Observation of Fermi arc and its connection with bulk states...
+2026-04-18 21:10:15,161 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,165 [INFO] step4.pipeline:   [49/161] Observation of large topologically trivial Fermi arcs in the...
+2026-04-18 21:10:15,166 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,167 [INFO] step4.pipeline:   [50/161] Quantum Confinement and Electronic Structure at the Surface ...
+2026-04-18 21:10:15,167 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,175 [INFO] step4.pipeline:   [51/161] Coexistence of Dirac fermion and charge density wave in squa...
+2026-04-18 21:10:15,177 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,181 [INFO] step4.pipeline:   [52/161] Microscopic spinon-chargon theory of magnetic polarons in th...
+2026-04-18 21:10:15,182 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,184 [INFO] step4.pipeline:   [53/161] Observation of bulk states and spin-polarized topological su...
+2026-04-18 21:10:15,186 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,188 [INFO] step4.pipeline:   [54/161] Quasi-free-standing AA-stacked bilayer graphene induced by c...
+2026-04-18 21:10:15,191 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,192 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,240 [INFO] step4.pipeline:   [55/161] Superconductivity and Fermi Surface Nesting in the Candidate...
+2026-04-18 21:10:15,242 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,246 [INFO] step4.pipeline:   [56/161] Temperature-Induced Lifshitz Transition in<mml:math xmlns:mm...
+2026-04-18 21:10:15,248 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,253 [INFO] step4.pipeline:   [57/161] Three-Dimensional Accuracy of Facial Scan for Facial Deformi...
+2026-04-18 21:10:15,258 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,261 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,306 [INFO] step4.pipeline:   [58/161] Fermi surface and kink structures in $$\hbox {Sr}_{{4}}\hbox...
+2026-04-18 21:10:15,306 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,306 [INFO] step4.pipeline:   [59/161] Clean, cleaved surfaces of the photovoltaic perovskite...
+2026-04-18 21:10:15,306 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,313 [INFO] step4.pipeline:   [60/161] Control of MXenes’ electronic properties through termination...
+2026-04-18 21:10:15,313 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,316 [INFO] step4.pipeline:   [61/161] Coulomb engineering of the bandgap and excitons in two-dimen...
+2026-04-18 21:10:15,317 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,318 [INFO] step4.pipeline:   [62/161] Crystal growth of Dirac semimetal ZrSiS with high magnetores...
+2026-04-18 21:10:15,319 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,321 [INFO] step4.pipeline:   [63/161] Defects controlled hole doping and multivalley transport in ...
+2026-04-18 21:10:15,322 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,323 [INFO] step4.pipeline:   [64/161] Dirac fermions and flat bands in the ideal kagome metal FeSn...
+2026-04-18 21:10:15,324 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,326 [INFO] step4.pipeline:   [65/161] Electrical control of 2D magnetism in bilayer CrI3...
+2026-04-18 21:10:15,326 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,329 [INFO] step4.pipeline:   [66/161] Emergence of charge density waves and a pseudogap in single-...
+2026-04-18 21:10:15,330 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,332 [INFO] step4.pipeline:   [67/161] Entropy-stabilized oxides...
+2026-04-18 21:10:15,333 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,335 [INFO] step4.pipeline:   [68/161] Evidence of a gate-tunable Mott insulator in a trilayer grap...
+2026-04-18 21:10:15,336 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,338 [INFO] step4.pipeline:   [69/161] Evidence of cooperative effect on the enhanced superconducti...
+2026-04-18 21:10:15,339 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,341 [INFO] step4.pipeline:   [70/161] Experimental observation of topological Fermi arcs in type-I...
+2026-04-18 21:10:15,342 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,343 [INFO] step4.pipeline:   [71/161] Hedgehog Spin-Vortex Crystal Antiferromagnetic Quantum Criti...
+2026-04-18 21:10:15,343 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,346 [INFO] step4.pipeline:   [72/161] High electron mobility, quantum Hall effect and anomalous op...
+2026-04-18 21:10:15,347 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,349 [INFO] step4.pipeline:   [73/161] High-efficiency two-dimensional Ruddlesden–Popper perovskite...
+2026-04-18 21:10:15,350 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,352 [INFO] step4.pipeline:   [74/161] Large magnetic gap at the Dirac point in Bi2Te3/MnBi2Te4 het...
+2026-04-18 21:10:15,352 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,354 [INFO] step4.pipeline:   [75/161] Layer-dependent ferromagnetism in a van der Waals crystal do...
+2026-04-18 21:10:15,355 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,356 [INFO] step4.pipeline:   [76/161] Managing grains and interfaces via ligand anchoring enables ...
+2026-04-18 21:10:15,357 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,359 [INFO] step4.pipeline:   [77/161] Moiré metrology of energy landscapes in van der Waals hetero...
+2026-04-18 21:10:15,360 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,360 [INFO] step4.pipeline:   [78/161] Monolayer MoS2 Bandgap Modulation by Dielectric Environments...
+2026-04-18 21:10:15,362 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,364 [INFO] step4.pipeline:   [79/161] Multistep magnetization switching in orthogonally twisted fe...
+2026-04-18 21:10:15,364 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,368 [INFO] step4.pipeline:   [80/161] Observation and control of the weak topological insulator st...
+2026-04-18 21:10:15,368 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,371 [INFO] step4.pipeline:   [81/161] Observation of a two-dimensional liquid of Fröhlich polarons...
+2026-04-18 21:10:15,371 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,371 [INFO] step4.pipeline:   [82/161] Observation of the spin-polarized surface state in a noncent...
+2026-04-18 21:10:15,371 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,374 [INFO] step4.pipeline:   [83/161] Observation of topological superconductivity in a stoichiome...
+2026-04-18 21:10:15,374 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,377 [INFO] step4.pipeline:   [84/161] Polaronic metal state at the LaAlO3/SrTiO3 interface...
+2026-04-18 21:10:15,378 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,379 [INFO] step4.pipeline:   [85/161] Proximity-induced chiral quantum light generation in strain-...
+2026-04-18 21:10:15,381 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,384 [INFO] step4.pipeline:   [86/161] Rashba-like spin splitting along three momentum directions i...
+2026-04-18 21:10:15,385 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,387 [INFO] step4.pipeline:   [87/161] Room-temperature intrinsic ferromagnetism in epitaxial CrTe2...
+2026-04-18 21:10:15,388 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,389 [INFO] step4.pipeline:   [88/161] Skyrmion phase and competing magnetic orders on a breathing ...
+2026-04-18 21:10:15,390 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,392 [INFO] step4.pipeline:   [89/161] Spectroscopic evidence of flat bands in breathing kagome sem...
+2026-04-18 21:10:15,392 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,393 [INFO] step4.pipeline:   [90/161] Square and rhombic lattices of magnetic skyrmions in a centr...
+2026-04-18 21:10:15,394 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,395 [INFO] step4.pipeline:   [91/161] Structures, Phase Transitions and Tricritical Behavior of th...
+2026-04-18 21:10:15,396 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,397 [INFO] step4.pipeline:   [92/161] Superconductivity at 250 K in lanthanum hydride under high p...
+2026-04-18 21:10:15,398 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,399 [INFO] step4.pipeline:   [93/161] The hot pick-up technique for batch assembly of van der Waal...
+2026-04-18 21:10:15,400 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,401 [INFO] step4.pipeline:   [94/161] Time-periodic corner states from Floquet higher-order topolo...
+2026-04-18 21:10:15,402 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,404 [INFO] step4.pipeline:   [95/161] Universal mechanical exfoliation of large-area 2D crystals...
+2026-04-18 21:10:15,405 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,407 [INFO] step4.pipeline:   [96/161] Vertically Oriented Arrays of ReS<sub>2</sub> Nanosheets for...
+2026-04-18 21:10:15,407 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,409 [INFO] step4.pipeline:   [97/161] Very large tunneling magnetoresistance in layered magnetic s...
+2026-04-18 21:10:15,409 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,411 [INFO] step4.pipeline:   [98/161] Water desalination using nanoporous single-layer graphene...
+2026-04-18 21:10:15,411 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,413 [INFO] step4.pipeline:   [99/161] Dirac line nodes and effect of spin-orbit coupling in the no...
+2026-04-18 21:10:15,414 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,416 [INFO] step4.pipeline:   [100/161] Absence of superconductivity in bulk Nd$_{1-x}$Sr$_x$NiO$_2$...
+2026-04-18 21:10:15,416 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,418 [INFO] step4.pipeline:   [101/161] All Chemical Vapor Deposition Growth of MoS<sub>2</sub>:h-BN...
+2026-04-18 21:10:15,419 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,420 [INFO] step4.pipeline:   [102/161] Anomalous Magnetoresistance due to Longitudinal Spin Fluctua...
+2026-04-18 21:10:15,421 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,422 [INFO] step4.pipeline:   [103/161] Anomalous Rashba Effect of Bi Thin Film Studied by Spin-Reso...
+2026-04-18 21:10:15,423 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,423 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,426 [INFO] step4.pipeline:   [104/161] Bulk superconductivity and role of fluctuations in the iron-...
+2026-04-18 21:10:15,427 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,428 [INFO] step4.pipeline:   [105/161] Coexistence of Interfacial Stress and Charge Transfer in Gra...
+2026-04-18 21:10:15,429 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,430 [INFO] step4.pipeline:   [106/161] Controlling many-body states by the electric-field effect in...
+2026-04-18 21:10:15,431 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,432 [INFO] step4.pipeline:   [107/161] Criteria for Directly Detecting Topological Fermi Arcs in We...
+2026-04-18 21:10:15,433 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,434 [INFO] step4.pipeline:   [108/161] Deep moiré potentials in twisted transition metal dichalcoge...
+2026-04-18 21:10:15,435 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,437 [INFO] step4.pipeline:   [109/161] Efficient and stable emission of warm-white light from lead-...
+2026-04-18 21:10:15,438 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,441 [INFO] step4.pipeline:   [110/161] Electronic structure of a Si-containing topological Dirac se...
+2026-04-18 21:10:15,441 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,443 [INFO] step4.pipeline:   [111/161] Electronic structure of transferred graphene/h-BN van der Wa...
+2026-04-18 21:10:15,443 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,444 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,447 [INFO] step4.pipeline:   [112/161] Electrothermal transport induced material reconfiguration an...
+2026-04-18 21:10:15,448 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,450 [INFO] step4.pipeline:   [113/161] Evidence for a single-layer van der Waals multiferroic...
+2026-04-18 21:10:15,451 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,453 [INFO] step4.pipeline:   [114/161] Excitations in a superconducting Coulombic energy gap...
+2026-04-18 21:10:15,454 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,454 [INFO] step4.pipeline:   [115/161] Fermi Level Modulation of Boron Nitride Nanosheets by Vacanc...
+2026-04-18 21:10:15,454 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,454 [INFO] step4.pipeline:   [116/161] Fermi surface tomography...
+2026-04-18 21:10:15,454 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,462 [INFO] step4.pipeline:   [117/161] Hysteresis loops  in  measurements of  the magnetic moment o...
+2026-04-18 21:10:15,463 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,465 [INFO] step4.pipeline:   [118/161] Impurity-pinned incommensurate charge density wave and local...
+2026-04-18 21:10:15,467 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,469 [INFO] step4.pipeline:   [119/161] Local lattice distortions vs. structural phase transition in...
+2026-04-18 21:10:15,469 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,471 [INFO] step4.pipeline:   [120/161] NMR evidence for an intimate relationship between antiferrom...
+2026-04-18 21:10:15,472 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,475 [INFO] step4.pipeline:   [121/161] Phase transition in CaFeAsH: bridging 1111 and 122 iron-base...
+2026-04-18 21:10:15,475 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,477 [INFO] step4.pipeline:   [122/161] Piezo-generated charge mapping revealed through Direct Piezo...
+2026-04-18 21:10:15,477 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,479 [INFO] step4.pipeline:   [123/161] Piezoelectric Domains in the AlGaN Hexagonal Microrods: Effe...
+2026-04-18 21:10:15,479 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,479 [INFO] step4.pipeline:   [124/161] Spectrally tunable, large Raman enhancement from nonradiativ...
+2026-04-18 21:10:15,479 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,486 [INFO] step4.pipeline:   [125/161] Superconducting transition temperatures in the electronic an...
+2026-04-18 21:10:15,487 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,489 [INFO] step4.pipeline:   [126/161] Surface Versus Bulk Dirac States Tuning in a Three-Dimension...
+2026-04-18 21:10:15,490 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,491 [INFO] step4.pipeline:   [127/161] Surface-enhanced Raman scattering in graphene deposited on A...
+2026-04-18 21:10:15,492 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,492 [INFO] step4.pipeline:   [128/161] The thickness dependence of quantum oscillations in ferromag...
+2026-04-18 21:10:15,495 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,497 [INFO] step4.pipeline:   [129/161] The uncollapsed LaFe2As2 phase: compensated, highly doped, e...
+2026-04-18 21:10:15,498 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,500 [INFO] step4.pipeline:   [130/161] Understanding 2D MoSe2 grown by CVD...
+2026-04-18 21:10:15,500 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,502 [INFO] step4.pipeline:   [131/161] Unusual Sensitivity of Superconductivity to Strain in Iron-B...
+2026-04-18 21:10:15,502 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,504 [INFO] step4.pipeline:   [132/161] <mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML"><mm...
+2026-04-18 21:10:15,505 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,506 [INFO] step4.pipeline:   [133/161] Altermagnetic lifting of Kramers spin degeneracy...
+2026-04-18 21:10:15,507 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,509 [INFO] step4.pipeline:   [134/161] Anomalous twin boundaries in two dimensional materials...
+2026-04-18 21:10:15,509 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,510 [INFO] step4.pipeline:   [135/161] Deep learning with coherent nanophotonic circuits...
+2026-04-18 21:10:15,511 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,513 [INFO] step4.pipeline:   [136/161] Determination of band alignment in the single-layer MoS2/WSe...
+2026-04-18 21:10:15,514 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,516 [INFO] step4.pipeline:   [137/161] Entanglement and manipulation of the magnetic and spin–orbit...
+2026-04-18 21:10:15,516 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,519 [INFO] step4.pipeline:   [138/161] Janus Monolayer Transition-Metal Dichalcogenides...
+2026-04-18 21:10:15,520 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,521 [INFO] step4.pipeline:   [139/161] Monolayer PtSe<sub>2</sub>, a New Semiconducting Transition-...
+2026-04-18 21:10:15,522 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,523 [INFO] step4.pipeline:   [140/161] Negative magnetoresistance without well-defined chirality in...
+2026-04-18 21:10:15,523 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,526 [INFO] step4.pipeline:   [141/161] Nonreciprocal charge transport up to room temperature in bul...
+2026-04-18 21:10:15,526 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,528 [INFO] step4.pipeline:   [142/161] Pushing the Thickness Limit of the Giant Rashba Effect in Fe...
+2026-04-18 21:10:15,529 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,531 [INFO] step4.pipeline:   [143/161] Signature of type-II Weyl semimetal phase in MoTe2...
+2026-04-18 21:10:15,531 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,533 [INFO] step4.pipeline:   [144/161] Topological flat bands in frustrated kagome lattice CoSn...
+2026-04-18 21:10:15,533 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,535 [INFO] step4.pipeline:   [145/161] A pneumonia outbreak associated with a new coronavirus of pr...
+2026-04-18 21:10:15,535 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,537 [INFO] step4.pipeline:   [146/161] An Image Recapture Detection Algorithm Based on Learning Dic...
+2026-04-18 21:10:15,537 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,539 [INFO] step4.pipeline:   [147/161] Attention-Based Two-Stream Convolutional Networks for Face S...
+2026-04-18 21:10:15,539 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,541 [INFO] step4.pipeline:   [148/161] Estimating disorder and its adverse effects in semiconductor...
+2026-04-18 21:10:15,541 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,541 [INFO] step4.pipeline:   [149/161] Extended gamma-ray sources around pulsars constrain the orig...
+2026-04-18 21:10:15,544 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,546 [INFO] step4.pipeline:   [150/161] Geographic patterns of co-occurrence network topological fea...
+2026-04-18 21:10:15,546 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,549 [INFO] step4.pipeline:   [151/161] Interfacial chemical bond and internal electric field modula...
+2026-04-18 21:10:15,550 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,552 [INFO] step4.pipeline:   [152/161] Logical quantum processor based on reconfigurable atom array...
+2026-04-18 21:10:15,553 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:   [153/161] Machine learning assisted design of shape-programmable 3D ki...
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:   [154/161] Multiband charge density wave exposed in a transition metal ...
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:   [155/161] Photoinduced Dirac semimetal in ZrTe5...
+2026-04-18 21:10:15,554 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,561 [INFO] step4.pipeline:   [156/161] Pressure-induced transition from a Mott insulator to a ferro...
+2026-04-18 21:10:15,563 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,564 [INFO] step4.pipeline:   [157/161] SARS-CoV-2 entry factors are highly expressed in nasal epith...
+2026-04-18 21:10:15,565 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,566 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,569 [INFO] step4.pipeline:   [158/161] Synergistic electroreduction of carbon dioxide to carbon mon...
+2026-04-18 21:10:15,569 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,573 [INFO] step4.pipeline:   [159/161] The X-ray counterpart to the gravitational-wave event GW1708...
+2026-04-18 21:10:15,573 [INFO] step4.pipeline:     Reprocessing completed summary because classification looks incomplete
+2026-04-18 21:10:15,573 [INFO] step4.pipeline:     Reusing existing downloaded files
+2026-04-18 21:10:15,575 [INFO] step4.pipeline:   [160/161] Unusual pressure-induced periodic lattice distortion in SnSe...
+2026-04-18 21:10:15,576 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,578 [INFO] step4.pipeline:   [161/161] Virological assessment of hospitalized patients with COVID-2...
+2026-04-18 21:10:15,580 [INFO] step4.pipeline:     Reusing completed Step 4 summary
+2026-04-18 21:10:15,582 [INFO] step4.pipeline:   Total files downloaded/extracted: 386
+2026-04-18 21:10:15,582 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:10:15,582 [INFO] step4.pipeline: Phase 4A: Inspecting file contents...
+2026-04-18 21:10:16,641 [INFO] step4.pipeline:   Origin of the density wave instability in trilayer: 9 files inspected ({'tabular_text', 'pdf', 'archive'})
+2026-04-18 21:10:16,697 [INFO] step4.pipeline:   Stable, highly-responsive and broadband photodetec: 101 files inspected ({'binary', 'tabular_text', 'json', 'optical_image', 'pdf', 'documentation'})
+2026-04-18 21:10:17,170 [INFO] step4.pipeline:   Accurate Determination of the Neutron Skin Thickne: 3 files inspected ({'excel', 'pdf'})
+2026-04-18 21:10:17,179 [INFO] step4.pipeline:   Direct imaging and electronic structure modulation: 55 files inspected ({'binary', 'archive', 'json', 'optical_image', 'pdf'})
+2026-04-18 21:10:17,229 [INFO] step4.pipeline:   Quasi-free-standing AA-stacked bilayer graphene in: 101 files inspected ({'binary', 'tabular_text', 'json', 'optical_image', 'pdf', 'documentation'})
+2026-04-18 21:10:32,575 [INFO] step4.pipeline:   Three-Dimensional Accuracy of Facial Scan for Faci: 101 files inspected ({'binary', 'tabular_text', 'excel', 'pdf', 'documentation'})
+2026-04-18 21:10:32,584 [INFO] step4.pipeline:   Anomalous Rashba Effect of Bi Thin Film Studied by: 3 files inspected ({'pdf', 'tabular_text'})
+2026-04-18 21:10:32,592 [INFO] step4.pipeline:   Electronic structure of transferred graphene/h-BN : 3 files inspected ({'binary', 'pdf'})
+2026-04-18 21:10:34,726 [INFO] step4.pipeline:   SARS-CoV-2 entry factors are highly expressed in n: 7 files inspected ({'excel', 'pdf'})
+2026-04-18 21:10:34,773 [INFO] step4.pipeline:   The X-ray counterpart to the gravitational-wave ev: 3 files inspected ({'excel', 'pdf'})
+2026-04-18 21:10:34,774 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:10:34,774 [INFO] step4.pipeline: Phase 4B/4C: Dataset assessment, file classification, and merge...
+2026-04-18 21:10:34,774 [INFO] step4.pipeline:   [  T1] Fermi Surface of Three-Dimensional<mml:math xmlns: (reused)
+2026-04-18 21:10:34,774 [INFO] step4.pipeline:   [BOTH] Intertwined Topological and Magnetic Orders in Ato (reused)
+2026-04-18 21:10:34,774 [INFO] step4.pipeline:   [  T1] Isospin magnetism and spin-polarized superconducti (reused)
+2026-04-18 21:10:34,775 [INFO] step4.pipeline:   [BOTH] Relation between interfacial shear and friction fo (reused)
+2026-04-18 21:10:34,775 [INFO] step4.pipeline:   [  T1] Spin-valley coupling in single-electron bilayer gr (reused)
+2026-04-18 21:10:34,775 [INFO] step4.pipeline:   [NONE] Symmetry-broken Josephson junctions and supercondu (reused)
+2026-04-18 21:10:34,775 [INFO] step4.pipeline:   [  T1] A Fermi surface descriptor quantifying the correla (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [  T1] Breaking the rotating wave approximation for a str (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [  T1] Charge density wave modulated third-order nonlinea (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [  T1] Charge density wave sliding driven by an interplay (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [  T1] Charge-stripe order, antiferromagnetism, and spin  (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [BOTH] Comparative study of magnetic quantum oscillations (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [BOTH] Concurrence of anomalous Hall effect and charge de (reused)
+2026-04-18 21:10:34,776 [INFO] step4.pipeline:   [BOTH] Current-induced giant diamagnetism in the Mott ins (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [BOTH] Discovery of a Weyl fermion state with Fermi arcs  (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [NONE] Electron Thermalization and Relaxation in Laser-He (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [  T1] Emergence of a Metal–Insulator Transition and High (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [BOTH] Experimental Observation of Topological Supercondu (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [BOTH] Extremely large magnetoresistance and Fermi surfac (reused)
+2026-04-18 21:10:34,777 [INFO] step4.pipeline:   [BOTH] Fast thermometry with a proximity Josephson juncti (reused)
+2026-04-18 21:10:34,778 [INFO] step4.pipeline:   [  T1] Gate-tuned superconductor-insulator transition in  (reused)
+2026-04-18 21:10:34,778 [INFO] step4.pipeline:   [NONE] Imaging local discharge cascades for correlated el (reused)
+2026-04-18 21:10:34,778 [INFO] step4.pipeline:   [BOTH] Inverse design of chiral functional films by a rob (reused)
+2026-04-18 21:10:34,779 [INFO] step4.pipeline:   [  T1] Magnetic field driven novel phase transitions in E (reused)
+2026-04-18 21:10:43,564 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [NONE] Origin of the density wave instability in trilayer (high)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [  T1] p-Wave Superconductivity in Iron-based Superconduc (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [  T2] Phonon-assisted indirect transitions in angle-reso (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Picosecond energy transfer in a transition metal d (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Pressure induced isostructural phase transition in (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Proximity-induced superconductivity and quantum in (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Quantum oscillation and nontrivial transport in th (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Quantum Oscillations and Coherent Interlayer Trans (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [  T1] Raman and fluorescence contributions to resonant i (reused)
+2026-04-18 21:10:43,586 [INFO] step4.pipeline:   [BOTH] Signature of point nodal superconductivity in the  (reused)
+2026-04-18 21:10:51,757 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:10:51,757 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 1/17: 6 files (101 total inspected)
+2026-04-18 21:10:57,287 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:10:57,289 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 2/17: 6 files (101 total inspected)
+2026-04-18 21:11:05,380 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:05,400 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 3/17: 6 files (101 total inspected)
+2026-04-18 21:11:11,499 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:11,499 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 4/17: 6 files (101 total inspected)
+2026-04-18 21:11:17,805 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:17,805 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 5/17: 6 files (101 total inspected)
+2026-04-18 21:11:23,279 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:23,282 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 6/17: 6 files (101 total inspected)
+2026-04-18 21:11:28,227 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:28,227 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 7/17: 6 files (101 total inspected)
+2026-04-18 21:11:34,128 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:34,128 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 8/17: 6 files (101 total inspected)
+2026-04-18 21:11:39,863 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:39,864 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 9/17: 6 files (101 total inspected)
+2026-04-18 21:11:46,308 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:46,308 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 10/17: 6 files (101 total inspected)
+2026-04-18 21:11:52,658 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:52,658 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 11/17: 6 files (101 total inspected)
+2026-04-18 21:11:58,795 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:11:58,795 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 12/17: 6 files (101 total inspected)
+2026-04-18 21:12:04,826 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:04,842 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 13/17: 6 files (101 total inspected)
+2026-04-18 21:12:11,160 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:11,160 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 14/17: 6 files (101 total inspected)
+2026-04-18 21:12:18,531 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:18,569 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 15/17: 6 files (101 total inspected)
+2026-04-18 21:12:24,290 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:24,292 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 16/17: 6 files (101 total inspected)
+2026-04-18 21:12:30,468 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:30,485 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 17/17: 5 files (101 total inspected)
+2026-04-18 21:12:36,056 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [NONE] Stable, highly-responsive and broadband photodetec (high)
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [  T1] Superconductivity in the Ru-Doped CuIr2Te4 Telluri (reused)
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [BOTH] Temperature induced Neutral to Ionic phase Transit (reused)
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [  T1] Theory for the Charge-Density-Wave Mechanism of 3D (reused)
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [NONE] Two-gap superconductivity in LaNiGa$_2$ with non-u (reused)
+2026-04-18 21:12:36,064 [INFO] step4.pipeline:   [  T1] Unveiling the Charge Density Wave Inhomogeneity an (reused)
+2026-04-18 21:12:36,067 [INFO] step4.pipeline:   [  T1] Elemental Topological Dirac Semimetal: <mml:math x (reused)
+2026-04-18 21:12:42,443 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:42,453 [INFO] step4.pipeline:   [NONE] Accurate Determination of the Neutron Skin Thickne (high)
+2026-04-18 21:12:42,453 [INFO] step4.pipeline:   [BOTH] Coexistence of Elastic Modulations in the Charge D (reused)
+2026-04-18 21:12:50,117 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:50,117 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 1/10: 6 files (55 total inspected)
+2026-04-18 21:12:56,936 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:12:56,936 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 2/10: 6 files (55 total inspected)
+2026-04-18 21:13:04,003 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:04,005 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 3/10: 6 files (55 total inspected)
+2026-04-18 21:13:11,155 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:11,171 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 4/10: 6 files (55 total inspected)
+2026-04-18 21:13:18,935 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:18,937 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 5/10: 6 files (55 total inspected)
+2026-04-18 21:13:26,910 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:26,912 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 6/10: 6 files (55 total inspected)
+2026-04-18 21:13:35,673 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:35,680 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 7/10: 6 files (55 total inspected)
+2026-04-18 21:13:42,620 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:42,629 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 8/10: 6 files (55 total inspected)
+2026-04-18 21:13:50,300 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:50,300 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 9/10: 6 files (55 total inspected)
+2026-04-18 21:13:57,302 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:13:57,302 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 10/10: 1 files (55 total inspected)
+2026-04-18 21:14:00,265 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [NONE] Direct imaging and electronic structure modulation (medium)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [  T1] Directional Emission of a Deterministically Fabric (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [BOTH] Giant Rashba‐Type Spin Splitting in Ferroelectric  (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [BOTH] Microwave-to-optical conversion with a gallium pho (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [  T1] Observation of Fermi arc and its connection with b (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [  T1] Observation of large topologically trivial Fermi a (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [BOTH] Quantum Confinement and Electronic Structure at th (reused)
+2026-04-18 21:14:00,276 [INFO] step4.pipeline:   [  T1] Coexistence of Dirac fermion and charge density wa (reused)
+2026-04-18 21:14:00,278 [INFO] step4.pipeline:   [  T1] Microscopic spinon-chargon theory of magnetic pola (reused)
+2026-04-18 21:14:00,278 [INFO] step4.pipeline:   [  T2] Observation of bulk states and spin-polarized topo (reused)
+2026-04-18 21:14:07,298 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:07,305 [INFO] step4.pipeline:   [NONE] Quasi-free-standing AA-stacked bilayer graphene in (high)
+2026-04-18 21:14:07,305 [INFO] step4.pipeline:   [  T1] Superconductivity and Fermi Surface Nesting in the (reused)
+2026-04-18 21:14:07,305 [INFO] step4.pipeline:   [BOTH] Temperature-Induced Lifshitz Transition in<mml:mat (reused)
+2026-04-18 21:14:13,568 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Three-Dimensional Accuracy of Facial Scan for Faci (high)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Fermi surface and kink structures in $$\hbox {Sr}_ (reused)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Clean, cleaved surfaces of the photovoltaic perovs (reused)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Control of MXenes’ electronic properties through t (reused)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Coulomb engineering of the bandgap and excitons in (reused)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Crystal growth of Dirac semimetal ZrSiS with high  (reused)
+2026-04-18 21:14:13,585 [INFO] step4.pipeline:   [NONE] Defects controlled hole doping and multivalley tra (reused)
+2026-04-18 21:14:13,589 [INFO] step4.pipeline:   [NONE] Dirac fermions and flat bands in the ideal kagome  (reused)
+2026-04-18 21:14:13,589 [INFO] step4.pipeline:   [NONE] Electrical control of 2D magnetism in bilayer CrI3 (reused)
+2026-04-18 21:14:13,589 [INFO] step4.pipeline:   [NONE] Emergence of charge density waves and a pseudogap  (reused)
+2026-04-18 21:14:13,589 [INFO] step4.pipeline:   [NONE] Entropy-stabilized oxides (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] Evidence of a gate-tunable Mott insulator in a tri (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [  T1] Evidence of cooperative effect on the enhanced sup (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] Experimental observation of topological Fermi arcs (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] Hedgehog Spin-Vortex Crystal Antiferromagnetic Qua (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] High electron mobility, quantum Hall effect and an (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] High-efficiency two-dimensional Ruddlesden–Popper  (reused)
+2026-04-18 21:14:13,590 [INFO] step4.pipeline:   [NONE] Large magnetic gap at the Dirac point in Bi2Te3/Mn (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Layer-dependent ferromagnetism in a van der Waals  (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Managing grains and interfaces via ligand anchorin (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Moiré metrology of energy landscapes in van der Wa (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Monolayer MoS2 Bandgap Modulation by Dielectric En (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Multistep magnetization switching in orthogonally  (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Observation and control of the weak topological in (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Observation of a two-dimensional liquid of Fröhlic (reused)
+2026-04-18 21:14:13,591 [INFO] step4.pipeline:   [NONE] Observation of the spin-polarized surface state in (reused)
+2026-04-18 21:14:13,592 [INFO] step4.pipeline:   [NONE] Observation of topological superconductivity in a  (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Polaronic metal state at the LaAlO3/SrTiO3 interfa (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [BOTH] Proximity-induced chiral quantum light generation  (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Rashba-like spin splitting along three momentum di (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Room-temperature intrinsic ferromagnetism in epita (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Skyrmion phase and competing magnetic orders on a  (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Spectroscopic evidence of flat bands in breathing  (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Square and rhombic lattices of magnetic skyrmions  (reused)
+2026-04-18 21:14:13,593 [INFO] step4.pipeline:   [NONE] Structures, Phase Transitions and Tricritical Beha (reused)
+2026-04-18 21:14:13,594 [INFO] step4.pipeline:   [NONE] Superconductivity at 250 K in lanthanum hydride un (reused)
+2026-04-18 21:14:13,594 [INFO] step4.pipeline:   [NONE] The hot pick-up technique for batch assembly of va (reused)
+2026-04-18 21:14:13,594 [INFO] step4.pipeline:   [NONE] Time-periodic corner states from Floquet higher-or (reused)
+2026-04-18 21:14:13,594 [INFO] step4.pipeline:   [NONE] Universal mechanical exfoliation of large-area 2D  (reused)
+2026-04-18 21:14:13,595 [INFO] step4.pipeline:   [NONE] Vertically Oriented Arrays of ReS<sub>2</sub> Nano (reused)
+2026-04-18 21:14:13,595 [INFO] step4.pipeline:   [NONE] Very large tunneling magnetoresistance in layered  (reused)
+2026-04-18 21:14:13,595 [INFO] step4.pipeline:   [NONE] Water desalination using nanoporous single-layer g (reused)
+2026-04-18 21:14:13,595 [INFO] step4.pipeline:   [NONE] Dirac line nodes and effect of spin-orbit coupling (reused)
+2026-04-18 21:14:13,595 [INFO] step4.pipeline:   [NONE] Absence of superconductivity in bulk Nd$_{1-x}$Sr$ (reused)
+2026-04-18 21:14:13,596 [INFO] step4.pipeline:   [NONE] All Chemical Vapor Deposition Growth of MoS<sub>2< (reused)
+2026-04-18 21:14:13,596 [INFO] step4.pipeline:   [NONE] Anomalous Magnetoresistance due to Longitudinal Sp (reused)
+2026-04-18 21:14:19,712 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:19,712 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 1/1: 3 files (3 total inspected)
+2026-04-18 21:14:25,130 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:25,130 [INFO] step4.pipeline:   [NONE] Anomalous Rashba Effect of Bi Thin Film Studied by (high)
+2026-04-18 21:14:25,130 [INFO] step4.pipeline:   [NONE] Bulk superconductivity and role of fluctuations in (reused)
+2026-04-18 21:14:25,130 [INFO] step4.pipeline:   [NONE] Coexistence of Interfacial Stress and Charge Trans (reused)
+2026-04-18 21:14:25,130 [INFO] step4.pipeline:   [NONE] Controlling many-body states by the electric-field (reused)
+2026-04-18 21:14:25,138 [INFO] step4.pipeline:   [NONE] Criteria for Directly Detecting Topological Fermi  (reused)
+2026-04-18 21:14:25,138 [INFO] step4.pipeline:   [  T1] Deep moiré potentials in twisted transition metal  (reused)
+2026-04-18 21:14:25,138 [INFO] step4.pipeline:   [  T1] Efficient and stable emission of warm-white light  (reused)
+2026-04-18 21:14:25,138 [INFO] step4.pipeline:   [NONE] Electronic structure of a Si-containing topologica (reused)
+2026-04-18 21:14:30,477 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:30,487 [INFO] step4.phase4c_file_classification.file_classification:   Prompt B batch 1/1: 3 files (3 total inspected)
+2026-04-18 21:14:37,054 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Electronic structure of transferred graphene/h-BN  (high)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Electrothermal transport induced material reconfig (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Evidence for a single-layer van der Waals multifer (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Excitations in a superconducting Coulombic energy  (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Fermi Level Modulation of Boron Nitride Nanosheets (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Fermi surface tomography (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Hysteresis loops  in  measurements of  the magneti (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Impurity-pinned incommensurate charge density wave (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] Local lattice distortions vs. structural phase tra (reused)
+2026-04-18 21:14:37,071 [INFO] step4.pipeline:   [NONE] NMR evidence for an intimate relationship between  (reused)
+2026-04-18 21:14:37,075 [INFO] step4.pipeline:   [NONE] Phase transition in CaFeAsH: bridging 1111 and 122 (reused)
+2026-04-18 21:14:37,075 [INFO] step4.pipeline:   [NONE] Piezo-generated charge mapping revealed through Di (reused)
+2026-04-18 21:14:37,075 [INFO] step4.pipeline:   [NONE] Piezoelectric Domains in the AlGaN Hexagonal Micro (reused)
+2026-04-18 21:14:37,075 [INFO] step4.pipeline:   [NONE] Spectrally tunable, large Raman enhancement from n (reused)
+2026-04-18 21:14:37,076 [INFO] step4.pipeline:   [NONE] Superconducting transition temperatures in the ele (reused)
+2026-04-18 21:14:37,076 [INFO] step4.pipeline:   [NONE] Surface Versus Bulk Dirac States Tuning in a Three (reused)
+2026-04-18 21:14:37,076 [INFO] step4.pipeline:   [NONE] Surface-enhanced Raman scattering in graphene depo (reused)
+2026-04-18 21:14:37,076 [INFO] step4.pipeline:   [NONE] The thickness dependence of quantum oscillations i (reused)
+2026-04-18 21:14:37,077 [INFO] step4.pipeline:   [NONE] The uncollapsed LaFe2As2 phase: compensated, highl (reused)
+2026-04-18 21:14:37,077 [INFO] step4.pipeline:   [NONE] Understanding 2D MoSe2 grown by CVD (reused)
+2026-04-18 21:14:37,077 [INFO] step4.pipeline:   [NONE] Unusual Sensitivity of Superconductivity to Strain (reused)
+2026-04-18 21:14:37,078 [INFO] step4.pipeline:   [NONE] <mml:math xmlns:mml="http://www.w3.org/1998/Math/M (reused)
+2026-04-18 21:14:37,078 [INFO] step4.pipeline:   [NONE] Altermagnetic lifting of Kramers spin degeneracy (reused)
+2026-04-18 21:14:37,078 [INFO] step4.pipeline:   [NONE] Anomalous twin boundaries in two dimensional mater (reused)
+2026-04-18 21:14:37,078 [INFO] step4.pipeline:   [NONE] Deep learning with coherent nanophotonic circuits (reused)
+2026-04-18 21:14:37,079 [INFO] step4.pipeline:   [NONE] Determination of band alignment in the single-laye (reused)
+2026-04-18 21:14:37,079 [INFO] step4.pipeline:   [NONE] Entanglement and manipulation of the magnetic and  (reused)
+2026-04-18 21:14:37,079 [INFO] step4.pipeline:   [NONE] Janus Monolayer Transition-Metal Dichalcogenides (reused)
+2026-04-18 21:14:37,079 [INFO] step4.pipeline:   [NONE] Monolayer PtSe<sub>2</sub>, a New Semiconducting T (reused)
+2026-04-18 21:14:37,079 [INFO] step4.pipeline:   [NONE] Negative magnetoresistance without well-defined ch (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Nonreciprocal charge transport up to room temperat (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Pushing the Thickness Limit of the Giant Rashba Ef (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Signature of type-II Weyl semimetal phase in MoTe2 (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Topological flat bands in frustrated kagome lattic (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] A pneumonia outbreak associated with a new coronav (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] An Image Recapture Detection Algorithm Based on Le (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Attention-Based Two-Stream Convolutional Networks  (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Estimating disorder and its adverse effects in sem (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Extended gamma-ray sources around pulsars constrai (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Geographic patterns of co-occurrence network topol (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [  T1] Interfacial chemical bond and internal electric fi (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Logical quantum processor based on reconfigurable  (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Machine learning assisted design of shape-programm (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Multiband charge density wave exposed in a transit (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [NONE] Photoinduced Dirac semimetal in ZrTe5 (reused)
+2026-04-18 21:14:37,080 [INFO] step4.pipeline:   [  T1] Pressure-induced transition from a Mott insulator  (reused)
+2026-04-18 21:14:42,920 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:42,944 [INFO] step4.pipeline:   [NONE] SARS-CoV-2 entry factors are highly expressed in n (high)
+2026-04-18 21:14:42,944 [INFO] step4.pipeline:   [NONE] Synergistic electroreduction of carbon dioxide to  (reused)
+2026-04-18 21:14:49,077 [INFO] httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-18 21:14:49,093 [INFO] step4.pipeline:   [NONE] The X-ray counterpart to the gravitational-wave ev (high)
+2026-04-18 21:14:49,093 [INFO] step4.pipeline:   [NONE] Unusual pressure-induced periodic lattice distorti (reused)
+2026-04-18 21:14:49,093 [INFO] step4.pipeline:   [NONE] Virological assessment of hospitalized patients wi (reused)
+2026-04-18 21:14:49,093 [INFO] step4.pipeline:   Classified 161 papers
+2026-04-18 21:14:49,093 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:14:49,101 [INFO] step4.pipeline: Phase 5: Saving classification output...
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: STEP 4 CLASSIFICATION SUMMARY
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: ============================================================
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Total papers processed:   161
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Both Type 1+2:            23
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Type 1 only:              28
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Type 2 only:              2
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Neither type:             108
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Files downloaded:         386
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Files inspected:          2888
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Missing Step 3 analysis:  122
+2026-04-18 21:14:49,450 [INFO] step4.pipeline: Results saved to C:\UCLEAP\UC_LEAP\step4/output\step4_classification_latest.json
+2026-04-18 21:14:49,470 [INFO] __main__: ============================================================
+2026-04-18 21:14:49,470 [INFO] __main__: Step 4 complete in 275s. 23 papers with BOTH types out of 161 processed.

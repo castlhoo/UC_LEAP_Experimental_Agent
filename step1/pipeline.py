@@ -21,7 +21,7 @@ import yaml
 
 from step1.dataset_signal_scanner import scan_dataset_signal
 from step1.deduplicator import deduplicate
-from step1.gpt_client import gpt_generate_queries, gpt_screen_paper
+from step1.gpt_client import gpt_screen_paper
 from step1.paper_searcher import search_all_apis
 from step1.query_generator import generate_api_specific_queries
 from step1.scorer import compute_score, decide
@@ -53,20 +53,9 @@ def run_step1(
     logger.info("Phase 1: Building search queries...")
 
     query_config = config.get("queries", {})
-    use_gpt_queries = query_config.get("use_gpt", False)
     gpt_model = config.get("gpt", {}).get("model", "gpt-5.4-mini")
 
     queries_by_api = generate_api_specific_queries(query_config)
-    if use_gpt_queries:
-        try:
-            gpt_queries = gpt_generate_queries(model=gpt_model)
-            for api_name, queries in gpt_queries.items():
-                merged = queries_by_api.setdefault(api_name, [])
-                merged.extend(q for q in queries if q)
-                # Preserve order while deduplicating
-                queries_by_api[api_name] = list(dict.fromkeys(merged))
-        except Exception as exc:
-            logger.warning(f"GPT query generation failed, using static queries only: {exc}")
 
     for api_name, queries in queries_by_api.items():
         logger.info(f"  {api_name}: {len(queries)} queries")
@@ -138,6 +127,7 @@ def run_step1(
             "doi": paper.get("doi", ""),
             "authors": paper.get("authors", [])[:10],
             "abstract_summary": screening.get("gpt_summary", "") or (paper.get("abstract", "")[:500]),
+            "candidate_rationale": screening.get("candidate_rationale", ""),
             "field_match": screening.get("field_match", False),
             "field_match_level": screening.get("field_match_level", "none"),
             "experimental_match": screening.get("experimental_match", False),

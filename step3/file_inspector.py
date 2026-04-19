@@ -27,6 +27,7 @@ def inspect_file(file_path: str, config: Dict[str, Any]) -> Dict[str, Any]:
 
     fname = os.path.basename(file_path)
     ext = _get_extension(fname)
+    stem = os.path.splitext(fname.lower())[0]
     size = os.path.getsize(file_path)
 
     base_info = {
@@ -56,13 +57,19 @@ def inspect_file(file_path: str, config: Dict[str, Any]) -> Dict[str, Any]:
         elif ext in (".tif", ".tiff"):
             return {**base_info, "file_type": "microscopy_image",
                     "note": f"TIFF image file ({_human_size(size)}), likely raw microscopy/instrument data (STEM, SEM, AFM, etc.)"}
+        elif ext in (".png", ".jpg", ".jpeg"):
+            return {**base_info, "file_type": "optical_image",
+                    "note": f"Image file ({ext}, {_human_size(size)}), may be optical microscopy/sample-geometry data or a rendered figure depending on paper/repository context"}
         elif ext in (".sxm", ".ibw", ".spe"):
             return {**base_info, "file_type": "instrument_raw",
                     "note": f"Raw instrument file ({ext}): scanning probe (.sxm), Igor binary (.ibw), or spectrum (.spe)"}
-        elif ext == ".py":
+        elif ext in (".py", ".m", ".ipynb", ".r"):
             return {**base_info, "file_type": "script",
-                    "note": "Python script (analysis or plotting code)"}
-        elif ext in (".zip", ".tar.gz", ".gz"):
+                    "note": f"Script or notebook file ({ext}; analysis or plotting code)"}
+        elif ext in (".md", ".rst", ".yaml", ".yml") or _looks_like_documentation(stem, fname):
+            return {**base_info, "file_type": "documentation",
+                    "note": "README, metadata, license, or dataset description file"}
+        elif ext in (".zip", ".tar", ".tar.gz", ".tgz", ".gz"):
             return {**base_info, "file_type": "archive", "note": "Archive file"}
         else:
             return {**base_info, "file_type": "binary", "note": f"Unknown format: {ext}"}
@@ -442,8 +449,25 @@ def _get_extension(name: str) -> str:
     name = name.lower()
     if name.endswith(".tar.gz"):
         return ".tar.gz"
+    if name.endswith(".tgz"):
+        return ".tgz"
     _, ext = os.path.splitext(name)
     return ext
+
+
+def _looks_like_documentation(stem: str, fname: str) -> bool:
+    lower = fname.lower()
+    doc_names = {
+        "readme", "license", "licence", "citation", "manifest",
+        "metadata", "description", "data_description", "dataset_description",
+    }
+    doc_tokens = (
+        "readme", "metadata", "description", "data-description",
+        "dataset-description", "manifest", "codebook", "column", "license",
+    )
+    if stem in doc_names:
+        return True
+    return any(token in lower for token in doc_tokens)
 
 
 def _human_size(nbytes: int) -> str:

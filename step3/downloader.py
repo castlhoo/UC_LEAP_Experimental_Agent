@@ -12,6 +12,9 @@ import os
 import re
 import time
 import logging
+import gzip
+import shutil
+import tarfile
 import zipfile
 import requests
 from typing import Dict, Any, List, Optional
@@ -47,8 +50,8 @@ def download_paper_datasets(
 
     max_size_bytes = dl_config.get("max_file_size_mb", 500) * 1024 * 1024
     max_files = dl_config.get("max_files_per_paper", 50)
-    allowed_ext = set(dl_config.get("allowed_extensions", []))
-    skip_ext = set(dl_config.get("skip_extensions", []))
+    allowed_ext = {e.lower() for e in dl_config.get("allowed_extensions", [])}
+    skip_ext = {e.lower() for e in dl_config.get("skip_extensions", [])}
 
     timeout = http_config.get("timeout", 60)
     user_agent = http_config.get("user_agent", "UC_LEAP_Step3/1.0")
@@ -99,7 +102,7 @@ def download_paper_datasets(
             result["files"].append(file_info)
             downloaded += 1
 
-            # Extract ZIPs
+            # Extract archives
             if file_info["local_path"].endswith(".zip"):
                 zip_fname = file_info.get("filename", "")
                 extracted = _extract_zip(
@@ -107,6 +110,15 @@ def download_paper_datasets(
                 )
                 for ex in extracted:
                     ex["from_zip"] = zip_fname
+                result["zip_extracted"].extend(extracted)
+                downloaded += len(extracted)
+            elif file_info["local_path"].endswith((".tar.gz", ".tgz", ".tar", ".gz")):
+                archive_fname = file_info.get("filename", "")
+                extracted = _extract_archive(
+                    file_info["local_path"], paper_dir, max_files - downloaded
+                )
+                for ex in extracted:
+                    ex["from_zip"] = archive_fname
                 result["zip_extracted"].extend(extracted)
                 downloaded += len(extracted)
         else:
@@ -132,22 +144,24 @@ def _collect_download_targets(
     targets = []
     seen_urls = set()
 
-    # 1. Source data files from publisher (Nature, etc.)
-    for f in paper.get("source_data_files", []):
+    # 1. Direct data/supplementary candidates from Step 2.
+    direct_candidates = paper.get("data_url_candidates")
+    if direct_candidates is None:
+        direct_candidates = paper.get("source_data_files", [])
+
+    for f in direct_candidates:
         url = f.get("url", "")
         if not url or url in seen_urls:
             continue
-        # Skip generic DOI self-links (e.g., nature_embedded marker)
+        # Skip generic DOI self-links; Step 3 consumes article PDFs separately.
         if f.get("source") == "nature_embedded":
             continue
-        # Actual static-content.springer.com URLs are fine
-        if "static-content.springer.com" in url:
-            seen_urls.add(url)
-            targets.append({
-                "url": url,
-                "filename": f.get("filename", ""),
-                "source": f.get("source", "publisher"),
-            })
+        seen_urls.add(url)
+        targets.append({
+            "url": url,
+            "filename": f.get("filename", ""),
+            "source": f.get("source", "direct_data_candidate"),
+        })
 
     # 2. Repository files from inventory
     for repo in paper.get("repositories", []):
@@ -307,6 +321,8 @@ def _get_extension(name: str) -> str:
     name = name.lower().split("?")[0]
     if name.endswith(".tar.gz"):
         return ".tar.gz"
+    if name.endswith(".tgz"):
+        return ".tgz"
     _, ext = os.path.splitext(name)
     return ext
 
@@ -416,6 +432,8 @@ def _extract_zip(
                 # Skip directories and hidden files
                 if entry.endswith("/") or "/__MACOSX" in entry or "/." in entry:
                     continue
+                if _is_unsafe_archive_path(entry):
+                    continue
 
                 try:
                     zf.extract(entry, extract_dir)
@@ -438,6 +456,93 @@ def _extract_zip(
         logger.warning(f"      ZIP extraction failed: {e}")
 
     return extracted
+
+
+def _extract_archive(
+    archive_path: str,
+    paper_dir: str,
+    max_extract: int = 50,
+) -> List[Dict[str, Any]]:
+    """Extract TAR/TAR.GZ/TGZ/GZ archive contents."""
+    lower = archive_path.lower()
+    if lower.endswith((".tar.gz", ".tgz", ".tar")):
+        return _extract_tar(archive_path, paper_dir, max_extract)
+    if lower.endswith(".gz"):
+        return _extract_gzip_file(archive_path, paper_dir)
+    return []
+
+
+def _extract_tar(
+    tar_path: str,
+    paper_dir: str,
+    max_extract: int = 50,
+) -> List[Dict[str, Any]]:
+    extracted = []
+    extract_dir = os.path.join(paper_dir, "archive_contents")
+    os.makedirs(extract_dir, exist_ok=True)
+
+    try:
+        with tarfile.open(tar_path, "r:*") as tf:
+            members = [m for m in tf.getmembers() if m.isfile()]
+            logger.info(f"      TAR contains {len(members)} file entries")
+            count = 0
+            for member in members:
+                if count >= max_extract:
+                    break
+                if _is_unsafe_archive_path(member.name):
+                    continue
+                try:
+                    tf.extract(member, extract_dir)
+                    local_path = os.path.join(extract_dir, member.name)
+                    if not os.path.isfile(local_path):
+                        continue
+                    size = os.path.getsize(local_path)
+                    extracted.append({
+                        "filename": os.path.basename(member.name),
+                        "archive_path": member.name,
+                        "local_path": local_path,
+                        "size_bytes": size,
+                        "size_human": _human_size(size),
+                    })
+                    count += 1
+                except Exception as e:
+                    logger.debug(f"      Failed to extract {member.name}: {e}")
+    except Exception as e:
+        logger.warning(f"      TAR extraction failed: {e}")
+
+    return extracted
+
+
+def _extract_gzip_file(
+    gzip_path: str,
+    paper_dir: str,
+) -> List[Dict[str, Any]]:
+    extract_dir = os.path.join(paper_dir, "archive_contents")
+    os.makedirs(extract_dir, exist_ok=True)
+
+    base = os.path.basename(gzip_path)
+    out_name = base[:-3] if base.lower().endswith(".gz") else f"{base}.out"
+    out_path = os.path.join(extract_dir, out_name)
+
+    try:
+        with gzip.open(gzip_path, "rb") as src, open(out_path, "wb") as dst:
+            shutil.copyfileobj(src, dst)
+        size = os.path.getsize(out_path)
+        return [{
+            "filename": os.path.basename(out_path),
+            "archive_path": base,
+            "local_path": out_path,
+            "size_bytes": size,
+            "size_human": _human_size(size),
+        }]
+    except Exception as e:
+        logger.warning(f"      GZIP extraction failed: {e}")
+        return []
+
+
+def _is_unsafe_archive_path(path: str) -> bool:
+    norm = os.path.normpath(path)
+    return norm.startswith("..") or os.path.isabs(norm)
 
 
 def _human_size(nbytes: int) -> str:

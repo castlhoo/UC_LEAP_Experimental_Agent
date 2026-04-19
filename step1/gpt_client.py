@@ -185,7 +185,8 @@ Abstract: {abstract}
 
 Return JSON with these fields:
 {{
-  "summary": "1-sentence summary of the research",
+  "summary": "2 concise sentences describing what the paper did: material/system, method, and main finding",
+  "candidate_rationale": "1 sentence explaining why this is or is not a useful UC LEAP candidate",
   "field_match": {{
     "level": "strong" | "general" | "weak" | "none",
     "reason": "brief reason"
@@ -303,6 +304,7 @@ def _parse_gpt_screening(gpt_result: Dict[str, Any]) -> Dict[str, Any]:
         "review_evidence": [review.get("reason", "")] if is_review_flag else [],
         "reasons": reasons,
         "gpt_summary": gpt_result.get("summary", ""),
+        "candidate_rationale": gpt_result.get("candidate_rationale", ""),
         "gpt_dataset_mentioned": dataset.get("flag", False),
         "gpt_dataset_detail": dataset.get("detail", ""),
     }
@@ -324,6 +326,7 @@ def _empty_screening() -> Dict[str, Any]:
         "review_evidence": [],
         "reasons": ["GPT screening failed"],
         "gpt_summary": "",
+        "candidate_rationale": "",
         "gpt_dataset_mentioned": False,
         "gpt_dataset_detail": "",
     }

@@ -191,7 +191,9 @@ def scan_dataset_signal(paper: Dict[str, Any]) -> Dict[str, Any]:
 
     # Check raw metadata links separately (filter noise)
     # Only look for known dataset repository URLs in metadata links
-    meta_links = raw_meta.get("crossref_links", [])
+    meta_links = []
+    meta_links.extend(raw_meta.get("crossref_links", []) or [])
+    meta_links.extend(raw_meta.get("links", []) or [])
     meta_repo_urls = []
     for link in meta_links:
         link_str = str(link)

@@ -6,7 +6,6 @@ Goal: maximize recall by creating a broad set of queries.
 """
 
 import itertools
-import random
 from typing import List, Dict, Any
 
 
@@ -33,51 +32,116 @@ MANUAL_QUERIES = [
 ]
 
 
+TOPIC_FAMILIES = {
+    "topological_quantum": [
+        "topological insulator", "topological superconductor", "Weyl semimetal",
+        "Dirac semimetal", "Majorana", "skyrmion", "spin-orbit coupling",
+        "vortex", "Josephson junction", "Mott insulator", "heavy fermion",
+        "Kondo", "spin liquid", "frustrated magnet",
+    ],
+    "superconductors": [
+        "cuprate", "nickelate", "iron-based superconductor",
+        "superconducting gap", "superconductivity",
+    ],
+    "two_d_vdw": [
+        "graphene", "TMD", "moiré", "moire", "twisted bilayer",
+        "heterostructure", "van der Waals", "2D material",
+    ],
+    "ordering_magnetism": [
+        "charge density wave", "phase transition", "magnetic anisotropy",
+        "exchange bias", "magnetism", "kagome",
+    ],
+    "functional_materials": [
+        "ferroelectric", "multiferroic", "thermoelectric", "piezoelectric",
+    ],
+    "observables": [
+        "Fermi surface", "band structure", "lattice constant",
+        "quantum oscillation",
+    ],
+}
+
+
+EXPERIMENT_FAMILIES = {
+    "spectroscopy_microscopy": [
+        "STM", "STS", "ARPES", "SET", "EELS", "Raman",
+        "tunneling spectroscopy", "point-contact spectroscopy",
+        "neutron scattering",
+    ],
+    "diffraction_imaging": ["XRD", "TEM", "AFM"],
+    "growth_fabrication": [
+        "MBE", "PLD", "CVD", "sputtering", "exfoliation",
+        "flux growth", "Bridgman",
+    ],
+    "sample_forms": ["thin film", "single crystal", "bulk crystal"],
+    "transport_thermo": [
+        "magnetoresistance", "Hall effect", "specific heat",
+        "de Haas-van Alphen", "Shubnikov-de Haas",
+        "electronic transport", "thermal transport", "thermal coefficient",
+        "transport measurements", "transport",
+    ],
+}
+
+
+TOPIC_FAMILY_ORDER = list(TOPIC_FAMILIES)
+EXPERIMENT_FAMILY_ORDER = list(EXPERIMENT_FAMILIES)
+
+
 def generate_queries(config: Dict[str, Any]) -> List[str]:
     """
     Generate a diverse set of search queries from config keywords.
 
     Strategy:
     1. Use hand-crafted manual queries (known good patterns)
-    2. Generate cross-product combinations: topic x experiment x data keyword
+    2. Generate balanced topic x experiment x data keyword combinations
     3. Generate topic + data keyword pairs (simpler, broader)
-    4. Deduplicate and shuffle
+    4. Generate topic + experiment pairs
+    5. Deduplicate while preserving deterministic balanced order
 
     Returns list of query strings.
     """
-    queries = set()
-
     topic_kw = config.get("topic_keywords", [])
     experiment_kw = config.get("experiment_keywords", [])
     data_kw = config.get("data_keywords", [])
 
-    # 1. Manual queries
-    for q in MANUAL_QUERIES:
-        queries.add(q)
+    cross_records = [
+        record
+        for t, e, d in itertools.product(topic_kw, experiment_kw, data_kw)
+        for record in [_record(
+            text=f"{t} {e} {d}",
+            source="topic_exp_data",
+            topic=t,
+            experiment=e,
+            data_keyword=d,
+        )]
+        if _is_compatible(record)
+    ]
+    topic_data_records = [
+        _record(
+            text=f"{t} {d}",
+            source="topic_data",
+            topic=t,
+            data_keyword=d,
+        )
+        for t, d in itertools.product(topic_kw, data_kw)
+    ]
+    topic_exp_records = [
+        record
+        for t, e in itertools.product(topic_kw, experiment_kw)
+        for record in [_record(
+            text=f"{t} {e}",
+            source="topic_exp",
+            topic=t,
+            experiment=e,
+        )]
+        if _is_compatible(record)
+    ]
 
-    # 2. Cross-product: topic x experiment x data (sample to avoid explosion)
-    cross_combos = list(itertools.product(topic_kw, experiment_kw, data_kw))
-    if len(cross_combos) > 40:
-        cross_combos = random.sample(cross_combos, 40)
-    for t, e, d in cross_combos:
-        queries.add(f"{t} {e} {d}")
-
-    # 3. Topic x data (broader, good for recall)
-    topic_data_combos = list(itertools.product(topic_kw, data_kw))
-    if len(topic_data_combos) > 25:
-        topic_data_combos = random.sample(topic_data_combos, 25)
-    for t, d in topic_data_combos:
-        queries.add(f"{t} {d}")
-
-    # 4. Topic x experiment (for experimental match)
-    topic_exp_combos = list(itertools.product(topic_kw, experiment_kw))
-    if len(topic_exp_combos) > 20:
-        topic_exp_combos = random.sample(topic_exp_combos, 20)
-    for t, e in topic_exp_combos:
-        queries.add(f"{t} {e}")
-
-    query_list = sorted(queries)
-    return query_list
+    queries = []
+    queries.extend(MANUAL_QUERIES)
+    queries.extend(_texts(_select_balanced_records(cross_records, limit=40)))
+    queries.extend(_texts(_select_balanced_records(topic_data_records, limit=25)))
+    queries.extend(_texts(_select_balanced_records(topic_exp_records, limit=20)))
+    return _dedupe_preserve_order(queries)
 
 
 def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]]:
@@ -106,7 +170,6 @@ def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]
     # arXiv: cond-mat category filter already ensures field match.
     # Don't use data keywords (arXiv metadata search can't find them).
     # Focus on topic + experimental/measurement keywords for recall.
-    arxiv_queries = []
     arxiv_topic_kw = [
         # Topological & quantum phases
         "topological insulator", "topological superconductor",
@@ -131,12 +194,7 @@ def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]
         "magnetoresistance", "Hall effect", "specific heat",
         "thin film", "single crystal",
     ]
-    for t in arxiv_topic_kw:
-        for e in arxiv_exp_kw:
-            arxiv_queries.append(f"{t} {e}")
-    # Also add standalone topic queries (arXiv cond-mat filter is enough)
-    for t in arxiv_topic_kw:
-        arxiv_queries.append(t)
+    arxiv_queries = _build_arxiv_queries(arxiv_topic_kw, arxiv_exp_kw)
 
     # CrossRef: good for DOI/metadata search, text queries
     crossref_queries = [q for q in base_queries if len(q.split()) <= 6]
@@ -161,3 +219,279 @@ def generate_api_specific_queries(config: Dict[str, Any]) -> Dict[str, List[str]
         "crossref": crossref_queries,
         "europe_pmc": europe_pmc_queries,
     }
+
+
+def _record(
+    text: str,
+    source: str,
+    topic: str = "",
+    experiment: str = "",
+    data_keyword: str = "",
+) -> Dict[str, str]:
+    return {
+        "text": text,
+        "source": source,
+        "topic": topic,
+        "topic_family": _family_for_term(topic, TOPIC_FAMILIES, "other_topic"),
+        "experiment": experiment,
+        "experiment_family": _family_for_term(
+            experiment, EXPERIMENT_FAMILIES, "other_experiment"
+        ),
+        "data_keyword": data_keyword,
+    }
+
+
+def _family_for_term(
+    term: str,
+    family_map: Dict[str, List[str]],
+    default: str,
+) -> str:
+    term_norm = _norm(term)
+    if not term_norm:
+        return default
+    for family, terms in family_map.items():
+        for candidate in terms:
+            cand_norm = _norm(candidate)
+            if cand_norm and (cand_norm == term_norm or cand_norm in term_norm):
+                return family
+    return default
+
+
+def _select_balanced_records(
+    records: List[Dict[str, str]],
+    limit: int,
+) -> List[Dict[str, str]]:
+    if limit <= 0:
+        return []
+
+    buckets: Dict[str, List[Dict[str, str]]] = {}
+    for record in records:
+        family = record.get("topic_family") or "other_topic"
+        buckets.setdefault(family, []).append(record)
+
+    family_order = [
+        f for f in TOPIC_FAMILY_ORDER + sorted(buckets)
+        if f in buckets
+    ]
+    for family in family_order:
+        family_offset = _family_index(family, TOPIC_FAMILY_ORDER)
+        buckets[family] = _interleave_by_experiment_family(
+            buckets[family],
+            offset=family_offset,
+        )
+
+    selected: List[Dict[str, str]] = []
+    seen = set()
+    while len(selected) < limit:
+        added = False
+        for family in family_order:
+            queue = buckets.get(family, [])
+            while queue:
+                record = queue.pop(0)
+                text_key = _norm(record.get("text", ""))
+                if text_key in seen:
+                    continue
+                selected.append(record)
+                seen.add(text_key)
+                added = True
+                break
+            if len(selected) >= limit:
+                break
+        if not added:
+            break
+    return selected
+
+
+def _is_compatible(record: Dict[str, str]) -> bool:
+    topic_family = record.get("topic_family", "")
+    exp_family = record.get("experiment_family", "")
+    topic = _norm(record.get("topic", ""))
+    experiment = _norm(record.get("experiment", ""))
+
+    if not experiment:
+        return True
+
+    if topic_family == "two_d_vdw":
+        if experiment in {"bridgman", "flux growth", "bulk crystal", "single crystal"}:
+            return False
+        if exp_family == "growth_fabrication":
+            return experiment in {"mbe", "cvd", "exfoliation", "pld"}
+        return True
+
+    if topic_family == "observables":
+        if exp_family in {"growth_fabrication", "sample_forms"}:
+            return False
+        return True
+
+    if topic_family == "functional_materials":
+        if exp_family == "transport_thermo":
+            return (
+                "thermoelectric" in topic
+                and experiment in {"thermal transport", "thermal coefficient"}
+            )
+        if exp_family == "growth_fabrication":
+            return experiment in {"mbe", "pld", "cvd", "sputtering"}
+        return True
+
+    if topic_family == "superconductors":
+        if exp_family == "growth_fabrication":
+            return experiment in {"flux growth", "bridgman", "mbe", "pld"}
+        return True
+
+    if topic_family == "topological_quantum":
+        if exp_family == "growth_fabrication":
+            return experiment in {"flux growth", "bridgman", "mbe", "pld", "exfoliation"}
+        return True
+
+    if topic_family == "ordering_magnetism":
+        if exp_family == "growth_fabrication":
+            return experiment in {"flux growth", "bridgman", "mbe", "pld", "sputtering"}
+        return True
+
+    return True
+
+
+def _build_arxiv_queries(topics: List[str], experiments: List[str]) -> List[str]:
+    topic_records = [
+        _record(text=topic, source="arxiv_topic", topic=topic)
+        for topic in topics
+    ]
+    topic_order = _texts(_select_balanced_records(topic_records, limit=len(topic_records)))
+    experiment_order = _balanced_experiment_order(experiments)
+
+    queries = []
+    if topic_order and experiment_order:
+        total_pairs = len(topic_order) * len(experiment_order)
+        for idx in range(total_pairs):
+            topic = topic_order[idx % len(topic_order)]
+            experiment = experiment_order[idx % len(experiment_order)]
+            record = _record(
+                text=f"{topic} {experiment}",
+                source="arxiv_topic_exp",
+                topic=topic,
+                experiment=experiment,
+            )
+            if _is_compatible(record):
+                queries.append(record["text"])
+
+    # Broad standalone topic queries are useful on arXiv because the cond-mat
+    # category filter already constrains the scientific domain.
+    queries.extend(topic_order)
+    return _dedupe_preserve_order(queries)
+
+
+def _balanced_experiment_order(experiments: List[str]) -> List[str]:
+    records = [
+        _record(text=experiment, source="experiment", experiment=experiment)
+        for experiment in experiments
+    ]
+    buckets: Dict[str, List[str]] = {}
+    for record in records:
+        family = record.get("experiment_family") or "other_experiment"
+        buckets.setdefault(family, []).append(record["text"])
+
+    family_order = [
+        family for family in EXPERIMENT_FAMILY_ORDER + sorted(buckets)
+        if family in buckets
+    ]
+    for family in family_order:
+        buckets[family] = sorted(buckets[family])
+
+    result = []
+    while True:
+        added = False
+        for family in family_order:
+            queue = buckets.get(family, [])
+            if queue:
+                result.append(queue.pop(0))
+                added = True
+        if not added:
+            break
+    return result
+
+
+def _family_index(value: str, order: List[str]) -> int:
+    try:
+        return order.index(value)
+    except ValueError:
+        return len(order)
+
+
+def _interleave_by_experiment_family(
+    records: List[Dict[str, str]],
+    offset: int = 0,
+) -> List[Dict[str, str]]:
+    topic_buckets: Dict[str, List[Dict[str, str]]] = {}
+    for record in records:
+        topic = record.get("topic") or record.get("text", "")
+        topic_buckets.setdefault(topic, []).append(record)
+
+    topic_order = sorted(topic_buckets)
+    exp_order = EXPERIMENT_FAMILY_ORDER + sorted(
+        key
+        for values in topic_buckets.values()
+        for key in {v.get("experiment_family") or "other_experiment" for v in values}
+        if key not in EXPERIMENT_FAMILY_ORDER
+    )
+    if exp_order:
+        offset = offset % len(exp_order)
+        exp_order = exp_order[offset:] + exp_order[:offset]
+
+    for topic, values in topic_buckets.items():
+        values_by_exp: Dict[str, List[Dict[str, str]]] = {}
+        for record in values:
+            exp_key = record.get("experiment_family") or "other_experiment"
+            values_by_exp.setdefault(exp_key, []).append(record)
+
+        interleaved_topic_values: List[Dict[str, str]] = []
+        for exp_key in exp_order:
+            values_by_exp[exp_key] = sorted(
+                values_by_exp.get(exp_key, []),
+                key=lambda r: (
+                    r.get("data_keyword", ""),
+                    r.get("experiment", ""),
+                    r.get("text", ""),
+                ),
+            )
+
+        while True:
+            added = False
+            for exp_key in exp_order:
+                queue = values_by_exp.get(exp_key, [])
+                if queue:
+                    interleaved_topic_values.append(queue.pop(0))
+                    added = True
+            if not added:
+                break
+        topic_buckets[topic] = interleaved_topic_values
+
+    result: List[Dict[str, str]] = []
+    while True:
+        added = False
+        for topic in topic_order:
+            queue = topic_buckets.get(topic, [])
+            if queue:
+                result.append(queue.pop(0))
+                added = True
+        if not added:
+            break
+    return result
+
+
+def _texts(records: List[Dict[str, str]]) -> List[str]:
+    return [record["text"] for record in records]
+
+
+def _dedupe_preserve_order(queries: List[str]) -> List[str]:
+    result = []
+    seen = set()
+    for query in queries:
+        key = _norm(query)
+        if key and key not in seen:
+            result.append(query)
+            seen.add(key)
+    return result
+
+
+def _norm(text: str) -> str:
+    return " ".join((text or "").lower().replace("é", "e").split())

@@ -26,7 +26,7 @@ def main():
     logger = logging.getLogger(__name__)
 
     logger.info("=" * 60)
-    logger.info("Starting Step 4: Local Storage & Organization")
+    logger.info("Starting Step 4: Dataset Type Classification")
     logger.info("=" * 60)
 
     start = time.time()
@@ -37,7 +37,8 @@ def main():
         logger.info("=" * 60)
         logger.info(
             f"Step 4 complete in {elapsed:.0f}s. "
-            f"{result.get('papers_organized', 0)} papers organized."
+            f"{result.get('both_type_count', 0)} papers with BOTH types "
+            f"out of {result.get('total_processed', 0)} processed."
         )
     except Exception as e:
         logger.error(f"Step 4 failed: {e}", exc_info=True)

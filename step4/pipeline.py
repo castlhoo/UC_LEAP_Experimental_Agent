@@ -1,111 +1,39 @@
 """
-Step 4 - Pipeline
-===================
-Orchestrates local storage and organization:
-  Phase 1: Load Step 3 classification results
-  Phase 2: Select papers (both_types or all)
-  Phase 3: Download paper PDFs
-  Phase 4: Organize dataset files (T1/T2/annotations/scripts)
-  Phase 5: Generate summary manifest
+Step 4 - Dataset Type Classification
+====================================
+Runs Prompt B only:
+  Phase 1: Load Step 2 dataset evidence and Step 3 paper analyses
+  Phase 2: Download dataset files
+  Phase 3: Inspect file contents
+  Phase 4: Classify files with Prompt B using paper_analysis
+  Phase 5: Save classification output
 """
 
-import os
 import json
 import logging
-from datetime import datetime
-from typing import Dict, Any, List
+import os
+from typing import Any, Dict, List
 
 import yaml
 
-from step4.pdf_downloader import download_paper_pdf
-from step4.file_organizer import organize_paper_files, make_paper_dirname
 from utils import save_with_latest
+from step4.phase4a_inventory.inventory import (
+    download_and_prepare_paper,
+    get_paper_download_dir,
+    has_existing_download,
+    inspect_paper_files,
+    load_existing_download_result,
+)
+from step4.phase4b_dataset_assessment.dataset_assessment import assess_dataset_level
+from step4.phase4c_file_classification.file_classification import classify_dataset_files
+from step4.phase4c_file_classification.file_classification import normalize_classification
+from step4.phase4d_merge_summary.merge_summary import (
+    build_output,
+    clean_for_json,
+    write_paper_dataset_summary,
+)
 
 logger = logging.getLogger(__name__)
-
-
-def _partition_papers(all_papers: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
-    """Partition papers by paper-level dataset type."""
-    groups = {"both": [], "type1": [], "type2": [], "neither": []}
-    for paper in all_papers:
-        has_t1 = paper.get("has_type1", False)
-        has_t2 = paper.get("has_type2", False)
-        if has_t1 and has_t2:
-            groups["both"].append(paper)
-        elif has_t1:
-            groups["type1"].append(paper)
-        elif has_t2:
-            groups["type2"].append(paper)
-        else:
-            groups["neither"].append(paper)
-    return groups
-
-
-def _select_balanced_has_any(
-    all_papers: List[Dict[str, Any]],
-    max_papers: int,
-) -> List[Dict[str, Any]]:
-    """
-    Select papers with any dataset signal while balancing Both / Type1-only / Type2-only.
-
-    Selection preserves the incoming order within each group, which is already sorted by
-    Step 3 priority. Empty groups are ignored.
-    """
-    groups = _partition_papers(all_papers)
-    active_group_names = [name for name in ("both", "type1", "type2") if groups[name]]
-    if not active_group_names or max_papers <= 0:
-        return []
-
-    allocations = {name: 0 for name in active_group_names}
-    selected_by_group = {name: [] for name in active_group_names}
-
-    base_quota = max_papers // len(active_group_names)
-    remainder = max_papers % len(active_group_names)
-
-    # First pass: equal-size quota per available group.
-    for name in active_group_names:
-        take = min(base_quota, len(groups[name]))
-        selected_by_group[name].extend(groups[name][:take])
-        allocations[name] = take
-
-    # Second pass: distribute remaining slots round-robin, preferring Both then Type1 then Type2.
-    remaining = max_papers - sum(allocations.values())
-    while remaining > 0:
-        progressed = False
-        for name in active_group_names:
-            if allocations[name] < len(groups[name]):
-                selected_by_group[name].append(groups[name][allocations[name]])
-                allocations[name] += 1
-                remaining -= 1
-                progressed = True
-                if remaining == 0:
-                    break
-        if not progressed:
-            break
-
-    selected = []
-    for name in ("both", "type1", "type2"):
-        selected.extend(selected_by_group.get(name, []))
-    return selected[:max_papers]
-
-
-def _select_papers(
-    all_papers: List[Dict[str, Any]],
-    both_papers: List[Dict[str, Any]],
-    mode: str,
-    max_papers: int | None,
-) -> List[Dict[str, Any]]:
-    """Select papers for Step 4 organization according to mode."""
-    if max_papers in (None, 0):
-        max_papers = None
-
-    if mode == "both_types":
-        return both_papers if max_papers is None else both_papers[:max_papers]
-    if mode == "has_any":
-        if max_papers is None:
-            return [p for p in all_papers if p.get("has_type1") or p.get("has_type2")]
-        return _select_balanced_has_any(all_papers, max_papers)
-    return all_papers if max_papers is None else all_papers[:max_papers]
 
 
 def _load_config() -> Dict[str, Any]:
@@ -118,286 +46,315 @@ def _load_config() -> Dict[str, Any]:
 
 
 def run_step4() -> Dict[str, Any]:
-    """Execute the full Step 4 pipeline."""
+    """Execute Prompt B dataset type classification."""
     config = _load_config()
     project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-    # ---- Phase 1: Load Step 3 results ----
-    logger.info("=" * 60)
-    logger.info("Phase 1: Loading Step 3 classification results...")
+    gpt_config = config.get("gpt", {})
+    use_gpt = gpt_config.get("enabled", True)
+    gpt_model = gpt_config.get("model", "gpt-5.4-mini")
+    gpt_batch_size = gpt_config.get("batch_size", 8)
 
-    input_path = os.path.join(project_root, config.get("input_file", ""))
-    with open(input_path, "r", encoding="utf-8") as f:
+    http_config = config.get("http", {})
+    dl_config = config.get("download", {})
+    inspect_config = config.get("inspection", {})
+    resume_config = config.get("resume", {})
+    reuse_existing_downloads = resume_config.get("reuse_existing_downloads", True)
+    skip_completed_papers = resume_config.get("skip_completed_papers", True)
+    reprocess_failed = resume_config.get("reprocess_failed_classifications", True)
+    reprocess_neither_with_data = resume_config.get("reprocess_neither_with_data_files", True)
+    rate_limit_delay = http_config.get("rate_limit_delay", 1.0)
+
+    # ---- Phase 1: Load inputs ----
+    logger.info("=" * 60)
+    logger.info("Phase 1: Loading Step 2 evidence and Step 3 paper analyses...")
+
+    step2_path = os.path.join(project_root, config.get("step2_input_file", ""))
+    step3_path = os.path.join(project_root, config.get("step3_input_file", ""))
+
+    with open(step2_path, "r", encoding="utf-8") as f:
+        step2_data = json.load(f)
+    with open(step3_path, "r", encoding="utf-8") as f:
         step3_data = json.load(f)
 
-    all_papers = step3_data.get("all_papers", [])
-    both_papers = step3_data.get("both_types_papers", [])
-
-    logger.info(f"  Total papers: {len(all_papers)}")
-    logger.info(f"  Both Type 1+2: {len(both_papers)}")
-
-    # ---- Phase 2: Select papers ----
-    logger.info("=" * 60)
-    logger.info("Phase 2: Selecting papers to organize...")
-
-    sel_config = config.get("selection", {})
-    mode = sel_config.get("mode", "both_types")
-    max_papers = sel_config.get("max_papers")
-
-    selected = _select_papers(
-        all_papers=all_papers,
-        both_papers=both_papers,
-        mode=mode,
-        max_papers=max_papers,
-    )
-
-    if not selected:
-        logger.warning("No papers selected for organization!")
-        return {"status": "empty", "papers_organized": 0}
-
-    logger.info(f"  Selected {len(selected)} papers (mode={mode})")
-    for p in selected:
-        logger.info(f"    [{p.get('priority_score', 0):5.1f}] {p['title'][:55]}")
-
-    # ---- Phase 3 & 4: Download PDFs + Organize files ----
-    output_dir = os.path.join(project_root, config.get("output_dir", "step4/organized"))
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Create Type-based subdirectories
-    for type_dir in ["Both", "Type1", "Type2", "Neither"]:
-        os.makedirs(os.path.join(output_dir, type_dir), exist_ok=True)
-
-    rename_config = config.get("rename", {})
-    max_title_words = rename_config.get("max_title_words", 5)
-
-    manifests = []
-    for i, paper in enumerate(selected):
-        # Determine type group folder
-        has_t1 = paper.get("has_type1", False)
-        has_t2 = paper.get("has_type2", False)
-        if has_t1 and has_t2:
-            type_group = "Both"
-        elif has_t1:
-            type_group = "Type1"
-        elif has_t2:
-            type_group = "Type2"
-        else:
-            type_group = "Neither"
-
-        dirname = make_paper_dirname(i + 1, paper["title"], max_title_words)
-        paper_dir = os.path.join(output_dir, type_group, dirname)
-        os.makedirs(paper_dir, exist_ok=True)
-
-        logger.info("=" * 60)
-        logger.info(f"Paper {i+1}/{len(selected)}: {paper['title'][:55]}")
-        logger.info(f"  DOI: {paper.get('doi', 'N/A')}")
-        logger.info(f"  Type: {type_group}")
-        logger.info(f"  Dir: {type_group}/{dirname}")
-
-        # Phase 3: Download PDF
-        logger.info("  Downloading PDF...")
-        pdf_dir = os.path.join(paper_dir, "pdf")
-        os.makedirs(pdf_dir, exist_ok=True)
-        pdf_path = download_paper_pdf(paper, pdf_dir, config)
-
-        # Phase 4: Organize dataset files
-        logger.info("  Organizing dataset files...")
-        org_result = organize_paper_files(paper, paper_dir, config)
-        _write_reasoning_file(paper=paper, paper_dir=paper_dir, org_result=org_result)
-
-        # Build manifest entry
-        manifest = {
-            "paper_index": i + 1,
-            "type_group": type_group,
-            "directory": f"{type_group}/{dirname}",
-            "title": paper["title"],
-            "doi": paper.get("doi", ""),
-            "journal": paper.get("journal", ""),
-            "year": paper.get("year", ""),
-            "paper_url": paper.get("paper_url", ""),
-            "priority_score": paper.get("priority_score", 0),
-            "has_pdf": pdf_path is not None,
-            "type1_summary": paper.get("type1_summary", ""),
-            "type2_summary": paper.get("type2_summary", ""),
-            "has_type1": paper.get("has_type1", False),
-            "has_type2": paper.get("has_type2", False),
-            "has_both_types": paper.get("has_both_types", False),
-            "classification_confidence": paper.get("classification_confidence", ""),
-            "files": {
-                "type1_data": _build_file_list(org_result.get("type1_data", [])),
-                "type2_data": _build_file_list(org_result.get("type2_data", [])),
-                "annotations": [f["renamed"] for f in org_result.get("annotations", [])],
-                "scripts": [f["renamed"] for f in org_result.get("scripts", [])],
-            },
-            "counts": {
-                "type1": len(org_result.get("type1_data", [])),
-                "type2": len(org_result.get("type2_data", [])),
-                "annotations": len(org_result.get("annotations", [])),
-                "scripts": len(org_result.get("scripts", [])),
-                "skipped": len(org_result.get("skip", [])),
-            },
-        }
-        manifests.append(manifest)
-
-    # ---- Phase 5: Save manifest ----
-    logger.info("=" * 60)
-    logger.info("Phase 5: Saving manifest...")
-
-    output = {
-        "metadata": {
-            "step": 4,
-            "description": "Local Storage & Organization",
-            "generated_at": datetime.now().isoformat(),
-            "selection_mode": mode,
-            "total_organized": len(manifests),
-        },
-        "summary": {
-            "papers_organized": len(manifests),
-            "both_count": sum(1 for m in manifests if m["type_group"] == "Both"),
-            "type1_only_count": sum(1 for m in manifests if m["type_group"] == "Type1"),
-            "type2_only_count": sum(1 for m in manifests if m["type_group"] == "Type2"),
-            "neither_count": sum(1 for m in manifests if m["type_group"] == "Neither"),
-            "pdfs_downloaded": sum(1 for m in manifests if m["has_pdf"]),
-            "total_type1_files": sum(m["counts"]["type1"] for m in manifests),
-            "total_type2_files": sum(m["counts"]["type2"] for m in manifests),
-            "total_annotation_files": sum(m["counts"]["annotations"] for m in manifests),
-            "total_script_files": sum(m["counts"]["scripts"] for m in manifests),
-        },
-        "papers": manifests,
+    analyses_by_id = {
+        p.get("paper_id"): p
+        for p in step3_data.get("analyzed_papers", [])
+        if p.get("paper_id")
     }
 
-    latest_path = save_with_latest(output, output_dir, "manifest")
+    candidates = []
+    skipped_missing_analysis = []
+    for paper in step2_data.get("papers", []):
+        paper_id = paper.get("paper_id")
+        analysis_record = analyses_by_id.get(paper_id)
+        if not analysis_record:
+            if paper.get("dataset_status") in ("verified", "source_data_found"):
+                skipped_missing_analysis.append({
+                    "paper_id": paper_id,
+                    "title": paper.get("title", ""),
+                    "reason": "missing_step3_paper_analysis",
+                })
+            continue
+        candidates.append({
+            "paper": paper,
+            "paper_analysis": analysis_record.get("paper_analysis", {}),
+        })
 
-    _print_summary(output)
+    if not candidates:
+        logger.warning("No papers have both confirmed datasets and Step 3 paper analysis.")
+        return {"status": "empty", "total_processed": 0, "both_type_count": 0}
 
-    logger.info(f"Manifest saved to {latest_path}")
+    logger.info(f"Loaded {len(candidates)} papers for Prompt B classification")
+    if skipped_missing_analysis:
+        logger.info(f"Skipped {len(skipped_missing_analysis)} dataset papers missing Step 3 analysis")
+
+    # ---- Phase 2: Download dataset files ----
+    logger.info("=" * 60)
+    logger.info("Phase 2: Downloading dataset files...")
+
+    download_dir = os.path.join(project_root, config.get("download_dir", "step4/downloads"))
+    step3_paper_dir = os.path.join(project_root, config.get("step3_paper_dir", "step3/papers"))
+    os.makedirs(download_dir, exist_ok=True)
+
+    results = []
+    for i, item in enumerate(candidates, start=1):
+        paper = item["paper"]
+        title = paper.get("title", "")[:60]
+        logger.info(f"  [{i}/{len(candidates)}] {title}...")
+
+        completed = _load_completed_summary_if_available(
+            paper=paper,
+            download_dir=download_dir,
+            reprocess_failed=reprocess_failed,
+            reprocess_neither_with_data=reprocess_neither_with_data,
+        ) if skip_completed_papers else None
+        if completed:
+            logger.info("    Reusing completed Step 4 summary")
+            reused_entry = {
+                "paper": paper,
+                "paper_analysis": item["paper_analysis"],
+                "download": completed["download"],
+                "inspections": completed["inspections"],
+                "classification": completed["classification"],
+                "completed_reused": True,
+            }
+            write_paper_dataset_summary(reused_entry)
+            results.append(reused_entry)
+            continue
+
+        if reuse_existing_downloads and has_existing_download(paper, download_dir):
+            logger.info("    Reusing existing downloaded files")
+            dl_result = load_existing_download_result(
+                paper=paper,
+                download_dir=download_dir,
+                step3_paper_dir=step3_paper_dir,
+            )
+        else:
+            dl_result = download_and_prepare_paper(
+                paper=paper,
+                download_dir=download_dir,
+                step3_paper_dir=step3_paper_dir,
+                http_config=http_config,
+                dl_config=dl_config,
+                rate_limit_delay=rate_limit_delay,
+            )
+
+        results.append({
+            "paper": paper,
+            "paper_analysis": item["paper_analysis"],
+            "download": dl_result,
+            "inspections": [],
+            "classification": None,
+        })
+
+    total_files = sum(
+        len(r["download"].get("files", [])) + len(r["download"].get("zip_extracted", []))
+        for r in results
+    )
+    logger.info(f"  Total files downloaded/extracted: {total_files}")
+
+    # ---- Phase 4A: Inspect file contents ----
+    logger.info("=" * 60)
+    logger.info("Phase 4A: Inspecting file contents...")
+
+    for entry in results:
+        if entry.get("completed_reused"):
+            continue
+        dl = entry["download"]
+        n_files = len(dl.get("files", [])) + len(dl.get("zip_extracted", []))
+        if n_files == 0:
+            continue
+
+        title = entry["paper"].get("title", "")[:50]
+        reports = inspect_paper_files(dl, inspect_config)
+        entry["inspections"] = reports
+
+        types_found = set(r.get("file_type", "?") for r in reports)
+        logger.info(f"  {title}: {len(reports)} files inspected ({types_found})")
+
+    # ---- Phase 4B/4C: Dataset assessment, file classification, and merge ----
+    if use_gpt:
+        logger.info("=" * 60)
+        logger.info("Phase 4B/4C: Dataset assessment, file classification, and merge...")
+
+        classified = 0
+        for entry in results:
+            if entry.get("completed_reused"):
+                classified += 1
+                title = entry["paper"].get("title", "")[:50]
+                classification = entry["classification"] or {}
+                both = classification.get("has_both", False)
+                has_t1 = classification.get("has_type1", False)
+                has_t2 = classification.get("has_type2", False)
+                status = "BOTH" if both else ("T1" if has_t1 else ("T2" if has_t2 else "NONE"))
+                logger.info(f"  [{status:>4}] {title} (reused)")
+                continue
+            if not entry["inspections"]:
+                continue
+
+            title = entry["paper"].get("title", "")[:50]
+            paper_dir = entry.get("download", {}).get("download_dir", "")
+
+            dataset_assessment = assess_dataset_level(
+                paper=entry["paper"],
+                file_reports=entry["inspections"],
+                model=gpt_model,
+                paper_analysis=entry["paper_analysis"],
+                paper_dir=paper_dir,
+            )
+            classification = classify_dataset_files(
+                paper=entry["paper"],
+                file_reports=entry["inspections"],
+                dataset_assessment=dataset_assessment,
+                model=gpt_model,
+                paper_analysis=entry["paper_analysis"],
+                batch_size=gpt_batch_size,
+                paper_dir=paper_dir,
+            )
+            entry["classification"] = classification
+            write_paper_dataset_summary(entry)
+            classified += 1
+
+            both = classification.get("has_both", False)
+            has_t1 = classification.get("has_type1", False)
+            has_t2 = classification.get("has_type2", False)
+            status = "BOTH" if both else ("T1" if has_t1 else ("T2" if has_t2 else "NONE"))
+            logger.info(f"  [{status:>4}] {title} ({classification.get('confidence', '?')})")
+
+        logger.info(f"  Classified {classified} papers")
+    else:
+        logger.info("Phase 4: Skipped (GPT disabled)")
+
+    # ---- Phase 5: Build and save output ----
+    logger.info("=" * 60)
+    logger.info("Phase 5: Saving classification output...")
+
+    output = build_output(results, skipped_missing_analysis)
+    output_clean = clean_for_json(output)
+
+    output_dir = os.path.join(project_root, config.get("output_dir", "step4/output"))
+    os.makedirs(output_dir, exist_ok=True)
+    latest_path = save_with_latest(output_clean, output_dir, "step4_classification")
+
+    _print_summary(output_clean)
+    logger.info(f"Results saved to {latest_path}")
 
     return {
         "status": "complete",
         "output_path": latest_path,
-        "papers_organized": len(manifests),
+        "total_processed": len(results),
+        "both_type_count": output["summary"]["both_types_count"],
     }
 
 
-def _write_reasoning_file(
-    paper: Dict[str, Any],
-    paper_dir: str,
-    org_result: Dict[str, List[Dict[str, Any]]],
-):
-    """Write a human-readable reasoning summary into each organized paper folder."""
-    lines: List[str] = []
-
-    title = paper.get("title", "")
-    doi = paper.get("doi", "")
-    journal = paper.get("journal", "")
-    year = paper.get("year", "")
-    confidence = paper.get("classification_confidence", "")
-    has_t1 = paper.get("has_type1", False)
-    has_t2 = paper.get("has_type2", False)
-    has_both = paper.get("has_both_types", False)
-
-    if has_both:
-        label = "Both"
-    elif has_t1:
-        label = "Type1 only"
-    elif has_t2:
-        label = "Type2 only"
-    else:
-        label = "Neither"
-
-    lines.append(f"Title: {title}")
-    lines.append(f"DOI: {doi or 'N/A'}")
-    lines.append(f"Journal: {journal or 'N/A'}")
-    lines.append(f"Year: {year or 'N/A'}")
-    lines.append(f"Final label: {label}")
-    lines.append(f"Classification confidence: {confidence or 'unknown'}")
-    lines.append("")
-
-    lines.append("Paper-level reasoning")
-    lines.append(f"- Type1 summary: {paper.get('type1_summary', '') or 'none'}")
-    lines.append(f"- Type2 summary: {paper.get('type2_summary', '') or 'none'}")
-    lines.append("")
-
-    for section, entries in (
-        ("Type1 files", org_result.get("type1_data", [])),
-        ("Type2 files", org_result.get("type2_data", [])),
-        ("Annotation files", org_result.get("annotations", [])),
-        ("Script files", org_result.get("scripts", [])),
-    ):
-        lines.append(section)
-        if not entries:
-            lines.append("- none")
-            lines.append("")
-            continue
-
-        for entry in entries:
-            cls = entry.get("classification", {})
-            lines.append(f"- {entry.get('renamed', entry.get('original', 'unknown'))}")
-            rel_path = cls.get("relative_path", "")
-            if rel_path:
-                lines.append(f"  original path: {rel_path}")
-            if cls.get("type"):
-                lines.append(f"  classified as: {cls.get('type')}")
-            if cls.get("reasoning"):
-                lines.append(f"  reasoning: {cls.get('reasoning')}")
-            if cls.get("paper_evidence"):
-                lines.append(f"  paper evidence: {cls.get('paper_evidence')}")
-            if cls.get("file_evidence"):
-                lines.append(f"  file evidence: {cls.get('file_evidence')}")
-            if cls.get("key_columns_or_structure"):
-                lines.append(f"  structure: {cls.get('key_columns_or_structure')}")
-            ambiguity = cls.get("ambiguity", "")
-            if ambiguity and ambiguity != "none":
-                lines.append(f"  ambiguity: {ambiguity}")
-        lines.append("")
-
-    reasoning_path = os.path.join(paper_dir, "reasoning.txt")
-    with open(reasoning_path, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines).strip() + "\n")
-
-
-def _build_file_list(file_entries: List[Dict]) -> List[Dict]:
-    """Build file list with classification reasoning for the manifest."""
-    result = []
-    for f in file_entries:
-        entry = {"renamed": f["renamed"]}
-        cls = f.get("classification", {})
-        if cls:
-            entry["classification"] = {
-                "type": cls.get("type", ""),
-                "reasoning": cls.get("reasoning", ""),
-                "paper_evidence": cls.get("paper_evidence", ""),
-                "file_evidence": cls.get("file_evidence", ""),
-                "ambiguity": cls.get("ambiguity", "none"),
-                "key_columns": cls.get("key_columns_or_structure", ""),
-            }
-        result.append(entry)
-    return result
-
-
 def _print_summary(output: Dict[str, Any]):
-    """Print formatted summary."""
-    s = output["summary"]
+    summary = output["summary"]
     logger.info("=" * 60)
-    logger.info("STEP 4 RESULTS SUMMARY")
+    logger.info("STEP 4 CLASSIFICATION SUMMARY")
     logger.info("=" * 60)
-    logger.info(f"Papers organized:      {s['papers_organized']}")
-    logger.info(f"  Both (T1+T2):        {s['both_count']}")
-    logger.info(f"  Type 1 only:         {s['type1_only_count']}")
-    logger.info(f"  Type 2 only:         {s['type2_only_count']}")
-    logger.info(f"  Neither:             {s['neither_count']}")
-    logger.info(f"PDFs downloaded:        {s['pdfs_downloaded']}")
-    logger.info(f"Type 1 data files:     {s['total_type1_files']}")
-    logger.info(f"Type 2 data files:     {s['total_type2_files']}")
-    logger.info(f"Annotation files:      {s['total_annotation_files']}")
-    logger.info(f"Script files:          {s['total_script_files']}")
+    logger.info(f"Total papers processed:   {summary['total_processed']}")
+    logger.info(f"Both Type 1+2:            {summary['both_types_count']}")
+    logger.info(f"Type 1 only:              {summary['type1_only_count']}")
+    logger.info(f"Type 2 only:              {summary['type2_only_count']}")
+    logger.info(f"Neither type:             {summary['neither_count']}")
+    logger.info(f"Files downloaded:         {summary['total_files_downloaded']}")
+    logger.info(f"Files inspected:          {summary['total_files_inspected']}")
+    logger.info(f"Missing Step 3 analysis:  {summary['skipped_missing_step3_analysis']}")
 
-    logger.info("-" * 60)
-    for p in output["papers"]:
-        c = p["counts"]
-        pdf = "✓" if p["has_pdf"] else "✗"
-        tg = p.get("type_group", "?")
-        logger.info(
-            f"  {p['paper_index']:3d}. [{tg:>5}] [PDF:{pdf}] T1:{c['type1']:2d} T2:{c['type2']:2d} "
-            f"| {p['title'][:45]}"
-        )
+
+def _load_completed_summary_if_available(
+    paper: Dict[str, Any],
+    download_dir: str,
+    reprocess_failed: bool = True,
+    reprocess_neither_with_data: bool = True,
+) -> Dict[str, Any] | None:
+    paper_dir = get_paper_download_dir(paper, download_dir)
+    summary_path = os.path.join(paper_dir, "summary", "paper_dataset_summary.json")
+    if not os.path.isfile(summary_path):
+        return None
+
+    try:
+        with open(summary_path, "r", encoding="utf-8") as f:
+            summary = json.load(f)
+    except Exception as e:
+        logger.warning(f"    Could not reuse completed summary: {e}")
+        return None
+
+    dataset_contents = summary.get("dataset_contents", {})
+    classification = normalize_classification(summary.get("type_classification", {}) or {})
+    inspections = dataset_contents.get("files", []) or []
+    if _should_reprocess_completed_summary(
+        classification=classification,
+        inspections=inspections,
+        reprocess_failed=reprocess_failed,
+        reprocess_neither_with_data=reprocess_neither_with_data,
+    ):
+        logger.info("    Reprocessing completed summary because classification looks incomplete")
+        return None
+
+    download_info = summary.get("download_and_organization", {}) or {}
+    return {
+        "download": {
+            "paper_id": paper.get("paper_id", "unknown"),
+            "download_dir": paper_dir,
+            "files": [],
+            "zip_extracted": [],
+            "errors": download_info.get("download_errors", []),
+            "organization": download_info.get("organization", {}),
+            "organized_files": download_info.get("organized_files", []),
+            "reused_completed_summary": True,
+        },
+        "inspections": inspections,
+        "classification": classification,
+    }
+
+
+def _should_reprocess_completed_summary(
+    classification: Dict[str, Any],
+    inspections: List[Dict[str, Any]],
+    reprocess_failed: bool,
+    reprocess_neither_with_data: bool,
+) -> bool:
+    notes = str(classification.get("notes", ""))
+    if reprocess_failed and "GPT error" in notes:
+        return True
+
+    has_type1 = classification.get("has_type1", False)
+    has_type2 = classification.get("has_type2", False)
+    if not reprocess_neither_with_data or has_type1 or has_type2:
+        return False
+
+    data_like_types = {
+        "tabular_text",
+        "excel",
+        "hdf5",
+        "numpy",
+        "matlab",
+        "json",
+        "binary",
+        "instrument_raw",
+        "microscopy_image",
+        "optical_image",
+    }
+    return any(report.get("file_type") in data_like_types for report in inspections)

@@ -22,8 +22,8 @@ if project_root not in sys.path:
 from step1.run_step1 import main as step1_main
 from step2.run_step2 import main as step2_main
 from step3.run_step3 import main as step3_main
-from step3_5.run_step3_5 import main as step3_5_main
 from step4.run_step4 import main as step4_main
+from step5.run_step5 import main as step5_main
 
 
 def setup_logging() -> None:
@@ -56,7 +56,7 @@ def _run_step(name: str, fn: Callable[[], None]) -> Dict[str, float]:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run UC_LEAP pipeline")
     parser.add_argument("--from", dest="from_step", type=str, default="1",
-                        help="Start from step (1, 2, 3, 3.5, 4)")
+                        help="Start from step (1, 2, 3, 4, 5)")
     args = parser.parse_args()
 
     setup_logging()
@@ -66,11 +66,11 @@ def main() -> None:
         ("Step 1", step1_main),
         ("Step 2", step2_main),
         ("Step 3", step3_main),
-        ("Step 3.5", step3_5_main),
         ("Step 4", step4_main),
+        ("Step 5", step5_main),
     ]
 
-    step_keys = ["1", "2", "3", "3.5", "4"]
+    step_keys = ["1", "2", "3", "4", "5"]
     start_idx = 0
     if args.from_step in step_keys:
         start_idx = step_keys.index(args.from_step)

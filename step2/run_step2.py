@@ -37,7 +37,10 @@ def main():
         if result.get("status") == "success":
             logger.info(
                 f"Step 2 complete in {elapsed:.0f}s. "
-                f"{result['papers_with_datasets']} papers with verified datasets "
+                f"{result['papers_with_data']} papers with dataset evidence; "
+                f"{result['papers_with_data_and_pdf']} have both dataset evidence and a resolved PDF; "
+                f"{result['verified_status_count']} are status=verified; "
+                f"{result['papers_with_inventory']} have successful repository inventories "
                 f"out of {result['candidates_processed']} processed."
             )
         elif result.get("status") == "empty":

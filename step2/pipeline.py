@@ -50,6 +50,10 @@ def run_step2() -> Dict[str, Any]:
     gpt_config = config.get("gpt", {})
     use_gpt = gpt_config.get("enabled", False)
     gpt_model = gpt_config.get("model", "gpt-5.4-mini")
+    ambiguous_config = config.get("ambiguous_url_review", {})
+    review_ambiguous_urls = ambiguous_config.get("enabled", False)
+    ambiguous_gpt_model = ambiguous_config.get("model", gpt_model)
+    ambiguous_max_urls = ambiguous_config.get("max_urls_per_paper", 8)
 
     http_config = config.get("http", {})
     rate_limit_delay = http_config.get("rate_limit_delay", 1.0)
@@ -88,6 +92,10 @@ def run_step2() -> Dict[str, Any]:
             use_gpt=use_gpt,
             gpt_call_fn=call_gpt_json if use_gpt else None,
             gpt_model=gpt_model,
+            review_ambiguous_urls=review_ambiguous_urls,
+            ambiguous_gpt_call_fn=call_gpt_json if review_ambiguous_urls else None,
+            ambiguous_gpt_model=ambiguous_gpt_model,
+            ambiguous_max_urls=ambiguous_max_urls,
         )
         discovered_urls = link_result.get("discovered_urls", [])
 
@@ -126,13 +134,23 @@ def run_step2() -> Dict[str, Any]:
 
         # Log what we found
         n_urls = len(discovered_urls)
-        n_source = len(link_result.get("source_data_files", []))
+        n_data = len(link_result.get("data_url_candidates", []))
+        n_repo_urls = len(link_result.get("repository_urls", []))
+        n_ambiguous = len(link_result.get("ambiguous_url_candidates", []))
+        pdf_status = link_result.get("pdf_resolution_status", "not_found")
+        pdf_source = link_result.get("paper_pdf_source", "")
+        n_pdf = 1 if link_result.get("resolved_paper_pdf_url") else 0
+        n_ignored = len(link_result.get("ignored_urls", []))
         da_text = link_result.get("data_availability_text", "")
         gpt_loc = link_result.get("gpt_analysis", {}).get("dataset_location", "")
-        if n_urls > 0 or n_source > 0:
+        gpt_detail = gpt_loc or ("disabled" if not use_gpt else "n/a")
+        ambiguous_gpt_detail = "enabled" if review_ambiguous_urls else "disabled"
+        if n_urls > 0 or n_data > 0 or n_pdf > 0:
             logger.info(
-                f"    -> {title}: {n_urls} URLs, {n_source} source files, "
-                f"DA={'yes' if da_text else 'no'}, GPT={gpt_loc or 'n/a'}"
+                f"    -> {title}: {n_urls} URLs, {n_data} data candidates, "
+                f"{n_repo_urls} repo URLs, PDF={pdf_status}{('/' + pdf_source) if pdf_source else ''}, "
+                f"{n_ambiguous} ambiguous, {n_ignored} ignored, DA={'yes' if da_text else 'no'}, "
+                f"GPT={gpt_detail}, ambiguousGPT={ambiguous_gpt_detail}"
             )
 
         results.append({
@@ -203,7 +221,10 @@ def run_step2() -> Dict[str, Any]:
 
             # Assess publisher source data files (if no repo inventory)
             if not entry["assessments"]:
-                source_files = entry["link_resolution"].get("source_data_files", [])
+                source_files = entry["link_resolution"].get(
+                    "data_url_candidates",
+                    entry["link_resolution"].get("source_data_files", []),
+                )
                 if source_files:
                     # Build a pseudo-inventory from source data files
                     pseudo_inv = {
@@ -255,16 +276,22 @@ def run_step2() -> Dict[str, Any]:
     # Print summary
     _print_summary(output)
 
+    summary = output["summary"]
     return {
         "status": "success",
         "candidates_processed": len(candidates),
-        "papers_with_datasets": output["summary"]["papers_with_verified_repos"],
+        "papers_with_data": summary["papers_with_data"],
+        "papers_with_data_and_pdf": summary["papers_with_data_and_pdf"],
+        "verified_status_count": summary["dataset_status_distribution"].get("verified", 0),
+        "papers_with_inventory": summary["papers_with_inventories"],
         "output_file": latest_path,
     }
 
 
 def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
     """Build the final output JSON structure."""
+    use_gpt = config.get("gpt", {}).get("enabled", False)
+    review_ambiguous_urls = config.get("ambiguous_url_review", {}).get("enabled", False)
     papers = []
     papers_with_repos = 0
     papers_with_inventories = 0
@@ -298,7 +325,7 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
             if inv.get("success"):
                 total_files += inv.get("file_count", 0)
 
-            repo_entries.append({
+            repo_entry = {
                 "repo_type": repo_type,
                 "repo_id": repo.get("repo_id", ""),
                 "url": repo.get("url", ""),
@@ -313,12 +340,13 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
                     "success": False,
                     "error": inv.get("error", "not attempted"),
                 },
-                "assessment": assess if assess else None,
-            })
+            }
+            if use_gpt:
+                repo_entry["assessment"] = assess if assess else None
+            repo_entries.append(repo_entry)
 
         # Determine overall dataset status using a rules-based verification score.
         link_res = entry["link_resolution"]
-        gpt_analysis = link_res.get("gpt_analysis", {})
         verification = _score_verification(
             repos=repos,
             inventories=successful_inventories,
@@ -327,20 +355,7 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
         )
         dataset_status = verification["status"]
 
-        # Determine dataset_type from assessments
-        dataset_type = "unknown"
-        type1_evidence = "none"
-        type2_evidence = "none"
-        for assess in assessments:
-            if isinstance(assess, dict) and assess.get("dataset_type"):
-                dt = assess["dataset_type"]
-                if dt in ("type1", "type2", "both"):
-                    dataset_type = dt
-                    type1_evidence = assess.get("type1_evidence", "none")
-                    type2_evidence = assess.get("type2_evidence", "none")
-                    break
-
-        papers.append({
+        paper_entry = {
             "paper_id": paper.get("paper_id", ""),
             "title": paper.get("title", ""),
             "doi": paper.get("doi", ""),
@@ -354,16 +369,45 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
             "verification_score": verification["score"],
             "verification_reasons": verification["reasons"],
             "needs_human_review": verification["needs_human_review"],
-            "dataset_type": dataset_type,
-            "type1_evidence": type1_evidence,
-            "type2_evidence": type2_evidence,
             "repositories": repo_entries,
+            "paper_pdf_urls": link_res.get("paper_pdf_urls", []),
+            "resolved_paper_pdf_url": link_res.get("resolved_paper_pdf_url", ""),
+            "paper_pdf_source": link_res.get("paper_pdf_source", ""),
+            "pdf_resolution_status": link_res.get("pdf_resolution_status", "not_found"),
+            "data_url_candidates": link_res.get("data_url_candidates", []),
+            "repository_urls": link_res.get("repository_urls", []),
+            "ambiguous_url_candidates": link_res.get("ambiguous_url_candidates", []),
+            "ambiguous_url_review": link_res.get("ambiguous_url_review", {}),
+            "ambiguous_url_review_error": link_res.get("ambiguous_url_review_error", ""),
+            "ignored_urls": link_res.get("ignored_urls", []),
             "source_data_files": link_res.get("source_data_files", []),
             "data_availability_text": link_res.get("data_availability_text", ""),
-            "gpt_data_analysis": gpt_analysis,
             "discovered_urls": link_res.get("discovered_urls", []),
             "link_sources": link_res.get("sources", {}),
-        })
+        }
+
+        if use_gpt:
+            gpt_analysis = link_res.get("gpt_analysis", {})
+            dataset_type = "unknown"
+            type1_evidence = "none"
+            type2_evidence = "none"
+            for assess in assessments:
+                if isinstance(assess, dict) and assess.get("dataset_type"):
+                    dt = assess["dataset_type"]
+                    if dt in ("type1", "type2", "both"):
+                        dataset_type = dt
+                        type1_evidence = assess.get("type1_evidence", "none")
+                        type2_evidence = assess.get("type2_evidence", "none")
+                        break
+
+            paper_entry.update({
+                "dataset_type": dataset_type,
+                "type1_evidence": type1_evidence,
+                "type2_evidence": type2_evidence,
+                "gpt_data_analysis": gpt_analysis,
+            })
+
+        papers.append(paper_entry)
 
     # Sort: verified first, then by priority score
     status_order = {"verified": 0, "source_data_found": 1, "link_found": 2, "unclassified_link": 3, "upon_request": 4, "no_dataset_found": 5}
@@ -372,36 +416,64 @@ def _build_output(results: List[Dict], config: Dict) -> Dict[str, Any]:
         -x.get("priority_score", 0),
     ))
 
-    # Count dataset types
-    type_counts = {}
-    for p in papers:
-        dt = p.get("dataset_type", "unknown")
-        type_counts[dt] = type_counts.get(dt, 0) + 1
+    papers_with_pdf = sum(
+        1 for p in papers
+        if p.get("pdf_resolution_status") == "found"
+        and p.get("resolved_paper_pdf_url")
+    )
+    papers_with_data = [
+        p for p in papers
+        if p["dataset_status"] in ("verified", "source_data_found", "link_found")
+    ]
+    papers_with_data_and_pdf = [
+        p for p in papers_with_data
+        if p.get("pdf_resolution_status") == "found"
+        and p.get("resolved_paper_pdf_url")
+    ]
+
+    summary = {
+        "total_papers": len(papers),
+        "dataset_status_distribution": {
+            s: sum(1 for p in papers if p["dataset_status"] == s)
+            for s in ["verified", "source_data_found", "link_found",
+                      "unclassified_link", "upon_request", "no_dataset_found"]
+            if any(p["dataset_status"] == s for p in papers)
+        },
+        "papers_with_inventories": papers_with_inventories,
+        "papers_with_verified_repos": papers_with_inventories,
+        "papers_with_data": len(papers_with_data),
+        "papers_with_pdf": papers_with_pdf,
+        "papers_with_data_and_pdf": len(papers_with_data_and_pdf),
+        "papers_with_data_no_pdf": len(papers_with_data) - len(papers_with_data_and_pdf),
+        "papers_with_pdf_no_data": papers_with_pdf - len(papers_with_data_and_pdf),
+        "total_files_found": total_files,
+        "repo_type_distribution": repo_type_counts,
+        "papers_with_ambiguous_urls": sum(
+            1 for p in papers if p.get("ambiguous_url_candidates")
+        ),
+        "total_ambiguous_urls": sum(
+            len(p.get("ambiguous_url_candidates", [])) for p in papers
+        ),
+    }
+
+    if use_gpt:
+        # Count dataset types only when Step 2 actually ran GPT assessments.
+        type_counts = {}
+        for p in papers:
+            dt = p.get("dataset_type", "unknown")
+            type_counts[dt] = type_counts.get(dt, 0) + 1
+        summary["dataset_type_distribution"] = type_counts
 
     return {
         "metadata": {
             "step": 2,
-            "description": "Dataset Presence, Inventory & Structure Classification",
+            "description": "Dataset Presence and Inventory Check",
             "generated_at": datetime.now().isoformat(),
             "total_papers": len(papers),
+            "gpt_assessment_enabled": use_gpt,
+            "ambiguous_url_review_enabled": review_ambiguous_urls,
         },
-        "summary": {
-            "total_papers": len(papers),
-            "dataset_status_distribution": {
-                s: sum(1 for p in papers if p["dataset_status"] == s)
-                for s in ["verified", "source_data_found", "link_found",
-                          "unclassified_link", "upon_request", "no_dataset_found"]
-                if any(p["dataset_status"] == s for p in papers)
-            },
-            "papers_with_verified_repos": papers_with_inventories,
-            "papers_with_data": sum(
-                1 for p in papers
-                if p["dataset_status"] in ("verified", "source_data_found", "link_found")
-            ),
-            "total_files_found": total_files,
-            "repo_type_distribution": repo_type_counts,
-            "dataset_type_distribution": type_counts,
-        },
+        "summary": summary,
         "papers": papers,
     }
 
@@ -416,10 +488,20 @@ def _print_summary(output: Dict[str, Any]):
     logger.info("=" * 60)
     logger.info(f"Total papers processed:     {summary['total_papers']}")
     logger.info(f"Papers with data:           {summary['papers_with_data']}")
+    logger.info(f"Papers with PDF:            {summary['papers_with_pdf']}")
+    logger.info(f"Papers with data + PDF:     {summary['papers_with_data_and_pdf']}")
+    logger.info(f"Papers with data, no PDF:   {summary['papers_with_data_no_pdf']}")
+    logger.info(f"Papers with PDF, no data:   {summary['papers_with_pdf_no_data']}")
+    logger.info(f"Papers with inventories:    {summary['papers_with_inventories']}")
     logger.info(f"Status distribution:        {summary['dataset_status_distribution']}")
     logger.info(f"Total files found:          {summary['total_files_found']}")
     logger.info(f"Repository types:           {summary['repo_type_distribution']}")
-    logger.info(f"Dataset type distribution:  {summary['dataset_type_distribution']}")
+    logger.info(
+        f"Ambiguous URLs:             {summary.get('total_ambiguous_urls', 0)} "
+        f"across {summary.get('papers_with_ambiguous_urls', 0)} papers"
+    )
+    if "dataset_type_distribution" in summary:
+        logger.info(f"Dataset type distribution:  {summary['dataset_type_distribution']}")
 
     # Show papers with data (verified + source_data_found + link_found)
     with_data = [
@@ -431,14 +513,12 @@ def _print_summary(output: Dict[str, Any]):
         logger.info("PAPERS WITH DATA:")
         for p in with_data[:15]:
             status = p["dataset_status"]
-            dt = p.get("dataset_type", "unknown")
-            gpt_loc = p.get("gpt_data_analysis", {}).get("dataset_location", "")
-            n_source = len(p.get("source_data_files", []))
+            n_data = len(p.get("data_url_candidates", []))
             repos_str = ", ".join(
                 f"{r['repo_type']}({r['inventory'].get('file_count', 0)} files)"
                 for r in p["repositories"] if r.get("inventory", {}).get("success")
             )
-            detail = repos_str or f"{n_source} source files" if n_source else gpt_loc
+            detail = repos_str or (f"{n_data} data candidate URLs" if n_data else "")
             logger.info(
                 f"  [{p['priority_score']:5.1f}] [{status:>17}] {p['title'][:50]}"
             )
@@ -484,10 +564,14 @@ def _score_verification(
             reasons.append(f"Data-like files found in {inv.get('repo_type', 'repository')} inventory")
             break
 
-    source_files = link_res.get("source_data_files", [])
-    if source_files:
+    data_candidates = link_res.get(
+        "data_url_candidates",
+        link_res.get("source_data_files", []),
+    )
+    ambiguous_candidates = link_res.get("ambiguous_url_candidates", [])
+    if data_candidates:
         score += 2
-        reasons.append(f"{len(source_files)} publisher/source-data file(s) found")
+        reasons.append(f"{len(data_candidates)} direct data/supplementary candidate URL(s) found")
 
     gpt_analysis = link_res.get("gpt_analysis", {}) or {}
     if gpt_analysis.get("has_downloadable_data"):
@@ -511,7 +595,7 @@ def _score_verification(
         needs_human_review = True
         reasons.append("Inventory assessment requested human review")
 
-    if link_res.get("da_upon_request") and not source_files and not inventories:
+    if link_res.get("da_upon_request") and not data_candidates and not inventories:
         return {
             "status": "upon_request",
             "score": score,
@@ -521,11 +605,11 @@ def _score_verification(
 
     if score >= 6 and inventories:
         status = "verified"
-    elif score >= 4 and (source_files or inventories):
+    elif data_candidates or inventories:
         status = "source_data_found"
     elif score >= 2 and repos:
         status = "link_found"
-    elif repos or link_res.get("has_dataset_link"):
+    elif repos or link_res.get("has_dataset_link") or ambiguous_candidates:
         status = "unclassified_link"
     else:
         status = "no_dataset_found"

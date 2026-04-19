@@ -3,8 +3,15 @@
 
 # GPT settings (reuse from step1 pattern)
 gpt:
+  enabled: false
+  model: "gpt-5.4-mini"
+
+# Use GPT only for non-junk URLs that the deterministic router cannot classify.
+# This keeps Step 2 recall-friendly without running GPT on every paper.
+ambiguous_url_review:
   enabled: true
   model: "gpt-5.4-mini"
+  max_urls_per_paper: 8
 
 # HTTP request settings
 http:

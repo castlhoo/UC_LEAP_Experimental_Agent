@@ -372,6 +372,7 @@ def search_crossref(
                 "type": item.get("type", ""),
                 "subject": item.get("subject") or [],
                 "links": [l.get("URL", "") for l in links],
+                "crossref_links": [l.get("URL", "") for l in links],
                 "license": [l.get("URL", "") for l in (item.get("license") or [])],
             }
             papers.append(p)
@@ -590,6 +591,128 @@ def search_europe_pmc(
 # Unified search dispatcher
 # ===================================================================
 
+QUERY_TOPIC_FAMILIES = {
+    "topological_quantum": [
+        "topological", "weyl", "dirac", "majorana", "skyrmion",
+        "spin-orbit", "spin orbit", "mott", "heavy fermion", "kondo",
+        "spin liquid", "frustrated magnet", "vortex", "josephson",
+    ],
+    "superconductors": [
+        "superconduct", "cuprate", "nickelate", "iron-based",
+    ],
+    "two_d_vdw": [
+        "graphene", "tmd", "moire", "moiré", "twisted bilayer",
+        "heterostructure", "van der waals", "2d material",
+    ],
+    "ordering_magnetism": [
+        "charge density wave", "phase transition", "magnetic",
+        "exchange bias", "kagome",
+    ],
+    "functional_materials": [
+        "ferroelectric", "multiferroic", "thermoelectric", "piezoelectric",
+    ],
+    "observables": [
+        "fermi surface", "band structure", "lattice constant",
+        "quantum oscillation",
+    ],
+}
+
+
+QUERY_FAMILY_ORDER = list(QUERY_TOPIC_FAMILIES)
+
+
+def _select_diverse_queries(
+    api_name: str,
+    queries: List[str],
+    limit: int,
+) -> List[str]:
+    """
+    Select a deterministic, topic-balanced subset of queries.
+
+    This avoids taking the first N generated queries, which can overrepresent
+    one topic family when the generator emits combinations in nested-loop order.
+    """
+    if limit <= 0:
+        return []
+
+    manual = []
+    generated = []
+    seen = set()
+    for query in queries:
+        key = _norm_query(query)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        if _is_manual_like(query):
+            manual.append(query)
+        else:
+            generated.append(query)
+
+    selected: List[str] = []
+    manual_budget = min(len(manual), max(2, limit // 4))
+    selected.extend(manual[:manual_budget])
+
+    buckets: Dict[str, List[str]] = {}
+    for query in generated + manual[manual_budget:]:
+        family = _query_topic_family(query)
+        buckets.setdefault(family, []).append(query)
+
+    family_order = [
+        family for family in QUERY_FAMILY_ORDER + sorted(buckets)
+        if family in buckets
+    ]
+    selected_keys = {_norm_query(q) for q in selected}
+    while len(selected) < limit:
+        added = False
+        for family in family_order:
+            queue = buckets.get(family, [])
+            while queue:
+                query = queue.pop(0)
+                key = _norm_query(query)
+                if key in selected_keys:
+                    continue
+                selected.append(query)
+                selected_keys.add(key)
+                added = True
+                break
+            if len(selected) >= limit:
+                break
+        if not added:
+            break
+
+    logger.info(
+        f"  [{api_name}] Selected {len(selected)}/{len(queries)} diverse queries"
+    )
+    return selected
+
+
+def _query_topic_family(query: str) -> str:
+    q = _norm_query(query)
+    for family, terms in QUERY_TOPIC_FAMILIES.items():
+        if any(term in q for term in terms):
+            return family
+    return "other_topic"
+
+
+def _is_manual_like(query: str) -> bool:
+    q = _norm_query(query)
+    return any(
+        phrase in q
+        for phrase in [
+            "source data nature",
+            "data availability",
+            "data repository",
+            "experimental dataset",
+            "open data",
+            "zenodo",
+            "figshare",
+        ]
+    )
+
+
+def _norm_query(query: str) -> str:
+    return " ".join((query or "").lower().replace("é", "e").split())
+
 def search_all_apis(
     queries_by_api: Dict[str, List[str]],
     config: Dict[str, Any],
@@ -641,11 +764,11 @@ def search_all_apis(
             "semantic_scholar": 12,
             "openalex": 20,
             "crossref": 12,
-            "arxiv": 15,
+            "arxiv": 25,
             "europe_pmc": 12,
         }
         query_limit = config_max_queries.get(api_name, default_limits.get(api_name, 15))
-        selected_queries = queries[:query_limit]
+        selected_queries = _select_diverse_queries(api_name, queries, query_limit)
 
         consecutive_empty = 0
         for i, query in enumerate(selected_queries):

@@ -1,55 +1,89 @@
-# Step 4: Local Storage & Organization
-# ======================================
+# Step 4: Dataset Download, Inspection & Type Classification
+# ===========================================================
 
-# Input: Step 3 classification output
-input_file: "step3/output/step3_classification_latest.json"
+# Inputs
+step2_input_file: "step2/output/step2_inventory_latest.json"
+step3_input_file: "step3/output/step3_paper_analysis_latest.json"
 
-# Output directory for organized papers
-output_dir: "step4/organized"
+# Output directory
+output_dir: "step4/output"
 
-# Which papers to organize
-selection:
-  mode: "has_any"             # "both_types" = T1+T2 only, "has_any" = balanced mix of T1/T2/both, "all" = all papers
-  max_papers: null            # null/0 = organize all selected papers
+# Download directory for dataset files
+download_dir: "step4/downloads"
 
-# PDF download settings
-pdf:
+# Resume settings
+resume:
+  reuse_existing_downloads: true
+  skip_completed_papers: true
+  reprocess_failed_classifications: true
+  reprocess_neither_with_data_files: true
+
+# Step 3 stores the main paper PDFs here; Step 4 copies them into each paper's pdf/ folder.
+step3_paper_dir: "step3/papers"
+
+# GPT settings for Prompt B
+gpt:
   enabled: true
-  use_unpaywall: true
-  unpaywall_email: "ucleap@example.com"
-  timeout: 60
+  model: "gpt-5.4-mini"
+  batch_size: 6
 
 # HTTP settings
 http:
   timeout: 60
-  user_agent: "UC_LEAP_Step4/1.0 (dataset-organization)"
+  user_agent: "UC_LEAP_Step4/1.0 (dataset-classification)"
+  rate_limit_delay: 1.0
 
-# File category keywords (for annotation/script detection beyond GPT classification)
-annotations:
-  filenames:
-    - "README"
-    - "readme"
-    - "METADATA"
-    - "metadata"
-    - "DESCRIPTION"
-    - "description"
-    - "LICENSE"
-    - "CHANGELOG"
-  extensions:
+# Download limits
+download:
+  max_file_size_mb: 500
+  max_files_per_paper: 50
+  allowed_extensions:
+    - ".csv"
+    - ".xlsx"
+    - ".xls"
+    - ".txt"
+    - ".dat"
+    - ".tsv"
+    - ".h5"
+    - ".hdf5"
+    - ".nxs"
+    - ".zip"
+    - ".tar.gz"
+    - ".tar"
+    - ".tgz"
+    - ".gz"
+    - ".json"
+    - ".xml"
     - ".md"
     - ".rst"
-
-scripts:
-  extensions:
+    - ".yaml"
+    - ".yml"
+    - ".npz"
+    - ".npy"
+    - ".mat"
+    - ".spe"
+    - ".pdf"
+    - ".tif"
+    - ".tiff"
+    - ".png"
+    - ".jpg"
+    - ".jpeg"
+    - ".sxm"
+    - ".ibw"
     - ".py"
     - ".m"
-    - ".R"
-    - ".jl"
     - ".ipynb"
-    - ".sh"
+    - ".r"
+  skip_extensions:
+    - ".mp4"
+    - ".avi"
+    - ".mov"
+    - ".gif"
+    - ".svg"
 
-# Renaming
-rename:
-  enabled: true
-  # Prefix format: {paper_idx:03d}_{short_title}
-  max_title_words: 5
+# File inspection settings
+inspection:
+  csv_preview_rows: 10
+  max_columns_display: 30
+  h5_max_datasets: 50
+  zip_max_entries: 100
